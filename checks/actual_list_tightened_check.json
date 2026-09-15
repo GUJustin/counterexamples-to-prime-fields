@@ -1,0 +1,8 @@
+{
+  "parameter_inequality_checks": 124251,
+  "sharpness_fixtures": 223,
+  "distinct_lower_bound_witnesses": 1238,
+  "coordinate_checks": 28235,
+  "status": "passed",
+  "scope": "Checks parameter arithmetic and explicit global-list lower-bound witnesses; generic-rank upper bound remains a cited theorem."
+}

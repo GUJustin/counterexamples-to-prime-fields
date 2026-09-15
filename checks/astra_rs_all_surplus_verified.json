@@ -1,0 +1,109 @@
+{
+  "status": "all assertions passed",
+  "counts": {
+    "large_field_fixtures": 3654,
+    "nondivisible_surplus_fixtures": 2782,
+    "fixtures_with_k_below_2s": 2304,
+    "large_field_domains_with_all_surpluses": 378,
+    "polynomial_agreement_checks": 11339,
+    "coordinate_evaluations_checked": 252627,
+    "same_anchor_collision_identities": 13732,
+    "small_field_fixtures": 450,
+    "small_field_repetition_fixtures": 55
+  },
+  "exact_center_lists": [
+    {
+      "p": 65537,
+      "n": 9,
+      "k": 2,
+      "s": 2,
+      "target_list_size": 3,
+      "exact_list_at_constructed_center": 3
+    },
+    {
+      "p": 65537,
+      "n": 10,
+      "k": 2,
+      "s": 2,
+      "target_list_size": 3,
+      "exact_list_at_constructed_center": 3
+    },
+    {
+      "p": 65537,
+      "n": 11,
+      "k": 2,
+      "s": 3,
+      "target_list_size": 2,
+      "exact_list_at_constructed_center": 2
+    },
+    {
+      "p": 65537,
+      "n": 12,
+      "k": 2,
+      "s": 3,
+      "target_list_size": 3,
+      "exact_list_at_constructed_center": 3
+    },
+    {
+      "p": 65537,
+      "n": 12,
+      "k": 3,
+      "s": 2,
+      "target_list_size": 4,
+      "exact_list_at_constructed_center": 4
+    },
+    {
+      "p": 65537,
+      "n": 14,
+      "k": 4,
+      "s": 3,
+      "target_list_size": 3,
+      "exact_list_at_constructed_center": 3
+    },
+    {
+      "p": 65537,
+      "n": 14,
+      "k": 6,
+      "s": 3,
+      "target_list_size": 2,
+      "exact_list_at_constructed_center": 2
+    },
+    {
+      "p": 65537,
+      "n": 8,
+      "k": 3,
+      "s": 5,
+      "target_list_size": 1,
+      "exact_list_at_constructed_center": 1
+    }
+  ],
+  "mobius_injectivity_checks": 172,
+  "allocation_and_probability_profiles": 79079,
+  "combined_lower_failure_profiles": 3003,
+  "genuine_small_field_repetition": {
+    "p": 17,
+    "n": 15,
+    "k": 2,
+    "s": 2,
+    "domain": [
+      8,
+      14,
+      13,
+      4,
+      2,
+      15,
+      7,
+      10,
+      5,
+      1,
+      9,
+      11,
+      6,
+      0,
+      12
+    ],
+    "target_list_size": 6,
+    "distinct_constructed_polynomials": 5
+  },
+  "scope": "Pure coding theory. Finite center lists are exhaustive at those centers; generic global upper bounds use the cited rank theorem."
+}

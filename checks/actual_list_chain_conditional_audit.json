@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "prime": 37,
+  "conditional_pairs": 1400,
+  "free_variable_values": 36200,
+  "gap_two_pairs_proved_collision_free_in_fixtures": 720,
+  "pairs_with_one_admissible_collision": 482
+}

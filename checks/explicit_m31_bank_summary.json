@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "n": 512,
+  "K": 128,
+  "T": 132,
+  "exact_bank_size": 471959451942648482921857753174390587612228702156784439968875,
+  "residue": 1,
+  "explicit_table_entries": 512,
+  "dp_integer_updates": 3759360,
+  "dp_elapsed_seconds": 0.6253915829584002,
+  "independent_character_filter_counts": 256,
+  "maximizing_residues": "all 128 odd residues",
+  "witness_identities": 512,
+  "fixture_agreements": 132,
+  "artifact_sha256": "298bcd7905ea502f899fc607d845d006a8188c0eaa526f8662c73521b4296191",
+  "scope": "Efficient construction of the fixed table and implicit bank; no favorable-claim search or full proof."
+}

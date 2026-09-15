@@ -1,0 +1,94 @@
+{
+  "status": "passed",
+  "large_instance": {
+    "N": 471959451942648482921857753174378123864222424043917355886528,
+    "admissible_samples": 21267647892944572727775488241423089664,
+    "selected_coordinate_pool": 510,
+    "forced_pair_roots_lower": 3805021078254863981093418074583888186997986788653476953985322502203419897948217380085611710411715586880403119004192327138,
+    "admissible_pair_collisions_upper": 10450705275537463881956302535427373340046812199139163975546550780207240988354392708809801819031142917656167226944992201246,
+    "linear_pairs": 1045232662865816582797566371469227027334159065108360767,
+    "cubic_pairs": 2090465325731633165368484037960985564061882697671072066,
+    "source_cubic_pairs": 2090465325731633164461889218051111601636141185175121877,
+    "source_admissible_samples_lower": 21267647892944572723163802227290669056,
+    "linear_bound_bits": 68.55205875691688,
+    "cubic_bound_bits": 67.55205875691688,
+    "source_cubic_bound_bits": 67.55205875691688,
+    "source_cubic_strict_probability_lower_bound": "2^-68",
+    "power_gap_rows": [
+      {
+        "power_gap": 1,
+        "columns": 2,
+        "qualifying_challenges": 4611686014132420609,
+        "pairs": 1045232662865816582797566371469227027334159065108360767,
+        "approximate_bits": 68.55205875691688,
+        "strict_probability_lower": "2^-69"
+      },
+      {
+        "power_gap": 2,
+        "columns": 3,
+        "qualifying_challenges": 9223372028264841217,
+        "pairs": 2090465325731633165368484037960985564061882697671072066,
+        "approximate_bits": 67.55205875691688,
+        "strict_probability_lower": "2^-68"
+      },
+      {
+        "power_gap": 5,
+        "columns": 6,
+        "qualifying_challenges": 23058430070662103041,
+        "pairs": 5226163314329082913081237037436261174245053595359205961,
+        "approximate_bits": 66.23013066202952,
+        "strict_probability_lower": "2^-67"
+      },
+      {
+        "power_gap": 10,
+        "columns": 11,
+        "qualifying_challenges": 46116860141324206081,
+        "pairs": 10452326628658165825935825369895053857883671758172762454,
+        "approximate_bits": 65.23013066202952,
+        "strict_probability_lower": "2^-66"
+      }
+    ],
+    "radius_audit": {
+      "rate": "1/4",
+      "gap": "1/128",
+      "radius": "95/128",
+      "exact_above_Elias_inequality": true
+    }
+  },
+  "balanced_support_systems": 17843,
+  "field_and_schedule": {
+    "field": 7,
+    "power_preimage_counts": {
+      "1": 49,
+      "2": 97,
+      "3": 49,
+      "5": 241,
+      "10": 481
+    },
+    "cubic_preimage_count": 97,
+    "admissible_samples": 2304,
+    "safe_previous_rotation_samples": 2256,
+    "cubic_fixed_claim": [
+      6,
+      6,
+      0,
+      0
+    ],
+    "cubic_observed_pairs": 6768,
+    "source_model_sample_fixtures": 12,
+    "source_model_identity_checks": 86436,
+    "non_linear_schedule_counterexamples": 86400,
+    "selected_cubic_witness_checks": 36,
+    "padded_power_schedule_identity_checks": 28812,
+    "caveat": "Python model of pinned source; no native Rust execution or full-proof verification."
+  },
+  "source": {
+    "commit": "cd7bc5f4697fb188a27e09f9242f1dd76df8afdc",
+    "files": {
+      "crates/stwo/src/core/pcs/quotients.rs": "bd9c03a010bdeb989fd3954e6fb66f0767e66fe387b482943cefe4ce88e20377",
+      "crates/stwo/src/core/constraints.rs": "b94b46706480649dd05d890eb6427835ce5d0e0d26de0734d41919fa366ca881",
+      "crates/stwo/src/core/circle.rs": "af82ee64d294606de9fd54d6faff33c37f39ee8b2307816ba4a182c2fe02a824",
+      "crates/stwo/src/core/pcs/verifier.rs": "6a447ce958ea67e5be916256aefacbebd17ceb5583b5fabb5600c00a791b6338"
+    }
+  }
+}

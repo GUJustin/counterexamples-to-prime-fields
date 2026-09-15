@@ -1,0 +1,72 @@
+# Counterexamples to List and Line Decodability Bounds over Prime Fields
+
+Working draft by Justin Thaler, September 15, 2026.
+
+[Read the paper](paper.pdf) · [LaTeX source](paper.tex)
+
+The paper studies quantitative coding statements used in security analyses
+of hash-based SNARKs. It proves general list and affine-line separations
+over prime fields, gives finite circle-code examples, and treats the S-two
+analysis as an application of those results.
+
+## Results
+
+- Exponential lists on integer-interval domains rule out a uniform
+  `exp(O(1/eta))` list bound at every fixed rate, with a shrinking gap and
+  radii below the characteristic-based Elias bound.
+- A fixed-gap lift rules out prescribed selected-witness coefficients
+  with a remainder sublinear along the constructed growing-field family.
+- A code can have maximum list size exactly `n-k-1` and nevertheless
+  have `binom(n,k+1)` uniquely nearby points on an affine line without
+  correlated agreement. A puncturing bound shows that this parameter
+  count is optimal at the one-coordinate-gap endpoint.
+- Suitable generic domains have an exact list profile at every integer
+  radius below the redundancy. The profile persists under field extension
+  and finite interleaving measured by column distance.
+- The puncturing argument also bounds nearby witness pairs whose entire
+  agreement sets have no joint explanation, including lines that possess
+  some correlated agreement.
+- Exact polynomial weights certify **5,074,503,250,115** codewords in
+  the length-64, dimension-32 interval example. A general concentration
+  bound improves full-range counting by a factor of order `n^(m/2)`
+  for each fixed number `m` of canceled coefficients.
+
+The statements retain their field, domain, radius, and quantifier
+restrictions. They do not establish a complete protocol attack or an
+improved better.codes submission.
+
+## Build and verify
+
+The standalone source requires a LaTeX installation with `latexmk`,
+`pdflatex`, and the packages declared in `paper.tex`.
+
+```sh
+make paper
+make verify
+```
+
+`make verify` runs the general coding-theory checks using Python's standard
+library. It recomputes the high-moment certificate and its independent
+complementary-subset identity. These finite checks supplement the proofs;
+they do not replace the cited generic-rank and proximity-gap theorems.
+
+`moment_certificates/weight_certificates.json` records the polynomial
+weights. The selected certificate is its degree-20 `factored` entry.
+The optional discovery script `moment_certificates/search_weights.py`
+requires NumPy and SciPy; numerical optimization is unnecessary to verify
+the saved integer certificate.
+
+The appendix model scripts and their saved results are also preserved in
+`checks/`. They are not native verifier executions. Two historical source
+inspection scripts, `verify_scheduled_transfer.py` and
+`verify_query_survival.py`, refer to the original local checkout of the
+pinned proving source; they are not part of `make verify`.
+
+## Draft provenance
+
+The manuscript incorporates the September 15 consolidated research draft,
+its exact certificates, and the subsequent puncturing-bound note. The
+title, abstract, introduction, security discussion, and application framing
+were revised for this repository. The mathematical development precedes
+the S-two application. `provenance.json` records the input hashes and
+validation performed for this version.

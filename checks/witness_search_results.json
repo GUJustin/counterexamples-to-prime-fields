@@ -1,0 +1,190 @@
+{
+  "status": "passed",
+  "p": 23,
+  "n": 24,
+  "K": 4,
+  "T": 8,
+  "fixed_claim": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "support_count": 27,
+  "defining_support": [
+    1,
+    2,
+    3,
+    7
+  ],
+  "samples": 128,
+  "queries": 68736,
+  "successful_queries": 135,
+  "nonzero_successful_queries": 7,
+  "recovered_witnesses": 135,
+  "coordinate_identities": 3240,
+  "left_entries_per_sample": 31,
+  "right_entries_per_sample": 57,
+  "hash_lookups": 2130785,
+  "elapsed_seconds": 8.725233874982223,
+  "nonzero_success_records": [
+    {
+      "sample": [
+        7,
+        17,
+        11,
+        14
+      ],
+      "challenge": [
+        9,
+        13,
+        0,
+        0
+      ],
+      "supports": [
+        [
+          4,
+          5,
+          7,
+          9
+        ]
+      ]
+    },
+    {
+      "sample": [
+        7,
+        17,
+        11,
+        14
+      ],
+      "challenge": [
+        17,
+        21,
+        0,
+        0
+      ],
+      "supports": [
+        [
+          2,
+          5,
+          8,
+          10
+        ]
+      ]
+    },
+    {
+      "sample": [
+        4,
+        8,
+        13,
+        13
+      ],
+      "challenge": [
+        15,
+        5,
+        0,
+        0
+      ],
+      "supports": [
+        [
+          1,
+          2,
+          4,
+          6
+        ]
+      ]
+    },
+    {
+      "sample": [
+        22,
+        0,
+        5,
+        22
+      ],
+      "challenge": [
+        19,
+        20,
+        0,
+        0
+      ],
+      "supports": [
+        [
+          1,
+          5,
+          8,
+          11
+        ]
+      ]
+    },
+    {
+      "sample": [
+        16,
+        3,
+        3,
+        18
+      ],
+      "challenge": [
+        14,
+        7,
+        0,
+        0
+      ],
+      "supports": [
+        [
+          1,
+          4,
+          9,
+          11
+        ]
+      ]
+    },
+    {
+      "sample": [
+        12,
+        9,
+        0,
+        1
+      ],
+      "challenge": [
+        1,
+        15,
+        0,
+        0
+      ],
+      "supports": [
+        [
+          4,
+          5,
+          6,
+          10
+        ]
+      ]
+    },
+    {
+      "sample": [
+        12,
+        9,
+        0,
+        1
+      ],
+      "challenge": [
+        21,
+        6,
+        0,
+        0
+      ],
+      "supports": [
+        [
+          3,
+          5,
+          6,
+          11
+        ]
+      ]
+    }
+  ],
+  "m31_left_entries": 119556892219975820496174543628269015139,
+  "m31_right_entries": 228210150822262702568674774219878072803,
+  "m31_right_entries_log2": 127.42363057006871,
+  "scope": "Exhaustive H challenges and eight outside-H controls per deterministic admissible sample; not uniform E challenges, native verification, or a practical M31 decoder."
+}

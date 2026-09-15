@@ -1,0 +1,4083 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array,enumitem}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern,microtype,xurl,hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+\setlength{\emergencystretch}{3em}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newcommand{\F}{\mathbb F}
+\newcommand{\RS}{\operatorname{RS}}
+\newcommand{\dist}{\operatorname{dist}}
+\newcommand{\List}{\operatorname{List}}
+\title{Counterexamples to List and Line Decodability Bounds\\over Prime Fields}
+\author{Justin Thaler}
+\date{Working draft --- September 15, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+Security analyses of hash-based SNARKs use quantitative statements about
+list decoding and proximity gaps of error-correcting codes. We give
+counterexamples to several proposed bounds for Reed--Solomon codes over
+prime fields. The results concern the dependence on the code rate, the
+gap from capacity, the field size, and the evaluation domain.
+
+For every fixed rational rate $\rho\in(0,1)$, we construct codes with
+$2^{\Omega_\rho(n)}$ codewords agreeing with one received word on
+$(\rho+\eta)n$ coordinates, where
+$\eta=\Theta_\rho(1/\sqrt{n\log n})$ and
+$\log_2p=\Theta_\rho(\sqrt{n\log n})$. The domain is an integer
+interval embedded in $\F_p$, and the radius lies strictly below the
+characteristic-based Elias bound. Thus no
+$\exp(O_\rho(1/\eta))$ list bound holds uniformly over prime fields
+and evaluation domains. The construction follows by counting subsets
+with matching moments. Concentration and exact polynomial-weight
+certificates sharpen the finite bounds.
+
+We also separate list size from the number of nearby points on an
+affine line. A large list gives an affine line with many nearby points
+and no correlated agreement. A separate lift preserves a selected-list
+obstruction at a fixed positive gap and arbitrarily large lengths.
+Finally, at gap $1/n$, we construct codes whose maximum list size is
+exactly $n-k-1$, but with $\binom n{k+1}$ uniquely nearby points on
+one affine line. This parameter count attains an unconditional
+puncturing bound at that radius. The same generic domains have an exact list-size
+profile at every integer Hamming radius below $n-k$.
+
+Finite constructions on the norm-one circle give examples in the
+polynomial spaces used by Circle STARKs. We apply the general results
+to the quantitative list and line assumptions in the S-two whitepaper,
+keeping the coding conclusions separate from claims about a complete
+protocol's soundness.
+\end{abstract}
+
+\section{Introduction}
+
+Many hash-based SNARKs ask the prover to commit to evaluations of
+low-degree polynomials. The verifier then checks a small number of
+positions and random linear combinations of the committed words.
+Analyzing these checks requires quantitative information about the
+underlying code. How many low-degree polynomials can be close to one
+word? How many points on an affine line can be close to the code?
+When do the nearby polynomials imply a common agreement set for the
+original words?
+
+These are coding-theoretic questions, but the numerical answers enter
+soundness calculations. A bound that is polynomial in the block length
+may be adequate for an asymptotic theorem and inadequate for a claimed
+concrete security level. Likewise, a bound proved for random evaluation
+domains does not automatically apply to a prescribed subgroup. The
+field size, domain, and order of quantifiers must be explicit.
+
+This paper gives counterexamples to quantitative list and line bounds
+over prime fields. The main results are independent of any particular
+proof system. We first prove the general statements, then give finite
+circle-code examples and apply them to the S-two analysis.
+
+A useful starting point is the root bound. A nonzero polynomial of
+degree less than $k$ has fewer than $k$ roots, so two distinct
+Reed--Solomon codewords cannot agree in $k$ positions. This proves a
+minimum-distance guarantee. It does not answer the first question
+above: many polynomials may each agree with an arbitrary received word
+in more than $k$ positions, using different agreement sets.
+
+Write $n$ for the number of evaluation points and $\rho=k/n$ for the
+rate. We consider agreement on at least $(\rho+\eta)n$ positions,
+equivalently relative distance at most $1-\rho-\eta$. The gap
+$\eta>0$ is the excess agreement over the rate. Throughout the paper,
+we distinguish the largest list at one received word, the number of
+nearby parameters on an affine line, and correlated agreement across
+that line. None of these quantities can be substituted for another
+without a theorem relating them.
+
+\subsection{The main result}
+
+Our first result concerns a particularly simple evaluation domain:
+$0,1,\ldots,n-1$ in a prime field.
+
+\begin{theorem}[Exponential lists on integer intervals, informal]
+\label{thm:informal}
+Fix any rational rate $0<\rho<1$. For arbitrarily large $n$, there is a
+prime $p$, a rate-$\rho$ Reed--Solomon code over $\F_p$, and a received
+word with $2^{\Omega_\rho(n)}$ nearby codewords, where
+\[
+ \eta=\Theta_\rho\!\left(\frac{1}{\sqrt{n\log n}}\right),
+ \qquad \log_2p=\Theta_\rho(\sqrt{n\log n}).
+\]
+Every listed codeword agrees with the received word on exactly
+$(\rho+\eta)n$ positions. The associated distance is strictly below
+the characteristic-based Elias radius.
+\end{theorem}
+
+The field is large, but its logarithm is sublinear in the block length.
+The list is much larger than any bound of the form
+$c_1 2^{c_2 H_2(\rho)/\eta}$ with constants depending only on the rate:
+the logarithm of that proposed bound is $O_\rho(\sqrt{n\log n})$,
+whereas the logarithm of our list size is $\Omega_\rho(n)$.
+Here $H_2$ is binary entropy. For a fixed rate it is simply a positive
+constant.
+
+The qualification about the field and domain matters. This is a
+statement about what can be guaranteed for \emph{every} prime-field
+Reed--Solomon code. It does not give exponential lists at a fixed
+positive gap, or when the prime is required to be polynomial in $n$.
+
+\paragraph{Finite and uniform refinements.}
+The moment count also gives explicit certificates. At length $64$ and
+dimension $32$, Proposition~\ref{prop:polynomial-moment-weights}
+proves a list of at least $5{,}074{,}503{,}250{,}115$ codewords with
+$34$ agreements. Proposition~\ref{prop:moment-concentration} gives
+an analytic refinement: for each fixed number $m$ of canceled
+coefficients and fixed limiting rate, concentration improves the
+full-range counting guarantee by a factor of order $n^{m/2}$.
+The exact checks certify the finite arithmetic; the proofs establish
+the asymptotic statements.
+
+\subsection{Why the construction works}
+
+There is a useful way to reverse the usual root-counting argument.
+Choose a set $A$ of $r=k+s$ evaluation points, and form its root
+polynomial
+\[
+ F_A(X)=\prod_{a\in A}(X-a).
+\]
+Suppose many choices of $A$ give the same coefficients in degrees
+$r,r-1,\ldots,k$. Let $W$ be this common high-degree part. Then
+$G_A=W-F_A$ has degree less than $k$, and it agrees with $W$ at every
+point of $A$. Thus each such set produces a member of one decoding
+list. The problem has become a counting question about leading
+coefficients.
+
+Those coefficients are determined by the first $s$ power sums of $A$.
+When $A\subseteq\{0,\ldots,n-1\}$, each power sum is a relatively
+small \emph{integer}. There are $\binom nr$ possible sets, but far
+fewer possible vectors of $s$ power sums. Some vector must occur many
+times. The crucial point is that we count these vectors over the
+integers \emph{before choosing the prime}. The count therefore does
+not grow with the field size.
+
+For a small example, take
+\[
+ A=\{0,1,6,7\},\qquad B=\{0,2,5,7\}.
+\]
+Both sets have size four and sum fourteen. Their root polynomials
+therefore begin with $X^4-14X^3$. Subtracting either polynomial from
+$W=X^4-14X^3$ leaves a polynomial of degree at most two. Over any prime
+larger than seven, on the domain $\{0,\ldots,7\}$ each agrees with $W$
+at four positions. The general construction repeats this idea with
+many more sets and more moments. This example illustrates the
+mechanism; its two codewords are not the quantitative lower bound of
+Theorem~\ref{thm:informal}.
+
+\subsection{Lines of received words}
+
+Proof systems often test a random linear combination of several words.
+This leads to a related question. Suppose many words on an affine line
+$f_z=f_0+zf_1$ are close to the code. Must the nearby codewords fit
+together into a single affine line of codewords? Must $f_0$ and $f_1$
+agree with two codewords on a large common set of coordinates?
+
+We give three constructions, because these questions have different
+quantifiers.
+
+\paragraph{Many nearby points without correlated agreement.}
+A large list can be converted into a line by dividing by $X-\tau$,
+where $\tau$ lies outside the evaluation domain. This division lowers
+the witness degree by one. It also makes the direction word
+$1/(X-\tau)$ unable to agree with a low-degree polynomial on too many
+points. A collision count ensures that many members of the original
+list give different parameters $z$.
+
+\paragraph{An obstruction that persists at a fixed gap.}
+The gap in Theorem~\ref{thm:informal} shrinks with $n$. To address
+asymptotic claims at a fixed gap, we start with one fixed large list
+and replace each evaluation point by $B$ points on which $X^B$ has
+the same value. Polynomial composition preserves the rate, relative
+agreement, and list size. Suitable prime fields exist for every $B$.
+
+A selection argument then shows that the coefficient of $n$ in a
+line-decodability threshold must account for this list size. If the
+coefficient is smaller, no additive term that is $o(n)$ along the
+resulting family can repair it. This second construction
+\emph{does} have correlated agreement. It rules out a sublinear
+remainder along this fixed-gap family.
+
+\paragraph{Small lists with many isolated nearby line points.}
+Large lists are not the only obstruction. At every fixed rate $\rho=k/n$,
+we also construct codes whose maximum list size is exactly $n-k-1$,
+together with a line having $\binom n{k+1}$ nearby parameters. Each
+nearby word has a unique nearby codeword, yet no parametrized codeword
+line contains more than $n-k$ of those witnesses. The gap is $1/n$.
+At rate one-half these bounds are $n/2-1$, $\binom n{n/2+1}$, and $n/2$,
+respectively. The construction combines
+an elementary line spanned by consecutive powers with a domain chosen
+using a known list-decoding theorem for random Reed--Solomon codes.
+Proposition~\ref{prop:puncturing-bound} shows that its nearby-parameter
+count is optimal among lines without correlated agreement at this radius.
+
+\subsection{Finite examples on circle codes}
+
+We also study a different regime: the fixed prime $p=2^{31}-1$ and
+domains on the norm-one circle. These are structured evaluation
+domains used by Circle STARKs. At the common parameters
+\[
+ n=2^{26},\qquad \rho=\frac12,\qquad
+ \eta=\frac{33}{1024}-\frac{2}{n},
+\]
+we obtain the following finite lower bounds:
+\begin{center}
+\begin{tabular}{lr}
+\toprule
+Object constructed & Guaranteed size\\
+\midrule
+One base-field decoding list & $>2^{40}$\\
+Distinct nearby parameters on an extension-field line & $>2^{74}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+The line has no correlated agreement at the specified threshold.
+The constructions give existence with explicit numerical certificates;
+they do not enumerate these very large lists.
+Section~\ref{sec:circle-overview} explains the idea, and
+Appendix~\ref{app:circle} gives the coefficient calculations.
+
+\subsection{Context and organization}
+
+Proximity gaps are established tools in the analysis of low-degree
+tests~\cite{bciks,bchks}. In particular, existing theorems give
+proximity guarantees in specified radius regimes. Our fixed-rate
+asymptotic examples have $\eta\to0$ and eventually lie beyond the
+Johnson radius $1-\sqrt\rho$, although they remain below the
+characteristic-based Elias radius. The distinction between these
+radii is essential when comparing the results with proved soundness
+bounds for a low-degree test.
+
+The connection between equal subset moments, elementary symmetric
+functions, and Reed--Solomon decoding is established prior work;
+Gandikota, Ghazi, and Grigorescu use this connection in decoding
+hardness results~\cite{ggg}. The results here use quantitative
+counts on integer intervals to obtain the stated list and line
+separations. The number-theoretic splitting theorem used in the lift is
+also classical.
+
+Krachun, Kazanin, and Hab\"ock~\cite{kkh} construct large lists and
+affine-line obstructions on multiplicative subgroups of prime fields,
+with a gap of order $1/\log n$. Our interval construction addresses
+a different family of domains and gives lists larger than every fixed
+exponential in the reciprocal gap. The multiplicative structure of
+their examples remains a separate advantage. Our finite circle
+examples concern the evaluation spaces of Circle STARKs~\cite{circle}.
+
+The Proximity Prize's orbit-pencil upper certificate also uses
+multiplicative fibers and a fixed core~\cite{orbit-pencil}. Our circle
+construction expresses the analogous core through a common anchor and
+division at two circle points. Appendix~\ref{app:common-core} makes this
+change of presentation explicit. The contest's field, code, and score
+are different from the circle specialization considered here.
+
+The distinction between fixed and shrinking gap separates our
+results from the fixed-gap polynomial-in-$n$ list bound stated in the
+recent preprint of Jeronimo~\cite{jeronimo}. Our exponential-list
+family has a shrinking gap. Our fixed-gap family preserves a fixed finite
+list of witnesses as $n$ grows; it does not bound the full decoding list
+by that constant. Neither construction contradicts such a polynomial bound.
+
+Sections~\ref{sec:lists}--\ref{sec:actual-list} prove the general list
+and line results. Section~\ref{sec:circle-overview} gives finite circle
+examples. Section~\ref{sec:snark-security} explains what these results
+imply for hash-based SNARK analyses, and Section~\ref{sec:stwo}
+applies them to S-two. Section~\ref{sec:coding-open-questions} states
+the remaining coding-theoretic questions. The appendices contain the
+circle proofs, quotient calculations, and finite certificates.
+
+% General coding-theory sections. Uses the shared theorem environments in main.tex.
+\section{Large lists from subsets with equal moments}
+\label{sec:lists}\label{im:section}
+
+The construction starts with a simple observation: if two polynomials differ
+by a polynomial whose roots are a set $A$, then they agree at every point of
+$A$. We will choose many sets $A$ whose vanishing polynomials have the same
+leading coefficients. Subtracting those common coefficients will give many
+low-degree polynomials close to one received word.
+
+\paragraph{Notation.}
+For a field $F$ and a set $D\subset F$ of $n$ distinct points, write
+\[
+ \RS(F,D,k)=\{(P(x))_{x\in D}:\deg P<k\}.
+\]
+This code has dimension $k$ and rate $\rho=k/n$, provided $k\le n$.
+The relative Hamming distance between two words is the fraction of coordinates
+on which they differ. A list at radius $\theta$ consists of all codewords
+within that distance of a received word. Write $\ell_C(\theta)$ for the largest
+such list over all received words. We parameterize the radius by
+\[
+ \theta=1-\rho-\eta.
+\]
+Thus a nearby codeword agrees with the received word on at least a
+$\rho+\eta$ fraction of the coordinates. We call $\eta>0$ the gap from
+$1-\rho$.
+
+All logarithms are base two, and
+$H_2(t)=-t\log_2t-(1-t)\log_2(1-t)$ is binary entropy. For characteristic $p$,
+define
+\[
+ H_p(t)=\frac{H_2(t)+t\log_2(p-1)}{\log_2p}.
+\]
+The characteristic-based Elias radius is the solution of
+$H_p(r_E)=1-\rho$ on the increasing branch $[0,1-1/p]$.
+We will keep our examples strictly below this radius. The simple estimate
+\begin{equation}\label{im:entropy}
+ H_p(\theta)\le\theta+\frac1{\log_2p}
+\end{equation}
+shows that it suffices to have $\eta\log_2p>1$.
+In our prime-field examples $p>n$ and $\rho\ge1/n$, so
+$0\le\theta<1-1/p$ as required.
+
+\subsection{Why matching moments produces a list}
+
+Consider the $34$-element subsets $A$ of $\{0,\ldots,63\}$. Their vanishing
+polynomials begin
+\[
+ F_A(X)=\prod_{a\in A}(X-a)
+ =X^{34}-\Bigl(\sum_{a\in A}a\Bigr)X^{33}
+   +\Bigl(\sum_{a<b\in A}ab\Bigr)X^{32}+\cdots.
+\]
+Subsets with the same sum and the same sum of squares have the same three
+leading coefficients, because
+\[
+ \sum_{a<b\in A}ab
+ =\frac{(\sum_{a\in A}a)^2-\sum_{a\in A}a^2}{2}.
+\]
+Let $W$ be those common leading terms. Each polynomial $W-F_A$ has degree
+less than $32$ and agrees with $W$ at exactly the $34$ points of $A$.
+Consequently, a large class of subsets sharing these two moments gives a
+large list in a rate-one-half Reed--Solomon code.
+
+For the general construction we fix the first $s$ moments. It is convenient
+to use \emph{binomial moments}, $\sum_{a\in A}\binom aj$, because their
+integer ranges can be counted exactly. They determine the usual power sums
+and hence the leading coefficients in exactly the same way.
+
+\begin{lemma}[A finite list bound]\label{im:finite-list}
+Let $n\ge2$, $k\ge1$, $s\ge1$, and $t=k+s<n$. Let $p>n$ be prime and
+$D=\{0,\ldots,n-1\}\subset\F_p$. Put
+\[
+ R_j=\binom n{j+1}-\binom{n-t}{j+1}-\binom t{j+1}+1
+ \quad(1\le j\le s),\qquad
+ L=\left\lceil\frac{\binom nt}{\prod_{j=1}^sR_j}\right\rceil.
+\]
+There is a received word with at least $L$ distinct codewords of
+$\RS(\F_p,D,k)$ at distance exactly $1-t/n$.
+If $p>\max_j(R_j-1)$, its entire list at radius $1-t/n$ corresponds
+exactly to one class of subsets with equal integer binomial moments.
+\end{lemma}
+\begin{proof}
+For each $t$-subset $A\subset D$, record
+$T_j(A)=\sum_{a\in A}\binom aj$ for $1\le j\le s$.
+The minimum and maximum values of $T_j$ occur on the first and last $t$
+integers in $D$. The identity
+$\sum_{a=0}^{b-1}\binom aj=\binom b{j+1}$ gives their values as
+\[
+ \binom t{j+1}\quad\hbox{and}\quad
+ \binom n{j+1}-\binom{n-t}{j+1}.
+\]
+There are therefore at most $\prod_jR_j$ moment vectors. By pigeonhole,
+at least $L$ subsets share one vector.
+
+Equal binomial moments imply equal power sums through degree $s$: each
+$X^j$ is an integer linear combination of
+$\binom X0,\ldots,\binom Xj$, and all subsets have size $t$.
+Newton identities then imply equal elementary symmetric functions through
+degree $s$. These identities are valid modulo $p$ since $p>n>s$.
+Thus the monic polynomials $F_A(X)=\prod_{a\in A}(X-a)$ have the same
+coefficients in degrees $t,t-1,\ldots,t-s=k$. Let $W$ be their common
+degree-$\ge k$ part. Then $P_A=W-F_A$ has degree less than $k$ and
+agrees with $W$ exactly on $A$: outside $A$, each factor of
+$F_A(x)=\prod_{a\in A}(x-a)$ is nonzero in the field because
+$p>n$ makes the evaluation points distinct. Different subsets give different codewords,
+since these polynomials have degree less than $n$.
+
+For the last assertion, any codeword $P$ in the list makes $W-P$ a monic
+degree-$t$ polynomial with at least $t$ roots in $D$. It must therefore be
+$F_A$ for a $t$-subset $A$. Its first $s$ binomial moments are congruent
+to those of the selected class modulo $p$. Each lies in an integer interval
+of width $R_j-1<p$, so the congruences are equalities.
+\end{proof}
+
+\subsection{An exponential list and a subexponential proposed bound}
+
+There are exponentially many subsets of a fixed density. Fixing a modest
+number of moments divides them into far fewer classes. The following choice
+of parameters makes this discrepancy precise.
+
+\begin{theorem}[No uniform $\exp(O_\rho(1/\eta))$ list bound]
+\label{im:all-list}
+Fix a rational rate $\rho\in(0,1)$. For arbitrarily large $n$, there are
+prime-field Reed--Solomon codes of exact rate $\rho$, on
+$D=\{0,\ldots,n-1\}$, with
+\[
+ \eta=\Theta_\rho\!\left(\frac1{\sqrt{n\log n}}\right),\qquad
+ \log_2p=\Theta_\rho(\sqrt{n\log n}),\qquad
+ \log_2\ell_C(1-\rho-\eta)=\Omega_\rho(n).
+\]
+The radius lies strictly below the characteristic-based Elias radius.
+Consequently no finite constants $c_1,c_2>0$ make
+\begin{equation}\label{im:proposed-list}
+ \ell_C(1-\rho-\eta)\le c_1 2^{c_2H_2(\rho)/\eta}
+\end{equation}
+hold uniformly over prime fields, evaluation domains, and these radii.
+The same sequence works for every fixed pair $c_1,c_2$.
+\end{theorem}
+\begin{proof}
+Let $n$ grow through multiples of the denominator of $\rho$ and set
+$k=\rho n$. Choose a constant $c>0$ with $c^2<4H_2(\rho)$, and put
+\[
+ s=\left\lfloor c\sqrt{\frac n{\log_2n}}\right\rfloor,
+ \qquad t=k+s,\qquad\eta=s/n.
+\]
+For large $n$, the hypotheses of Lemma~\ref{im:finite-list} hold.
+Retaining the factorials in the binomial coefficients gives
+$R_j\le2\binom n{j+1}\le2(3n/(j+1))^{j+1}$. Hence
+\[
+ \log_2\prod_{j=1}^sR_j
+ \le s+\sum_{j=1}^s(j+1)\log_2\frac{3n}{j+1}
+ =\frac{s^2}{2}\log_2\frac ns+O(s^2+s\log n)
+ =\left(\frac{c^2}4+o(1)\right)n.
+\]
+The middle equality follows by summing $j\log j$, or by integral
+comparison. The final equality uses
+$\log_2(n/s)=\tfrac12\log_2n+O(\log\log n)$.
+On the other hand, $\log_2\binom nt=H_2(\rho)n+o(n)$. The lemma gives
+\begin{equation}\label{im:exponential-bank}
+ \log_2L\ge\left(H_2(\rho)-\frac{c^2}4-o(1)\right)n=\Omega_\rho(n).
+\end{equation}
+Choose any constant $A>H_2(\rho)/c$. Bertrand's postulate supplies a prime with
+$\log_2p=A\sqrt{n\log_2n}+O(1)$. Eventually $p>n$ and
+$\eta\log_2p\to cA>H_2(\rho)$. Since
+$H_2(1-\rho-\eta)\to H_2(\rho)$, the sharper entropy estimate
+$H_p(\theta)\le\theta+H_2(\theta)/\log_2p$ proves the Elias condition.
+In contrast, the logarithm of the right-hand side
+of~\eqref{im:proposed-list} is
+\[
+ \log_2c_1+c_2H_2(\rho)\frac ns
+ =O_{\rho,c_1,c_2}(\sqrt{n\log n})=o(n).
+\]
+It is eventually smaller than the logarithm of the constructed list.
+\end{proof}
+
+The rate is fixed, while the gap decreases and the prime grows.
+The theorem leaves open stronger bounds under restrictions on the domains
+or on the relation between field size and block length.
+
+\paragraph{Finite examples.}
+At $p=2^{127}-1$, $n=64$, $k=32$, $s=2$, Lemma~\ref{im:finite-list} gives
+\[
+ L>2^{35}.
+\]
+Proposition~\ref{prop:conditional-moments} below strengthens this to
+$L\ge5074503250115>2^{42}$ by Proposition~\ref{prop:polynomial-moment-weights}. Here $\eta=1/32$, so the choice
+$c_1=c_2=1$ in \eqref{im:proposed-list} gives only $2^{32}$;
+the improved ratio exceeds $1181$.
+The exact inequality $p^2>2^{64}$ verifies the sufficient Elias condition.
+At $p=2^{521}-1$, $n=4096$, $k=2048$, $s=8$, the same formula gives
+$L>2^{3600}$, compared with $2^{512}$. The exact inequality
+$p^8>2^{4096}$ verifies Elias. At $c_1=1$, this example forces $c_2>7$.
+A larger example over the same prime forces $c_2>22$.
+Appendix~\ref{app:finite-certificates} records the exact parameters and counts.
+As a small check of the algebra, among the $12{,}870$ eight-subsets of
+$\{0,\ldots,15\}$, the binomial-moment class $(56,252)$ has exactly $22$
+members. Over $p=2^{31}-1$, they give $22$ distinct degree-$<6$ polynomials,
+each agreeing with the common word at exactly eight positions.
+
+\subsection{Sharper finite bounds from conditional moments}
+\label{sec:conditional-moments}
+
+The product of moment ranges in Lemma~\ref{im:finite-list} counts
+many combinations without using how the moments depend on each other.
+For two moments, one can first fix the sum of the selected integers,
+then bound the spread of the second binomial moment within that class.
+Both steps can be computed exactly without enumerating the subsets.
+
+\begin{proposition}[Conditional range and dispersion bounds]
+\label{prop:conditional-moments}
+Let $3\le t<n$, $k=t-2$, and $p>n$ be prime. For an integer $q$,
+let $\mathcal A_q$ be the family of $t$-subsets of
+$\{0,\ldots,n-1\}$ with sum $q$, and put
+\[
+ C_q=|\mathcal A_q|,\qquad
+ Y_A=\sum_{a\in A}\binom a2.
+\]
+For $C_q>0$, let $l_q$ and $u_q$ be the minimum and maximum of
+$Y_A$ in this family. There is a received word for
+$\RS(\F_p,\{0,\ldots,n-1\},k)$ whose list at radius $1-t/n$
+has size at least
+\begin{equation}\label{eq:conditional-range}
+ \left\lceil\frac{C_q}{u_q-l_q+1}\right\rceil.
+\end{equation}
+More generally, choose an integer $c\in[l_q,u_q]$ and an integer
+$r\ge0$. Define
+\[
+ D_q(c)=\sum_{A\in\mathcal A_q}(Y_A-c)^2,\qquad
+ W_q(c,r)=\min(u_q,c+r)-\max(l_q,c-r)+1.
+\]
+Then a possibly different received word has a list of size at least
+\begin{equation}\label{eq:conditional-dispersion}
+ \left\lceil
+ \frac{\max\{0,C_q-\lfloor D_q(c)/(r+1)^2\rfloor\}}
+      {W_q(c,r)}\right\rceil.
+\end{equation}
+Every codeword produced by these bounds agrees in exactly $t$ positions.
+\end{proposition}
+\begin{proof}
+Pigeonhole over the integer values of $Y_A$ proves
+\eqref{eq:conditional-range}. For the second bound, every subset with
+$|Y_A-c|>r$ contributes at least $(r+1)^2$ to $D_q(c)$. Thus at most
+$\lfloor D_q(c)/(r+1)^2\rfloor$ subsets lie outside the specified
+interval. The remaining subsets occupy at most $W_q(c,r)$ integer
+values, proving \eqref{eq:conditional-dispersion} by pigeonhole.
+In either case, a class shares its first two binomial moments.
+The polynomial construction in Lemma~\ref{im:finite-list} applies.
+\end{proof}
+
+\paragraph{Exact computation.}
+Process the integers $0,\ldots,n-1$ in order. For each subset size
+and first-moment sum, store its count, the minimum and maximum of
+$Y$, and the two totals $S=\sum Y$ and $Q=\sum Y^2$.
+On adding the integer $j$, put $b=\binom j2$. A predecessor record
+with count $C$ contributes
+\[
+ C,\qquad S+bC,\qquad Q+2bS+b^2C
+\]
+to the new count and totals; its minimum and maximum each increase
+by $b$. Merge the contributions from taking and omitting $j$.
+The desired squared deviation is then
+$D_q(c)=Q-2cS+c^2C$.
+There are $O(nt^2)$ possible size--sum states and $n$ stages,
+giving $O(n^2t^2)$ integer operations and $O(nt^2)$ records.
+All stored integers have $O(n+\log n)$ bits. No assumption that the
+second moment fills its entire range is needed.
+
+\paragraph{A stronger length-$64$ certificate.}
+For $n=64$ and $t=34$, conditioning on $q=1061$ gives
+$C_q=8558724088132137$, $l_q=17784$, and $u_q=25714$.
+The range bound alone gives $1079148163931$ codewords.
+The dispersion bound is stronger. For $q=1071$, take $c=22138$
+and $r=1076$. The exact counts are
+\[
+ \begin{aligned}
+ C_q&=8634334451040106,\\
+ D_q(c)&=3337241714848691877182,\\
+ C_q-\left\lfloor\frac{D_q(c)}{1077^2}\right\rfloor
+   &=5757225839350346,\qquad W_q(c,r)=2153.
+ \end{aligned}
+\]
+Consequently,
+\begin{equation}\label{eq:conditional-n64}
+ \ell_C(15/32)\ge
+ \left\lceil\frac{5757225839350346}{2153}\right\rceil
+ =2674048230075>2^{41},
+ \qquad C=\RS(\F_p,\{0,\ldots,63\},32).
+\end{equation}
+This holds for every prime $p>64$. At $p=2^{127}-1$, the original
+certificate $p^2>2^{64}$ keeps the radius strictly below Elias.
+The dispersion bound exceeds the product-range bound by a
+factor of $53$, and exceeds $2^{1/\eta}=2^{32}$ by a factor of $622$.
+These are certified list lower bounds; neither is an exact maximum
+list size or an enumeration of the large moment class.
+
+The script \path{checks/verify_conditional_moments.py} checks all
+counts, extrema, and moment totals against exhaustive enumeration for
+$66$ smaller parameter pairs, covering $32{,}180$ subsets.
+It independently verifies both displayed conditional counts using
+the coefficient identity
+\[
+ [y^t]\prod_{j=0}^{n-1}(1+yx^j)
+ =x^{\binom t2}\prod_{j=1}^t\frac{1-x^{n-t+j}}{1-x^j}.
+\]
+Summing the conditional moment totals also agrees with the direct
+one-element and two-element inclusion counts over all $t$-subsets.
+
+\paragraph{Signed polynomial weights.}
+The interval argument can be sharpened further: instead of charging every
+retained moment value equally, assign a polynomial weight to each value.
+Negative weights outside favored ranges are allowed and improve the bound.
+
+\begin{proposition}[Polynomial-weight refinement]
+\label{prop:polynomial-moment-weights}
+Use the notation of Proposition~\ref{prop:conditional-moments}, fix an
+integer $c$, and put
+\[
+ M_j=\sum_{A\in\mathcal A_q}(Y_A-c)^j.
+\]
+For any polynomial $P(Z)=\sum_{j=0}^d b_jZ^j$ with rational
+coefficients, define
+\[
+ S_P=\sum_{y=l_q}^{u_q}\max\{P(y-c),0\}.
+\]
+If $S_P>0$, there is a received word whose list at radius $1-t/n$
+has size at least
+\begin{equation}\label{eq:polynomial-weight-bound}
+ \max\left\{0,\left\lceil
+ \frac{\sum_{j=0}^d b_jM_j}{S_P}\right\rceil\right\}.
+\end{equation}
+Each resulting codeword agrees in exactly $t$ positions.
+\end{proposition}
+\begin{proof}
+Let $N_y$ count the members of $\mathcal A_q$ with second moment $y$,
+and let $L=\max_yN_y$. Since $0\le N_y\le L$,
+\[
+ \sum_j b_jM_j=\sum_y N_yP(y-c)
+ \le L\sum_y\max\{P(y-c),0\}=LS_P.
+\]
+The equal-moment construction then gives the asserted codeword list.
+No positivity assumption on $P$ over the entire moment range is needed.
+\end{proof}
+
+Taking $P(Z)=h^2-Z^2$ gives the particularly simple certificate
+\[
+ L\ge\left\lceil
+ \frac{C_qh^2-D_q(c)}{h(4h^2-1)/3}\right\rceil
+ \quad\text{when }C_qh^2>D_q(c).
+\]
+Here the denominator sums positive weights over all integers, so it
+remains a valid upper bound if the actual moment range is shorter.
+The preceding $q=1071$, $c=22138$ data with $h=1077$ already give
+$L\ge4009211058641$ without computing any further moments.
+
+\paragraph{An exact length-$64$ certificate.}
+Continue with $n=64$, $t=34$, $q=1071$, and $c=22138$.
+The exact second-moment range is $[17969,26129]$. Define the monic
+degree-$20$ polynomial $P(Z)=\prod_{r\in R}(Z-r)$, where
+\[
+\begin{split}
+R=\{&-4169,-2688,-2687,-2062,-2059,-1507,-1472,\\
+    &-1038,-868,-643,647,870,1039,1464,1498,\\
+    &2035,2038,2637,2638,3991\}.
+\end{split}
+\]
+Exact evaluation of~\eqref{eq:polynomial-weight-bound} yields
+\begin{equation}\label{eq:weighted-n64}
+ \ell_C(15/32)\ge5074503250115>2^{42},\qquad
+ C=\RS(\F_p,\{0,\ldots,63\},32),\quad p>64.
+\end{equation}
+This exceeds the original product-range certificate by a factor of
+$101$, the preceding dispersion certificate by a factor of $1.89$,
+and $2^{32}$ by a factor of $1181$. At $p=2^{127}-1$, the same
+below-Elias certificate applies. These remain list lower bounds,
+not exact maximum list sizes.
+
+For reproducibility, extend the count recurrence to raw moment totals
+$T_r=\sum Y_A^r$ for $0\le r\le20$. Adding an integer $a$ with
+$b=\binom a2$ contributes
+\[
+ T'_r=\sum_{j=0}^r\binom rj b^{r-j}T_j,
+ \qquad
+ M_r=\sum_{j=0}^r\binom rj(-c)^{r-j}T_j.
+\]
+The positive-weight denominator is an exact sum over $8161$ integers.
+The files in \path{moment_certificates/} record all raw and
+centered moments, polynomial coefficients, numerator, and denominator.
+The polynomial was discovered numerically, then replaced by the
+displayed integer-root polynomial. Its proof and certificate verification
+use only integer arithmetic; numerical optimizer tolerances play no role.
+The checker compares every moment through degree $20$ with exhaustive
+small-subset enumeration and independently checks the length-$64$
+moments using complementary $30$-subsets.
+
+The weighted inequality applies to any finite signature map, but its
+application to a prescribed evaluation domain requires statistics for
+that domain's coefficient signatures. The interval moments above do not
+by themselves supply such statistics for a multiplicative NTT subgroup.
+
+\subsection{A uniform concentration bound for several moments}
+\label{sec:moment-concentration}
+
+The improvement is not limited to a computed length-$64$ example.
+Concentrating the moment signatures near their means saves a polynomial
+factor for every fixed number of canceled coefficients.
+
+\begin{proposition}[Concentration of triangular moment signatures]
+\label{prop:moment-concentration}
+Let $1\le m<t<n$, $k=t-m$, and let $p>n$ be prime.
+Choose rational coefficients $c_{ji}$ and functions
+\[
+ b_j(a)=\binom aj+\sum_{i=1}^{j-1}c_{ji}\binom ai,
+ \qquad 1\le j\le m,\quad 0\le a<n.
+\]
+For a uniformly chosen $t$-subset $A$ of $\{0,\ldots,n-1\}$,
+write $B_j(A)=\sum_{a\in A}b_j(a)$ and define
+\[
+ \overline b_j=\frac1n\sum_{a=0}^{n-1}b_j(a),\qquad
+ V_j=\frac{t(n-t)}{n-1}
+       \left(\frac1n\sum_{a=0}^{n-1}b_j(a)^2-\overline b_j^{\,2}\right),
+ \qquad h_j=\left\lceil\sqrt{(m+2)V_j}\right\rceil.
+\]
+Then $C=\RS(\F_p,\{0,\ldots,n-1\},k)$ satisfies
+\begin{equation}\label{eq:moment-concentration}
+ \ell_C(1-t/n)\ge
+ \left\lceil\frac{2\binom nt}
+ {(m+2)\prod_{j=1}^m(2h_j+1)}\right\rceil.
+\end{equation}
+The constructed codewords agree in exactly $t$ positions.
+\end{proposition}
+\begin{proof}
+The inclusion probabilities $t/n$ and $t(t-1)/(n(n-1))$ give
+$\mathbb E B_j=t\overline b_j$ and $\operatorname{Var}(B_j)=V_j$.
+Here $V_j>0$: $b_j$ is a nonconstant polynomial of degree $j<n$
+on $n$ distinct integers, and $0<t<n$.
+Chebyshev's inequality and a union bound show that at least a
+$2/(m+2)$ fraction of all subsets satisfy
+$|B_j-t\overline b_j|\le h_j$ for every $j$.
+
+For the first coordinate there are at most $2h_1+1$ possible integer
+values. Given the earlier coordinates, triangular inversion fixes the
+earlier binomial moments, and $B_j$ differs from the integer
+$\sum_{a\in A}\binom aj$ by a fixed rational number. Hence its
+interval contains at most $2h_j+1$ possible values. There are at most
+$\prod_j(2h_j+1)$ retained signatures. Pigeonhole and triangular
+inversion give a class sharing its first $m$ integer binomial moments.
+Lemma~\ref{im:finite-list} applies. Rational changes of coordinates
+are used only for counting; no reduction of their denominators modulo
+$p$ is required.
+\end{proof}
+
+For fixed $m$ and $t/n\longrightarrow\rho\in(0,1)$, choosing
+all $c_{ji}=0$ gives $V_j=\Theta_{\rho,m}(n^{2j+1})$ and therefore
+\[
+ \ell_C(1-t/n)=\Omega_{\rho,m}\left(
+       \frac{\binom nt}{n^{m(m+2)/2}}\right).
+\]
+The product of complete moment ranges instead has order
+$n^{m(m+3)/2}$ in its denominator. Thus concentration improves that
+guarantee by a factor of order $n^{m/2}$. This comparison fixes $m$;
+it does not replace the separate estimates when $m$ grows with $n$.
+
+\paragraph{Two moments with explicit constants.}
+For $m=2$, take $b_1(a)=a$ and
+$b_2(a)=\binom a2-(n-2)a/2$. These centered population functions
+are uncorrelated, and their subset-sum variances are
+\[
+ V_1=\frac{t(n-t)(n+1)}{12},\qquad
+ V_2=\frac{t(n-t)(n+1)(n^2-4)}{720}.
+\]
+Consequently~\eqref{eq:moment-concentration} implies
+\[
+ \ell_C(1-t/n)\ge
+ \left(\frac{3\sqrt{60}}{8\rho(1-\rho)}+o(1)\right)
+ \frac{\binom nt}{n^4}
+ \quad\text{if }t/n\longrightarrow\rho\in(0,1).
+\]
+At $n=64,t=34$, the exact variances are $5525$ and $376805$,
+and $h_1=149,h_2=1228$. This gives $1102772374154$ codewords
+without the conditional dynamic program. The degree-$20$ certificate
+is stronger at that length. The script
+\path{moment_certificates/verify_concentration.py} checks the
+variance identities, triangular signature counts, and finite bounds
+against exhaustive small-subset enumeration.
+
+
+
+\section{From large lists to nearby codewords on a line}
+\label{sec:lines}
+
+List-decoding asks about one received word. Line-decodability asks how
+nearby codewords can vary along an affine family of received words
+$f(z)=f_0+zf_1$. Its selected-witness formulation asks whether many chosen
+nearby codewords must themselves follow one affine rule in $z$.
+
+\begin{definition}[Selected-witness line-decodability]
+Let $C\subseteq F^n$ be linear. Say that $C$ is line-decodable at radius
+$\theta$, threshold $a$, and concurrency $b$ if the following holds.
+For every affine word line $f(z)=f_0+zf_1$, every set $S\subset F$ with
+$|S|>a$, and every choice of codewords $p_z\in C$ within distance $\theta$
+of $f(z)$, some $P_0,P_1\in C$ satisfy $p_z=P_0+zP_1$ for more than
+$b$ parameters $z\in S$.
+\end{definition}
+
+The word ``selected'' matters: the property must hold for every choice of
+the nearby witnesses. Also, equality uses the \emph{same} parameter $z$
+on both sides. We call $\{(z,P_0+zP_1):z\in F\}$ a parametrized codeword
+line. Separately, $(f_0,f_1)$ has \emph{correlated agreement} on $t$
+coordinates if two codewords agree with $f_0,f_1$ simultaneously on one
+set of $t$ coordinates.
+
+We first turn a large list into a family that has many nearby codewords
+but no such correlated agreement. Division by $X-\tau$ lowers each
+polynomial's degree by one. The value at the chosen pole $\tau$ determines
+which parameter on the word line receives that polynomial.
+
+\begin{lemma}[A rational word line]\label{im:pencil}
+Let $D\subset\F_p$ have size $n$, and let $1\le d<t<n$.
+Suppose $N$ distinct polynomials $R_i$ of degree at most $d$ agree with
+a common word $w$ on at least $t$ coordinates. Write $Q=p-n>0$.
+There is a pole $\tau\in\F_p\setminus D$ for which
+\[
+ f_0(x)=\frac{w(x)}{x-\tau},\qquad f_1(x)=\frac1{x-\tau}
+\]
+has a set $S$ of distinct parameters, with a selected nearby codeword
+$P_z\in\RS(\F_p,D,d)$ at each parameter, such that
+\begin{equation}\label{im:label-bound}
+ |S|\ge\frac{NQ}{Q+d(N-1)}.
+\end{equation}
+Each selected codeword has at least $t$ agreements. No pair of codewords
+agrees jointly with $(f_0,f_1)$ on more than $d$ coordinates, and every
+parametrized codeword line contains at most
+$\lfloor(n-d)/(t-d)\rfloor<n$ selected pairs.
+If $N\ge Q$, then $|S|\ge Q/(d+1)$. If
+$p>n+d\binom N2$, all $N$ parameters can be made distinct.
+\end{lemma}
+\begin{proof}
+For an admissible pole, assign
+\[
+ z_i=-R_i(\tau),\qquad
+ P_i(X)=\frac{R_i(X)-R_i(\tau)}{X-\tau}.
+\]
+Then $\deg P_i<d$, and
+$f_0+z_if_1-P_i=(w-R_i)/(X-\tau)$ on $D$, preserving the agreement set.
+
+Two parameters collide only at a root of the nonzero polynomial $R_i-R_j$,
+which has degree at most $d$. Averaging over the $Q$ admissible poles gives
+one with at most $dN(N-1)/(2Q)$ colliding pairs. If the multiplicities of
+its distinct parameters are $m_1,\ldots,m_v$, then
+\[
+ \sum_jm_j=N,\qquad \sum_jm_j^2\le N+\frac{dN(N-1)}Q.
+\]
+Cauchy--Schwarz gives~\eqref{im:label-bound}. Select one witness per
+parameter. If $N\ge Q$, the denominator is at most $(d+1)N$.
+Under the stronger field condition, the union of $D$ and all pairwise
+root sets has size less than $p$, so a collision-free pole exists.
+
+Any agreement of $f_1$ with a degree-$<d$ polynomial $P_1$ is a root of
+$(X-\tau)P_1(X)-1$. This polynomial has degree at most $d$ and is nonzero,
+as its value at $\tau$ is $-1$. Thus even $f_1$ alone has at most $d$
+agreements with any codeword.
+Finally fix a parametrized codeword line $P_0+zP_1$. Let $b\le d$ be the
+number of coordinates where both coefficient words agree. At every other
+coordinate the two affine expressions agree for at most one parameter.
+If $v$ selected witnesses lie on this line, counting agreements gives
+$v(t-b)\le n-b$. The ratio $(n-b)/(t-b)$ increases with $b$, so
+$v\le(n-d)/(t-d)$.
+\end{proof}
+
+\begin{theorem}[No uniform finite $n\exp(O_\rho(1/\eta))$ line threshold]
+\label{im:all-lines}
+Fix rational $\rho\in(0,1)$ and finite $c_1,c_2>0$. There are arbitrarily
+large prime-field Reed--Solomon codes of exact rate $\rho$ on
+consecutive-integer domains that fail selected-witness line-decodability
+at concurrency $n$ and threshold
+\[
+ a=c_1 2^{c_2H_2(\rho)/\eta}n,
+ \qquad\theta=1-\rho-\eta<r_E(\rho).
+\]
+One can take $\eta=\Theta_\rho(1/\sqrt{n\log n})$ and
+$\log_2p=\Theta_{\rho,c_2}(\sqrt{n\log n})$.
+\end{theorem}
+\begin{proof}
+Let $d=\rho n$ be the target dimension. Choose $c^2<4H_2(\rho)$ and set
+$s=\lfloor c\sqrt{n/\log_2n}\rfloor$, $t=d+s+1$, and $\eta=(s+1)/n$.
+Apply Lemma~\ref{im:finite-list} to the source code of dimension $d+1$.
+It supplies $N=2^{\Omega_\rho(n)}$ degree-$\le d$ polynomials with common
+agreement size $t$; the one-dimensional change does not affect the
+estimate~\eqref{im:exponential-bank}.
+Choose
+\[
+ A>\max\{H_2(\rho)/c,\ c_2H_2(\rho)/c\},\qquad
+ \log_2p=A\sqrt{n\log_2n}+O(1)
+\]
+using Bertrand's postulate. Eventually $N>p>n$. Lemma~\ref{im:pencil}
+gives at least $(p-n)/(d+1)$ selected parameters, whose logarithmic count
+is $A\sqrt{n\log_2n}-O(\log n)$. The proposed threshold has logarithm
+\[
+ \log_2(c_1n)+c_2H_2(\rho)\frac n{s+1}
+ =\left(c_2H_2(\rho)/c+o(1)\right)\sqrt{n\log_2n},
+\]
+which is smaller. Every parametrized codeword line contains fewer than
+$n$ selected witnesses. Finally $\eta\log_2p\to cA>H_2(\rho)$
+verifies Elias by the same entropy-continuity argument as above.
+\end{proof}
+
+\paragraph{A finite line example.}
+Take $p=2^{127}-1$, $n=64$, target dimension $d=32$, and agreement size
+$t=34$. The first-moment sum $1071$ has exactly
+\[
+ N=8{,}634{,}334{,}451{,}040{,}106>2^{52}
+\]
+$34$-subsets, as certified in Section~\ref{sec:conditional-moments}.
+Their vanishing polynomials have two common leading terms, giving source
+polynomials of degree at most $32$. The exact inequality
+$p>64+32\binom N2$ makes all parameters distinct. Here $\eta=1/32$,
+the threshold with $c_1=c_2=1$ is $2^{38}$, and each parametrized codeword
+line contains at most $16$ selected witnesses. The radius is below Elias.
+In a smaller exhaustive check, $n=12$, $d=6$, $t=8$, $p=2^{31}-1$ yield
+a moment class of size $33$. The pole $\tau=20$ gives $33$ distinct
+parameters, and the maximum number of selected pairs on one parametrized
+codeword line is exactly $3$, matching the lemma's bound.
+
+\section{A fixed-gap obstruction that survives sublinear remainders}
+\label{sec:lift}\label{fg:section}
+
+The preceding line theorem uses gaps that shrink with length. It therefore
+does not settle a proposed bound of the form
+$c_1 2^{c_2H_2(\rho)/\eta}n+o(n)$ when the remainder is specified separately
+for each fixed gap. We now obtain a fixed-gap family.
+
+There are two steps. First, keep one finite list example and replace each
+evaluation point by the same number of preimages under a power map. Degrees
+and agreement counts grow by the same factor, preserving both rate and gap.
+Second, use each nearby codeword on $n$ distinct parameters of a word line.
+This forces a linear discrepancy from any proposed coefficient smaller
+than the list size.
+
+\begin{lemma}[A list example over the integers]\label{fg:seed}
+Fix rational $\rho\in(0,1)$ and finite $c_1,c_2\ge1$.
+There are fixed integers $1\le k<t<m$, with $k/m=\rho$, distinct
+$t$-subsets $A_1,\ldots,A_L\subset\{1,\ldots,m\}$, and integer
+polynomials $W,G_1,\ldots,G_L$ satisfying
+\[
+ \deg G_i<k,\qquad W(X)-G_i(X)=\prod_{a\in A_i}(X-a),\qquad
+ L>c_1 2^{c_2H_2(\rho)/\eta},\quad\eta=(t-k)/m.
+\]
+The data is chosen before choosing a reducing prime.
+\end{lemma}
+\begin{proof}
+Apply the moment construction over the integers. Equality of binomial
+moments implies equality of power sums over $\mathbb Q$, and Newton
+identities imply equality of the leading coefficients as integers.
+To see that a sufficiently large list exists without fixing a field,
+write $\rho=a/b$ and take $m=bu^3$, $k=au^3$, $s=u$, $t=k+s$.
+The logarithm of the lower bound in Lemma~\ref{im:finite-list} is
+$bH_2(\rho)u^3-O_\rho(u^2\log u)$, whereas the logarithm of the proposed
+bound is $\log_2c_1+c_2H_2(\rho)bu^2$. Choose a sufficiently large,
+now fixed, integer $u$ and a class exceeding the proposed bound.
+Translating the original domain $\{0,\ldots,m-1\}$ by one, and substituting
+$X-1$ in each polynomial, preserves the identities and avoids zero.
+\end{proof}
+
+\begin{lemma}[Replacing each point by a full power-map fiber]\label{fg:lift}
+Fix integer data as in Lemma~\ref{fg:seed}. For every positive integer $B$
+and every bound $T_0$, there is a prime $p>T_0$ and a domain
+$D_B\subset\F_p$ of size $mB$ such that $x\mapsto x^B$ maps $D_B$ onto
+$\{1,\ldots,m\}$ with exactly $B$ preimages per point. The polynomials
+$G_i(X^B)$ give distinct codewords in $\RS(\F_p,D_B,kB)$, each agreeing
+with $W(X^B)$ on exactly $tB$ coordinates.
+\end{lemma}
+\begin{proof}
+Let $K_B/\mathbb Q$ be the splitting field of
+$F_B(X)=\prod_{a=1}^m(X^B-a)$. The completely split case of Chebotarev's
+density theorem gives infinitely many primes that split completely in
+this finite Galois extension.\footnote{See J.~S.~Milne,
+\emph{Algebraic Number Theory}, Theorem~8.31 and Corollary~8.32,
+\href{https://www.jmilne.org/math/CourseNotes/ANTc.pdf}{course notes}.
+Only infinitude of completely split primes is used.} Exclude primes at most
+$\max\{T_0,m,B\}$ and primes dividing the nonzero discriminant of $F_B$.
+At any remaining such prime, all roots of $F_B$ reduce to distinct elements
+of $\F_p$. Let $D_B$ be these roots. The roots of each $X^B-a$ form one
+fiber of size $B$, and the fibers are disjoint.
+
+Now $\deg G_i(X^B)\le(k-1)B<kB$, and
+\[
+ W(X^B)-G_i(X^B)=\prod_{a\in A_i}(X^B-a).
+\]
+The difference vanishes on exactly the $t$ selected fibers.
+The codewords remain distinct: for $A_i\ne A_j$, a point in a fiber
+indexed by $A_i\setminus A_j$ makes exactly one of the two displayed
+products zero. No further coefficient-preservation condition is needed.
+\end{proof}
+
+Only the existence of arbitrarily large completely split primes is used;
+we require no bound on the least such prime. The construction may therefore
+use fields much larger than those in Theorem~\ref{im:all-list}.
+
+\begin{lemma}[A list forces a selected-witness threshold]\label{fg:graphs}
+Let $C\subset F^n$ be a nonzero linear code. Suppose a word $w$ has
+$L$ distinct codewords $q_1,\ldots,q_L$ within distance $\theta$,
+where $L\le n$ and $|F|\ge Ln$. There is a nonconstant affine word line
+with $Ln$ distinct parameters and a selected nearby codeword at each,
+such that no parametrized codeword line contains more than $n$ selected
+pairs. Thus line-decodability with concurrency $n$ fails at every
+positive threshold smaller than $Ln$.
+\end{lemma}
+\begin{proof}
+Choose nonzero $v\in C$ and disjoint sets $S_1,\ldots,S_L\subset F$,
+each of size $n$. Put $f(z)=w+zv$ and select $p_z=q_i+zv$ for $z\in S_i$.
+Translation preserves distance, so every selected codeword is nearby.
+Fix $P_0,P_1\in C$. If $P_1=v$, the equality
+$P_0+zP_1=q_i+zv$ holds only for the branch with $P_0=q_i$, if any,
+and that branch has $n$ parameters. If $P_1\ne v$, the equation
+$P_0-q_i=z(v-P_1)$ has at most one solution per branch, giving at most
+$L\le n$ selected pairs. The argument compares pairs at the same $z$;
+it does not require the unparametrized images of the lines to be disjoint.
+\end{proof}
+
+\begin{theorem}[Failure at a fixed gap with any sublinear remainder]
+\label{fg:fixed-gap}
+For every rational $\rho\in(0,1)$ and finite $c_1,c_2\ge1$, there are
+a fixed gap $\eta\in(0,1-\rho)$, an integer
+$L>c_1 2^{c_2H_2(\rho)/\eta}$, and a sequence of prime-field
+Reed--Solomon codes of lengths $n_B\to\infty$ and exact rate $\rho$,
+all with $\theta=1-\rho-\eta$ strictly below their characteristic-based
+Elias radii, such that the following holds.
+Each code admits $Ln_B$ selected nearby witnesses on a nonconstant
+affine word line, but no parametrized codeword line contains more than
+$n_B$ selected pairs. Consequently, for every sequence $R_B=o(n_B)$,
+all sufficiently large codes fail line-decodability with concurrency
+$n_B$ and threshold
+\begin{equation}\label{fg:threshold}
+ a_B=c_1 2^{c_2H_2(\rho)/\eta}n_B+R_B.
+\end{equation}
+The code family is chosen independently of the remainder sequence.
+\end{theorem}
+\begin{proof}
+Fix the integer example from Lemma~\ref{fg:seed}; hence $m,k,t,L,\eta$
+are now constants. Let $B$ grow with $n_B=mB\ge L$. For each $B$, choose
+the least completely split prime from Lemma~\ref{fg:lift} satisfying
+\[
+ p_B>\max\{Ln_B,m,2^{1/\eta}\}
+\]
+and the separability condition in that lemma. This fixes a prime sequence
+without reference to $R_B$. The lifted code has rate $k/m=\rho$ and
+contains a list of size $L$ at distance exactly $1-t/m=\theta$.
+It is nonzero, and the hypotheses of Lemma~\ref{fg:graphs} hold.
+Moreover
+\[
+ H_{p_B}(\theta)\le\theta+1/\log_2p_B
+ <\theta+\eta=1-\rho,
+\]
+which verifies the Elias condition. Put $A=c_1 2^{c_2H_2(\rho)/\eta}$.
+Since $L-A>0$ is fixed, eventually $R_B<(L-A)n_B$, so $a_B<Ln_B$.
+Lemma~\ref{fg:graphs} contradicts line-decodability at this threshold.
+\end{proof}
+
+The gap can depend on the proposed constants, but is fixed along the
+resulting family. Even a remainder chosen separately for that family
+cannot absorb its positive linear discrepancy.
+This last construction concerns the arbitrary selection of nearby
+witnesses: it has correlated agreement, since $(q_i,v)$ agrees jointly
+with $(w,v)$ wherever $q_i$ agrees with $w$. Also, its selected count
+$Ln$ never exceeds $\ell_C(\theta)n$. Thus the obstruction rules out
+the proposed quantitative coefficient, not a line threshold expressed
+using a valid bound on the actual maximum list size.
+
+% Standalone section for integration into paper/main.tex or core_theory.tex.
+% Uses existing macros \F, \RS and theorem environments; no new macros.
+% Bibliography key aggllz:
+% Omar Alrabiah, Zeyu Guo, Venkatesan Guruswami, Ray Li, and Zihan Zhang,
+% Random Reed--Solomon Codes Achieve List-Decoding Capacity With Linear-Sized
+% Alphabets, Advances in Combinatorics 2025:8, Lemma 2.3 and Theorem 2.11.
+% https://doi.org/10.19086/aic.2025.8 ; arXiv:2304.09445v6.
+
+\section{Small lists do not bound the number of nearby line points}
+\label{sec:actual-list}
+
+The previous constructions produced large lists. We now show a different
+obstruction: even a code with small lists can have an affine line with
+exponentially many nearby points, each with a unique nearby codeword.
+The degree argument is elementary. To keep the code's \emph{maximum}
+list size small, we choose its evaluation domain using a generic-rank theorem for
+Reed--Solomon agreement matrices and a finite-field union bound. The underlying line is the consecutive-power
+construction of Ben-Sasson, Carmon, Hab\"ock, Kopparty, and
+Saraf~\cite[Theorem~7.1]{bchks}, also used in~\cite{kkh}.
+Here we choose a domain on which that line coexists with a small
+global maximum list size at the target radius.
+
+Recall that $\ell_C(\theta)$ is the maximum number of codewords within
+relative Hamming distance $\theta$ of any received word. A selected pair
+$(z,p_z)$ lies on a parametrized codeword line if
+$p_z=P_0+zP_1$ for two fixed codewords $P_0,P_1\in C$; the scalar $z$
+must be the original parameter. Correlated agreement on $t$ coordinates
+means that $P_0=f_0$ and $P_1=f_1$ simultaneously on those coordinates.
+
+\begin{theorem}[An actual-list-size separation]
+\label{al:separation}
+Fix any rational rate $0<\rho<1$. For every sufficiently large $n$
+with $k=\rho n$ integral, there are a prime $p$, an
+$n$-point domain $D\subset\F_p$, and the rate-$\rho$ code
+$C=\RS(\F_p,D,k)$ with the following properties at
+\[
+ \theta=1-\rho-\frac1n.
+\]
+\begin{enumerate}[label=(\roman*)]
+\item The actual maximum list size satisfies
+$\ell_C(\theta)=n-k-1$.
+\item An affine line $f_0+zf_1$ has exactly
+$M=\binom n{k+1}$ parameters within distance $\theta$ of $C$.
+Each has a unique nearby codeword $p_z$.
+\item Every parametrized codeword line contains at most $n-k$ of these
+selected pairs $(z,p_z)$, and this bound is attained. The pair
+$(f_0,f_1)$ has no correlated agreement on $k+1$ coordinates.
+\item The radius $\theta$ lies strictly below the characteristic-$p$
+Elias radius.
+\end{enumerate}
+Consequently, along this family, line-decodability with concurrency $n$
+fails at threshold $\ell_C(\theta)n+R_n$ for every $R_n=o(n)$.
+\end{theorem}
+
+\begin{proof}
+\emph{Choose the domain.}
+For sufficiently large $n$, we have $k\ge2$ and $a=n-k\ge2$; take a prime $p\ge n+k2^{10an}$. Sample $n$ distinct domain points
+uniformly from $\F_p$. We impose three conditions on this domain.
+
+First, put $L=a-1\ge1$. We use the generic-matrix argument underlying
+\cite[Sections 2.2--2.4 and 3.1]{aggllz}, with an explicit finite-field
+union bound. If $L+1$ distinct codewords lie in a radius-$\theta$ ball,
+their total (unnormalized) distance from its center is at most
+$(L+1)(a-1)=La=L(n-k)$. The non-strict inequality in \cite[Lemma 2.3]{aggllz}
+permits equality and implies that some
+subcollection of $t$ codewords, $2\le t\le L+1$, has a
+$k$-weakly-partition-connected agreement hypergraph. Its vertices are
+these codewords, and its $i$th edge records which agree with the center
+at coordinate $i$. Weak partition connectivity means that every partition
+$\mathcal P$ of the vertices satisfies
+$\sum_i\max\{|\mathcal P(e_i)|-1,0\}\ge k(|\mathcal P|-1)$,
+where $\mathcal P(e_i)$ denotes the parts meeting $e_i$.
+
+The associated reduced intersection matrix encodes equalities of
+polynomial values within each edge, using a spanning star, with the
+coefficient block for the last polynomial removed. It has $(t-1)k$
+columns and entries of degree at most $k-1$ in the formal domain points.
+It has full symbolic column rank by \cite[Theorem 2.11]{aggllz}.
+However, at a domain realizing the proposed subcollection, the
+coefficient differences from its last codeword give a nonzero kernel
+vector. Thus a fixed nonzero full-column minor must vanish there.
+This minor has total degree at most
+$(t-1)k(k-1)\le Lk^2$.
+
+There are at most
+$\sum_{t=2}^{L+1}2^{tn}\le2^{(L+2)n}$ such labeled hypergraphs.
+For independent uniform domain points, Schwartz--Zippel and a union
+bound give failure probability at most $2^{(L+2)n}Lk^2/p$.
+Since $p>n^2$, the probability that those points are distinct is greater
+than $1/2$. Conditioning on distinctness therefore gives failure
+probability at most
+\[
+ \frac{2^{(L+2)n+1}Lk^2}{p}<2^{-2an}.
+\]
+For the last inequality, use $L=a-1$, $p>k2^{10an}$,
+$2\le a<n$, and
+$1+\log_2((a-1)k)<(7a-1)n$ for $n\ge3$.
+Consequently, except with probability $2^{-2an}$, every
+radius-$\theta$ list has size at most $a-1$.
+
+Second, require all $(k+1)$-subsets of the domain to have distinct sums.
+For two different index sets $T,U$, condition on every domain point
+except one indexed by $T\setminus U$. Equality of the two sums fixes
+at most one value of this remaining point, among $p-n+1$ possibilities.
+The probability of any collision is therefore at most
+$\binom M2/(p-n+1)$. Our choice of $p$ gives
+\[
+ 2^{-2an}+\frac{\binom M2}{p-n+1}<1.
+\]
+Indeed, $M\le2^n$ and $p-n+1>k2^{10an}$ make the second
+failure probability less than $2^{2n-1-10an}\le2^{-2an}$.
+Finally, impose the matching-list construction from
+Proposition~\ref{al:profile} below, simultaneously at all integer radii
+strictly below $n-k$. Its proof bounds failure by
+$(a-1)^2/[2(p-n+1)]<2^{-2an}$.
+Together with the preceding two bounds, total failure is less than
+$3\cdot2^{-2an}<1$. Fix a domain satisfying all three conditions.
+The matching construction in particular gives
+$\ell_C(\theta)\ge a-1$, so the bound at our target radius is exact.
+
+\emph{Construct the nearby points.}
+For each $(k+1)$-subset $T\subset D$, put
+\[
+ s_T=\sum_{a\in T}a,
+ \qquad V_T(X)=\prod_{a\in T}(X-a).
+\]
+Evaluate the affine family
+\[
+ f_z(X)=X^{k+1}-zX^k
+\]
+on $D$. At parameter $z=s_T$, choose
+\[
+ p_{s_T}(X)=X^{k+1}-s_TX^k-V_T(X).
+\]
+Its two leading coefficients cancel, so $\deg p_{s_T}<k$.
+Its difference from $f_{s_T}$ vanishes exactly on $T$, giving distance
+$1-(k+1)/n=\theta$.
+
+Conversely, if a polynomial $P$ of degree less than $k$ agrees with
+$f_z$ on at least $k+1$ coordinates, then $f_z-P$ is monic of degree
+$k+1$ and must equal $V_T$ for its root set $T\subset D$.
+Comparing the coefficient of $X^k$ gives $z=s_T$. Distinct subset sums
+therefore identify both $T$ and $P$ uniquely. There are exactly $M$
+nearby parameters, each with one nearby codeword.
+
+\emph{Bound concurrency.}
+Suppose $P_0+zP_1$ contains $m$ selected pairs, and let $b$ count the
+coordinates where both $X^{k+1}=P_0(X)$ and $-X^k=P_1(X)$.
+Since $\deg P_1<k$, the second equality holds on at most $k$ coordinates;
+hence $b\le k$, which already rules out the claimed common agreement.
+At those $b$ coordinates all $m$ parameters may agree. At every other
+coordinate two distinct affine functions of $z$ agree at most once.
+Counting the $k+1$ agreements of each selected witness yields
+\[
+ m(k+1)\le bm+n-b,
+ \qquad
+ m\le\frac{n-b}{k+1-b}\le n-k.
+\]
+
+The bound is attained by fixing a $k$-subset $A\subset D$ and writing
+$V_A(X)=\prod_{a\in A}(X-a)$ and $s_A=\sum_{a\in A}a$.
+The codeword line
+\[
+ \bigl[X^{k+1}-(X+s_A)V_A(X)\bigr]
+ +z\bigl[V_A(X)-X^k\bigr]
+\]
+has both coefficient polynomials of degree less than $k$ and contains
+the selected witness for each $T=A\cup\{a\}$ with $a\in D\setminus A$,
+at its parameter $z=s_A+a$. There are $n-k$ such parameters.
+
+\emph{Check the radius and threshold.}
+The entropy estimate $H_p(\theta)\le\theta+1/\log_2p<1-\rho$ places
+$\theta$ strictly below the Elias radius. Finally,
+$M=2^{H_2(\rho)n-O_\rho(\log n)}$, whereas
+$\ell_C(\theta)n\le (n-k-1)n=O_\rho(n^2)$.
+Thus $M>\ell_C(\theta)n+R_n$ eventually for every $R_n=o(n)$,
+without the required concurrency.
+\end{proof}
+
+\begin{proposition}[Exact generic list sizes at every integer radius below $n-k$]
+\label{al:profile}
+Let $k\ge2$, $a=n-k\ge2$, and let $p\ge n+k2^{10an}$ be prime.
+For a uniformly random ordered set of $n$ distinct evaluation points,
+with probability greater than $1-2^{1-2an}$, the Reed--Solomon code $C$
+simultaneously satisfies
+\[
+ \ell_C\left(\frac{a-s}{n}\right)
+ =\left\lfloor\frac{a-1}{s}\right\rfloor
+ \qquad(1\le s<a).
+\]
+At radius zero the maximum list size is one.
+The domain in Theorem~\ref{al:separation} can be chosen to have this
+entire profile, as well as distinct sums of its $(k+1)$-subsets.
+\end{proposition}
+
+\begin{proof}
+\emph{Upper bounds from one rank condition.}
+Use the good-domain event in the proof of Theorem~\ref{al:separation}: every
+$k$-weakly-partition-connected agreement hypergraph on at most $a$
+vertices has a reduced intersection matrix of full column rank.
+Its failure probability is less than $2^{-2an}$.
+For each $s$, put $L_s=\lfloor(a-1)/s\rfloor$.
+If $L_s+1$ distinct codewords are each at distance at most $a-s$
+from one word, their total distance is at most
+\[
+ (L_s+1)(a-s)\le L_s a,
+\]
+since $(L_s+1)s\ge a$.
+Lemma~2.3 of~\cite{aggllz} then produces one of the excluded
+hypergraphs on at most $L_s+1\le a$ vertices.
+Thus the same rank condition supplies all upper bounds simultaneously.
+
+\emph{Matching lists from a chain of affine polynomials.}
+Set aside $k-2$ coordinates $H$ and put $F(X)=\prod_{h\in H}(X-h)$.
+There remain $a+2$ coordinates. Fix $s$ and write $L=L_s$.
+Choose two anchors $A,B$, another $s$ coordinates, and a seed $z_0$.
+Give the anchors and the other $s$ coordinates received value zero,
+and give $z_0$ value one. The zero polynomial already has $s+2$ agreements.
+For each $1\le j\le L-1$, choose a fresh set $Z_j$ of $s$ coordinates
+and designate one of them $z_j$.
+Let $A_j=A$ for odd $j$ and $A_j=B$ for even $j$, and define
+\[
+ c_j=\frac{w(z_{j-1})}{z_{j-1}-A_j},\qquad
+ q_j(X)=c_j(X-A_j),\qquad
+ w(x)=q_j(x)\quad(x\in Z_j).
+\]
+This uses $s+3+(L-1)s=Ls+3\le a+2$ coordinates.
+Give any remaining coordinates value zero.
+All denominators and slopes are nonzero, and $q_j$ agrees with $w$
+at the anchor $A_j$, the preceding point $z_{j-1}$, and all $s$ points
+of $Z_j$. Each candidate therefore has at least $s+2$ agreements.
+
+It remains to ensure that the candidates are distinct. Candidates with
+different anchors have different roots. For $i<j$ with the same anchor,
+the equality $q_i=q_j$ is equivalent to
+\[
+ \prod_{r=i}^{j-1}\frac{z_r-A_r}{z_r-A_{r+1}}=1.
+\]
+Condition on every domain coordinate except $z_i$.
+All factors but one are fixed and nonzero, so the equality takes the form
+$C(z_i-A_i)/(z_i-A_{i+1})=1$ with $C\ne0$.
+Because the anchors differ, this equation has at most one solution.
+Under distinct sampling its probability is therefore at most
+$1/(p-n+1)$. There are at most $L^2/4$ pairs with the same anchor,
+so candidate repetition has probability at most $L^2/[4(p-n+1)]$.
+On its complement, multiplication by $F$ gives $L$ distinct polynomials
+of degree less than $k$. Set the full received word to zero on $H$ and
+to $F(x)w(x)$ elsewhere. Each candidate has at least
+$(k-2)+(s+2)=k+s$ agreements, proving the matching lower bound.
+
+\emph{Choose one domain for all radii.}
+The sum of the lower-construction failure probabilities is at most
+\[
+ \frac{1}{4(p-n+1)}\sum_{s=1}^{a-1}L_s^2
+ <\frac{(a-1)^2}{2(p-n+1)}<2^{-2an},
+\]
+using $L_s\le(a-1)/s$ and $\sum_{s\ge1}s^{-2}<2$.
+Together with the single rank-condition failure bound, this proves the
+probability assertion. Requiring distinct $(k+1)$-subset sums adds less
+than $2^{-2an}$ to the failure probability, as in the preceding proof;
+the total remains less than one.
+\end{proof}
+
+The upper bounds here use the known generic-rank theorem; the lower
+bounds are explicit interpolation constructions. The domain is generic
+and the field bound is large. The assertion does not give this list
+profile on arbitrary prescribed evaluation domains. Dimension $k=1$
+is a real exception: at agreement $1+s$, the constant code has maximum
+list size $\lfloor n/(s+1)\rfloor$.
+
+
+\begin{corollary}[Extension fields and interleaving]
+\label{cor:profile-extension}
+The domain in Proposition~\ref{al:profile} has the same exact list
+profile over every extension of its base field and for every finite
+interleaving order. Interleaved distance is measured by columns: a
+coordinate agrees only when all components agree. No further
+exceptional-domain event is needed.
+\end{corollary}
+\begin{proof}
+A nonzero full-column minor over the base field remains nonzero over
+an extension. For interleaved words, agreement of entire columns gives
+the same agreement hypergraph as in the scalar upper-bound proof.
+Apply its full-rank matrix to each component of the polynomial
+coefficient differences. Each component difference vanishes, so two
+allegedly distinct tuples would coincide. The scalar lower list embeds
+in one component, with zero in the others, and remains a list over
+every extension field. This proves equality. The argument does not
+apply to entrywise distance averaged over all components.
+\end{proof}
+
+The companion \path{checks/astra_rs_all_surplus_check.py} verifies
+$3{,}654$ large-field parameter fixtures on $378$ domains, each
+reused for all surpluses, including nondivisible surpluses and cases
+with $k<2s$. It also checks $450$ small-field
+fixtures, retaining $55$ with repeated candidate lines, and enumerates
+the full lists at eight constructed centers. The $79{,}079$ allocation
+and probability checks, and $3{,}003$ combined lower-failure checks,
+pass. Separately,
+\path{checks/actual_list_global_small_check.py} exhausts all center
+classes modulo the code in four small dimension-two examples. Three
+structured domains have a larger list than the generic profile,
+confirming the need for the domain qualification.
+
+\paragraph{Sharpness of the global list bound at rates at least one-half.}
+Write $a=n-k\ge2$. If $k\ge a-2$, every $n$-point Reed--Solomon domain
+has a list of size at least $a-1$ at radius $(a-1)/n$.
+Indeed, set $L=a-1$ and $h=k-a+2\ge0$, and partition the domain into
+$H$, $\{\alpha_1,\ldots,\alpha_L\}$, and
+$\{\beta_1,\ldots,\beta_L\}$, where $|H|=h$.
+Let $F(X)=\prod_{x\in H}(X-x)$ and
+\[
+ Q_i(X)=F(X)\left[X^{L-1}-\prod_{j\ne i}(X-\alpha_j)\right]
+ \quad(1\le i\le L).
+\]
+The leading terms cancel, so each has degree at most
+$h+L-2=k-1$ (for $L=1$, the sole polynomial is zero).
+For $i\ne j$, their values at $\alpha_i$ differ by the nonzero quantity
+$F(\alpha_i)\prod_{r\ne i}(\alpha_i-\alpha_r)$, so they are distinct.
+Choose a received word equal to zero on $H$, to
+$F(\alpha_j)\alpha_j^{L-1}$ at $\alpha_j$, and to $Q_i(\beta_i)$
+at $\beta_i$. Each $Q_i$ agrees on $H$, on every $\alpha_j$ with
+$j\ne i$, and on $\beta_i$, giving $h+L=k+1$ agreements.
+This supplies the matching lower bound on every domain in this range.
+The chain construction in Proposition~\ref{al:profile} supplies a matching
+lower bound on a generic domain for every $k\ge2$.
+
+\paragraph{A sharper collision estimate.}
+For the $s=1$ chain, the probability of a repeated line is at most
+\[
+ \frac{\lfloor\max(a-5,0)^2/4\rfloor}{p-n+1}.
+\]
+For a same-anchor pair $i<j$, condition on all domain points except
+$z_i$. Equality of the two slopes has the form
+$C(z_i-A_i)/(z_i-A_{i+1})=1$ with fixed $C\ne0$.
+If $C=1$, equality is impossible; otherwise it fixes at most one
+of the $p-n+1$ remaining values of $z_i$. Pairs with $j-i=2$
+cannot collide: their cleared equation is, up to sign,
+$(A-B)(z_{i+1}-z_i)=0$. Among $a-2$ alternating lines, the number
+of same-anchor pairs separated by at least four steps is
+$\lfloor\max(a-5,0)^2/4\rfloor$, proving the estimate.
+In particular, the chain is distinct on every domain for $a\le6$.
+The independent checker \path{checks/actual_list_chain_conditional_audit.py}
+exhausts $36{,}200$ allowed values across $1{,}400$ conditional
+pair cases over $\F_{37}$, verifying the one-solution bound and
+all $720$ gap-two exclusions in those fixtures.
+
+The gap in Theorem~\ref{al:separation} is $\eta=1/n$. It therefore rules out a
+\emph{uniform}, familywise threshold based on the actual list size;
+it does not rule out an asymptotic statement made separately at each
+fixed positive gap, with arbitrary dependence of its remainder on that
+gap. This differs from the separate fixed-gap construction, which defeats
+a prescribed numerical list coefficient. The present construction
+instead has provably small actual lists. Its ingredients are the
+vanishing-polynomial construction and a domain chosen to satisfy the
+generic-rank guarantee simultaneously with distinct subset sums.
+
+\subsection{A general upper bound and a sharp endpoint}
+\label{sec:puncturing-bound}
+
+The affine-line count in Theorem~\ref{al:separation} attains a general
+upper bound at the same radius. The upper bound follows by puncturing
+to the unique-decoding regime and applying the correlated-agreement
+theorem of Ben-Sasson et al.~\cite[Theorems~1.2 and~1.4]{bciks}.
+We include the argument to explain the extremality of the example;
+no novelty is claimed for this corollary of the known theorem.
+
+\begin{proposition}[An unconditional puncturing bound]
+\label{prop:puncturing-bound}
+Let $C=\RS(F,D,k)$, where $F$ is finite, $|D|=n$, and $a=n-k$.
+Let $r$ be an integer with $a/2\le r<a$, and put
+$s=a-r$ and $d=2r-a$. Suppose that $f_0,f_1\in F^D$ have no
+correlated agreement with degree-below-$k$ polynomials on $n-r$
+coordinates. Then the total number of nearby witness pairs satisfies
+\[
+ \sum_{z\in F}\left|\{P:\deg P<k,\ \dist(f_0+zf_1,P|_D)\le r/n\}\right|
+ \le\left\lfloor
+ (n-d)\frac{\binom nd}{\binom rd}\right\rfloor
+ =\left\lfloor s\frac{\binom n{d+1}}{\binom r{d+1}}\right\rfloor.
+\]
+\end{proposition}
+\begin{proof}
+Delete any $d$ coordinates. The resulting code has length $n-d$,
+dimension $k$, and redundancy $a-d=2s$. Correlated agreement on
+$(n-d)-s=n-r$ remaining coordinates would also give correlated
+agreement in the original domain, contrary to the hypothesis.
+The unique-radius theorem therefore permits at most $n-d$
+parameters whose punctured words have at most $s$ errors. At each
+parameter the nearby polynomial is unique, because the punctured
+code has minimum distance $2s+1$. Its
+relative radius is $s/(n-d)=(1-k/(n-d))/2$, the included endpoint
+of the cited unique-radius bound.
+
+For each nearby witness pair $(z,P)$ in the original code, let its
+error support be $E$, of size at most $r$, and extend $E$ to an
+$r$-element coordinate set $R$. Deleting any $d$-subset of $R$
+leaves at most $r-d=s$ errors. Thus this pair is counted by
+at least $\binom rd$ punctures. Restriction preserves distinct
+polynomials because $n-d\ge k$. There are $\binom nd$ punctures,
+each counting at most $n-d$ witness pairs. Double counting proves the
+first bound. The second follows from $r-d=s$ and the adjacent
+binomial identities. The case $d=0$ uses the empty puncture.
+\end{proof}
+
+At $r=a-1$, the bound is exactly $\binom n{k+1}$.
+Theorem~\ref{al:separation} attains it, while its global maximum
+list size is only $n-k-1$. Consequently, among affine lines without
+correlated agreement at this radius, the number of nearby parameters
+in that theorem is as large as possible. This extremality concerns
+an algebraic count, not an algorithm for producing its witnesses.
+
+\begin{proposition}[Pairs with unexplained agreement sets]
+\label{prop:puncturing-support}
+Retain the parameters of Proposition~\ref{prop:puncturing-bound},
+but allow $f_0,f_1$ to have correlated agreement. For a nearby pair
+$(z,P)$, let $S=\{x\in D:P(x)=f_0(x)+zf_1(x)\}$ be its entire
+agreement set. The number of such pairs for which no two
+ degree-below-$k$ polynomials jointly explain $f_0,f_1$ on $S$ is at most
+\[
+ \left\lfloor(n-d)\frac{\binom nd}{\binom rd}\right\rfloor.
+\]
+\end{proposition}
+\begin{proof}
+First consider a length-$N$ puncture of redundancy $2s$. If its
+coefficient words have no correlated agreement on $N-s$ coordinates,
+the unique-radius theorem and uniqueness of the nearby polynomial
+bound all nearby pairs by $N$. Otherwise, choose a jointly agreeing
+codeword path $Q_0+zQ_1$, and let $J$ be its full coefficient
+agreement set. This path is nearby at every parameter and hence is
+the unique nearby polynomial. Outside $J$, an accidental agreement
+can occur at at most one parameter per coordinate. There are at most
+$N-|J|\le s$ such parameters. At every other parameter the entire
+agreement set is $J$ and is jointly explained. Thus at most $N$
+pairs in any puncture have unexplained entire agreement sets.
+
+For an original pair with an unexplained set $S$, interpolate the
+two coefficient words on any $k$ positions of $S$. At least one
+further position fails one of these interpolants. The resulting
+$(k+1)$-set $K\subset S$ is itself not jointly explainable. Its
+complement has size $a-1\ge r$, so the error support $E=D\setminus S$
+can be extended to an $r$-set $R\subseteq D\setminus K$.
+Every $d$-subset of $R$ leaves at most $s$ errors after puncturing
+and preserves $K$. The punctured agreement set therefore remains
+unexplained. Each original pair is counted in at least $\binom rd$
+punctures, each of which counts at most $n-d$ such pairs. Restriction
+is injective on the polynomial witnesses, so double counting gives
+the bound.
+\end{proof}
+
+The bound is also $n$ at $2r=a$. Between the two endpoints it can
+be much larger than the actual maximum list size times $n$; at a
+fixed gap beyond unique decoding it is generally exponential in $n$.
+It therefore leaves the fixed-gap question open. The exact checker
+\path{checks/verify_puncturing_bound.py} verifies the parameter and
+support-count identities and enumerates all $257$ parameters on each
+of five small lines attaining the one-coordinate-gap bound. The
+independent \path{checks/astra_syndrome_determinants_check.py}
+checks the witness and entire-agreement-set bounds on $378$ affine
+lines, including lines with correlated agreement, by exact decoding
+and $572{,}226$ codeword-distance evaluations.
+
+\section{Finite examples on the norm-one circle}
+\label{sec:circle-overview}
+
+The interval construction shows that a uniform list bound fails when the
+field and block length vary. We now give finite examples over one fixed
+prime, $p=2^{31}-1$. The domains have multiplicative structure, and the
+construction uses that structure instead of small integer moments.
+The two methods share a simpler underlying idea: many root polynomials
+can have the same outer coefficients while differing in their middle
+coefficients.
+
+\subsection{Why the circle helps}
+
+Let $i^2=-1$ in $F_2=\F_{p^2}$. The norm-one circle is the cyclic group
+\[
+ U=\{u\in F_2^\times:u^{p+1}=1\}.
+\]
+Every element can be written $u=x+iy$ with $x,y\in\F_p$ and
+$x^2+y^2=1$. On this group $u^p=u^{-1}$. Thus conjugating a polynomial's
+coefficients and reversing its exponents are closely related operations.
+For $n\mid p+1$, write $\mu_n$ for the subgroup of size $n$.
+Our evaluation domains are $\mu_n$ and its rotations $g\mu_n$.
+
+For even $K=2m$, consider the dimension-$K$ circle space
+\[
+ C_K=\{A(x)+yB(x):\deg A<m,\ \deg B<m\}.
+\]
+Its coefficients may lie in $\F_p$ or in an extension, as specified.
+In the coordinate $u$, the space contains all Laurent polynomials in
+the interior band $-(m-1),\ldots,m-1$, with the appropriate coefficient
+field condition. A Laurent polynomial simply allows negative powers
+of $u$; these are well defined because every evaluation point is nonzero.
+The interior band leaves room to divide out two common zeros without
+leaving $C_K$.
+
+Write $n=MB$. The power map $u\mapsto u^B$ sends $\mu_n$ onto
+$\mu_M$, with $B$ points in each fiber. To choose agreement positions,
+choose an $h$-element subset $A\subseteq\mu_M$ containing $1$, and form
+\[
+ F_A(Y)=\prod_{a\in A}(Y-a)=\sum_{j=0}^h f_{A,j}Y^j.
+\]
+The roots have norm one, so, with $c=f_{A,0}$,
+\[
+ f_{A,j}=c\,f_{A,h-j}^{\,p}.
+\]
+Fixing $c$ and $r$ leading coefficients therefore also fixes $r$
+trailing coefficients. There are $\binom{M-1}{h-1}$ possible subsets,
+but at most $Mp^{2r}$ choices of this coefficient data. Some class has
+at least
+\[
+ \left\lceil\frac{\binom{M-1}{h-1}}{Mp^{2r}}\right\rceil
+\]
+members. Subtracting their common outer terms leaves distinct low-degree
+polynomial parts. Agreement occurs on the selected fibers, so the count
+of roots in $\mu_M$ becomes a count of coordinates in $\mu_n$.
+
+Two additional steps yield the two results below. For a base-field list,
+one rescales the polynomial parts to make their values lie in $\F_p$.
+The common anchor $1\in A$ then permits division at the two circle
+points $u=1,-1$. For an affine family, one instead divides by
+$Y-\tau$, where $\tau\in\F_{p^4}\setminus\F_{p^2}$. As in
+Lemma~\ref{im:pencil}, this produces a scalar label for each polynomial
+part and a direction word with too little agreement to permit
+correlated agreement. A collision count selects a pole with many
+distinct labels. Appendix~\ref{app:circle} gives both arguments in full.
+
+\subsection{Two constructions at the same parameters}
+
+\begin{theorem}[Finite circle list and affine-family bounds]
+\label{thm:circle-finite-summary}
+Let $p=2^{31}-1$, $E=\F_{p^4}$, and
+\[
+ n=2^{26},\qquad K=2^{25},\qquad \rho=\frac12,\qquad
+ \eta=\frac{33}{1024}-\frac2n,\qquad
+ T=(\rho+\eta)n,\qquad \theta=1-\rho-\eta.
+\]
+On $D=\mu_n$, and on any rotated domain $g\mu_n\subseteq U$,
+the following statements hold.
+\begin{enumerate}[label=(\roman*)]
+\item There is an $\F_p$-valued received word with more than
+\[
+ 2^{40}
+\]
+distinct codewords from the base-field circle space $C_K$ agreeing
+with it in at least $T$ positions.
+\item There are words $f_0,f_1\in E^D$ with no correlated agreement
+at threshold $T$ with the extension-field circle code $C_K$, but more than
+\[
+ 2^{74}
+\]
+distinct scalars $z\in E$ for which $f_0+zf_1$ has a codeword agreeing
+in at least $T$ positions. Witnesses can be selected so that every
+parametrized affine codeword graph contains at most fifteen selected
+pairs $(z,P_z)$.
+\end{enumerate}
+The radius $\theta$ is strictly below the characteristic-$p$ Elias
+radius at rate $1/2$.
+\end{theorem}
+\begin{proof}
+For (i), apply Theorem~\ref{rl:list} with
+$M=2048$, $d=1024$, $r=32$, $h=1090$, and $B=2^{15}$.
+For (ii), apply Theorem~\ref{thm:ct-reserve} with
+$M=1024$, $r=15$, $h=545$, and $B=2^{16}$.
+Both choices give $K=n/2$ and the same agreement count $T=hB-2$.
+The exact coefficient counts and collision bound are evaluated in
+\eqref{eq:ct-numeric-bank} and Section~\ref{rl:parameters}.
+Corollary~\ref{cor:ct-fifteen-concurrency} gives the selected-graph
+bound. The strict Elias comparison has the rational certificate in
+Section~\ref{rl:elias}.
+\end{proof}
+
+These are two different received-word constructions with the same
+length, rate, and radius. Neither the theorem nor its proof requires
+enumerating the very large coefficient classes. The formulas and
+integer lower bounds are explicit; the choice of a sufficiently large
+class, and of a suitable pole in (ii), is guaranteed by counting.
+
+\paragraph{Transfer to ordinary Reed--Solomon codes.}
+The second construction also gives an ordinary Reed--Solomon example.
+Remove the two anchor coordinates and use the stereographic coordinate
+$t=y/(1+x)\in\F_p$. Multiplication by the nonzero weight
+$(1+t^2)^{m-1}$ identifies the interior Laurent band with ordinary
+polynomials of degree at most $K-2$. The resulting code has
+\[
+ n'=n-2,\qquad k'=K-1,\qquad \rho'=\frac12,\qquad
+ \eta'=\frac{T}{n-2}-\frac12
+         =\frac{33\cdot2^{16}-1}{n-2}.
+\]
+It has the same scalar labels and at least $T$ agreements per
+selected witness, with no correlated agreement at threshold $T$.
+Theorem~\ref{thm:ct-transfer} proves that the coordinate change and
+scaling preserve these equalities. The new gap is $\eta'$, not $\eta$:
+puncturing preserves the number of certified agreements but changes
+the block length. Comparisons for this Reed--Solomon code must use
+$n'$ and $\eta'$.
+
+\subsection{Stronger finite examples at other rates}
+
+The preceding examples use rate $1/2$ to make the two constructions
+directly comparable. Neither construction is restricted to that rate.
+In the list construction, choose any even packet dimension $d$ and put
+$h=d+2r+2$. The resulting rate is $d/M$; the gap remains
+$(2r+2)/M-2/n$. In particular, no coefficient reserve is needed for
+the following larger list.
+
+\begin{corollary}[A quarter-rate base-field list]
+\label{cor:quarter-list}
+Let $p=2^{31}-1$, $n=2^{26}$, $K=2^{24}$, and
+\[
+ \rho=\frac14,\qquad \eta=\frac1{32}-\frac2n.
+\]
+On $\mu_n$ and its rotations, some $\F_p$-valued word has more than
+$2^{43}$ codewords in $C_K$ agreeing on at least $(\rho+\eta)n$
+coordinates. The radius $1-\rho-\eta$ is strictly below the
+characteristic-$p$ Elias radius. If $L$ denotes the certified list size,
+then
+\[
+ \frac{L}{2^{H_2(\rho)/\eta}}>200{,}000.
+\]
+\end{corollary}
+\begin{proof}
+Use Theorem~\ref{rl:list} with $M=64$, $B=2^{20}$, $d=16$, $r=0$,
+and $h=18$. The count is $\lceil\binom{63}{17}/64\rceil$.
+Appendix~\ref{app:other-rate-certificates} gives exact certificates
+for the count, radius, and displayed comparison.
+\end{proof}
+
+\begin{corollary}[An eighth-rate line without correlated agreement]
+\label{cor:eighth-line}
+Let $p=2^{31}-1$, $E=\F_{p^4}$, $n=2^{26}$, $K=2^{23}$, and
+\[
+ \rho=\frac18,\qquad \eta=\frac5{256}-\frac2n,
+ \qquad T=(\rho+\eta)n.
+\]
+On $\mu_n$ and its rotations, there are words $f_0,f_1\in E^D$
+with no correlated agreement at threshold $T$ with $C_K$, but more
+than $2^{75}$ distinct scalars $z$ for which $f_0+zf_1$ has a codeword
+agreeing on at least $T$ coordinates. If $J$ is the certified scalar
+count, then
+\[
+ \frac{J}{n2^{H_2(\rho)/\eta}}>2^{22}.
+\]
+The radius is strictly below the characteristic-$p$ Elias radius.
+Witnesses can be selected so that every parametrized affine codeword
+graph contains at most $55$ selected pairs.
+\end{corollary}
+\begin{proof}
+Apply Theorem~\ref{thm:ct-reserve} with $M=256$, $B=2^{18}$, $r=1$,
+and $h=37$. Its polynomial degree is $d=33$, so its collision factor
+is $d-1=32$. The second word agrees with every outer-band codeword
+at at most $a_0=K+B=33B<T=37B-2$ coordinates.
+Lemma~\ref{lem:ct-quantitative-concurrency} bounds the number of
+selected pairs on one graph by
+\[
+ \left\lfloor\frac{223B}{4B-2}\right\rfloor=55.
+\]
+The exact scalar count, Elias comparison, and ratio certificate are
+in Appendix~\ref{app:other-rate-certificates}.
+\end{proof}
+
+The small packet group explains the improvement in the list construction: only $64$ possible
+constant coefficients divide the $\binom{63}{17}$ anchored root sets.
+Reciprocity fixes the opposite end of each root polynomial for free.
+The degree allowance at rate $1/4$ is already enough to contain the
+remaining middle terms after removing the anchors. The line construction
+uses a different rate and one pair of reserved coefficients. Its scalar
+count exceeds the numerical line prescription by more than four million.
+Both examples transfer to ordinary Reed--Solomon codes by
+Theorem~\ref{thm:ct-transfer}, with length $n-2$ and dimension $K-1$.
+At these rates the exact transferred rate is $(K-1)/(n-2)$, rather
+than precisely $1/4$ or $1/8$.
+
+\subsection{The quadratic field already suffices}
+
+The larger scalar count above uses a pole in $\F_{p^4}\setminus\F_{p^2}$.
+An outside pole is not essential to the counterexample. It is enough
+to avoid the packet labels $\mu_M$. Choosing the pole inside
+$\F_{p^2}$ gives fewer available poles, but also keeps the entire
+construction over the quadratic field.
+
+For example, take $p=2^{31}-1$, $n=2^{26}$, $K=2^{23}$, and
+\[
+ \rho=\frac18,\qquad \eta=\frac3{128}-\frac2n.
+\]
+Corollary~\ref{cor:ct-subfield-poles}, with $M=128$, $B=2^{19}$,
+$r=0$, and $h=19$, gives an $\F_{p^2}$-valued pair with no correlated
+agreement at threshold $(\rho+\eta)n$, and more than $2^{57}$ nearby
+scalar combinations. Its certified scalar count exceeds
+$n2^{H_2(\rho)/\eta}$ by more than $400$. The radius remains strictly
+below Elias, and the same example transfers to an ordinary
+Reed--Solomon code with a prime-field evaluation domain and quadratic
+alphabet. Appendix~\ref{app:other-rate-certificates} records the
+exact count and inequalities.
+
+\subsection{Shorter codes give larger separations}
+
+The number of selected scalar labels depends on the packet group and
+the reserved coefficients, but not on the number $B$ of coordinates
+in each packet. Reducing $B$ therefore preserves that number while
+reducing the length factor in the proposed line threshold. The gap
+also changes, so the comparison must be recomputed.
+
+\begin{corollary}[Compact eighth-rate examples]
+\label{cor:ct-compact-eighth}
+Let $p=2^{31}-1$ and $\rho=1/8$. Each row below gives a circle code
+on $\mu_n$, or any rotation, and a line with no correlated agreement
+at threshold $T=(\rho+\eta)n$. Write $J$ for its certified number of
+distinct nearby parameters.
+\begin{center}
+\begin{tabular}{ccccc}
+\toprule
+Alphabet & $n$ & $K$ & $\eta$ & $J/(n2^{H_2(\rho)/\eta})$\\
+\midrule
+$\F_{p^2}$ & $2048$ & $256$ & $23/1024$ & $>2^{22}$\\
+$\F_{p^4}$ & $8192$ & $1024$ & $79/4096$ & $>2^{34}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+Both radii are strictly below the characteristic-$p$ Elias radius.
+In the first row, the words, witnesses, and labels lie in $\F_{p^2}$;
+the absence of correlated agreement holds even against the larger
+circle code over $\F_{p^4}$.
+\end{corollary}
+\begin{proof}
+Use $(M,B,r,h)=(128,16,0,19)$ in
+Corollary~\ref{cor:ct-subfield-poles} and
+$(256,32,1,37)$ in Theorem~\ref{thm:ct-reserve}.
+The respective agreement counts are $302$ and $1182$, exceeding
+the direction-word root bounds $K+B=272$ and $1056$.
+The label counts are unchanged from the preceding eighth-rate examples.
+Appendix~\ref{app:compact-certificates} gives integer certificates
+for the two new radii and comparisons.
+\end{proof}
+
+\section{Implications for hash-based SNARK security}
+\label{sec:snark-security}
+
+The preceding results concern properties of codes. Their relevance to
+SNARKs comes from the role those properties play in a soundness proof.
+This section explains that connection before considering a particular
+protocol.
+
+\subsection{The coding statement used by a reduction}
+
+An interactive oracle proof can ask a prover to supply evaluations of
+polynomials and then test those evaluations through a small number of
+queries. In a hash-based argument, Merkle commitments bind the prover
+to the supplied words. The algebraic analysis must still explain what
+passing the tests says about those words. List decoding and proximity
+gaps are two ingredients in such analyses~\cite{thaler,bciks}.
+
+For example, consider a code $C\subseteq E^n$, two fixed words
+$f_0,f_1\in E^n$, and a uniformly random challenge $z\in E$. Define
+\[
+ B_\theta(f_0,f_1)=\{z\in E:
+           \dist(f_0+zf_1,C)\le\theta\}.
+\]
+Suppose a coding theorem guarantees that, unless $f_0$ and $f_1$
+have correlated agreement with two codewords, the set $B_\theta$
+has size at most $T$. Then, for words without that correlated
+agreement,
+\[
+ \Pr_z[\dist(f_0+zf_1,C)\le\theta]
+ \le\min\{1,T/|E|\}.
+\]
+This is a bound on a specified algebraic event. Using it in a
+soundness proof also requires a reduction from verifier acceptance
+to that event, with the words fixed before the challenge is sampled.
+The evaluation field, coefficient field, and challenge field must
+be the fields covered by the coding theorem.
+
+The size of a decoding list enters a different counting step.
+If an analysis associates a received word with at most $L$ candidate
+codewords and proves a failure bound for each candidate, it can
+apply a union bound over those candidates. A numerical estimate for
+$L$ is therefore part of the quantitative argument. Replacing the
+actual list size by a conjectured smaller value can invalidate that
+argument. It does not determine the probability of the verifier's
+acceptance event.
+
+\subsection{What the counterexamples rule out}
+
+Three distinctions are needed to apply the results correctly.
+
+\paragraph{Minimum distance and list size.}
+The root bound proves the usual minimum-distance guarantee for
+Reed--Solomon codes. It does not bound how many codewords can lie
+near an arbitrary received word beyond the unique-decoding radius.
+Theorem~\ref{im:all-list} rules out a uniform
+$\exp(O_\rho(1/\eta))$ bound over prime fields and evaluation
+domains, even below the characteristic-based Elias radius. An
+analysis that needs such a bound must impose further restrictions
+on the code or use a different quantitative estimate.
+
+\paragraph{A list and the nearby points on a line.}
+A maximum-list bound concerns one received word at a time. It does
+not say that the nearby codewords for different points on an affine
+line belong to a common small family. Theorem~\ref{al:separation}
+makes this distinction explicit: the global maximum list size is
+$n-k-1$, while one affine line has $\binom n{k+1}$ nearby points,
+each with a unique witness. Its gap is $1/n$. This theorem does not
+settle the analogous question with a separately fixed positive gap.
+
+\paragraph{Uniform estimates and fixed-parameter estimates.}
+A security calculation uses a particular field, domain, rate, and
+radius. A theorem quantified over all prime-field codes would apply
+to that code, but a counterexample to the universal theorem need
+not use that particular code. Conversely, a bound with constants
+depending on the field or the gap cannot be used uniformly without
+controlling that dependence. The fixed-gap lift in
+Theorem~\ref{fg:fixed-gap} rules out a prescribed numerical
+coefficient with a remainder sublinear along its increasing-length
+family. Its field grows, and its chosen list size remains fixed.
+These quantifiers are part of the result.
+
+\subsection{From coding counterexamples to protocol conclusions}
+
+A coding counterexample is enough to refute a coding premise under
+the same quantifiers. A conclusion about a complete SNARK requires
+more. Its oracle words may be constrained by an arithmetization,
+previous commitments, claimed evaluations, and later consistency
+tests. A soundness analysis must account for those constraints and
+the distribution and order of all challenges. Passing to a
+noninteractive protocol through Fiat--Shamir introduces a further
+cryptographic analysis.
+
+The circle constructions give finite examples in polynomial spaces
+used by Circle STARKs. The quotient calculations in
+Appendices~\ref{app:b2raw} and~\ref{app:generic-quotient} examine
+additional algebraic conditions on derived words. Their statements
+retain their own sampling, radius, and conditioning hypotheses.
+In particular, the numerical raw-quotient example lies above the
+Elias radius, whereas the principal list and affine-line examples
+lie below it. No full-protocol security level follows from the
+quotient counts in this paper.
+
+The application below uses this distinction to identify which
+quantitative premises of a published analysis are contradicted and
+which questions about the instantiated protocol remain open.
+
+\section{Application to S-two's quantitative coding assumptions}
+\label{sec:stwo}
+
+The S-two whitepaper uses list- and line-decodability assumptions in
+its analysis of polynomial proximity tests~\cite{stwo}. This provides
+one application of the preceding coding results. We separate three
+questions: the asserted uniform list bound, the coefficient in a
+line-decodability threshold, and finite numerical instantiations.
+They require different counterexamples and different quantifiers.
+
+\subsection{The uniform list prescription}
+
+Conjecture 1 of the whitepaper takes the form
+\begin{equation}
+\label{eq:application-list-prescription}
+ \ell_C(\theta)\le c_1 2^{c_2H_2(\rho)/\eta},\qquad
+ \theta=1-\rho-\eta,
+\end{equation}
+with constants depending only on the rate and a stated range below
+the characteristic-based Elias radius. Under its universal
+prime-field and evaluation-domain quantifiers, this prescription is
+false for every fixed pair of finite positive constants.
+Theorem~\ref{im:all-list} gives a single sequence with
+\[
+ \log_2\ell_C(\theta)=\Omega_\rho(n),\qquad
+ 1/\eta=\Theta_\rho(\sqrt{n\log n}).
+\]
+The logarithm of the right-hand side of
+\eqref{eq:application-list-prescription} is sublinear in $n$, whereas
+the constructed list has a logarithm linear in $n$. Changing fixed
+constants cannot close that gap.
+
+This conclusion uses growing prime fields and a decreasing gap.
+It does not assert exponential lists at a fixed positive gap, and it
+does not rule out stronger guarantees for a restricted class of
+evaluation domains or a restricted relation between field size and
+length.
+
+\subsection{The quantitative line coefficient and its remainder}
+
+Conjecture 2 in Appendix~A.5 of the whitepaper has a threshold
+of the form $a=\ell(\theta)n+o(n)$, with concurrency number $n$.
+Substituting the proposed quantitative list bound gives
+\begin{equation}
+\label{eq:application-line-prescription}
+ a=c_1 2^{c_2H_2(\rho)/\eta}n+o(n).
+\end{equation}
+Here the asymptotic remainder matters. A finite example, or a sequence
+whose gap decreases, need not refute a remainder statement made only
+for each separately fixed gap.
+
+Theorem~\ref{fg:fixed-gap} addresses that issue directly. For any fixed
+constants, it preserves the prescribed rate and chooses a gap fixed along an
+increasing-length family. A preserved list has size
+$L>A$, where $A=c_1 2^{c_2H_2(\rho)/\eta}$. The family has $Ln$
+selected nearby witnesses, but no parametrized affine codeword graph
+contains more than $n$ selected pairs. Its discrepancy from the
+proposed coefficient is
+\[
+ (L-A)n.
+\]
+Since $L-A>0$ is fixed, no remainder that is $o(n)$ along this family
+can absorb the discrepancy. The family is selected independently of
+the remainder. Here $o(n)$ means sublinear along admissible
+increasing-length families, allowing the prime field to grow; the
+whitepaper does not explicitly state its field-uniformity convention.
+The theorem is stated for constants at least one;
+any smaller positive constants are covered by enlarging them to one.
+
+There are two qualifications. First, the fixed-gap construction has
+correlated agreement. It refutes the quantitative selected-witness
+line threshold; it is not a fixed-gap example of global failure of
+correlated agreement. Second, it does not refute a threshold expressed
+using the \emph{actual} maximum list size $\ell_C(\theta)$. The
+constructed selected count is $Ln\le\ell_C(\theta)n$. Replacing a
+false numerical estimate for list size and retaining a theorem that
+uses actual list size are different operations.
+
+Theorem~\ref{al:separation} addresses the actual-list question separately.
+At every fixed rate it has $\ell_C(\theta)=n-k-1$ but exponentially
+many uniquely nearby line points and maximum concurrency $n-k$.
+At rate one-half these bounds are $n/2-1$ and $n/2$, respectively. Thus even the threshold
+$\ell_C(\theta)n+o(n)$ fails along this shrinking-gap family.
+This rules out a familywise interpretation of that threshold; it does
+not settle a version whose remainder is controlled only after a
+positive gap has been fixed. The original conjecture does not specify
+this uniformity convention.
+
+\subsection{Finite comparisons on the circle code}
+
+The whitepaper's concrete examples set $c_1=c_2=1$ and omit the
+asymptotic remainder. At the common parameters of
+Theorem~\ref{thm:circle-finite-summary}, the resulting comparison
+values are $2^{1/\eta}$ for a list and $n2^{1/\eta}$ for the line
+threshold. Let $L_0$ and $B_0$ denote the list-size and scalar-count
+lower bounds certified in Appendix~\ref{app:circle}. They give
+\[
+ \frac{L_0}{2^{1/\eta}}>500,
+ \qquad
+ \frac{B_0}{n2^{1/\eta}}>200{,}000.
+\]
+These are ratios of coding-theoretic counts. They are not multipliers
+for a complete attack's success probability and are not security-bit
+losses. In particular, the logarithm of a list-size ratio is not, by
+itself, a reduction in a proof system's security level.
+
+The two bounds also concern the displayed radius. A parameter-table
+row evaluated at a different gap must be checked at that gap. For
+example, the value $2^{16}$ at rate $1/2$ corresponds to $\eta=1/16$,
+which differs from $33/1024-2/n$. A counterexample to a universal
+prescription does not automatically supply a counterexample to every
+individual numerical row.
+
+The circle tensor space and canonical full-coset domains described
+above are the algebraic spaces appearing in the examined public
+proving source~\cite{proving}; Proposition~\ref{prop:ct-fft-space} and
+Proposition~\ref{prop:ct-canonical} explain their mathematical
+identification. This connection makes the fixed-prime examples
+pertinent to the coding assumptions used for that family of tests.
+
+\paragraph{Concrete parameters and the challenge schedule.}
+The inspected production configuration uses a nominal 96-bit target:
+26 bits of query grinding, 70 queries, and blowup factor two. The
+source's parameter counter computes $26+70\cdot1=96$, and the
+project documentation calls its default soundness conjectured
+\cite{stwo-config}. This arithmetic records the parameter convention;
+a security theorem must justify the contributions attributed to each
+stage. The whitepaper's illustrated 100-bit configuration is a different
+choice~\cite[Section~5.5]{stwo}.
+
+There is a further distinction between that illustrated calculation
+and the cited implementation. The former allocates grinding to
+intermediate challenge stages, while the latter performs query grinding
+after those challenges and omits the corresponding intermediate checks
+\cite{stwo-grinding}. Grinding after a challenge cannot be credited to
+an earlier stage without a supporting argument. A quantitative analysis
+of the implementation must therefore use its actual challenge schedule
+and accepted parameters. This issue is separate from the counterexamples
+to the coding assumptions, and the comparison concerns only the pinned
+source revisions.
+
+\paragraph{The remaining protocol question.}
+A proximity test inside a proof system does not necessarily receive
+an arbitrary pair of words. Its inputs can be derived quotient
+polynomials constrained by earlier commitments, algebraic identities,
+and sampled evaluation points. Appendix~\ref{app:generic-quotient} resolves one of these algebraic
+conditions: fixed tables and fixed, generally false claimed openings
+produce raw quotient pencils with a certified joint proximity event.
+The transfer also handles specified nonlinear batching schedules
+(Theorem~\ref{thm:scheduled-transfer}), with explicit quotient-layer
+realizations. Its numerical raw-quotient example lies above the Elias
+radius (Section~\ref{sec:raw-radius-audit}); it is distinct from the
+below-Elias counterexamples. It does not prove that these inputs satisfy
+the complete set of commitment, AIR, and FRI conditions. Nor does a count of
+exceptional scalars determine the cost of finding favorable claims and witnesses
+or arranging a preceding transcript.
+Thus the coding results invalidate the stated quantitative
+justifications under their stated quantifiers; turning them into an
+attack on a complete protocol is a separate problem.
+
+\section{Further coding-theoretic questions}
+\label{sec:coding-open-questions}
+
+The main open questions concern the restrictions needed for useful
+coding bounds and their role in concrete soundness analyses.
+\begin{enumerate}
+\item \textbf{Restrictions on field size and domain.}
+What list bounds hold when $p$ is polynomial in $n$, or when the domain
+is restricted to a specified multiplicative subgroup or circle coset?
+The interval construction separates a universal claim from these more
+structured questions.
+\item \textbf{The correct dependence on the gap.}
+For a prescribed relation between $p$ and $n$, what dependence on
+$\eta$ is necessary? The exponential-list family has shrinking gap;
+the fixed-gap lift retains a fixed list rather than an exponentially
+growing one.
+\item \textbf{Bounds for a prescribed code.}
+Which list and proximity-gap bounds hold for a fixed field and a fixed
+FFT domain at the radii used in a proof system? A generic-domain
+existence theorem and a counterexample on an integer interval leave
+this question open. Such a theorem should expose its finite constants
+and its dependence on the challenge field.
+\item \textbf{Finding the large classes.}
+Can one efficiently describe or enumerate enough of the equal-moment
+or equal-coefficient classes to match the counting lower bounds?
+The existence arguments alone do not provide such algorithms.
+\item \textbf{Lines and actual list size.}
+What line-decodability statements follow from the actual list size
+at a fixed positive gap? Theorem~\ref{al:separation} rules out the
+proposed linear threshold along a shrinking-gap family, even with
+unique nearby witnesses on the selected line.
+\end{enumerate}
+
+
+\appendix
+\section{Circle-code constructions in detail}\label{app:circle}
+% Section-only mathematical exposition; theorem environments supplied by main.tex.
+\subsection{Base-field lists for circle evaluation codes}
+\label{rl:section}
+
+We first construct many codewords close to a single received word. The
+construction uses the roots of polynomials to choose agreement positions,
+then fixes a few coefficients so that the remaining polynomial parts have
+low degree. On the norm-one circle, the leading and trailing coefficients
+are linked. This lets one impose both sets of conditions at the cost of
+fixing only one set.
+
+\subsubsection{The norm-one circle and Laurent polynomials}
+\label{sec:circle-elementary-preliminaries}
+
+Let $p\equiv3\pmod4$ be prime. Since $-1$ is not a square in
+$\mathbb F_p$, adjoining a root $i$ of $i^2=-1$ gives the quadratic
+extension $F_2=\mathbb F_{p^2}$. Its nontrivial field automorphism is
+$a\mapsto a^p$, and $i^p=-i$. Thus, for $x,y\in\mathbb F_p$,
+\[
+ (x+iy)^p=x-iy,\qquad (x+iy)^{p+1}=x^2+y^2.
+\]
+The solutions of $x^2+y^2=1$ can therefore be written as the group
+\[
+ U=\{u\in F_2^\times:u^{p+1}=1\}.
+\]
+This group is cyclic of order $p+1$: it is the kernel of the norm map
+from $F_2^\times$ to $\mathbb F_p^\times$. For $n\mid p+1$, let
+$\mu_n\subseteq U$ be its subgroup of order $n$. Multiplying all points
+by $g\in U$ gives a rotated domain $g\mu_n$.
+
+The coordinate $u=x+iy$ simplifies computations on the circle because
+$u^{-1}=x-iy$. In particular,
+\[
+ x=\frac{u+u^{-1}}2,\qquad y=\frac{u-u^{-1}}{2i}.
+\]
+A \emph{Laurent polynomial} is a finite sum $\sum_j a_j u^j$ in which
+negative exponents are allowed. They cause no poles on $U$, since
+$u\ne0$. Its support is the set of exponents with nonzero coefficients.
+We call a Laurent polynomial with coefficients in $F_2$
+\emph{base-field-real} when
+\[
+ a_{-j}=a_j^p\quad\hbox{for every }j.
+\]
+This coefficient condition makes its values lie in $\mathbb F_p$ on
+$U$: taking the $p$th power both conjugates the coefficients and replaces
+$u$ by $u^{-1}$. The word ``real'' here denotes this finite-field
+condition, not a condition on real numbers.
+
+For even $K=2s$, the circle polynomial space used below is
+\[
+ \mathcal C_K=\{A(x)+yB(x):A,B\in\mathbb F_p[x],\qquad
+ \deg A<s,\ \deg B<s\}.
+\]
+It has dimension $K$ as a polynomial-function space on the algebraic
+circle. Whenever the stated evaluation domain is large enough to make
+evaluation injective, evaluating these functions gives a dimension-$K$
+linear code. We use the term \emph{circle FFT space} for this space;
+its tensor basis is explained in Proposition~\ref{prop:ct-fft-space}.
+The constructions below lie in its slightly smaller interior Laurent
+subspace. Working in that subspace makes rotation straightforward.
+
+For a length-$n$, dimension-$K$ evaluation code, write $\rho=K/n$ for
+its rate. A word agreeing with a received word in at least
+$(\rho+\eta)n$ positions lies at relative Hamming distance at most
+$\theta=1-\rho-\eta$. Thus $\eta$ measures the agreement beyond the
+rate. Throughout, $H_2$ denotes binary entropy, and
+\[
+ H_p(t)=t\log_p(p-1)-t\log_p t-(1-t)\log_p(1-t).
+\]
+The characteristic-$p$ Elias radius at rate $\rho$ is the solution
+$r_E(\rho)$ of $H_p(r_E)=1-\rho$ on the increasing branch of $H_p$.
+
+\begin{lemma}[Interior band of the circle FFT space]\label{rl:band}
+Let $p\equiv3\pmod4$ be prime, let $i^2=-1$ in $\mathbb F_{p^2}$, and write
+$u=x+iy$ on the norm-one circle. For even $K=2s$, the dimension-$K$ circle FFT
+space
+\[
+ \mathcal C_K=\mathbb F_p[x]_{<s}+y\mathbb F_p[x]_{<s}
+\]
+contains every base-field-real Laurent polynomial supported on
+$[-s+1,s-1]$. This interior subspace is preserved by rotations of the circle.
+\end{lemma}
+\begin{proof}
+For $0\le j<s$, the functions $u^j+u^{-j}$ are polynomials in $x$ of degree
+$j$, and $(u^j-u^{-j})/i$ are $y$ times polynomials in $x$ of degree $j-1$.
+The real combinations of these functions span the indicated interior band.
+Replacing $u$ by a norm-one scalar times $u$ preserves the band and reality.
+\end{proof}
+
+\begin{theorem}[Reciprocal-reserve real circle lists]\label{rl:list}
+Let $p\equiv3\pmod4$ be prime, let $n=MB$ divide $p+1$, and suppose $M\ge4$
+and $B\ge2$ are powers of two. Choose an even integer $d$ with $0<d<M$,
+and an integer $r\ge0$ such that
+\[
+ h=d+2r+2<M.
+\]
+Set $K=dB$ and $s=K/2$. On $D=\mu_n$, and on any
+rotation of this domain, there exists an $\mathbb F_p$-valued received word
+with at least
+\[
+ L=\left\lceil\frac{\binom{M-1}{h-1}}{M p^{2r}}\right\rceil
+\]
+distinct codewords in the exact space $\mathcal C_K$ of Lemma~\ref{rl:band},
+each agreeing with the received word at at least $hB-2$ positions. The rate and
+gap are exactly
+\[
+ \rho=\frac dM,\qquad
+ \eta=\frac{2r+2}{M}-\frac2n,\qquad
+ \theta=1-\rho-\eta.
+\]
+Every witness lies in the strict interior Laurent band, so no boundary-mode
+identification is needed to transport the construction to a coset.
+\end{theorem}
+\begin{proof}
+For each $h$-subset $A\subset\mu_M$ containing $1$, put
+\[
+ F_A(Y)=\prod_{a\in A}(Y-a)=\sum_{j=0}^{h} f_jY^j,\qquad c=f_0.
+\]
+The integer $h$ is even. Consequently $c\in\mu_M$, and the norm-one roots give
+the reciprocal coefficient identity
+\[
+ f_{h-j}=c f_j^p.                                      \tag{R1}
+\]
+Partition all $\binom{M-1}{h-1}$ anchored subsets by $c$ and the $r$ leading
+coefficients $f_{h-1},\ldots,f_{h-r}$. There are at most $M p^{2r}$ classes.
+In a largest class, containing at least $L$ supports, the bottom $r$
+coefficients are fixed as well, by (R1).
+
+Write $T_A(Y)=F_A(Y)/Y^{r+1}$. Let $v(Y)$ consist of its common top $r+1$
+and bottom $r+1$ Laurent terms. Thus these are precisely the terms coming from
+$f_0,\ldots,f_r$ and $f_{h-r},\ldots,f_h$. The remainder
+\[
+ R_A(Y)=v(Y)-T_A(Y)
+\]
+is an ordinary polynomial of degree at most $d=h-2r-2$. Distinct supports give
+distinct $R_A$, and the anchor gives $R_A(1)=v(1)$.
+
+For norm-one $Y$, (R1) implies
+\[
+ T_A(Y)^p=c^{-1}Y^{-d}T_A(Y).                           \tag{R2}
+\]
+The involution in (R2) pairs the retained top and bottom blocks, so $v$ and
+$R_A$ satisfy the same identity. Choose $\alpha\ne0$ with
+$\alpha^p/\alpha=c$, possible because $c$ has norm one. Explicitly,
+$\alpha=1+c^{-1}$ works if $c\ne-1$, and $\alpha=i$ works otherwise. Define
+\[
+ V(u)=\alpha u^{-s}v(u^B),\qquad
+ S_A(u)=\alpha u^{-s}R_A(u^B).
+\]
+Since $dB=2s$, (R2) proves that $V$ and $S_A$ are fixed by base-field
+Frobenius and hence are $\mathbb F_p$-valued on the circle. Both $B$ and $s$
+are even, so every $S_A$ has the same value
+$\beta=\alpha v(1)\in\mathbb F_p$ at $u=1$ and $u=-1$.
+
+Let $y(u)=(u-u^{-1})/(2i)$. Away from these anchors define
+\[
+ W(u)=\frac{V(u)-\beta}{y(u)},\qquad
+ P_A(u)=\frac{S_A(u)-\beta}{y(u)}.
+\]
+Give $W$ arbitrary base-field values at the two anchors. For the witness,
+multiplication of its numerator by $u^s$ gives the polynomial
+\[
+ \alpha\bigl(R_A(u^B)-v(1)u^s\bigr),
+\]
+of degree at most $K$, divisible by $u^2-1$. Therefore $P_A$ is a Laurent
+polynomial supported on $[-s+1,s-1]$, with removable values at the anchors.
+Its reality, including at the removable points, follows from the Frobenius
+identity of the rational expression. Lemma~\ref{rl:band} places it in the
+exact dimension-$K$ circle space. When $K$ is a power of two, this is
+the corresponding FFT space.
+
+Off the anchors,
+\[
+ W(u)-P_A(u)=
+ \frac{\alpha u^{-s}F_A(u^B)}{u^{B(r+1)}y(u)}.
+\]
+Thus agreement holds exactly on the selected $h$ fibers, except for the two
+discarded anchors. The map $u\mapsto u^B$ has fibers of size $B$ on $D$, so
+there are $hB-2$ certified agreements. Distinct $F_A$ give distinct $P_A$;
+a nonzero difference in the interior band, after clearing its Laurent
+monomial, has degree at most $K-2<n$, so the codewords are distinct on $D$.
+Finally, rotation preserves the real interior band and all agreement counts.
+\end{proof}
+
+\subsubsection{A numerical example over a Mersenne prime}
+\label{rl:parameters}
+Take $p=2^{31}-1$ and $n=2^{26}$. For $M=2048$, $r=32$, and $h=1090$,
+Theorem~\ref{rl:list} gives the exact integer lower bound
+\[
+ L=\left\lceil
+ \frac{\binom{2047}{1089}}{2048(2^{31}-1)^{64}}
+ \right\rceil
+ =1{,}199{,}728{,}024{,}606.
+\]
+For comparison, the same theorem with no reserved leading coefficients
+has $M=32$, $r=0$, $h=18$, and $L=8{,}286{,}954$. Consider the candidate
+finite list-size bound $2^{H_2(\rho)/\eta}$. At rate $1/2$, its
+base-two logarithm is $1/\eta$. The following table compares that bound
+with the two lower bounds.
+\begin{center}
+\begin{tabular}{rrrrrr}
+\hline
+$M$ & $r$ & $h$ & $\log_2 L$ & $1/\eta$ & $\log_2$ ratio\\
+\hline
+32 & 0 & 18 & 22.98241048 & 16.00000763 & 6.98240285\\
+2048 & 32 & 1090 & 40.12584453 & 31.03033173 & 9.09551280\\
+\hline
+\end{tabular}
+\end{center}
+The last column is the base-two logarithm of the ratio between the
+proved list-size lower bound and the candidate upper bound. The
+pigeonhole argument establishes the existence of the large coefficient
+class; it does not require enumerating that class.
+
+\subsubsection{Strict below-Elias certificate}
+\label{rl:elias}
+For the second row, the gap is
+\[
+ \eta=\frac{33}{1024}-\frac{2}{2^{26}}
+ =0.0322265326976776123046875.
+\]
+It is slightly smaller than $1/\log_2 p$, so that convenient sufficient
+condition must not be used. Direct high-precision evaluation instead gives
+\[
+ H_p(1/2-\eta)=0.49993479960319703654\ldots<1/2.
+\]
+The conclusion also has an exact integer/rational certificate. Direct
+integer arithmetic verifies $p^{100}>2^{3099}$, hence
+$\log_2 p>3099/100$. The binary entropy satisfies
+$H_2(1/2-\eta)\le1-2\eta^2$: its second derivative is at most $-4$,
+and its derivative vanishes at $1/2$. Direct rational arithmetic gives
+\[
+ \eta\frac{3099}{100}>1-2\eta^2.
+\]
+Consequently
+\[
+ H_p(1/2-\eta)
+ < (1/2-\eta)+\frac{H_2(1/2-\eta)}{\log_2p}<1/2.
+\]
+This radius is strictly below characteristic-$p$ Elias. Independently of
+rounded logarithms, the exact checks $L^8>2^{321}$ and
+$1/\eta<31031/1000$ certify a list excess greater than $9.094$ bits.
+
+\subsubsection{A small exact-arithmetic example}
+\label{rl:fixture}
+An independent implementation over $\mathbb F_{31}[i]/(i^2+1)$ uses
+$n=32$, $M=16$, $B=2$, $r=1$, and $h=12$. It enumerates all $1{,}365$
+anchored supports, finding $1{,}336$ coefficient classes and a largest class
+of size three. For every member of that class it verifies all reciprocal
+coefficient identities, real-valued centering, both removable anchors,
+exact division by $u^2-1$, the strict Laurent band $[-7,7]$, distinctness,
+and agreement at exactly $22$ non-anchor domain positions. This small example checks the algebraic construction; its parameters
+are not claimed to violate the numerical candidate bound.
+
+The finite-field checks use exact field arithmetic and integers; the
+displayed logarithms use 100-digit decimal arithmetic. Negative controls with $(M,r)=(512,7)$ and
+$(1024,15)$ have larger counts but are above Elias for this list
+construction and therefore do not give examples below Elias for this list construction.
+
+
+\subsection{Affine families from simultaneous coefficient constraints}
+\label{sec:ct-circle}
+
+We now seek a different phenomenon: many scalar combinations of two
+received words have nearby codewords, even though the two original words
+have no nearby codewords on a sufficiently large common set of positions.
+Such a scalar-parameterized affine family is also called a \emph{pencil}.
+
+Throughout this section, $p\equiv3\pmod4$ is prime,
+$F_2=\mathbb F_{p^2}=\mathbb F_p(i)$ with $i^2=-1$, and
+$E=\mathbb F_{p^4}$. A bar denotes the nontrivial automorphism of
+$F_2/\mathbb F_p$. The norm-one group
+\[
+  U=\{u\in F_2^\times:u\bar u=1\}
+\]
+has order $p+1$. For each $n\mid p+1$, write $\mu_n$ for its unique
+subgroup of order $n$. We use the split coordinate $u=x+iy$ on the circle;
+then $x=(u+u^{-1})/2$ and $y=(u-u^{-1})/(2i)$.
+
+For $m\ge1$, define the Laurent spaces
+\[
+  \mathcal L^-_m=\operatorname{span}_E\{u^j:-(m-1)\le j\le m-1\},
+  \qquad
+  \mathcal L^+_m=\operatorname{span}_E\{u^j:-m\le j\le m\}.
+\]
+If $D\subseteq U$, evaluation of either space on $D$ will be denoted by
+the same symbol when the domain is unambiguous. We consider any code
+$C\subseteq E^D$ satisfying
+\begin{equation}\label{eq:ct-band}
+  \mathcal L^-_m\subseteq C\subseteq\mathcal L^+_m.
+\end{equation}
+The dimension-$2m$ circle FFT space satisfies this condition, as shown in
+Section~\ref{sec:ct-source}. The constructions below place every witness
+in the smaller space, and rule out correlated agreement even in the larger one.
+
+For words $f,g\in E^D$, let $\operatorname{agr}_D(f,g)$ be the number of
+coordinates on which they agree. A pair $(f_0,f_1)$ has correlated agreement
+at threshold $T$ with $C$ if there exist $P_0,P_1\in C$ agreeing with the
+two words simultaneously on at least $T$ coordinates. When no such pair
+exists, a scalar $z\in E$ is \emph{globally bad at threshold $T$} if
+\[
+  \operatorname{agr}_D(f_0+zf_1,P_z)\ge T
+\]
+for some $P_z\in C$. A \emph{bank} is a set of distinct such scalars,
+together with one witness for each scalar. Here the bank records only which scalars have nearby codewords; it
+does not require those codewords to depend affinely on the scalar.
+
+\begin{lemma}[Global failure and line-decodability]
+\label{lem:ct-concurrency}
+Suppose $(f_0,f_1)$ has no correlated agreement at threshold $T$ on a
+domain of length $n$. Select a witness $P_z$ with at least $T$ agreements
+for each scalar in a bank. No affine line of codewords contains more than
+$n-T+1$ of the selected pairs $(z,P_z)$. In particular, it contains at most
+$n$ such pairs.
+\end{lemma}
+\begin{proof}
+Suppose $P_z=A+zB$ for $q$ distinct selected scalars. Let $a$ be the number
+of coordinates at which both $f_0=A$ and $f_1=B$. At every other coordinate,
+the affine equality $f_0+zf_1=A+zB$ can hold for at most one scalar. Hence
+\[
+  qT\le qa+n-a.
+\]
+Since $a\le T-1$, this gives
+$q(T-a)\le n-a$, and therefore $q\le n-T+1$.
+\end{proof}
+
+Consequently, a bank larger than a proposed line-decodability threshold
+contradicts the definition with concurrency number $n$. This observation
+will connect the explicit pencils to the finite threshold discussed below.
+
+\begin{theorem}[Simultaneous coefficient reserve pencil]
+\label{thm:ct-reserve}
+Let $n=MB\mid p+1$, where $B\ge2$ is even. Let $r\ge0$ and
+$2r+4\le h\le M-1$, and put
+\[
+ a=2r+3,\qquad K=(h-a)B=2m,\qquad s=m-1,\qquad T=hB-2.
+\]
+Assume $K+B<T\le n$, and let $C$ be any code on $D=\mu_n$ satisfying
+\eqref{eq:ct-band}. Define
+\begin{equation}\label{eq:ct-reserve-counts}
+ N=\left\lceil\frac{\binom{M-1}{h-1}}{M p^{2r}}\right\rceil,
+ \qquad Q=p^4-p^2,\qquad d=h-2r-2.
+\end{equation}
+There exist words $\gamma_0,\gamma_1\in E^D$ which have no correlated
+agreement at threshold $T$ with $C$, and which have a bank of size at least
+\begin{equation}\label{eq:ct-bank}
+ \left\lceil\frac{NQ}{Q+(d-1)(N-1)}\right\rceil.
+\end{equation}
+Each selected witness lies in $\mathcal L^-_m$, and agrees on at least
+$T$ coordinates outside $\{1,-1\}$. The same conclusion holds on any
+rotated domain $g\mu_n\subseteq U$.
+\end{theorem}
+
+\begin{proof}
+Put $G=\mu_M$. For every $h$-element subset $A\subseteq G$ containing $1$,
+write
+\[
+ F_A(Y)=\prod_{a\in A}(Y-a)=\sum_{j=0}^h f_{A,j}Y^j,
+ \qquad f_{A,h}=1.
+\]
+Partition these subsets by $c=f_{A,0}$ and the $r$ coefficients
+$f_{A,h-1},\ldots,f_{A,h-r}$. The constant coefficient has at most $M$
+possible values, and each other coefficient lies in $F_2$, so there are at
+most $Mp^{2r}$ classes. Fix a class of size at least $N$, and retain exactly
+$N$ distinct subsets in it.
+
+The norm-one condition on the roots gives the identity
+\begin{equation}\label{eq:ct-self-reciprocal}
+ F_A(Y)=cY^h\overline{F_A}(1/Y),
+ \qquad f_{A,j}=c\,\overline{f_{A,h-j}}.
+\end{equation}
+Thus the bottom $r$ coefficients are common to the class as well. In
+$F_A(Y)/Y^{r+1}$, let $v(Y)$ be the sum of the common terms with indices
+$0\le j\le r$ and $h-r\le j\le h$. Then
+\[
+ R_A(Y):=v(Y)-F_A(Y)/Y^{r+1}
+\]
+is an ordinary polynomial of degree at most $d=h-2r-2$. The polynomials
+$R_A$ are distinct, and all satisfy $R_A(1)=v(1)$.
+
+Choose a pole $\tau\in E\setminus F_2$, to be specified below. Define
+\[
+ f_0(u)=\frac{v(u^B)}{u^B-\tau},\qquad
+ f_1(u)=\frac{1}{u^B-\tau},\qquad
+ \gamma_j(u)=u^{-s}\frac{f_j(u)-f_j(1)}{u^2-1}.
+\]
+At $u=\pm1$ use the removable values. There are no other denominator
+zeros on $D$: every $u^B$ lies in $F_2$, while $\tau\notin F_2$.
+For each $A$, put
+\[
+ z_A=-R_A(\tau),\qquad
+ Q_A(Y)=\frac{R_A(Y)-R_A(\tau)}{Y-\tau},\qquad
+ P_A(u)=u^{-s}\frac{Q_A(u^B)-Q_A(1)}{u^2-1}.
+\]
+The polynomial $Q_A$ has degree at most $d-1=h-a=K/B$. Since $B$ is
+even, its composed numerator vanishes at $u=\pm1$. Dividing by $u^2-1$
+leaves degree at most $K-2$, and multiplying by $u^{-s}$ places $P_A$ in
+the Laurent band $[-s,s]$. Thus $P_A\in\mathcal L^-_m\subseteq C$.
+At every nonanchor point with $u^B\in A$, the identity
+$v(u^B)=R_A(u^B)$ holds; it also holds at the subtracted anchor value.
+Therefore $\gamma_0(u)+z_A\gamma_1(u)=P_A(u)$ at at least $hB-2=T$
+coordinates outside $\{1,-1\}$.
+
+To rule out correlated agreement, it suffices to rule out sufficient
+agreement with $\gamma_1$ alone. Put
+\[
+ S_B(u)=1+u^2+\cdots+u^{B-2}.
+\]
+Cancellation yields
+\begin{equation}\label{eq:ct-gamma-one}
+ \gamma_1(u)=-\frac{u^{-s}S_B(u)}{(1-\tau)(u^B-\tau)}.
+\end{equation}
+For $P\in\mathcal L^+_m$, the function $H(u)=u^mP(u)$ is an ordinary
+polynomial of degree at most $K$. Every agreement with $\gamma_1$ is a
+root of
+\begin{equation}\label{eq:ct-root-certificate}
+ (1-\tau)(u^B-\tau)H(u)+uS_B(u).
+\end{equation}
+This polynomial is nonzero: the second summand has degree $B-1$, whereas
+the first has degree at least $B$ when $H\ne0$. Its degree is at most
+$K+B$. Hence no word in the entire outer-band code agrees with
+$\gamma_1$ on more than $K+B<T$ coordinates. Formula
+\eqref{eq:ct-gamma-one} also holds at the removable anchor values.
+
+It remains to select a pole with sufficiently many distinct labels. For
+$A\ne A'$, the nonzero polynomial $R_A-R_{A'}$ has degree at most $d$
+and has the root $1\in F_2$. It therefore has at most $d-1$ roots outside
+$F_2$. Averaging over the $Q$ possible poles, some pole has at most
+$(d-1)N(N-1)/(2Q)$ colliding unordered pairs. If the multiplicities of its
+distinct labels are $b_1,\ldots,b_t$, then
+\[
+ \sum b_i=N,\qquad
+ \sum b_i^2\le N+(d-1)N(N-1)/Q.
+\]
+Cauchy--Schwarz gives $t\ge NQ/[Q+(d-1)(N-1)]$, proving
+\eqref{eq:ct-bank}. Finally, substituting $u/g$ transports all words to
+$g\mu_n$. Rotation preserves both Laurent bands and all agreement counts.
+\end{proof}
+
+\begin{corollary}[Poles in the quadratic coefficient field]
+\label{cor:ct-subfield-poles}
+Under the hypotheses of Theorem~\ref{thm:ct-reserve}, the defining
+words, selected witnesses, and scalar labels can all lie in
+$F_2=\mathbb F_{p^2}$. With
+\[
+ Q_2=p^2-M,
+\]
+the guaranteed number of distinct labels is
+\[
+ \left\lceil\frac{NQ_2}{Q_2+(d-1)(N-1)}\right\rceil.
+\]
+The pair has no correlated agreement at threshold $T$, even against
+outer-band codewords over an extension of $F_2$.
+\end{corollary}
+\begin{proof}
+Choose the pole from $F_2\setminus\mu_M$. The denominators only
+require $u^B\ne\tau$ and $1\ne\tau$, so every pole in this set is
+allowed, including zero. All coefficients and values in the pencil
+formulas then belong to $F_2$. A difference $R_A-R_{A'}$ still has
+the root $1$, which is excluded from the pole set, and therefore has
+at most $d-1$ roots among its $Q_2$ elements. The same collision
+average proves the count with $Q_2$ in place of $Q$.
+The nonzero polynomial in~\eqref{eq:ct-root-certificate} has degree
+at most $K+B<T$ over any ambient extension. Its root bound, and hence
+the absence of correlated agreement, are unchanged.
+\end{proof}
+
+\begin{remark}[Existence and explicitness]
+The formulas specify a concrete family of pencils. The large coefficient
+class and a sufficiently good pole are guaranteed by counting; a
+large coefficient class or a suitable pole need not have been enumerated to prove the
+lower bound. We distinguish this existence-certified bank from a bank
+whose labels and witnesses have all been listed explicitly.
+\end{remark}
+
+\subsubsection{A numerical affine-family example over a Mersenne prime}
+
+Let $p=2^{31}-1$ and take
+\[
+ M=1024,\quad r=15,\quad h=545,\quad n=2^{26},\quad B=2^{16}.
+\]
+Then $a=33$, $K=n/2$, $d=513$, and
+\[
+ T=545B-2,\qquad
+ \theta=1-T/n=\frac{479}{1024}+\frac2n,
+ \qquad
+ \eta=\frac{33}{1024}-\frac2n.
+\]
+The theorem gives the integer bank lower bound
+\begin{equation}\label{eq:ct-numeric-bank}
+ 30{,}608{,}283{,}697{,}878{,}843{,}892{,}998,
+\end{equation}
+whose base-two logarithm exceeds $74.6963402382$.
+
+At exact rate $1/2$, the finite prescription $n2^{H_2(1/2)/\eta}$ has
+logarithm less than $57.0303317264$. The excess in the logarithm is
+greater than $17.6660085118$ bits.
+
+For clarity, define the characteristic-$p$ Elias radius $r_E(\rho)$ by
+$H_p(r_E)=1-\rho$, with
+\[
+ H_p(t)=t\log_p(p-1)-t\log_p t-(1-t)\log_p(1-t).
+\]
+The above distance is strictly below $r_E(1/2)$. Equivalently, the
+quantity
+\[
+ (1/2-\theta)\log_2 p-H_2(\theta)
+       -\theta\log_2(1-1/p)
+\]
+is positive; its value exceeds $0.0020212123$. The exact count and
+high-precision entropy comparison are reproduced in the accompanying
+\texttt{counterexample\_parameters.py} and its machine-readable output.
+The probability that a uniform scalar in $E$ belongs to the certified bank
+is at least the count in \eqref{eq:ct-numeric-bank} divided by $p^4$.
+This probability describes the scalar-combination event for the two
+words in the theorem.
+
+\begin{remark}[The comparison radius matters]
+This example contradicts a universal finite threshold prescription at the
+displayed radius. It does not, by itself, contradict each numerical row of
+a parameter table that evaluates the prescription at a different radius.
+For example, substituting $\eta=1/16$ into $2^{1/\eta}$ gives
+$2^{16}$; that evaluates the candidate at a different radius from the
+one used here.
+\end{remark}
+
+\subsubsection{A sharper bound on selected-witness concurrency}
+\label{sec:ct-sharp-concurrency}
+
+The single-word agreement bound in the reserve construction gives a much
+stronger concurrency conclusion than the generic bound in
+Lemma~\ref{lem:ct-concurrency}.
+
+\begin{lemma}[Incidence bound from a quantitative agreement deficit]
+\label{lem:ct-quantitative-concurrency}
+Let $C\subseteq E^D$ be a linear code on $n$ coordinates, and let
+$0\le a_0<T\le n$ be integers. Suppose a word $f_1$ agrees with every
+codeword of $C$ in at most $a_0$ coordinates. For any word $f_0$ and any
+selection of codewords $p_z$, indexed by distinct scalars, with
+$\operatorname{agr}_D(f_0+zf_1,p_z)\ge T$, every parametrized affine
+codeword graph contains at most
+\[
+ \left\lfloor\frac{n-a_0}{T-a_0}\right\rfloor
+\]
+of the selected pairs $(z,p_z)$.
+\end{lemma}
+\begin{proof}
+Fix a graph $P_0+zP_1$ containing $q$ selected pairs, and let $a$ count
+the coordinates at which $f_0=P_0$ and $f_1=P_1$ simultaneously. Then
+$a\le a_0$. At every other coordinate the affine equality holds for at
+most one of the distinct selected scalars. Counting agreements gives
+$qT\le qa+n-a$, so
+\[
+ q\le\frac{n-a}{T-a}
+   =1+\frac{n-T}{T-a}
+   \le\frac{n-a_0}{T-a_0}.
+\]
+The final inequality uses $n\ge T$ and $a\le a_0<T$.
+Taking the integer part proves the claim.
+\end{proof}
+
+\begin{corollary}[At most fifteen selected witnesses on one graph]
+\label{cor:ct-fifteen-concurrency}
+Every parametrized affine codeword graph contains at most $15$ selected
+pairs from the M31 bank in \eqref{eq:ct-numeric-bank}. The same upper
+bound holds after the two-anchor puncturing and stereographic scaling
+of Theorem~\ref{thm:ct-transfer}.
+\end{corollary}
+\begin{proof}
+The root certificate \eqref{eq:ct-root-certificate} bounds agreement of
+$\gamma_1$ with every outer-band codeword by $a_0=K+B$. In the displayed
+M31 instance, $n=1024B$, $K=512B$, $T=545B-2$, and $B=65536$.
+Lemma~\ref{lem:ct-quantitative-concurrency} therefore gives
+\[
+ q\le\left\lfloor\frac{511B}{32B-2}\right\rfloor=15.
+\]
+Indeed, subtracting $15(32B-2)$ from the numerator gives $31B+30>0$,
+whereas $16(32B-2)-511B=B-32>0$.
+
+Puncturing removes only coordinates outside the certified $T$ agreements,
+and cannot increase the maximum agreement with $\gamma_1$ beyond $a_0$.
+The nonzero stereographic scaling preserves equalities; every transformed
+codeword lifts to the interior band, which is contained in the outer band.
+Thus the transformed code of length $n-2$ satisfies
+\[
+ q\le\left\lfloor\frac{511B-2}{32B-2}\right\rfloor=15
+\]
+by the same lemma. This is an upper bound on selected-witness concurrency,
+not a claim that a graph attaining fifteen witnesses has been exhibited.
+\end{proof}
+
+\subsection{Transfer to prime-domain Reed--Solomon codes}
+\label{sec:ct-stereographic}
+
+\begin{theorem}[Two-anchor puncturing and stereographic scaling]
+\label{thm:ct-transfer}
+Let $p\equiv3\pmod4$, let $E$ contain $\mathbb F_{p^2}$, and let
+$D=\mu_n$, where $n\mid p+1$ is even and $K=2m<n$. Suppose words $\gamma_0,\gamma_1$ and a bank
+of distinct scalars have witnesses in $\mathcal L^-_m$, each with at
+least $T$ agreements outside $\{1,-1\}$. Suppose the pair has no
+correlated agreement at threshold $T$ with $\mathcal L^-_m$.
+Then there is a set $D'\subseteq\mathbb F_p$ of size $n-2$ and a pair
+of words over $E$ with the same bank and the same agreement threshold
+for the ordinary Reed--Solomon code
+\[
+ \operatorname{RS}_{<K-1}(E,D').
+\]
+This code has exact rate $(K-1)/(n-2)$, and the transformed pair has no
+correlated agreement at threshold $T$.
+\end{theorem}
+
+\begin{proof}
+Delete the two anchors. Writing $u=x+iy$, map each retained point to
+\[
+ t=\frac{y}{1+x}\in\mathbb F_p.
+\]
+Stereographic parametrization is injective away from $(-1,0)$, which was
+deleted, and has inverse
+\[
+ x=\frac{1-t^2}{1+t^2},\qquad
+ y=\frac{2t}{1+t^2},\qquad
+ u=\frac{1+it}{1-it}.
+\]
+The resulting set $D'$ has $n-2$ distinct finite points. Since $p\equiv3
+\pmod4$, the function $w(t)=(1+t^2)^{m-1}$ is nonzero on $\mathbb F_p$.
+For every $j\in[-(m-1),m-1]$,
+\begin{equation}\label{eq:ct-mobius-basis}
+ w(t)u^j=(1+it)^{m-1+j}(1-it)^{m-1-j}.
+\end{equation}
+These are polynomials of degree at most $2m-2=K-2$, and they form a
+basis of that polynomial space. Indeed they are the images of the
+homogeneous monomial basis of binary forms of degree $2m-2$ under the
+invertible change of variables $(X,Y)\mapsto(X+iY,X-iY)$. This proof is
+valid in positive characteristic and does not require any binomial
+coefficient to be nonzero.
+
+Multiply each retained coordinate of each word and witness by $w(t)$.
+Equation~\eqref{eq:ct-mobius-basis} shows that the witness code becomes
+exactly $\operatorname{RS}_{<K-1}(E,D')$. All equality tests and scalar
+labels are preserved by nonzero coordinate scaling, so every witness
+keeps its $T$ guaranteed agreements. Any correlated agreement of the
+transformed pair would lift to two elements of $\mathcal L^-_m$ agreeing
+on the same original coordinates, a contradiction. Finally,
+\[
+ \frac{\dim\operatorname{RS}_{<K-1}(E,D')}{|D'|}
+ =\frac{K-1}{n-2}.
+\]
+This equals $1/2$ when $K=n/2$.
+\end{proof}
+
+\begin{corollary}[Transfer of the reserve bank]
+\label{cor:ct-transfer-reserve}
+In Theorem~\ref{thm:ct-reserve}, suppose $h=M/2+a$, where $a=2r+3$,
+so that $K=n/2$. The same bank exists for an ordinary Reed--Solomon
+code with a prime-field domain, extension alphabet $E$, exact rate
+$1/2$, length $n'=n-2$, and gap
+\[
+ \eta'=\frac{T}{n-2}-\frac12=\frac{aB-1}{n-2}.
+\]
+Together with Lemma~\ref{lem:ct-concurrency}, a bank larger than
+$(n-2)2^{1/\eta'}$ contradicts the corresponding finite
+line-decodability threshold with concurrency number $n-2$.
+\end{corollary}
+
+The M31 instance above satisfies this inequality as well. It is therefore
+an example under the literal prime-field-domain and extension-alphabet
+quantifiers of the finite prescription, rather than only a circle-code
+analogue. The transfer uses a change of coordinates and nonzero coordinate
+scaling. It therefore preserves equality sets and scalar labels exactly.
+
+The accompanying exact-arithmetic fixture checks all $189$ archived
+circle witnesses over $\mathbb F_{8191^4}$ after this transformation. They
+become degree-at-most-$14$ polynomials on $30$ distinct prime-field
+coordinates, retain $189$ distinct labels, and each has at least $20$
+agreements. The no-correlated-agreement argument uses the algebraic bound
+$18<20$; it is not represented as an exhaustive enumeration of all codewords.
+
+\subsection{Circle polynomial spaces and coset domains}
+\label{sec:ct-source}
+
+For completeness, we verify two algebraic facts used by the
+constructions: the relation between the circle tensor basis and Laurent
+bands, and the relation between a full coset and its two half-cosets.
+Neither fact depends on an ordering of evaluation coordinates.
+
+\begin{proposition}[The circle tensor basis]
+\label{prop:ct-fft-space}
+For $K=2m$ a power of two, the circle FFT tensor basis spans
+\[
+ C_K=\{A(x)+yB(x):\deg A<m,\ \deg B<m\}.
+\]
+After scalar extension to $E$ it satisfies
+$\mathcal L^-_m\subseteq C_K\subseteq\mathcal L^+_m$.
+\end{proposition}
+\begin{proof}
+The tensor factors are $y,x,\pi(x),\pi^2(x),\ldots$, with
+$\pi(x)=2x^2-1$. Products not using $y$ have distinct leading degrees
+$0,\ldots,m-1$ and nonzero leading coefficients, so they form a basis
+of the polynomials in $x$ of degree less than $m$. Multiplication by
+$y$ gives the second summand. Substitution of
+$x=(u+u^{-1})/2$ and $y=(u-u^{-1})/(2i)$ proves the outer-band
+containment. The functions
+$1,x,\ldots,x^{m-1},y,xy,\ldots,x^{m-2}y$ span the inner band.
+The same basis remains a basis after extending coefficients from
+$\mathbb F_p$ to $E$.
+\end{proof}
+
+\begin{proposition}[Canonical domains]
+\label{prop:ct-canonical}
+Suppose $n$ is even and $2n\mid p+1$. If $g\in U$ has order $2n$,
+the canonical coset $g\mu_n$ is the disjoint union
+\[
+ \{g^{1+4j}:0\le j<n/2\}\ \cup
+ \{g^{-(1+4j)}:0\le j<n/2\}.
+\]
+Thus describing a canonical domain as two conjugate half-cosets changes
+only the ordering of its points.
+\end{proposition}
+\begin{proof}
+In additive point-index notation modulo $2n$, the full odd coset is
+$\{1+2j:0\le j<n\}$. Its half-coset representation is
+$\{1+4j:0\le j<n/2\}$ and its negatives. These two half-cosets are
+disjoint and their union is exactly the full odd coset. Passing to the
+split multiplicative coordinate gives $g\mu_n$.
+\end{proof}
+
+Consequently, a construction on a full multiplicative coset also applies
+when its coordinates are listed using the two half-cosets. Rotation
+preserves both Laurent bands.
+
+\begin{remark}[Sizes and target spaces]
+The M31 circle has order $p+1=2^{31}$; a canonical coset uses a subgroup
+of twice its own size and has maximum length $2^{30}$. Here $n$ denotes evaluation length. For example, the rate-$1/2$
+code at length $2^{26}$ has dimension $2^{25}$. The full outer-band circle code has
+dimension $K+1$, rather than $K$; the proof excluding correlated agreement still covers it, but its
+rate is $1/2+1/n$ and any comparison naming that code must use that rate.
+\end{remark}
+
+\subsection{What the finite counterexamples establish}
+\label{sec:ct-scope}
+
+The list construction and the affine-family construction address two
+different finite bounds. At rate $1/2$, the first gives a list larger than
+$2^{1/\eta}$. The second gives more than $n2^{1/\eta}$ exceptional
+scalars, with no correlated agreement at the prescribed threshold. The
+Reed--Solomon transfer shows that the latter phenomenon also occurs with
+a prime-field evaluation domain and an extension-field alphabet.
+
+One must distinguish such finite statements from a proposed asymptotic
+threshold of the form
+\[
+ a=\ell(\theta)n+o(n),\qquad
+ \ell(\theta)\le c_1 2^{c_2 H_2(\rho)/\eta},\qquad
+ \theta=1-\rho-\eta.
+\]
+The displayed numerical examples contradict the remainder-free choice
+$c_1=c_2=1$ at their stated fields, lengths, and radii. A single finite
+example does not determine the unspecified quantifiers in $o(n)$ and
+does not refute every choice of constants $c_1,c_2$.
+
+For an asymptotic claim, the field, domain length, and gap must be allowed
+to vary in a stated way. In particular, an ordinary Reed--Solomon code
+with a prime-field evaluation domain has length at most $p$. Holding
+$p$ fixed while allowing an arbitrary prime-dependent remainder leaves
+no unbounded sequence of such lengths. The separate fixed-gap lifting
+construction in this manuscript gives an increasing-length family for
+the quantitative coefficient: its discrepancy is linear and cannot be
+absorbed by a sublinear remainder for that family. That selected-graph
+construction has correlated agreement and is distinct from the globally
+non-correlated affine families constructed here. Neither argument
+refutes a line bound whose coefficient validly bounds the actual list
+size.
+
+\subsection{The common-core form of the circle pencil}
+\label{app:common-core}
+
+The anchored construction in Theorem~\ref{thm:ct-reserve} can be written
+in the fixed-core form familiar from the Proximity Prize's orbit
+pencil~\cite{orbit-pencil}. This is a change of presentation, with the
+same witnesses and agreement counts.
+
+Use the theorem's notation, and fix one support $A_0$. For each support
+$A=\{1\}\cup U$, write
+\[
+ F_A(Y)=(Y-1)G_U(Y),\qquad
+ D_U(Y)=\frac{G_{U_0}(Y)-G_U(Y)}{Y^{r+1}}.
+\]
+The common leading and trailing coefficients imply
+$\deg D_U\le h-2r-3=K/B$. Since
+$R_A-R_{A_0}=(Y-1)D_U$, the old scalar labels and the new labels
+$t_U=D_U(\tau)$ satisfy
+\[
+ z_A-z_{A_0}=(1-\tau)t_U.
+\]
+Set $Q_U=(D_U-t_U)/(Y-\tau)$ and
+$S_B(u)=(u^B-1)/(u^2-1)$. Then the new pencil and witnesses are
+\[
+ g_0=\frac{u^{-s}S_B(u)G_{U_0}(u^B)}
+              {u^{B(r+1)}(u^B-\tau)},\qquad
+ g_1=-\frac{u^{-s}S_B(u)}{u^B-\tau},\qquad
+ W_U=u^{-s}S_B(u)Q_U(u^B).
+\]
+Their difference is
+\[
+ g_0+t_Ug_1-W_U
+   =\frac{u^{-s}S_B(u)G_U(u^B)}
+                {u^{B(r+1)}(u^B-\tau)}.
+\]
+The zeros consist of the $h-1$ varying fibers and the fixed core of
+$B-2$ points with $u^B=1$ and $u\ne\pm1$. The agreement count is
+$(h-1)B+B-2=hB-2$. Also
+$\deg(S_B Q_U(u^B))\le K-2$, so the centered witnesses lie in
+the required interior Laurent band.
+
+Direct subtraction in the original formulas gives
+\[
+ g_0=\gamma_0+z_{A_0}\gamma_1-P_{A_0},\qquad
+ g_1=(1-\tau)\gamma_1,\qquad W_U=P_A-P_{A_0}.
+\]
+Thus an invertible affine change of scalar and a codeword translation
+identify the two presentations. The number of labels and the failure
+of correlated agreement are unchanged. In particular, introducing this
+common-core notation does not itself improve the existing numerical bound.
+
+\section{A two-fiber pencil in raw quotient form}
+\label{app:b2raw}
+This section addresses one algebraic compatibility condition with the
+conjugate-line quotient, using the unweighted formula in\footnote{Source checked at Stwo revision \nolinkurl{826591c6c371376810ca8213b5812d5daf6d5092}, \texttt{core/constraints.rs} and \texttt{core/pcs/quotients.rs}.} the source. It does not construct an accepted Stwo transcript.
+In particular, the claimed openings below are zero and generally false.
+
+Write $p=2^{31}-1$, $H=\mathbb F_p[i]$, $E=H[w]$, where
+$i^2=-1$ and $w^2=\kappa=2+i$. Conjugation over $H$ sends $w$ to $-w$.
+Let $n=2M\mid p+1$, $K=2m\mid p+1$, with $m$ even and $m+3\le M-1$.
+The circle code $C_K$ contains every Laurent polynomial with exponents
+between $1-m$ and $m-1$, and is contained in the band $[-m,m]$.
+
+\begin{proposition}[Fixed tables realizing a two-fiber pencil]
+There are two $\mathbb F_p$-valued tables on $\mu_n$, fixed independently
+of the sample, and an out-of-domain circle sample over $E$, such that
+their normalized raw quotients $r_0,r_1$ with claimed values zero have
+at least
+\[
+ J=\left\lceil\frac{NQ}{Q+m(N-1)}\right\rceil,\qquad
+ N=\left\lceil\frac{\binom{M-1}{m+2}}M\right\rceil,\quad
+ Q=\frac{p^2-1}{2},
+\]
+distinct parameters $\alpha$ for which $r_0+\alpha r_1$ agrees with
+$C_K$ on at least $K+4$ coordinates. The direction $r_1$ agrees with
+any codeword on at most $K+2$ coordinates, so the pencil has no common
+agreement on $K+4$ coordinates.
+\end{proposition}
+\begin{proof}
+Choose a class of $(m+2)$-subsets $U\subset\mu_M\setminus\{1\}$ with
+common constant coefficient $c$ in $G_U(Y)=\prod_{a\in U}(Y-a)$.
+There are at least $N$ members. Fix $U_0$, and set
+\[
+ D_U=(G_{U_0}-G_U)/Y,\qquad \deg D_U\le m.
+\]
+These polynomials are distinct. Average collisions of their evaluations
+over the $Q$ nonsquares $\tau\in H^*$. Every difference has at most
+$m$ roots, so Cauchy--Schwarz gives a nonsquare $\tau$ with at least
+$J$ distinct labels $t_U=D_U(\tau)$. Every element of $\mu_M$ is a
+square in $H$, so these poles avoid the domain.
+
+Put $Y=u^2$ and
+\[
+ g_0=\frac{u^{1-m}G_{U_0}(u^2)}{u^2(u^2-\tau)},\qquad
+ g_1=-\frac{u^{1-m}}{u^2-\tau},\qquad
+ W_U=u^{1-m}\frac{D_U(u^2)-t_U}{u^2-\tau}.
+\]
+The last expression lies in the strict Laurent band. The difference
+$g_0+t_Ug_1-W_U$ is
+$u^{1-m}G_U(u^2)/[u^2(u^2-\tau)]$, giving $2(m+2)$ agreements.
+For any codeword $C$, multiplying $g_1-C$ by $u^m(u^2-\tau)$ gives
+a nonzero polynomial of degree at most $K+2$. Nonzeroness follows
+by evaluating at a root of $u^2-\tau$, where the remaining term is $-u$.
+This proves the direction bound.
+
+Choose $a_0\ne0$ with $a_0^p/a_0=c$: take $a_0=1+c^{-1}$ if
+$c\ne-1$, and $a_0=i$ otherwise. The two fixed tables are
+\[
+ f_0(u)=a_0u^{-(m+2)}G_{U_0}(u^2),\qquad
+ f_1(u)=u^m+u^{-m}.
+\]
+Conjugating coefficients and using $u^p=u^{-1}$ proves that both
+are $\mathbb F_p$-valued. Neither depends on $\tau$.
+
+Because $\kappa$ and $\tau$ are nonsquares in $H$, choose $b\in H^*$
+with $\kappa b^2=\tau$. Set $a=wb$ and
+\[
+ z_x=(a+a^{-1})/2,\qquad z_y=(a-a^{-1})/(2i).
+\]
+These coordinates satisfy the circle equation and are anti-invariant
+under conjugation over $H$. Writing $z_x=wX_1,z_y=wY_1$, we have
+$Y_1\ne0$ and
+\[
+ U_z=(x-(X_1/Y_1)y)/2
+     =L_0u^{-1}(u^2-\tau),\qquad L_0=\frac1{2(1-\tau)}.
+\]
+For claimed opening zero, the raw conjugate-line formula is
+$q=(\overline z_y-z_y)f/[(-x)Y_1-(-y)X_1]$, hence $q/w=f/U_z$.
+Thus, with $r_j=q_j/w$, direct multiplication gives
+\[
+ r_0=\lambda_0g_0,\qquad r_1=\lambda_1g_1+P_\tau,
+\]
+where
+\[
+ \lambda_0=a_0/L_0,\qquad \lambda_1=-(\tau^m+1)/L_0,
+ \qquad
+ P_\tau=\frac{u^{1-m}}{L_0}
+       \sum_{j=0}^{m-1}\tau^{m-1-j}u^{2j}\in C_K.
+\]
+Here $\lambda_1\ne0$: otherwise $\tau^{2m}=1$, which would make
+$\tau$ a square in $H$, since $2m\mid p+1$.
+For $\alpha_U=\lambda_0t_U/\lambda_1$, the witness is
+$\lambda_0W_U+\alpha_UP_\tau$. The scalar changes and codeword shift
+preserve distinct labels, agreement counts, and the direction bound.
+Multiplication by $w$ also preserves membership in the $E$-linear code.
+\end{proof}
+
+\paragraph{Finite instance and remaining protocol gap.}
+Taking $(n,K,M,m)=(128,32,64,16)$ gives agreement $36/128$ and
+$N=40{,}448{,}653{,}414{,}754$, yielding
+$J=40{,}437{,}303{,}920{,}543$. The expression above is an exact lower
+bound; no enumeration of this bank is claimed. A separate deterministic
+fixture over $p=127$, with the same extension polynomial, checks the
+raw quotient identities and agreement counts for multiple nonsquare
+poles, holding the two base-field tables fixed throughout. An additional fixture
+over the actual M31 field checks three supports at one nonsquare pole:
+all 1,536 identities pass, with 36 agreements for each support.
+This result concerns a specially chosen sample family. It does not
+establish its probability under Stwo's sampler, map the actual challenge
+power schedule or its precise evaluation cosets, or address interpolation and extension of the raw
+quotient subdomain. Nor does it show that the tables and false openings
+survive the remaining proof checks. The bounds for larger fibers do
+not automatically apply to this two-fiber case.
+
+There is a concrete reason to keep the sampler issue separate.
+Under an idealized uniform sample from the $E$-rational circle and an
+independent uniform batching parameter in $E$, this particular family
+is rare. The map $a\mapsto((a+a^{-1})/2,(a-a^{-1})/(2i))$ bijects
+$E^*$ with that circle. Samples used here have $a\in wH^*$, a fraction
+$1/(p^2+1)$ of the circle. All constructed batching labels lie in $H$,
+a fraction $1/p^2$ of $E$. Thus the event consisting of this sample
+family and these labels has probability at most
+$1/[p^2(p^2+1)]$, approximately $2^{-124}$, even before limiting the
+label bank. This is an upper bound for the constructed event in the
+stated idealized model, not a soundness bound for Stwo. In particular,
+raw quotient compatibility by itself does not establish a practical
+attack or a reduction below a 96-bit security target.
+
+\section{From large real lists to raw quotient pencils at typical samples}
+\label{app:generic-quotient}
+Sampling outside the evaluation domain to constrain candidate codewords
+is the established DEEP technique~\cite{deepfri}. Here we study large
+explicit families under the conjugate-line quotient, fixed claims, and
+prescribed scalar schedules.
+
+The special sample restriction in Appendix~\ref{app:b2raw} can be
+removed. We first prove a bound with sample-dependent claimed openings;
+Theorem~\ref{thm:fixed-claim-transfer} then fixes the claims before the
+sample and improves the joint probability bound. Sample-dependent claims
+are consistent with the inspected source order: column commitments
+precede the sample, while claimed values are mixed before the batching
+challenge. Both results concern raw quotient agreement; neither proves
+full proof acceptance.
+
+\begin{theorem}[A list-to-quotient transfer]
+Let $p=2^{31}-1$, $H=\mathbb F_{p^2}$ and $E=\mathbb F_{p^4}$,
+with the tower and normalization of Appendix~\ref{app:b2raw}.
+Let $\mathcal D$ be a set of $n$ base-field circle points and $K=2m$.
+Suppose a fixed base-field word $f$ has $N$ distinct real Laurent
+polynomials $F_j$, supported in $[-m,m]$, each agreeing with $f$
+on at least $T>K+2$ points of $\mathcal D$.
+Set
+\[
+ S=(p^2-1)^2,\qquad
+ D_* =\left\lceil\frac{NS}{S+2K(N-1)}\right\rceil,\qquad
+ J=\left\lceil\frac{D_*}{p^2}\right\rceil.
+\]
+For at least half of the $S$ admissible circle samples described below,
+there is a claimed value $v$ such that the two fixed tables $(f,0)$,
+with claimed values $(v,1)$, have normalized raw quotients $r_0,r_1$
+for which at least $J$ distinct $\alpha\in H$ satisfy
+\[
+ r_0+\alpha r_1\text{ agrees with }C_K(H)
+ \text{ on at least }T\text{ coordinates}.
+\]
+The direction $r_1$ has at most $K+2$ agreements with any codeword,
+so these pencils have no common agreement on $T$ coordinates.
+The claims are chosen after the sample and before $\alpha$.
+\end{theorem}
+\begin{proof}
+Parameterize the $E$-circle by
+$z_x=(a+a^{-1})/2$, $z_y=(a-a^{-1})/(2i)$, $a\in E^*$.
+Call $a$ admissible when $a\notin H$ and $z_y\notin H$.
+For $a\notin H$, the second condition fails exactly when
+$a\overline a=-1$. The sets $H^*$ and this norm fiber have sizes
+$p^2-1$ and $p^2+1$, and intersect at $\pm i$. Their complement
+therefore has size $S$.
+
+For $j\ne k$, multiplying $F_j-F_k$ by $u^m$ gives a nonzero
+polynomial of degree at most $K$. Thus at most $K$ admissible values
+of $a$ cause $F_j(z)=F_k(z)$. The expected number of unordered
+collisions is at most $\binom N2K/S$. By Markov's inequality,
+at least half the admissible samples have at most $N(N-1)K/S$
+collisions. Cauchy--Schwarz then gives at least $D_*$ distinct values
+among $F_j(z)$. One of the $p^2$ additive $H$-cosets in $E$ contains
+at least $J$ of them. Write this coset as $v+H$, and retain one index
+for each distinct value. The labels $\alpha_j=F_j(z)-v$ are distinct
+and belong to $H$.
+
+Use the source functions $U_z$ and $\ell_b$ defined in
+Appendix~\ref{app:b2raw} and the preceding note. Explicitly, for
+$z_x=X_0+wX_1$, $z_y=Y_0+wY_1$, and $b=B_0+wB_1$,
+\[
+ U_z=(x-X_0)/2-(X_1/Y_1)(y-Y_0)/2,\qquad
+ \ell_b=B_0+(B_1/Y_1)(y-Y_0).
+\]
+The polynomial $uU_z$ has degree two and distinct nonzero roots
+$a,\overline a$. The numerator $F_j-\ell_{F_j(z)}$ vanishes at
+both roots. Indeed $\ell_b(z)=b$, and conjugating over $H$ supplies
+the other equality. Division therefore yields
+\[
+ P_j=\frac{F_j-\ell_{F_j(z)}}{U_z}
+ \in\operatorname{span}_H\{u^{1-m},\ldots,u^{m-1}\}\subset C_K(H).
+\]
+Since $b\mapsto\ell_b$ is $H$-linear and $\ell_1=1$, we obtain
+\[
+ r_0+\alpha_j r_1-P_j
+ =\frac{f-\ell_v-\alpha_j}{U_z}-P_j
+ =\frac{f-F_j}{U_z}.
+\]
+No denominator vanishes on the base-field circle, so the claimed
+agreements follow. Finally $r_1=-1/U_z$. For any codeword $P$ in
+the outer Laurent band, clearing $r_1-P$ by $u^m(uU_z)$ gives a
+polynomial of degree at most $K+2$. It is nonzero at $u=a$, where
+its value is $-a^{m+1}$. This proves the direction bound.
+\end{proof}
+
+\paragraph{An explicit family and finite count.}
+The construction in Appendix~\ref{app:b2raw} supplies such a family:
+put $f=R_{U_0}$ and
+\[
+ R_U=a_0u^{-(m+2)}G_U(u^2),\qquad F_U=f-R_U.
+\]
+The common leading and constant coefficients give support
+$F_U\subseteq[-m,m]$, while $R_U$ has $K+4$ roots on the domain.
+For $(n,K)=(512,128)$, the exact counts give
+\[
+ N=\left\lceil\binom{255}{66}/256\right\rceil,
+ \qquad J\ge18{,}014{,}398{,}492{,}704{,}768.
+\]
+On every good sample the certified raw proximity event therefore has
+probability at least $J/p^4\approx2^{-70}$ under a uniform linear
+batching challenge. The good-sample fraction costs approximately one
+further bit. This is not a protocol security estimate.
+
+\paragraph{Domains and the source sampler.}
+The transfer theorem applies to arbitrary base-field circle domains.
+The displayed family transports to a coset $u_0\mu_n$ by replacing
+$u$ with $u/u_0$. Reality and Laurent support are preserved, and its
+quotient witnesses lie in the rotation-invariant interior band.
+Stwo's canonical domain is precisely such a coset, with $u_0$ of
+order $2n$. The source samples using stereographic coordinates
+$((1-t^2)/(1+t^2),2t/(1+t^2))$. For uniform $t\in E$, each admissible
+circle point has exactly one preimage; the two singular parameters
+and the omitted point are outside this admissible set. Thus, under
+independent uniform secure-field draws, the joint sample-and-batching
+proximity event has probability at least $SJ/(2p^8)$.
+
+\paragraph{Scope and checks.}
+Exact generic-sample fixtures pass over $\mathbb F_{127}$ and M31;
+a separate $\mathbb F_{23}$ fixture checks the fixed second claim $1$
+and distinct labels on additive $H$-cosets. Section~\ref{sec:implicit-bank} gives a compact description of the
+large support family and constructs its fixed table efficiently. An
+efficient algorithm for finding a favorable claim and its witnesses
+is still not established. Additional
+columns, periodicity terms, claim constraints from the AIR, commitment
+consistency, FRI queries and grinding remain to be analyzed. In
+particular, neither the proximity probability nor the existence of a
+nearby codeword establishes an accepted false proof.
+
+
+\subsection{A fixed claim and a stronger joint probability bound}
+\label{sec:fixed-claim-transfer}
+
+The preceding argument selects a favorable claimed value separately for
+each sample and discards up to half the admissible samples. Both losses
+can be avoided when the objective is a joint sample-and-batching bound.
+The following averaging argument fixes a single claim before either
+challenge. Its guarantee concerns the total number of successful pairs;
+it does not promise the same number of labels at every sample.
+
+\begin{theorem}[Fixed-claim list-to-quotient transfer]
+\label{thm:fixed-claim-transfer}
+Under the hypotheses of the list-to-quotient transfer above, let
+\[
+ A_* = \left\lceil
+ \frac{N S^2}{p^2\bigl(S+K(N-1)\bigr)}
+ \right\rceil,\qquad S=(p^2-1)^2.
+\]
+There is one value $v_*\in wH$, independent of the sample and batching
+challenge, such that the fixed tables $(f,0)$ with fixed claims
+$(v_*,1)$ have at least $A_*$ distinct pairs $(a,\alpha)$ with
+$a$ admissible and $\alpha\in H$, for which
+\[
+ r_{0,a}+\alpha r_{1,a}
+ \text{ agrees with }C_K(H)\text{ in at least }T\text{ coordinates}.
+\]
+For every admissible sample, the direction has at most $K+2<T$
+agreements with any codeword. Under independent uniform draws
+$t,\alpha\in E$, with $t$ mapped to the circle by the stereographic
+sampler, the probability of the certified raw proximity event is at least
+\begin{equation}\label{eq:fixed-claim-probability}
+ \frac{A_*}{p^8}
+ \ \ge\ {}
+ \frac{N S^2}{p^{10}\bigl(S+K(N-1)\bigr)}.
+\end{equation}
+The two singular sampler parameters are counted as failures in this
+unconditioned bound.
+\end{theorem}
+\begin{proof}
+Let $\mathcal A$ be the set of admissible parameters. For $a\in\mathcal A$
+and $b\in E$, let
+\[
+ m_{a,b}=\#\{j:F_j(z(a))=b\},\qquad
+ \mathcal I=\{(a,b):m_{a,b}>0\}.
+\]
+Then $\sum_{a,b}m_{a,b}=NS$. Each unordered pair of distinct Laurent
+polynomials collides at at most $K$ parameters, by the same degree-$K$
+root bound used above. Consequently
+\[
+ \sum_{a,b}m_{a,b}^2
+ =NS+2\sum_a\sum_b\binom{m_{a,b}}2
+ \le NS+K N(N-1).
+\]
+Cauchy--Schwarz, applied once to all incidences, gives
+\begin{equation}\label{eq:global-evaluation-incidences}
+ |\mathcal I|\ge
+ \frac{(NS)^2}{NS+KN(N-1)}
+ =\frac{NS^2}{S+K(N-1)}.
+\end{equation}
+
+Fix the $p^2$ representatives $wH$ for the additive cosets of $H$ in
+$E$. Partition $\mathcal I$ according to the coset containing $b$.
+One fixed coset $v_*+H$ contains at least $A_*$ incidences. For each
+of these incidences choose one witness $F_j$ and put
+$\alpha=b-v_*\in H$. This is an injective map from the retained
+incidences to pairs $(a,\alpha)$, even when several polynomials have
+the same value at one sample. Both $v_*$ and the tables are fixed
+throughout this count.
+
+For the sample $a$, write $U_a=U_{z(a)}$ and use the interpolation
+operator $\ell_{a,b}$ from the preceding proof. The quotient witness is
+\[
+ P_{a,j}=\frac{F_j-\ell_{a,b}}{U_a}\in C_K(H),
+ \qquad
+ r_{0,a}+\alpha r_{1,a}-P_{a,j}
+ =\frac{f-F_j}{U_a}.
+\]
+Here $r_{0,a}=(f-\ell_{a,v_*})/U_a$ and $r_{1,a}=-1/U_a$.
+Thus all retained incidences give the required agreements. The
+degree-$K+2$ direction argument applies to every admissible sample,
+regardless of the chosen coset. Finally, every admissible $a$ has
+exactly one nonsingular stereographic preimage $t\in E$. The
+$A_*$ distinct pairs therefore occupy $A_*$ of the $p^8$ equally
+likely pairs $(t,\alpha)$, proving the probability claim.
+\end{proof}
+
+\paragraph{The same finite instance with fixed claims.}
+For the preceding $(n,K,T)=(512,128,132)$ instance,
+\[
+ N=\left\lceil\binom{255}{66}/256\right\rceil,
+ \qquad S=(p^2-1)^2,\qquad p=2^{31}-1.
+\]
+Exact integer arithmetic gives
+\[
+ A_*=
+ 766247768292072891947921916124690454684786490150411277,
+ \qquad 2^{69}A_*>p^8.
+\]
+The certified joint raw proximity probability is therefore strictly
+greater than $2^{-69}$. The earlier half-sample bound is
+$SJ/(2p^8)$, approximately $2^{-71}$ at these same parameters;
+the improvement is approximately a factor of four. The earlier
+$2^{-70}$ figure was conditional on a good sample, so it should
+not be compared directly with this joint probability.
+
+\paragraph{Quantifiers and limits.}
+This strengthens the timing statement to
+\emph{there exists one fixed claim, followed by random sample and
+batching draws}. It does not identify an efficiently computable $v_*$.
+Section~\ref{sec:implicit-bank} constructs the table and describes the
+support bank implicitly; efficient witness recovery remains open. Individual samples may have fewer labels
+than the previous per-good-sample bound, or no certified label.
+The false claim $1$ for the zero table remains part of the construction.
+The result concerns raw quotient agreement under the stated independent
+uniform challenge model. It does not establish a Fiat--Shamir attack,
+an accepted false proof, or a 69-bit security level for Stwo.
+
+\paragraph{Reproducible checks.}
+The companion script \texttt{checks/verify\_fixed\_claim.py} checks the
+displayed large-field counts using exact integers and rational numbers.
+An independent toy instance over $\mathbb F_{7^4}$ exhausts all
+$2{,}304$ admissible samples. It checks the sampler bijection, counts
+distinct evaluation incidences and additive cosets, fixes one claim
+globally, and verifies every retained quotient identity and agreement
+count. A separate small family with actual evaluation collisions tests
+the multiplicity term in \eqref{eq:global-evaluation-incidences}.
+These finite checks support the formulas; the proof above establishes
+the general statement.
+
+
+\subsection{Subtracting roots forced by shared agreements}
+\label{sec:agreement-collisions}
+
+The degree bound in Theorem~\ref{thm:fixed-claim-transfer} counts all
+roots of a difference as possible sample collisions. Roots on the
+base-field evaluation domain cannot be admissible samples. Agreements
+with the same received word force many such roots and give a sharper
+bound.
+
+\begin{proposition}[Agreement-aware collision bound]
+\label{prop:agreement-collisions}
+Suppose that, for each of the $N$ polynomials in the transfer theorem,
+we select $T$ agreement coordinates from a common pool of $n_0$
+base-field circle points. Write
+\[
+ NT=n_0q+r,\qquad 0\le r<n_0,\qquad
+ R=(n_0-r)\binom q2+r\binom{q+1}2,
+ \qquad C_*=K\binom N2-R.
+\]
+Then the total number of unordered polynomial-pair collisions over
+admissible samples is at most $C_*$. In particular, the assumed family
+implies $C_*\ge0$. The total number $I$ of distinct sample/value
+incidences satisfies
+\begin{equation}\label{eq:agreement-incidences}
+ I\ge \frac{N^2S^2}{NS+2C_*}.
+\end{equation}
+Consequently Theorem~\ref{thm:fixed-claim-transfer} holds with the
+stronger pair count
+\[
+ A_{\rm agr}=\left\lceil\frac{N^2S^2}{p^2(NS+2C_*)}\right\rceil.
+\]
+\end{proposition}
+\begin{proof}
+Let $d_x$ count selected agreement sets containing coordinate $x$.
+Then $\sum_xd_x=NT$, and double counting gives
+\[
+ \sum_{j<k}|A_j\cap A_k|=\sum_x\binom{d_x}2\ge R.
+\]
+The last inequality follows by balancing the integer counts: moving one
+unit from a count at least two larger than another strictly decreases
+the sum of binomial coefficients. At a coordinate of $A_j\cap A_k$,
+both polynomials equal the received word. These are distinct roots of
+$u^m(F_j-F_k)$, in addition to any admissible collision roots, and are
+disjoint from the admissible sample set. Hence pair $(j,k)$ has at most
+$K-|A_j\cap A_k|$ admissible collisions. Summing proves the bound.
+The same incidence Cauchy--Schwarz argument as before yields
+\eqref{eq:agreement-incidences}; partition into the $p^2$ additive
+$H$-cosets gives the final statement.
+\end{proof}
+
+In the displayed two-fiber family, all $132$ agreement coordinates
+avoid the two points above $1\in\mu_{256}$. Thus $n_0=510$ is valid,
+with $N=\lceil\binom{255}{66}/256\rceil$. The exact bound becomes
+\[
+ A_{\rm agr}=
+ 1045232662865816582797566371469227027334159065108360767.
+\]
+The negative base-two logarithm of $A_{\rm agr}/p^8$ is approximately
+$68.5521$. This is a further factor of approximately $1.3641$ over
+Theorem~\ref{thm:fixed-claim-transfer} at the same parameters.
+
+\subsection{Fixed claims under nonuniform batching schedules}
+\label{sec:scheduled-transfer}
+
+The coefficient multiplying the second quotient need not itself be a
+uniform field element. A second averaging argument handles a prescribed
+function of the original uniform challenge. Here the claimed value is
+allowed to range over all of $E$, rather than just the representatives
+$wH$.
+
+\begin{theorem}[Transfer for a prescribed scalar schedule]
+\label{thm:scheduled-transfer}
+Use the same list, admissible samples, and raw quotients as above.
+Let $g_0,g_1:E\to E$ be fixed functions, and set
+\[
+ \mathcal B=\{\alpha\in E:g_0(\alpha)\ne0,
+                  \ g_1(\alpha)/g_0(\alpha)\in H\},
+ \qquad G=|\mathcal B|.
+\]
+Let $I_0$ be any real lower bound for the number of distinct
+sample/value incidences, for example the right-hand side of
+\eqref{eq:agreement-incidences}. There is a single claim $v\in E$,
+fixed before both challenges, for which at least
+\[
+ A_{\rm sched}=\left\lceil\frac{G I_0}{p^4}\right\rceil
+\]
+distinct admissible pairs $(a,\alpha)$ satisfy
+\[
+ g_0(\alpha)r_{0,a}+g_1(\alpha)r_{1,a}
+ \text{ agrees with }C_K(E)\text{ in at least }T\text{ coordinates},
+\]
+with fixed tables $(f,0)$ and fixed claims $(v,1)$.
+Under the same independent uniform challenge model, the joint
+probability is at least $A_{\rm sched}/p^8$.
+\end{theorem}
+\begin{proof}
+For every distinct incidence $(a,b)$ and every $\alpha\in\mathcal B$,
+assign the triple to
+\[
+ v=b-\phi(\alpha),\qquad
+ \phi(\alpha)=g_1(\alpha)/g_0(\alpha)\in H.
+\]
+There are $GI$ triples and $p^4$ possible values of $v$, so one fixed
+value receives at least $A_{\rm sched}$ triples. For this fixed $v$,
+the map to $(a,\alpha)$ is injective: these two coordinates uniquely
+determine $b=v+\phi(\alpha)$. Choose a polynomial witnessing each
+retained incidence. The raw quotient identity gives
+\[
+ g_0(\alpha)r_{0,a}+g_1(\alpha)r_{1,a}
+       -g_0(\alpha)P_{a,j}
+ =g_0(\alpha)\frac{f-F_j}{U_a}.
+\]
+The witness $g_0(\alpha)P_{a,j}$ lies in the scalar-extended code
+$C_K(E)$. Nonzero multiplication preserves agreement coordinates.
+Counting the distinct sampler preimages proves the probability bound.
+No injectivity or uniform-output assumption about $\phi$ is used.
+\end{proof}
+
+\paragraph{Additional terms that are codewords.}
+The conclusion is preserved after adding any
+$B_{a,\alpha}\in C_K(E)$ to the batched word: add the same codeword
+to its witness. Thus other columns need not have zero quotients if
+their complete contribution is proved to lie in this code. A common
+preceding factor $\alpha^e$, $e>0$, removes at most the challenge
+$\alpha=0$ from the certified set. These statements require code
+membership of the additional contribution; they do not discard
+arbitrary additional quotient or AIR terms.
+
+\paragraph{Polynomial schedules over the subfield.}
+If $g_0,g_1\in H[X]$ and $g_0$ is a nonzero polynomial of degree
+$d_0<p^2$, then $G\ge p^2-d_0$: every $\alpha\in H$ outside the
+roots of $g_0$ qualifies. Thus even a nonlinear relative coefficient
+incurs no additional loss from the degree of $g_1$. More precisely,
+for $g_0=1$, $g_1=X^d$, $d\ge1$, cyclicity of $E^*$ gives
+\begin{equation}\label{eq:power-schedule-count}
+ G=1+(p^2-1)\gcd(d,p^2+1).
+\end{equation}
+Indeed a nonzero $\alpha$ qualifies exactly when
+$\alpha^{d(p^2-1)}=1$. The assertion is about the number of original
+challenges, not a claim that $\alpha^d$ is uniformly distributed.
+
+\paragraph{A finite dependence on the gap between powers.}
+For $p=2^{31}-1$, each of $d=1,2,5,10$ divides $p^2+1$.
+The same list with the agreement-aware incidence bound gives:
+\begin{center}
+\begin{tabular}{rrrr}
+\toprule
+Power gap $d$ & One-sample columns & Qualifying challenges $G$
+ & $-\log_2(A_{\rm sched}/p^8)$\\
+\midrule
+1 & 2 & $p^2$ & $68.5521$\\
+2 & 3 & $2p^2-1$ & $67.5521$\\
+5 & 6 & $5p^2-4$ & $66.2301$\\
+10 & 11 & $10p^2-9$ & $65.2301$\\
+\bottomrule
+\end{tabular}
+\end{center}
+The final column is approximate; exact integer certificates prove,
+respectively, probabilities greater than $2^{-69}$, $2^{-68}$,
+$2^{-67}$, and $2^{-66}$. All rows use the same
+$(n,K,T)=(512,128,132)$; the favorable fixed claim may differ by row.
+At the quotient layer the schedule $1,\alpha^d$ is realized by putting
+$d-1$ zero columns with truthful zero claims between the two designated
+columns, with one sample per column at the same point. Every inserted
+numerator is identically zero, while its sample consumes one challenge
+power. This establishes the displayed quotient expression and column
+count; it does not show that any particular AIR allows this arrangement.
+
+\begin{corollary}[The periodicity coefficient $\alpha+\alpha^3$]
+\label{cor:cubic-schedule}
+For $g_0=1$ and $g_1=X+X^3$, one has $G=2p^2-1$.
+Using the agreement-aware bound at $(n,K,T)=(512,128,132)$ gives
+\[
+ A_{\rm cubic}=\left\lceil
+ \frac{(2p^2-1)N^2S^2}{p^4(NS+2C_*)}\right\rceil,
+ \qquad
+ 2^{68}A_{\rm cubic}>p^8.
+\]
+Its joint raw-proximity lower bound is therefore strictly greater than
+$2^{-68}$; its negative base-two logarithm is approximately $67.5521$.
+\end{corollary}
+\begin{proof}
+Put $q=p^2$ and write $\alpha=x+wy$, with $x,y\in H$ and $w^2=\kappa$.
+For $y=0$ there are $q$ qualifying challenges. For $y\ne0$, equality
+of $\alpha+\alpha^3$ with its conjugate is equivalent to
+\[
+ 3x^2+\kappa y^2=-1.
+\]
+The element $3\in\mathbb F_p^*$ is a square in $H$ (here $p\ne3$).
+Choose $s\in H$ with $s^2=3$. Since $i^2=-1$,
+\[
+ \operatorname{Norm}_{E/H}(sx+wiy)=3x^2+\kappa y^2.
+\]
+The nonzero norm fiber at $-1$ has $q+1$ elements. Exactly two have
+$y=0$, since $-1/3$ is a square in $H$. Thus $q-1$ further challenges
+qualify, giving $G=2q-1$. The numerical inequality is certified with
+exact integers by the companion script.
+\end{proof}
+
+\paragraph{The source schedule that gives this coefficient.}
+At the pinned proving revision~\cite{proving},
+\texttt{build\_samples\_with\_randomness\_and\_periodicity} assigns
+powers across trees, columns, and samples in that order. Two consecutive
+one-sample columns at the same point receive $1,\alpha$ if they are the
+first nonempty columns. No periodicity sample is added to either.
+
+There is also an exact three-power realization of the cubic coefficient.
+Place the $(f,v)$ column first with its sole sample at $z$. Place the
+zero column next, with claims $0$ at a previous point $z_-$ and $1$ at
+$z$. Give the zero column the maximal lifted log size. Its periodicity
+point then coincides with $z$, and the source assigns the three powers
+$\alpha,\alpha^2,\alpha^3$ to its periodicity, previous, and current
+samples. Its previous-sample numerator is zero. The normalized sum is
+therefore exactly
+\[
+ r_{0,z}+(\alpha+\alpha^3)r_{1,z}.
+\]
+If the previous point makes the source's conjugate-line formula
+singular, that sample must additionally be excluded. For a fixed
+base-field rotation $z_-=hz$, at most $p^2-1$ initially admissible
+samples are lost: the excluded parameters satisfy
+$a\overline a=-h^{-2}$, a norm fiber of size $p^2+1$, of which two
+parameters lie in $H$. Replacing $S$ by the conservative
+$S'=S-(p^2-1)$ in the incidence bound gives a version covering both
+source denominators. The strict $2^{-68}$ comparison still holds.
+
+This realizes the scalar schedule at the quotient layer for the stated
+column arrangement. It does not establish that an AIR admits these
+claims, that a complete transcript accepts, or that the favorable claim
+and corresponding witnesses can be found efficiently.
+
+\subsection{The radius of the raw-quotient example}
+\label{sec:raw-radius-audit}
+
+The $(512,128,132)$ example has rate $\rho=1/4$, gap $\eta=1/128$,
+and radius $\theta=95/128$. It is \emph{above} the characteristic-based
+Elias radius: $H_p(95/128)\approx0.7687496752>3/4$.
+This comparison follows without floating-point assumptions from
+\[
+ p^{96}95^{95}33^{33}<(p-1)^{95}128^{128}.
+\]
+It follows that this raw-quotient example is not itself a counterexample
+within the below-Elias range of the whitepaper's list prescription.
+The below-Elias counterexamples elsewhere in the paper remain separate
+constructions. Neither the $2^{-69}$ bound nor its stronger variants
+should be interpreted as a protocol security level.
+
+\subsection{What a nearby codeword supplies at the FRI query stage}
+\label{sec:query-survival}
+
+The source permits one further conditional statement. Its first FRI
+layer combines the quotient values computed at sampled positions with
+complementary values supplied by the FRI proof. Agreement is required
+at the sampled positions; the surrounding folding block need not consist
+entirely of agreement coordinates.
+
+\begin{lemma}[Conditional query survival]
+\label{lem:query-survival}
+Let $R\in E^D$ be the quotient word computed from fixed committed
+tables and claimed openings, and suppose $P\in C_K(E)$ agrees with
+$R$ on $A\subseteq D$. Assume that an honest FRI proof is formed for
+$P$ on this same domain and degree bound, and that the original table
+decommitments are valid. If every sampled quotient-query position lies
+in $A$, the first-layer value substitution leaves the honest FRI
+verification unchanged. This holds for the source's supported folding
+steps and leaf packing.
+
+Under $q_{\rm qry}$ independent uniform draws from $D$, with replacement
+before sorting and deduplication, the probability of this sufficient
+event is exactly
+\[
+ \left(\frac{|A|}{|D|}\right)^{q_{\rm qry}}.
+\]
+If the preceding raw-proximity event has probability at least $\pi$
+and supplies $|A|\ge T$ on a length-$n$ domain, then this particular
+two-stage sufficient event has probability at least
+$\pi(T/n)^{q_{\rm qry}}$, under independent future query draws.
+\end{lemma}
+\begin{proof}
+The source function
+\texttt{compute\_decommitment\_positions\_and\_rebuild\_evals}
+partitions the sorted query positions into folding blocks. At an actual
+query position it uses the provided quotient value; at any other
+position in that block it takes a value from the FRI witness. Form the
+latter values and all authentication paths using the honest proof for
+$P$. When every queried position is in $A$, the supplied quotient
+value is also $P$ at that position. Thus every reconstructed block,
+including any packed leaf, equals its honest counterpart. Its Merkle
+check, subsequent fold, and all later FRI checks are unchanged.
+
+The raw query draws all land in $A$ with the displayed probability.
+Sorting and removing duplicates does not change that event. The final
+statement follows by conditioning on the earlier sample and batching
+challenges, including the selected witness, and then averaging.
+\end{proof}
+
+\paragraph{Numerical consequence and scope.}
+For the $(512,128,132)$ example, $T/n=33/128$. At $70$ raw query
+draws the additional sufficient-event factor is
+\[
+ (33/128)^{70}\approx2^{-136.8924}.
+\]
+For illustration, multiplying this by the certified raw bound for the
+eleven-column, power-gap-ten schedule gives a two-stage lower bound
+of approximately $2^{-202.1225}$. This uses $70$ as a stated query
+count; it does not identify this rate-$1/4$ example with a production
+parameter set. These are lower bounds for a particular sufficient
+event, not upper bounds on all possible strategies or proof-system
+soundness guarantees.
+
+The lemma is conditional on constructing the codeword and honest FRI
+proof, providing valid table decommitments, and meeting the prescribed
+domain and degree metadata. It does not establish the AIR conditions,
+efficient recovery of witnesses or the favorable fixed claim, or a successful
+native verifier execution. Proof-of-work search and Fiat--Shamir retry
+costs are not included in this probability. In particular, an inverse
+one-trial probability is not automatically an attack work factor:
+reusing a successful prefix and searching later challenges requires its
+own analysis.
+
+The companion \texttt{checks/verify\_query\_survival.py} enumerates all
+$8^3=512$ ordered query triples for an eight-coordinate word with five
+agreements. For each of folding steps $1,2,3$, precisely $125$ triples
+give unchanged reconstructed blocks, including cases where unqueried
+positions in the block are disagreement coordinates. This checks the
+reconstruction argument against an explicit vector commitment model;
+it does not replace a native Merkle or FRI test.
+
+
+\subsection{An explicit table with an exponentially large implicit list}
+\label{sec:implicit-bank}
+
+The support family need not be enumerated to construct its received
+word. On $\mu_M$, equality of the constant coefficients of the root
+polynomials is a subset-sum condition modulo $M$. This yields an
+efficient exact construction of the fixed table used above.
+
+\begin{proposition}[Constructing the table without enumerating its list]
+\label{prop:implicit-bank}
+Let $\lambda$ generate $\mu_M$ and consider the $h$-element subsets of
+$\{\lambda,\lambda^2,\ldots,\lambda^{M-1}\}$. The sizes of all classes
+with equal constant coefficient, a largest class, and one support in
+that class can be computed with $O(M^2h)$ additions of integers of
+$O(M)$ bits, storing $O(Mh)$ such integers and support masks.
+For the displayed $M=256$, $h=66$ instance, the largest count is
+\[
+ N_{\rm exact}=
+ 471959451942648482921857753174390587612228702156784439968875.
+\]
+The residue $1$ attains this count. It gives an explicitly computed
+$512$-entry M31-valued table on a canonical coset and an implicit
+family of $N_{\rm exact}$ distinct real Laurent polynomials with
+support in $[-64,64]$, each agreeing with that table in exactly
+$132$ coordinates.
+\end{proposition}
+\begin{proof}
+Let $D_{j,k,r}$ be the number of $k$-subsets of $\{1,\ldots,j\}$ whose
+sum is $r$ modulo $M$. The initial condition is $D_{0,0,0}=1$, with
+all other counts zero, and
+\[
+ D_{j,k,r}=D_{j-1,k,r}+D_{j-1,k-1,r-j\bmod M}.
+\]
+Updating $k$ in decreasing order permits an in-place computation using
+$O(Mh)$ counts. Whenever a count first becomes positive, retain one
+witness support mask from the responsible predecessor, adding $j$ if
+the second term supplied it. These masks have at most $M$ bits.
+Every count is at most $2^{M-1}$. The stated operation and storage
+bounds follow. Also
+$\sum_rD_{M-1,h,r}=\binom{M-1}h$, which checks the total count.
+
+The constant coefficient of
+$G_U(Y)=\prod_{j\in U}(Y-\lambda^j)$ is
+$(-1)^h\lambda^{\sum_{j\in U}j}$. Thus the residue classes counted by
+the recurrence are exactly the constant-coefficient classes. Choose a
+largest class and its retained support $U_0$. The earlier construction
+sets
+\[
+ f(u)=a_0u^{-(m+2)}G_{U_0}(u^2),\qquad
+ F_U(u)=a_0u^{-(m+2)}\bigl(G_{U_0}(u^2)-G_U(u^2)\bigr).
+\]
+Here $m=64$, and $a_0$ is the explicit phase factor from Appendix~
+\ref{app:b2raw}. The common leading and constant coefficients put
+every $F_U$ in $[-64,64]$. Its difference from $f$ vanishes at precisely
+the two-point fibers of $U$, giving $132$ agreements. Distinct
+supports give distinct polynomials. Rotation to the canonical coset
+preserves these statements. The table requires only $G_{U_0}$, not the
+other polynomials in the family.
+\end{proof}
+
+\paragraph{A closed form and a fixed defining support.}
+In this instance, every odd residue has exactly
+\[
+ N_{\rm exact}=\frac{\binom{255}{66}+\binom{127}{33}}{256}
+\]
+supports. This also follows from the roots-of-unity filter. For a
+character of order $d=2^s>1$, the support generating function is
+$(1-t^d)^{256/d}/(1+t)$; its degree-$66$ coefficient is
+$A_d=(-1)^{\lfloor66/d\rfloor}\binom{256/d-1}{\lfloor66/d\rfloor}$.
+Thus the count at residue $r$ is
+\[
+ \frac1{256}\left(\binom{255}{66}
+      +\sum_{d=2,4,\ldots,256}c_d(r)A_d\right),
+\]
+where $c_d(r)$ is $d/2$ if $d\mid r$, $-d/2$ if $d/2\mid r$ but
+$d\nmid r$, and zero otherwise. For odd $r$ only $d=2$ contributes,
+giving the displayed closed form. For even $r$ the $d=2$ contribution
+has the opposite sign; the exact inequality
+$\sum_{d\ge4}(d/2)|A_d|<2\binom{127}{33}$ shows its remaining terms
+cannot reach the odd-residue count. The script independently checks
+this character formula against all $256$ dynamic-programming counts.
+
+One may fix the defining support outright as
+$U_0=\{2,3,\ldots,68\}\setminus\{40\}$: it has $66$ elements
+and sum $2305\equiv1\pmod{256}$. Hence even the search for a
+defining support is unnecessary for this particular table.
+
+\paragraph{Concrete artifact.}
+The companion \texttt{checks/construct\_m31\_bank.py} performs
+$3{,}759{,}360$ integer updates; the recorded run took approximately
+$0.6$ seconds for this counting stage. It writes all $256$ exact
+residue counts, a defining support, the canonical domain parameters,
+and the $512$ base-field table entries to
+\texttt{checks/explicit\_m31\_bank.json}. A checked generic-sample
+fixture also supplies a normalized quotient witness in the interior
+Laurent band $[-63,63]$ and verifies all $512$ coordinate identities,
+with exactly $132$ agreements.
+
+The fixture's claimed value is chosen to realize one specified
+sample/challenge pair. It is not asserted to be the favorable fixed
+claim promised by Theorem~\ref{thm:scheduled-transfer}. The family is
+now explicit as a compact membership rule and exact count, and its
+fixed table is fully constructed. Finding the favorable claim and
+recovering a witness efficiently for a fresh challenge remain open.
+The numerical probability bounds above may continue to use the
+slightly smaller $N=\lceil\binom{255}{66}/256\rceil$, by retaining
+that many members of the class.
+
+\subsection{Witness recovery as a constrained subset product}
+\label{sec:witness-search}
+
+The implicit description of the family permits an exact search for a
+witness after sampling. The following reduction isolates the remaining
+algorithmic problem and gives a complete, although expensive, baseline.
+The claim $v$ is held fixed throughout the search.
+
+\begin{proposition}[Exact recovery criterion and a complete search]
+\label{prop:witness-search}
+Use the two-fiber family of Section~\ref{sec:implicit-bank}, with
+$h=m+2$, defining support $U_0$, residue $r$, and relative sample
+parameter $a\notin H$. Assume $\mu_{2M}\subset H$.
+For any desired value $\beta\in E$, a support $U$ in this family
+satisfies $F_U(a)=\beta$ if and only if
+\begin{equation}\label{eq:subset-product-target}
+ |U|=h,\qquad \sum_{j\in U}j\equiv r\pmod M,\qquad
+ \prod_{j\in U}(a^2-\lambda^j)
+ =G_{U_0}(a^2)-\frac{a^h}{a_0}\beta.
+\end{equation}
+Each factor on the left is nonzero. A zero target therefore has no
+solution. For a nonzero target, partition $\{1,\ldots,M-1\}$ into
+parts of sizes $s$ and $M-1-s$. There is a complete search using a
+table of at most
+\[
+ R=\sum_{k=0}^{\min(h,M-1-s)}\binom{M-1-s}{k}
+\]
+right-hand subset records and at most
+\[
+ L=\sum_{k=0}^{\min(h,s)}\binom{s}{k}
+\]
+dictionary lookups per target, in addition to constructing the subset
+products. Keeping all records with equal keys recovers every matching
+support; keeping one per key suffices to find a witness when one exists.
+\end{proposition}
+\begin{proof}
+Substitute
+$F_U(a)=a_0a^{-h}(G_{U_0}(a^2)-G_U(a^2))$ and rearrange.
+If $a^2=\lambda^j$, then $a$ is one of its two square roots in
+$\mu_{2M}\subset H$, contradicting $a\notin H$.
+
+For a right-hand subset $V$, store its support under the key
+\[
+ \left(|V|,\ \sum_{j\in V}j\bmod M,\
+                  \prod_{j\in V}(a^2-\lambda^j)\right).
+\]
+For each left-hand subset $W$, with cardinality $k$, residue $t$,
+and nonzero product $P_W$, look up
+$(h-k,r-t\bmod M,\tau/P_W)$, where $\tau$ is the target in
+\eqref{eq:subset-product-target}. The parts are disjoint, so every
+returned union has the required cardinality, residue, and product.
+Conversely, each solution has exactly one such decomposition, which
+the search visits. The subset counts give the stated bounds.
+\end{proof}
+
+For the scheduled transfer, set $\beta=v+g_1(\alpha)/g_0(\alpha)$
+when $g_0(\alpha)\ne0$ and this ratio belongs to $H$.
+A recovered support supplies $F_U$, and exact polynomial division
+then supplies the interior-band quotient witness from
+Theorem~\ref{thm:scheduled-transfer}. Preparing the subset-product
+table depends on $a$ and must generally be repeated when the sample
+changes. It can be reused for multiple targets at the same sample.
+This reduction does not identify the favorable fixed claim from the
+averaging theorem.
+
+\paragraph{Fresh-query check on a smaller valid circle code.}
+The companion \path{checks/verify_witness_search.py} fixes
+$v=0$ before generating samples. It uses $p=23$, $n=24$, $M=12$,
+$h=4$, $m=2$, and the full base-field circle, with defining support
+$U_0=\{1,2,3,7\}$ and residue $1$. The resulting family has $27$
+members of outer Laurent degree at most $2$, each with $8$ agreements.
+The tower $H=\F_{23}[i]$, $E=H[w]$, $w^2=2+i$, is a field:
+the script checks $(2+i)^{(23^2-1)/2}=-1$.
+This is a circle-code experiment; its length is not a Stwo FFT size.
+
+The deterministic experiment chooses $128$ distinct admissible
+samples using a recorded pseudorandom seed. At each sample it tests
+every one of the $529$ challenges in $H$, together with eight specified
+outside-$H$ controls. On all $68{,}736$ queries, the returned support
+set agrees exactly with an independent enumeration of all $27$
+family members. There are $135$ successful queries: $128$ have
+$\alpha=0$, which always recovers $F_{U_0}=0$, and seven have
+$\alpha\ne0$. No outside-$H$ control succeeds in this fixture.
+For all $135$ recovered witnesses, exact division yields coefficients
+in $H$ with Laurent support $[-1,1]$; all $3{,}240$ coordinate
+identities pass, with exactly eight agreements per witness.
+The split uses $31$ left-hand and $57$ right-hand records per sample.
+These challenges are deliberately exhaustive in $H$; the observed
+success fraction is not an estimate for uniform challenges in $E$.
+
+\paragraph{Cost at the displayed M31 parameters.}
+For the direct implementation with $s=127$, $M=256$, and $h=66$,
+the complete right-hand table would have
+\[
+ R=\sum_{k=0}^{66}\binom{128}{k}
+ =228210150822262702568674774219878072803
+ \approx 2^{127.4236}
+\]
+records, before accounting for bytes per record. Thus this baseline
+does not give a practical M31 decoder. This is the cost of the
+specified complete enumeration, not a lower bound on witness-search
+complexity or a claim that more selective algorithms cannot improve it.
+The useful conclusion is an exact algebraic target and a checked
+recovery procedure for fresh queries with a claim fixed in advance.
+
+\section{Checks and provenance}
+\subsection{Exact interval certificates}\label{app:finite-certificates}
+
+The rounded comparisons in the main text follow from
+Lemma~\ref{im:finite-list} and Proposition~\ref{prop:conditional-moments}. The following table records the integers
+needed to check the three list examples. All have $k=n/2$.
+\begin{center}
+\begin{tabular}{rrrr}
+\toprule
+$p$ & $n$ & $s$ & Certified strict lower bound on $\log_2 L$\\
+\midrule
+ $2^{127}-1$ & 64 & 2 & 41\\
+$2^{521}-1$ & 4096 & 8 & 3634\\
+$2^{521}-1$ & 23444 & 45 & 11567\\
+\bottomrule
+\end{tabular}
+\end{center}
+For the first row the original denominator product is $32{,}285{,}041$,
+giving $50{,}186{,}958{,}429$ codewords. The conditional dispersion
+certificate~\eqref{eq:conditional-n64} strengthens this to
+$2{,}674{,}048{,}230{,}075$, yielding the displayed exponent $41$.
+For every row, exact integer arithmetic gives $p^s>2^n$, certifying
+the sufficient below-Elias condition $\eta\log_2p>1$.
+For the last row, a bound $2^{c_2/\eta}$ would require
+\[
+ c_2>\frac{11567\cdot45}{23444}>22.2.
+\]
+The finite rational-line example uses the conditional first-moment count
+\[
+ N=8{,}634{,}334{,}451{,}040{,}106
+\]
+from Section~\ref{sec:conditional-moments}.
+The exact inequality $2^{127}-1>64+32\binom N2$ certifies a pole with
+all $N$ scalar labels distinct. These integers are retained here for
+reproducibility; the comparisons in the main text only need their
+rounded powers of two.
+
+\subsection{Certificates at additional rates}
+\label{app:other-rate-certificates}
+
+For Corollary~\ref{cor:quarter-list}, the exact guaranteed list size is
+\[
+ L=\left\lceil\binom{63}{17}/64\right\rceil
+  =15{,}827{,}733{,}944{,}904,
+ \qquad \eta=\frac{1{,}048{,}575}{33{,}554{,}432}.
+\]
+Integer arithmetic verifies $p^{100}>2^{3099}$,
+$3^{100000}>2^{158496}$, and $L^{2000}>2^{87695}$.
+Since $H_2(1/4)=2-\frac34\log_2 3<0.81128$, these give
+\[
+ \log_2L-\frac{H_2(1/4)}{\eta}
+ >\frac{87695}{2000}-\frac{81128}{100000\eta}
+ =\frac{937767635977}{52428750000}>17.8865.
+\]
+This implies the rounded ratio in the corollary. For the Elias check,
+write $\theta=3/4-\eta$. The exact rational inequality
+\[
+ \eta\frac{3099}{100}>1-2(\theta-1/2)^2\ge H_2(\theta)
+\]
+and $\log_2p>3099/100$ imply $H_p(\theta)<3/4$.
+The same construction at rates $1/8$, $1/16$, and $3/4$ gives list
+ratios exceeding $2^{13}$, $2^{15}$, and $2^{13}$, respectively.
+The rate-$3/4$ space has even dimension but is not a native power-of-two
+FFT size. No such restriction is needed for the mathematical code.
+
+For Corollary~\ref{cor:eighth-line}, put $Q=p^4-p^2$. The exact counts are
+\[
+ N=\left\lceil\frac{\binom{255}{36}}{256p^2}\right\rceil
+ =73{,}497{,}635{,}817{,}391{,}996{,}020{,}834,
+\]
+\[
+ J=\left\lceil\frac{NQ}{Q+32(N-1)}\right\rceil
+ =73{,}497{,}635{,}817{,}383{,}868{,}141{,}347.
+\]
+Here $\eta=655359/33554432$. Integer arithmetic verifies
+$7^{100000}>2^{280735}$, $7^{1000}<2^{2808}$, and
+$J^{1000}>2^{75960}$. Set
+\[
+ H^+=3-\frac78\frac{280735}{100000}>H_2(1/8).
+\]
+Concavity gives
+$H_2(7/8-\eta)<H^++\eta(2808/1000)$, whereas exact rational
+arithmetic gives $\eta(3099/100-2808/1000)>H^+$.
+Together with $\log_2p>3099/100$, this certifies the strict Elias bound.
+Finally,
+\[
+ \log_2J-26-\frac{H_2(1/8)}\eta
+ >\frac{75960}{1000}-26-\frac{H^+}\eta
+ =\frac{9064121863}{409599375}>22.129.
+\]
+After puncturing, the exact parameters are
+$\rho'=(2^{23}-1)/(2^{26}-2)$ and
+$\eta'=(5\cdot2^{18}-1)/(2^{26}-2)$.
+Exact rational logarithm intervals separately certify the Elias bound
+and a ratio greater than $2^{22}$ at these changed parameters.
+
+For the quadratic-field example, put $Q_2=p^2-128$. Then
+\[
+ N_2=\left\lceil\binom{127}{18}/128\right\rceil
+ =25{,}460{,}924{,}804{,}916{,}891{,}029,
+\]
+\[
+ J_2=\left\lceil\frac{N_2Q_2}{Q_2+16(N_2-1)}\right\rceil
+ =285{,}003{,}988{,}493{,}147{,}037.
+\]
+Here $\eta=786431/33554432$. The same $H^+$ above satisfies
+$\eta(3099/100-2808/1000)>H^+$, proving the strict Elias bound.
+The integer inequality $J_2^{10000}>2^{579837}$ gives
+\[
+ \log_2J_2-26-\frac{H_2(1/8)}\eta
+ >\frac{579837}{10000}-26-\frac{H^+}\eta
+ =\frac{13827665031}{1572862000}>8.791.
+\]
+Thus the ratio exceeds $400$. An independent fixture over
+$\mathbb F_{31^2}$ checks all $945$ allowable poles for an anchored
+coefficient class of $87$ supports. It verifies the collision bound
+and all witness identities for a best pole and for the allowed pole
+zero; these yield $87$ and $84$ distinct labels, respectively.
+
+\subsection{Certificates for the compact examples}
+\label{app:compact-certificates}
+
+Corollary~\ref{cor:ct-compact-eighth} uses the same integers $J_2$ and
+$J$ as the two eighth-rate constructions above. The two new Elias
+comparisons follow from
+\begin{align*}
+ p^{896}\,873^{873}\,151^{151}
+   &>(p-1)^{873}\,1024^{1024},\\
+ p^{3584}\,3505^{3505}\,591^{591}
+   &>(p-1)^{3505}\,4096^{4096}.
+\end{align*}
+Taking logarithms gives $H_p(873/1024)<7/8$ and
+$H_p(3505/4096)<7/8$. Also,
+\[
+ J_2^2>2^{115},\qquad J^3>2^{227},\qquad 7^5>2^{14}.
+\]
+The last inequality gives $H_2(1/8)<11/20$, so the logarithms of
+the two ratios exceed
+\[
+ \frac{115}{2}-11-\frac{11}{20}\frac{1024}{23}>22,
+ \qquad
+ \frac{227}{3}-13-\frac{11}{20}\frac{4096}{79}>34.
+\]
+All these comparisons use exact integer or rational arithmetic.
+
+\subsection{Verification and source notes}
+
+
+The accompanying files give exact integer certificates for the finite
+bounds and exhaustive small-field checks of the constructions. They
+also include a small explicit test of the power-fiber lift. The proofs
+establish the asymptotic claims; the experiments check formulas and
+boundary cases. Large circle lists and suitable poles are obtained
+by counting, rather than enumerated.
+
+The numerical certificates and construction checks are included with
+this draft. They use exact integer or finite-field arithmetic. The
+protocol-related models do not constitute native verifier executions.
+The source comparisons concern the cited repository revisions; they
+are not claims about later implementations. This is a working draft
+with machine-assisted internal checks, and it has not undergone
+external peer review.
+
+\begin{thebibliography}{99}
+\bibitem{thaler} J. Thaler.
+\emph{Proofs, Arguments, and Zero-Knowledge}.
+Foundations and Trends in Privacy and Security, 4(2--4), 2022.
+\url{https://people.cs.georgetown.edu/jthaler/ProofsArgsAndZK.html}.
+\bibitem{bciks} E. Ben-Sasson, D. Carmon, Y. Ishai, S. Kopparty,
+and S. Saraf. \emph{Proximity Gaps for Reed--Solomon Codes}.
+ECCC TR20-083, revision 3, 2021.
+\url{https://eccc.weizmann.ac.il/report/2020/083/}.
+
+\bibitem{deepfri} E. Ben-Sasson, L. Goldberg, S. Kopparty, and S. Saraf.
+\emph{DEEP-FRI: Sampling Outside the Box Improves Soundness}.
+ITCS 2020, LIPIcs 151, 5:1--5:32.
+\url{https://doi.org/10.4230/LIPIcs.ITCS.2020.5}.
+
+\bibitem{aggllz} O. Alrabiah, Z. Guo, V. Guruswami, R. Li, and Z. Zhang.
+\emph{Random Reed--Solomon Codes Achieve List-Decoding Capacity With
+Linear-Sized Alphabets}. Advances in Combinatorics, 2025:8.
+\url{https://doi.org/10.19086/aic.2025.8}.
+\bibitem{ggg} V. Gandikota, B. Ghazi, and E. Grigorescu.
+\emph{NP-Hardness of Reed-Solomon Decoding, and the Prouhet--Tarry--Escott Problem}.
+2016. \url{https://arxiv.org/abs/1611.03069}.
+\bibitem{jeronimo} F. G. Jeronimo.
+\emph{Algorithmic List Decoding at Capacity and Optimal Proximity Gaps for Reed--Solomon Codes}.
+ECCC TR26-169, September 2026.
+\url{https://eccc.weizmann.ac.il/report/2026/169/}.
+\bibitem{milne} J. S. Milne. \emph{Algebraic Number Theory}.
+Theorem 8.31 and Corollary 8.32.
+\url{https://www.jmilne.org/math/CourseNotes/ANTc.pdf}.
+\bibitem{kkh} D. Krachun, S. Kazanin, and U. Hab\"ock.
+\emph{Failure of proximity gaps close to capacity}.
+IACR ePrint 2026/782. \url{https://eprint.iacr.org/2026/782}.
+\bibitem{bchks} E. Ben-Sasson, D. Carmon, U. Hab\"ock, S. Kopparty,
+and S. Saraf. \emph{On Proximity Gaps for Reed--Solomon Codes}.
+IACR ePrint 2025/2055. \url{https://eprint.iacr.org/2025/2055}.
+\bibitem{circle} U. Hab\"ock, D. Levit, and S. Papini.
+\emph{Circle STARKs}.
+IACR ePrint 2024/278. \url{https://eprint.iacr.org/2024/278}.
+\bibitem{orbit-pencil} Proximity Prize.
+\emph{OrbitPencil: validated upper-certificate construction},
+repository revision \nolinkurl{cdb451f13fdc6c84f5fe363e77ee13a89bd30974}.
+\href{https://github.com/proximity-prize/proximity-prize/blob/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionUpper/OrbitPencil.lean}{Formal source}.
+\bibitem{stwo} Carmon et al. \emph{S-two Whitepaper}.
+IACR ePrint 2026/532, March 2026 revision.
+\url{https://eprint.iacr.org/2026/532}.
+\bibitem{proving} StarkWare. \emph{proving}, source snapshot
+\nolinkurl{cd7bc5f4697fb188a27e09f9242f1dd76df8afdc}.
+\url{https://github.com/starkware-libs/proving/tree/cd7bc5f4697fb188a27e09f9242f1dd76df8afdc}.
+\bibitem{stwo-config} StarkWare. Public production parameters and
+default conjectured soundness.
+\href{https://github.com/starkware-libs/proving/blob/cd7bc5f4697fb188a27e09f9242f1dd76df8afdc/circuit_registry_definitions/production/cairo_prover_params.json}{Production Cairo configuration};
+\href{https://github.com/starkware-libs/proving/blob/cd7bc5f4697fb188a27e09f9242f1dd76df8afdc/crates/stwo/src/core/fri.rs\#L79}{nominal security counter};
+\href{https://github.com/starkware-libs/stwo-cairo/blob/2b1fb4ded5496fb2db4e8261cd5ee5ef6b710839/README.md\#L146}{documented 96-bit conjectured default}.
+\bibitem{stwo-grinding} StarkWare. Implemented challenge and grinding
+order, source snapshot
+\nolinkurl{cd7bc5f4697fb188a27e09f9242f1dd76df8afdc}.
+\href{https://github.com/starkware-libs/proving/blob/cd7bc5f4697fb188a27e09f9242f1dd76df8afdc/crates/stwo/src/core/pcs/verifier.rs\#L62}{Polynomial-commitment verifier};
+\href{https://github.com/starkware-libs/proving/blob/cd7bc5f4697fb188a27e09f9242f1dd76df8afdc/crates/stwo/src/core/fri.rs}{FRI verifier}.
+\end{thebibliography}
+\end{document}

@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "exhaustive_fixtures": 208,
+  "subset_visits": 36588,
+  "n64_variances": [
+    5525,
+    376805
+  ],
+  "n64_radii": [
+    149,
+    1228
+  ],
+  "n64_list_lower_bound": 1102772374154,
+  "scope": "Uniform interval-code concentration bound; no fixed-domain contest claim."
+}

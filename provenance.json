@@ -1,0 +1,41 @@
+{
+  "prepared_at": "2026-09-15T17:50:43-04:00",
+  "upstream_repository": "https://github.com/GUJustin/counterexamples-to-prime-fields",
+  "input_manuscript": "Stwo_Research_Improved_2026-09-15.tex",
+  "input_manuscript_sha256": "b2100c6964f6acbb5c4fa5cce73d59537dd67ae1e87a01d7d652251e90414c40",
+  "input_reconciliation_checkpoint": "2026-09-15T17:39:19-04:00",
+  "additional_reviewed_inputs": {
+    "PUNCTURING_AFFINE_PROXIMITY_BOUND.md": "cf7a5cdd353ec977bde94bbbb2d6c4d4acd74c7b4343ffcdbaa8c546385e5da6",
+    "PUNCTURING_WITNESS_AND_MCA_BOUND.md": "350dd17fe93d87d46be56705597f281fcdb4d5798309f811ee43130221ea65b8",
+    "GENERIC_PROFILE_INTERLEAVING_EXTENSION_COROLLARY.md": "1990d980632da0b1bf0a0905dbed2c1f7de5bfb5399ca0c76b72b10485e458fd"
+  },
+  "manuscript_sha256": "06b3471936b7d35447e0c85b6d00cf8383bc8e0473c2da6356306869f9382887",
+  "pdf_sha256": "60fa880b4518065b3a83be62ae46fe8105d9fce6e201e5ac988914f9df89f41d",
+  "pdf_pages": 56,
+  "editorial_changes": [
+    "General coding-theory and hash-based SNARK framing",
+    "Direct explanatory academic prose with explicit quantifiers",
+    "S-two retained as an application",
+    "Existing mathematical statements retained",
+    "Later puncturing, witness-support, interleaving, and extension refinements integrated"
+  ],
+  "validation": {
+    "build": "make paper passed without LaTeX warnings or overflowing boxes",
+    "numerical_checks": {
+      "checks/actual_list_tightened_check.json": "passed",
+      "checks/actual_list_chain_check.json": "passed",
+      "checks/actual_list_chain_conditional_audit.json": "passed",
+      "checks/astra_rs_all_surplus_verified.json": "all assertions passed",
+      "checks/actual_list_global_small_check.json": "passed",
+      "checks/verify_puncturing_bound.json": "passed",
+      "checks/astra_syndrome_determinants_verified.json": "all exact assertions passed",
+      "checks/conditional_moment_results.json": "passed",
+      "moment_certificates/verification.json": "passed",
+      "moment_certificates/concentration_verification.json": "passed"
+    },
+    "original_labels_retained": 97,
+    "original_displayed_formulas_retained": 190,
+    "visual_review": "Title, abstract, and security-section layout inspected",
+    "limits": "Finite checks supplement proofs. Appendix protocol models were preserved and were not rerun as native verifier tests."
+  }
+}

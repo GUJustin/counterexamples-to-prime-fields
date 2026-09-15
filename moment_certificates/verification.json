@@ -1,0 +1,112 @@
+{
+  "status": "passed",
+  "exhaustive_parameter_pairs": 55,
+  "exhaustive_subsets": 15903,
+  "exhaustive_conditional_classes": 1210,
+  "moment_degree": 20,
+  "independent_complement_identity": true,
+  "exact_certificates": [
+    {
+      "degree": 2,
+      "form": "expanded",
+      "list_lower_bound": 4009211641989
+    },
+    {
+      "degree": 2,
+      "form": "factored",
+      "list_lower_bound": 4009211641989
+    },
+    {
+      "degree": 4,
+      "form": "expanded",
+      "list_lower_bound": 4063608555910
+    },
+    {
+      "degree": 4,
+      "form": "factored",
+      "list_lower_bound": 4063608555929
+    },
+    {
+      "degree": 6,
+      "form": "expanded",
+      "list_lower_bound": 4559602807931
+    },
+    {
+      "degree": 6,
+      "form": "factored",
+      "list_lower_bound": 4559602807933
+    },
+    {
+      "degree": 8,
+      "form": "expanded",
+      "list_lower_bound": 4594899407605
+    },
+    {
+      "degree": 8,
+      "form": "factored",
+      "list_lower_bound": 4594899418050
+    },
+    {
+      "degree": 10,
+      "form": "expanded",
+      "list_lower_bound": 4812391296230
+    },
+    {
+      "degree": 10,
+      "form": "factored",
+      "list_lower_bound": 4812391296429
+    },
+    {
+      "degree": 12,
+      "form": "expanded",
+      "list_lower_bound": 4838630810547
+    },
+    {
+      "degree": 12,
+      "form": "factored",
+      "list_lower_bound": 4838630810931
+    },
+    {
+      "degree": 14,
+      "form": "expanded",
+      "list_lower_bound": 4959972146997
+    },
+    {
+      "degree": 14,
+      "form": "factored",
+      "list_lower_bound": 4959972236610
+    },
+    {
+      "degree": 16,
+      "form": "expanded",
+      "list_lower_bound": 4979575484718
+    },
+    {
+      "degree": 16,
+      "form": "factored",
+      "list_lower_bound": 4980765191656
+    },
+    {
+      "degree": 18,
+      "form": "expanded",
+      "list_lower_bound": 5057405840051
+    },
+    {
+      "degree": 18,
+      "form": "factored",
+      "list_lower_bound": 5057407138629
+    },
+    {
+      "degree": 20,
+      "form": "expanded",
+      "list_lower_bound": 4992347500852
+    },
+    {
+      "degree": 20,
+      "form": "factored",
+      "list_lower_bound": 5074503250115
+    }
+  ],
+  "best_list_lower_bound": 5074503250115,
+  "scope": "Integer-moment list lower bounds; no claim about a fixed Koala NTT code or a contest score."
+}

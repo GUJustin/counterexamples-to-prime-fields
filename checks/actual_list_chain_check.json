@@ -1,0 +1,40 @@
+{
+  "status": "passed",
+  "field_primes": [
+    101,
+    65537,
+    2147483647
+  ],
+  "fixtures": 2109,
+  "fixtures_with_all_n_minus_k_minus_1_distinct_witnesses": 1944,
+  "fixtures_with_repeated_chain_lines": 165,
+  "cleared_denominator_collision_checks": 104652,
+  "polynomial_witnesses_checked_including_repetitions": 27417,
+  "coordinate_checks": 849927,
+  "simultaneous_domain_probability_inequalities": 123753,
+  "example_showing_chain_distinctness_is_not_automatic": {
+    "p": 101,
+    "n": 17,
+    "k": 5,
+    "domain": [
+      64,
+      13,
+      96,
+      46,
+      79,
+      62,
+      47,
+      39,
+      55,
+      92,
+      43,
+      38,
+      66,
+      23,
+      9,
+      75,
+      54
+    ]
+  },
+  "scope": "Exact checks of degree, agreements, repetitions, and probability arithmetic. Generic nonvanishing and the global upper bound require the separate mathematical proofs."
+}

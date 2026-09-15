@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "large_instance": {
+    "p": 2147483647,
+    "n": 512,
+    "K": 128,
+    "T": 132,
+    "N": 471959451942648482921857753174378123864222424043917355886528,
+    "S": 21267647892944572727775488241423089664,
+    "A": 766247768292072891947921916124690454684786490150411277,
+    "probability_numerator": 766247768292072891947921916124690454684786490150411277,
+    "probability_denominator": 452312846898269724422641179697543667450922081019251166843171382875033436161,
+    "strict_lower_bound": "2^-69",
+    "old_J": 18014398492704768,
+    "approximate_new_bits": 68.99999999865639,
+    "approximate_old_joint_bits": 70.99999999865639,
+    "approximate_improvement": 4.0
+  },
+  "exhaustive_toy": {
+    "p": 7,
+    "n": 8,
+    "K": 2,
+    "T": 5,
+    "N": 2,
+    "admissible_samples": 2304,
+    "sampler_singular_draws": 2,
+    "fixed_claim": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "certified_pairs": 94,
+    "observed_pairs": 2352,
+    "sample_label_histogram": {
+      "1": 2256,
+      "2": 48
+    },
+    "coordinate_identities": 75264,
+    "evaluation_incidences": 4608,
+    "collision_family": {
+      "K": 4,
+      "N": 3,
+      "collisions": 4,
+      "coefficients_in_basis_1_x_y_x2_xy": [
+        4,
+        0,
+        0,
+        2,
+        1
+      ],
+      "distinct_incidences": 6908,
+      "maximum_pair_roots": 4
+    },
+    "observed_probability": "48/117649"
+  },
+  "scope": "Exact finite checks of a raw quotient theorem; no full-proof test."
+}

@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "p": 2147483647,
+  "n": 8,
+  "canonical_coset": true,
+  "fixed_claim": [
+    1556715292,
+    2147483645,
+    0,
+    0
+  ],
+  "sample_fixtures": 4,
+  "challenges_per_fixture": 6,
+  "coordinate_schedule_identities": 192,
+  "nonzero_label_witness_agreements": 5,
+  "added_codeword": "2 alpha^4",
+  "scope": "Exact M31 model of pinned raw quotient schedule; not native Stwo execution."
+}

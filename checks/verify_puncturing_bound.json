@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "parameter_identities": 82074,
+  "support_extension_cases": 6156,
+  "exact_endpoint_lines": [
+    {
+      "n": 4,
+      "k": 2,
+      "p": 257,
+      "r": 1,
+      "nearby_parameters": 4,
+      "upper_bound": 4,
+      "maximum_direction_agreement": 2
+    },
+    {
+      "n": 5,
+      "k": 2,
+      "p": 257,
+      "r": 2,
+      "nearby_parameters": 10,
+      "upper_bound": 10,
+      "maximum_direction_agreement": 2
+    },
+    {
+      "n": 6,
+      "k": 2,
+      "p": 257,
+      "r": 3,
+      "nearby_parameters": 20,
+      "upper_bound": 20,
+      "maximum_direction_agreement": 2
+    },
+    {
+      "n": 7,
+      "k": 2,
+      "p": 257,
+      "r": 4,
+      "nearby_parameters": 35,
+      "upper_bound": 35,
+      "maximum_direction_agreement": 2
+    },
+    {
+      "n": 8,
+      "k": 2,
+      "p": 257,
+      "r": 5,
+      "nearby_parameters": 56,
+      "upper_bound": 56,
+      "maximum_direction_agreement": 2
+    }
+  ],
+  "scope": "Finite arithmetic and exact affine-line enumeration; the general bound uses the cited unique-radius theorem."
+}
