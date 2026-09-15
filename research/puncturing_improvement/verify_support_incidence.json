@@ -1,0 +1,75 @@
+{
+  "status": "passed",
+  "coverage": {
+    "local_words": 4402,
+    "local_noncodewords": 4344,
+    "local_checks": 12408,
+    "curves": 288,
+    "parameters": 1872,
+    "distance_evaluations": 61920,
+    "bad_pairs": 495,
+    "bad_pairs_on_joint_curves": 332,
+    "weighted_checks": 612,
+    "ownership_checks": 4275,
+    "degree_at_least_field_size_curves": 96,
+    "optimization_checks": 35989,
+    "puncturing_identity_checks": 409045
+  },
+  "comparisons": [
+    {
+      "n": 10,
+      "k": 2,
+      "r": 6,
+      "t": 4,
+      "puncturing_floor": 84,
+      "circuit_floor": 40,
+      "improvement_factor": "21/10"
+    },
+    {
+      "n": 16,
+      "k": 4,
+      "r": 9,
+      "t": 7,
+      "puncturing_floor": 953,
+      "circuit_floor": 291,
+      "improvement_factor": "275/84"
+    },
+    {
+      "n": 32,
+      "k": 16,
+      "r": 14,
+      "t": 18,
+      "puncturing_floor": 49624800,
+      "circuit_floor": 33277807,
+      "improvement_factor": "85/57"
+    },
+    {
+      "n": 64,
+      "k": 32,
+      "r": 30,
+      "t": 34,
+      "puncturing_floor": 92587886316019852,
+      "circuit_floor": 53851214426228555,
+      "improvement_factor": "1023/595"
+    },
+    {
+      "n": 10,
+      "k": 2,
+      "r": 4,
+      "t": 6,
+      "puncturing_floor": 10,
+      "circuit_floor": 12,
+      "improvement_factor": "5/6"
+    },
+    {
+      "n": 10,
+      "k": 2,
+      "r": 7,
+      "t": 3,
+      "puncturing_floor": 120,
+      "circuit_floor": 120,
+      "improvement_factor": "1"
+    }
+  ],
+  "scope": "Local words exhaustive in four fixtures; all parameters and codewords for 288 deterministic curves. No protocol experiments."
+}

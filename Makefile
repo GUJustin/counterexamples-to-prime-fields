@@ -1,11 +1,14 @@
 PYTHON ?= python3
 
-.PHONY: all paper verify clean
+.PHONY: all paper reports verify clean
 
 all: paper
 
 paper:
 	latexmk -pdf -interaction=nonstopmode -halt-on-error paper.tex
+
+reports:
+	cd reports && latexmk -pdf -interaction=nonstopmode -halt-on-error stwo-zk-disclosure-summary.tex
 
 verify:
 	$(PYTHON) checks/actual_list_tightened_check.py
@@ -19,6 +22,18 @@ verify:
 	$(PYTHON) checks/verify_conditional_moments.py
 	$(PYTHON) moment_certificates/verify_weights.py
 	$(PYTHON) moment_certificates/verify_concentration.py
+	$(PYTHON) checks/check_gram_ellipsoid.py
+	$(PYTHON) research/gram_norm/verify_gram_norm.py
+	$(PYTHON) research/ellipsoid_bound/verify_lattice_bound.py
+	$(PYTHON) research/gaussian_bound/verify_gaussian_hypotheses.py
+	$(PYTHON) research/growing_m/verify_growing_m.py
+	$(PYTHON) research/curve_audit/verify_curve_endpoint.py
+	$(PYTHON) research/curve_audit/verify_formal_degree.py
+	$(PYTHON) research/puncturing_improvement/verify_support_incidence.py
+	$(PYTHON) research/structured_domains/verify_transfer_limits.py
+	$(PYTHON) research/finite_weights/verify_chebyshev.py
+	$(PYTHON) research/finite_weights/verify_certificates.py
+	$(PYTHON) radial_certificates/verify_publication.py
 
 clean:
 	latexmk -c paper.tex

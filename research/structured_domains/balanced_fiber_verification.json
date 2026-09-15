@@ -1,0 +1,11 @@
+{
+  "status": "all exact assertions passed",
+  "counts": {
+    "normalized_polynomials": 21563,
+    "balanced_polynomials": 63,
+    "boundary_degrees": 16714,
+    "rational_maps": 290,
+    "scaled_pullbacks": 4240
+  },
+  "scope": "finite-field coding theory; prime fields at most 101"
+}

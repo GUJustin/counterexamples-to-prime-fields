@@ -1,0 +1,70 @@
+% Insertion candidate. Jo's bound is prior work; the witness/curve statement
+% below is an elementary extension of its proof. No novelty claim.
+\begin{proposition}[A witness form of the circuit-incidence bound]
+\label{prop:support-incidence}
+Let $C\subseteq F^n$ be a linear $[n,k]$ MDS code, let
+$k+1\le t\le n$, and let $f(z)=\sum_{j=0}^e z^j f_j$.
+For each pair $(z,c)\in F\times C$, write
+$S(z,c)=\{i:c_i=f(z)_i\}$. Let $\mathcal W$ consist of the
+pairs with $|S(z,c)|\ge t$ whose entire agreement set does not
+jointly explain all the coefficient words $f_0,\ldots,f_e$.
+Then, for every $k+1\le b\le t$,
+\[
+ \sum_{(z,c)\in\mathcal W}\binom{|S(z,c)|-1}{b-1}
+ \le \min\{e,|F|\}\binom nb.
+\]
+In particular,
+\[
+ |\mathcal W|\le
+ \left\lfloor\min\{e,|F|\}
+ \min_{k+1\le b\le t}\frac{\binom nb}{\binom{t-1}{b-1}}
+ \right\rfloor.
+\]
+If the coefficient words have no joint explanation on any $t$
+coordinates, the bound counts every nearby witness pair.
+\end{proposition}
+\begin{proof}
+This extends the incidence proof of Jo~\cite[Lemma~4.1 and
+Theorem~4.2]{jo-mca}. His local rejection lemma states that a
+noncodeword on $m$ coordinates of an MDS code rejects at least
+$\binom{m-1}{b-1}$ tests of size $b\ge k+1$.
+For each pair in $\mathcal W$, apply that lemma to a coefficient
+word that is outside the code on $S(z,c)$.
+
+Fix a $b$-set $A$ rejecting at least one coefficient word. The
+polynomial $f(Z)|_A$ in the quotient space $F^A/(C|_A)$ is
+formally nonzero and has degree at most $e$. A linear functional
+nonzero on one of its coefficient vectors gives a nonzero scalar
+polynomial of degree at most $e$. Hence at most
+$\min\{e,|F|\}$ parameters make $f(z)|_A$ a code restriction.
+Each such restriction determines at most one global codeword,
+because $b\ge k$ and the code is MDS. Counting all incidences
+proves the weighted bound, and then $|S(z,c)|\ge t$ gives the
+stated count. The argument needs no restriction $e<|F|$.
+\end{proof}
+
+For affine lines in the range of
+Proposition~\ref{prop:puncturing-bound}, put $t=k+s=n-r$.
+The minimum in Proposition~\ref{prop:support-incidence} is
+attained at $b=k+1$, yielding the additional bound
+\[
+ |\mathcal W|\le
+ \left\lfloor\frac{\binom n{k+1}}{\binom{k+s-1}{k}}\right\rfloor.
+\]
+Indeed, the ratio of the expressions for successive test sizes is
+$b(n-b)/((b+1)(t-b))$, which exceeds one here because
+$(k+1)(r+1)>t$. At $(n,k,r)=(10,2,6)$ this improves the puncturing
+bound from $84$ to $40$. At $s=1$ both bounds equal
+$\binom n{k+1}$, so the sharp endpoint is unchanged.
+The puncturing bound can be stronger near the unique radius;
+we may take the minimum of the two bounds. At fixed positive rate
+$k/n\to\rho$ and agreement fraction $t/n\to\tau$ with
+$0<\rho<\tau<1$, the circuit bound still has exponential rate
+$H(\rho)-\tau H(\rho/\tau)>0$, with natural-log entropy $H$.
+It therefore does not resolve the fixed-gap question.
+
+% Add to bibliography:
+% \bibitem{jo-mca} S. Jo.
+% \emph{Reed--Solomon Mutual Correlated Agreement Beyond the Johnson Radius}.
+% IACR ePrint 2026/1432, revised August 19, 2026.
+% \url{https://eprint.iacr.org/2026/1432}.

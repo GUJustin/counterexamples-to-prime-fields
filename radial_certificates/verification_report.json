@@ -1,0 +1,14 @@
+{
+  "certified_class_lower_bound": 5133798314667,
+  "exact_denominator_crosscheck": true,
+  "factored_alternative_verified": true,
+  "full_signed_lattice_points": 210135,
+  "lattice_moment_degree": 25,
+  "n": 64,
+  "rational_to_integer_coefficient_crosscheck": true,
+  "recomputed_mixed_moments": 676,
+  "recomputed_radial_moments": 26,
+  "small_exhaustive_moment_checks": 400,
+  "t": 34,
+  "verified": true
+}

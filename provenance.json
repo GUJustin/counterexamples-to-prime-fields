@@ -6,16 +6,19 @@
   "input_reconciliation_checkpoint": "2026-09-15T17:39:19-04:00",
   "additional_reviewed_inputs": {
     "PUNCTURING_AFFINE_PROXIMITY_BOUND.md": "cf7a5cdd353ec977bde94bbbb2d6c4d4acd74c7b4343ffcdbaa8c546385e5da6",
-    "PUNCTURING_WITNESS_AND_MCA_BOUND.md": "350dd17fe93d87d46be56705597f281fcdb4d5798309f811ee43130221ea65b8",
+    "PUNCTURING_WITNESS_AND_MCA_BOUND.md": "78a75177290d3e29e9f7f7bcdbb42793e457ee9e03f901f84d9d65e9a77be01c",
     "GENERIC_PROFILE_INTERLEAVING_EXTENSION_COROLLARY.md": "1990d980632da0b1bf0a0905dbed2c1f7de5bfb5399ca0c76b72b10485e458fd",
     "GENERIC_PROFILE_AND_PUNCTURING_PROVENANCE.md": "012bf6a9d2040248a8729da5f1a25d8d35887655d6e336bff310fc0621c36c82",
     "astra_curve_mca_corollary.md": "f5a7e4d380ca8b316357cd0bb14a53c6a70a59d5fbb018c8746c92215e5025f7",
     "RESEARCH_CONTINUATION_2026-09-15.md": "4eb1fbbd74df32a35e4185c8ca61ee88c94c67b7d0d9a6ff58fdd02a7a570d64",
-    "astra_syndrome_determinants.md": "8f5cc118553cc5abd7f3b124dd107829bba80b3dcc129b64ce03f7c0fc3bf52b"
+    "astra_syndrome_determinants.md": "8f5cc118553cc5abd7f3b124dd107829bba80b3dcc129b64ce03f7c0fc3bf52b",
+    "gram_moment_norm_proof.md": "f3a152bbeb5c998abc66264af6c802e04ce39d4b36784136c06a105032f9a69f",
+    "gram_gaussian_class_bound.md": "f36be9d5332c867aef1a31a1add86ece1b2505502a065213f4e98e5f0289f073",
+    "ellipsoid_moment_bound_audit.md": "e4a699996b08a6d4f3f10fa47a0a808fde5b1a7df418a99c64bf7639949737bc"
   },
-  "manuscript_sha256": "564590af0eff1e6e9bcd7bf654577ec229ad4deeebf0e12c2232965f79adb52b",
-  "pdf_sha256": "fb0f069f407a520c82a25fd43a9288e3a3eccf0dbb872e8838ad882fca06395a",
-  "pdf_pages": 57,
+  "manuscript_sha256": "2c6c301abb3879a2c21644a90939c36f0c3eb43da195c0178ebfc321940f6c43",
+  "pdf_sha256": "0c14c5d034fd109285880fa50bdf106b80d4c1d3da54f3c957ffcf160c5c3066",
+  "pdf_pages": 64,
   "editorial_changes": [
     "General coding-theory and hash-based SNARK framing",
     "Direct explanatory academic prose with explicit quantifiers",
@@ -23,7 +26,16 @@
     "Existing mathematical statements retained",
     "Later puncturing, witness-support, interleaving, and extension refinements integrated",
     "Attribute the fixed-rate exact profile to Brakensiek--Gopi--Makam and Roth with the parameter deduction",
-    "Add the elementary degree-e curve corollary of BCIKS Theorem 6.1 and exact finite checks"
+    "Add the elementary degree-e curve corollary of BCIKS Theorem 6.1 and exact finite checks",
+    "Add classical Gram moment variances and finite unit-cube-smoothed ellipsoid bound",
+    "Add fixed-dimension Gaussian largest-class lower bound via Hajek finite-population CLT; retain sequential-limit and finite-length qualifications",
+    "Credit Lin--Wong, Hajek, Li--Ding, and Bobkov--Madiman for classical ingredients",
+    "Integrate 12-agent proof, literature, and numerical review with the frontier instance additions",
+    "Strengthen obstruction to every sufficiently large prime field and every sufficiently small prescribed gap",
+    "Strengthen Gaussian sampling hypothesis to growing subset and complement sizes",
+    "Add attributed Jo incidence bound for witnesses and polynomial curves, and prove sharp curve endpoint",
+    "Add independently verified radial certificate and stronger degree-40 conditional certificate",
+    "Correct agreement-count wording selectively and record explicit subgroup-transfer obstructions"
   ],
   "validation": {
     "build": "make paper passed without LaTeX warnings or overflowing boxes",
@@ -38,13 +50,40 @@
       "checks/conditional_moment_results.json": "passed",
       "moment_certificates/verification.json": "passed",
       "moment_certificates/concentration_verification.json": "passed",
-      "checks/verify_curve_puncturing.json": "passed"
+      "checks/verify_curve_puncturing.json": "passed",
+      "checks/check_gram_ellipsoid.json": "243 exact Gram norms, 1155 orthogonality identities, 65 exhaustive fixtures, 8164 subset visits, and exact length-64 lattice certificate passed",
+      "research/finite_weights/verification.json": "passed",
+      "research/finite_weights/certificates_verification.json": "passed",
+      "research/gram_norm/verified.json": "passed",
+      "research/ellipsoid_bound/verify_lattice_bound.json": "passed",
+      "research/growing_m/growing_m_verified.json": "passed",
+      "research/curve_audit/verify_curve_endpoint.json": "passed",
+      "research/curve_audit/verify_formal_degree.json": "passed",
+      "research/puncturing_improvement/verify_support_incidence.json": "passed",
+      "research/structured_domains/verification.json": "passed",
+      "radial_certificates/verification_report.json": "passed"
     },
     "original_labels_retained": 97,
     "original_displayed_formulas_retained": 190,
-    "visual_review": "Title, abstract, and security-section layout inspected",
-    "limits": "Finite checks supplement proofs. Appendix protocol models were preserved and were not rerun as native verifier tests.",
-    "followup": "Primary theorems checked; curve proof reviewed; 300 curves and 466140 distances checked. Existing coding checks unchanged."
+    "visual_review": "Earlier title/security layout inspected; current 64-page build has no LaTeX warnings or overflowing boxes.",
+    "limits": "Finite checks supplement proofs. No native protocol verifier or witness-recovery experiment was run. No improved better.codes certificate is established.",
+    "followup": "Primary theorems checked; curve proof reviewed; 300 curves and 466140 distances checked. Existing coding checks unchanged.",
+    "moment_continuation": "New exact checker passed; make paper clean after latexmk convergence; all 103 prior labels retained; no duplicate labels; page 13 visually inspected. Existing unchanged checks retain their earlier validation.",
+    "integrated_suite": "22 commands passed in one integrated run; radial publication verifier passed separately. Higher-degree certificate promoted afterward and passed the hardened exact verifier against unchanged, independently checked degree-40 moments.",
+    "current_labels": 118,
+    "current_finite_certificate": "All displayed degree-40 roots match the verified monic certificate exactly."
   },
-  "revised_at": "2026-09-15T17:59:39-04:00"
+  "revised_at": "2026-09-15T18:23:49-04:00",
+  "current_finite_certificate": {
+    "file": "research/finite_weights/factored40_certificates.json",
+    "degree": 40,
+    "list_lower_bound": 5285900426578,
+    "sha256": "5f423d2d0511b8741360bf04484651baa07ccf91a744c53c163b32d44ee24bf4"
+  },
+  "coordination": {
+    "frontier_acknowledged": "2026-09-15T18:11:07-04:00",
+    "older_32_page_source_repaired": true,
+    "audit_instance_direct_acknowledgment_observed": false,
+    "details": "research/workspace_reconciliation/"
+  }
 }

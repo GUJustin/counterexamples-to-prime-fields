@@ -1,0 +1,67 @@
+{
+  "status": "passed",
+  "fixtures": [
+    {
+      "n": 4,
+      "k": 2,
+      "degree": 2,
+      "field": 13,
+      "shift": 10,
+      "nearby_pairs": 8,
+      "attained_concurrency": 4,
+      "codeword_distance_checks": 2197
+    },
+    {
+      "n": 4,
+      "k": 2,
+      "degree": 3,
+      "field": 31,
+      "shift": 15,
+      "nearby_pairs": 12,
+      "attained_concurrency": 6,
+      "codeword_distance_checks": 29791
+    },
+    {
+      "n": 4,
+      "k": 2,
+      "degree": 4,
+      "field": 61,
+      "shift": 59,
+      "nearby_pairs": 16,
+      "attained_concurrency": 8,
+      "codeword_distance_checks": 226981
+    },
+    {
+      "n": 4,
+      "k": 2,
+      "degree": 5,
+      "field": 151,
+      "shift": 15,
+      "nearby_pairs": 20,
+      "attained_concurrency": 10,
+      "codeword_distance_checks": 3442951
+    },
+    {
+      "n": 5,
+      "k": 2,
+      "degree": 2,
+      "field": 79,
+      "shift": 3,
+      "nearby_pairs": 20,
+      "attained_concurrency": 6,
+      "codeword_distance_checks": 493039
+    },
+    {
+      "n": 5,
+      "k": 3,
+      "degree": 3,
+      "field": 31,
+      "shift": 0,
+      "nearby_pairs": 15,
+      "attained_concurrency": 6,
+      "codeword_distance_checks": 923521
+    }
+  ],
+  "total_distance_checks": 5118480,
+  "scope": "All parameters and codewords of six endpoint curves."
+}

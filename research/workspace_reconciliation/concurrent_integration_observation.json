@@ -1,0 +1,48 @@
+{
+  "observed_at": "2026-09-15T18:09:29.736065-04:00",
+  "attribution": "No author-identifying saved acknowledgment found; content and provenance evidence only.",
+  "files": [
+    {
+      "path": "/Users/jthaler/Documents/counterexamples-to-prime-fields/paper.tex",
+      "sha256": "733be1d9503b68199a103eda608d37f6e8b51c2c05e5bb0aefbcf390cead21f0",
+      "bytes": 197189,
+      "modified_at": "2026-09-15T18:06:49.186958-04:00"
+    },
+    {
+      "path": "/Users/jthaler/Documents/counterexamples-to-prime-fields/paper.pdf",
+      "sha256": "3198979666fd0ad55c3661566090c323ecf78c6eb50ffd16cc1db18c5306c916",
+      "bytes": 752770,
+      "modified_at": "2026-09-15T18:06:54.998053-04:00"
+    },
+    {
+      "path": "/Users/jthaler/Documents/counterexamples-to-prime-fields/README.md",
+      "sha256": "52fc90b543ba614c5172ac75d34f6798b46b92d83ea28acca81d6ee885a5463c",
+      "bytes": 3945,
+      "modified_at": "2026-09-15T18:06:49.189393-04:00"
+    },
+    {
+      "path": "/Users/jthaler/Documents/counterexamples-to-prime-fields/Makefile",
+      "sha256": "fea6f88c46b6fd47bb0ab1198d50afe24cddb60238136a7faf21566c5cf328c6",
+      "bytes": 763,
+      "modified_at": "2026-09-15T18:05:41.799166-04:00"
+    },
+    {
+      "path": "/Users/jthaler/Documents/counterexamples-to-prime-fields/provenance.json",
+      "sha256": "f391c737e0687f76edbe9a0cbfec4547b40b9a21bd1f9b466bf8245f3c45d481",
+      "bytes": 4320,
+      "modified_at": "2026-09-15T18:08:06.497836-04:00"
+    },
+    {
+      "path": "/Users/jthaler/Documents/counterexamples-to-prime-fields/checks/check_gram_ellipsoid.py",
+      "sha256": "bdc62930cabb52407190b2d84e4c1a2ce61b8cc2c09c364f4d21180c15fb7e2e",
+      "bytes": 4270,
+      "modified_at": "2026-09-15T18:04:17.869987-04:00"
+    },
+    {
+      "path": "/Users/jthaler/Documents/counterexamples-to-prime-fields/checks/check_gram_ellipsoid.json",
+      "sha256": "453c383f8a3b2d74591faa0a4fca99ef7079ac620d20683bb2d8469482209509",
+      "bytes": 477,
+      "modified_at": "2026-09-15T18:05:42.716423-04:00"
+    }
+  ]
+}

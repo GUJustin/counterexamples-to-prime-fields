@@ -1,0 +1,11 @@
+{
+  "status": "all exact assertions passed",
+  "counts": {
+    "affine_cosets": 5524,
+    "prouhet": 252,
+    "interpolation": 142,
+    "fiber_maps": 567,
+    "transferred_words": 720
+  },
+  "scope": "coding theory on primes at most 101; no protocol experiments"
+}

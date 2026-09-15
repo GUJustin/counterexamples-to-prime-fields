@@ -1,0 +1,69 @@
+{
+  "status": "all exact assertions passed",
+  "gram_norm_fixtures": 107,
+  "finite_bound_fixtures": [
+    {
+      "n": 64,
+      "k": 32,
+      "m": 2,
+      "t": 34,
+      "gram_list_lower_bound_floor_log2": 40,
+      "range_list_lower_bound_floor_log2": 35,
+      "unrounded_improvement_floor_log2": 4
+    },
+    {
+      "n": 128,
+      "k": 64,
+      "m": 4,
+      "t": 68,
+      "gram_list_lower_bound_floor_log2": 60,
+      "range_list_lower_bound_floor_log2": 42,
+      "unrounded_improvement_floor_log2": 17
+    },
+    {
+      "n": 256,
+      "k": 128,
+      "m": 6,
+      "t": 134,
+      "gram_list_lower_bound_floor_log2": 113,
+      "range_list_lower_bound_floor_log2": 74,
+      "unrounded_improvement_floor_log2": 39
+    },
+    {
+      "n": 512,
+      "k": 256,
+      "m": 8,
+      "t": 264,
+      "gram_list_lower_bound_floor_log2": 253,
+      "range_list_lower_bound_floor_log2": 183,
+      "unrounded_improvement_floor_log2": 69
+    },
+    {
+      "n": 1024,
+      "k": 512,
+      "m": 10,
+      "t": 522,
+      "gram_list_lower_bound_floor_log2": 597,
+      "range_list_lower_bound_floor_log2": 488,
+      "unrounded_improvement_floor_log2": 109
+    },
+    {
+      "n": 4096,
+      "k": 2048,
+      "m": 20,
+      "t": 2068,
+      "gram_list_lower_bound_floor_log2": 2333,
+      "range_list_lower_bound_floor_log2": 1915,
+      "unrounded_improvement_floor_log2": 418
+    },
+    {
+      "n": 16384,
+      "k": 8192,
+      "m": 40,
+      "t": 8232,
+      "gram_list_lower_bound_floor_log2": 8869,
+      "range_list_lower_bound_floor_log2": 7241,
+      "unrounded_improvement_floor_log2": 1628
+    }
+  ]
+}

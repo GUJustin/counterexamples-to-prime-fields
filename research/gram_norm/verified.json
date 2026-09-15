@@ -1,0 +1,9 @@
+{
+  "status": "all exact assertions passed",
+  "grid_degree_cases": 299,
+  "pairwise_inner_products": 2300,
+  "summation_by_parts_cases": 5497,
+  "subset_covariance_cases": 1155,
+  "subset_visits": 2026,
+  "aggregate_correction_identities": 1000
+}

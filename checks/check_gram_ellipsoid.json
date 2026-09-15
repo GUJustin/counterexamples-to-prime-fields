@@ -1,0 +1,21 @@
+{
+  "gram_norms": 243,
+  "orthogonality_identities": 1155,
+  "exhaustive_fixtures": 65,
+  "subset_visits": 8164,
+  "length64": {
+    "n": 64,
+    "t": 34,
+    "variances": [
+      5525,
+      376805
+    ],
+    "radius_squared": 4,
+    "positive_lattice_sites": 573371,
+    "scaled_denominator": 2387335489996860,
+    "numerator": 6746385493077157550158536000,
+    "list_lower_bound": 2825905919527,
+    "dither_certified_lower_bound": 2825885263137
+  },
+  "all_passed": true
+}

@@ -1,0 +1,68 @@
+\begin{corollary}[The obstruction as a function of gap and field size]
+\label{gm:gap-field}
+Fix a rational rate $\rho\in(0,1)$ and write $H=H_2(\rho)$.
+For every sufficiently small real $\varepsilon>0$, there is a length
+\[
+ n=(H+o(1))\big/\bigl(\varepsilon^2\log_2(1/\varepsilon)\bigr)
+\]
+such that, for every prime $p>n$, the interval-domain code
+$C=\RS(\F_p,\{0,\ldots,n-1\},\rho n)$ satisfies
+\begin{equation}\label{gm:gap-bound}
+ \log_2\ell_C(1-\rho-\varepsilon)
+ \ge \frac{H^2/2-o(1)}
+ {\varepsilon^2\log_2(1/\varepsilon)}.
+\end{equation}
+This radius is strictly below the characteristic-based Elias radius
+whenever
+$\varepsilon\log_2p>H_2(1-\rho-\varepsilon)$.
+
+Moreover, for every sufficiently large prime $p$, writing $b=\log_2p$,
+there is such a code of length
+$n=(H^{-1}+o(1))b^2/\log_2b$ and a radius strictly below Elias with
+\begin{equation}\label{gm:field-bound}
+ \log_2\ell_C(1-\rho-\varepsilon)
+ \ge (1/2-o(1))\frac{b^2}{\log_2b},
+ \qquad \varepsilon=(H+o(1))/b.
+\end{equation}
+All asymptotics fix $\rho$. These are consequences of the preceding
+interval construction.
+\end{corollary}
+\begin{proof}
+Choose $n$ to be a nearest multiple of the denominator of $\rho$ to
+$H/(\varepsilon^2\log_2(1/\varepsilon))$, and put
+$k=\rho n$, $m=\lceil\varepsilon n\rceil$, and $t=k+m$.
+For sufficiently small $\varepsilon$, we have $1\le m<t<n$.
+The range estimate in the proof of Theorem~\ref{im:all-list}, applied
+to Lemma~\ref{im:finite-list}, gives
+\[
+ \log_2\ell_C(1-t/n)
+ \ge Hn-\frac{m^2}{2}\log_2(n/m)
+       -O_\rho(m^2+m\log n+\log n).
+\]
+Here $\log_2\binom nt=Hn+O_\rho(m+\log n)$, and all error terms
+are $o(n)$ for the chosen parameters. Substitution gives
+\eqref{gm:gap-bound}: its two leading terms are respectively
+$H^2/(\varepsilon^2\log_2(1/\varepsilon))$ and half that quantity.
+Since $m/n\ge\varepsilon$, the constructed radius is at most the
+claimed radius; list-size monotonicity handles every real prescribed
+gap, including the rounding of $m$.
+
+The entropy estimate
+$H_p(\theta)\le\theta+H_2(\theta)/\log_2p$ proves the stated
+sufficient condition for strict distance below Elias. For the final
+claim, start with any sufficiently large prime, put
+$A_b=H+b^{-1/2}$, and take $\varepsilon=A_b/b$ in the first
+construction. Then $p>n$ eventually,
+$H_2(1-\rho-\varepsilon)=H+O_\rho(1/b)<A_b$, and
+$\log_2(1/\varepsilon)=\log_2b+O_\rho(1)$.
+Equation~\eqref{gm:gap-bound} now gives~\eqref{gm:field-bound}
+and the asserted length. The fields grow and the gap shrinks;
+these statements impose no conclusion at a fixed field or fixed gap.
+\end{proof}
+
+In particular, a bound with
+$\log_2\ell_C(1-\rho-\varepsilon)
+=o_\rho(\varepsilon^{-2}/\log(1/\varepsilon))$
+cannot hold uniformly over prime fields and evaluation domains,
+even below Elias. In terms of field size, the exhibited lists are
+superpolynomial in $p$.

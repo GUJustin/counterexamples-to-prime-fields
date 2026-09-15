@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "moments_sha256": "4642ef5011386e7e3724db1f8a70ea24b388bda9b716271b30d975a6f61abee0",
+  "certificates": [
+    {
+      "file": "chebyshev_certificates.json",
+      "degree": 24,
+      "list_lower_bound": 5141180908238
+    },
+    {
+      "file": "factored40_certificates.json",
+      "degree": 40,
+      "list_lower_bound": 5285900426578
+    },
+    {
+      "file": "factored_certificates.json",
+      "degree": 24,
+      "list_lower_bound": 5141180908468
+    },
+    {
+      "file": "integer28_certificates.json",
+      "degree": 28,
+      "list_lower_bound": 5191108221081
+    }
+  ],
+  "best_list_lower_bound": 5285900426578
+}

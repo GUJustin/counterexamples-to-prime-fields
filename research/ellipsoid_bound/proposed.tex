@@ -1,0 +1,75 @@
+\subsection{Ellipsoid concentration without a lattice-point approximation}
+\label{sec:ellipsoid-concentration}
+
+The constants improve if we concentrate in an ellipsoid. We use the
+standard density--covariance inequality discussed by
+Bobkov and Madiman~\cite{bobkovmadiman}; the short proof below also
+accounts exactly for the discrete lattice.
+
+\begin{proposition}[Smoothing a triangular lattice]
+\label{prop:ellipsoid-concentration}
+Let a population of size $N$ have statistic $B$ in
+$b+T\mathbb Z^m$, where $T$ is lower triangular with diagonal entries
+one. Let $L$ be its largest fiber, $\Sigma=\operatorname{Cov}(B)$,
+$V_j=\operatorname{Var}(B_j)$, and
+$\kappa_m=\pi^{m/2}/\Gamma(m/2+1)$. Then
+\[
+ L\ge\frac{N}{\kappa_m(m+2)^{m/2}
+                  \sqrt{\det(\Sigma+I/12)}}
+ \ge\frac{N}{\kappa_m(m+2)^{m/2}
+                  \prod_{j=1}^m\sqrt{V_j+1/12}}.
+\]
+\end{proposition}
+\begin{proof}
+The cubes $\lambda+[-1/2,1/2)^m$ with
+$\lambda\in b+T\mathbb Z^m$ partition $\mathbb R^m$.
+Indeed, choose each integer coordinate of $z$ successively so that
+$x_j-b_j-\sum_{i<j}T_{ji}z_i-z_j\in[-1/2,1/2)$; each choice
+is unique. Let $U$ be independent and uniform on this unit cube.
+Then $Y=B+U$ has density bounded by $L/N$ and covariance
+$W=\Sigma+I/12$, which is positive definite even if $\Sigma$ is singular.
+
+Writing $Z=W^{-1/2}(Y-\mathbb EB)$, we have
+$\mathbb E\|Z\|^2=m$ and density bounded by
+$M=(L/N)\sqrt{\det W}$. Hence, for $R^2>m$,
+\[
+ R^2-m
+ \le M\int_{\mathbb R^m}(R^2-\|z\|^2)_+\,dz
+ =M\frac{2\kappa_m}{m+2}R^{m+2}.
+\]
+Choose $R^2=m+2$ and rearrange. Hadamard's determinant inequality
+gives the second bound.
+\end{proof}
+
+The term $1/12$ is the exact variance of a unit interval. Thus the
+bound uses neither an approximate lattice-point count nor a worst-case
+enlargement of the ellipsoid. The triangular assumption supplies the
+cube tiling; covolume one alone would not justify this step. Rationality
+of $T$ is unnecessary.
+
+Apply this proposition to the moment signatures of
+Proposition~\ref{prop:moment-concentration}, taking $N=\binom nt$.
+Triangular inversion identifies each fiber with a class of equal
+integer binomial moments, so Lemma~\ref{im:finite-list} converts it
+to codewords with exactly $t$ agreements. For the two-moment choice
+$b_1(a)=a$ and $b_2(a)=\binom a2-(n-2)a/2$, the coordinates are
+uncorrelated and
+\[
+ V_1=\frac{t(n-t)(n+1)}{12},\qquad
+ V_2=\frac{t(n-t)(n+1)(n^2-4)}{720}.
+\]
+Consequently,
+\[
+ \ell_C(1-t/n)\ge
+ \left\lceil\frac{\binom nt}
+ {4\pi\sqrt{(V_1+1/12)(V_2+1/12)}}\right\rceil.
+\]
+If $t/n\to\rho\in(0,1)$, its leading constant is
+$3\sqrt{60}/(\pi\rho(1-\rho))$ times $\binom nt/n^4$,
+an improvement by $8/\pi$ over rectangular concentration.
+For $n=64,t=34$, the rigorous estimate $\pi<355/113$ gives
+$\ell_C(30/64)\ge2825885263137$.
+The exact integer certificate appears in
+\path{research/ellipsoid_bound/verify_lattice_bound.json} and is checked
+by the accompanying Python script. The conditional degree-$20$
+certificate remains stronger at this length.

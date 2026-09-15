@@ -2,7 +2,7 @@
 
 Working draft by Justin Thaler, September 15, 2026.
 
-[Read the paper](paper.pdf) · [LaTeX source](paper.tex)
+[Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
 The paper studies quantitative coding statements used in security analyses
 of hash-based SNARKs. It proves general list and affine-line separations
@@ -13,7 +13,10 @@ analysis as an application of those results.
 
 - Exponential lists on integer-interval domains rule out a uniform
   `exp(O(1/eta))` list bound at every fixed rate, with a shrinking gap and
-  radii below the characteristic-based Elias bound.
+  radii below the characteristic-based Elias bound. Optimizing length rules
+  out every bound with logarithm `o(eta^-2/log(1/eta))`. For every sufficiently
+  large prime, with `b=log2(p)`, the list has at least
+  `2^((1/2-o(1))*b^2/log2(b))` codewords below Elias.
 - A fixed-gap lift rules out prescribed selected-witness coefficients
   with a remainder sublinear along the constructed growing-field family.
 - A code can have maximum list size exactly `n-k-1` and nevertheless
@@ -29,10 +32,17 @@ analysis as an application of those results.
   agreement sets have no joint explanation, including lines that possess
   some correlated agreement. For degree-`e` polynomial curves, the same
   argument gives a factor of `e`, using the known curve proximity theorem.
-- Exact polynomial weights certify **5,074,503,250,115** codewords in
+  An attributed extension of Jo's incidence argument improves the interior
+  bound. The curve endpoint `e*binom(n,k+1)` is attained over suitable fields.
+- Exact polynomial weights certify **5,285,900,426,578** codewords in
   the length-64, dimension-32 interval example. A general concentration
   bound improves full-range counting by a factor of order `n^(m/2)`
-  for each fixed number `m` of canceled coefficients.
+  for each fixed number `m` of canceled coefficients. Classical Gram coordinates give explicit variances;
+  unit-cube smoothing yields a stronger finite concentration constant,
+  and the finite-population central limit theorem gives a Gaussian
+  constant for the largest class when `m` is fixed and both the subset
+  size and its complement grow. A separately verified radial method
+  certifies 5,133,798,314,667 without fixing the first moment.
 
 The statements retain their field, domain, radius, and quantifier
 restrictions. They do not establish a complete protocol attack or an
@@ -53,8 +63,9 @@ library. It recomputes the high-moment certificate and its independent
 complementary-subset identity. These finite checks supplement the proofs;
 they do not replace the cited generic-rank and proximity-gap theorems.
 
-`moment_certificates/weight_certificates.json` records the polynomial
-weights. The selected certificate is its degree-20 `factored` entry.
+`research/finite_weights/factored40_certificates.json` records the current
+degree-40 certificate. The earlier degree-20 certificate remains in
+`moment_certificates/weight_certificates.json` for comparison.
 The optional discovery script `moment_certificates/search_weights.py`
 requires NumPy and SciPy; numerical optimization is unnecessary to verify
 the saved integer certificate.

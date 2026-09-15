@@ -1,0 +1,19 @@
+{
+  "started_at": "2026-09-15T18:13:07.163323-04:00",
+  "hashes": {
+    "checks/conditional_moment_results.json": "f1a2991b8c238688d297a8200fd6019de98521ff29f3665e905514194728b24b",
+    "moment_certificates/concentration_verification.json": "8cc49e177fe3f5ad6bae4894a4ab4d4fa6dca6e1d2aaddbf26898a9b2d759132",
+    "moment_certificates/exact_moments.json": "5271c0be0504864244ae6b199709a9371e2d5fb0f4d257d42318e7733b758bdb",
+    "moment_certificates/verification.json": "860286fd1adb3d64892bf7d8cb247c1d194bba0055adf06f01132b5cd96c64c3",
+    "moment_certificates/weight_certificates.json": "b229148d726af7b4f06791b85bf71088a68f9e0d28722e0a7b054b9d23c45211",
+    "research/finite_weights/certificates_verification.json": "3e0968dc140edc65c55fb4a215a4382331c19bde7de7bd627081abdd9745da10",
+    "research/finite_weights/chebyshev_certificates.json": "e58703b2d7c217a039616451472954e77377c9a35fcda3398807e23d46b3a367",
+    "research/finite_weights/coarse_certificates.json": "976548b234c258d5b7abd6167cac5de6fca5085ec93b3f5c2f19b69f93933709",
+    "research/finite_weights/factored_certificates.json": "2dfbdfaa03a2605937052ec6910608dbac48123f5426e976142632cd3ba1b662",
+    "research/finite_weights/integer28_certificates.json": "2e4f39e5c1c2e0b32ccad7859ec51ab105a13a4b88d8d1fa0c7f343b1c530579",
+    "research/finite_weights/lattice_extension_certificates.json": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+    "research/finite_weights/moments40.json": "4642ef5011386e7e3724db1f8a70ea24b388bda9b716271b30d975a6f61abee0",
+    "research/finite_weights/root_discovery_certificates.json": "d04fa80725f4b7dfdf002e0ae6218c665f14c921f14a9fa694e85e8c9c625cdd",
+    "research/finite_weights/stride10_certificates.json": "7ffe53597b970806ded3a3927b3adbf1145a01261dedbdd051c7de8fd51c4af8"
+  }
+}

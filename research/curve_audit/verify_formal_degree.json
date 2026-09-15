@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "fixtures": [
+    {
+      "field": 5,
+      "formal_degree": 5,
+      "functional_degree": 0,
+      "unexplained_pairs": 5,
+      "sharp_capped_bound": 5,
+      "distance_checks": 125
+    },
+    {
+      "field": 7,
+      "formal_degree": 7,
+      "functional_degree": 0,
+      "unexplained_pairs": 7,
+      "sharp_capped_bound": 7,
+      "distance_checks": 343
+    },
+    {
+      "field": 11,
+      "formal_degree": 11,
+      "functional_degree": 0,
+      "unexplained_pairs": 11,
+      "sharp_capped_bound": 11,
+      "distance_checks": 1331
+    }
+  ]
+}

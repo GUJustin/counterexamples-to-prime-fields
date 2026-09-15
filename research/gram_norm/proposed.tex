@@ -1,0 +1,54 @@
+\begin{lemma}[Exact variances for orthogonal moment coordinates]
+\label{lem:gram-moment-variances}
+Let $1\le m<n$, let $X$ be uniform on $\{0,\ldots,n-1\}$, and write
+$(x)_{\underline j}=x(x-1)\cdots(x-j+1)$.
+For $1\le j\le m$, define
+\[
+ F_j(x)=(x)_{\underline j}(x-n)_{\underline j},\qquad
+ G_j(x)=\frac{\Delta^j F_j(x)}{(2j)!},\qquad
+ b_j(x)=G_j(x)-G_j(0),
+\]
+where $\Delta f(x)=f(x+1)-f(x)$.
+Then $b_j$ has the triangular form required by
+Proposition~\ref{prop:moment-concentration}. For a uniform $t$-subset
+$A$, where $0<t<n$, write $V_j=\operatorname{Var}(\sum_{a\in A}b_j(a))$.
+Then
+\[
+ \sigma_j^2:=\operatorname{Var}(b_j(X))
+ =\frac{\prod_{i=1}^j(n^2-i^2)}
+ {(2j+1)\binom{2j}{j}^{\!2}(j!)^2},\qquad
+ V_j=\frac{t(n-t)}{n-1}\sigma_j^2.
+\]
+These coordinates minimize each variance among all triangular choices.
+\end{lemma}
+\begin{proof}
+These are the classical discrete Gram polynomials, with the
+normalization adjusted to binomial moments~\cite{linwong}.
+The polynomial $G_j$ has degree $j$ and leading coefficient $1/j!$.
+The boundary zeros of $F_j$ imply summation by parts:
+\[
+ \sum_{x=0}^{n-1}p(x)\Delta^jF_j(x)
+ =(-1)^j\sum_{y=j}^{n-1}F_j(y)\nabla^jp(y),
+ \qquad \nabla p(y)=p(y)-p(y-1).
+\]
+Thus $G_j$ is orthogonal to every lower-degree polynomial.
+Since $\nabla^jG_j=1$, another application gives
+\[
+ \sum_{x=0}^{n-1}G_j(x)^2
+ =\frac{(j!)^2}{(2j)!}
+   \sum_{y=j}^{n-1}\binom yj\binom{n+j-1-y}j
+ =\frac{(j!)^2}{(2j)!}\binom{n+j}{2j+1}.
+\]
+The final identity counts subsets by their middle element.
+Division by $n$ yields $\sigma_j^2$; the subset-sum covariance
+formula yields $V_j$. Subtracting $G_j(0)$ ensures the required
+triangular form without changing the variance.
+Finally, any competing polynomial is $G_j+q$ with $\deg q<j$,
+so orthogonality gives
+$\operatorname{Var}(G_j+q)=\sigma_j^2+\operatorname{Var}(q)$.
+\end{proof}
+
+% Suggested bibliography entry:
+% \bibitem{linwong} Y. Lin and R. Wong.
+% \emph{Global Asymptotics of the Discrete Chebyshev Polynomials}.
+% arXiv:1207.2536, 2012. Equations (1.1)--(1.2).

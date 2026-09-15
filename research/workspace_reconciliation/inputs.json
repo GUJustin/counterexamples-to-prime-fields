@@ -1,0 +1,67 @@
+{
+  "observed_at": "2026-09-15T18:05:16.118528-04:00",
+  "published_baseline": "d2dfaa3a40e2f57004152bfc07db1ecf0813da25",
+  "direct_session_acknowledgment_observed": false,
+  "inputs": [
+    {
+      "path": "/Users/jthaler/Documents/stwo_audit_2026-09-15/paper/main.pdf",
+      "bytes": 542874,
+      "sha256": "84577fd2e73eaaf531197346f52c6637e95ad48ecaf374a48f93219f17cffa67",
+      "modified_at": "2026-09-15T17:51:41.508737-04:00"
+    },
+    {
+      "path": "/Users/jthaler/Documents/stwo_audit_2026-09-15/paper/main.tex",
+      "bytes": 14612,
+      "sha256": "c95f37289a4053661b736207c12bc9fdf70b48b1faea33d5384baf8f25e6df08",
+      "modified_at": "2026-09-15T16:35:29.163399-04:00"
+    },
+    {
+      "path": "/Users/jthaler/Documents/stwo_audit_2026-09-15/paper/core_theory.tex",
+      "bytes": 21526,
+      "sha256": "11700606f2ad96b7151bcc4255440867dd7f33ce0b64b084388f468906412b29",
+      "modified_at": "2026-09-15T16:35:29.166170-04:00"
+    },
+    {
+      "path": "/Users/jthaler/Documents/stwo_audit_2026-09-15/paper/actual_list.tex",
+      "bytes": 6763,
+      "sha256": "7d301c577a0a21f408eba0dbca068a7fc63b5b0ad7fbccef05d4d3cee4d04953",
+      "modified_at": "2026-09-15T14:54:52.307739-04:00"
+    },
+    {
+      "path": "/Users/jthaler/Documents/stwo_audit_2026-09-15/paper/applications.tex",
+      "bytes": 20548,
+      "sha256": "a0a79a69efe7b872f1871a2ba10e9e6a2c5469cc2f50e2e2cee307b072bfd68d",
+      "modified_at": "2026-09-15T16:28:29.639022-04:00"
+    },
+    {
+      "path": "/Users/jthaler/Documents/stwo_audit_2026-09-15/agents/paper_referee_note.md",
+      "bytes": 1072,
+      "sha256": "fe32a9cb82c1e9567f86c2b630860fa2b4818b09b93226478f512cfa34ffd4d6",
+      "modified_at": "2026-09-15T16:35:43.719346-04:00"
+    },
+    {
+      "path": "/Users/jthaler/Documents/stwo_audit_2026-09-15/agents/manuscript_quantifier_review.md",
+      "bytes": 11101,
+      "sha256": "0a9d2c8f7672e3a112b8a2f8f53ebf909fe125b531d037c74f65bf6c64dfbc40",
+      "modified_at": "2026-09-15T14:13:51.575145-04:00"
+    },
+    {
+      "path": "/Users/jthaler/Documents/stwo_audit_2026-09-15/deliverables/RESEARCH_RESULTS.md",
+      "bytes": 15833,
+      "sha256": "3d6c20067812724972a264dfc9aff44830ea95e00acd7b87809ade4fc9642254",
+      "modified_at": "2026-09-15T15:37:49.972768-04:00"
+    },
+    {
+      "path": "/Users/jthaler/Dropbox/Stwo_Research_Draft_2026-09-15.pdf",
+      "bytes": 542874,
+      "sha256": "84577fd2e73eaaf531197346f52c6637e95ad48ecaf374a48f93219f17cffa67",
+      "modified_at": "2026-09-15T17:51:41.508737-04:00"
+    },
+    {
+      "path": "/Users/jthaler/Dropbox/Stwo_Research_Draft_2026-09-15.tex",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "modified_at": "2026-09-15T17:51:42-04:00"
+    }
+  ]
+}

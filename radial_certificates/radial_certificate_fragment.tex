@@ -1,0 +1,53 @@
+\subsection{A larger finite list from radial polynomial weights}
+\label{sec:radial-certificate}
+
+\begin{proposition}[An exact two-moment interval certificate]
+\label{prop:radial-certificate}
+Among the $34$-element subsets $S\subseteq\{0,\ldots,63\}$, some class with
+fixed values of $\sum_{a\in S}a$ and $\sum_{a\in S}\binom a2$ contains at least
+\[
+  5{,}133{,}798{,}314{,}667
+\]
+subsets. Consequently, for every prime $p>64$,
+$C=\RS(\F_p,\{0,\ldots,63\},32)$ satisfies
+$\ell_C(30/64)\ge5{,}133{,}798{,}314{,}667$, with each constructed
+codeword agreeing in exactly $34$ coordinates.
+\end{proposition}
+\begin{proof}
+Taking complements preserves class sizes, so work with $30$-subsets.
+Put
+\[
+ X_a=2a-63,\qquad Y_a=\frac{(2a-63)^2-1365}{4},\qquad
+ x=\frac12\sum_{a\in S}X_a,\quad y=\frac12\sum_{a\in S}Y_a.
+\]
+The pair $(x,y)\in\mathbb Z^2$ is an invertible affine transformation of the
+two moment sums.  Set
+\[
+ T=341x^2+5y^2,\quad D=1{,}884{,}025,\quad
+ Q=T/D,\quad A=\frac{851547}{580691}.
+\]
+The ancillary file \path{radial_certificates/certificate_degree12.json} specifies a rational
+polynomial $h$ of degree $12$.  Use the degree-$25$ radial weight
+\[
+ w(Q)=(A-Q)h(Q/A)^2.
+\]
+It is nonpositive outside $Q<A$.  If $L$ denotes the largest class, then
+\[
+ \sum_{|S|=30}w(Q(S))
+ \le L\sum_{(x,y)\in\mathbb Z^2}\max\{w(Q(x,y)),0\}.
+\]
+The numerator is evaluated exactly from the moments through degree $25$
+of $T$, obtained by an integer dynamic program on the $32$ population pairs
+$(u,v),(-u,v)$.  The denominator is an exact sum over the $210{,}135$ lattice
+points with $T\le2{,}762{,}804$.  After clearing all coefficient denominators,
+the ancillary file records the integer numerator and denominator, whose
+ratio has ceiling $5{,}133{,}798{,}314{,}667$.
+The standard-library script \path{radial_certificates/verify_publication.py} recomputes all
+$676$ mixed moments, checks the saved polynomial and ratio, and independently
+recomputes the denominator by summing expanded monomials over the full signed
+lattice.  Numerical optimization was used only to discover the rational
+polynomial; it is not an input to the verification.
+Lemma~\ref{im:finite-list} converts the common-moment class into the
+stated Reed--Solomon list. This improves the degree-$20$ conditional
+certificate by approximately $1.17\%$; no optimality is claimed.
+\end{proof}

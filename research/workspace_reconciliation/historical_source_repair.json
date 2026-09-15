@@ -1,0 +1,14 @@
+{
+  "repaired_at": "2026-09-15T18:14:28.051098-04:00",
+  "historical_checkpoint_pages": 32,
+  "canonical_manuscript": "https://github.com/GUJustin/counterexamples-to-prime-fields/blob/main/paper.tex",
+  "destination": "/Users/jthaler/Dropbox/Stwo_Research_Draft_2026-09-15.tex",
+  "pre_repair_bytes": 0,
+  "post_repair_bytes": 101512,
+  "source_sha256": "fcbb681e3a97e6af999a196be4cfff61553ad42f93778695a50fd7e461a9a9d0",
+  "preserved_pdf_sha256": "84577fd2e73eaaf531197346f52c6637e95ad48ecaf374a48f93219f17cffa67",
+  "exact_pdftotext_layout_match": true,
+  "pdftotext_layout_sha256": "a9f85f4a54c621a1e8bde454d881322b099dbb2b4435ec639b770784504a6f4b",
+  "build": "latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex passed; 32 pages; final log no warnings",
+  "method": "Recursively inline five local input modules in main.tex; do not modify mathematical/editorial contents."
+}

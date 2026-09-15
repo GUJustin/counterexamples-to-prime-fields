@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "moment_degree": 40,
+  "exhaustive_parameter_pairs": 35,
+  "exhaustive_subsets": 1969,
+  "exhaustive_conditional_classes": 483,
+  "independent_complement_identity": true,
+  "independent_support_extrema": true,
+  "previous_moments_match": true,
+  "certificates": [
+    {
+      "degree": 24,
+      "list_lower_bound": 5141180908238
+    }
+  ],
+  "best_list_lower_bound": 5141180908238,
+  "scope": "Pure integer subset counts; no claim about any fixed protocol or contest submission."
+}

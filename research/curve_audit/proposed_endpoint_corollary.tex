@@ -1,0 +1,32 @@
+\begin{corollary}[Sharp endpoint for polynomial curves]
+\label{cor:curve-endpoint-sharp}
+Let $1\le k\le n-2$ and $e\ge1$. Over a suitable finite field, there
+are an $n$-point Reed--Solomon domain and a degree-$e$ curve with
+exactly $e\binom n{k+1}$ nearby parameter--witness pairs at radius
+$(n-k-1)/n$. Each nearby word has a unique witness, and the coefficient
+words have no joint agreement on $k+1$ coordinates. Every parametrized
+codeword curve of degree at most $e$ contains at most $e(n-k)$ of
+these pairs, and this bound is attained.
+\end{corollary}
+\begin{proof}
+Choose a field of characteristic not dividing $e$ and a domain whose
+$(k+1)$-subset sums $s_T$ are distinct. Choose $b$ outside those sums,
+and pass to a finite extension splitting all polynomials
+$Z^e+b-s_T$. Each has $e$ distinct roots, and different polynomials
+have disjoint root sets. Set $h(z)=z^e+b$ and
+$f(z)(x)=x^{k+1}-h(z)x^k$. As in the affine construction, agreement
+with a degree-below-$k$ polynomial on $k+1$ coordinates forces
+$h(z)=s_T$ and uniquely determines the witness. This gives exactly
+$e\binom n{k+1}$ pairs. The coefficient of $z^e$ is $-X^k$, which
+precludes joint agreement on $k+1$ coordinates.
+
+For a parametrized codeword curve $Q(z)$ of degree at most $e$,
+let $b_0$ count coordinates on which $f(z)=Q(z)$ identically in $z$.
+Their leading coefficients show $b_0\le k$. At each other coordinate
+the discrepancy has at most $e$ roots. If $Q$ contains $m$ selected
+pairs, then $m(k+1)\le b_0m+e(n-b_0)$, so $m\le e(n-k)$.
+The affine codeword line attaining concurrency $n-k$, composed with
+$h$, attains equality. If the domain also satisfies the exact generic
+list profile, that profile persists over the splitting field by the
+field-extension argument above.
+\end{proof}

@@ -37,7 +37,10 @@ $\log_2p=\Theta_\rho(\sqrt{n\log n})$. The domain is an integer
 interval embedded in $\F_p$, and the radius lies strictly below the
 characteristic-based Elias bound. Thus no
 $\exp(O_\rho(1/\eta))$ list bound holds uniformly over prime fields
-and evaluation domains. The construction follows by counting subsets
+and evaluation domains. More strongly, over every sufficiently large
+prime field, writing $b=\log_2p$, the construction gives a below-Elias
+list with $\log_2L\ge(1/2-o(1))b^2/\log_2b$.
+The construction follows by counting subsets
 with matching moments. Concentration and exact polynomial-weight
 certificates sharpen the finite bounds.
 
@@ -133,13 +136,28 @@ positive gap, or when the prime is required to be polynomial in $n$.
 \paragraph{Finite and uniform refinements.}
 The moment count also gives explicit certificates. At length $64$ and
 dimension $32$, Proposition~\ref{prop:polynomial-moment-weights}
-proves a list of at least $5{,}074{,}503{,}250{,}115$ codewords with
+proves a list of at least $5{,}285{,}900{,}426{,}578$ codewords with
 $34$ agreements. Proposition~\ref{prop:moment-concentration} gives
 an analytic refinement: for each fixed number $m$ of canceled
 coefficients and fixed limiting rate, concentration improves the
 full-range counting guarantee by a factor of order $n^{m/2}$.
+Classical Gram orthogonalization gives explicit constants;
+Proposition~\ref{prop:gram-ellipsoid} strengthens the finite bound,
+and Section~\ref{sec:gram-gaussian} obtains the Gaussian central-density
+constant when $m$ is fixed. These refinements retain the exponent above.
 The exact checks certify the finite arithmetic; the proofs establish
 the asymptotic statements.
+
+The same construction has a stronger formulation in terms of the gap.
+Corollary~\ref{gm:gap-field} rules out every uniform bound whose logarithm
+is $o_\rho(\eta^{-2}/\log(1/\eta))$. Moreover, over every sufficiently
+large prime field, with $b=\log_2p$, it gives a below-Elias list with
+\[
+ \log_2 L\ge(1/2-o(1))b^2/\log_2b.
+\]
+Here $n=(H_2(\rho)^{-1}+o(1))b^2/\log_2b$ and
+$\eta=(H_2(\rho)+o(1))/b$. These sharper parameter statements follow
+by optimizing the length in the existing moment construction.
 
 \subsection{Why the construction works}
 
@@ -485,15 +503,85 @@ The rate is fixed, while the gap decreases and the prime grows.
 The theorem leaves open stronger bounds under restrictions on the domains
 or on the relation between field size and block length.
 
+\begin{corollary}[The obstruction as a function of gap and field size]
+\label{gm:gap-field}
+Fix a rational rate $\rho\in(0,1)$ and write $H=H_2(\rho)$.
+For every sufficiently small real $\varepsilon>0$, there is a length
+\[
+ n=(H+o(1))\big/\bigl(\varepsilon^2\log_2(1/\varepsilon)\bigr)
+\]
+such that, for every prime $p>n$, the interval-domain code
+$C=\RS(\F_p,\{0,\ldots,n-1\},\rho n)$ satisfies
+\begin{equation}\label{gm:gap-bound}
+ \log_2\ell_C(1-\rho-\varepsilon)
+ \ge \frac{H^2/2-o(1)}
+ {\varepsilon^2\log_2(1/\varepsilon)}.
+\end{equation}
+This radius is strictly below the characteristic-based Elias radius
+whenever
+$\varepsilon\log_2p>H_2(1-\rho-\varepsilon)$.
+
+Moreover, for every sufficiently large prime $p$, writing $b=\log_2p$,
+there is such a code of length
+$n=(H^{-1}+o(1))b^2/\log_2b$ and a radius strictly below Elias with
+\begin{equation}\label{gm:field-bound}
+ \log_2\ell_C(1-\rho-\varepsilon)
+ \ge (1/2-o(1))\frac{b^2}{\log_2b},
+ \qquad \varepsilon=(H+o(1))/b.
+\end{equation}
+All asymptotics fix $\rho$. These are consequences of the preceding
+interval construction.
+\end{corollary}
+\begin{proof}
+Choose $n$ to be a nearest multiple of the denominator of $\rho$ to
+$H/(\varepsilon^2\log_2(1/\varepsilon))$, and put
+$k=\rho n$, $m=\lceil\varepsilon n\rceil$, and $t=k+m$.
+For sufficiently small $\varepsilon$, we have $1\le m<t<n$.
+The range estimate in the proof of Theorem~\ref{im:all-list}, applied
+to Lemma~\ref{im:finite-list}, gives
+\[
+ \log_2\ell_C(1-t/n)
+ \ge Hn-\frac{m^2}{2}\log_2(n/m)
+       -O_\rho(m^2+m\log n+\log n).
+\]
+Here $\log_2\binom nt=Hn+O_\rho(m+\log n)$, and all error terms
+are $o(n)$ for the chosen parameters. Substitution gives
+\eqref{gm:gap-bound}: its two leading terms are respectively
+$H^2/(\varepsilon^2\log_2(1/\varepsilon))$ and half that quantity.
+Since $m/n\ge\varepsilon$, the constructed radius is at most the
+claimed radius; list-size monotonicity handles every real prescribed
+gap, including the rounding of $m$.
+
+The entropy estimate
+$H_p(\theta)\le\theta+H_2(\theta)/\log_2p$ proves the stated
+sufficient condition for strict distance below Elias. For the final
+claim, start with any sufficiently large prime, put
+$A_b=H+b^{-1/2}$, and take $\varepsilon=A_b/b$ in the first
+construction. Then $p>n$ eventually,
+$H_2(1-\rho-\varepsilon)=H+O_\rho(1/b)<A_b$, and
+$\log_2(1/\varepsilon)=\log_2b+O_\rho(1)$.
+Equation~\eqref{gm:gap-bound} now gives~\eqref{gm:field-bound}
+and the asserted length. The fields grow and the gap shrinks;
+these statements impose no conclusion at a fixed field or fixed gap.
+\end{proof}
+
+In particular, a bound with
+$\log_2\ell_C(1-\rho-\varepsilon)
+=o_\rho(\varepsilon^{-2}/\log(1/\varepsilon))$
+cannot hold uniformly over prime fields and evaluation domains,
+even below Elias. In terms of field size, the exhibited lists are
+superpolynomial in $p$.
+
 \paragraph{Finite examples.}
 At $p=2^{127}-1$, $n=64$, $k=32$, $s=2$, Lemma~\ref{im:finite-list} gives
 \[
  L>2^{35}.
 \]
-Proposition~\ref{prop:conditional-moments} below strengthens this to
-$L\ge5074503250115>2^{42}$ by Proposition~\ref{prop:polynomial-moment-weights}. Here $\eta=1/32$, so the choice
+The conditional-moment method below, sharpened by
+Proposition~\ref{prop:polynomial-moment-weights}, strengthens this to
+$L\ge5285900426578>2^{42}$. Here $\eta=1/32$, so the choice
 $c_1=c_2=1$ in \eqref{im:proposed-list} gives only $2^{32}$;
-the improved ratio exceeds $1181$.
+the improved ratio exceeds $1230$.
 The exact inequality $p^2>2^{64}$ verifies the sufficient Elias condition.
 At $p=2^{521}-1$, $n=4096$, $k=2048$, $s=8$, the same formula gives
 $L>2^{3600}$, compared with $2^{512}$. The exact inequality
@@ -700,10 +788,60 @@ The checker compares every moment through degree $20$ with exhaustive
 small-subset enumeration and independently checks the length-$64$
 moments using complementary $30$-subsets.
 
+\paragraph{A degree-$40$ refinement.}
+At the same $n,t,q,c$, take the monic polynomial with roots
+\[
+\begin{split}
+R_{40}=\{&-4169,-3591,-3590,-3214,-3213,-2844,-2843,-2475,-2474,-2107,\\
+    &-2106,-1742,-1735,-1391,-1358,-1065,-968,-765,-565,-476,\\
+    &482,571,769,969,1065,1352,1385,1721,1729,2081,\\
+    &2082,2436,2437,2787,2788,3135,3136,3484,3485,4184\}.
+\end{split}
+\]
+The exact numerator and positive-weight denominator in
+\eqref{eq:polynomial-weight-bound} give the stronger certificate
+\begin{equation}\label{eq:weighted-n64-40}
+ \ell_C(15/32)\ge5285900426578,\qquad
+ C=\RS(\F_p,\{0,\ldots,63\},32),\quad p>64.
+\end{equation}
+The radius and below-Elias qualification are unchanged. This improves
+\eqref{eq:weighted-n64} by more than $4.16\%$ and exceeds the original
+product-range certificate by a factor of $105$.
+The files in \path{research/finite_weights/} record the integer roots,
+expanded coefficients, exact moments, numerator, and denominator.
+Independent checks compare all moments through degree $40$ with the
+complementary-subset identity and exhaustive smaller examples; the
+support extrema are recomputed separately. Earlier degree-$24$ and
+$28$ certificates are retained for comparison. Numerical optimization
+discovers candidate weights; all claimed lower bounds and the final
+integer-root refinement use exact integer arithmetic.
+
 The weighted inequality applies to any finite signature map, but its
 application to a prescribed evaluation domain requires statistics for
 that domain's coefficient signatures. The interval moments above do not
 by themselves supply such statistics for a multiplicative NTT subgroup.
+
+\paragraph{Why an exponent substitution does not transfer the certificate.}
+On a multiplicative subgroup generated by $g$, equal integer moments
+of exponent indices need not imply equal coefficient signatures.
+For $n\ge2^{m+1}$, the positive and negative coefficient supports of
+$Q(X)=\prod_{j=0}^{m}(1-X^{2^j})$ have equal integer moments through
+degree $m$, because $Q$ has a root of multiplicity $m+1$ at $1$.
+But their first field moments differ by $Q(g)\ne0$ when $g$ has
+order $n$. Thus replacing each index $a$ by $g^a$ loses the required
+coefficient equality.
+
+Nor does the bare field-signature pigeonhole estimate certify a large
+list below Elias. For $p>n$, $t=k+m<n$, and $k,m\ge1$, it gives only
+$\lceil\binom nt/p^m\rceil$. Writing $\theta=1-t/n$, the strict Elias
+inequality $H_p(\theta)<1-k/n$ implies
+\[
+ \binom nt/p^m < (p/(p-1))^{n\theta}<e,
+\]
+so this guarantee is at most three. These observations limit the two
+transfer arguments, rather than the true list size on a subgroup.
+The exact checks in \path{research/structured_domains/} accompany
+these elementary obstructions and a separate complete-fiber transfer lemma.
 
 \subsection{A uniform concentration bound for several moments}
 \label{sec:moment-concentration}
@@ -792,6 +930,273 @@ variance identities, triangular signature counts, and finite bounds
 against exhaustive small-subset enumeration.
 
 
+
+\subsection{Gram moments and an ellipsoid concentration bound}
+\label{sec:gram-ellipsoid}
+
+Orthogonalizing the binomial moments gives explicit variances, and a
+signed quadratic weight improves the elementary concentration constant.
+Let $1\le m<t<n$. For $1\le j\le m$, let $b_j$ be the degree-$j$
+polynomial with leading coefficient $1/j!$ orthogonal to every
+lower-degree polynomial on $\{0,\ldots,n-1\}$ with uniform weight.
+These are the classical Gram polynomials, with the normalization
+$b_j(x)=\binom xj+\sum_{i<j}c_{ji}\binom xi$.
+Their classical squared norms~\cite[eqs.~(1.1)--(1.2)]{linwong}
+and the sampling-without-replacement variance identity give, for a
+uniform $t$-subset $A$ and $B_j(A)=\sum_{a\in A}b_j(a)$,
+\begin{equation}\label{eq:gram-subset-variance}
+ \mathbb E B_j=0,\qquad
+ V_j:=\operatorname{Var}(B_j)
+ =\frac{t(n-t)}{n-1}
+   \frac{\prod_{i=1}^j(n^2-i^2)}
+   {(2j+1)\binom{2j}{j}^{\!2}(j!)^2}.
+\end{equation}
+The coordinates $B_j$ are pairwise uncorrelated. Put
+$\kappa_m=\pi^{m/2}/\Gamma(m/2+1)$, the volume of the unit ball.
+The continuous inequality below is the classical maximum-density/covariance
+bound~\cite[Proposition~III.1 and proof of Corollary~III.2]{bobkovmadiman};
+unit-cube smoothing gives the exact variance correction $1/12$.
+No log-concavity assumption is needed.
+
+\begin{proposition}[Finite smoothed ellipsoid bound]
+\label{prop:gram-ellipsoid}
+For every prime $p>n$, the code
+$C=\RS(\F_p,\{0,\ldots,n-1\},t-m)$ satisfies
+\begin{equation}\label{eq:gram-ellipsoid-finite}
+ \ell_C(1-t/n)\ge
+ \left\lceil\frac{\binom nt}
+ {\kappa_m(m+2)^{m/2}\prod_{j=1}^m\sqrt{V_j+1/12}}\right\rceil.
+\end{equation}
+The constructed codewords agree in exactly $t$ coordinates.
+\end{proposition}
+\begin{proof}
+Write $N=\binom nt$, and let $L$ be the largest class sharing its vector
+$B=(B_1,\ldots,B_m)$. Because the zeroth moment is fixed, these vectors
+lie in an affine lattice $b_0+T\mathbb Z^m$, with $T$ lower triangular
+and diagonal entries one. The translates of $[-1/2,1/2)^m$ centered at
+its lattice points tile $\mathbb R^m$: conditional rounding determines
+the first integer coordinate, then the second, and so on, uniquely.
+
+Add to $B$ an independent uniform vector $U$ from this unit cube.
+The resulting vector $Y=B+U$ has density at most $L/N$, mean zero,
+and coordinate variances $W_j=V_j+1/12$. Thus
+$Z_j=Y_j/\sqrt{W_j}$ satisfies $\mathbb E\|Z\|^2=m$ and has density
+at most $H=(L/N)\prod_j\sqrt{W_j}$. The signed quadratic weight gives
+\[
+ 2=\mathbb E(m+2-\|Z\|^2)
+ \le H\int_{\mathbb R^m}(m+2-\|z\|^2)_+\,dz
+ =2H\kappa_m(m+2)^{m/2}.
+\]
+Rearranging bounds $L$ as in~\eqref{eq:gram-ellipsoid-finite}.
+Triangular inversion makes these classes exactly the classes sharing
+their first $m$ integer binomial moments. The construction in
+Lemma~\ref{im:finite-list} converts a class into the stated list.
+The rational changes of coordinates are used only for real-valued
+counting, so their denominators impose no further condition on $p$.
+\end{proof}
+
+\paragraph{Asymptotics for a fixed number of moments.}
+For fixed $m$ and $t/n\to\rho\in(0,1)$,
+\eqref{eq:gram-ellipsoid-finite} gives
+\begin{equation}\label{eq:gram-ellipsoid-asymptotic}
+ \ell_C(1-t/n)\ge
+ \left(
+ \frac{\prod_{j=1}^m j!\binom{2j}{j}\sqrt{2j+1}}
+ {\kappa_m(m+2)^{m/2}[\rho(1-\rho)]^{m/2}}+o(1)
+ \right)\frac{\binom nt}{n^{m(m+2)/2}}.
+\end{equation}
+For the same variances, the leading constant is larger than that from
+the optimized rectangular Chebyshev bound by
+$(m+2)2^{m-1}/\kappa_m$. This comparison concerns elementary
+concentration; it does not assert improvement over conditional counting.
+
+\paragraph{Two moments.}
+Here
+\[
+ \begin{gathered}
+ V_1=\frac{t(n-t)(n+1)}{12},\qquad
+ V_2=\frac{t(n-t)(n+1)(n^2-4)}{720},\\
+ \ell_C(1-t/n)\ge
+ \left\lceil\frac{\binom nt}
+ {4\pi\sqrt{(V_1+1/12)(V_2+1/12)}}\right\rceil.
+ \end{gathered}
+\]
+The asymptotic leading constant is
+$3\sqrt{60}/(\pi\rho(1-\rho))$, a factor $8/\pi$ larger than the
+rectangular constant. At $n=64,t=34$, the variances are $5525$ and
+$376805$. Rational upper bounds for the denominator certify
+$2{,}825{,}885{,}263{,}137$ codewords from the smoothed bound.
+Direct exact summation of the positive part of the quadratic weight
+$4-B_1^2/V_1-B_2^2/V_2$ on the full moment lattice improves this to
+$2{,}825{,}905{,}919{,}527$. Both exceed the elementary rectangular
+certificate $1{,}102{,}772{,}374{,}154$; the existing degree-$20$
+conditional certificate $5{,}074{,}503{,}250{,}115$ remains stronger.
+
+\paragraph{A growing number of moments.}
+The finite Gram bound does not require $m$ to be fixed. To describe its
+size, let $D_G=(m+2)\prod_{j=1}^m(2\lceil\sqrt{(m+2)V_j}\rceil+1)/2$
+be the denominator in Proposition~\ref{prop:moment-concentration},
+using the Gram variances. Uniformly when $t/n$ stays in a compact
+subinterval of $(0,1)$ and $m\to\infty$ with $m\le\sqrt n$,
+\[
+ \log D_G=\frac{m^2}{2}\log(n/m)
+ +(3/4-\log2)m^2+O(m\log n),
+\]
+where these logarithms are natural. This follows by inserting the exact
+Gram norms and applying Stirling's bounds to
+$\prod_{j=1}^m\sqrt{2j+1}(2j)!/j!$. The grid correction is
+$O(m^4/n^2)$, and rounding contributes a smaller error because
+$V_j\ge V_1=\Theta(n^3)$ throughout this range for sufficiently large $n$.
+The complete-range denominator has the same expansion with $3/4$
+in place of $3/4-\log2$. Thus, when $\log n=o(m)$, the Gram guarantee
+improves the unrounded range guarantee by a factor
+$2^{(1+o(1))m^2}$. This improves a lower-order term in the headline
+regime; no growing-dimensional central limit theorem is used.
+For example, exact arithmetic gives the following lower bounds on
+$\lfloor\log_2 L\rfloor$ at rate $1/2$ and $t=n/2+m$:
+\begin{center}
+\begin{tabular}{rrrr}
+\toprule
+$n$ & $m$ & Complete ranges & Gram concentration\\
+\midrule
+128 & 4 & 42 & 60\\
+512 & 8 & 183 & 253\\
+4096 & 20 & 1915 & 2333\\
+16384 & 40 & 7241 & 8869\\
+\bottomrule
+\end{tabular}
+\end{center}
+The finite certificates and uniform estimates are recorded in
+\path{research/growing_m/}. These comparisons concern interval domains;
+field-size conditions for a below-Elias radius must still be imposed.
+
+\subsection{A finite certificate without conditioning on the first moment}
+\label{sec:radial-certificate}
+
+\begin{proposition}[An exact two-moment interval certificate]
+\label{prop:radial-certificate}
+Among the $34$-element subsets $S\subseteq\{0,\ldots,63\}$, some class with
+fixed values of $\sum_{a\in S}a$ and $\sum_{a\in S}\binom a2$ contains at least
+\[
+  5{,}133{,}798{,}314{,}667
+\]
+subsets. Consequently, for every prime $p>64$,
+$C=\RS(\F_p,\{0,\ldots,63\},32)$ satisfies
+$\ell_C(30/64)\ge5{,}133{,}798{,}314{,}667$, with each constructed
+codeword agreeing in exactly $34$ coordinates.
+\end{proposition}
+\begin{proof}
+Taking complements preserves class sizes, so work with $30$-subsets.
+Put
+\[
+ X_a=2a-63,\qquad Y_a=\frac{(2a-63)^2-1365}{4},\qquad
+ x=\frac12\sum_{a\in S}X_a,\quad y=\frac12\sum_{a\in S}Y_a.
+\]
+The pair $(x,y)\in\mathbb Z^2$ is an invertible affine transformation of the
+two moment sums.  Set
+\[
+ T=341x^2+5y^2,\quad D=1{,}884{,}025,\quad
+ Q=T/D,\quad A=\frac{851547}{580691}.
+\]
+The ancillary file \path{radial_certificates/certificate_degree12.json} specifies a rational
+polynomial $h$ of degree $12$.  Use the degree-$25$ radial weight
+\[
+ w(Q)=(A-Q)h(Q/A)^2.
+\]
+It is nonpositive outside $Q<A$.  If $L$ denotes the largest class, then
+\[
+ \sum_{|S|=30}w(Q(S))
+ \le L\sum_{(x,y)\in\mathbb Z^2}\max\{w(Q(x,y)),0\}.
+\]
+The numerator is evaluated exactly from the moments through degree $25$
+of $T$, obtained by an integer dynamic program on the $32$ population pairs
+$(u,v),(-u,v)$.  The denominator is an exact sum over the $210{,}135$ lattice
+points with $T\le2{,}762{,}804$.  After clearing all coefficient denominators,
+the ancillary file records the integer numerator and denominator, whose
+ratio has ceiling $5{,}133{,}798{,}314{,}667$.
+The standard-library script \path{radial_certificates/verify_publication.py} recomputes all
+$676$ mixed moments, checks the saved polynomial and ratio, and independently
+recomputes the denominator by summing expanded monomials over the full signed
+lattice.  Numerical optimization was used only to discover the rational
+polynomial; it is not an input to the verification.
+Lemma~\ref{im:finite-list} converts the common-moment class into the
+stated Reed--Solomon list. This improves the degree-$20$ conditional
+certificate by approximately $1.17\%$. The higher-degree conditional
+certificates above give larger bounds at these parameters. The radial
+argument offers a separate way to use both moment coordinates at once;
+no optimality is claimed.
+\end{proof}
+
+\subsection{A stronger asymptotic constant for fixed dimension}
+\label{sec:gram-gaussian}
+Fix $m\ge1$, and suppose only that $\min(t,n-t)\to\infty$.
+Write $V_j$ for the
+Gram subset-sum variances above, and let $L_n$ be the largest class of
+$t$-subsets sharing their first $m$ binomial moments. Then
+\begin{equation}\label{eq:gram-gaussian}
+ \liminf_{n\to\infty}
+ \frac{L_n\prod_{j=1}^m\sqrt{V_j}}{\binom nt}
+ \ge (2\pi)^{-m/2}.
+\end{equation}
+This follows from a finite-population central limit theorem and ordinary
+pigeonhole counting; a local central limit theorem is unnecessary.
+
+\begin{proof}
+Let $G_j$ be the mean-zero Gram polynomial of degree $j$ and leading
+coefficient $1/j!$. For a uniformly chosen $t$-subset $A$, put
+$Z_j=\sum_{a\in A}G_j(a)/\sqrt{V_j}$. Orthogonality gives
+$\mathbb EZ=0$ and $\operatorname{Cov}(Z)=I_m$.
+For any fixed nonzero $u\in\mathbb R^m$, the population values
+$a_x=\sum_j u_jG_j(x)/\sqrt{V_j}$ have mean zero and finite-population
+variance
+\[
+ v_n=\frac1{n-1}\sum_xa_x^2
+     =\frac{n\|u\|^2}{t(n-t)}.
+\]
+For fixed $m$, $\max_x|G_j(x)|=O_m(n^j)$ and the population
+variance of $G_j$ is $\Theta_m(n^{2j})$. Cauchy--Schwarz therefore gives
+\[
+ \frac{\max_xa_x^2}{\min(t,n-t)v_n}
+ =O_{u,m}\bigl(1/\min(t,n-t)\bigr)\to0.
+\]
+H\'ajek's finite-population central limit theorem~\cite{hajek}, in the
+sufficient form of~\cite[Theorem~1]{liding}, followed by the
+Cram\'er--Wold criterion,
+therefore gives $Z\Rightarrow N(0,I_m)$.
+
+The Gram signatures belong to an affine unit lower triangular image
+of $\mathbb Z^m$. Its centered axis-aligned unit cubes tile
+$\mathbb R^m$, as in the finite bound above. After dividing coordinate
+$j$ by $\sqrt{V_j}$, each cell has volume
+$1/\prod_j\sqrt{V_j}$ and lies within
+$\epsilon_n=\tfrac12\sqrt{\sum_jV_j^{-1}}=o(1)$ of its center.
+Consequently a ball of radius $R$ contains at most
+\[
+ \kappa_m(R+\epsilon_n)^m\prod_j\sqrt{V_j}
+\]
+possible signatures, where $\kappa_m$ is unit-ball volume.
+For fixed $R>0$, pigeonhole counting and convergence in distribution give
+\[
+ \liminf_n\frac{L_n\prod_j\sqrt{V_j}}{\binom nt}
+ \ge\frac{\Pr(\|N(0,I_m)\|\le R)}{\kappa_m R^m}.
+\]
+Letting $R\downarrow0$ \emph{after} this limit proves
+\eqref{eq:gram-gaussian} by continuity of the Gaussian density.
+\end{proof}
+
+If additionally $t/n\to\rho\in(0,1)$, then with $k=t-m$ and $p>n$
+the moment-class construction gives
+\[
+ \ell_{\operatorname{RS}(\mathbb F_p,\{0,\ldots,n-1\},k)}(1-t/n)
+ \ge\left(
+ \frac{\prod_{j=1}^m[\sqrt{2j+1}\binom{2j}{j}j!]}
+ {(2\pi\rho(1-\rho))^{m/2}}-o(1)\right)
+ \frac{\binom nt}{n^{m(m+2)/2}}.
+\]
+The number of moments is fixed here. This statement supplies neither
+a finite-length error bound nor the mass of a prescribed individual
+signature. It is an application of classical limit theory, with no
+priority claim.
 
 \section{From large lists to nearby codewords on a line}
 \label{sec:lines}
@@ -1595,6 +2000,109 @@ small curves, including $60$ with formal degree at least the field
 size. All $466{,}140$ distance checks pass; the fixtures include
 $421$ unexplained witness pairs on curves with some joint agreement.
 
+\subsection{An incidence bound for all nearby witnesses}
+
+% Insertion candidate. Jo's bound is prior work; the witness/curve statement
+% below is an elementary extension of its proof. No novelty claim.
+\begin{proposition}[A witness form of the circuit-incidence bound]
+\label{prop:support-incidence}
+Let $F$ be finite, let $1\le k<n$, and let $C\subseteq F^n$ be
+a linear $[n,k]$ MDS code. Let $t,e$ be integers with
+$k+1\le t\le n$ and $e\ge0$, and put
+$f(z)=\sum_{j=0}^e z^j f_j$ for $f_j\in F^n$.
+For each pair $(z,c)\in F\times C$, write
+$S(z,c)=\{i:c_i=f(z)_i\}$. Let $\mathcal W$ consist of the
+pairs with $|S(z,c)|\ge t$ whose entire agreement set does not
+jointly explain all the coefficient words $f_0,\ldots,f_e$.
+Then, for every $k+1\le b\le t$,
+\[
+ \sum_{(z,c)\in\mathcal W}\binom{|S(z,c)|-1}{b-1}
+ \le \min\{e,|F|\}\binom nb.
+\]
+In particular,
+\[
+ |\mathcal W|\le
+ \left\lfloor\min\{e,|F|\}
+ \min_{k+1\le b\le t}\frac{\binom nb}{\binom{t-1}{b-1}}
+ \right\rfloor.
+\]
+If the coefficient words have no joint explanation on any $t$
+coordinates, the bound counts every nearby witness pair.
+\end{proposition}
+\begin{proof}
+This extends the incidence proof of Jo~\cite[Lemma~4.1 and
+Theorem~4.2]{jo-mca}. His local rejection lemma states that a
+noncodeword on $m$ coordinates of an MDS code rejects at least
+$\binom{m-1}{b-1}$ tests of size $b\ge k+1$.
+For each pair in $\mathcal W$, apply that lemma to a coefficient
+word that is outside the code on $S(z,c)$.
+
+Fix a $b$-set $A$ rejecting at least one coefficient word. The
+polynomial $f(Z)|_A$ in the quotient space $F^A/(C|_A)$ is
+formally nonzero and has degree at most $e$. A linear functional
+nonzero on one of its coefficient vectors gives a nonzero scalar
+polynomial of degree at most $e$. Hence at most
+$\min\{e,|F|\}$ parameters make $f(z)|_A$ a code restriction.
+Each such restriction determines at most one global codeword,
+because $b\ge k$ and the code is MDS. Counting all incidences
+proves the weighted bound, and then $|S(z,c)|\ge t$ gives the
+stated count. The argument needs no restriction $e<|F|$.
+\end{proof}
+
+For affine lines in the range of
+Proposition~\ref{prop:puncturing-bound}, put $t=k+s=n-r$.
+The minimum in Proposition~\ref{prop:support-incidence} is
+attained at $b=k+1$, yielding the additional bound
+\[
+ |\mathcal W|\le
+ \left\lfloor\frac{\binom n{k+1}}{\binom{k+s-1}{k}}\right\rfloor.
+\]
+Indeed, the ratio of the expressions for successive test sizes is
+$b(n-b)/((b+1)(t-b))$, which exceeds one here because
+$(k+1)(r+1)>t$. At $(n,k,r)=(10,2,6)$ this improves the puncturing
+bound from $84$ to $40$. At $s=1$ both bounds equal
+$\binom n{k+1}$, so the sharp endpoint is unchanged.
+The puncturing bound can be stronger near the unique radius;
+we may take the minimum of the two bounds. At fixed positive rate
+$k/n\to\rho$ and agreement fraction $t/n\to\tau$ with
+$0<\rho<\tau<1$, the circuit bound still has exponential rate
+$H(\rho)-\tau H(\rho/\tau)>0$, with natural-log entropy $H$.
+It therefore does not resolve the fixed-gap question.
+
+
+\begin{corollary}[Sharp endpoint for polynomial curves]
+\label{cor:curve-endpoint-sharp}
+Let $1\le k\le n-2$ and $e\ge1$. Over a suitable finite field, there
+are an $n$-point Reed--Solomon domain and a degree-$e$ curve with
+exactly $e\binom n{k+1}$ nearby parameter--witness pairs at radius
+$(n-k-1)/n$. Each nearby word has a unique witness, and the coefficient
+words have no joint agreement on $k+1$ coordinates. Every parametrized
+codeword curve of degree at most $e$ contains at most $e(n-k)$ of
+these pairs, and this bound is attained.
+\end{corollary}
+\begin{proof}
+Choose a field of characteristic not dividing $e$ and a domain whose
+$(k+1)$-subset sums $s_T$ are distinct. Choose $b$ outside those sums,
+and pass to a finite extension splitting all polynomials
+$Z^e+b-s_T$. Each has $e$ distinct roots, and different polynomials
+have disjoint root sets. Set $h(z)=z^e+b$ and
+$f(z)(x)=x^{k+1}-h(z)x^k$. As in the affine construction, agreement
+with a degree-below-$k$ polynomial on $k+1$ coordinates forces
+$h(z)=s_T$ and uniquely determines the witness. This gives exactly
+$e\binom n{k+1}$ pairs. The coefficient of $z^e$ is $-X^k$, which
+precludes joint agreement on $k+1$ coordinates.
+
+For a parametrized codeword curve $Q(z)$ of degree at most $e$,
+let $b_0$ count coordinates on which $f(z)=Q(z)$ identically in $z$.
+Their leading coefficients show $b_0\le k$. At each other coordinate
+the discrepancy has at most $e$ roots. If $Q$ contains $m$ selected
+pairs, then $m(k+1)\le b_0m+e(n-b_0)$, so $m\le e(n-k)$.
+The affine codeword line attaining concurrency $n-k$, composed with
+$h$, attains equality. If the domain also satisfies the exact generic
+list profile, that profile persists over the splitting field by the
+field-extension argument above.
+\end{proof}
+
 \section{Finite examples on the norm-one circle}
 \label{sec:circle-overview}
 
@@ -1698,7 +2206,8 @@ For (i), apply Theorem~\ref{rl:list} with
 $M=2048$, $d=1024$, $r=32$, $h=1090$, and $B=2^{15}$.
 For (ii), apply Theorem~\ref{thm:ct-reserve} with
 $M=1024$, $r=15$, $h=545$, and $B=2^{16}$.
-Both choices give $K=n/2$ and the same agreement count $T=hB-2$.
+Both choices give $K=n/2$ and the same certified agreement threshold
+$T=hB-2$.
 The exact coefficient counts and collision bound are evaluated in
 \eqref{eq:ct-numeric-bank} and Section~\ref{rl:parameters}.
 Corollary~\ref{cor:ct-fifteen-concurrency} gives the selected-graph
@@ -1921,8 +2430,8 @@ Three distinctions are needed to apply the results correctly.
 
 \paragraph{Minimum distance and list size.}
 The root bound proves the usual minimum-distance guarantee for
-Reed--Solomon codes. It does not bound how many codewords can lie
-near an arbitrary received word beyond the unique-decoding radius.
+Reed--Solomon codes. It does not by itself establish the proposed quantitative list bound
+beyond the unique-decoding radius.
 Theorem~\ref{im:all-list} rules out a uniform
 $\exp(O_\rho(1/\eta))$ bound over prime fields and evaluation
 domains, even below the characteristic-based Elias radius. An
@@ -2347,9 +2856,10 @@ Off the anchors,
  W(u)-P_A(u)=
  \frac{\alpha u^{-s}F_A(u^B)}{u^{B(r+1)}y(u)}.
 \]
-Thus agreement holds exactly on the selected $h$ fibers, except for the two
-discarded anchors. The map $u\mapsto u^B$ has fibers of size $B$ on $D$, so
-there are $hB-2$ certified agreements. Distinct $F_A$ give distinct $P_A$;
+Among the nonanchor coordinates, agreement holds exactly on the selected
+$h$ fibers. The map $u\mapsto u^B$ has fibers of size $B$ on $D$, so
+there are exactly $hB-2$ nonanchor agreements, and at least this many
+agreements on the full domain. Distinct $F_A$ give distinct $P_A$;
 a nonzero difference in the interior band, after clearing its Laurent
 monomial, has degree at most $K-2<n$, so the codewords are distinct on $D$.
 Finally, rotation preserves the real interior band and all agreement counts.
@@ -4130,6 +4640,10 @@ IACR ePrint 2026/782. \url{https://eprint.iacr.org/2026/782}.
 \bibitem{bchks} E. Ben-Sasson, D. Carmon, U. Hab\"ock, S. Kopparty,
 and S. Saraf. \emph{On Proximity Gaps for Reed--Solomon Codes}.
 IACR ePrint 2025/2055. \url{https://eprint.iacr.org/2025/2055}.
+\bibitem{jo-mca} S. Jo.
+\emph{Reed--Solomon Mutual Correlated Agreement Beyond the Johnson Radius}.
+IACR ePrint 2026/1432, revised August 19, 2026.
+\url{https://eprint.iacr.org/2026/1432}.
 \bibitem{circle} U. Hab\"ock, D. Levit, and S. Papini.
 \emph{Circle STARKs}.
 IACR ePrint 2024/278. \url{https://eprint.iacr.org/2024/278}.
@@ -4153,5 +4667,28 @@ order, source snapshot
 \nolinkurl{cd7bc5f4697fb188a27e09f9242f1dd76df8afdc}.
 \href{https://github.com/starkware-libs/proving/blob/cd7bc5f4697fb188a27e09f9242f1dd76df8afdc/crates/stwo/src/core/pcs/verifier.rs\#L62}{Polynomial-commitment verifier};
 \href{https://github.com/starkware-libs/proving/blob/cd7bc5f4697fb188a27e09f9242f1dd76df8afdc/crates/stwo/src/core/fri.rs}{FRI verifier}.
+\bibitem{linwong} Y. Lin and R. Wong.
+\emph{Global Asymptotics of the Discrete Chebyshev Polynomials}.
+arXiv:1207.2536, 2012. Equations (1.1)--(1.2).
+\url{https://arxiv.org/abs/1207.2536}.
+
+\bibitem{liding} X. Li and P. Ding.
+\emph{General Forms of Finite Population Central Limit Theorems
+with Applications to Causal Inference}.
+arXiv:1610.04821, 2016. Theorem 1.
+\url{https://arxiv.org/abs/1610.04821}.
+
+\bibitem{hajek} J. H\'ajek.
+\emph{Limiting Distributions in Simple Random Sampling from a Finite Population}.
+Publications of the Mathematical Institute of the Hungarian Academy of Sciences,
+5:361--374, 1960.
+\url{https://real.mtak.hu/200979/}.
+
+\bibitem{bobkovmadiman} S. Bobkov and M. Madiman.
+\emph{The Entropy per Coordinate of a Random Vector Is Highly
+Constrained under Convexity Conditions}.
+IEEE Transactions on Information Theory, 57(8):4940--4954, 2011.
+Proposition III.1 and proof of Corollary III.2.
+\url{https://arxiv.org/abs/1006.2883}.
 \end{thebibliography}
 \end{document}

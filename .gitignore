@@ -7,3 +7,6 @@
 *.toc
 __pycache__/
 .DS_Store
+INTEGRATION_HANDOFF.md
+research/**/exploratory/
+research/puncturing_improvement/jo1432_source.*

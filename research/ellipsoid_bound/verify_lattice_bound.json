@@ -1,0 +1,37 @@
+{
+  "tiling_fixtures": 4096,
+  "exhaustive": {
+    "fixtures": 44,
+    "subset_visits": 2024
+  },
+  "length64": {
+    "n": 64,
+    "t": 34,
+    "variances": [
+      5525,
+      376805
+    ],
+    "population": 1620288010530347424,
+    "radius4": {
+      "positive_lattice_sites": 573371,
+      "scaled_weight_sum": 2387335489996860,
+      "list_lower_bound": 2825905919527
+    },
+    "optimized": {
+      "radius_squared": [
+        8327308730,
+        2081847625
+      ],
+      "positive_lattice_sites": 573367,
+      "boundary_lattice_sites": 4,
+      "scaled_weight_sum": 2387288605450190,
+      "scaled_numerator": 6746253002126536483649675520,
+      "derivative_sign_before": 10035263030,
+      "derivative_sign_after": -6619190890,
+      "list_lower_bound": 2825905919681
+    },
+    "smoothed_pi_upper": "355/113",
+    "smoothed_list_lower_bound": 2825885263137
+  },
+  "all_passed": true
+}

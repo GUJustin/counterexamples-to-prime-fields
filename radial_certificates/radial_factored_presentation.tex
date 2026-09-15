@@ -1,0 +1,30 @@
+% Optional replacement for the weight-description portion of the radial
+% certificate proof; preserves the proposition and its numerical bound.
+The weight can be given directly by a short integer factorization.  Set
+\[
+ D=1{,}884{,}025,\qquad T=341x^2+5y^2,
+\]
+and define
+\[
+ W(T)=(851547D-580691T)
+       \prod_{i=1}^{12}(R_iD-10^6T)^2,
+\]
+where the twelve integers $R_i$ are
+\[
+\begin{array}{rrrr}
+734680&2391341&4113168&6361771\\
+9106419&12322595&15989086&20095283\\
+24650528&29671516&35141871&41012408.
+\end{array}
+\]
+This degree-$25$ polynomial is nonpositive for
+$T\ge851547D/580691$.  The exact moment numerator and compact lattice
+denominator, computed for this integer factorization, again give ceiling
+$5{,}133{,}798{,}314{,}667$.
+The standalone script \texttt{radial\_certificates/verify\_factored.py}
+expands the polynomial afresh and verifies its numerator and denominator
+against \texttt{radial\_certificates/certificate\_factored.json}.
+The end-to-end script additionally recomputes every required moment and
+checks both this factorization and the original rational-coefficient
+certificate.  Thus the factored presentation does not depend on numerical
+root-finding for its verification.
