@@ -49,7 +49,8 @@ Finally, at gap $1/n$, we construct codes whose maximum list size is
 exactly $n-k-1$, but with $\binom n{k+1}$ uniquely nearby points on
 one affine line. This parameter count attains an unconditional
 puncturing bound at that radius. The same generic domains have an exact list-size
-profile at every integer Hamming radius below $n-k$.
+profile at every integer Hamming radius below $n-k$; at fixed positive
+rates, this profile follows from known upper and lower bounds.
 
 Finite constructions on the norm-one circle give examples in the
 polynomial spaces used by Circle STARKs. We apply the general results
@@ -266,6 +267,14 @@ hardness results~\cite{ggg}. The results here use quantitative
 counts on integer intervals to obtain the stated list and line
 separations. The number-theoretic splitting theorem used in the lift is
 also classical.
+
+The generic list-profile upper bound is due to Brakensiek, Gopi, and
+Makam~\cite{bgm}. At every fixed positive rate, Roth's ordinary
+list-decoding bound~\cite{roth} gives the matching lower bound for all
+sufficiently large lengths. We include an explicit construction that
+also covers the remaining finite parameters $k\ge2$, without claiming
+priority for that construction. The separation here combines these
+list bounds with a line containing many isolated nearby points.
 
 Krachun, Kazanin, and Hab\"ock~\cite{kkh} construct large lists and
 affine-line obstructions on multiplicative subgroups of prime fields,
@@ -1244,6 +1253,21 @@ Thus $M>\ell_C(\theta)n+R_n$ eventually for every $R_n=o(n)$,
 without the required concurrency.
 \end{proof}
 
+\paragraph{Attribution of the exact profile.}
+The upper bound below follows from~\cite[Theorem~1.5]{bgm}.
+For the lower bound, Roth's Theorem~4~\cite{roth} suffices whenever
+$a-2\le\binom{k+1}{2}$. Indeed, set $L_s=\lfloor(a-1)/s\rfloor$.
+If $L_s\ge2$, put $L=L_s-1$ and write $a=(L+1)u+v$ with
+$1\le v\le L+1$. Then $u\ge1$ and
+$L\le a-2\le\binom{k+1}{2}\le\binom{k-1+u+v}{k-1}$.
+If the maximum list size at radius $(a-s)/n$ were at most $L$,
+Roth's bound would imply $a-s\le La/(L+1)$, contrary to
+$L_s s\le a-1$. The case $L_s=1$ is immediate.
+The sufficient condition holds eventually at every fixed rate in $(0,1)$.
+Thus the fixed-rate exact profile is a consequence of published results.
+The proof below supplies a direct lower construction for every finite
+$k\ge2$ and uses~\cite{aggllz} for the stated finite-field probability.
+
 \begin{proposition}[Exact generic list sizes at every integer radius below $n-k$]
 \label{al:profile}
 Let $k\ge2$, $a=n-k\ge2$, and let $p\ge n+k2^{10an}$ be prime.
@@ -1431,6 +1455,9 @@ to the unique-decoding regime and applying the correlated-agreement
 theorem of Ben-Sasson et al.~\cite[Theorems~1.2 and~1.4]{bciks}.
 We include the argument to explain the extremality of the example;
 no novelty is claimed for this corollary of the known theorem.
+Stronger bounds are known in parts of the unique-decoding and Johnson
+regimes~\cite[Corollary~1.4 and Theorem~1.5]{bchks}; the elementary
+bound below is useful for its general range and its sharp endpoint.
 
 \begin{proposition}[An unconditional puncturing bound]
 \label{prop:puncturing-bound}
@@ -1514,7 +1541,44 @@ is injective on the polynomial witnesses, so double counting gives
 the bound.
 \end{proof}
 
-The bound is also $n$ at $2r=a$. Between the two endpoints it can
+\begin{corollary}[Polynomial curves]
+\label{cor:puncturing-curves}
+Retain $a,r,s,d$ from Proposition~\ref{prop:puncturing-bound}, and let
+$f(z)=\sum_{j=0}^{e}z^j f_j$ for $f_j\in F^D$ and $e\ge0$.
+The number of nearby pairs $(z,P)$ whose entire agreement set cannot
+be jointly explained by degree-below-$k$ polynomials for all $e+1$
+coefficient words is at most
+\[
+ \left\lfloor e(n-d)\frac{\binom nd}{\binom rd}\right\rfloor.
+\]
+If no such joint agreement exists on $n-r$ coordinates, the same
+bound holds for all nearby pairs, summed over parameters.
+\end{corollary}
+\begin{proof}
+This is an elementary consequence of the polynomial-curve
+unique-radius theorem~\cite[Theorem~6.1]{bciks}.
+On a length-$N$ puncture of redundancy $2s$, that theorem bounds
+nearby parameters by $eN$ unless the coefficient words jointly agree
+with codewords on $N-s$ positions. Uniqueness makes this a witness
+bound. In the joint-agreement case, choose the corresponding codeword
+curve and its full coefficient agreement set $J$. It is nearby and
+unique at every parameter. Each coordinate outside $J$ contributes
+at most $e$ roots of its nonzero discrepancy polynomial. Thus at
+most $e(N-|J|)\le es$ parameters have an agreement set larger than
+$J$; all remaining sets are jointly explained.
+
+For each original unexplained support, interpolate every coefficient
+word on the same $k$ positions and retain one additional position
+where an interpolant fails. This gives an unexplained $(k+1)$-set,
+independent of $e$. The protected-support counting argument in
+Proposition~\ref{prop:puncturing-support} now applies with $eN$
+in place of $N$, yielding the displayed bound. For $e=0$, every
+nearby support is explained by its nearby polynomial, so the count
+is zero. The root bound uses formal polynomials and requires no
+assumption that $e<|F|$.
+\end{proof}
+
+The affine bound is also $n$ at $2r=a$. Between the two endpoints it can
 be much larger than the actual maximum list size times $n$; at a
 fixed gap beyond unique decoding it is generally exponential in $n$.
 It therefore leaves the fixed-gap question open. The exact checker
@@ -1525,6 +1589,11 @@ independent \path{checks/astra_syndrome_determinants_check.py}
 checks the witness and entire-agreement-set bounds on $378$ affine
 lines, including lines with correlated agreement, by exact decoding
 and $572{,}226$ codeword-distance evaluations.
+For the curve corollary, \path{checks/verify_curve_puncturing.py}
+enumerates all field parameters and codewords on $300$ deterministic
+small curves, including $60$ with formal degree at least the field
+size. All $466{,}140$ distance checks pass; the fixtures include
+$421$ unexplained witness pairs on curves with some joint agreement.
 
 \section{Finite examples on the norm-one circle}
 \label{sec:circle-overview}
@@ -4040,6 +4109,11 @@ ITCS 2020, LIPIcs 151, 5:1--5:32.
 \emph{Random Reed--Solomon Codes Achieve List-Decoding Capacity With
 Linear-Sized Alphabets}. Advances in Combinatorics, 2025:8.
 \url{https://doi.org/10.19086/aic.2025.8}.
+\bibitem{bgm} J. Brakensiek, S. Gopi, and V. Makam.
+\emph{Generic Reed--Solomon Codes Achieve List-decoding Capacity}.
+arXiv:2206.05256. \url{https://arxiv.org/abs/2206.05256}.
+\bibitem{roth} R. M. Roth. \emph{Higher-Order MDS Codes}.
+arXiv:2111.03210v2, 2021. \url{https://arxiv.org/abs/2111.03210v2}.
 \bibitem{ggg} V. Gandikota, B. Ghazi, and E. Grigorescu.
 \emph{NP-Hardness of Reed-Solomon Decoding, and the Prouhet--Tarry--Escott Problem}.
 2016. \url{https://arxiv.org/abs/1611.03069}.

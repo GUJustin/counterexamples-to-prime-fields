@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "coverage": {
+    "curves": 300,
+    "parameters": 3420,
+    "codeword_distances": 466140,
+    "nearby_pairs": 2773,
+    "unexplained_pairs": 1024,
+    "unexplained_pairs_on_joint_agreement_curves": 421,
+    "degree_at_least_field_size_curves": 60
+  },
+  "scope": "All parameters and codewords for 300 deterministic curves; not all curves."
+}

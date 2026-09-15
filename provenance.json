@@ -7,17 +7,23 @@
   "additional_reviewed_inputs": {
     "PUNCTURING_AFFINE_PROXIMITY_BOUND.md": "cf7a5cdd353ec977bde94bbbb2d6c4d4acd74c7b4343ffcdbaa8c546385e5da6",
     "PUNCTURING_WITNESS_AND_MCA_BOUND.md": "350dd17fe93d87d46be56705597f281fcdb4d5798309f811ee43130221ea65b8",
-    "GENERIC_PROFILE_INTERLEAVING_EXTENSION_COROLLARY.md": "1990d980632da0b1bf0a0905dbed2c1f7de5bfb5399ca0c76b72b10485e458fd"
+    "GENERIC_PROFILE_INTERLEAVING_EXTENSION_COROLLARY.md": "1990d980632da0b1bf0a0905dbed2c1f7de5bfb5399ca0c76b72b10485e458fd",
+    "GENERIC_PROFILE_AND_PUNCTURING_PROVENANCE.md": "012bf6a9d2040248a8729da5f1a25d8d35887655d6e336bff310fc0621c36c82",
+    "astra_curve_mca_corollary.md": "f5a7e4d380ca8b316357cd0bb14a53c6a70a59d5fbb018c8746c92215e5025f7",
+    "RESEARCH_CONTINUATION_2026-09-15.md": "4eb1fbbd74df32a35e4185c8ca61ee88c94c67b7d0d9a6ff58fdd02a7a570d64",
+    "astra_syndrome_determinants.md": "8f5cc118553cc5abd7f3b124dd107829bba80b3dcc129b64ce03f7c0fc3bf52b"
   },
-  "manuscript_sha256": "06b3471936b7d35447e0c85b6d00cf8383bc8e0473c2da6356306869f9382887",
-  "pdf_sha256": "60fa880b4518065b3a83be62ae46fe8105d9fce6e201e5ac988914f9df89f41d",
-  "pdf_pages": 56,
+  "manuscript_sha256": "564590af0eff1e6e9bcd7bf654577ec229ad4deeebf0e12c2232965f79adb52b",
+  "pdf_sha256": "fb0f069f407a520c82a25fd43a9288e3a3eccf0dbb872e8838ad882fca06395a",
+  "pdf_pages": 57,
   "editorial_changes": [
     "General coding-theory and hash-based SNARK framing",
     "Direct explanatory academic prose with explicit quantifiers",
     "S-two retained as an application",
     "Existing mathematical statements retained",
-    "Later puncturing, witness-support, interleaving, and extension refinements integrated"
+    "Later puncturing, witness-support, interleaving, and extension refinements integrated",
+    "Attribute the fixed-rate exact profile to Brakensiek--Gopi--Makam and Roth with the parameter deduction",
+    "Add the elementary degree-e curve corollary of BCIKS Theorem 6.1 and exact finite checks"
   ],
   "validation": {
     "build": "make paper passed without LaTeX warnings or overflowing boxes",
@@ -31,11 +37,14 @@
       "checks/astra_syndrome_determinants_verified.json": "all exact assertions passed",
       "checks/conditional_moment_results.json": "passed",
       "moment_certificates/verification.json": "passed",
-      "moment_certificates/concentration_verification.json": "passed"
+      "moment_certificates/concentration_verification.json": "passed",
+      "checks/verify_curve_puncturing.json": "passed"
     },
     "original_labels_retained": 97,
     "original_displayed_formulas_retained": 190,
     "visual_review": "Title, abstract, and security-section layout inspected",
-    "limits": "Finite checks supplement proofs. Appendix protocol models were preserved and were not rerun as native verifier tests."
-  }
+    "limits": "Finite checks supplement proofs. Appendix protocol models were preserved and were not rerun as native verifier tests.",
+    "followup": "Primary theorems checked; curve proof reviewed; 300 curves and 466140 distances checked. Existing coding checks unchanged."
+  },
+  "revised_at": "2026-09-15T17:59:39-04:00"
 }

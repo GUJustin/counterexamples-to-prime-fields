@@ -22,10 +22,13 @@ analysis as an application of those results.
   count is optimal at the one-coordinate-gap endpoint.
 - Suitable generic domains have an exact list profile at every integer
   radius below the redundancy. The profile persists under field extension
-  and finite interleaving measured by column distance.
+  and finite interleaving measured by column distance. At fixed positive
+  rates, the profile follows from published results of Brakensiek, Gopi,
+  and Makam and of Roth; the paper supplies an explicit lower construction.
 - The puncturing argument also bounds nearby witness pairs whose entire
   agreement sets have no joint explanation, including lines that possess
-  some correlated agreement.
+  some correlated agreement. For degree-`e` polynomial curves, the same
+  argument gives a factor of `e`, using the known curve proximity theorem.
 - Exact polynomial weights certify **5,074,503,250,115** codewords in
   the length-64, dimension-32 interval example. A general concentration
   bound improves full-range counting by a factor of order `n^(m/2)`
