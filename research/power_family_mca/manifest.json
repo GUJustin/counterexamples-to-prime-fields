@@ -4,7 +4,7 @@
   "files": {
     "PROOF.md": "8ea21d79712c258a336b115aa7d1375871c1989fad3c3210b79da637f7f7eddf",
     "QUADRATIC_SURFACE.md": "9e3a9f98c6e314f8e1716c572a1ec2b25776152c72d0a67351063e5716068288",
-    "README.md": "510f0188165e7b501a79ce32b9979006c54eb96f94145c08c0c8b349a63c8fdd",
+    "README.md": "c82a6a9be5be03c0253fb0cd74f634f6063850c08c445fb6a70d40f6f1de65a6",
     "appendix.tex": "dd1896e6598ebc45e445391102f990d9724467d9b68027fbf4dfea0bb008de52",
     "build_resources.json": "5ebe0c3400a35e310ae4b9b7fd61a337462158779f366792533493226d552b61",
     "family_resources.json": "6e16d48ebc8f99ef5856f80510a256fc0c28241bcab70cd59059aa602b9f6252",
@@ -23,5 +23,6 @@
   },
   "scope": "Fixed-power bounded-degree bases have O(n) full-support MCA labels at fixed positive rate and agreement in sufficiently large characteristic. Appendix G gives the proof and a quadratic-degree third-order solution surface. No general first-order theorem, fixed-gap quadratic lower bound, or better.codes gain.",
   "review": "Proof self-reviewed twice; no independent mathematical review or novelty claim.",
-  "validation": "All four checkers ran sequentially under a 384 MiB watchdog. Resource files report sampled process-group RSS. Earlier unchanged complete-suite results retained."
+  "validation": "All four checkers ran sequentially under a 384 MiB watchdog. Resource files report sampled process-group RSS. Earlier unchanged complete-suite results retained.",
+  "superseded_manuscript_input": "The current Appendix G uses research/bounded_root_mca/appendix.tex; this package retains the earlier fixed-power proof."
 }

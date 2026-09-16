@@ -1,0 +1,19 @@
+{
+  "status": "Self-reviewed proof; both exact checkers and clean 82-page manuscript build passed",
+  "prepared_at": "2026-09-16T16:42:49.272367+00:00",
+  "files": {
+    "PROOF.md": "98c7115753abbcb767b4e1cabc925b36776f7bb900b1184fd36445c4eb7445af",
+    "README.md": "0a30546446fd5919dc8ce746edd1be6cccf38489294c7737c364ef1b0ba0534c",
+    "appendix.tex": "7af30519633688535642e7105cd45fdee3cdbb08fca74818f2de336d01ff05df",
+    "bounded_root_clusters_verification.json": "8bca900ce3ffb3c97fc69c13b97c7554ec07797513b4993adf5a707861f0a814",
+    "bounded_root_wronskian_verification.json": "bea3a5a28332bd64a531355c695afda685c1cae59b7dba7c8f816e79db181181",
+    "build_resources.json": "34034122cc11dd1548d18ee37df9f5d11393d510500ecd26940fbf4aa54d0f15",
+    "clusters_resources.json": "3910691ef1485bcd2749bb4bde6cf85b36dbb29ef8aa5712ebfedb14b146fecd",
+    "verify_clusters.py": "10d49d6ffec2298f89955fb0b752041a11034aff0db470b63a9385de3cbef1fb",
+    "verify_wronskian.py": "fbdba16010fa4069bcb5035d83b79e4b2b2f8d746bcdfb48d94d16725a31de19",
+    "wronskian_resources.json": "7aee1987a9f333c127b0c493c0134d3e5d1ec58d5c2cb2c50c5fba8ada1b74dd"
+  },
+  "scope": "Linear full-support MCA for all candidates with a bounded number of distinct algebraic roots, allowing arbitrary root positions, multiplicities, degrees up to the cap, and scalars. Fixed positive rate and agreement; sufficiently large characteristic. No general first-order theorem, quadratic fixed-gap lower bound, or better.codes improvement.",
+  "review": "Proof self-reviewed twice; no independent mathematical review or novelty claim.",
+  "validation": "Two standalone checkers passed sequentially under the 384 MiB watchdog; sampled RSS below 19 MiB. Existing unchanged test results retained. Main manuscript Appendix G supersedes the fixed-power special case."
+}

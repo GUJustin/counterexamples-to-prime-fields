@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "fixtures": [
+    {
+      "r": 1,
+      "m": 1,
+      "p": 101,
+      "D": 31,
+      "private_multiplicity_min": 10,
+      "candidate_degrees": [
+        10,
+        17,
+        24,
+        31
+      ],
+      "N": 4,
+      "M": 2,
+      "wronskian_degree": 47,
+      "wronskian_order_on_S": 1,
+      "outside_gcd_degree": 1
+    },
+    {
+      "r": 2,
+      "m": 2,
+      "p": 1009,
+      "D": 278,
+      "private_multiplicity_min": 253,
+      "candidate_degrees": [
+        254,
+        262,
+        270,
+        278
+      ],
+      "N": 10,
+      "M": 7,
+      "wronskian_degree": 3726,
+      "wronskian_order_on_S": 2082,
+      "outside_gcd_degree": 1
+    },
+    {
+      "r": 3,
+      "m": 2,
+      "p": 2003,
+      "D": 425,
+      "private_multiplicity_min": 397,
+      "candidate_degrees": [
+        410,
+        415,
+        420,
+        425
+      ],
+      "N": 10,
+      "M": 7,
+      "wronskian_degree": 5838,
+      "wronskian_order_on_S": 3310,
+      "outside_gcd_degree": 1
+    }
+  ],
+  "negative_control": "Four candidates with the same heavy root and distinct simple roots have monomial rank 3, not 10.",
+  "scope": "Unequal-degree monomial independence, degree and valuation filtrations, and gcd accounting; not the full asymptotic MCA theorem by enumeration."
+}

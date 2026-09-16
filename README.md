@@ -96,13 +96,15 @@ This closes a particular nonlinear construction route. It includes a
 sharper constant-weight classification and exact finite checks; it does
 not settle the general first-order conjecture or give a quadratic lower bound.
 
-[Powers of bounded-degree bases and full-support MCA](research/power_family_mca/README.md)
-proves an `O(n)` exceptional-label bound for candidates `cH^e` with fixed
-base degree, fixed positive rate and agreement, and sufficiently large
-characteristic relative to length. Appendix G contains the proof and a
-third-order equation whose actual solution variety has quadratic degree
-but whose bad labels remain linear. This does not settle the general
-first-order conjecture or construct quadratic fixed-gap error.
+[Boundedly many roots and full-support MCA](research/bounded_root_mca/README.md)
+proves an `O(n)` exceptional-label bound for all candidates with a fixed
+bound on their number of distinct roots, at fixed positive rate and
+agreement and sufficiently large characteristic relative to length.
+Root positions and multiplicities may vary. Appendix G contains the proof
+and a third-order equation whose actual solution variety has quadratic
+degree but whose bad labels remain linear. The earlier
+[fixed-power argument](research/power_family_mca/README.md) is retained.
+The general first-order conjecture and quadratic fixed-gap error remain open.
 
 ## Build and verify
 

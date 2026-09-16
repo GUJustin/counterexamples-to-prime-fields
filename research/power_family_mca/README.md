@@ -7,6 +7,10 @@ on any received line is O(n), in characteristic sufficiently large
 relative to n. The constants depend on r and the agreement fraction.
 The exponent e grows with n and is common to the candidate family.
 
+The stronger [bounded-root theorem](../bounded_root_mca/README.md) now
+occupies Appendix G and also permits arbitrary root multiplicities. This
+package retains the earlier fixed-power proof and its checks.
+
 [Proof and precise finite thresholds](PROOF.md). The proof combines an
 elementary Wronskian gcd bound, a count of multiplicatively dependent
 tuples, and a division into large and small coordinate-ratio groups.

@@ -1,0 +1,261 @@
+\section{Boundedly many roots imply linear full-support MCA}
+\label{app:power-family-mca}
+\label{app:bounded-root-mca}
+
+A polynomial solution variety of quadratic degree need not produce
+quadratically many exceptional labels on a received line. We prove an
+$O(n)$ bound for every candidate family with a bounded number of distinct
+roots, allowing both the roots and their multiplicities to vary.
+
+Let $\mathcal D$ be a set of $n$ distinct field elements and let $f,g$ be
+arbitrary words on it. For a candidate $P$ of degree at most $D$, set
+\[
+ S(P,z)=\{x\in\mathcal D:f(x)+zg(x)=P(x)\}.
+\]
+Call $(P,z)$ bad at threshold $A>D$ if $|S(P,z)|\ge A$ and no
+polynomials $F_0,G_0$ of degree at most $D$ agree with $f,g$, respectively,
+on all of $S(P,z)$. Equivalently, $g$ has no degree-$D$ interpolant on
+this full support, since otherwise $F_0=P-zG_0$ works.
+A label is bad if it has at least one bad candidate in the family.
+
+\begin{theorem}[Bounded root count]
+\label{thm:bounded-root-linear-mca}
+\label{thm:power-family-linear-mca}
+Fix $r\ge1$ and $0<\rho_-\le\rho_+<a\le1$. Suppose
+$\rho_-\le D/n\le\rho_+$ and $A\ge an$.
+There are constants $C_{r,a}$, $c_{r,a}$, and
+$n_0(r,a,\rho_-)$ such that, for $n\ge n_0$, every received line has
+at most $C_{r,a}n$ bad labels witnessed by polynomials with at most $r$
+distinct roots over an algebraic closure, if the characteristic is zero
+or $p>c_{r,a}n$. Nonzero scalar coefficients, root positions, and root
+multiplicities may all vary. Including the zero polynomial costs at
+most $n$ additional labels.
+\end{theorem}
+
+The constants below are explicit but very large. No general
+first-order MCA theorem or improved better.codes certificate follows.
+We may work over an algebraic closure when discussing roots: a
+degree-$D$ interpolant on more than $D$ base-field points descends to
+the base field.
+
+\subsection{Pencils and clusters with small residual degree}
+
+An affine polynomial pencil $P_z=U+zV$, with $\deg U,\deg V\le D$,
+contains at most $n$ bad labels. Indeed a bad full support contains a
+coordinate where $(f,g)\ne(U,V)$; agreement there forces $g\ne V$
+and determines the unique label $z=(U-f)/(g-V)$.
+
+Suppose a selected family of distinct bad labels has candidates $HQ$,
+where $H$ is fixed with at most $s$ distinct roots, and $\deg Q\le K$.
+We can take $K\le D-\deg H$. If three graph points $(z,Q)$ are not
+collinear, their line-incidence determinant is a nonzero polynomial of
+degree at most $K$. Their common agreement support has size at most
+$K+s$, after dividing by $H$ away from its roots.
+Assume $K+s\le a^3n/16$. For $L\ge4/a$, counting ordered triples
+through coordinates gives a lower bound $a^3nL^3/8$: if $b_x$ counts
+agreeing candidates, use
+$(b_x)_3\ge\max(b_x-2,0)^3$ and convexity.
+Noncollinear triples contribute at most $(a^3n/16)L^3$.
+Each ordered pair determines a unique graph line, which contains at
+most $n$ selected bad labels by the pencil observation. Collinear
+triples therefore contribute at most $n^2L^2$. Consequently
+\begin{equation}\label{eq:root-cluster-small}
+ L\le16n/a^3.
+\end{equation}
+The same bound covers $L<4/a$. This argument needs no characteristic
+hypothesis.
+
+Set $\delta=a^3/(128r)$. Fix any set $S$ of at most $3r$ algebraic
+roots and consider candidates whose total root multiplicity outside
+$S$ is at most $r\delta D$. Partition their exponents on $S$ into
+boxes of side $w=\lfloor\delta D\rfloor+1$. Within each box factor
+the product $H$ given by its lower-corner exponents. The residual degree
+is at most
+\[
+ |S|(w-1)+r\delta D\le4r\delta D\le a^3n/32.
+\]
+If $3r\le a^3n/32$, equation~\eqref{eq:root-cluster-small} applies
+to each box. There are at most
+\[
+ B_0=(1+\lceil1/\delta\rceil)^{3r}
+\]
+boxes, so this cluster contains at most $Cn$ selected bad labels, where
+\begin{equation}\label{eq:root-cluster-C}
+ C=16B_0/a^3.
+\end{equation}
+The bound is uniform in $S$. Factors may be considered over the
+algebraic closure; a pencil through two original base-field candidates
+has base-field coefficients.
+
+\subsection{Four candidates with private high-multiplicity roots}
+
+\begin{lemma}\label{lem:bounded-root-gcd}
+Let $P_1,\ldots,P_4$ be nonzero polynomials of degree at most $D$,
+each with at most $r$ distinct roots. Suppose each $P_i$ has a root
+of multiplicity at least $\delta D$ which is not a root of any other
+$P_j$. For an integer $m\ge1$, put
+\[
+ N=\binom{m+3}{3},\qquad J=m+1,\qquad M=N-J.
+\]
+Assume
+\[
+ \delta D>\binom{N-1}{2}(4r-1),\qquad
+ \operatorname{char}\F=0\quad\text{or}\quad p>mD.
+\]
+For two independent homogeneous linear forms $F,G$ in four variables,
+the gcd of $F(P_1,\ldots,P_4)$ and $G(P_1,\ldots,P_4)$, after
+removing factors supported on the union of the roots of the $P_i$,
+has degree at most
+\begin{equation}\label{eq:bounded-root-gcd}
+ \frac{24D}{m+5}+\frac{(4r-1)(M-1)}2.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+The $N$ homogeneous degree-$m$ monomials in the $P_i$ are linearly
+independent. For otherwise take a minimal relation with $q$ terms
+$f_1,\ldots,f_q$. A ratio of two distinct monomials has an order of
+absolute value at least $\delta D$ at some private root, so $q=2$
+is impossible. Any $q-1$ terms have a nonzero ordinary Wronskian:
+their degrees are less than $p$, and row reduction to distinct leading
+degrees gives a nonzero Vandermonde leading coefficient. The same
+argument holds in characteristic zero.
+
+Let $S$ be the union of the roots of the $P_i$ and $A_0$ the common
+gcd of the $f_i$. All Wronskians obtained by omitting one term are
+constant multiples. Omit a term of largest degree for the global
+degree bound, and a term of smallest order separately at each root for
+the local bounds. Comparing them yields
+\[
+ \max_i\deg f_i-\deg A_0\le\binom{q-1}{2}(|S|-1).
+\]
+The left side is at least the rational degree of any ratio $f_i/f_j$,
+and hence at least $\delta D$. Since $q\le N$ and $|S|\le4r$,
+this contradicts the assumed threshold.
+
+The degree-$m$ part of the homogeneous ideal $(F,G)$ has dimension
+$M$: its quotient is a polynomial ring in two variables, of degree-$m$
+dimension $J$. Evaluation in the $P_i$ is injective by the preceding
+paragraph. Write $d_\alpha$ for the degrees of the evaluated monomials.
+A basis of the evaluated ideal has sum of degrees at most the sum of
+the largest $M$ of the $d_\alpha$. Indeed, order the formal monomials
+by degree and row-reduce from highest degree; each basis element has
+degree at most the degree of its distinct pivot. Thus its nonzero
+Wronskian $W$ satisfies
+\[
+ \deg W\le\sum_\alpha d_\alpha-\binom M2.
+\]
+
+At a root $s\in S$, let $a_\alpha(s)$ be the monomial orders.
+Intersecting a codimension-$J$ subspace with the span of monomials
+of order at least each integer $k$ gives an adapted basis whose sum of
+orders is at least
+$\sum_\alpha a_\alpha(s)-J\max_\alpha a_\alpha(s)$.
+The dimension of each such intersection loses at most $J$;
+summing these filtration dimensions proves the bound. Cancellations
+can only increase orders. A constant basis change preserves the order
+of $W$, so, using
+\[
+ \sum_{s\in S}\sum_\alpha a_\alpha(s)=\sum_\alpha d_\alpha,
+ \qquad
+ \sum_{s\in S}\max_\alpha a_\alpha(s)
+ \le m\sum_{i=1}^4\deg P_i,
+\]
+we obtain
+\[
+ \sum_{s\in S}\operatorname{ord}_s W
+ \ge\sum_\alpha d_\alpha-Jm\sum_i\deg P_i-|S|\binom M2.
+\]
+Let $T$ be the gcd in the statement. It divides every evaluated ideal
+element. The identity
+$\operatorname{Wr}(Th_1,\ldots,Th_M)=T^M\operatorname{Wr}(h_1,\ldots,h_M)$
+contributes at least $M\deg T$ additional zeros outside $S$.
+Combining the degree and order bounds gives
+\[
+ \deg T\le\frac{4JmD}{M}+\frac{(4r-1)(M-1)}2.
+\]
+Since $M=m(m+1)(m+5)/6$, this is \eqref{eq:bounded-root-gcd}.
+\end{proof}
+
+This is an elementary specialization of the high-power gcd phenomenon.
+A broader characteristic-zero result is Guo--Sun--Wang
+\cite[Theorem 11]{guo-sun-wang-gcd}; the finite-characteristic statement
+above follows directly from the Wronskian proof.
+
+\subsection{Counting the remaining quadruples}
+
+Select one nonzero bad candidate at each bad label. Call a root heavy
+if its multiplicity is at least $\delta D$. A quadruple without a
+private heavy root for every member has some member $P_i$ whose heavy
+roots all lie in the union of the other three root sets. Fix the other
+three candidates. Their root union has size at most $3r$, and every
+root of $P_i$ outside it has multiplicity less than $\delta D$.
+The cluster bound \eqref{eq:root-cluster-C} gives at most $Cn$ choices
+for this selected bad label. Summing over the four possible members,
+there are at most $4CnL^3$ such ordered quadruples. This includes
+candidates with no heavy roots.
+
+For every other quadruple at distinct labels, common agreement
+coordinates satisfy the two independent linear forms
+\begin{align*}
+ &(z_2-z_3)P_1+(z_3-z_1)P_2+(z_1-z_2)P_3=0,\\
+ &(z_2-z_4)P_1+(z_4-z_1)P_2+(z_1-z_2)P_4=0.
+\end{align*}
+Lemma~\ref{lem:bounded-root-gcd}, together with the at most $4r$
+roots in the union, bounds their common support. Choose
+\[
+ m\ge1536/a^4-5,\qquad
+ \frac{(4r-1)(M-1)}2+4r\le a^4n/64,
+\]
+as well as the lemma's hypotheses and $3r\le a^3n/32$.
+Their common support then has size at most $a^4n/32$.
+For $L\ge6/a$, fourth incidence gives
+\[
+ \frac{a^4nL^4}{16}
+ \le\frac{a^4nL^4}{32}+4Cn^2L^3.
+\]
+Therefore
+\begin{equation}\label{eq:bounded-root-labels}
+ L\le\frac{128C}{a^4}n
+   =\frac{2048}{a^7}(1+\lceil128r/a^3\rceil)^{3r}n.
+\end{equation}
+The small-$L$ case also satisfies this bound. At fixed positive rate,
+all degree and length thresholds eventually hold, and a sufficiently
+large fixed lower bound on $p/n$ ensures $p>mD$.
+The zero polynomial contributes at most $n$ more labels by the same
+single-coordinate argument as for a fixed pencil. This proves
+Theorem~\ref{thm:bounded-root-linear-mca}.
+
+\subsection{A quadratic-degree solution surface}
+
+Fix $e\ge1$ in characteristic zero or $p>2e$. The nonzero polynomial
+solutions of degree at most $2e$ to
+\begin{equation}\label{eq:quadratic-power-ode}
+ e^2P^2P'''+3e(1-e)PP'P''+(1-e)(1-2e)(P')^3=0
+\end{equation}
+are exactly $P=cH^e$ with $\deg H\le2$. At a root of multiplicity
+$m$, the coefficient of the lowest possible term, after removing a
+nonzero local scalar, is $m(m-e)(m-2e)$. Thus every root has
+multiplicity $e$ or $2e$. Conversely substitution verifies every
+$cH^e$; equivalently this is the denominator-cleared equation
+$(P^{1/e})'''=0$. The monic base descends by uniqueness.
+
+The projective map $[H]\mapsto[H^e]$ from the plane of quadratics is
+injective and base-point free, with injective tangent maps since
+$e\ne0$ in the field. Its image has degree $e^2$. Explicitly, cut by
+$P(u)=P(v)$ and $P(w)=P(v)$ for three distinct points $u,v,w$.
+There is no nonzero solution with $H(v)=0$, so normalize $H(v)=1$.
+The values $H(u),H(w)$ independently range over the $e$-th roots of
+unity, giving $e^2$ distinct reduced points by quadratic interpolation.
+This fixed third-order, jet-degree-three equation has an actual solution
+variety of degree $\Theta(n^2)$ at fixed positive rate, but
+Theorem~\ref{thm:bounded-root-linear-mca} gives only $O(n)$ bad labels
+in its large-characteristic regime.
+
+The checkers in \path{research/bounded_root_mca/} verify unequal-degree
+Wronskian bookkeeping and cluster counting, including every full support
+of 1,025 bad labels in a length-4,096 example with at most two roots per
+candidate. The earlier \path{research/power_family_mca/} package verifies
+the quadratic-power classification and degree sections. These checks
+supplement the proofs. Families with a growing number of distinct roots
+and the fixed-gap quadratic lower-bound target remain open here.

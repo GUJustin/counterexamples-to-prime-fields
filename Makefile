@@ -42,6 +42,8 @@ verify:
 	$(PYTHON) research/power_family_mca/verify_wronskian.py
 	$(PYTHON) research/power_family_mca/verify_mca.py
 	$(PYTHON) research/power_family_mca/verify_parameters.py
+	$(PYTHON) research/bounded_root_mca/verify_wronskian.py
+	$(PYTHON) research/bounded_root_mca/verify_clusters.py
 	$(PYTHON) research/binary_affine_locator/verify.py
 	$(PYTHON) research/structured_domains/verify_balanced_fibers.py
 	$(PYTHON) research/gram_norm/verify_balanced_fibers.py

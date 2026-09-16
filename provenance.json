@@ -16,9 +16,9 @@
     "gram_gaussian_class_bound.md": "f36be9d5332c867aef1a31a1add86ece1b2505502a065213f4e98e5f0289f073",
     "ellipsoid_moment_bound_audit.md": "e4a699996b08a6d4f3f10fa47a0a808fde5b1a7df418a99c64bf7639949737bc"
   },
-  "manuscript_sha256": "855c076e80448e6417e5309a6e83af60601044ec07520914479e6deed4f379bd",
-  "pdf_sha256": "2ab7ec76cd9e69892b214b57529691eab6e72eaecb36bad4e28d8f10a9c50d30",
-  "pdf_pages": 83,
+  "manuscript_sha256": "b80e2c0015a745be27ad15519a2d811e6b4ada2cf1aab2eb6d8c6a6915a3156f",
+  "pdf_sha256": "1fe30214ef605a50864fe43f5d1bd548fc3e599e9edeccae7d0f9e067c4d026b",
+  "pdf_pages": 82,
   "editorial_changes": [
     "General coding-theory and hash-based SNARK framing",
     "Direct explanatory academic prose with explicit quantifiers",
@@ -41,9 +41,10 @@
     "Remove the balanced-rational-map Galois hypothesis for p=ell*n +/- 1, ell>=6, n>6(B-1); add self-contained proof and supplementary exact checks.",
     "Add anchored quotient and padding construction giving actual correlated-agreement failure at exactly fixed rate and gap, with an explicit lower bound on the gap-dependent linear coefficient.",
     "Add sharp binary-affine locator-prefix bound in every characteristic other than two, with explicit characteristic-two exception and finite implications for the large integer classes.",
-    "Add Appendix G: linear full-support MCA for fixed powers of bounded-degree bases, with an elementary finite-characteristic Wronskian proof and a third-order solution surface of quadratic degree."
+    "Add Appendix G: linear full-support MCA for fixed powers of bounded-degree bases, with an elementary finite-characteristic Wronskian proof and a third-order solution surface of quadratic degree.",
+    "Strengthen Appendix G to every polynomial with boundedly many distinct roots, with root positions and multiplicities varying; use private heavy roots, unequal-degree Wronskians, and small-residual clusters."
   ],
-  "revised_at": "2026-09-16T16:20:10.530805+00:00",
+  "revised_at": "2026-09-16T16:42:49.272367+00:00",
   "coordination": {
     "frontier_acknowledged": "2026-09-15T18:11:07-04:00",
     "older_32_page_source_repaired": true,
@@ -88,7 +89,7 @@
   },
   "included_manuscript_inputs": {
     "research/overnight_2026-09-16/finite_updates.tex": "126a7dce6f22637d19e33b3f965c5b79fbc9fe288760d7a4e053b9e01a66c516",
-    "research/power_family_mca/appendix.tex": "dd1896e6598ebc45e445391102f990d9724467d9b68027fbf4dfea0bb008de52"
+    "research/bounded_root_mca/appendix.tex": "7af30519633688535642e7105cd45fdee3cdbb08fca74818f2de336d01ff05df"
   },
   "previous_finite_certificate": {
     "file": "research/finite_weights/factored40_certificates.json",
@@ -165,14 +166,14 @@
     "scope": "Linear growth at each fixed positive gap, over prime fields growing with length. No quadratic lower bound established."
   },
   "validation": {
-    "build": "83-page paper.pdf; make paper passed with no final LaTeX warnings, undefined references, or overflowing boxes.",
-    "visual_review": "Wronskian proof, heavy/light counting, finite thresholds, and quadratic solution surface on rendered pages 78, 80, and 81 inspected.",
-    "new_checks": "156194 monic polynomials, 278 solutions, 10 reduced degree sections, 7 Wronskian fixtures, 24 received lines with 73 bad witnesses and 23 light witnesses, exhaustive dependent divisor tuples, and 12 exact parameter choices passed.",
-    "unchanged_checks": "Previous full make verify run retained; four new separately passing commands added.",
+    "build": "82-page paper.pdf; make paper passed with no final LaTeX warnings, undefined references, or overflowing boxes.",
+    "visual_review": "The strengthened theorem, Wronskian proof, and quadruple count inspected on rendered pages 77, 79, and 80.",
+    "new_checks": "Three unequal-degree Wronskian fixtures, a shared-heavy-root rank-collapse negative control, all 1025 full bad supports of a length-4096 example, a noncollinear three-label example, 70 quadruples, and 12 exact parameter choices passed.",
+    "unchanged_checks": "Previous complete make verify run and separately added commands retained; two new passing commands added.",
     "proof_review": "Self-reviewed twice; no independent mathematical review or novelty claim.",
-    "resources": "research/power_family_mca/*_resources.json",
+    "resources": "research/bounded_root_mca/*_resources.json",
     "better_codes": "Pinned score 116.13 unchanged",
-    "scope": "Fixed-power bounded-degree bases have O(n) full-support MCA labels at fixed positive rate and agreement in sufficiently large characteristic. Appendix G gives the proof and a quadratic-degree third-order solution surface. No general first-order theorem, fixed-gap quadratic lower bound, or better.codes gain."
+    "scope": "All bounded-root candidates now covered, including variable root exponents. Growing root count and general nonlinear first-order MCA remain open here."
   },
   "binary_affine_locator_package": "research/binary_affine_locator/manifest.json",
   "validation_before_power_family_integration": {
@@ -185,5 +186,19 @@
     "better_codes": "Pinned score 116.13 unchanged",
     "scope": "This bounds binary-affine support classes, not all binary-field constructions or nonlinear support families."
   },
-  "power_family_mca_package": "research/power_family_mca/manifest.json"
+  "power_family_mca_package": "research/power_family_mca/manifest.json",
+  "validation_before_bounded_root_integration": {
+    "build": "83-page paper.pdf; make paper passed with no final LaTeX warnings, undefined references, or overflowing boxes.",
+    "visual_review": "Wronskian proof, heavy/light counting, finite thresholds, and quadratic solution surface on rendered pages 78, 80, and 81 inspected.",
+    "new_checks": "156194 monic polynomials, 278 solutions, 10 reduced degree sections, 7 Wronskian fixtures, 24 received lines with 73 bad witnesses and 23 light witnesses, exhaustive dependent divisor tuples, and 12 exact parameter choices passed.",
+    "unchanged_checks": "Previous full make verify run retained; four new separately passing commands added.",
+    "proof_review": "Self-reviewed twice; no independent mathematical review or novelty claim.",
+    "resources": "research/power_family_mca/*_resources.json",
+    "better_codes": "Pinned score 116.13 unchanged",
+    "scope": "Fixed-power bounded-degree bases have O(n) full-support MCA labels at fixed positive rate and agreement in sufficiently large characteristic. Appendix G gives the proof and a quadratic-degree third-order solution surface. No general first-order theorem, fixed-gap quadratic lower bound, or better.codes gain."
+  },
+  "superseded_manuscript_inputs": {
+    "research/power_family_mca/appendix.tex": "dd1896e6598ebc45e445391102f990d9724467d9b68027fbf4dfea0bb008de52"
+  },
+  "bounded_root_mca_package": "research/bounded_root_mca/manifest.json"
 }
