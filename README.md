@@ -71,6 +71,17 @@ The statements retain their field, domain, radius, and quantifier
 restrictions. They do not establish a complete protocol attack or an
 improved better.codes submission.
 
+## Supplementary research note
+
+[Linear differential constraints and full-support proximity gaps](research/linear_differential_mca/README.md)
+gives an elementary `O(n)` bound at fixed positive gap for candidates
+satisfying a challenge-dependent linear system of bounded challenge degree
+and bounded generic kernel dimension. It covers differential equations
+of any fixed order that are affine-linear in the jets, in large
+characteristic. General nonlinear first-order constraints remain open here.
+The note includes a proof and exact finite checks; it is separate from the
+main manuscript and makes no literature-priority claim.
+
 ## Build and verify
 
 The standalone source requires a LaTeX installation with `latexmk`,

@@ -143,5 +143,14 @@
     "better_codes": "Pinned display 116.13 unchanged",
     "scope": "Linear growth at each fixed positive gap, over prime fields growing with length. No quadratic lower bound established."
   },
-  "fixed_gap_padding_package": "research/fixed_gap_padding/manifest.json"
+  "fixed_gap_padding_package": "research/fixed_gap_padding/manifest.json",
+  "supplementary_research_notes": {
+    "linear_differential_mca": {
+      "manifest": "research/linear_differential_mca/manifest.json",
+      "prepared_at": "2026-09-16T15:04:40.007924+00:00",
+      "verification": "24 system fixtures, 88 received lines, 6608 residual degree bounds, 87 determining-tuple counts, both proof branches, and a characteristic negative control passed.",
+      "review": "Proof self-reviewed twice. Classical solution-dimension fact attributed to Guruswami--Wang. No independent mathematical review or novelty claim.",
+      "manuscript_integration": "Supplementary note linked in README; paper.tex and paper.pdf unchanged."
+    }
+  }
 }

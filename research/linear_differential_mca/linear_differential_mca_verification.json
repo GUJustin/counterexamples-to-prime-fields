@@ -1,0 +1,984 @@
+{
+  "status": "passed",
+  "fixtures": [
+    {
+      "name": "one_row",
+      "p": 7,
+      "D": 2,
+      "n": 6,
+      "A": 4,
+      "H": 2,
+      "r": 1,
+      "ell": 2,
+      "exceptional_labels": [],
+      "lines": [
+        {
+          "variant": 0,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 47
+        },
+        {
+          "variant": 1,
+          "bad_labels": 3,
+          "bad_witnesses": 5,
+          "bound": 47
+        },
+        {
+          "variant": 2,
+          "bad_labels": 2,
+          "bad_witnesses": 3,
+          "bound": 47
+        },
+        {
+          "variant": 3,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 47
+        }
+      ],
+      "residual_degree_checks": 360,
+      "determining_tuple_checks": 7,
+      "branches": {
+        "root_count": 60,
+        "affine_graph": 0
+      }
+    },
+    {
+      "name": "rank_drop_consistent",
+      "p": 7,
+      "D": 2,
+      "n": 6,
+      "A": 4,
+      "H": 2,
+      "r": 1,
+      "ell": 2,
+      "exceptional_labels": [
+        2
+      ],
+      "lines": [
+        {
+          "variant": 0,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 47
+        },
+        {
+          "variant": 1,
+          "bad_labels": 2,
+          "bad_witnesses": 2,
+          "bound": 47
+        },
+        {
+          "variant": 2,
+          "bad_labels": 2,
+          "bad_witnesses": 3,
+          "bound": 47
+        },
+        {
+          "variant": 3,
+          "bad_labels": 2,
+          "bad_witnesses": 3,
+          "bound": 47
+        }
+      ],
+      "residual_degree_checks": 360,
+      "determining_tuple_checks": 5,
+      "branches": {
+        "root_count": 57,
+        "affine_graph": 3
+      }
+    },
+    {
+      "name": "rank_drop_inconsistent",
+      "p": 7,
+      "D": 2,
+      "n": 6,
+      "A": 4,
+      "H": 2,
+      "r": 1,
+      "ell": 2,
+      "exceptional_labels": [
+        2
+      ],
+      "lines": [
+        {
+          "variant": 0,
+          "bad_labels": 3,
+          "bad_witnesses": 3,
+          "bound": 47
+        },
+        {
+          "variant": 1,
+          "bad_labels": 2,
+          "bad_witnesses": 3,
+          "bound": 47
+        },
+        {
+          "variant": 2,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 47
+        },
+        {
+          "variant": 3,
+          "bad_labels": 1,
+          "bad_witnesses": 2,
+          "bound": 47
+        }
+      ],
+      "residual_degree_checks": 360,
+      "determining_tuple_checks": 7,
+      "branches": {
+        "root_count": 60,
+        "affine_graph": 0
+      }
+    },
+    {
+      "name": "two_rows",
+      "p": 7,
+      "D": 2,
+      "n": 6,
+      "A": 4,
+      "H": 1,
+      "r": 2,
+      "ell": 1,
+      "exceptional_labels": [],
+      "lines": [
+        {
+          "variant": 0,
+          "bad_labels": 0,
+          "bad_witnesses": 0,
+          "bound": 20
+        },
+        {
+          "variant": 1,
+          "bad_labels": 2,
+          "bad_witnesses": 2,
+          "bound": 20
+        },
+        {
+          "variant": 2,
+          "bad_labels": 0,
+          "bad_witnesses": 0,
+          "bound": 20
+        },
+        {
+          "variant": 3,
+          "bad_labels": 0,
+          "bad_witnesses": 0,
+          "bound": 20
+        }
+      ],
+      "residual_degree_checks": 144,
+      "determining_tuple_checks": 2,
+      "branches": {
+        "root_count": 24,
+        "affine_graph": 0
+      }
+    },
+    {
+      "name": "generic_inconsistent",
+      "generically_inconsistent": true,
+      "consistent_labels": [
+        2
+      ],
+      "H": 1,
+      "r": 1
+    },
+    {
+      "name": "unique_rational",
+      "p": 7,
+      "D": 2,
+      "n": 6,
+      "A": 4,
+      "H": 2,
+      "r": 3,
+      "ell": 0,
+      "exceptional_labels": [
+        2
+      ],
+      "lines": [
+        {
+          "variant": 0,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 20
+        },
+        {
+          "variant": 1,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 20
+        },
+        {
+          "variant": 2,
+          "bad_labels": 0,
+          "bad_witnesses": 0,
+          "bound": 20
+        },
+        {
+          "variant": 3,
+          "bad_labels": 0,
+          "bad_witnesses": 0,
+          "bound": 20
+        }
+      ],
+      "residual_degree_checks": 24,
+      "determining_tuple_checks": 2,
+      "branches": {
+        "root_count": 4,
+        "affine_graph": 0
+      }
+    },
+    {
+      "name": "order_1_homogeneous",
+      "p": 7,
+      "D": 2,
+      "n": 6,
+      "A": 4,
+      "H": 1,
+      "r": 2,
+      "ell": 1,
+      "exceptional_labels": [],
+      "lines": [
+        {
+          "variant": 0,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 20
+        },
+        {
+          "variant": 1,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 20
+        },
+        {
+          "variant": 2,
+          "bad_labels": 3,
+          "bad_witnesses": 3,
+          "bound": 20
+        },
+        {
+          "variant": 3,
+          "bad_labels": 0,
+          "bad_witnesses": 0,
+          "bound": 20
+        }
+      ],
+      "residual_degree_checks": 144,
+      "determining_tuple_checks": 5,
+      "branches": {
+        "root_count": 21,
+        "affine_graph": 3
+      }
+    },
+    {
+      "name": "order_1_inhomogeneous",
+      "p": 7,
+      "D": 2,
+      "n": 6,
+      "A": 4,
+      "H": 2,
+      "r": 2,
+      "ell": 1,
+      "exceptional_labels": [],
+      "lines": [
+        {
+          "variant": 0,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 34
+        },
+        {
+          "variant": 1,
+          "bad_labels": 0,
+          "bad_witnesses": 0,
+          "bound": 34
+        },
+        {
+          "variant": 2,
+          "bad_labels": 0,
+          "bad_witnesses": 0,
+          "bound": 34
+        },
+        {
+          "variant": 3,
+          "bad_labels": 0,
+          "bad_witnesses": 0,
+          "bound": 34
+        }
+      ],
+      "residual_degree_checks": 144,
+      "determining_tuple_checks": 1,
+      "branches": {
+        "root_count": 24,
+        "affine_graph": 0
+      }
+    },
+    {
+      "name": "order_1_homogeneous",
+      "p": 7,
+      "D": 3,
+      "n": 6,
+      "A": 5,
+      "H": 1,
+      "r": 3,
+      "ell": 1,
+      "exceptional_labels": [],
+      "lines": [
+        {
+          "variant": 0,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 21
+        },
+        {
+          "variant": 1,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 21
+        },
+        {
+          "variant": 2,
+          "bad_labels": 2,
+          "bad_witnesses": 2,
+          "bound": 21
+        },
+        {
+          "variant": 3,
+          "bad_labels": 0,
+          "bad_witnesses": 0,
+          "bound": 21
+        }
+      ],
+      "residual_degree_checks": 144,
+      "determining_tuple_checks": 4,
+      "branches": {
+        "root_count": 20,
+        "affine_graph": 4
+      }
+    },
+    {
+      "name": "order_1_inhomogeneous",
+      "p": 7,
+      "D": 3,
+      "n": 6,
+      "A": 5,
+      "H": 2,
+      "r": 3,
+      "ell": 1,
+      "exceptional_labels": [],
+      "lines": [
+        {
+          "variant": 0,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 36
+        },
+        {
+          "variant": 1,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 36
+        },
+        {
+          "variant": 2,
+          "bad_labels": 0,
+          "bad_witnesses": 0,
+          "bound": 36
+        },
+        {
+          "variant": 3,
+          "bad_labels": 0,
+          "bad_witnesses": 0,
+          "bound": 36
+        }
+      ],
+      "residual_degree_checks": 144,
+      "determining_tuple_checks": 2,
+      "branches": {
+        "root_count": 24,
+        "affine_graph": 0
+      }
+    },
+    {
+      "name": "order_2_homogeneous",
+      "p": 7,
+      "D": 3,
+      "n": 6,
+      "A": 5,
+      "H": 2,
+      "r": 2,
+      "ell": 2,
+      "exceptional_labels": [],
+      "lines": [
+        {
+          "variant": 0,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 56
+        },
+        {
+          "variant": 1,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 56
+        },
+        {
+          "variant": 2,
+          "bad_labels": 2,
+          "bad_witnesses": 2,
+          "bound": 56
+        },
+        {
+          "variant": 3,
+          "bad_labels": 0,
+          "bad_witnesses": 0,
+          "bound": 56
+        }
+      ],
+      "residual_degree_checks": 360,
+      "determining_tuple_checks": 4,
+      "branches": {
+        "root_count": 54,
+        "affine_graph": 6
+      }
+    },
+    {
+      "name": "order_2_inhomogeneous",
+      "p": 7,
+      "D": 3,
+      "n": 6,
+      "A": 5,
+      "H": 3,
+      "r": 2,
+      "ell": 2,
+      "exceptional_labels": [],
+      "lines": [
+        {
+          "variant": 0,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 81
+        },
+        {
+          "variant": 1,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 81
+        },
+        {
+          "variant": 2,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 81
+        },
+        {
+          "variant": 3,
+          "bad_labels": 0,
+          "bad_witnesses": 0,
+          "bound": 81
+        }
+      ],
+      "residual_degree_checks": 360,
+      "determining_tuple_checks": 3,
+      "branches": {
+        "root_count": 60,
+        "affine_graph": 0
+      }
+    },
+    {
+      "name": "one_row",
+      "p": 11,
+      "D": 2,
+      "n": 6,
+      "A": 4,
+      "H": 2,
+      "r": 1,
+      "ell": 2,
+      "exceptional_labels": [],
+      "lines": [
+        {
+          "variant": 0,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 47
+        },
+        {
+          "variant": 1,
+          "bad_labels": 2,
+          "bad_witnesses": 3,
+          "bound": 47
+        },
+        {
+          "variant": 2,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 47
+        },
+        {
+          "variant": 3,
+          "bad_labels": 0,
+          "bad_witnesses": 0,
+          "bound": 47
+        }
+      ],
+      "residual_degree_checks": 360,
+      "determining_tuple_checks": 4,
+      "branches": {
+        "root_count": 60,
+        "affine_graph": 0
+      }
+    },
+    {
+      "name": "rank_drop_consistent",
+      "p": 11,
+      "D": 2,
+      "n": 6,
+      "A": 4,
+      "H": 2,
+      "r": 1,
+      "ell": 2,
+      "exceptional_labels": [
+        2
+      ],
+      "lines": [
+        {
+          "variant": 0,
+          "bad_labels": 3,
+          "bad_witnesses": 3,
+          "bound": 47
+        },
+        {
+          "variant": 1,
+          "bad_labels": 3,
+          "bad_witnesses": 4,
+          "bound": 47
+        },
+        {
+          "variant": 2,
+          "bad_labels": 1,
+          "bad_witnesses": 2,
+          "bound": 47
+        },
+        {
+          "variant": 3,
+          "bad_labels": 0,
+          "bad_witnesses": 0,
+          "bound": 47
+        }
+      ],
+      "residual_degree_checks": 360,
+      "determining_tuple_checks": 4,
+      "branches": {
+        "root_count": 60,
+        "affine_graph": 0
+      }
+    },
+    {
+      "name": "rank_drop_inconsistent",
+      "p": 11,
+      "D": 2,
+      "n": 6,
+      "A": 4,
+      "H": 2,
+      "r": 1,
+      "ell": 2,
+      "exceptional_labels": [
+        2
+      ],
+      "lines": [
+        {
+          "variant": 0,
+          "bad_labels": 0,
+          "bad_witnesses": 0,
+          "bound": 47
+        },
+        {
+          "variant": 1,
+          "bad_labels": 3,
+          "bad_witnesses": 3,
+          "bound": 47
+        },
+        {
+          "variant": 2,
+          "bad_labels": 0,
+          "bad_witnesses": 0,
+          "bound": 47
+        },
+        {
+          "variant": 3,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 47
+        }
+      ],
+      "residual_degree_checks": 360,
+      "determining_tuple_checks": 4,
+      "branches": {
+        "root_count": 60,
+        "affine_graph": 0
+      }
+    },
+    {
+      "name": "two_rows",
+      "p": 11,
+      "D": 2,
+      "n": 6,
+      "A": 4,
+      "H": 1,
+      "r": 2,
+      "ell": 1,
+      "exceptional_labels": [],
+      "lines": [
+        {
+          "variant": 0,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 20
+        },
+        {
+          "variant": 1,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 20
+        },
+        {
+          "variant": 2,
+          "bad_labels": 0,
+          "bad_witnesses": 0,
+          "bound": 20
+        },
+        {
+          "variant": 3,
+          "bad_labels": 0,
+          "bad_witnesses": 0,
+          "bound": 20
+        }
+      ],
+      "residual_degree_checks": 144,
+      "determining_tuple_checks": 2,
+      "branches": {
+        "root_count": 24,
+        "affine_graph": 0
+      }
+    },
+    {
+      "name": "generic_inconsistent",
+      "generically_inconsistent": true,
+      "consistent_labels": [
+        2
+      ],
+      "H": 1,
+      "r": 1
+    },
+    {
+      "name": "unique_rational",
+      "p": 11,
+      "D": 2,
+      "n": 6,
+      "A": 4,
+      "H": 2,
+      "r": 3,
+      "ell": 0,
+      "exceptional_labels": [
+        2
+      ],
+      "lines": [
+        {
+          "variant": 0,
+          "bad_labels": 0,
+          "bad_witnesses": 0,
+          "bound": 20
+        },
+        {
+          "variant": 1,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 20
+        },
+        {
+          "variant": 2,
+          "bad_labels": 0,
+          "bad_witnesses": 0,
+          "bound": 20
+        },
+        {
+          "variant": 3,
+          "bad_labels": 0,
+          "bad_witnesses": 0,
+          "bound": 20
+        }
+      ],
+      "residual_degree_checks": 24,
+      "determining_tuple_checks": 1,
+      "branches": {
+        "root_count": 4,
+        "affine_graph": 0
+      }
+    },
+    {
+      "name": "order_1_homogeneous",
+      "p": 11,
+      "D": 2,
+      "n": 8,
+      "A": 4,
+      "H": 1,
+      "r": 2,
+      "ell": 1,
+      "exceptional_labels": [],
+      "lines": [
+        {
+          "variant": 0,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 38
+        },
+        {
+          "variant": 1,
+          "bad_labels": 2,
+          "bad_witnesses": 2,
+          "bound": 38
+        },
+        {
+          "variant": 2,
+          "bad_labels": 4,
+          "bad_witnesses": 4,
+          "bound": 38
+        },
+        {
+          "variant": 3,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 38
+        }
+      ],
+      "residual_degree_checks": 256,
+      "determining_tuple_checks": 8,
+      "branches": {
+        "root_count": 29,
+        "affine_graph": 3
+      }
+    },
+    {
+      "name": "order_1_inhomogeneous",
+      "p": 11,
+      "D": 2,
+      "n": 8,
+      "A": 4,
+      "H": 2,
+      "r": 2,
+      "ell": 1,
+      "exceptional_labels": [],
+      "lines": [
+        {
+          "variant": 0,
+          "bad_labels": 0,
+          "bad_witnesses": 0,
+          "bound": 64
+        },
+        {
+          "variant": 1,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 64
+        },
+        {
+          "variant": 2,
+          "bad_labels": 2,
+          "bad_witnesses": 2,
+          "bound": 64
+        },
+        {
+          "variant": 3,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 64
+        }
+      ],
+      "residual_degree_checks": 256,
+      "determining_tuple_checks": 4,
+      "branches": {
+        "root_count": 32,
+        "affine_graph": 0
+      }
+    },
+    {
+      "name": "order_1_homogeneous",
+      "p": 11,
+      "D": 3,
+      "n": 8,
+      "A": 5,
+      "H": 1,
+      "r": 3,
+      "ell": 1,
+      "exceptional_labels": [],
+      "lines": [
+        {
+          "variant": 0,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 43
+        },
+        {
+          "variant": 1,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 43
+        },
+        {
+          "variant": 2,
+          "bad_labels": 4,
+          "bad_witnesses": 4,
+          "bound": 43
+        },
+        {
+          "variant": 3,
+          "bad_labels": 0,
+          "bad_witnesses": 0,
+          "bound": 43
+        }
+      ],
+      "residual_degree_checks": 256,
+      "determining_tuple_checks": 6,
+      "branches": {
+        "root_count": 28,
+        "affine_graph": 4
+      }
+    },
+    {
+      "name": "order_1_inhomogeneous",
+      "p": 11,
+      "D": 3,
+      "n": 8,
+      "A": 5,
+      "H": 2,
+      "r": 3,
+      "ell": 1,
+      "exceptional_labels": [],
+      "lines": [
+        {
+          "variant": 0,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 74
+        },
+        {
+          "variant": 1,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 74
+        },
+        {
+          "variant": 2,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 74
+        },
+        {
+          "variant": 3,
+          "bad_labels": 0,
+          "bad_witnesses": 0,
+          "bound": 74
+        }
+      ],
+      "residual_degree_checks": 256,
+      "determining_tuple_checks": 3,
+      "branches": {
+        "root_count": 32,
+        "affine_graph": 0
+      }
+    },
+    {
+      "name": "order_2_homogeneous",
+      "p": 11,
+      "D": 3,
+      "n": 8,
+      "A": 5,
+      "H": 2,
+      "r": 2,
+      "ell": 2,
+      "exceptional_labels": [],
+      "lines": [
+        {
+          "variant": 0,
+          "bad_labels": 2,
+          "bad_witnesses": 2,
+          "bound": 172
+        },
+        {
+          "variant": 1,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 172
+        },
+        {
+          "variant": 2,
+          "bad_labels": 5,
+          "bad_witnesses": 5,
+          "bound": 172
+        },
+        {
+          "variant": 3,
+          "bad_labels": 0,
+          "bad_witnesses": 0,
+          "bound": 172
+        }
+      ],
+      "residual_degree_checks": 896,
+      "determining_tuple_checks": 8,
+      "branches": {
+        "root_count": 106,
+        "affine_graph": 6
+      }
+    },
+    {
+      "name": "order_2_inhomogeneous",
+      "p": 11,
+      "D": 3,
+      "n": 8,
+      "A": 5,
+      "H": 3,
+      "r": 2,
+      "ell": 2,
+      "exceptional_labels": [],
+      "lines": [
+        {
+          "variant": 0,
+          "bad_labels": 0,
+          "bad_witnesses": 0,
+          "bound": 244
+        },
+        {
+          "variant": 1,
+          "bad_labels": 1,
+          "bad_witnesses": 1,
+          "bound": 244
+        },
+        {
+          "variant": 2,
+          "bad_labels": 0,
+          "bad_witnesses": 0,
+          "bound": 244
+        },
+        {
+          "variant": 3,
+          "bad_labels": 0,
+          "bad_witnesses": 0,
+          "bound": 244
+        }
+      ],
+      "residual_degree_checks": 896,
+      "determining_tuple_checks": 1,
+      "branches": {
+        "root_count": 112,
+        "affine_graph": 0
+      }
+    }
+  ],
+  "characteristic_negative_control": true,
+  "seconds": 0.4412859159056097,
+  "scope": "Finite polynomial-matrix checks, including exact generic minors, rank drops, inhomogeneous systems, determining-tuple counts, Cramer residual degrees, full-support witnesses, and both proof branches. These supplement the written theorem."
+}

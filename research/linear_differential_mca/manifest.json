@@ -1,0 +1,11 @@
+{
+  "status": "Proof self-reviewed twice; exact finite checks passed; no independent review or novelty claim",
+  "files": {
+    "PROOF.md": "c0a07cd82efcef58b5e3eaa0f183c61daebb69522288a5d53848661dfad6bbe1",
+    "README.md": "7550109aab89ce2b18ffe51bbca3001ac60c1fa71bea9f78b2dce84472252e03",
+    "linear_differential_mca_verification.json": "2236490e811ebd30226ddff7463cd02355e9e1fbceacb617d3358fe23abf874c",
+    "verification_resources.json": "4ec028b429229ac7e8cb26e7ee3d19a6af488d36c0fd502efbe54462ca3223a5",
+    "verify.py": "5d8e6fbe66ce3195a4c09fa9de83afd9fc9b1861ed088f83a2eae76c3bb16053"
+  },
+  "scope": "Linear bound at fixed gap for bounded-degree polynomial matrix families of bounded generic kernel dimension. Applies to fixed-order affine-linear differential constraints in large characteristic. Does not cover general nonlinear jet constraints."
+}

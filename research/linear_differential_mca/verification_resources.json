@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "research/linear_differential_mca/verify.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5511080001015216,
+  "peak_rss_kib": 32,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}
