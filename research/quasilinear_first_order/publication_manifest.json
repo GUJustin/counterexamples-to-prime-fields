@@ -1,0 +1,42 @@
+{
+  "status": "Twice self-reviewed proofs; exact checkers passed; clean 104-page build and rendered review",
+  "scope": "Conditional first-order linear full-support bound from nonsingular agreements, value-independent separant corollary, sharp n/2 lower family, strengthened dyadic coverage, and exact cubic maximum three. No general first-order theorem, quadratic fixed-gap construction, or better.codes score gain.",
+  "sha256": {
+    "Makefile": "d8315c6ca5d8d60e4dff04cb3bd5127a184c8bc4870f37964a8438525b660849",
+    "README.md": "7c55c5443ae6fc0d5952b937ff872b81e0b8f8f7b4b4cf799a601d1d3399bb1e",
+    "paper.tex": "23d2f4915721e680ad6e6662c79cf55ad934c8750965960e06d1864a3eeacd5d",
+    "paper.pdf": "eae84a83876a87b64062589f2cdd542ba5caa1f952c566b7b48d074357a57873",
+    "research/quasilinear_first_order/PROOF.md": "034dea87dcbd9e9d7a72698a7f43b30e31df8b8e115be14124c76a6722806035",
+    "research/quasilinear_first_order/README.md": "f00daa0626f095a8c6acb144d2640476faecdc63101639f16481af4c2fc0204c",
+    "research/quasilinear_first_order/REGULAR_AGREEMENTS.md": "36dc33028bb527376bc6079657f22780e1e7a7bfca477646ad922561b384dae3",
+    "research/quasilinear_first_order/appendix.tex": "ec4d60297454af53ae82c1bfb8893ff32c0e0e818dd341488c52ac813131fd3d",
+    "research/quasilinear_first_order/build_resources.json": "9b61fd558be1fde549267ef40349c75985fddb00fcfc068b06a3ac1ac045d2b2",
+    "research/quasilinear_first_order/check_resources.json": "fa1d685ef81c31885be0727c25cf9f00ce1c2215f21190acfe38c3ab430bcf8d",
+    "research/quasilinear_first_order/verification.json": "81bb1774cd6820a3688a9b488f0de7c94108b003046361ac95998d9c4a5f4d40",
+    "research/quasilinear_first_order/verify.py": "a27d6cac34ce6c482d23b9b689643aa91af308b62936a19583b4cf857115bb4e",
+    "research/structured_domains/general_cubic_packets/PROOF.md": "f98c5a05e3ba7bd8868525cb85b202a6f785c04e972a74600b1c961630f23321",
+    "research/structured_domains/general_cubic_packets/README.md": "6c58745c964a1573d64847a13d014df0d03a9c15bb1a30f8e3699dab5a909be2",
+    "research/structured_domains/general_cubic_packets/appendix.tex": "db6673b2fc336f6356605b3aa8d4b1384a29d66c34cf1a4041b8ef9cb60c6373",
+    "research/structured_domains/general_cubic_packets/check_resources.json": "5b1b4222828ecb386f80ab1660b825712dd040c5597a51b83a2509a9fe48fcb7",
+    "research/structured_domains/general_cubic_packets/checkpoints.json": "d537523ccbbb121bc74198f4de5c316061395633835f058f5a410f7f9f6b3759",
+    "research/structured_domains/general_cubic_packets/checks.json": "d119ee011f10fa269d2577aa5e37910efb2cea577184352a2d055b869d1d8aa6",
+    "research/structured_domains/general_cubic_packets/full_search_resources.json": "8728c66a3b65f30f6fe758271165b4e0b3f9cbfb4ef35f6566ac55029be4bb03",
+    "research/structured_domains/general_cubic_packets/verification.json": "007c0e9ba20c685f75485c40fdd0ee4308244e5d844ff401eb1c183f98e8b5e5",
+    "research/structured_domains/general_cubic_packets/verify.py": "2bcea7eac5f74e82326a6aace02aca13d72902b9584950a70988754578f1a488",
+    "research/structured_domains/general_cubic_packets/verify_constant.cpp": "0690c422edec52d3d4003c8450268631eb8bdb2d43d653a7c872482386ddf0d1",
+    "research/structured_domains/general_cubic_packets/verify_general.cpp": "863ce8aaf35cb922e0f71a87a62eaea771ff82c2d4880b0d0f8a46922309cc61"
+  },
+  "rendered_review_pages": [
+    90,
+    91,
+    92,
+    101,
+    102
+  ],
+  "preserved_preexisting_files": {
+    "checks/conditional_moment_results.json": "a82501c2dc100779e6c163b4258294ea25a085aac05a419083583a7dfbce3d69",
+    "radial_certificates/README.md": "33bff80fb4d70c0b6dd62a532adb087ec445faf37a9a1a21e492daed16a1bfc2",
+    "reports/stwo-zk-disclosure-summary.pdf": "de994a14ecd533b3de9fa934159c752876b5a7464ae6ab2d76a84371387b5d25",
+    "reports/stwo-zk-disclosure-summary.tex": "2c7beed7ea4f695cd6f02e9bc1d9e7934d6de824040d35d0a895c50755746b14"
+  }
+}

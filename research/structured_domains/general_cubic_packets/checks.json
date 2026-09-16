@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "archived_general_pairs": 29715666375,
+  "archived_general_witnesses_checked": 85,
+  "independent_small_checks": [
+    {
+      "p": 97,
+      "n": 8,
+      "constant_product_maximum": 2,
+      "nonconstant_product_maximum": 2
+    },
+    {
+      "p": 193,
+      "n": 16,
+      "constant_product_maximum": 3,
+      "nonconstant_product_maximum": 3
+    }
+  ],
+  "pinned_constant_product": {
+    "p": 2130706433,
+    "n": 256,
+    "generator": 392596362,
+    "polynomial_max_complete_fibers": 1,
+    "polynomial_witness": [
+      1,
+      1
+    ],
+    "polynomial_fiber_histogram": {
+      "1": 2763520
+    },
+    "constant_product_points": 10795,
+    "pairs_examined": 58260615,
+    "constant_product_max_complete_fibers": 3,
+    "maximum_degenerate_line_size": 127,
+    "line_vertical": false,
+    "line_slope": 1774743732,
+    "line_intercept": 89845030,
+    "line_witness": [
+      [
+        1,
+        58,
+        197
+      ],
+      [
+        139,
+        141,
+        232
+      ],
+      [
+        114,
+        190,
+        208
+      ]
+    ]
+  },
+  "full_general_rerun": null,
+  "dyadic_arithmetic": [
+    {
+      "degree": 513,
+      "maximum_complete_fibers": 426,
+      "minimum_uncovered_points": 43606
+    },
+    {
+      "degree": 514,
+      "maximum_complete_fibers": 426,
+      "minimum_uncovered_points": 43180
+    },
+    {
+      "degree": 516,
+      "maximum_complete_fibers": 424,
+      "minimum_uncovered_points": 43360
+    }
+  ],
+  "scope": "Default checks archived coverage and witnesses, independent small cases, and reruns the complete constant-product search. --full also repeats the full general cubic enumeration."
+}

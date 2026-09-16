@@ -1,0 +1,85 @@
+\section{An exact cubic complete-fiber bound on the pinned subgroup}
+\label{app:general-cubic-packets}
+
+The near-complete-fiber classification leaves maps with many uncovered
+points outside its range. The following finite, computer-assisted result
+closes one such proposed packet construction.
+
+\begin{theorem}[Exact cubic maximum]
+\label{thm:exact-cubic-fibers}
+Let $p=2130706433$ and $S=\mu_{256}\subset\mathbb F_p^*$.
+Every rational map $R$ of degree three, with coefficients in any
+extension of $\mathbb F_p$, has at most three fibers consisting of
+three distinct points of $S$. This bound is attained.
+Consequently a fixed map $R(X^{1024})$ has at most three complete
+degree-$3072$ fibers on $\mu_{262144}$ and supplies at most eight
+unions of such fibers.
+\end{theorem}
+\begin{proof}
+Write the monic locator of a complete fiber as
+$X^3-e_1X^2+e_2X-e_3$. Its coefficients belong to $\mathbb F_p$,
+with $e_3\in\mu_{256}$. All these coefficient triples lie on one
+affine line: they are the monic members of the numerator--denominator
+pencil of $R$. Two full fibers determine that pencil over $\mathbb F_p$,
+regardless of the original coefficient field. Two locators on a
+degree-three pencil have no common root, since a common factor would
+reduce the degree of the map.
+
+First suppose $e_3$ is constant. Scaling all roots in $\mu_{256}$
+normalizes $e_3=1$, because cubing is bijective on this group.
+There are exactly
+\[
+ M=\frac{(256-1)(256-2)}6=10795
+\]
+three-element subsets with product one. Enumerating all
+$\binom M2=58{,}260{,}615$ pairs of their $(e_1,e_2)$ points and
+counting collinear points, with common-factor pencils excluded,
+gives maximum three and an explicit attaining line.
+
+Otherwise $e_3$ parametrizes the line injectively. Normalize one
+fiber's product to one and write
+\[
+ e_1=a_1+s_1(e_3-1),\qquad e_2=a_2+s_2(e_3-1).
+\]
+The associated map is
+\[
+ \frac{X^3+(s_1-a_1)X^2+(a_2-s_2)X}
+      {s_1X^2-s_2X+1}.
+\]
+It is degenerate exactly when the denominator vanishes at one of
+the three roots of the anchor locator
+$X^3-a_1X^2+a_2X-1$. Every line with at least three complete fibers
+is found by taking one of the $M$ product-one anchors, enumerating
+all $255M$ triples at the remaining product levels, and identifying
+repeated pairs of slopes $(s_1,s_2)$. For every nondegenerate repeated
+pair, lookup among the normalized triples counts its complete fibers
+at all $256$ product levels. The exhaustive enumeration of
+\[
+ 255M^2=29{,}715{,}666{,}375
+\]
+anchor/triple pairs gives maximum three, also attained.
+Together the two cases prove the first assertion. The map
+$X\mapsto X^{1024}$ is $1024$-to-one from $\mu_{262144}$ onto $S$,
+so a complete degree-$3072$ fiber of the composition corresponds
+exactly to a complete three-point fiber of $R$. Three disjoint
+packets have at most $2^3$ unions.
+\end{proof}
+
+\paragraph{Reproducibility and scope.}
+The source, mathematical reduction, all $85$ disjoint anchor-range
+checkpoints, witnesses, and resource reports are in
+\path{research/structured_domains/general_cubic_packets/}.
+The general enumeration found $22{,}692$ nondegenerate candidate
+occurrences and took $524.46$ seconds, with sampled peak process-group
+RSS $176{,}192$ KiB under a $384$ MiB limit. A separate Python checker
+verified every checkpoint witness on the entire domain, validated the
+source hash and complete disjoint coverage, independently exhausted all
+pencils on $\mu_8/\mathbb F_{97}$ and $\mu_{16}/\mathbb F_{193}$,
+and reran the full pinned constant-product enumeration. The optional
+\texttt{--full} flag repeats the general enumeration too.
+
+Eight unions, even with one fixed core appended, are far short of
+the required bank size $274980728111395088$. This excludes the fixed
+composed-cubic packet route; maps varying with the candidate and
+constructions using partial fibers remain outside the conclusion.
+No better.codes score improvement follows from this exclusion.

@@ -270,6 +270,14 @@ by $O(D^d)$, and gives examples attaining this exponent. The first-order
 case in Appendix~\ref{app:actual-first-order} is linear in $D$.
 These results distinguish sharpness of algebraic candidate counts
 from the still-open fixed-gap quadratic proximity-gap lower bound.
+Theorem~\ref{thm:nonsingular-agreement-mca} gives a further first-order
+restriction: bad labels with a positive fraction of nonsingular
+agreement coordinates number only $O(n)$ at a fixed positive gap.
+For $R(X,z)P'=\mathcal A(X,z,P)$ this bounds all bad labels linearly
+when $\deg_XR$ also stays a fixed positive fraction below the
+agreement threshold. A nonlinear two-solution family attains $n/2$
+bad labels at fixed rate and gap. The general first-order conjecture
+still requires controlling singular agreement coordinates.
 
 \subsection{Finite examples on circle codes}
 
@@ -1004,6 +1012,7 @@ each consisting of $B$ distinct points, and $|\mu_n\setminus T|\le c$.
 If $n>6(B-1+c)$, then $\overline F(X)/\overline F(R)$ is Galois,
 and all its deck transformations have the form $X\mapsto\zeta X$
 or $X\mapsto\zeta/X$, with $\zeta\in\mu_n$.
+Consequently $B\mid2n$; when $n$ is a power of two, $B\mid n$.
 If also $c<B/2$, then the deck group acts freely on $\mu_n$,
 every fiber of $R|_{\mu_n}$ has $B$ points, and $B\mid n$.
 In this case $R$ has one of the two forms in
@@ -1026,6 +1035,17 @@ The extension also excludes degrees $513,514,516$ with complete-fiber
 coverage defects at most $1,4,16$, respectively: each satisfies both
 inequalities, but none divides $262144$. These are exclusions of
 proposed packet maps, not attained improvements in agreement or score.
+
+On this dyadic domain the divisibility conclusion does not need
+$c<B/2$. For any non-dyadic degree $B$, the complete-fiber count is
+therefore at most
+\[
+ \min\left\{\left\lfloor\frac{262144}{B}\right\rfloor,
+                1+\left\lfloor\frac{218452}{B}\right\rfloor\right\}.
+\]
+Indeed, the uncovered count must satisfy $c\ge43692-B$, and the
+covered count is a multiple of $B$. At degrees $513,514,516$, this
+forces at least $43606,43180,43360$ uncovered points, respectively.
 
 \subsection{A uniform concentration bound for several moments}
 \label{sec:moment-concentration}
@@ -5152,7 +5172,9 @@ deck group preserves $\mu_n$.
 
 \paragraph{Small defect forces free action.}
 The rotation subgroup has order $d\mid n$. If there are inversions,
-the whole group has order $B=2d$. A nonzero finite point is fixed
+the whole group has order $B=2d$; otherwise $B=d$. Thus $B\mid2n$.
+Since $T$ is nonempty, $B\le n$, so dyadic $n$ forces $B\mid n$
+even without a small-defect assumption. A nonzero finite point is fixed
 by no nonidentity rotation and by at most one inversion, so every
 nonfree orbit has $B/2$ points. Fibers of a Galois quotient are
 orbits; thus any nonfree orbit in $\mu_n$ lies entirely outside $T$.
@@ -5365,9 +5387,11 @@ odd-characteristic bounds $20$ and $62$.
 \input{research/binary_affine_locator/multiplicative_label_appendix.tex}
 \input{research/bounded_root_mca/appendix.tex}
 \input{research/first_order_actual_components/appendix.tex}
+\input{research/quasilinear_first_order/appendix.tex}
 \input{research/isolated_solution_sharpness/appendix.tex}
 \input{research/actual_higher_order_components/appendix.tex}
 \input{research/inverse_bernoulli/appendix.tex}
+\input{research/structured_domains/general_cubic_packets/appendix.tex}
 
 \begin{thebibliography}{99}
 \bibitem{corvaja-zannier} P. Corvaja and U. Zannier.

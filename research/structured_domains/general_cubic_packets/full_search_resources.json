@@ -1,0 +1,13 @@
+{
+  "command": [
+    "python3",
+    "research/beyond_johnson_tightness/check_general_cubic.py",
+    "256"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 524.4583357500378,
+  "peak_rss_kib": 176192,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 1200
+}

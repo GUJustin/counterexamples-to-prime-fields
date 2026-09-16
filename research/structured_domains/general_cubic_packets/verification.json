@@ -1,0 +1,111 @@
+{
+  "status": "PASS",
+  "p": 2130706433,
+  "n": 256,
+  "bucket_size": 256,
+  "source_sha256": "863ce8aaf35cb922e0f71a87a62eaea771ff82c2d4880b0d0f8a46922309cc61",
+  "independent_small_fixtures": [
+    {
+      "p": 97,
+      "n": 8,
+      "bucket_size": 8,
+      "generator": 64,
+      "normalized_triples": 7,
+      "anchor_start": 0,
+      "anchor_end": 7,
+      "complete_scan": true,
+      "pairs_examined": 343,
+      "nondegenerate_candidates": 0,
+      "degenerate_candidates": 36,
+      "maximum_examined_full_fibers": 2,
+      "nonconstant_product_upper_bound": 2,
+      "hash_capacity": 128,
+      "witness_anchor": [
+        15,
+        15
+      ],
+      "witness_slopes": [
+        44,
+        13
+      ],
+      "independent_reference": {
+        "p": 97,
+        "n": 8,
+        "nonconstant_product_maximum": 2,
+        "pairs_examined": 1372
+      },
+      "witness_check": {
+        "full_fibers": 2,
+        "domain_points": 8,
+        "numerator": [
+          0,
+          2,
+          29,
+          1
+        ],
+        "denominator": [
+          1,
+          84,
+          44
+        ]
+      }
+    },
+    {
+      "p": 193,
+      "n": 16,
+      "bucket_size": 16,
+      "generator": 64,
+      "normalized_triples": 35,
+      "anchor_start": 0,
+      "anchor_end": 35,
+      "complete_scan": true,
+      "pairs_examined": 18375,
+      "nondegenerate_candidates": 18,
+      "degenerate_candidates": 1192,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 2048,
+      "witness_anchor": [
+        53,
+        53
+      ],
+      "witness_slopes": [
+        52,
+        1
+      ],
+      "independent_reference": {
+        "p": 193,
+        "n": 16,
+        "nonconstant_product_maximum": 3,
+        "pairs_examined": 147000
+      },
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 16,
+        "numerator": [
+          0,
+          52,
+          192,
+          1
+        ],
+        "denominator": [
+          1,
+          192,
+          52
+        ]
+      }
+    }
+  ],
+  "chunks": 85,
+  "all_anchors": 10795,
+  "pairs_examined": 29715666375,
+  "nondegenerate_candidates": 22692,
+  "maximum_examined_full_fibers": 3,
+  "nonconstant_product_upper_bound": 3,
+  "previously_verified_constant_product_upper_bound": 3,
+  "general_cubic_upper_bound": 3,
+  "exact_maximum_certified": true,
+  "prior_verification_sha256": "ac8d99dc541815f1604af8bad581a130f1e860bd5a218391d4b58a3ce130e1b1",
+  "seconds": 523.8732029998209,
+  "scope": "All fixed rational cubic maps on the pinned mu_256 domain; combines the new nonconstant-product search with the saved constant-product exhaustive check. No score improvement."
+}

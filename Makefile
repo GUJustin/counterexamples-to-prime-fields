@@ -35,6 +35,7 @@ verify:
 	$(PYTHON) research/structured_domains/frobenius_index/verify_rational_frobenius_index.py
 	$(PYTHON) research/structured_domains/frobenius_index/verify_balanced_rational_pencils.py
 	$(PYTHON) research/structured_domains/frobenius_index/check_near_balanced.py
+	$(PYTHON) research/structured_domains/general_cubic_packets/verify.py
 	$(PYTHON) research/fixed_gap_padding/verify_anchored_padding.py
 	$(PYTHON) research/linear_differential_mca/verify.py
 	$(PYTHON) research/spectral_riccati/verify_constant.py
@@ -48,6 +49,7 @@ verify:
 	$(PYTHON) research/first_order_actual_components/verify_reconstruction.py
 	$(PYTHON) research/first_order_actual_components/verify_curve_family.py
 	$(PYTHON) research/first_order_actual_components/verify_isolated_family.py
+	$(PYTHON) research/quasilinear_first_order/verify.py
 	$(PYTHON) research/isolated_solution_sharpness/verify_reconstruction.py
 	$(PYTHON) research/isolated_solution_sharpness/verify_family.py
 	$(PYTHON) research/actual_higher_order_components/verify.py

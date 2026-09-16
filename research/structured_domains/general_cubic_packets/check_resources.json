@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "research/structured_domains/general_cubic_packets/verify.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 6.479214416816831,
+  "peak_rss_kib": 159168,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 180
+}

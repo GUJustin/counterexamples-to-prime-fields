@@ -1,0 +1,160 @@
+\subsection{A positive density of nonsingular agreements gives linear MCA}
+\label{sec:nonsingular-agreement-mca}
+
+The preceding component counts do not by themselves bound all bad
+labels linearly. Conditioning Taylor reconstruction at an agreeing
+coordinate gives a different sufficient condition that also covers
+surface components. It isolates singular agreement coordinates as
+the remaining obstruction to this argument.
+
+\begin{theorem}[Nonsingular-agreement bound]
+\label{thm:nonsingular-agreement-mca}
+Let $F$ have characteristic zero or $p>D$, with $D\ge1$, and let
+$Q(X,z,u,v)\ne0$ have jet degree at most $B\ge1$ and challenge
+degree at most $H$. Its $X$-degree is unrestricted. Put
+\[
+ \tau=\max\{0,2D-3\},\quad b=1+\tau(B-1),\quad
+ T_0=b+\tau H,\quad K=H+BT_0,\quad q=B+H.
+\]
+Fix a received line $f+zg$ on $n$ distinct coordinates, an agreement
+threshold $D<A\le n$, and an integer $L\ge1$.
+Consider labels admitting a degree-$\le D$ polynomial solution
+$Q(X,z,P,P')=0$ whose full agreement support $S$ satisfies
+$|S|\ge A$, has no degree-$\le D$ polynomial agreeing with $g$ on
+all of $S$, and contains at least $L$ coordinates $x$ with
+\[
+ Q_v(x,z,P(x),P'(x))\ne0.
+\]
+The number of these labels is at most
+\begin{equation}
+ \frac nL\left(qK+qT_0\frac{n-D}{A-D}+qn\right).
+ \label{eq:nonsingular-agreement-bound}
+\end{equation}
+In particular it is $O_{B,H,\eta,\lambda}(n)$ when
+$A-D\ge\eta n$ and $L\ge\lambda n$, with $\eta,\lambda>0$ fixed.
+\end{theorem}
+\begin{proof}
+Fix a domain point $x$ and substitute $u=f_x+zg_x$ into the initial
+equation. The resulting polynomial in $(z,v)$ has degree at most $q$.
+If it vanishes identically, so does its $v$ derivative, and there
+are no nonsingular initial data to count at this coordinate.
+Otherwise work on the open locus
+$S_0=Q_v(x,z,f_x+zg_x,v)\ne0$ of this plane curve.
+
+The Taylor reconstruction in
+Theorem~\ref{thm:actual-first-order-components} applies at the fixed
+center $x$ on this open locus. Its common denominator is $S_0^\tau$,
+of degree at most $T_0-1$; its coefficient numerators and $zS_0^\tau$
+have degree at most $T_0$. Thus its projective coordinate degree is
+at most $T_0$. Exact solutions are selected by residual equations
+of degree at most $K$. Reconstruction and the initial-jet map are
+inverse regular maps on this open exact-solution locus.
+
+The isolated points of the residual locus number at most $qK$.
+Indeed, on every component of the initial plane curve not wholly
+satisfying the residuals, some residual is nonzero. A generic linear
+combination over an algebraic closure is nonzero on each such component;
+B\'ezout gives the bound. Components contained in $S_0=0$ are omitted,
+and points on a retained curve are accounted for with that curve.
+
+The retained source curves are components of the initial plane
+equation, so there are at most $q$ and their degrees sum to at most
+$q$. Their reconstructed image curves have total degree at most
+$qT_0$, by pulling back a generic hyperplane under the rational map
+of degree at most $T_0$. Initial-jet recovery ensures none of these
+images collapses to a point.
+
+For every nonaffine image curve, the incidence argument of
+Corollary~\ref{cor:nonaffine-actual-curves} gives at most its degree
+times $(n-D)/(A-D)$ nearby pairs. That argument applies to these
+curves whether or not they are components of the full joint locus.
+The total contribution is at most $qT_0(n-D)/(A-D)$.
+
+Each remaining image curve is a graph $P=F_0+zG_0$ and has at most
+$n$ bad labels. A support consisting only of persistent agreements
+has the common witnesses $F_0,G_0$; a bad support therefore contains
+an accidental agreement at a nonpersistent coordinate, which forces
+one label. If the graph does not descend to $F$, it has at most one
+$F$-rational point at distinct challenge labels: two such points
+would recover $F_0,G_0$ over $F$. This also satisfies the bound $n$.
+There are at most $q$ graphs.
+
+Hence this fixed coordinate occurs nonsingularly in a bad nearby
+witness for at most $qK+qT_0(n-D)/(A-D)+qn$ labels. Select one
+qualifying witness per label. Each supplies at least $L$ such
+coordinate--label incidences. Summing over all $n$ coordinates and
+dividing by $L$ proves~\eqref{eq:nonsingular-agreement-bound}.
+\end{proof}
+
+\begin{corollary}[Value-independent separant]
+\label{cor:value-independent-separant}
+Suppose
+\[
+ Q(X,z,u,v)=R(X,z)v-\mathcal A(X,z,u),\qquad R\ne0,
+\]
+under the same degree and characteristic hypotheses, and put
+$r=\deg_XR$. If $A>\max\{D,r\}$, all its full-support bad labels
+number at most
+\begin{equation}
+ H+\frac n{A-r}\left(qK+qT_0\frac{n-D}{A-D}+qn\right).
+ \label{eq:quasilinear-linear-mca}
+\end{equation}
+This is $O(n)$ for fixed $B,H$ and fixed positive lower bounds on
+$(A-D)/n$ and $(A-r)/n$. The value degree of $\mathcal A$ is arbitrary.
+At each fixed label with $R(X,z)\not\equiv0$, its ordinary list size
+at threshold $A$ is at most $\lfloor(n-r)/(A-r)\rfloor$.
+\end{corollary}
+\begin{proof}
+There are at most $H$ labels with $R(X,z)\equiv0$, using any one
+nonzero $X$-coefficient of $R$. At all others, at most $r$ domain
+points are zeros of $R$, so every nearby candidate has at least
+$A-r$ nonsingular agreements. Apply the theorem with $L=A-r$.
+
+For the ordinary list bound, two distinct solutions at the same
+label have a nonzero difference $\Delta$ satisfying
+$R\Delta'=C(X)\Delta$. At a zero of $\Delta$ where $R$ is nonzero,
+the multiplicity $1\le m\le D<p$ makes the left side have order
+$m-1$ and the right side order at least $m$, a contradiction.
+Thus a value at a nonsingular coordinate determines at most one
+solution. If $r_z\le r$ domain points are singular, nearby candidates
+have disjoint regular agreement supports of size at least $A-r_z$.
+Their number is at most $(n-r_z)/(A-r_z)\le(n-r)/(A-r)$.
+\end{proof}
+
+\paragraph{Sharp linear order in a nonlinear subclass.}
+For a nonzero polynomial $W$, the equation
+\[
+ WP'-W'P-P(P-W)=0
+\]
+has exactly the polynomial solutions $0,W$. To see this, write
+$Z=P/W$, giving $Z'=Z(Z-1)$. If $Z\ne0$, then $U=1-1/Z$ satisfies
+$U'=U$. In characteristic zero, a nonzero rational logarithmic
+derivative $U'/U$ vanishes at infinity and cannot equal one. In
+characteristic $p$, the $p$-fold ordinary derivative is zero on
+$F(X)$, whereas $U'=U$ would make it equal $U$. Hence $U=0$.
+
+Let $n=12s$, $D=3s$, $A=6s$, and choose a prime $p>12s$. On
+domain $\{0,\ldots,n-1\}$ let $W$ be the locator of the first $3s$
+points. Put $f=g=0$ on these roots and on a second block of $3s$
+points; put $f=W,g=0$ on a third block of $3s$. At the final $3s$
+coordinates, indexed by $j=1,\ldots,3s$, put $f=3jW,g=W$.
+Each candidate $cW$, $c\in\{0,1\}$, has $6s$ persistent agreements
+and acquires one more at each label $z=c-3j$. These $6s=n/2$ labels
+are distinct modulo $p$. On each resulting support, $g$ has $6s>D$
+zeros and one nonzero value, so it has no degree-$\le D$ explanation.
+Every other label has only persistent supports and is good. Thus
+exactly $n/2$ labels are bad, with jet degree two, challenge degree
+zero, code rate tending to $1/4$, and agreement gap $1/4$.
+
+\paragraph{Scope and checks.}
+The theorem does not assert that interpolation equations have many
+nonsingular agreement coordinates. At fixed gap its bound is
+$O(n^2/L)$; a superlinear example must concentrate on witnesses with
+a vanishing fraction of such coordinates. The general first-order
+conjecture remains open. The checks in
+\path{research/quasilinear_first_order/} enumerate small-field
+polynomial solutions, verify regular-coordinate uniqueness and list
+incidences, include implicit equations with actual solution surfaces,
+and check the exact $n/2$ lower construction at five lengths. These
+finite checks supplement the reconstruction and incidence proof;
+no independent review or literature-priority claim is made.

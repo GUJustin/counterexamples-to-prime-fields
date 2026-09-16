@@ -64,9 +64,22 @@ analysis as an application of those results.
   At the pinned better.codes parameters, every possible degree through
   32768 reduces to a power or twisted-inversion quotient. The extension
   to coverage defect `c` requires `n > 6*(B-1+c)` and forces full balance
-  if `c < B/2`. It excludes proposed degrees 513, 514, and 516 with
-  defects 1, 4, and 16. This concerns complete fibers of one fixed map;
+  if `c < B/2`. On a dyadic domain its divisibility conclusion needs no
+  small-defect condition: degrees 513, 514, and 516 require at least
+  43,606, 43,180, and 43,360 uncovered points. An exhaustive finite
+  theorem also gives exactly **three** as the maximum number of complete
+  fibers of any rational cubic on the pinned 256-point subgroup, over
+  any extension field. This excludes a proposed composed-cubic bank;
   it does not improve the numerical score.
+
+- For first-order equations of fixed jet and challenge degrees, bad
+  labels with a positive fraction of nonsingular agreement coordinates
+  number **O(n)** at fixed positive gap. This includes implicit equations
+  and actual solution surfaces. For `R(X,z)P'=A(X,z,P)`, it bounds all
+  bad labels linearly when `deg_X R` also lies a fixed positive fraction
+  below the agreement threshold. A nonlinear two-solution equation has
+  exactly **n/2 bad labels** at rate tending to 1/4 and gap 1/4.
+  Controlling singular agreements in general remains open.
 
 - A sharp bound limits affine binary support families in every
   characteristic other than two: fixing `s` leading locator coefficients
@@ -83,6 +96,13 @@ restrictions. They do not establish a complete protocol attack or an
 improved better.codes submission.
 
 ## Supplementary research notes
+
+[Nonsingular agreement coordinates and first-order MCA](research/quasilinear_first_order/README.md)
+contains the local reconstruction proof, its value-independent-separant
+corollary, the matching linear lower family, and exact finite checks.
+[Exact rational-cubic packet bound](research/structured_domains/general_cubic_packets/README.md)
+contains the finite reduction, exhaustive source, all 85 checkpoints,
+and independent small-field and witness checks.
 
 [Linear differential constraints and full-support proximity gaps](research/linear_differential_mca/README.md)
 gives an elementary `O(n)` bound at fixed positive gap for candidates

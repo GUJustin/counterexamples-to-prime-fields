@@ -1,0 +1,3321 @@
+{
+  "source_sha256": "863ce8aaf35cb922e0f71a87a62eaea771ff82c2d4880b0d0f8a46922309cc61",
+  "bucket_size": 256,
+  "chunks": [
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 0,
+      "anchor_end": 128,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 302,
+      "degenerate_candidates": 156242,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        681624019,
+        681624019
+      ],
+      "witness_slopes": [
+        699882113,
+        699882112
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          2112448340,
+          18258094,
+          1
+        ],
+        "denominator": [
+          1,
+          1430824321,
+          699882113
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 128,
+      "anchor_end": 256,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 125,
+      "degenerate_candidates": 156585,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        18258094,
+        1430824321
+      ],
+      "witness_slopes": [
+        566063980,
+        770403052
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          660421269,
+          547805886,
+          1
+        ],
+        "denominator": [
+          1,
+          1360303381,
+          566063980
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 256,
+      "anchor_end": 384,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 416,
+      "degenerate_candidates": 170433,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        1861325926,
+        168684287
+      ],
+      "witness_slopes": [
+        52906701,
+        170455089
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          2128935631,
+          322287208,
+          1
+        ],
+        "denominator": [
+          1,
+          1960251344,
+          52906701
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 384,
+      "anchor_end": 512,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 137,
+      "degenerate_candidates": 156489,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        2114219141,
+        646975411
+      ],
+      "witness_slopes": [
+        1414337029,
+        2112448339
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          665233505,
+          1430824321,
+          1
+        ],
+        "denominator": [
+          1,
+          18258094,
+          1414337029
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 512,
+      "anchor_end": 640,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 387,
+      "degenerate_candidates": 170613,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        1356390848,
+        879334522
+      ],
+      "witness_slopes": [
+        1697002037,
+        1096068990
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1913971965,
+          340611189,
+          1
+        ],
+        "denominator": [
+          1,
+          1034637443,
+          1697002037
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 640,
+      "anchor_end": 768,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 155,
+      "degenerate_candidates": 156347,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        510290218,
+        694551765
+      ],
+      "witness_slopes": [
+        1941114539,
+        2112448339
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          712809859,
+          1430824321,
+          1
+        ],
+        "denominator": [
+          1,
+          18258094,
+          1941114539
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 768,
+      "anchor_end": 896,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 380,
+      "degenerate_candidates": 170719,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        920766012,
+        1405727446
+      ],
+      "witness_slopes": [
+        1750318645,
+        1149872170
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          255855276,
+          829552633,
+          1
+        ],
+        "denominator": [
+          1,
+          980834263,
+          1750318645
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 896,
+      "anchor_end": 1024,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 176,
+      "degenerate_candidates": 156163,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        244581583,
+        2116882212
+      ],
+      "witness_slopes": [
+        1675405904,
+        2112448339
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          4433873,
+          1430824321,
+          1
+        ],
+        "denominator": [
+          1,
+          18258094,
+          1675405904
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 1024,
+      "anchor_end": 1152,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 334,
+      "degenerate_candidates": 170991,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        1130937223,
+        1954308327
+      ],
+      "witness_slopes": [
+        836178451,
+        1127987059
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          826321268,
+          1835947661,
+          1
+        ],
+        "denominator": [
+          1,
+          1002719374,
+          836178451
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 1152,
+      "anchor_end": 1280,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 331,
+      "degenerate_candidates": 171181,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        367603065,
+        1023854377
+      ],
+      "witness_slopes": [
+        1798427386,
+        2112448339
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1042112471,
+          1430824321,
+          1
+        ],
+        "denominator": [
+          1,
+          18258094,
+          1798427386
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 1280,
+      "anchor_end": 1408,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 198,
+      "degenerate_candidates": 155939,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        89873340,
+        631614045
+      ],
+      "witness_slopes": [
+        770431306,
+        159806306
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          471807739,
+          680557966,
+          1
+        ],
+        "denominator": [
+          1,
+          1970900127,
+          770431306
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 1408,
+      "anchor_end": 1536,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 358,
+      "degenerate_candidates": 170927,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        936141231,
+        1213830588
+      ],
+      "witness_slopes": [
+        236259119,
+        2112448339
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1232088682,
+          1430824321,
+          1
+        ],
+        "denominator": [
+          1,
+          18258094,
+          236259119
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 1536,
+      "anchor_end": 1664,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 276,
+      "degenerate_candidates": 171537,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        983197529,
+        255329250
+      ],
+      "witness_slopes": [
+        2079266519,
+        340611189
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          2045424494,
+          1096068990,
+          1
+        ],
+        "denominator": [
+          1,
+          1790095244,
+          2079266519
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 1664,
+      "anchor_end": 1792,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 398,
+      "degenerate_candidates": 170582,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        401817257,
+        1483733751
+      ],
+      "witness_slopes": [
+        162449273,
+        266587623
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1217146128,
+          1891338449,
+          1
+        ],
+        "denominator": [
+          1,
+          1864118810,
+          162449273
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 1792,
+      "anchor_end": 1920,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 146,
+      "degenerate_candidates": 156417,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        1838730738,
+        1409604528
+      ],
+      "witness_slopes": [
+        30311513,
+        170455089
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1239149439,
+          322287208,
+          1
+        ],
+        "denominator": [
+          1,
+          1960251344,
+          30311513
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 1920,
+      "anchor_end": 2048,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 356,
+      "degenerate_candidates": 170803,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        914699457,
+        1736449393
+      ],
+      "witness_slopes": [
+        1896797414,
+        665723362
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1070726031,
+          982097957,
+          1
+        ],
+        "denominator": [
+          1,
+          1464983071,
+          1896797414
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 2048,
+      "anchor_end": 2176,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 317,
+      "degenerate_candidates": 171287,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        1391113611,
+        1517216544
+      ],
+      "witness_slopes": [
+        691231499,
+        2112448339
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1535474638,
+          1430824321,
+          1
+        ],
+        "denominator": [
+          1,
+          18258094,
+          691231499
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 2176,
+      "anchor_end": 2304,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 322,
+      "degenerate_candidates": 171205,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        1980148332,
+        741393907
+      ],
+      "witness_slopes": [
+        529999865,
+        159806306
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          581587601,
+          680557966,
+          1
+        ],
+        "denominator": [
+          1,
+          1970900127,
+          529999865
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 2304,
+      "anchor_end": 2432,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 358,
+      "degenerate_candidates": 170846,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        430044288,
+        83550961
+      ],
+      "witness_slopes": [
+        2012944835,
+        1360303381
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          853954013,
+          1582900547,
+          1
+        ],
+        "denominator": [
+          1,
+          770403052,
+          2012944835
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 2432,
+      "anchor_end": 2560,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 151,
+      "degenerate_candidates": 156373,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        1312803458,
+        93093207
+      ],
+      "witness_slopes": [
+        643824736,
+        1982081381
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          241718259,
+          1461727711,
+          1
+        ],
+        "denominator": [
+          1,
+          148625052,
+          643824736
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 2560,
+      "anchor_end": 2688,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 382,
+      "degenerate_candidates": 170713,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        530074381,
+        118737510
+      ],
+      "witness_slopes": [
+        1183463468,
+        815510757
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1433933186,
+          653389087,
+          1
+        ],
+        "denominator": [
+          1,
+          1315195676,
+          1183463468
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 2688,
+      "anchor_end": 2816,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 311,
+      "degenerate_candidates": 171251,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        894808134,
+        1150168063
+      ],
+      "witness_slopes": [
+        194926022,
+        2112448339
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1168426157,
+          1430824321,
+          1
+        ],
+        "denominator": [
+          1,
+          18258094,
+          194926022
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 2816,
+      "anchor_end": 2944,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 299,
+      "degenerate_candidates": 171344,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        982097957,
+        1464983071
+      ],
+      "witness_slopes": [
+        282215845,
+        2112448339
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1483241165,
+          1430824321,
+          1
+        ],
+        "denominator": [
+          1,
+          18258094,
+          282215845
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 2944,
+      "anchor_end": 3072,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 383,
+      "degenerate_candidates": 170695,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        959915446,
+        1790725847
+      ],
+      "witness_slopes": [
+        1537802597,
+        1127122101
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          663603746,
+          577887151,
+          1
+        ],
+        "denominator": [
+          1,
+          1003584332,
+          1537802597
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 3072,
+      "anchor_end": 3200,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 288,
+      "degenerate_candidates": 171483,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        577887151,
+        1003584332
+      ],
+      "witness_slopes": [
+        2008711472,
+        2112448339
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1021842426,
+          1430824321,
+          1
+        ],
+        "denominator": [
+          1,
+          18258094,
+          2008711472
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 3200,
+      "anchor_end": 3328,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 323,
+      "degenerate_candidates": 171161,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        598284356,
+        1714664023
+      ],
+      "witness_slopes": [
+        614996035,
+        16711679
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1697952344,
+          16711679,
+          1
+        ],
+        "denominator": [
+          1,
+          2113994754,
+          614996035
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 3328,
+      "anchor_end": 3456,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 374,
+      "degenerate_candidates": 170768,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        1066118885,
+        1831827664
+      ],
+      "witness_slopes": [
+        2014759985,
+        1983461360
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1979072737,
+          948641100,
+          1
+        ],
+        "denominator": [
+          1,
+          147245073,
+          2014759985
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 3456,
+      "anchor_end": 3584,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 279,
+      "degenerate_candidates": 171503,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        1483733751,
+        401817257
+      ],
+      "witness_slopes": [
+        22006040,
+        148625052
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          253192205,
+          668978722,
+          1
+        ],
+        "denominator": [
+          1,
+          1982081381,
+          22006040
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 3584,
+      "anchor_end": 3712,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 324,
+      "degenerate_candidates": 171168,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        2113994754,
+        16711679
+      ],
+      "witness_slopes": [
+        1414112642,
+        2112448339
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          34969773,
+          1430824321,
+          1
+        ],
+        "denominator": [
+          1,
+          18258094,
+          1414112642
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 3712,
+      "anchor_end": 3840,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 372,
+      "degenerate_candidates": 170787,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        1923168365,
+        1360188656
+      ],
+      "witness_slopes": [
+        1763362059,
+        1450148467
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          2040746622,
+          1970900127,
+          1
+        ],
+        "denominator": [
+          1,
+          680557966,
+          1763362059
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 3840,
+      "anchor_end": 3968,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 410,
+      "degenerate_candidates": 186683,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        1970900127,
+        680557966
+      ],
+      "witness_slopes": [
+        1271018015,
+        2112448339
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          698816060,
+          1430824321,
+          1
+        ],
+        "denominator": [
+          1,
+          18258094,
+          1271018015
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 3968,
+      "anchor_end": 4096,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 189,
+      "degenerate_candidates": 156070,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        443705288,
+        1103246448
+      ],
+      "witness_slopes": [
+        1424539551,
+        1301153800
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1932799081,
+          980834263,
+          1
+        ],
+        "denominator": [
+          1,
+          829552633,
+          1424539551
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 4096,
+      "anchor_end": 4224,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 489,
+      "degenerate_candidates": 186115,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        911730786,
+        1321862189
+      ],
+      "witness_slopes": [
+        1574411815,
+        162633832
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1159228357,
+          662681029,
+          1
+        ],
+        "denominator": [
+          1,
+          1968072601,
+          1574411815
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 4224,
+      "anchor_end": 4352,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 321,
+      "degenerate_candidates": 171078,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        956617202,
+        493423354
+      ],
+      "witness_slopes": [
+        379765011,
+        1181515767
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1442614020,
+          1553854242,
+          1
+        ],
+        "denominator": [
+          1,
+          949190666,
+          379765011
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 4352,
+      "anchor_end": 4480,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 418,
+      "degenerate_candidates": 186691,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        1332932305,
+        1148030245
+      ],
+      "witness_slopes": [
+        593339483,
+        613489889
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          534540356,
+          1391113611,
+          1
+        ],
+        "denominator": [
+          1,
+          1517216544,
+          593339483
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 4480,
+      "anchor_end": 4608,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 84,
+      "degenerate_candidates": 140658,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        531120363,
+        1376590914
+      ],
+      "witness_slopes": [
+        1301523415,
+        547805886
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          828785028,
+          770403052,
+          1
+        ],
+        "denominator": [
+          1,
+          1582900547,
+          1301523415
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 4608,
+      "anchor_end": 4736,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 116,
+      "degenerate_candidates": 140397,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        470889144,
+        1722320736
+      ],
+      "witness_slopes": [
+        2113685179,
+        464135027
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1258185709,
+          1642796035,
+          1
+        ],
+        "denominator": [
+          1,
+          1666571406,
+          2113685179
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 4736,
+      "anchor_end": 4864,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 114,
+      "degenerate_candidates": 140416,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        1032771843,
+        1644913953
+      ],
+      "witness_slopes": [
+        52233473,
+        1235898299
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          409015654,
+          1150168063,
+          1
+        ],
+        "denominator": [
+          1,
+          894808134,
+          52233473
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 4864,
+      "anchor_end": 4992,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 69,
+      "degenerate_candidates": 140780,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        505370628,
+        1547804907
+      ],
+      "witness_slopes": [
+        44397139,
+        1525737196
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          22067711,
+          1669732944,
+          1
+        ],
+        "denominator": [
+          1,
+          604969237,
+          44397139
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 4992,
+      "anchor_end": 5120,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 70,
+      "degenerate_candidates": 140773,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        1725703764,
+        1382517495
+      ],
+      "witness_slopes": [
+        1059980402,
+        1148608476
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          233909019,
+          1464983071,
+          1
+        ],
+        "denominator": [
+          1,
+          982097957,
+          1059980402
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 5120,
+      "anchor_end": 5248,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 83,
+      "degenerate_candidates": 140658,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        1942374407,
+        319459682
+      ],
+      "witness_slopes": [
+        1279693378,
+        1968072601
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          482093514,
+          1468025404,
+          1
+        ],
+        "denominator": [
+          1,
+          162633832,
+          1279693378
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 5248,
+      "anchor_end": 5376,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 104,
+      "degenerate_candidates": 140510,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        1025757013,
+        1835571426
+      ],
+      "witness_slopes": [
+        210246256,
+        1477317346
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          358254080,
+          1315195676,
+          1
+        ],
+        "denominator": [
+          1,
+          653389087,
+          210246256
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 5376,
+      "anchor_end": 5504,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 104,
+      "degenerate_candidates": 140496,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        1148257104,
+        84474686
+      ],
+      "witness_slopes": [
+        21135003,
+        1552819282
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          662361837,
+          1003584332,
+          1
+        ],
+        "denominator": [
+          1,
+          577887151,
+          21135003
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 5504,
+      "anchor_end": 5632,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 97,
+      "degenerate_candidates": 140560,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        954356532,
+        1219898321
+      ],
+      "witness_slopes": [
+        1957075906,
+        294758772
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          925139549,
+          1002719374,
+          1
+        ],
+        "denominator": [
+          1,
+          1835947661,
+          1957075906
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 5632,
+      "anchor_end": 5760,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 99,
+      "degenerate_candidates": 140541,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        338191437,
+        1717451872
+      ],
+      "witness_slopes": [
+        497997743,
+        680557966
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1036893906,
+          159806306,
+          1
+        ],
+        "denominator": [
+          1,
+          1450148467,
+          497997743
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 5760,
+      "anchor_end": 5888,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 92,
+      "degenerate_candidates": 140602,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        303176316,
+        1692181729
+      ],
+      "witness_slopes": [
+        499730338,
+        526603688
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1165578041,
+          196554022,
+          1
+        ],
+        "denominator": [
+          1,
+          1604102745,
+          499730338
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 5888,
+      "anchor_end": 6016,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 89,
+      "degenerate_candidates": 140618,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        1266867569,
+        1217035106
+      ],
+      "witness_slopes": [
+        1414112642,
+        1182065333
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          34969773,
+          147245073,
+          1
+        ],
+        "denominator": [
+          1,
+          948641100,
+          1414112642
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 6016,
+      "anchor_end": 6144,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 91,
+      "degenerate_candidates": 140601,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        1831827664,
+        1066118885
+      ],
+      "witness_slopes": [
+        92122911,
+        1748172362
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1448652956,
+          391001680,
+          1
+        ],
+        "denominator": [
+          1,
+          382534071,
+          92122911
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 6144,
+      "anchor_end": 6272,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 327,
+      "degenerate_candidates": 171150,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        2112448339,
+        699882112
+      ],
+      "witness_slopes": [
+        469652304,
+        1666571406
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1164017139,
+          487910398,
+          1
+        ],
+        "denominator": [
+          1,
+          464135027,
+          469652304
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 6272,
+      "anchor_end": 6400,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 317,
+      "degenerate_candidates": 171216,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        16487292,
+        1483731022
+      ],
+      "witness_slopes": [
+        504397690,
+        1666571406
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1947866049,
+          487910398,
+          1
+        ],
+        "denominator": [
+          1,
+          464135027,
+          504397690
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 6400,
+      "anchor_end": 6528,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 320,
+      "degenerate_candidates": 171206,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        1620416215,
+        1436154668
+      ],
+      "witness_slopes": [
+        2108326613,
+        1666571406
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1900289695,
+          487910398,
+          1
+        ],
+        "denominator": [
+          1,
+          464135027,
+          2108326613
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 6528,
+      "anchor_end": 6656,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 431,
+      "degenerate_candidates": 186528,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        1886124850,
+        13824221
+      ],
+      "witness_slopes": [
+        243328815,
+        1666571406
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          477959248,
+          487910398,
+          1
+        ],
+        "denominator": [
+          1,
+          464135027,
+          243328815
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 6656,
+      "anchor_end": 6784,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 342,
+      "degenerate_candidates": 171048,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        36711036,
+        1401904163
+      ],
+      "witness_slopes": [
+        1589530318,
+        1003584332
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          398319831,
+          1552819282,
+          1
+        ],
+        "denominator": [
+          1,
+          1127122101,
+          1589530318
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 6784,
+      "anchor_end": 6912,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 461,
+      "degenerate_candidates": 186258,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        527655901,
+        959047077
+      ],
+      "witness_slopes": [
+        849943109,
+        170455089
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          788591988,
+          322287208,
+          1
+        ],
+        "denominator": [
+          1,
+          1960251344,
+          849943109
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 6912,
+      "anchor_end": 7040,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 299,
+      "degenerate_candidates": 171342,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        1321862189,
+        911730786
+      ],
+      "witness_slopes": [
+        140346422,
+        576852191
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          334878595,
+          949190666,
+          1
+        ],
+        "denominator": [
+          1,
+          1553854242,
+          140346422
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 7040,
+      "anchor_end": 7168,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 462,
+      "degenerate_candidates": 186330,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        739592822,
+        613489889
+      ],
+      "witness_slopes": [
+        1227503220,
+        1666571406
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1077624916,
+          487910398,
+          1
+        ],
+        "denominator": [
+          1,
+          464135027,
+          1227503220
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 7168,
+      "anchor_end": 7296,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 430,
+      "degenerate_candidates": 186492,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        699023456,
+        274238433
+      ],
+      "witness_slopes": [
+        1961330178,
+        1764868205
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          640076661,
+          1262306722,
+          1
+        ],
+        "denominator": [
+          1,
+          365838228,
+          1961330178
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 7296,
+      "anchor_end": 7424,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 453,
+      "degenerate_candidates": 186352,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        1235898299,
+        980538370
+      ],
+      "witness_slopes": [
+        1783704185,
+        770403052
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          210135318,
+          547805886,
+          1
+        ],
+        "denominator": [
+          1,
+          1360303381,
+          1783704185
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 7424,
+      "anchor_end": 7552,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 439,
+      "degenerate_candidates": 186426,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        2072752454,
+        620063508
+      ],
+      "witness_slopes": [
+        1204352743,
+        1764868205
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          985901736,
+          1262306722,
+          1
+        ],
+        "denominator": [
+          1,
+          365838228,
+          1204352743
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 7552,
+      "anchor_end": 7680,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 441,
+      "degenerate_candidates": 186476,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        680557966,
+        1970900127
+      ],
+      "witness_slopes": [
+        1228363852,
+        770403052
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1200497075,
+          547805886,
+          1
+        ],
+        "denominator": [
+          1,
+          1360303381,
+          1228363852
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 7680,
+      "anchor_end": 7808,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 466,
+      "degenerate_candidates": 186240,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        1565981705,
+        1606663883
+      ],
+      "witness_slopes": [
+        2033797715,
+        1688264839
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          2049105477,
+          467816010,
+          1
+        ],
+        "denominator": [
+          1,
+          442441594,
+          2033797715
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 7808,
+      "anchor_end": 7936,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 314,
+      "degenerate_candidates": 171248,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        1777586325,
+        1348444876
+      ],
+      "witness_slopes": [
+        2016954309,
+        1864118810
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1615032499,
+          239367984,
+          1
+        ],
+        "denominator": [
+          1,
+          266587623,
+          2016954309
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 7936,
+      "anchor_end": 8064,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 436,
+      "degenerate_candidates": 186534,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        1003584332,
+        577887151
+      ],
+      "witness_slopes": [
+        1551390218,
+        770403052
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1938190532,
+          547805886,
+          1
+        ],
+        "denominator": [
+          1,
+          1360303381,
+          1551390218
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 8064,
+      "anchor_end": 8192,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 456,
+      "degenerate_candidates": 186304,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        357108993,
+        1284946511
+      ],
+      "witness_slopes": [
+        2121977198,
+        1262306722
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          22639789,
+          1764868205,
+          1
+        ],
+        "denominator": [
+          1,
+          868399711,
+          2121977198
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 8192,
+      "anchor_end": 8320,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 347,
+      "degenerate_candidates": 170988,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        1141859913,
+        1010626192
+      ],
+      "witness_slopes": [
+        205718682,
+        1213830588
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1927502037,
+          1194565202,
+          1
+        ],
+        "denominator": [
+          1,
+          916875845,
+          205718682
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 8320,
+      "anchor_end": 8448,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 443,
+      "degenerate_candidates": 186490,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        2112687307,
+        847428826
+      ],
+      "witness_slopes": [
+        1772076118,
+        1034637443
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1943497816,
+          1790095244,
+          1
+        ],
+        "denominator": [
+          1,
+          1096068990,
+          1772076118
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 8448,
+      "anchor_end": 8576,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 311,
+      "degenerate_candidates": 171258,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        1674575005,
+        918860125
+      ],
+      "witness_slopes": [
+        650720628,
+        367603065
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          551257060,
+          1106852056,
+          1
+        ],
+        "denominator": [
+          1,
+          1763103368,
+          650720628
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 8576,
+      "anchor_end": 8704,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 321,
+      "degenerate_candidates": 171222,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        77698437,
+        1355036613
+      ],
+      "witness_slopes": [
+        226323489,
+        668978722
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          686057891,
+          148625052,
+          1
+        ],
+        "denominator": [
+          1,
+          1461727711,
+          226323489
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 8704,
+      "anchor_end": 8832,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 325,
+      "degenerate_candidates": 171164,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        435733695,
+        1386905289
+      ],
+      "witness_slopes": [
+        449557916,
+        244581583
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1142323706,
+          13824221,
+          1
+        ],
+        "denominator": [
+          1,
+          1886124850,
+          449557916
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 8832,
+      "anchor_end": 8960,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 452,
+      "degenerate_candidates": 186332,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        1211857387,
+        1232609919
+      ],
+      "witness_slopes": [
+        188003010,
+        367603065
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          865006854,
+          1106852056,
+          1
+        ],
+        "denominator": [
+          1,
+          1763103368,
+          188003010
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 8960,
+      "anchor_end": 9088,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 335,
+      "degenerate_candidates": 171114,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        347514247,
+        57214190
+      ],
+      "witness_slopes": [
+        25227039,
+        1960251344
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          227669279,
+          1808419225,
+          1
+        ],
+        "denominator": [
+          1,
+          170455089,
+          25227039
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 9088,
+      "anchor_end": 9216,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 334,
+      "degenerate_candidates": 171086,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        238422530,
+        1672250794
+      ],
+      "witness_slopes": [
+        254909822,
+        646975411
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1025275383,
+          16487292,
+          1
+        ],
+        "denominator": [
+          1,
+          1483731022,
+          254909822
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 9216,
+      "anchor_end": 9344,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 332,
+      "degenerate_candidates": 171130,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        272057355,
+        550685851
+      ],
+      "witness_slopes": [
+        724301609,
+        582329448
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          2099062836,
+          452244254,
+          1
+        ],
+        "denominator": [
+          1,
+          1548376985,
+          724301609
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 9344,
+      "anchor_end": 9472,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 179,
+      "degenerate_candidates": 155944,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        1970176913,
+        1459870626
+      ],
+      "witness_slopes": [
+        1951918819,
+        1430824321
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          29046305,
+          2112448339,
+          1
+        ],
+        "denominator": [
+          1,
+          699882112,
+          1951918819
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 9472,
+      "anchor_end": 9600,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 75,
+      "degenerate_candidates": 140631,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        2106931061,
+        23775370
+      ],
+      "witness_slopes": [
+        2106931062,
+        2130706432
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          23775371,
+          1,
+          1
+        ],
+        "denominator": [
+          1,
+          1,
+          2106931062
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 9600,
+      "anchor_end": 9728,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 103,
+      "degenerate_candidates": 140512,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        602467127,
+        1663037080
+      ],
+      "witness_slopes": [
+        1302349239,
+        18258094
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1644778986,
+          699882112,
+          1
+        ],
+        "denominator": [
+          1,
+          2112448339,
+          1302349239
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 9728,
+      "anchor_end": 9856,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 83,
+      "degenerate_candidates": 140672,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        795595149,
+        1135146812
+      ],
+      "witness_slopes": [
+        213265701,
+        1678462179
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1587391066,
+          1548376985,
+          1
+        ],
+        "denominator": [
+          1,
+          452244254,
+          213265701
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 9856,
+      "anchor_end": 9984,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 72,
+      "degenerate_candidates": 140754,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        156493611,
+        1939429482
+      ],
+      "witness_slopes": [
+        326948700,
+        322287208
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1617142274,
+          170455089,
+          1
+        ],
+        "denominator": [
+          1,
+          1808419225,
+          326948700
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 9984,
+      "anchor_end": 10112,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 104,
+      "degenerate_candidates": 140514,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        200852128,
+        1894982073
+      ],
+      "witness_slopes": [
+        1637006796,
+        510290218
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1384691855,
+          1436154668,
+          1
+        ],
+        "denominator": [
+          1,
+          1620416215,
+          1637006796
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 10112,
+      "anchor_end": 10240,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 93,
+      "degenerate_candidates": 140584,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        441177900,
+        1963092005
+      ],
+      "witness_slopes": [
+        2129442739,
+        467816010
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1495275995,
+          1688264839,
+          1
+        ],
+        "denominator": [
+          1,
+          1662890423,
+          2129442739
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 10240,
+      "anchor_end": 10368,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 95,
+      "degenerate_candidates": 140566,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        1614822147,
+        1650071676
+      ],
+      "witness_slopes": [
+        1763447199,
+        668978722
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          981092954,
+          148625052,
+          1
+        ],
+        "denominator": [
+          1,
+          1461727711,
+          1763447199
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 10368,
+      "anchor_end": 10496,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 89,
+      "degenerate_candidates": 140630,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        505376088,
+        167635689
+      ],
+      "witness_slopes": [
+        1612228144,
+        367603065
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1930739057,
+          1106852056,
+          1
+        ],
+        "denominator": [
+          1,
+          1763103368,
+          1612228144
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 10496,
+      "anchor_end": 10624,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 88,
+      "degenerate_candidates": 140608,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        873165263,
+        1420647304
+      ],
+      "witness_slopes": [
+        1790041108,
+        936141231
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          484506073,
+          916875845,
+          1
+        ],
+        "denominator": [
+          1,
+          1194565202,
+          1790041108
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 10624,
+      "anchor_end": 10752,
+      "complete_scan": false,
+      "pairs_examined": 352348800,
+      "nondegenerate_candidates": 96,
+      "degenerate_candidates": 140562,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        779808571,
+        863132432
+      ],
+      "witness_slopes": [
+        413970343,
+        1262306722
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          1731532143,
+          1764868205,
+          1
+        ],
+        "denominator": [
+          1,
+          868399711,
+          413970343
+        ]
+      }
+    },
+    {
+      "p": 2130706433,
+      "n": 256,
+      "bucket_size": 256,
+      "generator": 392596362,
+      "normalized_triples": 10795,
+      "anchor_start": 10752,
+      "anchor_end": 10795,
+      "complete_scan": false,
+      "pairs_examined": 118367175,
+      "nondegenerate_candidates": 24,
+      "degenerate_candidates": 47302,
+      "maximum_examined_full_fibers": 3,
+      "nonconstant_product_upper_bound": 3,
+      "hash_capacity": 8388608,
+      "witness_anchor": [
+        986858971,
+        1429727194
+      ],
+      "witness_slopes": [
+        6024708,
+        829552633
+      ],
+      "witness_check": {
+        "full_fibers": 3,
+        "domain_points": 256,
+        "numerator": [
+          0,
+          600174561,
+          1149872170,
+          1
+        ],
+        "denominator": [
+          1,
+          1301153800,
+          6024708
+        ]
+      }
+    }
+  ]
+}

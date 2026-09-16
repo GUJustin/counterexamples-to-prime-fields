@@ -1,0 +1,218 @@
+{
+  "status": "PASS",
+  "fixtures": [
+    {
+      "p": 7,
+      "degree": 2,
+      "kind": "two_solution",
+      "solutions_per_label": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "received_lines": 20,
+      "maximum_bad_labels": 1
+    },
+    {
+      "p": 7,
+      "degree": 3,
+      "kind": "two_solution",
+      "solutions_per_label": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "received_lines": 20,
+      "maximum_bad_labels": 1
+    },
+    {
+      "p": 7,
+      "degree": 2,
+      "kind": "three_solution",
+      "solutions_per_label": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "received_lines": 22,
+      "maximum_bad_labels": 1
+    },
+    {
+      "p": 7,
+      "degree": 3,
+      "kind": "three_solution",
+      "solutions_per_label": [
+        3,
+        3,
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "received_lines": 22,
+      "maximum_bad_labels": 1
+    },
+    {
+      "p": 7,
+      "degree": 2,
+      "kind": "moving_riccati",
+      "solutions_per_label": [
+        4,
+        1,
+        1,
+        2,
+        1,
+        2,
+        2
+      ],
+      "received_lines": 22,
+      "maximum_bad_labels": 2
+    },
+    {
+      "p": 11,
+      "degree": 2,
+      "kind": "moving_riccati",
+      "solutions_per_label": [
+        2,
+        2,
+        2,
+        2,
+        1,
+        1,
+        3,
+        1,
+        1,
+        4,
+        2
+      ],
+      "received_lines": 20,
+      "maximum_bad_labels": 1
+    },
+    {
+      "p": 7,
+      "degree": 2,
+      "kind": "rank_drop",
+      "solutions_per_label": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "received_lines": 20,
+      "maximum_bad_labels": 1
+    }
+  ],
+  "polynomial_challenges": 65062,
+  "nonsingular_value_uniqueness_checks": 675,
+  "received_lines": 218,
+  "sharp_linear_lower_fixtures": [
+    {
+      "s": 1,
+      "p": 17,
+      "n": 12,
+      "degree": 3,
+      "threshold": 6,
+      "bad_labels": 6
+    },
+    {
+      "s": 2,
+      "p": 29,
+      "n": 24,
+      "degree": 6,
+      "threshold": 12,
+      "bad_labels": 12
+    },
+    {
+      "s": 3,
+      "p": 37,
+      "n": 36,
+      "degree": 9,
+      "threshold": 18,
+      "bad_labels": 18
+    },
+    {
+      "s": 4,
+      "p": 53,
+      "n": 48,
+      "degree": 12,
+      "threshold": 24,
+      "bad_labels": 24
+    },
+    {
+      "s": 8,
+      "p": 97,
+      "n": 96,
+      "degree": 24,
+      "threshold": 48,
+      "bad_labels": 48
+    }
+  ],
+  "implicit_first_order_fixtures": [
+    {
+      "kind": "parabola",
+      "p": 7,
+      "degree": 2,
+      "solutions_per_label": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "received_lines": 24,
+      "nonempty_label_threshold_cases": 25
+    },
+    {
+      "kind": "moving_parabola",
+      "p": 7,
+      "degree": 2,
+      "solutions_per_label": [
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "received_lines": 24,
+      "nonempty_label_threshold_cases": 18
+    },
+    {
+      "kind": "two_slopes",
+      "p": 7,
+      "degree": 2,
+      "solutions_per_label": [
+        7,
+        14,
+        14,
+        14,
+        14,
+        14,
+        14
+      ],
+      "received_lines": 24,
+      "nonempty_label_threshold_cases": 52
+    }
+  ],
+  "characteristic_negative_control": true,
+  "scope": "Finite checks of uniqueness, lists, classified examples, full agreement supports, and the sharp linear family. These do not replace the algebraic-geometric proof of the uniform theorem."
+}
