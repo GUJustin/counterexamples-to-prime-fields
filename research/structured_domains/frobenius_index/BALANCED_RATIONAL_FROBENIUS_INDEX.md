@@ -5,6 +5,10 @@ passed. Integrated into Theorem 2.8 and Appendix E of the official manuscript
 after a second self-review; no claim of novelty or independent coauthor
 proof review is made.
 
+The later `NEAR_BALANCED_RATIONAL.md` extends this to coverage defect c
+under n>6(B-1+c), with free action when c<B/2. The manuscript now
+uses that stronger version. The original balanced proof follows.
+
 ## Statement
 
 Let F be a finite field of odd characteristic p, containing D=mu_n. Suppose

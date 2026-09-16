@@ -62,8 +62,11 @@ analysis as an application of those results.
 - A full-fiber classification now removes the Galois assumption for rational
   maps when `p = ell*n +/- 1`, `ell >= 6`, and `n > 6*(B-1)`.
   At the pinned better.codes parameters, every possible degree through
-  32768 reduces to a power or twisted-inversion quotient. This concerns
-  complete fibers of one fixed map; it does not improve the numerical score.
+  32768 reduces to a power or twisted-inversion quotient. The extension
+  to coverage defect `c` requires `n > 6*(B-1+c)` and forces full balance
+  if `c < B/2`. It excludes proposed degrees 513, 514, and 516 with
+  defects 1, 4, and 16. This concerns complete fibers of one fixed map;
+  it does not improve the numerical score.
 
 - A sharp bound limits affine binary support families in every
   characteristic other than two: fixing `s` leading locator coefficients

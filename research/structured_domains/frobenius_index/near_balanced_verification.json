@@ -1,0 +1,117 @@
+{
+  "status": "PASS",
+  "arithmetic_inequalities": 26880,
+  "exhaustive_fixtures": [
+    {
+      "p": 151,
+      "n": 25,
+      "B": 3,
+      "index": 6,
+      "disjoint_pairs_checked": 1771000,
+      "maximum_complete_coverage": 12,
+      "qualifying_pencils": 0,
+      "positive_defect_qualifying": 0,
+      "balanced_non_torus_negative_controls": 0,
+      "coverage_histogram": {
+        "6": 1686175,
+        "9": 82575,
+        "12": 2250
+      },
+      "qualifying_defect_histogram": {}
+    },
+    {
+      "p": 163,
+      "n": 27,
+      "B": 2,
+      "index": 6,
+      "disjoint_pairs_checked": 52650,
+      "maximum_complete_coverage": 26,
+      "qualifying_pencils": 2106,
+      "positive_defect_qualifying": 2106,
+      "balanced_non_torus_negative_controls": 0,
+      "coverage_histogram": {
+        "4": 9450,
+        "6": 16686,
+        "8": 19278,
+        "10": 3510,
+        "12": 1620,
+        "26": 2106
+      },
+      "qualifying_defect_histogram": {
+        "1": 2106
+      }
+    },
+    {
+      "p": 13,
+      "n": 6,
+      "B": 3,
+      "index": 2,
+      "disjoint_pairs_checked": 10,
+      "maximum_complete_coverage": 6,
+      "qualifying_pencils": 0,
+      "positive_defect_qualifying": 0,
+      "balanced_non_torus_negative_controls": 9,
+      "coverage_histogram": {
+        "6": 10
+      },
+      "qualifying_defect_histogram": {}
+    },
+    {
+      "p": 97,
+      "n": 8,
+      "B": 4,
+      "index": 12,
+      "disjoint_pairs_checked": 35,
+      "maximum_complete_coverage": 8,
+      "qualifying_pencils": 0,
+      "positive_defect_qualifying": 0,
+      "balanced_non_torus_negative_controls": 32,
+      "coverage_histogram": {
+        "8": 35
+      },
+      "qualifying_defect_histogram": {}
+    }
+  ],
+  "planted_ramified_fixtures": [
+    {
+      "p": 181,
+      "n": 15,
+      "B": 2,
+      "coverage": 14,
+      "defect": 1,
+      "fiber_size_histogram": {
+        "1": 1,
+        "2": 7
+      },
+      "B_divides_n": false,
+      "free_action_cutoff_fails": true
+    },
+    {
+      "p": 421,
+      "n": 42,
+      "B": 4,
+      "coverage": 40,
+      "defect": 2,
+      "fiber_size_histogram": {
+        "2": 1,
+        "4": 10
+      },
+      "B_divides_n": false,
+      "free_action_cutoff_fails": true
+    },
+    {
+      "p": 449,
+      "n": 64,
+      "B": 4,
+      "coverage": 60,
+      "defect": 4,
+      "fiber_size_histogram": {
+        "2": 2,
+        "4": 15
+      },
+      "B_divides_n": true,
+      "free_action_cutoff_fails": true
+    }
+  ],
+  "scope": "Exact arithmetic, complete small-domain rational-pencil enumeration, and positive-defect examples. The general geometric argument is supplied by the proof, not by finite enumeration."
+}

@@ -971,21 +971,27 @@ hypothesis: the explicit cubic over $\mathbb F_{13}$ on $\mu_6$
 in \path{research/gram_norm/BALANCED_FIBER_REVIEW.md} has four
 simple critical points and is not a Galois cover.
 
-For the large-index congruence classes below, full balance does force
-the Galois hypothesis. This includes the field and subgroup in the
+For the large-index congruence classes below, full balance forces
+the Galois hypothesis. In fact, a small number of uncovered domain
+points is allowed. This includes the field and subgroup in the
 pinned better.codes instance.
 
-\begin{theorem}[Balanced rational fibers at large Frobenius index]
+\begin{theorem}[Nearly complete rational fibers at large Frobenius index]
 \label{thm:frobenius-index-fibers}
 Let $F$ be a finite field of odd characteristic $p$, containing
 $\mu_n$, and suppose
 \[
  p=\ell n+\epsilon,\qquad \epsilon\in\{1,-1\},\qquad \ell\ge6.
 \]
-Let $R\in F(X)$ have degree $B\ge2$, no poles on $\mu_n$, and
-exactly $B$ distinct points in each fiber of its restriction to $\mu_n$.
-If $n>6(B-1)$, then $\overline F(X)/\overline F(R)$ is Galois.
-Consequently $R$ has one of the two forms in
+Let $R\in F(X)$ have degree $B\ge2$ and no poles on $\mu_n$.
+Suppose $T\subseteq\mu_n$ is a union of complete geometric fibers,
+each consisting of $B$ distinct points, and $|\mu_n\setminus T|\le c$.
+If $n>6(B-1+c)$, then $\overline F(X)/\overline F(R)$ is Galois,
+and all its deck transformations have the form $X\mapsto\zeta X$
+or $X\mapsto\zeta/X$, with $\zeta\in\mu_n$.
+If also $c<B/2$, then the deck group acts freely on $\mu_n$,
+every fiber of $R|_{\mu_n}$ has $B$ points, and $B\mid n$.
+In this case $R$ has one of the two forms in
 Corollary~\ref{cor:galois-balanced-fibers}.
 \end{theorem}
 
@@ -993,13 +999,18 @@ The proof, in Appendix~\ref{app:frobenius-index}, uses the
 four-term unit equation on each collision component and a
 Frobenius-index argument establishing the required linear independence.
 At $p=2130706433$ and $n=262144$, one has $\ell=8128$ and
-$\epsilon=1$. The theorem covers every integer $B\le43691$.
+$\epsilon=1$. For full balance ($c=0$), the theorem covers every
+integer $B\le43691$.
 Since full balance forces $B\mid n$, it covers every possible degree
 through $32768$. The remaining degrees have at most four fibers and
 therefore at most sixteen unions of complete fibers. This classifies
 the small-degree fixed-map full-fiber partitions at these parameters;
 it gives neither a new numerical better.codes bound nor a restriction
 on constructions using partial fibers or varying maps.
+The extension also excludes degrees $513,514,516$ with complete-fiber
+coverage defects at most $1,4,16$, respectively: each satisfies both
+inequalities, but none divides $262144$. These are exclusions of
+proposed packet maps, not attained improvements in agreement or score.
 
 \subsection{A uniform concentration bound for several moments}
 \label{sec:moment-concentration}
@@ -4968,7 +4979,7 @@ are not claims about later implementations. This is a working draft
 with machine-assisted internal checks, and it has not undergone
 external peer review.
 
-\section{Balanced rational fibers and the Frobenius index}
+\section{Nearly complete rational fibers and the Frobenius index}
 \label{app:frobenius-index}
 
 We prove Theorem~\ref{thm:frobenius-index-fibers}. The unit-equation
@@ -4981,43 +4992,34 @@ $p=\ell n+\epsilon$. We give the needed height calculation explicitly.
 Work over $k=\overline F$. The hypotheses imply $B<p$,
 $2\ell B<p$, and $p>n$. In particular, $R$ is separable.
 
-\paragraph{The collision components are saturated.}
+\paragraph{The collision components and their boundary.}
 The reduced curve $R(x)=R(y)$ in
-$\mathbb P^1\times\mathbb P^1$ has bidegree $(B,B)$ and exactly
-$nB$ points on $\mu_n^2$. All these points are smooth, since
-each relevant fiber has $B$ distinct geometric preimages and hence
-is unramified. Remove its $g$ deck graphs, where $g\ge1$ because
-the diagonal is present. Each deck transformation preserves $\mu_n$:
-every fiber meeting $\mu_n$ is already entirely contained in $\mu_n$.
-Thus each graph contributes exactly $n$ subgroup points, and no two
-components meet at any of these points.
-
-Write $(a_i,b_i)$ for the bidegrees of the remaining components,
-and $N_i$ for their subgroup-point counts. Neither projection is
-constant. Projection to either coordinate gives
-\[
- N_i\le n\min(a_i,b_i),\qquad
- \sum_i a_i=\sum_i b_i=B-g,\qquad
- \sum_i N_i=n(B-g).
-\]
-Equality in the sum forces $a_i=b_i$ and $N_i=na_i$ for every $i$.
-Suppose such a component remains, and write $a=a_i\le B-1$.
-Let $C$ be its smooth projective normalization, $K=k(C)=k(x,y)$,
-and $S$ the union of the zeros and poles of $x$ and $y$.
-The genus bound for a curve of bidegree $(a,a)$ gives
+$\mathbb P^1\times\mathbb P^1$ has bidegree $(B,B)$ and contains
+the diagonal. Suppose it has a component other than a torus graph
+$x/y=\text{constant}$ or $xy=\text{constant}$. On its smooth
+projective normalization $C$, let $a=\deg x$ and $b=\deg y$.
+Neither projection is constant, and $1\le a,b\le B-1$ because
+the diagonal is a different component. Put $K=k(C)=k(x,y)$.
+Let $S$ consist of the zeros and poles of $x,y$, together with
+the points above $x\in\mu_n\setminus T$ or $y\in\mu_n\setminus T$.
+The genus and boundary bounds give
 \begin{equation}\label{eq:frobenius-index-chi}
- g_C\le(a-1)^2,\qquad |S|\le4a,\qquad
- \chi:=2g_C-2+|S|\le2a^2.
+ \begin{split}
+ g_C&\le(a-1)(b-1),\qquad |S|\le2a+2b+c(a+b),\\
+ \chi&:=2g_C-2+|S|\le2ab+c(a+b).
+ \end{split}
 \end{equation}
 
 \paragraph{The four units.}
 Put $u=x^n$, $v=y^n$, and $w=(u-1)/(v-1)$.
-Because $\deg x=\deg y=a<p$, both coordinates are separating;
+Because $\deg x,\deg y<p$, both coordinates are separating;
 so are $u$ and $v$, since $p\nmid n$. In particular,
 $[K^p(v):K^p]=p$. Outside $S$, $u-1$ and $v-1$ have exactly
-the same zeros, all simple. Indeed, the complete fiber of $R(x)$
-is contained in $\mu_n$ whenever $x\in\mu_n$, and both
-projections of the collision curve are unramified there.
+the same zeros, all simple. Indeed, outside $S$, $x\in\mu_n$
+means $x\in T$; its complete geometric fiber consists of $B$
+distinct points in $T$, so $y\in T$, and conversely. Such fibers
+are unramified, and the collision curve is smooth with both
+coordinate projections unramified at their pairs.
 Consequently $w$ is an $S$-unit, meaning that all its zeros and
 poles lie in $S$. The four $S$-units
 \[
@@ -5086,7 +5088,7 @@ powers and using $p=\ell n+\epsilon$ gives
 $(x/y)^\epsilon=\zeta^\ell$, so $x/y$ is constant.
 In the second case $uv=\alpha\beta/\zeta$, and the same argument
 gives $(xy)^\epsilon=\zeta^\ell$, so $xy$ is constant.
-Either case makes the chosen component a deck graph, contrary to
+Either case makes the chosen component a torus graph, contrary to
 its selection. This proves the claimed independence.
 
 \paragraph{The height contradiction.}
@@ -5118,12 +5120,36 @@ degree-zero divisor supported on $S$, summing yields
  H:=-\sum_P\min_i\operatorname{ord}_P f_i
  \le 3(2g_C-2+|S|)=3\chi.
 \]
-The tuple contains a nonzero constant and $u$, so
-$H\ge\deg u=na$. By~\eqref{eq:frobenius-index-chi},
-$na\le6a^2$, contrary to $n>6(B-1)\ge6a$.
-No component remains after the deck graphs are removed. The degree-$B$
-map therefore has $B$ geometric deck transformations and is Galois.
+The tuple contains a nonzero constant and $u$, while $v$ is a
+ratio of two coordinates. The degree of any such ratio is at most
+the projective height, so $H\ge n\max(a,b)$.
+By~\eqref{eq:frobenius-index-chi},
+\[
+ n\max(a,b)\le6ab+3c(a+b)
+ \le6\bigl(\min(a,b)+c\bigr)\max(a,b).
+\]
+This contradicts $n>6(B-1+c)$. Every component is therefore a
+torus graph. Each has bidegree $(1,1)$, so the degree-$B$ map has
+$B$ geometric deck transformations and is Galois. Each deck map
+preserves $T$, which is nonempty. Evaluating it at a point of $T$
+shows that its scaling constant belongs to $\mu_n$. Thus the entire
+deck group preserves $\mu_n$.
+
+\paragraph{Small defect forces free action.}
+The rotation subgroup has order $d\mid n$. If there are inversions,
+the whole group has order $B=2d$. A nonzero finite point is fixed
+by no nonidentity rotation and by at most one inversion, so every
+nonfree orbit has $B/2$ points. Fibers of a Galois quotient are
+orbits; thus any nonfree orbit in $\mu_n$ lies entirely outside $T$.
+The inequality $c<B/2$ rules this out. If the group has only
+rotations, its action is already free. In either case all domain
+orbits have $B$ points, proving full balance and $B\mid n$.
+Corollary~\ref{cor:galois-balanced-fibers} now applies.
 \end{proof}
+
+The cutoff $c<B/2$ is strict. On $\mu_{15}\subset\mathbb F_{181}$,
+$R=X+X^{-1}$ has seven two-point fibers and one fixed point.
+Here $B=2$, $c=1=B/2$, and $15>6(B-1+c)$, but $B\nmid15$.
 
 The exact checks in
 \path{research/structured_domains/frobenius_index/} verify the pinned
@@ -5133,6 +5159,10 @@ A separate exhaustive enumeration checks $27{,}273{,}130$ disjoint
 pairs of possible complete fibers on five small domains, including
 non-Galois examples outside the theorem's hypotheses. These computations
 supplement the proof; they do not establish the general classification.
+The additional near-balance checker tests $26{,}880$ exact arithmetic
+inequalities and $1{,}823{,}695$ rational pencils. Its qualifying
+positive-defect cases all have torus deck groups; planted ramified
+examples also check the strict free-action cutoff.
 
 \section{A limit on binary-affine support transfer}
 \label{app:binary-affine}

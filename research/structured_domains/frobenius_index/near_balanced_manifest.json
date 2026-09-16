@@ -1,0 +1,25 @@
+{
+  "status": "Twice self-reviewed proof; exact finite checks and clean 83-page manuscript build passed",
+  "scope": "Strengthens Theorem 2.8 to coverage defect c; no better.codes score improvement",
+  "sha256": {
+    "NEAR_BALANCED_RATIONAL.md": "89f99a5c552ea0531f1e6be8be9c87579ca6b9b7191bb75d6375c566e10aa68b",
+    "check_near_balanced.py": "dd509d22a2ff733f069cb1e3a70989bd5f7aee2000d4861f9a5e9dce10a85fba",
+    "check_near_balanced_pencils.cpp": "44a81bc0e7596b3e3ee2baff12becb64a242fbf3d5927045be1e0cf7eb2b957d",
+    "near_balanced_verification.json": "046e95805f1d32b904d867761712a793366bd31ed0eb4ccd89be86bb1e6a12a2",
+    "near_balanced_resources.json": "90455ddfefff3a4a8372a0a3601bc49ddbb128235fca0f829884e9b5c9b6a99e",
+    "near_balanced_candidate_parameters.json": "45432c1817f387db1d57870b0b9021d8fb9b9426d81400e79d839a952e8f9575",
+    "near_balanced_build_resources.json": "ce9e147daf6cdf6be5b42bb4853a1e75c4558caba401b19dd88a031d9d4ad17b"
+  },
+  "manuscript_sha256": "f987f31b469f707e680a8aeeabbbc61b4808c39702f51ddfb0905ffbecfa7f5e",
+  "pdf_sha256": "c95955ef1a39c6e90531fd3ae2ef0a71b9b44228c8e84cf546c2d4000e751c07",
+  "preserved_preexisting_files": {
+    "checks/conditional_moment_results.json": "a82501c2dc100779e6c163b4258294ea25a085aac05a419083583a7dfbce3d69",
+    "radial_certificates/README.md": "33bff80fb4d70c0b6dd62a532adb087ec445faf37a9a1a21e492daed16a1bfc2",
+    "reports/stwo-zk-disclosure-summary.pdf": "de994a14ecd533b3de9fa934159c752876b5a7464ae6ab2d76a84371387b5d25",
+    "reports/stwo-zk-disclosure-summary.tex": "2c7beed7ea4f695cd6f02e9bc1d9e7934d6de824040d35d0a895c50755746b14"
+  },
+  "rendered_review_pages": [
+    14,
+    75
+  ]
+}

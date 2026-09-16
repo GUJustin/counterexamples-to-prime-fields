@@ -1,0 +1,12 @@
+{
+  "command": [
+    "make",
+    "paper"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 2.151900458149612,
+  "peak_rss_kib": 68800,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

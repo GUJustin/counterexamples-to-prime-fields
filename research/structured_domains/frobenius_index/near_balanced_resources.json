@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "research/structured_domains/frobenius_index/check_near_balanced.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.7001812499947846,
+  "peak_rss_kib": 103872,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}
