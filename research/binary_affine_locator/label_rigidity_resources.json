@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "research/binary_affine_locator/check_multiplicative_label_rigidity.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 2.6799970830325037,
+  "peak_rss_kib": 30784,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

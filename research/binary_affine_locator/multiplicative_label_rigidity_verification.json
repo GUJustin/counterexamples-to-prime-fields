@@ -1,0 +1,104 @@
+{
+  "status": "PASS",
+  "prime_field_fixtures": [
+    {
+      "N": 16,
+      "p": 31,
+      "binary_codimension": 2,
+      "dual_size": 3,
+      "subspaces": 35,
+      "prefix_length": 3,
+      "distinct_raw_prefixes": 35,
+      "distinct_affine_prefixes": 35,
+      "gauss_product_checks": 3,
+      "moment_duality_checks": 105,
+      "largest_one_coefficient_class": 5
+    },
+    {
+      "N": 32,
+      "p": 311,
+      "binary_codimension": 2,
+      "dual_size": 3,
+      "subspaces": 155,
+      "prefix_length": 3,
+      "distinct_raw_prefixes": 155,
+      "distinct_affine_prefixes": 155,
+      "gauss_product_checks": 3,
+      "moment_duality_checks": 465,
+      "largest_one_coefficient_class": 3
+    },
+    {
+      "N": 64,
+      "p": 127,
+      "binary_codimension": 2,
+      "dual_size": 3,
+      "subspaces": 651,
+      "prefix_length": 3,
+      "distinct_raw_prefixes": 651,
+      "distinct_affine_prefixes": 651,
+      "gauss_product_checks": 3,
+      "moment_duality_checks": 1953,
+      "largest_one_coefficient_class": 21
+    },
+    {
+      "N": 128,
+      "p": 509,
+      "binary_codimension": 2,
+      "dual_size": 3,
+      "subspaces": 2667,
+      "prefix_length": 3,
+      "distinct_raw_prefixes": 2667,
+      "distinct_affine_prefixes": 2667,
+      "gauss_product_checks": 3,
+      "moment_duality_checks": 8001,
+      "largest_one_coefficient_class": 8
+    },
+    {
+      "N": 256,
+      "p": 1021,
+      "binary_codimension": 2,
+      "dual_size": 3,
+      "subspaces": 10795,
+      "prefix_length": 3,
+      "distinct_raw_prefixes": 10795,
+      "distinct_affine_prefixes": 10795,
+      "gauss_product_checks": 3,
+      "moment_duality_checks": 32385,
+      "largest_one_coefficient_class": 85
+    },
+    {
+      "N": 128,
+      "p": 509,
+      "binary_codimension": 3,
+      "dual_size": 7,
+      "subspaces": 11811,
+      "prefix_length": 7,
+      "distinct_raw_prefixes": 11811,
+      "distinct_affine_prefixes": 11811,
+      "gauss_product_checks": 7,
+      "moment_duality_checks": 82677,
+      "largest_one_coefficient_class": 25
+    }
+  ],
+  "characteristic_three_fixture": {
+    "N": 32,
+    "characteristic": 3,
+    "extension_degree": 30,
+    "binary_codimension": 2,
+    "subspaces": 155,
+    "prefix_length": 5,
+    "distinct_prefixes": 155,
+    "gauss_product_checks": 5,
+    "moment_duality_checks": 775
+  },
+  "sharpness_fixture": {
+    "N": 512,
+    "p": 3067,
+    "binary_codimension": 3,
+    "subspaces": 73,
+    "shared_zero_prefix_length": 6,
+    "distinct_seven_coefficient_prefixes": 73,
+    "agreement_support_size": 63
+  },
+  "scope": "Exact Gauss-product and primal-dual moment identities; exhaustive subspace prefix uniqueness under multiplicative and affine-multiplicative relabeling. Arbitrary relabeling is outside this theorem."
+}

@@ -1,0 +1,86 @@
+\subsection*{Short prefixes determine subspaces under multiplicative relabeling}
+
+For the natural multiplicative relabeling, a stronger statement applies
+to all binary subspaces simultaneously, without restricting their orbits.
+
+\begin{theorem}[Multiplicative relabeling rigidity]
+\label{thm:multiplicative-label-rigidity}
+Let $K=\mathbb F_{2^m}$, $N=2^m$, and let $\chi:K^*\to E^*$ be
+an injective multiplicative character into a field of characteristic
+different from two. Label $v\ne0$ by $\chi(v)$, or by
+$a\chi(v)+b$ with $a\ne0$. For each $r$-dimensional binary
+subspace $U\subset K$, with $1\le r<m$, let $H_U$ be its
+annihilator under the absolute trace pairing, and put $t=2^r-1$.
+The first $2t-1$ coefficients of the punctured locator of $H_U$
+determine $U$ uniquely whenever that prefix fits in the locator.
+In characteristic zero or characteristic greater than $t$, the
+first $t$ coefficients suffice.
+
+The latter cutoff is sharp: if $r\mid m$, the $(N-1)/t$ subspaces
+$U=c\mathbb F_{2^r}$ have punctured locators with their first
+$t-1$ coefficients all zero under the unshifted labeling.
+\end{theorem}
+\begin{proof}
+Write $\psi(v)=(-1)^{\operatorname{Tr}_{K/\mathbb F_2}(v)}$ and
+\[
+ G_j=\sum_{v\in K^*}\psi(v)\chi(v)^j,\qquad 1\le j<N-1.
+\]
+Every $G_j$ is invertible. Indeed, substituting $x=uy$ in
+$G_jG_{-j}$ gives
+\[
+ G_jG_{-j}=\sum_{u\ne0}\chi(u)^j
+                  \sum_{y\ne0}\psi((u+1)y)=N.
+\]
+The inner sum is $N-1$ at $u=1$ and $-1$ otherwise, and the
+nontrivial multiplicative character $\chi^j$ has total sum zero.
+The integer $N$ is nonzero in $E$.
+
+Expand the indicator of $H_U$ with additive characters and substitute
+$y=uv$ for each nonzero $u\in U$. The zero-$u$ term vanishes, giving
+\begin{equation}
+ \sum_{v\in H_U\setminus\{0\}}\chi(v)^j
+  =\frac{G_j}{2^r}
+       \sum_{u\in U\setminus\{0\}}\chi(u)^{-j}.
+ \label{eq:gauss-dual-moments}
+\end{equation}
+Thus equal locator prefixes, and hence equal power sums, give equal
+moments of the two $t$-element dual label sets
+$\{\chi(u)^{-1}:u\in U\setminus\{0\}\}$.
+When the characteristic is zero or exceeds $t$, reverse Newton
+identities recover the dual set from its first $t$ moments.
+
+In every other allowed characteristic, subtract the indicator
+measures of the two dual sets. Their zeroth moments agree, and the
+difference is supported on at most $2t$ distinct points. Moments
+zero through $2t-1$ and an invertible square Vandermonde minor force
+the difference to vanish. Injectivity of $\chi$ then recovers $U$.
+All moments used have index less than $N-1$, since $r<m$.
+For affine relabeling, the binomial expansion recovers the original
+$\chi$-moments inductively; its diagonal coefficient is $a^j\ne0$.
+
+For sharpness, if $U=c\mathbb F_{2^r}$, its annihilator is
+$\mathbb F_{2^r}$-linear. Its nonzero elements are a union of
+multiplicative cosets of $\mathbb F_{2^r}^*$. Their labels are full
+cosets of the $t$th roots of unity, so the locator is a polynomial
+in $X^t$. Its first $t-1$ coefficients vanish. The scalar stabilizer
+has size $t$, giving $(N-1)/t$ distinct subspaces.
+\end{proof}
+
+At codimension two, three coefficients suffice in characteristic
+greater than three, and five suffice in every odd characteristic.
+Thus a fixed positive shared-prefix fraction cannot survive this
+multiplicative relabeling, even for two supports, once $N$ is large
+enough. The sharpness example has only a constant prefix length;
+its agreement gap shrinks with $N$ and does not provide the desired
+fixed-gap list.
+
+The exact checker exhausts $26{,}114$ subspaces in six prime-field
+fixtures, checking both multiplicative and affine-multiplicative
+prefixes. A separate $\mathbb F_{3^{30}}$ fixture checks all $155$
+codimension-two subspaces of $\mathbb F_{32}$, without the
+large-characteristic Newton assumption. It checks
+$126{,}361$ primal--dual moment identities and $27$ Gauss products.
+A codimension-three example at $N=512$ has $73$ locators with six
+common zero coefficients and pairwise distinct seventh coefficients.
+Arbitrary nonmultiplicative relabelings across many subspace orbits
+remain outside these results.

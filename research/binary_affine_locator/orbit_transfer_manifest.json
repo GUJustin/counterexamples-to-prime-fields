@@ -1,0 +1,33 @@
+{
+  "status": "Twice self-reviewed proofs; two exact checkers passed; clean 101-page build",
+  "scope": "Sublinear transfer within fixed multiplicative orbits in every fixed binary codimension, and sharp short-prefix rigidity under multiplicative relabeling. Arbitrary relabeling across many orbits remains open. No quadratic MCA or better.codes improvement.",
+  "sha256": {
+    "README.md": "c51e1ed84989862f0ca71a7091c9ddd1f89c4eb21854f35ea2ff41d947ec4351",
+    "F4_HYPERPLANE_TRANSFER.md": "54ef28e833548245d2506566e0908622ccef9d18744b3bdaa4987afbaf88fc3f",
+    "MULTIPLICATIVE_ORBIT_TRANSFER.md": "603e914d58ac7b74dae558b1c89e2a5d76dc0ac70aaaa17ade296bb8219eeb92",
+    "MULTIPLICATIVE_LABEL_RIGIDITY.md": "bc13dc1b8b8e7707de2881d42f6b90d426137ce2a3961fd7968bde017b8ba8a8",
+    "check_multiplicative_orbit_transfer.py": "409915a849f239583bfd2cb11396c7f93f49cf26c77b2272692db4695b12794f",
+    "check_multiplicative_label_rigidity.py": "d43daff18f233a67075658b9c228f12fa27813b0de3addd833b225ca7c2b7a18",
+    "orbit_verification_resources.json": "a9e56e8e1ccdc16e59627c981bbea8ab8ba58913f6cbf5c8f9195a4489dc38f7",
+    "multiplicative_orbit_transfer_verification.json": "6310116b2f3222207a41c1ad308f61446d000c0c4d31b05424e1f6568986dd8b",
+    "label_rigidity_resources.json": "7d76c94cd68792940a7d184135c8cfe1c59a9b9ead7b49d0c88d356d2754db11",
+    "multiplicative_label_rigidity_verification.json": "ea551a1d95ca3b99cd3ecd3ea95c7fbfcb8444317c345fa3d80e430b05d07a1e",
+    "orbit_build_resources.json": "1229ab7d613f137a7dd5bdd2d7b94ecf3085107ea80f619e6b5ef48415301e5e",
+    "multiplicative_orbit_appendix.tex": "a4fbc4c06608997280c5085ac66d40762b8027c34a9c203f40fbf1c0ba04c1ba",
+    "multiplicative_label_appendix.tex": "ff566d8a56238ab73b9e5ae84df6d36852aae3378b1d3e83d15b4aafab1b439b"
+  },
+  "manuscript_sha256": "1586c888044e25271b10000b939ed56709a0ff43dbfe71d66450eaea1e6f93e8",
+  "pdf_sha256": "3d46b1427313d9a65d24a0da1d8d158532ae301f2a2e6f3ca4c29978cf6465f2",
+  "rendered_review_pages": [
+    78,
+    79,
+    80,
+    81
+  ],
+  "preserved_preexisting_files": {
+    "checks/conditional_moment_results.json": "a82501c2dc100779e6c163b4258294ea25a085aac05a419083583a7dfbce3d69",
+    "radial_certificates/README.md": "33bff80fb4d70c0b6dd62a532adb087ec445faf37a9a1a21e492daed16a1bfc2",
+    "reports/stwo-zk-disclosure-summary.pdf": "de994a14ecd533b3de9fa934159c752876b5a7464ae6ab2d76a84371387b5d25",
+    "reports/stwo-zk-disclosure-summary.tex": "2c7beed7ea4f695cd6f02e9bc1d9e7934d6de824040d35d0a895c50755746b14"
+  }
+}

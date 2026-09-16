@@ -144,6 +144,17 @@ nonzero A and `p>max(D,s+1)`. Appendix K proves this sharp bound
 even when `p<=sD`, classifies nontrivial pairs, and deduces linear
 full-support MCA for this nonlinear first-order family.
 
+The binary-transfer analysis also gives a sublinear shared-prefix count
+inside every fixed multiplicative orbit at fixed binary codimension.
+At codimension two it is `O(N^(15/16))`; see
+[the orbit theorem](research/binary_affine_locator/MULTIPLICATIVE_ORBIT_TRANSFER.md).
+A linear-sized transfer would have to draw from increasingly many orbits.
+Under multiplicative relabeling, a sharper Gauss-sum argument makes all
+codimension-two supports distinguishable by just three coefficients
+in characteristic greater than three (five in every odd characteristic).
+The three-coefficient cutoff is sharp; see
+[multiplicative relabeling](research/binary_affine_locator/MULTIPLICATIVE_LABEL_RIGIDITY.md).
+
 ## Build and verify
 
 The standalone source requires a LaTeX installation with `latexmk`,

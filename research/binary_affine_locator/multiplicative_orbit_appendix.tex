@@ -1,0 +1,111 @@
+\subsection*{A sublinear bound within every fixed multiplicative orbit}
+
+The preceding bound still permits a linear-sized shared-prefix family,
+which could be enough for the padding reduction. A stronger obstruction
+applies within a fixed multiplicative orbit of binary subspaces.
+
+\begin{theorem}[Transfer within a multiplicative orbit]
+\label{thm:multiplicative-orbit-transfer}
+Let $K=\mathbb F_{2^m}$, $N=2^m$, and let $U\subset K$ be an
+$r$-dimensional binary subspace, with $1\le r<m$. For $a\in K^*$ put
+\[
+ H_a=\{v\in K:\operatorname{Tr}_{K/\mathbb F_2}(auv)=0
+                         \text{ for all }u\in U\}.
+\]
+Injectively label $K\setminus\{0\}$ by elements of a field of
+characteristic different from two. Let $\mathcal C$ be a collection
+of distinct $H_a$ whose punctured locators share their first $s$
+coefficients below the leading term, where $0\le s\le N/2^r-2$.
+Define
+\[
+ b=\left\lceil\log_2\frac{(2^r-1)N}{s+1}\right\rceil,
+ \qquad h=|\{c\in K^*:cU=U\}|,
+\]
+and assume $b\le m$. Then
+\[
+ |\mathcal C|\le\frac4h N^{\,1-2^{1-b}}.
+\]
+For fixed $r$ and a fixed positive prefix fraction $(s+1)/N$, this
+is $o(N)$. In particular, for $r=2$, $s=N/8-1$, and $m\ge6$,
+\[
+ |\mathcal C|\le\frac4h N^{15/16},\qquad h\in\{1,3\}.
+\]
+The case $h=3$ is the family of $\mathbb F_4$-linear hyperplanes.
+\end{theorem}
+\begin{proof}
+Let $A\subset K^*$ consist of all normals for members of
+$\mathcal C$. Nondegeneracy of the trace pairing shows that
+$H_a=H_{a'}$ exactly when $aU=a'U$, so $|A|=h|\mathcal C|$.
+Newton identities express each power sum in the corresponding
+elementary symmetric functions without division. Thus the moments
+\[
+ M_j(a)=\sum_{v\in H_a\setminus\{0\}}x_v^j
+\]
+are independent of $a\in A$ for $1\le j\le s$; the zeroth
+moment is the common size $N/2^r-1$. This step does not require
+the label-field characteristic to exceed $s$.
+
+Suppose $A$ contains an affine binary $b$-flat
+$a_\epsilon=a_0+\sum_{i=1}^b\epsilon_i w_i$ with independent $w_i$.
+For $\beta\in\mathbb F_2^b\setminus\{0\}$ define
+\[
+ c_\beta(v)=2^{-b}\sum_{\epsilon\in\mathbb F_2^b}
+       (-1)^{\beta\cdot\epsilon}{\bf1}_{v\in H_{a_\epsilon}}.
+\]
+All its moments vanish: $\sum_{v\ne0}c_\beta(v)x_v^j=0$ for
+$0\le j\le s$. The character expansion of the annihilator of $U$
+gives, with $\operatorname{Tr}=\operatorname{Tr}_{K/\mathbb F_2}$,
+\[
+ c_\beta(v)=2^{-r}
+ \sum_{\substack{u\in U\setminus\{0\}\\
+          \operatorname{Tr}(uw_iv)=\beta_i\ (1\le i\le b)}}
+             (-1)^{\operatorname{Tr}(ua_0v)}.
+\]
+For fixed $u\ne0$, multiplication by $u$ preserves independence
+of the $w_i$, so the displayed fiber has $N/2^b$ points. Therefore
+$c_\beta$ is supported on at most $(2^r-1)N/2^b\le s+1$ points.
+
+At least one such vector is nonzero over the label field. Otherwise
+invertibility of the binary Walsh transform would make all $2^b$
+incidence rows identical. A fixed $H_a$ can have at most $2^r-1$
+normals: for any fixed nonzero $u_0\in U$, their distinct products
+$au_0$ all belong to its same annihilator. Our choice of $b$ has
+$2^b>2^r-1$, a contradiction. On the support of a nonzero $c_\beta$,
+the square Vandermonde matrix of moments from zero to one less than
+the support size is invertible, because the labels are distinct.
+Its vanishing moments give the final contradiction. Thus $A$ has
+no affine binary $b$-flat.
+
+An elementary induction bounds an affine-$j$-flat-free set $B$ in a
+binary group of size $q$ by $4q^{1-2^{1-j}}$. For $j=1$ it has at
+most one point. For $j\ge2$, pair its elements along each nonzero
+direction $v$. The occupied pairs form an affine-$(j-1)$-flat-free
+set in the quotient of size $q/2$. With $\alpha=2^{2-j}$,
+\[
+ |B|(|B|-1)=\sum_{v\ne0}|B\cap(B+v)|
+       \le8(q-1)(q/2)^{1-\alpha}.
+\]
+Consequently $|B|\le1+2\cdot2^{\alpha/2}q^{1-\alpha/2}
+\le4q^{1-\alpha/2}$. Apply this with $j=b$ and $q=N$ to $A$.
+
+Finally, $\{c\in K:cU\subseteq U\}$ is a finite subfield:
+it is closed under addition and multiplication, and every nonzero
+element acts bijectively on $U$. Its binary degree divides $r$.
+For $r=2$ it has size two or four, so $h=1$ or $3$; the latter
+case makes $U$ a scalar copy of $\mathbb F_4$.
+\end{proof}
+
+This rules out a linear-sized transfer from any bounded number of
+fixed-codimension multiplicative orbits. At codimension two, a
+$cN$-sized shared-prefix family would have to occupy at least
+$(c/4)N^{1/16}$ orbits. Arbitrary codimension-two families can span
+linearly many orbits, so the general linear-sized-transfer question
+remains open.
+
+The exact checker verifies the character support formula on all
+$63$ affine binary five-flats avoiding zero at $N=64$, and $20$
+such flats at $N=256$. It separately checks multiplicative orbits
+with stabilizers one and three, and a codimension-three orbit with
+seven-dimensional affine sections. Odd-field prefix tests, a
+characteristic-two negative control, and a small complete odd-field
+transfer complement these checks. They supplement the universal proof.

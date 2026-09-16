@@ -55,6 +55,8 @@ verify:
 	$(PYTHON) research/inverse_bernoulli/verify.py
 	$(PYTHON) research/binary_affine_locator/verify.py
 	$(PYTHON) research/binary_affine_locator/check_codimension_two_transfer.py
+	$(PYTHON) research/binary_affine_locator/check_multiplicative_orbit_transfer.py
+	$(PYTHON) research/binary_affine_locator/check_multiplicative_label_rigidity.py
 	$(PYTHON) research/structured_domains/verify_balanced_fibers.py
 	$(PYTHON) research/gram_norm/verify_balanced_fibers.py
 	$(PYTHON) research/structured_domains/verify_galois_fibers.py

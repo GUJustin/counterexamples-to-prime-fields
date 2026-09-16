@@ -1,0 +1,68 @@
+{
+  "status": "PASS",
+  "all_N64_five_flats": 63,
+  "N256_five_flats": 20,
+  "fourier_vectors_checked": 2573,
+  "nonzero_vectors": 2510,
+  "max_support_N64": 6,
+  "max_support_N256": 24,
+  "odd_prefix_fixtures": [
+    {
+      "N": 64,
+      "relabelings": 30,
+      "supports_per_relabeling": 21,
+      "maximum_prefix_class": 1
+    },
+    {
+      "N": 256,
+      "relabelings": 10,
+      "supports_per_relabeling": 85,
+      "maximum_prefix_class": 1
+    }
+  ],
+  "binary_control": {
+    "N": 64,
+    "common_prefix_length": 7,
+    "hyperplanes": 21,
+    "affine_five_flat_normals": 32,
+    "scope": "Violates the odd-characteristic flat exclusion, not the numerically weak asymptotic count at N=64."
+  },
+  "multiplicative_orbits": [
+    {
+      "N": 64,
+      "alpha": 2,
+      "stabilizer_size": 1,
+      "orbit_hyperplanes": 63,
+      "five_flats": 63,
+      "fourier_vectors_checked": 1953,
+      "maximum_support": 6
+    },
+    {
+      "N": 64,
+      "alpha": 58,
+      "stabilizer_size": 3,
+      "orbit_hyperplanes": 21,
+      "five_flats": 63,
+      "fourier_vectors_checked": 1953,
+      "maximum_support": 6
+    }
+  ],
+  "small_odd_transfer": {
+    "N": 16,
+    "p": 97,
+    "hyperplanes": 5,
+    "common_prefix_length": 1
+  },
+  "higher_codimension": {
+    "N": 256,
+    "binary_codimension": 3,
+    "prefix_length": 15,
+    "parameter_flat_dimension": 7,
+    "flats_checked": 8,
+    "fourier_vectors_checked": 1016,
+    "maximum_support": 14,
+    "nonzero_vectors": 1016,
+    "stabilizer_size": 1
+  },
+  "scope": "Exact Fourier support formulas, Vandermonde moment controls, and finite prefix classes. Universal bound requires the written proof; general binary codimension-two families are not covered."
+}
