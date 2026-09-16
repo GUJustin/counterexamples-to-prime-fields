@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "equations": 4,
+  "finite_taylor_fixtures": 360,
+  "records": [
+    {
+      "order": 2,
+      "Q": "X*u1 + X*z + u0*u2*z + u1**2 + u2**2",
+      "B": 2,
+      "H": 1,
+      "Dmax": 5,
+      "numerator_bounds": [
+        {
+          "derivative": 3,
+          "jet_degree": 2,
+          "challenge_degree": 1,
+          "denominator_exponent": 1
+        },
+        {
+          "derivative": 4,
+          "jet_degree": 4,
+          "challenge_degree": 3,
+          "denominator_exponent": 3
+        },
+        {
+          "derivative": 5,
+          "jet_degree": 6,
+          "challenge_degree": 5,
+          "denominator_exponent": 5
+        }
+      ]
+    },
+    {
+      "order": 3,
+      "Q": "-X*z**2 + u0*u2 + u1**2 + u3*(X*z + 1)",
+      "B": 2,
+      "H": 2,
+      "Dmax": 6,
+      "numerator_bounds": [
+        {
+          "derivative": 4,
+          "jet_degree": 2,
+          "challenge_degree": 2,
+          "denominator_exponent": 1
+        },
+        {
+          "derivative": 5,
+          "jet_degree": 3,
+          "challenge_degree": 4,
+          "denominator_exponent": 3
+        },
+        {
+          "derivative": 6,
+          "jet_degree": 4,
+          "challenge_degree": 6,
+          "denominator_exponent": 5
+        }
+      ]
+    },
+    {
+      "order": 4,
+      "Q": "X*u2 + u0**2 + u1*u3*z + u4",
+      "B": 2,
+      "H": 1,
+      "Dmax": 7,
+      "numerator_bounds": [
+        {
+          "derivative": 5,
+          "jet_degree": 2,
+          "challenge_degree": 1,
+          "denominator_exponent": 1
+        },
+        {
+          "derivative": 6,
+          "jet_degree": 3,
+          "challenge_degree": 2,
+          "denominator_exponent": 3
+        },
+        {
+          "derivative": 7,
+          "jet_degree": 4,
+          "challenge_degree": 3,
+          "denominator_exponent": 5
+        }
+      ]
+    },
+    {
+      "order": 5,
+      "Q": "X*u1 + u0*u5*z + u2**2 + u5**3",
+      "B": 3,
+      "H": 1,
+      "Dmax": 7,
+      "numerator_bounds": [
+        {
+          "derivative": 6,
+          "jet_degree": 2,
+          "challenge_degree": 1,
+          "denominator_exponent": 1
+        },
+        {
+          "derivative": 7,
+          "jet_degree": 6,
+          "challenge_degree": 3,
+          "denominator_exponent": 3
+        }
+      ]
+    }
+  ],
+  "scope": "Exact higher-order reconstruction and degree checks. The generic intersection argument is a separate written proof."
+}

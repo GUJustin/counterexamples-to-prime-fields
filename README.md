@@ -122,6 +122,14 @@ constantly many nearby labels at a fixed positive gap. The general
 contribution of isolated points and persistent affine codeword graphs
 remains open; this does not prove the first-order MCA conjecture.
 
+[Sharp isolated-solution counts](research/isolated_solution_sharpness/README.md)
+proves matching `O(D^(d+1))` and `Omega(D^(d+1))` bounds for actual
+isolated regular polynomial--challenge solutions at every fixed derivative
+order d. Appendix I gives an explicit Wronskian family with distinct
+prime-field labels, together with a constant fixed-gap nearby-label bound
+for that family. Thus the algebraic count is sharp while proximity-gap
+sharpness remains open.
+
 ## Build and verify
 
 The standalone source requires a LaTeX installation with `latexmk`,

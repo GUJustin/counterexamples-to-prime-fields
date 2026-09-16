@@ -1,0 +1,328 @@
+{
+  "status": "PASS",
+  "separant_checks": {
+    "total": 15,
+    "fixtures": [
+      {
+        "order": 1,
+        "D": 3,
+        "p": 101,
+        "checks": 3
+      },
+      {
+        "order": 2,
+        "D": 3,
+        "p": 101,
+        "checks": 3
+      },
+      {
+        "order": 3,
+        "D": 3,
+        "p": 101,
+        "checks": 3
+      },
+      {
+        "order": 4,
+        "D": 4,
+        "p": 101,
+        "checks": 3
+      },
+      {
+        "order": 5,
+        "D": 5,
+        "p": 101,
+        "checks": 3
+      }
+    ]
+  },
+  "exhaustive_fixtures": [
+    {
+      "D": 1,
+      "order": 1,
+      "p": 5,
+      "roots": [
+        1,
+        2
+      ],
+      "polynomials_exhausted": 25,
+      "polynomial_challenge_pairs_covered": 125,
+      "predicted_pairs": 3,
+      "actual_pairs": 3,
+      "extra_pairs": 0,
+      "affine_challenge_checks": 25,
+      "characteristic_hypothesis": true
+    },
+    {
+      "D": 1,
+      "order": 2,
+      "p": 7,
+      "roots": [
+        1,
+        2
+      ],
+      "polynomials_exhausted": 49,
+      "polynomial_challenge_pairs_covered": 343,
+      "predicted_pairs": 4,
+      "actual_pairs": 4,
+      "extra_pairs": 0,
+      "affine_challenge_checks": 49,
+      "characteristic_hypothesis": true
+    },
+    {
+      "D": 2,
+      "order": 2,
+      "p": 7,
+      "roots": [
+        1,
+        2,
+        3
+      ],
+      "polynomials_exhausted": 343,
+      "polynomial_challenge_pairs_covered": 2401,
+      "predicted_pairs": 10,
+      "actual_pairs": 10,
+      "extra_pairs": 0,
+      "affine_challenge_checks": 343,
+      "characteristic_hypothesis": true
+    },
+    {
+      "D": 2,
+      "order": 3,
+      "p": 7,
+      "roots": [
+        1,
+        2,
+        3
+      ],
+      "polynomials_exhausted": 343,
+      "polynomial_challenge_pairs_covered": 2401,
+      "predicted_pairs": 15,
+      "actual_pairs": 15,
+      "extra_pairs": 0,
+      "affine_challenge_checks": 343,
+      "characteristic_hypothesis": true
+    }
+  ],
+  "characteristic_negative_controls": [
+    {
+      "D": 1,
+      "order": 1,
+      "p": 3,
+      "roots": [
+        1,
+        2
+      ],
+      "polynomials_exhausted": 9,
+      "polynomial_challenge_pairs_covered": 27,
+      "predicted_pairs": 3,
+      "actual_pairs": 4,
+      "extra_pairs": 1,
+      "affine_challenge_checks": 9,
+      "characteristic_hypothesis": false
+    },
+    {
+      "D": 2,
+      "order": 2,
+      "p": 5,
+      "roots": [
+        1,
+        2,
+        3
+      ],
+      "polynomials_exhausted": 125,
+      "polynomial_challenge_pairs_covered": 625,
+      "predicted_pairs": 10,
+      "actual_pairs": 11,
+      "extra_pairs": 1,
+      "affine_challenge_checks": 125,
+      "characteristic_hypothesis": false
+    }
+  ],
+  "triple_checks": [
+    {
+      "r": 3,
+      "p": 101,
+      "roots": [
+        1,
+        99
+      ],
+      "label_mode": "product",
+      "candidates": 4,
+      "distinct_label_triples": 4,
+      "collinear_triples": 1,
+      "skipped_collision_triples": 0,
+      "maximum_nonzero_numerator_degree": 7,
+      "maximum_labeled_line_size": 3
+    },
+    {
+      "r": 3,
+      "p": 101,
+      "roots": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "label_mode": "product",
+      "candidates": 20,
+      "distinct_label_triples": 1068,
+      "collinear_triples": 0,
+      "skipped_collision_triples": 72,
+      "maximum_nonzero_numerator_degree": 7,
+      "maximum_labeled_line_size": 2
+    },
+    {
+      "r": 4,
+      "p": 101,
+      "roots": [
+        1,
+        2,
+        3
+      ],
+      "label_mode": "product",
+      "candidates": 15,
+      "distinct_label_triples": 455,
+      "collinear_triples": 0,
+      "skipped_collision_triples": 0,
+      "maximum_nonzero_numerator_degree": 10,
+      "maximum_labeled_line_size": 2
+    },
+    {
+      "r": 4,
+      "p": 101,
+      "roots": [
+        1,
+        2
+      ],
+      "label_mode": "multiplicity",
+      "candidates": 5,
+      "distinct_label_triples": 10,
+      "collinear_triples": 10,
+      "skipped_collision_triples": 0,
+      "maximum_nonzero_numerator_degree": 0,
+      "maximum_labeled_line_size": 5
+    }
+  ],
+  "prime_field_sidon_fixtures": [
+    {
+      "D": 4,
+      "r": 3,
+      "order": 2,
+      "p": 491,
+      "roots": [
+        1,
+        2,
+        3,
+        5,
+        7
+      ],
+      "greedy_forbidden_bound": 489,
+      "distinct_regular_isolated_labels": 35,
+      "wronskians_checked": 18,
+      "identities_checked": 35
+    },
+    {
+      "D": 4,
+      "r": 4,
+      "order": 3,
+      "p": 2459,
+      "roots": [
+        1,
+        2,
+        3,
+        5,
+        7
+      ],
+      "greedy_forbidden_bound": 2449,
+      "distinct_regular_isolated_labels": 70,
+      "wronskians_checked": 14,
+      "identities_checked": 70
+    },
+    {
+      "D": 3,
+      "r": 5,
+      "order": 4,
+      "p": 2203,
+      "roots": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "greedy_forbidden_bound": 2182,
+      "distinct_regular_isolated_labels": 56,
+      "wronskians_checked": 14,
+      "identities_checked": 56
+    },
+    {
+      "D": 16,
+      "r": 3,
+      "order": 2,
+      "p": 142019,
+      "roots": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        11,
+        13,
+        16,
+        17,
+        19,
+        23,
+        29,
+        31,
+        37,
+        41,
+        43,
+        47
+      ],
+      "greedy_forbidden_bound": 142017,
+      "distinct_regular_isolated_labels": 969,
+      "wronskians_checked": 13,
+      "identities_checked": 969
+    },
+    {
+      "D": 8,
+      "r": 4,
+      "order": 3,
+      "p": 79579,
+      "roots": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        11,
+        13,
+        17,
+        19
+      ],
+      "greedy_forbidden_bound": 79577,
+      "distinct_regular_isolated_labels": 495,
+      "wronskians_checked": 13,
+      "identities_checked": 495
+    },
+    {
+      "D": 6,
+      "r": 5,
+      "order": 4,
+      "p": 100483,
+      "roots": [
+        1,
+        2,
+        3,
+        5,
+        7,
+        11,
+        13
+      ],
+      "greedy_forbidden_bound": 100477,
+      "distinct_regular_isolated_labels": 462,
+      "wronskians_checked": 13,
+      "identities_checked": 462
+    }
+  ],
+  "scope": "Actual isolated solution-count sharpness at fixed derivative order, separants, polynomial-size prime labels, and finite triple-incidence structure. Not a proximity-gap lower bound."
+}

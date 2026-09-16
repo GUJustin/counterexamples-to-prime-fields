@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "research/isolated_solution_sharpness/verify_reconstruction.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.0802637918386608,
+  "peak_rss_kib": 60656,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

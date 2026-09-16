@@ -1,0 +1,238 @@
+\section{Sharp isolated-solution growth at fixed derivative order}
+\label{app:isolated-sharpness}
+
+The quadratic isolated family of Appendix~\ref{app:actual-first-order}
+extends to every fixed derivative order. Here we give a matching general
+upper bound and an explicit family attaining its exponent. These are
+bounds on the actual polynomial-solution locus, before any agreement
+filter. The attaining family still has a constant nearby-label count at
+a fixed positive gap, so this sharpness does not establish sharp MCA error.
+
+\begin{theorem}[Isolated regular solution upper bound]
+\label{thm:isolated-upper}
+Let $d\ge1$, $D\ge d$, and let $E$ be algebraically closed of
+characteristic zero or $p>D$. Let $Q(X,z,u_0,\ldots,u_d)$ have total
+jet degree at most $B\ge1$ and challenge degree at most $H$, with
+unrestricted $X$-degree. Let $J_0$ count the isolated points of the
+reduced closure of actual regular pairs
+\[
+ Q(X,z,P,P',\ldots,P^{(d)})=0,\qquad \deg P\le D,\qquad
+ Q_{u_d}(X,z,P,\ldots,P^{(d)})\not\equiv0.
+\]
+Put
+\[
+ \tau=\max\{0,2(D-d)-1\},\quad b=1+\tau(B-1),\quad
+ K=H+B(b+\tau H),\quad q=B+H.
+\]
+Then $J_0\le qK^{d+1}=O_{d,B,H}(D^{d+1})$.
+\end{theorem}
+\begin{proof}
+If $J_0=0$ there is nothing to prove. Every isolated point of this
+closure belongs to the actual regular locus, since that locus is dense.
+Choose a Taylor center $t$ at which the separant is nonzero at every
+isolated regular solution; there are finitely many such points and
+only finitely many excluded centers for each. Write
+\[
+ S=Q_{u_d},\qquad A_0=Q_X+\sum_{i<d}u_{i+1}Q_{u_i},\qquad
+ \mathcal D=\partial_X+\sum_{i<d}u_{i+1}\partial_{u_i}
+                    -(A_0/S)\partial_{u_d}.
+\]
+The quotient-rule recurrence in the proof of
+Theorem~\ref{thm:actual-first-order-components}, with this derivation,
+gives for the $j$th derivative, $j>d$, denominator
+$S^{2(j-d)-1}$, jet numerator degree at most
+$1+(2(j-d)-1)(B-1)$, and challenge degree at most $(2(j-d)-1)H$.
+The initial derivatives $u_0,\ldots,u_d$ need no denominator.
+Thus the degree-$D$ Taylor reconstruction, with common denominator
+$S^\tau$, has coefficient numerators of jet degree at most $b$ and
+challenge degree at most $\tau H$. Taylor factorials are invertible.
+
+Substitute this polynomial and its first $d$ derivatives into $Q$,
+clear $S^{\tau B}$, and take coefficients in $X$. Every residual has
+total initial-data degree at most $K$: a term of jet degree $e\le B$
+has numerator jet degree at most
+$eb+\tau(B-e)(B-1)\le Bb$ and challenge degree at most
+$H+\tau BH$. Include the initial equation
+$Q(t,z,u_0,\ldots,u_d)=0$, of degree at most $q$.
+On $S(t,z,u_0,\ldots,u_d)\ne0$, these equations describe precisely
+the initial jets of actual degree-$\le D$ solutions. The initial-jet
+and reconstruction maps are inverse regular maps there, so they
+preserve the isolated points being counted.
+
+The initial hypersurface has dimension at most $d+1$ in $d+2$
+variables. Cut successively by $d+1$ generic linear combinations of
+the residuals, each of degree at most $K$. At each stage, discard
+positive-dimensional components on which every residual vanishes;
+none can contain a target isolated point in the regular open locus.
+On each remaining component through a target point, some residual
+is nonzero, and a generic combination cuts its dimension. Choose the
+combinations simultaneously for the finitely many components at
+each step. This process retains every target isolated point.
+B\'ezout bounds the sum of the degrees of the retained intersections
+by $qK^{d+1}$. This argument does not require that the whole unpruned
+intersection be zero-dimensional: other positive-dimensional
+components may remain away from the target points.
+\end{proof}
+
+\begin{theorem}[Attaining every isolated-count exponent]
+\label{thm:isolated-lower}
+Fix $r=d+1\ge2$ and $D\ge1$, in characteristic zero or $p>D+r$.
+Let $R$ be monic and squarefree of degree $N=D+1$, with nonzero roots.
+Put
+\[
+ \phi_j=X^j\ (1\le j<r),\qquad \phi_r=X^r+z,
+ \qquad F_j=R\phi_j'-P\phi_j,
+\]
+and let $Q_r$ be the Wronskian of $F_1,\ldots,F_r$, with derivative
+rows $0,\ldots,r-1$ and $z$ held constant. Then $Q_r$ is a nonzero
+differential polynomial of order $d$, jet degree $r$, challenge
+degree one, and degree one in its highest derivative.
+Its degree-$\le D$ polynomial solutions are exactly
+\[
+ P=R\frac{H'}H,\qquad z=H(0),
+\]
+where $H$ ranges over monic degree-$r$ polynomials whose root multisets
+lie among the roots of $R$. All are regular, and there are exactly
+\[
+ \binom{D+r}{r}=\Theta_d(D^{d+1})
+\]
+isolated polynomial--challenge pairs, with no positive-dimensional
+solution component. For fixed $d$, all labels can be distinct over
+prime fields of size $O_d(D^{2d+1})$.
+\end{theorem}
+\begin{proof}
+The separant has the explicit value
+\begin{equation}
+ \frac{\partial Q_r}{\partial P^{(r-1)}}
+ =(-1)^r C_r R^{r-1}\bigl(X^r+(-1)^{r-1}z\bigr),
+ \qquad C_r=\prod_{j=1}^{r-1}j!.
+ \label{eq:isolated-separant}
+\end{equation}
+Indeed, the highest jet occurs only in the last derivative row, with
+coefficient row $-(\phi_1,\ldots,\phi_r)$. Move that row to the top.
+In the other rows the successive highest derivatives of the $\phi_j$
+have coefficient $R$, giving $(-1)^rR^{r-1}\operatorname{Wr}(\phi_1,\ldots,\phi_r)$.
+The monomial Vandermonde formula gives
+\[
+ \operatorname{Wr}(\phi_1,\ldots,\phi_r)
+   =C_r\bigl(X^r+(-1)^{r-1}z\bigr).
+\]
+This is nonzero for every constant $z$. The pure $P^r$ coefficient
+is $(-1)^r\operatorname{Wr}(\phi_1,\ldots,\phi_r)$, so the jet
+degree is exactly $r$. All claimed degree bounds follow; the
+$X$-degree is also $O_r(D)$, although the upper bound does not need it.
+
+Each specialized $F_j$ has degree at most $D+r<p$. In this range a
+polynomial Wronskian vanishes exactly when its columns are linearly
+dependent over constants. To see the nontrivial direction, echelon
+any independent polynomial basis to distinct leading degrees. The
+leading Wronskian coefficient is their nonzero leading-coefficient
+product times the Vandermonde of these distinct degrees, all less
+than $p$. The same argument works in characteristic zero.
+
+The first $r-1$ columns are independent for every polynomial $P$.
+Otherwise $RH'-PH=0$ for a nonzero
+$H\in\operatorname{span}(X,\ldots,X^{r-1})$. Its root at zero has
+multiplicity between one and $r-1$, so $H'/H$ has a nonzero simple
+pole there, contradicting $R(0)\ne0$ and polynomial $P$.
+Consequently $Q_r=0$ if and only if a unique monic polynomial
+\[
+ H=X^r+\sum_{j=1}^{r-1}h_jX^j+z
+\]
+satisfies $RH'-PH=0$. Its root multiplicities are at most $r<p$;
+polynomiality forces every root to belong to $R$, and conversely
+every such root multiset works. Partial-fraction residues distinguish
+all the multisets. The leading coefficient of $P$ is $r$, so its
+degree is exactly $D$. Equation~\eqref{eq:isolated-separant} proves
+regularity, and the classification proves finiteness and the count.
+
+To separate the labels, greedily choose $N$ nonzero roots whose
+products of $r$ factors, with repetitions allowed, are all different.
+Suppose $k\ge1$ roots have been chosen. Products of any fixed smaller
+number of factors are also distinct, by padding with one old root.
+A new product has form $x^jc$, with $1\le j\le r$ and $c$ an old
+product of $r-j$ factors. Its collision with an old $r$-fold product
+excludes at most $j$ choices of $x$. Collisions between $x^ic$ and
+$x^jc'$ for $i<j$ exclude at most $j-i$ nonzero choices. Equal-power
+collisions are already excluded. Writing
+$M_s(k)=\binom{k+s-1}{s}$, including $M_0(k)=1$, a bound on all
+forbidden choices, including old roots and zero, is
+\[
+ k+1+\sum_{j=1}^r jM_{r-j}(k)M_r(k)
+ +\sum_{1\le i<j\le r}(j-i)M_{r-i}(k)M_{r-j}(k)
+ =O_r(k^{2r-1}).
+\]
+Start from one nonzero root and choose a prime larger than this bound
+for every $k<N$ and larger than $D+r$. A prime of size
+$O_r(N^{2r-1})$ suffices. All resulting $H$, $P$, and distinct labels
+$H(0)=(-1)^r\prod a$ lie in that prime field.
+\end{proof}
+
+\begin{proposition}[The attaining family still has constant nearby count]
+\label{prop:isolated-higher-agreement}
+For the family in Theorem~\ref{thm:isolated-lower}, let a received line
+have $L$ distinct labels with candidates agreeing on at least $A$
+of $n$ coordinates, where $1\le A\le n$. Let $r_0$ count domain roots of $R$, and put
+$m=n-r_0$, $t=A-r_0$, and $C=3r-2$. If $t^3>8Cm^2$, then
+\[
+ L\le\max\left\{\frac{4m}{t},
+             \frac{8m^3(r-1)}{t^3-8Cm^2}\right\}.
+\]
+In particular $L=O_{r,\eta}(1)$ at fixed $A-D\ge\eta n$ and
+sufficiently large $n$. This conclusion remains valid for any
+assignment of one label to each candidate, counting distinct labels.
+\end{proposition}
+\begin{proof}
+Choose one candidate at each selected label, and normalize it to
+$W=P/R=H'/H$. Its residues at the roots of $R$ belong to
+$\{0,\ldots,r\}$, and their sum is $r$. Distinct candidates have
+different residue vectors. On an affine line of labeled functions
+$(z,W)$ through two of them at distinct labels, choose a residue
+coordinate where their vectors differ. That residue is an injective
+affine function of $z$ along the line and has only $r+1$ allowed
+values. Thus every such line contains at most $r+1$ candidates.
+There are at most $(r-1)\binom L2/3$ collinear triples.
+
+A noncollinear triple gives a nonzero rational relation
+$\sum_i c_iW_i$, with $\sum_i c_i=\sum_i c_iz_i=0$.
+On the product of its three degree-$r$ denominators, the numerator
+has degree at most $3r-2$: each $W_i$ starts with $r/X$ at infinity,
+so the highest coefficient cancels. Such a triple has at most
+$C=3r-2$ common agreeing coordinates outside the roots of $R$.
+A collinear triple has at most $m$.
+
+Let $h_x$ count agreements at each outside coordinate. Each selected
+candidate contributes at least $t$ agreements. The same convexity
+estimate as in Proposition~\ref{prop:isolated-family-mca} gives
+\[
+ m\left(\frac{tL}{m}-2\right)_+^3
+ \le6\sum_x\binom{h_x}{3}
+ \le C L^3+m(r-1)L^2.
+\]
+If $L\ge4m/t$, the left side is at least $t^3L^3/(8m^2)$;
+rearranging proves the second displayed alternative. Otherwise the
+first alternative holds. Finally $r_0\le D+1$ gives
+$t\ge\eta n-1$ and $m\le n$, proving the constant fixed-gap bound.
+\end{proof}
+
+\paragraph{Collinear triples cannot simply be omitted.}
+For $r=3$, take two roots $a=1$, $b=-2$ and
+$H_j=(X-a)^{3-j}(X-b)^j$ for $j=0,1,3$. Their logarithmic
+derivatives are affine in $j$, and their labels $-1,2,8$ are also
+affine at these three indices. Over sufficiently large characteristic
+this is a distinct-label collinear triple. The extra $L^2$ term in
+the proof handles such configurations.
+
+\paragraph{Verification and limits.}
+The package \path{research/isolated_solution_sharpness/} checks the
+separant through order five, exhausts $760$ polynomials covering
+$5{,}270$ polynomial--challenge pairs at orders one through three,
+and includes characteristic-three and characteristic-five negative
+controls. Prime-field examples have $969$ distinct isolated labels
+at order two, $495$ at order three, and $462$ at order four.
+A separate checker verifies the reconstruction recurrence on four
+equations of orders two through five and $360$ finite Taylor fixtures.
+The checks support the written proofs; they do not replace the generic
+intersection argument. No fixed-gap superlinear MCA lower bound follows:
+the polynomially many isolated solutions in the sharpness family fail
+the required nearby-label condition.

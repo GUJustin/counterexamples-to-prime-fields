@@ -256,6 +256,20 @@ using a known list-decoding theorem for random Reed--Solomon codes.
 Proposition~\ref{prop:puncturing-bound} shows that its nearby-parameter
 count is optimal among lines without correlated agreement at this radius.
 
+\paragraph{Sharp algebraic counts need not give sharp proximity gaps.}
+For a differential equation of fixed order $d$, fixed jet degree, and
+fixed challenge degree, Appendix~\ref{app:isolated-sharpness} proves
+that the actual regular polynomial--challenge locus has at most
+$O(D^{d+1})$ isolated points for message degree $D$. An explicit
+Wronskian family attains $\binom{D+d+1}{d+1}$ such points, all regular,
+with distinct labels over suitable prime fields. Nevertheless, that
+family has only constantly many nearby labels on any received line
+at a fixed positive agreement gap. At first order,
+Appendix~\ref{app:actual-first-order} also bounds the total degrees
+of the actual curve and surface components linearly in $D$.
+These results distinguish sharpness of algebraic candidate counts
+from the still-open fixed-gap quadratic proximity-gap lower bound.
+
 \subsection{Finite examples on circle codes}
 
 We also study a different regime: the fixed prime $p=2^{31}-1$ and
@@ -5348,6 +5362,7 @@ odd-characteristic bounds $20$ and $62$.
 
 \input{research/bounded_root_mca/appendix.tex}
 \input{research/first_order_actual_components/appendix.tex}
+\input{research/isolated_solution_sharpness/appendix.tex}
 
 \begin{thebibliography}{99}
 \bibitem{corvaja-zannier} P. Corvaja and U. Zannier.

@@ -48,6 +48,8 @@ verify:
 	$(PYTHON) research/first_order_actual_components/verify_reconstruction.py
 	$(PYTHON) research/first_order_actual_components/verify_curve_family.py
 	$(PYTHON) research/first_order_actual_components/verify_isolated_family.py
+	$(PYTHON) research/isolated_solution_sharpness/verify_reconstruction.py
+	$(PYTHON) research/isolated_solution_sharpness/verify_family.py
 	$(PYTHON) research/binary_affine_locator/verify.py
 	$(PYTHON) research/binary_affine_locator/check_codimension_two_transfer.py
 	$(PYTHON) research/structured_domains/verify_balanced_fibers.py

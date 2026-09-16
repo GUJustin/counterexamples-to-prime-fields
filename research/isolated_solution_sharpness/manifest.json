@@ -1,0 +1,31 @@
+{
+  "status": "Twice self-reviewed proofs, two exact checkers passed, clean 92-page build",
+  "scope": "Sharp D^(d+1) actual isolated regular solution counts at fixed derivative order; attaining family has constant fixed-gap nearby-label count. No superlinear MCA lower bound or better.codes gain.",
+  "sha256": {
+    "PROOF.md": "904ba10891492e45f5c6d49e5e4c0c9399194d57eea7c2d9df78869792899d5c",
+    "README.md": "8f818d2e8d6491d544e3e3d54e214d120bffc7f890bf250b051ba63b75437534",
+    "appendix.tex": "cd19f75a8e125ccaba37d99fab596a7547674114c5b06cfcb03c91ac25c91e1e",
+    "arithmetic.py": "e49f6bcf03534c05096fb94a1f2fa307c2a9e37efc854755e4d03a9ffce38063",
+    "build_resources.json": "ec429b36995b17e5767fcc11abcefcaf421bf492093acd0c1264575798b9d6fa",
+    "family_resources.json": "2afb7300e3fa456907dd0c41ad9569f061f41414bd73d5af6007f09ba6a67918",
+    "higher_isolated_verification.json": "8fbe3edbbfb21616e5b3a54635fd44f7b1cea1d04f5002c2ccbb594d544a47c2",
+    "reconstruction_resources.json": "97c567486b57b50bd93ae5af6639812188313e03f551401bc85ca9c5baf3d563",
+    "reconstruction_verification.json": "87e8849987acd8b8f2cf050c5d4a2a9e7420e2127247db782cc320f4210b4462",
+    "verify_family.py": "5a26dbb24b7344ed6d190a92fcf3bc4fabd62a87e6492752bbde394019eeded1",
+    "verify_reconstruction.py": "2ffdf26bf37c515b779e398cefdee095754dd8c5e3f5d9fc2335cecf12dafa1d"
+  },
+  "manuscript_sha256": "1fb4342c0a207e7032a3056daccfd7f7ac89189cbdc9bba2d371c10063df3a88",
+  "pdf_sha256": "36eef2322c926afed5f56d20fe3627cb20eba85307a63483a1e2b9653f3e1568",
+  "rendered_review_pages": [
+    87,
+    88,
+    89,
+    90
+  ],
+  "preserved_preexisting_files": {
+    "checks/conditional_moment_results.json": "a82501c2dc100779e6c163b4258294ea25a085aac05a419083583a7dfbce3d69",
+    "radial_certificates/README.md": "33bff80fb4d70c0b6dd62a532adb087ec445faf37a9a1a21e492daed16a1bfc2",
+    "reports/stwo-zk-disclosure-summary.pdf": "de994a14ecd533b3de9fa934159c752876b5a7464ae6ab2d76a84371387b5d25",
+    "reports/stwo-zk-disclosure-summary.tex": "2c7beed7ea4f695cd6f02e9bc1d9e7934d6de824040d35d0a895c50755746b14"
+  }
+}

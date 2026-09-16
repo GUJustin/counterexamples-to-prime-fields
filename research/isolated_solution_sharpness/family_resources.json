@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "research/isolated_solution_sharpness/verify_family.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.0855337919201702,
+  "peak_rss_kib": 17616,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}
