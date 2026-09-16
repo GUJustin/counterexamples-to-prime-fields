@@ -32,6 +32,8 @@ verify:
 	$(PYTHON) research/curve_audit/verify_formal_degree.py
 	$(PYTHON) research/puncturing_improvement/verify_support_incidence.py
 	$(PYTHON) research/structured_domains/verify_transfer_limits.py
+	$(PYTHON) research/structured_domains/frobenius_index/verify_rational_frobenius_index.py
+	$(PYTHON) research/structured_domains/frobenius_index/verify_balanced_rational_pencils.py
 	$(PYTHON) research/structured_domains/verify_balanced_fibers.py
 	$(PYTHON) research/gram_norm/verify_balanced_fibers.py
 	$(PYTHON) research/structured_domains/verify_galois_fibers.py

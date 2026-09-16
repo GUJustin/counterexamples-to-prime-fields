@@ -55,6 +55,11 @@ analysis as an application of those results.
 - The quadratic-circle bank at the existing compact eighth-rate parameters
   increases from **285,003,988,493,147,037** to **365,153,907,657,996,934**.
   A separate native low-rate example gives more than **24.5949 excess bits**.
+- A full-fiber classification now removes the Galois assumption for rational
+  maps when `p = ell*n +/- 1`, `ell >= 6`, and `n > 6*(B-1)`.
+  At the pinned better.codes parameters, every possible degree through
+  32768 reduces to a power or twisted-inversion quotient. This concerns
+  complete fibers of one fixed map; it does not improve the numerical score.
 
 [New finite-certificate proofs and replay instructions](research/overnight_2026-09-16/README.md).
 
@@ -73,7 +78,8 @@ make verify
 ```
 
 `make verify` runs the general coding-theory checks using Python's standard
-library. It recomputes the high-moment certificate and its independent
+library and compiles the rational-fiber enumeration with `clang++` (C++17).
+It recomputes the high-moment certificate and its independent
 complementary-subset identity. These finite checks supplement the proofs;
 they do not replace the cited generic-rank and proximity-gap theorems.
 

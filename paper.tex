@@ -965,6 +965,36 @@ hypothesis: the explicit cubic over $\mathbb F_{13}$ on $\mu_6$
 in \path{research/gram_norm/BALANCED_FIBER_REVIEW.md} has four
 simple critical points and is not a Galois cover.
 
+For the large-index congruence classes below, full balance does force
+the Galois hypothesis. This includes the field and subgroup in the
+pinned better.codes instance.
+
+\begin{theorem}[Balanced rational fibers at large Frobenius index]
+\label{thm:frobenius-index-fibers}
+Let $F$ be a finite field of odd characteristic $p$, containing
+$\mu_n$, and suppose
+\[
+ p=\ell n+\epsilon,\qquad \epsilon\in\{1,-1\},\qquad \ell\ge6.
+\]
+Let $R\in F(X)$ have degree $B\ge2$, no poles on $\mu_n$, and
+exactly $B$ distinct points in each fiber of its restriction to $\mu_n$.
+If $n>6(B-1)$, then $\overline F(X)/\overline F(R)$ is Galois.
+Consequently $R$ has one of the two forms in
+Corollary~\ref{cor:galois-balanced-fibers}.
+\end{theorem}
+
+The proof, in Appendix~\ref{app:frobenius-index}, uses the
+four-term unit equation on each collision component and a
+Frobenius-index argument establishing the required linear independence.
+At $p=2130706433$ and $n=262144$, one has $\ell=8128$ and
+$\epsilon=1$. The theorem covers every integer $B\le43691$.
+Since full balance forces $B\mid n$, it covers every possible degree
+through $32768$. The remaining degrees have at most four fibers and
+therefore at most sixteen unions of complete fibers. This classifies
+the small-degree fixed-map full-fiber partitions at these parameters;
+it gives neither a new numerical better.codes bound nor a restriction
+on constructions using partial fibers or varying maps.
+
 \subsection{A uniform concentration bound for several moments}
 \label{sec:moment-concentration}
 
@@ -4735,7 +4765,182 @@ are not claims about later implementations. This is a working draft
 with machine-assisted internal checks, and it has not undergone
 external peer review.
 
+\section{Balanced rational fibers and the Frobenius index}
+\label{app:frobenius-index}
+
+We prove Theorem~\ref{thm:frobenius-index-fibers}. The unit-equation
+and Wronskian method follows the approach of
+Corvaja--Zannier~\cite[Proposition~2]{corvaja-zannier}; the
+linear-independence argument below uses the special relation
+$p=\ell n+\epsilon$. We give the needed height calculation explicitly.
+
+\begin{proof}[Proof of Theorem~\ref{thm:frobenius-index-fibers}]
+Work over $k=\overline F$. The hypotheses imply $B<p$,
+$2\ell B<p$, and $p>n$. In particular, $R$ is separable.
+
+\paragraph{The collision components are saturated.}
+The reduced curve $R(x)=R(y)$ in
+$\mathbb P^1\times\mathbb P^1$ has bidegree $(B,B)$ and exactly
+$nB$ points on $\mu_n^2$. All these points are smooth, since
+each relevant fiber has $B$ distinct geometric preimages and hence
+is unramified. Remove its $g$ deck graphs, where $g\ge1$ because
+the diagonal is present. Each deck transformation preserves $\mu_n$:
+every fiber meeting $\mu_n$ is already entirely contained in $\mu_n$.
+Thus each graph contributes exactly $n$ subgroup points, and no two
+components meet at any of these points.
+
+Write $(a_i,b_i)$ for the bidegrees of the remaining components,
+and $N_i$ for their subgroup-point counts. Neither projection is
+constant. Projection to either coordinate gives
+\[
+ N_i\le n\min(a_i,b_i),\qquad
+ \sum_i a_i=\sum_i b_i=B-g,\qquad
+ \sum_i N_i=n(B-g).
+\]
+Equality in the sum forces $a_i=b_i$ and $N_i=na_i$ for every $i$.
+Suppose such a component remains, and write $a=a_i\le B-1$.
+Let $C$ be its smooth projective normalization, $K=k(C)=k(x,y)$,
+and $S$ the union of the zeros and poles of $x$ and $y$.
+The genus bound for a curve of bidegree $(a,a)$ gives
+\begin{equation}\label{eq:frobenius-index-chi}
+ g_C\le(a-1)^2,\qquad |S|\le4a,\qquad
+ \chi:=2g_C-2+|S|\le2a^2.
+\end{equation}
+
+\paragraph{The four units.}
+Put $u=x^n$, $v=y^n$, and $w=(u-1)/(v-1)$.
+Because $\deg x=\deg y=a<p$, both coordinates are separating;
+so are $u$ and $v$, since $p\nmid n$. In particular,
+$[K^p(v):K^p]=p$. Outside $S$, $u-1$ and $v-1$ have exactly
+the same zeros, all simple. Indeed, the complete fiber of $R(x)$
+is contained in $\mu_n$ whenever $x\in\mu_n$, and both
+projections of the collision curve are unramified there.
+Consequently $w$ is an $S$-unit, meaning that all its zeros and
+poles lie in $S$. The four $S$-units
+\[
+ -1,\quad u,\quad w,\quad -wv
+\]
+sum to zero.
+
+\paragraph{Independence over $K^p$.}
+We claim that $w,1,u$ are linearly independent over $K^p$.
+Otherwise there are $A_0,A_1,A_2\in K^p$, not all zero, such that
+\[
+ P(U,V)=A_0(U-1)+(A_1+A_2U)(V-1)
+\]
+vanishes at $(u,v)$. This polynomial is nonzero and has bidegree
+at most $(1,1)$. Remove the common factor of its two coefficients
+as a polynomial in $U$; that factor has degree at most one in $V$
+and cannot vanish at $v$. The resulting primitive polynomial is
+linear in $U$, since an equation in $v$ alone of degree at most one
+would contradict $[K^p(v):K^p]=p$. It defines a graph $U=T(V)$.
+The function $T$ is nonconstant, since $u\notin K^p$, and is
+therefore a M\"obius transformation.
+
+Set $c=x^p,d=y^p\in K^p$. The congruence defining $\ell$ gives
+\[
+ x=(c/u^\ell)^\epsilon,\qquad
+ y=(d/v^\ell)^\epsilon.
+\]
+Hence $(u,v)$ also annihilates the numerator $G(U,V)$ of
+\[
+ R((c/U^\ell)^\epsilon)-R((d/V^\ell)^\epsilon),
+\]
+whose bidegree is at most $(\ell B,\ell B)$ over $K^p$.
+If the primitive $P$ and $G$ were coprime, their resultant in $U$
+would be a nonzero polynomial in $V$ of degree at most $2\ell B<p$
+vanishing at $v$. This is impossible. Thus $P$ divides $G$, and
+\begin{equation}\label{eq:frobenius-index-graph}
+ R((c/T(V)^\ell)^\epsilon)=R((d/V^\ell)^\epsilon)
+\end{equation}
+as rational functions of $V$.
+
+Over an algebraic closure of $K^p$, choose
+$\alpha^\ell=c$, $\beta^\ell=d$, and set
+\[
+ F_0(Z)=R(Z^{\epsilon\ell}),\qquad
+ M(Z)=\alpha/T(\beta/Z).
+\]
+Equation~\eqref{eq:frobenius-index-graph} says $F_0\circ M=F_0$.
+The deck group of $F_0$ has order at most $\ell B<p$ and contains
+the scalings by $\ell$th roots of unity. The tame finite-subgroup
+classification for $\operatorname{PGL}_2$ gives cyclic, dihedral,
+$A_4$, $S_4$, or $A_5$~\cite{beauville-pgl2}.
+The last three have no element of order at least six. In a cyclic
+or dihedral group, an element of order at least three has the
+rotation subgroup's pair of fixed points. Thus every deck map
+preserves the pair $\{0,\infty\}$ fixed by the scalings, and
+\[
+ M(Z)=\zeta Z\quad\hbox{or}\quad M(Z)=\zeta/Z.
+\]
+Here $\zeta\in k$: since $F_0$ is defined over the algebraically
+closed field $k$, any deck map takes every $k$-point into a
+finite fiber consisting of $k$-points, and the images of three
+points determine its coefficients.
+
+In the first case $u/v=\alpha/(\zeta\beta)$. Taking $\ell$th
+powers and using $p=\ell n+\epsilon$ gives
+$(x/y)^\epsilon=\zeta^\ell$, so $x/y$ is constant.
+In the second case $uv=\alpha\beta/\zeta$, and the same argument
+gives $(xy)^\epsilon=\zeta^\ell$, so $xy$ is constant.
+Either case makes the chosen component a deck graph, contrary to
+its selection. This proves the claimed independence.
+
+\paragraph{The height contradiction.}
+Denote the four units by $f_0,f_1,f_2,f_3$. Any three are independent
+over $K^p$, and their ordinary three-row Wronskians are nonzero
+and agree up to sign. For an explicit check, $u'\ne0$ and
+\[
+ W(1,u,w)=u'w''-u''w'=(u')^2(w'/u')'.
+\]
+If this were zero, $w'/u'\in K^p$ and then
+$w-(w'/u')u\in K^p$, contradicting independence.
+Here $K^p$ is the constant field of a nonzero derivation on $K$.
+Multiplying a Wronskian with derivative
+orders $0,1,2$ by $(dt)^3$ gives a well-defined nonzero rational
+cubic differential $\Omega$ on $C$.
+
+At a point $P\in S$, choose the three functions that omit a
+function of smallest valuation. Differentiation in a local
+parameter lowers valuation by at most one, so
+\[
+ \operatorname{ord}_P\Omega\ge
+ \sum_{i=0}^3\operatorname{ord}_P f_i
+ -\min_i\operatorname{ord}_P f_i-3.
+\]
+Outside $S$, all local derivatives are regular, giving
+$\operatorname{ord}_P\Omega\ge0$. Since each $f_i$ has a
+degree-zero divisor supported on $S$, summing yields
+\[
+ H:=-\sum_P\min_i\operatorname{ord}_P f_i
+ \le 3(2g_C-2+|S|)=3\chi.
+\]
+The tuple contains a nonzero constant and $u$, so
+$H\ge\deg u=na$. By~\eqref{eq:frobenius-index-chi},
+$na\le6a^2$, contrary to $n>6(B-1)\ge6a$.
+No component remains after the deck graphs are removed. The degree-$B$
+map therefore has $B$ geometric deck transformations and is Galois.
+\end{proof}
+
+The exact checks in
+\path{research/structured_domains/frobenius_index/} verify the pinned
+arithmetic, nonzero Wronskians on sample non-diagonal collision conics
+in both congruence classes, and small finite-field deck groups.
+A separate exhaustive enumeration checks $27{,}273{,}130$ disjoint
+pairs of possible complete fibers on five small domains, including
+non-Galois examples outside the theorem's hypotheses. These computations
+supplement the proof; they do not establish the general classification.
+
 \begin{thebibliography}{99}
+\bibitem{corvaja-zannier} P. Corvaja and U. Zannier.
+\emph{Greatest common divisors of $u-1,v-1$ in positive characteristic
+and rational points on curves over finite fields}.
+J. Eur. Math. Soc. 15 (2013), 1927--1942.
+\url{https://doi.org/10.4171/JEMS/409}.
+\bibitem{beauville-pgl2} A. Beauville.
+\emph{Finite Subgroups of $\operatorname{PGL}_2(K)$}.
+Contemporary Mathematics 522 (2010), 23--29.
+\url{https://math.univ-cotedazur.fr/~beauvill/pubs/PGL(2).pdf}.
 \bibitem{thaler} J. Thaler.
 \emph{Proofs, Arguments, and Zero-Knowledge}.
 Foundations and Trends in Privacy and Security, 4(2--4), 2022.

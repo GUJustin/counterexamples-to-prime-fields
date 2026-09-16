@@ -1,0 +1,16 @@
+{
+  "status": "Proof self-reviewed; finite checks and clean manuscript build passed",
+  "files": {
+    "BALANCED_RATIONAL_FROBENIUS_INDEX.md": "9b67b2c7e64bf9165d16a5c16f2e9e79be7c486d1670a579860a27379a5f5370",
+    "README.md": "4c0a9e991400393fcfa8cb65b722d1f62d5e12b0c377822168569b8d2005b796",
+    "algebra_resources.json": "f5143a356659943afd5dc56923893e7f25134e24d9106edf13b50727ed57fbcf",
+    "balanced_rational_pencils_verification.json": "13ed06f208625fe29650c39ecb846074cf04a1113cfc86cdae47772dcf04b135",
+    "build_resources.json": "7b0e46d5193a9b80e1fbc0b2565c8cab22cbc23f6abfce0f9919149fe6072ff5",
+    "check_balanced_rational_pencils.cpp": "c30151f42d5ab085c3866e9e794d540335da4cbdc7406587efea6f379ab4d065",
+    "enumeration_resources.json": "df6c6f8fcfaf1ebfdb2a1c0fcec778a1ae9c8f1f0f8a1735a6355b00b9006d1a",
+    "rational_frobenius_index_verification.json": "0ee9a1a379679d9050a3a5ee8ffc8f6357ab041644fb2d2144f4738f549d3265",
+    "verify_balanced_rational_pencils.py": "fc117957dc42409d7e320cd08485aa86213de34e8a96cf9c1b91a9e322ca2f3f",
+    "verify_rational_frobenius_index.py": "1a166e264da35d1f13ddb555701c1f2780df95f69b49644b5533cc998f2a43dd"
+  },
+  "scope": "Pure coding-theory classification; no improved better.codes score; no independent proof review claimed."
+}

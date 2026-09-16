@@ -16,9 +16,9 @@
     "gram_gaussian_class_bound.md": "f36be9d5332c867aef1a31a1add86ece1b2505502a065213f4e98e5f0289f073",
     "ellipsoid_moment_bound_audit.md": "e4a699996b08a6d4f3f10fa47a0a808fde5b1a7df418a99c64bf7639949737bc"
   },
-  "manuscript_sha256": "69af2a66bf1efbb4aa16e3a650c437c773857fda291cea698f2488e90b4ce946",
-  "pdf_sha256": "55c08cc793e4d4fcca91270222ba90e1e77ee9e450dc9843f36f2a19602bc3a2",
-  "pdf_pages": 71,
+  "manuscript_sha256": "89c0811ce559fe669198b65e44933f5ca502fa74ce47fb3f476535519fae9692",
+  "pdf_sha256": "02405713043b7b22d0bc56730b2b7ae69130b540449bd5d0ebe9fa674eca3f0c",
+  "pdf_pages": 74,
   "editorial_changes": [
     "General coding-theory and hash-based SNARK framing",
     "Direct explanatory academic prose with explicit quantifiers",
@@ -37,9 +37,10 @@
     "Add independently verified radial certificate and stronger degree-40 conditional certificate",
     "Correct agreement-count wording selectively and record explicit subgroup-transfer obstructions",
     "Integrate overnight exact interval counts, displaced radial weights, exact incidence collision bounds, and native-circle product refinements; preserve pre-existing working-tree changes in an isolated review worktree.",
-    "Retain and verify the earlier balanced-polynomial-fiber, Galois-rational-fiber, and growing-moment refinements; correct Goyal and Sun author initials against arXiv:2607.08516."
+    "Retain and verify the earlier balanced-polynomial-fiber, Galois-rational-fiber, and growing-moment refinements; correct Goyal and Sun author initials against arXiv:2607.08516.",
+    "Remove the balanced-rational-map Galois hypothesis for p=ell*n +/- 1, ell>=6, n>6(B-1); add self-contained proof and supplementary exact checks."
   ],
-  "revised_at": "2026-09-16T12:49:19.196659+00:00",
+  "revised_at": "2026-09-16T13:42:58.645620+00:00",
   "coordination": {
     "frontier_acknowledged": "2026-09-15T18:11:07-04:00",
     "older_32_page_source_repaired": true,
@@ -96,7 +97,12 @@
     "list_lower_bound": 5552914238035,
     "validation": "research/overnight_2026-09-16/verification.json"
   },
-  "validation": {
+  "review_worktree": {
+    "branch": "codex/overnight-paper-2026-09-16",
+    "baseline": "research/overnight_2026-09-16/baseline.json",
+    "ownership": "Assembled in an isolated worktree, preserving the canonical working tree. Previously staged mathematical refinements are retained with their existing reviews; unrelated disclosure-summary changes are not included."
+  },
+  "validation_before_frobenius_index_integration": {
     "build": "71-page paper.pdf; latexmk clean, no LaTeX warnings, undefined references, or overflowing boxes",
     "new_suite": "12 sequential guarded commands passed; included in complete publication replay.",
     "new_suite_sha256": "6ff9e996ee3b7764e9081060dff5fce32fbe36caf8d7eb577027a0d14f9d98a5",
@@ -112,9 +118,18 @@
       "resources": "research/overnight_2026-09-16/publication_suite_resources.json"
     }
   },
-  "review_worktree": {
-    "branch": "codex/overnight-paper-2026-09-16",
-    "baseline": "research/overnight_2026-09-16/baseline.json",
-    "ownership": "Assembled in an isolated worktree, preserving the canonical working tree. Previously staged mathematical refinements are retained with their existing reviews; unrelated disclosure-summary changes are not included."
-  }
+  "validation": {
+    "build": "74-page paper.pdf; make paper passed with no final LaTeX warnings, undefined references, or overflowing boxes.",
+    "visual_review": "New proof pages 71 and 72 inspected at rendered resolution.",
+    "new_checks": {
+      "rational_frobenius_index_verification.json": "passed: 87379 inequalities, four Wronskian fixtures, four deck-group fixtures",
+      "balanced_rational_pencils_verification.json": "passed: all 27273130 disjoint fiber pairs on five domains"
+    },
+    "unchanged_checks": "Earlier complete make verify replay retained; this change adds only the two separately passing commands to the target.",
+    "proof_review": "Second self-review; the Wronskian independence step is proved directly. No independent coauthor proof review claimed.",
+    "resource_evidence": "research/structured_domains/frobenius_index/*_resources.json",
+    "better_codes": "Pinned display 116.13 unchanged",
+    "scope": "Classification of complete fibers of one fixed rational map; partial fibers and varying maps remain outside the theorem."
+  },
+  "frobenius_index_package": "research/structured_domains/frobenius_index/manifest.json"
 }

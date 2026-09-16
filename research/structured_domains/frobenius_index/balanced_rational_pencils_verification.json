@@ -1,0 +1,92 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "p": 13,
+      "n": 6,
+      "B": 3,
+      "subsets": 20,
+      "disjoint_pairs_checked": 10,
+      "balanced_pairs": 10,
+      "cyclic_pairs": 1,
+      "dihedral_pairs": 0,
+      "other_pairs": 9,
+      "satisfies_candidate_hypotheses": false,
+      "first_other_coefficient_pair": [
+        1,
+        6,
+        5,
+        1,
+        12,
+        6,
+        8,
+        1
+      ]
+    },
+    {
+      "p": 97,
+      "n": 8,
+      "B": 4,
+      "subsets": 70,
+      "disjoint_pairs_checked": 35,
+      "balanced_pairs": 35,
+      "cyclic_pairs": 1,
+      "dihedral_pairs": 2,
+      "other_pairs": 32,
+      "satisfies_candidate_hypotheses": false,
+      "first_other_coefficient_pair": [
+        75,
+        37,
+        24,
+        57,
+        1,
+        75,
+        60,
+        24,
+        40,
+        1
+      ]
+    },
+    {
+      "p": 109,
+      "n": 18,
+      "B": 3,
+      "subsets": 816,
+      "disjoint_pairs_checked": 185640,
+      "balanced_pairs": 15,
+      "cyclic_pairs": 15,
+      "dihedral_pairs": 0,
+      "other_pairs": 0,
+      "satisfies_candidate_hypotheses": true,
+      "first_other_coefficient_pair": []
+    },
+    {
+      "p": 193,
+      "n": 24,
+      "B": 3,
+      "subsets": 2024,
+      "disjoint_pairs_checked": 1345960,
+      "balanced_pairs": 28,
+      "cyclic_pairs": 28,
+      "dihedral_pairs": 0,
+      "other_pairs": 0,
+      "satisfies_candidate_hypotheses": true,
+      "first_other_coefficient_pair": []
+    },
+    {
+      "p": 193,
+      "n": 24,
+      "B": 4,
+      "subsets": 10626,
+      "disjoint_pairs_checked": 25741485,
+      "balanced_pairs": 105,
+      "cyclic_pairs": 15,
+      "dihedral_pairs": 90,
+      "other_pairs": 0,
+      "satisfies_candidate_hypotheses": true,
+      "first_other_coefficient_pair": []
+    }
+  ],
+  "total_disjoint_pairs_checked": 27273130,
+  "scope": "All rational-map pencils induced by two complete fibers on the selected small domains; supplementary finite checks, not a replacement for the proof."
+}
