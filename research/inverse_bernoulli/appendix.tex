@@ -1,0 +1,148 @@
+\section{A nonlinear first-order family near the characteristic cutoff}
+\label{app:inverse-bernoulli}
+
+The bounded-root result of Appendix~\ref{app:bounded-root-mca} requires
+characteristic larger than a suitable constant times the length.
+For the inverse Bernoulli family below, a direct classification also
+handles characteristic just above the message degree. The extra
+Frobenius constants available in that range do not produce large lists.
+
+\begin{theorem}[Inverse Bernoulli solution count]
+\label{thm:inverse-bernoulli}
+Let $s\ge2$, $D\ge1$, and let $E$ be algebraically closed of
+characteristic zero or $p>\max\{D,s+1\}$. For every nonzero polynomial
+$A(X)$, the equation
+\[
+ P^{s-1}P'=A,\qquad \deg P\le D,
+\]
+has at most $2s$ polynomial solutions, all regular. In characteristic
+zero, or when $p>sD$, it has at most $s$ solutions. The bound $2s$
+is attained for suitable degrees and primes with $p\equiv1\pmod s$.
+\end{theorem}
+\begin{proof}
+Every solution has a positive degree $d<p$ (with the obvious
+characteristic-zero interpretation), and
+$\deg A=sd-1$. If its leading coefficient is $a$, the leading
+coefficient of $A$ is $da^s$. Thus all solutions have the same degree
+and their leading coefficients differ by $s$th roots of unity.
+Normalize one leading coefficient to one. It suffices to count
+monic solutions of the resulting equation and multiply by $s$.
+For two such solutions $P,Q$,
+\[
+ (P^s-Q^s)'=0.
+\]
+In characteristic zero their difference of powers is constant.
+Factoring it as $\prod_{\zeta^s=1}(P-\zeta Q)$ shows that it cannot
+be a nonzero constant: a factor with $\zeta\ne1$ has degree $d$.
+If it is zero, monicity gives $P=Q$. The same argument applies when
+$p>sD$. Otherwise, in positive characteristic, a distinct pair has
+\[
+ P^s-Q^s=C(X)^p,\qquad 1\le\deg C\le s-1.
+\]
+
+\paragraph{At least three factors.}
+Suppose $s\ge3$. Cancel the monic gcd $G$ of $P,Q$ and put
+$U=P/G$, $V=Q/G$, both monic of the same degree $h\ge1$.
+The rational map $U/V$ has degree $h<p$ and is separable.
+The preimages of the $s$ distinct $s$th roots of unity all lie
+among the roots of $C$ and infinity. These are at most $s$ points;
+the $s$ fibers are disjoint and nonempty. Consequently each fiber
+has exactly one point, of ramification index $h$.
+
+For completeness, an elementary degree count forces $h=1$.
+Make a generic fractional linear change of the $X$ coordinate so
+that all those fiber points are finite and the new infinity maps
+to none of the $s$ values, nor to zero or infinity. The new numerator
+and denominator have degree $h$. At each of the $s$ points their
+derivative numerator $U'V-UV'$ vanishes to order $h-1$, since
+$h<p$. Its degree is at most $2h-2$. Hence
+$s(h-1)\le2h-2$, which for $s\ge3$ gives $h=1$.
+
+Return to the original coordinate, and write $U=X-u$, $V=X-v$,
+with $u\ne v$. The polynomial $S=U^s-V^s$ has $s-1$ distinct
+roots, none equal to $u$ or $v$. These exhaust the roots of $C$,
+which therefore has degree $s-1$ and is squarefree. Comparing
+valuations in $G^sS=C^p$ proves
+\[
+ p=sg+1,\qquad G=S_0^g,\qquad d=(s-1)g+1,
+\]
+where $S_0$ is the monic normalization of $S$ and $g=(p-1)/s$.
+There are no other roots of $G$. The strict assumption $p>s+1$
+ensures $g\ge2$.
+
+Direct differentiation, using $sg=-1$ in the field, gives
+\[
+ A=\text{nonzero constant}\cdot (UV)^{s-1}S_0^{p-2}.
+\]
+At a root of multiplicity $m$ in any other solution $T$, the
+multiplicity in $T^{s-1}T'$ is $sm-1$, since $m<p$.
+Thus $T$ can choose roots only from $S_0$, with multiplicity $g$,
+and from $u,v$, with multiplicity one. If it chooses $t$ of the
+former and $k$ of the latter, its degree requires
+\[
+ tg+k=(s-1)g+1,\qquad 0\le t\le s-1,\quad0\le k\le2.
+\]
+For $g\ge2$ this forces $t=s-1$ and $k=1$, so $T=P$ or $Q$.
+There are at most two monic solutions. Conversely the displayed
+$U,V,S_0$ construction supplies two, and their $s$ scalar multiples
+attain the bound whenever $p=sg+1$ with $g\ge2$.
+
+\paragraph{Two factors.}
+For $s=2$, a distinct monic pair satisfies
+$(P-Q)(P+Q)=c(X-a)^p$. Since $P+Q$ has degree $d$ and leading
+coefficient two, its two factors give
+\[
+ P=(X-a)^d+v(X-a)^{p-d},\qquad
+ Q=(X-a)^d-v(X-a)^{p-d},\qquad v\ne0.
+\]
+In particular $d>p/2$. If $p-d\le d-2$, the coefficient of
+$X^{d-1}$ in $P$ fixes $a$, and then $v$ is fixed. If $p-d=d-1$,
+then $p=2d-1\ge5$ and $a$ is a root of $P$ of multiplicity
+$d-1>d/2$, so it is again unique. Every monic solution has at most
+one distinct partner. The displayed pair and its negatives attain
+four solutions. Finally, the separant $P^{s-1}$ is nonzero for
+every solution of a nonzero-$A$ equation, proving regularity.
+\end{proof}
+
+\paragraph{The strict characteristic condition has a real exception.}
+For $s=p-1$ and $D=p-1$, the polynomials
+\[
+ P_a=\frac{X^p-X}{X-a},\qquad a\in\mathbb F_p,
+ \qquad P_a^{p-2}P_a'=-(X^p-X)^{p-2},
+\]
+and all their nonzero $\mathbb F_p$ scalar multiples give $p(p-1)$
+solutions. Here the jet degree $s$ grows with $p$. This does not
+contradict Theorem~\ref{thm:inverse-bernoulli}, which assumes $p>s+1$.
+
+\begin{corollary}[Linear full MCA for inverse Bernoulli families]
+\label{cor:inverse-bernoulli-mca}
+Under the theorem's hypotheses, for nonzero $A$ the solution family
+witnesses at most $2sn$ full-support bad labels on any received line.
+For $A=0$, the corresponding count at agreement threshold $a\ge2$
+is at most $\binom n2/(a-1)$. In particular both counts are $O(n)$
+at fixed $s$ and fixed positive agreement fraction.
+\end{corollary}
+\begin{proof}
+A fixed candidate has at most $n$ bad labels: each bad full support
+contains an agreeing coordinate with nonzero received direction,
+which determines the label; otherwise $(P,0)$ explains that support.
+Apply Theorem~\ref{thm:inverse-bernoulli} when $A\ne0$.
+
+When $A=0$, the degree guard makes every solution constant.
+Each coordinate gives an affine line $c=f(x)+zg(x)$ in the
+$(z,c)$ plane. A bad support of size at least $a$ contains at least
+two distinct line equations, since otherwise constant polynomials
+$F,G$ explain the whole support. Among its coordinates there are
+at least $a-1$ pairs with distinct line equations. Each such pair
+intersects at at most one point. Select one candidate per bad label
+and count pairs to obtain the stated bound.
+\end{proof}
+
+\paragraph{Checks and scope.}
+The exact standard-library checker in
+\path{research/inverse_bernoulli/} exhausts $164{,}803$ monic
+polynomials across thirteen fixtures, checks six sharpness examples,
+and verifies the exceptional family at $p=3,5,7,11$.
+The argument is specific to inverse Bernoulli equations. It does
+not settle the first-order conjecture or give a quadratic MCA
+construction at any higher order.

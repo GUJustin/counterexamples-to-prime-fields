@@ -138,6 +138,12 @@ and shows that the resulting logarithmic-derivative family still has
 only linearly many full-support bad labels at a fixed gap. These
 structural sharpness results do not settle quadratic MCA error.
 
+[Inverse Bernoulli equations](research/inverse_bernoulli/README.md)
+have at most `2s` polynomial solutions to `P^(s-1) P'=A(X)` for
+nonzero A and `p>max(D,s+1)`. Appendix K proves this sharp bound
+even when `p<=sD`, classifies nontrivial pairs, and deduces linear
+full-support MCA for this nonlinear first-order family.
+
 ## Build and verify
 
 The standalone source requires a LaTeX installation with `latexmk`,

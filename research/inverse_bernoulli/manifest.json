@@ -1,0 +1,26 @@
+{
+  "status": "Twice self-reviewed proof, exact checker passed, clean 98-page build",
+  "scope": "Sharp 2s solution count and linear full MCA for inverse Bernoulli equations near the characteristic cutoff. No general first-order theorem or quadratic MCA construction.",
+  "sha256": {
+    "PROOF.md": "1ada8b713bfc165abdbb02ee9b545fe9ed5a4902943a0ba2735b7e70eb0c874c",
+    "README.md": "ef5813f8589796573aeddadfba80e61d0e8c5cf0f7e58b8d3bf0e40b7823237e",
+    "appendix.tex": "fa0b9ac646c8e3772a3e9f8ed2b71aba7808e44aa9c10b8094c1b20b52d7b4a6",
+    "build_resources.json": "de1c656ca2175fa3d02a3010b9f258ae00a408e4765e8f04cb289c8f7ba0daf3",
+    "inverse_bernoulli_verification.json": "b8d7a12d739aa1e1f1ba994dd6347b273cc3e93ab7b99c5c6423f556299bbe19",
+    "verification_resources.json": "5db201a5829b9d600bad0799e9ff0fce229b229e3643d4fe16d8b9cdb0d372b7",
+    "verify.py": "446f2d8925928be2c7017165c0694648917256967e96ceaf5e1b29813af410b4"
+  },
+  "manuscript_sha256": "83a47c37fb2bd699e8cb485dd27fccdf71230ef511ab6f106dd0e5bac3424600",
+  "pdf_sha256": "5a5e48f507857f3669dd76c174d87fa44822a128447ed55995951db26fc6aad6",
+  "rendered_review_pages": [
+    94,
+    95,
+    96
+  ],
+  "preserved_preexisting_files": {
+    "checks/conditional_moment_results.json": "a82501c2dc100779e6c163b4258294ea25a085aac05a419083583a7dfbce3d69",
+    "radial_certificates/README.md": "33bff80fb4d70c0b6dd62a532adb087ec445faf37a9a1a21e492daed16a1bfc2",
+    "reports/stwo-zk-disclosure-summary.pdf": "de994a14ecd533b3de9fa934159c752876b5a7464ae6ab2d76a84371387b5d25",
+    "reports/stwo-zk-disclosure-summary.tex": "2c7beed7ea4f695cd6f02e9bc1d9e7934d6de824040d35d0a895c50755746b14"
+  }
+}

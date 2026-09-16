@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "research/inverse_bernoulli/verify.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 2.706722875125706,
+  "peak_rss_kib": 26096,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

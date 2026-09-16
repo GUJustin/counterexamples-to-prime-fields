@@ -52,6 +52,7 @@ verify:
 	$(PYTHON) research/isolated_solution_sharpness/verify_family.py
 	$(PYTHON) research/actual_higher_order_components/verify.py
 	$(PYTHON) research/actual_higher_order_components/verify_fixed_fiber.py
+	$(PYTHON) research/inverse_bernoulli/verify.py
 	$(PYTHON) research/binary_affine_locator/verify.py
 	$(PYTHON) research/binary_affine_locator/check_codimension_two_transfer.py
 	$(PYTHON) research/structured_domains/verify_balanced_fibers.py

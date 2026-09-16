@@ -1,0 +1,261 @@
+{
+  "status": "PASS",
+  "exhaustive_fixtures": [
+    {
+      "p": 3,
+      "s": 2,
+      "degree_cap": 2,
+      "monic_polynomials": 12,
+      "distinct_images": 10,
+      "maximum_monic_solutions": 3,
+      "collisions": 2,
+      "pair_classifications": 2,
+      "group_histogram": {
+        "1": 9,
+        "3": 1
+      },
+      "main_characteristic_guard": false
+    },
+    {
+      "p": 5,
+      "s": 2,
+      "degree_cap": 4,
+      "monic_polynomials": 780,
+      "distinct_images": 760,
+      "maximum_monic_solutions": 2,
+      "collisions": 20,
+      "pair_classifications": 20,
+      "group_histogram": {
+        "1": 740,
+        "2": 20
+      },
+      "main_characteristic_guard": true
+    },
+    {
+      "p": 5,
+      "s": 3,
+      "degree_cap": 4,
+      "monic_polynomials": 780,
+      "distinct_images": 780,
+      "maximum_monic_solutions": 1,
+      "collisions": 0,
+      "pair_classifications": 0,
+      "group_histogram": {
+        "1": 780
+      },
+      "main_characteristic_guard": true
+    },
+    {
+      "p": 5,
+      "s": 4,
+      "degree_cap": 4,
+      "monic_polynomials": 780,
+      "distinct_images": 776,
+      "maximum_monic_solutions": 5,
+      "collisions": 4,
+      "pair_classifications": 4,
+      "group_histogram": {
+        "1": 775,
+        "5": 1
+      },
+      "main_characteristic_guard": false
+    },
+    {
+      "p": 7,
+      "s": 2,
+      "degree_cap": 5,
+      "monic_polynomials": 19607,
+      "distinct_images": 19565,
+      "maximum_monic_solutions": 2,
+      "collisions": 42,
+      "pair_classifications": 42,
+      "group_histogram": {
+        "1": 19523,
+        "2": 42
+      },
+      "main_characteristic_guard": true
+    },
+    {
+      "p": 7,
+      "s": 3,
+      "degree_cap": 5,
+      "monic_polynomials": 19607,
+      "distinct_images": 19586,
+      "maximum_monic_solutions": 2,
+      "collisions": 21,
+      "pair_classifications": 21,
+      "group_histogram": {
+        "1": 19565,
+        "2": 21
+      },
+      "main_characteristic_guard": true
+    },
+    {
+      "p": 7,
+      "s": 4,
+      "degree_cap": 5,
+      "monic_polynomials": 19607,
+      "distinct_images": 19607,
+      "maximum_monic_solutions": 1,
+      "collisions": 0,
+      "pair_classifications": 0,
+      "group_histogram": {
+        "1": 19607
+      },
+      "main_characteristic_guard": true
+    },
+    {
+      "p": 7,
+      "s": 5,
+      "degree_cap": 5,
+      "monic_polynomials": 19607,
+      "distinct_images": 19607,
+      "maximum_monic_solutions": 1,
+      "collisions": 0,
+      "pair_classifications": 0,
+      "group_histogram": {
+        "1": 19607
+      },
+      "main_characteristic_guard": true
+    },
+    {
+      "p": 7,
+      "s": 6,
+      "degree_cap": 5,
+      "monic_polynomials": 19607,
+      "distinct_images": 19607,
+      "maximum_monic_solutions": 1,
+      "collisions": 0,
+      "pair_classifications": 0,
+      "group_histogram": {
+        "1": 19607
+      },
+      "main_characteristic_guard": false
+    },
+    {
+      "p": 11,
+      "s": 2,
+      "degree_cap": 4,
+      "monic_polynomials": 16104,
+      "distinct_images": 16104,
+      "maximum_monic_solutions": 1,
+      "collisions": 0,
+      "pair_classifications": 0,
+      "group_histogram": {
+        "1": 16104
+      },
+      "main_characteristic_guard": true
+    },
+    {
+      "p": 11,
+      "s": 3,
+      "degree_cap": 4,
+      "monic_polynomials": 16104,
+      "distinct_images": 16104,
+      "maximum_monic_solutions": 1,
+      "collisions": 0,
+      "pair_classifications": 0,
+      "group_histogram": {
+        "1": 16104
+      },
+      "main_characteristic_guard": true
+    },
+    {
+      "p": 11,
+      "s": 4,
+      "degree_cap": 4,
+      "monic_polynomials": 16104,
+      "distinct_images": 16104,
+      "maximum_monic_solutions": 1,
+      "collisions": 0,
+      "pair_classifications": 0,
+      "group_histogram": {
+        "1": 16104
+      },
+      "main_characteristic_guard": true
+    },
+    {
+      "p": 11,
+      "s": 5,
+      "degree_cap": 4,
+      "monic_polynomials": 16104,
+      "distinct_images": 16104,
+      "maximum_monic_solutions": 1,
+      "collisions": 0,
+      "pair_classifications": 0,
+      "group_histogram": {
+        "1": 16104
+      },
+      "main_characteristic_guard": true
+    }
+  ],
+  "sharp_fixtures": [
+    {
+      "p": 7,
+      "s": 3,
+      "degree": 5,
+      "solutions_checked": 6
+    },
+    {
+      "p": 13,
+      "s": 3,
+      "degree": 9,
+      "solutions_checked": 6
+    },
+    {
+      "p": 13,
+      "s": 4,
+      "degree": 10,
+      "solutions_checked": 8
+    },
+    {
+      "p": 11,
+      "s": 5,
+      "degree": 9,
+      "solutions_checked": 10
+    },
+    {
+      "p": 13,
+      "s": 6,
+      "degree": 11,
+      "solutions_checked": 12
+    },
+    {
+      "p": 29,
+      "s": 7,
+      "degree": 25,
+      "solutions_checked": 14
+    }
+  ],
+  "exceptional_controls": [
+    {
+      "p": 3,
+      "s": 2,
+      "degree": 2,
+      "actual_solutions": 6,
+      "failed_without_strict_guard_bound": 4
+    },
+    {
+      "p": 5,
+      "s": 4,
+      "degree": 4,
+      "actual_solutions": 20,
+      "failed_without_strict_guard_bound": 8
+    },
+    {
+      "p": 7,
+      "s": 6,
+      "degree": 6,
+      "actual_solutions": 42,
+      "failed_without_strict_guard_bound": 12
+    },
+    {
+      "p": 11,
+      "s": 10,
+      "degree": 10,
+      "actual_solutions": 110,
+      "failed_without_strict_guard_bound": 20
+    }
+  ],
+  "scope": "Finite monic classification and sharp examples. The universal bound and full-MCA consequence require the written proof; no quadratic MCA lower bound."
+}
