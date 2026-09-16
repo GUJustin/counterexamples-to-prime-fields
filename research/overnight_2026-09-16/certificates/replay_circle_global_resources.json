@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "certify_circle_product_dyadic.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 10.128352375002578,
+  "peak_rss_kib": 59376,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 180
+}

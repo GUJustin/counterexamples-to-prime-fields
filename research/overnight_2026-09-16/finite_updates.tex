@@ -1,0 +1,388 @@
+\section{Stronger finite certificates}
+\label{sec:overnight-finite}
+The following refinements strengthen the finite examples without changing
+our asymptotic claims. All comparisons in this section use the literal
+constants $c_1=c_2=1$: the list prescription is
+$2^{H_2(\rho)/\eta}$ and the line prescription is
+$n2^{H_2(\rho)/\eta}$. The evaluation domain and alphabet are specified
+separately in each example.
+
+\subsection{Exact enumeration at length 64}
+\label{sec:overnight-exact64}
+An exact enumeration strengthens the finite interval example further.
+Among the $34$-subsets $A\subseteq\{0,\ldots,63\}$, exactly
+\[
+ 5{,}552{,}914{,}238{,}035
+\]
+satisfy $\sum_{a\in A}a=1071$ and
+$\sum_{a\in A}\binom a2=22139$.
+Their monic root polynomials share the coefficients of degrees $34$, $33$,
+and $32$, the last being $\binom{1071}{2}-22139$. Subtracting their common
+prefix therefore gives distinct codewords of degree at most $31$, each
+agreeing with the prefix word at exactly $34$ coordinates. This proves the
+displayed list lower bound over every prime field with $p>64$.
+The count uses an exact take-or-omit recurrence in subset size, first moment,
+and binomial second moment, with reachability pruning. An independent
+ascending-label recurrence on complementary $30$-subsets verifies every
+histogram entry; all $129$ previously computed moments also agree.
+
+This is a $5.05\%$ improvement on the degree-40 polynomial-weight
+certificate $5285900426578$. At $p=2^{127}-1$, the original strict
+below-Elias comparison still applies. The enumeration counts one integer
+moment class exactly; it does not claim that this is the largest possible
+Reed--Solomon decoding list.
+
+\subsection{Conditional radial weights and a displaced boundary}
+\label{sec:overnight-weights}
+\begin{proposition}[Conditional signed radial weights]
+Let $\mathcal A$ be a family of $t$-subsets of
+$\{0,\ldots,n-1\}$ sharing their first binomial moment, and put
+$C=|\mathcal A|$. For $j=2,3,4,5$, choose
+\[
+ b_j(x)=\binom{x}{j}+\sum_{i<j}c_{ji}\binom{x}{i},
+ \qquad c_{ji}\in\mathbb Q.
+\]
+For a uniform $A\in\mathcal A$, write
+$B_j=\sum_{a\in A}b_j(a)$. Let $U_2,\ldots,U_5$ be independent
+uniform variables on $[-1/2,1/2)$, independent of $A$, and choose
+positive rational scales $s_j$. Set
+\[
+ X_j=\frac{B_j-\mathbb EB_j+U_j}{s_j},\qquad
+ S=\sum_{j=2}^5X_j^2,\qquad \mu_r=\mathbb ES^r.
+\]
+For $w\in\mathbb Q[T]$ with integrable positive part on $[0,\infty)$,
+suppose $E=\mathbb E[w(S)]>0$. Then some class sharing all five
+binomial moments has size at least
+\[
+ \left\lceil
+ \frac{CE}{\pi^2(\prod_{j=2}^5s_j)
+       \int_0^\infty w(u)_+u\,du}
+ \right\rceil.
+\]
+Consequently, for every prime $p>n$, the ordinary Reed--Solomon code
+on $\{0,\ldots,n-1\}$ with dimension $t-5$ has a list of that size
+at agreement threshold $t$.
+\end{proposition}
+
+\begin{proof}
+Because the size and first moment are fixed, the remaining moment vectors
+lie in an affine lower-triangular lattice with diagonal entries one.
+Its translates of $[-1/2,1/2)^4$ tile $\mathbb R^4$: successively
+rounding coordinates determines the lattice point uniquely. If $L$ is
+the largest fiber, the density of $B+U$ is at most $L/C$, and that of
+$X$ is at most $(L/C)\prod_js_j$.
+
+Radial integration in four dimensions gives
+\[
+ \int_{\mathbb R^4}
+  w(\|x\|^2)_+\,dx
+ =\pi^2\int_0^\infty w(u)_+u\,du.
+\]
+Replacing the signed weight by its positive part and applying the density
+bound proves the inequality. Triangular inversion fixes the first five
+integer binomial moments. Newton identities then fix the leading six
+terms of the monic support locators. Subtracting those locators from
+their common prefix gives distinct polynomials of degree less than
+$t-5$, agreeing exactly on their supports. Distinctness after reduction
+follows from uniqueness of the monic locator of a subset of distinct
+field elements.
+\end{proof}
+
+\paragraph{Choosing the weight.}
+The subclass $w(u)=(R-u)P(u)^2$ is convenient. For
+$P(u)=\sum_{i=0}^dc_iu^i$, its expectation and radial integral are
+quadratic forms with matrices
+\[
+ A_{ij}(R)=R\mu_{i+j}-\mu_{i+j+1},\qquad
+ B_{ij}(R)=\frac{R^{i+j+3}}{(i+j+2)(i+j+3)}.
+\]
+The matrix $B(R)$ is positive definite. At fixed $R$, its generalized
+Rayleigh quotient gives the largest ratio in this polynomial class.
+Numerical eigenvectors propose a weight; rational rounding and exact
+evaluation certify the selected weight independently of the optimization.
+
+\paragraph{A verified M31 instance.}
+Take $p=2^{31}-1$, $n=157$, $t=68$, and condition on
+$\sum_{a\in A}a=5304$. The conditional population is
+\[
+ C=4037124019196117766480536278705909334612974.
+\]
+Using normalized population Gram polynomials of degrees $2$ through $5$,
+the scales
+\[
+ (s_2,s_3,s_4,s_5)=(5751,76272,754066,5946077),
+\]
+and a degree-seven weight
+\[
+ w(u)=-\prod_{i=1}^7(u-r_i),
+\]
+with positive ordered rational roots approximately
+\[
+ (r_1,\ldots,r_7)\approx
+ (2.78693,5.20044,5.74234,11.14408,11.19106,20.21394,20.21451),
+\]
+gives a list of at least
+\[
+ 28165503856884755099.
+\]
+Exact rational logarithm intervals verify that the radius is strictly
+below Elias and that the list exceeds
+$2^{H_2(63/157)/(5/157)}$ by more than $2^{34.09946}$.
+The positive intervals are $[0,r_1]$, $[r_2,r_3]$, $[r_4,r_5]$, and $[r_6,r_7]$,
+so their integrals are exact polynomial endpoint differences.
+The certificate uses $280$ scalar directions through degree fourteen and
+exact cube-noise moments. Of $560$ subset-mode outputs, $351$ were counted
+directly and $209$ obtained through independently checked reflections.
+All complement, prior-moment, and projection-polynomial identities pass. The exact rational roots, rather than their displayed decimal
+approximations, are in \path{research/overnight_2026-09-16/certificates/radial_moment_optimum7_verification.json}.
+
+\paragraph{Limit of the truncated radial calculation.}
+An exact rational contraction certificate proves existence of ordered
+roots and a constant $\lambda>0$ satisfying
+\[
+ \mu_j=\frac{\lambda}{j+2}
+       \sum_{i=1}^7(-1)^{i+1}r_i^{j+2},\qquad 0\le j\le7.
+\]
+The density equal to $\lambda/\pi^2$ on these four radial bands has
+the prescribed moments. It therefore supplies an upper limit on every
+degree-at-most-seven radial weight certificate; the corresponding signed
+root polynomial attains it. The validated interval identifies the same
+rounded integer bound displayed above. This is an optimum of the
+truncated radial moment method, not an upper bound on the actual RS list.
+
+\begin{proposition}[Displacing a radial boundary]
+Let $X\in\mathbb R^d$ have density at most $M$, where $d\in\{3,4\}$.
+Let $0<r_1<\cdots<r_7$, put
+$l(s)=\prod_{j=2}^7(s-r_j)$, and define
+\[
+ w_0(s)=l(s)(r_1-s),\qquad
+ w_v(x)=l(|x|^2)(r_1-|x|^2+v\cdot x).
+\]
+Suppose $|v|^2r_2<(r_2-r_1)^2$. Write $a=v/2$ and
+$R=r_1+|a|^2$. Then
+\begin{align*}
+ \int_{\mathbb R^d}(w_v)_+
+ &=\int_{\mathbb R^d}(w_0(|x|^2))_+
+   -\int_{|x|^2<r_1}w_0(|x|^2)\,dx\\
+ &\quad+\int_{|y|^2<R}(R-|y|^2)l(|y+a|^2)\,dy.
+\end{align*}
+In particular, if $\mathbb E w_v(X)>0$, then
+$M\ge\mathbb E w_v(X)/\int(w_v)_+$.
+\end{proposition}
+
+\begin{proof}
+Completing the square gives
+$r_1-|x|^2+v\cdot x=R-|x-a|^2$.
+The assumed inequality places this displaced ball strictly inside
+$\{|x|^2<r_2\}$. The other positive annuli remain unchanged. On each
+origin-centered annulus the added term $(v\cdot x)l(|x|^2)$ integrates
+to zero. Substituting $x=y+a$ on the displaced ball proves the integral
+identity. Finally, $\mathbb E w_v\le\mathbb E(w_v)_+\le M\int(w_v)_+$.
+\end{proof}
+
+For the normalized smoothed moment lattice, $M\le(L/C)\prod_js_j$.
+The required expectations use no additional subset counts: differentiating
+an identity $|x|^{2j+2}=\sum_u c_u(u\cdot x)^{2j+2}$ gives
+$x_i|x|^{2j}=\sum_u c_u u_i(u\cdot x)^{2j+1}$.
+The displaced-ball integral is exact by angular moments or Cartesian
+monomial integration. At $n=157$, $k=63$, $t=68$, the verified
+four-dimensional certificate gives $L\ge28169451256663519418$ over
+$\mathbb F_{2^{31}-1}$, with finite-prescription excess greater than
+$34.09967$ bits. The three-dimensional certificate gives source class
+$508108952862977950462384886$ and quartic-extension line bank
+$508108952659354448051620618$, with excess greater than $50.90955$ bits.
+The selected rational vectors, exact integrals, and separate raw-moment
+checks are recorded in the ancillary displaced-boundary certificates.
+
+For the three-dimensional version, retain Gram coordinates of degrees
+$2,3,4$ after conditioning on the first moment. The radial integration
+factor is $2\pi$, and its radial density is $s^{1/2}$. The same triangular
+lattice argument certifies a class with four fixed integer moments.
+Its locator prefix is fixed through degree $64$, so its residuals have
+degree at most $63$. The rational-line lemma lowers that degree to $62$.
+The quartic-extension instance therefore has length $157$, dimension $63$,
+and $68$ agreements, with common agreement exactly $63$ and selected-graph
+concurrency at most $18$. Its evaluation points remain in $\mathbb F_p$;
+its received words and labels use $\mathbb F_{p^4}$. The Elias comparison
+uses the characteristic $p=2^{31}-1$.
+
+\subsection{Exact incidences and prime-alphabet lines}
+\label{sec:overnight-prime-lines}
+\begin{proposition}[Coordinate and next-coefficient collision savings]
+Let $N$ distinct support locators share a prefix leaving residual degree
+at most $k$ over $\mathbb F_p$, on an evaluation domain of size $n<p$.
+Let $I_x$ count the supports containing $x$. If their next coefficients
+take at most $K$ values, then some pole outside the domain has at most
+\[
+ \left\lfloor\frac{
+ k\binom N2-\sum_x\binom{I_x}{2}-P(N,K)}{p-n}\right\rfloor
+\]
+colliding unordered pairs, where
+$P(N,K)=K\binom a2+ab$ for $N=aK+b$, $0\le b<K$.
+\end{proposition}
+
+\begin{proof}
+At least $P(N,K)$ pairs share the next coefficient and have difference
+degree at most $k-1$; the others have degree at most $k$.
+Shared support roots account for exactly $\sum_x\binom{I_x}{2}$ roots
+of these differences on the evaluation domain. Subtracting them and
+averaging over the remaining $p-n$ poles proves the assertion.
+\end{proof}
+
+The least $J$ for which $P(N,J)$ does not exceed this pair budget is a
+guaranteed number of distinct line labels. For the interval $\{0,\ldots,81\}$,
+the selected twelve-subset class has first sum $486$, second binomial
+moment $12792$, and $N=221190005$. Its exact coordinate incidences and
+a rationally certified next-moment range give $J=138752510$ over
+$\mathbb F_{2^{31}-1}$, with $k=9$, $t=12$, common agreement $9$,
+and concurrency at most $24$. This exceeds the stated finite line
+prescription by more than $2^{7.04613}$. The largest two-moment class
+has more supports, but yields a weaker line certificate.
+
+Here the source locators share the prefix
+$X^{12}-486X^{11}+105063X^{10}$. The exact shared-root count is
+$\sum_x\binom{I_x}{2}=43128963788215318$. Write
+$Z=\sum_{x\in A}\binom{x}{3}$. Newton identities give
+\[
+ e_3=\binom{486}{3}+(2-486)12792+2Z.
+\]
+Exact rational dual inequalities place $Z$ between $222145$ and $276503$.
+Explicitly, for $\sigma\in\{1,-1\}$ and rational multipliers
+$\lambda=(\lambda_0,\lambda_1,\lambda_2)$, every selected support satisfies
+\[
+ \sigma Z\ge 12\lambda_0+486\lambda_1+12792\lambda_2
+ +\sum_{x=0}^{81}\min\left\{0,
+ \sigma\binom{x}{3}-\lambda_0-\lambda_1x-\lambda_2\binom{x}{2}\right\}.
+\]
+This follows termwise from $z_xr_x\ge\min\{0,r_x\}$ for
+$z_x\in\{0,1\}$. The choices
+$(\sigma,\lambda)=(1,(1421,-509,107/3))$ and
+$(-1,(-9568,2447/3,-130/3))$ give the exact lower bounds
+$666433/3$ and $-829511/3$, respectively. Integer rounding gives
+the stated interval for $Z$.
+Thus at least $449907051360$ source pairs share the next coefficient,
+and the averaged allowed-pole collision budget is $82437495$.
+Inverting the balanced-pair function gives the stated $138752510$ labels.
+The coordinate counts have a separate formal-division check, using the
+same underlying histogram engine in a different order. The next-coefficient
+bounds use rational termwise inequalities, independently of the exploratory
+minimum/maximum recurrence.
+
+\subsection{Stronger native circle examples}
+\label{sec:overnight-circle}
+\begin{proposition}[A refined circle-pencil bank]
+Let $N$ distinct residual polynomials $R_A$ be obtained from the
+anchored $h$-subsets of $G=\mu_M$ in one reciprocal coefficient class,
+and put $d=h-2r-2$. For integers $v\ge0$ and $b\ge1$, define
+\[
+ \Pi(v,b)=(b-e)\binom a2+e\binom{a+1}2,
+ \qquad v=ab+e,\quad 0\le e<b.
+\]
+Set
+\[
+ C=d\binom N2-\binom N2-\Pi(N(h-1),M-1)
+       -(p+1-M)\Pi(N,p).
+\]
+For poles in $\mathbb F_{p^2}\setminus\mu_{p+1}$ take
+$Q=p^2-p-1$; for poles in
+$\mathbb F_{p^4}\setminus\mathbb F_{p^2}$ take $Q=p^4-p^2$.
+There is an admissible pole with at least
+\[
+ \min\{j\in\{1,\ldots,N\}:\Pi(N,j)\le\lfloor C/Q\rfloor\}
+\]
+distinct labels. The agreement and absence-of-correlated-agreement
+conclusions of the original construction are unchanged.
+\end{proposition}
+\begin{proof}
+The function $\Pi(v,b)$ is the minimum number of colliding unordered
+pairs in a partition into at most $b$ classes. For each $y\in G$, let
+$s_y$ count supports containing $y$. Every shared support point is
+a root of $R_A-R_{A'}$, so double counting gives
+\[
+ \sum_{A<A'}|A\cap A'|
+ =\sum_{y\in G}\binom{s_y}2
+ \ge\binom N2+\Pi(N(h-1),M-1).
+\]
+At every norm-one point, reciprocity gives
+$R_A(y)^p=c^{-1}y^{-d}R_A(y)$ with the same $c$ for the entire class.
+Thus at most $p$ evaluation values occur there. Each of the other
+$p+1-M$ norm-one points contributes at least $\Pi(N,p)$ pair roots.
+These points and $G$ are disjoint. Subtracting their contributions
+from the total degree budget $d\binom N2$ bounds the sum of pair
+collisions over admissible poles by $C$. Some pole has at most
+$\lfloor C/Q\rfloor$ collisions. Balancing its label multiplicities
+proves the assertion.
+\end{proof}
+
+For $p=2^{31}-1$, $M=128$, $h=19$, and $r=0$, this gives
+\[
+ J\ge365153906390146587
+\]
+with quadratic-field poles, improving the earlier
+$285003988493147037$. At length $2^{26}$ and rate $1/8$, the bank
+exceeds the compared finite prescription by more than $2^9$.
+At length $2048$, dimension $256$, and $302$ agreements, it exceeds
+that prescription by more than $2^{23}$. Both radii are strictly
+below the characteristic-based Elias bound. These numerical
+statements have exact integer and rational certificates in
+\path{research/overnight_2026-09-16/certificates/circle_threshold_verification.json}.
+
+\paragraph{Counting omitted-support collisions as well.}
+There is a further exact saving at each $y\in G$. Exactly $s_y$ residuals
+take the value $v(y)$, whereas the others occupy at most $p-1$ values
+in the same one-dimensional prime-field subspace. Their collision count
+is therefore at least
+\[
+ f_N(s_y)=\binom{s_y}{2}+\Pi(N-s_y,p-1).
+\]
+This counts disjoint pairs and can replace the support-root term above.
+Its forward difference is
+$s-\lfloor(N-s-1)/(p-1)\rfloor$, an increasing function, so balancing
+unknown incidences gives a valid lower bound. At reserve $r=0$, an exact
+cyclic subset-product count supplies the class population and every $s_y$.
+For $M$ dyadic, if $C_k(c)$ counts $k$-subsets of $\{1,\ldots,M-1\}$
+with exponent sum $c\pmod M$, then
+\[
+ C_k(c)=\frac1M\sum_{a\mid M}\mathcal R_a(c)
+ (-1)^{k+\lfloor k/a\rfloor}\binom{M/a-1}{\lfloor k/a\rfloor},
+\]
+where $\mathcal R_a$ is the Ramanujan sum. This follows by extracting the
+coefficient of $z^k$ in $(1-(-z)^a)^{M/a}/(1+z)$ for each character.
+For a nonanchor exponent $b$, removing its generating factor gives
+\[
+ I_b=\sum_{j=0}^{h-2}(-1)^j C_{h-2-j}(c-(j+1)b).
+\]
+Applying these exact populations and collisions gives the following banks.
+All rows have $p=2^{31}-1$, native circle domains, and radii strictly below
+the characteristic-based Elias bound.
+\begin{center}
+\begin{tabular}{crrrrl}
+\toprule
+Alphabet & $n$ & $K$ & $T$ & Guaranteed labels & Excess bits\\
+\midrule
+$\mathbb F_{p^2}$ &2048&256&302&365153907657996934&$>23$\\
+$\mathbb F_{p^2}$ &4096&64&86&334185312123996677&$>24.5949$\\
+$\mathbb F_{p^4}$ &8192&1024&1182&73497635817388704528460&$>34.77733$\\
+\bottomrule
+\end{tabular}
+\end{center}
+The first row improves the same-parameter quadratic bank in
+Appendix~\ref{app:compact-certificates} by about $28.1\%$.
+The last two rows maximize the checked guarantee within the stated
+one-anchor dyadic family, using complete product classes at $r=0$ and
+generic prefix pigeonholing at $r>0$. This is an optimization of that
+formula, not of arbitrary circle lists or actual coefficient classes.
+The checked range is dyadic $M\ge4$, $B\ge2$, $MB\le2^{30}$,
+dyadic packet dimensions $K/B<M$, and every reserve satisfying the
+strict Elias condition and the construction's support-size requirements.
+A separate coefficient-sum implementation checks all $703$ computed
+product classes and $1406$ collision certificates.
+
+\paragraph{Scope and reproducibility.}
+The interval-domain results and the native circle results above are
+different constructions. None lowers the pinned better.codes display of
+$116.13$, and none is a revised security bound for the complete deployed
+Stwo protocol. Their contribution is a stronger set of counterexamples
+to the specified finite coding prescriptions. The proof statements,
+portable inputs, and verification commands are in
+\path{research/overnight_2026-09-16/README.md}.

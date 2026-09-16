@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "dimension": 4,
+  "source_class": 28169451256663519418,
+  "independently_guaranteed": 28169451256663519418,
+  "raw_moment_and_separate_cube_noise_expectation_match": true,
+  "independent_Cartesian_ball_integral": true,
+  "exact_nested_sphere_checks": true,
+  "independent_Machin_pi": true,
+  "cases": [],
+  "seconds": 1.0253755419980735,
+  "scope": "Selected tilted radial boundary; no global nonradial optimum claim."
+}

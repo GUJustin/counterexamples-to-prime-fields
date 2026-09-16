@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "exhaustive_parameter_cases": 30,
+  "exhaustive_incidence_histograms": 340,
+  "earlier_dynamic_program_certificates": 5,
+  "exact_two_average_bound_checks": 2026,
+  "note": "Supports are exhaustively enumerated only for M<=16; saved larger cases came from a separate take-or-omit dynamic program."
+}

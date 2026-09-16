@@ -1,0 +1,12 @@
+{
+  "command": [
+    "make",
+    "verify"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 201.5232077089604,
+  "peak_rss_kib": 70464,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 1800
+}

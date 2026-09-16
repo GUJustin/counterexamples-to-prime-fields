@@ -123,10 +123,7 @@ There is an even broader elementary example when M=2. Partition
 mu_(2B)=A disjoint-union A' into B-element sets, and let U,V be
 their monic vanishing polynomials. Then R=U/(U+V) has fibers A and
 A' with values 0 and 1. Its denominator is nonzero on both sets,
-and its rational degree is B (U and V are coprime). This argument
-is valid in characteristic two as well when the distinct-root
-hypotheses permit the domain, but mu_(2B) cannot have 2B distinct
-points in characteristic two. An independently checked cubic example
+and its rational degree is B (U and V are coprime). An independently checked cubic example
 and critical-point analysis appear in
 [`../gram_norm/BALANCED_FIBER_REVIEW.md`](../gram_norm/BALANCED_FIBER_REVIEW.md).
 
@@ -157,7 +154,7 @@ rate, and gap and must be accounted for separately.
 ## Reproducibility
 
 `verify_balanced_fibers.py` exhaustively checks normalized polynomial
-maps in small prime fields, tests both boundary degrees, verifies
+maps in small prime fields and F_4 and F_9, tests both boundary degrees, verifies
 the rational involution families and denominator-scaled polynomial
 pullback, and checks the nonfull example. Normalization removes the
 irrelevant leading coefficient and constant output shift. Results

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "research/growing_m/verify_wide_regime.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.55051379208453,
+  "peak_rss_kib": 32,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 180
+}

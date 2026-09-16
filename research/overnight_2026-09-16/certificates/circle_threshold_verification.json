@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "bank": "365153906390146587",
+  "rows": [
+    {
+      "n": 67108864,
+      "dimension": 8388608,
+      "agreements": 9961470,
+      "gap": "786431/33554432",
+      "no_ca_root_bound": 8912896,
+      "strictly_below_elias": true,
+      "log2_bank_lower": "145853/2500",
+      "log2_ratio_lower": "3597490799/393215500",
+      "ratio_greater_than_power_of_two": 9
+    },
+    {
+      "n": 2048,
+      "dimension": 256,
+      "agreements": 302,
+      "gap": "23/1024",
+      "no_ca_root_bound": 272,
+      "strictly_below_elias": true,
+      "log2_bank_lower": "145853/2500",
+      "log2_ratio_lower": "1330583/57500",
+      "ratio_greater_than_power_of_two": 23
+    }
+  ],
+  "comparison": "J / (n * 2^(H2(1/8)/eta)); finite conjectural prescription only"
+}

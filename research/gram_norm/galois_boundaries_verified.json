@@ -1,0 +1,14 @@
+{
+  "status": "all exact assertions passed",
+  "n3_stabilizer_order": 6,
+  "raw_twist_counterexample_fixed_points": [
+    2,
+    5
+  ],
+  "raw_twist_fiber_sizes": [
+    2,
+    4
+  ],
+  "one_fiber_dihedral_group_order": 6,
+  "arithmetic_deck_order_for_degree4_power_over_F7": 2
+}

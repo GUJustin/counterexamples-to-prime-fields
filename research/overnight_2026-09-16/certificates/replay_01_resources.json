@@ -1,0 +1,16 @@
+{
+  "command": [
+    "clang++",
+    "-O3",
+    "-std=c++17",
+    "central_quadratic_histogram.cpp",
+    "-o",
+    "central_quadratic_histogram"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.076264957897365,
+  "peak_rss_kib": 127824,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

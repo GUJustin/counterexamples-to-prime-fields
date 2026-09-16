@@ -19,7 +19,7 @@
 \newcommand{\List}{\operatorname{List}}
 \title{Counterexamples to List and Line Decodability Bounds\\over Prime Fields}
 \author{Justin Thaler}
-\date{Working draft --- September 15, 2026}
+\date{Working draft --- September 16, 2026}
 \begin{document}
 \maketitle
 \begin{abstract}
@@ -56,10 +56,13 @@ profile at every integer Hamming radius below $n-k$; at fixed positive
 rates, this profile follows from known upper and lower bounds.
 
 Finite constructions on the norm-one circle give examples in the
-polynomial spaces used by Circle STARKs. We apply the general results
-to the quantitative list and line assumptions in the S-two whitepaper,
-keeping the coding conclusions separate from claims about a complete
-protocol's soundness.
+polynomial spaces used by Circle STARKs. We apply the general results to
+the two quantitative coding conjectures used in the S-two whitepaper:
+the stated uniform list prescription and the stated line-decodability
+threshold are both contradicted under their published quantifiers. These
+coding conclusions directly invalidate the corresponding premises of the
+S-two security analysis; questions about the soundness of a complete
+protocol are separate.
 \end{abstract}
 
 \section{Introduction}
@@ -83,7 +86,8 @@ field size, domain, and order of quantifiers must be explicit.
 This paper gives counterexamples to quantitative list and line bounds
 over prime fields. The main results are independent of any particular
 proof system. We first prove the general statements, then give finite
-circle-code examples and apply them to the S-two analysis.
+circle-code examples and apply them to the two conjectures underlying
+the S-two security analysis.
 
 A useful starting point is the root bound. A nonzero polynomial of
 degree less than $k$ has fewer than $k$ roots, so two distinct
@@ -135,9 +139,14 @@ positive gap, or when the prime is required to be polynomial in $n$.
 
 \paragraph{Finite and uniform refinements.}
 The moment count also gives explicit certificates. At length $64$ and
-dimension $32$, Proposition~\ref{prop:polynomial-moment-weights}
-proves a list of at least $5{,}285{,}900{,}426{,}578$ codewords with
-$34$ agreements. Proposition~\ref{prop:moment-concentration} gives
+dimension $32$, the exact enumeration in
+Section~\ref{sec:overnight-exact64} proves a list of
+$5{,}552{,}914{,}238{,}035$ codewords with $34$ agreements.
+Over the M31 prime, a further interval example at length $157$ and
+dimension $63$ has at least $28{,}169{,}451{,}256{,}663{,}519{,}418$
+codewords with $68$ agreements, exceeding the finite prescription with
+$c_1=c_2=1$ by more than $2^{34.09967}$
+(Section~\ref{sec:overnight-weights}). Proposition~\ref{prop:moment-concentration} gives
 an analytic refinement: for each fixed number $m$ of canceled
 coefficients and fixed limiting rate, concentration improves the
 full-range counting guarantee by a factor of order $n^{m/2}$.
@@ -293,6 +302,13 @@ sufficiently large lengths. We include an explicit construction that
 also covers the remaining finite parameters $k\ge2$, without claiming
 priority for that construction. The separation here combines these
 list bounds with a line containing many isolated nearby points.
+
+Goyal, Guruswami, Sun, and Wootters~\cite{ggsw} give further recent
+proximity-gap and correlated-agreement bounds for random Reed--Solomon
+domains. Their results allow general received curves and retain explicit
+slack and field-size hypotheses. They provide useful context for the
+shrinking-gap regime studied here, but do not subsume the specific
+actual-list-size separation in Theorem~\ref{al:separation}.
 
 Krachun, Kazanin, and Hab\"ock~\cite{kkh} construct large lists and
 affine-line obstructions on multiplicative subgroups of prime fields,
@@ -577,11 +593,10 @@ At $p=2^{127}-1$, $n=64$, $k=32$, $s=2$, Lemma~\ref{im:finite-list} gives
 \[
  L>2^{35}.
 \]
-The conditional-moment method below, sharpened by
-Proposition~\ref{prop:polynomial-moment-weights}, strengthens this to
-$L\ge5285900426578>2^{42}$. Here $\eta=1/32$, so the choice
-$c_1=c_2=1$ in \eqref{im:proposed-list} gives only $2^{32}$;
-the improved ratio exceeds $1230$.
+The exact moment-class enumeration in Section~\ref{sec:overnight-exact64}
+strengthens this to $L\ge5552914238035>2^{42}$. Here $\eta=1/32$,
+so the choice $c_1=c_2=1$ in \eqref{im:proposed-list} gives only $2^{32}$;
+the improved ratio exceeds $1292$.
 The exact inequality $p^2>2^{64}$ verifies the sufficient Elias condition.
 At $p=2^{521}-1$, $n=4096$, $k=2048$, $s=8$, the same formula gives
 $L>2^{3600}$, compared with $2^{512}$. The exact inequality
@@ -843,6 +858,113 @@ transfer arguments, rather than the true list size on a subgroup.
 The exact checks in \path{research/structured_domains/} accompany
 these elementary obstructions and a separate complete-fiber transfer lemma.
 
+\paragraph{What full polynomial fibers can accomplish.}
+The following elementary composition argument explains why replacing
+a power map by another full balanced polynomial map gives no additional
+fiber partitions on a multiplicative subgroup.
+
+% Optional main-text insert. Elementary composition rigidity; no novelty claim.
+% Proof notes: BALANCED_FIBER_CLASSIFICATION.md.
+\begin{lemma}[Full polynomial fibers on a subgroup]
+\label{lem:balanced-polynomial-fibers}
+Let $F$ be a field and $n\ge1$. Suppose $D=\mu_n\subset F$ has
+$n$ distinct points, and let
+$R\in F[X]$ have degree $B\ge1$. If every fiber of $R|_D$ has
+exactly $B$ points, then $B\mid n$ and $R(X)=aX^B+b$, with
+$a\ne0$. Conversely, every such polynomial has $B$ points per
+fiber when $B\mid n$.
+\end{lemma}
+\begin{proof}
+Put $M=|R(D)|=n/B$, $a=\operatorname{lc}(R)$, and
+$P(Y)=\prod_{y\in R(D)}(Y-y)$. Comparing roots and leading
+coefficients gives
+\[
+ P(R(X))=a^M(X^n-1).
+\]
+Write $b=R(0)$, $T=R-b$, and $Q(Y)=P(Y+b)$. If $T$ has a
+nonzero coefficient $c_j$ below degree $B$, choose its largest
+positive index $j$. The coefficient of $X^{n-B+j}$ in $T^M$
+is $Ma^{M-1}c_j\ne0$, since the distinct-root hypothesis implies
+$\operatorname{char}F\nmid n$. Every lower power of $T$ in
+$Q(T)$ has degree at most $n-B$. This contradicts
+$Q(T)=a^M(X^n-1)$, so $T=aX^B$. The converse follows from the
+kernel size of $x\mapsto x^B$ on $\mu_n$.
+\end{proof}
+
+\paragraph{Rational maps permit different fibers.}
+The lemma exhausts full polynomial fibers, but rational maps admit
+other partitions. If $2d\mid n$, choose a nonsquare
+$c\in\mu_{n/d}$. The rational map
+\[
+ R(x)=x^d+c/x^d
+\]
+has degree $B=2d$ and no pole on $\mu_n$. After setting $u=x^d$,
+its fibers pair $u$ with $c/u$: equality of two outputs is equivalent
+to $(u-v)(uv-c)=0$. These pairs have no fixed points, so every fiber
+has exactly $2d$ elements.
+
+Rational substitution also preserves a useful polynomial degree bound.
+In general, write $R=A/V$ in reduced form with
+$\max\{\deg A,\deg V\}=B$. Suppose it has no domain poles and
+exactly $B$ points over each of its $N$ image labels. For
+$1\le k\le N$, replace a polynomial $f$ of degree less than $k$ by
+\[
+ V^{k-1}f(A/V),
+\]
+whose degree is at most $B(k-1)$. Apply the same nonzero coordinate
+scaling to the composed received word. Each agreement repeats exactly
+$B$ times, preserving relative Hamming distance and distinctness.
+The images lie in a Reed--Solomon code of dimension $B(k-1)+1$. A large list still
+requires a separate certificate on the image domain.
+
+\begin{corollary}[Balanced fibers of Galois rational maps]
+\label{cor:galois-balanced-fibers}
+Let $F$ be a finite field of characteristic $p>n\ge3$, with
+$\mu_n\subset F$. Suppose $R\in F(X)$ has degree $B\ge1$, has no
+poles on $\mu_n$, and has exactly $B$ points in every fiber of
+$R|_{\mu_n}$. If $\overline F(X)/\overline F(R)$ is Galois, then
+$F(X)/F(R)$ is Galois and, for some $h\in\operatorname{PGL}_2(F)$,
+either
+\[
+ R(X)=h(X^B),\qquad B\mid n,
+\]
+or
+\[
+ R(X)=h(X^d+c/X^d),\qquad B=2d\mid n,
+\]
+where $c$ is a nonsquare in $\mu_{n/d}$. Here $h$ has no pole on
+the corresponding image of $\mu_n$.
+\end{corollary}
+\begin{proof}
+Each domain fiber already contains the full $B$ distinct geometric
+preimages of its image. The geometric deck group $G$, of order $B$,
+therefore preserves $\mu_n$ and acts freely there.
+
+A M\"obius map $(aX+b)/(cX+d)$ preserving $\mu_n$ satisfies
+$(aX+b)^n-(cX+d)^n=\lambda(X^n-1)$ with $\lambda\ne0$;
+its intermediate coefficients give
+$a^ib^{n-i}=c^id^{n-i}$ for $1\le i<n$.
+Comparing $i=1,2$ rules out four nonzero entries, and the remaining
+cases give precisely $X\mapsto\zeta X$ and $X\mapsto\zeta/X$,
+with $\zeta\in\mu_n$.
+These maps are defined over $F$, proving arithmetic descent.
+
+If $G$ consists of rotations, its invariant field is $F(X^B)$.
+Otherwise its rotations have order $d$, and a reflection
+$X\mapsto\alpha/X$ gives the invariant
+$X^d+\alpha^d/X^d$, of degree $2d=|G|$.
+Writing $c=\alpha^d$, freeness is equivalent to the absence of
+$u\in\mu_{n/d}$ with $u^2=c$: such a $u$ lifts to a fixed point
+of some reflection. The displayed invariant generates $F(X)^G$;
+any other generator $R$ differs by an output M\"obius map over $F$.
+\end{proof}
+
+Thus this Galois subclass reduces to power and twisted-inversion
+quotients. Full balanced fibers alone do not imply the Galois
+hypothesis: the explicit cubic over $\mathbb F_{13}$ on $\mu_6$
+in \path{research/gram_norm/BALANCED_FIBER_REVIEW.md} has four
+simple critical points and is not a Galois cover.
+
 \subsection{A uniform concentration bound for several moments}
 \label{sec:moment-concentration}
 
@@ -1033,27 +1155,38 @@ certificate $1{,}102{,}772{,}374{,}154$; the existing degree-$20$
 conditional certificate $5{,}074{,}503{,}250{,}115$ remains stronger.
 
 \paragraph{A growing number of moments.}
-The finite Gram bound does not require $m$ to be fixed. To describe its
-size, let $D_G=(m+2)\prod_{j=1}^m(2\lceil\sqrt{(m+2)V_j}\rceil+1)/2$
-be the denominator in Proposition~\ref{prop:moment-concentration},
-using the Gram variances. Uniformly when $t/n$ stays in a compact
-subinterval of $(0,1)$ and $m\to\infty$ with $m\le\sqrt n$,
+The gain also holds when $\log n\ll m\ll n$, provided $t/n$ stays
+in a compact subinterval of $(0,1)$. Let
 \[
- \log D_G=\frac{m^2}{2}\log(n/m)
- +(3/4-\log2)m^2+O(m\log n),
+ D_E=\kappa_m(m+2)^{m/2}\prod_{j=1}^m\sqrt{V_j+1/12},\qquad
+ D_B=\frac{m+2}{2}
+       \prod_{j=1}^m(2\lceil\sqrt{(m+2)V_j}\rceil+1)
 \]
-where these logarithms are natural. This follows by inserting the exact
-Gram norms and applying Stirling's bounds to
-$\prod_{j=1}^m\sqrt{2j+1}(2j)!/j!$. The grid correction is
-$O(m^4/n^2)$, and rounding contributes a smaller error because
-$V_j\ge V_1=\Theta(n^3)$ throughout this range for sufficiently large $n$.
-The complete-range denominator has the same expansion with $3/4$
-in place of $3/4-\log2$. Thus, when $\log n=o(m)$, the Gram guarantee
-improves the unrounded range guarantee by a factor
-$2^{(1+o(1))m^2}$. This improves a lower-order term in the headline
-regime; no growing-dimensional central limit theorem is used.
+be the smoothed ellipsoid and rectangular Gram denominators,
+respectively. For either $D_\star\in\{D_E,D_B\}$, natural logarithms
+give the uniform estimate
+\[
+ \log D_\star=\frac{m^2}{2}\log(n/m)
+ +(3/4-\log2)m^2+O(m\log n+m^4/n^2).
+\]
+Indeed, Stirling's bounds evaluate
+$\prod_{j=1}^m\sqrt{2j+1}(2j)!/j!$; the remaining grid correction
+is $O(m^4/n^2)$. Since $m=o(n)$, eventually
+$17m^2\le n^2+4$. The recurrence
+$V_j/V_{j-1}=(n^2-j^2)/(4(2j-1)(2j+1))$ then gives
+$V_j\ge V_1=\Theta(n^3)$, controlling both the smoothing and rounding
+errors. The complete-range denominator has the same leading expression
+with $3/4$ in place of $3/4-\log2$ and error
+$O(m\log n+m^3/n)$. Both errors are $o(m^2)$ in the stated regime.
+Thus either Gram guarantee improves the unrounded range guarantee by
+$2^{m^2+o(m^2)}$. At $m\sim c\sqrt{n/\log_2n}$, this saves
+$c^2n/\log_2n+o(n/\log n)$ bits in the guaranteed logarithmic list
+size, while preserving the leading condition $c^2<4H_2(\rho)$.
+No central limit theorem in growing dimension is required.
 For example, exact arithmetic gives the following lower bounds on
-$\lfloor\log_2 L\rfloor$ at rate $1/2$ and $t=n/2+m$:
+$\lfloor\log_2L\rfloor$ from the complete ranges and the
+\emph{rectangular} Gram denominator $D_B$, at rate $1/2$ and
+$t=n/2+m$:
 \begin{center}
 \begin{tabular}{rrrr}
 \toprule
@@ -2377,6 +2510,8 @@ The label counts are unchanged from the preceding eighth-rate examples.
 Appendix~\ref{app:compact-certificates} gives integer certificates
 for the two new radii and comparisons.
 \end{proof}
+
+\input{research/overnight_2026-09-16/finite_updates.tex}
 
 \section{Implications for hash-based SNARK security}
 \label{sec:snark-security}
@@ -4640,6 +4775,10 @@ IACR ePrint 2026/782. \url{https://eprint.iacr.org/2026/782}.
 \bibitem{bchks} E. Ben-Sasson, D. Carmon, U. Hab\"ock, S. Kopparty,
 and S. Saraf. \emph{On Proximity Gaps for Reed--Solomon Codes}.
 IACR ePrint 2025/2055. \url{https://eprint.iacr.org/2025/2055}.
+\bibitem{ggsw} R. Goyal, V. Guruswami, Y. Sun, and M. Wootters.
+\emph{Locality of Curve-Decoding and Improved Proximity Gaps}.
+arXiv:2607.08516, 2026.\quad
+\url{https://arxiv.org/abs/2607.08516}.
 \bibitem{jo-mca} S. Jo.
 \emph{Reed--Solomon Mutual Correlated Agreement Beyond the Johnson Radius}.
 IACR ePrint 2026/1432, revised August 19, 2026.

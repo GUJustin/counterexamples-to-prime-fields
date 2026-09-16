@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "n": 85,
+  "t": 12,
+  "q": 504,
+  "Y": 13773,
+  "distinct_labels": 153142621,
+  "source_words": 312929538,
+  "exact_coordinate_incidences_match_unconditioned_formal_division": true,
+  "exact_collision_partition_check": true,
+  "exact_excess_bits_match": true,
+  "excess_bits_lower": 6.972105164644358,
+  "seconds": 63.38651558384299,
+  "scope": "Different unconditioned recurrence identity and item order; same underlying centered histogram engine."
+}

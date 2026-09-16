@@ -41,7 +41,8 @@ def power(poly,j,p):
 
 
 counts=dict(normalized_polynomials=0,balanced_polynomials=0,
-            boundary_degrees=0,rational_maps=0,scaled_pullbacks=0)
+            boundary_degrees=0,rational_maps=0,scaled_pullbacks=0,
+            extension_field_polynomials=0)
 for p in primes(101):
     g=next(g for g in range(2,p) if order(g,p)==p-1)
     for n in range(1,p):
@@ -92,9 +93,47 @@ for p in primes(101):
                         assert ev(out,x,p)==pow(ev(C,x,p),k-1,p)*ev(coeffs,y,p)%p
                     counts['scaled_pullbacks']+=1
 
+# Exercise the stronger characteristic hypothesis using F_4 and F_9.
+# Encode a+b*z as a+p*b, with z^2+r1*z+r0=0.
+for p,r0,r1 in [(2,1,1),(3,1,0)]:
+    q=p*p
+    def add(x,y):
+        return ((x%p+y%p)%p)+p*((x//p+y//p)%p)
+    def times(x,y):
+        a,b=x%p,x//p
+        c,d=y%p,y//p
+        return (a*c-r0*b*d)%p+p*((a*d+b*c-r1*b*d)%p)
+    def exp(x,j):
+        out=1
+        for _ in range(j):
+            out=times(out,x)
+        return out
+    def evaluate(poly,x):
+        out=0
+        for a in reversed(poly):
+            out=add(times(out,x),a)
+        return out
+    primitive=next(x for x in range(1,q)
+                   if len({exp(x,j) for j in range(q-1)})==q-1)
+    for n in range(1,q):
+        if (q-1)%n or n<=p:
+            continue
+        h=exp(primitive,(q-1)//n)
+        D=[exp(h,j) for j in range(n)]
+        assert len(set(D))==n
+        for B in range(1,min(n,4)+1):
+            if n%B:
+                continue
+            for middle in product(range(q),repeat=B-1):
+                poly=[0]+list(middle)+[1]
+                hist=Counter(evaluate(poly,x) for x in D)
+                balanced=len(hist)==n//B and set(hist.values())=={B}
+                assert balanced==all(c==0 for c in middle)
+                counts['extension_field_polynomials']+=1
+
 assert {x:(x*x+x)%7 for x in [1,2,4,5]}=={1:2,2:6,4:6,5:2}
 result=dict(status='all exact assertions passed',counts=counts,
-            scope='finite-field coding theory; prime fields at most 101')
+            scope='coding theory; prime fields at most 101 and F_4,F_9')
 Path(__file__).with_name('balanced_fiber_verification.json').write_text(
     json.dumps(result,indent=2)+'\n')
 print(json.dumps(result,indent=2))

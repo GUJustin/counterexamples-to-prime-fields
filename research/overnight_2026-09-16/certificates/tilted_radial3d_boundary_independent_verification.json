@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "dimension": 3,
+  "source_class": 508108952862977950462384886,
+  "independently_guaranteed": 508108952862977950462384886,
+  "raw_moment_and_separate_cube_noise_expectation_match": true,
+  "independent_Cartesian_ball_integral": true,
+  "exact_nested_sphere_checks": true,
+  "independent_Machin_pi": true,
+  "cases": [
+    {
+      "extension_degree": 2,
+      "distinct_labels": 137466243406665308,
+      "excess_bits_lower": 19.126140186553556
+    },
+    {
+      "extension_degree": 4,
+      "distinct_labels": 508108952659354448051620618,
+      "excess_bits_lower": 50.90955353464166
+    }
+  ],
+  "seconds": 0.31004033307544887,
+  "scope": "Selected tilted radial boundary; no global nonradial optimum claim."
+}

@@ -5,7 +5,8 @@
     "balanced_polynomials": 63,
     "boundary_degrees": 16714,
     "rational_maps": 290,
-    "scaled_pullbacks": 4240
+    "scaled_pullbacks": 4240,
+    "extension_field_polynomials": 1495
   },
-  "scope": "finite-field coding theory; prime fields at most 101"
+  "scope": "coding theory; prime fields at most 101 and F_4,F_9"
 }

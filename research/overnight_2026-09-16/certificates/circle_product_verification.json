@@ -1,0 +1,23 @@
+{
+  "status": "passed",
+  "small_exhaustive_character_counts": 340,
+  "independent_method": "integer Ramanujan sums",
+  "all_saved_product_counts_and_incidences_verified": true,
+  "toy": {
+    "polynomials": 405,
+    "field_points": 961,
+    "actual_G_collisions": 438117,
+    "actual_off_circle_collisions": 52216,
+    "actual_maximum_bank": 373,
+    "certificate": {
+      "N": 405,
+      "J": 302,
+      "on_G_lower": 437680,
+      "on_unit_rest_lower": 39104,
+      "off_circle_pair_budget": 95886,
+      "poles": 929,
+      "some_pole_pairs": 103,
+      "exact_incidences": true
+    }
+  }
+}

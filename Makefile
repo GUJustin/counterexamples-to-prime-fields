@@ -27,13 +27,23 @@ verify:
 	$(PYTHON) research/ellipsoid_bound/verify_lattice_bound.py
 	$(PYTHON) research/gaussian_bound/verify_gaussian_hypotheses.py
 	$(PYTHON) research/growing_m/verify_growing_m.py
+	$(PYTHON) research/growing_m/verify_wide_regime.py
 	$(PYTHON) research/curve_audit/verify_curve_endpoint.py
 	$(PYTHON) research/curve_audit/verify_formal_degree.py
 	$(PYTHON) research/puncturing_improvement/verify_support_incidence.py
 	$(PYTHON) research/structured_domains/verify_transfer_limits.py
+	$(PYTHON) research/structured_domains/verify_balanced_fibers.py
+	$(PYTHON) research/gram_norm/verify_balanced_fibers.py
+	$(PYTHON) research/structured_domains/verify_galois_fibers.py
+	$(PYTHON) research/gram_norm/verify_galois_boundaries.py
 	$(PYTHON) research/finite_weights/verify_chebyshev.py
 	$(PYTHON) research/finite_weights/verify_certificates.py
 	$(PYTHON) radial_certificates/verify_publication.py
 
 clean:
 	latexmk -c paper.tex
+
+.PHONY: verify-overnight
+verify: verify-overnight
+verify-overnight:
+	$(PYTHON) research/overnight_2026-09-16/verify.py

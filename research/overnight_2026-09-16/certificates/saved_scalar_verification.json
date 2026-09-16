@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "n": 82,
+  "k": 9,
+  "t": 12,
+  "source_words": 221190005,
+  "distinct_labels": 138752510,
+  "third_moment_bounds": [
+    222145,
+    276503
+  ],
+  "exact_saved_duals_replayed": true,
+  "source_count_recomputed": true,
+  "excess_bits_lower": 7.046137768370497
+}

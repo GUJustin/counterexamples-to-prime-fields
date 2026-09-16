@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "verify_circle_product_orbits.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5452632918022573,
+  "peak_rss_kib": 32,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

@@ -1,0 +1,10 @@
+{
+  "status": "all exact assertions passed",
+  "counts": {
+    "mobius_domain_checks": 354504,
+    "stabilizer_maps": 544,
+    "reflection_subgroups": 498,
+    "free_reflection_subgroups": 155
+  },
+  "scope": "PGL_2(F_p) stabilizers for primes5..31; subgroup freeness"
+}

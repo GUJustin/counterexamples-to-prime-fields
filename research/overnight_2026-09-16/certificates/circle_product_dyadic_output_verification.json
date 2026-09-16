@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "exact_product_classes": 703,
+  "collision_certificates": 1406,
+  "raw_exclusions_checked": 5309,
+  "independent_product_method": "finite coefficient expansion of character generating functions",
+  "incidence_scope": "Uses saved incidence histograms, whose formula and implementation were independently checked by exhaustive small supports and five earlier dynamic-program certificates.",
+  "coverage_scope": "Complete dyadic-grid and reserve-tail coverage is certified separately by certify_circle_product_dyadic.py."
+}

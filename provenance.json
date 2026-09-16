@@ -16,9 +16,9 @@
     "gram_gaussian_class_bound.md": "f36be9d5332c867aef1a31a1add86ece1b2505502a065213f4e98e5f0289f073",
     "ellipsoid_moment_bound_audit.md": "e4a699996b08a6d4f3f10fa47a0a808fde5b1a7df418a99c64bf7639949737bc"
   },
-  "manuscript_sha256": "2c6c301abb3879a2c21644a90939c36f0c3eb43da195c0178ebfc321940f6c43",
-  "pdf_sha256": "0c14c5d034fd109285880fa50bdf106b80d4c1d3da54f3c957ffcf160c5c3066",
-  "pdf_pages": 64,
+  "manuscript_sha256": "69af2a66bf1efbb4aa16e3a650c437c773857fda291cea698f2488e90b4ce946",
+  "pdf_sha256": "55c08cc793e4d4fcca91270222ba90e1e77ee9e450dc9843f36f2a19602bc3a2",
+  "pdf_pages": 71,
   "editorial_changes": [
     "General coding-theory and hash-based SNARK framing",
     "Direct explanatory academic prose with explicit quantifiers",
@@ -35,9 +35,18 @@
     "Strengthen Gaussian sampling hypothesis to growing subset and complement sizes",
     "Add attributed Jo incidence bound for witnesses and polynomial curves, and prove sharp curve endpoint",
     "Add independently verified radial certificate and stronger degree-40 conditional certificate",
-    "Correct agreement-count wording selectively and record explicit subgroup-transfer obstructions"
+    "Correct agreement-count wording selectively and record explicit subgroup-transfer obstructions",
+    "Integrate overnight exact interval counts, displaced radial weights, exact incidence collision bounds, and native-circle product refinements; preserve pre-existing working-tree changes in an isolated review worktree.",
+    "Retain and verify the earlier balanced-polynomial-fiber, Galois-rational-fiber, and growing-moment refinements; correct Goyal and Sun author initials against arXiv:2607.08516."
   ],
-  "validation": {
+  "revised_at": "2026-09-16T12:49:19.196659+00:00",
+  "coordination": {
+    "frontier_acknowledged": "2026-09-15T18:11:07-04:00",
+    "older_32_page_source_repaired": true,
+    "audit_instance_direct_acknowledgment_observed": false,
+    "details": "research/workspace_reconciliation/"
+  },
+  "validation_before_2026_09_16_integration": {
     "build": "make paper passed without LaTeX warnings or overflowing boxes",
     "numerical_checks": {
       "checks/actual_list_tightened_check.json": "passed",
@@ -73,17 +82,39 @@
     "current_labels": 118,
     "current_finite_certificate": "All displayed degree-40 roots match the verified monic certificate exactly."
   },
-  "revised_at": "2026-09-15T18:23:49-04:00",
-  "current_finite_certificate": {
+  "included_manuscript_inputs": {
+    "research/overnight_2026-09-16/finite_updates.tex": "126a7dce6f22637d19e33b3f965c5b79fbc9fe288760d7a4e053b9e01a66c516"
+  },
+  "previous_finite_certificate": {
     "file": "research/finite_weights/factored40_certificates.json",
     "degree": 40,
     "list_lower_bound": 5285900426578,
     "sha256": "5f423d2d0511b8741360bf04484651baa07ccf91a744c53c163b32d44ee24bf4"
   },
-  "coordination": {
-    "frontier_acknowledged": "2026-09-15T18:11:07-04:00",
-    "older_32_page_source_repaired": true,
-    "audit_instance_direct_acknowledgment_observed": false,
-    "details": "research/workspace_reconciliation/"
+  "current_finite_certificate": {
+    "method": "exact complementary-subset enumeration",
+    "list_lower_bound": 5552914238035,
+    "validation": "research/overnight_2026-09-16/verification.json"
+  },
+  "validation": {
+    "build": "71-page paper.pdf; latexmk clean, no LaTeX warnings, undefined references, or overflowing boxes",
+    "new_suite": "12 sequential guarded commands passed; included in complete publication replay.",
+    "new_suite_sha256": "6ff9e996ee3b7764e9081060dff5fce32fbe36caf8d7eb577027a0d14f9d98a5",
+    "largest_sampled_group_rss_kib": 226688,
+    "scope": "The complete make verify target passed, including the earlier staged balanced-fiber and Galois refinements and all twelve new finite-certificate steps. The growing-moment wide-regime check additionally passed and was added to the default target. Numerical checks supplement proofs.",
+    "visual_review": "New scalar proof and native-circle table inspected; final build checked for warnings.",
+    "better_codes": "Pinned display 116.13 unchanged",
+    "publication": "User-authorized publication to origin/main on September 16, 2026.",
+    "publication_suite": {
+      "make_verify": "passed",
+      "make_verify_seconds": 201.5232077089604,
+      "wide_regime_check": "passed separately and added to make verify",
+      "resources": "research/overnight_2026-09-16/publication_suite_resources.json"
+    }
+  },
+  "review_worktree": {
+    "branch": "codex/overnight-paper-2026-09-16",
+    "baseline": "research/overnight_2026-09-16/baseline.json",
+    "ownership": "Assembled in an isolated worktree, preserving the canonical working tree. Previously staged mathematical refinements are retained with their existing reviews; unrelated disclosure-summary changes are not included."
   }
 }

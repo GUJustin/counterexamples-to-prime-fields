@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "verify_circle_product_dyadic_output.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 2.2016379160340875,
+  "peak_rss_kib": 20880,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

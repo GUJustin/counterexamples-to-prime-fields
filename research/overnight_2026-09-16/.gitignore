@@ -1,0 +1,7 @@
+BASELINE_WORKTREE.diff
+INTEGRATION_ONLY.patch
+integration_manifest.json
+paper_text.txt
+*.png
+certificates/exact_distribution
+certificates/central_quadratic_histogram

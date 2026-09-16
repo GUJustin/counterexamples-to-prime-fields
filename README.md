@@ -1,6 +1,6 @@
 # Counterexamples to List and Line Decodability Bounds over Prime Fields
 
-Working draft by Justin Thaler, September 15, 2026.
+Working draft by Justin Thaler, September 16, 2026.
 
 [Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
@@ -34,8 +34,9 @@ analysis as an application of those results.
   argument gives a factor of `e`, using the known curve proximity theorem.
   An attributed extension of Jo's incidence argument improves the interior
   bound. The curve endpoint `e*binom(n,k+1)` is attained over suitable fields.
-- Exact polynomial weights certify **5,285,900,426,578** codewords in
-  the length-64, dimension-32 interval example. A general concentration
+- Exact enumeration certifies **5,552,914,238,035** codewords in
+  the length-64, dimension-32 interval example, improving the prior
+  polynomial-weight certificate by **5.05%**. A general concentration
   bound improves full-range counting by a factor of order `n^(m/2)`
   for each fixed number `m` of canceled coefficients. Classical Gram coordinates give explicit variances;
   unit-cube smoothing yields a stronger finite concentration constant,
@@ -43,6 +44,19 @@ analysis as an application of those results.
   constant for the largest class when `m` is fixed and both the subset
   size and its complement grow. A separately verified radial method
   certifies 5,133,798,314,667 without fixing the first moment.
+
+- Over the M31 prime, the interval example with `n=157, k=63, t=68` has
+  at least **28,169,451,256,663,519,418** codewords, exceeding the stated
+  finite list prescription by more than **2^34.09967**. The corresponding
+  quartic-extension line exceeds its finite prescription by **2^50.90955**.
+- A line entirely over the M31 prime at `n=82, k=9, t=12` has at least
+  **138,752,510** nearby labels. Exact incidences and a next-coefficient
+  collision saving strengthen the count.
+- The quadratic-circle bank at the existing compact eighth-rate parameters
+  increases from **285,003,988,493,147,037** to **365,153,907,657,996,934**.
+  A separate native low-rate example gives more than **24.5949 excess bits**.
+
+[New finite-certificate proofs and replay instructions](research/overnight_2026-09-16/README.md).
 
 The statements retain their field, domain, radius, and quantifier
 restrictions. They do not establish a complete protocol attack or an

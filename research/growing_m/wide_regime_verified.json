@@ -1,0 +1,172 @@
+{
+  "status": "all exact assertions passed",
+  "arithmetic": "integers and rational numbers only",
+  "log_enclosures": "16-term positive Taylor sums with rational geometric tails",
+  "recurrence_steps": 5675,
+  "independent_norm_checks": 25,
+  "density_and_rounding_checks": 75,
+  "outside_threshold_negative_control": "passed",
+  "fixtures": [
+    {
+      "n": 512,
+      "m": 64,
+      "m_squared_over_n": "8",
+      "m_over_n": "1/8",
+      "fixture_type": "m=n^(2/3)",
+      "minimum_variance_ratio": "21504/5461",
+      "gram_grid_loss_natural_log": {
+        "lower": "2.84580220",
+        "upper": "2.84580221"
+      },
+      "gram_grid_loss_over_m_squared": {
+        "lower": "0.00069477",
+        "upper": "0.00069478"
+      },
+      "gram_grid_envelope": {
+        "lower": "2.88163442",
+        "upper": "2.88163443"
+      },
+      "range_grid_loss_natural_log": {
+        "lower": "92.36549343",
+        "upper": "92.36549344"
+      },
+      "range_grid_loss_over_m_squared": {
+        "lower": "0.02255016",
+        "upper": "0.02255017"
+      },
+      "range_grid_envelope": {
+        "lower": "102.14285714",
+        "upper": "102.14285715"
+      }
+    },
+    {
+      "n": 4096,
+      "m": 256,
+      "m_squared_over_n": "16",
+      "m_over_n": "1/16",
+      "fixture_type": "m=n^(2/3)",
+      "minimum_variance_ratio": "1392640/87381",
+      "gram_grid_loss_natural_log": {
+        "lower": "10.84269066",
+        "upper": "10.84269067"
+      },
+      "gram_grid_loss_over_m_squared": {
+        "lower": "0.00016544",
+        "upper": "0.00016545"
+      },
+      "gram_grid_envelope": {
+        "lower": "10.87663526",
+        "upper": "10.87663527"
+      },
+      "range_grid_loss_natural_log": {
+        "lower": "701.80240598",
+        "upper": "701.80240599"
+      },
+      "range_grid_loss_over_m_squared": {
+        "lower": "0.01070865",
+        "upper": "0.01070866"
+      },
+      "range_grid_envelope": {
+        "lower": "736.73333333",
+        "upper": "736.73333334"
+      }
+    },
+    {
+      "n": 32768,
+      "m": 1024,
+      "m_squared_over_n": "32",
+      "m_over_n": "1/32",
+      "fixture_type": "m=n^(2/3)",
+      "minimum_variance_ratio": "89391104/1398101",
+      "gram_grid_loss_natural_log": {
+        "lower": "42.84192205",
+        "upper": "42.84192206"
+      },
+      "gram_grid_loss_over_m_squared": {
+        "lower": "0.00004085",
+        "upper": "0.00004086"
+      },
+      "gram_grid_envelope": {
+        "lower": "42.87540737",
+        "upper": "42.87540738"
+      },
+      "range_grid_loss_natural_log": {
+        "lower": "5520.72176368",
+        "upper": "5520.72176369"
+      },
+      "range_grid_loss_over_m_squared": {
+        "lower": "0.00526497",
+        "upper": "0.00526498"
+      },
+      "range_grid_envelope": {
+        "lower": "5654.03225806",
+        "upper": "5654.03225807"
+      }
+    },
+    {
+      "n": 262144,
+      "m": 4096,
+      "m_squared_over_n": "64",
+      "m_over_n": "1/64",
+      "fixture_type": "m=n^(2/3)",
+      "minimum_variance_ratio": "5725224960/22369621",
+      "gram_grid_loss_natural_log": {
+        "lower": "170.84173047",
+        "upper": "170.84173048"
+      },
+      "gram_grid_loss_over_m_squared": {
+        "lower": "0.00001018",
+        "upper": "0.00001019"
+      },
+      "gram_grid_envelope": {
+        "lower": "170.87510175",
+        "upper": "170.87510176"
+      },
+      "range_grid_loss_natural_log": {
+        "lower": "43894.58164929",
+        "upper": "43894.58164930"
+      },
+      "range_grid_loss_over_m_squared": {
+        "lower": "0.00261632",
+        "upper": "0.00261633"
+      },
+      "range_grid_envelope": {
+        "lower": "44416.68253968",
+        "upper": "44416.68253969"
+      }
+    },
+    {
+      "n": 1024,
+      "m": 240,
+      "m_squared_over_n": "225/4",
+      "m_over_n": "15/64",
+      "fixture_type": "near_monotonicity_threshold",
+      "minimum_variance_ratio": "247744/230399",
+      "gram_grid_loss_natural_log": {
+        "lower": "135.55974128",
+        "upper": "135.55974129"
+      },
+      "gram_grid_loss_over_m_squared": {
+        "lower": "0.00235346",
+        "upper": "0.00235347"
+      },
+      "gram_grid_envelope": {
+        "lower": "141.83594759",
+        "upper": "141.83594760"
+      },
+      "range_grid_loss_natural_log": {
+        "lower": "2426.58621120",
+        "upper": "2426.58621121"
+      },
+      "range_grid_loss_over_m_squared": {
+        "lower": "0.04212823",
+        "upper": "0.04212824"
+      },
+      "range_grid_envelope": {
+        "lower": "2975.61224489",
+        "upper": "2975.61224490"
+      }
+    }
+  ],
+  "limits": "Finite regressions verify these fixtures and formulas, not asymptotic convergence or uniformity. The analytic proof remains necessary."
+}
