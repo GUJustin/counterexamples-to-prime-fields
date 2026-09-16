@@ -3,8 +3,11 @@
 
 The degree of a Taylor-reconstruction cover can exceed the degree of
 the actual polynomial-solution locus. The following bound separates
-its curve and surface components. It leaves isolated solution pairs
-and the full first-order MCA conjecture unresolved.
+its curve and surface components. We then exhibit quadratically many
+actual isolated regular solutions, even at derivative degree one,
+and prove that this example still has only constantly many nearby
+labels at a fixed positive agreement gap. The full first-order MCA
+conjecture remains unresolved.
 
 \begin{theorem}[Positive-dimensional actual components]
 \label{thm:actual-first-order-components}
@@ -200,9 +203,10 @@ at least $A-h$ of these hyperplanes. Its number is therefore at most
 Sum over the retained curves and use $J_1\le qK$.
 \end{proof}
 
-\paragraph{Scope and verification.}
+\paragraph{Scope and verification of the component bounds.}
 The theorem gives no linear bound on the number of isolated joint
-solutions. Nor does it bound by a constant the number of persistent
+solutions; the next construction shows that such a bound is false.
+Nor does it bound by a constant the number of persistent
 affine codeword graphs that can each contribute accidental agreements.
 These obstacles prevent an inference of general $O(n/|F|)$ first-order
 MCA from the component-degree bounds alone.
@@ -215,3 +219,162 @@ detects extra solutions outside that example's stricter characteristic
 hypothesis $p>D+1$.
 These checks supplement the geometric proof; they do not certify
 the generic-section argument by themselves.
+
+\subsection{Quadratically many isolated regular first-order solutions}
+\label{sec:quadratic-isolated-first-order}
+
+\begin{theorem}[Quadratic isolated count at derivative degree one]
+\label{thm:quadratic-isolated-first-order}
+Let $D\ge1$, in characteristic zero or $p>D+2$, and let $R$ be a
+monic squarefree polynomial of degree $N=D+1$ with nonzero roots.
+The first-order equation
+\begin{equation}
+ (z-X^2)(RP'-R'P+P^2)+2XRP-2R^2=0
+ \label{eq:quadratic-isolated-riccati}
+\end{equation}
+has exactly $\binom{D+2}{2}$ polynomial--challenge solutions of
+degree at most $D$, all regular. They are indexed by unordered
+multisets $\{a,b\}$ of roots of $R$, including $a=b$, and are
+\[
+ z=ab,\qquad P_{a,b}=\frac{R}{X-a}+\frac{R}{X-b}.
+\]
+Thus its reduced actual joint solution locus consists of exactly
+that many isolated points. Its jet degree is two, derivative degree
+one, and challenge degree one. For every $D$, these points can all
+have distinct labels over a prime field of size $O(D^3)$.
+\end{theorem}
+\begin{proof}
+Put $U=(X^2+z)P-2XR$ and $V=R-XP$. Direct differentiation gives
+\[
+ U'V-UV'=(z-X^2)(RP'-R'P+P^2)+2XRP-2R^2.
+\]
+Since $R(0)\ne0$, $V$ is not identically zero. The rational function
+$U/V$ has degree at most $D+2$ and derivative zero, so it is
+constant. In positive characteristic this uses the strict bound
+$D+2<p$: a nonconstant rational $p$th power has degree at least $p$.
+Writing the constant as $-u$ gives
+\[
+ (X^2-uX+z)P=(2X-u)R.
+\]
+For $H=X^2-uX+z$, this says $P=RH'/H$. Every root of $H$ must
+belong to $R$: a root of multiplicity one or two gives a nonzero
+simple-pole residue in $H'/H$, since the characteristic is not two.
+Conversely every such multiset gives the displayed solution.
+Its partial-fraction residues distinguish the multisets. The
+separant is $(z-X^2)R$, nonzero as a polynomial in $X$ at every
+solution, so all solutions are regular.
+
+For distinct prime-field labels, choose the roots to form a
+multiplicative Sidon set including diagonal products. If $k$ roots
+have already been chosen and $S$ is their $k(k+1)/2$ products, a
+new root $x$ is excluded by at most
+\[
+ (k+2)|S|+k+1
+\]
+field elements: those with $xa\in S$ for an old root $a$, those
+with $x^2\in S$, the old roots, and zero. Products among the new
+pairs cannot collide otherwise. For $k\le N-1$ this bound is at
+most $(N^3+N)/2$. A prime larger than this bound and $D+2$ therefore
+suffices, and a prime of size $O(N^3)$ exists. This constructs all
+the solutions and their pairwise distinct labels in the prime field.
+\end{proof}
+
+The solution count by itself therefore cannot prove linear
+first-order MCA. The following agreement bound also shows why the
+example is not a quadratic proximity-gap lower bound.
+
+\begin{proposition}[Constant fixed-gap count for the isolated family]
+\label{prop:isolated-family-mca}
+Over a finite field satisfying Theorem~\ref{thm:quadratic-isolated-first-order},
+fix a received line $f+zg$ on $n$ distinct coordinates and an agreement
+threshold $D<A\le n$. Let $L$ be the number of distinct labels with
+an $A$-agreeing candidate from the displayed family. Then
+\[
+ L\le \frac{(D+2)n}{A-D}.
+\]
+More strongly, let $r_0$ be the number of domain points that are
+roots of $R$, put $m=n-r_0$ and $t=A-r_0$, and suppose $t^3>4m^2$.
+Then
+\[
+ L\le \frac{2m}{t-(4m^2)^{1/3}}.
+\]
+In particular $L=O_\eta(1)$ for $A-D\ge\eta n$ and sufficiently
+large $n$. Neither bound requires that all family labels be distinct.
+\end{proposition}
+\begin{proof}
+Every candidate has degree $D$, hence at least $A-D$ of its
+agreements have nonzero value. At a root $c$ of $R$, only the $N$
+multisets containing $c$ have nonzero value. At a point $x$ outside
+the roots, write $\alpha=f(x)/R(x)$ and $\beta=g(x)/R(x)$. For
+fixed $a$, agreement is
+\[
+ \frac1{x-a}+\frac1{x-b}=\alpha+\beta ab.
+\]
+Clearing $x-b$ gives a nonzero polynomial of degree at most two
+in $b$. If it vanished identically, its quadratic coefficient
+would give $\beta=0$ since $a\ne0$, its linear coefficient would
+give $\alpha=1/(x-a)$, and its constant coefficient would still
+be nonzero. Thus there are at most $2N$ ordered matches. Diagonal
+matches satisfy $2=(\alpha+\beta a^2)(x-a)$, a nonzero cubic
+equation, so there are at most three of them. The number of
+unordered matches is consequently at most
+$\lfloor(2N+3)/2\rfloor=N+1$. Counting nonzero agreement incidences
+proves the first bound, even for the number of nearby pairs.
+
+For the stronger bound, choose one nearby candidate at each of
+the $L$ distinct labels and put
+\[
+ W_{a,b}=P_{a,b}/R=\frac1{X-a}+\frac1{X-b}.
+\]
+No three of the labeled functions $(ab,W_{a,b})$ at distinct labels
+are affine-collinear. To prove this, suppose their affine relation
+has coefficients $c_1,c_2,c_3$, all nonzero, with
+$\sum c_i=\sum c_i z_i=0$. A root belonging to only one support
+cannot have its nonzero residue canceled. Each root in the union
+therefore belongs to at least two supports, so the union has at
+most three roots. If it has three, the supports must be the three
+edges of a triangle. Their residue matrix has determinant $2$,
+so they are linearly independent. If it has two roots $a,b$, the
+three distinct multisets must be $\{a,a\},\{a,b\},\{b,b\}$.
+Their only affine relation is
+$W_{a,a}-2W_{a,b}+W_{b,b}=0$, but the same coefficients give
+$a^2-2ab+b^2=(a-b)^2\ne0$ on the labels. One root cannot support
+three distinct candidates. This proves the claim.
+
+For any three distinct labels, take
+$(c_1,c_2,c_3)=(z_2-z_3,z_3-z_1,z_1-z_2)$.
+The nonzero rational function $\sum c_iW_i$ has a denominator of
+degree at most six. Using the product of the three monic quadratic
+denominators, its numerator has degree at most four: each summand
+has leading term $2X^5$, which cancels because $\sum c_i=0$.
+Thus three candidates can agree with the received line at at most
+four common coordinates outside the roots of $R$.
+
+Each selected candidate has at least $t$ agreements on these $m$
+coordinates. If $h_x$ counts the agreeing candidates at $x$, then
+$\sum h_x\ge tL$ and
+\[
+ \sum_x\binom{h_x}{3}\le4\binom L3\le\frac{4L^3}{6}.
+\]
+For every nonnegative integer $h$,
+$6\binom h3\ge(h-2)_+^3$. Convexity therefore gives
+\[
+ m\left(\frac{tL}{m}-2\right)_+^3\le4L^3.
+\]
+Taking cube roots and rearranging proves the bound (the case
+$tL\le2m$ also satisfies it). Finally $r_0\le D+1$, so
+$t\ge\eta n-1$ and $m\le n$ at a fixed gap. The denominator is
+positive and of order $n$ for sufficiently large $n$.
+\end{proof}
+
+\paragraph{Exact checks.}
+The isolated-family checker exhausts $17{,}410$ polynomials,
+covering $180{,}384$ polynomial--challenge pairs, and checks every
+pair of local received values at each coordinate of four small-field
+fixtures. It verifies the rational derivative identity and constructs
+prime-field Sidon examples through $D=64$ with $2{,}145$ distinct
+regular isolated labels. It also checks the nonzero degree-four
+triple numerators and the integer convexity inequality. A characteristic
+three negative control has an extra solution outside the theorem's
+strict characteristic hypothesis. These finite checks supplement
+the classification and incidence proofs above.

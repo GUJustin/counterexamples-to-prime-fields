@@ -115,9 +115,12 @@ The general first-order conjecture and quadratic fixed-gap error remain open.
 proves that the curve and surface components of the actual regular
 polynomial-solution locus have total degree `O(D)` at fixed jet and
 challenge degrees, in characteristic zero or greater than message degree D.
-Appendix H gives the proof and sharp examples. Isolated joint points and
-accidental agreements on persistent affine codeword graphs remain outside
-the improvement; it does not prove the general first-order MCA conjecture.
+Appendix H gives the proof and sharp examples, including a first-order
+equation with exactly `binom(D+2,2)` regular isolated solutions and
+distinct prime-field labels. That quadratic family nevertheless has only
+constantly many nearby labels at a fixed positive gap. The general
+contribution of isolated points and persistent affine codeword graphs
+remains open; this does not prove the first-order MCA conjecture.
 
 ## Build and verify
 

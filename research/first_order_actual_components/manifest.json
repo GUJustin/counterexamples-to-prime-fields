@@ -1,25 +1,29 @@
 {
-  "status": "Twice self-reviewed proof; both exact checkers and clean 86-page manuscript build passed",
-  "scope": "Linear degrees for actual first-order curve and surface components; linear nearby-pair count on nonaffine curves. General first-order MCA and quadratic fixed-gap lower bound remain open.",
+  "status": "Twice self-reviewed proofs; all three exact checkers passed, including new isolated-family checks; clean 89-page build",
+  "scope": "Linear degrees of actual positive-dimensional first-order components, quadratic isolated regular family, and constant fixed-gap nearby-label bound for that family. General MCA and quadratic fixed-gap lower bounds remain open.",
   "sha256": {
-    "PROOF.md": "39901a4e5cfe2c1e1eee48d321286d589e09208d9c3ab814a8677a65626789a3",
-    "README.md": "91abe587528741fac8cb119e8643dda97bd7768dbd6226a07ef3ee16866eb6a9",
-    "appendix.tex": "f971367d11ad0e718bd0918dccf696948f25996d13146184285f2e8035681bab",
+    "PROOF.md": "c95b8c18db8914aa197727ac7a20362831705d5685f8c18e389bfa4086bff929",
+    "README.md": "236327f7a0f7b09440ee2b70fd16a3a6f812ad3c3b7773d1f36a3116cee9e2f9",
+    "appendix.tex": "8a8812d581a1a2cb8eb43dd656f34377fe3aed7bb29b40c5102778a7f39191a8",
     "arithmetic.py": "e49f6bcf03534c05096fb94a1f2fa307c2a9e37efc854755e4d03a9ffce38063",
     "build_resources.json": "6523a4c7a9d0a5d3f024a0425763a4d1692179ffb8c7fe608e24638c7a310c63",
     "curve_family_resources.json": "e2d35f30dfdc46a2a63be196a0127defc0f2ef520d12a414ebea4f2903a03f42",
     "first_order_curve_family_verification.json": "a9ec031200b29456d56508213247090a14dbe81fe859f45b4e594860e3b0e9e9",
     "first_order_reconstruction_verification.json": "50aaaf6e69a4d7603f17922cc84ce9d851712c57042671dc04e36df0bbcbea5c",
+    "isolated_build_resources.json": "8809b70dc990cb3b0e542c8c679867a9381490d31f181b278585441894463344",
+    "isolated_family_resources.json": "500af8a5c897a87b86760fb1abe12535a5458bd245433531ce1a73bff16a349d",
+    "quadratic_isolated_verification.json": "6552b2a0c2d83b9fb684c8ff9d107c77ae1893add98dce058777bfa30fdc5f02",
     "reconstruction_resources.json": "e8eded3ee0abd0279cf56a6ddd2439527467583f25dad2ca21e985a5ecbf48ef",
     "verify_curve_family.py": "53c5ab2f9e42f555cd0e214b8e05e04144bb3102d502788fedcdea029c4f0fb8",
+    "verify_isolated_family.py": "9c78045c72e048ab8a0a6797e395bd4b50fd5c806d7d8f94fc620cf1cfa478a9",
     "verify_reconstruction.py": "347859754714138fae9412c651b57395c2f3b0af00b45288397b259fdc17dc2a"
   },
   "manuscript_sha256": "6ef93180ec3fe590d24589170de44e26f842ec4e3c3f6ae986022bbcb25c0cf2",
-  "pdf_sha256": "fb1a2d72fd3206ede3d1b8fe8e2c3cc0cfb0e47b7558b8fbcec16edd884949e3",
+  "pdf_sha256": "485fac4d474f14358c66f3c492b348a5767700176d7f22537f7311bc50381228",
   "rendered_review_pages": [
-    82,
-    83,
-    84
+    85,
+    86,
+    87
   ],
   "preserved_preexisting_files": {
     "checks/conditional_moment_results.json": "a82501c2dc100779e6c163b4258294ea25a085aac05a419083583a7dfbce3d69",

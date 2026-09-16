@@ -121,9 +121,73 @@ elimination argument in the appendix. Earlier Taylor checks also
 verify the linear equation P'+zP-X^D=0, whose unique solution for
 z!=0 gives an actual curve of degree D+2.
 
-The isolated actual joint points still have a potentially quadratic
-available count. A linear number of persistent affine codeword graphs
+The isolated actual joint points can actually be quadratic in number,
+as the following construction now proves. A linear number of persistent affine codeword graphs
 could also each contribute linearly many accidental labels. Nothing
 here establishes the constant nearby symbolic-list bound that would
 remove that second obstruction. The first-order O(n/|F|) conjecture
 and higher-order quadratic lower-bound target remain open.
+
+
+## Quadratic isolated solutions and constant nearby-label count
+
+Added September 16, 2026, after exact checks and a second proof review.
+The integrated statements are Theorem H.3 and Proposition H.4.
+
+For monic squarefree R of degree D+1 with nonzero roots, put
+
+    Q=(z-X^2)(R P'-R'P+P^2)+2XRP-2R^2.
+
+Let U=(X^2+z)P-2XR, V=R-XP. The identity U'V-UV'=Q is exact.
+V cannot vanish identically because V(0)=R(0)!=0. If Q=0,
+U/V has degree <=D+2 and derivative zero. Characteristic zero or
+p>D+2 makes this quotient constant, say -u, giving
+
+    (X^2-uX+z)P=(2X-u)R.
+
+The quadratic's root multiset lies among the roots of R. Thus all
+solutions are P=R/(X-a)+R/(X-b), z=ab, including a=b. Distinct
+multisets have different partial-fraction residues (characteristic
+not two). All are regular since Q_{P'}=(z-X^2)R is nonzero in X.
+The geometric point count is exactly binom(D+2,2). We assert the
+count of the reduced locus, not reducedness of the original scheme.
+
+The greedy Sidon exclusion count (k+2)k(k+1)/2+k+1 equals
+(N^3+N)/2 at k=N-1. The extra +k+1 excludes old roots and zero;
+then new off-diagonal products cannot collide with one another or
+with the new square. This justifies distinct prime-field labels
+at field size O(D^3), without a number-field splitting argument.
+
+For any received line, count nonzero agreements: there are at most
+D zeros per degree-D candidate, at most N=D+1 nonzero matches at a
+root of R, and at most N+1 unordered matches elsewhere. The latter
+uses at most 2N ordered matches and at most three diagonal ones.
+This gives (D+2)n/(A-D), even counting pairs rather than labels.
+
+For the constant bound, pick one witness per distinct nearby label.
+An affine relation among three functions W=P/R has three nonzero
+coefficients. Every root in their support union must occur at least
+twice, so at most three roots occur. Three roots force a triangle,
+whose residue determinant is 2. Two roots force the three multisets
+aa,ab,bb; their unique affine relation (1,-2,1) does not vanish on
+labels a^2,ab,b^2. Thus no triple is affine-collinear as labeled
+functions. This argument allows global label collisions because
+only triples of distinct selected labels are used.
+
+The common quadratic denominator product has degree six. The
+numerator's degree-five term cancels (sum of coefficients zero),
+leaving a nonzero polynomial of degree <=4. Hence at most four
+common agreeing coordinates outside roots of R. With m outside
+coordinates, t guaranteed agreements per witness, and L labels,
+triple counting and Jensen give (tL-2m)_+^3<=4m^2 L^3.
+When t^3>4m^2 this rearranges to the displayed constant bound.
+The case tL<=2m satisfies it too; m>0 follows from the hypothesis.
+For fixed gap A-D>=eta*n, t>=eta*n-1 and m<=n prove O_eta(1).
+
+Second review explicitly checked: zero denominators; doubled roots;
+small-characteristic failure; collisions of new Sidon products;
+ordered-to-unordered incidence counting; triples with repeated
+labels excluded; all possible support unions; cancellation at
+infinity; and the small-multiplicity cases in the convexity bound.
+The exact checker passes in 4.28 seconds with sampled RSS 24736 KiB.
+No independent coauthor review or novelty assertion is made.

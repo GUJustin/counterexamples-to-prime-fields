@@ -21,7 +21,7 @@ It follows by counting agreement hyperplanes. The omitted affine
 codeword graphs are stated explicitly, rather than silently absorbed
 into this finite nearby-pair count.
 
-This does not settle the first-order linear MCA conjecture. Isolated
+This does not settle the first-order linear MCA conjecture. The general contribution of isolated
 joint points and the number of nearby persistent affine codeword
 graphs remain unresolved. It supplies no quadratic lower bound.
 
@@ -33,6 +33,23 @@ p>D+1. This stricter cutoff belongs to the example's classification.
 The equation (X-z)P'-D P=0 has an actual surface of degree D+1.
 Thus the linear dependence on D is real in both dimensions.
 
+## Quadratic isolated family
+
+The equation `(z-X^2)(R P'-R' P+P^2)+2X R P-2R^2=0`, for monic
+squarefree R of degree D+1 with nonzero roots, has exactly
+`binom(D+2,2)` actual regular isolated solutions in characteristic zero
+or p>D+2. They are `z=ab, P=R/(X-a)+R/(X-b)`, with repeated roots
+allowed in the pair. A greedy multiplicative Sidon set makes every
+label distinct over prime fields of size O(D^3).
+
+Despite this quadratic solution count, any received line has only
+O_eta(1) nearby labels from this family at agreement A-D>=eta*n
+for sufficiently large n. If r0 domain coordinates are roots of R,
+m=n-r0, t=A-r0, and t^3>4m^2, the explicit bound is
+`2m/(t-(4m^2)^(1/3))`. A linear bound `(D+2)n/(A-D)` holds for all
+A>D. This proves the need for an agreement argument beyond simply
+counting isolated solutions; it is not a quadratic error lower bound.
+
 ## Checks
 
 Run sequentially from the repository root:
@@ -40,6 +57,7 @@ Run sequentially from the repository root:
 ```sh
 python3 research/first_order_actual_components/verify_reconstruction.py
 python3 research/first_order_actual_components/verify_curve_family.py
+python3 research/first_order_actual_components/verify_isolated_family.py
 ```
 
 The reconstruction checker requires SymPy. It checks five equations,
@@ -52,3 +70,11 @@ proof; they cannot establish the generic-section argument.
 
 Resource records use sequential 384 MiB watchdog runs. Their RSS values
 are sampled process-group usage, not exact high-water measurements.
+
+The isolated-family checker covers 180,384 polynomial--challenge pairs
+by exhausting 17,410 polynomials and solving the residual's affine
+challenge dependence exactly. It also checks 2,142 local received-value
+choices, 108 derivative identities, 14,376 distinct-label rational
+triple numerators, and 219,450 integer multiplicity vectors. Sidon
+fixtures reach 2,145 distinct labels at D=64. A characteristic-three
+negative control confirms the need for a characteristic restriction.
