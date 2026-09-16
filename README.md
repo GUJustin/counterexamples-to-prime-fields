@@ -72,7 +72,9 @@ analysis as an application of those results.
   characteristic other than two: fixing `s` leading locator coefficients
   forces dimension at most `floor(min(t,n-t)/(s+1))`. A trace family over
   `F_16` violates this bound, identifying a specific barrier to direct
-  binary-to-prime transfer.
+  binary-to-prime transfer. A quantitative corollary allows at most
+  `O(N^(3/2))` punctured codimension-two binary subspaces in one
+  odd-characteristic prefix class, versus the quadratic full binary family.
 
 [New finite-certificate proofs and replay instructions](research/overnight_2026-09-16/README.md).
 

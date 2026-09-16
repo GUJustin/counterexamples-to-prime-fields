@@ -5282,6 +5282,70 @@ with characteristic no greater than the prefix length. It also checks
 twenty sharpness examples and the $\mathbb F_{16}$ exception.
 These finite checks supplement the proof.
 
+\begin{corollary}[Subquadratic transfer of punctured binary subspaces]
+\label{cor:codimension-two-transfer}
+Let $V=\mathbb F_2^m$, $N=2^m$, and $m\ge4$. Injectively label
+$V\setminus\{0\}$ by elements of a field of characteristic different
+from two. Let $\mathcal C$ be a collection of codimension-two linear
+subspaces $W\le V$ whose labeled punctured supports $W\setminus\{0\}$
+have monic locators with the same first $N/8-1$ coefficients below
+the leading term. Put
+\[
+ M_N=\left\lfloor\frac{1+\sqrt{4N-7}}2\right\rfloor.
+\]
+Then
+\[
+ |\mathcal C|\le\left\lfloor\frac{(N-1)M_N}{3}\right\rfloor
+ =O(N^{3/2}).
+\]
+\end{corollary}
+\begin{proof}
+Fix a nonzero functional $a\in V^*$. The codimension-two subspaces
+with $a\in W^\perp$ are $W_b=\ker a\cap\ker b$, indexed by nonzero
+$b\in Q:=V^*/\langle a\rangle$, a binary group of size $N/2$.
+Let $S_a\subseteq Q\setminus\{0\}$ index the members of $\mathcal C$
+of this form. On $\ker a$, the binary indicator of $W_b$ is $1+b(x)$;
+outside $\ker a$ it is zero. This dependence on $b$ is affine and
+injective, and puncturing the origin preserves affine dimensions.
+
+If $S_a$ contained an affine binary plane, its four punctured supports
+would form an affine family of dimension two and constant weight
+$t=N/4-1$. Theorem~\ref{thm:binary-affine-locator}, with
+$s=N/8-1$, would give
+\[
+ 2\le\left\lfloor\frac{t}{s+1}\right\rfloor=1,
+\]
+a contradiction. Thus $S_a$ contains no affine plane. In a binary
+group, equality of the sums of two different unordered pairs of
+distinct elements gives four distinct elements forming an affine
+plane. Hence all $\binom{|S_a|}{2}$ pair sums are distinct and nonzero,
+so
+\[
+ \binom{|S_a|}{2}\le N/2-1,\qquad |S_a|\le M_N.
+\]
+Every $W\in\mathcal C$ has three nonzero elements in $W^\perp$.
+Double-counting gives $3|\mathcal C|=\sum_{a\ne0}|S_a|\le(N-1)M_N$.
+\end{proof}
+
+In characteristic two, every binary additive domain of size $N$
+has all $(N-1)(N-2)/6$ codimension-two subspaces in this prefix
+class. Indeed, their degree-$N/4$ subspace locators are linearized:
+the next possible degree is $N/8$. Dividing by $X$ gives exactly the
+punctured prefix above. The linearized form follows inductively from
+$L_{U\oplus\langle b\rangle}=L_U^2+L_U(b)L_U$.
+The corollary therefore rules out preserving a positive asymptotic
+fraction of this quadratic family under any odd-characteristic
+relabeling. It does not exclude different locator identities or
+other transfers from binary-field constructions.
+
+The additional checker tests $24{,}825$ prefix classes across $390$
+injective relabelings, including characteristic three with prefix
+length three. It verifies the dual-incidence counts and absence of
+repeated pair sums, and checks $14{,}364$ affine-plane parameterizations.
+The full binary families over $\mathbb F_{16}$ and $\mathbb F_{32}$
+give negative controls of sizes $35$ and $155$, exceeding the respective
+odd-characteristic bounds $20$ and $62$.
+
 \input{research/bounded_root_mca/appendix.tex}
 
 \begin{thebibliography}{99}

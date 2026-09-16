@@ -1,0 +1,101 @@
+{
+  "status": "PASS",
+  "odd_characteristic_fixtures": [
+    {
+      "m": 4,
+      "N": 16,
+      "p": 17,
+      "relabelings": 100,
+      "prefix": 1,
+      "tested_classes": 1469,
+      "checked_star_pairs": 2104,
+      "largest_observed_class": 13,
+      "theorem_bound": 20
+    },
+    {
+      "m": 4,
+      "N": 16,
+      "p": 19,
+      "relabelings": 100,
+      "prefix": 1,
+      "tested_classes": 1571,
+      "checked_star_pairs": 1940,
+      "largest_observed_class": 13,
+      "theorem_bound": 20
+    },
+    {
+      "m": 4,
+      "N": 16,
+      "p": 101,
+      "relabelings": 100,
+      "prefix": 1,
+      "tested_classes": 2911,
+      "checked_star_pairs": 418,
+      "largest_observed_class": 13,
+      "theorem_bound": 20
+    },
+    {
+      "m": 5,
+      "N": 32,
+      "p": 37,
+      "relabelings": 30,
+      "prefix": 3,
+      "tested_classes": 4628,
+      "checked_star_pairs": 9,
+      "largest_observed_class": 3,
+      "theorem_bound": 62
+    },
+    {
+      "m": 5,
+      "N": 32,
+      "p": 101,
+      "relabelings": 30,
+      "prefix": 3,
+      "tested_classes": 4638,
+      "checked_star_pairs": 8,
+      "largest_observed_class": 3,
+      "theorem_bound": 62
+    },
+    {
+      "m": 6,
+      "N": 64,
+      "p": 257,
+      "relabelings": 10,
+      "prefix": 7,
+      "tested_classes": 6510,
+      "checked_star_pairs": 0,
+      "largest_observed_class": 1,
+      "theorem_bound": 168
+    }
+  ],
+  "binary_negative_controls": [
+    {
+      "m": 4,
+      "N": 16,
+      "binary_field_modulus": 19,
+      "prefix": 1,
+      "common_prefix_class": 35,
+      "odd_characteristic_bound": 20
+    },
+    {
+      "m": 5,
+      "N": 32,
+      "binary_field_modulus": 37,
+      "prefix": 3,
+      "common_prefix_class": 155,
+      "odd_characteristic_bound": 62
+    }
+  ],
+  "small_characteristic_fixture": {
+    "N": 32,
+    "field_size": 81,
+    "characteristic": 3,
+    "prefix": 3,
+    "relabelings": 20,
+    "tested_classes": 3098,
+    "largest_observed_class": 2,
+    "theorem_bound": 62
+  },
+  "affine_planes_checked": 14364,
+  "scope": "Finite prefix classes and independent binary controls supplement the counting proof; they do not establish its asymptotic conclusion."
+}

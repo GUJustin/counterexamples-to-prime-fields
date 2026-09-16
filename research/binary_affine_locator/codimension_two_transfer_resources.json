@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "research/beyond_johnson_tightness/check_codimension_two_transfer.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.550096333026886,
+  "peak_rss_kib": 32,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

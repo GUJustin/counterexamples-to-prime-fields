@@ -46,6 +46,7 @@ verify:
 	$(PYTHON) research/bounded_root_mca/verify_wronskian.py
 	$(PYTHON) research/bounded_root_mca/verify_clusters.py
 	$(PYTHON) research/binary_affine_locator/verify.py
+	$(PYTHON) research/binary_affine_locator/check_codimension_two_transfer.py
 	$(PYTHON) research/structured_domains/verify_balanced_fibers.py
 	$(PYTHON) research/gram_norm/verify_balanced_fibers.py
 	$(PYTHON) research/structured_domains/verify_galois_fibers.py

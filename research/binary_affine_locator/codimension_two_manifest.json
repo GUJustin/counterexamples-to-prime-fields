@@ -1,0 +1,23 @@
+{
+  "status": "Twice self-reviewed deduction; exact checks and clean 83-page manuscript build passed",
+  "scope": "O(N^(3/2)) odd-characteristic prefix-class bound for punctured codimension-two binary supports; no general prime-field MCA lower bound",
+  "sha256": {
+    "CODIMENSION_TWO_TRANSFER.md": "e1bcf49f87dd47b0ce2407ff5a2e0ebe249384cca3fe980c0365c55ef5f07c2e",
+    "check_codimension_two_transfer.py": "990c02ba09a585b2a838b6ef8ce74abc68739d886a941cd53a9a7914b66d0a61",
+    "codimension_two_transfer_verification.json": "67d0e615891993b4787de40daac7409f2dab2027f2a31edb8fb40328e4513360",
+    "codimension_two_transfer_resources.json": "c08851f641e254f00ad333796932242a08b908fbe5b784860dd5799c9b807cd2",
+    "codimension_two_build_resources.json": "1df84826a6b3cae55644745535580103e442380b862ce64dbd33ba052f35b291"
+  },
+  "manuscript_sha256": "7d18399071fbb7e4a552e0ca003f6ddc7048ecc6642e7d3a18d2b670a7f01f04",
+  "pdf_sha256": "dba4c7651f44d77310f119abae53815f1b1a50f37f7562cab525c4820e231ab5",
+  "rendered_review_pages": [
+    77,
+    78
+  ],
+  "preserved_preexisting_files": {
+    "checks/conditional_moment_results.json": "a82501c2dc100779e6c163b4258294ea25a085aac05a419083583a7dfbce3d69",
+    "radial_certificates/README.md": "33bff80fb4d70c0b6dd62a532adb087ec445faf37a9a1a21e492daed16a1bfc2",
+    "reports/stwo-zk-disclosure-summary.pdf": "de994a14ecd533b3de9fa934159c752876b5a7464ae6ab2d76a84371387b5d25",
+    "reports/stwo-zk-disclosure-summary.tex": "2c7beed7ea4f695cd6f02e9bc1d9e7934d6de824040d35d0a895c50755746b14"
+  }
+}
