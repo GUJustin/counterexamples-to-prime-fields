@@ -3029,6 +3029,10 @@ and its dependence on the challenge field.
 Can one efficiently describe or enumerate enough of the equal-moment
 or equal-coefficient classes to match the counting lower bounds?
 The existence arguments alone do not provide such algorithms.
+Theorem~\ref{thm:binary-affine-locator} limits one possible description:
+an affine binary family with a fixed locator prefix has dimension at
+most $\lfloor\min\{t,n-t\}/(s+1)\rfloor$. At a fixed positive
+prefix fraction this permits only a constant-size family.
 \item \textbf{Lines and actual list size.}
 What line-decodability statements follow from the actual list size
 at a fixed positive gap? Theorem~\ref{al:separation} rules out the
@@ -5124,6 +5128,124 @@ A separate exhaustive enumeration checks $27{,}273{,}130$ disjoint
 pairs of possible complete fibers on five small domains, including
 non-Galois examples outside the theorem's hypotheses. These computations
 supplement the proof; they do not establish the general classification.
+
+\section{A limit on binary-affine support transfer}
+\label{app:binary-affine}
+
+The large equal-prefix classes in this paper need not have a simple
+binary-linear description. The following bound gives one precise
+obstruction to such a description. It concerns affine families of
+\emph{indicator vectors}, with addition over $\mathbb F_2$, even
+though the evaluation points lie in a field of different characteristic.
+
+\begin{theorem}[Binary-affine locator classes]
+\label{thm:binary-affine-locator}
+Let $D=\{\alpha_1,\ldots,\alpha_n\}$ be distinct elements of a field
+of characteristic different from two. Let $\mathcal A\subseteq\{0,1\}^n$
+be an affine subspace over $\mathbb F_2$ of dimension $r$.
+Suppose every word has integer weight $t$, and the corresponding
+monic degree-$t$ locator polynomials have the same coefficients in
+degrees $t-1,\ldots,t-s$, where $0\le s<t$. Then
+\[
+ r\le\left\lfloor\frac{\min\{t,n-t\}}{s+1}\right\rfloor,
+ \qquad
+ |\mathcal A|\le
+ 2^{\left\lfloor\min\{t,n-t\}/(s+1)\right\rfloor}.
+\]
+The dimension bound is attained over suitable odd prime fields.
+\end{theorem}
+\begin{proof}
+The case $r=0$ is immediate. Parameterize the family injectively by
+$u\in\mathbb F_2^r$, writing the $j$th indicator as
+\[
+ x_j(u)=b_j+\langle a_j,u\rangle\pmod2,
+ \qquad a_j\in\mathbb F_2^r,
+ \qquad \epsilon_j=(-1)^{b_j}.
+\]
+The nonzero column labels $a_j$ span $\mathbb F_2^r$.
+For a nonzero label $a$, let $C_a^+$ and $C_a^-$ be its coordinate
+classes with $b_j=0$ and $b_j=1$, respectively.
+The constant integer weight condition, expanded in the real-valued
+characters $\chi_a(u)=(-1)^{\langle a,u\rangle}$, gives
+$|C_a^+|=|C_a^-|=:h_a$. In every word exactly $h_a$ coordinates
+of their union are selected. If $c$ nonzero labels occur, then
+\[
+ r\le c,\qquad
+ \sum_{a\ne0}h_a\le\min\{t,n-t\}.
+\]
+We show that each occurring label has $h_a\ge s+1$.
+
+Let $L_u(X)$ denote the locator at $u$. Equality of the specified
+coefficients means, in the Laurent series field at infinity, that
+\[
+ L_u/L_0=1+O(X^{-s-1}).
+\]
+For a fixed nonzero $a$, take the product
+$\prod_u L_u(X)^{\chi_a(u)}$. Since $\sum_u\chi_a(u)=0$, this
+product is also $1+O(X^{-s-1})$. Character orthogonality over the
+integers gives
+\[
+ \sum_u\chi_a(u)x_j(u)=
+ \begin{cases}
+ -\epsilon_j2^{r-1},&a_j=a,\\
+ 0,&a_j\ne a.
+ \end{cases}
+\]
+Writing $F_a^\pm$ for the locators of $C_a^\pm$, we obtain
+\[
+ \left(\frac{F_a^-}{F_a^+}\right)^{2^{r-1}}
+ =1+O(X^{-s-1}).
+\]
+The ratio has leading term one, since both polynomials have degree
+$h_a$. Raising such a Laurent series to an integer power invertible
+in the field preserves its first nonzero nonconstant term.
+Thus $F_a^-/F_a^+=1+O(X^{-s-1})$. The two disjoint nonempty root
+sets give different monic polynomials, so their nonzero difference
+has degree at most $h_a-s-1$. Hence $h_a\ge s+1$. Summing and
+using $r\le c$ proves the bound.
+
+For sharpness put $B=s+1$ and use $r$ disjoint pairs of full
+$B$-element fibers of $X^B$. Select one fiber in each pair
+independently, then add fixed selected and unselected coordinates
+as needed. Each fiber locator is $X^B-a$, so the varying locator
+product has the same first $B-1$ coefficients. The common fixed
+factor preserves that prefix. The fiber-lifting argument of
+Lemma~\ref{fg:lift} supplies arbitrarily large odd primes for the
+required finite collection of fibers. With
+$r=\lfloor\min\{t,n-t\}/B\rfloor$, the remaining fixed-coordinate
+counts $t-rB$ and $n-t-rB$ are nonnegative, giving equality.
+\end{proof}
+
+\paragraph{Finite consequences.}
+For the $(n,t,s)=(64,34,2)$ integer class, every affine binary
+subfamily has at most $2^{10}=1024$ members. For $(157,68,5)$ the
+bound is $2^{11}=2048$. The much larger certified classes therefore
+require nonlinear families of support indicators. Likewise, choosing
+$272$ of $511$ packet labels with fourteen fixed leading coefficients
+permits at most $2^{15}=32768$ members in an affine binary subfamily.
+This does not exclude nonlinear support families or other transfers
+from binary-field constructions.
+
+\paragraph{The characteristic-two exception.}
+On $\mathbb F_{16}$, let $a$ range over an affine binary hyperplane
+not containing zero and take the supports
+\[
+ \{x\in\mathbb F_{16}:\operatorname{Tr}_{\mathbb F_{16}/\mathbb F_2}(ax)=1\}.
+\]
+Their indicators form an affine binary family of dimension three,
+and every support has size eight. The monic locator is a normalized
+trace polynomial plus a constant, with possible degrees only
+$8,4,2,1,0$. Its first three coefficients below the leading term
+are zero. Thus $(n,t,s,r)=(16,8,3,3)$, violating the bound $r\le2$
+that would follow in odd characteristic. Here taking a power of two
+can raise a Laurent vanishing order, exactly the step excluded above.
+
+The checker in \path{research/binary_affine_locator/} enumerates
+$103{,}416$ small affine binary spaces and verifies all $8{,}407$
+constant-weight families, including an odd-characteristic example
+with characteristic no greater than the prefix length. It also checks
+twenty sharpness examples and the $\mathbb F_{16}$ exception.
+These finite checks supplement the proof.
 
 \begin{thebibliography}{99}
 \bibitem{corvaja-zannier} P. Corvaja and U. Zannier.

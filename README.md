@@ -65,6 +65,12 @@ analysis as an application of those results.
   32768 reduces to a power or twisted-inversion quotient. This concerns
   complete fibers of one fixed map; it does not improve the numerical score.
 
+- A sharp bound limits affine binary support families in every
+  characteristic other than two: fixing `s` leading locator coefficients
+  forces dimension at most `floor(min(t,n-t)/(s+1))`. A trace family over
+  `F_16` violates this bound, identifying a specific barrier to direct
+  binary-to-prime transfer.
+
 [New finite-certificate proofs and replay instructions](research/overnight_2026-09-16/README.md).
 
 The statements retain their field, domain, radius, and quantifier

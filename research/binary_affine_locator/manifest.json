@@ -1,0 +1,12 @@
+{
+  "status": "Proof self-reviewed twice; exhaustive finite checks, sharpness examples, and clean 79-page manuscript build passed",
+  "files": {
+    "PROOF.md": "76111f48f0a737752617abc0d086de20578ecd1c59f3b4e956c355eb06ebf8e2",
+    "README.md": "5845f783ded6bef4e2dd6c9f4f2d9157206a8e9b236d88961e233006afb41e80",
+    "binary_affine_locator_verification.json": "d1e7128fa8259de2c288394691b440451375eac1b4b703648c449a762f257784",
+    "build_resources.json": "d25a6b23c50e2f42cb095a1f1bde5c100a9c2c95ffa34d783c7af723b2c3800f",
+    "verification_resources.json": "1c2a017a0f0f7e7e58863571f69b0d509b9278eb47cf0c3c6d17bf0185b3081f",
+    "verify.py": "b97bf0a1c41bf2f2c8c0fe35b16783561b4c1d6b33cd249720295cc5985e488d"
+  },
+  "scope": "Sharp bound for binary-affine constant-weight locator-prefix classes in characteristic other than two. Does not exclude nonlinear support families or establish a better.codes improvement."
+}

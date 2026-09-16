@@ -1,0 +1,325 @@
+{
+  "status": "passed",
+  "exhaustive": [
+    {
+      "q": 7,
+      "characteristic": 7,
+      "n": 6,
+      "affine_spaces": 23592,
+      "constant_weight_families": 700,
+      "prefix_histogram": {
+        "0": 663,
+        "1": 36,
+        "2": 1
+      }
+    },
+    {
+      "q": 101,
+      "characteristic": 101,
+      "n": 6,
+      "affine_spaces": 23592,
+      "constant_weight_families": 700,
+      "prefix_histogram": {
+        "0": 672,
+        "1": 28
+      }
+    },
+    {
+      "q": 9,
+      "characteristic": 3,
+      "n": 6,
+      "affine_spaces": 23592,
+      "constant_weight_families": 700,
+      "prefix_histogram": {
+        "0": 663,
+        "1": 36,
+        "2": 1
+      }
+    },
+    {
+      "q": 9,
+      "characteristic": 3,
+      "n": 8,
+      "affine_spaces": 32640,
+      "constant_weight_families": 6307,
+      "prefix_histogram": {
+        "0": 5712,
+        "1": 578,
+        "2": 16,
+        "3": 1
+      }
+    }
+  ],
+  "sharpness": [
+    {
+      "B": 1,
+      "s": 0,
+      "r": 1,
+      "n": 2,
+      "t": 1,
+      "list_size": 2
+    },
+    {
+      "B": 1,
+      "s": 0,
+      "r": 2,
+      "n": 4,
+      "t": 2,
+      "list_size": 4
+    },
+    {
+      "B": 1,
+      "s": 0,
+      "r": 3,
+      "n": 6,
+      "t": 3,
+      "list_size": 8
+    },
+    {
+      "B": 1,
+      "s": 0,
+      "r": 4,
+      "n": 8,
+      "t": 4,
+      "list_size": 16
+    },
+    {
+      "B": 2,
+      "s": 1,
+      "r": 1,
+      "n": 4,
+      "t": 2,
+      "list_size": 2
+    },
+    {
+      "B": 2,
+      "s": 1,
+      "r": 2,
+      "n": 8,
+      "t": 4,
+      "list_size": 4
+    },
+    {
+      "B": 2,
+      "s": 1,
+      "r": 3,
+      "n": 12,
+      "t": 6,
+      "list_size": 8
+    },
+    {
+      "B": 2,
+      "s": 1,
+      "r": 4,
+      "n": 16,
+      "t": 8,
+      "list_size": 16
+    },
+    {
+      "B": 3,
+      "s": 2,
+      "r": 1,
+      "n": 6,
+      "t": 3,
+      "list_size": 2
+    },
+    {
+      "B": 3,
+      "s": 2,
+      "r": 2,
+      "n": 12,
+      "t": 6,
+      "list_size": 4
+    },
+    {
+      "B": 3,
+      "s": 2,
+      "r": 3,
+      "n": 18,
+      "t": 9,
+      "list_size": 8
+    },
+    {
+      "B": 3,
+      "s": 2,
+      "r": 4,
+      "n": 24,
+      "t": 12,
+      "list_size": 16
+    },
+    {
+      "B": 4,
+      "s": 3,
+      "r": 1,
+      "n": 8,
+      "t": 4,
+      "list_size": 2
+    },
+    {
+      "B": 4,
+      "s": 3,
+      "r": 2,
+      "n": 16,
+      "t": 8,
+      "list_size": 4
+    },
+    {
+      "B": 4,
+      "s": 3,
+      "r": 3,
+      "n": 24,
+      "t": 12,
+      "list_size": 8
+    },
+    {
+      "B": 4,
+      "s": 3,
+      "r": 4,
+      "n": 32,
+      "t": 16,
+      "list_size": 16
+    },
+    {
+      "B": 6,
+      "s": 5,
+      "r": 1,
+      "n": 12,
+      "t": 6,
+      "list_size": 2
+    },
+    {
+      "B": 6,
+      "s": 5,
+      "r": 2,
+      "n": 24,
+      "t": 12,
+      "list_size": 4
+    },
+    {
+      "B": 6,
+      "s": 5,
+      "r": 3,
+      "n": 36,
+      "t": 18,
+      "list_size": 8
+    },
+    {
+      "B": 6,
+      "s": 5,
+      "r": 4,
+      "n": 48,
+      "t": 24,
+      "list_size": 16
+    }
+  ],
+  "characteristic_two_negative_control": {
+    "q": 16,
+    "n": 16,
+    "t": 8,
+    "s": 3,
+    "r": 3,
+    "odd_characteristic_bound": 2,
+    "supports": [
+      21930,
+      43690,
+      42330,
+      23130,
+      39270,
+      26214,
+      27030,
+      38550
+    ],
+    "locator_coefficients": [
+      [
+        12,
+        10,
+        15,
+        0,
+        8,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        5,
+        11,
+        12,
+        0,
+        3,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        8,
+        15,
+        12,
+        0,
+        10,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        3,
+        14,
+        8,
+        0,
+        4,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        15,
+        8,
+        10,
+        0,
+        12,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        2,
+        9,
+        15,
+        0,
+        5,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        4,
+        13,
+        10,
+        0,
+        2,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        10,
+        12,
+        8,
+        0,
+        15,
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  "seconds": 0.23917258298024535,
+  "scope": "Exhaustive small binary-affine support spaces, exact odd-characteristic locator prefixes including characteristic below prefix length, sharp full-fiber examples, and a characteristic-two counterexample. Finite checks supplement the proof."
+}

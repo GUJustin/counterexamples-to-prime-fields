@@ -16,9 +16,9 @@
     "gram_gaussian_class_bound.md": "f36be9d5332c867aef1a31a1add86ece1b2505502a065213f4e98e5f0289f073",
     "ellipsoid_moment_bound_audit.md": "e4a699996b08a6d4f3f10fa47a0a808fde5b1a7df418a99c64bf7639949737bc"
   },
-  "manuscript_sha256": "8a2c6493aa6f69fce6ac14f8d89e4e30d761b91b5d65edf54bd63f8ed627f591",
-  "pdf_sha256": "ac50ff3e27a9f910fe7a19f94c7dde050328b0854e8d9c80dfca80df03f23626",
-  "pdf_pages": 77,
+  "manuscript_sha256": "15c6681f46faf6d3cc719d661f0c97dcdeba4c15b4c0250d6f20a289a1384a0f",
+  "pdf_sha256": "bb28223f77a8917387a6370f2f2fa278aee93df8f3c2b0f3cc5aa87d4a42caeb",
+  "pdf_pages": 79,
   "editorial_changes": [
     "General coding-theory and hash-based SNARK framing",
     "Direct explanatory academic prose with explicit quantifiers",
@@ -39,9 +39,10 @@
     "Integrate overnight exact interval counts, displaced radial weights, exact incidence collision bounds, and native-circle product refinements; preserve pre-existing working-tree changes in an isolated review worktree.",
     "Retain and verify the earlier balanced-polynomial-fiber, Galois-rational-fiber, and growing-moment refinements; correct Goyal and Sun author initials against arXiv:2607.08516.",
     "Remove the balanced-rational-map Galois hypothesis for p=ell*n +/- 1, ell>=6, n>6(B-1); add self-contained proof and supplementary exact checks.",
-    "Add anchored quotient and padding construction giving actual correlated-agreement failure at exactly fixed rate and gap, with an explicit lower bound on the gap-dependent linear coefficient."
+    "Add anchored quotient and padding construction giving actual correlated-agreement failure at exactly fixed rate and gap, with an explicit lower bound on the gap-dependent linear coefficient.",
+    "Add sharp binary-affine locator-prefix bound in every characteristic other than two, with explicit characteristic-two exception and finite implications for the large integer classes."
   ],
-  "revised_at": "2026-09-16T14:41:09.846608+00:00",
+  "revised_at": "2026-09-16T15:16:56.125057+00:00",
   "coordination": {
     "frontier_acknowledged": "2026-09-15T18:11:07-04:00",
     "older_32_page_source_repaired": true,
@@ -133,16 +134,6 @@
     "better_codes": "Pinned display 116.13 unchanged",
     "scope": "Classification of complete fibers of one fixed rational map; partial fibers and varying maps remain outside the theorem."
   },
-  "validation": {
-    "build": "77-page paper.pdf; make paper passed with no final LaTeX warnings, undefined references, or overflowing boxes.",
-    "visual_review": "New lemma, theorem, and finite example table on pages 23-25 inspected at rendered resolution.",
-    "new_checks": "Six prime-field fixtures, 70 anchored moment counts, 378 integer affine transforms, and two concrete coefficients passed.",
-    "unchanged_checks": "Prior complete make verify replay retained; only the separately passing anchored padding checker is added to the target.",
-    "proof_review": "Self-reviewed proof; no independent coauthor proof review claimed.",
-    "resource_evidence": "research/fixed_gap_padding/*_resources.json",
-    "better_codes": "Pinned display 116.13 unchanged",
-    "scope": "Linear growth at each fixed positive gap, over prime fields growing with length. No quadratic lower bound established."
-  },
   "fixed_gap_padding_package": "research/fixed_gap_padding/manifest.json",
   "supplementary_research_notes": {
     "linear_differential_mca": {
@@ -152,5 +143,26 @@
       "review": "Proof self-reviewed twice. Classical solution-dimension fact attributed to Guruswami--Wang. No independent mathematical review or novelty claim.",
       "manuscript_integration": "Supplementary note linked in README; paper.tex and paper.pdf unchanged."
     }
-  }
+  },
+  "validation_before_binary_affine_integration": {
+    "build": "77-page paper.pdf; make paper passed with no final LaTeX warnings, undefined references, or overflowing boxes.",
+    "visual_review": "New lemma, theorem, and finite example table on pages 23-25 inspected at rendered resolution.",
+    "new_checks": "Six prime-field fixtures, 70 anchored moment counts, 378 integer affine transforms, and two concrete coefficients passed.",
+    "unchanged_checks": "Prior complete make verify replay retained; only the separately passing anchored padding checker is added to the target.",
+    "proof_review": "Self-reviewed proof; no independent coauthor proof review claimed.",
+    "resource_evidence": "research/fixed_gap_padding/*_resources.json",
+    "better_codes": "Pinned display 116.13 unchanged",
+    "scope": "Linear growth at each fixed positive gap, over prime fields growing with length. No quadratic lower bound established."
+  },
+  "validation": {
+    "build": "79-page paper.pdf; make paper passed with no final LaTeX warnings, undefined references, or overflowing boxes.",
+    "visual_review": "New Theorem F.1 and its proof, finite consequences, and characteristic-two example inspected on rendered pages 76-77.",
+    "new_checks": "103416 affine binary spaces, all 8407 constant-weight families, 20 sharpness examples, and an F16 negative control passed.",
+    "unchanged_checks": "Prior full make verify replay retained; this adds the separately passing binary-affine checker. The linear-differential supplement also passed its standalone checker before its preceding publication.",
+    "proof_review": "Self-reviewed twice; no independent review or novelty claim.",
+    "resource_evidence": "research/binary_affine_locator/*_resources.json",
+    "better_codes": "Pinned score 116.13 unchanged",
+    "scope": "This bounds binary-affine support classes, not all binary-field constructions or nonlinear support families."
+  },
+  "binary_affine_locator_package": "research/binary_affine_locator/manifest.json"
 }

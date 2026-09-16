@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "research/binary_affine_locator/verify.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5619689580053091,
+  "peak_rss_kib": 32,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}
