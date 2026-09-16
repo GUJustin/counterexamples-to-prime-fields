@@ -1,0 +1,84 @@
+{
+  "status": "PASS",
+  "monic_polynomials_checked": 156194,
+  "classified_solutions": 278,
+  "classification_fixtures": [
+    {
+      "p": 5,
+      "e": 1,
+      "degree_cap": 2,
+      "monic_solutions": 31
+    },
+    {
+      "p": 7,
+      "e": 2,
+      "degree_cap": 4,
+      "monic_solutions": 57
+    },
+    {
+      "p": 11,
+      "e": 2,
+      "degree_cap": 4,
+      "monic_solutions": 133
+    },
+    {
+      "p": 7,
+      "e": 3,
+      "degree_cap": 6,
+      "monic_solutions": 57
+    }
+  ],
+  "degree_sections": [
+    {
+      "p": 101,
+      "e": 2,
+      "reduced_section_points": 4
+    },
+    {
+      "p": 101,
+      "e": 4,
+      "reduced_section_points": 16
+    },
+    {
+      "p": 101,
+      "e": 5,
+      "reduced_section_points": 25
+    },
+    {
+      "p": 101,
+      "e": 10,
+      "reduced_section_points": 100
+    },
+    {
+      "p": 101,
+      "e": 20,
+      "reduced_section_points": 400
+    },
+    {
+      "p": 1009,
+      "e": 3,
+      "reduced_section_points": 9
+    },
+    {
+      "p": 1009,
+      "e": 6,
+      "reduced_section_points": 36
+    },
+    {
+      "p": 1009,
+      "e": 8,
+      "reduced_section_points": 64
+    },
+    {
+      "p": 1009,
+      "e": 12,
+      "reduced_section_points": 144
+    },
+    {
+      "p": 1009,
+      "e": 24,
+      "reduced_section_points": 576
+    }
+  ],
+  "scope": "Classification and e-squared proper reduced sections; no nearby-line or MCA lower bound."
+}

@@ -38,6 +38,10 @@ verify:
 	$(PYTHON) research/linear_differential_mca/verify.py
 	$(PYTHON) research/spectral_riccati/verify_constant.py
 	$(PYTHON) research/spectral_riccati/verify_weighted.py
+	$(PYTHON) research/power_family_mca/verify_family.py
+	$(PYTHON) research/power_family_mca/verify_wronskian.py
+	$(PYTHON) research/power_family_mca/verify_mca.py
+	$(PYTHON) research/power_family_mca/verify_parameters.py
 	$(PYTHON) research/binary_affine_locator/verify.py
 	$(PYTHON) research/structured_domains/verify_balanced_fibers.py
 	$(PYTHON) research/gram_norm/verify_balanced_fibers.py

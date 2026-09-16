@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "research/power_family_mca/verify_family.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 5.3568259999156,
+  "peak_rss_kib": 17648,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

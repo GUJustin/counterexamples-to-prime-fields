@@ -1,0 +1,537 @@
+{
+  "status": "PASS",
+  "fixtures": [
+    {
+      "t": 3,
+      "r": 1,
+      "m": 1,
+      "e": 3,
+      "p": 101,
+      "root_mode": "disjoint",
+      "N": 3,
+      "J": 1,
+      "M": 2,
+      "degree_cap": 3,
+      "wronskian_degree": 4,
+      "wronskian_order_on_S": 0,
+      "total_gcd_degree": 1,
+      "outside_gcd_degree": 1,
+      "gcd_bound_numerator": 16,
+      "gcd_bound_denominator": 4,
+      "local": [
+        {
+          "root": 2,
+          "adapted_orders": [
+            0,
+            1
+          ],
+          "sum_bound": 0,
+          "wronskian_order": 0
+        },
+        {
+          "root": 3,
+          "adapted_orders": [
+            0,
+            1
+          ],
+          "sum_bound": 0,
+          "wronskian_order": 0
+        },
+        {
+          "root": 4,
+          "adapted_orders": [
+            0,
+            1
+          ],
+          "sum_bound": 0,
+          "wronskian_order": 0
+        }
+      ]
+    },
+    {
+      "t": 3,
+      "r": 1,
+      "m": 2,
+      "e": 21,
+      "p": 101,
+      "root_mode": "disjoint",
+      "N": 6,
+      "J": 1,
+      "M": 5,
+      "degree_cap": 42,
+      "wronskian_degree": 190,
+      "wronskian_order_on_S": 108,
+      "total_gcd_degree": 1,
+      "outside_gcd_degree": 1,
+      "gcd_bound_numerator": 208,
+      "gcd_bound_denominator": 10,
+      "local": [
+        {
+          "root": 2,
+          "adapted_orders": [
+            0,
+            1,
+            2,
+            21,
+            22
+          ],
+          "sum_bound": 42,
+          "wronskian_order": 36
+        },
+        {
+          "root": 3,
+          "adapted_orders": [
+            0,
+            1,
+            2,
+            21,
+            22
+          ],
+          "sum_bound": 42,
+          "wronskian_order": 36
+        },
+        {
+          "root": 4,
+          "adapted_orders": [
+            0,
+            1,
+            2,
+            21,
+            22
+          ],
+          "sum_bound": 42,
+          "wronskian_order": 36
+        }
+      ]
+    },
+    {
+      "t": 3,
+      "r": 2,
+      "m": 2,
+      "e": 51,
+      "p": 1009,
+      "root_mode": "disjoint",
+      "N": 6,
+      "J": 1,
+      "M": 5,
+      "degree_cap": 204,
+      "wronskian_degree": 995,
+      "wronskian_order_on_S": 576,
+      "total_gcd_degree": 1,
+      "outside_gcd_degree": 1,
+      "gcd_bound_numerator": 916,
+      "gcd_bound_denominator": 10,
+      "local": [
+        {
+          "root": 2,
+          "adapted_orders": [
+            0,
+            1,
+            2,
+            51,
+            52
+          ],
+          "sum_bound": 102,
+          "wronskian_order": 96
+        },
+        {
+          "root": 3,
+          "adapted_orders": [
+            0,
+            1,
+            2,
+            51,
+            52
+          ],
+          "sum_bound": 102,
+          "wronskian_order": 96
+        },
+        {
+          "root": 4,
+          "adapted_orders": [
+            0,
+            1,
+            2,
+            51,
+            52
+          ],
+          "sum_bound": 102,
+          "wronskian_order": 96
+        },
+        {
+          "root": 505,
+          "adapted_orders": [
+            0,
+            1,
+            2,
+            51,
+            52
+          ],
+          "sum_bound": 102,
+          "wronskian_order": 96
+        },
+        {
+          "root": 673,
+          "adapted_orders": [
+            0,
+            1,
+            2,
+            51,
+            52
+          ],
+          "sum_bound": 102,
+          "wronskian_order": 96
+        },
+        {
+          "root": 757,
+          "adapted_orders": [
+            0,
+            1,
+            2,
+            51,
+            52
+          ],
+          "sum_bound": 102,
+          "wronskian_order": 96
+        }
+      ]
+    },
+    {
+      "t": 4,
+      "r": 1,
+      "m": 2,
+      "e": 109,
+      "p": 1009,
+      "root_mode": "disjoint",
+      "N": 10,
+      "J": 3,
+      "M": 7,
+      "degree_cap": 218,
+      "wronskian_degree": 1484,
+      "wronskian_order_on_S": 832,
+      "total_gcd_degree": 1,
+      "outside_gcd_degree": 1,
+      "gcd_bound_numerator": 4050,
+      "gcd_bound_denominator": 14,
+      "local": [
+        {
+          "root": 2,
+          "adapted_orders": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            109,
+            110
+          ],
+          "sum_bound": -109,
+          "wronskian_order": 208
+        },
+        {
+          "root": 3,
+          "adapted_orders": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            109,
+            110
+          ],
+          "sum_bound": -109,
+          "wronskian_order": 208
+        },
+        {
+          "root": 4,
+          "adapted_orders": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            109,
+            110
+          ],
+          "sum_bound": -109,
+          "wronskian_order": 208
+        },
+        {
+          "root": 5,
+          "adapted_orders": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            109,
+            110
+          ],
+          "sum_bound": -109,
+          "wronskian_order": 208
+        }
+      ]
+    },
+    {
+      "t": 4,
+      "r": 2,
+      "m": 2,
+      "e": 253,
+      "p": 2003,
+      "root_mode": "disjoint",
+      "N": 10,
+      "J": 3,
+      "M": 7,
+      "degree_cap": 1012,
+      "wronskian_degree": 7035,
+      "wronskian_order_on_S": 3968,
+      "total_gcd_degree": 1,
+      "outside_gcd_degree": 1,
+      "gcd_bound_numerator": 18510,
+      "gcd_bound_denominator": 14,
+      "local": [
+        {
+          "root": 2,
+          "adapted_orders": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            253,
+            254
+          ],
+          "sum_bound": -253,
+          "wronskian_order": 496
+        },
+        {
+          "root": 3,
+          "adapted_orders": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            253,
+            254
+          ],
+          "sum_bound": -253,
+          "wronskian_order": 496
+        },
+        {
+          "root": 4,
+          "adapted_orders": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            253,
+            254
+          ],
+          "sum_bound": -253,
+          "wronskian_order": 496
+        },
+        {
+          "root": 5,
+          "adapted_orders": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            253,
+            254
+          ],
+          "sum_bound": -253,
+          "wronskian_order": 496
+        },
+        {
+          "root": 501,
+          "adapted_orders": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            253,
+            254
+          ],
+          "sum_bound": -253,
+          "wronskian_order": 496
+        },
+        {
+          "root": 668,
+          "adapted_orders": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            253,
+            254
+          ],
+          "sum_bound": -253,
+          "wronskian_order": 496
+        },
+        {
+          "root": 1002,
+          "adapted_orders": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            253,
+            254
+          ],
+          "sum_bound": -253,
+          "wronskian_order": 496
+        },
+        {
+          "root": 1202,
+          "adapted_orders": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            253,
+            254
+          ],
+          "sum_bound": -253,
+          "wronskian_order": 496
+        }
+      ]
+    },
+    {
+      "t": 3,
+      "r": 2,
+      "m": 2,
+      "e": 51,
+      "p": 1009,
+      "root_mode": "common",
+      "N": 6,
+      "J": 1,
+      "M": 5,
+      "degree_cap": 204,
+      "wronskian_degree": 1000,
+      "wronskian_order_on_S": 798,
+      "total_gcd_degree": 52,
+      "outside_gcd_degree": 1,
+      "gcd_bound_numerator": 916,
+      "gcd_bound_denominator": 10,
+      "local": [
+        {
+          "root": 0,
+          "adapted_orders": [
+            102,
+            103,
+            104,
+            105,
+            106
+          ],
+          "sum_bound": 510,
+          "wronskian_order": 510
+        },
+        {
+          "root": 2,
+          "adapted_orders": [
+            0,
+            1,
+            2,
+            51,
+            52
+          ],
+          "sum_bound": 102,
+          "wronskian_order": 96
+        },
+        {
+          "root": 3,
+          "adapted_orders": [
+            0,
+            1,
+            2,
+            51,
+            52
+          ],
+          "sum_bound": 102,
+          "wronskian_order": 96
+        },
+        {
+          "root": 4,
+          "adapted_orders": [
+            0,
+            1,
+            2,
+            51,
+            52
+          ],
+          "sum_bound": 102,
+          "wronskian_order": 96
+        }
+      ]
+    },
+    {
+      "t": 3,
+      "r": 2,
+      "m": 2,
+      "e": 51,
+      "p": 1009,
+      "root_mode": "double",
+      "N": 6,
+      "J": 1,
+      "M": 5,
+      "degree_cap": 204,
+      "wronskian_degree": 1000,
+      "wronskian_order_on_S": 594,
+      "total_gcd_degree": 1,
+      "outside_gcd_degree": 1,
+      "gcd_bound_numerator": 916,
+      "gcd_bound_denominator": 10,
+      "local": [
+        {
+          "root": 2,
+          "adapted_orders": [
+            0,
+            1,
+            2,
+            102,
+            103
+          ],
+          "sum_bound": 204,
+          "wronskian_order": 198
+        },
+        {
+          "root": 3,
+          "adapted_orders": [
+            0,
+            1,
+            2,
+            102,
+            103
+          ],
+          "sum_bound": 204,
+          "wronskian_order": 198
+        },
+        {
+          "root": 4,
+          "adapted_orders": [
+            0,
+            1,
+            2,
+            102,
+            103
+          ],
+          "sum_bound": 204,
+          "wronskian_order": 198
+        }
+      ]
+    }
+  ],
+  "negative_controls": [
+    "Frobenius rank collapse",
+    "multiplicative four-cycle"
+  ],
+  "scope": "Exact ideal dimensions, monomial independence, valuation filtrations, Wronskian orders, and gcd inequalities. Small m gives weak numerical bounds; no finite MCA asymptotic regime is certified by these fixtures."
+}

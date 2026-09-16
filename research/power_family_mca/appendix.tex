@@ -1,0 +1,281 @@
+\section{Powers of bounded-degree bases have linear full-support MCA}
+\label{app:power-family-mca}
+
+A solution variety of quadratic degree need not produce quadratically
+many exceptional labels on a received line. We prove this for powers of
+bounded-degree polynomials, including a third-order differential equation
+whose projective solution surface has genuinely quadratic degree.
+
+Let $\mathcal D$ be a set of $n$ distinct field elements and let $f,g$ be
+arbitrary words on $\mathcal D$. For a candidate $P$ of degree at most
+$D$ and a label $z$, write
+\[
+ S(P,z)=\{x\in\mathcal D:f(x)+zg(x)=P(x)\}.
+\]
+Call $(P,z)$ bad at threshold $A>D$ if $|S(P,z)|\ge A$ and there are
+no polynomials $F_0,G_0$ of degree at most $D$ agreeing with $f,g$,
+respectively, on all of $S(P,z)$. Equivalently, $g$ has no degree-$D$
+interpolant on this full support, since then $F_0=P-zG_0$ would work.
+A label is bad if it has at least one bad candidate in the specified family.
+
+\begin{theorem}[Fixed powers of bounded-degree bases]
+\label{thm:power-family-linear-mca}
+Fix $r\ge1$ and $0<\rho_-\le\rho_+<a\le1$. Consider candidates
+\[
+ P=cH^e,\qquad c\ne0,\quad H\text{ monic},\quad\deg H=r,
+ \qquad D=re,
+\]
+where $\rho_-\le D/n\le\rho_+$ and $A\ge an$.
+There are constants $C_{r,a}$, $c_{r,a}$, and
+$n_0(r,a,\rho_-)$ such that, for $n\ge n_0$, every received line has
+at most $C_{r,a}n$ bad labels if the characteristic is zero or
+$p>c_{r,a}n$. In particular this holds along every sequence with
+$p/n\to\infty$. The exponent $e$ is common to each candidate family.
+\end{theorem}
+
+The proof gives explicit, very large sufficient constants. It does not
+cover arbitrarily varying root exponents or a base degree growing with
+$n$, and it gives no improvement to the finite better.codes certificate.
+
+\subsection{A high-power gcd estimate}
+
+For a polynomial $H$, its divisor vector records the integer multiplicity
+at each root over an algebraic closure. Affine independence of these
+vectors is over $\mathbb Q$, not over the coefficient field.
+
+\begin{lemma}\label{lem:power-family-gcd}
+Let $t\in\{3,4\}$ and let $H_1,\ldots,H_t$ be monic degree-$r$
+polynomials with affinely independent divisor vectors. Let $F,G$ be
+independent homogeneous linear forms in $t$ variables, and put
+\[
+ N=\binom{m+t-1}{t-1},\qquad
+ J=\binom{m+t-3}{t-3},\qquad M=N-J
+\]
+for an integer $m\ge1$. Suppose
+\[
+ e>\binom{N-1}{2}(tr-1),\qquad
+ \operatorname{char}\F=0\quad\text{or}\quad p>rme.
+\]
+Outside the union $S$ of the roots of the $H_i$, the gcd of
+$F(H_1^e,\ldots,H_t^e)$ and $G(H_1^e,\ldots,H_t^e)$ has degree at most
+\begin{equation}\label{eq:power-family-K}
+ K_t=\frac{(t-1)Jrme}{M}+\frac{(tr-1)(M-1)}2.
+\end{equation}
+The coefficient of $D=re$ is $4/(m+3)$ for $t=3$ and $18/(m+5)$
+for $t=4$.
+\end{lemma}
+
+\begin{proof}
+First, the $N$ degree-$m$ homogeneous monomials in the $H_i^e$ are
+linearly independent. Otherwise take a minimal constant relation with
+$q$ terms. Affine independence of the divisor vectors excludes $q=2$.
+Any $q-1$ terms have a nonzero ordinary Wronskian: their degrees are
+less than $p$, so a constant change of basis to distinct leading degrees
+gives a nonzero Vandermonde leading coefficient. The same argument
+applies in characteristic zero.
+
+At each $s\in S$, omit a term of smallest order from this Wronskian.
+Minimality makes all the resulting Wronskians constant multiples of one
+another. If $A_0$ is the common gcd of the $q$ monomials, comparison of
+root orders with the Wronskian degree gives
+\[
+ rme-\deg A_0\le\binom{q-1}{2}(|S|-1).
+\]
+But the left side is at least the rational degree of any ratio of two
+distinct monomials. This ratio is an $e$-th power of a nonconstant
+rational function, so its degree is at least $e$. Since $q\le N$ and
+$|S|\le tr$, this contradicts the exponent assumption.
+
+Let $V$ be the degree-$m$ part of the homogeneous ideal $(F,G)$.
+Its dimension is $M$, because the quotient is a polynomial ring in
+$t-2$ variables. Evaluation at $(H_1^e,\ldots,H_t^e)$ is injective by
+the preceding paragraph. A basis $\psi_1,\ldots,\psi_M$ of the evaluated
+space has a nonzero Wronskian $W$ with
+\[
+ \deg W\le Mrme-\binom M2.
+\]
+At $s\in S$, let $a_\alpha$ be the vanishing orders of the $N$
+evaluated monomials. Intersecting a codimension-$J$ subspace with the
+span of monomials of order at least each integer $k$ shows that it has
+an adapted basis whose sum of orders is at least
+$\sum_\alpha a_\alpha-J\max_\alpha a_\alpha$.
+Indeed the dimension of each intersection loses at most $J$;
+summing the resulting filtration dimensions proves this bound.
+Cancellations can only increase the orders. A constant basis change
+does not change the order of $W$, so
+\[
+ \operatorname{ord}_s W\ge
+ \sum_\alpha a_\alpha-J\max_\alpha a_\alpha-\binom M2.
+\]
+Summing over $S$, use
+$\sum_s\sum_\alpha a_\alpha=Nrme$ and
+$\sum_s\max_\alpha a_\alpha\le trme$ to obtain
+\[
+ \sum_{s\in S}\operatorname{ord}_s W
+ \ge Nrme-Jtrme-|S|\binom M2.
+\]
+The gcd $T$ of the two evaluated forms, with all factors supported on
+$S$ removed, divides every $\psi_i$. The identity
+$\operatorname{Wr}(Th_1,\ldots,Th_M)=T^M\operatorname{Wr}(h_1,\ldots,h_M)$
+therefore contributes at least $M\deg T$ zeros outside $S$.
+Combining the last two bounds and using $N-M=J$ proves
+\eqref{eq:power-family-K}.
+\end{proof}
+
+This elementary argument is a specialization of the high-power gcd
+phenomenon; for a broader characteristic-zero theorem see
+Guo--Sun--Wang~\cite[Theorem 11]{guo-sun-wang-gcd}. The finite-characteristic
+statement here follows directly from the displayed Wronskian argument.
+
+\subsection{Dependent tuples and fixed-word lists}
+
+Put
+\[
+ C_{t,r}=\sum_{j=1}^{t-1}\binom{(j+1)r-1}{r}.
+\]
+In a collection of $L$ labeled candidates with at most $T$ occurrences
+of each monic direction $H$, at most $TC_{t,r}L^{t-1}$ ordered
+$t$-tuples have affinely dependent divisor vectors. To prove this, take
+the first dependent entry after $j$ preceding entries. Its roots lie in
+the union of their at most $jr$ roots. There are at most
+$\binom{(j+1)r-1}{r}$ monic degree-$r$ polynomials on this root set,
+each with at most $T$ labels. Count the remaining entries freely and
+sum over $j$. Repeated directions and repeated roots are included.
+
+Consider a fixed word and candidates agreeing with it on at least
+$bn$ positions, for a fixed $b>0$. For each direction $H$, deleting its
+at most $r$ roots leaves disjoint agreement sets for distinct scalars.
+Thus the scalar multiplicity is at most $n/(bn-r)$, and hence at most
+$2/b$ for sufficiently large $n$.
+An independent triple has at most $K_3+3r$ common agreement positions:
+outside its root union apply Lemma~\ref{lem:power-family-gcd} to
+$c_1Z_1-c_2Z_2$ and $c_1Z_1-c_3Z_3$.
+Choose $m$ and then $n,e,p$ so that $K_3+3r\le b^3n/16$.
+If $L\ge4/b$, and $b_x$ is the number of candidates agreeing at $x$,
+convexity gives
+\[
+ \sum_x(b_x)_3\ge n(bL-2)^3\ge b^3nL^3/8.
+\]
+Here $(b_x)_3\ge\max(b_x-2,0)^3$ justifies the first inequality.
+Independent triples contribute at most $b^3nL^3/16$, and dependent
+triples at most $TC_{3,r}nL^2$. Consequently
+\begin{equation}\label{eq:power-family-list}
+ L\le L_0:=\max\{\lceil4/b\rceil,\lceil32C_{3,r}/b^4\rceil\}.
+\end{equation}
+This list estimate needs positive agreement, but not agreement above
+the code rate.
+
+\subsection{From fixed-word lists to full-support MCA}
+
+Choose one bad candidate at each bad label and set $B=\lfloor A/2\rfloor$.
+For a selected candidate $cH^e$, delete the roots of $H$ from its
+support and group the remaining coordinates by $\lambda_x=g(x)/H(x)^e$.
+Call the candidate heavy if some group has at least $B$ positions,
+and light otherwise.
+
+For a heavy group with ratio zero, $cH^e$ belongs to the fixed-word
+list of $f$ at threshold $B$. Each fixed candidate gives at most $n$
+bad labels: a bad support contains a coordinate with $g(x)\ne0$, and
+that coordinate determines $z$.
+For a heavy group with nonzero ratio, $\lambda H^e$ belongs to the
+fixed-word list of $g$ at threshold $B$. Fix such a direction $H$ and
+divide $f+zg$ by $H^e$ at nonroot coordinates. These are affine
+functions of $z$. Except at at most $r$ labels at which a root coordinate
+agrees accidentally, a bad support must contain two distinct such
+functions. Otherwise their common two coefficients times $H^e$ give
+the forbidden common witnesses on the full support. A support of at
+least $A-r$ coordinates containing two different functions consumes
+at least $A-r-1$ pairs of different functions. Each pair meets at at
+most one label. This bounds the number of bad labels in this direction by
+\[
+ r+\left\lfloor\frac{\binom n2}{A-r-1}\right\rfloor.
+\]
+The list bound \eqref{eq:power-family-list}, with $b=a/3$ and
+$B\ge A/3$, bounds both heavy contributions by $O_{r,a}(n)$.
+
+In a light support, each ratio group has at most $B-1$ coordinates.
+There are at least $(A-r)(A-r-B+1)/2$ pairs with unequal ratios.
+For a fixed $H$, each such pair determines at most one pair $(z,c)$.
+The number of selected light labels in one direction is therefore at most
+\[
+ T=\left\lfloor\frac{n(n-1)}{(A-r)(A-r-B+1)}\right\rfloor
+ \le 8/a^2
+\]
+for sufficiently large $n$. Four candidates at distinct labels satisfy,
+at each common agreement coordinate, the two independent forms
+\begin{align*}
+ &(z_2-z_3)c_1H_1^e+(z_3-z_1)c_2H_2^e+(z_1-z_2)c_3H_3^e=0,\\
+ &(z_2-z_4)c_1H_1^e+(z_4-z_1)c_2H_2^e+(z_1-z_2)c_4H_4^e=0.
+\end{align*}
+For an independent quadruple their common support has size at most
+$K_4+4r$, by Lemma~\ref{lem:power-family-gcd}.
+Choose parameters so that this is at most $a^4n/32$.
+If the total number $L$ of light labels is at least $6/a$, counting
+ordered quadruples through coordinates gives
+\[
+ a^4nL^4/16\le (a^4n/32)L^4+TC_{4,r}nL^3.
+\]
+Thus the light labels number at most
+\[
+ L_1:=\max\{\lceil6/a\rceil,\lceil256C_{4,r}/a^6\rceil\}.
+\]
+Together the contributions are at most
+\begin{equation}\label{eq:power-family-finite}
+ L_0n+L_0\left(r+\left\lfloor\frac{\binom n2}{A-r-1}\right\rfloor\right)+L_1.
+\end{equation}
+
+For completeness, the parameters can be chosen in the required order.
+Put $b=a/3$, choose $m_3\ge128/b^3-3$ and $m_4\ge1152/a^4-5$,
+and let $\beta_t=(tr-1)(M_t-1)/2$ be the constant term of $K_t$.
+Require
+\begin{gather*}
+ e>\max_{t=3,4}\binom{N_t-1}{2}(tr-1),\qquad
+ p>D\max(m_3,m_4)\quad\text{in positive characteristic},\\
+ \beta_3+3r\le b^3n/32,\qquad
+ \beta_4+4r\le a^4n/64,\qquad n\ge6(r+1)/a,\quad A\ge3.
+\end{gather*}
+Since $D<n$ and $D\ge\rho_-n$, these hold for all sufficiently large
+$n$ with a sufficiently large fixed lower bound on $p/n$. They ensure
+every inequality used above. Equation~\eqref{eq:power-family-finite}
+proves Theorem~\ref{thm:power-family-linear-mca}.
+The zero candidate adds at most $n$ labels. The same coordinate-pair
+argument handles all constant candidates, and a finite union over base
+degrees $1,\ldots,r$ is also covered with the ambient degree cap unchanged.
+
+\subsection{A quadratic-degree solution surface}
+
+Fix $e\ge1$ in characteristic zero or $p>2e$. The nonzero polynomial
+solutions of degree at most $2e$ to
+\begin{equation}\label{eq:quadratic-power-ode}
+ e^2P^2P'''+3e(1-e)PP'P''+(1-e)(1-2e)(P')^3=0
+\end{equation}
+are exactly $P=cH^e$ with $\deg H\le2$. Indeed, at a root of
+multiplicity $m$, the coefficient of the lowest possible term, after
+removing a nonzero local scalar, is $m(m-e)(m-2e)$. Thus every root
+has multiplicity $e$ or $2e$. Conversely, substitution verifies every
+$cH^e$; equivalently \eqref{eq:quadratic-power-ode} is the
+denominator-cleared equation $(P^{1/e})'''=0$.
+The monic base polynomial descends to the coefficient field by uniqueness.
+
+The map $[H]\mapsto[H^e]$ from the projective plane of quadratics is
+injective and base-point free. Its differential is injective on tangent
+spaces since $e\ne0$ in the field. The image therefore has degree $e^2$.
+One can also see the degree from the section
+$P(u)=P(v)$, $P(w)=P(v)$ for three distinct points $u,v,w$.
+There is no nonzero solution with $H(v)=0$, so normalize $H(v)=1$.
+Then $H(u),H(w)$ independently range over the $e$-th roots of unity,
+giving exactly $e^2$ distinct reduced points by quadratic interpolation.
+
+This is a fixed third-order equation of total jet degree three with an
+actual solution variety of degree $\Theta(n^2)$ at fixed positive rate.
+Nevertheless Theorem~\ref{thm:power-family-linear-mca} bounds the bad
+labels by $O(n)$ in its large-characteristic regime. The example therefore
+does not establish a quadratic proximity-gap lower bound.
+
+The supplementary exact checks in \path{research/power_family_mca/}
+verify the classification on 156,194 monic polynomials, ten reduced
+degree sections, seven Wronskian fixtures, 24 received lines, and
+exhaustive small divisor-dependence counts. Twelve rational-arithmetic
+fixtures check feasibility of the parameter choices without allocating
+length-$n$ arrays. The finite checks supplement the proof; they do not
+replace it or provide useful finite constants.

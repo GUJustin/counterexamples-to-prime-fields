@@ -1,0 +1,27 @@
+{
+  "status": "Self-reviewed proof; four exact checkers and clean 83-page manuscript build passed",
+  "prepared_at": "2026-09-16T16:20:10.530805+00:00",
+  "files": {
+    "PROOF.md": "8ea21d79712c258a336b115aa7d1375871c1989fad3c3210b79da637f7f7eddf",
+    "QUADRATIC_SURFACE.md": "9e3a9f98c6e314f8e1716c572a1ec2b25776152c72d0a67351063e5716068288",
+    "README.md": "510f0188165e7b501a79ce32b9979006c54eb96f94145c08c0c8b349a63c8fdd",
+    "appendix.tex": "dd1896e6598ebc45e445391102f990d9724467d9b68027fbf4dfea0bb008de52",
+    "build_resources.json": "5ebe0c3400a35e310ae4b9b7fd61a337462158779f366792533493226d552b61",
+    "family_resources.json": "6e16d48ebc8f99ef5856f80510a256fc0c28241bcab70cd59059aa602b9f6252",
+    "mca_resources.json": "b1830b6c659aee0eea217fa852d8244623c963433c0c09bb83f87d2e1cf95148",
+    "parameters_resources.json": "3ad89fa31f3cf3c946f0a48403c69f4482bb2c1429abbd6bc8a0bb621f9c6a14",
+    "parameters_verification.json": "56fb1f5e9d3a3250d1488711064bb42c63626d1ff9ac4194cdaba5f00ba4cb45",
+    "poly.py": "52ec9cbfd398d6c3d481a08f0b6a113d2ae0db3da241acbfbabbd112339e26a2",
+    "power_wronskian_verification.json": "06e104910d616deac2b6b10e6209e1ed6ce70b0246c341cc0611a8122db34371",
+    "quadratic_power_family_verification.json": "3534f53f1ed897cac97ff0cf074e04c8f70adf7098b658bec67b2a02efd962c7",
+    "quadratic_power_mca_verification.json": "b2563bfecdb58cd4997ec1a646999f5c40fa5c92df61fc9a77531a098aa2ad15",
+    "verify_family.py": "c7162d2dfc99095f2e8bbd3aad305fc85abbd764b9d6a2f83d7473c0cc9b8edd",
+    "verify_mca.py": "8dfa97240141f95a4db9af763b9e1d107db4b364f3dd3d13628ddbd807df3638",
+    "verify_parameters.py": "515abd8456ac6c901a4432a56f3bd997d4bd2c91537d030bcabda46ea916faeb",
+    "verify_wronskian.py": "c1b4b6112d00c49d61754e32d408be7f18617ebb1601beb958ef25643bae6a35",
+    "wronskian_resources.json": "2aa82f24fd194cc436fb1f9b30d3830e4795f54735a30e8a65b6a049fe57ba82"
+  },
+  "scope": "Fixed-power bounded-degree bases have O(n) full-support MCA labels at fixed positive rate and agreement in sufficiently large characteristic. Appendix G gives the proof and a quadratic-degree third-order solution surface. No general first-order theorem, fixed-gap quadratic lower bound, or better.codes gain.",
+  "review": "Proof self-reviewed twice; no independent mathematical review or novelty claim.",
+  "validation": "All four checkers ran sequentially under a 384 MiB watchdog. Resource files report sampled process-group RSS. Earlier unchanged complete-suite results retained."
+}

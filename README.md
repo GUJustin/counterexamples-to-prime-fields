@@ -96,6 +96,14 @@ This closes a particular nonlinear construction route. It includes a
 sharper constant-weight classification and exact finite checks; it does
 not settle the general first-order conjecture or give a quadratic lower bound.
 
+[Powers of bounded-degree bases and full-support MCA](research/power_family_mca/README.md)
+proves an `O(n)` exceptional-label bound for candidates `cH^e` with fixed
+base degree, fixed positive rate and agreement, and sufficiently large
+characteristic relative to length. Appendix G contains the proof and a
+third-order equation whose actual solution variety has quadratic degree
+but whose bad labels remain linear. This does not settle the general
+first-order conjecture or construct quadratic fixed-gap error.
+
 ## Build and verify
 
 The standalone source requires a LaTeX installation with `latexmk`,
