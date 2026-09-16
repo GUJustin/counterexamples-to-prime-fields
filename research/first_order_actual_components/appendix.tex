@@ -1,0 +1,217 @@
+\section{Actual first-order components have linear positive-dimensional degree}
+\label{app:actual-first-order}
+
+The degree of a Taylor-reconstruction cover can exceed the degree of
+the actual polynomial-solution locus. The following bound separates
+its curve and surface components. It leaves isolated solution pairs
+and the full first-order MCA conjecture unresolved.
+
+\begin{theorem}[Positive-dimensional actual components]
+\label{thm:actual-first-order-components}
+Let $E$ be algebraically closed of characteristic zero or $p>D$, with
+$D\ge1$. Let $Q(X,z,u,v)\ne0$ have total degree at most $B\ge1$ in
+$(u,v)$ and degree at most $H$ in $z$, with no restriction on its
+$X$-degree. In affine $(z,P)$ coefficient space, let $\mathcal V$ be
+the Zariski closure of the actual regular solutions
+\[
+ \deg P\le D,\qquad Q(X,z,P,P')=0,\qquad
+ Q_v(X,z,P,P')\not\equiv0.
+\]
+Put
+\[
+ \tau=\max\{0,2D-3\},\quad b=1+\tau(B-1),\quad
+ T=b+\tau H,\quad K=H+BT,\quad q=B+H.
+\]
+Every component of $\mathcal V$ has dimension at most two. If $J_i$
+is the sum of the projective degrees of its $i$-dimensional irreducible
+components, then
+\[
+ J_1\le qK,\qquad J_2\le qT.
+\]
+In particular $J_1+J_2=O_{B,H}(D)$. The reduced generic challenge
+fiber of the surface components has total degree at most $\deg_v Q$.
+The bounds concern actual components defined over $E$ before choosing
+a generic Taylor center; they do not apply to arbitrary Taylor images.
+\end{theorem}
+\begin{proof}
+If the regular locus is empty, the claims are immediate. Otherwise
+adjoin a Taylor center $t$ transcendental over $E$. Put
+$S=Q_v$, $A_0=Q_X+vQ_u$, and
+\[
+ \mathcal D=\partial_X+v\partial_u-(A_0/S)\partial_v,
+\]
+holding $z$ constant. On $S\ne0$, implicit differentiation reconstructs
+every derivative through order $D$. For $j\ge2$, write this derivative
+as $N_j/S^{2j-3}$, with $N_2=-A_0$. If $e=2j-3$, the recurrence is
+\[
+\begin{split}
+ N_{j+1}={}&S^2(\partial_XN_j+v\partial_uN_j)
+       -A_0S\partial_vN_j\\
+ &-eN_j\bigl(S(\partial_XS+v\partial_uS)-A_0\partial_vS\bigr).
+\end{split}
+\]
+Induction gives jet degree at most $1+(2j-3)(B-1)$ and challenge
+degree at most $(2j-3)H$. The common-denominator Taylor polynomial
+through degree $D$ is $F(X)/S(t,z,u,v)^\tau$, where every coefficient
+of $F$ has jet degree at most $b$ and challenge degree at most $\tau H$.
+Division by the Taylor factorials is valid since $p>D$.
+
+\paragraph{The actual locus in initial data.}
+Substitute this polynomial and its derivative into $Q$ and clear
+$S^{\tau B}$. In a term of jet degree $e\le B$, the numerator has
+jet degree at most
+\[
+ e b+\tau(B-e)(B-1)\le B b
+\]
+and challenge degree at most $H+\tau BH$. Thus every $X$-coefficient
+of the residual has total $(z,u,v)$ degree at most $K$.
+Include the initial equation $Q(t,z,u,v)=0$, of total degree at most $q$.
+On $S(t,z,u,v)\ne0$, these equations describe exactly the initial
+data of actual degree-$\le D$ solutions. Reconstruction and the
+initial-jet map are inverse regular maps on these open loci.
+Consequently all actual regular components have dimension at most two.
+Their closures acquire no irreducible component supported entirely
+on the boundary of this open locus.
+
+\paragraph{Curve components.}
+Choose $\lambda,c$ independently generic after adjoining $t$, and
+cut the actual locus by
+\[
+ P(t)+\lambda z=c.
+\]
+Each projective curve component has finitely many points at infinity,
+defined over $E$. At any such point the coefficient direction and
+the $z$ direction are not all zero, so
+$\sum_i a_i t^i+\lambda z\ne0$. The chosen hyperplane avoids these
+points. Its generic intersection also avoids the finite separant
+boundary and the finite intersections of each curve with other
+actual components, including surfaces.
+
+The function $P(t)+\lambda z$ on each curve is separable. The
+coefficient functions and $z$ generate the curve's function field,
+so their differentials cannot all vanish; independence of $t,\lambda$
+prevents cancellation. Its generic fiber is therefore reduced.
+The section selects exactly $J_1$ distinct affine points in the
+regular reconstruction locus, away from the surface components.
+
+In initial data the section substitutes $u=c-\lambda z$ into
+$Q(t,z,u,v)$, a nonzero plane equation of degree at most $q$.
+Each residual restricts to degree at most $K$. A plane component
+on which all residuals vanish, unless contained in $S=0$, maps to
+a positive-dimensional part of this generic hyperplane section of
+the actual locus, and hence to a section of a surface component.
+None of the selected $J_1$ points lies on it. Nor do they lie on
+components contained in $S=0$. On every remaining plane component
+at least one residual is nonzero. A generic linear combination of
+the residuals vanishes identically on none of them. B\'ezout's bound
+for its intersections with their union gives $J_1\le qK$.
+
+\paragraph{Surface components.}
+Use the same generic section. It contains no curve at infinity of
+an actual surface: a generic form $P(t)+\lambda z$ is nonzero on
+each such curve. Thus the affine section closures retain the full
+surface degrees. On the regular initial-data locus the projection
+to $(z,u)$ is generically separable, because $Q_v\ne0$. A generic
+line $u+\lambda z=c$ therefore gives generically reduced sections.
+
+Their initial-data curves are distinct components of the plane
+equation $Q(t,z,c-\lambda z,v)=0$ and have summed degree at most $q$.
+The projective reconstruction coordinates can be written as
+\[
+ S^\tau,\quad zS^\tau,\quad\text{the coefficient numerators of }F.
+\]
+After the substitution, all have degree at most $T$: the first two
+have degrees at most $T-1,T$, and the remaining numerators have
+degree at most $b+\tau H=T$. Homogenizing to degree $T$, the
+degree of the rational image of each source curve is at most $T$
+times its degree, as seen by pulling back a generic hyperplane.
+Summing gives $J_2\le qT$.
+
+Finally fix the generic challenge and work over its algebraic
+closure. At an independent generic Taylor center, regular
+reconstruction identifies every positive-dimensional actual
+solution component with a component of the plane equation in
+$(u,v)$. Projection to $u$ has total degree at most $\deg_v Q$.
+The hyperplane $P(t)=u_0$ avoids all curve points at infinity by
+the same transcendence argument, and its generic fiber is reduced.
+It therefore counts the full coefficient-space degree of these
+curves, proving the generic-fiber assertion.
+\end{proof}
+
+\paragraph{Linear degree cannot be replaced by a constant.}
+Let $D\ge2$, in characteristic zero or $p>D+1$, and put
+\[
+ R(X,z)=X^{D+1}+zX-1,\qquad
+ Q=RY_1-R_XY_0+Y_0^2.
+\]
+Here $B=2$, $H=1$. Every nonzero polynomial solution satisfies
+$(R/P)'=1$. The rational function $R/P-X$ has degree at most
+$D+1$ and derivative zero, so it is constant. Indeed, in positive
+characteristic its degree is less than $p$, whereas a nonconstant
+rational $p$th power has degree at least $p$.
+Hence all nonzero solutions are
+\[
+ z=a^{-1}-a^D,\qquad
+ P_a(X)=\sum_{i=0}^{D-1}a^iX^{D-i}+a^{-1},\qquad a\ne0.
+\]
+Conversely these are solutions, since $R(a,z)=0$ and $P_a=R/(X-a)$.
+The coefficient of $X^{D-1}$ recovers $a$. After multiplying the
+projective coordinates by $a$, they span all monomials
+$1,a,\ldots,a^{D+1}$, so the curve has degree $D+1$.
+The additional zero-solution line gives $J_1=D+2$.
+
+Linear surface growth also occurs: $(X-z)P'-DP=0$ has the actual
+family $P=c(X-z)^D$. Two generic affine hyperplanes restrict to
+$A(z)+cB(z)=0$ and $C(z)+cE(z)=0$, with $A,C$ of degree at most
+one and $B,E$ of degree at most $D$. Their elimination polynomial
+$AE-CB$ generically has degree $D+1$ and no extraneous roots.
+Thus this surface has degree $D+1$, although its generic challenge
+fiber is a line.
+
+\begin{corollary}[Nonaffine actual curves contribute linearly]
+\label{cor:nonaffine-actual-curves}
+Fix a received line $f+zg$ on $n$ distinct evaluation points and an
+agreement threshold $D<A\le n$. Among the actual curve components in
+Theorem~\ref{thm:actual-first-order-components}, omit those that are
+affine codeword graphs $P=F+zG$, with $\deg F,\deg G\le D$.
+The remaining components contain at most
+\[
+ \frac{n-D}{A-D}\,qK
+\]
+polynomial--challenge pairs with at least $A$ agreements. In particular,
+their exceptional-label contribution is $O_{B,H,\eta}(n)$ when
+$A-D\ge\eta n$ and $D\le n$.
+\end{corollary}
+\begin{proof}
+On an irreducible curve $C$, call a coordinate persistent if its
+agreement hyperplane contains $C$. If more than $D$ coordinates were
+persistent, interpolation at $D+1$ of them would force
+$P=F+zG$ identically on $C$. A vertical curve would then be a point;
+otherwise $C$ would be that affine codeword graph. Thus every retained
+curve has at most $h\le D$ persistent coordinates.
+
+Each of its other $n-h$ agreement hyperplanes meets $C$ in at most
+$\deg C$ distinct affine points. Every selected nearby pair lies on
+at least $A-h$ of these hyperplanes. Its number is therefore at most
+\[
+ (\deg C)\frac{n-h}{A-h}
+ \le(\deg C)\frac{n-D}{A-D}.
+\]
+Sum over the retained curves and use $J_1\le qK$.
+\end{proof}
+
+\paragraph{Scope and verification.}
+The theorem gives no linear bound on the number of isolated joint
+solutions. Nor does it bound by a constant the number of persistent
+affine codeword graphs that can each contribute accidental agreements.
+These obstacles prevent an inference of general $O(n/|F|)$ first-order
+MCA from the component-degree bounds alone.
+The checks in \path{research/first_order_actual_components/} verify
+the reconstruction recurrence on five equations, $576$ finite Taylor
+fixtures, and $40$ sharp-order linear-equation curves. A second checker
+exhausts $33{,}849$ polynomial--challenge pairs for the nonlinear
+curve family, verifies $39$ split reduced hyperplane sections, and
+detects extra solutions outside that example's stricter characteristic
+hypothesis $p>D+1$.
+These checks supplement the geometric proof; they do not certify
+the generic-section argument by themselves.

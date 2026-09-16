@@ -111,6 +111,14 @@ degree but whose bad labels remain linear. The earlier
 [fixed-power argument](research/power_family_mca/README.md) is retained.
 The general first-order conjecture and quadratic fixed-gap error remain open.
 
+[Actual first-order solution components](research/first_order_actual_components/README.md)
+proves that the curve and surface components of the actual regular
+polynomial-solution locus have total degree `O(D)` at fixed jet and
+challenge degrees, in characteristic zero or greater than message degree D.
+Appendix H gives the proof and sharp examples. Isolated joint points and
+accidental agreements on persistent affine codeword graphs remain outside
+the improvement; it does not prove the general first-order MCA conjecture.
+
 ## Build and verify
 
 The standalone source requires a LaTeX installation with `latexmk`,

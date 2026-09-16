@@ -45,6 +45,8 @@ verify:
 	$(PYTHON) research/power_family_mca/verify_parameters.py
 	$(PYTHON) research/bounded_root_mca/verify_wronskian.py
 	$(PYTHON) research/bounded_root_mca/verify_clusters.py
+	$(PYTHON) research/first_order_actual_components/verify_reconstruction.py
+	$(PYTHON) research/first_order_actual_components/verify_curve_family.py
 	$(PYTHON) research/binary_affine_locator/verify.py
 	$(PYTHON) research/binary_affine_locator/check_codimension_two_transfer.py
 	$(PYTHON) research/structured_domains/verify_balanced_fibers.py

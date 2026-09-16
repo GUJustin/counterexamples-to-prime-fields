@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "research/first_order_actual_components/verify_reconstruction.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 2.1855655419640243,
+  "peak_rss_kib": 62080,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

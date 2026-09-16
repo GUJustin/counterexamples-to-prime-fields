@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "research/first_order_actual_components/verify_curve_family.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.0789074590429664,
+  "peak_rss_kib": 16512,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

@@ -1,0 +1,605 @@
+{
+  "status": "PASS",
+  "equations": 5,
+  "finite_taylor_tests": 576,
+  "curve_examples": 40,
+  "scope": "Taylor recurrence and example checks; not a proof of generic geometry",
+  "records": [
+    {
+      "Q": "-X*z - u**2 + v",
+      "B": 2,
+      "H": 1,
+      "max_degree": 6,
+      "numerator_degrees": [
+        {
+          "derivative": 2,
+          "jet_degree": 2,
+          "challenge_degree": 1,
+          "denominator_exponent": 1
+        },
+        {
+          "derivative": 3,
+          "jet_degree": 3,
+          "challenge_degree": 1,
+          "denominator_exponent": 3
+        },
+        {
+          "derivative": 4,
+          "jet_degree": 4,
+          "challenge_degree": 1,
+          "denominator_exponent": 5
+        },
+        {
+          "derivative": 5,
+          "jet_degree": 5,
+          "challenge_degree": 2,
+          "denominator_exponent": 7
+        },
+        {
+          "derivative": 6,
+          "jet_degree": 6,
+          "challenge_degree": 2,
+          "denominator_exponent": 9
+        }
+      ]
+    },
+    {
+      "Q": "-X**2*z + X*u + u**2*z + u*v + v**2",
+      "B": 2,
+      "H": 1,
+      "max_degree": 4,
+      "numerator_degrees": [
+        {
+          "derivative": 2,
+          "jet_degree": 2,
+          "challenge_degree": 1,
+          "denominator_exponent": 1
+        },
+        {
+          "derivative": 3,
+          "jet_degree": 4,
+          "challenge_degree": 2,
+          "denominator_exponent": 3
+        },
+        {
+          "derivative": 4,
+          "jet_degree": 6,
+          "challenge_degree": 3,
+          "denominator_exponent": 5
+        }
+      ]
+    },
+    {
+      "Q": "X*z + u**2 + u*v*(X + z) + v**2*z + v",
+      "B": 2,
+      "H": 1,
+      "max_degree": 4,
+      "numerator_degrees": [
+        {
+          "derivative": 2,
+          "jet_degree": 2,
+          "challenge_degree": 1,
+          "denominator_exponent": 1
+        },
+        {
+          "derivative": 3,
+          "jet_degree": 4,
+          "challenge_degree": 3,
+          "denominator_exponent": 3
+        },
+        {
+          "derivative": 4,
+          "jet_degree": 6,
+          "challenge_degree": 5,
+          "denominator_exponent": 5
+        }
+      ]
+    },
+    {
+      "Q": "X**3*z**2 + u*(X**2 + z) + v*(X*z + 1)",
+      "B": 1,
+      "H": 2,
+      "max_degree": 6,
+      "numerator_degrees": [
+        {
+          "derivative": 2,
+          "jet_degree": 1,
+          "challenge_degree": 2,
+          "denominator_exponent": 1
+        },
+        {
+          "derivative": 3,
+          "jet_degree": 1,
+          "challenge_degree": 4,
+          "denominator_exponent": 3
+        },
+        {
+          "derivative": 4,
+          "jet_degree": 1,
+          "challenge_degree": 6,
+          "denominator_exponent": 5
+        },
+        {
+          "derivative": 5,
+          "jet_degree": 1,
+          "challenge_degree": 8,
+          "denominator_exponent": 7
+        },
+        {
+          "derivative": 6,
+          "jet_degree": 1,
+          "challenge_degree": 10,
+          "denominator_exponent": 9
+        }
+      ]
+    },
+    {
+      "Q": "X*u + u**2*v*z + v**3 + z",
+      "B": 3,
+      "H": 1,
+      "max_degree": 4,
+      "numerator_degrees": [
+        {
+          "derivative": 2,
+          "jet_degree": 3,
+          "challenge_degree": 1,
+          "denominator_exponent": 1
+        },
+        {
+          "derivative": 3,
+          "jet_degree": 7,
+          "challenge_degree": 3,
+          "denominator_exponent": 3
+        },
+        {
+          "derivative": 4,
+          "jet_degree": 11,
+          "challenge_degree": 5,
+          "denominator_exponent": 5
+        }
+      ]
+    }
+  ],
+  "curves": [
+    {
+      "D": 1,
+      "degree": 3,
+      "bound": 4,
+      "p": 1009,
+      "section": {
+        "t": 354,
+        "lambda": 865,
+        "c": 748
+      }
+    },
+    {
+      "D": 2,
+      "degree": 4,
+      "bound": 6,
+      "p": 1009,
+      "section": {
+        "t": 932,
+        "lambda": 311,
+        "c": 455
+      }
+    },
+    {
+      "D": 3,
+      "degree": 5,
+      "bound": 10,
+      "p": 1009,
+      "section": {
+        "t": 689,
+        "lambda": 976,
+        "c": 942
+      }
+    },
+    {
+      "D": 4,
+      "degree": 6,
+      "bound": 14,
+      "p": 1009,
+      "section": {
+        "t": 380,
+        "lambda": 665,
+        "c": 322
+      }
+    },
+    {
+      "D": 5,
+      "degree": 7,
+      "bound": 18,
+      "p": 1009,
+      "section": {
+        "t": 946,
+        "lambda": 360,
+        "c": 273
+      }
+    },
+    {
+      "D": 6,
+      "degree": 8,
+      "bound": 22,
+      "p": 1009,
+      "section": {
+        "t": 854,
+        "lambda": 997,
+        "c": 741
+      }
+    },
+    {
+      "D": 7,
+      "degree": 9,
+      "bound": 26,
+      "p": 1009,
+      "section": {
+        "t": 837,
+        "lambda": 53,
+        "c": 382
+      }
+    },
+    {
+      "D": 8,
+      "degree": 10,
+      "bound": 30,
+      "p": 1009,
+      "section": {
+        "t": 930,
+        "lambda": 964,
+        "c": 516
+      }
+    },
+    {
+      "D": 9,
+      "degree": 11,
+      "bound": 34,
+      "p": 1009,
+      "section": {
+        "t": 43,
+        "lambda": 41,
+        "c": 82
+      }
+    },
+    {
+      "D": 10,
+      "degree": 12,
+      "bound": 38,
+      "p": 1009,
+      "section": {
+        "t": 136,
+        "lambda": 928,
+        "c": 68
+      }
+    },
+    {
+      "D": 11,
+      "degree": 13,
+      "bound": 42,
+      "p": 1009,
+      "section": {
+        "t": 801,
+        "lambda": 8,
+        "c": 22
+      }
+    },
+    {
+      "D": 12,
+      "degree": 14,
+      "bound": 46,
+      "p": 1009,
+      "section": {
+        "t": 395,
+        "lambda": 901,
+        "c": 899
+      }
+    },
+    {
+      "D": 13,
+      "degree": 15,
+      "bound": 50,
+      "p": 1009,
+      "section": {
+        "t": 406,
+        "lambda": 404,
+        "c": 982
+      }
+    },
+    {
+      "D": 14,
+      "degree": 16,
+      "bound": 54,
+      "p": 1009,
+      "section": {
+        "t": 59,
+        "lambda": 986,
+        "c": 521
+      }
+    },
+    {
+      "D": 15,
+      "degree": 17,
+      "bound": 58,
+      "p": 1009,
+      "section": {
+        "t": 805,
+        "lambda": 131,
+        "c": 937
+      }
+    },
+    {
+      "D": 16,
+      "degree": 18,
+      "bound": 62,
+      "p": 1009,
+      "section": {
+        "t": 531,
+        "lambda": 141,
+        "c": 53
+      }
+    },
+    {
+      "D": 17,
+      "degree": 19,
+      "bound": 66,
+      "p": 1009,
+      "section": {
+        "t": 700,
+        "lambda": 254,
+        "c": 344
+      }
+    },
+    {
+      "D": 18,
+      "degree": 20,
+      "bound": 70,
+      "p": 1009,
+      "section": {
+        "t": 909,
+        "lambda": 53,
+        "c": 647
+      }
+    },
+    {
+      "D": 19,
+      "degree": 21,
+      "bound": 74,
+      "p": 1009,
+      "section": {
+        "t": 183,
+        "lambda": 522,
+        "c": 112
+      }
+    },
+    {
+      "D": 20,
+      "degree": 22,
+      "bound": 78,
+      "p": 1009,
+      "section": {
+        "t": 391,
+        "lambda": 826,
+        "c": 372
+      }
+    },
+    {
+      "D": 21,
+      "degree": 23,
+      "bound": 82,
+      "p": 1009,
+      "section": {
+        "t": 538,
+        "lambda": 688,
+        "c": 250
+      }
+    },
+    {
+      "D": 22,
+      "degree": 24,
+      "bound": 86,
+      "p": 1009,
+      "section": {
+        "t": 864,
+        "lambda": 333,
+        "c": 448
+      }
+    },
+    {
+      "D": 23,
+      "degree": 25,
+      "bound": 90,
+      "p": 1009,
+      "section": {
+        "t": 933,
+        "lambda": 405,
+        "c": 839
+      }
+    },
+    {
+      "D": 24,
+      "degree": 26,
+      "bound": 94,
+      "p": 1009,
+      "section": {
+        "t": 205,
+        "lambda": 133,
+        "c": 310
+      }
+    },
+    {
+      "D": 25,
+      "degree": 27,
+      "bound": 98,
+      "p": 1009,
+      "section": {
+        "t": 704,
+        "lambda": 840,
+        "c": 519
+      }
+    },
+    {
+      "D": 26,
+      "degree": 28,
+      "bound": 102,
+      "p": 1009,
+      "section": {
+        "t": 924,
+        "lambda": 218,
+        "c": 451
+      }
+    },
+    {
+      "D": 27,
+      "degree": 29,
+      "bound": 106,
+      "p": 1009,
+      "section": {
+        "t": 307,
+        "lambda": 461,
+        "c": 414
+      }
+    },
+    {
+      "D": 28,
+      "degree": 30,
+      "bound": 110,
+      "p": 1009,
+      "section": {
+        "t": 909,
+        "lambda": 383,
+        "c": 180
+      }
+    },
+    {
+      "D": 29,
+      "degree": 31,
+      "bound": 114,
+      "p": 1009,
+      "section": {
+        "t": 835,
+        "lambda": 374,
+        "c": 497
+      }
+    },
+    {
+      "D": 30,
+      "degree": 32,
+      "bound": 118,
+      "p": 1009,
+      "section": {
+        "t": 599,
+        "lambda": 861,
+        "c": 952
+      }
+    },
+    {
+      "D": 31,
+      "degree": 33,
+      "bound": 122,
+      "p": 1009,
+      "section": {
+        "t": 502,
+        "lambda": 58,
+        "c": 613
+      }
+    },
+    {
+      "D": 32,
+      "degree": 34,
+      "bound": 126,
+      "p": 1009,
+      "section": {
+        "t": 887,
+        "lambda": 593,
+        "c": 271
+      }
+    },
+    {
+      "D": 33,
+      "degree": 35,
+      "bound": 130,
+      "p": 1009,
+      "section": {
+        "t": 137,
+        "lambda": 1005,
+        "c": 80
+      }
+    },
+    {
+      "D": 34,
+      "degree": 36,
+      "bound": 134,
+      "p": 1009,
+      "section": {
+        "t": 448,
+        "lambda": 519,
+        "c": 225
+      }
+    },
+    {
+      "D": 35,
+      "degree": 37,
+      "bound": 138,
+      "p": 1009,
+      "section": {
+        "t": 440,
+        "lambda": 109,
+        "c": 864
+      }
+    },
+    {
+      "D": 36,
+      "degree": 38,
+      "bound": 142,
+      "p": 1009,
+      "section": {
+        "t": 319,
+        "lambda": 208,
+        "c": 508
+      }
+    },
+    {
+      "D": 37,
+      "degree": 39,
+      "bound": 146,
+      "p": 1009,
+      "section": {
+        "t": 353,
+        "lambda": 56,
+        "c": 409
+      }
+    },
+    {
+      "D": 38,
+      "degree": 40,
+      "bound": 150,
+      "p": 1009,
+      "section": {
+        "t": 384,
+        "lambda": 703,
+        "c": 223
+      }
+    },
+    {
+      "D": 39,
+      "degree": 41,
+      "bound": 154,
+      "p": 1009,
+      "section": {
+        "t": 630,
+        "lambda": 309,
+        "c": 522
+      }
+    },
+    {
+      "D": 40,
+      "degree": 42,
+      "bound": 158,
+      "p": 1009,
+      "section": {
+        "t": 588,
+        "lambda": 732,
+        "c": 776
+      }
+    }
+  ]
+}

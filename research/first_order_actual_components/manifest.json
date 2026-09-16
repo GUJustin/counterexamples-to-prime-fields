@@ -1,0 +1,30 @@
+{
+  "status": "Twice self-reviewed proof; both exact checkers and clean 86-page manuscript build passed",
+  "scope": "Linear degrees for actual first-order curve and surface components; linear nearby-pair count on nonaffine curves. General first-order MCA and quadratic fixed-gap lower bound remain open.",
+  "sha256": {
+    "PROOF.md": "39901a4e5cfe2c1e1eee48d321286d589e09208d9c3ab814a8677a65626789a3",
+    "README.md": "91abe587528741fac8cb119e8643dda97bd7768dbd6226a07ef3ee16866eb6a9",
+    "appendix.tex": "f971367d11ad0e718bd0918dccf696948f25996d13146184285f2e8035681bab",
+    "arithmetic.py": "e49f6bcf03534c05096fb94a1f2fa307c2a9e37efc854755e4d03a9ffce38063",
+    "build_resources.json": "6523a4c7a9d0a5d3f024a0425763a4d1692179ffb8c7fe608e24638c7a310c63",
+    "curve_family_resources.json": "e2d35f30dfdc46a2a63be196a0127defc0f2ef520d12a414ebea4f2903a03f42",
+    "first_order_curve_family_verification.json": "a9ec031200b29456d56508213247090a14dbe81fe859f45b4e594860e3b0e9e9",
+    "first_order_reconstruction_verification.json": "50aaaf6e69a4d7603f17922cc84ce9d851712c57042671dc04e36df0bbcbea5c",
+    "reconstruction_resources.json": "e8eded3ee0abd0279cf56a6ddd2439527467583f25dad2ca21e985a5ecbf48ef",
+    "verify_curve_family.py": "53c5ab2f9e42f555cd0e214b8e05e04144bb3102d502788fedcdea029c4f0fb8",
+    "verify_reconstruction.py": "347859754714138fae9412c651b57395c2f3b0af00b45288397b259fdc17dc2a"
+  },
+  "manuscript_sha256": "6ef93180ec3fe590d24589170de44e26f842ec4e3c3f6ae986022bbcb25c0cf2",
+  "pdf_sha256": "fb1a2d72fd3206ede3d1b8fe8e2c3cc0cfb0e47b7558b8fbcec16edd884949e3",
+  "rendered_review_pages": [
+    82,
+    83,
+    84
+  ],
+  "preserved_preexisting_files": {
+    "checks/conditional_moment_results.json": "a82501c2dc100779e6c163b4258294ea25a085aac05a419083583a7dfbce3d69",
+    "radial_certificates/README.md": "33bff80fb4d70c0b6dd62a532adb087ec445faf37a9a1a21e492daed16a1bfc2",
+    "reports/stwo-zk-disclosure-summary.pdf": "de994a14ecd533b3de9fa934159c752876b5a7464ae6ab2d76a84371387b5d25",
+    "reports/stwo-zk-disclosure-summary.tex": "2c7beed7ea4f695cd6f02e9bc1d9e7934d6de824040d35d0a895c50755746b14"
+  }
+}

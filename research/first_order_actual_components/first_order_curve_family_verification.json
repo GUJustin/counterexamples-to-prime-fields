@@ -1,0 +1,356 @@
+{
+  "status": "PASS",
+  "exhaustive_classifications": [
+    {
+      "p": 7,
+      "D": 2,
+      "tested_pairs": 2401,
+      "actual_solutions": 13,
+      "predicted_solutions": 13,
+      "extra_solutions": 0,
+      "characteristic_hypothesis": true
+    },
+    {
+      "p": 7,
+      "D": 3,
+      "tested_pairs": 16807,
+      "actual_solutions": 13,
+      "predicted_solutions": 13,
+      "extra_solutions": 0,
+      "characteristic_hypothesis": true
+    },
+    {
+      "p": 11,
+      "D": 2,
+      "tested_pairs": 14641,
+      "actual_solutions": 21,
+      "predicted_solutions": 21,
+      "extra_solutions": 0,
+      "characteristic_hypothesis": true
+    }
+  ],
+  "characteristic_negative_control": {
+    "p": 3,
+    "D": 2,
+    "tested_pairs": 81,
+    "actual_solutions": 7,
+    "predicted_solutions": 5,
+    "extra_solutions": 2,
+    "characteristic_hypothesis": false
+  },
+  "split_reduced_sections": [
+    {
+      "D": 2,
+      "p": 7,
+      "lambda_value": 3,
+      "section_points": 3,
+      "total_curve_degree_including_zero": 4,
+      "proposed_bound": 21
+    },
+    {
+      "D": 3,
+      "p": 13,
+      "lambda_value": 7,
+      "section_points": 4,
+      "total_curve_degree_including_zero": 5,
+      "proposed_bound": 45
+    },
+    {
+      "D": 4,
+      "p": 11,
+      "lambda_value": 5,
+      "section_points": 5,
+      "total_curve_degree_including_zero": 6,
+      "proposed_bound": 69
+    },
+    {
+      "D": 5,
+      "p": 13,
+      "lambda_value": 6,
+      "section_points": 6,
+      "total_curve_degree_including_zero": 7,
+      "proposed_bound": 93
+    },
+    {
+      "D": 6,
+      "p": 29,
+      "lambda_value": 8,
+      "section_points": 7,
+      "total_curve_degree_including_zero": 8,
+      "proposed_bound": 117
+    },
+    {
+      "D": 7,
+      "p": 17,
+      "lambda_value": 8,
+      "section_points": 8,
+      "total_curve_degree_including_zero": 9,
+      "proposed_bound": 141
+    },
+    {
+      "D": 8,
+      "p": 19,
+      "lambda_value": 9,
+      "section_points": 9,
+      "total_curve_degree_including_zero": 10,
+      "proposed_bound": 165
+    },
+    {
+      "D": 9,
+      "p": 31,
+      "lambda_value": 22,
+      "section_points": 10,
+      "total_curve_degree_including_zero": 11,
+      "proposed_bound": 189
+    },
+    {
+      "D": 10,
+      "p": 23,
+      "lambda_value": 11,
+      "section_points": 11,
+      "total_curve_degree_including_zero": 12,
+      "proposed_bound": 213
+    },
+    {
+      "D": 11,
+      "p": 37,
+      "lambda_value": 3,
+      "section_points": 12,
+      "total_curve_degree_including_zero": 13,
+      "proposed_bound": 237
+    },
+    {
+      "D": 12,
+      "p": 53,
+      "lambda_value": 11,
+      "section_points": 13,
+      "total_curve_degree_including_zero": 14,
+      "proposed_bound": 261
+    },
+    {
+      "D": 13,
+      "p": 29,
+      "lambda_value": 14,
+      "section_points": 14,
+      "total_curve_degree_including_zero": 15,
+      "proposed_bound": 285
+    },
+    {
+      "D": 14,
+      "p": 31,
+      "lambda_value": 15,
+      "section_points": 15,
+      "total_curve_degree_including_zero": 16,
+      "proposed_bound": 309
+    },
+    {
+      "D": 15,
+      "p": 97,
+      "lambda_value": 76,
+      "section_points": 16,
+      "total_curve_degree_including_zero": 17,
+      "proposed_bound": 333
+    },
+    {
+      "D": 16,
+      "p": 103,
+      "lambda_value": 15,
+      "section_points": 17,
+      "total_curve_degree_including_zero": 18,
+      "proposed_bound": 357
+    },
+    {
+      "D": 17,
+      "p": 37,
+      "lambda_value": 18,
+      "section_points": 18,
+      "total_curve_degree_including_zero": 19,
+      "proposed_bound": 381
+    },
+    {
+      "D": 18,
+      "p": 191,
+      "lambda_value": 167,
+      "section_points": 19,
+      "total_curve_degree_including_zero": 20,
+      "proposed_bound": 405
+    },
+    {
+      "D": 19,
+      "p": 41,
+      "lambda_value": 20,
+      "section_points": 20,
+      "total_curve_degree_including_zero": 21,
+      "proposed_bound": 429
+    },
+    {
+      "D": 20,
+      "p": 43,
+      "lambda_value": 21,
+      "section_points": 21,
+      "total_curve_degree_including_zero": 22,
+      "proposed_bound": 453
+    },
+    {
+      "D": 21,
+      "p": 67,
+      "lambda_value": 54,
+      "section_points": 22,
+      "total_curve_degree_including_zero": 23,
+      "proposed_bound": 477
+    },
+    {
+      "D": 22,
+      "p": 47,
+      "lambda_value": 23,
+      "section_points": 23,
+      "total_curve_degree_including_zero": 24,
+      "proposed_bound": 501
+    },
+    {
+      "D": 23,
+      "p": 73,
+      "lambda_value": 51,
+      "section_points": 24,
+      "total_curve_degree_including_zero": 25,
+      "proposed_bound": 525
+    },
+    {
+      "D": 24,
+      "p": 101,
+      "lambda_value": 45,
+      "section_points": 25,
+      "total_curve_degree_including_zero": 26,
+      "proposed_bound": 549
+    },
+    {
+      "D": 25,
+      "p": 53,
+      "lambda_value": 26,
+      "section_points": 26,
+      "total_curve_degree_including_zero": 27,
+      "proposed_bound": 573
+    },
+    {
+      "D": 26,
+      "p": 109,
+      "lambda_value": 92,
+      "section_points": 27,
+      "total_curve_degree_including_zero": 28,
+      "proposed_bound": 597
+    },
+    {
+      "D": 27,
+      "p": 113,
+      "lambda_value": 7,
+      "section_points": 28,
+      "total_curve_degree_including_zero": 29,
+      "proposed_bound": 621
+    },
+    {
+      "D": 28,
+      "p": 59,
+      "lambda_value": 29,
+      "section_points": 29,
+      "total_curve_degree_including_zero": 30,
+      "proposed_bound": 645
+    },
+    {
+      "D": 29,
+      "p": 61,
+      "lambda_value": 30,
+      "section_points": 30,
+      "total_curve_degree_including_zero": 31,
+      "proposed_bound": 669
+    },
+    {
+      "D": 30,
+      "p": 311,
+      "lambda_value": 80,
+      "section_points": 31,
+      "total_curve_degree_including_zero": 32,
+      "proposed_bound": 693
+    },
+    {
+      "D": 31,
+      "p": 97,
+      "lambda_value": 20,
+      "section_points": 32,
+      "total_curve_degree_including_zero": 33,
+      "proposed_bound": 717
+    },
+    {
+      "D": 32,
+      "p": 67,
+      "lambda_value": 33,
+      "section_points": 33,
+      "total_curve_degree_including_zero": 34,
+      "proposed_bound": 741
+    },
+    {
+      "D": 33,
+      "p": 103,
+      "lambda_value": 87,
+      "section_points": 34,
+      "total_curve_degree_including_zero": 35,
+      "proposed_bound": 765
+    },
+    {
+      "D": 34,
+      "p": 71,
+      "lambda_value": 35,
+      "section_points": 35,
+      "total_curve_degree_including_zero": 36,
+      "proposed_bound": 789
+    },
+    {
+      "D": 35,
+      "p": 73,
+      "lambda_value": 36,
+      "section_points": 36,
+      "total_curve_degree_including_zero": 37,
+      "proposed_bound": 813
+    },
+    {
+      "D": 36,
+      "p": 149,
+      "lambda_value": 96,
+      "section_points": 37,
+      "total_curve_degree_including_zero": 38,
+      "proposed_bound": 837
+    },
+    {
+      "D": 37,
+      "p": 191,
+      "lambda_value": 4,
+      "section_points": 38,
+      "total_curve_degree_including_zero": 39,
+      "proposed_bound": 861
+    },
+    {
+      "D": 38,
+      "p": 79,
+      "lambda_value": 39,
+      "section_points": 39,
+      "total_curve_degree_including_zero": 40,
+      "proposed_bound": 885
+    },
+    {
+      "D": 39,
+      "p": 241,
+      "lambda_value": 85,
+      "section_points": 40,
+      "total_curve_degree_including_zero": 41,
+      "proposed_bound": 909
+    },
+    {
+      "D": 40,
+      "p": 83,
+      "lambda_value": 41,
+      "section_points": 41,
+      "total_curve_degree_including_zero": 42,
+      "proposed_bound": 933
+    }
+  ],
+  "scope": "Checks the explicit nonlinear curve family and characteristic cutoff; the general component-degree theorem requires its geometric proof."
+}
