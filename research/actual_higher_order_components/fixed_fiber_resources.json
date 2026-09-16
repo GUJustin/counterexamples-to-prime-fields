@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "research/actual_higher_order_components/verify_fixed_fiber.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.0831002919003367,
+  "peak_rss_kib": 17376,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

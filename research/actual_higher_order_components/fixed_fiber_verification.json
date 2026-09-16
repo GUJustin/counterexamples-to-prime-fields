@@ -1,0 +1,112 @@
+{
+  "status": "PASS",
+  "exhaustive_fixtures": [
+    {
+      "order": 1,
+      "D": 3,
+      "p": 7,
+      "roots": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "polynomials_exhausted": 2401,
+      "predicted_isolated_points": 5,
+      "actual_points": 5,
+      "extra_points": 0,
+      "characteristic_hypothesis": true
+    },
+    {
+      "order": 2,
+      "D": 3,
+      "p": 7,
+      "roots": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "polynomials_exhausted": 2401,
+      "predicted_isolated_points": 15,
+      "actual_points": 15,
+      "extra_points": 0,
+      "characteristic_hypothesis": true
+    },
+    {
+      "order": 3,
+      "D": 3,
+      "p": 7,
+      "roots": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "polynomials_exhausted": 2401,
+      "predicted_isolated_points": 35,
+      "actual_points": 35,
+      "extra_points": 0,
+      "characteristic_hypothesis": true
+    }
+  ],
+  "separant_checks": 16,
+  "rational_incidence_checks": {
+    "triple_fixtures": [
+      {
+        "d": 1,
+        "p": 1009,
+        "candidates": 8,
+        "triples_checked": 56,
+        "collinear_triples": 0,
+        "maximum_numerator_degree": 1,
+        "maximum_random_labeled_line": 2,
+        "attained_residue_line_size": 2
+      },
+      {
+        "d": 2,
+        "p": 1009,
+        "candidates": 30,
+        "triples_checked": 4060,
+        "collinear_triples": 0,
+        "maximum_numerator_degree": 4,
+        "maximum_random_labeled_line": 2,
+        "attained_residue_line_size": 3
+      },
+      {
+        "d": 3,
+        "p": 1009,
+        "candidates": 30,
+        "triples_checked": 4060,
+        "collinear_triples": 0,
+        "maximum_numerator_degree": 7,
+        "maximum_random_labeled_line": 2,
+        "attained_residue_line_size": 4
+      },
+      {
+        "d": 4,
+        "p": 1009,
+        "candidates": 30,
+        "triples_checked": 4060,
+        "collinear_triples": 0,
+        "maximum_numerator_degree": 10,
+        "maximum_random_labeled_line": 2,
+        "attained_residue_line_size": 5
+      }
+    ],
+    "reused_zero_candidate_control": {
+      "p": 17,
+      "D": 3,
+      "n": 8,
+      "A": 5,
+      "bad_labels": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "full_supports_have_no_direction_interpolant": true
+    }
+  },
+  "scope": "Exact fixed-equation polynomial classification and separants, including zero. Adding a free challenge gives one degree-one affine graph per solution. No MCA lower bound is inferred."
+}

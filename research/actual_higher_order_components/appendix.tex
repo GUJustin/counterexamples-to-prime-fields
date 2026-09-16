@@ -1,0 +1,304 @@
+\section{Positive-dimensional actual components save one degree power}
+\label{app:higher-positive-components}
+
+Appendix~\ref{app:isolated-sharpness} proves that isolated actual
+solutions can require a $D^{d+1}$ count. Positive-dimensional actual
+components satisfy a smaller bound, extending Appendix~\ref{app:actual-first-order}
+to every fixed derivative order. We retain the projective degree in
+coefficient space throughout.
+
+\begin{theorem}[Degrees by actual component dimension]
+\label{thm:higher-actual-components}
+Use the hypotheses and notation of Theorem~\ref{thm:isolated-upper},
+and additionally put $T=b+\tau H$. Let $J_j$ be the sum of the
+projective degrees of the $j$-dimensional irreducible components of
+the reduced closure of the actual regular joint solution locus.
+All components have dimension at most $d+1$, and
+\[
+ J_0\le qK^{d+1},\qquad
+ J_j\le qK^{d+1-j}T^{j-1}\quad(1\le j\le d+1).
+\]
+Thus every positive-dimensional stratum has total degree
+$O_{d,B,H}(D^d)$. For an ordinary equation with the challenge fixed,
+let $I_j$ count the degrees of its actual regular components of
+dimension $j$. Then
+\[
+ I_0\le B(Bb)^d,\qquad
+ I_j\le B(Bb)^{d-j}b^{j-1}\quad(1\le j\le d).
+\]
+In particular the positive-dimensional part of a reduced generic
+challenge fiber has degree $O_{d,B}(D^{d-1})$. This last assertion
+excludes the isolated points of that fiber.
+\end{theorem}
+\begin{proof}
+The initial-jet description and Taylor reconstruction are as in
+Theorem~\ref{thm:isolated-upper}. They give dimension at most $d+1$
+and the stated $J_0$ bound. We explain why a special family of linear
+sections counts the full actual coefficient-space degree.
+
+\paragraph{Evaluation projections count actual degrees.}
+Let $C$ be an actual $j$-dimensional component, defined before any
+Taylor center is adjoined. Choose independent generic parameters
+$t_i,\lambda_i$ for $0\le i<j$, and use the affine linear forms
+\[
+ \ell_i(P,z)=P(t_i)+\lambda_i z.
+\]
+At a projective point at infinity, the coefficient direction of
+$P$ and the $z$ direction cannot all be zero. Consequently
+$P(t)+\lambda z$ is not the zero polynomial in $(t,\lambda)$ at
+that point. The incidence of a point of $C$ at infinity and $j$
+vanishing forms has dimension at most
+$(j-1)+j=2j-1$, less than the $2j$-dimensional parameter space.
+Thus the projective projection center misses the closure of $C$.
+The resulting map to $\mathbb P^j$ is finite: its hyperplane
+pullback is the ample hyperplane bundle on $C$. Its degree is
+$\deg C$.
+
+This map is generically separable. The coefficient functions of $P$
+and $z$ generate the function field of $C$, so their differentials
+span its $j$-dimensional cotangent space. The evaluation forms span
+these linear functions; hence the differentials of $j$ independent
+generic evaluation forms are independent. Their generic affine
+fiber is therefore reduced and consists of exactly $\deg C$ points.
+The same choice works simultaneously for the finitely many actual
+$j$-components. Generic target values $\ell_i=c_i$ avoid their
+singular loci, intersections with other actual components, and the
+separant boundary. The latter is proper after a generic $t_0$ is
+chosen, since each actual component has a dense regular locus.
+These sections therefore select exactly $J_j$ distinct regular points.
+
+\paragraph{Count the section in initial data.}
+Use $t_0$ as Taylor center. The first section is
+$u_0=c_0-\lambda_0z$, leaving $d+1$ initial-data variables. The
+initial equation has degree at most $q$. The coefficient residuals
+have degree at most $K$. Each of the other $j-1$ sections, pulled
+back through reconstruction and cleared by $S^\tau$, has degree
+at most $T$: its coordinates are coefficient numerators of degree
+at most $T$, $zS^\tau$ of degree at most $T$, and $S^\tau$ of
+degree at most $T-1$.
+
+These further sections cut the initial hypersurface properly on
+$S\ne0$, even before the residuals are imposed. Indeed the Taylor
+map there has a linear inverse given by its derivatives through order $d$ and $z$,
+so it is an immersion. Evaluation hyperplanes span all its coefficient
+coordinates and cut each positive-dimensional image properly for
+generic parameters and target values. After the $j-1$ further
+sections, the local source dimension at each selected point is at
+most $d+1-j$.
+
+Now impose $d+1-j$ generic linear combinations of the residuals.
+Their full common zero set already isolates every selected point:
+those points lie on no higher-dimensional actual component and the
+actual $j$-components have just been cut to points. The pruning
+argument of Theorem~\ref{thm:isolated-upper} therefore retains and
+isolates all selected points. B\'ezout bounds their number by
+$qT^{j-1}K^{d+1-j}$, as claimed. Components on $S=0$ contribute
+no selected point and need not be interpreted as actual solutions.
+
+\paragraph{Fixed challenge.}
+Work over an algebraic closure of the coefficient field with that
+challenge held constant. There are $d+1$ initial variables, initial
+equation degree at most $B$, coefficient-numerator degree at most
+$b$, and residual degree at most $Bb$. Use the evaluation forms
+$P(t_i)$ without a $z$ coordinate. The same projection argument
+applies: a nonzero coefficient direction cannot vanish at every
+$t$. The first section is $u_0=c_0$. The identical count gives
+$B(Bb)^{d-j}b^{j-1}$ for $j\ge1$ and $B(Bb)^d$ for isolated
+points. Apply this in particular over the algebraic closure of the
+generic challenge field.
+\end{proof}
+
+\begin{corollary}[Nonaffine actual curves at every order]
+\label{cor:higher-nonaffine-curves}
+For a received line on $n$ distinct coordinates and $D<A\le n$,
+the actual curve components in Theorem~\ref{thm:higher-actual-components},
+other than affine codeword graphs $P=F+zG$, contain at most
+\[
+ \frac{n-D}{A-D}\,qK^d
+\]
+pairs with at least $A$ agreements. This is $O(n^d)$ at fixed
+jet and challenge degrees, derivative order, and positive gap.
+\end{corollary}
+\begin{proof}
+The agreement-hyperplane count in
+Corollary~\ref{cor:nonaffine-actual-curves} uses only actual curve
+degrees. Each retained curve has at most $D$ persistent agreement
+coordinates, and its nearby-pair count is at most its degree times
+$(n-D)/(A-D)$. Sum and apply $J_1\le qK^d$.
+\end{proof}
+
+\begin{theorem}[Sharp positive-dimensional and fiber exponents]
+\label{thm:positive-component-sharpness}
+For every $r\ge1$ and $e\ge1$, put $D=re$ and assume characteristic
+zero or $p>D+r-1$. There is an equation of derivative order $r$,
+jet degree $r$, challenge degree one, and $X$-degree bounded in terms
+of $r$ alone, whose reduced actual regular
+solution closure is irreducible of dimension $r+1$ and degree at
+least $e^r$. Its reduced challenge fibers have degree $e^{r-1}$.
+Thus the exponents $D^d$ and $D^{d-1}$ in
+Theorem~\ref{thm:higher-actual-components} cannot be lowered uniformly,
+even with a single actual component.
+\end{theorem}
+\begin{proof}
+Set $\phi_j=X^j$ for $1\le j<r$ and $\phi_r=X^r+z$, and define
+\[
+ Q=\operatorname{Wr}\bigl(eP\phi_1'-P'\phi_1,\ldots,
+                           eP\phi_r'-P'\phi_r\bigr).
+\]
+This is homogeneous of jet degree $r$, and its separant is
+\[
+ Q_{P^{(r)}}=(-1)^r C_r(eP)^{r-1}
+               \bigl(X^r+(-1)^{r-1}z\bigr),
+ \qquad C_r=\prod_{j=1}^{r-1}j!.
+\]
+The proof is the same row calculation as
+Equation~\eqref{eq:isolated-separant}. Its coefficient of $P^r$
+is $e^r\operatorname{Wr}(\phi_1',\ldots,\phi_r')$, which is
+nonzero; hence the jet degree is exactly $r$. The separant proves
+exact order $r$, linear highest-derivative degree, and challenge
+degree one. Every nonzero polynomial solution is regular.
+
+Each specialized Wronskian column has degree at most $D+r-1<p$.
+The polynomial Wronskian criterion from
+Theorem~\ref{thm:isolated-lower} therefore says that $Q=0$ precisely
+when some nonzero
+\[
+ H\in\operatorname{span}(X,\ldots,X^{r-1},X^r+z)
+\]
+satisfies $ePH'-P'H=0$. For nonzero $P$, this makes
+$(P/H^e)'=0$. The rational degree of this quotient is at most
+$D<p$, so $P=cH^e$ for a nonzero constant $c$. Conversely every
+such power satisfies the equation. The zero polynomial also
+satisfies it; for $r>1$ it is singular and belongs to the closure
+of the nonzero regular locus.
+
+Write $H=\sum_{i=0}^r h_iX^i$ projectively. The condition on $H$
+is exactly $h_0=zh_r$. The power map
+\[
+ \mathbb P^r\longrightarrow\mathbb P^D,\qquad [H]\longmapsto[H^e]
+\]
+is base-point-free and generically one-to-one, with hyperplane
+pullback $\mathcal O(e)$. It is birational onto its image: on the
+monic degree-$r$ chart its coefficients are recovered successively
+from the coefficients of $H^e$, dividing by $e$, which is invertible.
+Its image consequently has degree $e^r$.
+
+The projective subfamily $h_0=zh_r$ is closed over the affine
+$z$-line. Its power-map image is closed by properness, and its
+relative affine cone is exactly the actual solution closure just
+classified. The family of hyperplanes $h_0=zh_r$ is a projective
+bundle, so that cone is irreducible of dimension $r+1$. On the dense
+monic chart, $z$ is recovered from the constant coefficient of $H$.
+Projection forgetting $z$ is thus birational onto the affine cone
+of the whole power-map image, of degree $e^r$. Linear projection
+cannot increase degree, giving the claimed joint-degree lower bound.
+For each fixed $z$, the hyperplane of $H$ is a $\mathbb P^{r-1}$;
+its power-map image, and hence its affine cone, has degree $e^{r-1}$.
+\end{proof}
+
+\begin{proposition}[Sharp isolated fibers and affine-graph counts]
+\label{prop:fixed-fiber-isolated-sharpness}
+Fix $d\ge1$ and $D\ge d$, in characteristic zero or $p>D+d$.
+There is a challenge-independent equation of order $d$ and jet
+degree $d+1$ with exactly
+\[
+ \binom{D+d+1}{d}=\Theta_d(D^d)
+\]
+polynomial solutions of degree at most $D$, all regular and isolated.
+Adjoining a free challenge turns these into that many actual affine
+codeword-graph curve components of degree one. Thus both the $I_0$
+and $J_1$ exponents of Theorem~\ref{thm:higher-actual-components}
+are sharp as algebraic counts.
+\end{proposition}
+\begin{proof}
+Let $R$ be monic and squarefree of degree $N=D+1$, and take the
+Wronskian of
+\[
+ R(X^j)'-PX^j,\qquad j=0,\ldots,d.
+\]
+Its separant in $P^{(d)}$ is
+$(-1)^{d+1}R^d\prod_{j=1}^d j!$, a nonzero polynomial independent
+of $P$. Each column has degree at most $D+d<p$, so the Wronskian
+vanishes exactly when $RH'-PH=0$ for some nonzero polynomial
+$H$ of degree at most $d$. Hence $P=RH'/H$. For nonconstant $H$,
+its roots must belong to $R$; conversely every multiset of at most
+$d$ roots gives a solution. Constant $H$ gives $P=0$. The residues
+are integers between zero and $d<p$ and distinguish all the multisets.
+The number is
+\[
+ \sum_{s=0}^d\binom{N+s-1}{s}=\binom{N+d}{d}.
+\]
+Every solution is regular by the separant formula. The finite
+classification proves the isolated count; a free challenge gives
+one constant-polynomial graph per solution.
+\end{proof}
+
+\begin{proposition}[Linear MCA for the logarithmic-derivative family]
+\label{prop:logarithmic-family-mca}
+For fixed $d$, let $R$ be monic and squarefree of degree $D+1$,
+in characteristic zero or $p>d$. Consider the family
+\[
+ \mathcal P=\{RH'/H:\ H\text{ monic},\ \deg H\le d,
+                  \text{ all roots of }H\text{ belong to }R\}.
+\]
+This includes the zero polynomial. For $D<A\le n$ with
+$A-D\ge\eta n$, every received line has $O_{d,\eta}(n)$
+full-support bad labels witnessed by $\mathcal P$, for sufficiently
+large $n$. A candidate can be reused at many challenges; no prior
+assignment of labels is assumed.
+\end{proposition}
+\begin{proof}
+Select one bad candidate at each of $L$ distinct bad labels, and
+write $W=P/R$. At each root of $R$ its residue belongs to
+$\{0,\ldots,d\}$. On any affine line of graph points $(z,W)$
+where $W$ varies, one residue is an injective affine function of
+$z$, so the line has at most $d+1$ selected points. If $W$ is
+constant, the candidate $P$ is fixed. It has at most $n$ bad labels:
+a bad full support must contain an agreeing coordinate with
+$g(x)\ne0$, which determines $z$; otherwise $(P,0)$ explains
+that support. Thus every graph line has at most
+$M=\max\{n,d+1\}$ selected points.
+
+A noncollinear triple gives a nonzero rational relation of numerator
+degree at most $C=3d-1$, after clearing its three denominators of
+degree at most $d$. It has at most $C$ common agreeing coordinates
+outside roots of $R$. There are at most
+$(M-2)\binom L2/3$ collinear triples, by counting pairs.
+Let $r_0$ count domain roots of $R$, and put $m=n-r_0$ and
+$t=A-r_0$. Triple incidence and convexity give
+\[
+ m\left(\frac{tL}{m}-2\right)_+^3
+ \le C L^3+m(M-2)L^2.
+\]
+For sufficiently large $n$, $t\ge\eta n-1$ and $m\le n$ imply
+$t^3>8Cm^2$. If $L<4m/t$ the claim is immediate. Otherwise the
+left side is at least $t^3L^3/(8m^2)$, giving
+\[
+ L\le\frac{8m^3(M-2)}{t^3-8Cm^2}=O_{d,\eta}(n).
+\]
+This counts genuinely bad labels rather than all nearby challenges,
+which may fill the field on a constant candidate graph.
+\end{proof}
+
+\paragraph{Verification and MCA scope.}
+The exact checker in \path{research/actual_higher_order_components/}
+checks the complete solution classification on four small-field fixtures,
+the separant through order five, and $40$ reduced sections of the
+projected power images and fixed-challenge fibers. These sections
+have exactly $e^r$ and $e^{r-1}$ points. It includes a small-
+characteristic failure and explicitly checks lower-degree boundary
+powers, which must not be lost by using only monic degree-$r$ charts.
+The geometric upper bound is a separate written argument. A second
+checker exhausts $7{,}203$ polynomials for the fixed-equation family
+and verifies its separant through order four.
+
+The positive-dimensional degree saving alone does not prove an
+$O(n^d)$ full-MCA bound. Isolated actual joint points can number
+$\Theta(D^{d+1})$, and actual affine codeword-graph curve components
+can each contribute accidental labels. Their generic challenge
+fibers are isolated points, outside the positive-dimensional fiber
+bound. The sharpness family here has at most $r$ distinct roots per
+candidate and is already covered by the linear-MCA result of
+Appendix~\ref{app:bounded-root-mca} in its sufficiently large
+characteristic regime. The fixed-gap quadratic MCA lower bound
+remains open.

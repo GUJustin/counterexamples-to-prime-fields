@@ -1,0 +1,32 @@
+{
+  "status": "Twice self-reviewed proofs; two exact checkers passed; clean 96-page build and rendered review",
+  "scope": "Sharp degrees of actual positive-dimensional components, sharp isolated fixed fibers, and linear full MCA for the logarithmic-derivative family. No quadratic MCA lower bound or better.codes gain.",
+  "sha256": {
+    "PROOF.md": "88a91ab97af56941d29ada6dcc4dc7d6d91ee9007d5c304c9718ab46207d7140",
+    "README.md": "ed6ebff7f59cbd20e10aa5058c6b7b21cb0df8f682419acd1be6c2ea2b048743",
+    "appendix.tex": "eab8b1aeed816b59b3ff7d933a51ab0a1331be5e118ec8831a8eb3aee6475eaf",
+    "arithmetic.py": "e49f6bcf03534c05096fb94a1f2fa307c2a9e37efc854755e4d03a9ffce38063",
+    "build_resources.json": "6d6aff4e6c9680e796e21db62d29e7870802ab2f958600d22c0111df0e24c146",
+    "fixed_fiber_resources.json": "b0cf159f7bd1bac732095aee494cd326c40e3deb5fe4f74285ba0f366a5440d6",
+    "fixed_fiber_verification.json": "68df661aa37e24d1defd90f8edecddbcf864d24814fc3420031caf46a356ec82",
+    "positive_components_verification.json": "5e6d6fb874784a472b5d960bbc4109edf7ea68590412259b102efb5b8af21999",
+    "verification_resources.json": "d3b6054e930750fdd3051c13c4a923e5c0a1cf5f6661ee7946dc1addec9bb30f",
+    "verify.py": "1e2cc221b38ff2205416554f87f2ae5ed6f05a56d8d1b6192abaa16d2c5fe15b",
+    "verify_fixed_fiber.py": "13c3e4417c831158c361992123c59c74a8f0a3e9ef7e0f65789a6d9520e2b8f2"
+  },
+  "manuscript_sha256": "3f234df05ac0c5cf89fcddceb6dcc6dbe8503da2175e598f8315fdb0b9d87210",
+  "pdf_sha256": "40c4ce2bb38ee957d92f921a0cac85fea50569094066e2f3596c1145709de86a",
+  "rendered_review_pages": [
+    90,
+    91,
+    92,
+    93,
+    94
+  ],
+  "preserved_preexisting_files": {
+    "checks/conditional_moment_results.json": "a82501c2dc100779e6c163b4258294ea25a085aac05a419083583a7dfbce3d69",
+    "radial_certificates/README.md": "33bff80fb4d70c0b6dd62a532adb087ec445faf37a9a1a21e492daed16a1bfc2",
+    "reports/stwo-zk-disclosure-summary.pdf": "de994a14ecd533b3de9fa934159c752876b5a7464ae6ab2d76a84371387b5d25",
+    "reports/stwo-zk-disclosure-summary.tex": "2c7beed7ea4f695cd6f02e9bc1d9e7934d6de824040d35d0a895c50755746b14"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "latexmk",
+    "-pdf",
+    "-interaction=nonstopmode",
+    "-halt-on-error",
+    "paper.tex"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.6016545828897506,
+  "peak_rss_kib": 67776,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

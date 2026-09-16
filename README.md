@@ -130,6 +130,14 @@ prime-field labels, together with a constant fixed-gap nearby-label bound
 for that family. Thus the algebraic count is sharp while proximity-gap
 sharpness remains open.
 
+[Higher-order actual components](research/actual_higher_order_components/README.md)
+sharpens positive-dimensional degrees to `O(D^d)` and positive-dimensional
+fixed-challenge degrees to `O(D^(d-1))`. Appendix J gives attaining
+families, proves the isolated fixed-fiber count can be `Theta(D^d)`,
+and shows that the resulting logarithmic-derivative family still has
+only linearly many full-support bad labels at a fixed gap. These
+structural sharpness results do not settle quadratic MCA error.
+
 ## Build and verify
 
 The standalone source requires a LaTeX installation with `latexmk`,

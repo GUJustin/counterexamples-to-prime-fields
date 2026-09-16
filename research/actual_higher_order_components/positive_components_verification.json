@@ -1,0 +1,617 @@
+{
+  "status": "PASS",
+  "separant_fixtures": [
+    {
+      "order": 1,
+      "e": 1,
+      "D": 1,
+      "p": 101,
+      "separants": 3,
+      "actual_members": 1,
+      "boundary_checks": 0
+    },
+    {
+      "order": 1,
+      "e": 2,
+      "D": 2,
+      "p": 101,
+      "separants": 3,
+      "actual_members": 1,
+      "boundary_checks": 0
+    },
+    {
+      "order": 1,
+      "e": 3,
+      "D": 3,
+      "p": 101,
+      "separants": 3,
+      "actual_members": 1,
+      "boundary_checks": 0
+    },
+    {
+      "order": 2,
+      "e": 1,
+      "D": 2,
+      "p": 101,
+      "separants": 3,
+      "actual_members": 1,
+      "boundary_checks": 3
+    },
+    {
+      "order": 2,
+      "e": 2,
+      "D": 4,
+      "p": 101,
+      "separants": 3,
+      "actual_members": 1,
+      "boundary_checks": 3
+    },
+    {
+      "order": 2,
+      "e": 3,
+      "D": 6,
+      "p": 101,
+      "separants": 3,
+      "actual_members": 1,
+      "boundary_checks": 3
+    },
+    {
+      "order": 3,
+      "e": 1,
+      "D": 3,
+      "p": 101,
+      "separants": 3,
+      "actual_members": 1,
+      "boundary_checks": 3
+    },
+    {
+      "order": 3,
+      "e": 2,
+      "D": 6,
+      "p": 101,
+      "separants": 3,
+      "actual_members": 1,
+      "boundary_checks": 3
+    },
+    {
+      "order": 3,
+      "e": 3,
+      "D": 9,
+      "p": 101,
+      "separants": 3,
+      "actual_members": 1,
+      "boundary_checks": 3
+    },
+    {
+      "order": 4,
+      "e": 1,
+      "D": 4,
+      "p": 101,
+      "separants": 3,
+      "actual_members": 1,
+      "boundary_checks": 3
+    },
+    {
+      "order": 4,
+      "e": 2,
+      "D": 8,
+      "p": 101,
+      "separants": 3,
+      "actual_members": 1,
+      "boundary_checks": 3
+    },
+    {
+      "order": 4,
+      "e": 3,
+      "D": 12,
+      "p": 101,
+      "separants": 3,
+      "actual_members": 1,
+      "boundary_checks": 3
+    },
+    {
+      "order": 5,
+      "e": 1,
+      "D": 5,
+      "p": 101,
+      "separants": 3,
+      "actual_members": 1,
+      "boundary_checks": 3
+    },
+    {
+      "order": 5,
+      "e": 2,
+      "D": 10,
+      "p": 101,
+      "separants": 3,
+      "actual_members": 1,
+      "boundary_checks": 3
+    },
+    {
+      "order": 5,
+      "e": 3,
+      "D": 15,
+      "p": 101,
+      "separants": 3,
+      "actual_members": 1,
+      "boundary_checks": 3
+    }
+  ],
+  "exhaustive_full_fixtures": [
+    {
+      "order": 1,
+      "e": 4,
+      "D": 4,
+      "p": 7,
+      "polynomials_exhausted": 16807,
+      "polynomial_label_pairs_covered": 117649,
+      "predicted_pairs": 49,
+      "actual_pairs": 49,
+      "extra_pairs": 0,
+      "characteristic_hypothesis": true
+    },
+    {
+      "order": 2,
+      "e": 1,
+      "D": 2,
+      "p": 5,
+      "polynomials_exhausted": 125,
+      "polynomial_label_pairs_covered": 625,
+      "predicted_pairs": 125,
+      "actual_pairs": 125,
+      "extra_pairs": 0,
+      "characteristic_hypothesis": true
+    },
+    {
+      "order": 2,
+      "e": 2,
+      "D": 4,
+      "p": 7,
+      "polynomials_exhausted": 16807,
+      "polynomial_label_pairs_covered": 117649,
+      "predicted_pairs": 343,
+      "actual_pairs": 343,
+      "extra_pairs": 0,
+      "characteristic_hypothesis": true
+    },
+    {
+      "order": 3,
+      "e": 1,
+      "D": 3,
+      "p": 7,
+      "polynomials_exhausted": 2401,
+      "polynomial_label_pairs_covered": 16807,
+      "predicted_pairs": 2401,
+      "actual_pairs": 2401,
+      "extra_pairs": 0,
+      "characteristic_hypothesis": true
+    }
+  ],
+  "characteristic_boundary_fixture": {
+    "order": 2,
+    "e": 2,
+    "D": 4,
+    "p": 5,
+    "polynomials_exhausted": 3125,
+    "polynomial_label_pairs_covered": 15625,
+    "predicted_pairs": 125,
+    "actual_pairs": 125,
+    "extra_pairs": 0,
+    "characteristic_hypothesis": false
+  },
+  "characteristic_negative_control": {
+    "order": 2,
+    "e": 2,
+    "D": 4,
+    "p": 3,
+    "polynomials_exhausted": 243,
+    "polynomial_label_pairs_covered": 729,
+    "predicted_pairs": 27,
+    "actual_pairs": 57,
+    "extra_pairs": 30,
+    "characteristic_hypothesis": false
+  },
+  "power_image_degree_sections": [
+    {
+      "order": 1,
+      "e": 1,
+      "D": 1,
+      "p": 101,
+      "fixed_challenge_fiber": false,
+      "reduced_section_points": 1,
+      "predicted_degree": 1,
+      "reduced_jacobian_checks": 1
+    },
+    {
+      "order": 1,
+      "e": 1,
+      "D": 1,
+      "p": 101,
+      "fixed_challenge_fiber": true,
+      "reduced_section_points": 1,
+      "predicted_degree": 1,
+      "reduced_jacobian_checks": 1
+    },
+    {
+      "order": 1,
+      "e": 2,
+      "D": 2,
+      "p": 101,
+      "fixed_challenge_fiber": false,
+      "reduced_section_points": 2,
+      "predicted_degree": 2,
+      "reduced_jacobian_checks": 2
+    },
+    {
+      "order": 1,
+      "e": 2,
+      "D": 2,
+      "p": 101,
+      "fixed_challenge_fiber": true,
+      "reduced_section_points": 1,
+      "predicted_degree": 1,
+      "reduced_jacobian_checks": 1
+    },
+    {
+      "order": 1,
+      "e": 3,
+      "D": 3,
+      "p": 103,
+      "fixed_challenge_fiber": false,
+      "reduced_section_points": 3,
+      "predicted_degree": 3,
+      "reduced_jacobian_checks": 3
+    },
+    {
+      "order": 1,
+      "e": 3,
+      "D": 3,
+      "p": 103,
+      "fixed_challenge_fiber": true,
+      "reduced_section_points": 1,
+      "predicted_degree": 1,
+      "reduced_jacobian_checks": 1
+    },
+    {
+      "order": 1,
+      "e": 4,
+      "D": 4,
+      "p": 101,
+      "fixed_challenge_fiber": false,
+      "reduced_section_points": 4,
+      "predicted_degree": 4,
+      "reduced_jacobian_checks": 4
+    },
+    {
+      "order": 1,
+      "e": 4,
+      "D": 4,
+      "p": 101,
+      "fixed_challenge_fiber": true,
+      "reduced_section_points": 1,
+      "predicted_degree": 1,
+      "reduced_jacobian_checks": 1
+    },
+    {
+      "order": 1,
+      "e": 5,
+      "D": 5,
+      "p": 101,
+      "fixed_challenge_fiber": false,
+      "reduced_section_points": 5,
+      "predicted_degree": 5,
+      "reduced_jacobian_checks": 5
+    },
+    {
+      "order": 1,
+      "e": 5,
+      "D": 5,
+      "p": 101,
+      "fixed_challenge_fiber": true,
+      "reduced_section_points": 1,
+      "predicted_degree": 1,
+      "reduced_jacobian_checks": 1
+    },
+    {
+      "order": 2,
+      "e": 1,
+      "D": 2,
+      "p": 101,
+      "fixed_challenge_fiber": false,
+      "reduced_section_points": 1,
+      "predicted_degree": 1,
+      "reduced_jacobian_checks": 1
+    },
+    {
+      "order": 2,
+      "e": 1,
+      "D": 2,
+      "p": 101,
+      "fixed_challenge_fiber": true,
+      "reduced_section_points": 1,
+      "predicted_degree": 1,
+      "reduced_jacobian_checks": 1
+    },
+    {
+      "order": 2,
+      "e": 2,
+      "D": 4,
+      "p": 101,
+      "fixed_challenge_fiber": false,
+      "reduced_section_points": 4,
+      "predicted_degree": 4,
+      "reduced_jacobian_checks": 4
+    },
+    {
+      "order": 2,
+      "e": 2,
+      "D": 4,
+      "p": 101,
+      "fixed_challenge_fiber": true,
+      "reduced_section_points": 2,
+      "predicted_degree": 2,
+      "reduced_jacobian_checks": 2
+    },
+    {
+      "order": 2,
+      "e": 3,
+      "D": 6,
+      "p": 103,
+      "fixed_challenge_fiber": false,
+      "reduced_section_points": 9,
+      "predicted_degree": 9,
+      "reduced_jacobian_checks": 9
+    },
+    {
+      "order": 2,
+      "e": 3,
+      "D": 6,
+      "p": 103,
+      "fixed_challenge_fiber": true,
+      "reduced_section_points": 3,
+      "predicted_degree": 3,
+      "reduced_jacobian_checks": 3
+    },
+    {
+      "order": 2,
+      "e": 4,
+      "D": 8,
+      "p": 101,
+      "fixed_challenge_fiber": false,
+      "reduced_section_points": 16,
+      "predicted_degree": 16,
+      "reduced_jacobian_checks": 16
+    },
+    {
+      "order": 2,
+      "e": 4,
+      "D": 8,
+      "p": 101,
+      "fixed_challenge_fiber": true,
+      "reduced_section_points": 4,
+      "predicted_degree": 4,
+      "reduced_jacobian_checks": 4
+    },
+    {
+      "order": 2,
+      "e": 5,
+      "D": 10,
+      "p": 101,
+      "fixed_challenge_fiber": false,
+      "reduced_section_points": 25,
+      "predicted_degree": 25,
+      "reduced_jacobian_checks": 25
+    },
+    {
+      "order": 2,
+      "e": 5,
+      "D": 10,
+      "p": 101,
+      "fixed_challenge_fiber": true,
+      "reduced_section_points": 5,
+      "predicted_degree": 5,
+      "reduced_jacobian_checks": 5
+    },
+    {
+      "order": 3,
+      "e": 1,
+      "D": 3,
+      "p": 101,
+      "fixed_challenge_fiber": false,
+      "reduced_section_points": 1,
+      "predicted_degree": 1,
+      "reduced_jacobian_checks": 1
+    },
+    {
+      "order": 3,
+      "e": 1,
+      "D": 3,
+      "p": 101,
+      "fixed_challenge_fiber": true,
+      "reduced_section_points": 1,
+      "predicted_degree": 1,
+      "reduced_jacobian_checks": 1
+    },
+    {
+      "order": 3,
+      "e": 2,
+      "D": 6,
+      "p": 101,
+      "fixed_challenge_fiber": false,
+      "reduced_section_points": 8,
+      "predicted_degree": 8,
+      "reduced_jacobian_checks": 8
+    },
+    {
+      "order": 3,
+      "e": 2,
+      "D": 6,
+      "p": 101,
+      "fixed_challenge_fiber": true,
+      "reduced_section_points": 4,
+      "predicted_degree": 4,
+      "reduced_jacobian_checks": 4
+    },
+    {
+      "order": 3,
+      "e": 3,
+      "D": 9,
+      "p": 103,
+      "fixed_challenge_fiber": false,
+      "reduced_section_points": 27,
+      "predicted_degree": 27,
+      "reduced_jacobian_checks": 27
+    },
+    {
+      "order": 3,
+      "e": 3,
+      "D": 9,
+      "p": 103,
+      "fixed_challenge_fiber": true,
+      "reduced_section_points": 9,
+      "predicted_degree": 9,
+      "reduced_jacobian_checks": 9
+    },
+    {
+      "order": 3,
+      "e": 4,
+      "D": 12,
+      "p": 101,
+      "fixed_challenge_fiber": false,
+      "reduced_section_points": 64,
+      "predicted_degree": 64,
+      "reduced_jacobian_checks": 64
+    },
+    {
+      "order": 3,
+      "e": 4,
+      "D": 12,
+      "p": 101,
+      "fixed_challenge_fiber": true,
+      "reduced_section_points": 16,
+      "predicted_degree": 16,
+      "reduced_jacobian_checks": 16
+    },
+    {
+      "order": 3,
+      "e": 5,
+      "D": 15,
+      "p": 101,
+      "fixed_challenge_fiber": false,
+      "reduced_section_points": 125,
+      "predicted_degree": 125,
+      "reduced_jacobian_checks": 125
+    },
+    {
+      "order": 3,
+      "e": 5,
+      "D": 15,
+      "p": 101,
+      "fixed_challenge_fiber": true,
+      "reduced_section_points": 25,
+      "predicted_degree": 25,
+      "reduced_jacobian_checks": 25
+    },
+    {
+      "order": 4,
+      "e": 1,
+      "D": 4,
+      "p": 101,
+      "fixed_challenge_fiber": false,
+      "reduced_section_points": 1,
+      "predicted_degree": 1,
+      "reduced_jacobian_checks": 1
+    },
+    {
+      "order": 4,
+      "e": 1,
+      "D": 4,
+      "p": 101,
+      "fixed_challenge_fiber": true,
+      "reduced_section_points": 1,
+      "predicted_degree": 1,
+      "reduced_jacobian_checks": 1
+    },
+    {
+      "order": 4,
+      "e": 2,
+      "D": 8,
+      "p": 101,
+      "fixed_challenge_fiber": false,
+      "reduced_section_points": 16,
+      "predicted_degree": 16,
+      "reduced_jacobian_checks": 16
+    },
+    {
+      "order": 4,
+      "e": 2,
+      "D": 8,
+      "p": 101,
+      "fixed_challenge_fiber": true,
+      "reduced_section_points": 8,
+      "predicted_degree": 8,
+      "reduced_jacobian_checks": 8
+    },
+    {
+      "order": 4,
+      "e": 3,
+      "D": 12,
+      "p": 103,
+      "fixed_challenge_fiber": false,
+      "reduced_section_points": 81,
+      "predicted_degree": 81,
+      "reduced_jacobian_checks": 81
+    },
+    {
+      "order": 4,
+      "e": 3,
+      "D": 12,
+      "p": 103,
+      "fixed_challenge_fiber": true,
+      "reduced_section_points": 27,
+      "predicted_degree": 27,
+      "reduced_jacobian_checks": 27
+    },
+    {
+      "order": 4,
+      "e": 4,
+      "D": 16,
+      "p": 101,
+      "fixed_challenge_fiber": false,
+      "reduced_section_points": 256,
+      "predicted_degree": 256,
+      "reduced_jacobian_checks": 256
+    },
+    {
+      "order": 4,
+      "e": 4,
+      "D": 16,
+      "p": 101,
+      "fixed_challenge_fiber": true,
+      "reduced_section_points": 64,
+      "predicted_degree": 64,
+      "reduced_jacobian_checks": 64
+    },
+    {
+      "order": 4,
+      "e": 5,
+      "D": 20,
+      "p": 101,
+      "fixed_challenge_fiber": false,
+      "reduced_section_points": 625,
+      "predicted_degree": 625,
+      "reduced_jacobian_checks": 625
+    },
+    {
+      "order": 4,
+      "e": 5,
+      "D": 20,
+      "p": 101,
+      "fixed_challenge_fiber": true,
+      "reduced_section_points": 125,
+      "predicted_degree": 125,
+      "reduced_jacobian_checks": 125
+    }
+  ],
+  "scope": "Full actual power-component classification, exact separants, and reduced sections of the projected power image and fixed-label fibers. No generic-component upper bound or MCA lower bound is certified by these finite checks."
+}
