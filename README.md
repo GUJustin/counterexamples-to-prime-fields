@@ -17,8 +17,12 @@ analysis as an application of those results.
   out every bound with logarithm `o(eta^-2/log(1/eta))`. For every sufficiently
   large prime, with `b=log2(p)`, the list has at least
   `2^((1/2-o(1))*b^2/log2(b))` codewords below Elias.
-- A fixed-gap lift rules out prescribed selected-witness coefficients
-  with a remainder sublinear along the constructed growing-field family.
+- An anchored lift and padding construction gives genuine failure of
+  correlated agreement at an exactly fixed positive rate and gap, for
+  arbitrarily large lengths. The necessary coefficient of a linear
+  exceptional-count bound has logarithm of order
+  `eta^-2/log(1/eta)` along a sequence of gaps. A concrete family has more
+  than `3.76e17*n` nearby challenges. The prime field grows with length.
 - A code can have maximum list size exactly `n-k-1` and nevertheless
   have `binom(n,k+1)` uniquely nearby points on an affine line without
   correlated agreement. A puncturing bound shows that this parameter

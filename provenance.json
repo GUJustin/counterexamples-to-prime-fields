@@ -16,9 +16,9 @@
     "gram_gaussian_class_bound.md": "f36be9d5332c867aef1a31a1add86ece1b2505502a065213f4e98e5f0289f073",
     "ellipsoid_moment_bound_audit.md": "e4a699996b08a6d4f3f10fa47a0a808fde5b1a7df418a99c64bf7639949737bc"
   },
-  "manuscript_sha256": "89c0811ce559fe669198b65e44933f5ca502fa74ce47fb3f476535519fae9692",
-  "pdf_sha256": "02405713043b7b22d0bc56730b2b7ae69130b540449bd5d0ebe9fa674eca3f0c",
-  "pdf_pages": 74,
+  "manuscript_sha256": "8a2c6493aa6f69fce6ac14f8d89e4e30d761b91b5d65edf54bd63f8ed627f591",
+  "pdf_sha256": "ac50ff3e27a9f910fe7a19f94c7dde050328b0854e8d9c80dfca80df03f23626",
+  "pdf_pages": 77,
   "editorial_changes": [
     "General coding-theory and hash-based SNARK framing",
     "Direct explanatory academic prose with explicit quantifiers",
@@ -38,9 +38,10 @@
     "Correct agreement-count wording selectively and record explicit subgroup-transfer obstructions",
     "Integrate overnight exact interval counts, displaced radial weights, exact incidence collision bounds, and native-circle product refinements; preserve pre-existing working-tree changes in an isolated review worktree.",
     "Retain and verify the earlier balanced-polynomial-fiber, Galois-rational-fiber, and growing-moment refinements; correct Goyal and Sun author initials against arXiv:2607.08516.",
-    "Remove the balanced-rational-map Galois hypothesis for p=ell*n +/- 1, ell>=6, n>6(B-1); add self-contained proof and supplementary exact checks."
+    "Remove the balanced-rational-map Galois hypothesis for p=ell*n +/- 1, ell>=6, n>6(B-1); add self-contained proof and supplementary exact checks.",
+    "Add anchored quotient and padding construction giving actual correlated-agreement failure at exactly fixed rate and gap, with an explicit lower bound on the gap-dependent linear coefficient."
   ],
-  "revised_at": "2026-09-16T13:42:58.645620+00:00",
+  "revised_at": "2026-09-16T14:41:09.846608+00:00",
   "coordination": {
     "frontier_acknowledged": "2026-09-15T18:11:07-04:00",
     "older_32_page_source_repaired": true,
@@ -118,7 +119,8 @@
       "resources": "research/overnight_2026-09-16/publication_suite_resources.json"
     }
   },
-  "validation": {
+  "frobenius_index_package": "research/structured_domains/frobenius_index/manifest.json",
+  "validation_before_anchored_padding_integration": {
     "build": "74-page paper.pdf; make paper passed with no final LaTeX warnings, undefined references, or overflowing boxes.",
     "visual_review": "New proof pages 71 and 72 inspected at rendered resolution.",
     "new_checks": {
@@ -131,5 +133,15 @@
     "better_codes": "Pinned display 116.13 unchanged",
     "scope": "Classification of complete fibers of one fixed rational map; partial fibers and varying maps remain outside the theorem."
   },
-  "frobenius_index_package": "research/structured_domains/frobenius_index/manifest.json"
+  "validation": {
+    "build": "77-page paper.pdf; make paper passed with no final LaTeX warnings, undefined references, or overflowing boxes.",
+    "visual_review": "New lemma, theorem, and finite example table on pages 23-25 inspected at rendered resolution.",
+    "new_checks": "Six prime-field fixtures, 70 anchored moment counts, 378 integer affine transforms, and two concrete coefficients passed.",
+    "unchanged_checks": "Prior complete make verify replay retained; only the separately passing anchored padding checker is added to the target.",
+    "proof_review": "Self-reviewed proof; no independent coauthor proof review claimed.",
+    "resource_evidence": "research/fixed_gap_padding/*_resources.json",
+    "better_codes": "Pinned display 116.13 unchanged",
+    "scope": "Linear growth at each fixed positive gap, over prime fields growing with length. No quadratic lower bound established."
+  },
+  "fixed_gap_padding_package": "research/fixed_gap_padding/manifest.json"
 }

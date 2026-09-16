@@ -1,0 +1,12 @@
+{
+  "status": "Self-reviewed proof, six finite-field fixtures, exact integer checks, and clean 77-page manuscript build passed",
+  "files": {
+    "PROOF.md": "4e20345046d4e15a76f8350db6d9eed9bfb91653cecee8daa9bcf9ac08ff39b0",
+    "README.md": "c7d4c5c83dba6924b37ff401313182b6384534a78f02b2547364605533cd096e",
+    "anchored_padding_verification.json": "70210560bdfc768110be8299bfb0fffed55d720a5b0a529d3c73693ba3547815",
+    "build_resources.json": "2247993968bf9475d7cad1c5b1b23dfb4fda4d20c086e15ed598b577b2edc5e8",
+    "verification_resources.json": "07fb63294d60c60128ecdea58b50244c3dbaef4f8aac7118408365321624a76d",
+    "verify_anchored_padding.py": "007856bca188e2eaaed835a55a51f2187269937359f50e2cc98395dc2e0e94dc"
+  },
+  "scope": "Fixed positive rate and gap, growing prime fields, linear count with large gap-dependent coefficient; no quadratic lower bound or better.codes improvement claimed."
+}

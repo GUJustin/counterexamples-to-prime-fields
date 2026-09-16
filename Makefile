@@ -34,6 +34,7 @@ verify:
 	$(PYTHON) research/structured_domains/verify_transfer_limits.py
 	$(PYTHON) research/structured_domains/frobenius_index/verify_rational_frobenius_index.py
 	$(PYTHON) research/structured_domains/frobenius_index/verify_balanced_rational_pencils.py
+	$(PYTHON) research/fixed_gap_padding/verify_anchored_padding.py
 	$(PYTHON) research/structured_domains/verify_balanced_fibers.py
 	$(PYTHON) research/gram_norm/verify_balanced_fibers.py
 	$(PYTHON) research/structured_domains/verify_galois_fibers.py

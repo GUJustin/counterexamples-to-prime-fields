@@ -46,8 +46,11 @@ certificates sharpen the finite bounds.
 
 We also separate list size from the number of nearby points on an
 affine line. A large list gives an affine line with many nearby points
-and no correlated agreement. A separate lift preserves a selected-list
-obstruction at a fixed positive gap and arbitrarily large lengths.
+and no correlated agreement. An anchored lift and padding construction
+gives the same failure at an exactly fixed positive rate and gap, at
+arbitrarily large lengths. The necessary coefficient of a linear
+exceptional-count bound has logarithm
+$\Omega_\rho(\eta^{-2}/\log(1/\eta))$ along a sequence of gaps.
 Finally, at gap $1/n$, we construct codes whose maximum list size is
 exactly $n-k-1$, but with $\binom n{k+1}$ uniquely nearby points on
 one affine line. This parameter count attains an unconditional
@@ -230,12 +233,15 @@ and replace each evaluation point by $B$ points on which $X^B$ has
 the same value. Polynomial composition preserves the rate, relative
 agreement, and list size. Suitable prime fields exist for every $B$.
 
-A selection argument then shows that the coefficient of $n$ in a
-line-decodability threshold must account for this list size. If the
-coefficient is smaller, no additive term that is $o(n)$ along the
-resulting family can repair it. This second construction
-\emph{does} have correlated agreement. It rules out a sublinear
-remainder along this fixed-gap family.
+An anchored version removes one common agreement point and divides by
+its linear factor. Padding then produces many nearby challenges while
+keeping every common coefficient agreement below the threshold.
+Theorem~\ref{fg:anchored-fixed-gap} gives actual failure of correlated
+agreement at a fixed rate and gap, with a linear count whose coefficient
+has logarithm of order $\eta^{-2}/\log(1/\eta)$.
+No remainder that is $o(n)$ along this family can absorb a smaller
+linear coefficient. The simpler selection argument in
+Theorem~\ref{fg:fixed-gap} is retained as a preliminary construction.
 
 \paragraph{Small lists with many isolated nearby line points.}
 Large lists are not the only obstruction. At every fixed rate $\rho=k/n$,
@@ -1642,6 +1648,183 @@ $Ln$ never exceeds $\ell_C(\theta)n$. Thus the obstruction rules out
 the proposed quantitative coefficient, not a line threshold expressed
 using a valid bound on the actual maximum list size.
 
+\subsection{Anchored padding gives genuine correlated-agreement failure}
+\label{sec:anchored-padding}
+
+The preceding selection argument is not needed if we allow a small
+padding of the lifted domain. The following construction keeps the
+rate and gap exactly fixed and makes correlated agreement impossible
+at the threshold, for every challenge.
+
+\begin{lemma}[Anchored list-to-line padding]\label{fg:anchored-padding}
+Let $D_0$ be a set of $m$ distinct nonzero integers containing $1$.
+Let $1\le k<t<m$, and let $A_1,\ldots,A_L$ be distinct $t$-subsets
+of $D_0$, all containing $1$, whose monic locator
+polynomials have the same coefficients in degrees $t,t-1,\ldots,k$.
+Choose an integer $1\le r<t-k$. For every positive integer $B$
+there is an arbitrarily large prime $p$ and a Reed--Solomon code with
+\[
+ n_B=B(m+r),\qquad k_B=Bk,\qquad A_B=Bt,
+\]
+admitting a nonconstant received line $f+zg$ with at least $L(Br+1)$
+distinct nearby challenges at agreement threshold $A_B$.
+No degree-<$k_B$ polynomials $F,G$ jointly agree with $f,g$ on
+$A_B$ coordinates. The radius can be chosen strictly below Elias.
+If $k\ge2$, one may instead set $k_B=B(k-1)$ and allow
+$1\le r\le t-k$, with the same conclusion.
+\end{lemma}
+\begin{proof}
+Write $F_i(X)=\prod_{a\in A_i}(X-a)$, let $W$ be their common
+degree-$\ge k$ part, and put $G_i=W-F_i$. Then $\deg G_i<k$
+and $G_i(1)=W(1)$ for every $i$.
+Use the proof of Lemma~\ref{fg:lift} for the splitting field of
+$\prod_{a\in D_0}(X^B-a)$, with a prime-size bound specified below,
+and remove the point $1$ from its union of full fibers. On the
+remaining set $D_{\rm old}$ of size $mB-1$, put
+\[
+ f(x)=F_{\rm old}(x):=\frac{W(x^B)-W(1)}{x-1},\qquad g(x)=0.
+\]
+The candidate polynomials are
+\[
+ P_i(X)=\frac{G_i(X^B)-W(1)}{X-1}.
+\]
+Their numerators vanish at $1$, so they are polynomials of degree
+at most $B(k-1)-1<k_B$, with a zero numerator interpreted in the
+usual way. Each agrees with $F_{\rm old}$ at exactly $Bt-1=A_B-1$
+old coordinates, since their difference is $F_i(X^B)/(X-1)$.
+The candidates remain distinct after reduction, since their old
+agreement supports are distinct. Also $\deg F_{\rm old}=A_B-1$.
+
+Add $q_B=Br+1$ distinct points $x_j$ outside $D_{\rm old}\cup\{1\}$
+at which the $L$ values $P_i(x_j)$ are pairwise distinct.
+There are enough such points if
+\[
+ p>mB+(k_B-1)\binom L2+q_B,
+\]
+by the root bound for the nonzero differences $P_i-P_{i'}$.
+Choose offsets $b_j$ successively so that all labels
+$z_{ij}=P_i(x_j)-b_j$ are distinct. At step $j$, at most
+$(j-1)L^2$ offsets are forbidden, so $p>(q_B-1)L^2$ suffices.
+On these new coordinates set $f(x_j)=b_j$ and $g(x_j)=1$.
+At $z_{ij}$, the polynomial $P_i$ agrees at its $A_B-1$ old
+coordinates and exactly one new coordinate. This supplies $Lq_B$
+distinct nearby challenges on a domain of size $n_B$.
+
+Suppose now that $F,G$ have degree less than $k_B$. If $G=0$,
+their common agreement is confined to $D_{\rm old}$ and has size
+at most $A_B-1$, by the degree of $F_{\rm old}-F$.
+If $G\ne0$, it has at most $k_B-1$ zeros on $D_{\rm old}$, so
+the common agreement has size at most
+\[
+ k_B-1+q_B=B(k+r)<Bt=A_B.
+\]
+Thus no common witnesses exist at the threshold.
+All the prime-size conditions, and
+$((t-k)/(m+r))\log_2p>1$, can be imposed before applying the
+infinitude of completely split primes. The last condition verifies
+the strict Elias inequality.
+For the sharper dimension $k_B=B(k-1)$, the candidates still fit,
+and the nonzero-$G$ bound becomes $B(k-1+r)\le B(t-1)<A_B$
+when $r\le t-k$. The larger capacity gap also preserves the
+Elias inequality.
+\end{proof}
+
+\begin{theorem}[The linear coefficient at a fixed positive gap]
+\label{fg:anchored-fixed-gap}
+Fix rational $\rho\in(0,1)$ and put $H=H_2(\rho)$.
+There is a sequence of positive gaps $\eta\to0$ with the following
+property. For each gap separately, there are prime-field
+Reed--Solomon codes of lengths $n_B\to\infty$, exact rate $\rho$,
+and exact agreement fraction $\rho+\eta$, and received lines with
+at least $C_\rho(\eta)n_B$ distinct nearby challenges, where
+\begin{equation}\label{fg:anchored-coefficient}
+ \log_2 C_\rho(\eta)\ge
+ \frac{H^2/2-o_\rho(1)}{\eta^2\log_2(1/\eta)}.
+\end{equation}
+No pair of codewords has correlated agreement at that threshold,
+and the radius is strictly below the characteristic-based Elias radius.
+The $o_\rho(1)$ is as the sequence of gaps tends to zero;
+$C_\rho(\eta)$ is fixed as $B$ grows.
+\end{theorem}
+\begin{proof}
+Let $b$ be the denominator of $\rho$, and let $m$ grow through
+multiples of $b$. Set $c^2=2H$ and choose
+\[
+ s=\left\lfloor c\sqrt{m/\log_2m}\right\rfloor,\qquad
+ r=b\left\lfloor\frac{s}{2b}\right\rfloor,\qquad
+ k=\rho(m+r),\qquad t=k+s.
+\]
+For sufficiently large $m$, all these are integers with
+$1\le r<s$, $1\le k<t<m$. Among the $t$-subsets containing $1$,
+the same binomial-moment count as in Lemma~\ref{im:finite-list}
+gives a class of size
+\[
+ L\ge\left\lceil\frac{\binom{m-1}{t-1}}
+ {\prod_{j=1}^s R_j}\right\rceil,
+\]
+where $R_j$ are the full moment-range sizes for length $m$.
+They still bound the ranges after the anchor is fixed.
+Since $k/m=\rho+O(s/m)$ and
+$\binom{m-1}{t-1}=(t/m)\binom mt$, the estimate in the proof
+of Theorem~\ref{im:all-list} gives
+\[
+ \log_2 L\ge (H-c^2/4-o(1))m=(H/2-o(1))m.
+\]
+Apply Lemma~\ref{fg:anchored-padding}. Its rate is exactly $\rho$,
+its gap is $\eta=s/(m+r)$, and one can take
+$C_\rho(\eta)=rL/(m+r)$. Here $r/(m+r)\sim\eta/2$ and
+\[
+ m=\frac{H+o(1)}{\eta^2\log_2(1/\eta)}.
+\]
+The logarithm of the prefactor $r/(m+r)$ is only
+$O(\log(1/\eta))$. Substitution proves
+\eqref{fg:anchored-coefficient}. Once the seed is fixed, $B$
+can grow without changing the rate, gap, or coefficient.
+\end{proof}
+
+In particular, no uniform exceptional-count bound
+$c_1 2^{c_2/\eta}n+o(n)$ can hold, even when its remainder is
+specified separately at each fixed gap. Choose a gap for which
+$C_\rho(\eta)>c_1 2^{c_2/\eta}$; the positive linear discrepancy
+then absorbs any such remainder. Every exhibited nearby challenge
+also violates the full common-witness conclusion, because it has no
+common agreement set of the required size at all.
+The construction remains linear in $n$ at each fixed gap and does
+not establish a quadratic lower bound there.
+
+It also supplies a selected-witness counterexample with concurrency
+at most $n_B$. Indeed, on any proposed affine codeword graph let $a$
+coordinates agree identically with the received line. Then
+$a<A_B$, and each other coordinate agrees at at most one selected
+challenge. If the graph contains $v$ selected nearby pairs,
+$vA_B\le va+n_B-a$, giving $v\le n_B-A_B+1\le n_B$.
+Exact anchored moment counts and prime-field fixtures of lengths
+$10,20,40$ and $11,22,44$ appear in \path{research/fixed_gap_padding/}.
+
+\paragraph{Concrete fixed-gap coefficients.}
+The earlier finite integer classes also supply explicit seeds.
+Among $L_0$ supports of size $t$ on $m$ points, some point belongs
+to at least $L=\lceil tL_0/m\rceil$ supports. If that point is $a$,
+the integer affine change $x\mapsto2(x-a)+1$ makes it the anchor $1$
+and makes every domain point nonzero. Multiplying transformed locator
+polynomials by $2^t$ preserves monicity, integer coefficients, and the
+common prefix. Using the sharper dimension $B(k-1)$, the two
+previously certified classes give
+\[
+\begin{array}{c|c|c|c}
+ (m,k,t)&r&L&\text{coefficient }C=rL/(m+r)\\\hline
+ (64,32,34)&2&2949985688957&2949985688957/33\\
+ (157,63,68)&5&12200781436007129430&10167317863339274525/27
+\end{array}
+\]
+The resulting rates and gaps are $(31/66,1/22)$ and
+$(31/81,1/27)$, respectively. In the second family,
+more than $3.76\cdot10^{17}n_B$ distinct challenges are nearby,
+while correlated agreement at the threshold is impossible.
+These are growing-prime-field families obtained from the integer
+classes; they are not statements about retaining the M31 alphabet
+or a prescribed subgroup domain.
+
 % Standalone section for integration into paper/main.tex or core_theory.tex.
 % Uses existing macros \F, \RS and theorem environments; no new macros.
 % Bibliography key aggllz:
@@ -2618,10 +2801,12 @@ radius. A theorem quantified over all prime-field codes would apply
 to that code, but a counterexample to the universal theorem need
 not use that particular code. Conversely, a bound with constants
 depending on the field or the gap cannot be used uniformly without
-controlling that dependence. The fixed-gap lift in
-Theorem~\ref{fg:fixed-gap} rules out a prescribed numerical
-coefficient with a remainder sublinear along its increasing-length
-family. Its field grows, and its chosen list size remains fixed.
+controlling that dependence. The fixed-gap lifts in
+Theorems~\ref{fg:fixed-gap} and~\ref{fg:anchored-fixed-gap} rule out
+prescribed numerical coefficients with remainders sublinear along
+their increasing-length families. The anchored version also prevents
+correlated agreement altogether at its threshold. Their fields grow,
+and their chosen seed lists remain fixed.
 These quantifiers are part of the result.
 
 \subsection{From coding counterexamples to protocol conclusions}
@@ -2718,14 +2903,20 @@ whitepaper does not explicitly state its field-uniformity convention.
 The theorem is stated for constants at least one;
 any smaller positive constants are covered by enlarging them to one.
 
-There are two qualifications. First, the fixed-gap construction has
-correlated agreement. It refutes the quantitative selected-witness
-line threshold; it is not a fixed-gap example of global failure of
-correlated agreement. Second, it does not refute a threshold expressed
-using the \emph{actual} maximum list size $\ell_C(\theta)$. The
-constructed selected count is $Ln\le\ell_C(\theta)n$. Replacing a
-false numerical estimate for list size and retaining a theorem that
-uses actual list size are different operations.
+Theorem~\ref{fg:anchored-fixed-gap} strengthens this conclusion:
+its lines have no correlated agreement at their exactly fixed rate
+and gap, yet have at least $C_\rho(\eta)n$ nearby challenges with
+$\log_2 C_\rho(\eta)=\Omega_\rho(\eta^{-2}/\log(1/\eta))$
+along a sequence of gaps. Their selected witnesses also have
+concurrency at most $n$. Thus the fixed-gap coefficient obstruction
+does not depend on selecting among persistent good witness lines.
+
+These arguments do not establish failure of a fixed-gap threshold
+expressed using the \emph{actual} maximum list size $\ell_C(\theta)$.
+In the preliminary construction, for example, the selected count is
+$Ln\le\ell_C(\theta)n$. Replacing a false numerical estimate for
+list size and retaining a theorem that uses actual list size are
+different operations.
 
 Theorem~\ref{al:separation} addresses the actual-list question separately.
 At every fixed rate it has $\ell_C(\theta)=n-k-1$ but exponentially
@@ -2823,8 +3014,11 @@ structured questions.
 \item \textbf{The correct dependence on the gap.}
 For a prescribed relation between $p$ and $n$, what dependence on
 $\eta$ is necessary? The exponential-list family has shrinking gap;
-the fixed-gap lift retains a fixed list rather than an exponentially
-growing one.
+the fixed-gap lifts retain fixed seed lists rather than exponentially
+growing ones. The anchored lift forces the logarithm of any universal
+linear proximity-gap coefficient to grow at least as
+$\eta^{-2}/\log(1/\eta)$ along a sequence of gaps. Whether a fixed
+positive gap permits superlinear growth in length remains open here.
 \item \textbf{Bounds for a prescribed code.}
 Which list and proximity-gap bounds hold for a fixed field and a fixed
 FFT domain at the radii used in a proof system? A generic-domain

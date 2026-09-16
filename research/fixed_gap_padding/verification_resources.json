@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "research/fixed_gap_padding/verify_anchored_padding.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.6382566660176963,
+  "peak_rss_kib": 17664,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}
