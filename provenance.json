@@ -42,7 +42,7 @@
     "Add anchored quotient and padding construction giving actual correlated-agreement failure at exactly fixed rate and gap, with an explicit lower bound on the gap-dependent linear coefficient.",
     "Add sharp binary-affine locator-prefix bound in every characteristic other than two, with explicit characteristic-two exception and finite implications for the large integer classes."
   ],
-  "revised_at": "2026-09-16T15:16:56.125057+00:00",
+  "revised_at": "2026-09-16T15:46:42.765872+00:00",
   "coordination": {
     "frontier_acknowledged": "2026-09-15T18:11:07-04:00",
     "older_32_page_source_repaired": true,
@@ -142,6 +142,14 @@
       "verification": "24 system fixtures, 88 received lines, 6608 residual degree bounds, 87 determining-tuple counts, both proof branches, and a characteristic negative control passed.",
       "review": "Proof self-reviewed twice. Classical solution-dimension fact attributed to Guruswami--Wang. No independent mathematical review or novelty claim.",
       "manuscript_integration": "Supplementary note linked in README; paper.tex and paper.pdf unchanged."
+    },
+    "spectral_riccati": {
+      "manifest": "research/spectral_riccati/manifest.json",
+      "prepared_at": "2026-09-16T15:46:42.765872+00:00",
+      "verification": "Constant-weight classification: 70,322 supported candidates, 59,740 unrestricted polynomials, and 81,375 further candidates over all 775 monic R. Weighted theorem: 248,561 candidates in 1,780 fixtures; 7,191 solutions; 151 high-multiplicity charges; 158 local identities; small-degree negative controls. All passed.",
+      "review": "Proofs self-reviewed twice. All weighted candidate counts and label groups match an independent SymPy factorization run. No independent mathematical review or novelty claim.",
+      "manuscript_integration": "Supplement linked in README; paper.tex and paper.pdf unchanged.",
+      "validation_scope": "Both new standalone checkers passed sequentially under the 384 MiB watchdog. Earlier unchanged full-suite results retained."
     }
   },
   "validation_before_binary_affine_integration": {

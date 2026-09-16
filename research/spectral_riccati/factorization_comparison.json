@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "fixtures": 1780,
+  "comparison": "Complete candidate counts, solution counts, and normalized weight/label groups match between SymPy factorization and the standard-library factorization run.",
+  "reference_record_sha256": "649997e6adb61bf5359e39ae266d829ef6d604558f84d0080588d6a9b73a9fe1",
+  "standard_library_record_sha256": "649997e6adb61bf5359e39ae266d829ef6d604558f84d0080588d6a9b73a9fe1",
+  "scope": "Independent factorization comparison; not an independent mathematical proof review."
+}

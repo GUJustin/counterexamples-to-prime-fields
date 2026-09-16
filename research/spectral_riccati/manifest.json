@@ -1,0 +1,16 @@
+{
+  "status": "Self-reviewed proofs; exact finite checks passed; no independent mathematical review or novelty claim",
+  "files": {
+    "CONSTANT_WEIGHT.md": "927fb18f6aa848da403ce31df45ef208f140d9d4004087aec91f3650781ef6aa",
+    "PROOF.md": "1b24909385414dcace983186c61ec08997e3a43fa7583c76b76c6618f186ad6b",
+    "README.md": "c1739c0215a68d27b06a066f81b6aedd569f452ec523cb37010f4c9361da0f1b",
+    "constant_resources.json": "664445573a45c94d36c92ce1b33e635cd25535b245a045bca4a99105ce28b47e",
+    "factorization_comparison.json": "af499a4979794a97e249859c69075140b3ec2d2e1f5f5bf382972054fc84ce0a",
+    "spectral_riccati_verification.json": "553a67c392852783557eec077f50fe3880372a74beb5371e1860f8beffcf4116",
+    "verify_constant.py": "0f8c47f8872c6fbd0ab7b62bd5dc7a6a00722d5aa8b9c54bc1eae409bdf48a83",
+    "verify_weighted.py": "ff4913a68fca89322f6f55ccf8e7e01668e3fce97573cfebec9643d40fc34872",
+    "weighted_resources.json": "9c5579e149291a576530d80caa8be61895451cf11d753b7fe96d2e639476d22e",
+    "weighted_spectral_riccati_verification.json": "8eea0e28ff2a8b7e8bd93d3db25d4d99aee466eee81fa9948af454b34c13230e"
+  },
+  "scope": "Linear spectral label count for R P-prime - R-prime P + P-squared - z B P = 0 with monic R and D>(b+1)(b+2). Constant-weight classification included. Does not settle general nonlinear first-order MCA or supply a quadratic lower bound."
+}

@@ -36,6 +36,8 @@ verify:
 	$(PYTHON) research/structured_domains/frobenius_index/verify_balanced_rational_pencils.py
 	$(PYTHON) research/fixed_gap_padding/verify_anchored_padding.py
 	$(PYTHON) research/linear_differential_mca/verify.py
+	$(PYTHON) research/spectral_riccati/verify_constant.py
+	$(PYTHON) research/spectral_riccati/verify_weighted.py
 	$(PYTHON) research/binary_affine_locator/verify.py
 	$(PYTHON) research/structured_domains/verify_balanced_fibers.py
 	$(PYTHON) research/gram_norm/verify_balanced_fibers.py

@@ -77,7 +77,7 @@ The statements retain their field, domain, radius, and quantifier
 restrictions. They do not establish a complete protocol attack or an
 improved better.codes submission.
 
-## Supplementary research note
+## Supplementary research notes
 
 [Linear differential constraints and full-support proximity gaps](research/linear_differential_mca/README.md)
 gives an elementary `O(n)` bound at fixed positive gap for candidates
@@ -87,6 +87,14 @@ of any fixed order that are affine-linear in the jets, in large
 characteristic. General nonlinear first-order constraints remain open here.
 The note includes a proof and exact finite checks; it is separate from the
 main manuscript and makes no literature-priority claim.
+
+[A linear spectral bound for a nonlinear Riccati family](research/spectral_riccati/README.md)
+proves that `R P' - R' P + P^2 - z B P = 0`, with R monic, has at most `D-b-1`
+nonzero labels with nonzero degree-D solutions when `deg R=D+1`,
+`deg B=b`, and `D>(b+1)(b+2)`, in characteristic greater than `D+1`.
+This closes a particular nonlinear construction route. It includes a
+sharper constant-weight classification and exact finite checks; it does
+not settle the general first-order conjecture or give a quadratic lower bound.
 
 ## Build and verify
 
