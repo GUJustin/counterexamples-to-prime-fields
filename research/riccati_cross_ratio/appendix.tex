@@ -1,8 +1,9 @@
 \section{Sharp list bounds for polynomial Riccati solutions}
 \label{app:riccati-cross-ratio}
 
-The classical constant-cross-ratio property of Riccati equations gives
-an ordinary-list bound even when all agreement coordinates are singular.
+The cross-ratio identities of Riccati equations, combined with
+intersection multiplicities in positive characteristic, give an
+ordinary-list bound even when all agreement coordinates are singular.
 For a challenge-independent nonlinear equation it also gives a linear
 full-support exceptional-label bound. The parametrization and its gcd
 form are classical; see Gasull, Torregrosa, and Zhang
@@ -217,6 +218,23 @@ ratio is a nonconstant rational function with zero derivative.
 Exact enumeration gives five degree-at-most-two solutions, also
 exceeding $D+2$. This is consistent with the boundary value
 $C_D=2D+2$ in~\eqref{eq:riccati-total-count}.
+
+The failure of the $D+2$ count at the boundary is not confined to
+small primes. For every prime $p$, the equation
+\[
+ (X^p-X)P'=-P-P^2,\qquad \deg P\le p-1,
+\]
+has exactly $p+2=D+3$ solutions over every extension of $\F_p$:
+$0$, $-1$, and $(X^p-X)/(X-r)$ for $r\in\F_p$.
+Indeed, evaluating at $\F_p$ forces each value of $P$ to be $0$
+or $-1$. Let $S$ be the set of coordinates with value $-1$ and
+$f=\prod_{r\in S}(X-r)$. Lagrange interpolation gives
+$P=(X^p-X)f'/f$. Substitution reduces the equation to $f''=0$.
+Since $\deg f\le p$, a nonconstant proper divisor $f$ of $X^p-X$
+with $f''=0$ must be linear: its only possible nonzero coefficients
+have degrees $0,1,p$. Thus $S$ is empty, a singleton, or all of
+$\F_p$, proving the assertion. This family does not prove that
+$D+3$ is a universal upper bound at the boundary.
 
 The ordinary-list bound applies separately at each label of a
 challenge-dependent Riccati equation. The full-support bound

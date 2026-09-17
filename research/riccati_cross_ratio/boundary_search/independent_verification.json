@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "fixtures": [
+    {
+      "p": 3,
+      "D": 2,
+      "polynomials_enumerated": 27,
+      "solutions": 5,
+      "scan_pairs": 325
+    },
+    {
+      "p": 5,
+      "D": 4,
+      "polynomials_enumerated": 3125,
+      "solutions": 7,
+      "scan_pairs": 2439063
+    }
+  ],
+  "scan_source_sha256": "5f860ad01b29a03fbdbbad6454280890ac4e24ec187d84e9d27d05aeda365539",
+  "scope": "Checks full solution sets of the displayed maximizing equations and the scan coverage counters. Exhaustiveness over equations additionally relies on scan.cpp and the normalization argument in PROOF.md; no arbitrary-prime upper bound is inferred."
+}

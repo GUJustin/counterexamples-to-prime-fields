@@ -1,0 +1,42 @@
+{
+  "status": "PASS",
+  "fixtures": [
+    {
+      "p": 2,
+      "D": 1,
+      "patterns_checked": 4,
+      "exact_solution_count": 4
+    },
+    {
+      "p": 3,
+      "D": 2,
+      "patterns_checked": 8,
+      "exact_solution_count": 5
+    },
+    {
+      "p": 5,
+      "D": 4,
+      "patterns_checked": 32,
+      "exact_solution_count": 7
+    },
+    {
+      "p": 7,
+      "D": 6,
+      "patterns_checked": 128,
+      "exact_solution_count": 9
+    },
+    {
+      "p": 11,
+      "D": 10,
+      "patterns_checked": 2048,
+      "exact_solution_count": 13
+    },
+    {
+      "p": 13,
+      "D": 12,
+      "patterns_checked": 8192,
+      "exact_solution_count": 15
+    }
+  ],
+  "scope": "All necessary prime-field evaluation patterns; the proof also excludes extra solutions over extension fields."
+}

@@ -11,7 +11,8 @@ Run `python3 verify.py` from this directory (standard library only).
 The checker imports polynomial helpers from ../quasilinear_first_order/verify.py.
 It verifies the sharpened list and fixed-equation incidence inequalities,
 183,581 candidate polynomials, 616 received lines, and nine sharp-list
-fixtures. The p=3 negative control demonstrates why p>D is insufficient.
+fixtures. The p=3 negative control demonstrates why p>D alone does not
+make cross ratios constant; the multiplicity proof handles this case.
 See verification.json and check_resources.json for the completed replay.
 Numerical jobs should run sequentially under the 384 MiB watchdog.
 
