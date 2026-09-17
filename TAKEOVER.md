@@ -2414,3 +2414,15 @@ and verifier pass below384MiB in about0.5seconds. This supersedes the
 earlier 'ramified lifts remain open' statement for this exactseed only.
 It does not exclude different subsets, incidence patterns, or primes.
 The p17 positive lift is unaffected. No growing fixed-gap list is claimed.
+
+## A ten-candidate characteristic41 subset does lift
+
+SUBSET_LIFT.md and verify_subset_lift.py retain binomial labels
+3,8,10,11,12,13,16,17,18,20. Their110x140 free-domain Jacobian has
+a110-column minor of determinant29 mod41. A direct mod1681 correction
+check preserves all selected supports. Hensel and algebraic specialization
+give n40,k10,ten candidates each at15agreements over characteristic zero
+and arbitrarily large splitting primes. No complete-list or maximum-
+agreement claim is made. This is a fixed finite bank below the first-order
+curve, not a growing-list result. It shows the all20 obstruction does
+not exclude useful subsets; maximality of ten is not claimed.

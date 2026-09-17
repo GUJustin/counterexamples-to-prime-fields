@@ -105,3 +105,9 @@ five-supports can be broken on the same smooth branch; all4368 possible
 five-supports are independently replayed. The earlier claim of at least
 eight nearest candidates is therefore strengthened for a suitable
 choice of deformation, not for every possible lift.
+
+## Subsequent positive subset
+
+SUBSET_LIFT.md certifies a ten-candidate subset of the characteristic-41
+bank with a unit Jacobian minor and a characteristic-zero lift. This
+does not contradict the obstruction for the full twenty-candidate bank.
