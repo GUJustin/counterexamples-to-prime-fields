@@ -3,7 +3,7 @@
 September 17, 2026. This generalizes the exact-gap normalization; it does
 not change the prime-field or first-order limitations.
 
-For each b in {2,3,4} and integer d>=b+7, there are unbounded-length
+For each b in {2,3,4,5} and integer d>=b+7, there are unbounded-length
 families over F_(p^e) with
 
     rate = b/d, capacity gap = 1/d,
@@ -14,22 +14,19 @@ families over F_(p^e) with
 They are strictly below characteristic-based Elias for large enough p.
 In particular b=2,d=9 gives exact rate2/9, gap1/9, at least ceil(n^2/972)
 nearby labels, and extension degree at most n^2.
+The new case b=5,d=12 gives rate5/12, gap1/12, at least ceil(n^2/1152)
+nearby labels, and extension degree at most n^5.
 
-## A strict bound needed for the characteristic guard
+## Source upper bound and the characteristic guard
 
 The descended source has N=4r, dimension r, nearest maximum m>=3r/2,
-and r selected nearest polynomials. In fact m<=2r-1, rather than just2r.
-The word is (X^r-1)^2/2 on mu_(4r). If its difference from a degree-<r
-polynomial had2r domain roots, F=X^(2r)-2X^r+A would divide X^(4r)-1,
-with deg A<r. Its quotient must be X^(2r)+2X^r+B, deg B<r. The high
-coefficients force A+B=4. Writing C=A-2 leaves C^2-4CX^r=5, impossible
-by degree unless C=0, which is impossible outside characteristic5.
-The source primes are unbounded and exceed5. This elementary exclusion
-is consistent with Redei's classical lacunary-polynomial classification;
-no novelty claim is made for it.
-
-Hence Delta=m-r+1 satisfies r/2+1<=Delta<=r. This sharper upper bound
-is what permits b=4 without losing p>message degree.
+and r selected nearest polynomials. The quadratic-indicator rigidity
+proof in ../quadratic_indicator_nearest/NEAR_RIGIDITY.md now gives
+m<=5r/3: apply its Dickson-word corollary on the original full field,
+then divide both the domain size and maximum by the stabilizer size.
+Hence Delta=m-r+1 satisfies r/2+1<=Delta<=2r/3+1<=r for r>=3.
+For r>5, b<=5 gives bDelta-1<=5(2r/3+1)-1<4r+1<=p.
+This extends the previous parameter family from b<=4 to b<=5.
 
 ## Parameters and label count
 
@@ -57,7 +54,7 @@ is bDelta. A zero explaining direction has at most T-1 joint agreements
 on the core; a nonzero direction has at most bDelta-1 core zeros plus
 Delta new agreements, again T-1. Ordinary CA is absent.
 
-The message degree is bDelta-1<=4r-1<p. Also T/n-rate=1/d is fixed,
+The message degree is bDelta-1<=5(2r/3+1)-1<4r+1<=p for r>5. Also T/n-rate=1/d is fixed,
 so H_p(1-T/n)<=1-T/n+1/log_2(p)<1-rate for sufficiently large p.
 
 ## Extension degree
@@ -80,9 +77,9 @@ Moreover u+1<=(d-b-3)Delta. Therefore
 
     e <= 4(d-b-3)(b+2)^(b-1) Delta^b <= (dDelta)^b = n^b.
 
-The last inequality holds for b=2,3,4 and d>=b+7: the function
+The last inequality holds for b=2,3,4,5 and d>=b+7: the function
 (d-b-3)/d^b decreases beyond d=b(b+3)/(b-1); check the initial integer
-values d=9,10 for b=2, d=10 for b=3, and d=11 for b=4. The resulting
+values d=9,10 for b=2, d=10 for b=3, d=11 for b=4, and d=12 for b=5. The resulting
 field has size at least p^4, exceeding2N'r for large r. The compiler
 therefore needs no further extension.
 

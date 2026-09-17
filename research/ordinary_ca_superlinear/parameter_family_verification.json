@@ -1,16 +1,17 @@
 {
   "status": "passed",
-  "cases": 213759,
+  "cases": 283446,
   "b_values": [
     2,
     3,
-    4
+    4,
+    5
   ],
   "d_up_to": 100,
   "r_range": [
     40,
     300
   ],
-  "m_cases": "lower endpoint, middle, strict upper endpoint",
+  "m_cases": "lower endpoint, middle, new five-thirds upper endpoint",
   "scope": "Exact integer identities, characteristic guard, block admissibility and field-degree estimates; no numerical proof of asymptotic existence."
 }

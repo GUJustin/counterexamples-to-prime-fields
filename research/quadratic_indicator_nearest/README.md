@@ -78,3 +78,9 @@ first-order range, not just at its nearest threshold. A polynomial abc
 argument proves the statement; a full 17^5-polynomial census tests its
 cutoff over F17. The prime-power generality above applies to the exact
 nearest classification, not to this stronger statement.
+
+Moreover the original Dickson word is this indicator minus X^k.
+For prime p>5 its entire degree-<k nearest-list problem has maximum
+agreement at most floor(5k/3), since none of the four classified
+nonconstant polynomials is monic. Thus enlarging the known Dickson
+candidate bank cannot reach the first-order regime on the full domain.

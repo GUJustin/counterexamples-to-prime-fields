@@ -1,10 +1,10 @@
 \section{A constant first-order list for the quadratic indicator}
 \label{app:quadratic-indicator}
 
-The following elementary obstruction concerns one alternative to the
-Dickson received word. It rules out a growing list for this alternative
-throughout the quarter-rate first-order regime; it imposes no such
-restriction on general received words.
+The quadratic-residue indicator gives an elementary obstruction for
+the entire nearest-list problem of the full-field Dickson word, not
+only for the explicit candidate family used in the lower bound.
+It imposes no such restriction on general received words or domains.
 
 \begin{proposition}\label{prop:quadratic-indicator-rigidity}
 Let $p=4k+1$ be prime and let $w(x)=(1+x^{2k})/2$ on $\F_p^*$.
@@ -79,7 +79,27 @@ the extension assertion.
 The cutoff fraction $5/12$ is strictly below the quarter-rate
 first-order threshold $(3+\sqrt{133})/31$. Thus this received word
 cannot witness growing first-order lists, even though its nearest
-agreement fraction is $1/2$. As a finite check, exhaustive enumeration
+agreement fraction is $1/2$.
+
+\begin{corollary}\label{cor:dickson-word-first-order-barrier}
+For every prime $p=4k+1>5$, the Dickson received word
+$W(x)=(x^k-1)^2/2$ on $\F_p^*$ has agreement at most
+$\lfloor5k/3\rfloor$ with every degree-$<k$ polynomial, even with
+extension coefficients. In particular its maximum agreement fraction
+is at most $5/12$, below the quarter-rate first-order threshold.
+\end{corollary}
+\begin{proof}
+Since $W=w-X^k$, a candidate exceeding the cutoff would give a monic
+degree-$k$ polynomial $P+X^k$ in Proposition~\ref{prop:quadratic-indicator-rigidity}.
+The leading coefficient $c=1/(v-u)$ of each nonconstant listed
+polynomial satisfies $4c^4+1=0$, since $(v-u)^4=-4$.
+It cannot equal one unless $p=5$.
+\end{proof}
+
+Consequently enlarging the candidate bank for this fixed full-field
+word cannot reach the first-order regime. This does not rule out
+puncturing or changing the word or evaluation domain.
+As a finite check, exhaustive enumeration
 of all $17^5$ polynomials of degree at most four over $\F_{17}$ finds
 no polynomial with seven agreements and exactly the stated six with
 eight. The proof above, rather than this census, establishes the

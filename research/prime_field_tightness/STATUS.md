@@ -7,6 +7,17 @@ proof closes this particular word throughout the first-order range.
 This is an upper bound on a proposed source, not progress on better.codes
 or an intrinsic first-order lower bound. See
 ../quadratic_indicator_nearest/NEAR_RIGIDITY.md.
+Since the original Dickson word equals this indicator minus X^k,
+its entire degree-<k approximation problem has maximum agreement at
+most floor(5k/3) for p>5. The classified exceptions are not monic.
+This closes the full-domain Dickson word, including unknown candidates,
+as a source above the quarter-rate first-order threshold.
+The stronger source upper bound also extends the exact-parameter family
+to b=5: in particular rate5/12, gap1/12, ceil(n^2/1152) exceptional
+challenges with no ordinary CA, and extension degree at most n^5.
+The characteristic still exceeds message degree. This remains an
+extension-field result below the first-order regime. The expanded
+parameter checker passes283446 cases.
 
 September 17, 2026. User priority: assess and pursue tightness of the
 Dao–Kominers–Thaler prime-field proximity-gap paper. Work horizon extended by the user on September 17

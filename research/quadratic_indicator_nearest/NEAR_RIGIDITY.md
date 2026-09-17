@@ -15,6 +15,18 @@ than 5/12. In particular it cannot grow anywhere above the quarter-rate
 first-order threshold (3+sqrt(133))/31, which is greater than 5/12.
 This concerns this particular word and full evaluation domain only.
 
+**Corollary (the original Dickson word).** For every prime p=4k+1>5,
+the word W(x)=(x^k-1)^2/2 on F_p* has maximum agreement at most
+floor(5k/3) with degree-<k polynomials, including extension coefficients.
+Indeed W=w-X^k. A candidate P exceeding the cutoff would give the
+monic degree-k polynomial Q=P+X^k in the classified six-element list.
+Its four nonconstant members have leading coefficient c with
+4c^4+1=0; c=1 would force p=5. Thus no such candidate exists.
+In particular the ENTIRE nearest-list problem for the original full-field
+Dickson word stays below the first-order range, not merely its known
+binomial candidate bank. This does not exclude puncturing, changing the
+word, or using other evaluation domains.
+
 ## Proof
 
 Constants other than 0 and 1 have no agreements. Suppose P is

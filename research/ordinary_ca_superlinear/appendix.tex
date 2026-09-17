@@ -320,7 +320,7 @@ extension or prime-field claim.
 \subsection{A family of exact rates and gaps}
 
 \begin{corollary}\label{cor:ordinary-ca-parameter-family}
-Fix $b\in\{2,3,4\}$ and an integer $d\ge b+7$. There are unbounded-length
+Fix $b\in\{2,3,4,5\}$ and an integer $d\ge b+7$. There are unbounded-length
 families over $\F_{p^e}$ of exact rate $b/d$ and capacity gap $1/d$
 with at least
 \[
@@ -331,19 +331,18 @@ The characteristic exceeds the message degree, $e\le n^b$, and the
 radius is strictly below characteristic-based Elias for sufficiently
 large $p$. In particular, $b=2,d=9$ gives rate $2/9$, gap $1/9$,
 at least $\lceil n^2/972\rceil$ nearby challenges, and $e\le n^2$.
+The case $b=5,d=12$ gives rate $5/12$, gap $1/12$, at least
+$\lceil n^2/1152\rceil$ nearby challenges, and $e\le n^5$.
 \end{corollary}
 \begin{proof}
-We first sharpen the source bound to $m\le2r-1$. Otherwise
+Corollary~\ref{cor:dickson-word-first-order-barrier} bounds the original
+full-field source maximum by $5k/3$. Descent by the stabilizer size
+$k/r$ therefore gives $m\le5r/3$. Consequently
 \[
- F=X^{2r}-2X^r+A,\qquad \deg A<r,
+ r/2+1\le\Delta=m-r+1\le2r/3+1\le r
 \]
-would divide $X^{4r}-1$. Its monic quotient has form
-$X^{2r}+2X^r+B$, with $\deg B<r$, and comparison of coefficients
-forces $A+B=4$. Setting $C=A-2$ then gives
-$C^2-4CX^r=5$. For nonzero $C$ the left side has degree
-$r+\deg C>2\deg C$; for $C=0$ it forces characteristic five.
-Both are impossible for the source primes under consideration.
-Thus $\Delta=m-r+1$ satisfies $r/2+1\le\Delta\le r$.
+for sufficiently large $r$. This also preserves the characteristic
+condition for the additional case $b=5$.
 
 Apply the preservation operations with
 \[
@@ -368,7 +367,7 @@ $(b+1)\Delta$. The old core has maximum $(b+1)\Delta-1$.
 A nonzero explaining direction has at most $b\Delta-1$ core zeros
 and $\Delta$ new agreements. A zero direction has only core agreements.
 Thus ordinary correlated agreement is absent. Also
-$b\Delta-1\le4r-1<p$, and the fixed gap $1/d$ gives strict Elias
+$b\Delta-1\le5(2r/3+1)-1<4r+1\le p$ for $r>5$, and the fixed gap $1/d$ gives strict Elias
 for large $p$.
 
 For the extension degree, start over $\F_{p^2}$, which supplies all
@@ -384,7 +383,7 @@ $K_j+2h_j\le(b+1)\Delta+1\le(b+2)\Delta$. Hence
  e\le4(d-b-3)(b+2)^{b-1}\Delta^b\le(d\Delta)^b=n^b.
 \]
 The last inequality follows by checking the initial integer values
-$d=9,10$ for $b=2$, $d=10$ for $b=3$, and $d=11$ for $b=4$,
+$d=9,10$ for $b=2$, $d=10$ for $b=3$, $d=11$ for $b=4$, and $d=12$ for $b=5$,
 and using that $(d-b-3)/d^b$ decreases for
 $d\ge b(b+3)/(b-1)$. The resulting field has size at least $p^4$,
 which exceeds $2N'r$ for large $r$, so the compiler needs no further
