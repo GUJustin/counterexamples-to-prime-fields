@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "seconds": 0.2731918749996112,
+  "n": 220,
+  "K": 95,
+  "prime_bits": 327,
+  "exact_class_size": "31495815243247545087807036124",
+  "ratio_greater_than_hundredths": 105,
+  "primality": "Proth certificate",
+  "scope": "Independent subset-count DP, deterministic primality proof, and exact non-half-rate entropy comparison; no specified domain."
+}

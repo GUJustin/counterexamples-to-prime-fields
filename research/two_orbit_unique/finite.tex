@@ -2,7 +2,7 @@
 Table~\ref{tab:two-orbit} gives exact half-rate certificates for
 Lemma~\ref{tou:finite}. Every row has positive $Q_0-B_0$, is strictly
 below Elias, and beats the prescription even with $c_1=1,c_2=2$.
-The last row places the exceptional point $38/39$ of the gap outside
+The last row places the exceptional point $86/87$ of the gap outside
 the tested radius. These are existence certificates for a suitable
 parameter and domain; no particular domain is specified by the table.
 
@@ -12,11 +12,12 @@ parameter and domain; no particular domain is specified by the table.
 \toprule
 $p=2^b-1$: $b$ & $d$ & $n$ & $K$ & separation$/\eta$ & ratio $>$\\
 \midrule
-521   & 2  & 346   & 173   & $4/5$   & $2^7$\\
-1279  & 3  & 862   & 431   & $6/7$   & $2^{10}$\\
-9689  & 5  & 6638  & 3319  & $10/11$ & $2^{81}$\\
-23209 & 7  & 16504 & 8252  & $14/15$ & $2^{114}$\\
-44497 & 19 & 36022 & 18011 & $38/39$ & $2^5$\\
+521 & 2 & 346 & 173 & $4/5$ & $2^{9}$\\
+1279 & 3 & 862 & 431 & $6/7$ & $2^{13}$\\
+9689 & 5 & 6638 & 3319 & $10/11$ & $2^{85}$\\
+23209 & 7 & 16546 & 8273 & $14/15$ & $2^{119}$\\
+44497 & 19 & 36060 & 18030 & $38/39$ & $2^{9}$\\
+216091 & 43 & 190144 & 95072 & $86/87$ & $2^{6}$\\
 \bottomrule
 \end{tabular}
 \caption{Unique-witness two-orbit existence certificates. The ratio is
@@ -26,12 +27,13 @@ The table does not claim efficient sampling or decoding.}
 \end{table}
 
 The certificates use $(m,D,c)=(171,87,0)$, $(285,144,1)$,
-$(1325,664,3)$, $(2355,1179,5)$, and $(1893,948,17)$, respectively.
+$(1325,664,3)$, $(2361,1182,5)$, $(1895,949,17)$, and
+$(4419,2211,41)$, respectively.
 They replace $\sqrt p$ by its integer ceiling and check all bounds
 using integer arithmetic. Lucas--Lehmer establishes each prime;
 $(2d+1)(b-1)>n$ gives a strict sufficient Elias certificate.
-Writing $J_0=\lceil\binom mD/(D(m-D)+1)\rceil$, a displayed exponent
-$w$ is certified by
+Using $J_0=\lceil\binom mD/\sqrt{D(m-D)(m+1)+1}\rceil$
+from Lemma~\ref{tou:concentration}, a displayed exponent $w$ is certified by
 \[
  J_0^{2d+1}>n^{2d+1}2^{2n+w(2d+1)}.
 \]
@@ -43,3 +45,40 @@ interpolation. Integer fixtures also check actual radical domains,
 the conservative norm bound, and greedy witness recovery.
 These smaller fixtures test the geometry and proofs; they are not
 additional violations of the numerical prescription.
+
+\paragraph{A length-$226$ half-rate certificate.}
+An exact index-sum count gives a shorter example over the $338$-bit prime
+\[
+ p=204255\cdot2^{320}+1,\qquad n=226,\qquad K=113.
+\]
+Primality has the compact certificate
+$11^{(p-1)/2}\equiv-1\pmod p$: every prime divisor of $p$ must then
+be $1$ modulo $2^{320}$, and hence exceed $\sqrt p$.
+For $m=111$, $D=57$, the index-sum class $S=3192$ contains exactly
+\[
+ J=441734689284929317660654122848
+\]
+supports. This is the coefficient of $y^{57}x^{3192}$ in
+$\prod_{i=1}^{111}(1+yx^i)$, replayed by two independent recurrences.
+The finite existence inequality is positive, so some domain over this
+explicit field has these uniquely nearby parameters, gap $5/226$,
+and far separation $4\eta/5$. Exact integer comparisons give
+\[
+ \frac{J}{n2^{2/\eta}}>\frac{119}{100},\qquad
+ \frac{J}{n2^{1/\eta}}>2^{45}.
+\]
+The second inequality concerns the original $c_1=c_2=1$ prescription.
+This certificate specifies the field and the support class, but not a
+successful domain parameter $q$.
+
+At rate $19/44$, a separate certificate has
+$p=121\cdot2^{320}+1$, $n=220$, $K=95$, and $\eta=1/44$.
+Here $(m,D,S)=(108,48,2616)$ and the exact class contains
+$31495815243247545087807036124$ supports. The ratio exceeds $21/20$
+for $c_2=2$ and $2^{43}$ for $c_2=1$, with $c_1=1$ in both cases.
+Primality is certified by $3^{(p-1)/2}\equiv-1\pmod p$.
+The non-half-rate comparison is also entirely integral, using
+\[
+ 2^{nH_2(K/n)}=\frac{n^n}{K^K(n-K)^{n-K}}.
+\]
+The same existence and domain-specification qualification applies.

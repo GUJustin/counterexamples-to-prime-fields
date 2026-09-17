@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "seconds": 0.5557459159972495,
+  "n": 226,
+  "K": 113,
+  "prime_bits": 338,
+  "exact_class_size": "441734689284929317660654122848",
+  "ratio_greater_than_hundredths": 119,
+  "primality": "Proth certificate",
+  "scope": "Independent subset-count DP, deterministic primality proof, and exact finite existence inequalities; no specified domain."
+}

@@ -61,6 +61,8 @@ verify:
 	$(PYTHON) research/paired_domain_warp/verify_completed_sample.py
 	$(PYTHON) research/paired_domain_warp/verify_extension_profile.py
 	$(PYTHON) research/paired_domain_warp/check_far_inputs.py
+	$(PYTHON) research/paired_domain_warp/check_far_mixtures.py
+	$(PYTHON) research/paired_domain_warp/check_curve_profiles.py
 	$(PYTHON) research/paired_domain_warp/m31_exact/verify.py
 	$(PYTHON) research/paired_domain_warp/m31_exact/verify_local_lists.py
 	$(PYTHON) research/paired_domain_warp/verify_unique_geometry.py
@@ -76,9 +78,14 @@ verify:
 	$(PYTHON) research/orbit_unique/verify_kummer.py
 	$(PYTHON) research/orbit_unique/check_kummer_small.py
 	$(PYTHON) research/two_orbit_unique/verify_finite.py
+	$(PYTHON) research/two_orbit_unique/verify_short.py
+	$(PYTHON) research/two_orbit_unique/verify_short_rate.py
 	$(PYTHON) research/two_orbit_unique/check_exhaustive.py
 	$(PYTHON) research/two_orbit_unique/check_negative.py
 	$(PYTHON) research/two_orbit_unique/check_formal.py
+	$(PYTHON) research/two_orbit_unique/check_concentration.py
+	$(PYTHON) research/two_orbit_unique/check_tradeoff.py
+	$(PYTHON) research/two_orbit_unique/check_degree_cutoff.py
 	$(PYTHON) research/two_orbit_unique/check_integer.py
 	$(PYTHON) research/cubic_domain_warp/verify_geometry.py
 	$(PYTHON) research/cubic_domain_warp/verify_finite_certificate.py

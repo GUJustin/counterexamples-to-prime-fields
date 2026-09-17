@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "script": "research/two_orbit_unique/verify_finite.py",
+      "returncode": 0,
+      "seconds": 324.25747387499723
+    },
+    {
+      "script": "research/two_orbit_unique/check_exhaustive.py",
+      "returncode": 0,
+      "seconds": 1.8775813340034802
+    },
+    {
+      "script": "research/two_orbit_unique/check_negative.py",
+      "returncode": 0,
+      "seconds": 0.4492659579991596
+    },
+    {
+      "script": "research/two_orbit_unique/check_tradeoff.py",
+      "returncode": 0,
+      "seconds": 0.41840379199857125
+    },
+    {
+      "script": "research/two_orbit_unique/check_integer.py",
+      "returncode": 0,
+      "seconds": 69.74301929100329
+    },
+    {
+      "script": "research/paired_domain_warp/check_far_mixtures.py",
+      "returncode": 0,
+      "seconds": 0.19911625000531785
+    },
+    {
+      "script": "research/paired_domain_warp/check_curve_profiles.py",
+      "returncode": 0,
+      "seconds": 0.06593000000430038
+    },
+    {
+      "script": "research/two_orbit_unique/short_finite.py",
+      "returncode": 0,
+      "seconds": 0.077694583000266
+    },
+    {
+      "script": "research/two_orbit_unique/verify_short.py",
+      "returncode": 0,
+      "seconds": 0.5422175420026178
+    }
+  ],
+  "seconds": 397.63821816699783
+}

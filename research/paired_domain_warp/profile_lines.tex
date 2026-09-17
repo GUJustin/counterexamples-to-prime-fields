@@ -1,0 +1,59 @@
+\begin{corollary}[Prescribed exceptional distances on curves]
+\label{pd:distance-budget}
+In the affine space of Corollary~\ref{pd:full-gap}, fix $e\ge1$,
+distinct parameters $z_1,\ldots,z_t\in\F_p$, and integers
+$1\le a_i\le r$ with $\sum_i a_i\le er$.
+There is a polynomial curve of degree at most $e$ whose exact distance is
+\[
+ \theta+2a_i/n\quad\text{at }z_i,\qquad
+ \theta\quad\text{at every other parameter}.
+\]
+Conversely, every degree-at-most-$e$ curve in this affine space that
+has any point at distance $\theta$ satisfies
+\[
+ \sum_{z\in\F_p}\bigl(\dist(f_z,C)-\theta\bigr)
+ \le\frac{2er}{n}=e\left(\eta-\frac1n\right).
+\]
+For lines, two equal endpoint separations cannot exceed half
+this budget. The two equal separations in
+Corollary~\ref{pd:two-far-inputs} attain that bound.
+This converse is a property of this construction, not a bound for all
+Reed--Solomon curves.
+\end{corollary}
+\begin{proof}
+Distribute $a_i$ copies of each $z_i$ consecutively around $r$ bins,
+continuing cyclically between successive parameters. Since $a_i\le r$,
+no bin receives the same parameter twice. Since $\sum_i a_i\le er$,
+each bin receives at most $e$ parameters. Let its direction coordinate
+be the product of $z-z_i$ over its assigned parameters, or one if empty.
+Exactly $a_i$ coordinates vanish at $z_i$, and none vanish elsewhere.
+Equation~\eqref{pd:exact-profile} proves the claimed distances.
+For the converse, each direction coordinate is a polynomial of degree
+at most $e$. None is identically zero, since there is a point at distance
+$\theta$. Each therefore vanishes at at most $e$ field parameters.
+Sum the zero-coordinate counts and multiply by $2/n$.
+\end{proof}
+
+\begin{corollary}[Interpolation of far inputs]\label{pd:far-interpolation}
+Let $2\le t<p$ divide $r$, and choose distinct
+$x_1,\ldots,x_t\in\F_p$. The $t$ far words of
+Corollary~\ref{pd:two-far-inputs} have a degree-at-most-$(t-1)$
+interpolating curve $F(z)$ such that
+\[
+ \dist(F(x_i),C)=\theta+\frac{2r(t-1)}{nt}
+ \quad(1\le i\le t),\qquad
+ \dist(F(z),C)=\theta\quad(z\notin\{x_1,\ldots,x_t\}).
+\]
+A uniform curve parameter is nearby with probability $1-t/p$.
+For fixed $t$ and growing $r$, all $t$ specified inputs are almost
+$(1-1/t)\eta$ outside the radius. Their equal excess distances
+attain the degree-$(t-1)$ total budget above.
+\end{corollary}
+\begin{proof}
+Use the Lagrange coefficients
+$\lambda_j(z)=\prod_{i\ne j}(z-x_i)/(x_j-x_i)$ and set
+$F(z)=\sum_j\lambda_j(z)v_j$. The coefficients sum to one,
+are all nonzero away from the interpolation nodes, and form a unit
+vector at each node. Apply the exact affine distance profile.
+The total excess distance is $2r(t-1)/n$, as asserted.
+\end{proof}

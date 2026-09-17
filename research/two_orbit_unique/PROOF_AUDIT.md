@@ -131,3 +131,25 @@ The gap shrinks, the nearby bank is sparse, and no global list-size
 upper bound is proved. This is not the complete-coverage construction,
 not a fixed-positive-gap superlinear lower bound, and not a construction
 on the prescribed better.codes domain. It does not improve better.codes.
+
+## Subsequent refinements
+
+The logarithmic-length theorem permits any alpha below
+`d/(log_2(d)+max(log_2(2^d-1),2H_2(rho)))`, rather than just1/8.
+The root-admitting main term still dominates the character error, since
+`log_2(2^d-1)>log_2(d)`. The conditional failure exponent is exactly
+the difference between the main root count and the largest exclusion
+exponent. The old1/8 statement remains a uniform special case.
+
+Reducing K from dD-1 to dD-s,1<=s<d, retains every constructed codeword:
+its degree is at most dD-d. It cannot introduce new nearby codewords,
+and the monic root bound still supplies exact far/near distances.
+This gives c2<2+s/d and separation2d/(2d+s), hence any fixed c2<3
+with separation>2/3. The integer witness decoder is unchanged.
+
+The variance concentration lemma strengthens the largest sum class.
+If J/A is the largest atom of the subset-sum distribution, smoothing
+by an independent uniform[-1/2,1/2] gives density bounded by J/A and
+variance(V+1)/12. The elementary density/variance inequality yields
+J^2(V+1)>=A^2. This is checked against all2,097,110 supports in190
+small fixtures, including the sharp D=1 and D=m-1 cases.

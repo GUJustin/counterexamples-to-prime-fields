@@ -8,9 +8,10 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'paired_domain_warp'))
 from verify_extension_profile import interpolate,evaluate
 BASE=Path(__file__).resolve().parent
 
-def replay_line(p,d,m,D,c,q,roots,omega):
+def replay_line(p,d,m,D,c,q,roots,omega,s=1):
  M=m+c;mu=[pow(omega,j,p) for j in range(d)];a=roots[:m];extra=roots[m:M];t=roots[-1]
- domain=[x*w%p for x in a for w in mu]+extra+mu+[t*w%p for w in mu];n=len(domain);K=d*D-1
+ domain=[x*w%p for x in a for w in mu]+extra+mu+[t*w%p for w in mu];n=len(domain);K=d*D-s;target=d*D+2*d
+ assert 1<=s<d
  assert n==d*(m+2)+c and len(set(domain))==n
  hist={}
  for I in combinations(range(1,m+1),D):hist.setdefault(sum(I),[]).append(I)
@@ -31,12 +32,12 @@ def replay_line(p,d,m,D,c,q,roots,omega):
    if bb==u:common+=aa==v
    else:
     z=(v-aa)*pow(bb-u,-1,p)%p;zs[z]=zs.get(z,0)+1
-  assert common<K+1+2*d;far_agreement=max(far_agreement,common+zs.get(0,0))
+  assert common<target;far_agreement=max(far_agreement,common+zs.get(0,0))
   for z,count in zs.items():
-   if common+count>=K+1+2*d:actual.setdefault(z,set()).add(tuple((aa+z*bb)%p for aa,bb in zip(av,bv)))
- assert far_agreement==K+1 and set(actual)==set(expected)
+   if common+count>=target:actual.setdefault(z,set()).add(tuple((aa+z*bb)%p for aa,bb in zip(av,bv)))
+ assert far_agreement==d*D and set(actual)==set(expected)
  assert all(actual[z]=={v} for z,v in expected.items())
- return dict(p=p,d=d,m=m,D=D,c=c,q=q,n=n,K=K,selected_sum=S,nearby_count=len(actual),interpolation_pencils=comb(n,K),all_nearby_unique=True,core_roots=a,extra_roots=extra,padding_radical=t,omega=omega)
+ return dict(p=p,d=d,m=m,D=D,c=c,q=q,n=n,K=K,dimension_reduction=s,selected_sum=S,nearby_count=len(actual),interpolation_pencils=comb(n,K),all_nearby_unique=True,core_roots=a,extra_roots=extra,padding_radical=t,omega=omega)
 
 def audit(p,d,m,D,c,inverses,require_positive_bound=True,replay=True):
  M=m+c;start=time.monotonic();root=array('I',[0])*p

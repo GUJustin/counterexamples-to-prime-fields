@@ -1,0 +1,142 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "p": 1009,
+      "d": 3,
+      "m": 3,
+      "D": 2,
+      "c": 1,
+      "q": 112,
+      "n": 16,
+      "K": 4,
+      "dimension_reduction": 2,
+      "selected_sum": 3,
+      "nearby_count": 1,
+      "interpolation_pencils": 1820,
+      "all_nearby_unique": true,
+      "core_roots": [
+        807,
+        773,
+        948
+      ],
+      "extra_roots": [
+        470
+      ],
+      "padding_radical": 467,
+      "omega": 634
+    },
+    {
+      "p": 65521,
+      "d": 5,
+      "m": 2,
+      "D": 1,
+      "c": 0,
+      "q": 44,
+      "n": 20,
+      "K": 3,
+      "dimension_reduction": 2,
+      "selected_sum": 1,
+      "nearby_count": 1,
+      "interpolation_pencils": 1140,
+      "all_nearby_unique": true,
+      "core_roots": [
+        65413,
+        62644
+      ],
+      "extra_roots": [],
+      "padding_radical": 54190,
+      "omega": 50520
+    },
+    {
+      "p": 65521,
+      "d": 5,
+      "m": 2,
+      "D": 1,
+      "c": 0,
+      "q": 44,
+      "n": 20,
+      "K": 2,
+      "dimension_reduction": 3,
+      "selected_sum": 1,
+      "nearby_count": 1,
+      "interpolation_pencils": 190,
+      "all_nearby_unique": true,
+      "core_roots": [
+        65413,
+        62644
+      ],
+      "extra_roots": [],
+      "padding_radical": 54190,
+      "omega": 50520
+    },
+    {
+      "p": 65521,
+      "d": 5,
+      "m": 2,
+      "D": 1,
+      "c": 0,
+      "q": 44,
+      "n": 20,
+      "K": 1,
+      "dimension_reduction": 4,
+      "selected_sum": 1,
+      "nearby_count": 1,
+      "interpolation_pencils": 20,
+      "all_nearby_unique": true,
+      "core_roots": [
+        65413,
+        62644
+      ],
+      "extra_roots": [],
+      "padding_radical": 54190,
+      "omega": 50520
+    }
+  ],
+  "seconds": 0.33199949999834644,
+  "source_scan": {
+    "p": 65521,
+    "d": 5,
+    "m": 2,
+    "D": 1,
+    "c": 0,
+    "parameters_scanned": 65520,
+    "root_admitting": 510,
+    "bad_root_parameters": 2,
+    "bad_product_parameters": 0,
+    "bad_order_parameters": 0,
+    "good_parameters": 508,
+    "certified_root_admitting_lower": -1789,
+    "root_bad_upper": 3840,
+    "product_bad_upper": 2,
+    "order_bad_upper": 1,
+    "positive_existence_bound": false,
+    "first_bad_parameters": {
+      "root": 4104
+    },
+    "exhaustive_line": {
+      "p": 65521,
+      "d": 5,
+      "m": 2,
+      "D": 1,
+      "c": 0,
+      "q": 44,
+      "n": 20,
+      "K": 4,
+      "dimension_reduction": 1,
+      "selected_sum": 1,
+      "nearby_count": 1,
+      "interpolation_pencils": 4845,
+      "all_nearby_unique": true,
+      "core_roots": [
+        65413,
+        62644
+      ],
+      "extra_roots": [],
+      "padding_radical": 54190,
+      "omega": 50520
+    },
+    "seconds": 0.22112045899848454
+  },
+  "scope": "Every potentially nearby codeword classified in reduced-dimension toy fixtures. No numerical prescription violation claimed for these small domains."
+}

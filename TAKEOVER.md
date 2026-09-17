@@ -1779,3 +1779,114 @@ better.codes improvement. Continue until12:30UTC (8:30Eastern).
 Potential next improvements: variance concentration strengthens the
 largest index-sum class; allow code dimension K=dD-h,1<=h<d for a
 c2/separation tradeoff up to c2<3; optimize the logarithmic length constant.
+
+## 2026-09-17 11:38 UTC — ongoing refinements, NOT ALL REPLAYED YET
+
+HEAD41ef1944496164a5ba9f7fdb57b318fb9eef3af5 commits the first audited
+two-orbit result. Subsequent work is uncommitted. Deadline remains
+12:30UTC; do not conclude early.
+
+Active numerical job: exec session42349, `finite.py` under384MiB and1800s
+watchdog, started about11:19UTC. First five regenerated rows passed LL;
+currently proving M216091 by standard Python LL. New rows use variance
+class bound and last-valid-length binary search. Expected rows:
+M521d2n346K173ratio>2^9; M1279d3n862K431>2^13;
+M9689d5n6638K3319>2^85; M23209d7n16546K8273>2^119;
+M44497d19n36060K18030>2^9;
+M216091d43n190144K95072>2^6 (last primality pending).
+Do not promote the final row until the job and independent replay pass.
+`verify_finite.py` now optionally uses gmpy2 standard modular LL as an
+independent backend; gmpy2 2.3.1 installed in research venv and toolchain
+records updated. Fallback is standard Python folding. Run replay using
+venv Python after generation completes; numerical jobs remain sequential.
+
+New proof refinements:
+- `function_field.tex`: n=alpha log2p+O(1) for any alpha below
+  d/(log2d+max(log2(2^d-1),2Hrho)); conditional failure exponent is
+  1-alpha(log2d+max(...))/d. Oldalpha1/8 remains valid.
+- `degree_tradeoff.tex`: K=dD-s,1<=s<d gives c2<2+s/d,
+  separation2d/(2d+s). Thus any fixedc2<3 with >2/3-gap separation.
+  All existing witness polynomials still fit; no new nearby codewords.
+- `concentration.tex`: J>=ceil[binom(m,D)/sqrt(D(m-D)(m+1)+1)].
+  Proof smooths integer subset-sum distribution by uniform[-1/2,1/2]
+  and uses density/variance inequality. Exhaustive2,097,110-support
+  check passed (`check_concentration.py`).
+- Far batching strengthened for anyfixedt dividingr: input separation
+  (2r/(2r+1))(1-1/t)*eta. Unrestrictedlinear nearby probability
+  1/p+(1-1/p)*[(1-1/p)^t-(-1)^t/p^t]. Multilinear t=2^ell weights
+  give exactnearby probability(1-2/p)^ell. Usesn-K>=4r+1, automatic
+  asymptotically. `far_inputs.tex` contains proof.
+- `profile_lines.tex`: every prescribed integer allocation of <=r
+  vanished coordinates can be realized on a line; total excess distance
+  <=2r/n for lines having anynearby point. Only a converse for this
+  constructed affine space, not allRS lines.
+
+Checks WRITTEN BUT NOT YET RUN (wait for current LL):
+`two_orbit_unique/check_tradeoff.py` (all-codeword smaller-code fixtures),
+`paired_domain_warp/check_far_mixtures.py` (linear/tensor counts andall
+plane lines), `two_orbit_unique/short_finite.py` (searchProthprime and
+exactGaussian-binomial class for n226K113,c2=2), and `verify_short.py`
+(independent subsetDP+Proth+exactbounds). The short row is speculative
+until execution. It gives an explicitfield, but still only existence
+of a successfulq/domain, not actualdomain coordinates.
+
+`check_exhaustive.py` gained optionaldimension reductions andnegative
+controls; its previouss1 path must be replayed after these changes.
+Makefile nowincludesnewchecks butshortpairnotyetadded. README updated
+withtheory. Abstract shortenedfrom625to300words; fullproofsretained.
+LatestPDF153pages, cleanpdfLaTeXbuild, visualpage1and54inspectionPASS.
+Newfinite table/intro stillcontainoldvalidnumbers; updateonce newrowspass.
+No better.codes improvement. No publication or push.
+
+## 2026-09-17 12:00 UTC — new proofs and certificates passed; frontier running
+
+All nine strengthening checks in
+`research/new_strengthening_verification_2026-09-17.json` passed,
+including independent GMP ordinary-modulo Lucas–Lehmer on all six
+Mersenne rows (324s). Their combined watchdog peak was45MiB. The
+standard-Python M216091 generation was deliberately stopped after1391s
+for speed, then GMP folding generated all rows in74s; the independent
+ordinary-modulo replay passed. No primality claim relies on that stopped
+run. Both new far-mixture and curve-profile checks pass (2290 cyclic
+allocation fixtures plus all small-field interpolation cases).
+
+New explicit-field finite existence certificates:
+- n226,K113 (half rate), p=204255*2^320+1,338bits, Prothbase11;
+  m111,D57,S3192,J441734689284929317660654122848.
+  Ratio>119/100 for c2=2 and>2^45 for c2=1.
+- n220,K95 (rho19/44), p=121*2^320+1,327bits, Prothbase3;
+  m108,D48,S2616,J31495815243247545087807036124.
+  Ratio>21/20 for c2=2 and>2^43 for c2=1.
+Both use exact Gaussian-binomial counts, independently replayed by subset
+DP, exact entropy comparisons, and deterministic Proth primality proofs.
+They specify fields and support classes, but NO successfulq/domain.
+The shorter-rate search tested5544parameterpairs; no general minimality
+claim. Paper includes both rows.
+
+A new remark proves the integer construction's dimension cutoff: reducing
+K further to dD-d leaves at most one nearby parameter at the same agreement
+threshold. DistinctDsupport sums ofRi are forced by dominant geometric
+tails and survive the existingp>B no-wrap bound. 5916rational support
+checks and an actualM9689fixture pass. NewMakefiletargets added.
+
+ACTIVE: exec session20730, `proth_frontier.py`,900s/384MiB watchdog.
+It searches compact Proth prime fields for d3,5,7,11,19, using the variance
+class bound and target ratio>2 againstc2=2. First three generated rows:
+d3 n568 K284 p=65703*2^830+1(base5),847bits;
+d5 n1678 K839 p=66495*2^2451+1(base7),2468bits;
+d7 n3442 K1721 p=110915*2^4847+1(base3),4864bits.
+All have conditional bad-parameter bound<2^-4 and original c2=1 ratios
+>2^82,>2^153,>2^230, respectively. d11and19stillpending. These rows
+must be independently replayed before manuscript integration. Checkpoint
+`proth_frontier_certificates.json` is currently partial. All other new
+research is verified and can be committed separately from frontier files.
+
+Latest build before final short-row/degree-cutoff edits was153pages, clean;
+rebuild and inspect new finite pages before committing. Continue until
+at least12:30UTC (8:30Eastern). No better.codes improvement; no push.
+
+## 2026-09-17 morning steering: work until 6 p.m. Eastern
+
+User explicitly extended the research horizon to **2026-09-17 18:00 America/New_York = 22:00 UTC**. This supersedes the previous 08:30 Eastern stopping time. Do not mark the active goal complete at 12:30 UTC. User asks whether results can show the prime-field proximity-gap paper with Scott and Quang is tight-ish. Prioritize precise fixed-gap comparisons and lower bounds in block length.
+
+Recovered reference: rs_capacity_tr26164/starkware/CONTEXT_STARKWARE_2026-09-05.md section F identifies Dao–Kominers–Thaler–Zheng, Reed–Solomon List Decoding and Mutual Correlated Agreement up to Capacity, September 2026. Abstract gives n^{O_eta(1)} lists and derivative order ceil(exp(6.76/eta)). Need actual complete theorem statements before claiming matching exponents. Current fixed-gap anchored padding gives C_rho(eta)n exceptions with log C = Omega(eta^-2/log(1/eta)); does NOT force superlinear n dependence. Current isolated-solution appendix matches algebraic D^{d+1} growth before agreement filtering, but proves its own examples have only constant nearby count at fixed gap. Thus neither currently establishes tightness of the MCA exponent. Shrinking-gap constructions must remain clearly distinguished.

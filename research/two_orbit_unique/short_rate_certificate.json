@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "m": 108,
+  "D": 48,
+  "d": 2,
+  "c": 0,
+  "n": 220,
+  "K": 95,
+  "selected_sum": 2616,
+  "exact_class_size": "31495815243247545087807036124",
+  "proth_k": 121,
+  "proth_exponent": 320,
+  "proth_base": 3,
+  "prime_bits": 327,
+  "good_parameter_lower": "64710750589665646978596156681112789120029169246175508527551502509",
+  "ratio_greater_than_hundredths": 105,
+  "original_prescription_ratio_power_two": 43,
+  "parameter_pairs_tested": 5544,
+  "seconds": 8.357563249999657,
+  "scope": "An explicit-field finite existence row at non-half rate. Exact class counts and entropy comparisons; no domain parameter is specified. Search minimality is limited to the scanned d=2 two-orbit family and is not a general lower bound."
+}

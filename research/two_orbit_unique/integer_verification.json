@@ -23,6 +23,7 @@
         "q": 8192,
         "n": 12,
         "K": 3,
+        "dimension_reduction": 1,
         "selected_sum": 5,
         "nearby_count": 2,
         "interpolation_pencils": 220,
@@ -60,6 +61,7 @@
         "q": 32,
         "n": 12,
         "K": 2,
+        "dimension_reduction": 1,
         "selected_sum": 1,
         "nearby_count": 1,
         "interpolation_pencils": 66,
@@ -74,6 +76,6 @@
       }
     }
   ],
-  "seconds": 40.705423459003214,
+  "seconds": 69.68817899999704,
   "scope": "Actual fields and domains satisfy the universal splitting-prime norm and integer no-wrap bounds. Every nearby codeword is independently classified by interpolation pencils. Toy fixtures test the proof and decoder, not numerical-bound violations."
 }

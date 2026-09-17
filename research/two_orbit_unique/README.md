@@ -11,9 +11,20 @@ roots over sufficiently large splitting primes. The function-field
 version works at logarithmic length, without that decoder or an
 efficient sampler.
 
+The dimension tradeoff K=dD-s defeats c2<2+s/d with separation
+2d/(2d+s), hence any c2<3 with more than two-thirds-gap separation.
+`concentration.tex` sharpens the index-sum class by a variance argument.
+The logarithmic-length constant is optimized in `function_field.tex`.
+
 Verification:
 
-- `verify_finite.py`: independent exact replay of the five finite
+- `verify_short_rate.py`: length220, dimension95, explicit327-bit
+  Proth prime and exact entropy comparison.
+- `check_degree_cutoff.py`: the next integer-family dimension reduction
+  collapses the nearby bank to at most one parameter.
+- `verify_short.py`: length226, half rate, explicit338-bit Proth prime,
+  exact support class; the domain remains an existence certificate.
+- `verify_finite.py`: independent exact replay of the six finite
   existence rows, including Lucas–Lehmer, strict Elias, and ratios.
 - `check_exhaustive.py`: all parameters of two million-element-field
   fixtures, then independent all-codeword interpolation classification.
@@ -21,6 +32,8 @@ Verification:
   where all root-admitting parameters have a forbidden root relation.
 - `check_formal.py`: finite-characteristic series, rotation-class count,
   and distinct product polynomials.
+- `check_concentration.py`: exact support-sum variances and largest classes.
+- `check_tradeoff.py`: all-codeword classification after dimension reduction.
 - `check_integer.py`: actual splitting-root fixtures satisfying the
   conservative norm and no-wrap bounds, plus witness recovery.
 
@@ -29,3 +42,6 @@ Run numerics sequentially under the repository's 384 MiB watchdog.
 existence certificates, not particular domains. The smaller explicit
 fixtures audit geometry but are not numerical-bound violations.
 No better.codes improvement or global list upper bound is claimed.
+
+Optional `gmpy2` substantially accelerates the large Lucas–Lehmer checks.
+The verifier uses ordinary modular reduction independently of the generator's Mersenne folding. Without it, the pure-Python fallback is much slower.

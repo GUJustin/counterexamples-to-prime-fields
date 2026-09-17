@@ -28,6 +28,7 @@
         "q": 77,
         "n": 12,
         "K": 3,
+        "dimension_reduction": 1,
         "selected_sum": 5,
         "nearby_count": 2,
         "interpolation_pencils": 220,
@@ -42,7 +43,7 @@
         "padding_radical": 984097,
         "omega": 1000002
       },
-      "seconds": 1.3203228339989437
+      "seconds": 1.1417847920019994
     },
     {
       "p": 1000003,
@@ -71,6 +72,7 @@
         "q": 9,
         "n": 12,
         "K": 2,
+        "dimension_reduction": 1,
         "selected_sum": 1,
         "nearby_count": 1,
         "interpolation_pencils": 66,
@@ -83,9 +85,9 @@
         "padding_radical": 995018,
         "omega": 500501
       },
-      "seconds": 0.7350700829993002
+      "seconds": 0.5617591250047553
     }
   ],
-  "seconds": 2.20840633300395,
+  "seconds": 1.8352790830031154,
   "scope": "Every field parameter examined, including bad parameters, independently of the asymptotic proof. All potentially nearby codewords classified on one good line per row. Toy geometry does not itself violate the numerical prescription."
 }

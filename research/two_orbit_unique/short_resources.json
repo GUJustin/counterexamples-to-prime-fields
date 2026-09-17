@@ -1,12 +1,12 @@
 {
   "command": [
     "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
-    "research/two_orbit_unique/finite.py"
+    "research/two_orbit_unique/short_finite.py"
   ],
   "reason": "completed",
   "returncode": 0,
-  "seconds": 73.97599549999723,
-  "peak_rss_kib": 25920,
+  "seconds": 0.5555776670007617,
+  "peak_rss_kib": 6352,
   "rss_limit_mib": 384,
-  "time_limit_seconds": 900
+  "time_limit_seconds": 60
 }

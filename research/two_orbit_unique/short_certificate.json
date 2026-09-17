@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "m": 111,
+  "D": 57,
+  "d": 2,
+  "c": 0,
+  "n": 226,
+  "K": 113,
+  "selected_sum": 3192,
+  "exact_class_size": "441734689284929317660654122848",
+  "proth_k": 204255,
+  "proth_exponent": 320,
+  "proth_base": 11,
+  "prime_bits": 338,
+  "good_parameter_lower": "25307859956985046032042785015874405706065309554596468428199146574",
+  "ratio_greater_than_hundredths": 119,
+  "original_prescription_ratio_power_two": 45,
+  "class_coefficient_count": 3079,
+  "search_offset": 60,
+  "seconds": 0.020997832994908094,
+  "scope": "Explicit Proth-prime certificate and exact largest index-sum class; a good parameter and evaluation domain exist by the finite lemma but are not specified."
+}

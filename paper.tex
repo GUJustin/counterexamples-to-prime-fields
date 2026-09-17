@@ -23,79 +23,49 @@
 \begin{document}
 \maketitle
 \begin{abstract}
-Security analyses of hash-based SNARKs use quantitative statements about
-list decoding and proximity gaps of error-correcting codes. We give
-counterexamples to several proposed bounds for Reed--Solomon codes over
-prime fields. Even on short domains in large prime fields, the proposed list-size
-exponent grows too slowly as the gap from capacity shrinks. Moreover,
-an affine line can be nearby at every point but one, with the exception
-only one coordinate short of the maximum possible distance from the code. Changing
-universal constants cannot repair the proposed bounds.
+We give counterexamples to proposed list-decoding and proximity-gap
+bounds for Reed--Solomon codes over prime fields. The main line-level
+phenomenon is simple: even strictly below the characteristic-based
+Elias radius, two far words can have every other affine combination
+close to the code.
 
-For every fixed rational rate $\rho\in(0,1)$, we construct codes with
-$2^{\Omega_\rho(n)}$ codewords agreeing with one received word on
-$(\rho+\eta)n$ coordinates, where
-$\eta=\Theta_\rho(1/\sqrt{n\log n})$ and
-$\log_2p=\Theta_\rho(\sqrt{n\log n})$. The domain is an integer
-interval embedded in $\F_p$, and the radius lies strictly below the
-characteristic-based Elias bound. Thus no
-$\exp(O_\rho(1/\eta))$ list bound holds uniformly over prime fields
-and evaluation domains. More strongly, over every sufficiently large
-prime field, writing $b=\log_2p$, the construction gives a below-Elias
-list with $\log_2L\ge(1/2-o(1))b^2/\log_2b$.
-The construction follows by counting subsets
-with matching moments. Concentration and exact polynomial-weight
-certificates sharpen the finite bounds.
+At every fixed rational rate $\rho\in(0,1)$, write
+$\theta=1-\rho-\eta$ for the tested radius. We construct two words at
+distance $\theta+(1/2-o(1))\eta$ whose other $p-2$ affine combinations
+all have distance exactly $\theta$. The underlying construction also
+gives a line nearby at all $p-1$ nonzero parameters, while zero has
+distance $1-\rho-1/n$, only one coordinate short of the maximum
+possible distance. Here $n=\Theta_\rho(\log p\log\log p)$ and
+$\eta\sim H_2(\rho)/\log_2p$. The actual nearby fraction tends to one
+while the proposed numerical fraction tends to zero. The nearby
+polynomials change with the parameter: their decoding lists are
+pairwise disjoint. The same geometry gives failures for batches
+consisting entirely of far inputs, including multilinear mixtures.
 
-At every fixed rational rate, we construct affine lines whose $p-1$
-nonzero parameters are all nearby, while parameter zero is only one
-coordinate short of the maximum possible Reed--Solomon distance.
-The radius is strictly below Elias, and its gap is
-$\eta\sim H_2(\rho)/\log_2p$. The far point lies $(1-o(1))\eta$
-outside that radius, while the proposed numerical nearby fraction
-tends to zero. The length can be $\Theta_\rho(\log p\log\log p)$. The same codes
-also contain lines with two far endpoints and every other point nearby;
-both endpoints can lie almost half a gap outside the tested radius.
-Paired evaluation domains and a multiplicative-character estimate
-produce this behavior; all nonzero points have exactly the tested
-distance and have pairwise disjoint decoding lists. A separate cubic deformation gives complete
-nonzero coverage at length $\Theta(\log p)$ against arbitrary fixed
-constants in the proposed numerical bound. Both constructions output
-the code and line in expected polynomial time in $\log p$, with
-success probability $1-p^{-\Omega(1)}$.
-A deterministic powers-of-two construction also violates the numerical
-bound with unique, efficiently recoverable nearby witnesses and an
-almost maximally far exceptional point. An extension using prime-order
-orbits makes the separation arbitrarily close to the entire gap, on
-suitable infinite progressions of prime fields, while retaining unique
-and efficiently recoverable witnesses. Two padding orbits strengthen
-this further: uniqueness and almost full-gap separation persist even
-after doubling the proposed exponent constant. A separate existence
-argument gives this strengthening at logarithmic length.
-An anchored lift and padding construction
-gives failure of correlated agreement at an exactly fixed positive rate and gap, at
-arbitrarily large lengths, even when every nearby point on the line
-has a unique nearby codeword. The necessary coefficient of a linear
-exceptional-count bound has logarithm
-$\Omega_\rho(\eta^{-2}/\log(1/\eta))$ at every sufficiently small
-rational gap.
-Finally, at gap $1/n$, we construct codes whose maximum list size is
-exactly $n-k-1$, but with $\binom n{k+1}$ uniquely nearby points on
-one affine line. This parameter count attains an unconditional
-puncturing bound at that radius. The same generic domains have an exact list-size
-profile at every integer Hamming radius below $n-k$; at fixed positive
-rates, this profile follows from known upper and lower bounds.
+Decoding ambiguity is unnecessary. Separate constructions have
+exponentially more nearby parameters than prescribed, each with a
+unique witness. Almost full-gap separation persists after doubling
+the proposed exponent constant. We give efficient witness recovery
+over sufficiently large splitting primes, and logarithmic-length
+existence without that recovery guarantee. A different construction
+gives complete nonzero coverage against arbitrary fixed numerical
+constants.
 
-Finite constructions on the norm-one circle give examples in the
-polynomial spaces used by Circle STARKs. We apply the general results to
-the quantitative coding assumptions used in the S-two whitepaper.
-The stated uniform list prescription is false. The proposed numerical
-line coefficient also fails on fixed-gap families, against every
-remainder sublinear along those families. We distinguish this conclusion
-from a conjecture using actual list size with a remainder controlled
-only at each fixed gap. These results invalidate the corresponding
-quantitative premises; questions about the soundness of a complete
-protocol are separate.
+For lists, integer-interval domains give
+$\log L=\Omega_\rho(\eta^{-2}/\log(1/\eta))$, ruling out every uniform
+$\exp(O_\rho(1/\eta))$ prescription. Over every sufficiently large
+prime, with $b=\log_2p$, we obtain
+$\log_2L\ge(1/2-o(1))b^2/\log_2b$ below Elias. We also give fixed-gap
+counterexamples to proposed numerical line coefficients. Separately,
+at gap $1/n$, codes with global maximum list size exactly $n-k-1$
+have $\binom n{k+1}$ uniquely nearby points on one line, attaining
+a general puncturing bound.
+
+We apply these results and finite circle-code constructions to the
+quantitative premises in the S-two whitepaper. The shrinking-gap
+and fixed-gap quantifiers, numerical prescriptions and actual-list-size
+statements, and coding premises and complete-protocol conclusions
+are distinguished throughout.
 \end{abstract}
 
 \section{Introduction}
@@ -155,8 +125,11 @@ two far words can have every affine combination other than the two
 endpoints close to the code}. Corollary~\ref{pd:two-far-inputs} places
 both endpoints almost half a gap outside the tested radius, while a
 random mixture is nearby with probability $1-2/p$. More generally,
-$r$ words can each lie almost an entire gap outside the radius while
-a random affine combination is nearby with probability $1-O(r/p)$.
+for any fixed batch size $t$, all $t$ inputs can lie almost
+$(1-1/t)\eta$ outside the radius while a random affine combination
+is nearby with probability $1-O(t/p)$. The same obstruction holds
+for unrestricted linear combinations and for multilinear mixtures
+(Corollary~\ref{pd:far-batching}).
 
 \begin{figure}[tb]
 \centering
@@ -181,6 +154,14 @@ exactly the tested distance, and no codeword is nearby at two distinct
 nonzero parameters. The line changes only $2r$ coordinates to improve
 the distance by exactly $2r/n$, attaining the Hamming-distance bound.
 No pair of codewords explains the line on the required common coordinate set.
+
+The obstruction is that the nearby polynomial changes with the mixing
+coefficient. In these complete-coverage examples, no polynomial is close
+at two distinct nearby parameters. A root bound controls agreements
+between fixed polynomials; it does not force the polynomials selected
+at different line parameters to fit together. The construction realizes
+this behavior through products of locator values on the evaluation
+domain, without any proper subfield.
 
 The $c_1=c_2=1$ numerical prescription predicts a nearby fraction
 tending to zero; the actual fraction is $1-1/p$. Thus testing a random
@@ -216,7 +197,10 @@ recovery over sufficiently large splitting primes.
 Corollary~\ref{tou:short} obtains the same numerical strengthening at
 length $\Theta(\log p)$ without that recovery guarantee; its finite
 half-rate certificates include separation $38\eta/39$ and a violation
-factor greater than $2^5$ over $\F_{2^{44497}-1}$.
+factor greater than $2^9$ over $\F_{2^{44497}-1}$.
+A dimension tradeoff preserves uniqueness for every fixed $c_2<3$,
+with separation greater than two thirds of the gap
+(Corollary~\ref{tou:degree-tradeoff}).
 
 In the full-coverage examples the gap shrinks as $\Theta(1/\log p)$,
 and the strongest relative separation approaches the Elias boundary. These results do not

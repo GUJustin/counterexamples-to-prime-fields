@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "rational_supports_checked": 5916,
+  "finite_rows": [
+    {
+      "b": 9689,
+      "d": 2,
+      "m": 4,
+      "D": 2,
+      "new_K": 2,
+      "surviving_nearby_parameters": 0
+    }
+  ],
+  "seconds": 0.01862920799612766
+}

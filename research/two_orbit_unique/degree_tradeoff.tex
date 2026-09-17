@@ -1,0 +1,50 @@
+\begin{corollary}[A tradeoff up to exponent constant three]
+\label{tou:degree-tradeoff}
+In either two-orbit construction, one may instead take
+$K=dD-s$ for any $1\le s<d$. The nearby count and uniqueness
+conclusions persist, with
+\[
+ \eta=\frac{2d+s}{n},\qquad
+ \dist(f,C)=1-\rho-s/n
+          =\theta+\frac{2d}{2d+s}\eta.
+\]
+The numerical prescription is violated exponentially for every
+fixed $c_2<2+s/d$. Thus any fixed $0<c_2<3$ is compatible with
+unique nearby witnesses and separation greater than two thirds of
+the gap. Efficient witness recovery remains available in the
+integer construction; the function-field construction retains its
+logarithmic length and existence guarantees.
+\end{corollary}
+\begin{proof}
+All constructed differences $w-H_I$ have degree at most $dD-d<K$.
+For any codeword, the monic difference from $w$ still has degree
+$dD=K+s$ and zero penultimate coefficient. The same root-sum
+argument classifies every codeword with $dD+2d$ agreements.
+The far word has exactly $dD$ agreements, so both displayed distances
+follow. For an exact rational rate $\rho=a/b$, choose $n=bu$ with
+$au\equiv-s\pmod d$; this is possible when $d\nmid a$.
+The support count still has logarithm $nH_2(\rho)/d+O(\log n)$,
+which gives the threshold $c_2<(2d+s)/d$.
+Take $s=d-1$ and then a sufficiently large prime $d$ for the final
+claim. In the logarithmic-length version the strict Elias condition
+still holds; in the integer version choose the splitting prime
+sufficiently large.
+\end{proof}
+
+\begin{remark}[The dimension cutoff in the integer construction]
+For $D\ge2$, lowering $K$ further to $dD-d$ leaves at most one nearby
+parameter at the same agreement threshold $dD+2d$.
+Indeed the sums $\sum_{i\in I}R_i$ of distinct $D$-supports are
+distinct. To see this over the rationals, write
+$R_i=q+(q-1)/(q^i-1)$ and take the least index in the symmetric
+difference. Its nonconstant term exceeds the sum of all later terms,
+since $(q-1)^2>q$. Multiplication by $W$ clears denominators, and
+the nonzero difference has absolute value at most $Wn(q+1)<p$;
+thus distinctness survives reduction.
+The coefficient of $X^{dD-d}$ in $H_I$ is $-\sum_{i\in I}R_i$.
+For $w-H_I$ to have degree below $dD-d$, this sum must equal the
+reference support's sum, forcing that support alone.
+The all-codeword classification excludes any other nearby witnesses.
+This is a limitation of further dimension reduction in this construction,
+not an upper bound for other constructions.
+\end{remark}

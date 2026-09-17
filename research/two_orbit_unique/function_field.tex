@@ -129,31 +129,45 @@ here, since the products may wrap modulo $p$.
 \end{proof}
 
 \begin{corollary}[Doubling survives at logarithmic length]\label{tou:short}
-Fix rational $\rho=a/b\in(0,1)$ and a prime $d\nmid a$.
-For every sufficiently large prime $p\equiv1\pmod d$, the conclusions
-of Theorem~\ref{tou:theorem} concerning distances, uniqueness, and
-numerical violation hold at length
+Fix rational $\rho=a/b\in(0,1)$ and a prime $d\nmid a$. Put
 \[
- n=\tfrac18\log_2p+O_{\rho,d}(1),
+ C=\max\{\log_2(2^d-1),\,2H_2(\rho)\},\qquad
+ \alpha_* = \frac{d}{\log_2d+C}.
+\]
+For any fixed $0<\alpha<\alpha_*$ and every sufficiently large prime
+$p\equiv1\pmod d$, the conclusions of Theorem~\ref{tou:theorem}
+concerning distances, uniqueness, and numerical violation hold at length
+\[
+ n=\alpha\log_2p+O_{\rho,d}(1),
 \]
 with no witness-recovery guarantee. In particular they beat every fixed
 $c_1>0$ and $0<c_2<2+1/d$ by a factor $p^{\Omega(1)}$.
 Uniform sampling conditioned on the existence of the required roots
-has failure probability at most $p^{-3/4+o(1)}$; obtaining such a
-sample by rejection takes expected $d^{M+1}(1+o(1))$ trials, rather
-than polynomial time in $\log p$.
+has failure probability at most
+\[
+ p^{-\gamma+o(1)},\qquad
+ \gamma=1-\alpha(\log_2d+C)/d>0.
+\]
+Obtaining such a sample by rejection takes expected
+$d^{M+1}(1+o(1))$ trials, rather than polynomial time in $\log p$.
+The simple uniform choice $\alpha=1/8$ gives $\gamma\ge3/4$.
 \end{corollary}
 \begin{proof}
 Choose the exact-rate congruences as before with $n$ near
-$\tfrac18\log_2p$. Then $m=(\log_2p)/(8d)+O_{\rho,d}(1)$,
+$\alpha\log_2p$. Then $m=\alpha(\log_2p)/d+O_{\rho,d}(1)$,
 $M=m+O_d(1)$, and $D=\rho m+O_{\rho,d}(1)$.
 The principal root-admitting count is
-$p/d^{M+1}\ge p^{7/8+o(1)}$, while the character-sum error is
-$p^{1/2+o(1)}$. The combined bad-parameter count is at most
-$p^{1/8+o(1)}$: use $2^d-1<2^d$ and $\binom mD^2\le4^m$.
-Thus Lemma~\ref{tou:finite} applies, and its conditional failure ratio
-is at most $p^{-3/4+o(1)}$. The root-admitting count is
+$p^{1-\alpha\log_2d/d+o(1)}$, while the character-sum error is
+$p^{1/2+o(1)}$. Since $C>\log_2d$, the hypothesis on $\alpha$
+makes the former dominate.
+The combined bad-parameter count is at most
+$p^{\alpha C/d+o(1)}$: the root-sum term contributes
+$p^{\alpha\log_2(2^d-1)/d+o(1)}$ and the product-collision term
+contributes $p^{2\alpha H_2(\rho)/d+o(1)}$.
+Thus Lemma~\ref{tou:finite} applies, with the displayed conditional
+failure ratio. The root-admitting count is
 $p/d^{M+1}(1+o(1))$, proving the rejection cost.
 The same entropy comparison proves the numerical ratio.
-Finally $\eta\log_2p\to8(2d+1)>1$, so the radius is strictly below Elias.
+Finally $\eta\log_2p\to(2d+1)/\alpha>1$, giving strict Elias.
+For $\alpha=1/8$, use $C\le d$ and $\log_2d\le d$.
 \end{proof}

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/two_orbit_unique/check_concentration.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5585252919991035,
+  "peak_rss_kib": 7824,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 180
+}

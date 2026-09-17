@@ -1,7 +1,7 @@
 \begin{corollary}[Two far inputs and almost-certain nearby mixtures]
 \label{pd:two-far-inputs}
-In Corollary~\ref{pd:full-gap}, let $r\ge2$ be even. There are words
-$u,v$ with
+In Corollary~\ref{pd:full-gap}, let $r\ge2$. When $r$ is even,
+there are words $u,v$ with
 \[
  \dist(u,C)=\dist(v,C)=\theta+\frac{r}{2r+1}\eta
 \]
@@ -17,20 +17,23 @@ radius, although the numerical prescription predicts a nearby fraction
 tending to zero. All the same rate, domain-length, strict-Elias, and
 sampling guarantees apply.
 
-More generally, the same code has $r$ words $v_1,\ldots,v_r$, each at
-distance
+More generally, for every divisor $t\ge2$ of $r$, the same code has
+$t$ words $v_1,\ldots,v_t$, each at distance
 \[
- \theta+\frac{2(r-1)}{2r+1}\eta,
+ \theta+\frac{2r}{2r+1}\left(1-\frac1t\right)\eta,
 \]
 whose uniform affine combination is nearby with exact probability
 \[
- \left(1-\frac1p\right)^r-\frac{(-1)^r}{p^r}
- =1-O(r/p).
+ \left(1-\frac1p\right)^t-\frac{(-1)^t}{p^t}
+ =1-O(t/p).
 \]
 Here the coefficients are uniform subject to summing to one.
+For each fixed batch size $t$, taking $r\to\infty$ through multiples
+of $t$ makes every input almost $(1-1/t)\eta$ outside the radius.
 \end{corollary}
 \begin{proof}
-Partition the $r$ directions into two equal sets $A,B$ and put
+For the first statement, partition the $r$ directions into two equal
+sets $A,B$ and put
 $u=f+\sum_{j\in A}e_j$, $v=f+\sum_{j\in B}e_j$.
 Their affine mixture has parameter coordinates $1-z$ on $A$ and
 $z$ on $B$. At the endpoints exactly $r/2$ coordinates are nonzero;
@@ -39,12 +42,45 @@ The exact distance profile~\eqref{pd:exact-profile} proves every claim
 about the line. Its $p-2$ nearby parameters still exceed the prescribed
 bound by a factor tending to infinity.
 
-For the second statement take $v_j=f+e_j$. Each has parameter weight
-one, giving the stated distance. An affine combination with coefficients
-$\lambda_j$ has parameter vector $(\lambda_1,\ldots,\lambda_r)$, so
-it is nearby exactly when all coefficients are nonzero.
+For the second statement partition the directions into $t$ groups
+$A_j$ of size $r/t$ and take $v_j=f+\sum_{i\in A_j}e_i$.
+Each word has parameter weight $r/t$, giving the stated distance.
+An affine combination has coefficient $\lambda_j$ repeated on $A_j$,
+so it is nearby exactly when all $t$ coefficients are nonzero.
 The number of nonzero-coordinate vectors with sum one is
-$((p-1)^r-(-1)^r)/p$: this follows by inclusion--exclusion, or by
-separating the zero and nonzero target sums in a recurrence on $r$.
-Dividing by the $p^{r-1}$ affine coefficient vectors proves the formula.
+$((p-1)^t-(-1)^t)/p$: this follows by inclusion--exclusion, or by
+separating zero and nonzero target sums in a recurrence on $t$.
+Dividing by the $p^{t-1}$ affine coefficient vectors proves the formula.
+\end{proof}
+
+\begin{corollary}[Linear and multilinear mixtures of far inputs]
+\label{pd:far-batching}
+Use the $t$ words of Corollary~\ref{pd:two-far-inputs} and assume
+$n-K\ge4r+1$, as holds throughout its sufficiently large-field
+asymptotic regime. A uniform unrestricted linear combination is
+nearby with exact probability
+\[
+ \frac1p+\left(1-\frac1p\right)
+ \left[\left(1-\frac1p\right)^t-\frac{(-1)^t}{p^t}\right].
+\]
+If $t=2^\ell$, index the words by $b\in\{0,1\}^\ell$ and use the
+multilinear coefficients
+\[
+ \lambda_b(x)=\prod_{j:b_j=0}(1-x_j)\prod_{j:b_j=1}x_j.
+\]
+For uniform $x\in\F_p^\ell$, the mixture is nearby with exact
+probability $(1-2/p)^\ell$. For every fixed $\ell$, all inputs can
+lie almost $(1-2^{-\ell})\eta$ outside the tested radius while this
+probability tends to one.
+\end{corollary}
+\begin{proof}
+Let $s$ be the sum of the linear coefficients. When $s\ne0$,
+scaling by $s^{-1}$ preserves distance to the linear code and produces
+a uniform affine combination, with the probability already computed.
+When $s=0$, the $f$ terms cancel and the mixture is supported on at
+most $2r$ coordinates. Its distance to the zero codeword is at most
+$2r/n\le\theta$. Since $s$ is uniform, the first formula follows.
+For the multilinear statement the coefficients sum to one. All are
+nonzero exactly when every $x_j$ avoids zero and one. Apply the exact
+affine profile and independence of the $\ell$ parameters.
 \end{proof}

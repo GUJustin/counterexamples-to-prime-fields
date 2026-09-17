@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "tmp/run_new_strengthening_checks.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 397.9502266250056,
+  "peak_rss_kib": 44528,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 1200
+}

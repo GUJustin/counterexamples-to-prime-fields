@@ -117,3 +117,31 @@ The exact affine profile immediately supplies a line with exactly two far parame
 For the r words f+e_j, each has distance theta+2(r-1)/n. Uniform affine coefficients give nearby probability ((p-1)^r-(-1)^r)/p^r, by counting nonzero coordinates summing to one. This tends to one while every input lies almost the whole capacity gap outside the radius. These are coding statements on the constructed domains, not an implementation-level soundness claim.
 
 `check_far_inputs.py` verified explicit witnesses for all 37 parameters of a complete r=2 product-image fixture (n=36,K=15), with endpoint distances 18 and all 35 other distances 16. The degree/direction lower bound proves exactness. It also exhausted coefficient counts for 16 small (p,r) cases. The toy fixture itself is not claimed below Elias; that qualification comes from the asymptotic completion theorem and separately certified finite parameters.
+
+## Fixed batch sizes, multilinear mixtures, and curve profiles
+
+The multi-input statement now allows any t>=2 dividing r, with no parity
+restriction on r (only the two-equal-endpoint statement requires even r).
+Partition directions into t groups of r/t. Each displayed input has
+weight r/t and hence excess distance (1-1/t)*2r/n. Every fixed t can
+approach that fraction of the gap by taking r large through multiples.
+
+For unrestricted linear coefficients, condition on their sum s. If s is
+nonzero, normalization gives the previously counted affine distribution.
+If s=0, the reference word cancels and the combination has support at most
+2r; n-K>=4r+1 puts it within theta of zero. This condition is automatic
+in the stated growing-field regime. The exact probability is therefore
+1/p+(1-1/p)*[(1-1/p)^t-(-1)^t/p^t]. For tensor-product multilinear weights,
+all coefficients are nonzero iff each coordinate avoids0and1, giving
+(1-2/p)^ell for t=2^ell. These are pure coding consequences, not a
+full-protocol soundness conclusion.
+
+The zero-coordinate profile also gives a degree-e distance budget:
+sum_z(dist(f_z,C)-theta)<=2er/n for any curve in this affine space with
+at least one nearby point. No coordinate polynomial is identicallyzero;
+each has at most e roots. Any desired multiplicities a_i<=r with total
+<=er can be realized by cyclically allocating their roots to r degree-e
+coordinate polynomials. This is a statement about the constructed space,
+not a universal distance budget. Lagrange interpolation of t displayed
+far inputs attains it at degree t-1: only those t parameters are far,
+with equal excess2r(t-1)/(nt); all other p-t parameters are nearby.

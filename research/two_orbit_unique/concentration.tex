@@ -1,0 +1,27 @@
+\begin{lemma}[A concentrated index-sum class]\label{tou:concentration}
+Let $A=\binom mD$ and $V=D(m-D)(m+1)$.
+The largest index-sum class of $D$-subsets of
+$\{1,\ldots,m\}$ has size $J$ satisfying
+\[
+ J\ge \left\lceil\frac{A}{\sqrt{V+1}}\right\rceil.
+\]
+The same bound holds for any translated interval of indices.
+In particular $J=\Omega(A/m^{3/2})$ at fixed density $D/m$.
+\end{lemma}
+\begin{proof}
+For a uniform $D$-subset, its index sum $S$ has variance $V/12$.
+This follows by writing $S$ as the sum of index-weighted selection
+indicators: their means are $D/m$ and distinct pairs have joint mean
+$D(D-1)/(m(m-1))$.
+Let $U$ be independent and uniform on $[-1/2,1/2]$.
+The density of $Y=S+U$ is at most $\mu=J/A$, and its variance is
+$(V+1)/12$. Any real random variable with density at most $\mu$
+has variance at least $1/(12\mu^2)$: at distance $t$ from its mean,
+its tail probability is at least $1-2\mu t$, and hence
+\[
+ \operatorname{Var}(Y)\ge
+ \int_0^{1/(2\mu)}2t(1-2\mu t)\,dt=\frac1{12\mu^2}.
+\]
+Consequently $J^2(V+1)\ge A^2$, proving the claim.
+Translation changes all index sums by the same amount.
+\end{proof}

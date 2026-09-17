@@ -10,11 +10,18 @@ BASE=Path(__file__).resolve().parent
 
 def mersenne_prime(b):
  assert b>=3 and all(b%a for a in range(2,isqrt(b)+1))
- p=2**b-1;v=4
- for _ in range(b-2):
-  v=v*v-2
-  while v>p:v=(v&p)+(v>>b)
-  if v==p:v=0
+ p=2**b-1
+ try:
+  from gmpy2 import mpz
+ except ImportError:
+  v=4
+  for _ in range(b-2):
+   v=v*v-2
+   while v>p:v=(v&p)+(v>>b)
+   if v==p:v=0
+ else:
+  modulus=mpz(p);v=mpz(4)
+  for _ in range(b-2):v=(v*v-2)%modulus
  assert v==0
  return p
 
@@ -32,7 +39,9 @@ def check(row):
  available=(p-U)//d**(M+1)-U*(ceiling_sqrt+1)
  excluded=(T+1)*((2**d-1)**M-1)+maxsum*A*(A-1)//2+span*(span+1)//2
  assert available>excluded
- J=(A+span)//(span+1)
+ V=D*(m-D)*(m+1)
+ J=max((A+span)//(span+1),isqrt((A*A-1)//(V+1))+1)
+ assert J*J*(V+1)>=A*A
  assert str(J)==row['nearby_count_lower']
  w=row['ratio_to_c2_two_greater_than_power_two']
  assert J**(2*d+1)>n**(2*d+1)*2**(2*n+w*(2*d+1))

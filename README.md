@@ -12,9 +12,12 @@ analysis as an application of those results.
 The clearest line-level message is that **even below Elias, two far words
 can have every affine combination other than the endpoints close to the
 code**. Both endpoints can lie almost half a gap outside the radius, while
-a random mixture is nearby with probability `1-2/p`. With `r` inputs,
-each input can lie almost an entire gap outside the radius while a random
-affine combination is nearby with probability `1-O(r/p)`.
+a random mixture is nearby with probability `1-2/p`. For any fixed batch
+size `t`, all inputs can be almost `(1-1/t)*eta` outside the radius while
+a random affine combination is nearby with probability `1-O(t/p)`.
+Unrestricted linear combinations and multilinear mixtures have the same
+failure; for `2^ell` inputs, the multilinear nearby probability is exactly
+`(1-2/p)^ell`. The nearby polynomial changes with the mixing coefficient.
 
 The underlying construction also gives a line close to the code at every
 point but one, with that point only one coordinate short of maximally far. At every fixed rational rate, all `p-1` nonzero
@@ -39,6 +42,21 @@ using scaled prime-order orbits makes the separation at least
 progressions of prime fields, with the same unique-witness and recovery
 guarantees. These examples have sparse nearby sets; the full-coverage
 result is a separate construction.
+
+**Two padding orbits strengthen the unique-witness result even after
+raising the exponent constant to `c2=2`.** The far point can remain
+arbitrarily close to a whole gap outside the radius. Over sufficiently
+large splitting primes, every nearby witness is efficiently recoverable;
+a separate character-sum argument gives logarithmic-length existence
+without that decoder. Reducing the dimension further defeats every fixed
+`c2<3` while retaining more than two-thirds-gap separation and uniqueness.
+The near-full-gap and two-thirds-gap statements are different tradeoffs.
+Finite existence certificates reach separation `86/87` of the gap. A
+length-226 half-rate certificate over an explicit 338-bit prime exceeds
+the original prescription by `2^45` and the doubled-exponent version by
+more than `1.19`. It specifies the field and support class, not a sampled
+evaluation domain. A length-220, dimension-95 certificate over the
+327-bit prime `121*2^320+1` gives a further shorter example.
 
 The list-size results separately show that the proposed exponent must
 grow almost quadratically, rather than linearly, in the reciprocal gap.
@@ -295,7 +313,8 @@ make verify
 ```
 
 `make verify` runs the general coding-theory checks using Python
-(with SymPy required by the interpolation-pool checks) and compiles the rational-fiber enumeration with `clang++` (C++17).
+(with SymPy required by the interpolation-pool checks; optional `gmpy2`
+substantially accelerates the large-prime checks) and compiles the rational-fiber enumeration with `clang++` (C++17).
 It recomputes the high-moment certificate and its independent
 complementary-subset identity. These finite checks supplement the proofs;
 they do not replace the cited generic-rank and proximity-gap theorems.
