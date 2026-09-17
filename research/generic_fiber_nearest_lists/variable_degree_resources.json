@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/generic_fiber_nearest_lists/verify_variable_degree.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.535152290998667,
+  "peak_rss_kib": 7184,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

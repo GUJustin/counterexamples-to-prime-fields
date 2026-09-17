@@ -2373,3 +2373,21 @@ to it when explaining the missing fixed-gap source-list target. The
 main article still has157pages, letter format with1inch margins. Its
 final build has no reference/layout warnings; the changed introduction
 and corollary pages were rendered and inspected.
+
+## Variable-degree generic tower obstruction
+
+research/generic_fiber_nearest_lists/VARIABLE_DEGREE_TOWER_BOUND.md
+extends the generic quadratic-fiber argument to arbitrary degree caps D
+at n=B*N0. For threshold A>D, choose the largest power of two
+C<=min(B,A-D). Every candidate descends through log2(C) stages, giving
+ L<=binom(n/C,floor(D/C)+1)<=2^max(N0,2*n/(A-D)).
+Thus a fixed seed cannot yield growing lists at a fixed positive capacity
+gap even by varying the degree cap with tower height. This holds for the
+generic tower and suitable algebraic/splitting-prime specializations,
+not every special parameter choice or arbitrary RS domains.
+
+An exhaustive20-node fixture at dimension5 has70candidates at threshold6
+(64at6,4at8,2at12). All descend one step to exactly70quadratic interpolants
+on the10-node intermediate word. All15504 determining supports and all
+120residual triples checked. This is stronger scope than the earlier
+dimension8 profile with only2high candidates, but still no growing list.

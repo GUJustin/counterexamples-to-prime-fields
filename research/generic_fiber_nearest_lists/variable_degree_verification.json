@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "p": 1000000007,
+  "t1": 63,
+  "t2": 1556,
+  "n": 20,
+  "degree_cap": 4,
+  "dimension": 5,
+  "determining_supports": 15504,
+  "distinct_interpolants": 13382,
+  "agreement_histogram": {
+    "5": 13312,
+    "6": 64,
+    "8": 4,
+    "12": 2
+  },
+  "complete_list_at_six": 70,
+  "all_candidates_descend_one_step": true,
+  "residual_determining_supports": 120,
+  "residual_distinct_interpolants": 70,
+  "scope": "One finite specialization, exhaustively verified. Uniform tower-height bound follows from the separate algebraic descent proof."
+}
