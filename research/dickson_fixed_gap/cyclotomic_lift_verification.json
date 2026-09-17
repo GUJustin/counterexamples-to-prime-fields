@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "results": [
+    {
+      "seed_prime": 17,
+      "n": 16,
+      "K": 4,
+      "seed_generator": 3,
+      "auxiliary_prime": 65537,
+      "primitive_nth_root": 64,
+      "native_rank": 11,
+      "cyclotomic_rank": 12,
+      "rows_used": 13,
+      "support_prefix_sufficing": 7,
+      "characteristic_zero_kernel_dimension": 4
+    },
+    {
+      "seed_prime": 41,
+      "n": 40,
+      "K": 10,
+      "seed_generator": 6,
+      "auxiliary_prime": 65761,
+      "primitive_nth_root": 11112,
+      "native_rank": 29,
+      "cyclotomic_rank": 30,
+      "rows_used": 51,
+      "support_prefix_sufficing": 11,
+      "characteristic_zero_kernel_dimension": 10
+    },
+    {
+      "seed_prime": 97,
+      "n": 96,
+      "K": 24,
+      "seed_generator": 5,
+      "auxiliary_prime": 65761,
+      "primitive_nth_root": 41552,
+      "native_rank": 71,
+      "cyclotomic_rank": 72,
+      "rows_used": 121,
+      "support_prefix_sufficing": 11,
+      "characteristic_zero_kernel_dimension": 24
+    },
+    {
+      "seed_prime": 193,
+      "n": 192,
+      "K": 48,
+      "seed_generator": 5,
+      "auxiliary_prime": 67777,
+      "primitive_nth_root": 42397,
+      "native_rank": 143,
+      "cyclotomic_rank": 144,
+      "rows_used": 360,
+      "support_prefix_sufficing": 15,
+      "characteristic_zero_kernel_dimension": 48
+    }
+  ],
+  "seconds": 2.2721741249988554,
+  "scope": "Same seed supports on their natural cyclotomic lifts. Auxiliary modular rank certifies characteristic-zero rank; new received words and witnesses allowed. Does not exclude arbitrary moving nodes or selected other sublists."
+}

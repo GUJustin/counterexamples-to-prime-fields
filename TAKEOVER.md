@@ -1030,3 +1030,33 @@ Goalcontinuesto12:30UTC. Remaininghardtargetsunchanged: fixed-positive
 rate robustdensity->1, or growingfixed-positivegaplists/superlinear
 linecountonshortprime-fielddomains, or prescribed-domaintransferat
 actualbenchmarkrates.
+
+
+## September 17 ~06:32 UTC — cyclotomic support-lift audit
+
+Previousgoalturnprogressed4c3419. Newcheck_cyclotomic_lift.py preserves
+Dicksonsupportsetsbutmapsx=g^j inseedFp tozeta_n^j inQ(zeta_n), allowing
+completelynewreceivedwordsandwitnesses. Modularranksatsplitauxiliary
+primescertifychar0rankn-K: seeds17,41,97,193 haveauxq65537,65761,65761,
+67777 andranks12,30,72,144, versusnative11,29,71,143. Prefixes7,11,11,15
+supportsalreadysuffice. Distinctnodesensureinterpolationdenominators
+specialize; globaldegree<Kwordskernelgivesmatchingrankupperbound.
+Henceonlyglobalcodewordreceivedwordsonthesefixedcyclotomiclifts,
+withallwitnessescoinciding. Strongerthanmerelytestingoldwordcoefficients.
+
+Thencheck_cyclotomic_orbits.py restrictedtochi(a)=+1or-1 fullseed
+orbits, droppingunusedcoordinatesbeforeinterpretingkernel. Allnodes
+usedinthefixtures. Bothorbitsfullrankn-K forseeds41,97,193,257,337.
+At17each4-supportsystemhasrank8andkernel8, underconstrainedsmallcase;
+noasymptoticclaim. GuardedPASS, fullseed2.8sec, orbit7.9sec, lowRSS.
+NewCYCLOTOMIC_LIFT_AUDIT.md documentsproofandlimits; AUDIT.mdlinked.
+No manuscript changes; thesearesearchobstructions, notnewlistresults.
+
+Possiblefollowup: exceptionalnewprimesannihilatingmaximalminors might
+allowfixedsupportpatternsonrootsofunityovernewlargeprimefields, even
+thoughchar0liftfails. Forq1modn musttestallprimitivezetaembeddings,
+notjustone; rankcanvarybetweenprimeideals. A boundedmodularscan or
+norm/gcd-of-minorsapproachcouldlocateexceptions. No suchsearchrunyet.
+Couldalsoseekotherselectedsublists/movingdomains; currentauditsdonot
+excludeallthose. Mainfixedgapshortdomainquestionstillopen.
+Noactiveprocess; goaluntil12:30UTC.

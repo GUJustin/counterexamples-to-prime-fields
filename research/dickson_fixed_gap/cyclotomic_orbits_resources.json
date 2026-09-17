@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/dickson_fixed_gap/check_cyclotomic_orbits.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 7.854314874999545,
+  "peak_rss_kib": 22960,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

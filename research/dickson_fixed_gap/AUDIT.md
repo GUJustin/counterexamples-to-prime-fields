@@ -120,3 +120,12 @@ selected sublists, or different agreement patterns. A nonzero rational
 minor also implies that each fixed pattern is excluded over all but
 finitely many new characteristics; no explicit list of exceptional
 characteristics was computed. Guarded exact replay passes.
+
+## Natural cyclotomic lifts also audited
+
+`CYCLOTOMIC_LIFT_AUDIT.md` now excludes preservation of the full support
+family on the natural root-of-unity lifts for p0=17,41,97,193, even
+allowing new received words and witnesses. Both individual full seed
+orbits are likewise excluded in the checked p0>=41 cases through337.
+This is a finite characteristic-zero rank obstruction, not an exclusion
+of all moving-node lifts or exceptional reducing characteristics.
