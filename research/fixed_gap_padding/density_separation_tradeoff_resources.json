@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/fixed_gap_padding/verify_density_separation_tradeoff.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5601566660006938,
+  "peak_rss_kib": 6880,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

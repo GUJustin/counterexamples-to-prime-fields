@@ -1150,3 +1150,31 @@ onlyL4except(r33,j0,k32,p2113,L8,n128,A43). No growingfixedgapfamily.
 Results research-only; Makefile79checks/mainPDF122pagesunchanged.
 Initialcompilehadnarrowingerror,fixedexplicitintcast; finalscanpassed.
 Noactiveprocess. Goalactiveuntil12:30UTC, current06:53UTC.
+
+## 2026-09-17 — quantitative density/separation tradeoff
+
+Added derivation after gap-scale-far theorem: for fixedrho,c2 and
+δ→0 across SEPARATE families, κ=Omega(loglog(1/δ)/log(1/δ)) is achievable.
+For δ=2^-v, q smallestpoweroftwo>=max(2/(1-rho),2rho(v+1)/(1-rho)),
+beta=1-1/q,C=2q/(rho log2q),s+1=floor(Cc2)+2. Entropylower
+H(beta)>log2q/q ensures supportcondition; (s+1)/C>c2>=c2Hrho;
+lambda>(1-rho)q/(2rho)>=v+1 ensures e^-lambda<δ/2. qTheta(v),
+κ=1/(s+1)=Omega(logv/v). Roundedδextendsallvalues. This doesNOT
+assertdensityto1withfixedκ. verify_density_separation_tradeoff.py
+checks220rationalparameterfixtures exactly, PASS. Makefile80checks.
+PDF123pagesclean, page34rendered/inspected. Nootheractiveprocess.
+
+NEXT PROMISING UNIMPLEMENTED strengthening: choose shorter n~b*ell/c,
+s~ell=log2b instead of n~b^1.5/sqrtell in nearunit theorem. With
+h~2b/log2ell, supportlog~2b while momentcostO(ell^3)=o(b), so L/p→∞.
+Then collisionresidual~h, q/h~(1-rho)/(2c)*ell*log2ell;
+density1-exp[-Theta(ell logell)], eta~c/b, farfractionκ~1/ell.
+This keeps farpointmuchlargerrelativetoeta than existingnearunit choice.
+Potentialmulti-matchversion:s=ell,r=floor(ell^(1/3)),h~(3+eps)rb/log2ell,
+log(n/h)~(2/3)logell; logL>rb, paircap~h,
+r²h/n=O(1/logell), J/p>=1-O(1/logell), farfractionr/(s+r)~ell^-2/3,
+numbermissingr→∞. Need completeconstant/asymptoticaudit, exactfinite
+parameterchecker, THEN integrate. These are hypotheses/calculations,
+not yet manuscriptclaims. General slowlygrowings mayyieldarbitrarily
+slowlyvanishingκ but avoid assertingwithoutuniformproof.
+Goalactiveuntil12:30UTC.

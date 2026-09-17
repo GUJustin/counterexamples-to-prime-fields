@@ -54,6 +54,29 @@ The choice of $s$ gives strict Elias and
 The global degree bound excludes correlated agreement as before.
 \end{proof}
 
+The dependence of the far-point separation on the desired density
+can be quantified. For fixed $\rho,c_2$, as $\delta\downarrow0$ the
+construction permits
+\begin{equation}\label{fg:density-separation-tradeoff}
+ \kappa=\Omega_{\rho,c_2}\!\left(
+ \frac{\log\log(1/\delta)}{\log(1/\delta)}\right).
+\end{equation}
+Indeed, first take $\delta=2^{-v}$ with integer $v\ge2$. Choose a
+power of two $q$ at least
+$\max\{2/(1-\rho),2\rho(v+1)/(1-\rho)\}$, and set
+$\beta=1-1/q$, $C=2q/(\rho\log_2q)$, and
+$s+1=\lfloor Cc_2\rfloor+2$.
+Since $H_2(\beta)>(\log_2q)/q$, the support-count condition holds.
+Also $(s+1)/C>c_2\ge c_2H_2(\rho)$ and
+$\lambda>(1-\rho)q/(2\rho)\ge v+1$, so
+$e^{-\lambda}<\delta/2$. Taking the smallest such power of two gives
+$q=\Theta_\rho(v)$ and
+$\kappa=1/(s+1)=\Omega_{\rho,c_2}(\log v/v)$.
+Rounding an arbitrary $\delta$ down to the next dyadic value changes
+only constant factors. This quantifies the tradeoff across separate
+families; it still does not give density tending to one at fixed
+positive $\kappa$.
+
 For a concrete interpretation, take $\rho=1/2$, $\beta=15/16$,
 $C=6$, and $s=6$. Then $\alpha=8/15$ and
 $C\alpha H_2(\beta)>1$, since $15^{15}<2^{59}$.

@@ -44,6 +44,7 @@ verify:
 	$(PYTHON) research/fixed_gap_padding/verify_far_concurrency.py
 	$(PYTHON) research/fixed_gap_padding/verify_multi_match_finite.py
 	$(PYTHON) research/fixed_gap_padding/verify_gap_scale_far.py
+	$(PYTHON) research/fixed_gap_padding/verify_density_separation_tradeoff.py
 	$(PYTHON) research/fixed_gap_padding/verify_vanishing_rate_density.py
 	$(PYTHON) research/fixed_gap_padding/verify_constant_code_density.py
 	$(PYTHON) research/fixed_gap_padding/verify_polynomial_fields.py
