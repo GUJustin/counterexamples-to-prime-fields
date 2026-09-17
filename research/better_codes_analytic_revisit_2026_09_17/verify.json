@@ -1,0 +1,26 @@
+[
+  {
+    "A": 183210,
+    "m": 26,
+    "b": 7,
+    "B": 36,
+    "H": 485,
+    "minimal_graded_height": true,
+    "thresholds_checked": 52139,
+    "regular_optimum_L": 131851,
+    "total_budget_ratio": 0.9982532702583781,
+    "passes": true
+  },
+  {
+    "A": 181284,
+    "m": 152,
+    "b": 47,
+    "B": 210,
+    "H": 12365,
+    "minimal_graded_height": true,
+    "thresholds_checked": 50213,
+    "regular_optimum_L": 131216,
+    "total_budget_ratio": 1100.5497522794685,
+    "passes": false
+  }
+]

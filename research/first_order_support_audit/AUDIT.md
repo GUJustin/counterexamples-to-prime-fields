@@ -8,6 +8,19 @@ Source files and SHA256 hashes are in source_provenance.json. The note
 compares with coauthor draft version(9); the directly recovered105-page
 version(7) has the same first-order curve at the rates used here.
 
+## Subsequent current-version result
+
+The technical note now separately proves necessary quadratic list-budget
+and fourth-power regular-MCA-budget costs for the current ePrint's standard
+derivative-capped, total-degree-capped supports and graded row test (Eq63).
+The proof uses the exact corrected finite-length margin and this audit's
+stronger local-rank characteristic hypothesis. It does not cover arbitrary
+supports, the alternative column-only Eq64 test, or intrinsic list/MCA
+lower bounds. See `note/current_graded_costs.tex` and
+`../current_graded_method_costs/STANDARD_SUPPORT_FOURTH_POWER.md`.
+The older cubic/fifth-power analysis remains historical and has its
+separately stated broader source scope.
+
 ## Conclusions supported by this audit
 
 1. At rate1/4, the exact infimum agreement threshold for the stated

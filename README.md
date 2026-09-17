@@ -6,12 +6,17 @@ Working draft by Justin Thaler, September 17, 2026.
 
 **Current research snapshot (September 17):** the main ePrint-style article
 is 167 pages with one-inch margins. A separate
-[18-page first-order tightness note](research/first_order_support_audit/note/main.pdf)
+[20-page first-order tightness note](research/first_order_support_audit/note/main.pdf)
 proves the sharp quarter-rate threshold for the specified interpolation
-framework. Its cubic/fifth-power budget converse concerns **only the
-September 10 draft's older reconstruction formulas**: the current
-[ePrint 2026/2056](https://eprint.iacr.org/2026/2056) already improves these
-to quadratic/fourth-power bounds. The support limitations include translation-stable nonmonomial
+framework. A new independently audited converse also proves that the
+current [ePrint 2026/2056](https://eprint.iacr.org/2026/2056)'s **standard
+supports and graded row test necessarily incur inverse-margin powers two
+and four** in its list and regular-MCA degree budgets. This assumes
+characteristic zero or characteristic larger than every retained jet degree;
+it does not cover arbitrary supports, the alternative column test, or
+stronger component counts. [Proof and scope](research/current_graded_method_costs/STANDARD_SUPPORT_FOURTH_POWER.md).
+The older cubic/fifth-power converse concerns only the September 10 formulas.
+The separate support-threshold limitations include translation-stable nonmonomial
 jet spaces. For full-coefficient monomial sources, an exact finite-length
 extension uses an explicit corrected margin, uniformly in multiplicity.
 The audited high-rate shape also yields a strict agreement-curve
@@ -411,9 +416,8 @@ constant c2 the number of canceled moments is fixed accordingly; the gap
 still shrinks. A pure-prime example over `2^127-1` at n257/k72/t78 exceeds
 the finite c1=c2=1 line prescription by more than `2^76.40420`.
 
-Corollary N.5 generalizes the exact parameters to rate `b/d` and gap
-`1/d`, for `b` in `{2,3,4}` and `d>=b+7`. In particular, rate `2/9`
-and gap `1/9` admit at least `ceil(n^2/972)` nearby challenges with no
-ordinary CA, in characteristic greater than the message degree and
-extension degree at most `n^2`.
-[Parameter-family proof](research/ordinary_ca_superlinear/EXACT_PARAMETER_FAMILY.md).
+Corollary N.5 gives rate `b/d` and gap `1/d`, for `b` in `{2,3,4,5}`
+and `d>=b+7`, over `F_(p^(2^(b-1)))`. In particular, rate `2/9`
+and gap `1/9` admit at least `ceil(n^2/864)` nearby challenges with no
+ordinary CA over `F_(p^2)`, in characteristic greater than message degree.
+[Parameter-family proof](research/ordinary_ca_superlinear/RANDOM_DIRECTION_QUADRATIC.md).

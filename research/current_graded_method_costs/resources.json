@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/current_graded_method_costs/verify.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5560065409954404,
+  "peak_rss_kib": 13856,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

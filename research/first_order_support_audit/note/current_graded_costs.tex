@@ -1,0 +1,141 @@
+\section{Necessary costs of the current graded standard-support bounds}
+\label{sec:current-graded}
+
+We now use the current ePrint's graded challenge count and squarefree
+reconstruction formulas~\cite[Equations (54)--(58), (60), (63)]{DKTcurrent}.
+For the standard derivative-capped, total-degree-capped source, their
+quadratic list-budget and fourth-power regular-MCA-budget dependence
+cannot be improved by choosing different cap parameters or a smaller
+height certified by the same graded row test. This is a statement about
+these numerical bounds, not actual component degrees, lists or exceptions.
+The support restriction below is essential.
+
+\begin{theorem}[Current graded standard-support costs]\label{thm:current-graded}
+Let $N\ge12$ be divisible by four, $D=N/4-1$, and let $D+1<A\le N$
+be an integer. For integers $m\ge1$ and $0\le b\le B$, use all monomials
+\[
+ X^xY_0^uY_1^v,\qquad
+ v\le b,\quad u+v\le B,\quad x+Du+(D-1)v<mA,
+ \qquad x,u,v\ge0.
+\]
+Assume characteristic zero or greater than every retained total jet degree.
+Write $G_q,R_q$ for the exact source dimension and local rank on total jet
+degree $q$, and put
+\[
+ a_* =\frac{AN-8}{N(N-8)},\qquad
+ \varepsilon_*=a_*-a_0,\qquad c_0=\frac{1-2a_0}{8}.
+\]
+Suppose $0<\varepsilon_*\le1/2000$ and an integer $H\ge0$ passes the
+graded row test for an affine received line:
+\begin{equation}\label{eq:current-graded-test}
+ \sum_q(H-q+1)_+(G_q-NR_q)>0.
+\end{equation}
+Then
+\begin{equation}\label{eq:current-graded-costs}
+ m>\frac{c_0}{\varepsilon_*},\qquad B>\frac m4,\qquad
+ b\ge\frac m8,\qquad
+ H+1>\frac{m}{36864\varepsilon_*},\qquad
+ H>\frac{m}{73728\varepsilon_*}.
+\end{equation}
+The current squarefree list budget is therefore
+$\Omega(D\varepsilon_*^{-2})$, and its regular-family MCA budget is
+$\Omega(D^2\varepsilon_*^{-4})$, even after optimizing the latter's
+integer incidence threshold.
+\end{theorem}
+\begin{proof}
+Normalize the prefix surpluses by $N$:
+\[
+ P_j=\sum_{q\le j}(G_q/N-R_q).
+\]
+The left side of \eqref{eq:current-graded-test}, divided by $N$, is
+$\sum_{j=0}^H P_j$. Some prefix is therefore positive. Total-degree
+truncation preserves the full coefficient prefixes and downward-$Y_0$
+closure. Applying the exact finite-length parameter-cost corollary of
+Section~\ref{sec:gap-costs} to that prefix gives
+$m>c_0/\varepsilon_*$, maximum $Y_0$ degree greater than $m/4$, and
+maximum $Y_1$ degree greater than $m/4-1$. Hence $m\ge16$,
+$B>m/4$, $b\ge m/8$, and $H>m/4-1\ge m/8$.
+
+For every prefix, whether positive or negative, the reduction in
+Section~\ref{sec:finite-length} deletes final diagonals of nonpositive
+surplus and produces a saturated support $S_0$. Its exact coefficient
+benefit is dominated by the leading benefit at $a_*$, with every retained
+benefit positive. Thus each retained total degree is less than
+$4ma_*<2m$, and $|S_0|\le2m^2+m\le3m^2$. The critical support converse
+at $a_0$ yields
+\begin{equation}\label{eq:graded-prefix-upper}
+ P_j\le B_{m,1/4,a_*}(S_0)-r_m(S_0)
+ \le m\varepsilon_*|S_0|\le3\varepsilon_*m^3.
+\end{equation}
+The middle inequality remains valid if some benefits at $a_0$ are
+nonpositive, by deleting those monomials. Empty $S_0$ causes no problem.
+
+Put $J=\lfloor m/8\rfloor$. The standard support contains all $q+1$
+jet monomials on every degree $q\le J$. Their coefficient prefixes are
+nonempty and locally saturated, since
+\[
+ L_q=mA-(D-1)q\ge m\bigl(A-(D-1)/8\bigr)\ge m.
+\]
+The exact rank formula, restricted to $\ell=q,\ldots,m-q-1$, gives
+\[
+ R_q=\sum_{\ell=0}^{m-1}\min\{\min(q,\ell)+1,m-\ell\}
+ \ge(m-2q)(q+1)\ge\frac{3m(q+1)}4.
+\]
+The exact coefficient comparison gives $G_q/N\le ma_*(q+1)$.
+As $a_*<47/100$, we obtain
+\[
+ G_q/N-R_q\le-\frac{m(q+1)}4,
+ \qquad P_j\le-\frac{m(j+1)(j+2)}8\quad(0\le j\le J).
+\]
+Since $H\ge J$, the negative prefix area in the graded sum is at least
+\[
+ -\sum_{j=0}^J P_j\ge\frac{m(J+1)(J+2)(J+3)}{24}
+ >\frac{m^4}{12288}.
+\]
+Every positive prefix is at most $3\varepsilon_*m^3$ by
+\eqref{eq:graded-prefix-upper}. Positivity of the entire sum implies
+$3\varepsilon_*m^3(H+1)>m^4/12288$, proving the $H+1$ bound.
+Since $H\ge m/8\ge2$, also $H\ge(H+1)/2$, proving the last inequality
+in \eqref{eq:current-graded-costs}.
+
+For the current reconstruction formulas, write
+\[
+ \tau=2D-3,\quad u=1+\tau(B-1),\quad
+ v=\min\{u,\tau(b-1)+D\},\quad F=Bv+b(u-v).
+\]
+We have $D\ge2$, $B\ge2$, $0\le v\le u$ and $\tau\ge D/2$. Thus
+\[
+ F=bu+(B-b)v\ge bu\ge\frac{DBb}{4}
+ >\frac{Dm^2}{128}.
+\]
+The squarefree list budget is $\lambda_{\rm agr}F+S$, where
+$\lambda_{\rm agr}=(N-D)/(A-D)\ge1$ and $S\ge0$. It is at least
+$Dc_0^2/(128\varepsilon_*^2)$. The declared joint-degree bound is
+\[
+ J_{\rm reg}=H(2uv-v^2)+2(1+\tau H)F
+ \ge\frac{D^2HBb}{4}
+ >\frac{D^2c_0^3}{9437184\varepsilon_*^4}.
+\]
+For every permitted incidence threshold $D+1\le L\le A$, its multiplier
+in the current regular MCA bound is
+\[
+ \frac{N-L+1}{A-L+1}\lambda_{\rm agr}\ge1.
+\]
+The other terms are nonnegative, completing the proof.
+\end{proof}
+
+\begin{remark}[Scope of current-method tightness]
+The mandatory low-degree triangle is specific to the standard source
+above; arbitrary downward supports may omit small derivative exponents.
+No graded converse is proved here for those supports, for nonmonomial
+sources, or for the current ePrint's alternative column-only test
+(Equation (64)). The characteristic hypothesis remains the stronger
+local-rank hypothesis of this note, not merely the reconstruction
+condition $p>\max\{D,b\}$. Optimizing actual component degrees, exploiting
+global kernel dependencies, or using additional equations is outside the
+numerical ledger considered here. When $A/N=a_0+\varepsilon$ and
+$\varepsilon\ge1/N$, the corrected margin $\varepsilon_*$ is
+$\Theta(\varepsilon)$ as $N$ grows; near rounding one must retain its
+explicit formula. No intrinsic lower bound on lists or MCA exceptions
+follows from this theorem.
+\end{remark}

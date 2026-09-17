@@ -1,5 +1,13 @@
 # Prime-field upper-bound tightness: target and evidence
 
+New current-method result (September17): an independently audited proof
+shows that current Eq60 standard supports and Eq63 graded row counting
+necessarily incur inverse-margin powers two (list ledger) and four
+(regular-MCA ledger), at quarter rate with the explicit corrected margin
+and characteristic exceeding retained jet degree. This is a restricted
+proof-method converse, not intrinsic tightness; arbitrary supports and
+stronger counting remain open. See ../current_graded_method_costs/.
+
 Current strongest September17 update: random nonzero padding directions
 remove the noise-field extension. Exact rate1/8 and gap1/16 now admit
 ceil(n^2/192) nearby labels with NO ordinary CA over F_(p^2). The general

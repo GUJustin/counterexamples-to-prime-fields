@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/better_codes_analytic_revisit_2026_09_17/refine.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.6910909169964725,
+  "peak_rss_kib": 19232,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}
