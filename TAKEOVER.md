@@ -294,3 +294,16 @@ coordinates. All labels/witnesses saved in boundary_line_verification.json.
 IMPORTANT: exact Elias check fails for characteristic41. This is only a
 finite mechanism check / coefficient-one obstruction, NOT a new
 below-Elias counterexample or a superlinear family. No manuscript change.
+
+New scoped transfer lemma in BOUNDARY_VALUE_AMPLIFICATION.md: for a true
+boundary list (N,k,M), q<=M-k+1 unused base-field points with value
+diversities V_x give an extension-alphabet ordinary-CA line with at least
+ceil((M/N)sum V_x) labels, dimension k-1 and length N-1+q. Anchor
+averaging preserves that much diversity, without requiring injective
+evaluation. Exact p41 replay confirms unanchored diversity75 yields
+guarantee35 labels, actual47. The three-coset asymptotic route remains
+conditional on unbounded value diversity, which large orbit alone does
+not imply. An exact-rate7/22 specialization adjusts p mod7 and sets
+q=(k-15)/7; its gap is bounded below by7/88, but not fixed exactly.
+Do not conflate bounded-below gap with the separately-fixed-gap remainder
+question. No asymptotic counterexample has been obtained from this lemma.

@@ -37,6 +37,11 @@ for tau in domain:
     chosen=sorted(spare,key=lambda x:(-len(maps[x]),x))[:q]
     choices.append((sum(len(maps[x]) for x in chosen),tau,anchored,maps,chosen))
 J,tau,anchored,maps,chosen=max(choices,key=lambda row:(row[0],-row[1]))
+full_diversity=sum(len({value(P,x,p) for P in polys}) for x in chosen)
+anchor_diversity_sum=sum(sum(len(row[3][x]) for x in chosen) for row in choices)
+require(anchor_diversity_sum >= M*full_diversity,'boundary value-diversity averaging')
+guaranteed=(M*full_diversity+len(domain)-1)//len(domain)
+require(J>=guaranteed,'chosen anchor retains guaranteed diversity')
 old=[x for x in domain if x!=tau]
 f={x:(w[x]-w[tau])*pow(x-tau,-1,p)%p for x in old}
 labels=set();records=[]
@@ -60,6 +65,8 @@ result=dict(status='PASS',p=p,alphabet='any extension of F_p of degree at least 
             n=N,k=K,agreement=M,anchor=tau,anchored_list_size=len(anchored),
             padding_points=chosen,distinct_values=[len(maps[x]) for x in chosen],
             nearby_labels=J,no_correlated_agreement_at_threshold=True,
+            total_unanchored_value_diversity=full_diversity,
+            averaged_anchor_label_guarantee=guaranteed,
             strictly_below_characteristic_elias=below_elias,
             maximum_selected_concurrency_bound=N-M+1,witnesses=records)
 (BASE/'boundary_line_verification.json').write_text(json.dumps(result,indent=2)+'\n')

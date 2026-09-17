@@ -23,6 +23,8 @@
   ],
   "nearby_labels": 47,
   "no_correlated_agreement_at_threshold": true,
+  "total_unanchored_value_diversity": 75,
+  "averaged_anchor_label_guarantee": 35,
   "strictly_below_characteristic_elias": false,
   "maximum_selected_concurrency_bound": 21,
   "witnesses": [
