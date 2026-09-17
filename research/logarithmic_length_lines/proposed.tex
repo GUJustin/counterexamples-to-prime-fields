@@ -1,0 +1,130 @@
+\subsection{Every large prime admits a short interval-domain counterexample}
+\label{sec:logarithmic-lines}
+
+Holding the number of canceled moments fixed gives a useful alternative
+to Theorem~\ref{im:all-lines}. It strengthens the field quantifier and
+reduces the required block length to logarithmic in the prime.
+
+\begin{theorem}[Logarithmic-length prime-field lines]
+\label{thm:logarithmic-lines}
+Fix a rational $\rho\in(0,1)$, write $H=H_2(\rho)$, and fix an
+integer $r\ge2$. For every sufficiently large prime $p$, writing
+$b=\log_2p$, there is an interval-domain Reed--Solomon code over
+$\F_p$ with dimension $k=\rho n$ and
+\[
+ n=H^{-1}b+O_{\rho,r}(\log b),\qquad
+ t=k+r,\qquad \eta=r/n,
+\]
+and a received line with at least
+\begin{equation}\label{eq:logarithmic-line-count}
+ \left(\frac{H}{\rho(1-\rho)}-o(1)\right)\frac{p}{\log_2p}
+\end{equation}
+distinct nearby labels at agreement threshold $t$.
+There is no correlated agreement on more than $k$ coordinates, and
+every parametrized codeword line contains at most
+$\lfloor(n-k)/r\rfloor$ selected witnesses. The radius is strictly
+below the characteristic-based Elias radius.
+
+In particular, given any finite $c_1,c_2>0$, taking an integer
+$r>\max\{1,c_2\}$ violates the finite line threshold
+$c_1n2^{c_2H/\eta}$ over every sufficiently large prime field.
+\end{theorem}
+\begin{proof}
+Put $a=(r-1)(r+2)/2$ and choose
+\[
+ n=\frac{b+(a+2)\log_2b}{H}+O_\rho(1)
+\]
+by rounding upward to a multiple of the denominator of $\rho$.
+Apply Lemma~\ref{im:finite-list} with source dimension $k+1$ and
+$s=r-1$. Its moment ranges satisfy
+$\prod_{j=1}^{r-1}R_j=O_r(n^a)$. Moreover,
+$\binom nt\ge2^{nH_2(t/n)}/(n+1)$ and
+$nH_2(t/n)=Hn+O_{\rho,r}(1)$. Thus a bank of $N$ distinct
+polynomials of degree at most $k$, each with exactly $t$ agreements,
+has
+\[
+ N\ge c_{\rho,r}\frac{2^{Hn}}{n^{a+1}}
+   \ge c'_{\rho,r}p b.
+\]
+In particular $N/p\to\infty$. Select exactly $N$ members if the
+class is larger.
+
+We sharpen the collision estimate in Lemma~\ref{im:pencil} by
+subtracting shared agreement roots. Let $I_x$ be the support
+incidences, so $\sum_xI_x=Nt$. Across the $Q=p-n$ admissible poles,
+the total number of pair collisions is at most
+\[
+ k\binom N2-\sum_x\binom{I_x}{2}
+ \le\frac{N^2(k-t^2/n)+N(t-k)}2.
+\]
+Indeed each difference already vanishes on its shared support,
+and $\sum_xI_x^2\ge N^2t^2/n$. Averaging and applying
+Cauchy--Schwarz to the value multiplicities at one pole gives at least
+\[
+ \frac{NQ}{Q+N(k-t^2/n)+(t-k)}
+\]
+distinct labels. Since
+$k-t^2/n=\rho(1-\rho)n-2\rho r-r^2/n$ and $N/p\to\infty$,
+this is~\eqref{eq:logarithmic-line-count}.
+Lemma~\ref{im:pencil} also gives the correlated-agreement and
+concurrency assertions.
+
+Finally, $\eta\log_2p\to rH>H$, whereas
+$H_2(1-\rho-\eta)\to H$, proving strict Elias admissibility.
+The logarithm of the proposed threshold is
+$(c_2/r)b+O_{\rho,r,c_1,c_2}(\log b)$, while the constructed count
+has logarithm $b-\log_2b+O_\rho(1)$. Their difference tends to
+infinity when $r>c_2$.
+\end{proof}
+
+The gap here is $\Theta_{\rho,r}(1/\log p)$; the theorem does not
+assert a superlinear exception count at a fixed positive gap.
+It uses the same moment classes and rational division as the earlier
+results, with a different parameter choice.
+
+\paragraph{Finite examples entirely over prime fields.}
+The finite smoothed ellipsoid bound of
+Proposition~\ref{prop:gram-ellipsoid}, followed by the same
+shared-support collision count, gives the following existence
+certificates. The final column is a strict lower bound on
+$\log_2(J/(n2^{H_2(k/n)/\eta}))$, with $\eta=(t-k)/n$.
+\begin{center}
+\begin{tabular}{@{}rrrrrl@{}}
+\toprule
+Prime & $n$ & $k$ & $t$ & Nearby labels $J$ & Excess bits\\
+\midrule
+$2^{61}-1$ &136&25&29&$>8.9248\cdot10^{16}$&$25.81662$\\
+$2^{127}-1$&257&72&78&$>2.7727\cdot10^{36}$&$76.40420$\\
+\bottomrule
+\end{tabular}
+\end{center}
+Both examples lie strictly below the characteristic-based Elias radius
+and have no correlated agreement at their displayed thresholds.
+All words, witnesses, and challenges are in the stated prime field.
+The count certifies existence of a suitable moment class and pole; it
+does not enumerate those large objects. These are ratios of coding
+counts to the finite prescription with $c_1=c_2=1$.
+
+For exact reproducibility, let $\mathcal P(u,v)$ be the minimum number
+of colliding pairs for $u$ objects in $v$ bins, as in
+Section~\ref{sec:agreement-collisions}. If the concentration bound
+certifies a source bank of $N$ supports, put
+\[
+ B=k\binom N2-\mathcal P(Nt,n),\qquad
+ J=\min\{j\ge1:\mathcal P(N,j)\le\lfloor B/(p-n)\rfloor\}.
+\]
+For the length-$257$ example, the certified source and label counts are
+\[
+ \begin{split}
+ N&=12326787713559741838360124456674964971,\\
+ J&=2772727901311387298989842831775757339.
+ \end{split}
+\]
+The standard-library checker in
+\path{research/logarithmic_length_lines/} uses rational upper bounds
+for the concentration denominator, exact integer collision arithmetic,
+and rational logarithm intervals for the reported decimal comparisons.
+It also verifies primality by Lucas--Lehmer, checks the strict sufficient
+Elias inequality $p^{t-k}t^t(n-t)^{n-t}>n^n$, and exhaustively tests
+$60$ small-field support classes over $1{,}252$ admissible poles.
+The discovery scan is not an optimality proof.

@@ -1,0 +1,89 @@
+{
+  "status": "PASS",
+  "sharp_boundary_solutions": [
+    [
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1
+    ],
+    [
+      1,
+      1
+    ]
+  ],
+  "equations": 549,
+  "polynomials_enumerated": 1084807,
+  "coordinate_family_checks": 2790,
+  "mixed_two_cluster_coordinates": 14,
+  "nonconstant_cross_ratios": 5,
+  "solution_count_exceptions": [
+    {
+      "p": 3,
+      "D": 2,
+      "solutions": 5,
+      "u": [
+        1,
+        1,
+        1
+      ],
+      "v": [
+        0,
+        1,
+        1
+      ]
+    }
+  ],
+  "mixed_example": {
+    "p": 3,
+    "D": 2,
+    "polynomials": [
+      [
+        0
+      ],
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "x": 0,
+    "values": [
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    "pair_orders": {
+      "0,1": 1,
+      "0,2": 1,
+      "0,3": 0,
+      "0,4": 0,
+      "1,2": 1,
+      "1,3": 0,
+      "1,4": 0,
+      "2,3": 0,
+      "2,4": 0,
+      "3,4": 2
+    }
+  },
+  "scope": "Characteristics p>D, including p=D+1. Local multiplicity inequality holds for every received value; nonlinear solution counts obey D+2 above the boundary and 2D+2 at the boundary."
+}

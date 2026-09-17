@@ -1,0 +1,109 @@
+{
+  "status": "PASS",
+  "small_field_checks": {
+    "fixtures": 60,
+    "poles": 1252,
+    "bank_members": 639,
+    "largest_example": {
+      "p": 31,
+      "n": 12,
+      "k": 4,
+      "t": 6,
+      "N": 58,
+      "pole": 20,
+      "labels": 30,
+      "guaranteed_labels": 15,
+      "maximum_concurrency": 4
+    }
+  },
+  "finite_certificates": [
+    {
+      "field_characteristic": 2147483647,
+      "alphabet_size": 2147483647,
+      "n": 94,
+      "k": 9,
+      "t": 12,
+      "m": 2,
+      "source_list_lower_bound": 402076464,
+      "pair_collision_budget": 603665793144209334,
+      "admissible_poles": 2147483553,
+      "label_lower_bound": 174349709,
+      "concurrency_upper_bound": 28,
+      "excess_bits_certified_lower": "6.55488",
+      "strict_elias_sufficient_inequality": true,
+      "gram_variances": [
+        "7790",
+        "1146688"
+      ],
+      "concentration_denominator_upper": "26841825051906290060695354418823417811/22600000000000000000000000000000"
+    },
+    {
+      "field_characteristic": 2305843009213693951,
+      "alphabet_size": 2305843009213693951,
+      "n": 136,
+      "k": 25,
+      "t": 29,
+      "m": 3,
+      "source_list_lower_bound": 305088842609512257,
+      "pair_collision_budget": 875697344203063408899774190254487482,
+      "admissible_poles": 2305843009213693815,
+      "label_lower_bound": 89248890436439599,
+      "concurrency_upper_bound": 27,
+      "excess_bits_certified_lower": "25.81662",
+      "strict_elias_sufficient_inequality": true,
+      "gram_variances": [
+        "425111/12",
+        "655096051/60",
+        "1730108670691/1200"
+      ],
+      "concentration_denominator_upper": "6248504618578000156443517973896313099481217/5650000000000000000000000000000"
+    },
+    {
+      "field_characteristic": 2147483647,
+      "alphabet_size": 21267647892944572736998860269687930881,
+      "n": 187,
+      "k": 79,
+      "t": 85,
+      "m": 5,
+      "source_list_lower_bound": 653436170218325712116176475,
+      "pair_collision_budget": 8617209085273598819975291280524547504398205943824937470,
+      "admissible_poles": 21267647892944572736998860269687930694,
+      "label_lower_bound": 653436169813146487377727078,
+      "concurrency_upper_bound": 18,
+      "excess_bits_certified_lower": "50.90749",
+      "strict_elias_sufficient_inequality": true,
+      "gram_variances": [
+        "135830",
+        "158309865/2",
+        "19766117430",
+        "38382505696155/14",
+        "2661187061600080/11"
+      ],
+      "concentration_denominator_upper": "7758959072835034127289569269564329563285675731637669119773253/957675000000000000000000000000000"
+    },
+    {
+      "field_characteristic": 170141183460469231731687303715884105727,
+      "alphabet_size": 170141183460469231731687303715884105727,
+      "n": 257,
+      "k": 72,
+      "t": 78,
+      "m": 5,
+      "source_list_lower_bound": 12326787713559741838360124456674964971,
+      "pair_collision_budget": 3671624933974278613550824394869472916345682878960846076315136746249084667355,
+      "admissible_poles": 170141183460469231731687303715884105470,
+      "label_lower_bound": 2772727901311387298989842831775757339,
+      "concurrency_upper_bound": 30,
+      "excess_bits_certified_lower": "76.40420",
+      "strict_elias_sufficient_inequality": true,
+      "gram_variances": [
+        "300183",
+        "1321705749/4",
+        "311733741657/2",
+        "2287190462537409/56",
+        "27238359144763689/4"
+      ],
+      "concentration_denominator_upper": "677574164992860400798929272694696930924003624878928475068567287/478837500000000000000000000000000"
+    }
+  ],
+  "scope": "Mathematical existence certificates for affine received lines; finite comparison uses c1=c2=1. No global optimization claim."
+}

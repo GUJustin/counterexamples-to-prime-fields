@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "pdf_pages": 109,
+  "visually_reviewed_pages": [
+    104,
+    105,
+    106,
+    107
+  ],
+  "scope": "Refined Riccati theorem under p>D; final references continue on next pages.",
+  "build": "tectonic --keep-logs paper.tex"
+}

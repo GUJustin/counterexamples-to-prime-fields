@@ -55,6 +55,10 @@ verify:
 	$(PYTHON) research/actual_higher_order_components/verify.py
 	$(PYTHON) research/actual_higher_order_components/verify_fixed_fiber.py
 	$(PYTHON) research/inverse_bernoulli/verify.py
+	$(PYTHON) research/riccati_cross_ratio/verify.py
+	$(PYTHON) research/riccati_cross_ratio/verify_multiplicities.py
+	$(PYTHON) research/riccati_cross_ratio/verify_boundary_extension.py
+	$(PYTHON) research/logarithmic_length_lines/verify.py
 	$(PYTHON) research/binary_affine_locator/verify.py
 	$(PYTHON) research/binary_affine_locator/check_codimension_two_transfer.py
 	$(PYTHON) research/binary_affine_locator/check_multiplicative_orbit_transfer.py

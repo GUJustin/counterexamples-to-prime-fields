@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "/Users/jthaler/Research-Workspace-2026-09-16/counterexamples-to-prime-fields/research/riccati_cross_ratio/verify.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.1237391249997017,
+  "peak_rss_kib": 21536,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 180
+}

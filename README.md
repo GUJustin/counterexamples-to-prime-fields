@@ -212,3 +212,19 @@ title, abstract, introduction, security discussion, and application framing
 were revised for this repository. The mathematical development precedes
 the S-two application. `provenance.json` records the input hashes and
 validation performed for this version.
+
+[Sharp Riccati list bounds](research/riccati_cross_ratio/README.md) proves
+`M <= floor(n/(A-D))` for bounded-degree solutions of one Riccati equation
+in characteristic zero or `p>D`, and gives prime-field equality families.
+A fixed nonlinear equation has at most `C_D` candidates and
+`2n(n+C_D)/(A-D)` full-support bad labels, where `C_D=D+2` except
+at the boundary `p=D+1`, where `C_D=2D+2`. Appendix M contains the proof.
+Challenge-dependent first-order proximity gaps remain open.
+
+[Logarithmic-length prime-field lines](research/logarithmic_length_lines/PROOF.md)
+strengthens the field quantifier: every sufficiently large prime admits
+a below-Elias example with length `Theta(log p)` and `Omega(p/log p)`
+nearby labels, without correlated agreement. For each proposed finite
+constant c2 the number of canceled moments is fixed accordingly; the gap
+still shrinks. A pure-prime example over `2^127-1` at n257/k72/t78 exceeds
+the finite c1=c2=1 line prescription by more than `2^76.40420`.

@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "field": "F_3[w]/(w^2+1)",
+  "degree": 2,
+  "polynomials_enumerated": 729,
+  "solutions": [
+    [
+      0
+    ],
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1
+    ]
+  ],
+  "received_lines": 85,
+  "line_threshold_cases": 595,
+  "nonempty_bad_cases": 89,
+  "maximum_observed_bad_labels": 9,
+  "scope": "Extension-domain check at p=D+1, including the ordinary-list and fixed-equation full-support inequalities."
+}

@@ -1,0 +1,345 @@
+{
+  "status": "PASS",
+  "sharp_list_fixtures": [
+    {
+      "p": 7,
+      "M": 3,
+      "s": 1,
+      "n": 6,
+      "D": 1,
+      "A": 3,
+      "agreements": [
+        3,
+        3,
+        3
+      ],
+      "exact_equality": true
+    },
+    {
+      "p": 13,
+      "M": 3,
+      "s": 2,
+      "n": 12,
+      "D": 2,
+      "A": 6,
+      "agreements": [
+        6,
+        6,
+        6
+      ],
+      "exact_equality": true
+    },
+    {
+      "p": 31,
+      "M": 3,
+      "s": 5,
+      "n": 30,
+      "D": 5,
+      "A": 15,
+      "agreements": [
+        15,
+        15,
+        15
+      ],
+      "exact_equality": true
+    },
+    {
+      "p": 17,
+      "M": 4,
+      "s": 2,
+      "n": 16,
+      "D": 4,
+      "A": 8,
+      "agreements": [
+        8,
+        8,
+        8,
+        8
+      ],
+      "exact_equality": true
+    },
+    {
+      "p": 41,
+      "M": 4,
+      "s": 5,
+      "n": 40,
+      "D": 10,
+      "A": 20,
+      "agreements": [
+        20,
+        20,
+        20,
+        20
+      ],
+      "exact_equality": true
+    },
+    {
+      "p": 31,
+      "M": 5,
+      "s": 3,
+      "n": 30,
+      "D": 9,
+      "A": 15,
+      "agreements": [
+        15,
+        15,
+        15,
+        15,
+        15
+      ],
+      "exact_equality": true
+    },
+    {
+      "p": 101,
+      "M": 5,
+      "s": 10,
+      "n": 100,
+      "D": 30,
+      "A": 50,
+      "agreements": [
+        50,
+        50,
+        50,
+        50,
+        50
+      ],
+      "exact_equality": true
+    },
+    {
+      "p": 37,
+      "M": 6,
+      "s": 3,
+      "n": 36,
+      "D": 12,
+      "A": 18,
+      "agreements": [
+        18,
+        18,
+        18,
+        18,
+        18,
+        18
+      ],
+      "exact_equality": true
+    },
+    {
+      "p": 97,
+      "M": 8,
+      "s": 6,
+      "n": 96,
+      "D": 36,
+      "A": 48,
+      "agreements": [
+        48,
+        48,
+        48,
+        48,
+        48,
+        48,
+        48,
+        48
+      ],
+      "exact_equality": true
+    }
+  ],
+  "fixtures": [
+    {
+      "name": "sharp_shifted_D2_p7",
+      "p": 7,
+      "degree": 2,
+      "coefficient_degrees": [
+        3,
+        4,
+        2,
+        0
+      ],
+      "solutions": 4,
+      "received_lines": 48
+    },
+    {
+      "name": "sharp_shifted_D3_p7",
+      "p": 7,
+      "degree": 3,
+      "coefficient_degrees": [
+        4,
+        6,
+        3,
+        0
+      ],
+      "solutions": 5,
+      "received_lines": 52
+    },
+    {
+      "name": "sharp_shifted_D3_p11",
+      "p": 11,
+      "degree": 3,
+      "coefficient_degrees": [
+        4,
+        6,
+        3,
+        0
+      ],
+      "solutions": 5,
+      "received_lines": 52
+    },
+    {
+      "name": "constant_denominator_D3",
+      "p": 7,
+      "degree": 3,
+      "coefficient_degrees": [
+        5,
+        0,
+        4,
+        0
+      ],
+      "solutions": 5,
+      "received_lines": 52
+    },
+    {
+      "name": "constant_denominator_D4",
+      "p": 11,
+      "degree": 4,
+      "coefficient_degrees": [
+        5,
+        0,
+        4,
+        0
+      ],
+      "solutions": 6,
+      "received_lines": 56
+    },
+    {
+      "name": "random_pencil_0",
+      "p": 7,
+      "degree": 2,
+      "coefficient_degrees": [
+        6,
+        5,
+        5,
+        1
+      ],
+      "solutions": 3,
+      "received_lines": 44
+    },
+    {
+      "name": "random_pencil_1",
+      "p": 7,
+      "degree": 2,
+      "coefficient_degrees": [
+        5,
+        6,
+        4,
+        2
+      ],
+      "solutions": 3,
+      "received_lines": 44
+    },
+    {
+      "name": "random_pencil_2",
+      "p": 7,
+      "degree": 2,
+      "coefficient_degrees": [
+        6,
+        6,
+        5,
+        2
+      ],
+      "solutions": 4,
+      "received_lines": 48
+    },
+    {
+      "name": "random_pencil_3",
+      "p": 7,
+      "degree": 2,
+      "coefficient_degrees": [
+        4,
+        5,
+        3,
+        1
+      ],
+      "solutions": 3,
+      "received_lines": 44
+    },
+    {
+      "name": "random_pencil_4",
+      "p": 7,
+      "degree": 2,
+      "coefficient_degrees": [
+        6,
+        6,
+        5,
+        2
+      ],
+      "solutions": 3,
+      "received_lines": 44
+    },
+    {
+      "name": "random_pencil_5",
+      "p": 7,
+      "degree": 2,
+      "coefficient_degrees": [
+        5,
+        6,
+        4,
+        2
+      ],
+      "solutions": 3,
+      "received_lines": 44
+    },
+    {
+      "name": "random_pencil_6",
+      "p": 7,
+      "degree": 2,
+      "coefficient_degrees": [
+        6,
+        5,
+        5,
+        2
+      ],
+      "solutions": 3,
+      "received_lines": 44
+    },
+    {
+      "name": "random_pencil_7",
+      "p": 7,
+      "degree": 2,
+      "coefficient_degrees": [
+        6,
+        5,
+        5,
+        2
+      ],
+      "solutions": 3,
+      "received_lines": 44
+    }
+  ],
+  "polynomials_enumerated": 183581,
+  "constant_cross_ratios": 32,
+  "collision_coordinates": 99,
+  "received_lines": 616,
+  "ordinary_incidence_cases": 772,
+  "nonempty_bad_line_threshold_cases": 385,
+  "characteristic_negative_control": {
+    "p": 3,
+    "degree": 2,
+    "values_at_zero": [
+      0,
+      1,
+      0,
+      1
+    ],
+    "numerator": [
+      2,
+      2
+    ],
+    "denominator": [
+      0,
+      0,
+      0,
+      2,
+      2
+    ],
+    "total_bounded_degree_solutions": 5
+  },
+  "scope": "Exact bounded-degree classifications, cross-ratio constants, collision structure, ordinary lists, and fixed-equation full-support incidences. Finite checks supplement the proof; challenge-dependent MCA remains open."
+}

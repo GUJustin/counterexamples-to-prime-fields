@@ -1,0 +1,10 @@
+{
+  "research/riccati_cross_ratio/PROOF.md": "31978f0b45e96195d3fa4b5e7ae5ea9edadc79889272e6f79e7a5169bd37caf8",
+  "research/riccati_cross_ratio/refined_theorem.tex": "2b54ab481a2a43c6b065c66f5e47c30a5e0617be9718018c38177359d4dae10e",
+  "research/riccati_cross_ratio/verify_boundary_extension.py": "2065f1ba4b1a997f92ed2b5a635c8d0e0c3e8ec551aa1c56a8ffced9f8129438",
+  "research/riccati_cross_ratio/README.md": "1649cdf10e5fafd845b6ea672c6cd28303a376da1000027becc7e84f0c8d3835",
+  "research/riccati_cross_ratio/verify_multiplicities.py": "c2823d1cbbd69c082f6fed6bfb73ca648f6ab05a4f2cc8416ed7b2ae111df23c",
+  "research/riccati_cross_ratio/CHARACTERISTIC_REFINEMENT.md": "5fe0ab84d7132889ccb7f2f542167476d78a3506cc1d3b29a294ce77ea14a780",
+  "research/riccati_cross_ratio/verify.py": "8103c33b698109a5349c04869cd43348a9c3b445a3e602e7f414ccdc34b6fc25",
+  "research/riccati_cross_ratio/appendix.tex": "510edbeda03c620872be35a67de3f9f7011717d66943447c65dbb46038abdefa"
+}

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/logarithmic_length_lines/search.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 3.782588834001217,
+  "peak_rss_kib": 18112,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 180
+}

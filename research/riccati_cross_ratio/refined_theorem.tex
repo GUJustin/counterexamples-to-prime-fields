@@ -1,0 +1,126 @@
+\begin{theorem}[Riccati lists and solution counts]
+\label{thm:riccati-cross-ratio}
+Let $D\ge1$, and let $E$ have characteristic zero or $p>D$.
+Consider one fixed equation
+\begin{equation}
+ a(X)P'=b_0(X)+b_1(X)P+b_2(X)P^2,\qquad a\ne0,
+ \label{eq:fixed-riccati}
+\end{equation}
+with coefficients in $E[X]$, with no restriction on their degrees.
+On any $n$ distinct evaluation points, the number of distinct solutions
+of degree at most $D$ agreeing with an arbitrary received word in at
+least $A>D$ coordinates is at most
+\begin{equation}
+ \left\lfloor\frac{n}{A-D}\right\rfloor.
+ \label{eq:riccati-list}
+\end{equation}
+This bound is attained over prime fields at unbounded lengths and
+positive limiting rate and agreement gap. If $b_2\ne0$, the total
+number of degree-at-most-$D$ polynomial solutions is at most
+\begin{equation}\label{eq:riccati-total-count}
+ C_D=\begin{cases}
+ D+2,&\text{in characteristic zero or }p>D+1,\\
+ 2D+2,&\text{if }p=D+1.
+ \end{cases}
+\end{equation}
+The bound $D+2$ is sharp. The boundary bound $2D+2$ is attained
+at $p=2,D=1$.
+\end{theorem}
+\begin{proof}
+\emph{Total candidate count.}
+Assume $b_2\ne0$. Work at a transcendental Taylor center $t$, where
+$a(t)b_2(t)\ne0$, and write the equation as
+$P'=F(X,P)$, with $F=\alpha+\beta u+\gamma u^2$ and $\gamma\ne0$.
+Put $\Delta=\partial_X+F\partial_u$ and $F_j=\Delta^j u$.
+For $j<p$, or in characteristic zero, $F_j$ has $u$-degree $j+1$
+and leading coefficient $j!\gamma^j$. This follows inductively:
+$F\partial_u$ gives the highest degree and $\partial_X$ gives a
+lower degree. In characteristic zero or $p>D+1$, every solution
+satisfies
+\[
+ F_{D+1}(t,P(t))=P^{(D+1)}(t)=0.
+\]
+This is a nonzero polynomial of degree $D+2$ in $P(t)$.
+Distinct polynomial solutions have distinct values at the
+transcendental $t$, proving the first count.
+
+If $p=D+1$, use instead the truncated reconstruction
+\[
+ T(U,X)=\sum_{j=0}^D F_j(t,U)\frac{(X-t)^j}{j!}.
+\]
+Every candidate is $T(P(t),X)$. Its $U$-degree is $D+1$, with
+leading coefficient $\gamma(t)^D(X-t)^D$. The residual
+$a\partial_XT-b_0-b_1T-b_2T^2$ therefore has $U$-degree exactly
+$2D+2$, with nonzero leading coefficient
+$-b_2(X)\gamma(t)^{2D}(X-t)^{2D}$. Any nonzero $X$-coefficient
+of this residual is a nonzero polynomial in $U$ of degree at most
+$2D+2$ vanishing at every candidate value $P(t)$. This proves the
+boundary count. In particular, in positive characteristic the total
+count is at most $2D+2\le2p$.
+
+\emph{Lists by intersection multiplicities.}
+For $M\ge2$ distinct candidates and a domain coordinate $x$, put
+\[
+ C_x=\sum_{i<j}\operatorname{ord}_x(P_i-P_j).
+\]
+The root bound gives $\sum_xC_x\le D\binom M2$. If $h$ candidates
+match a given received value at $x$, we claim
+\begin{equation}\label{eq:riccati-local-multiplicity}
+ (h-1)(M-1)\le2C_x.
+\end{equation}
+If $b_2=0$, differences solve one homogeneous linear equation.
+The ratio of two nonzero differences has derivative zero and
+rational degree at most $D<p$, and hence is constant. The same is
+true in characteristic zero. Thus the candidates have form $P_0+cW$,
+and their values at $x$ are either all distinct or all equal;
+\eqref{eq:riccati-local-multiplicity} follows immediately.
+
+Now suppose $b_2\ne0$. Differences satisfy
+\[
+ a(P_i-P_j)'=(b_1+b_2(P_i+P_j))(P_i-P_j),
+\]
+so every cross ratio has derivative zero. In characteristic zero
+it is constant and different from $0,1,\infty$. A colliding pair
+and two candidates outside its value class would force that cross
+ratio to be one. Therefore either all values are distinct or one
+value occurs at least $M-1$ times. For
+$h\in\{0,1,M-1,M\}$, the inequality follows from
+$C_x\ge\binom h2$.
+
+In positive characteristic a cross ratio need not be constant.
+However, any zero of a nonzero rational function with derivative
+zero has order divisible by $p$. Choose a colliding pair and two
+candidates outside its value class. The denominator of their
+cross-ratio identity is nonzero at $x$, and the numerator of the
+cross ratio minus one, up to sign, is the product of the two
+within-pair differences. If the two outside values were distinct,
+this product would have positive order at most $D<p$, impossible.
+Consequently every collision pattern other than those already
+handled has exactly two value classes, both of size at least two.
+
+Let the matching class have size $h$ and the other class have size
+$b=M-h$. Let $\mu,\nu$ be the minimum positive vanishing orders of
+differences within these classes. The same cross-ratio argument
+for every choice of two within-class pairs gives $\mu+\nu\ge p$.
+Write $A_0=\binom h2$, $B_0=\binom b2$, so
+$C_x\ge A_0\mu+B_0\nu$. If $h\le b$, already
+\[
+ 2(A_0+B_0)-(M-1)(h-1)=(b-1)(b-h+1)\ge0.
+\]
+If $h\ge b$, minimizing with $\mu,\nu\ge1$ and
+$\mu+\nu\ge p$ gives $C_x\ge A_0+(p-1)B_0$, and hence
+\[
+ 2C_x-(M-1)(h-1)\ge(b-1)(pb-M+1)\ge0,
+\]
+because $b\ge2$ and the total-count bound gives $M\le2p$.
+An unmatched received value has $h=0$. This proves
+\eqref{eq:riccati-local-multiplicity} in all cases.
+Summing it gives $AM\le n+DM$, proving
+\eqref{eq:riccati-list}. The case $M=1$ is immediate, and the same
+proof allows real agreement thresholds.
+
+For sharpness of $D+2$, choose $a$ split and squarefree of degree
+$D+1$. The equation $aP'=a'P-P^2$ has the $D+2$ solutions $0$ and
+$a/(X-r)$, one for each root $r$ of $a$. At the boundary $p=2,D=1$,
+$(X^2+X)P'=P^2+P$ has exactly $0,1,X,X+1$ as its four solutions.
+\end{proof}

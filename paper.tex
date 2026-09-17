@@ -224,7 +224,10 @@ where $\tau$ lies outside the evaluation domain. This division lowers
 the witness degree by one. It also makes the direction word
 $1/(X-\tau)$ unable to agree with a low-degree polynomial on too many
 points. A collision count ensures that many members of the original
-list give different parameters $z$.
+list give different parameters $z$. Theorem~\ref{thm:logarithmic-lines}
+also gives such counterexamples over every sufficiently large prime $p$,
+with block length $\Theta(\log p)$ and $\Omega(p/\log p)$ nearby
+labels. Its gap is $\Theta(1/\log p)$.
 
 \paragraph{An obstruction that persists at a fixed gap.}
 The gap in Theorem~\ref{thm:informal} shrinks with $n$. To address
@@ -278,6 +281,9 @@ when $\deg_XR$ also stays a fixed positive fraction below the
 agreement threshold. A nonlinear two-solution family attains $n/2$
 bad labels at fixed rate and gap. The general first-order conjecture
 still requires controlling singular agreement coordinates.
+Appendix~\ref{app:riccati-cross-ratio} removes that restriction for
+a fixed nonlinear Riccati equation, proving a linear full-support
+bound and a sharp ordinary-list bound with prime-field equality families.
 
 \subsection{Finite examples on circle codes}
 
@@ -1548,6 +1554,8 @@ In a smaller exhaustive check, $n=12$, $d=6$, $t=8$, $p=2^{31}-1$ yield
 a moment class of size $33$. The pole $\tau=20$ gives $33$ distinct
 parameters, and the maximum number of selected pairs on one parametrized
 codeword line is exactly $3$, matching the lemma's bound.
+
+\input{research/logarithmic_length_lines/proposed.tex}
 
 \section{A fixed-gap obstruction that survives sublinear remainders}
 \label{sec:lift}\label{fg:section}
@@ -5393,7 +5401,12 @@ odd-characteristic bounds $20$ and $62$.
 \input{research/inverse_bernoulli/appendix.tex}
 \input{research/structured_domains/general_cubic_packets/appendix.tex}
 
+\input{research/riccati_cross_ratio/appendix.tex}
+
 \begin{thebibliography}{99}
+\bibitem{gasull-riccati} A. Gasull, J. Torregrosa, and X. Zhang.
+\emph{The number of polynomial solutions of polynomial Riccati equations}.
+arXiv:1602.03503, 2016. \url{https://arxiv.org/abs/1602.03503}.
 \bibitem{corvaja-zannier} P. Corvaja and U. Zannier.
 \emph{Greatest common divisors of $u-1,v-1$ in positive characteristic
 and rational points on curves over finite fields}.
