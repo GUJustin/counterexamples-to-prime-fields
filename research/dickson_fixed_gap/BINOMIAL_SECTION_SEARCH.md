@@ -60,3 +60,18 @@ larger parameters, nonconstant words inside cosets, or different
 hypergeometric families. It currently offers no fixed-gap asymptotic
 improvement, no prescribed-code/better.codes improvement, and no new
 manuscript claim.
+
+## All section indices in an expanded fixed-k audit
+
+The subsequent `all_sections.cpp` scan covers every j=0,...,r-1 for
+r=2,...,48 and k in {16,32,64,128} whenever 2rk+1 is prime:989 cases.
+At c=4 the only below-Elias case is the known r2,j1,k64,p257 example.
+There are no c8 cases; c16 has6 cases with largestk16, and c32 has261
+with largestk32. This does not reveal growing lists at fixed c.
+The new j29/r38/k16 example is independently replayed along with three
+other fixtures by `verify_all_sections.py`, including every candidate
+polynomial and coset mode. The checker uses the exact characteristic
+Elias inequality, which includes one extra c32 case compared with the
+simpler sufficient entropy inequality used in the discovery summary.
+The final summary is regenerated from the exact checker. No new
+manuscript theorem or impossibility claim follows.

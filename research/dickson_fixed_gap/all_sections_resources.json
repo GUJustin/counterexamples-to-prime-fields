@@ -1,0 +1,11 @@
+{
+  "command": [
+    "tmp/all_sections"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 2.8653141249997134,
+  "peak_rss_kib": 2576,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

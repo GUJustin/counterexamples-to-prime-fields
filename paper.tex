@@ -3168,6 +3168,15 @@ at every sufficiently small rational gap. Their selected witnesses also have
 concurrency at most $n$. Thus the fixed-gap coefficient obstruction
 does not depend on selecting among persistent good witness lines.
 
+The shrinking-gap constructions show how large the numerical failure
+can be. Theorem~\ref{fg:gap-scale-far} permits more than $99.9999\%$
+nearby parameters at half rate, with a point $\eta/7$ outside the radius,
+while the proposed numerical fraction tends to zero.
+Theorem~\ref{fg:near-unit-density} makes the nearby fraction tend to one
+with a smaller relative separation. These comparisons concern the
+prescribed numerical coefficient; they do not replace the fixed-gap
+argument needed to address a remainder controlled separately at each gap.
+
 These arguments do not establish failure of a fixed-gap threshold
 expressed using the \emph{actual} maximum list size $\ell_C(\theta)$.
 In the preliminary construction, for example, the selected count is
@@ -3289,6 +3298,13 @@ FFT domain at the radii used in a proof system? A generic-domain
 existence theorem and a counterexample on an integer interval leave
 this question open. Such a theorem should expose its finite constants
 and its dependence on the challenge field.
+\item \textbf{Nearby density with separation proportional to the gap.}
+For a fixed $\kappa>0$, can the nearby fraction tend to one while a
+point of the line remains $\kappa\eta$ outside the decoding radius?
+Theorem~\ref{fg:gap-scale-far} gives any desired fixed nearby fraction,
+but its $\kappa$ depends on that fraction. The constructions with density
+tending to one have separation $o(\eta)$. This question concerns shrinking
+gaps on short prime-field domains, separately from the fixed-gap problem.
 \item \textbf{Finding the large classes.}
 Can one efficiently describe or enumerate enough of the equal-moment
 or equal-coefficient classes to match the counting lower bounds?

@@ -904,3 +904,41 @@ ofcoordinates; keepbothasdistincttrades.
 Remainingresearchprioritystillfixedpositivegapshortdomainswithgrowing
 lists/superlinearlinecount, or a domaintransfer relevanttobetter.codes.
 Currentnewresultsdonotsolvethose. Goalcontinuesto12:30UTC.
+
+
+## September 17 ~06:12 UTC — fixed-gap route audit and scope update
+
+Previousgoalturnprogresscommite39368dc. Expandedbinomialsectionsearch
+toALLj=0..r-1 at r2..48,k16,32,64,128 wheneverp2rk+1prime:989cases.
+Newall_sections.cpp, scan/resources/summary, verify_all_sections.py.
+ExactEliasfilter: c4 onlyknownDicksonr2j1k64p257; c8zero; c16six
+withmaxk16; c32has261withmaxk32. No growingfamily ornewtheorem.
+Independentintegerbinomial/fullcoset/fullcandidate replayof4fixtures
+passes, includingnewr38j29k16. Coveragecheckerassertsalladmissible(r,k)
+andallsections. Scan2.9sec, replay0.55sec, lowRSS. Initialsufficient
+Eliasfilterhad260c32cases; finalexactcharacteristicfilterhas261 and
+summarynowmatches. NoteappendedBINOMIAL_SECTION_SEARCH.md.
+
+NewCOMPOSITION_GAP_LIMIT.md provesordinarydegreebarrier: monicFdegA,
+monicG,HdegB,diffdega<B,charpnotdividingA =>
+deg(F(G)-F(H))=(A-1)B+a. Cartesianinnercompositionlocatorfamilies
+withsharedprefixK,degreeAB<=n<p requireeta=(AB-K)/n<1/A. Thus
+independentinnerbranchingrequiresouterdegree<1/eta; nestedcomposition
+cannotfreelymultiplylistsatfixedgap. Scopeexplicitlyexcludescoupled
+outer/innerchoicesandgeneralreceivedwords. Elementaryproofonly, not
+manuscriptclaim, complementsindependentproductlimit.
+
+Paperapplicationsectionnowmentionsnewdensegap-scalefarresultwith
+remainderqualification. Openquestionsadds: canJ/p->1 atfixedkappa>0
+withfarpointkappa*etaoutside? Currentanyfixedfractionresultlets
+kappadependonfraction; currentdensity->1 hasseparationo(eta).
+PDF120pagesclean, reviewed58,59; builddone. Mainmakeverifycount76
+unchanged (exploratorynewscancheckerkeptresearch-only).
+
+Potentialrouteforthenewrobust-densityquestion: fixeds,n=C logp has
+L/p->infinity, farpointeta/(s+1), butrootpairboundonlyprovesoutside
+evaluationimage~p/n. Actualsubsetproductimagesmightbemuchlarger,
+perhapsnearFp*, butwouldneedrealnumbertheoretic/equidistributionproof
+underfixedmomentconstraints. DoNOTinferfromL>>p. Ifonepaddingpoint
+hasimageFp*, wouldgiveallnonzeroznearbywithfixedkappa. Noevidenceyet.
+Goalactiveuntil12:30UTC; noactiveprocess.

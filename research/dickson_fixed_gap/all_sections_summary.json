@@ -1,0 +1,165 @@
+{
+  "cases": 989,
+  "scope": "All section indices covered for r2..48,k16,32,64,128 at prime2rk+1; independent orbit replay of four fixtures and exact Elias filtering. Finite search only.",
+  "by_coset_count": {
+    "4": {
+      "below_elias_cases": 1,
+      "largest_k": 64,
+      "examples": [
+        {
+          "r": 2,
+          "section": 1,
+          "k": 64,
+          "p": 257,
+          "n": 256,
+          "A": 96
+        }
+      ]
+    },
+    "8": {
+      "below_elias_cases": 0,
+      "largest_k": 0,
+      "examples": []
+    },
+    "16": {
+      "below_elias_cases": 6,
+      "largest_k": 16,
+      "examples": [
+        {
+          "r": 38,
+          "section": 29,
+          "k": 16,
+          "p": 1217,
+          "n": 256,
+          "A": 32
+        },
+        {
+          "r": 44,
+          "section": 4,
+          "k": 16,
+          "p": 1409,
+          "n": 256,
+          "A": 31
+        },
+        {
+          "r": 36,
+          "section": 2,
+          "k": 16,
+          "p": 1153,
+          "n": 256,
+          "A": 30
+        },
+        {
+          "r": 39,
+          "section": 19,
+          "k": 16,
+          "p": 1249,
+          "n": 256,
+          "A": 30
+        },
+        {
+          "r": 44,
+          "section": 0,
+          "k": 16,
+          "p": 1409,
+          "n": 256,
+          "A": 30
+        },
+        {
+          "r": 44,
+          "section": 11,
+          "k": 16,
+          "p": 1409,
+          "n": 256,
+          "A": 29
+        }
+      ]
+    },
+    "32": {
+      "below_elias_cases": 261,
+      "largest_k": 32,
+      "examples": [
+        {
+          "r": 33,
+          "section": 0,
+          "k": 32,
+          "p": 2113,
+          "n": 1024,
+          "A": 64
+        },
+        {
+          "r": 38,
+          "section": 29,
+          "k": 16,
+          "p": 1217,
+          "n": 512,
+          "A": 48
+        },
+        {
+          "r": 44,
+          "section": 4,
+          "k": 16,
+          "p": 1409,
+          "n": 512,
+          "A": 47
+        },
+        {
+          "r": 20,
+          "section": 0,
+          "k": 16,
+          "p": 641,
+          "n": 512,
+          "A": 46
+        },
+        {
+          "r": 36,
+          "section": 2,
+          "k": 16,
+          "p": 1153,
+          "n": 512,
+          "A": 46
+        },
+        {
+          "r": 39,
+          "section": 19,
+          "k": 16,
+          "p": 1249,
+          "n": 512,
+          "A": 46
+        },
+        {
+          "r": 44,
+          "section": 0,
+          "k": 16,
+          "p": 1409,
+          "n": 512,
+          "A": 46
+        },
+        {
+          "r": 20,
+          "section": 14,
+          "k": 16,
+          "p": 641,
+          "n": 512,
+          "A": 45
+        },
+        {
+          "r": 44,
+          "section": 11,
+          "k": 16,
+          "p": 1409,
+          "n": 512,
+          "A": 45
+        },
+        {
+          "r": 18,
+          "section": 0,
+          "k": 16,
+          "p": 577,
+          "n": 512,
+          "A": 44
+        }
+      ]
+    }
+  }
+}
