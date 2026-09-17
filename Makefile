@@ -187,3 +187,8 @@ verify-unique-boundary-amplification:
 verify: verify-dickson-domain-deformation
 verify-dickson-domain-deformation:
 	$(PYTHON) research/dickson_domain_deformation/verify.py
+
+.PHONY: verify-generic-fiber-nearest-lists
+verify: verify-generic-fiber-nearest-lists
+verify-generic-fiber-nearest-lists:
+	$(PYTHON) research/generic_fiber_nearest_lists/verify.py

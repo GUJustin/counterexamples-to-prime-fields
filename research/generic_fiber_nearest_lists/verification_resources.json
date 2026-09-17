@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/generic_fiber_nearest_lists/verify.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5561019580054563,
+  "peak_rss_kib": 5984,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 90
+}

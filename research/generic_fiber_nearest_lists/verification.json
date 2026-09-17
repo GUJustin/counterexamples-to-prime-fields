@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "fixtures": [
+    {
+      "B": 2,
+      "p": 1009,
+      "t": 3,
+      "n": 10,
+      "dimension": 4,
+      "maximum_agreement": 6,
+      "complete_nearest_list": 2,
+      "determining_supports": 210,
+      "distinct_interpolants": 182,
+      "nearest_polynomials": [
+        [
+          3,
+          0,
+          1008,
+          0
+        ],
+        [
+          1006,
+          0,
+          1,
+          0
+        ]
+      ],
+      "noncomposed_control_agreement": 4
+    },
+    {
+      "B": 3,
+      "p": 10009,
+      "t": 53,
+      "n": 15,
+      "dimension": 6,
+      "maximum_agreement": 9,
+      "complete_nearest_list": 2,
+      "determining_supports": 5005,
+      "distinct_interpolants": 4839,
+      "nearest_polynomials": [
+        [
+          53,
+          0,
+          0,
+          10008,
+          0,
+          0
+        ],
+        [
+          9956,
+          0,
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      "noncomposed_control_agreement": 6
+    }
+  ],
+  "scope": "Complete finite-field nearest lists for two specializations. General generic-fiber theorem is a separate algebraic proof, not inferred from these fixtures."
+}

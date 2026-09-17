@@ -342,3 +342,33 @@ left-nullity >= sum_i(A_i-k)-2m+k+4. At fixed gap full row rank requires
 L*eta<=2-rho-4/n. This is a limitation of that certificate method only;
 exactly dependent equations can still define a liftable smooth locus.
 A scalable construction must control these dependencies explicitly.
+
+## Generic fibers preserve complete nearest lists, September17
+
+research/generic_fiber_nearest_lists/PROOF.md gives a locally audited
+algebraic scaling lemma for ANY finite characteristic-zero received
+word, without a received-polynomial degree restriction. Replace source
+node a_i by all B roots of X^B=t+a_i over a transcendental t. Independent
+Kummer rotations of each fiber imply every degree<Bk candidate with
+at least B(k+1) agreements descends to Q(X^B-t), deg Q<k. Thus source
+maximum M>=k+1 becomes BM, with exactly the same complete nearest list,
+rate k/N, and gap (M-k)/N. Finite interpolation minors permit algebraic
+specialization and reduction at arbitrarily large completely split
+primes; no quantitative field bound. A positive-characteristic-only
+seed cannot be transported to different prime characteristics this way.
+
+Anchoring the degree B(k-1) variant and applying the unique-nearby
+compiler gives EXACT fixed parameters n=B(N+r), K=B(k-1), A=BM and
+exactly (Br+1)*ell uniquely nearby labels, where ell is the source
+nearest-list incidence at the anchor. All other labels, including0,
+have maximum agreement BM-1. The lifted Dickson seed gives, with r8,
+rate=gap=1/8 and at least n+3 unique-nearby labels. This is linear and
+not stronger than all existing fixed-gap constructions. The useful
+change is applicability to arbitrary finite characteristic-zero seeds.
+No growing list or exponent-tightness claim.
+
+The stdlib checker exhausts210 and5005 determining supports for two
+specializations (B2,F1009,t3 and B3,F10009,t53). Their complete nearest
+lists have size2, maximum agreements6 and9. Noncomposed controls stay
+below the theorem threshold. All checks pass under384MiB watchdog.
+Main manuscript remains157pages; new lemma is retained in research notes.
