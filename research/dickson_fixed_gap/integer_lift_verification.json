@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "scope": "same supports on integer representatives; not moving nodes",
+  "results": [
+    {
+      "p": 17,
+      "n": 16,
+      "k": 4,
+      "constraints": 16,
+      "native_rank": 11,
+      "auxiliary_prime": 65537,
+      "auxiliary_rank": 12,
+      "rational_rank_certified_exact": true,
+      "nontrivial_integer_node_lift_excluded": true
+    },
+    {
+      "p": 41,
+      "n": 40,
+      "k": 10,
+      "constraints": 100,
+      "native_rank": 29,
+      "auxiliary_prime": 65537,
+      "auxiliary_rank": 30,
+      "rational_rank_certified_exact": true,
+      "nontrivial_integer_node_lift_excluded": true
+    },
+    {
+      "p": 97,
+      "n": 96,
+      "k": 24,
+      "constraints": 576,
+      "native_rank": 71,
+      "auxiliary_prime": 65537,
+      "auxiliary_rank": 72,
+      "rational_rank_certified_exact": true,
+      "nontrivial_integer_node_lift_excluded": true
+    },
+    {
+      "p": 193,
+      "n": 192,
+      "k": 48,
+      "constraints": 2304,
+      "native_rank": 143,
+      "auxiliary_prime": 65537,
+      "auxiliary_rank": 144,
+      "rational_rank_certified_exact": true,
+      "nontrivial_integer_node_lift_excluded": true
+    }
+  ]
+}

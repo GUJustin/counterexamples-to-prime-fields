@@ -85,3 +85,31 @@ https://arxiv.org/html/2607.10572v1 (July 12, 2026). Their list-to-full-set-MCA
 transfer supports the need to distinguish this notion from ordinary
 correlated agreement. It does not by itself establish priority for this
 specific Dickson seed or the multi-coordinate count.
+
+## Direct integer-node transfer is excluded in four checked seeds
+
+`check_integer_lift.py` keeps every seed agreement support and replaces
+the field elements by their integer representatives 1,...,p-1. It allows
+an entirely new received word and entirely new degree-<k witnesses;
+it does not merely test the old polynomial coefficients.
+
+Eliminate each witness using its values at k anchor points of its support.
+Every remaining support point gives a homogeneous Lagrange interpolation
+constraint on the received word. Over the original field the ranks are
+11,29,71,143 for p=17,41,97,193. These are n-k-1, so the received-word
+space has the expected extra non-codeword direction.
+
+For the identical supports on integer nodes, reduction of the rational
+constraint matrix modulo the auxiliary prime 65537 has ranks 12,30,72,144,
+respectively. These equal n-k. Since all global degree-<k words lie in the
+rational kernel, its rank is at most n-k; the modular lower bound proves
+equality over Q. Therefore the only rational or characteristic-zero
+solutions on these fixed integer nodes are global codewords. Each witness
+must equal that same codeword, because it agrees on at least k points.
+
+This rules out a literal integer-node lift of all the recovered supports
+in these four examples. It is not a theorem for all primes, moving nodes,
+selected sublists, or different agreement patterns. A nonzero rational
+minor also implies that each fixed pattern is excluded over all but
+finitely many new characteristics; no explicit list of exceptional
+characteristics was computed. Guarded exact replay passes.

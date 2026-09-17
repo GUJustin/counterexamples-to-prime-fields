@@ -212,3 +212,15 @@ most 2D selected full-set exceptions. This closes this route at quarter
 rate; the genuinely two-high-degree-branch case remains open. Keep
 these routine rigidity observations in research notes, not more pages
 of the ePrint's main result section.
+
+Direct Dickson lift check: check_integer_lift.py preserves all agreement
+supports on integer representatives but allows new words and witnesses.
+For p=17,41,97,193 the interpolation constraint rank is n-k-1 in the
+native field and n-k modulo 65537, certifying rational rank n-k. Thus
+only the common global codeword survives on those integer nodes in
+characteristic zero. Moving nodes and other support patterns are NOT
+excluded. Results and scoped proof are in dickson_fixed_gap/AUDIT.md.
+The leading moment-count constant was rechecked: the main theorem
+already retains binomial factorial savings, so that does not offer a
+new asymptotic improvement. Continue seeking a different source of
+growing fixed-gap lists/line witnesses rather than rediscovering it.
