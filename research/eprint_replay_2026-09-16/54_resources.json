@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/gram_norm/verify_balanced_fibers.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5522390000005544,
+  "peak_rss_kib": 3632,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

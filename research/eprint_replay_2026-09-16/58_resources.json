@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/finite_weights/verify_certificates.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5537067909990583,
+  "peak_rss_kib": 6416,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

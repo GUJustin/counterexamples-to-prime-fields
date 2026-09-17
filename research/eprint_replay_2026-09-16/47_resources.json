@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/riccati_cross_ratio/boundary_search/verify_family.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5491928749997896,
+  "peak_rss_kib": 7200,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

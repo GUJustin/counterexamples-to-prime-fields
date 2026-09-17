@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "radial_certificates/verify_publication.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 12.225962832999357,
+  "peak_rss_kib": 36896,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

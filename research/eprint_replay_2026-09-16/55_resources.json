@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/structured_domains/verify_galois_fibers.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5520265000013751,
+  "peak_rss_kib": 2320,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

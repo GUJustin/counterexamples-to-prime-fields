@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "checks/verify_curve_puncturing.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.6199344169999677,
+  "peak_rss_kib": 15056,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

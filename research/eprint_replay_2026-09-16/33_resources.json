@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/bounded_root_mca/verify_wronskian.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.0805196669989527,
+  "peak_rss_kib": 20352,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

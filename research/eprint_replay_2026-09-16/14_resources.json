@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/gaussian_bound/verify_gaussian_hypotheses.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5634502499997325,
+  "peak_rss_kib": 6144,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

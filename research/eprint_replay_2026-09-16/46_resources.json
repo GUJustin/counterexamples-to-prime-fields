@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/riccati_cross_ratio/verify_boundary_extension.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5407425000012154,
+  "peak_rss_kib": 6752,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

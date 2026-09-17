@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "moment_certificates/verify_weights.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 32.10805345800145,
+  "peak_rss_kib": 50944,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

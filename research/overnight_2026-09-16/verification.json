@@ -5,6 +5,7 @@
       "command": [
         "clang++",
         "-O3",
+        "-UNDEBUG",
         "-std=c++17",
         "exact_distribution.cpp",
         "-o",
@@ -14,6 +15,7 @@
         "command": [
           "clang++",
           "-O3",
+          "-UNDEBUG",
           "-std=c++17",
           "exact_distribution.cpp",
           "-o",
@@ -21,8 +23,8 @@
         ],
         "reason": "completed",
         "returncode": 0,
-        "seconds": 1.6112710828892887,
-        "peak_rss_kib": 140816,
+        "seconds": 1.1101990829993156,
+        "peak_rss_kib": 125392,
         "rss_limit_mib": 384,
         "time_limit_seconds": 900
       }
@@ -31,6 +33,7 @@
       "command": [
         "clang++",
         "-O3",
+        "-UNDEBUG",
         "-std=c++17",
         "central_quadratic_histogram.cpp",
         "-o",
@@ -40,6 +43,7 @@
         "command": [
           "clang++",
           "-O3",
+          "-UNDEBUG",
           "-std=c++17",
           "central_quadratic_histogram.cpp",
           "-o",
@@ -47,113 +51,113 @@
         ],
         "reason": "completed",
         "returncode": 0,
-        "seconds": 1.076264957897365,
-        "peak_rss_kib": 127824,
+        "seconds": 1.6619622500002151,
+        "peak_rss_kib": 173824,
         "rss_limit_mib": 384,
         "time_limit_seconds": 900
       }
     },
     {
       "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
         "verify_exact_distribution.py"
       ],
       "resources": {
         "command": [
-          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
           "verify_exact_distribution.py"
         ],
         "reason": "completed",
         "returncode": 0,
-        "seconds": 4.294329083058983,
-        "peak_rss_kib": 216320,
+        "seconds": 6.144485459000862,
+        "peak_rss_kib": 236544,
         "rss_limit_mib": 384,
         "time_limit_seconds": 900
       }
     },
     {
       "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
         "verify_radial_projection_moments14.py"
       ],
       "resources": {
         "command": [
-          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
           "verify_radial_projection_moments14.py"
         ],
         "reason": "completed",
         "returncode": 0,
-        "seconds": 3.213030707789585,
-        "peak_rss_kib": 35376,
+        "seconds": 2.1909747919999063,
+        "peak_rss_kib": 36000,
         "rss_limit_mib": 384,
         "time_limit_seconds": 900
       }
     },
     {
       "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
         "verify_radial3d_projection_moments14.py"
       ],
       "resources": {
         "command": [
-          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
           "verify_radial3d_projection_moments14.py"
         ],
         "reason": "completed",
         "returncode": 0,
-        "seconds": 1.0866608750075102,
-        "peak_rss_kib": 75680,
+        "seconds": 0.5406183750001219,
+        "peak_rss_kib": 6960,
         "rss_limit_mib": 384,
         "time_limit_seconds": 900
       }
     },
     {
       "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
         "verify_tilted_radial_boundary.py",
         "--dimension",
         "4"
       ],
       "resources": {
         "command": [
-          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
           "verify_tilted_radial_boundary.py",
           "--dimension",
           "4"
         ],
         "reason": "completed",
         "returncode": 0,
-        "seconds": 1.6107889160048217,
-        "peak_rss_kib": 73744,
+        "seconds": 1.0757967919998919,
+        "peak_rss_kib": 71680,
         "rss_limit_mib": 384,
         "time_limit_seconds": 900
       }
     },
     {
       "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
         "verify_tilted_radial_boundary.py",
         "--dimension",
         "3"
       ],
       "resources": {
         "command": [
-          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
           "verify_tilted_radial_boundary.py",
           "--dimension",
           "3"
         ],
         "reason": "completed",
         "returncode": 0,
-        "seconds": 1.0749164170119911,
-        "peak_rss_kib": 76416,
+        "seconds": 0.5398768329996528,
+        "peak_rss_kib": 2464,
         "rss_limit_mib": 384,
         "time_limit_seconds": 900
       }
     },
     {
       "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
         "verify_exact_support_incidences.py",
         "--n",
         "82",
@@ -164,7 +168,7 @@
       ],
       "resources": {
         "command": [
-          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
           "verify_exact_support_incidences.py",
           "--n",
           "82",
@@ -175,85 +179,85 @@
         ],
         "reason": "completed",
         "returncode": 0,
-        "seconds": 50.88441483397037,
-        "peak_rss_kib": 104528,
+        "seconds": 30.513033499999437,
+        "peak_rss_kib": 103984,
         "rss_limit_mib": 384,
         "time_limit_seconds": 900
       }
     },
     {
       "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
         "verify_saved_scalar.py"
       ],
       "resources": {
         "command": [
-          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
           "verify_saved_scalar.py"
         ],
         "reason": "completed",
         "returncode": 0,
-        "seconds": 0.5376708330586553,
-        "peak_rss_kib": 336,
+        "seconds": 0.564468874999875,
+        "peak_rss_kib": 6480,
         "rss_limit_mib": 384,
         "time_limit_seconds": 900
       }
     },
     {
       "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
         "certify_circle_product_dyadic.py"
       ],
       "resources": {
         "command": [
-          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
           "certify_circle_product_dyadic.py"
         ],
         "reason": "completed",
         "returncode": 0,
-        "seconds": 10.15317029086873,
-        "peak_rss_kib": 58048,
+        "seconds": 9.98747020799965,
+        "peak_rss_kib": 66080,
         "rss_limit_mib": 384,
         "time_limit_seconds": 900
       }
     },
     {
       "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
         "verify_circle_product_orbits.py"
       ],
       "resources": {
         "command": [
-          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
           "verify_circle_product_orbits.py"
         ],
         "reason": "completed",
         "returncode": 0,
-        "seconds": 0.5452632918022573,
-        "peak_rss_kib": 32,
+        "seconds": 0.5569690000011178,
+        "peak_rss_kib": 3568,
         "rss_limit_mib": 384,
         "time_limit_seconds": 900
       }
     },
     {
       "command": [
-        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
         "verify_circle_product_dyadic_output.py"
       ],
       "resources": {
         "command": [
-          "/opt/homebrew/opt/python@3.14/bin/python3.14",
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
           "verify_circle_product_dyadic_output.py"
         ],
         "reason": "completed",
         "returncode": 0,
-        "seconds": 2.2016379160340875,
-        "peak_rss_kib": 20880,
+        "seconds": 1.6727987499998562,
+        "peak_rss_kib": 32768,
         "rss_limit_mib": 384,
         "time_limit_seconds": 900
       }
     }
   ],
-  "seconds": 79.25950170913711,
+  "seconds": 57.0629116250002,
   "scope": "New finite-certificate integration. Includes n64 complementary enumeration, saved projection identities and raw moments, both displaced weights, n82 coordinate recount and exact dual replay, and native-circle arithmetic. Does not rerun the full original projection subset counts or the pre-existing paper suite."
 }

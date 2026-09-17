@@ -8,7 +8,7 @@ ROOT=Path(__file__).resolve().parent
 
 def main():
     binary=ROOT/'check_balanced_rational_pencils'
-    subprocess.run(['clang++','-O2','-std=c++17',str(ROOT/'check_balanced_rational_pencils.cpp'),
+    subprocess.run(['clang++','-O2','-UNDEBUG','-std=c++17',str(ROOT/'check_balanced_rational_pencils.cpp'),
                     '-o',str(binary)],check=True)
     output=subprocess.check_output([str(binary)],text=True)
     rows=[json.loads(line) for line in output.splitlines()]

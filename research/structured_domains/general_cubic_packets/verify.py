@@ -100,7 +100,7 @@ def main():
         binaries = {}
         for kind in ('general', 'constant'):
             binary = Path(temporary)/kind
-            subprocess.run(['c++', '-O3', '-std=c++17', str(BASE/f'verify_{kind}.cpp'),
+            subprocess.run(['c++', '-O3', '-UNDEBUG', '-std=c++17', str(BASE/f'verify_{kind}.cpp'),
                             '-o', str(binary)], check=True)
             binaries[kind] = binary
         for prime, size in ((97, 8), (193, 16)):

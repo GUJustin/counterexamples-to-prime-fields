@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/first_order_actual_components/verify_reconstruction.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.0744089589989017,
+  "peak_rss_kib": 71616,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

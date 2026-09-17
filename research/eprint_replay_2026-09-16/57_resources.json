@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/finite_weights/verify_chebyshev.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 42.1678016249989,
+  "peak_rss_kib": 77552,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

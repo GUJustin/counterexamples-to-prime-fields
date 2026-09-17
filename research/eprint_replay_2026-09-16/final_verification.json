@@ -1,0 +1,1126 @@
+{
+  "status": "PASS",
+  "checked_utc": "2026-09-17T03:15:48.143047+00:00",
+  "makefile_default_checks": 62,
+  "checks": [
+    {
+      "command": "checks/actual_list_tightened_check.py",
+      "returncode": 0,
+      "log": "00.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "checks/actual_list_tightened_check.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 0.578816541001288,
+        "peak_rss_kib": 5152,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "4c66032069970dcd838b31eb125414e6cb442fe53228cb16c7ea820c1e45499e"
+    },
+    {
+      "command": "checks/actual_list_chain_check.py",
+      "returncode": 0,
+      "log": "01.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "checks/actual_list_chain_check.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 2.305878875000417,
+        "peak_rss_kib": 18784,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "059ddbb4a7d2ffdfd0b270f6b199e41bed83b22c8e7abf1fe00982ddeb902788"
+    },
+    {
+      "command": "checks/actual_list_chain_conditional_audit.py",
+      "returncode": 0,
+      "log": "02.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "checks/actual_list_chain_conditional_audit.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 0.5575925419998384,
+        "peak_rss_kib": 14240,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "253d23cd533a8a49ca54b1bed61b14dda711b831a99defd5cd972be6948e3dbe"
+    },
+    {
+      "command": "checks/astra_rs_all_surplus_check.py",
+      "returncode": 0,
+      "log": "03.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "checks/astra_rs_all_surplus_check.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 1.1387993339994864,
+        "peak_rss_kib": 19984,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "4a105406dc0d28bef9bed12bd7ce896d45e531ff7051a6b772852b320d9e283c"
+    },
+    {
+      "command": "checks/actual_list_global_small_check.py",
+      "returncode": 0,
+      "log": "04.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "checks/actual_list_global_small_check.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 3.9069203749986627,
+        "peak_rss_kib": 18096,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "f275c44e2e890503f086c5759c9e188313c4f64c13264e3952ef269e9e01b785"
+    },
+    {
+      "command": "checks/verify_puncturing_bound.py",
+      "returncode": 0,
+      "log": "05.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "checks/verify_puncturing_bound.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 0.5554242090001935,
+        "peak_rss_kib": 5952,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "cf63a8d40d5367a116978443c2321b451c5a1eaa66d06fe18912dd436c25aed0"
+    },
+    {
+      "command": "checks/verify_curve_puncturing.py",
+      "returncode": 0,
+      "log": "06.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "checks/verify_curve_puncturing.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 0.6199344169999677,
+        "peak_rss_kib": 15056,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "bea97ae5a3705c2af0ce726778a8343d679e1e62681610adca268a7c695d65c9"
+    },
+    {
+      "command": "checks/astra_syndrome_determinants_check.py",
+      "returncode": 0,
+      "log": "07.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "checks/astra_syndrome_determinants_check.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 1.6893519160003052,
+        "peak_rss_kib": 23120,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "d12bfa5b4e95a88ee1ce36135b0699e98e5a3ecd6fe9b8f8630eb66ba9120f5f"
+    },
+    {
+      "command": "checks/verify_conditional_moments.py",
+      "returncode": 0,
+      "log": "08.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "checks/verify_conditional_moments.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 3.364883333000762,
+        "peak_rss_kib": 27936,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "4dcea830bc5b83fd420c38ab78919cf253217a7a60128b9d747921d538b5ffb8"
+    },
+    {
+      "command": "moment_certificates/verify_weights.py",
+      "returncode": 0,
+      "log": "09.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "moment_certificates/verify_weights.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 32.10805345800145,
+        "peak_rss_kib": 50944,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "b23e7bfdd68c4d41dc791063fbdec0362acf45148db5471920039e579caa313b"
+    },
+    {
+      "command": "moment_certificates/verify_concentration.py",
+      "returncode": 0,
+      "log": "10.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "moment_certificates/verify_concentration.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 0.5478547500006243,
+        "peak_rss_kib": 6624,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "95d89043f7ab9f1ddbb0cbc8e224c0f26a42091d516a1fa18fa8a56843d683fb"
+    },
+    {
+      "command": "checks/check_gram_ellipsoid.py",
+      "returncode": 0,
+      "log": "11.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "checks/check_gram_ellipsoid.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 0.5358051659986813,
+        "peak_rss_kib": 7840,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "bdc62930cabb52407190b2d84e4c1a2ce61b8cc2c09c364f4d21180c15fb7e2e"
+    },
+    {
+      "command": "research/gram_norm/verify_gram_norm.py",
+      "returncode": 0,
+      "log": "12.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/gram_norm/verify_gram_norm.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 2.1960227500003384,
+        "peak_rss_kib": 19040,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "cf76a46d5aa6ff4dade6ff2869fb14b6b2d7d49c034ae55263a7b8d088325fca"
+    },
+    {
+      "command": "research/ellipsoid_bound/verify_lattice_bound.py",
+      "returncode": 0,
+      "log": "13.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/ellipsoid_bound/verify_lattice_bound.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 1.7132282499987923,
+        "peak_rss_kib": 18944,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "9bc808e01020a79501da413b00c1d47a8e8e999703dcc9bcb57e04537ebc3799"
+    },
+    {
+      "command": "research/gaussian_bound/verify_gaussian_hypotheses.py",
+      "returncode": 0,
+      "log": "14.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/gaussian_bound/verify_gaussian_hypotheses.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 0.5634502499997325,
+        "peak_rss_kib": 6144,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "42ced998ca0932c9650a6656d6ad3ed4a9ed750fac5988b13195c3b793dae3bb"
+    },
+    {
+      "command": "research/growing_m/verify_growing_m.py",
+      "returncode": 0,
+      "log": "15.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/growing_m/verify_growing_m.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 0.5514000410003064,
+        "peak_rss_kib": 3872,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "7f7fe2e2f4cd966bb55abe90026e4a563a504399744961600781b677a8d01e5c"
+    },
+    {
+      "command": "research/growing_m/verify_wide_regime.py",
+      "returncode": 0,
+      "log": "16.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/growing_m/verify_wide_regime.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 0.5569451659994229,
+        "peak_rss_kib": 14896,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "402526470ee1a2a8dac59175566530440f6dd019ce225888189aefbb69fe975b"
+    },
+    {
+      "command": "research/curve_audit/verify_curve_endpoint.py",
+      "returncode": 0,
+      "log": "17.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/curve_audit/verify_curve_endpoint.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 2.427995916999862,
+        "peak_rss_kib": 22016,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "bb15b1901400a44fa32db2e052a16e739ab8dd1ee897638acd7a88a54daa52d6"
+    },
+    {
+      "command": "research/curve_audit/verify_formal_degree.py",
+      "returncode": 0,
+      "log": "18.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/curve_audit/verify_formal_degree.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 0.5750970419994701,
+        "peak_rss_kib": 13328,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "754d793dff8cdf1e0c5461558ffa2f617a9e04d4f0536ee5e1577f0760efbfd7"
+    },
+    {
+      "command": "research/puncturing_improvement/verify_support_incidence.py",
+      "returncode": 0,
+      "log": "19.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/puncturing_improvement/verify_support_incidence.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 1.6795284999989235,
+        "peak_rss_kib": 20704,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "6c1b761562116d751cae3dcd07771d6c055397c17da26ad44cc53a0fbdd9f73a"
+    },
+    {
+      "command": "research/structured_domains/verify_transfer_limits.py",
+      "returncode": 0,
+      "log": "20.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/structured_domains/verify_transfer_limits.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 1.1473284999992757,
+        "peak_rss_kib": 18736,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "e314f174a6139bd6fa72158ecabecb1d05ef6554578bc3be6779618553519bed"
+    },
+    {
+      "command": "research/structured_domains/frobenius_index/verify_rational_frobenius_index.py",
+      "returncode": 0,
+      "log": "21.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/structured_domains/frobenius_index/verify_rational_frobenius_index.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 0.5428014999997686,
+        "peak_rss_kib": 2608,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "1a166e264da35d1f13ddb555701c1f2780df95f69b49644b5533cc998f2a43dd"
+    },
+    {
+      "command": "research/structured_domains/frobenius_index/verify_balanced_rational_pencils.py",
+      "returncode": 0,
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/structured_domains/frobenius_index/verify_balanced_rational_pencils.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 2.705303875000027,
+        "peak_rss_kib": 183888,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "resource_file": "research/eprint_replay_2026-09-16/balanced_assertions_resources.json",
+      "checker_sha256": "eab90a32dfc3c1105c37036dcdfb415553e5c6c7cf57d1d8e5ff56ba50625f8e"
+    },
+    {
+      "command": "research/structured_domains/frobenius_index/check_near_balanced.py",
+      "returncode": 0,
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/structured_domains/frobenius_index/check_near_balanced.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 1.0839258329997392,
+        "peak_rss_kib": 53888,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "resource_file": "research/eprint_replay_2026-09-16/near_balanced_assertions_resources.json",
+      "checker_sha256": "cb067b2a5adee1f429284992b5bba05f018978d53b8611df1b3a0ae6ba1c3eb1"
+    },
+    {
+      "command": "research/structured_domains/general_cubic_packets/verify.py",
+      "returncode": 0,
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/structured_domains/general_cubic_packets/verify.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 7.268313125001441,
+        "peak_rss_kib": 189680,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "resource_file": "research/eprint_replay_2026-09-16/cubic_assertions_resources.json",
+      "checker_sha256": "f8e48ce2eaaaeb55b878d7494b6ff85ad0e024b1046a438445426d7a2f00d848"
+    },
+    {
+      "command": "research/fixed_gap_padding/verify_anchored_padding.py",
+      "returncode": 0,
+      "log": "25.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/fixed_gap_padding/verify_anchored_padding.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 1.6587232919991948,
+        "peak_rss_kib": 19360,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "007856bca188e2eaaed835a55a51f2187269937359f50e2cc98395dc2e0e94dc"
+    },
+    {
+      "command": "research/linear_differential_mca/verify.py",
+      "returncode": 0,
+      "log": "26.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/linear_differential_mca/verify.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 0.556573791000119,
+        "peak_rss_kib": 3488,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "5d8e6fbe66ce3195a4c09fa9de83afd9fc9b1861ed088f83a2eae76c3bb16053"
+    },
+    {
+      "command": "research/spectral_riccati/verify_constant.py",
+      "returncode": 0,
+      "log": "27.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/spectral_riccati/verify_constant.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 3.4104389999993145,
+        "peak_rss_kib": 19152,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "0f8c47f8872c6fbd0ab7b62bd5dc7a6a00722d5aa8b9c54bc1eae409bdf48a83"
+    },
+    {
+      "command": "research/spectral_riccati/verify_weighted.py",
+      "returncode": 0,
+      "log": "28.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/spectral_riccati/verify_weighted.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 3.9008029579999857,
+        "peak_rss_kib": 23984,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "ff4913a68fca89322f6f55ccf8e7e01668e3fce97573cfebec9643d40fc34872"
+    },
+    {
+      "command": "research/power_family_mca/verify_family.py",
+      "returncode": 0,
+      "log": "29.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/power_family_mca/verify_family.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 7.55272716699983,
+        "peak_rss_kib": 20032,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "c7162d2dfc99095f2e8bbd3aad305fc85abbd764b9d6a2f83d7473c0cc9b8edd"
+    },
+    {
+      "command": "research/power_family_mca/verify_wronskian.py",
+      "returncode": 0,
+      "log": "30.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/power_family_mca/verify_wronskian.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 3.3807264999995823,
+        "peak_rss_kib": 21008,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "c1b4b6112d00c49d61754e32d408be7f18617ebb1601beb958ef25643bae6a35"
+    },
+    {
+      "command": "research/power_family_mca/verify_mca.py",
+      "returncode": 0,
+      "log": "31.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/power_family_mca/verify_mca.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 4.485976208001375,
+        "peak_rss_kib": 20896,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "8dfa97240141f95a4db9af763b9e1d107db4b364f3dd3d13628ddbd807df3638"
+    },
+    {
+      "command": "research/power_family_mca/verify_parameters.py",
+      "returncode": 0,
+      "log": "32.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/power_family_mca/verify_parameters.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 0.5501604580003914,
+        "peak_rss_kib": 6432,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "515abd8456ac6c901a4432a56f3bd997d4bd2c91537d030bcabda46ea916faeb"
+    },
+    {
+      "command": "research/bounded_root_mca/verify_wronskian.py",
+      "returncode": 0,
+      "log": "33.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/bounded_root_mca/verify_wronskian.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 1.0805196669989527,
+        "peak_rss_kib": 20352,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "fbdba16010fa4069bcb5035d83b79e4b2b2f8d746bcdfb48d94d16725a31de19"
+    },
+    {
+      "command": "research/bounded_root_mca/verify_clusters.py",
+      "returncode": 0,
+      "log": "34.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/bounded_root_mca/verify_clusters.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 0.5406765420011652,
+        "peak_rss_kib": 6768,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "10d49d6ffec2298f89955fb0b752041a11034aff0db470b63a9385de3cbef1fb"
+    },
+    {
+      "command": "research/first_order_actual_components/verify_reconstruction.py",
+      "returncode": 0,
+      "log": "35.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/first_order_actual_components/verify_reconstruction.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 1.0744089589989017,
+        "peak_rss_kib": 71616,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "347859754714138fae9412c651b57395c2f3b0af00b45288397b259fdc17dc2a"
+    },
+    {
+      "command": "research/first_order_actual_components/verify_curve_family.py",
+      "returncode": 0,
+      "log": "36.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/first_order_actual_components/verify_curve_family.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 0.53970124999978,
+        "peak_rss_kib": 8192,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "53c5ab2f9e42f555cd0e214b8e05e04144bb3102d502788fedcdea029c4f0fb8"
+    },
+    {
+      "command": "research/first_order_actual_components/verify_isolated_family.py",
+      "returncode": 0,
+      "log": "37.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/first_order_actual_components/verify_isolated_family.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 2.685916750000615,
+        "peak_rss_kib": 25824,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "9c78045c72e048ab8a0a6797e395bd4b50fd5c806d7d8f94fc620cf1cfa478a9"
+    },
+    {
+      "command": "research/quasilinear_first_order/verify.py",
+      "returncode": 0,
+      "log": "38.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/quasilinear_first_order/verify.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 1.0739531250001164,
+        "peak_rss_kib": 19488,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "a27d6cac34ce6c482d23b9b689643aa91af308b62936a19583b4cf857115bb4e"
+    },
+    {
+      "command": "research/isolated_solution_sharpness/verify_reconstruction.py",
+      "returncode": 0,
+      "log": "39.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/isolated_solution_sharpness/verify_reconstruction.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 0.5463392500005284,
+        "peak_rss_kib": 6256,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "2ffdf26bf37c515b779e398cefdee095754dd8c5e3f5d9fc2335cecf12dafa1d"
+    },
+    {
+      "command": "research/isolated_solution_sharpness/verify_family.py",
+      "returncode": 0,
+      "log": "40.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/isolated_solution_sharpness/verify_family.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 0.5471911660006299,
+        "peak_rss_kib": 6832,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "5a26dbb24b7344ed6d190a92fcf3bc4fabd62a87e6492752bbde394019eeded1"
+    },
+    {
+      "command": "research/actual_higher_order_components/verify.py",
+      "returncode": 0,
+      "log": "41.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/actual_higher_order_components/verify.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 1.072196332999738,
+        "peak_rss_kib": 19664,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "1e2cc221b38ff2205416554f87f2ae5ed6f05a56d8d1b6192abaa16d2c5fe15b"
+    },
+    {
+      "command": "research/actual_higher_order_components/verify_fixed_fiber.py",
+      "returncode": 0,
+      "log": "42.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/actual_higher_order_components/verify_fixed_fiber.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 1.0796904170001653,
+        "peak_rss_kib": 20400,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "13c3e4417c831158c361992123c59c74a8f0a3e9ef7e0f65789a6d9520e2b8f2"
+    },
+    {
+      "command": "research/inverse_bernoulli/verify.py",
+      "returncode": 0,
+      "log": "43.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/inverse_bernoulli/verify.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 1.6146855839997443,
+        "peak_rss_kib": 23952,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "446f2d8925928be2c7017165c0694648917256967e96ceaf5e1b29813af410b4"
+    },
+    {
+      "command": "research/riccati_cross_ratio/verify.py",
+      "returncode": 0,
+      "log": "44.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/riccati_cross_ratio/verify.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 1.6216041659990879,
+        "peak_rss_kib": 19888,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "8103c33b698109a5349c04869cd43348a9c3b445a3e602e7f414ccdc34b6fc25"
+    },
+    {
+      "command": "research/riccati_cross_ratio/verify_multiplicities.py",
+      "returncode": 0,
+      "log": "45.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/riccati_cross_ratio/verify_multiplicities.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 9.159093790998668,
+        "peak_rss_kib": 19008,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "c2823d1cbbd69c082f6fed6bfb73ca648f6ab05a4f2cc8416ed7b2ae111df23c"
+    },
+    {
+      "command": "research/riccati_cross_ratio/verify_boundary_extension.py",
+      "returncode": 0,
+      "log": "46.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/riccati_cross_ratio/verify_boundary_extension.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 0.5407425000012154,
+        "peak_rss_kib": 6752,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "2065f1ba4b1a997f92ed2b5a635c8d0e0c3e8ec551aa1c56a8ffced9f8129438"
+    },
+    {
+      "command": "research/riccati_cross_ratio/boundary_search/verify_family.py",
+      "returncode": 0,
+      "log": "47.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/riccati_cross_ratio/boundary_search/verify_family.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 0.5491928749997896,
+        "peak_rss_kib": 7200,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "577915eb0ca8f59b93f4840d11c3a944320ecafaac3136079d7884fc16a5bffd"
+    },
+    {
+      "command": "research/logarithmic_length_lines/verify.py",
+      "returncode": 0,
+      "log": "48.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/logarithmic_length_lines/verify.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 4.905825207999442,
+        "peak_rss_kib": 24896,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "34f33037329925b8748be2621f20d54308ee994379118e2a6067cefc94b733a5"
+    },
+    {
+      "command": "research/prime_exponent_coefficients/verify.py",
+      "returncode": 0,
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/bin/python3.12",
+          "research/prime_exponent_coefficients/verify.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 0.5594421249988955,
+        "peak_rss_kib": 6640,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 180
+      },
+      "resource_file": "research/prime_exponent_coefficients/check_resources.json",
+      "checker_sha256": "d62a5251d39964187f987987beb201f28e7bb81203147c11be13c8f4fd1f7601"
+    },
+    {
+      "command": "research/binary_affine_locator/verify.py",
+      "returncode": 0,
+      "log": "49.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/binary_affine_locator/verify.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 0.5489282500002446,
+        "peak_rss_kib": 7824,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "b97bf0a1c41bf2f2c8c0fe35b16783561b4c1d6b33cd249720295cc5985e488d"
+    },
+    {
+      "command": "research/binary_affine_locator/check_codimension_two_transfer.py",
+      "returncode": 0,
+      "log": "50.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/binary_affine_locator/check_codimension_two_transfer.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 0.5450227920009638,
+        "peak_rss_kib": 6608,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "990c02ba09a585b2a838b6ef8ce74abc68739d886a941cd53a9a7914b66d0a61"
+    },
+    {
+      "command": "research/binary_affine_locator/check_multiplicative_orbit_transfer.py",
+      "returncode": 0,
+      "log": "51.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/binary_affine_locator/check_multiplicative_orbit_transfer.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 2.199077750001379,
+        "peak_rss_kib": 20032,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "409915a849f239583bfd2cb11396c7f93f49cf26c77b2272692db4695b12794f"
+    },
+    {
+      "command": "research/binary_affine_locator/check_multiplicative_label_rigidity.py",
+      "returncode": 0,
+      "log": "52.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/binary_affine_locator/check_multiplicative_label_rigidity.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 2.7703861669997423,
+        "peak_rss_kib": 27856,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "d43daff18f233a67075658b9c228f12fa27813b0de3addd833b225ca7c2b7a18"
+    },
+    {
+      "command": "research/structured_domains/verify_balanced_fibers.py",
+      "returncode": 0,
+      "log": "53.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/structured_domains/verify_balanced_fibers.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 0.554005165999115,
+        "peak_rss_kib": 3760,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "542697cd1c8b6b6f8fe73507b33ef25ed0f8e4228188615aff7a7c0956e30a30"
+    },
+    {
+      "command": "research/gram_norm/verify_balanced_fibers.py",
+      "returncode": 0,
+      "log": "54.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/gram_norm/verify_balanced_fibers.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 0.5522390000005544,
+        "peak_rss_kib": 3632,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "d8241314e0f9f6267c13b267eb5160c894deff01601457edf257ba438aef5cfd"
+    },
+    {
+      "command": "research/structured_domains/verify_galois_fibers.py",
+      "returncode": 0,
+      "log": "55.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/structured_domains/verify_galois_fibers.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 0.5520265000013751,
+        "peak_rss_kib": 2320,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "08fbb09a3d83f20855a54b00a48a63a4f575082149d93536333cbd4b8507ba9c"
+    },
+    {
+      "command": "research/gram_norm/verify_galois_boundaries.py",
+      "returncode": 0,
+      "log": "56.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/gram_norm/verify_galois_boundaries.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 0.5525983329989685,
+        "peak_rss_kib": 6416,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "e2f9ff1a5929266d4a48bee8ecfa6352f8d2f157a0fd9ee2895ae649c1446d40"
+    },
+    {
+      "command": "research/finite_weights/verify_chebyshev.py",
+      "returncode": 0,
+      "log": "57.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/finite_weights/verify_chebyshev.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 42.1678016249989,
+        "peak_rss_kib": 77552,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "cf5a671f6b02be47864c188aa79921556a07754133ec2e928addda339e28904a"
+    },
+    {
+      "command": "research/finite_weights/verify_certificates.py",
+      "returncode": 0,
+      "log": "58.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/finite_weights/verify_certificates.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 0.5537067909990583,
+        "peak_rss_kib": 6416,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "b74b40a96e7e2dd32c4fd02a98e3a189b5bab81078077b91ebb300174e718920"
+    },
+    {
+      "command": "radial_certificates/verify_publication.py",
+      "returncode": 0,
+      "log": "59.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "radial_certificates/verify_publication.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 12.225962832999357,
+        "peak_rss_kib": 36896,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 900
+      },
+      "checker_sha256": "5ca8ded6580ac46a6948a7ae454f0e681ca0072a6e38f1c977645a6f3199a78f"
+    },
+    {
+      "command": "research/overnight_2026-09-16/verify.py",
+      "returncode": 0,
+      "log": "60.log",
+      "resources": {
+        "command": [
+          "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+          "research/overnight_2026-09-16/verify.py"
+        ],
+        "reason": "completed",
+        "returncode": 0,
+        "seconds": 57.11764133299948,
+        "peak_rss_kib": 41808,
+        "rss_limit_mib": 384,
+        "time_limit_seconds": 10800
+      },
+      "checker_sha256": "1421e37df7c209a82d0291f2a7cd54cfd57a28b8209162cb4d7d232fa83e5371"
+    }
+  ],
+  "initial_report": "verification.json",
+  "initial_failure_preserved": "The cubic check initially failed because Zig optimized builds defined NDEBUG. Assertions are now explicitly enabled. All three affected earlier compiled checks were rerun successfully; the overnight replay used the corrected flags on its first run.",
+  "scope": "Current default Makefile verification commands, sequential resource-bounded runs. Existing exhaustive cubic coverage is checked from archived records; no --full cubic rerun. Numerical checks supplement proofs and do not establish unproved conjectures."
+}

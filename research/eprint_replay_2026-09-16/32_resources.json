@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/power_family_mca/verify_parameters.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5501604580003914,
+  "peak_rss_kib": 6432,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

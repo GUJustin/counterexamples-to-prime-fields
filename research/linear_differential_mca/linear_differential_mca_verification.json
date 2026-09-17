@@ -979,6 +979,6 @@
     }
   ],
   "characteristic_negative_control": true,
-  "seconds": 0.4412859159056097,
+  "seconds": 0.32736874999864085,
   "scope": "Finite polynomial-matrix checks, including exact generic minors, rank drops, inhomogeneous systems, determining-tuple counts, Cramer residual degrees, full-support witnesses, and both proof branches. These supplement the written theorem."
 }

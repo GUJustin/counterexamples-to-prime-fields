@@ -38,3 +38,12 @@ reduce every family of at least three solutions to one enumerated
 group. Thus the maximum over these groups plus {0,U} is exhaustive
 over equations with at least three solutions over the stated prime
 field. It makes no assertion about extension-field solutions.
+
+Completed scans over F3 with D=2 and F5 with D=4 give maxima 5 and 7,
+respectively. The latter covers 2,439,063 normalized ordered pairs.
+Both were rerun with assertions enabled, and verify_scan.py independently
+enumerates every degree-bounded polynomial for the maximizing equations.
+Compile with `c++ -O2 -UNDEBUG -std=c++17 scan.cpp -o scan`; then use
+`scan 3 2` or `scan 5 4` under the resource watchdog. On the new laptop,
+the compiler is `zig c++ -target aarch64-macos.14.0`. The -UNDEBUG flag
+is required for meaningful assertion checks with Zig's optimized mode.

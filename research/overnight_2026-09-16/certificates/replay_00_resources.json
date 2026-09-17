@@ -2,6 +2,7 @@
   "command": [
     "clang++",
     "-O3",
+    "-UNDEBUG",
     "-std=c++17",
     "exact_distribution.cpp",
     "-o",
@@ -9,8 +10,8 @@
   ],
   "reason": "completed",
   "returncode": 0,
-  "seconds": 1.6112710828892887,
-  "peak_rss_kib": 140816,
+  "seconds": 1.1101990829993156,
+  "peak_rss_kib": 125392,
   "rss_limit_mib": 384,
   "time_limit_seconds": 900
 }

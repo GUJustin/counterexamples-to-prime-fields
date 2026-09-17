@@ -20,7 +20,7 @@
     "improvement_ratio": 21.50256157598556,
     "lower_bound_log2": 39.97303009494214,
     "dp_updates": 494360,
-    "elapsed_seconds": 2.9765918330522254,
+    "elapsed_seconds": 2.9666811659990344,
     "concentration": {
       "first_moment": 1071,
       "center": 22138,

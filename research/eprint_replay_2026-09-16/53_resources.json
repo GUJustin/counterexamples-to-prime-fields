@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/structured_domains/verify_balanced_fibers.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.554005165999115,
+  "peak_rss_kib": 3760,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

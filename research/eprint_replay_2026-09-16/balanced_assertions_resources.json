@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/structured_domains/frobenius_index/verify_balanced_rational_pencils.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 2.705303875000027,
+  "peak_rss_kib": 183888,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

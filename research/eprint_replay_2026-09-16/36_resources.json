@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/first_order_actual_components/verify_curve_family.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.53970124999978,
+  "peak_rss_kib": 8192,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

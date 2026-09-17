@@ -641,7 +641,9 @@ The exact inequality $p^2>2^{64}$ verifies the sufficient Elias condition.
 At $p=2^{521}-1$, $n=4096$, $k=2048$, $s=8$, the same formula gives
 $L>2^{3600}$, compared with $2^{512}$. The exact inequality
 $p^8>2^{4096}$ verifies Elias. At $c_1=1$, this example forces $c_2>7$.
-A larger example over the same prime forces $c_2>22$.
+A larger example over the same prime, using Gram concentration, forces
+$c_2>27.31865$. Already over $p=2^{31}-1$, an interval-domain
+example forces $c_2>2.00475$ at rate one-half.
 Appendix~\ref{app:finite-certificates} records the exact parameters and counts.
 As a small check of the algebra, among the $12{,}870$ eight-subsets of
 $\{0,\ldots,15\}$, the binomial-moment class $(56,252)$ has exactly $22$
@@ -2925,6 +2927,18 @@ The logarithm of the right-hand side of
 the constructed list has a logarithm linear in $n$. Changing fixed
 constants cannot close that gap.
 
+Even a polynomial dependence of the prefactor on the prime cannot
+repair a constant exponent coefficient. More precisely, suppose the
+prescription is required for every eligible code over each sufficiently
+large $\F_p$, allowing $c_1=c_1(p)\le p^K$ for a fixed $K$ and
+$c_2=c_2(p)$. Corollary~\ref{gm:gap-field}, with $b=\log_2p$,
+forces
+\[
+ c_2(p)\ge(1/2-o(1))\frac{\log_2p}{\log_2\log_2p}.
+\]
+Indeed its list logarithm is at least $(1/2-o(1))b^2/\log_2b$,
+whereas the proposed logarithm is at most $Kb+(1+o(1))c_2(p)b$.
+
 This conclusion uses growing prime fields and a decreasing gap.
 It does not assert exponential lists at a fixed positive gap, and it
 does not rule out stronger guarantees for a restricted class of
@@ -4867,30 +4881,50 @@ recovery procedure for fresh queries with a claim fixed in advance.
 \section{Checks and provenance}
 \subsection{Exact interval certificates}\label{app:finite-certificates}
 
-The rounded comparisons in the main text follow from
-Lemma~\ref{im:finite-list} and Proposition~\ref{prop:conditional-moments}. The following table records the integers
-needed to check the three list examples. All have $k=n/2$.
+The comparisons in the main text follow from the moment-class bounds
+and the exact certificates below. All examples have $k=n/2$,
+agreement $t=k+s$, and gap $\eta=s/n$. The last column gives a
+strict lower bound on $\log_2L$.
 \begin{center}
 \begin{tabular}{rrrr}
 \toprule
 $p$ & $n$ & $s$ & Certified strict lower bound on $\log_2 L$\\
 \midrule
- $2^{127}-1$ & 64 & 2 & 41\\
+$2^{31}-1$ & 154 & 5 & 61.74656\\
+$2^{61}-1$ & 548 & 9 & 242.16447\\
+ $2^{127}-1$ & 64 & 2 & 42\\
+$2^{127}-1$ & 2158 & 17 & 995.98234\\
 $2^{521}-1$ & 4096 & 8 & 3634\\
-$2^{521}-1$ & 23444 & 45 & 11567\\
+$2^{521}-1$ & 29176 & 56 & 14233.01899\\
 \bottomrule
 \end{tabular}
 \end{center}
-For the first row the original denominator product is $32{,}285{,}041$,
+For the length-$64$ row the original denominator product is $32{,}285{,}041$,
 giving $50{,}186{,}958{,}429$ codewords. The conditional dispersion
 certificate~\eqref{eq:conditional-n64} strengthens this to
-$2{,}674{,}048{,}230{,}075$, yielding the displayed exponent $41$.
-For every row, exact integer arithmetic gives $p^s>2^n$, certifying
-the sufficient below-Elias condition $\eta\log_2p>1$.
-For the last row, a bound $2^{c_2/\eta}$ would require
+$2{,}674{,}048{,}230{,}075$; the exact enumeration in
+Section~\ref{sec:overnight-exact64} further gives
+$5{,}552{,}914{,}238{,}035>2^{42}$.
+The length-$4096$ row uses Lemma~\ref{im:finite-list}. The four
+decimal rows use Proposition~\ref{prop:gram-ellipsoid}, with rational
+upper bounds for its denominator and outward rational intervals for
+logarithms. Their checker is in
+\path{research/prime_exponent_coefficients/}. It verifies primality
+by Lucas--Lehmer and checks the strict sufficient Elias inequality
 \[
- c_2>\frac{11567\cdot45}{23444}>22.2.
+ p^s t^t(n-t)^{n-t}>n^n
 \]
+using integers. The two remaining rows satisfy the stronger sufficient
+condition $p^s>2^n$. For the last row, $\eta=1/521$, so a bound
+$2^{c_2/\eta}$ requires
+\[
+ c_2>\frac{14233.01899}{521}>27.31865.
+\]
+The corresponding forced coefficients for the three smaller primes
+are $2.00475$, $3.97715$, and $7.84601$. These comparisons set
+$c_1=1$; for a different prefactor, subtract
+$\eta\log_2c_1$ from each necessary lower bound on $c_2$.
+They concern interval domains, not the prescribed circle domain.
 The finite rational-line example uses the conditional first-moment count
 \[
  N=8{,}634{,}334{,}451{,}040{,}106

@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "fixtures": [
+    {
+      "prime_exponent": 31,
+      "n": 154,
+      "k": 77,
+      "m": 5,
+      "t": 82,
+      "strict_log2_list_lower_bound": 61,
+      "log2_list_decimal_lower": "61.74656",
+      "strict_forced_c2_decimal_lower": "2.00475",
+      "list_lower_bound_sha256": "45ccc360705401353523d347a277cdaf717717e10028aa73d24373ad48b2f4bf",
+      "concentration_denominator_numerator_sha256": "c56061d6b97a7246e0eb58bea7efb30cd96dc430b308fcf63bc3fab35c75c12e",
+      "concentration_denominator_denominator_sha256": "dba76ff36cb9dca9d8399066b7d318eb16f1fe8c20a6dc4d67783e3e4eb9097e",
+      "strict_elias_check": true
+    },
+    {
+      "prime_exponent": 61,
+      "n": 548,
+      "k": 274,
+      "m": 9,
+      "t": 283,
+      "strict_log2_list_lower_bound": 242,
+      "log2_list_decimal_lower": "242.16447",
+      "strict_forced_c2_decimal_lower": "3.97715",
+      "list_lower_bound_sha256": "bc4197430e3612d1ce59fe7d6803df95773503fafa7e8b2c591776ad91a2e04f",
+      "concentration_denominator_numerator_sha256": "8094e0844893f68114893d3b3d7c76fff01cf277e44e57fcc935c18549234363",
+      "concentration_denominator_denominator_sha256": "de1881a309eb14d6db0cc38333896985f0c4ce8b03d245f92b1317b5b4c42583",
+      "strict_elias_check": true
+    },
+    {
+      "prime_exponent": 127,
+      "n": 2158,
+      "k": 1079,
+      "m": 17,
+      "t": 1096,
+      "strict_log2_list_lower_bound": 995,
+      "log2_list_decimal_lower": "995.98234",
+      "strict_forced_c2_decimal_lower": "7.84601",
+      "list_lower_bound_sha256": "2e8a06a018c4d11676285282bc8341697a6ed7cfe9d5e0f0a6dbf6607cb4d38f",
+      "concentration_denominator_numerator_sha256": "e7daef8bcf494198136322d3f32184bfad3b8c7e90bf8317d6cc40875396c449",
+      "concentration_denominator_denominator_sha256": "cde1a62923635b89a81c882c6e3b9c28876d241c2104b8d4fde47d364c375137",
+      "strict_elias_check": true
+    },
+    {
+      "prime_exponent": 521,
+      "n": 29176,
+      "k": 14588,
+      "m": 56,
+      "t": 14644,
+      "strict_log2_list_lower_bound": 14233,
+      "log2_list_decimal_lower": "14233.01899",
+      "strict_forced_c2_decimal_lower": "27.31865",
+      "list_lower_bound_sha256": "3ff18533af34dd9a4c57d091603cb374131beb0777768d110e461ef9b39156b2",
+      "concentration_denominator_numerator_sha256": "c2077dea53d4818f01283f62dcee1249fca40398d8fe76271a651429a5bf3d87",
+      "concentration_denominator_denominator_sha256": "2a61cb946a8bd242ce10913a9249a4ee21ceaadf76595860b886d963ed0418f3",
+      "strict_elias_check": true
+    }
+  ],
+  "scope": "Half-rate interval domains over prime fields. Exact Gram smoothed-ellipsoid certificates, rational outward logarithm bounds, Lucas-Lehmer primality and integer Elias checks. Forced c2 comparisons assume c1=1. No optimality claim and no circle-domain assertion."
+}

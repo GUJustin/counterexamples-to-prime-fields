@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/curve_audit/verify_curve_endpoint.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 2.427995916999862,
+  "peak_rss_kib": 22016,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "command": "research/structured_domains/frobenius_index/verify_balanced_rational_pencils.py",
+    "returncode": 0,
+    "resources": "balanced_assertions_resources.json"
+  },
+  {
+    "command": "research/structured_domains/frobenius_index/check_near_balanced.py",
+    "returncode": 0,
+    "resources": "near_balanced_assertions_resources.json"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/puncturing_improvement/verify_support_incidence.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.6795284999989235,
+  "peak_rss_kib": 20704,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

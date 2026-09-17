@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/curve_audit/verify_formal_degree.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5750970419994701,
+  "peak_rss_kib": 13328,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

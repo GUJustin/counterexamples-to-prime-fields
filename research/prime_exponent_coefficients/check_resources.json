@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/prime_exponent_coefficients/verify.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5594421249988955,
+  "peak_rss_kib": 6640,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 180
+}

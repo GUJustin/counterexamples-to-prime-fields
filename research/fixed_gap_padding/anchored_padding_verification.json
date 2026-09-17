@@ -881,6 +881,6 @@
     }
   ],
   "integer_affine_checks": 378,
-  "seconds": 1.5006462081801146,
+  "seconds": 1.5353558330007218,
   "scope": "Exact integer/finite-field checks of the anchored quotient and padding construction. Splitting-prime infinitude and the asymptotic moment estimate are supplied by the written proof."
 }

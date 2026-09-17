@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/structured_domains/general_cubic_packets/verify.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 7.268313125001441,
+  "peak_rss_kib": 189680,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

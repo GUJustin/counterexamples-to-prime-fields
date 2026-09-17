@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "checks/verify_puncturing_bound.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5554242090001935,
+  "peak_rss_kib": 5952,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

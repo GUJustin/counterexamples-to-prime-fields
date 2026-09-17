@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/actual_higher_order_components/verify.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.072196332999738,
+  "peak_rss_kib": 19664,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/structured_domains/verify_transfer_limits.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.1473284999992757,
+  "peak_rss_kib": 18736,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

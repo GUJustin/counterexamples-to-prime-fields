@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/binary_affine_locator/check_multiplicative_orbit_transfer.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 2.199077750001379,
+  "peak_rss_kib": 20032,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

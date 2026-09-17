@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/riccati_cross_ratio/verify.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.6216041659990879,
+  "peak_rss_kib": 19888,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

@@ -1,0 +1,193 @@
+{
+  "scope": "Discovery among half-rate n=largest even integer at most b*m, not an optimality proof. Exact Elias replay required.",
+  "best": {
+    "31": [
+      {
+        "prime_exponent": 31,
+        "n": 154,
+        "k": 77,
+        "m": 5,
+        "t": 82,
+        "approximate_log2_list": 61.74656828510123,
+        "approximate_forced_c2": 2.004758710555235
+      },
+      {
+        "prime_exponent": 31,
+        "n": 124,
+        "k": 62,
+        "m": 4,
+        "t": 66,
+        "approximate_log2_list": 60.04059777723899,
+        "approximate_forced_c2": 1.936793476685129
+      },
+      {
+        "prime_exponent": 31,
+        "n": 186,
+        "k": 93,
+        "m": 6,
+        "t": 99,
+        "approximate_log2_list": 59.9922434232165,
+        "approximate_forced_c2": 1.9352336588134353
+      },
+      {
+        "prime_exponent": 31,
+        "n": 92,
+        "k": 46,
+        "m": 3,
+        "t": 49,
+        "approximate_log2_list": 51.48924593571288,
+        "approximate_forced_c2": 1.6789971500775938
+      },
+      {
+        "prime_exponent": 31,
+        "n": 216,
+        "k": 108,
+        "m": 7,
+        "t": 115,
+        "approximate_log2_list": 51.4856151152606,
+        "approximate_forced_c2": 1.668515304661223
+      }
+    ],
+    "61": [
+      {
+        "prime_exponent": 61,
+        "n": 548,
+        "k": 274,
+        "m": 9,
+        "t": 283,
+        "approximate_log2_list": 242.16447871144962,
+        "approximate_forced_c2": 3.9771538474508144
+      },
+      {
+        "prime_exponent": 61,
+        "n": 488,
+        "k": 244,
+        "m": 8,
+        "t": 252,
+        "approximate_log2_list": 240.23625972950606,
+        "approximate_forced_c2": 3.938299339827968
+      },
+      {
+        "prime_exponent": 61,
+        "n": 610,
+        "k": 305,
+        "m": 10,
+        "t": 315,
+        "approximate_log2_list": 239.7308279565793,
+        "approximate_forced_c2": 3.9300135730586767
+      },
+      {
+        "prime_exponent": 61,
+        "n": 426,
+        "k": 213,
+        "m": 7,
+        "t": 220,
+        "approximate_log2_list": 230.4448523892291,
+        "approximate_forced_c2": 3.786652504048366
+      },
+      {
+        "prime_exponent": 61,
+        "n": 670,
+        "k": 335,
+        "m": 11,
+        "t": 346,
+        "approximate_log2_list": 229.48253364011353,
+        "approximate_forced_c2": 3.76762368662873
+      }
+    ],
+    "127": [
+      {
+        "prime_exponent": 127,
+        "n": 2158,
+        "k": 1079,
+        "m": 17,
+        "t": 1096,
+        "approximate_log2_list": 995.9823450044397,
+        "approximate_forced_c2": 7.846014766022
+      },
+      {
+        "prime_exponent": 127,
+        "n": 2032,
+        "k": 1016,
+        "m": 16,
+        "t": 1032,
+        "approximate_log2_list": 995.3542384548235,
+        "approximate_forced_c2": 7.837434948463177
+      },
+      {
+        "prime_exponent": 127,
+        "n": 2286,
+        "k": 1143,
+        "m": 18,
+        "t": 1161,
+        "approximate_log2_list": 991.2395086388561,
+        "approximate_forced_c2": 7.805035501093355
+      },
+      {
+        "prime_exponent": 127,
+        "n": 1904,
+        "k": 952,
+        "m": 15,
+        "t": 967,
+        "approximate_log2_list": 985.776052346391,
+        "approximate_forced_c2": 7.766092849367576
+      },
+      {
+        "prime_exponent": 127,
+        "n": 2412,
+        "k": 1206,
+        "m": 19,
+        "t": 1225,
+        "approximate_log2_list": 977.5696433539554,
+        "approximate_forced_c2": 7.700590059587542
+      }
+    ],
+    "521": [
+      {
+        "prime_exponent": 521,
+        "n": 29176,
+        "k": 14588,
+        "m": 56,
+        "t": 14644,
+        "approximate_log2_list": 14233.018999213898,
+        "approximate_forced_c2": 27.31865450904779
+      },
+      {
+        "prime_exponent": 521,
+        "n": 28654,
+        "k": 14327,
+        "m": 55,
+        "t": 14382,
+        "approximate_log2_list": 14230.604514812901,
+        "approximate_forced_c2": 27.314973417837287
+      },
+      {
+        "prime_exponent": 521,
+        "n": 29696,
+        "k": 14848,
+        "m": 57,
+        "t": 14905,
+        "approximate_log2_list": 14224.404712300582,
+        "approximate_forced_c2": 27.30303975623428
+      },
+      {
+        "prime_exponent": 521,
+        "n": 28134,
+        "k": 14067,
+        "m": 54,
+        "t": 14121,
+        "approximate_log2_list": 14220.842742983878,
+        "approximate_forced_c2": 27.295283575784794
+      },
+      {
+        "prime_exponent": 521,
+        "n": 30218,
+        "k": 15109,
+        "m": 58,
+        "t": 15167,
+        "approximate_log2_list": 14208.437617103285,
+        "approximate_forced_c2": 27.271473353365234
+      }
+    ]
+  }
+}

@@ -47,7 +47,7 @@ def run():
     source=Path(__file__).with_name('check_near_balanced_pencils.cpp')
     with tempfile.TemporaryDirectory(prefix='near-balanced-') as tmp:
         exe=Path(tmp)/'check'
-        subprocess.run(['clang++','-O2','-std=c++17',str(source),'-o',str(exe)],check=True)
+        subprocess.run(['clang++','-O2','-UNDEBUG','-std=c++17',str(source),'-o',str(exe)],check=True)
         lines=subprocess.check_output([str(exe)],text=True).splitlines()
     rows=[json.loads(line) for line in lines]
     assert len(rows)==4

@@ -60,6 +60,7 @@ verify:
 	$(PYTHON) research/riccati_cross_ratio/verify_boundary_extension.py
 	$(PYTHON) research/riccati_cross_ratio/boundary_search/verify_family.py
 	$(PYTHON) research/logarithmic_length_lines/verify.py
+	$(PYTHON) research/prime_exponent_coefficients/verify.py
 	$(PYTHON) research/binary_affine_locator/verify.py
 	$(PYTHON) research/binary_affine_locator/check_codimension_two_transfer.py
 	$(PYTHON) research/binary_affine_locator/check_multiplicative_orbit_transfer.py

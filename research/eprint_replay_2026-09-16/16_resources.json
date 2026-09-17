@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/growing_m/verify_wide_regime.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5569451659994229,
+  "peak_rss_kib": 14896,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

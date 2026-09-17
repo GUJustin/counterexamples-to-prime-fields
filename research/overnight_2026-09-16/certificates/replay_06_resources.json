@@ -1,14 +1,14 @@
 {
   "command": [
-    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
     "verify_tilted_radial_boundary.py",
     "--dimension",
     "3"
   ],
   "reason": "completed",
   "returncode": 0,
-  "seconds": 1.0749164170119911,
-  "peak_rss_kib": 76416,
+  "seconds": 0.5398768329996528,
+  "peak_rss_kib": 2464,
   "rss_limit_mib": 384,
   "time_limit_seconds": 900
 }

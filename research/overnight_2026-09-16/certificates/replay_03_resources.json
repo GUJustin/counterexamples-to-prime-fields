@@ -1,12 +1,12 @@
 {
   "command": [
-    "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
     "verify_radial_projection_moments14.py"
   ],
   "reason": "completed",
   "returncode": 0,
-  "seconds": 3.213030707789585,
-  "peak_rss_kib": 35376,
+  "seconds": 2.1909747919999063,
+  "peak_rss_kib": 36000,
   "rss_limit_mib": 384,
   "time_limit_seconds": 900
 }

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/bounded_root_mca/verify_clusters.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5406765420011652,
+  "peak_rss_kib": 6768,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

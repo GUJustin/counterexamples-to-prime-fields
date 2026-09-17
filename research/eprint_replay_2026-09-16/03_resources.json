@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "checks/astra_rs_all_surplus_check.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.1387993339994864,
+  "peak_rss_kib": 19984,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

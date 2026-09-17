@@ -106,3 +106,40 @@ has the 384 MiB watchdog. Compiler wrappers in tmp/eprint-replay-bin use
 Zig with explicit macOS 14 target; the native macOS 26.6 target failed in
 bundled libc++ with an undefined INFINITY macro. No global compiler paths
 or shell profiles changed. The replay does not use --full cubic search.
+
+Replay follow-up: the cubic fixture initially failed because Zig -O3
+defines NDEBUG, unlike the compiler used for the archived run. Its hashed
+C++ source has lookup.emplace inside assert, so disabled assertions omit
+the table insertion. Confirmed with the preprocessor: -UNDEBUG removes
+NDEBUG. Added -UNDEBUG to all five C++ compile commands in four default
+verification scripts; wrappers also supply it. Do not change the archived
+cubic source merely to hide its hash difference. After the live replay
+finishes, rerun the two Frobenius-index compiled checks, the cubic default
+checker, and the new boundary scan with assertions enabled. They are the
+affected prior runs. The overnight replay has not yet begun and will see
+the corrected compiler flags. Preserve and report the initial failure.
+
+Completed follow-up: all of those assertion-enabled replays passed,
+including both boundary scans and their independent polynomial enumeration.
+The overnight certificate replay also passed. The current Makefile has
+62 mathematical checks, all covered by
+research/eprint_replay_2026-09-16/final_verification.json. The initial
+cubic failure remains recorded rather than overwritten. No jobs remain
+running from this replay.
+
+New finite prime-field comparison: research/prime_exponent_coefficients/
+certifies half-rate interval-domain lists that force c2>2.00475,
+3.97715, 7.84601, 27.31865 over primes 2^31-1, 2^61-1, 2^127-1,
+2^521-1, respectively, at c1=1. The 521-bit example has n=29176,
+k=14588, surplus 56, eta=1/521, and log2 L>14233.01899. Its sharper
+Elias check passes although the crude p^56>2^n test does not. These
+replace the older c2>22.2 finite comparison; no circle-domain claim.
+The application section also spells out that even c1(p)<=p^K requires
+c2(p)>=(1/2-o(1))*log2(p)/log2(log2(p)), a consequence of the existing
+all-large-prime list theorem. New source/proof self-review is in
+research/paper_referee/NEW_PRIME_RESULTS_REVIEW.md.
+
+The updated native PDF is 110 pages, with no overfull boxes or undefined
+references. New certificate page 74 was visually checked. The active
+8:30 a.m. Eastern target is still 12:30 UTC on September 17; the last
+clock check was only 03:14 UTC. Continue research, do not mark complete.

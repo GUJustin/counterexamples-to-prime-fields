@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/binary_affine_locator/check_codimension_two_transfer.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5450227920009638,
+  "peak_rss_kib": 6608,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

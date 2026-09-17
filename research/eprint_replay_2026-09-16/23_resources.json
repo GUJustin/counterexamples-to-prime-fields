@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/structured_domains/frobenius_index/check_near_balanced.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.6881614170015382,
+  "peak_rss_kib": 145264,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

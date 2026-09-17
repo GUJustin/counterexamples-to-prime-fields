@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "checks/astra_syndrome_determinants_check.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.6893519160003052,
+  "peak_rss_kib": 23120,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

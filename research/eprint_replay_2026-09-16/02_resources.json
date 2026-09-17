@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "checks/actual_list_chain_conditional_audit.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5575925419998384,
+  "peak_rss_kib": 14240,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

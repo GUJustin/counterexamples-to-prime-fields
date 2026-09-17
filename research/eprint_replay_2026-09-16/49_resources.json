@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/binary_affine_locator/verify.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5489282500002446,
+  "peak_rss_kib": 7824,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

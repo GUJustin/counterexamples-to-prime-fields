@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/power_family_mca/verify_family.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 7.55272716699983,
+  "peak_rss_kib": 20032,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/overnight_2026-09-16/verify.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 57.11764133299948,
+  "peak_rss_kib": 41808,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 10800
+}

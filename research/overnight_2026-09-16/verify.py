@@ -13,8 +13,8 @@ def main():
                 'VECLIB_MAXIMUM_THREADS','NUMEXPR_NUM_THREADS'):
         env[key]='1'
     commands=[
-        ['clang++','-O3','-std=c++17','exact_distribution.cpp','-o','exact_distribution'],
-        ['clang++','-O3','-std=c++17','central_quadratic_histogram.cpp','-o','central_quadratic_histogram'],
+        ['clang++','-O3','-UNDEBUG','-std=c++17','exact_distribution.cpp','-o','exact_distribution'],
+        ['clang++','-O3','-UNDEBUG','-std=c++17','central_quadratic_histogram.cpp','-o','central_quadratic_histogram'],
         [sys.executable,'verify_exact_distribution.py'],
         [sys.executable,'verify_radial_projection_moments14.py'],
         [sys.executable,'verify_radial3d_projection_moments14.py'],
