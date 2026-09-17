@@ -1,0 +1,104 @@
+\section{Exact finite-length weights, uniformly in multiplicity}\label{sec:finite-length}
+
+Write $a_0=(3+\sqrt{133})/31$ and $c_0=(1-2a_0)/8$.
+The following result does not keep multiplicity fixed as length grows.
+
+\begin{theorem}[Uniform finite-length converse]
+Let $N\ge12$ be divisible by four, $k=N/4$, $D=k-1$, and
+$k<A\le N$ be an integer. Let $m\ge1$ be arbitrary. For a finite
+downward-$Y_0$ monomial jet support, retain all coefficient monomials
+\[
+ X^xY_0^uY_1^b,\qquad x+Du+(D-1)b<mA.
+\]
+Discard jets with no permitted coefficients. Let $G$ be the resulting
+source dimension and $R$ its exact local rank modulo $I_m$. Assume
+characteristic zero or characteristic greater than every retained total
+jet degree. If the sufficient dimension count $G>NR$ holds, then
+\begin{equation}\label{eq:uniform-finite}
+ \frac AN>\left(1-\frac8N\right)
+ \left(a_0+\frac{c_0}{m}\right)+\frac8{N^2}.
+\end{equation}
+In particular, uniformly over all choices $m=m(N)$, the asymptotic
+agreement threshold is at least $a_0$.
+\end{theorem}
+
+We first record the exact rank before coefficient saturation. Put
+\[
+ L_q=mA-(D-1)q,\qquad
+ U_q=\{u:(u,q-u)\in S,\ u<L_q\}.
+\]
+On total jet degree $q$, the source dimension and local rank are
+\begin{align}
+ G_q&=\sum_{u\in U_q}(L_q-u),\label{eq:cutoff-dimension}\\
+ R_q&=\sum_{\ell=0}^{\min(m,L_q)-1}
+ \min\bigl(\#\{u\in U_q:u\le\ell\},m-\ell\bigr).
+ \label{eq:cutoff-rank}
+\end{align}
+The sum is empty when $L_q\le0$. To see the second formula, use the
+grade $g=x-b$ from Lemma~\ref{lem:rank}. The coefficient cutoff becomes
+$g<mA-Dq$, independently of $b$. With $\ell=q+g$ this is exactly
+$\ell<L_q$. The same binomial Vandermonde argument therefore applies.
+The active column count already absorbs the row bounds $q+1$ and
+$\ell+1$. Translation in $X$ preserves the full coefficient prefixes;
+translation in $Y_0$ preserves the source and lowers weighted degree.
+Consequently this local rank is independent of the coordinate and
+received value.
+
+\begin{lemma}[Half-rank inequality]\label{lem:half-rank}
+For $L\ge1$ and $U\subseteq\{0,\ldots,L-1\}$, define
+\[
+ G_U=\sum_{u\in U}(L-u),\qquad
+ R_U=\sum_{\ell=0}^{L-1}
+ \min\bigl(\#\{u\in U:u\le\ell\},L-\ell\bigr).
+\]
+Then $G_U\le2R_U$.
+\end{lemma}
+\begin{proof}
+Order $U$ as $u_1<\cdots<u_t$. The source cells are pairs $(j,\ell)$
+with $u_j\le\ell<L$; retain a cell when $j\le L-\ell$. Send every
+discarded cell injectively to
+\[
+ (j',\ell')=(L-\ell,L-j).
+\]
+Since $1\le j'<j\le t\le L$, both indices are valid. Distinctness of
+the ordered integers gives
+$u_{j'}\le u_j-(j-j')\le\ell-j+j'=L-j=\ell'$.
+Moreover $j'\le j=L-\ell'$, so the image is retained. There are at
+most as many discarded cells as retained cells.
+\end{proof}
+
+\begin{proof}[Proof of the uniform finite-length converse]
+For $0<L_q<m$, formula~\eqref{eq:cutoff-rank} is at least $R_{U_q}$
+with $L=L_q$. Lemma~\ref{lem:half-rank} gives $G_q\le2R_q$, so this
+diagonal contributes nonpositively to $G-NR$. Remove all diagonals with
+$L_q<m$. As $D-1>0$, these form a final segment of total degrees;
+the surviving support $S_0$ remains downward in $Y_0$. Its local rank
+is now the saturated rank $r_m(\mathbb F S_0)$, and its source dimension satisfies
+$G_0>Nr_m(\mathbb F S_0)$.
+
+Every surviving degree satisfies $q\le m(A-1)/(D-1)$. Writing $a=A/N$,
+the normalized coefficient count of a retained jet is
+\[
+ \frac{mA-Dq+b}{N}
+ =ma-\frac q4+\frac{q+b}{N}
+ \le ma_* -\frac q4,
+\]
+where
+\[
+ a_* =\frac AN+\frac{2(A-1)}{N(D-1)}
+     =\frac{AN-8}{N(N-8)}.
+\]
+Thus the saturated quarter-rate comparison has positive surplus at
+$a_*$. All its retained benefits are positive. If $a_*<1/2$,
+Theorem~\ref{thm:quarter} gives $a_*>a_0+c_0/m$. If $a_*\ge1/2$,
+the same strict inequality follows from $a_0+c_0<1/2$. Rearranging
+yields~\eqref{eq:uniform-finite}.
+\end{proof}
+
+The bound implies $A>Na_0-8a_0+8/N$, so the possible finite-length
+improvement is bounded by a constant number of coordinates. The proof
+uses the saturated theorem separately for each integer $m$; it takes
+no limit with $m$ fixed. Its scope is the displayed monomial source
+with full coefficient prefixes. It does not establish a finite-length
+nonmonomial degeneration or rule out kernels caused by dependencies
+among constraints at different coordinates.

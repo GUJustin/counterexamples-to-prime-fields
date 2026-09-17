@@ -1,0 +1,494 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,mathtools,booktabs,microtype,hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+\theoremstyle{remark}\newtheorem{remark}[theorem]{Remark}
+\newcommand{\R}{\mathbb R}
+\newcommand{\N}{\mathbb N}
+\newcommand{\pos}[1]{(#1)_+}
+\newcommand{\rk}{\operatorname{rank}}
+\newcommand{\im}{\operatorname{im}}
+\newcommand{\Span}{\operatorname{span}}
+\newcommand{\dd}{\,d}
+\title{A Sharp Quarter-Rate Threshold for a\\First-Derivative Interpolation Dimension Count}
+\author{}
+\date{Working technical note --- September 17, 2026}
+\begin{document}
+\maketitle
+\begin{abstract}
+At rate $1/4$, the first-derivative interpolation dimension comparison
+has exact infimum agreement threshold $(3+\sqrt{133})/31$. This holds
+for arbitrary monomial jet supports closed under translation in the
+zeroth jet, using exact saturated local rank, and extends to the stated
+translation-stable nonmonomial jet spaces. We also account for the exact
+finite-length weights and coefficient cutoff: in the full-coefficient
+monomial model, even multiplicity growing with block length cannot lower
+the asymptotic threshold. Finite-length corrections permit only a
+constant number of agreement coordinates of improvement. Two exact
+certificates separately improve a known sufficient curve at higher rates.
+These are statements about a specified dimension-counting method, not
+intrinsic lower bounds on Reed--Solomon lists or proximity gaps.
+\end{abstract}
+
+\noindent\textit{Provenance.} The fixed-multiplicity proof and high-rate
+certificates are recovered from a September 13 research draft. This note
+incorporates their September 17 local audit and a subsequent uniform
+finite-length extension. No independent referee or formal verification
+of this note is claimed.
+
+\section{The optimization problem and its scope}
+
+First-derivative interpolation uses a polynomial in $X,Y_0,Y_1$, where a candidate message polynomial $P$ is substituted as $(Y_0,Y_1)=(P,P')$. At an agreement coordinate, writing $T$ for the local coordinate and centering the received value, the expression
+\[
+ E=Y_0-TY_1
+\]
+vanishes to order at least two after substitution. The local multiplicity condition therefore assigns weight one to $T$ and weight two to $E$.
+
+Fix a positive integer $m$. Unless explicitly discussing a small-characteristic counterexample, assume that $\mathbb F$ has characteristic zero or characteristic greater than every retained jet degree. Define
+\[
+ \mathcal A_m=\mathbb F[T,Y_0,Y_1]/I_m,
+ \qquad I_m=(T^iE^j:i+2j\ge m).
+\]
+The exponent of $Y_1$ is unrestricted in this ideal. For a finite jet space $V\subset \mathbb F[Y_0,Y_1]$, the \emph{saturated local rank} is
+\[
+ r_m(V)=\dim_{\mathbb F}\im(\mathbb F[T]V\longrightarrow\mathcal A_m).
+\]
+The image is finite dimensional when the jet degree of $V$ is bounded, because $T^m=0$ in the quotient.
+
+For a monomial space $\mathbb F S$, write its support as
+\[
+ S\subset\N^2,\qquad (u,b)\leftrightarrow Y_0^uY_1^b.
+\]
+We require downward closure in $u$. This is precisely the condition ensuring that the monomial source is stable under translating $Y_0$. Let $\rho$ denote the rate and $a$ the agreement fraction. Saturating each allowed jet monomial with the permitted $X$ coefficients gives the leading, block-length-normalized benefit
+\begin{equation}\label{eq:benefit}
+ B_{m,\rho,a}(S)=\sum_{(u,b)\in S}\bigl(ma-\rho(u+b)\bigr).
+\end{equation}
+Only positive-benefit monomials need be retained. Thus $u+b<ma/\rho$ throughout.
+
+The object optimized here is
+\begin{equation}\label{eq:surplus}
+ B_{m,\rho,a}(S)-r_m(\mathbb F S).
+\end{equation}
+Positive surplus gives the leading dimension advantage needed for an interpolation certificate. The local rank is the rank of the actual map, not the number of potentially nonzero rows.
+
+\begin{remark}[What the conclusions do and do not cover]
+The benefit in \eqref{eq:benefit} is the leading term as block length tends to infinity with the jet space and multiplicity fixed. Exact message-degree weights are $D$ and $D-1$, not two copies of $\rho N$. Section~\ref{sec:finite-length} supplies this bookkeeping for the full-coefficient monomial model, uniformly in multiplicity. The converse below concerns this specified dimension comparison, not every possible interpolation constraint or global source space. In particular, no intrinsic lower bound on exceptional challenges follows from it.
+\end{remark}
+
+The main discrete conclusion is the following.
+\begin{theorem}[Finite multiplicity at quarter rate]\label{thm:quarter}
+Put $a_0=(3+\sqrt{133})/31$. Under the standing characteristic assumption, for every finite downward-$Y_0$ support $S$ and every $m\ge1$, positive surplus at $\rho=1/4$ and $a<1/2$ requires
+\[
+ a>a_0+\frac{1-2a_0}{8m}.
+\]
+Conversely, in characteristic zero every $a>a_0$ admits positive surplus for some finite multiplicity and support; the same support works in all characteristics greater than its maximum jet degree. Thus the infimum threshold in characteristic zero, or over sufficiently large characteristics, is exactly $a_0$.
+The same statements, with the same characteristic quantifiers, hold for the translation-stable jet spaces of Section~\ref{sec:degeneration}, with benefit defined by their filtered basis degrees.
+\end{theorem}
+
+\section{Exact rank and two rearrangements}
+
+\subsection{The local rank}
+
+For a fixed total jet degree $q$, let
+\[
+ S_q=\{b:(q-b,b)\in S\}.
+\]
+\begin{lemma}[Exact homogeneous rank]\label{lem:rank}
+In characteristic zero, or characteristic greater than every jet degree appearing in $S$,
+\begin{equation}\label{eq:rank}
+ r_m(\mathbb F S)=\sum_q\sum_{\ell=0}^{m-1}
+ \min\bigl(\#\{b\in S_q:q-b\le\ell\},m-\ell\bigr).
+\end{equation}
+\end{lemma}
+\begin{proof}
+The source column $T^xY_0^{q-b}Y_1^b$ expands as
+\[
+ \sum_{c=b}^q\binom{q-b}{q-c}T^{x+c-b}E^{q-c}Y_1^c.
+\]
+The grade $g=x-b=i-c$ is preserved. In grade $g$, source columns have $b\ge\max(0,-g)$, and surviving rows have
+\[
+ c\ge\max(0,-g,g+2q-m+1),\qquad c\le q.
+\]
+Reverse the row suffix, putting $j=q-c$. Its columns are $(\binom{q-b}{j})_j$. Any square minor formed by the first rows and distinct columns is a binomial Vandermonde determinant
+\[
+ \frac{\prod_{i<j}(x_j-x_i)}{\prod_{j=0}^{t-1}j!},\qquad x_i=q-b_i,
+\]
+up to sign. The characteristic assumption makes it nonzero. Hence the grade rank is the minimum of the number of columns and rows. Setting $\ell=q+g$ gives row capacity $\min(q+1,\ell+1,m-\ell)$. Since the active column count is at most $\min(q+1,\ell+1)$, this simplifies to \eqref{eq:rank}.
+\end{proof}
+
+Write the support by column heights,
+\[
+ S=\{(u,b):0\le u<H_b\}.
+\]
+\begin{lemma}[Height sorting]\label{lem:sorting}
+Replacing $(H_b)$ by its decreasing rearrangement weakly increases benefit and weakly decreases the rank in \eqref{eq:rank}. It preserves the positive-benefit triangle.
+\end{lemma}
+\begin{proof}
+For a fixed $\ell$, clip the heights at $\ell+1$. The active count on diagonal $q$ is the overlap multiplicity of the integer intervals
+\[
+ [b,b+\min(H_b,\ell+1)-1].
+\]
+We prove that decreasing rearrangement minimizes the sum of any concave function of these overlaps, normalized to vanish at zero.
+
+Use selection sort from the right. Suppose the fixed suffix is decreasing and no higher than the remaining prefix. Choose a minimum height $c$ in the prefix, move it to its right end, and shift the intervening columns one step left. Split the diagram into the height-$c$ baseline, unchanged earlier excess columns, and the moving excess columns. The baseline is decreasing with height at most $c$. Its overlap profile is nonincreasing beyond diagonal $c-1$. Each earlier excess interval also has a nonincreasing profile after the point where the moving excess begins.
+
+Let $C(q)$ be the unchanged profile and $X(q)$ the moving excess after shifting left. On the support of $X$, $C(q)\ge C(q+1)$. The new and old costs differ by comparing
+\[
+ f(C(q)+X(q))-f(C(q))
+ \quad\hbox{with}\quad
+ f(C(q+1)+X(q))-f(C(q+1)).
+\]
+Concavity makes the first no larger. Summing and repeating the grouped move proves the assertion. Clipping may create equal heights but does not change the argument. Apply it with $f(t)=\min(t,m-\ell)$ and sum over $\ell$.
+
+Sorting preserves $\sum H_b$ and $\sum H_b^2$ and decreases $\sum bH_b$, so it increases benefit. The triangle is preserved because a level set of height $u+1$ originally has at most the number of available columns under that triangle; its rearrangement is the initial interval of that size.
+\end{proof}
+
+After sorting, the support is downward in both coordinates. The next rearrangement moves each diagonal toward its smallest second exponent.
+\begin{lemma}[Diagonal compression]\label{lem:lex}
+Let $k_q$ be the number of monomials on diagonal $q$ in a two-variable order ideal. Replacing them by $b=0,\ldots,k_q-1$ preserves the order-ideal property and benefit and weakly decreases rank. After the first incomplete diagonal, $k_q$ is nonincreasing.
+\end{lemma}
+\begin{proof}
+The complement on an incomplete diagonal has upward shadow containing $C\cup(C+1)$, with at least $|C|+1$ elements. Thus the next diagonal has at most as many selected monomials. This proves both the asserted monotonicity and feasibility of the compressed ideal. Moving selected $b$'s downward moves the corresponding $u=q-b$ upward and can only decrease every active count in \eqref{eq:rank}.
+\end{proof}
+
+For a compressed diagonal of length $k$, the rank marginal has the useful exact form
+\begin{equation}\label{eq:marginal-discrete}
+ r_{m,q}(k)-r_{m,q}(k-1)
+ =\max\left(0,m-q,\left\lfloor\frac{m-q+k}{2}\right\rfloor\right).
+\end{equation}
+This follows directly by counting the values of $\ell$ where the minimum in \eqref{eq:rank} increases. In a compressed column it becomes
+\begin{equation}\label{eq:cell-rank}
+ d_m(u,b)=\max\left(0,m-u-b,\left\lceil\frac{m-u}{2}\right\rceil\right).
+\end{equation}
+
+\section{The continuum problem}
+
+Put $L=a/\rho$. A height support is a measurable set
+\[
+ E_H=\{(x,s):s\ge0,\ 0\le x<H(s)\},\qquad 0\le H(s)\le(L-s)_+.
+\]
+Its benefit and exact continuum rank are
+\begin{align*}
+ \mathcal B_{\rho,a}(E)&=\int_E(a-\rho(x+s))\dd x\dd s,\\
+ \mathcal R(E)&=\int_{\R}\int_0^1\min(A_E(h,t),1-t)\dd t\dd h,\\
+ A_E(h,t)&=\int_0^t1_E(x,h-x)\dd x.
+\end{align*}
+Write $\mathcal P_{\rho,a}=\mathcal B_{\rho,a}-\mathcal R$.
+
+\begin{lemma}[Continuum compression]\label{lem:continuum-compression}
+Every height support is dominated in surplus by one of the form
+\begin{equation}\label{eq:endpoint}
+ E=\{(x,s):0\le s\le B,\ s\le x+s\le R(s)\},
+\end{equation}
+where $R$ is nonincreasing and $s\le R(s)\le L$.
+\end{lemma}
+\begin{proof}
+The height-sorting proof applies directly to equal-width step heights. At a fixed clipping height, the diagonal profile of an excess rectangle is a convolution of interval indicators. The unchanged earlier rectangles have stopped increasing before the shifted excess begins. The same concavity comparison therefore applies. For general heights, approximate in $L^1$. Decreasing rearrangement contracts the $L^1$ distance, and
+\[
+ \int_h|A_{E_H}(h,t)-A_{E_G}(h,t)|\dd h\le\|H-G\|_1.
+\]
+Thus rank passes to the limit. The benefit comparison follows by layer cake: initial intervals minimize the first moment of a set of prescribed measure. The triangle condition follows from $|\{H>x\}|\le(L-x)_+$.
+
+The resulting support is downward in both coordinates; choose its canonical monotone representative. On a diagonal $h$, let $Q_h$ be its complement in $[0,h]$. For $\delta>0$,
+\[
+ Q_h+[0,\delta]\subseteq Q_{h+\delta}.
+\]
+Once the complement has positive measure, its one-dimensional measure grows by at least $\delta$; the transition follows by a limit. Consequently the selected diagonal length is initially $h$ and then is nonincreasing. Replacing each diagonal by its initial interval in $s$ preserves these lengths and benefit, and moves selected $x=h-s$ upward, decreasing $A_E(h,t)$ pointwise. The compressed set has exactly the form \eqref{eq:endpoint}. Null-set boundary choices are immaterial.
+\end{proof}
+
+For a compressed diagonal, differentiating the rank with respect to its length gives
+\[
+ f(h,s)=\max\left(0,1-h,\frac{1-h+s}{2}\right).
+\]
+It follows that the surplus of \eqref{eq:endpoint} is
+\begin{equation}\label{eq:column-functional}
+ \int_0^B F_s(R(s))\dd s,\qquad
+ F_s(R)=\int_s^R w_s(h)\dd h,
+ \quad w_s(h)=a-\rho h-f(h,s).
+\end{equation}
+The same formula follows as the scaled limit of \eqref{eq:marginal-discrete}.
+
+\subsection{Rates at most one half}
+
+\begin{lemma}[Prefix completion]\label{lem:completion}
+Suppose $F_s(R)\le0$ for all $s\ge L-1$ and $s\le R\le L$. Then a full-column cap, with $R(s)=L$ on a prefix, maximizes surplus.
+\end{lemma}
+\begin{proof}
+Delete columns $s\ge L-1$. For $s<L-1$, the density $w_s$ has a single-crossing property: once positive, it remains positive up to $L$. On the first rank branch it increases with slope $1-\rho$; on the middle branch a negative slope is possible, but its right-end value is $a-\rho(1+s)>0$; after that it equals the positive benefit. Also $w_s(h)$ is nonincreasing in $s$ at fixed $h$.
+
+Take a maximizer among decreasing endpoints; compactness follows from Helly's theorem and bounded convergence. If an unsaturated endpoint has positive density, completing its preceding prefix to $L$ improves the integral: every earlier endpoint is at least as large and has at least as large a density there, and single crossing controls the whole added interval. Applying this argument at density points excludes a positive-measure set of such endpoints. Hence almost every unsaturated column ends where $w_s\le0$ and has nonpositive total surplus. These columns form a suffix, which can be deleted. What remains is a cap.
+\end{proof}
+
+If $\rho\le1/2$ and $s\ge L-1$, then for $h\le L$,
+\[
+ w_s(h)\le a-\frac{1+s}{2}+(1/2-\rho)h
+ \le\frac{L-1-s}{2}\le0.
+\]
+Thus caps are globally optimal for every $0<\rho\le1/2$ and $\rho<a<\sqrt\rho$.
+
+
+\subsection{The critical quarter-rate cap}
+
+\begin{lemma}[Quarter-rate continuum threshold]\label{thm:curve}
+At rate $1/4$, every admissible height support has nonpositive surplus
+when $a=a_0=(3+\sqrt{133})/31$. Every $a>a_0$ admits a support with
+positive surplus.
+\end{lemma}
+\begin{proof}
+The preceding compression and prefix-completion lemmas reduce the
+problem to a full cap. For width $B\le1/2$, integration of the rank
+marginal gives cap surplus
+\[
+ P_a(B)=(2a^2-1/2)B+\frac{1-a}{2}B^2-\frac7{24}B^3.
+\]
+The positive root of $31a^2-6a-4=0$ is $a_0$. At that value,
+\[
+ P_{a_0}(B)=-\frac7{24}B
+       \left(B-\frac{6(1-a_0)}7\right)^2\le0.
+\]
+The nonempty zero occurs at a width strictly below $1/2$ and below
+$4a_0-1$. For $s\ge1/2$, the additional cap column has surplus
+$2(a_0-s/4)^2-1/4$, which is negative throughout the relevant range
+$1/2\le s\le4a_0-1$. Indeed it is already negative at $s=1/2$ and
+then decreases. Columns beyond $4a_0-1$ can be removed by the preceding
+lemma. Thus no larger cap improves the value. Increasing $a$ strictly
+increases surplus on the nonempty zero cap, proving the second claim.
+\end{proof}
+
+\section{A one-sided finite-multiplicity comparison}
+
+We now prove Theorem~\ref{thm:quarter}. This step is essential: a continuum limit with an unsigned error does not exclude an exceptional finite multiplicity.
+
+Use unscaled continuum coordinates and set
+\[
+ f_m(h,s)=\max\left(0,m-h,\frac{m-h+s}{2}\right),\qquad
+ w_p(h,s)=p-h/4-f_m(h,s).
+\]
+For integers $0\le b\le Q\le2m-1$, define
+\[
+ F_{p,b}(Q)=\sum_{q=b}^{Q}
+ \left[p-\frac q4-
+ \max\left(0,m-q,\left\lceil\frac{m-q+b}{2}\right\rceil\right)\right].
+\]
+\begin{lemma}[One-sided column lift]\label{lem:finite-lift}
+For $p\le m/2$,
+\begin{equation}\label{eq:finite-lift}
+ \int_b^{b+1}\int_s^{Q+1}w_p(h,s)\dd h\dd s
+ \ge F_{p,b}(Q)+\frac{m-2p}{4}.
+\end{equation}
+\end{lemma}
+\begin{proof}
+Let $n=Q-b+1$ and denote the integral minus the sum by $D_p(Q)$. Their areas differ by $1/2$, so
+\[
+ D_p(Q)=D_{m/2}(Q)+(m-2p)/4.
+\]
+It suffices to prove $D_{m/2}(Q)\ge0$.
+
+Let $I_{q,b}$ be the integral of $f_m(q+v,b+y)$ over $0\le v,y\le1$, and let $\delta_{q,b}$ be its difference from the discrete rank marginal, in the order discrete minus integral. Direct integration gives
+\begin{center}
+\begin{tabular}{@{}ll@{}}\toprule
+Range & $\delta_{q,b}$\\\midrule
+$q\le m-b-2$ & $1/2$\\
+$q=m-b-1$ & $5/12$\\
+$m-b\le q\le m+b-1$ & $0$ if $m-q+b$ is even, $1/2$ if odd\\
+$q=m+b$ & $-1/12$\\
+$q\ge m+b+1$ & $0$\\\bottomrule
+\end{tabular}
+\end{center}
+Only rows with $q\ge b$ are used. The two exceptional corrections follow from integrating $(v+y-1)_+/2$ and $(y-v)_+/2$ over the square; each integral is $1/12$.
+
+The desired column is the union of the $n$ squares with its bottom triangle $s>h$ removed. On that triangle,
+\[
+ f_m(b+v,b+y)\ge(m+y-v)/2,
+\]
+so the removed rank is at least $m/4+1/12$. Each full square loses $1/8$ of benefit relative to its lattice point, while the removed triangle has benefit $p/2-b/8-1/24$. Therefore
+\begin{equation}\label{eq:finite-lower}
+ D_{m/2}(Q)\ge\frac{b+1}{8}
+       +\sum_{q=b}^Q(\delta_{q,b}-1/8).
+\end{equation}
+
+If $Q\le m+b-1$, the summands consist of initial positive terms and an alternating sequence $-1/8,3/8$, starting at either parity. Every partial sum is at least $-1/8$, proving nonnegativity.
+
+At and after $q=m+b$, the right side of \eqref{eq:finite-lower} decreases with $Q$, so it suffices to take $Q=2m-1$. This case requires $b<m$. For $b\ge1$, compare the first $m$ terms, from $q=b$ through $m+b-1$, with their central parity sequence. All dominate it except possibly the $5/12$ term, which loses at most $1/12$. The boundary term loses another $1/12$. Hence
+\[
+ \sum_{q=b}^{2m-1}\delta_{q,b}
+ \ge\frac12\left\lceil\frac m2\right\rceil-\frac16
+ \ge\frac m4-\frac16.
+\]
+Substitution into \eqref{eq:finite-lower} gives $D_{m/2}\ge b/4-1/24>0$. If $b=0$, the sum is exactly $m/2-1/6$, giving $D_{m/2}\ge m/4-1/24>0$. This proves the lemma.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:quarter}]
+Apply height sorting and diagonal compression. The resulting nonempty support has $C$ columns
+\[
+ b=0,\ldots,C-1,\qquad q=b,\ldots,Q_b,
+ \qquad Q_0\ge Q_1\ge\cdots\ge Q_{C-1}.
+\]
+All $Q_b<2m$ when $a<1/2$. Lift it to columns $b\le s<b+1$, $s\le h<Q_b+1$. Their endpoints are decreasing, so the integral of $w_{ma}$ is the actual continuum surplus. Lemma~\ref{lem:finite-lift} shows that this surplus is at least
+\[
+ B_{m,1/4,a}(S)-r_m(\mathbb F S)+\frac{Cm(1-2a)}4.
+\]
+The lift may protrude beyond $h=4ma$. Delete that part: its density is nonpositive, and the remaining endpoints are still decreasing. Rescaling both coordinates by $m$ gives an admissible support in the continuum problem.
+
+At $a=a_0$, Theorem~\ref{thm:curve} gives nonpositive continuum surplus. In fact the critical cap polynomial is
+\[
+ -\frac7{24}B\left(B-\frac{6(1-a_0)}7\right)^2
+\]
+for $B\le1/2$, and decreases thereafter. Consequently
+\begin{equation}\label{eq:strict-finite}
+ B_{m,1/4,a_0}(S)-r_m(\mathbb F S)
+ \le-\frac{Cm(1-2a_0)}4.
+\end{equation}
+The same conclusion applies to any compressed support with $Q_b<2m$, even if some of its benefits at $a_0$ are negative: the truncation still improves surplus.
+
+Monotonicity first excludes $a\le a_0$. For $a>a_0$, use $|S|\le2mC$ and \eqref{eq:strict-finite} to obtain
+\[
+ B_{m,1/4,a}(S)-r_m(\mathbb F S)
+ \le-\frac{Cm(1-2a_0)}4+2m^2C(a-a_0).
+\]
+This proves the necessary strict inequality. Conversely, a cap has strictly positive continuum surplus for $a>a_0$. Approximating it on sufficiently fine integer grids gives positive finite surplus in characteristic zero, and then in every characteristic exceeding the resulting maximum jet degree. Here an ordinary two-sided approximation error is sufficient, because the limiting margin is positive. No approximation claim is made within one fixed positive characteristic under a fixed jet-degree guard.
+\end{proof}
+
+\section{Nonmonomial translation-stable sources}\label{sec:degeneration}
+
+The monomial restriction can be removed for a natural source class. Let
+\[
+ V\subseteq \mathbb F[Y_0,Y_1]_{\le d}
+\]
+be finite dimensional and stable under $Y_0$-translation. Define its filtered degree multiplicities by
+\[
+ n_q=\dim(V\cap \mathbb F[Y_0,Y_1]_{\le q})
+       -\dim(V\cap \mathbb F[Y_0,Y_1]_{\le q-1}),
+\]
+and its benefit by
+\[
+ \mathsf B_{m,\rho,a}(V)=\sum_q n_q\pos{ma-\rho q}.
+\]
+
+\begin{theorem}[Monomial domination]\label{thm:degeneration}
+Suppose $\operatorname{char}\mathbb F=0$ or $\operatorname{char}\mathbb F>d$. There is a downward-$Y_0$ monomial support $S$, independent of $m$, such that
+\[
+ |S_q|=n_q,\qquad r_m(\mathbb F S)\le r_m(V)\quad(m\ge1).
+\]
+Thus benefit is preserved and every local saturated rank weakly decreases. The quarter-rate finite theorem and the continuum conclusions transfer to this source class.
+\end{theorem}
+\begin{proof}
+The jet-degree-at-most-$d$ part of $\mathcal A_m$ is finite dimensional, with basis
+\[
+ T^iE^jY_1^\ell,\qquad i+2j<m,\quad j+\ell\le d.
+\]
+Since $T^m=0$, the saturated rank is already the rank of the image of $\bigoplus_{i=0}^{m-1}T^iV$ in this fixed finite target. Matrix rank cannot increase at specialization.
+
+Choose a filtration-adapted basis $v_i$ with degrees $q_i$. The family
+\[
+ t^{q_i}v_i(t^{-1}Y_0,t^{-1}Y_1)
+\]
+has linearly independent highest parts at $t=0$ and degenerates $V$ to its associated graded space. Generically the ambient scaling preserves $I_m$, sending $E$ to $t^{-1}E$, so the local rank is unchanged. The limiting rank is no larger, and degree multiplicities are preserved.
+
+Now act on this homogeneous space by $Y_1\mapsto tY_1$. Extend the action to the local target by $T\mapsto t^{-1}T$ and $Y_0\mapsto Y_0$. It fixes $E$ and preserves $I_m$. Saturation in $T$ makes the generic local rank invariant. In each homogeneous degree, row reduction in increasing $Y_1$ exponent gives distinct pivot monomials; rescaling the corresponding basis vectors yields a monomial limiting space. Again rank cannot increase, and all degree multiplicities remain unchanged. Neither limiting source depends on $m$.
+
+Finally, the finite Taylor formula shows that $\partial_{Y_0}$-stability implies translation stability. Conversely, coefficient extraction at $d+1$ distinct shifts, available under the characteristic assumption, gives derivative stability. Derivative stability is a closed condition on the Grassmannian, so both limits preserve it. For a monomial $Y_0^uY_1^b$ with $u>0$, its derivative has nonzero coefficient $u$; hence the limiting support contains $(u-1,b)$. This proves downward closure.
+
+Discarding nonpositive-benefit monomials preserves downward closure, leaves benefit unchanged, and can only decrease rank. The conclusions now follow from the monomial results.
+\end{proof}
+
+The characteristic assumption has content. In characteristic two, $V=\Span\{1,Y_0^2\}$ is translation-stable and has $r_2(V)=2$, because $I_2=(T^2,E)$ makes $Y_0^2=0$. A downward-$Y_0$ monomial support with the same filtered degrees $0,2$ must be $\{1,Y_1^2\}$, whose rank is four.
+
+The theorem concerns fixed jet spaces, their total-degree filtration, and saturated local sources. It does not assert that arbitrary global interpolation spaces or alternative local ideals degenerate to this model.
+
+\input{finite_length}
+\section{Exact finite certificates for the high-rate improvement}\label{sec:certificates}
+
+The sufficient first-order curve in the recovered Dao--Kominers--Thaler
+working draft~\cite{DKT}, on the high-rate branch used here, is
+\begin{equation}\label{eq:dkt}
+ a_{\rm DKT}(\rho)=
+ \frac{3\rho+2\sqrt{\rho(5-\rho)(2-\rho)}}{8-\rho}.
+\end{equation}
+The following two exact supports improve this sufficient curve without
+requiring a continuum optimality claim at those rates. Choose $m,\rho,a,B$ and set
+\[
+ q_b=\min\left(\left\lceil\frac{ma}{\rho}\right\rceil-1,
+           \left\lfloor\frac{2ma-m-b}{2\rho-1}\right\rfloor\right),
+ \qquad 0\le b\le\lfloor mB\rfloor,
+ \qquad H_b=q_b-b+1.
+\]
+These endpoints decrease and all selected monomials have positive benefit. Their exact rank can be summed columnwise in linear time. Put
+\[
+ C(t)=\left\lfloor\frac{(\max(0,t)+1)^2}{4}\right\rfloor,
+ \qquad D(t,b)=\left\lfloor\frac{\max(0,t-2b)^2}{4}\right\rfloor.
+\]
+Then column $b$ has rank
+\[
+ C(m)-C(\max(0,m-H_b))+D(m,b)-D(\max(0,m-H_b),b).
+\]
+This is the sum of \eqref{eq:cell-rank}, using
+\[
+ d_m(u,b)=\left\lceil\frac{(m-u)_+}{2}\right\rceil
+       +\left(\left\lfloor\frac{m-u}{2}\right\rfloor-b\right)_+.
+\]
+
+\begin{center}
+\small
+\begin{tabular}{@{}lrr@{}}\toprule
+ & First certificate & Second certificate\\\midrule
+$\rho$ & $9/10$ & $3/4$\\
+$a$ & $47389/50000$ & $43049/50000$\\
+$m$ & $10000$ & $100000$\\
+$B$ & $49/500$ & $173/1000$\\
+Columns & $981$ & $17301$\\
+Monomials & $9724108$ & $1830201539$\\
+Exact rank & $44523829596$ & $73254792027652$\\
+Benefit & $445252935317/10$ & $293020925834159/4$\\
+Surplus & $14639357/10$ & $1757723551/4$\\\bottomrule
+\end{tabular}
+\end{center}
+Both agreements are strictly below \eqref{eq:dkt}. The displayed counts are exact rational arithmetic; the large supports are specified by their endpoint formulas rather than enumerated.
+
+To relate a positive surplus to finite block length, take a message-degree cap $D\le\rho N-1$ and agreement target $A\ge aN$. The permitted $X$ coefficients of $Y_0^uY_1^b$ under weighted degree $mA-1$ number
+\[
+ mA-Du-(D-1)b\ge N(ma-\rho(u+b)).
+\]
+Here is explicit challenge-degree bookkeeping. Let $q_{\max}$ be the largest source jet degree, let $r_m$ be its saturated local rank, and let $G$ be the total number of permitted $X$ coefficients. Recentring $Y_0$ by a received value affine in the challenge gives local equations of challenge degree at most $q_{\max}$. A fixed basis of the centered local row space supplies $r_m$ such equations per coordinate. Giving every global coefficient challenge degree at most $\ell$ therefore gives $(\ell+1)G$ unknowns and at most $Nr_m(\ell+q_{\max}+1)$ scalar constraints. Since $G\ge NB_{m,\rho,a}$, it suffices to take
+\[
+ \ell+1>\frac{q_{\max}r_m}{B_{m,\rho,a}-r_m}.
+\]
+This is a fixed finite budget for either certificate. The resulting nonzero interpolation polynomial has weighted degree at most $mA-1$; substitution of a candidate with $A$ agreements gives at least $mA$ zeros counted with multiplicity and hence an identity. The subsequent candidate and incidence arguments are the usual first-order ones in sufficiently large characteristic; the result improves the agreement curve, not the exponent of the exceptional-count bound.
+
+
+\section{Verification and scope}
+
+A separate standard-library verifier directly checks 320 local matrices,
+3750 rearrangement and marginal comparisons, and 3128 one-sided column
+inequalities by exact rational polygon integration. It reproduces both
+large certificates by integer column sums. A second verifier checks
+1920 exact finite-cutoff ranks and 32752 instances of the half-rank
+lemma. These checks corroborate the formulas; the proofs establish the
+quantified statements. Scripts and reports accompany this note in
+\path{research/first_order_support_audit/}.
+
+The sufficient challenge degrees obtained by the displayed conservative
+count are $320257184$ and $19137094352$ for the two high-rate certificates.
+These are not claimed to be necessary. Together with the large supports,
+they make clear that a strict mathematical curve improvement is not a
+practical parameter improvement for a deployed proof system.
+
+The fixed-jet-space nonmonomial theorem and the exact finite-length
+monomial theorem have different scopes. Neither proves that a global
+interpolation kernel is absent when the dimension count fails:
+dependencies between coordinates may reduce the global constraint rank.
+Neither proves a lower bound on actual list size, nor necessity of the
+quadratic exceptional-count bound for first-order MCA.
+
+\begin{thebibliography}{9}
+\bibitem{DKT} Q. Dao, S. D. Kominers, and J. Thaler.
+\emph{Quantitative Reed--Solomon List Decoding and Mutual Correlated
+Agreement: From Johnson to Capacity}. September 2026 working draft.
+The sufficient curve used here was checked in the recovered 105-page
+version dated September 10; this does not assert it is the latest version.
+\end{thebibliography}
+\end{document}

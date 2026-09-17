@@ -2291,7 +2291,7 @@ rank, sorting, diagonal compression, quarter-rate cap optimality,
 one-sided finite correction, and translation-stable nonmonomial
 flat degeneration. It does NOT prove intrinsic bad-code behavior,
 first-order n^2 optimality, or absence of globally dependent certificates.
-Multiplicities growing with block length are outside the stated converse.
+That restored converse alone does not handle growing multiplicity; the subsequent exact finite-length extension below does so for the full-coefficient monomial model.
 
 A fresh stdlib replay passes320 direct ranks,3750 rearrangements and
 marginals,3128 exact polygon-integral finite inequalities, and two strict
@@ -2324,3 +2324,14 @@ Fresh exact tests pass1920 direct cutoff ranks,32752 half-rank subsets,
 and1920 reductions. Still no intrinsic list/MCA lower bound: global
 coordinate dependencies and other source classes remain outside. The
 nonmonomial finite-length extension has NOT been proved.
+
+## Self-contained first-order technical note completed
+
+research/first_order_support_audit/note/main.pdf is a separate 12-page,
+11pt letter-format article with one-inch margins. It presents the audited
+quarter-rate support converse, the new exact finite-length uniform-in-m
+extension, the fixed-jet-space nonmonomial degeneration, and two exact
+high-rate improvement certificates. It does not claim the full high-rate
+optimum or intrinsic list/MCA tightness. The final LaTeX log has no
+undefined references or layout warnings; all twelve pages were rendered
+and visually inspected. Main counterexample paper remains 157 pages.
