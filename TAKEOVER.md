@@ -540,3 +540,20 @@ Example r78,j0,k8,p1249,n64,A16 hasrate/gap1/8 andlist8; no universal
 bound violation follows. BINOMIAL_SECTION_SEARCH.md and allcensus/
 verification sources/results inresearch/dickson_fixed_gap/. No
 manuscript addition, no active numerical job, no asymptotic claim.
+
+Independent-product amplification audit: for nontrivial monic factor
+families of degrees A_i, put d_i=maxdeg(F-F'). Independent products of
+degree A=sumA_i have maximum difference degree exactly
+D=max_i(A-A_i+d_i), by changing one factor and telescoping for the
+reverse inequality. A common-prefix gap s=A-K therefore requires
+s<=min_i(A_i-d_i-1), hence r(s+1)<=A<=n and r<1/eta. This rules out
+unboundedly many independent factors at fixedgap, in every field;
+it does not constrain a single large family or coupled cancellations.
+INDEPENDENT_PRODUCT_LIMIT.md gives proof and18 exact fixtures r1..6,
+B1,2,3, plusfullselectedagreement checks overF101 forB1. The example
+has2^r choices at exactgap1/(4r), only reciprocallog-listgrowth.
+Also closed a naturaluv-factor line: ifQ=-uCB-vAD fits becauseboth
+cross terms individually have degree<K, whiledegAB>K, then
+g=CD hasdegree<K. The line isparalleltoacodeword, soevery nearby
+witness has afullcorrelatedexplanation. This doesnotcoverhighdegree
+cross-term cancellations. No manuscript addition or strongerlowerbound.
