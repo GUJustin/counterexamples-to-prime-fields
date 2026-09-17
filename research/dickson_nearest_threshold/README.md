@@ -62,3 +62,6 @@ sequentially under the repository's384MiB/60-second watchdog; store each
 stdout in its corresponding bank_coset log. Run `verify.py` after all four
 complete. Each census used under2MiB measured process-group RSS and less
 than11 seconds. No floating-point arithmetic enters either implementation.
+
+See `ALGEBRAIC_FRONTIER.md` for the algebraic strict degree bound and
+the primary-source comparison. No general3/8 ceiling is inferred.
