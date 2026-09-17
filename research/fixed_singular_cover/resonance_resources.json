@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/fixed_singular_cover/verify_resonance.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.1208923329977551,
+  "peak_rss_kib": 67664,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

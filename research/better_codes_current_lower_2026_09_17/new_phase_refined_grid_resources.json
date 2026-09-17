@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/better_codes_current_lower_2026_09_17/refine_phase_grid.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 5.083758250009851,
+  "peak_rss_kib": 289616,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

@@ -1,0 +1,285 @@
+\section{Singular covers and a linear bound for monic Riccati families}
+\label{app:singular-cover-riccati}
+
+This section closes a broad first-order template: bounded challenge-degree
+identities with constant nonzero quadratic value coefficient have only
+linearly many bad nearby labels above agreement $5D/3$, even when the
+singular coordinates move with the challenge. The conclusion concerns
+\emph{actual solutions of one identity}. Applying it to an entire received
+line requires proving that every nearby candidate under consideration
+satisfies that identity.
+
+Throughout, $D\ge1$, the characteristic is zero or greater than $D$,
+and the domain has $n$ distinct coordinates. Fix a received line $f+zg$
+and an integer $D<A\le n$. A solution pair $(z,P)$, $\deg P\le D$, is
+\emph{bad} if it has at least $A$ agreements and no degree-at-most-$D$
+polynomial agrees with $g$ on its full agreement support. This is precisely
+the obstruction to full-support common witnesses.
+
+\begin{theorem}[A fixed cover for singular agreements]
+\label{thm:fixed-singular-cover}
+Let $Q(X,z,u,v)\ne0$ have total jet degree at most $B\ge1$ and challenge
+degree at most $H\ge0$. Suppose a fixed set $S$ of $s$ domain coordinates
+and a set of at most $E$ exceptional labels have the following property:
+outside those labels, every bad solution of $Q(X,z,P,P')=0$ has at most
+$e$ singular agreements outside $S$, where singular means
+$Q_v(x,z,P(x),P'(x))=0$. Put
+\[
+ \kappa=\min\left\{s,\left\lfloor\frac{2s+D}{3}\right\rfloor\right\},
+ \qquad L=A-e-\kappa,
+\]
+and assume $L\ge1$. Define
+\[
+ \tau=\max\{0,2D-3\},\quad b_0=1+\tau(B-1),\quad
+ T_0=b_0+\tau H,\quad K_0=H+BT_0,\quad q_0=B+H,
+\]
+\[
+ C=q_0K_0+q_0T_0\frac{n-D}{A-D}+q_0n.
+\]
+The number of bad labels is at most
+\begin{equation}\label{eq:singular-cover-bound}
+ E+\frac nL C+n.
+\end{equation}
+The last $n$ may be omitted if $\kappa=s$. In particular this is linear
+in $n$ for fixed $B,H$, $A-D\ge\eta n$, $L\ge\lambda n$, and $E=O(n)$.
+The singular-cover assumption is uniform over the actual candidates;
+the separant need not be independent of $P$.
+\end{theorem}
+\begin{proof}
+Theorem~\ref{thm:nonsingular-agreement-mca} bounds labels admitting a bad
+witness with at least $L$ nonsingular agreements by $nC/L$.
+Outside those and the exceptional labels, select one bad witness per
+remaining label. Each has at least
+$A-(L-1)-e=\kappa+1$ agreements within $S$. If $\kappa=s$, none exist.
+Otherwise, writing $b=\kappa+1\le s$, we have $3b-2s>D$.
+Two selected candidates at the same label would agree on at least
+$2b-s\ge3b-2s>D$ points and hence coincide. At three distinct labels,
+their $S$-agreement sets have an intersection of size at least
+$3b-2s>D$. Their polynomials consequently satisfy the same affine
+relation as their labels identically. If there are at least three
+labels, all selected candidates lie on the affine codeword pencil
+$P_z=F_0+zG_0$ determined by the first two; otherwise there are at most
+$2\le n$ labels.
+
+For one such pencil, a coordinate at which $F_0=f$ and $G_0=g$ agrees
+persistently. Every other coordinate agrees at at most one label.
+A bad pair must have at least one such extra agreement, because otherwise
+$F_0,G_0$ are full-support common witnesses. There are at most $n$ labels
+with an extra agreement. This proves the bound.
+\end{proof}
+
+For example, a separant $R_0(X)R_1(X,z)$ with
+$\deg_XR_1\le e$ and $\deg_zR_1\le h$ satisfies the hypothesis with
+$S$ the domain roots of $R_0$ and $E\le h$. Use one nonzero coefficient
+of $R_1$ to exclude labels at which it vanishes identically. A different
+incidence argument below allows \emph{all} roots to move.
+
+\begin{theorem}[Bounded-challenge monic Riccati families]
+\label{thm:monic-riccati-linear}
+Let $T(X,z)\ne0$, and let $T,R,S$ have challenge degree at most a fixed
+integer $h\ge0$, with unrestricted $X$-degrees. Consider
+\begin{equation}\label{eq:monic-riccati-family}
+ T(X,z)P'-P^2+R(X,z)P-S(X,z)=0,\qquad \deg P\le D.
+\end{equation}
+If $A-D\ge\eta n$ and $A-5D/3\ge\lambda n$ for fixed positive
+$\eta,\lambda$, then the number of labels possessing a bad $A$-near
+solution is $O_{h,\eta,\lambda}(n)$. The same conclusion holds with
+any constant nonzero coefficient of $P^2$ in place of $-1$.
+\end{theorem}
+\begin{proof}
+Write $t=\deg_XT$, with leading coefficient $\tau(z)\ne0$, and
+$r=\deg_XR$ (allowing $r=-\infty$).
+
+\emph{Low derivative degree: $t\le2D$.}
+Let $S_0$ be the domain coordinates where $T(x,z)$ vanishes identically
+in $z$, and let $s=|S_0|$. A nonzero coefficient of $T$ as a polynomial
+in $z$ shows $s\le t\le2D$. At each coordinate outside $S_0$, the
+polynomial $T(x,z)$ has at most $h$ roots. Thus the total number of
+singular coordinate--label incidences outside $S_0$ is at most $hn$.
+Set $e=\lfloor\lambda n/2\rfloor$. At most
+$hn/(e+1)\le2h/\lambda$ labels have more than $e$ such incidences.
+Every other label satisfies the uniform cover hypothesis of
+Theorem~\ref{thm:fixed-singular-cover}, since the separant is $T$.
+Moreover
+\[
+ L=A-e-\min\{s,\lfloor(2s+D)/3\rfloor\}
+ \ge A-e-5D/3\ge\lambda n/2.
+\]
+Use $B=2,H=h$ in that theorem.
+
+\emph{High linear degree: $r\ge t>2D$.}
+A nonzero coefficient of $S$ above degree $r+D$ restricts solutions to
+at most $h$ labels. Otherwise equate coefficients of $X^{r+i}$ in
+order $i=D,\ldots,0$. This is a triangular system determining every
+coefficient of $P$, with pivot $R_r(z)$. The derivative term involves
+only higher message coefficients, and $P^2$ is absent since $r>2D$.
+Outside at most $h$ roots of the pivot, Cramer's rule gives one possible
+family $P=W/\Delta$, where
+\[
+ \deg_zW,\deg_z\Delta\le K=h(D+1).
+\]
+An agreement numerator has degree at most $K+1$ in $z$. If at most $D$
+coordinates agree persistently, every nearby label supplies at least
+$A-D$ nonpersistent incidences, giving at most $n(K+1)/(A-D)$ labels.
+If more than $D$ coordinates persist, interpolation forces an affine
+codeword pencil, with at most $n$ bad labels. Further residual equations
+can only remove candidates.
+
+\emph{High derivative degree without an identically zero pivot.}
+Now $t>2D$ and $r\le t-1$. A nonzero coefficient of $S$ above $t+D-1$
+again restricts solutions to at most $h$ labels. Otherwise the top
+coefficient pivots are
+\[
+ d_i(z)=i\tau(z)+R_{t-1}(z),\qquad 1\le i\le D.
+\]
+If each is a nonzero polynomial, Theorem~\ref{thm:triangular-newton}
+applies with nonlinear degree $2D<t$, giving the required linear bound.
+Its exceptional set already includes roots of the nonconstant pivots.
+
+\emph{An identically resonant pivot.}
+It remains to treat $R_{t-1}=-j\tau$ for some $1\le j\le D$.
+The characteristic assumption makes this $j$ unique, and every other
+pivot is $(i-j)\tau$. Exclude the roots of $\tau$. Descending coefficient
+elimination leaves $a_j=d$ and $a_0=c$ free. At the resonant equation,
+the compatibility condition is rational in $z$ and independent of
+$c,d$. Its numerator has degree at most $K=h(D+1)$; if nonzero, this
+already bounds the labels. Otherwise the remaining equations give
+\begin{equation}\label{eq:riccati-resonance-reconstruction}
+ P=c+\frac{Q_z(X)+dV_z(X)}{\delta(z)},\qquad
+ \delta=\tau^D,\qquad \deg_z(\delta,Q,V)\le K.
+\end{equation}
+Here $Q_z(0)=V_z(0)=0$, $\deg_XQ\le D$, $\deg_XV=j$, and the leading
+coefficient of $V$ is $\delta$. These degree bounds follow by descending
+induction: each step multiplies by coefficient polynomials of degree
+at most $h$ and introduces at most one factor of $\tau$ in the common
+denominator. At most $D$ steps are used; the bound $K$ includes the
+compatibility numerator as well.
+
+Translate $X$ by a transcendental element $w$, working over $\F(w)$,
+and absorb constant terms into $c$. This preserves all degree bounds
+and the original agreement incidences. The translated $Q,V$ again have
+zero constant terms; their derivatives at zero are the pretranslation
+derivatives at $w$. Since $j\ne0$ in the field,
+\[
+ v(z)=T(w,z)V'_z(0)\ne0.
+\]
+Put $M=2K+h$. Multiplication of the residual identity by $\delta^2$
+gives coefficient equations of parameter degree at most two in $(c,d)$
+and $z$-degree at most $M$. Its constant coefficient, after division by
+$\delta$, is
+\[
+ -\delta c^2+R(w,z)\delta c+T(w,z)Q'_z(0)
+       +v(z)d-S(w,z)\delta=0.
+\]
+Outside the roots of $v$, this solves $d=N(z,c)/v(z)$, where
+$\deg_cN=2$, its leading coefficient is $\delta$, and
+$\deg_zN\le M$. The total number of roots excluded by $\delta$ and $v$
+is at most $K+M$.
+
+Substitute $d=N/v$ in every cleared residual and multiply by $v^2$.
+The resulting plane equations in $(z,c)$ have bidegree at most $(3M,4)$.
+They are not all zero: the $X^{2j}$ residual before substitution is
+\[
+ -\delta^2d^2+\alpha(z)c+\beta(z)d+\gamma(z).
+\]
+There is no $cd$ term because $\deg_XV=j<2j$, and $c^2$ occurs only in
+the constant coefficient. Its substituted $c^4$ coefficient is therefore
+$-\delta^4$. In particular a vertical common component can occur only
+at an already excluded root of $\delta$.
+
+For completeness, the plane incidence bound can be applied directly.
+Take the common gcd of all the plane residuals. Its curve components
+have total bidegree at most $(3M,4)$. After removing that gcd, a generic
+linear combination of the residual quotients has no common component
+with one fixed nonzero quotient. Intersection in
+$\mathbb P^1\times\mathbb P^1$ bounds the isolated points by $24M$.
+Relabel the translated domain coordinates and their received values.
+An agreement equation, after substitution, is
+\[
+ v\bigl(\delta c+Q_z(x)-\delta(f(x)+zg(x))\bigr)+V_z(x)N(z,c)=0.
+\]
+It has bidegree at most $(J,2)$, where $J=M+K+1$. Thus the total number
+of nonpersistent incidences per coordinate on the residual curves is
+at most $6M+4J$. On curves with at most $D$ persistent coordinates,
+each nearby point supplies at least $A-D$ such incidences. More than
+$D$ persistent coordinates force an affine codeword graph by interpolation.
+Reconstruction is injective: $c$ is the translated constant coefficient
+and $d$ is recovered from the leading coefficient of $P-c-Q/\delta$.
+Hence there are at most four such graph components. Each contributes at
+most $n$ bad labels. Interpolation at the persistent original domain coordinates, before
+translation, gives this pencil over the original field. The resonant case is therefore bounded by
+\begin{equation}\label{eq:riccati-resonance-bound}
+ K+25M+\frac{n(6M+4J)}{A-D}+4n=O_{h,\eta}(n).
+\end{equation}
+This proves all cases. Replacing $-P^2$ by a constant nonzero multiple
+changes the displayed nonzero leading coefficients, but none of the
+degree or incidence estimates.
+\end{proof}
+
+At quarter rate the first-order threshold has
+$A/D\to4(3+\sqrt{133})/31>5/3$. Thus bounded-challenge monic Riccati
+identities cannot supply superlinear bad-label examples there at fixed
+agreement slack. This does not cover arbitrary implicit first-order
+identities, or equations with a nonconstant quadratic value coefficient.
+It also does not prove that an interpolating identity of this form
+contains every nearby candidate.
+
+\begin{proposition}[A linear lower example with all agreements singular]
+\label{prop:all-singular-linear-lower}
+Let $\F_q$ have characteristic greater than $D$, with $n$ distinct domain
+coordinates, and choose $D<s<n$. Put $A=s+1$ and fix a subset $S_0$ of
+$s$ coordinates. If
+\begin{equation}\label{eq:all-singular-direction-existence}
+ 2^nq^{-(s-D)}(1-1/q)^{-(n-s)}<1,
+\end{equation}
+there is a received line with no degree-at-most-$D$ direction polynomial
+agreeing on $A$ coordinates, but with at least $n-s$ distinct nearby
+labels whose selected witnesses have entirely singular agreement supports
+for one implicit identity of jet and challenge degree two.
+\end{proposition}
+\begin{proof}
+Write $R_0(X)=\prod_{x\in S_0}(X-x)$. At coordinates in $S_0$ set
+$f(x)=0,g(x)=x^D$. At each remaining coordinate $x_i$, choose
+$u_i\in\F_q^*$ and set
+\[
+ f(x_i)=-u_ix_i,\qquad g(x_i)=x_i^D+u_i.
+\]
+At the label $z=x_i$, the candidate $P_z=zX^D$ agrees exactly on
+$S_0\cup\{x_i\}$. Its full support cannot have a common direction:
+more than $D$ core coordinates force that direction to be $X^D$, which
+fails at $x_i$.
+
+Let $U=v-zDX^{D-1}$ and
+\[
+ Q(X,z,u,v)=R_0(X)(X-z)U+U^2.
+\]
+Every displayed candidate satisfies $Q=0$. On it, the separant is
+$Q_v=R_0(X)(X-z)$, which vanishes at every agreement coordinate and has
+at most one zero outside the fixed set $S_0$. The fixed-cover hypothesis
+therefore holds with $e=1$ and no exceptional labels for these witnesses.
+Indeed every degree-at-most-$D$ solution is $zX^D+c$: writing
+$a=P'-zDX^{D-1}$ gives $a(a+R_0(X)(X-z))=0$, and degree comparison
+excludes the second factor. We make no assertion that only $c=0$ can
+be nearby for an arbitrary choice of the $u_i$.
+
+To exclude ordinary common agreement on any $A$ coordinates, choose the
+$u_i$ independently and uniformly in $\F_q^*$. Subtract $X^D$ from a
+prospective direction polynomial. The zero polynomial matches exactly
+$s<A$ core coordinates. For a nonzero polynomial $H$ of degree at most
+$D$, fix an $A$-subset containing $m$ core coordinates. If $m>D$,
+matching is impossible. Otherwise at most $q^{D+1-m}$ polynomials vanish
+on the selected core, and each matches the $A-m$ independent outside
+values with probability at most $(q-1)^{-(A-m)}$. The probability of any
+match on this subset is at most
+$q^{D-s}(1-1/q)^{-(n-s)}$. Union bounding over at most $2^n$ subsets
+and using~\eqref{eq:all-singular-direction-existence} proves existence.
+Without an $A$-agreeing direction polynomial, ordinary common agreement
+is impossible regardless of $f$.
+\end{proof}
+
+For example, $n=100m$, $D=25m-1$, $s=48m-1$ gives quarter rate,
+$A/n=0.48$ above its first-order curve, and $52m+1$ displayed bad labels.
+Condition~\eqref{eq:all-singular-direction-existence} holds for sufficiently
+large prime fields. Here the fixed-cover theorem has positive linear
+slack, so its linear order is sharp. This is a linear lower example,
+not a quadratic lower bound for general first-order proximity gaps.

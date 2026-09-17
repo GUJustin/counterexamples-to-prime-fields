@@ -1,0 +1,657 @@
+{
+  "tested": 1144,
+  "feasible": 852,
+  "contexts": [
+    [
+      34,
+      124
+    ],
+    [
+      27,
+      79
+    ],
+    [
+      25,
+      75
+    ],
+    [
+      29,
+      75
+    ],
+    [
+      27,
+      70
+    ],
+    [
+      27,
+      90
+    ],
+    [
+      30,
+      100
+    ],
+    [
+      20,
+      75
+    ],
+    [
+      30,
+      50
+    ],
+    [
+      20,
+      100
+    ],
+    [
+      15,
+      100
+    ],
+    [
+      10,
+      124
+    ]
+  ],
+  "scope": "Necessary prefix over12 selected ancestors; excludes other ancestors and full ledger. Ranking only.",
+  "best": [
+    {
+      "m": 350,
+      "L": 31116,
+      "s": 107,
+      "Y": 484,
+      "gap": 92089237022307,
+      "potential": [
+        23071889772,
+        1413934061769,
+        6458432636841
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 664252566611934
+    },
+    {
+      "m": 350,
+      "L": 33250,
+      "s": 105,
+      "Y": 484,
+      "gap": 98051799344170,
+      "potential": [
+        22854249802,
+        1451625993702,
+        6690654485015
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 676360396392841
+    },
+    {
+      "m": 350,
+      "L": 33250,
+      "s": 107,
+      "Y": 484,
+      "gap": 101859178339971,
+      "potential": [
+        23071889772,
+        1464321820069,
+        6690654485015
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 680391984867724
+    },
+    {
+      "m": 350,
+      "L": 33250,
+      "s": 110,
+      "Y": 484,
+      "gap": 104101326122975,
+      "potential": [
+        23398349727,
+        1483365559620,
+        6690654485015
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 686439367580128
+    },
+    {
+      "m": 350,
+      "L": 35000,
+      "s": 105,
+      "Y": 484,
+      "gap": 105843712931670,
+      "potential": [
+        22854249802,
+        1492946788934,
+        6881089458916
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 689595626921264
+    },
+    {
+      "m": 350,
+      "L": 35000,
+      "s": 107,
+      "Y": 484,
+      "gap": 109871079607971,
+      "potential": [
+        23071889772,
+        1505642615302,
+        6881089458916
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 693627215396306
+    },
+    {
+      "m": 350,
+      "L": 35000,
+      "s": 110,
+      "Y": 484,
+      "gap": 112257319326725,
+      "potential": [
+        23398349727,
+        1524686354853,
+        6881089458916
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 699674598108710
+    },
+    {
+      "m": 400,
+      "L": 34000,
+      "s": 120,
+      "Y": 553,
+      "gap": 154591654945178,
+      "potential": [
+        26115769504,
+        1564553603699,
+        7210275483503
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 742668417053242
+    },
+    {
+      "m": 400,
+      "L": 34000,
+      "s": 123,
+      "Y": 553,
+      "gap": 162027714765703,
+      "potential": [
+        26442229460,
+        1583597343250,
+        7210275483503
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 748715799774895
+    },
+    {
+      "m": 400,
+      "L": 35561,
+      "s": 120,
+      "Y": 553,
+      "gap": 165604110249567,
+      "potential": [
+        26115769504,
+        1601411753047,
+        7380143480223
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 754474242684774
+    },
+    {
+      "m": 400,
+      "L": 34000,
+      "s": 126,
+      "Y": 553,
+      "gap": 164581029817089,
+      "potential": [
+        26768689415,
+        1602641082802,
+        7210275483503
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 754763182487458
+    },
+    {
+      "m": 400,
+      "L": 35561,
+      "s": 123,
+      "Y": 553,
+      "gap": 173419572376697,
+      "potential": [
+        26442229460,
+        1620455492598,
+        7380143480223
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 760521625406427
+    },
+    {
+      "m": 400,
+      "L": 38000,
+      "s": 116,
+      "Y": 553,
+      "gap": 163785016217589,
+      "potential": [
+        25680489564,
+        1633609482925,
+        7645555423848
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 764857195597191
+    },
+    {
+      "m": 400,
+      "L": 35561,
+      "s": 126,
+      "Y": 553,
+      "gap": 176123573026216,
+      "potential": [
+        26768689415,
+        1639499232149,
+        7380143480223
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 766569008118831
+    },
+    {
+      "m": 400,
+      "L": 38000,
+      "s": 120,
+      "Y": 553,
+      "gap": 182810630741178,
+      "potential": [
+        26115769504,
+        1659001135659,
+        7645555423848
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 772920372546957
+    },
+    {
+      "m": 400,
+      "L": 38000,
+      "s": 123,
+      "Y": 553,
+      "gap": 191218893781703,
+      "potential": [
+        26442229460,
+        1678044875210,
+        7645555423848
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 778967755268610
+    },
+    {
+      "m": 400,
+      "L": 40000,
+      "s": 116,
+      "Y": 553,
+      "gap": 176827231091589,
+      "potential": [
+        25680489564,
+        1680833248904,
+        7863195394020
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 779983173343872
+    },
+    {
+      "m": 400,
+      "L": 38000,
+      "s": 126,
+      "Y": 553,
+      "gap": 194158334645089,
+      "potential": [
+        26768689415,
+        1697088614761,
+        7645555423848
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 785015137981014
+    },
+    {
+      "m": 400,
+      "L": 40000,
+      "s": 120,
+      "Y": 553,
+      "gap": 196920118639178,
+      "potential": [
+        26115769504,
+        1706224901639,
+        7863195394020
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 788046350293797
+    },
+    {
+      "m": 400,
+      "L": 38000,
+      "s": 130,
+      "Y": 553,
+      "gap": 188878115643508,
+      "potential": [
+        27203969355,
+        1722480267496,
+        7645555423848
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 793078314930939
+    },
+    {
+      "m": 400,
+      "L": 40000,
+      "s": 123,
+      "Y": 553,
+      "gap": 205814483289703,
+      "potential": [
+        26442229460,
+        1725268641190,
+        7863195394020
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 794093733015450
+    },
+    {
+      "m": 400,
+      "L": 40000,
+      "s": 126,
+      "Y": 553,
+      "gap": 208946987059089,
+      "potential": [
+        26768689415,
+        1744312380741,
+        7863195394020
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 800141115727854
+    },
+    {
+      "m": 400,
+      "L": 40000,
+      "s": 130,
+      "Y": 553,
+      "gap": 203431646841508,
+      "potential": [
+        27203969355,
+        1769704033476,
+        7863195394020
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 808204292677779
+    },
+    {
+      "m": 600,
+      "L": 42000,
+      "s": 180,
+      "Y": 829,
+      "gap": 702748428022625,
+      "potential": [
+        39161848315,
+        2134323458639,
+        9832859402887
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 1045715444090081
+    },
+    {
+      "m": 600,
+      "L": 42000,
+      "s": 184,
+      "Y": 829,
+      "gap": 734583122845010,
+      "potential": [
+        39597128255,
+        2159715111374,
+        9832859402887
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 1053778621040006
+    },
+    {
+      "m": 600,
+      "L": 42000,
+      "s": 189,
+      "Y": 829,
+      "gap": 752039795919215,
+      "potential": [
+        40141228180,
+        2191454677293,
+        9832859402887
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 1063857592227452
+    },
+    {
+      "m": 600,
+      "L": 45000,
+      "s": 180,
+      "Y": 829,
+      "gap": 783762363727625,
+      "potential": [
+        39161848315,
+        2205159107609,
+        10159319358145
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 1068404410710341
+    },
+    {
+      "m": 600,
+      "L": 45000,
+      "s": 184,
+      "Y": 829,
+      "gap": 818142872230010,
+      "potential": [
+        39597128255,
+        2230550760344,
+        10159319358145
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 1076467587660266
+    },
+    {
+      "m": 600,
+      "L": 48000,
+      "s": 174,
+      "Y": 829,
+      "gap": 778052138629675,
+      "potential": [
+        38508928404,
+        2237907277477,
+        10485779313404
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 1078998611896579
+    },
+    {
+      "m": 600,
+      "L": 45000,
+      "s": 189,
+      "Y": 829,
+      "gap": 837146740734215,
+      "potential": [
+        40141228180,
+        2262290326262,
+        10159319358145
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 1086546558847553
+    },
+    {
+      "m": 600,
+      "L": 48000,
+      "s": 180,
+      "Y": 829,
+      "gap": 864776299432625,
+      "potential": [
+        39161848315,
+        2275994756579,
+        10485779313404
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 1091093377330636
+    },
+    {
+      "m": 600,
+      "L": 45000,
+      "s": 195,
+      "Y": 829,
+      "gap": 821899110034065,
+      "potential": [
+        40794148091,
+        2300377805364,
+        10159319358145
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 1098641324281610
+    },
+    {
+      "m": 600,
+      "L": 48000,
+      "s": 184,
+      "Y": 829,
+      "gap": 901702621615010,
+      "potential": [
+        39597128255,
+        2301386409314,
+        10485779313404
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 1099156554280561
+    },
+    {
+      "m": 600,
+      "L": 51000,
+      "s": 174,
+      "Y": 829,
+      "gap": 853244206804675,
+      "potential": [
+        38508928404,
+        2308742926447,
+        10812239268662
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 1101687578516839
+    },
+    {
+      "m": 600,
+      "L": 48000,
+      "s": 189,
+      "Y": 829,
+      "gap": 922253685549215,
+      "potential": [
+        40141228180,
+        2333125975232,
+        10485779313404
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 1109235525467848
+    },
+    {
+      "m": 600,
+      "L": 51000,
+      "s": 180,
+      "Y": 829,
+      "gap": 945790235137625,
+      "potential": [
+        39161848315,
+        2346830405549,
+        10812239268662
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 1113782343950896
+    },
+    {
+      "m": 600,
+      "L": 53342,
+      "s": 174,
+      "Y": 829,
+      "gap": 911944148026625,
+      "potential": [
+        38508928404,
+        2364041956409,
+        11067095673734
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 1119400098458317
+    },
+    {
+      "m": 600,
+      "L": 48000,
+      "s": 195,
+      "Y": 829,
+      "gap": 906269940844065,
+      "potential": [
+        40794148091,
+        2371213454334,
+        10485779313404
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 1121330290901905
+    },
+    {
+      "m": 600,
+      "L": 51000,
+      "s": 184,
+      "Y": 829,
+      "gap": 985262371000010,
+      "potential": [
+        39597128255,
+        2372222058284,
+        10812239268662
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 1121845520900821
+    },
+    {
+      "m": 600,
+      "L": 53342,
+      "s": 180,
+      "Y": 829,
+      "gap": 1009035114277995,
+      "potential": [
+        39161848315,
+        2402129435511,
+        11067095673734
+      ],
+      "necessary_local_prefix": 0,
+      "filter_origin": null,
+      "optimistic_binding_source_charge": 1131494863892374
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "polynomial_label_pairs": 343,
+  "solutions": 49,
+  "nearby_bad_pairs": [
+    {
+      "z": 4,
+      "a": 4,
+      "c": 0,
+      "matches": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "nonsingular": []
+    },
+    {
+      "z": 5,
+      "a": 5,
+      "c": 0,
+      "matches": [
+        0,
+        1,
+        2,
+        3,
+        5
+      ],
+      "nonsingular": []
+    },
+    {
+      "z": 6,
+      "a": 6,
+      "c": 0,
+      "matches": [
+        0,
+        1,
+        2,
+        3,
+        6
+      ],
+      "nonsingular": []
+    }
+  ],
+  "triple_boundary_counts": [
+    3,
+    3,
+    3
+  ],
+  "passed": true
+}

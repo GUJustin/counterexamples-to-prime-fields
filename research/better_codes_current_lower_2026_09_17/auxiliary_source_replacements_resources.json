@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/better_codes_current_lower_2026_09_17/auxiliary_source_replacements.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5549807909992523,
+  "peak_rss_kib": 2704,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

@@ -1,0 +1,47 @@
+{
+  "passed": true,
+  "fixtures": [
+    {
+      "D": 1,
+      "j": 1,
+      "delta_degree": 1,
+      "shared_numerator_degree": 1,
+      "quartic_lead": "-(z + 1)**4"
+    },
+    {
+      "D": 2,
+      "j": 1,
+      "delta_degree": 2,
+      "shared_numerator_degree": 2,
+      "quartic_lead": "-(z + 1)**8"
+    },
+    {
+      "D": 2,
+      "j": 2,
+      "delta_degree": 2,
+      "shared_numerator_degree": 2,
+      "quartic_lead": "-(z + 1)**8"
+    },
+    {
+      "D": 3,
+      "j": 1,
+      "delta_degree": 3,
+      "shared_numerator_degree": 3,
+      "quartic_lead": "-(z + 1)**12"
+    },
+    {
+      "D": 3,
+      "j": 2,
+      "delta_degree": 3,
+      "shared_numerator_degree": 3,
+      "quartic_lead": "-(z + 1)**12"
+    },
+    {
+      "D": 3,
+      "j": 3,
+      "delta_degree": 3,
+      "shared_numerator_degree": 3,
+      "quartic_lead": "-(z + 1)**12"
+    }
+  ]
+}

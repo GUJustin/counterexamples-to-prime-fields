@@ -1,0 +1,102 @@
+{
+  "A": 181275,
+  "scope": "Numeric hypotheses for the existing algebraic source adapter after explicit target-A substitution. No Lean rebuild or complete target certificate.",
+  "sources": [
+    {
+      "file": "new_phase_finalist_0.json",
+      "source": {
+        "m": 250,
+        "L": 16250,
+        "s": 75,
+        "Y": 345,
+        "gap": 8155022749635,
+        "threshold_parent": 0,
+        "potential": [
+          16307598513,
+          859786587363,
+          3958354806019
+        ],
+        "necessary_local_prefix": 0,
+        "optimistic_binding_source_charge": 426077464248119
+      },
+      "coefficient_count": 7689397768810435,
+      "local_rank": 29301615700,
+      "shape_slack": 31741,
+      "max_mixed_costs": [
+        1264375,
+        5783625,
+        24000
+      ],
+      "char_gate_slack": 2124922808,
+      "potential_inequality_slacks": [
+        312,
+        43077,
+        34091
+      ]
+    },
+    {
+      "file": "new_phase_refined_finalist_0.json",
+      "source": {
+        "m": 350,
+        "L": 31116,
+        "s": 107,
+        "Y": 484,
+        "gap": 92089237022307,
+        "potential": [
+          23071889772,
+          1413934061769,
+          6458432636841
+        ],
+        "necessary_local_prefix": 0,
+        "filter_origin": null,
+        "optimistic_binding_source_charge": 664252566611934
+      },
+      "coefficient_count": 40881618929493603,
+      "local_rank": 155599707384,
+      "shape_slack": 123078,
+      "max_mixed_costs": [
+        2081485,
+        9436544,
+        33953
+      ],
+      "char_gate_slack": 2121269889,
+      "potential_inequality_slacks": [
+        32451,
+        40423,
+        31340
+      ]
+    },
+    {
+      "file": "new_phase_refined_finalist_1.json",
+      "source": {
+        "m": 350,
+        "L": 33250,
+        "s": 105,
+        "Y": 484,
+        "gap": 98051799344170,
+        "potential": [
+          22854249802,
+          1451625993702,
+          6690654485015
+        ],
+        "necessary_local_prefix": 0,
+        "filter_origin": null,
+        "optimistic_binding_source_charge": 676360396392841
+      },
+      "coefficient_count": 43084259180110890,
+      "local_rank": 163979367755,
+      "shape_slack": 123080,
+      "max_mixed_costs": [
+        2137625,
+        9775850,
+        33635
+      ],
+      "char_gate_slack": 2120930583,
+      "potential_inequality_slacks": [
+        41105,
+        31143,
+        35058
+      ]
+    }
+  ]
+}

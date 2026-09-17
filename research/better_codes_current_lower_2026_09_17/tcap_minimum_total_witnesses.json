@@ -1,0 +1,58 @@
+[
+  {
+    "candidate": {
+      "m": 226,
+      "s": 70,
+      "q": 312,
+      "T": 9678,
+      "slope": 909424303,
+      "min_total_cap": 9678,
+      "peak_L": 9684,
+      "peak_strong_gap": 812317875,
+      "required_L": 9682,
+      "nullity": 1269335799,
+      "quotient_count": 815430885
+    },
+    "previous_cap": {
+      "m": 226,
+      "s": 70,
+      "q": 312,
+      "T": 9677,
+      "slope": 909424303,
+      "min_total_cap": 9678,
+      "peak_L": 9683,
+      "peak_strong_gap": -97106428,
+      "required_L": null,
+      "nullity": null,
+      "quotient_count": null
+    }
+  },
+  {
+    "candidate": {
+      "m": 229,
+      "s": 71,
+      "q": 316,
+      "T": 9673,
+      "slope": 959397516,
+      "min_total_cap": 9673,
+      "peak_L": 9679,
+      "peak_strong_gap": 178423132,
+      "required_L": 9678,
+      "nullity": 1525346346,
+      "quotient_count": 1443744190
+    },
+    "previous_cap": {
+      "m": 229,
+      "s": 71,
+      "q": 316,
+      "T": 9672,
+      "slope": 959397516,
+      "min_total_cap": 9673,
+      "peak_L": 9678,
+      "peak_strong_gap": -780974384,
+      "required_L": null,
+      "nullity": null,
+      "quotient_count": null
+    }
+  }
+]

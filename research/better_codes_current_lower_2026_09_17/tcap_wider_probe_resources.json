@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/better_codes_current_lower_2026_09_17/tcap_wider_probe.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 5.022106333999545,
+  "peak_rss_kib": 20160,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

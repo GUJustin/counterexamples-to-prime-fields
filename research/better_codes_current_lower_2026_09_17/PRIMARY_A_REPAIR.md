@@ -35,3 +35,32 @@ At the unchanged shape, dimension positivity needs a saving of at least 14558248
 ## Validation and limitations
 
 The count formulas were previously matched to all three authoritative baseline kernel counts. The expanded audit ran in under two seconds and below 22 MiB under the 384 MiB / 60 second watchdog. Exact results and the resource record are saved beside this note. No Lean rebuild, source-provider port, geometric receipt regeneration, or improved score is claimed.
+
+## Small quotient follow-up
+
+`primary_A_small_quotients.py` checks qcap160–163, m115–119, all s<=qcap, choosing maximal D=min(mA,(qcap+1)w−s). qcap160 has no feasible choice, including deliberate weighted-degree truncation at higher m. qcap161 first works at (117,35,1118298) or (117,36,613675); qcap162 brings no better choice. qcap163 works at (118,35,380088) or (118,36,176421). These are minima within the enumerated scope and affine-L regime, not arbitrary-support lower bounds.
+
+## Actual downstream role of A
+
+Pinned primary `MovingFiberSelection6811.lean` shows the selected pair is drawn from TCap and B, not A. A is used to separate factors that divide its entire kernel from the complementary factors. The universal-factor aggregate inherits r<=s_A and y<=q_A. Its total cap comes from TCap, not A.L. On a retained total cap9275, the old4970 (r,v) rows become5040 for (s_A,q_A)=(35,161), or5238 for (36,163).
+
+For complementary factors, `MovingFiberInitialCore6811.lean` uses A as the right helper with caps (L_A,q_A,s_A). The generic linear-majorant theorem yields coefficients
+
+    cT=ceil((n−w)(ay*s_A+ar*q_A)/gap),
+    cY=ceil((n−w)(ar*L_A+az*s_A)/gap)+(errors+1)*s_A,
+    cR=ceil((n−w)(ay*L_A+az*q_A)/gap)+(errors+1)*q_A,
+
+where ay=1+2w*185, ar=w*(2*40−1), az=1+2w*9275 and gap=A−w. These reproduce all three old potential coefficients exactly. The complement greedily maximizes cT*t+cY*y+cR*r in the remaining wide box (9275−t_p,185−y_p,40−r_p), with 0<=r<=y<=t. All coefficients are nonnegative, so the same greedy formula remains valid.
+
+`primary_A_potential.json` records resulting coefficients and exact comparisons. At the old binding aggregate (r,y,t)=(35,159,9249):
+
+| A-source choice | complement change versus baseline |
+|---|---:|
+|q161,s35,L1118298|+1127705357818597|
+|q161,s36,L613675|+453720828166349|
+|q163,s36,L176421|−130365302389024|
+|q163,s35,L380088|+141556003128757|
+
+Thus q163,s36 has a genuine favorable direct-helper contribution. This does not establish its full ledger: expanded phase potentials/domain, source B/TCap repairs, and corresponding base receipts remain necessary. Conversely the q161 increases defeat the currently frozen best phase margin at that row, but are not impossibility proofs against different phases or sharper complements.
+
+A's current use requires only positive nullity. TCap is different: its cap9275 is proved by nullity exceeding the coefficient count of the quotient box of total degree L−9276. Merely finding positive nullity after increasing TCap.L does not preserve this total cap. This distinction is explicit in Selection's `common_TCap_total_le`.

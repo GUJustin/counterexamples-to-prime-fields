@@ -1,0 +1,102 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "group": 0,
+      "baseline_graph_identity": true,
+      "target_four_numerators_affine_in_z": true,
+      "nonnegative_coefficients": true
+    },
+    {
+      "group": 1,
+      "baseline_graph_identity": true,
+      "target_four_numerators_affine_in_z": true,
+      "nonnegative_coefficients": true
+    },
+    {
+      "group": 2,
+      "baseline_graph_identity": true,
+      "target_four_numerators_affine_in_z": true,
+      "nonnegative_coefficients": true
+    },
+    {
+      "group": 3,
+      "baseline_graph_identity": true,
+      "target_four_numerators_affine_in_z": true,
+      "nonnegative_coefficients": true
+    },
+    {
+      "group": 4,
+      "baseline_graph_identity": true,
+      "target_four_numerators_affine_in_z": true,
+      "nonnegative_coefficients": true
+    },
+    {
+      "group": 5,
+      "baseline_graph_identity": true,
+      "target_four_numerators_affine_in_z": true,
+      "nonnegative_coefficients": true
+    },
+    {
+      "group": 6,
+      "baseline_graph_identity": true,
+      "target_four_numerators_affine_in_z": true,
+      "nonnegative_coefficients": true
+    },
+    {
+      "group": 7,
+      "baseline_graph_identity": true,
+      "target_four_numerators_affine_in_z": true,
+      "nonnegative_coefficients": true
+    },
+    {
+      "group": 8,
+      "baseline_graph_identity": true,
+      "target_four_numerators_affine_in_z": true,
+      "nonnegative_coefficients": true
+    },
+    {
+      "group": 9,
+      "baseline_graph_identity": true,
+      "target_four_numerators_affine_in_z": true,
+      "nonnegative_coefficients": true
+    },
+    {
+      "group": 10,
+      "baseline_graph_identity": true,
+      "target_four_numerators_affine_in_z": true,
+      "nonnegative_coefficients": true
+    },
+    {
+      "group": 11,
+      "baseline_graph_identity": true,
+      "target_four_numerators_affine_in_z": true,
+      "nonnegative_coefficients": true
+    },
+    {
+      "group": 12,
+      "baseline_graph_identity": true,
+      "target_four_numerators_affine_in_z": true,
+      "nonnegative_coefficients": true
+    },
+    {
+      "group": 13,
+      "baseline_graph_identity": true,
+      "target_four_numerators_affine_in_z": true,
+      "nonnegative_coefficients": true
+    },
+    {
+      "group": 14,
+      "baseline_graph_identity": true,
+      "target_four_numerators_affine_in_z": true,
+      "nonnegative_coefficients": true
+    },
+    {
+      "group": 15,
+      "baseline_graph_identity": true,
+      "target_four_numerators_affine_in_z": true,
+      "nonnegative_coefficients": true
+    }
+  ],
+  "scope": "Exact old graph polynomial match; new four rational numerators affine with nonnegative coefficients; rounded max-of-lines majorizes generic bound. Target Lean source and receipt port still required."
+}

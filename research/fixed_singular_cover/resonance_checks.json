@@ -1,0 +1,47 @@
+{
+  "fixtures": [
+    {
+      "D": 1,
+      "resonant_index": 1,
+      "t": 3,
+      "coefficient_zdegree": 0,
+      "quartic_leading_coefficient": -1
+    },
+    {
+      "D": 2,
+      "resonant_index": 1,
+      "t": 5,
+      "coefficient_zdegree": 1,
+      "quartic_leading_coefficient": -1
+    },
+    {
+      "D": 2,
+      "resonant_index": 2,
+      "t": 5,
+      "coefficient_zdegree": 1,
+      "quartic_leading_coefficient": -1
+    },
+    {
+      "D": 3,
+      "resonant_index": 1,
+      "t": 7,
+      "coefficient_zdegree": 2,
+      "quartic_leading_coefficient": -1
+    },
+    {
+      "D": 3,
+      "resonant_index": 2,
+      "t": 7,
+      "coefficient_zdegree": 2,
+      "quartic_leading_coefficient": -1
+    },
+    {
+      "D": 3,
+      "resonant_index": 3,
+      "t": 7,
+      "coefficient_zdegree": 2,
+      "quartic_leading_coefficient": -1
+    }
+  ],
+  "passed": true
+}

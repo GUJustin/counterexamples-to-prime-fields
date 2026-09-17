@@ -1,0 +1,607 @@
+{
+  "tested": 504,
+  "feasible": 500,
+  "scope": "Necessary local prefix filter at parent34,124; excludes inherited monotonicity and other contexts. Candidate ranking only.",
+  "best": [
+    {
+      "m": 250,
+      "L": 16250,
+      "s": 75,
+      "Y": 345,
+      "gap": 8155022749635,
+      "threshold_parent": 0,
+      "potential": [
+        16307598513,
+        859786587363,
+        3958354806019
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 426077464248119
+    },
+    {
+      "m": 250,
+      "L": 16250,
+      "s": 77,
+      "Y": 345,
+      "gap": 8789083982809,
+      "threshold_parent": 0,
+      "potential": [
+        16525238484,
+        872482413730,
+        3958354806019
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 430109052732251
+    },
+    {
+      "m": 250,
+      "L": 16250,
+      "s": 78,
+      "Y": 345,
+      "gap": 8864150978909,
+      "threshold_parent": 0,
+      "potential": [
+        16634058469,
+        878830326914,
+        3958354806019
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 432124846969772
+    },
+    {
+      "m": 250,
+      "L": 18750,
+      "s": 71,
+      "Y": 345,
+      "gap": 7873110391566,
+      "threshold_parent": 0,
+      "potential": [
+        15872318573,
+        893424642103,
+        4230404768734
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 436921759481744
+    },
+    {
+      "m": 250,
+      "L": 16250,
+      "s": 82,
+      "Y": 345,
+      "gap": 7403757996144,
+      "threshold_parent": 0,
+      "potential": [
+        17069338409,
+        904221979648,
+        3958354806019
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 440188023919538
+    },
+    {
+      "m": 250,
+      "L": 18750,
+      "s": 75,
+      "Y": 345,
+      "gap": 11413276224635,
+      "threshold_parent": 0,
+      "potential": [
+        16307598513,
+        918816294837,
+        4230404768734
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 444984936431510
+    },
+    {
+      "m": 250,
+      "L": 20000,
+      "s": 71,
+      "Y": 345,
+      "gap": 9245517736566,
+      "threshold_parent": 0,
+      "potential": [
+        15872318573,
+        922939495840,
+        4366429750092
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 446375495573457
+    },
+    {
+      "m": 250,
+      "L": 18750,
+      "s": 77,
+      "Y": 345,
+      "gap": 12164949430309,
+      "threshold_parent": 0,
+      "potential": [
+        16525238484,
+        931512121205,
+        4230404768734
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 449016524915801
+    },
+    {
+      "m": 250,
+      "L": 18750,
+      "s": 78,
+      "Y": 345,
+      "gap": 12260604891409,
+      "threshold_parent": 0,
+      "potential": [
+        16634058469,
+        937860034389,
+        4230404768734
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 451032319153322
+    },
+    {
+      "m": 250,
+      "L": 20000,
+      "s": 75,
+      "Y": 345,
+      "gap": 13042402962135,
+      "threshold_parent": 0,
+      "potential": [
+        16307598513,
+        948331148575,
+        4366429750092
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 454438672523382
+    },
+    {
+      "m": 250,
+      "L": 21250,
+      "s": 71,
+      "Y": 345,
+      "gap": 10617925081566,
+      "threshold_parent": 0,
+      "potential": [
+        15872318573,
+        952454349578,
+        4502454731450
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 455829231665329
+    },
+    {
+      "m": 250,
+      "L": 20000,
+      "s": 77,
+      "Y": 345,
+      "gap": 13852882154059,
+      "threshold_parent": 0,
+      "potential": [
+        16525238484,
+        961026974942,
+        4366429750092
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 458470261007514
+    },
+    {
+      "m": 250,
+      "L": 18750,
+      "s": 82,
+      "Y": 345,
+      "gap": 10604844518644,
+      "threshold_parent": 0,
+      "potential": [
+        17069338409,
+        963251687123,
+        4230404768734
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 459095496103088
+    },
+    {
+      "m": 250,
+      "L": 20000,
+      "s": 78,
+      "Y": 345,
+      "gap": 13958831847659,
+      "threshold_parent": 0,
+      "potential": [
+        16634058469,
+        967374888126,
+        4366429750092
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 460486055245035
+    },
+    {
+      "m": 250,
+      "L": 22226,
+      "s": 71,
+      "Y": 345,
+      "gap": 11689500736542,
+      "threshold_parent": 0,
+      "potential": [
+        15872318573,
+        975499547376,
+        4608663036894
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 463210708805751
+    },
+    {
+      "m": 250,
+      "L": 21250,
+      "s": 75,
+      "Y": 345,
+      "gap": 14671529699635,
+      "threshold_parent": 0,
+      "potential": [
+        16307598513,
+        977846002312,
+        4502454731450
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 463892408615095
+    },
+    {
+      "m": 250,
+      "L": 21250,
+      "s": 77,
+      "Y": 345,
+      "gap": 15540814877809,
+      "threshold_parent": 0,
+      "potential": [
+        16525238484,
+        990541828680,
+        4502454731450
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 467923997099386
+    },
+    {
+      "m": 250,
+      "L": 20000,
+      "s": 82,
+      "Y": 345,
+      "gap": 12205387779894,
+      "threshold_parent": 0,
+      "potential": [
+        17069338409,
+        992766540861,
+        4366429750092
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 468549232194960
+    },
+    {
+      "m": 250,
+      "L": 21250,
+      "s": 78,
+      "Y": 345,
+      "gap": 15657058803909,
+      "threshold_parent": 0,
+      "potential": [
+        16634058469,
+        996889741863,
+        4502454731450
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 469939791336748
+    },
+    {
+      "m": 250,
+      "L": 23250,
+      "s": 71,
+      "Y": 345,
+      "gap": 12813776833566,
+      "threshold_parent": 0,
+      "potential": [
+        15872318573,
+        999678115558,
+        4720094701622
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 470955209412169
+    },
+    {
+      "m": 250,
+      "L": 22226,
+      "s": 75,
+      "Y": 345,
+      "gap": 15943551856275,
+      "threshold_parent": 0,
+      "potential": [
+        16307598513,
+        1000891200111,
+        4608663036894
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 471273885755676
+    },
+    {
+      "m": 250,
+      "L": 22226,
+      "s": 77,
+      "Y": 345,
+      "gap": 16858752748513,
+      "threshold_parent": 0,
+      "potential": [
+        16525238484,
+        1013587026478,
+        4608663036894
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 475305474239808
+    },
+    {
+      "m": 250,
+      "L": 22226,
+      "s": 78,
+      "Y": 345,
+      "gap": 16983034411349,
+      "threshold_parent": 0,
+      "potential": [
+        16634058469,
+        1019934939662,
+        4608663036894
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 477321268477329
+    },
+    {
+      "m": 250,
+      "L": 21250,
+      "s": 82,
+      "Y": 345,
+      "gap": 13805931041144,
+      "threshold_parent": 0,
+      "potential": [
+        17069338409,
+        1022281394598,
+        4502454731450
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 478002968286673
+    },
+    {
+      "m": 250,
+      "L": 23250,
+      "s": 75,
+      "Y": 345,
+      "gap": 17278132479635,
+      "threshold_parent": 0,
+      "potential": [
+        16307598513,
+        1025069768292,
+        4720094701622
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 479018386361935
+    },
+    {
+      "m": 250,
+      "L": 23250,
+      "s": 77,
+      "Y": 345,
+      "gap": 18241507235809,
+      "threshold_parent": 0,
+      "potential": [
+        16525238484,
+        1037765594660,
+        4720094701622
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 483049974846226
+    },
+    {
+      "m": 250,
+      "L": 25000,
+      "s": 71,
+      "Y": 345,
+      "gap": 14735147116566,
+      "threshold_parent": 0,
+      "potential": [
+        15872318573,
+        1040998910790,
+        4910529675523
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 484190439940592
+    },
+    {
+      "m": 250,
+      "L": 23250,
+      "s": 78,
+      "Y": 345,
+      "gap": 18374221933909,
+      "threshold_parent": 0,
+      "potential": [
+        16634058469,
+        1044113507843,
+        4720094701622
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 485065769083588
+    },
+    {
+      "m": 250,
+      "L": 22226,
+      "s": 82,
+      "Y": 345,
+      "gap": 15055635219528,
+      "threshold_parent": 0,
+      "potential": [
+        17069338409,
+        1045326592396,
+        4608663036894
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 485384445427095
+    },
+    {
+      "m": 250,
+      "L": 25000,
+      "s": 75,
+      "Y": 345,
+      "gap": 19558909912135,
+      "threshold_parent": 0,
+      "potential": [
+        16307598513,
+        1066390563525,
+        4910529675523
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 492253616890517
+    },
+    {
+      "m": 250,
+      "L": 23250,
+      "s": 82,
+      "Y": 345,
+      "gap": 16366800259144,
+      "threshold_parent": 0,
+      "potential": [
+        17069338409,
+        1069505160578,
+        4720094701622
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 493128946033513
+    },
+    {
+      "m": 250,
+      "L": 27500,
+      "s": 67,
+      "Y": 345,
+      "gap": 8701976605889,
+      "threshold_parent": 0,
+      "potential": [
+        15437038633,
+        1074636965530,
+        5182579638238
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 495034735174217
+    },
+    {
+      "m": 250,
+      "L": 25000,
+      "s": 77,
+      "Y": 345,
+      "gap": 20604613049059,
+      "threshold_parent": 0,
+      "potential": [
+        16525238484,
+        1079086389892,
+        4910529675523
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 496285205374649
+    },
+    {
+      "m": 250,
+      "L": 25000,
+      "s": 78,
+      "Y": 345,
+      "gap": 20751739672659,
+      "threshold_parent": 0,
+      "potential": [
+        16634058469,
+        1085434303076,
+        4910529675523
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 498300999612170
+    },
+    {
+      "m": 250,
+      "L": 27500,
+      "s": 71,
+      "Y": 345,
+      "gap": 17479961806566,
+      "threshold_parent": 0,
+      "potential": [
+        15872318573,
+        1100028618265,
+        5182579638238
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 503097912124142
+    },
+    {
+      "m": 250,
+      "L": 25000,
+      "s": 82,
+      "Y": 345,
+      "gap": 18607560824894,
+      "threshold_parent": 0,
+      "potential": [
+        17069338409,
+        1110825955810,
+        4910529675523
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 506364176561936
+    },
+    {
+      "m": 250,
+      "L": 27500,
+      "s": 75,
+      "Y": 345,
+      "gap": 22817163387135,
+      "threshold_parent": 0,
+      "potential": [
+        16307598513,
+        1125420270999,
+        5182579638238
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 511161089073908
+    },
+    {
+      "m": 250,
+      "L": 25000,
+      "s": 86,
+      "Y": 345,
+      "gap": 11622395144701,
+      "threshold_parent": 0,
+      "potential": [
+        17504618349,
+        1136217608545,
+        4910529675523
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 514427353511861
+    },
+    {
+      "m": 250,
+      "L": 27500,
+      "s": 77,
+      "Y": 345,
+      "gap": 23980478496559,
+      "threshold_parent": 0,
+      "potential": [
+        16525238484,
+        1138116097367,
+        5182579638238
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 515192677558199
+    },
+    {
+      "m": 250,
+      "L": 27500,
+      "s": 78,
+      "Y": 345,
+      "gap": 24148193585159,
+      "threshold_parent": 0,
+      "potential": [
+        16634058469,
+        1144464010551,
+        5182579638238
+      ],
+      "necessary_local_prefix": 0,
+      "optimistic_binding_source_charge": 517208471795720
+    }
+  ]
+}

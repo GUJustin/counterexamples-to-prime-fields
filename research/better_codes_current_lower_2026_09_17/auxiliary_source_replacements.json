@@ -1,0 +1,2802 @@
+{
+  "target_A": 181275,
+  "target_errors": 80869,
+  "target_gap": 50204,
+  "target_reserve_gap": 50206,
+  "parameter_order": [
+    "m",
+    "B",
+    "s",
+    "U",
+    "L",
+    "k",
+    "n0"
+  ],
+  "sources": [
+    {
+      "index": 0,
+      "old": [
+        132,
+        54,
+        24,
+        180,
+        1786,
+        5,
+        7
+      ],
+      "replacement": [
+        132,
+        54,
+        24,
+        180,
+        1811,
+        5,
+        7
+      ],
+      "geometry_unchanged": false,
+      "L_increase": 25,
+      "old_flag": [
+        1606,
+        133,
+        52
+      ],
+      "new_flag": [
+        1631,
+        133,
+        52
+      ],
+      "flag_delta": [
+        25,
+        0,
+        0
+      ],
+      "coefficient_count": 2115546700108080,
+      "rank_bound": 8070165952,
+      "nullity": 1116786992,
+      "gates": {
+        "two_s_le_B": true,
+        "B_le_U": true,
+        "U_le_L": true,
+        "k_le_s": true,
+        "s_lt_m": true,
+        "k1_le_n0": true,
+        "reserve_le_B": true,
+        "s_lt_char": true,
+        "k_lt_m": true,
+        "closed_B_le_m": true,
+        "closed_m_s_le_U": true,
+        "closed_m_B_s_le_L": true,
+        "all_cutoff_caps": true,
+        "positive_kernel": true
+      },
+      "min_cutoff_cap": 180,
+      "helper_gate_catalog_corner": {
+        "left": [
+          31,
+          142,
+          7501
+        ],
+        "right_helper": [
+          774,
+          3564,
+          181811
+        ],
+        "mixed": [
+          11441915,
+          52550726,
+          220392
+        ],
+        "char_margin": 2078155707
+      },
+      "helper_gate_expanded_corner": {
+        "left": [
+          36,
+          163,
+          9678
+        ],
+        "right_helper": [
+          894,
+          4068,
+          234059
+        ],
+        "mixed": [
+          17078256,
+          77521721,
+          292170
+        ],
+        "char_margin": 2053184712
+      }
+    },
+    {
+      "index": 1,
+      "old": [
+        134,
+        56,
+        25,
+        180,
+        2819,
+        6,
+        8
+      ],
+      "replacement": [
+        133,
+        56,
+        25,
+        180,
+        2819,
+        6,
+        8
+      ],
+      "geometry_unchanged": true,
+      "L_increase": 0,
+      "old_flag": [
+        2639,
+        132,
+        54
+      ],
+      "new_flag": [
+        2639,
+        132,
+        54
+      ],
+      "flag_delta": [
+        0,
+        0,
+        0
+      ],
+      "coefficient_count": 3596454645695548,
+      "rank_bound": 13718842734,
+      "nullity": 142336033852,
+      "gates": {
+        "two_s_le_B": true,
+        "B_le_U": true,
+        "U_le_L": true,
+        "k_le_s": true,
+        "s_lt_m": true,
+        "k1_le_n0": true,
+        "reserve_le_B": true,
+        "s_lt_char": true,
+        "k_lt_m": true,
+        "closed_B_le_m": true,
+        "closed_m_s_le_U": true,
+        "closed_m_B_s_le_L": true,
+        "all_cutoff_caps": true,
+        "positive_kernel": true
+      },
+      "min_cutoff_cap": 181,
+      "helper_gate_catalog_corner": {
+        "left": [
+          31,
+          142,
+          7501
+        ],
+        "right_helper": [
+          806,
+          3705,
+          190319
+        ],
+        "mixed": [
+          11945695,
+          54816503,
+          229307
+        ],
+        "char_margin": 2075889930
+      },
+      "helper_gate_expanded_corner": {
+        "left": [
+          36,
+          163,
+          9678
+        ],
+        "right_helper": [
+          931,
+          4230,
+          244744
+        ],
+        "mixed": [
+          17821002,
+          80831212,
+          304033
+        ],
+        "char_margin": 2049875221
+      }
+    },
+    {
+      "index": 2,
+      "old": [
+        136,
+        56,
+        25,
+        185,
+        2584,
+        6,
+        8
+      ],
+      "replacement": [
+        136,
+        56,
+        25,
+        185,
+        2638,
+        6,
+        8
+      ],
+      "geometry_unchanged": false,
+      "L_increase": 54,
+      "old_flag": [
+        2399,
+        137,
+        54
+      ],
+      "new_flag": [
+        2453,
+        137,
+        54
+      ],
+      "flag_delta": [
+        54,
+        0,
+        0
+      ],
+      "coefficient_count": 3539000041292677,
+      "rank_bound": 13500197634,
+      "nullity": 4232725381,
+      "gates": {
+        "two_s_le_B": true,
+        "B_le_U": true,
+        "U_le_L": true,
+        "k_le_s": true,
+        "s_lt_m": true,
+        "k1_le_n0": true,
+        "reserve_le_B": true,
+        "s_lt_char": true,
+        "k_lt_m": true,
+        "closed_B_le_m": true,
+        "closed_m_s_le_U": true,
+        "closed_m_B_s_le_L": true,
+        "all_cutoff_caps": true,
+        "positive_kernel": true
+      },
+      "min_cutoff_cap": 185,
+      "helper_gate_catalog_corner": {
+        "left": [
+          31,
+          142,
+          7501
+        ],
+        "right_helper": [
+          806,
+          3710,
+          190138
+        ],
+        "mixed": [
+          11940084,
+          54828306,
+          229462
+        ],
+        "char_margin": 2075878127
+      },
+      "helper_gate_expanded_corner": {
+        "left": [
+          36,
+          163,
+          9678
+        ],
+        "right_helper": [
+          931,
+          4235,
+          244563
+        ],
+        "mixed": [
+          17814486,
+          80850099,
+          304213
+        ],
+        "char_margin": 2049856334
+      }
+    },
+    {
+      "index": 3,
+      "old": [
+        116,
+        46,
+        21,
+        158,
+        2772,
+        5,
+        7
+      ],
+      "replacement": [
+        116,
+        46,
+        21,
+        158,
+        2845,
+        5,
+        7
+      ],
+      "geometry_unchanged": false,
+      "L_increase": 73,
+      "old_flag": [
+        2614,
+        119,
+        44
+      ],
+      "new_flag": [
+        2687,
+        119,
+        44
+      ],
+      "flag_delta": [
+        73,
+        0,
+        0
+      ],
+      "coefficient_count": 1949253634626739,
+      "rank_bound": 7435808256,
+      "nullity": 1115165875,
+      "gates": {
+        "two_s_le_B": true,
+        "B_le_U": true,
+        "U_le_L": true,
+        "k_le_s": true,
+        "s_lt_m": true,
+        "k1_le_n0": true,
+        "reserve_le_B": true,
+        "s_lt_char": true,
+        "k_lt_m": true,
+        "closed_B_le_m": true,
+        "closed_m_s_le_U": true,
+        "closed_m_B_s_le_L": true,
+        "all_cutoff_caps": true,
+        "positive_kernel": true
+      },
+      "min_cutoff_cap": 158,
+      "helper_gate_catalog_corner": {
+        "left": [
+          31,
+          142,
+          7501
+        ],
+        "right_helper": [
+          676,
+          3119,
+          160345
+        ],
+        "mixed": [
+          10041371,
+          46164609,
+          192681
+        ],
+        "char_margin": 2084541824
+      },
+      "helper_gate_expanded_corner": {
+        "left": [
+          36,
+          163,
+          9678
+        ],
+        "right_helper": [
+          781,
+          3560,
+          206062
+        ],
+        "mixed": [
+          14976750,
+          68041786,
+          255463
+        ],
+        "char_margin": 2062664647
+      }
+    },
+    {
+      "index": 4,
+      "old": [
+        114,
+        45,
+        21,
+        155,
+        3078,
+        5,
+        7
+      ],
+      "replacement": [
+        114,
+        45,
+        21,
+        155,
+        3170,
+        5,
+        7
+      ],
+      "geometry_unchanged": false,
+      "L_increase": 92,
+      "old_flag": [
+        2923,
+        117,
+        43
+      ],
+      "new_flag": [
+        3015,
+        117,
+        43
+      ],
+      "flag_delta": [
+        92,
+        0,
+        0
+      ],
+      "coefficient_count": 2025381883466206,
+      "rank_bound": 7726212588,
+      "nullity": 1610797534,
+      "gates": {
+        "two_s_le_B": true,
+        "B_le_U": true,
+        "U_le_L": true,
+        "k_le_s": true,
+        "s_lt_m": true,
+        "k1_le_n0": true,
+        "reserve_le_B": true,
+        "s_lt_char": true,
+        "k_lt_m": true,
+        "closed_B_le_m": true,
+        "closed_m_s_le_U": true,
+        "closed_m_B_s_le_L": true,
+        "all_cutoff_caps": true,
+        "positive_kernel": true
+      },
+      "min_cutoff_cap": 155,
+      "helper_gate_catalog_corner": {
+        "left": [
+          31,
+          142,
+          7501
+        ],
+        "right_helper": [
+          675,
+          3116,
+          160670
+        ],
+        "mixed": [
+          10043945,
+          46188256,
+          192446
+        ],
+        "char_margin": 2084518177
+      },
+      "helper_gate_expanded_corner": {
+        "left": [
+          36,
+          163,
+          9678
+        ],
+        "right_helper": [
+          780,
+          3557,
+          206387
+        ],
+        "mixed": [
+          14978772,
+          68065727,
+          255192
+        ],
+        "char_margin": 2062640706
+      }
+    },
+    {
+      "index": 5,
+      "old": [
+        158,
+        63,
+        29,
+        215,
+        3013,
+        7,
+        10
+      ],
+      "replacement": [
+        158,
+        63,
+        29,
+        215,
+        3075,
+        7,
+        10
+      ],
+      "geometry_unchanged": false,
+      "L_increase": 62,
+      "old_flag": [
+        2798,
+        162,
+        59
+      ],
+      "new_flag": [
+        2860,
+        162,
+        59
+      ],
+      "flag_delta": [
+        62,
+        0,
+        0
+      ],
+      "coefficient_count": 7095273939866148,
+      "rank_bound": 27066307471,
+      "nullity": 3834188324,
+      "gates": {
+        "two_s_le_B": true,
+        "B_le_U": true,
+        "U_le_L": true,
+        "k_le_s": true,
+        "s_lt_m": true,
+        "k1_le_n0": true,
+        "reserve_le_B": true,
+        "s_lt_char": true,
+        "k_lt_m": true,
+        "closed_B_le_m": true,
+        "closed_m_s_le_U": true,
+        "closed_m_B_s_le_L": true,
+        "all_cutoff_caps": true,
+        "positive_kernel": true
+      },
+      "min_cutoff_cap": 215,
+      "helper_gate_catalog_corner": {
+        "left": [
+          31,
+          142,
+          7501
+        ],
+        "right_helper": [
+          933,
+          4304,
+          220575
+        ],
+        "mixed": [
+          13836258,
+          63605954,
+          265910
+        ],
+        "char_margin": 2067100479
+      },
+      "helper_gate_expanded_corner": {
+        "left": [
+          36,
+          163,
+          9678
+        ],
+        "right_helper": [
+          1078,
+          4913,
+          283708
+        ],
+        "mixed": [
+          20646372,
+          93792418,
+          352582
+        ],
+        "char_margin": 2036914015
+      }
+    },
+    {
+      "index": 6,
+      "old": [
+        166,
+        73,
+        34,
+        226,
+        3117,
+        8,
+        9
+      ],
+      "replacement": [
+        167,
+        73,
+        34,
+        226,
+        3169,
+        8,
+        9
+      ],
+      "geometry_unchanged": false,
+      "L_increase": 52,
+      "old_flag": [
+        2891,
+        162,
+        73
+      ],
+      "new_flag": [
+        2943,
+        162,
+        73
+      ],
+      "flag_delta": [
+        52,
+        0,
+        0
+      ],
+      "coefficient_count": 10516859397896390,
+      "rank_bound": 40118584811,
+      "nullity": 13101201606,
+      "gates": {
+        "two_s_le_B": true,
+        "B_le_U": true,
+        "U_le_L": true,
+        "k_le_s": true,
+        "s_lt_m": true,
+        "k1_le_n0": true,
+        "reserve_le_B": true,
+        "s_lt_char": true,
+        "k_lt_m": true,
+        "closed_B_le_m": true,
+        "closed_m_s_le_U": true,
+        "closed_m_B_s_le_L": true,
+        "all_cutoff_caps": true,
+        "positive_kernel": true
+      },
+      "min_cutoff_cap": 227,
+      "helper_gate_catalog_corner": {
+        "left": [
+          31,
+          142,
+          7501
+        ],
+        "right_helper": [
+          1093,
+          5020,
+          258169
+        ],
+        "mixed": [
+          16201832,
+          74315018,
+          310826
+        ],
+        "char_margin": 2056391415
+      },
+      "helper_gate_expanded_corner": {
+        "left": [
+          36,
+          163,
+          9678
+        ],
+        "right_helper": [
+          1263,
+          5734,
+          332187
+        ],
+        "mixed": [
+          24182046,
+          109640133,
+          412293
+        ],
+        "char_margin": 2021066300
+      }
+    },
+    {
+      "index": 7,
+      "old": [
+        114,
+        47,
+        21,
+        154,
+        2781,
+        5,
+        7
+      ],
+      "replacement": [
+        114,
+        47,
+        21,
+        154,
+        2857,
+        5,
+        7
+      ],
+      "geometry_unchanged": false,
+      "L_increase": 76,
+      "old_flag": [
+        2627,
+        114,
+        45
+      ],
+      "new_flag": [
+        2703,
+        114,
+        45
+      ],
+      "flag_delta": [
+        76,
+        0,
+        0
+      ],
+      "coefficient_count": 1937769387035897,
+      "rank_bound": 7391998700,
+      "nullity": 1279823097,
+      "gates": {
+        "two_s_le_B": true,
+        "B_le_U": true,
+        "U_le_L": true,
+        "k_le_s": true,
+        "s_lt_m": true,
+        "k1_le_n0": true,
+        "reserve_le_B": true,
+        "s_lt_char": true,
+        "k_lt_m": true,
+        "closed_B_le_m": true,
+        "closed_m_s_le_U": true,
+        "closed_m_B_s_le_L": true,
+        "all_cutoff_caps": true,
+        "positive_kernel": true
+      },
+      "min_cutoff_cap": 155,
+      "helper_gate_catalog_corner": {
+        "left": [
+          31,
+          142,
+          7501
+        ],
+        "right_helper": [
+          677,
+          3115,
+          160357
+        ],
+        "mixed": [
+          10049244,
+          46136309,
+          192699
+        ],
+        "char_margin": 2084570124
+      },
+      "helper_gate_expanded_corner": {
+        "left": [
+          36,
+          163,
+          9678
+        ],
+        "right_helper": [
+          782,
+          3556,
+          206074
+        ],
+        "mixed": [
+          14986860,
+          68005030,
+          255482
+        ],
+        "char_margin": 2062701403
+      }
+    },
+    {
+      "index": 8,
+      "old": [
+        142,
+        56,
+        26,
+        193,
+        2744,
+        6,
+        9
+      ],
+      "replacement": [
+        142,
+        56,
+        26,
+        193,
+        2801,
+        6,
+        9
+      ],
+      "geometry_unchanged": false,
+      "L_increase": 57,
+      "old_flag": [
+        2551,
+        146,
+        52
+      ],
+      "new_flag": [
+        2608,
+        146,
+        52
+      ],
+      "flag_delta": [
+        57,
+        0,
+        0
+      ],
+      "coefficient_count": 4184314611570006,
+      "rank_bound": 15961870353,
+      "nullity": 6069753174,
+      "gates": {
+        "two_s_le_B": true,
+        "B_le_U": true,
+        "U_le_L": true,
+        "k_le_s": true,
+        "s_lt_m": true,
+        "k1_le_n0": true,
+        "reserve_le_B": true,
+        "s_lt_char": true,
+        "k_lt_m": true,
+        "closed_B_le_m": true,
+        "closed_m_s_le_U": true,
+        "closed_m_B_s_le_L": true,
+        "all_cutoff_caps": true,
+        "positive_kernel": true
+      },
+      "min_cutoff_cap": 193,
+      "helper_gate_catalog_corner": {
+        "left": [
+          31,
+          142,
+          7501
+        ],
+        "right_helper": [
+          836,
+          3859,
+          197801
+        ],
+        "mixed": [
+          12402667,
+          57034101,
+          238341
+        ],
+        "char_margin": 2073672332
+      },
+      "helper_gate_expanded_corner": {
+        "left": [
+          36,
+          163,
+          9678
+        ],
+        "right_helper": [
+          966,
+          4405,
+          254403
+        ],
+        "mixed": [
+          18507456,
+          84099279,
+          316038
+        ],
+        "char_margin": 2046607154
+      }
+    },
+    {
+      "index": 9,
+      "old": [
+        174,
+        76,
+        36,
+        236,
+        2736,
+        8,
+        9
+      ],
+      "replacement": [
+        174,
+        76,
+        36,
+        236,
+        2785,
+        8,
+        9
+      ],
+      "geometry_unchanged": false,
+      "L_increase": 49,
+      "old_flag": [
+        2500,
+        169,
+        76
+      ],
+      "new_flag": [
+        2549,
+        169,
+        76
+      ],
+      "flag_delta": [
+        49,
+        0,
+        0
+      ],
+      "coefficient_count": 10816685893541366,
+      "rank_bound": 41262321464,
+      "nullity": 15895682550,
+      "gates": {
+        "two_s_le_B": true,
+        "B_le_U": true,
+        "U_le_L": true,
+        "k_le_s": true,
+        "s_lt_m": true,
+        "k1_le_n0": true,
+        "reserve_le_B": true,
+        "s_lt_char": true,
+        "k_lt_m": true,
+        "closed_B_le_m": true,
+        "closed_m_s_le_U": true,
+        "closed_m_B_s_le_L": true,
+        "all_cutoff_caps": true,
+        "positive_kernel": true
+      },
+      "min_cutoff_cap": 237,
+      "helper_gate_catalog_corner": {
+        "left": [
+          31,
+          142,
+          7501
+        ],
+        "right_helper": [
+          1156,
+          5312,
+          272785
+        ],
+        "mixed": [
+          17127491,
+          78580782,
+          328824
+        ],
+        "char_margin": 2052125651
+      },
+      "helper_gate_expanded_corner": {
+        "left": [
+          36,
+          163,
+          9678
+        ],
+        "right_helper": [
+          1336,
+          6068,
+          351157
+        ],
+        "mixed": [
+          25571460,
+          115964695,
+          436216
+        ],
+        "char_margin": 2014741738
+      }
+    },
+    {
+      "index": 10,
+      "old": [
+        170,
+        71,
+        32,
+        231,
+        3105,
+        8,
+        10
+      ],
+      "replacement": [
+        170,
+        71,
+        32,
+        231,
+        3168,
+        8,
+        10
+      ],
+      "geometry_unchanged": false,
+      "L_increase": 63,
+      "old_flag": [
+        2874,
+        170,
+        69
+      ],
+      "new_flag": [
+        2937,
+        170,
+        69
+      ],
+      "flag_delta": [
+        63,
+        0,
+        0
+      ],
+      "coefficient_count": 10441862027728238,
+      "rank_bound": 39832518174,
+      "nullity": 6383523182,
+      "gates": {
+        "two_s_le_B": true,
+        "B_le_U": true,
+        "U_le_L": true,
+        "k_le_s": true,
+        "s_lt_m": true,
+        "k1_le_n0": true,
+        "reserve_le_B": true,
+        "s_lt_char": true,
+        "k_lt_m": true,
+        "closed_B_le_m": true,
+        "closed_m_s_le_U": true,
+        "closed_m_B_s_le_L": true,
+        "all_cutoff_caps": true,
+        "positive_kernel": true
+      },
+      "min_cutoff_cap": 231,
+      "helper_gate_catalog_corner": {
+        "left": [
+          31,
+          142,
+          7501
+        ],
+        "right_helper": [
+          1031,
+          4743,
+          243168
+        ],
+        "mixed": [
+          15271739,
+          70107099,
+          293435
+        ],
+        "char_margin": 2060599334
+      },
+      "helper_gate_expanded_corner": {
+        "left": [
+          36,
+          163,
+          9678
+        ],
+        "right_helper": [
+          1191,
+          5415,
+          312832
+        ],
+        "mixed": [
+          22788450,
+          103397986,
+          389073
+        ],
+        "char_margin": 2027308447
+      }
+    },
+    {
+      "index": 11,
+      "old": [
+        98,
+        41,
+        19,
+        132,
+        2387,
+        4,
+        6
+      ],
+      "replacement": [
+        97,
+        41,
+        19,
+        132,
+        2426,
+        4,
+        6
+      ],
+      "geometry_unchanged": false,
+      "L_increase": 39,
+      "old_flag": [
+        2255,
+        97,
+        39
+      ],
+      "new_flag": [
+        2294,
+        97,
+        39
+      ],
+      "flag_delta": [
+        39,
+        0,
+        0
+      ],
+      "coefficient_count": 916755099519567,
+      "rank_bound": 3497139740,
+      "nullity": 899517007,
+      "gates": {
+        "two_s_le_B": true,
+        "B_le_U": true,
+        "U_le_L": true,
+        "k_le_s": true,
+        "s_lt_m": true,
+        "k1_le_n0": true,
+        "reserve_le_B": true,
+        "s_lt_char": true,
+        "k_lt_m": true,
+        "closed_B_le_m": true,
+        "closed_m_s_le_U": true,
+        "closed_m_B_s_le_L": true,
+        "all_cutoff_caps": true,
+        "positive_kernel": true
+      },
+      "min_cutoff_cap": 132,
+      "helper_gate_catalog_corner": {
+        "left": [
+          31,
+          142,
+          7501
+        ],
+        "right_helper": [
+          611,
+          2811,
+          144926
+        ],
+        "mixed": [
+          9075817,
+          41664803,
+          173903
+        ],
+        "char_margin": 2089041630
+      },
+      "helper_gate_expanded_corner": {
+        "left": [
+          36,
+          163,
+          9678
+        ],
+        "right_helper": [
+          706,
+          3210,
+          186289
+        ],
+        "mixed": [
+          13539072,
+          61431487,
+          230638
+        ],
+        "char_margin": 2069274946
+      }
+    },
+    {
+      "index": 12,
+      "old": [
+        142,
+        59,
+        27,
+        193,
+        2415,
+        6,
+        9
+      ],
+      "replacement": [
+        142,
+        59,
+        27,
+        193,
+        2460,
+        6,
+        9
+      ],
+      "geometry_unchanged": false,
+      "L_increase": 45,
+      "old_flag": [
+        2222,
+        143,
+        55
+      ],
+      "new_flag": [
+        2267,
+        143,
+        55
+      ],
+      "flag_delta": [
+        45,
+        0,
+        0
+      ],
+      "coefficient_count": 3968031667324971,
+      "rank_bound": 15136830416,
+      "nullity": 2394753067,
+      "gates": {
+        "two_s_le_B": true,
+        "B_le_U": true,
+        "U_le_L": true,
+        "k_le_s": true,
+        "s_lt_m": true,
+        "k1_le_n0": true,
+        "reserve_le_B": true,
+        "s_lt_char": true,
+        "k_lt_m": true,
+        "closed_B_le_m": true,
+        "closed_m_s_le_U": true,
+        "closed_m_B_s_le_L": true,
+        "all_cutoff_caps": true,
+        "positive_kernel": true
+      },
+      "min_cutoff_cap": 193,
+      "helper_gate_catalog_corner": {
+        "left": [
+          31,
+          142,
+          7501
+        ],
+        "right_helper": [
+          869,
+          4000,
+          204960
+        ],
+        "mixed": [
+          12872129,
+          59108320,
+          247398
+        ],
+        "char_margin": 2071598113
+      },
+      "helper_gate_expanded_corner": {
+        "left": [
+          36,
+          163,
+          9678
+        ],
+        "right_helper": [
+          1004,
+          4567,
+          263739
+        ],
+        "mixed": [
+          19211316,
+          87188883,
+          328064
+        ],
+        "char_margin": 2043517550
+      }
+    },
+    {
+      "index": 13,
+      "old": [
+        158,
+        69,
+        32,
+        214,
+        2416,
+        7,
+        8
+      ],
+      "replacement": [
+        158,
+        69,
+        32,
+        214,
+        2457,
+        7,
+        8
+      ],
+      "geometry_unchanged": false,
+      "L_increase": 41,
+      "old_flag": [
+        2202,
+        153,
+        69
+      ],
+      "new_flag": [
+        2243,
+        153,
+        69
+      ],
+      "flag_delta": [
+        41,
+        0,
+        0
+      ],
+      "coefficient_count": 6506028369668002,
+      "rank_bound": 24818511893,
+      "nullity": 4387989410,
+      "gates": {
+        "two_s_le_B": true,
+        "B_le_U": true,
+        "U_le_L": true,
+        "k_le_s": true,
+        "s_lt_m": true,
+        "k1_le_n0": true,
+        "reserve_le_B": true,
+        "s_lt_char": true,
+        "k_lt_m": true,
+        "closed_B_le_m": true,
+        "closed_m_s_le_U": true,
+        "closed_m_B_s_le_L": true,
+        "all_cutoff_caps": true,
+        "positive_kernel": true
+      },
+      "min_cutoff_cap": 215,
+      "helper_gate_catalog_corner": {
+        "left": [
+          31,
+          142,
+          7501
+        ],
+        "right_helper": [
+          1029,
+          4726,
+          242457
+        ],
+        "mixed": [
+          15234696,
+          69878620,
+          292624
+        ],
+        "char_margin": 2060827813
+      },
+      "helper_gate_expanded_corner": {
+        "left": [
+          36,
+          163,
+          9678
+        ],
+        "right_helper": [
+          1189,
+          5398,
+          312121
+        ],
+        "mixed": [
+          22743498,
+          103117567,
+          388135
+        ],
+        "char_margin": 2027588866
+      }
+    },
+    {
+      "index": 14,
+      "old": [
+        146,
+        58,
+        27,
+        198,
+        2498,
+        6,
+        9
+      ],
+      "replacement": [
+        146,
+        58,
+        27,
+        198,
+        2544,
+        6,
+        9
+      ],
+      "geometry_unchanged": false,
+      "L_increase": 46,
+      "old_flag": [
+        2300,
+        149,
+        54
+      ],
+      "new_flag": [
+        2346,
+        149,
+        54
+      ],
+      "flag_delta": [
+        46,
+        0,
+        0
+      ],
+      "coefficient_count": 4274217993034637,
+      "rank_bound": 16304815762,
+      "nullity": 8369920909,
+      "gates": {
+        "two_s_le_B": true,
+        "B_le_U": true,
+        "U_le_L": true,
+        "k_le_s": true,
+        "s_lt_m": true,
+        "k1_le_n0": true,
+        "reserve_le_B": true,
+        "s_lt_char": true,
+        "k_lt_m": true,
+        "closed_B_le_m": true,
+        "closed_m_s_le_U": true,
+        "closed_m_B_s_le_L": true,
+        "all_cutoff_caps": true,
+        "positive_kernel": true
+      },
+      "min_cutoff_cap": 198,
+      "helper_gate_catalog_corner": {
+        "left": [
+          31,
+          142,
+          7501
+        ],
+        "right_helper": [
+          868,
+          4005,
+          205044
+        ],
+        "mixed": [
+          12867232,
+          59157753,
+          247411
+        ],
+        "char_margin": 2071548680
+      },
+      "helper_gate_expanded_corner": {
+        "left": [
+          36,
+          163,
+          9678
+        ],
+        "right_helper": [
+          1003,
+          4572,
+          263823
+        ],
+        "mixed": [
+          19204662,
+          87250965,
+          328081
+        ],
+        "char_margin": 2043455468
+      }
+    },
+    {
+      "index": 15,
+      "old": [
+        98,
+        41,
+        19,
+        133,
+        2289,
+        4,
+        6
+      ],
+      "replacement": [
+        98,
+        41,
+        19,
+        133,
+        2350,
+        4,
+        6
+      ],
+      "geometry_unchanged": false,
+      "L_increase": 61,
+      "old_flag": [
+        2156,
+        98,
+        39
+      ],
+      "new_flag": [
+        2217,
+        98,
+        39
+      ],
+      "flag_delta": [
+        61,
+        0,
+        0
+      ],
+      "coefficient_count": 908878299819491,
+      "rank_bound": 3467090623,
+      "nullity": 1295543779,
+      "gates": {
+        "two_s_le_B": true,
+        "B_le_U": true,
+        "U_le_L": true,
+        "k_le_s": true,
+        "s_lt_m": true,
+        "k1_le_n0": true,
+        "reserve_le_B": true,
+        "s_lt_char": true,
+        "k_lt_m": true,
+        "closed_B_le_m": true,
+        "closed_m_s_le_U": true,
+        "closed_m_B_s_le_L": true,
+        "all_cutoff_caps": true,
+        "positive_kernel": true
+      },
+      "min_cutoff_cap": 133,
+      "helper_gate_catalog_corner": {
+        "left": [
+          31,
+          142,
+          7501
+        ],
+        "right_helper": [
+          611,
+          2812,
+          144850
+        ],
+        "mixed": [
+          9073461,
+          41661512,
+          173934
+        ],
+        "char_margin": 2089044921
+      },
+      "helper_gate_expanded_corner": {
+        "left": [
+          36,
+          163,
+          9678
+        ],
+        "right_helper": [
+          706,
+          3211,
+          186213
+        ],
+        "mixed": [
+          13536336,
+          61428777,
+          230674
+        ],
+        "char_margin": 2069277656
+      }
+    },
+    {
+      "index": 16,
+      "old": [
+        150,
+        60,
+        28,
+        204,
+        2288,
+        6,
+        9
+      ],
+      "replacement": [
+        150,
+        60,
+        28,
+        204,
+        2325,
+        6,
+        9
+      ],
+      "geometry_unchanged": false,
+      "L_increase": 37,
+      "old_flag": [
+        2084,
+        153,
+        56
+      ],
+      "new_flag": [
+        2121,
+        153,
+        56
+      ],
+      "flag_delta": [
+        37,
+        0,
+        0
+      ],
+      "coefficient_count": 4376487188841624,
+      "rank_bound": 16694925896,
+      "nullity": 12534760600,
+      "gates": {
+        "two_s_le_B": true,
+        "B_le_U": true,
+        "U_le_L": true,
+        "k_le_s": true,
+        "s_lt_m": true,
+        "k1_le_n0": true,
+        "reserve_le_B": true,
+        "s_lt_char": true,
+        "k_lt_m": true,
+        "closed_B_le_m": true,
+        "closed_m_s_le_U": true,
+        "closed_m_B_s_le_L": true,
+        "all_cutoff_caps": true,
+        "positive_kernel": true
+      },
+      "min_cutoff_cap": 204,
+      "helper_gate_catalog_corner": {
+        "left": [
+          31,
+          142,
+          7501
+        ],
+        "right_helper": [
+          900,
+          4152,
+          212325
+        ],
+        "mixed": [
+          13332975,
+          61294302,
+          256512
+        ],
+        "char_margin": 2069412131
+      },
+      "helper_gate_expanded_corner": {
+        "left": [
+          36,
+          163,
+          9678
+        ],
+        "right_helper": [
+          1040,
+          4740,
+          273281
+        ],
+        "mixed": [
+          19903236,
+          90418523,
+          340160
+        ],
+        "char_margin": 2040287910
+      }
+    },
+    {
+      "index": 17,
+      "old": [
+        162,
+        71,
+        33,
+        218,
+        2338,
+        7,
+        8
+      ],
+      "replacement": [
+        161,
+        71,
+        33,
+        218,
+        2343,
+        7,
+        8
+      ],
+      "geometry_unchanged": false,
+      "L_increase": 5,
+      "old_flag": [
+        2120,
+        155,
+        71
+      ],
+      "new_flag": [
+        2125,
+        155,
+        71
+      ],
+      "flag_delta": [
+        5,
+        0,
+        0
+      ],
+      "coefficient_count": 6769784055109251,
+      "rank_bound": 25824673118,
+      "nullity": 945264259,
+      "gates": {
+        "two_s_le_B": true,
+        "B_le_U": true,
+        "U_le_L": true,
+        "k_le_s": true,
+        "s_lt_m": true,
+        "k1_le_n0": true,
+        "reserve_le_B": true,
+        "s_lt_char": true,
+        "k_lt_m": true,
+        "closed_B_le_m": true,
+        "closed_m_s_le_U": true,
+        "closed_m_B_s_le_L": true,
+        "all_cutoff_caps": true,
+        "positive_kernel": true
+      },
+      "min_cutoff_cap": 219,
+      "helper_gate_catalog_corner": {
+        "left": [
+          31,
+          142,
+          7501
+        ],
+        "right_helper": [
+          1061,
+          4871,
+          249843
+        ],
+        "mixed": [
+          15703694,
+          72015077,
+          301663
+        ],
+        "char_margin": 2058691356
+      },
+      "helper_gate_expanded_corner": {
+        "left": [
+          36,
+          163,
+          9678
+        ],
+        "right_helper": [
+          1226,
+          5564,
+          321684
+        ],
+        "mixed": [
+          23445852,
+          106282884,
+          400142
+        ],
+        "char_margin": 2024423549
+      }
+    },
+    {
+      "index": 18,
+      "old": [
+        114,
+        47,
+        22,
+        155,
+        2711,
+        5,
+        7
+      ],
+      "replacement": [
+        114,
+        47,
+        22,
+        155,
+        2784,
+        5,
+        7
+      ],
+      "geometry_unchanged": false,
+      "L_increase": 73,
+      "old_flag": [
+        2556,
+        115,
+        45
+      ],
+      "new_flag": [
+        2629,
+        115,
+        45
+      ],
+      "flag_delta": [
+        73,
+        0,
+        0
+      ],
+      "coefficient_count": 1899892117053862,
+      "rank_bound": 7247508580,
+      "nullity": 1227858342,
+      "gates": {
+        "two_s_le_B": true,
+        "B_le_U": true,
+        "U_le_L": true,
+        "k_le_s": true,
+        "s_lt_m": true,
+        "k1_le_n0": true,
+        "reserve_le_B": true,
+        "s_lt_char": true,
+        "k_lt_m": true,
+        "closed_B_le_m": true,
+        "closed_m_s_le_U": true,
+        "closed_m_B_s_le_L": true,
+        "all_cutoff_caps": true,
+        "positive_kernel": true
+      },
+      "min_cutoff_cap": 155,
+      "helper_gate_catalog_corner": {
+        "left": [
+          31,
+          142,
+          7501
+        ],
+        "right_helper": [
+          707,
+          3257,
+          167784
+        ],
+        "mixed": [
+          10504511,
+          48256085,
+          201361
+        ],
+        "char_margin": 2082450348
+      },
+      "helper_gate_expanded_corner": {
+        "left": [
+          36,
+          163,
+          9678
+        ],
+        "right_helper": [
+          817,
+          3719,
+          215678
+        ],
+        "mixed": [
+          15671334,
+          71147996,
+          267055
+        ],
+        "char_margin": 2059558437
+      }
+    },
+    {
+      "index": 19,
+      "old": [
+        166,
+        66,
+        31,
+        226,
+        2667,
+        7,
+        10
+      ],
+      "replacement": [
+        166,
+        66,
+        31,
+        226,
+        2713,
+        7,
+        10
+      ],
+      "geometry_unchanged": false,
+      "L_increase": 46,
+      "old_flag": [
+        2441,
+        170,
+        62
+      ],
+      "new_flag": [
+        2487,
+        170,
+        62
+      ],
+      "flag_delta": [
+        46,
+        0,
+        0
+      ],
+      "coefficient_count": 7548501836692720,
+      "rank_bound": 28795201315,
+      "nullity": 12583173360,
+      "gates": {
+        "two_s_le_B": true,
+        "B_le_U": true,
+        "U_le_L": true,
+        "k_le_s": true,
+        "s_lt_m": true,
+        "k1_le_n0": true,
+        "reserve_le_B": true,
+        "s_lt_char": true,
+        "k_lt_m": true,
+        "closed_B_le_m": true,
+        "closed_m_s_le_U": true,
+        "closed_m_B_s_le_L": true,
+        "all_cutoff_caps": true,
+        "positive_kernel": true
+      },
+      "min_cutoff_cap": 226,
+      "helper_gate_catalog_corner": {
+        "left": [
+          31,
+          142,
+          7501
+        ],
+        "right_helper": [
+          996,
+          4597,
+          235213
+        ],
+        "mixed": [
+          14762599,
+          67882343,
+          283939
+        ],
+        "char_margin": 2062824090
+      },
+      "helper_gate_expanded_corner": {
+        "left": [
+          36,
+          163,
+          9678
+        ],
+        "right_helper": [
+          1151,
+          5248,
+          302700
+        ],
+        "mixed": [
+          22036578,
+          100130244,
+          376541
+        ],
+        "char_margin": 2030576189
+      }
+    },
+    {
+      "index": 20,
+      "old": [
+        174,
+        76,
+        36,
+        237,
+        2716,
+        8,
+        9
+      ],
+      "replacement": [
+        174,
+        76,
+        36,
+        237,
+        2764,
+        8,
+        9
+      ],
+      "geometry_unchanged": false,
+      "L_increase": 48,
+      "old_flag": [
+        2479,
+        170,
+        76
+      ],
+      "new_flag": [
+        2527,
+        170,
+        76
+      ],
+      "flag_delta": [
+        48,
+        0,
+        0
+      ],
+      "coefficient_count": 10732655326945610,
+      "rank_bound": 40941810507,
+      "nullity": 5353398602,
+      "gates": {
+        "two_s_le_B": true,
+        "B_le_U": true,
+        "U_le_L": true,
+        "k_le_s": true,
+        "s_lt_m": true,
+        "k1_le_n0": true,
+        "reserve_le_B": true,
+        "s_lt_char": true,
+        "k_lt_m": true,
+        "closed_B_le_m": true,
+        "closed_m_s_le_U": true,
+        "closed_m_B_s_le_L": true,
+        "all_cutoff_caps": true,
+        "positive_kernel": true
+      },
+      "min_cutoff_cap": 237,
+      "helper_gate_catalog_corner": {
+        "left": [
+          31,
+          142,
+          7501
+        ],
+        "right_helper": [
+          1156,
+          5313,
+          272764
+        ],
+        "mixed": [
+          17126840,
+          78585301,
+          328855
+        ],
+        "char_margin": 2052121132
+      },
+      "helper_gate_expanded_corner": {
+        "left": [
+          36,
+          163,
+          9678
+        ],
+        "right_helper": [
+          1336,
+          6069,
+          351136
+        ],
+        "mixed": [
+          25570704,
+          115970950,
+          436252
+        ],
+        "char_margin": 2014735483
+      }
+    },
+    {
+      "index": 21,
+      "old": [
+        111,
+        46,
+        22,
+        151,
+        3089,
+        5,
+        7
+      ],
+      "replacement": [
+        111,
+        46,
+        22,
+        151,
+        3188,
+        5,
+        7
+      ],
+      "geometry_unchanged": false,
+      "L_increase": 99,
+      "old_flag": [
+        2938,
+        112,
+        44
+      ],
+      "new_flag": [
+        3037,
+        112,
+        44
+      ],
+      "flag_delta": [
+        99,
+        0,
+        0
+      ],
+      "coefficient_count": 1986322285148506,
+      "rank_bound": 7577216965,
+      "nullity": 321075546,
+      "gates": {
+        "two_s_le_B": true,
+        "B_le_U": true,
+        "U_le_L": true,
+        "k_le_s": true,
+        "s_lt_m": true,
+        "k1_le_n0": true,
+        "reserve_le_B": true,
+        "s_lt_char": true,
+        "k_lt_m": true,
+        "closed_B_le_m": true,
+        "closed_m_s_le_U": true,
+        "closed_m_B_s_le_L": true,
+        "all_cutoff_caps": true,
+        "positive_kernel": true
+      },
+      "min_cutoff_cap": 151,
+      "helper_gate_catalog_corner": {
+        "left": [
+          31,
+          142,
+          7501
+        ],
+        "right_helper": [
+          706,
+          3253,
+          168188
+        ],
+        "mixed": [
+          10509534,
+          48283449,
+          201095
+        ],
+        "char_margin": 2082422984
+      },
+      "helper_gate_expanded_corner": {
+        "left": [
+          36,
+          163,
+          9678
+        ],
+        "right_helper": [
+          816,
+          3715,
+          216082
+        ],
+        "mixed": [
+          15676200,
+          71175136,
+          266748
+        ],
+        "char_margin": 2059531297
+      }
+    },
+    {
+      "index": 22,
+      "old": [
+        189,
+        83,
+        39,
+        256,
+        3112,
+        9,
+        10
+      ],
+      "replacement": [
+        189,
+        83,
+        39,
+        256,
+        3171,
+        9,
+        10
+      ],
+      "geometry_unchanged": false,
+      "L_increase": 59,
+      "old_flag": [
+        2856,
+        183,
+        83
+      ],
+      "new_flag": [
+        2915,
+        183,
+        83
+      ],
+      "flag_delta": [
+        59,
+        0,
+        0
+      ],
+      "coefficient_count": 17216209551384522,
+      "rank_bound": 65674516261,
+      "nullity": 29160660938,
+      "gates": {
+        "two_s_le_B": true,
+        "B_le_U": true,
+        "U_le_L": true,
+        "k_le_s": true,
+        "s_lt_m": true,
+        "k1_le_n0": true,
+        "reserve_le_B": true,
+        "s_lt_char": true,
+        "k_lt_m": true,
+        "closed_B_le_m": true,
+        "closed_m_s_le_U": true,
+        "closed_m_B_s_le_L": true,
+        "all_cutoff_caps": true,
+        "positive_kernel": true
+      },
+      "min_cutoff_cap": 257,
+      "helper_gate_catalog_corner": {
+        "left": [
+          31,
+          142,
+          7501
+        ],
+        "right_helper": [
+          1253,
+          5755,
+          295671
+        ],
+        "mixed": [
+          18564554,
+          85153537,
+          356331
+        ],
+        "char_margin": 2045552896
+      },
+      "helper_gate_expanded_corner": {
+        "left": [
+          36,
+          163,
+          9678
+        ],
+        "right_helper": [
+          1448,
+          6574,
+          380574
+        ],
+        "mixed": [
+          27714408,
+          125656734,
+          472688
+        ],
+        "char_margin": 2005049699
+      }
+    },
+    {
+      "index": 23,
+      "old": [
+        114,
+        45,
+        20,
+        155,
+        3066,
+        5,
+        7
+      ],
+      "replacement": [
+        114,
+        45,
+        20,
+        155,
+        3158,
+        5,
+        7
+      ],
+      "geometry_unchanged": false,
+      "L_increase": 92,
+      "old_flag": [
+        2911,
+        117,
+        43
+      ],
+      "new_flag": [
+        3003,
+        117,
+        43
+      ],
+      "flag_delta": [
+        92,
+        0,
+        0
+      ],
+      "coefficient_count": 2003051878456615,
+      "rank_bound": 7641028120,
+      "nullity": 2202967335,
+      "gates": {
+        "two_s_le_B": true,
+        "B_le_U": true,
+        "U_le_L": true,
+        "k_le_s": true,
+        "s_lt_m": true,
+        "k1_le_n0": true,
+        "reserve_le_B": true,
+        "s_lt_char": true,
+        "k_lt_m": true,
+        "closed_B_le_m": true,
+        "closed_m_s_le_U": true,
+        "closed_m_B_s_le_L": true,
+        "all_cutoff_caps": true,
+        "positive_kernel": true
+      },
+      "min_cutoff_cap": 155,
+      "helper_gate_catalog_corner": {
+        "left": [
+          31,
+          142,
+          7501
+        ],
+        "right_helper": [
+          645,
+          2975,
+          153158
+        ],
+        "mixed": [
+          9586043,
+          44063911,
+          183815
+        ],
+        "char_margin": 2086642522
+      },
+      "helper_gate_expanded_corner": {
+        "left": [
+          36,
+          163,
+          9678
+        ],
+        "right_helper": [
+          745,
+          3395,
+          196698
+        ],
+        "mixed": [
+          14291238,
+          64918584,
+          243655
+        ],
+        "char_margin": 2065787849
+      }
+    },
+    {
+      "index": 24,
+      "old": [
+        190,
+        84,
+        40,
+        258,
+        3048,
+        9,
+        10
+      ],
+      "replacement": [
+        190,
+        84,
+        40,
+        258,
+        3104,
+        9,
+        10
+      ],
+      "geometry_unchanged": false,
+      "L_increase": 56,
+      "old_flag": [
+        2790,
+        184,
+        84
+      ],
+      "new_flag": [
+        2846,
+        184,
+        84
+      ],
+      "flag_delta": [
+        56,
+        0,
+        0
+      ],
+      "coefficient_count": 17397124574939847,
+      "rank_bound": 66364687256,
+      "nullity": 19998902983,
+      "gates": {
+        "two_s_le_B": true,
+        "B_le_U": true,
+        "U_le_L": true,
+        "k_le_s": true,
+        "s_lt_m": true,
+        "k1_le_n0": true,
+        "reserve_le_B": true,
+        "s_lt_char": true,
+        "k_lt_m": true,
+        "closed_B_le_m": true,
+        "closed_m_s_le_U": true,
+        "closed_m_B_s_le_L": true,
+        "all_cutoff_caps": true,
+        "positive_kernel": true
+      },
+      "min_cutoff_cap": 259,
+      "helper_gate_catalog_corner": {
+        "left": [
+          31,
+          142,
+          7501
+        ],
+        "right_helper": [
+          1284,
+          5898,
+          303104
+        ],
+        "mixed": [
+          19027508,
+          87281666,
+          365166
+        ],
+        "char_margin": 2043424767
+      },
+      "helper_gate_expanded_corner": {
+        "left": [
+          36,
+          163,
+          9678
+        ],
+        "right_helper": [
+          1484,
+          6738,
+          390184
+        ],
+        "mixed": [
+          28408776,
+          128810356,
+          484460
+        ],
+        "char_margin": 2001896077
+      }
+    },
+    {
+      "index": 25,
+      "old": [
+        111,
+        46,
+        21,
+        151,
+        3071,
+        5,
+        7
+      ],
+      "replacement": [
+        111,
+        46,
+        21,
+        151,
+        3169,
+        5,
+        7
+      ],
+      "geometry_unchanged": false,
+      "L_increase": 98,
+      "old_flag": [
+        2920,
+        112,
+        44
+      ],
+      "new_flag": [
+        3018,
+        112,
+        44
+      ],
+      "flag_delta": [
+        98,
+        0,
+        0
+      ],
+      "coefficient_count": 1964069426065067,
+      "rank_bound": 7492326733,
+      "nullity": 926969515,
+      "gates": {
+        "two_s_le_B": true,
+        "B_le_U": true,
+        "U_le_L": true,
+        "k_le_s": true,
+        "s_lt_m": true,
+        "k1_le_n0": true,
+        "reserve_le_B": true,
+        "s_lt_char": true,
+        "k_lt_m": true,
+        "closed_B_le_m": true,
+        "closed_m_s_le_U": true,
+        "closed_m_B_s_le_L": true,
+        "all_cutoff_caps": true,
+        "positive_kernel": true
+      },
+      "min_cutoff_cap": 151,
+      "helper_gate_catalog_corner": {
+        "left": [
+          31,
+          142,
+          7501
+        ],
+        "right_helper": [
+          676,
+          3112,
+          160669
+        ],
+        "mixed": [
+          10051415,
+          46158110,
+          192464
+        ],
+        "char_margin": 2084548323
+      },
+      "helper_gate_expanded_corner": {
+        "left": [
+          36,
+          163,
+          9678
+        ],
+        "right_helper": [
+          781,
+          3553,
+          206386
+        ],
+        "mixed": [
+          14988414,
+          68026852,
+          255211
+        ],
+        "char_margin": 2062679581
+      }
+    },
+    {
+      "index": 26,
+      "old": [
+        189,
+        83,
+        39,
+        257,
+        3084,
+        9,
+        10
+      ],
+      "replacement": [
+        189,
+        83,
+        39,
+        257,
+        3141,
+        9,
+        10
+      ],
+      "geometry_unchanged": false,
+      "L_increase": 57,
+      "old_flag": [
+        2827,
+        184,
+        83
+      ],
+      "new_flag": [
+        2884,
+        184,
+        83
+      ],
+      "flag_delta": [
+        57,
+        0,
+        0
+      ],
+      "coefficient_count": 17048595413184622,
+      "rank_bound": 65035178461,
+      "nullity": 13590704238,
+      "gates": {
+        "two_s_le_B": true,
+        "B_le_U": true,
+        "U_le_L": true,
+        "k_le_s": true,
+        "s_lt_m": true,
+        "k1_le_n0": true,
+        "reserve_le_B": true,
+        "s_lt_char": true,
+        "k_lt_m": true,
+        "closed_B_le_m": true,
+        "closed_m_s_le_U": true,
+        "closed_m_B_s_le_L": true,
+        "all_cutoff_caps": true,
+        "positive_kernel": true
+      },
+      "min_cutoff_cap": 257,
+      "helper_gate_catalog_corner": {
+        "left": [
+          31,
+          142,
+          7501
+        ],
+        "right_helper": [
+          1253,
+          5756,
+          295641
+        ],
+        "mixed": [
+          18563624,
+          85156778,
+          356362
+        ],
+        "char_margin": 2045549655
+      },
+      "helper_gate_expanded_corner": {
+        "left": [
+          36,
+          163,
+          9678
+        ],
+        "right_helper": [
+          1448,
+          6575,
+          380544
+        ],
+        "mixed": [
+          27713328,
+          125661522,
+          472724
+        ],
+        "char_margin": 2005044911
+      }
+    }
+  ],
+  "groups": [
+    {
+      "group": 0,
+      "choice": 1,
+      "sources": [
+        0,
+        0,
+        0
+      ],
+      "old_source_limit": 1786,
+      "new_source_limit": 1811,
+      "changed_sources": [
+        0
+      ]
+    },
+    {
+      "group": 1,
+      "choice": 2,
+      "sources": [
+        1,
+        1,
+        1
+      ],
+      "old_source_limit": 2819,
+      "new_source_limit": 2819,
+      "changed_sources": []
+    },
+    {
+      "group": 2,
+      "choice": 3,
+      "sources": [
+        2,
+        2,
+        2
+      ],
+      "old_source_limit": 2584,
+      "new_source_limit": 2638,
+      "changed_sources": [
+        2
+      ]
+    },
+    {
+      "group": 3,
+      "choice": 4,
+      "sources": [
+        3,
+        3,
+        3
+      ],
+      "old_source_limit": 2772,
+      "new_source_limit": 2845,
+      "changed_sources": [
+        3
+      ]
+    },
+    {
+      "group": 4,
+      "choice": 5,
+      "sources": [
+        4,
+        5,
+        6
+      ],
+      "old_source_limit": 3117,
+      "new_source_limit": 3170,
+      "changed_sources": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "group": 5,
+      "choice": 6,
+      "sources": [
+        7,
+        8,
+        9
+      ],
+      "old_source_limit": 2781,
+      "new_source_limit": 2857,
+      "changed_sources": [
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "group": 6,
+      "choice": 7,
+      "sources": [
+        10,
+        10,
+        10
+      ],
+      "old_source_limit": 3105,
+      "new_source_limit": 3168,
+      "changed_sources": [
+        10
+      ]
+    },
+    {
+      "group": 7,
+      "choice": 8,
+      "sources": [
+        11,
+        12,
+        13
+      ],
+      "old_source_limit": 2416,
+      "new_source_limit": 2460,
+      "changed_sources": [
+        11,
+        12,
+        13
+      ]
+    },
+    {
+      "group": 8,
+      "choice": 9,
+      "sources": [
+        11,
+        14,
+        13
+      ],
+      "old_source_limit": 2498,
+      "new_source_limit": 2544,
+      "changed_sources": [
+        11,
+        13,
+        14
+      ]
+    },
+    {
+      "group": 9,
+      "choice": 10,
+      "sources": [
+        15,
+        16,
+        17
+      ],
+      "old_source_limit": 2338,
+      "new_source_limit": 2350,
+      "changed_sources": [
+        15,
+        16,
+        17
+      ]
+    },
+    {
+      "group": 10,
+      "choice": 11,
+      "sources": [
+        18,
+        19,
+        20
+      ],
+      "old_source_limit": 2716,
+      "new_source_limit": 2784,
+      "changed_sources": [
+        18,
+        19,
+        20
+      ]
+    },
+    {
+      "group": 11,
+      "choice": 12,
+      "sources": [
+        21,
+        5,
+        22
+      ],
+      "old_source_limit": 3112,
+      "new_source_limit": 3188,
+      "changed_sources": [
+        5,
+        21,
+        22
+      ]
+    },
+    {
+      "group": 12,
+      "choice": 13,
+      "sources": [
+        23,
+        5,
+        24
+      ],
+      "old_source_limit": 3066,
+      "new_source_limit": 3158,
+      "changed_sources": [
+        5,
+        23,
+        24
+      ]
+    },
+    {
+      "group": 13,
+      "choice": 14,
+      "sources": [
+        25,
+        5,
+        24
+      ],
+      "old_source_limit": 3071,
+      "new_source_limit": 3169,
+      "changed_sources": [
+        5,
+        24,
+        25
+      ]
+    },
+    {
+      "group": 14,
+      "choice": 15,
+      "sources": [
+        25,
+        5,
+        26
+      ],
+      "old_source_limit": 3084,
+      "new_source_limit": 3169,
+      "changed_sources": [
+        5,
+        25,
+        26
+      ]
+    },
+    {
+      "group": 15,
+      "choice": 16,
+      "sources": [
+        21,
+        5,
+        26
+      ],
+      "old_source_limit": 3089,
+      "new_source_limit": 3188,
+      "changed_sources": [
+        5,
+        21,
+        26
+      ]
+    }
+  ],
+  "scope": "Exact source dimension, all listed well-formed/cutoff gates, and helper characteristic gates; target identity checked separately in auxiliary_geometry_audit; receipt regeneration not certified."
+}
