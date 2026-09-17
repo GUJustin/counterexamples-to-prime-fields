@@ -8,7 +8,7 @@ For every prime p=1 mod 8, p>=17, put N=p-1 and n=2N. There is a
 Reed--Solomon code over F_(p^2), with n distinct evaluation points and
 dimension k=n/8, and a received affine line with at least
 
-    ceil(3n^2/100)
+    ceil(n^2/20)
 
 full agreement-set MCA exceptional labels at agreement A=3n/16.
 The capacity gap is exactly 1/16, the rate is exactly 1/8, and the
@@ -17,7 +17,7 @@ theorem of ePrint2026/2056 applies for sufficiently large n. The conclusion
 is full-support MCA failure; absence of ordinary correlated agreement and
 existence of a far point are not asserted.
 
-## Proof
+## Original compiler proof (weaker constant)
 
 The full-length Dickson construction on F_p^* gives L=N/2 distinct
 degree-<k polynomials agreeing at A=3N/8 positions with one word, for
@@ -44,6 +44,16 @@ The parameter identities and characteristic guard follow immediately.
 There are infinitely many such primes, so this is an unbounded-length
 family, not a single finite witness. The standard infinitude of primes
 1 mod 8 also follows elementarily from prime divisors of X^4+1.
+
+## Improved proof via pairwise splitting
+
+The general proof in `../dickson_difference_splitting/PROOF.md` shows that
+all pairwise Dickson differences split over F_p. Anchored quotient values
+are consequently distinct at every point of F_(p^2) outside F_p. With
+ell=N/4 candidates at any nonsquare anchor and p=N+1 padding coordinates, random
+translations have expected union size exactly p^2[1-(1-ell/p^2)^p].
+This is at least N^2(1-exp(-1/4))>N^2/5=n^2/20. Thus the current
+manuscript uses ceil(n^2/20); the older bound above remains valid.
 
 ## What this says about tightness
 

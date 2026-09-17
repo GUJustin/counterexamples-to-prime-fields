@@ -21,6 +21,14 @@ list-size or exception-count lower bounds.
 [Research status](research/prime_field_tightness/STATUS.md) distinguishes
 proved results from open targets. No better.codes improvement is claimed.
 
+There is also an intrinsic partial tightness result: at fixed rate `1/8`
+and capacity gap `1/16`, a line over `F_(p^2)` has at least `ceil(n^2/20)`
+full-support MCA exceptional challenges. Thus a universal linear capacity
+bound fails in the large-characteristic field class. A short splitting
+lemma for Dickson polynomial differences proves the improved constant.
+This is **not** prime-ambient-field or first-order-regime tightness.
+[Proof and exact checks](research/prime_field_tightness/QUADRATIC_EXTENSION_LOWER_BOUND.md).
+
 The paper studies quantitative coding statements used in security analyses
 of hash-based SNARKs. It proves general list and affine-line separations
 over prime fields, gives finite circle-code examples, and treats the S-two
@@ -273,7 +281,8 @@ Root positions and multiplicities may vary. Appendix G contains the proof
 and a third-order equation whose actual solution variety has quadratic
 degree but whose bad labels remain linear. The earlier
 [fixed-power argument](research/power_family_mca/README.md) is retained.
-The general first-order conjecture and quadratic fixed-gap error remain open.
+The general first-order conjecture and quadratic fixed-gap error over prime
+ambient fields remain open.
 
 [Actual first-order solution components](research/first_order_actual_components/README.md)
 proves that the curve and surface components of the actual regular
@@ -300,7 +309,8 @@ fixed-challenge degrees to `O(D^(d-1))`. Appendix J gives attaining
 families, proves the isolated fixed-fiber count can be `Theta(D^d)`,
 and shows that the resulting logarithmic-derivative family still has
 only linearly many full-support bad labels at a fixed gap. These
-structural sharpness results do not settle quadratic MCA error.
+structural sharpness results do not settle quadratic MCA error over prime
+ambient fields.
 
 [Inverse Bernoulli equations](research/inverse_bernoulli/README.md)
 have at most `2s` polynomial solutions to `P^(s-1) P'=A(X)` for

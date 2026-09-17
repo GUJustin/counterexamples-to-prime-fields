@@ -47,7 +47,7 @@ def replay(p):
     assert all(len(S)==A for S in supports)
     anchor=max(old,key=lambda x:sum(x in S for S in supports))
     selected=[c for c,S in zip(coeffs,supports) if anchor in S]
-    assert len(selected)*N>=A*L
+    assert chi(anchor)==-1 and len(selected)==N//4
     quotients=[]
     for c in selected:
         # Synthetic division of P(X)-w(anchor) by X-anchor.
@@ -65,10 +65,12 @@ def replay(p):
     for x in universe:
         if x!=F.zero:
             assert F.mul(x,F.inv(x))==F.one
-    unused=[x for x in universe if not(x[1]==0 and x[0]!=0)]
+    unused=[x for x in universe if x[1]!=0]
     values={x:[F.evaluate(q,x) for q in quotients] for x in unused}
-    pads=sorted(unused,key=lambda x:len(set(values[x])),reverse=True)[:N+1]
-    bound=ceil(Fraction(Q*A*L,Q+3*A*L))
+    assert all(len(set(v))==len(quotients) for v in values.values())
+    pads=unused[:N+1]
+    occupancy=Q*(1-(1-Fraction(len(quotients),Q))**(N+1))
+    bound=ceil(occupancy)
     rng=random.Random(p)
     witness={}
     for attempt in range(32):
@@ -79,7 +81,7 @@ def replay(p):
                 witness[F.sub(y,f_pad[x])]=(i,x)
         if len(witness)>=bound:
             break
-    assert len(witness)>=bound>=ceil(Fraction(3*(2*N)**2,100))
+    assert len(witness)>=bound>=ceil(Fraction((2*N)**2,20))
     agreement_counts=[]
     for z,(i,x0) in witness.items():
         q=quotients[i]
@@ -94,8 +96,9 @@ def replay(p):
                 padding_points=[list(x) for x in pads],
                 padding_values=[list(f_pad[x]) for x in pads],
                 exceptional_labels=[list(z) for z in sorted(witness)],
-                exceptional_count=len(witness),compiler_bound=bound,
-                claimed_quadratic_bound=ceil(Fraction(3*(2*N)**2,100)),
+                exceptional_count=len(witness),exact_occupancy_bound=bound,
+                outside_prime_field_separation_checks=len(values),
+                claimed_quadratic_bound=ceil(Fraction((2*N)**2,20)),
                 minimum_witness_agreements=min(agreement_counts),
                 inverse_checks=Q-1,translation_trials=attempt+1)
 

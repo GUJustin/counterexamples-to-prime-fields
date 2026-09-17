@@ -1,44 +1,41 @@
-# Pairwise splitting probe for the Dickson bank
+# Pairwise splitting of Dickson differences
 
-September 17, 2026. Finite evidence only; a general proof remains open in
-this investigation. This is not a prime-field tightness result.
+September 17, 2026. The observed splitting pattern is now proved for all
+primes p=1 mod4 in [PROOF.md](PROOF.md). No novelty claim is made.
+This strengthens the extension-field quadratic MCA constant; it is not
+a prime-field tightness result.
 
-For p=1 mod8, k=(p-1)/4, the source polynomials are
+For k=(p-1)/4 the source candidates are
 
     P_a(X)=sum_{j=0}^{k-1} binom(2k+1,2j+1) a^(2k-2j) X^j,
     1 <= a <= (p-1)/2.
 
-We factored every pairwise difference at p=17,41,73,89,97. All 2,922
-nonzero differences split into linear factors over F_p; every observed
-root multiplicity is one or two. Each factorization was multiplied back
-and checked against the original polynomial. The degree of each difference
-is k-1. Exact totals and multiplicity counts are in probe.json.
+Every root of P_a-P_b belongs to F_p when a^2!=b^2. The proof writes
+X=t^2 and uses 2e=p+1 for e=(p+1)/2. Equality of the two polynomial
+values forces t^p=t or t^p=-t, and either condition puts X in F_p.
+The argument takes place in an algebraic closure, so it accounts for
+all roots rather than only roots in one extension field.
 
-This is stronger finite evidence than checking just the selected anchored
-subfamily. It does not prove splitting for other primes.
+Anchored quotients inherit the splitting property. Thus their evaluations
+are pairwise distinct at every point outside F_p. With ell anchored
+candidates and p padding points, independent translations have expected
+union size p^2[1-(1-ell/p^2)^p]. This yields at least ceil(n^2/20)
+full-support exceptional challenges over F_(p^2), at rate1/8 and gap1/16.
+The sharper uniform coefficient is (1-exp(-1/4))/4, about0.05530.
+Neither the exponent nor the ambient-field class changes.
 
-## Why the pattern could help
+## Independent finite checks
 
-If all differences in a source bank split over F_p, then evaluation at
-ANY point of F_(p^2) outside F_p separates the entire bank. The same is
-true for anchored quotients: their pairwise differences are the original
-differences divided by the common linear anchor factor.
+`probe.py` factors every pairwise difference at p=17,41,73,89,97:
+2,922 differences in total. Every factorization was multiplied back
+and checked against the original polynomial, and all factors were linear.
+All observed multiplicities are one or two; the proof does not require
+or assert a general multiplicity classification.
 
-Consequently, if the observed splitting property holds at a prime p,
-choose any N+1 distinct padding points outside F_p, where N=p-1. For an
-anchored subfamily of size ell, every padding value set has exactly ell
-members. Independent uniform translations give a union of expected size
-
-    p^2 * (1 - (1 - ell/p^2)^(N+1)).
-
-An anchor with ell >= A*L/N = 3N/16 exists for the full Dickson bank.
-The existing full-support MCA root-count argument then applies without
-any collision loss. If a general splitting theorem is established, this
-would asymptotically improve the quadratic coefficient at output length
-n=2N from 3/100 to (1-exp(-3/16))/4, approximately 0.04274.
-This would improve a constant, not the exponent or the field-class scope.
-
-The proof obligation is substantial: establish the splitting property for
-all p=1 mod8 and all distinct a,b modulo sign. Neither a finite census nor
-the expectation calculation discharges it. No manuscript claim has been
-changed on the basis of this probe.
+The separate stdlib verifier
+`../prime_field_tightness/check_quadratic_extension_lower_bound.py`
+checks pairwise separation at ALL points outside F_p in F_(p^2) for
+the anchored banks at p17 and p41, then constructs and checks the full
+exceptional-label witnesses. It certifies63 and370 labels respectively,
+exceeding the new uniform bounds52 and320. Its occupancy targets are
+computed exactly with rational arithmetic.

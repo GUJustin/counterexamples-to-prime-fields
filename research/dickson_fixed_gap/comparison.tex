@@ -56,29 +56,65 @@ The full-length example does not settle the fixed-gap, short-domain
 proximity-gap question. Exact checks of the displayed agreement counts
 are in \path{research/dickson_fixed_gap/}.
 
+\begin{lemma}[Splitting of pairwise differences]\label{lem:dickson-difference-splitting}
+For the polynomials above, if $a^2\ne b^2$, every root of $G_a-G_b$
+belongs to $\F_p$.
+\end{lemma}
+\begin{proof}
+Let $t^2$ be a root in an algebraic closure, with
+$y=G_a(t^2)=G_b(t^2)$. The case $t=0$ is immediate. For $c\in\{a,b\}$,
+put $U_c=(c+t)^e$ and $V_c=(c-t)^e$. Then
+\[
+ U_c-V_c=2ty,\qquad U_c^2-V_c^2=2c(t+t^p),\qquad
+ U_c^2+V_c^2=2c^2+2t^{p+1}.
+\]
+If $y=0$, then $t^p=-t$, so $t^2\in\F_p$. Otherwise put
+$H=(t+t^p)/(ty)$. We have $U_c+V_c=cH$, whence
+\[
+ c^2H^2+4t^2y^2=4c^2+4t^{p+1}.
+\]
+Subtracting the equations for $a$ and $b$ gives $H^2=4$, and then
+$t^2y^2=t^{p+1}$. Thus $(t+t^p)^2=4t^{p+1}$, or
+$(t^p-t)^2=0$. Again $t^2\in\F_p$.
+\end{proof}
+
 \begin{corollary}[Quadratic exceptions in growing prime characteristic]
 \label{cor:quadratic-extension-fixed-gap}
 For every prime $p\equiv1\pmod8$, $p\ge17$, put $n=2(p-1)$.
 Over $\F_{p^2}$ there is a Reed--Solomon code of length $n$ and dimension
-$n/8$, and a received line with at least $\lceil3n^2/100\rceil$
+$n/8$, and a received line with at least $\lceil n^2/20\rceil$
 full agreement-set MCA exceptional labels at agreement $3n/16$.
 Thus the capacity gap is exactly $1/16$, and $p=n/2+1>n/8-1$.
 \end{corollary}
 \begin{proof}
-Set $N=p-1$. The preceding proposition supplies $L=N/2$ candidates at
-agreement $A=3N/8$, with dimension $k=N/4$. Their identities and
-distinctness persist over $\F_{p^2}$. The proof of
-Proposition~\ref{prop:exact-list-amplification} works over any finite field
-of size $Q\ge2N+1$: it uses only polynomial root counting and independent
-uniform translations of value sets. With $Q=p^2=(N+1)^2$, it gives
-length $2N$ and at least
+Set $N=p-1$. Proposition~\ref{prop:full-length-fixed-gap} supplies
+$L=N/2$ candidates at agreement $A=3N/8$, with dimension $k=N/4$.
+Choose any nonsquare anchor. Exactly $\ell=N/4$ candidates agree there:
+indeed $\sum_{a\in\F_p}\chi(a^2-x)=-1$ for nonsquare $x$, none of
+the summands is zero, and the $a=0$ summand is $-1$. There are therefore
+$N/2$ admissible nonzero parameters, or $N/4$ modulo sign.
+As in Proposition~\ref{prop:exact-list-amplification}, divide each anchored
+candidate minus the received anchor value by the anchor's linear factor.
+The resulting quotients have degree at most $k-2$. By
+Lemma~\ref{lem:dickson-difference-splitting}, their evaluations are pairwise
+distinct at every point outside $\F_p$.
+
+Append any $N+1=p$ distinct points of $\F_{p^2}\setminus\F_p$, with
+direction one, and retain direction zero on the $N-1$ old coordinates.
+Independent uniform translations of the padding value sets yield an
+expected number of counted labels equal to
 \[
- \left\lceil\frac{QAL}{Q+3AL}\right\rceil
- =\left\lceil\frac{3QN^2}{16Q+9N^2}\right\rceil
- \ge\left\lceil\frac{3N^2}{25}\right\rceil
- =\left\lceil\frac{3n^2}{100}\right\rceil
+ p^2\bigl[1-(1-\ell/p^2)^p\bigr]
+ \ge p^2\bigl[1-\exp(-N/(4p))\bigr]
+ \ge Np\bigl[1-\exp(-1/4)\bigr]
+ >N^2/5=n^2/20.
 \]
-exceptional labels. Here $A\ge k+1$ and $Q\ge N^2$, as required.
+The second inequality uses concavity of $1-\exp(-u/4)$ on $[0,1]$;
+the last uses $1-e^{-1/4}\ge1/4-1/32=7/32>1/5$.
+Every counted label has a selected quotient with at least $A-1\ge k$
+old agreements and one new agreement. A degree-$<k$ direction polynomial
+matching this full support would vanish on the old agreements, hence
+identically, but would equal one on the new agreement. This is impossible.
 The dimension and agreement threshold remain $k$ and $A$.
 \end{proof}
 

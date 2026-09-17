@@ -5,8 +5,8 @@
   ],
   "reason": "completed",
   "returncode": 0,
-  "seconds": 0.5540537080014474,
-  "peak_rss_kib": 11168,
+  "seconds": 0.5542919169965899,
+  "peak_rss_kib": 16672,
   "rss_limit_mib": 384,
   "time_limit_seconds": 60
 }

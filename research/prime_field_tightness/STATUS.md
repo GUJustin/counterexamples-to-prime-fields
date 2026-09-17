@@ -12,7 +12,7 @@ first-order inverse-margin powers are2 for lists and4 for MCA.
 
 **Positive intrinsic comparison:** The prime-field Dickson family already
 forces linear list size at a fixed gap. QUADRATIC_EXTENSION_LOWER_BOUND.md
-now spells out its direct compiler consequence: at least ceil(3n^2/100)
+now spells out its strengthened consequence: at least ceil(n^2/20)
 full-support MCA exceptions over F_(p^2), rate1/8 and gap1/16, with
 p=n/2+1>k-1. Thus a linear capacity MCA theorem is impossible in the
 current ePrint's full large-characteristic field class. This is NOT a
@@ -877,3 +877,21 @@ This implies collision-free extension-field evaluations for these banks.
 A general theorem would sharpen the quadratic MCA constant via exact
 translation occupancy, but would not give prime-field tightness. See
 `../dickson_difference_splitting/README.md`; the general proof remains open.
+
+
+## September 17: splitting proved and quadratic constant strengthened
+
+A Frobenius calculation proves that every root of every pairwise Dickson
+polynomial difference lies in F_p, for all primes p=1 mod4. Thus anchored
+quotients have distinct evaluations at every extension-field point outside
+F_p. Exact translation occupancy strengthens the uniform fixed-gap MCA
+bound from ceil(3n^2/100) to ceil(n^2/20), with the same rate1/8 and gap1/16.
+The main paper now includes the splitting lemma and stronger corollary.
+This is a constant improvement over quadratic extension-field growth, not
+a prime-field transfer or first-order tightness theorem.
+
+The exact nonsquare-anchor incidence count is N/4, improving the generic
+average3N/16 and giving the final uniform constant1/20. Independent replay
+checks separation at all272 and1640 non-prime-field points for p17 andp41,
+and certifies63 and370 exceptional labels. The final159-page PDF builds
+without TeX warnings; the changed proof pages were rendered and inspected.

@@ -68,7 +68,7 @@ There is nevertheless a qualitative intrinsic comparison that should
 not be hidden by these limitations. The full-length prime-field Dickson
 family has L=n/2 at fixed rate1/4 and capacity gap1/8, excluding a
 length-independent capacity list bound. Applying the existing compiler
-after extending the field gives at least ceil(3n^2/100) full-support MCA
+after extending the field gives at least ceil(n^2/20) full-support MCA
 exceptions over F_(p^2), with n=2(p-1), rate1/8 and gap1/16. Its
 characteristic p=n/2+1 exceeds k-1, so it lies in the current capacity
 theorem's field class. This excludes a universal linear capacity MCA
