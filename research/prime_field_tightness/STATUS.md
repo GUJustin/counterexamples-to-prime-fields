@@ -992,3 +992,10 @@ TeX warnings, and the new proof pages were visually inspected.
 This is an extension-degree refinement, not progress on the missing
 prime-ambient-field or first-order-regime claim. See
 ../ordinary_ca_superlinear/FIELD_DEGREE_REFINEMENT.md.
+
+
+September 17, further prime-field search: 246 complete cyclic-word
+short-domain censuses (r=2,...,8) found no new example reaching agreement
+3/8; the only hit is r=2,p=17. See orbit_descent_prime_field/README.md
+and short_domain_scan.json. This finite negative evidence does not
+resolve the asymptotic short-domain ratio needed by the descent route.
