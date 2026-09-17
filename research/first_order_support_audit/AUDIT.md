@@ -179,3 +179,25 @@ Independent verifier passed 220 exact rational polygon integrals and
 rates. The note builds without warnings; new theorem/proof pages were
 rendered and inspected. No practical parameter or better.codes gain is
 claimed.
+
+## September 17: explicit high-rate curve and renewed intrinsic priority
+
+The restored explicit high-rate continuum threshold is now audited in
+Theorem 8.3 of the 18-page technical note. Existence of an interior
+optimizer forces a definite square-root sign and the largest cubic
+root; the proof does not merely select a numerical branch. Three exact
+symbolic identities and six rational branch isolations pass, with
+agreement intervals narrower than 10^-28 and admissible support widths.
+The note builds without warnings; new pages were visually checked.
+This remains continuum method tightness, not intrinsic code tightness.
+
+The user specifically asked about intrinsic or spiritually meaningful
+tightness of https://eprint.iacr.org/2026/2056.pdf. Direct web retrieval
+failed and HTTPS download returned403; no copy was recovered by the
+filename lookup. Do not claim this current ePrint has been read. The
+comparison remains the recovered September10 version7. Our large
+gap-dependent coefficient in a linear-n lower bound rules out easy
+uniform gap dependence, but neither forces the first-order quadratic
+exception count nor an n exponent growing toward capacity. Method
+optimality must not be presented as a substitute. Prioritize a growing
+fixed-gap list or superlinear fixed-gap exception construction next.

@@ -6,7 +6,7 @@ Working draft by Justin Thaler, September 17, 2026.
 
 **Current research snapshot (September 17):** the main ePrint-style article
 is 158 pages with one-inch margins. A separate
-[17-page first-order tightness note](research/first_order_support_audit/note/main.pdf)
+[18-page first-order tightness note](research/first_order_support_audit/note/main.pdf)
 proves the sharp quarter-rate threshold for the specified interpolation
 framework, and sharp inverse-margin powers for its unchanged list and MCA
 bounds. These method limitations include translation-stable nonmonomial

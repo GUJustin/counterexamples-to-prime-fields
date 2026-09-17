@@ -1,0 +1,105 @@
+\subsection{The explicit continuum threshold}
+
+The high-rate shape theorem determines the threshold, including its
+correct algebraic branch. Write $\rho_*=8-3\sqrt6$.
+\begin{theorem}[Sharp continuum threshold above half rate]
+For $1/2<\rho\le\rho_*$, the threshold is $a_{\rm DKT}(\rho)$.
+For $\rho_*<\rho<1$, put
+\[
+ p=\sqrt{2\rho-1},\qquad \delta=1-p,\qquad
+ \gamma=\sqrt\delta\,\frac{(1+p)(2-p)}{1+p^2}.
+\]
+Let $y$ be the largest real root of $y^3-3y+\gamma=0$. Then the threshold is
+\begin{equation}\label{eq:high-threshold}
+ B_* =\frac{p\sqrt\delta}{(1+p^2)y-\delta^{3/2}},
+ \qquad a_* =\frac{1+p}{2}+\frac{\delta^2}{2}B_*.
+\end{equation}
+It satisfies $a_*<a_{\rm DKT}(\rho)$. At the threshold a nonempty
+support has zero surplus; below it every positive-area support has
+negative surplus, and above it positive surplus is possible.
+These are continuum assertions, not finite-multiplicity converses
+at high rates.
+\end{theorem}
+\begin{proof}
+First set $a=a_{\rm DKT}(\rho)$ and
+$B_0=3(1-a)/(2(2-\rho))$. The saturated cap polynomial and its derivative
+factor as
+\[
+ P(B)=-\frac{2-\rho}{6}B(B-B_0)^2,
+ \qquad f(s)=-\frac{2-\rho}{2}(s-B_0/3)(s-B_0).
+\]
+The substitution calculation in the preceding corollary also proves
+$c\ge B_0$ when $1/2<\rho\le\rho_*$. In that case $P(B)\le0$ for
+$B\le c$. On the remaining interval $[c,d]$, the optimized column
+surplus $M$ of \eqref{eq:tail} is convex, with
+$M(c)=f(c)\le0$ and $M(d)<0$. It is therefore nonpositive throughout
+that interval. No width gives positive surplus, while $B=B_0$ gives
+zero. Increasing agreement strictly improves the benefit of this
+nonempty support. A zero-surplus positive-area support at any smaller
+agreement would similarly give positive surplus before this threshold,
+a contradiction. This proves the first case.
+
+Now suppose $\rho>\rho_*$. At $a_{\rm low}=(1+p)/2$ one has
+$d=p/(1+p)$. For $0<s\le d$,
+\[
+ d-s<p(1-d-s),
+\]
+so $M(s)<0$; the full-column surplus satisfies $f(s)\le M(s)$.
+Thus every nonempty optimized prefix has negative surplus there.
+There is positive surplus below $a_{\rm DKT}$ by the preceding
+corollary. The derivative of total surplus at $B=0$ is
+$a^2/(2\rho)-1/2$, uniformly negative on
+$[a_{\rm low},a_{\rm DKT}]$. Widths approaching zero therefore cannot
+supply the first positive surplus. Continuity and compactness give a
+first threshold strictly between these two agreements, with a
+nonempty zero-surplus maximizing width $B$.
+
+At this threshold, $B>c$: below $a_{\rm DKT}$ the saturated polynomial
+$P(B)$ is strictly negative for every $B>0$. Also $B<d$, since
+$M(d)<0$ would make a slightly smaller width have positive surplus if
+$B=d$ had zero surplus. Thus stationarity gives $M(B)=0$.
+Both $d-B$ and $1-d-B$ are positive, so this equation has the definite
+sign choice
+\[
+ d-B=p(1-d-B),\qquad
+ a=\frac{1+p}{2}+\frac{(1-p)^2}{2}B.
+\]
+Put $x=c/B$. Then
+\[
+ B=\frac{p\delta}{(1+p^2)x-\delta^2},\qquad
+ Q(x)=x^3-3\delta x+
+        \delta^2\frac{(1+p)(2-p)}{1+p^2}.
+\]
+Substitution into the total surplus of \eqref{eq:high-total} gives exactly
+\[
+ -\frac{p\delta^3(1+p^2)}
+ {12\bigl((1+p^2)x-\delta^2\bigr)^3}\,Q(x).
+\]
+Hence $Q(x)=0$.
+
+For the branch choice, $B<d<1/2$ implies
+$x>x_{1/2}=(1-p^2)/(1+p^2)$, and
+\[
+ Q(0)>0,\qquad
+ Q(x_{1/2})=-\frac{p^2(1-p)^2(1+p)^2(p^2+3)}{(1+p^2)^3}<0.
+\]
+The cubic has two positive roots, exactly one greater than $x_{1/2}$;
+its third root is negative. Thus the threshold selects the largest
+root. Setting $x=\sqrt\delta\,y$ proves
+\eqref{eq:high-threshold}. Existence and admissibility of this root
+follow from the interior optimizer just established, rather than from
+an unsupported choice of a numerical cubic branch.
+
+Finally, the threshold support gains strictly when agreement increases.
+A positive-area zero-surplus support below threshold would also gain
+strictly at a slightly higher agreement still below threshold, which
+is impossible. This proves the stated interpretation on both sides.
+\end{proof}
+
+The formula and proof are recovered from the September 13 draft, with
+an expanded branch and existence audit here. Exact symbolic checks
+verify the three algebraic identities used above. Rational isolation
+at six rational values of $p$ produces admissible root intervals and
+agreement intervals of width less than $10^{-28}$, with opposite
+surplus signs at their endpoints. These checks supplement the proof;
+they are not a substitute for the quantified threshold statement.

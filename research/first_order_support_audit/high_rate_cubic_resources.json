@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/first_order_support_audit/verify_high_rate_cubic.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5451529580022907,
+  "peak_rss_kib": 2688,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}
