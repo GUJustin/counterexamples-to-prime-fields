@@ -29,7 +29,9 @@ and radii strictly below the paper's characteristic-based Elias radius.
 - A padding construction makes the nearby fraction tend to one at exact
   fixed rate, with `eta=Theta(1/log p)` and polylogarithmic block length,
   while retaining a point one coordinate beyond the nearby radius and no
-  correlated agreement. At half rate over `2^61-1`, a
+  correlated agreement. A second-moment refinement lets the number of
+  coordinates outside the radius grow, while relative separation vanishes.
+  At half rate over `2^61-1`, a
   finite example has over **91%** nearby parameters where the numerical
   prescription gives less than **1/1024**. Over `2^127-1`, another has over
   **96%** where it gives less than **2^-40**. These finite comparisons use

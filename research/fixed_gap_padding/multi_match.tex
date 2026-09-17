@@ -1,0 +1,134 @@
+\paragraph{A far point with a growing coordinate separation.}
+The one-coordinate separation in Theorem~\ref{fg:near-unit-density}
+can be increased, while retaining nearby density tending to one.
+The convergence estimate becomes weaker. We give the counting argument
+explicitly because it distinguishes relative distance from the number
+of coordinates by which a word misses the radius.
+
+\begin{lemma}[Several padding matches]\label{fg:multi-padding}
+Suppose a polynomial $w$ of degree $D\ge K\ge2$ and $L$ distinct
+polynomials $P_i$ of degree below $K$ each have exactly $D$ agreements
+on a core of size $N$. Put $R=p-N$, $U=p-1$, $d=K-1$, and
+\[
+ T=d\binom L2-\mathcal P(LD,N).
+\]
+Here $\mathcal P$ is the balanced collision count in
+Lemma~\ref{fg:averaged-padding}. Let $1\le r\le q\le R$, and define
+\[
+ v_a=\frac{\binom ra\binom{q-r}{r-a}}{\binom qr},\qquad
+ B=v_0+\sum_{a=1}^r v_a U^a
+ \left(\frac1L+\frac{2T(d-1)_{a-1}}{L^2(R)_a}\right),
+\]
+where $(x)_a$ denotes a falling factorial and out-of-range binomial
+coefficients are zero. There is an extension to $n=N+q$ distinct
+domain points and a line $w+zg$, with $g=0$ on the core, having at
+least $\lceil U/B\rceil$ nearby nonzero parameters at agreement
+threshold $D+r$. At parameter zero the maximum agreement is exactly
+$D$, and there is no correlated agreement on $D+r$ coordinates.
+\end{lemma}
+\begin{proof}
+Choose the $q$ new points uniformly without replacement from outside
+the core, and choose their directions independently and uniformly
+from $\F_p^*$. For fixed $z\ne0$, let $X$ count pairs $(i,S)$,
+where $S$ is an $r$-subset of the new positions on which $P_i=w+zg$.
+Every $P_i-w$ has all its roots in the core. Consequently
+$\mathbb EX=L\binom qr/U^r$.
+
+Let $c_{ij}$ count outside roots of $P_i-P_j$. The root bound and
+the balanced core count give $c_{ij}\le d$ and
+$\sum_{i<j}c_{ij}\le T$. Two $r$-subsets whose intersection has size
+$a$ contribute probability $U^{-2r+a}$ if $i=j$, and
+$U^{-2r+a}(c_{ij})_a/(R)_a$ otherwise. Hence
+\[
+ \frac{\mathbb EX^2}{(\mathbb EX)^2}
+ =\sum_{a=0}^r v_aU^a
+ \left(\frac1L+\frac1{L^2}\sum_{i\ne j}\frac{(c_{ij})_a}{(R)_a}\right)
+ \le B,
+\]
+using $(c_{ij})_a\le c_{ij}(d-1)_{a-1}$ for $a\ge1$.
+Cauchy--Schwarz gives $\Pr(X>0)\ge1/B$. Average over the $U$
+nonzero parameters to obtain one domain and direction with the
+claimed count. The global polynomial $w$ has degree $D$, so its
+maximum agreement with the code is at most $D$, attained by the
+selected polynomials on the core. This also excludes correlated
+agreement at the larger threshold.
+\end{proof}
+
+The common core also gives a uniform bound
+\begin{equation}\label{fg:outside-pair-cap}
+ c_{ij}\le e:=d-\max\{0,2D-N\}
+\end{equation}
+whenever there are at least two selected polynomials. Indeed, their
+core agreement sets intersect in at least $2D-N$ positions.
+For $e\ge1$, the same proof therefore permits the simpler bound
+\begin{equation}\label{fg:multi-simple}
+ \frac{\mathbb EX^2}{(\mathbb EX)^2}
+ \le\frac{U^r}{L}
+ +\left(\frac{U}{R-r+1}\right)^r
+       \exp\!\left(\frac{r^2e}{q-r+1}\right).
+\end{equation}
+To see this, let $Z$ be the intersection size of two independent
+uniform $r$-subsets of a $q$-set, so $\Pr(Z=a)=v_a$.
+Bound $(c_{ij})_a\le e^a$, and use
+\[
+ \mathbb E e^Z
+ =\sum_{j=0}^r(e-1)^j\binom rj\frac{(r)_j}{(q)_j}
+ \le\left(1+\frac{r(e-1)}{q-r+1}\right)^r
+ \le\exp\!\left(\frac{r^2e}{q-r+1}\right).
+\]
+
+\begin{corollary}[An unbounded number of coordinates outside]
+\label{fg:growing-far}
+Fix rational $\rho\in(0,1)$ and $c>H_2(\rho)$. With
+$b=\log_2p$ and $\ell=\log_2b$, there are codes and lines of exact
+rate $\rho$ satisfying
+\[
+ n=\left(\frac{\sqrt2}{c}+o(1)\right)\frac{b^{3/2}}{\sqrt\ell},
+ \quad \eta=\frac{c+o(1)}b,\quad
+ \frac Jp\ge1-O_{\rho,c}(\ell^{-1/2}).
+\]
+The parameter-zero word is exactly $r/n$ beyond the nearby radius,
+where $r=\lfloor b^{1/6}\rfloor\to\infty$.
+The radius is strictly below Elias and there is no correlated agreement
+at the threshold. The relative separation $r/n$ still tends to zero.
+\end{corollary}
+\begin{proof}
+Take $n,K,s$ as in Theorem~\ref{fg:near-unit-density}, but now put
+\[
+ \varepsilon=\ell^{-1/4},\qquad
+ h=\left\lceil(3+\varepsilon)(r+1)b/\ell\right\rceil,
+ \quad t=K+1+s,\quad m=t+h.
+\]
+Since $r\sim b^{1/6}$, we have $h=o(n)$ and
+$\log_2((m-1)/h)=\ell/3+(\log_2\ell)/2+O_{\rho,c}(1)$.
+The anchored support count therefore has logarithm at least
+$(1+\varepsilon/3)(r+1)b-O_{\rho,c}(rb/\ell)$.
+The moment-vector count still has logarithm
+$b+O_{\rho,c}(b/\ell+\sqrt{b\ell})$. Thus
+$L\ge p^r2^{\Omega(\varepsilon rb)}$.
+Remove the anchor as before, setting $D=K+s$, $N=D+h$, and $q=n-N$.
+The threshold is now $A=D+r$, so $\eta=(s+r)/n\sim c/b$.
+The outside-pair cap in \eqref{fg:outside-pair-cap} is
+$e=h-s-1\sim h$, and
+\[
+ \frac{r^2e}{q-r+1}=O_{\rho,c}(\ell^{-1/2}),\qquad
+ \left(\frac{U}{R-r+1}\right)^r=1+o(\ell^{-1/2}).
+\]
+Together with $U^r/L\le2^{-\Omega(\varepsilon rb)}$, the bound
+\eqref{fg:multi-simple} gives a second-moment ratio at most
+$1+O_{\rho,c}(\ell^{-1/2})$. The averaging argument proves the
+nearby count, and the degree argument gives the exact far-point
+distance and excludes correlated agreement.
+Finally $\eta b\to c>H_2(\rho)$ gives strict Elias.
+\end{proof}
+
+Thus the far point need not merely miss the radius by one coordinate.
+This remains a shrinking-gap statement with vanishing relative
+separation. As before, choosing
+$c>\max\{H_2(\rho),c_2H_2(\rho)\}$ makes the numerical prescription
+$o(p)$ despite nearby density tending to one.
+The checker \path{verify_multi_match_far_padding.py} in
+\path{research/fixed_gap_padding/} exhausts $55{,}000$ choices of domain
+and direction over $\F_{11}$ and verifies the exact first and second
+moments for $r=1,2,3$, as well as the uniform pair cap and $1968$
+hypergeometric identities. These small fixtures check the mechanism, not Elias.

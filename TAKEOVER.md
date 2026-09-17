@@ -792,3 +792,46 @@ Continue until12:30UTC. Next mathematical possibilities: try r-coordinate
 far points (r>1) using multi-padding matches and second moments; or pursue
 growing fixed-gap lists on short domains, still the main unresolved target.
 Do not conflate fixed-gap unique-nearby family with dense shrinking-gap family.
+
+
+## September 17 ~06:00 UTC — growing far-point separation
+
+Previous goal turn was progress (commit28a14611). This turn proves and
+integrates a further strengthening, not just a status repeat. New
+MULTI_MATCH_FAR_PADDING.md, multi_match.tex, verify_multi_match_far_padding.py.
+For degree-D global core word w with L degree<K candidates having D old
+agreements on N points, choose q random distinct outside points and random
+nonzero padding directions. X counts (candidate,r-subset) matching at fixed
+nonzero z. E X=L*binom(q,r)/(p-1)^r. Exact second-moment ratio is sum over
+intersection a of v_a U^a[1/L+L^-2 sum_i!=j(c_ij)_a/(R)_a], where
+v_a=binom(r,a)binom(q-r,r-a)/binom(q,r),R=p-N,U=p-1. Rootbound plus
+balanced core overlaps gives sum c_ij<=T. Cauchy-Schwarz and averaging
+yield at least ceil(U/B) nearby labels at threshold D+r. z0exactagreementD.
+
+CRUCIAL improvement: c_ij <= e=(K-1)-max(0,2D-N), because two large
+core supports must intersect. This is much smaller than K in our regime.
+For e>=1, ratio<=U^r/L+(U/(R-r+1))^r exp(r²e/(q-r+1)), from hypergeometric
+factorial moments. Set b=log2p,ell=log2b,n~sqrt2/c*b^1.5/sqrtell,
+K=rho*n,s=floor(cn/b),r=floor(b^1/6),eps=ell^-1/4,
+h=ceil((3+eps)(r+1)b/ell),t=K+1+s,m=t+h,D=t-1,N=D+h,q=n-N.
+Anchored support log>= (1+eps/3)(r+1)b-O(rb/ell), moment costb+lowerorder,
+so L>=p^r*2^Omega(eps*r*b). e=h-s-1~h, r²e/q=O(ell^-1/2). Thus
+J/p>=1-O_rho,c(ell^-1/2), farpoint r/n outside, r->infinity. eta~c/b,
+strictElias,c>Hrho, n=o(p), noCA. Numerical prescriptiono(p)ifc>c2Hrho.
+Relative separation stillvanishes, gapstillshrinks; noactualglobal-list
+separation. Replaces earlier weaker sqrt(ell) separation attempt; historical
+derivation retained in note, final theorem uses b^1/6.
+
+Verifier exhausts55000 domain/direction choices in F11: D=K2,N4,L6 and
+D=K3,N5,L10; r1,2,3. Checks exactfirst/secondmoments, balancedT and uniform
+paircap, plus1968hypergeometric identities and fullcodewordprofileofselected
+lines. GuardedPASS<384MiB. MechanismfixturesnotEliasclaims. Makefile74checks.
+PDF119pages; newLemma4.12/Corollary4.13 around34–36, visually reviewed1,2,34–36;
+cleanbuild. Abstract/intro/README makegrowingcoordinateseparationclear and
+retainvanishingrelativeseparation.
+
+Possible nextprogress: finite multipadding exactcertificates at Mersenne
+primes using existing gram/list bounds, r>=2. Need L>>p^r, q large vs
+r²e to certifyhighdensity; existingone-matchtabledoesnottransferunchanged.
+Or further theoreticalimprovement to growingfixedgapshortdomainlists.
+Continue until12:30UTC; currentlyonly~06:00UTC.
