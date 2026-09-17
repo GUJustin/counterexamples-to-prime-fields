@@ -602,3 +602,15 @@ and arbitrarily large splitting primes. No complete-list or maximum-
 agreement claim is made. This is a fixed finite bank below the first-order
 curve, not a growing-list result. It shows the all20 obstruction does
 not exclude useful subsets; maximality of ten is not claimed.
+
+## Classical prime-field coset attribution added
+
+A targeted literature check found an attribution missing from the related
+work: the Guruswami–Rudra prime-field multiplicative-coset construction
+presented in Rudra's2007 thesis Section6.4.3. The original theorem pages
+were inspected visually because PDF text extraction garbled the formulas.
+CLASSICAL_COSET_SCOPE.md records the parameter comparison and scope.
+The manuscript now credits that mechanism explicitly; it does not claim
+that the older displayed family supplies growing fixed-gap lists. Main
+paper rebuilt cleanly to158pages, with changed pages visually inspected.
+The separate first-order technical note remains12pages.
