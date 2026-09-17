@@ -1,0 +1,673 @@
+{
+  "status": "PASS",
+  "rows": [
+    {
+      "s": 1,
+      "maximum_list": 108508,
+      "zero_moment_list": 108508,
+      "classes": 97,
+      "maximizing_moments": [
+        0
+      ],
+      "p": 97,
+      "root": 19,
+      "n": 32,
+      "A": 8,
+      "K": 7,
+      "characteristic_zero_maximum": 1820,
+      "strict_Elias": false
+    },
+    {
+      "s": 2,
+      "maximum_list": 1260,
+      "zero_moment_list": 1260,
+      "classes": 9409,
+      "maximizing_moments": [
+        0,
+        0
+      ],
+      "p": 97,
+      "root": 19,
+      "n": 32,
+      "A": 8,
+      "K": 6,
+      "characteristic_zero_maximum": 28,
+      "strict_Elias": false
+    },
+    {
+      "s": 3,
+      "maximum_list": 44,
+      "zero_moment_list": 44,
+      "classes": 912673,
+      "maximizing_moments": [
+        0,
+        0,
+        0
+      ],
+      "p": 97,
+      "root": 19,
+      "n": 32,
+      "A": 8,
+      "K": 5,
+      "characteristic_zero_maximum": 28,
+      "strict_Elias": false
+    },
+    {
+      "s": 4,
+      "maximum_list": 4,
+      "zero_moment_list": 4,
+      "classes": 9952489,
+      "maximizing_moments": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "p": 97,
+      "root": 19,
+      "n": 32,
+      "A": 8,
+      "K": 4,
+      "characteristic_zero_maximum": 4,
+      "strict_Elias": true
+    },
+    {
+      "s": 5,
+      "maximum_list": 4,
+      "zero_moment_list": 4,
+      "classes": 10513481,
+      "maximizing_moments": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "p": 97,
+      "root": 19,
+      "n": 32,
+      "A": 8,
+      "K": 3,
+      "characteristic_zero_maximum": 4,
+      "strict_Elias": true
+    },
+    {
+      "s": 6,
+      "maximum_list": 4,
+      "zero_moment_list": 4,
+      "classes": 10518297,
+      "maximizing_moments": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "p": 97,
+      "root": 19,
+      "n": 32,
+      "A": 8,
+      "K": 2,
+      "characteristic_zero_maximum": 4,
+      "strict_Elias": true
+    },
+    {
+      "s": 7,
+      "maximum_list": 4,
+      "zero_moment_list": 4,
+      "classes": 10518297,
+      "maximizing_moments": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "p": 97,
+      "root": 19,
+      "n": 32,
+      "A": 8,
+      "K": 1,
+      "characteristic_zero_maximum": 4,
+      "strict_Elias": true
+    },
+    {
+      "s": 1,
+      "maximum_list": 54876,
+      "zero_moment_list": 54876,
+      "classes": 193,
+      "maximizing_moments": [
+        0
+      ],
+      "p": 193,
+      "root": 8,
+      "n": 32,
+      "A": 8,
+      "K": 7,
+      "characteristic_zero_maximum": 1820,
+      "strict_Elias": false
+    },
+    {
+      "s": 2,
+      "maximum_list": 348,
+      "zero_moment_list": 348,
+      "classes": 37249,
+      "maximizing_moments": [
+        0,
+        0
+      ],
+      "p": 193,
+      "root": 8,
+      "n": 32,
+      "A": 8,
+      "K": 6,
+      "characteristic_zero_maximum": 28,
+      "strict_Elias": false
+    },
+    {
+      "s": 3,
+      "maximum_list": 28,
+      "zero_moment_list": 28,
+      "classes": 5620801,
+      "maximizing_moments": [
+        0,
+        0,
+        0
+      ],
+      "p": 193,
+      "root": 8,
+      "n": 32,
+      "A": 8,
+      "K": 5,
+      "characteristic_zero_maximum": 28,
+      "strict_Elias": false
+    },
+    {
+      "s": 4,
+      "maximum_list": 4,
+      "zero_moment_list": 4,
+      "classes": 10448313,
+      "maximizing_moments": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "p": 193,
+      "root": 8,
+      "n": 32,
+      "A": 8,
+      "K": 4,
+      "characteristic_zero_maximum": 4,
+      "strict_Elias": true
+    },
+    {
+      "s": 5,
+      "maximum_list": 4,
+      "zero_moment_list": 4,
+      "classes": 10518249,
+      "maximizing_moments": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "p": 193,
+      "root": 8,
+      "n": 32,
+      "A": 8,
+      "K": 3,
+      "characteristic_zero_maximum": 4,
+      "strict_Elias": true
+    },
+    {
+      "s": 6,
+      "maximum_list": 4,
+      "zero_moment_list": 4,
+      "classes": 10518297,
+      "maximizing_moments": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "p": 193,
+      "root": 8,
+      "n": 32,
+      "A": 8,
+      "K": 2,
+      "characteristic_zero_maximum": 4,
+      "strict_Elias": true
+    },
+    {
+      "s": 7,
+      "maximum_list": 4,
+      "zero_moment_list": 4,
+      "classes": 10518297,
+      "maximizing_moments": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "p": 193,
+      "root": 8,
+      "n": 32,
+      "A": 8,
+      "K": 1,
+      "characteristic_zero_maximum": 4,
+      "strict_Elias": true
+    },
+    {
+      "s": 1,
+      "maximum_list": 40975,
+      "zero_moment_list": 40796,
+      "classes": 257,
+      "maximizing_moments": [
+        5
+      ],
+      "p": 257,
+      "root": 15,
+      "n": 32,
+      "A": 8,
+      "K": 7,
+      "characteristic_zero_maximum": 1820,
+      "strict_Elias": false
+    },
+    {
+      "s": 2,
+      "maximum_list": 252,
+      "zero_moment_list": 252,
+      "classes": 66049,
+      "maximizing_moments": [
+        0,
+        0
+      ],
+      "p": 257,
+      "root": 15,
+      "n": 32,
+      "A": 8,
+      "K": 6,
+      "characteristic_zero_maximum": 28,
+      "strict_Elias": false
+    },
+    {
+      "s": 3,
+      "maximum_list": 28,
+      "zero_moment_list": 28,
+      "classes": 7822017,
+      "maximizing_moments": [
+        0,
+        0,
+        0
+      ],
+      "p": 257,
+      "root": 15,
+      "n": 32,
+      "A": 8,
+      "K": 5,
+      "characteristic_zero_maximum": 28,
+      "strict_Elias": false
+    },
+    {
+      "s": 4,
+      "maximum_list": 4,
+      "zero_moment_list": 4,
+      "classes": 10512377,
+      "maximizing_moments": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "p": 257,
+      "root": 15,
+      "n": 32,
+      "A": 8,
+      "K": 4,
+      "characteristic_zero_maximum": 4,
+      "strict_Elias": true
+    },
+    {
+      "s": 5,
+      "maximum_list": 4,
+      "zero_moment_list": 4,
+      "classes": 10518281,
+      "maximizing_moments": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "p": 257,
+      "root": 15,
+      "n": 32,
+      "A": 8,
+      "K": 3,
+      "characteristic_zero_maximum": 4,
+      "strict_Elias": true
+    },
+    {
+      "s": 6,
+      "maximum_list": 4,
+      "zero_moment_list": 4,
+      "classes": 10518297,
+      "maximizing_moments": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "p": 257,
+      "root": 15,
+      "n": 32,
+      "A": 8,
+      "K": 2,
+      "characteristic_zero_maximum": 4,
+      "strict_Elias": true
+    },
+    {
+      "s": 7,
+      "maximum_list": 4,
+      "zero_moment_list": 4,
+      "classes": 10518297,
+      "maximizing_moments": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "p": 257,
+      "root": 15,
+      "n": 32,
+      "A": 8,
+      "K": 1,
+      "characteristic_zero_maximum": 4,
+      "strict_Elias": true
+    },
+    {
+      "s": 1,
+      "maximum_list": 31484,
+      "zero_moment_list": 31484,
+      "classes": 353,
+      "maximizing_moments": [
+        0
+      ],
+      "p": 353,
+      "root": 6,
+      "n": 32,
+      "A": 8,
+      "K": 7,
+      "characteristic_zero_maximum": 1820,
+      "strict_Elias": false
+    },
+    {
+      "s": 2,
+      "maximum_list": 144,
+      "zero_moment_list": 124,
+      "classes": 124609,
+      "maximizing_moments": [
+        11,
+        0
+      ],
+      "p": 353,
+      "root": 6,
+      "n": 32,
+      "A": 8,
+      "K": 6,
+      "characteristic_zero_maximum": 28,
+      "strict_Elias": false
+    },
+    {
+      "s": 3,
+      "maximum_list": 28,
+      "zero_moment_list": 28,
+      "classes": 9268257,
+      "maximizing_moments": [
+        0,
+        0,
+        0
+      ],
+      "p": 353,
+      "root": 6,
+      "n": 32,
+      "A": 8,
+      "K": 5,
+      "characteristic_zero_maximum": 28,
+      "strict_Elias": false
+    },
+    {
+      "s": 4,
+      "maximum_list": 4,
+      "zero_moment_list": 4,
+      "classes": 10505257,
+      "maximizing_moments": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "p": 353,
+      "root": 6,
+      "n": 32,
+      "A": 8,
+      "K": 4,
+      "characteristic_zero_maximum": 4,
+      "strict_Elias": true
+    },
+    {
+      "s": 5,
+      "maximum_list": 4,
+      "zero_moment_list": 4,
+      "classes": 10518281,
+      "maximizing_moments": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "p": 353,
+      "root": 6,
+      "n": 32,
+      "A": 8,
+      "K": 3,
+      "characteristic_zero_maximum": 4,
+      "strict_Elias": true
+    },
+    {
+      "s": 6,
+      "maximum_list": 4,
+      "zero_moment_list": 4,
+      "classes": 10518297,
+      "maximizing_moments": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "p": 353,
+      "root": 6,
+      "n": 32,
+      "A": 8,
+      "K": 2,
+      "characteristic_zero_maximum": 4,
+      "strict_Elias": true
+    },
+    {
+      "s": 7,
+      "maximum_list": 4,
+      "zero_moment_list": 4,
+      "classes": 10518297,
+      "maximizing_moments": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "p": 353,
+      "root": 6,
+      "n": 32,
+      "A": 8,
+      "K": 1,
+      "characteristic_zero_maximum": 4,
+      "strict_Elias": true
+    },
+    {
+      "s": 1,
+      "maximum_list": 24700,
+      "zero_moment_list": 24700,
+      "classes": 449,
+      "maximizing_moments": [
+        0
+      ],
+      "p": 449,
+      "root": 10,
+      "n": 32,
+      "A": 8,
+      "K": 7,
+      "characteristic_zero_maximum": 1820,
+      "strict_Elias": false
+    },
+    {
+      "s": 2,
+      "maximum_list": 156,
+      "zero_moment_list": 156,
+      "classes": 201601,
+      "maximizing_moments": [
+        0,
+        0
+      ],
+      "p": 449,
+      "root": 10,
+      "n": 32,
+      "A": 8,
+      "K": 6,
+      "characteristic_zero_maximum": 28,
+      "strict_Elias": false
+    },
+    {
+      "s": 3,
+      "maximum_list": 28,
+      "zero_moment_list": 28,
+      "classes": 9843553,
+      "maximizing_moments": [
+        0,
+        0,
+        0
+      ],
+      "p": 449,
+      "root": 10,
+      "n": 32,
+      "A": 8,
+      "K": 5,
+      "characteristic_zero_maximum": 28,
+      "strict_Elias": true
+    },
+    {
+      "s": 4,
+      "maximum_list": 4,
+      "zero_moment_list": 4,
+      "classes": 10518089,
+      "maximizing_moments": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "p": 449,
+      "root": 10,
+      "n": 32,
+      "A": 8,
+      "K": 4,
+      "characteristic_zero_maximum": 4,
+      "strict_Elias": true
+    },
+    {
+      "s": 5,
+      "maximum_list": 4,
+      "zero_moment_list": 4,
+      "classes": 10518297,
+      "maximizing_moments": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "p": 449,
+      "root": 10,
+      "n": 32,
+      "A": 8,
+      "K": 3,
+      "characteristic_zero_maximum": 4,
+      "strict_Elias": true
+    },
+    {
+      "s": 6,
+      "maximum_list": 4,
+      "zero_moment_list": 4,
+      "classes": 10518297,
+      "maximizing_moments": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "p": 449,
+      "root": 10,
+      "n": 32,
+      "A": 8,
+      "K": 2,
+      "characteristic_zero_maximum": 4,
+      "strict_Elias": true
+    },
+    {
+      "s": 7,
+      "maximum_list": 4,
+      "zero_moment_list": 4,
+      "classes": 10518297,
+      "maximizing_moments": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "p": 449,
+      "root": 10,
+      "n": 32,
+      "A": 8,
+      "K": 1,
+      "characteristic_zero_maximum": 4,
+      "strict_Elias": true
+    }
+  ],
+  "total_supports": 52591500,
+  "below_Elias_maximum_violations": [],
+  "scope": "Complete support census in five fields. Absence of a maximum-size violation does not imply the characteristic-zero support classification remains valid; p97 has an independently verified below-Elias three-word exception."
+}

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/fixed_gap_padding/scan_subgroup_exceptions.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.0757281669975782,
+  "peak_rss_kib": 67776,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

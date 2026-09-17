@@ -485,3 +485,19 @@ For s1, finite-field maxima758,198,120 at p17,97,113 demonstrate that
 p>n alone is NOT enough. These finite examples are not below-Elias
 counterexamples. Results and resource report live beside the note;
 not added to Makefile. No research process remains running.
+
+Finite-characteristic subgroup census completed: all12870 eight-subsets
+of mu16 in22 primes, and all10518300 eight-subsets of mu32 in each of
+p97,193,257,353,449 (52,591,500 supports). No violation of the exact
+char0 MAXIMUM list size was below Elias in these cases. But support
+classification does fail below Elias: overF97 onmu32, dimension4,
+agreement8, W=X8+23X4 has ENTIRE list {75,8+16X2,8-16X2}, each with8
+agreements. Rate and gap both1/8; exact integer Elias check passes.
+Its support differences are not4-periodic, although size3 remains
+below the char0 uniform maximum4. Independent interpolation enumerates
+all35960 determining4-subsets,28833 distinct candidates, and certifies
+the full list. The quadratics have only a two-element mu4 rotation
+orbit and are mu2-invariant: no growing-orbit or growing-characteristic
+family is proved. Details in SUBGROUP_EXCEPTION_SEARCH.md and saved
+censuses/checkers under research/fixed_gap_padding/. No manuscript
+addition, no Makefile addition, no research process remains running.

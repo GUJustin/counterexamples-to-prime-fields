@@ -1,0 +1,12 @@
+{
+  "command": [
+    "tmp/subgroup32-census",
+    "193"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.0791010840002855,
+  "peak_rss_kib": 83888,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

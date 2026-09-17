@@ -1,0 +1,113 @@
+{
+  "status": "PASS",
+  "p": 97,
+  "n": 32,
+  "K": 4,
+  "A": 8,
+  "domain": [
+    1,
+    19,
+    70,
+    69,
+    50,
+    77,
+    8,
+    55,
+    75,
+    67,
+    12,
+    34,
+    64,
+    52,
+    18,
+    51,
+    96,
+    78,
+    27,
+    28,
+    47,
+    20,
+    89,
+    42,
+    22,
+    30,
+    85,
+    63,
+    33,
+    45,
+    79,
+    46
+  ],
+  "received_coefficients": [
+    0,
+    0,
+    0,
+    0,
+    23,
+    0,
+    0,
+    0,
+    1
+  ],
+  "entire_list": [
+    {
+      "coefficients": [
+        8,
+        0,
+        16,
+        0
+      ],
+      "support_indices": [
+        0,
+        1,
+        3,
+        7,
+        16,
+        17,
+        19,
+        23
+      ]
+    },
+    {
+      "coefficients": [
+        8,
+        0,
+        81,
+        0
+      ],
+      "support_indices": [
+        8,
+        9,
+        11,
+        15,
+        24,
+        25,
+        27,
+        31
+      ]
+    },
+    {
+      "coefficients": [
+        75,
+        0,
+        0,
+        0
+      ],
+      "support_indices": [
+        2,
+        4,
+        10,
+        12,
+        18,
+        20,
+        26,
+        28
+      ]
+    }
+  ],
+  "determining_subsets": 35960,
+  "distinct_interpolants": 28833,
+  "strict_Elias": true,
+  "nonconstant_rotation_orbit_size": 2,
+  "scope": "Exact entire list and a finite-characteristic failure of the characteristic-zero support classification; not a violation of its uniform central-binomial bound, not a growing-length family."
+}
