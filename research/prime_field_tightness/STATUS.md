@@ -895,3 +895,28 @@ average3N/16 and giving the final uniform constant1/20. Independent replay
 checks separation at all272 and1640 non-prime-field points for p17 andp41,
 and certifies63 and370 exceptional labels. The final159-page PDF builds
 without TeX warnings; the changed proof pages were rendered and inspected.
+
+
+## September 17: superlinear ordinary-CA failures over quadratic extensions
+
+Appendix N proves a stronger logical failure than the full-support MCA
+corollary: at exact rate3/13 and gap>3/26, unbounded lengths admit
+Omega_epsilon(n^(5/4-epsilon)) nearby labels but no ordinary correlated
+agreement at their threshold. The gap is bounded below, not fixed exactly.
+The field is F_(p^2), with p=12n/13+5. It is not prime-field tightness,
+first-order-regime tightness, or a better.codes improvement.
+
+The new step quantifies the existing true-nearest-list orbit argument via
+standard lower linear sieve and Bombieri--Vinogradov: primes p=41 mod48
+with no odd factor of(p-1)/4 below p^(1/4-epsilon). The derivation checks
+the fixed48 progression, local densities, remainder level, and positive
+sieve parameter. A weaker unbounded J/n conclusion already follows from
+the old Dirichlet/CRT argument without quantitative sieve estimates.
+
+The56 cyclotomic triple determinants were rechecked. A separate complete
+p17 census checks83,521 source polynomials and4,913 quotient polynomials,
+certifying27 labels at n18,K3,M6 with joint-agreement upper bound5.
+It verifies the finite boundary mechanism, not the asymptotic sieve input.
+The162-page ePrint PDF builds cleanly; page8 and the new appendix pages
+157--159 were rendered and visually inspected. Files are in
+`../ordinary_ca_superlinear/`.

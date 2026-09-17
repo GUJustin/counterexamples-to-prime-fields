@@ -92,3 +92,17 @@ requirement. Separate supports may bound list and MCA contributions.
 The current paper's implemented proof-size reductions and its discussion
 of prize submissions do not establish any new benchmark gain from our
 counterexample project.
+
+
+## Ordinary correlated agreement: stronger conclusion in extension fields
+
+Appendix N now proves Omega_epsilon(n^(5/4-epsilon)) nearby labels with
+no ordinary correlated agreement at the tested threshold, for unbounded
+lengths over F_(p^2), exact rate3/13, and capacity gaps greater than3/26.
+This combines a true-nearest-list orbit argument, standard lower linear
+sieve and Bombieri--Vinogradov estimates, and extension-field boundary
+padding. It rules out linear ordinary-CA bounds uniform over gaps bounded
+below in this field class. The gap is NOT fixed exactly; the ambient field
+is NOT prime; first-order agreement is NOT guaranteed. It therefore does
+not resolve the central prime-field or first-order tightness questions.
+See `../ordinary_ca_superlinear/PROOF.md` for the full dependency audit.

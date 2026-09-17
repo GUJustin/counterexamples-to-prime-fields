@@ -1,0 +1,160 @@
+{
+  "status": "passed",
+  "p": 17,
+  "n": 18,
+  "dimension": 3,
+  "threshold": 6,
+  "source_polynomials_enumerated": 83521,
+  "source_maximum_agreement": 6,
+  "source_nearest_list": 22,
+  "anchor": 2,
+  "anchored_list": 9,
+  "old_quotients_enumerated": 4913,
+  "old_maximum_agreement": 5,
+  "padding_points": [
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ]
+  ],
+  "padding_values": [
+    [
+      6,
+      4
+    ],
+    [
+      6,
+      7
+    ],
+    [
+      14,
+      8
+    ]
+  ],
+  "exceptional_labels": [
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      9
+    ],
+    [
+      1,
+      11
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      10
+    ],
+    [
+      3,
+      16
+    ],
+    [
+      5,
+      0
+    ],
+    [
+      5,
+      1
+    ],
+    [
+      5,
+      7
+    ],
+    [
+      5,
+      11
+    ],
+    [
+      5,
+      15
+    ],
+    [
+      7,
+      0
+    ],
+    [
+      9,
+      1
+    ],
+    [
+      9,
+      7
+    ],
+    [
+      10,
+      5
+    ],
+    [
+      10,
+      6
+    ],
+    [
+      10,
+      14
+    ],
+    [
+      11,
+      1
+    ],
+    [
+      11,
+      2
+    ],
+    [
+      11,
+      3
+    ],
+    [
+      12,
+      4
+    ],
+    [
+      12,
+      14
+    ],
+    [
+      12,
+      16
+    ],
+    [
+      13,
+      14
+    ],
+    [
+      14,
+      14
+    ],
+    [
+      15,
+      7
+    ]
+  ],
+  "exceptional_count": 27,
+  "exact_expected_union": {
+    "numerator": 2185569,
+    "denominator": 83521
+  },
+  "nonzero_direction_joint_agreement_upper": 5,
+  "parameter_cases": 832,
+  "scope": "Complete finite nearest census and exact witness replay; ordinary-CA exclusion additionally uses the stated interpolation/root-count arguments. Does not numerically verify the asymptotic sieve theorem or assert this small fixture is below Elias."
+}

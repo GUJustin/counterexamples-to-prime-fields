@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/ordinary_ca_superlinear/verify.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5615340410004137,
+  "peak_rss_kib": 9456,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}
