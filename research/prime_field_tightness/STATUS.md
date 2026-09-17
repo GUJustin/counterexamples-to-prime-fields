@@ -868,3 +868,12 @@ search found the current przchojecki/rs-mca repository synthesis, but
 its additional claimed finite parameter results have not been audited
 here or imported. The earlier pinned paving-source audit remains the
 only checked claim from that project in our literature notes.
+
+## September 17: Dickson difference splitting follow-up
+
+Exhaustive exact factorization of all 2,922 pairwise source differences at
+p17,41,73,89,97 found only linear factors, with multiplicities one or two.
+This implies collision-free extension-field evaluations for these banks.
+A general theorem would sharpen the quadratic MCA constant via exact
+translation occupancy, but would not give prime-field tightness. See
+`../dickson_difference_splitting/README.md`; the general proof remains open.

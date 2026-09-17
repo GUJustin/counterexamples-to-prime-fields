@@ -1,0 +1,75 @@
+{
+  "scope": "Exhaustive pairwise factorization at the listed five primes only; no general splitting theorem asserted.",
+  "rows": [
+    {
+      "p": 17,
+      "k": 4,
+      "polynomials": 8,
+      "pairs": 28,
+      "factor_degrees": {
+        "1": 84
+      },
+      "multiplicities": {
+        "1": 68,
+        "2": 8
+      },
+      "nonsplit_pairs": []
+    },
+    {
+      "p": 41,
+      "k": 10,
+      "polynomials": 20,
+      "pairs": 190,
+      "factor_degrees": {
+        "1": 1710
+      },
+      "multiplicities": {
+        "1": 1070,
+        "2": 320
+      },
+      "nonsplit_pairs": []
+    },
+    {
+      "p": 73,
+      "k": 18,
+      "polynomials": 36,
+      "pairs": 630,
+      "factor_degrees": {
+        "1": 10710
+      },
+      "multiplicities": {
+        "1": 6102,
+        "2": 2304
+      },
+      "nonsplit_pairs": []
+    },
+    {
+      "p": 89,
+      "k": 22,
+      "polynomials": 44,
+      "pairs": 946,
+      "factor_degrees": {
+        "1": 19866
+      },
+      "multiplicities": {
+        "1": 11066,
+        "2": 4400
+      },
+      "nonsplit_pairs": []
+    },
+    {
+      "p": 97,
+      "k": 24,
+      "polynomials": 48,
+      "pairs": 1128,
+      "factor_degrees": {
+        "1": 25944
+      },
+      "multiplicities": {
+        "1": 14328,
+        "2": 5808
+      },
+      "nonsplit_pairs": []
+    }
+  ]
+}

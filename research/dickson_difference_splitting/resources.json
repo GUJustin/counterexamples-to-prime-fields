@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/dickson_difference_splitting/probe.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 13.253733750003448,
+  "peak_rss_kib": 65440,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}
