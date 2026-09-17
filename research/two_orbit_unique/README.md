@@ -45,3 +45,29 @@ No better.codes improvement or global list upper bound is claimed.
 
 Optional `gmpy2` substantially accelerates the large Lucas–Lehmer checks.
 The verifier uses ordinary modular reduction independently of the generator's Mersenne folding. Without it, the pure-Python fallback is much slower.
+
+## Compact non-Mersenne fields (September 17)
+
+`proth_frontier_certificates.json` records four further half-rate finite
+existence certificates, independently replayed by `verify_proth_frontier.py`
+using standard Python modular exponentiation (no GMP dependency for replay):
+
+| d | n | K | Prime p | Proth witness | Separation / eta | Original ratio exceeds |
+|---|---:|---:|---|---:|---|---|
+| 3 | 568 | 284 | 65703 * 2^830 + 1 | 5 | 6/7 | 2^82 |
+| 5 | 1678 | 839 | 66495 * 2^2451 + 1 | 7 | 10/11 | 2^153 |
+| 7 | 3442 | 1721 | 110915 * 2^4847 + 1 | 3 | 14/15 | 2^230 |
+| 11 | 9018 | 4509 | 191499 * 2^11953 + 1 | 13 | 22/23 | 2^393 |
+
+All four exceed the doubled-exponent (`c2=2`, `c1=1`) prescription by a
+factor greater than two. The verifier checks deterministic Proth primality,
+concentration, finite existence, the Elias inequality, and both ratios.
+The prime fields are explicit; successful domain parameters remain
+existential. These are not better.codes submissions or efficient samplers.
+
+The generator's attempted d=19 row reached its 900-second watchdog limit
+without finding a certificate. Therefore the search file remains marked
+`partial`; the four checkpointed rows above separately have verification
+status `passed`. No d=19 Proth-field claim is made. Earlier independently
+verified d=19 Mersenne certificates remain valid. The partial search used
+28 MiB peak RSS; independent replay of all four rows took 4.5 seconds.

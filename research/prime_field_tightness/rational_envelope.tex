@@ -1,0 +1,84 @@
+\subsection{A rational envelope has only linearly many bad labels}
+\label{sec:rational-envelope}
+
+The agreement obstruction above extends beyond a fixed residue alphabet.
+The following elementary incidence bound allows arbitrarily many candidates
+and arbitrary characteristics. It gives another reason why a large
+algebraic solution count need not make the proximity bound sharp.
+
+\begin{proposition}[Rational-envelope bound]
+\label{prop:rational-envelope}
+Let $\mathcal D$ consist of $n$ distinct points of a field $F$, and fix
+polynomials $S,R\in F[X]$ with $R\ne0$. Consider any family of polynomials
+$P$ of degree at most $D$ satisfying
+\[
+ \frac{P-S}{R}=\frac{a_P}{b_P},\qquad
+ \deg a_P,\deg b_P\le r,\quad b_P\ne0.
+\]
+Let $h$ be the number of zeros of $R$ on $\mathcal D$. For an integer
+agreement threshold $1\le A\le n$, suppose
+\[
+ A-h\ge\beta n>0,\qquad n\ge48r/\beta^3.
+\]
+On every received line $f+zg$, the number of full-support MCA-bad labels
+witnessed by this family is at most
+\[
+ \frac{16(n-A+1)}{\beta^3}.
+\]
+Here badness means that $g$ has no degree-at-most-$D$ interpolant on the
+candidate's entire agreement set. There is no characteristic hypothesis.
+\end{proposition}
+\begin{proof}
+First, any polynomial pencil $U+zV$, with $\deg U,\deg V\le D$, has
+at most $M=n-A+1$ bad labels. Let $c$ count its persistent agreements,
+where $(f,g)=(U,V)$. Each other coordinate agrees at at most one label.
+If $c<A$, the number of nearby labels is at most
+$\lfloor(n-c)/(A-c)\rfloor\le n-A+1$.
+If $c\ge A$, a bad label must have a nonpersistent agreement, giving
+at most $n-c\le n-A$ labels.
+
+Choose one bad candidate $P_z$ at each of $L$ distinct labels and put
+$W_z=(P_z-S)/R$. Delete the $h$ zeros of $R$ and normalize the received
+line by subtracting $S$ and dividing by $R$. Each candidate retains at
+least $\beta n$ agreements. Its reduced denominator is nonzero at every
+retained coordinate, since $W_z=(P_z-S)/R$ is regular there.
+
+A noncollinear triple of graph points $(z,W_z)$ over $F(X)$ has a
+nonzero affine-incidence determinant. Clearing its three denominators
+gives a polynomial of degree at most $3r$, so the triple has at most
+$3r$ common retained agreements. A graph line through two selected
+points corresponds, on multiplying by $R$ and adding $S$, to a
+polynomial pencil of degree at most $D$: interpolate the two actual
+polynomials at their distinct scalar labels. It therefore contains at
+most $M$ selected bad labels.
+
+Let $b_x$ count retained agreements at coordinate $x$, and set $b_x=0$
+at deleted coordinates. If $L\ge4/\beta$, convexity gives
+\[
+ \sum_x b_x(b_x-1)(b_x-2)
+ \ge n(\beta L-2)^3\ge\beta^3nL^3/8.
+\]
+Noncollinear ordered triples contribute at most $3rL^3$. Each ordered
+pair determines one graph line with at most $M$ choices of a third
+selected label; these triples contribute at most $nML^2$. Consequently
+\[
+ \beta^3nL^3/8\le3rL^3+nML^2.
+\]
+Since $3r\le\beta^3n/16$, this implies $L\le16M/\beta^3$.
+The case $L<4/\beta$ satisfies the same bound. Over an infinite field
+apply the argument to any finite selection of bad labels.
+\end{proof}
+
+For example, if $\deg R\le D+c$ and $A-D\ge\eta n$, one can take
+$\beta=\eta-c/n$ when positive. For fixed $c,r,\eta>0$ the bound is
+therefore $O_\eta(n)$. It applies to $P=RH'/H$ with $\deg H\le r$
+without a restriction on the residues, and even permits
+$r\le\beta^3n/48$. A bounded union of such families still has a linear
+bound. The hypothesis does not hold for arbitrary positive-rate
+candidates merely by setting $R=1$, since then the necessary residual
+degree $r$ is generally too large.
+
+The checker \path{research/prime_field_tightness/check_rational_envelope.py}
+verifies $220$ rational triple determinants over $\F_{101}$ and all
+full agreement supports in a pencil attaining $n-A+1=13$ bad labels.
+These checks supplement the incidence proof.

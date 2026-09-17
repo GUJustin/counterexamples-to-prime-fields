@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "search_status": "partial",
+  "rows": [
+    {
+      "d": 3,
+      "n": 568,
+      "K": 284,
+      "prime_bits": 847,
+      "separation": "6/7",
+      "doubled_exponent_ratio_power_two": 1,
+      "original_exponent_ratio_power_two": 82,
+      "conditional_failure_power_two_minus": 4,
+      "status": "passed"
+    },
+    {
+      "d": 5,
+      "n": 1678,
+      "K": 839,
+      "prime_bits": 2468,
+      "separation": "10/11",
+      "doubled_exponent_ratio_power_two": 1,
+      "original_exponent_ratio_power_two": 153,
+      "conditional_failure_power_two_minus": 4,
+      "status": "passed"
+    },
+    {
+      "d": 7,
+      "n": 3442,
+      "K": 1721,
+      "prime_bits": 4864,
+      "separation": "14/15",
+      "doubled_exponent_ratio_power_two": 1,
+      "original_exponent_ratio_power_two": 230,
+      "conditional_failure_power_two_minus": 4,
+      "status": "passed"
+    },
+    {
+      "d": 11,
+      "n": 9018,
+      "K": 4509,
+      "prime_bits": 11971,
+      "separation": "22/23",
+      "doubled_exponent_ratio_power_two": 1,
+      "original_exponent_ratio_power_two": 393,
+      "conditional_failure_power_two_minus": 5,
+      "status": "passed"
+    }
+  ],
+  "seconds": 4.428391292000015,
+  "scope": "Independent Python pow primality certificates, integer concentration/existence bounds, and ratios. The prime fields are explicit; the domains remain existential."
+}

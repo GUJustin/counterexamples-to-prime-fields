@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/prime_field_tightness/check_projective_envelope.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5557972500027972,
+  "peak_rss_kib": 3952,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

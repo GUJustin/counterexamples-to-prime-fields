@@ -1890,3 +1890,48 @@ at least12:30UTC (8:30Eastern). No better.codes improvement; no push.
 User explicitly extended the research horizon to **2026-09-17 18:00 America/New_York = 22:00 UTC**. This supersedes the previous 08:30 Eastern stopping time. Do not mark the active goal complete at 12:30 UTC. User asks whether results can show the prime-field proximity-gap paper with Scott and Quang is tight-ish. Prioritize precise fixed-gap comparisons and lower bounds in block length.
 
 Recovered reference: rs_capacity_tr26164/starkware/CONTEXT_STARKWARE_2026-09-05.md section F identifies Dao–Kominers–Thaler–Zheng, Reed–Solomon List Decoding and Mutual Correlated Agreement up to Capacity, September 2026. Abstract gives n^{O_eta(1)} lists and derivative order ceil(exp(6.76/eta)). Need actual complete theorem statements before claiming matching exponents. Current fixed-gap anchored padding gives C_rho(eta)n exceptions with log C = Omega(eta^-2/log(1/eta)); does NOT force superlinear n dependence. Current isolated-solution appendix matches algebraic D^{d+1} growth before agreement filtering, but proves its own examples have only constant nearby count at fixed gap. Thus neither currently establishes tightness of the MCA exponent. Shrinking-gap constructions must remain clearly distinguished.
+
+## 2026-09-17 12:23 UTC — tightness work, clean manuscript, verified frontier
+
+Morning strengthening commit: dc68a1655549683d47b5d1b769a87e0792eaeb6b
+(51 files, all previously checked new theory/certificates, 154-page PDF).
+
+The Proth frontier search reached its900s watchdog limit before finding
+d19. Its four checkpointed d3,5,7,11 rows independently PASSED standard
+Python Proth/existence/ratio replay in4.5s,18MiB. d11 row is n9018,K4509,
+p=191499*2^11953+1,base13,11971bits; ratio>2 against c2=2 and>2^393
+against c2=1, separation22/23. Search status remainspartial deliberately;
+no d19 Proth claim. README documents all four rows and failed search scope.
+
+New priority folder research/prime_field_tightness/ records exact user
+question and recovered upper-bound excerpts. The target is unbounded
+fixed-gap exponent over superpolynomial prime fields, not shrinking-gap
+finite violations. Existing full-length Dickson lists DO grow at fixedgap
+(n/2 elements at n=p-1,rho1/4,eta1/8), but cannot yield superlinear scalar
+challenge counts because p=n+1. Enlarging to extension fields does not
+satisfy the prime-field target. Be precise about this qualifier.
+
+A new elementary rational-normalization theorem is proved, manually
+reviewed and checked: for candidates(P-S)/R=a/b with degrees<=r, R having
+h domain zeros, A-h>=beta*n, n>=48r/beta^3, full-support bad labels
+<=16(n-A+1)/beta^3 in every characteristic. It uses the sharp n-A+1
+bad-label bound on a polynomial pencil and third agreement incidence.
+220 rational determinant checks and an exact13-bad-label pencil PASS.
+It is included after isolated-solution sharpness. Clean PDF build155pages,
+new propositionI.4 page142 visually inspected. Main introduction has just
+received a short reference to it; rebuild after that edit is still needed.
+
+A broader projective-normalization proof is in PROJECTIVE_ENVELOPE.md:
+any rational projective pencil has<=D+2 polynomial members of degree<=D,
+or lies on a scalar-reparameterized polynomial line. This yields a linear
+full-MCA bound for projectively normalized degree-r families via fourth
+incidence. All degeneracies including infinity are handled;1489 polynomial
+pencil fixtures,13 sharp examples,5392 projective quadruples PASS.
+This broader theorem is locally reviewed but not yet in the manuscript;
+no independent human/agent review. A constant ordinary-list bound for the
+restricted family is also proved by pair incidence. These are scoped upper
+bounds, NOT intrinsic tightness or a general prime-field exponent-one result.
+
+User asked for work until18:00 Eastern=22:00UTC. Do not stop at the OLD
+08:30deadline. Optional async question asks for latest coauthor-paper path;
+no answer yet. No numerical job currently active. No publication/push.

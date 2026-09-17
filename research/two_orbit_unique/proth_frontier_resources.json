@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/two_orbit_unique/proth_frontier.py"
+  ],
+  "reason": "time_limit",
+  "returncode": -15,
+  "seconds": 900.0295784160044,
+  "peak_rss_kib": 28544,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 900
+}

@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "prime": 101,
+  "rational_triples": 220,
+  "noncollinear_triples": 218,
+  "pencil": {
+    "n": 20,
+    "D": 4,
+    "A": 8,
+    "bad_labels": [
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "expected": 13
+  },
+  "scope": "Exact rational determinant degree/zero checks, all field labels and full supports for a linear bad-pencil family, and integer triple-incidence inequalities. Supplements the proof; not a proof of the universal theorem."
+}

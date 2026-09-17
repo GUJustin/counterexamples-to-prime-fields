@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "projective_pencil_fixtures": 1489,
+  "finite_member_cases": 1466,
+  "affine_reparameterization_cases": 23,
+  "sharp_polynomial_member_examples": [
+    {
+      "D": 0,
+      "members": 2
+    },
+    {
+      "D": 1,
+      "members": 3
+    },
+    {
+      "D": 2,
+      "members": 4
+    },
+    {
+      "D": 3,
+      "members": 5
+    },
+    {
+      "D": 4,
+      "members": 6
+    },
+    {
+      "D": 5,
+      "members": 7
+    },
+    {
+      "D": 6,
+      "members": 8
+    },
+    {
+      "D": 7,
+      "members": 9
+    },
+    {
+      "D": 8,
+      "members": 10
+    },
+    {
+      "D": 9,
+      "members": 11
+    },
+    {
+      "D": 10,
+      "members": 12
+    },
+    {
+      "D": 11,
+      "members": 13
+    },
+    {
+      "D": 12,
+      "members": 14
+    }
+  ],
+  "projective_quadruples": 5392,
+  "scope": "Polynomial division over three prime fields; sharp D+2 examples; exhaustive cross-ratio degeneracies including infinity; integer fourth-incidence inequality. These checks supplement the universal written argument."
+}
