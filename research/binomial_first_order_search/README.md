@@ -25,3 +25,10 @@ estimates follow from the character-sum proof rather than finite tests.
 
 No growing list in the first-order regime or superlinear fixed-gap
 exception construction is established by this investigation.
+
+PUNCTURING_LIMIT.md now extends the Dickson obstruction to arbitrary
+coordinate deletion, arbitrary subbanks, and arbitrary words, at every
+resulting rate k/n in [1/4,1). Fewer than 2^23 complete-bank candidates
+can exceed the audited first-order threshold on any such domain.
+This closes the domain-puncturing loophole for this particular family;
+it does not exclude other polynomial families or domain deformations.

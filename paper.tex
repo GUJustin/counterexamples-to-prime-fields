@@ -532,11 +532,20 @@ The current Dao--Kominers--Thaler paper~\cite{dkt2026} gives, above its
 first-order curve by margin $\eta_1$, list bound
 $O_\rho(n/\eta_1^2)$ and full agreement-set MCA exceptional count
 $O_\rho(n^2/\eta_1^4)$ in sufficiently large characteristic. Its capacity
-bounds have exponents depending on the fixed capacity gap. Our examples
-do not show these block-length exponents are necessary: even a
-superlinear exceptional-count lower bound at one fixed positive gap
-remains open here. The large gap-dependent coefficient in our linear
-lower bound must not be confused with a growing exponent of $n$.
+bounds have exponents depending on the fixed capacity gap.
+There are two qualitative intrinsic lower bounds:
+Proposition~\ref{prop:full-length-fixed-gap} gives $n/2$ list elements
+over prime fields at fixed rate $1/4$ and gap $1/8$;
+Corollary~\ref{cor:quadratic-extension-fixed-gap} gives
+$\Omega(n^2)$ full agreement-set MCA exceptions over quadratic extension
+fields of growing prime characteristic, at fixed rate $1/8$ and gap $1/16$.
+The latter rules out a universal linear capacity MCA bound in that
+larger field class. Neither example reaches the first-order agreement
+regime or forces an exponent growing as the gap shrinks. Over prime
+ambient fields, even a superlinear exceptional-count lower bound at
+one fixed positive gap remains open here. The large gap-dependent
+coefficient in our linear lower bound must not be confused with a
+growing exponent of $n$.
 Likewise, optimality of a specified interpolation dimension count is a
 statement about that proof method, not an intrinsic list or MCA lower
 bound. The capacity gap and the margin above the first-order curve are

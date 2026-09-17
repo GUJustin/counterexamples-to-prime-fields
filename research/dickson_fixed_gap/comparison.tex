@@ -55,3 +55,39 @@ integer intervals, with the stated quantitative dependence on the gap.
 The full-length example does not settle the fixed-gap, short-domain
 proximity-gap question. Exact checks of the displayed agreement counts
 are in \path{research/dickson_fixed_gap/}.
+
+\begin{corollary}[Quadratic exceptions in growing prime characteristic]
+\label{cor:quadratic-extension-fixed-gap}
+For every prime $p\equiv1\pmod8$, $p\ge17$, put $n=2(p-1)$.
+Over $\F_{p^2}$ there is a Reed--Solomon code of length $n$ and dimension
+$n/8$, and a received line with at least $\lceil3n^2/100\rceil$
+full agreement-set MCA exceptional labels at agreement $3n/16$.
+Thus the capacity gap is exactly $1/16$, and $p=n/2+1>n/8-1$.
+\end{corollary}
+\begin{proof}
+Set $N=p-1$. The preceding proposition supplies $L=N/2$ candidates at
+agreement $A=3N/8$, with dimension $k=N/4$. Their identities and
+distinctness persist over $\F_{p^2}$. The proof of
+Proposition~\ref{prop:exact-list-amplification} works over any finite field
+of size $Q\ge2N+1$: it uses only polynomial root counting and independent
+uniform translations of value sets. With $Q=p^2=(N+1)^2$, it gives
+length $2N$ and at least
+\[
+ \left\lceil\frac{QAL}{Q+3AL}\right\rceil
+ =\left\lceil\frac{3QN^2}{16Q+9N^2}\right\rceil
+ \ge\left\lceil\frac{3N^2}{25}\right\rceil
+ =\left\lceil\frac{3n^2}{100}\right\rceil
+\]
+exceptional labels. Here $A\ge k+1$ and $Q\ge N^2$, as required.
+The dimension and agreement threshold remain $k$ and $A$.
+\end{proof}
+
+This elementary consequence rules out a universal linear capacity MCA
+bound in the large-characteristic field class of~\cite{dkt2026}.
+Its ambient field is a quadratic extension, not a prime field, and its
+agreement lies below the first-order regime. It therefore neither proves
+tightness of the first-order quadratic upper bound nor resolves the
+prime-field superlinear-exception target. It concerns full agreement-set
+MCA; absence of ordinary correlated agreement is not asserted.
+Exact extension-field replays at $p=17,41$ are recorded in
+\path{research/prime_field_tightness/quadratic_extension_verification.json}.

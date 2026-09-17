@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "symbolic_identities": 3,
+  "domain_size_cases": 15147,
+  "full_bank_list_bound_exclusive": 8388608,
+  "scope": "Exact algebra and domain accounting; Fourier and character-sum estimates are proved in the referenced notes, not verified by this finite checker."
+}

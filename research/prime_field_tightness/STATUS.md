@@ -10,6 +10,16 @@ public145-page ePrint retrieved September17. It supersedes the older
 105-page version7 comparison and the historical notes below. Current
 first-order inverse-margin powers are2 for lists and4 for MCA.
 
+**Positive intrinsic comparison:** The prime-field Dickson family already
+forces linear list size at a fixed gap. QUADRATIC_EXTENSION_LOWER_BOUND.md
+now spells out its direct compiler consequence: at least ceil(3n^2/100)
+full-support MCA exceptions over F_(p^2), rate1/8 and gap1/16, with
+p=n/2+1>k-1. Thus a linear capacity MCA theorem is impossible in the
+current ePrint's full large-characteristic field class. This is NOT a
+prime-ambient-field result and is below the first-order regime. Historical
+statements below about missing superlinear examples refer to the prime
+ambient-field target. The main manuscript now makes this distinction.
+
 ## Three different meanings of tightness
 
 1. **Intrinsic exception count.** At fixed rate rho and fixed positive
@@ -780,3 +790,31 @@ related work now cites the public ePrint and states the missing intrinsic
 lower bounds against its correct powers. Whole145-page proof and Lean
 formalization have not been independently audited here. The user's
 intrinsic tightness target remains unresolved.
+
+## September 17: qualitative intrinsic comparison and puncturing audit
+
+The existing full-length Dickson list already gives a linear intrinsic
+list lower bound at a fixed gap over prime fields. Its combination with
+the anchored compiler over F_(p^2) now gives a concrete quadratic
+full-support MCA corollary: n=2(p-1), rate1/8, gap1/16, and at least
+ceil(3n^2/100) exceptional labels. The characteristic exceeds k-1. This
+excludes a universal linear capacity MCA bound in the full field class
+of the current ePrint, but is not a prime-field scalar-label result and
+does not reach the first-order regime. No novelty claim for this direct
+combination of established ingredients. Exact extension-field replays
+give63 certified labels at p17,n32 and358 at p41,n80; these are lower
+bounds, not exhaustive counts of all exceptional labels. The manuscript
+now states the corollary and the correct positive partial comparison.
+
+The restricted Dickson family barrier also extends to arbitrary domain
+puncturing. The baseline average agreement is at most
+min(n/2,n/4+k/2), plus the existing spectral error. Fewer than2^23
+complete-bank candidates can exceed the audited first-order threshold
+on any such domain. Three symbolic identities and15147 exact domain
+counts pass. This is another family-specific obstruction, not a general
+list theorem or a new lower bound. It is kept in research notes.
+
+The main paper builds to159pages, retaining11pt letter and1inch margins;
+the altered introduction and both corollary pages were visually checked.
+No better.codes improvement and no superlinear fixed-gap prime-field
+exception construction has been obtained. Continue until22:00UTC.

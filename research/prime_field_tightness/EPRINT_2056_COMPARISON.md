@@ -64,6 +64,25 @@ word/subbank optimization on the same full domain cannot bridge it.
 Large gap-dependent constants in a linear-n lower bound still do not
 force an exponent of n growing as a fixed capacity gap decreases.
 
+There is nevertheless a qualitative intrinsic comparison that should
+not be hidden by these limitations. The full-length prime-field Dickson
+family has L=n/2 at fixed rate1/4 and capacity gap1/8, excluding a
+length-independent capacity list bound. Applying the existing compiler
+after extending the field gives at least ceil(3n^2/100) full-support MCA
+exceptions over F_(p^2), with n=2(p-1), rate1/8 and gap1/16. Its
+characteristic p=n/2+1 exceeds k-1, so it lies in the current capacity
+theorem's field class. This excludes a universal linear capacity MCA
+bound for that field class, but is not a prime-ambient-field construction
+and is below the first-order regime. See QUADRATIC_EXTENSION_LOWER_BOUND.md.
+It proves neither the current capacity exponent nor an exponent growing
+with inverse gap. The main manuscript now states both positive partial
+comparisons and these limits explicitly.
+
+PUNCTURING_LIMIT.md in ../binomial_first_order_search/ also closes
+arbitrary coordinate deletion as a way to move the Dickson bank above
+the audited first-order threshold: its list remains uniformly bounded
+there. This is a family-specific obstruction, not a general list bound.
+
 ## Better.codes scope in the current paper
 
 Section10.5/page102 confirms n=2^18, k=2^17, p=2130706433, q=p^6 and

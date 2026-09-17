@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/binomial_first_order_search/verify_puncturing_limit.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.6128020829928573,
+  "peak_rss_kib": 23728,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

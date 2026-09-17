@@ -1,5 +1,9 @@
 # Why the growing Dickson list does not reach the first-order regime
 
+Update: PUNCTURING_LIMIT.md extends this argument to arbitrary punctured
+domains and all resulting rates. The full-domain restriction below is
+the scope of this original statement, not the limit of the follow-up.
+
 September 17, 2026. Restricted-family theorem; not a general upper bound
 for Reed--Solomon lists. This uses the character-mask Fourier argument
 already developed in ../two_coset_candidate_lists/BINOMIAL_BRANCH_BOUND.md,
