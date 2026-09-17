@@ -999,3 +999,11 @@ short-domain censuses (r=2,...,8) found no new example reaching agreement
 3/8; the only hit is r=2,p=17. See orbit_descent_prime_field/README.md
 and short_domain_scan.json. This finite negative evidence does not
 resolve the asymptotic short-domain ratio needed by the descent route.
+
+
+September 17: a complete52,252,200-support anchor-orbit census proves
+that the F41 full Dickson word has maximum agreement15 and exactly210
+nearest polynomials (21 orbits of size10). Independent Python interpolation
+checks every witness and the orbit cover. This replaces the earlier
+sampling-only status for that bank; it does not establish an unbounded
+family with maximum exactly3/8. See ../dickson_nearest_threshold/README.md.

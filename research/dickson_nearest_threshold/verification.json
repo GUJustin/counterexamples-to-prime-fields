@@ -1,0 +1,82 @@
+{
+  "status": "passed",
+  "p": 41,
+  "n": 40,
+  "dimension": 10,
+  "threshold": 15,
+  "maximum_agreement": 15,
+  "list_size": 210,
+  "agreement_histogram": {
+    "15": 210
+  },
+  "orbit_sizes": [
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10,
+    10
+  ],
+  "anchor_pattern_orbits": 22,
+  "anchor_patterns": 210,
+  "total_supports": 52252200,
+  "coset_reports": [
+    {
+      "p": 41,
+      "coset": 0,
+      "threshold": 15,
+      "anchor_orbits": 22,
+      "supports_checked": 13063050,
+      "primitive_root": 6,
+      "complete": true,
+      "bank_size": 100
+    },
+    {
+      "p": 41,
+      "coset": 1,
+      "threshold": 15,
+      "anchor_orbits": 22,
+      "supports_checked": 13063050,
+      "primitive_root": 6,
+      "complete": true,
+      "bank_size": 120
+    },
+    {
+      "p": 41,
+      "coset": 2,
+      "threshold": 15,
+      "anchor_orbits": 22,
+      "supports_checked": 13063050,
+      "primitive_root": 6,
+      "complete": true,
+      "bank_size": 110
+    },
+    {
+      "p": 41,
+      "coset": 3,
+      "threshold": 15,
+      "anchor_orbits": 22,
+      "supports_checked": 13063050,
+      "primitive_root": 6,
+      "complete": true,
+      "bank_size": 180
+    }
+  ],
+  "scanner_sha256": "abd65779dd9bd0fc9dcae2ec2dbcbb4c774ee6d1fd72ff4c83f29f7427ee4bdc",
+  "scope": "Witnesses independently interpolated and all 40 values checked. Completeness relies on the four-coset anchor covering proof and completed C++ enumeration; not an asymptotic theorem."
+}

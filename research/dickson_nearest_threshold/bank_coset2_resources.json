@@ -1,0 +1,12 @@
+{
+  "command": [
+    "tmp/dickson-nearest-bank",
+    "2"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 8.407526709001104,
+  "peak_rss_kib": 1792,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

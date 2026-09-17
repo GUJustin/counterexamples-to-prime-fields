@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/dickson_nearest_threshold/verify.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5468455410009483,
+  "peak_rss_kib": 11104,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

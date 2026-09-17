@@ -123,3 +123,10 @@ was the one-million-support sample, about5.4seconds and45MiB RSS.
 All scripts, certificates, and resource reports are retained. The paper
 remains159pages; these exploratory findings stay in research notes.
 No new asymptotic tightness result or better.codes improvement is claimed.
+
+
+September 17 update: the formerly sampled210-element F41 bank is now
+proved complete by the exhaustive anchor-orbit census in
+../dickson_nearest_threshold/README.md. The maximum agreement is exactly15
+and there are exactly210 nearest polynomials in21 orbits of size10.
+The earlier sampling statements above describe the historical search.

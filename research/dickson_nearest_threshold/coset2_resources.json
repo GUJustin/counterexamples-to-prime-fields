@@ -1,0 +1,12 @@
+{
+  "command": [
+    "tmp/dickson-threshold-scan",
+    "2"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 7.231226249998144,
+  "peak_rss_kib": 1696,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}
