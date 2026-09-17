@@ -1,0 +1,37 @@
+{
+  "status": "passed",
+  "direct_local_matrix_checks": 320,
+  "rearrangement_and_marginal_checks": 3750,
+  "exact_polygon_column_lifts": 3128,
+  "finite_improvement_certificates": [
+    {
+      "rho": "9/10",
+      "a": "47389/50000",
+      "m": 10000,
+      "B": "49/500",
+      "columns": 981,
+      "monomials": 9724108,
+      "rank": 44523829596,
+      "benefit": "445252935317/10",
+      "surplus": "14639357/10",
+      "maximum_jet_degree": 10530,
+      "sufficient_challenge_degree": 320257184,
+      "below_DKT_polynomial": "-4370209/25000000000"
+    },
+    {
+      "rho": "3/4",
+      "a": "43049/50000",
+      "m": 100000,
+      "B": "173/1000",
+      "columns": 17301,
+      "monomials": 1830201539,
+      "rank": 73254792027652,
+      "benefit": "293020925834159/4",
+      "surplus": "1757723551/4",
+      "maximum_jet_degree": 114797,
+      "sufficient_challenge_degree": 19137094352,
+      "below_DKT_polynomial": "-824371/10000000000"
+    }
+  ],
+  "scope": "Independent finite arithmetic checks. The all-support and all-multiplicity statements require the separately audited proof; finite enumeration is not that proof."
+}

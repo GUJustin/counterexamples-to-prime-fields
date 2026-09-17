@@ -199,3 +199,8 @@ verify-quadratic-tower-profile:
 	$(PYTHON) research/generic_fiber_nearest_lists/verify_profile.py
 verify-dickson-exact-profile:
 	$(PYTHON) research/dickson_domain_deformation/verify_extra_supports.py
+
+.PHONY: verify-first-order-support-audit
+verify: verify-first-order-support-audit
+verify-first-order-support-audit:
+	$(PYTHON) research/first_order_support_audit/verify.py

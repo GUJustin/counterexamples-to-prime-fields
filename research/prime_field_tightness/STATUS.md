@@ -455,3 +455,26 @@ boundary construction at rate1/4,gap0.24. Mere list size8 is not novel;
 our new exact-profile deformation has gap1/8 and no other candidates
 above4 agreements. No source PDF or private draft has been committed
 or published; local snapshot is in ignored tmp/recovered-coauthor-draft.
+
+## First-order method optimality audited, September17
+
+research/first_order_support_audit/AUDIT.md checks the restored Sep13
+support-optimum note. At quarter rate, the specified leading
+'dimension > n*saturated local rank' method has exact infimum
+(3+sqrt133)/31. Every fixed finite multiplicity m needs agreement
+strictly greater than that plus(1-2*a0)/(8m). The proof audit covers
+rank, sorting, diagonal compression, quarter-rate cap optimality,
+one-sided finite correction, and translation-stable nonmonomial
+flat degeneration. It does NOT prove intrinsic bad-code behavior,
+first-order n^2 optimality, or absence of globally dependent certificates.
+Multiplicities growing with block length are outside the stated converse.
+
+A fresh stdlib replay passes320 direct ranks,3750 rearrangements and
+marginals,3128 exact polygon-integral finite inequalities, and two strict
+high-rate improvement certificates. At rates.9 and.75, agreements.94778
+and.86098 lie below the recovered DKT curve. Their enormous supports
+and conservative challenge degrees320257184 and19137094352 give no
+practical better.codes improvement. The full high-rate continuum
+optimality theorem is not included in this audit verdict. No new discovery
+credit claimed: these are restored statements now locally checked.
+Main counterexample manuscript left unchanged at157pages.

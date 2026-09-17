@@ -83,3 +83,8 @@ boundary bank at rate1/4 and gap0.24, with received degree equal to the
 agreement threshold. It is not our p17 deformation at gap1/8 with a
 complete above-capacity profile. Do not confuse the two constructions
 or describe the mere existence of an eight-member list as new.
+
+Subsequent audit: ../first_order_support_audit/AUDIT.md now checks the
+quarter-rate method converse and the two finite high-rate improvements.
+The earlier 'not yet audited' sentence above records the state before
+that audit; it no longer applies to those precisely scoped conclusions.
