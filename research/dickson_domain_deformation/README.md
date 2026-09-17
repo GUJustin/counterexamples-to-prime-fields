@@ -90,3 +90,13 @@ Do not expand this into a prime or ramification census without a new
 symbolic reason. The needed result remains a scalable, fixed-gap source
 list over sufficiently large prime fields; an isolated lift is not an
 exponent-tightness result.
+
+## Subsequent exact-profile strengthening
+
+EXACT_PROFILE.md and verify_extra_supports.py now certify that one can
+choose the p17 characteristic-zero deformation with EXACTLY eight
+candidates above four agreements, each at six agreements. All208 unwanted
+five-supports can be broken on the same smooth branch; all4368 possible
+five-supports are independently replayed. The earlier claim of at least
+eight nearest candidates is therefore strengthened for a suitable
+choice of deformation, not for every possible lift.

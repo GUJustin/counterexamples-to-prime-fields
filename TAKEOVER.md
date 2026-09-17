@@ -2206,3 +2206,34 @@ arXiv2609.08005v1's formal bounds are polynomial in q; do not silently
 substitute that proof for the n-polynomial pool dependency over
 superpolynomial prime fields. No claim of falsity of its informal
 stronger statement. Current external dependency remains explicit.
+
+## Complete profile strengthening, September17
+
+Quadratic towers improve the generic fiber lemma: at length BN and
+dimension Bk, B=2^s, EVERY candidate above Bk agreements is a composed
+source candidate. All high-agreement counts scale exactly by B.
+QUADRATIC_TOWER_PROFILE.md proves this using independent fiber swaps;
+sharing h-1>=2k points suffices at each quadratic step. A complete finite
+replay at n20,K8,F1000000007 examines125970 determining supports:
+124980 distinct interpolants have agreement8 and exactly2 have12.
+No candidate has agreement9,10,11 or above12. Verified under384MiB.
+
+The p17 Dickson seed can also be sharpened to an EXACT characteristic-zero
+profile. Its selected smooth incidence locus has16 free tangent directions.
+All4368 five-supports split into4112 already inconsistent,48 belonging
+to the selected8 candidates, and208 unwanted consistent supports.
+Every unwanted residual has nonzero tangent derivative, independently
+verified using a different interpolation and residual formula.
+Thus one smooth characteristic-zero deformation avoids ALL208 residuals
+simultaneously. It has exactly8 above4 candidates, each at6 agreements;
+all others have at most4. See dickson_domain_deformation/EXACT_PROFILE.md.
+
+Quadratic towers yield n16B,K4B,exact list8 at6B agreements and all others
+<=4B. Anchoring where four candidates meet gives a pool of exactly4 at
+threshold4B, so the unique-nearby compiler needs no external list bound.
+With q8B+1 it yields n24B,K3B,A6B,rate=gap=1/8 and EXACTLY32B+4 uniquely
+nearby labels; every other label has agreement6B-1. The compiler alone
+requires only p>=32(8B+1)^2, but the source specialization may require
+much larger split primes. Do NOT claim polynomial field size, growing
+list size, superlinear exceptions, or constant far/near separation.
+New results stay in notes; main paper remains157pages.

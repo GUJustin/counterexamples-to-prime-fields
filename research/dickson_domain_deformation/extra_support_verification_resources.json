@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/dickson_domain_deformation/verify_extra_supports.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.565022290997149,
+  "peak_rss_kib": 160,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 90
+}

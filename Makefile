@@ -192,3 +192,10 @@ verify-dickson-domain-deformation:
 verify: verify-generic-fiber-nearest-lists
 verify-generic-fiber-nearest-lists:
 	$(PYTHON) research/generic_fiber_nearest_lists/verify.py
+
+.PHONY: verify-quadratic-tower-profile verify-dickson-exact-profile
+verify: verify-quadratic-tower-profile verify-dickson-exact-profile
+verify-quadratic-tower-profile:
+	$(PYTHON) research/generic_fiber_nearest_lists/verify_profile.py
+verify-dickson-exact-profile:
+	$(PYTHON) research/dickson_domain_deformation/verify_extra_supports.py

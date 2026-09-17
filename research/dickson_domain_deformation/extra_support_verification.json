@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "all_five_supports": 4368,
+  "already_inconsistent": 4112,
+  "selected_candidate_supports": 48,
+  "unwanted_supports_with_verified_nonzero_tangent": 208,
+  "claimed_generic_profile": {
+    "n": 16,
+    "dimension": 4,
+    "complete_above_capacity_list": 8,
+    "agreement_each": 6,
+    "all_other_candidates_at_most": 4
+  },
+  "scope": "Together with the separately certified full-row-rank Hensel lift, all unwanted five-point incidences can be avoided on one characteristic-zero deformation. This is a finite exact-profile example, not a growing-list construction."
+}
