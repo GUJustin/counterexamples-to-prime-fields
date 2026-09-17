@@ -504,9 +504,17 @@ bounds for a low-degree test.
 The connection between equal subset moments, elementary symmetric
 functions, and Reed--Solomon decoding is established prior work;
 Gandikota, Ghazi, and Grigorescu use this connection in decoding
-hardness results~\cite{ggg}. The results here use quantitative
-counts on integer intervals to obtain the stated list and line
-separations. The number-theoretic splitting theorem used in the lift is
+hardness results~\cite{ggg}. The integer moment pigeonhole argument is
+also classical: Borwein, Erd\'elyi, and K\'os use derivative vectors of
+binary polynomials in the proof of their Theorem~2.7~\cite{bek}.
+Restricting that argument to fixed-weight subsets and retaining a large
+fiber, followed by the standard locator correspondence, already yields
+the asymptotic exponent
+$\log L=\Omega_\rho(\eta^{-2}/\log(1/\eta))$ used here.
+Our interval counts give sharper finite bounds and an application to the
+specific uniform prime-field conjecture; we do not claim a new moment
+counting mechanism. The affine-line distance profiles require additional
+constructions. The number-theoretic splitting theorem used in the lift is
 also classical.
 
 Prime-field list constructions using multiplicative cosets also appear
@@ -537,9 +545,17 @@ Krachun, Kazanin, and Hab\"ock~\cite{kkh} construct large lists and
 affine-line obstructions on multiplicative subgroups of prime fields,
 with a gap of order $1/\log n$. Our interval construction addresses
 a different family of domains and gives lists larger than every fixed
-exponential in the reciprocal gap. The multiplicative structure of
-their examples remains a separate advantage. Our finite circle
-examples concern the evaluation spaces of Circle STARKs~\cite{circle}.
+exponential in the reciprocal gap. The paired-domain construction adds
+a different line phenomenon: two quantitatively far inputs have all
+$p-2$ non-endpoint mixtures nearby, and the underlying distance profile
+can have one almost maximally far point and $p-1$ nearby points. These
+statements use specially constructed domains and a shrinking gap.
+The multiplicative-subgroup domains and polynomial-size alphabets in
+their theorem remain separate advantages. Thus the advance claimed here
+is the quantitative coverage, separation, and reciprocal-gap dependence;
+prime-field counterexamples themselves are already established prior work.
+Our finite circle examples concern the evaluation spaces of
+Circle STARKs~\cite{circle}.
 
 The Proximity Prize's orbit-pencil upper certificate also uses
 multiplicative fibers and a fixed core~\cite{orbit-pencil}. Our circle
@@ -5900,6 +5916,11 @@ Linear-Sized Alphabets}. Advances in Combinatorics, 2025:8.
 arXiv:2206.05256. \url{https://arxiv.org/abs/2206.05256}.
 \bibitem{roth} R. M. Roth. \emph{Higher-Order MDS Codes}.
 arXiv:2111.03210v2, 2021. \url{https://arxiv.org/abs/2111.03210v2}.
+\bibitem{bek} P. Borwein, T. Erd\'elyi, and G. K\'os.
+\emph{Littlewood-type problems on $[0,1]$}.
+Theorem~2.7 and its proof.
+\url{https://people.tamu.edu/~terdelyi/papers-online/PLMS.pdf}.
+
 \bibitem{ggg} V. Gandikota, B. Ghazi, and E. Grigorescu.
 \emph{NP-Hardness of Reed-Solomon Decoding, and the Prouhet--Tarry--Escott Problem}.
 2016. \url{https://arxiv.org/abs/1611.03069}.
