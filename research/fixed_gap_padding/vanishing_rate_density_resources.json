@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/fixed_gap_padding/verify_vanishing_rate_density.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5534882909996668,
+  "peak_rss_kib": 3552,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

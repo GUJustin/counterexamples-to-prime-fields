@@ -942,3 +942,53 @@ perhapsnearFp*, butwouldneedrealnumbertheoretic/equidistributionproof
 underfixedmomentconstraints. DoNOTinferfromL>>p. Ifonepaddingpoint
 hasimageFp*, wouldgiveallnonzeroznearbywithfixedkappa. Noevidenceyet.
 Goalactiveuntil12:30UTC; noactiveprocess.
+
+
+## September 17 ~06:20 UTC — exactly one far point at vanishing rate
+
+Previousturnprogressa9fed246. Newtheorem4.15 integratedinvanishing_rate.tex
+(inputatendaveraged.tex asSection4.3). Foranyfixedc1,c2 choosefixeds,K
+withs+1>c2 andu=K-s(s-1)/2>c2K/(s+1), then1+c2K/(s+1)<a<u+1.
+Everylargeprimep,n=floorp^(1/a),Kfixed,rhoK/n->0,eta(s+1)/n.
+Anchoredt=K+s+1 supports on0..N,Nfloor2n/3, momentrangesO(N^j)since
+tfixed, givingL=Omega(n^u). AfterdivideglobalfdegA-1,A=K+s+1,
+candidatesdeg<K,coreagreementA-1. Withq=n-N,R=p-N,U=p-1,
+M>=LR/(R+(K-1)(L-1)); qM/U=Omega(min(n,n^(u+1-a))).
+Expecteduncovered<=p exp(-qM/U)<1 eventually, soALLnonzeroznearby,
+zeroexactlyeta/(s+1)far. NoCAbyfdegree. Eliasfroma(s+1)>A;
+prescription=n^(1+c2K/(s+1)+o1)=o(p). Polynomialfields,n=o(p).
+ThisdoesNOTanswerfixedpositive-ratequestion, nowexplicitlyfixedrate
+inpaperopenquestions. Noactualgloballistseparationasserted.
+
+Simplec1c2=1:K2,s1,a5/2,n=floorp^.4,Nfloor2n/3. Triplesof1..N with
+commonintegersumS giveL>=ceil(binomN3/(3N-8)); f=X³-SX²,
+P=-(ab+ac+bc)X+abc. Allnonzeroznearbyat4agreements, zeroexact3,
+far eta/2, rho=eta=2/n. Exactfinitecheckerverify_vanishing_rate_density.py
+usesintegerfifthrootofp², exactL, conservativeM(nocorecollisionsubtraction),
+96-termpositivebinomialsum. Eliascheckp²4^4>3^4n^4 andprescription
+upper(3/2)n² viae<3 avoidn-digitintegers. GuardedPASS<1sec.
+M31n5404density>0.45364109,prescfraction<2^-5. M61n22137669
+missingfraction<2^-55,prescription<2^-11. M127n1960305596233800 and
+M521CERTIFYJ=p-1 exactly (ceilcount, expecteduncovered<1). Theseare
+existencecertificates, notexplicitdirectionenumerations.
+READMEupdated, Makefile77checks. PDF122pagesclean, reviewed38,39.
+VANISHING_RATE_ROBUST_DENSITY.md hasderivationandstrongerallnonzeroconclusion.
+Noactiveprocess.
+
+Furtherobservationfornextaudit: lowratephenomenonisevenpossiblefor
+CONSTANTcodes alongprimesp=1modD. ChoosefixedintegerD>c2,
+1+c2/D<a<2,n=floorp^(1/a),coreunionoffullDthpowerfibersN~n/2,
+L=N/D constantsascodewords,w=X^D. OutsidecoreallP-w!=0 andevaluation
+imagesizeEXACTL; q~n/2 randomnonzerodirectionscoverallnonzeroz since
+qL/p=Omega(n²/p)>>logp. ThresholdA=D+1,K1,etaD/n, farpointeta/D,
+strictElias aD>D+1, numericalthresholdn^(1+c2/D)=o(p).
+Dirichletprovidesinfiniteprimesp1modD. Globalactualmaxlistfloor(n/(D+1)),
+soactualell*n~n²>p; noactual-listcounterexample. Thisisanelementary
+low-rateboundaryphenomenon, notnecessarilyanovelRSobstruction. Consider
+simplifyingpresentationoraddingqualificationratherthanoversellingit.
+Forc2=1 alloddprimesalreadyD2works; choosef=X²-(N+1)X andcore1..N
+withN even, pairsx,N+1-x giveL=N/2 constants; n~p^.6 (a5/3) yields
+allnonzeroznearby, far eta/2 atthreshold3, rho1/n,eta2/n.
+Currentallprimearbitraryc2theoremstrongerthanconstantcodevariantin
+primeuniformityandcorrect, so do notdeletewithoutreviewingtradeoff.
+Goalactiveuntil12:30UTC; current~06:20UTC.

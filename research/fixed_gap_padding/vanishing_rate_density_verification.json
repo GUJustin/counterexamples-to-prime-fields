@@ -1,0 +1,71 @@
+{
+  "status": "passed",
+  "certificates": [
+    {
+      "prime_exponent": 31,
+      "n": 5404,
+      "K": 2,
+      "A": 4,
+      "core_length": 3602,
+      "padding": 1802,
+      "list_lower": 720734,
+      "all_nonzero_parameters_nearby": false,
+      "exact_far_agreement": 3,
+      "far_separation_over_eta": "1/2",
+      "nearby_fraction_lower": "0.45364109",
+      "missing_fraction_less_than_power_two": 0,
+      "prescription_fraction_less_than_power_two": -5,
+      "strict_elias": true
+    },
+    {
+      "prime_exponent": 61,
+      "n": 22137669,
+      "K": 2,
+      "A": 4,
+      "core_length": 14758446,
+      "padding": 7379223,
+      "list_lower": 12100651300858,
+      "all_nonzero_parameters_nearby": false,
+      "exact_far_agreement": 3,
+      "far_separation_over_eta": "1/2",
+      "nearby_fraction_lower": "0.99999999",
+      "missing_fraction_less_than_power_two": -55,
+      "prescription_fraction_less_than_power_two": -11,
+      "strict_elias": true
+    },
+    {
+      "prime_exponent": 127,
+      "n": 1960305596233800,
+      "K": 2,
+      "A": 4,
+      "core_length": 1306870397489200,
+      "padding": 653435198744600,
+      "list_lower": 94883901990754398335591711682,
+      "all_nonzero_parameters_nearby": true,
+      "exact_far_agreement": 3,
+      "far_separation_over_eta": "1/2",
+      "nearby_fraction_lower": "0.99999999",
+      "missing_fraction_less_than_power_two": -126,
+      "prescription_fraction_less_than_power_two": -24,
+      "strict_elias": true
+    },
+    {
+      "prime_exponent": 521,
+      "n": 542814070149545202372648449808458278700300596599126471787746641,
+      "K": 2,
+      "A": 4,
+      "core_length": 361876046766363468248432299872305519133533731066084314525164427,
+      "padding": 180938023383181734124216149936152759566766865533042157262582214,
+      "list_lower": 7275237401291737775805078789928797454692872357162087567440146100046409928971186650785527702647551198147623428412910733954641,
+      "all_nonzero_parameters_nearby": true,
+      "exact_far_agreement": 3,
+      "far_separation_over_eta": "1/2",
+      "nearby_fraction_lower": "0.99999999",
+      "missing_fraction_less_than_power_two": -520,
+      "prescription_fraction_less_than_power_two": -103,
+      "strict_elias": true
+    }
+  ],
+  "seconds": 0.08449612500044168,
+  "scope": "Vanishing-rate K2,eta2/n,half-gap far point; all field, integer-root, list, density, Elias and prescription inequalities exact. No fixed-positive-rate claim."
+}
