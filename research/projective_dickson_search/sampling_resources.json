@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/projective_dickson_search/sample_lists.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 5.431329583996558,
+  "peak_rss_kib": 45616,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

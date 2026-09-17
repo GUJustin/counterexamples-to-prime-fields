@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/projective_dickson_search/verify_projective.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5465328749996843,
+  "peak_rss_kib": 12016,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

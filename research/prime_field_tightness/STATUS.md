@@ -818,3 +818,29 @@ The main paper builds to159pages, retaining11pt letter and1inch margins;
 the altered introduction and both corollary pages were visually checked.
 No better.codes improvement and no superlinear fixed-gap prime-field
 exception construction has been obtained. Continue until22:00UTC.
+
+## September17: expanded polynomial search and finite-count calibration
+
+research/projective_dickson_search/ now records complete scalar/projective
+and affine-output orbit searches at p17,41,73. The latter gives14,20,36
+candidates at agreement3n/8; no first-order-regime witness appears in
+these searched families. Independent coefficient expansion replays134
+certificates, and a separate complete p17 list/orbit comparison confirms
+22 total nearest candidates versus8/14 from the searched orbits.
+
+One million determining-support samples at p41 discovered202 candidates
+with15 agreements. Independent Vandermonde reconstruction and closure
+under the exact mu10 symmetry certify210 degree-nine candidates in21
+orbits. This is a finite lower bound, not a complete list or a family.
+The exact random-word expected count at these parameters is194.86, so
+the numerical size alone is weak evidence of asymptotic growth beyond
+the explicit Dickson bank. None of the21 support classes lifts while
+keeping the same40th-root-of-unity nodes and quartic-character word:
+nonzero residuals at other split primes exclude those fixed cyclotomic
+lifts. Arbitrary deformations remain untested.
+
+The finite certificates and calibration are retained as research evidence;
+no manuscript expansion or new asymptotic claim. Larger random-support
+sampling has rapidly vanishing hit probabilities and is not the next
+route. Continue searching for a structurally different growing family,
+with the prime ambient-field condition enforced. Work horizon22:00UTC.

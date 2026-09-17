@@ -1,0 +1,3258 @@
+{
+  "p": 41,
+  "n": 40,
+  "k": 10,
+  "agreement_threshold": 15,
+  "samples": 1000000,
+  "maximum_sampled_agreement": 15,
+  "distinct_candidates": 202,
+  "sample_agreement_histogram": {
+    "10": 476669,
+    "11": 357664,
+    "12": 129468,
+    "13": 30481,
+    "14": 5042,
+    "15": 676
+  },
+  "first_order_threshold": 19,
+  "fixed_candidate_uniform_support_hit_probability": {
+    "numerator": 92378,
+    "denominator": 847660528
+  },
+  "candidates": [
+    {
+      "determining_coordinates": [
+        22,
+        28,
+        12,
+        2,
+        17,
+        5,
+        18,
+        24,
+        7,
+        29
+      ],
+      "agreements": 15,
+      "hits": 8
+    },
+    {
+      "determining_coordinates": [
+        12,
+        21,
+        34,
+        11,
+        14,
+        10,
+        35,
+        29,
+        20,
+        4
+      ],
+      "agreements": 15,
+      "hits": 11
+    },
+    {
+      "determining_coordinates": [
+        3,
+        9,
+        26,
+        1,
+        8,
+        10,
+        27,
+        11,
+        5,
+        13
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        5,
+        30,
+        29,
+        23,
+        9,
+        21,
+        24,
+        25,
+        31,
+        14
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        18,
+        31,
+        6,
+        23,
+        11,
+        5,
+        7,
+        13,
+        40,
+        8
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        31,
+        7,
+        17,
+        19,
+        11,
+        24,
+        27,
+        40,
+        21,
+        13
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        29,
+        15,
+        24,
+        13,
+        31,
+        35,
+        37,
+        32,
+        1,
+        17
+      ],
+      "agreements": 15,
+      "hits": 5
+    },
+    {
+      "determining_coordinates": [
+        38,
+        12,
+        16,
+        35,
+        15,
+        33,
+        7,
+        18,
+        40,
+        27
+      ],
+      "agreements": 15,
+      "hits": 6
+    },
+    {
+      "determining_coordinates": [
+        32,
+        10,
+        39,
+        6,
+        27,
+        7,
+        21,
+        29,
+        20,
+        30
+      ],
+      "agreements": 15,
+      "hits": 5
+    },
+    {
+      "determining_coordinates": [
+        23,
+        22,
+        7,
+        25,
+        1,
+        40,
+        9,
+        13,
+        14,
+        15
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        7,
+        17,
+        2,
+        18,
+        34,
+        25,
+        29,
+        35,
+        8,
+        15
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        11,
+        14,
+        8,
+        5,
+        17,
+        34,
+        36,
+        25,
+        38,
+        9
+      ],
+      "agreements": 15,
+      "hits": 6
+    },
+    {
+      "determining_coordinates": [
+        39,
+        6,
+        28,
+        3,
+        29,
+        4,
+        27,
+        18,
+        23,
+        15
+      ],
+      "agreements": 15,
+      "hits": 6
+    },
+    {
+      "determining_coordinates": [
+        28,
+        36,
+        5,
+        21,
+        30,
+        11,
+        27,
+        6,
+        40,
+        10
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        28,
+        40,
+        12,
+        8,
+        25,
+        17,
+        29,
+        9,
+        7,
+        22
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        1,
+        34,
+        11,
+        18,
+        19,
+        40,
+        36,
+        15,
+        21,
+        3
+      ],
+      "agreements": 15,
+      "hits": 1
+    },
+    {
+      "determining_coordinates": [
+        16,
+        9,
+        1,
+        3,
+        30,
+        12,
+        10,
+        11,
+        2,
+        33
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        24,
+        38,
+        19,
+        22,
+        34,
+        1,
+        14,
+        10,
+        16,
+        28
+      ],
+      "agreements": 15,
+      "hits": 7
+    },
+    {
+      "determining_coordinates": [
+        24,
+        15,
+        39,
+        21,
+        11,
+        22,
+        26,
+        20,
+        1,
+        4
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        35,
+        29,
+        15,
+        5,
+        38,
+        36,
+        30,
+        1,
+        20,
+        4
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        29,
+        2,
+        12,
+        38,
+        19,
+        25,
+        22,
+        27,
+        21,
+        37
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        33,
+        11,
+        1,
+        40,
+        5,
+        24,
+        25,
+        6,
+        34,
+        16
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        9,
+        4,
+        1,
+        22,
+        21,
+        27,
+        39,
+        30,
+        37,
+        25
+      ],
+      "agreements": 15,
+      "hits": 8
+    },
+    {
+      "determining_coordinates": [
+        1,
+        12,
+        17,
+        35,
+        37,
+        24,
+        23,
+        26,
+        14,
+        19
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        24,
+        33,
+        37,
+        25,
+        30,
+        10,
+        35,
+        27,
+        12,
+        32
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        17,
+        18,
+        36,
+        3,
+        23,
+        8,
+        38,
+        12,
+        11,
+        29
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        10,
+        30,
+        33,
+        23,
+        12,
+        13,
+        15,
+        26,
+        37,
+        34
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        19,
+        12,
+        27,
+        34,
+        37,
+        38,
+        30,
+        14,
+        24,
+        10
+      ],
+      "agreements": 15,
+      "hits": 5
+    },
+    {
+      "determining_coordinates": [
+        26,
+        31,
+        16,
+        7,
+        3,
+        30,
+        15,
+        17,
+        8,
+        24
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        2,
+        35,
+        26,
+        37,
+        10,
+        34,
+        40,
+        21,
+        17,
+        5
+      ],
+      "agreements": 15,
+      "hits": 5
+    },
+    {
+      "determining_coordinates": [
+        40,
+        2,
+        9,
+        32,
+        3,
+        35,
+        33,
+        7,
+        10,
+        37
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        1,
+        29,
+        38,
+        2,
+        16,
+        18,
+        27,
+        11,
+        40,
+        22
+      ],
+      "agreements": 15,
+      "hits": 1
+    },
+    {
+      "determining_coordinates": [
+        37,
+        12,
+        29,
+        39,
+        11,
+        8,
+        23,
+        27,
+        32,
+        2
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        12,
+        24,
+        13,
+        30,
+        7,
+        35,
+        31,
+        5,
+        4,
+        27
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        14,
+        32,
+        35,
+        8,
+        5,
+        13,
+        29,
+        38,
+        6,
+        1
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        34,
+        39,
+        13,
+        28,
+        14,
+        21,
+        24,
+        4,
+        22,
+        12
+      ],
+      "agreements": 15,
+      "hits": 5
+    },
+    {
+      "determining_coordinates": [
+        32,
+        40,
+        36,
+        17,
+        2,
+        11,
+        8,
+        30,
+        12,
+        35
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        3,
+        7,
+        1,
+        14,
+        38,
+        18,
+        39,
+        12,
+        2,
+        32
+      ],
+      "agreements": 15,
+      "hits": 5
+    },
+    {
+      "determining_coordinates": [
+        7,
+        12,
+        24,
+        17,
+        4,
+        3,
+        26,
+        39,
+        6,
+        10
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        20,
+        5,
+        30,
+        7,
+        17,
+        16,
+        35,
+        34,
+        29,
+        15
+      ],
+      "agreements": 15,
+      "hits": 7
+    },
+    {
+      "determining_coordinates": [
+        36,
+        32,
+        31,
+        30,
+        28,
+        6,
+        38,
+        25,
+        16,
+        11
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        36,
+        7,
+        38,
+        34,
+        35,
+        15,
+        33,
+        24,
+        20,
+        17
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        16,
+        9,
+        19,
+        23,
+        28,
+        25,
+        37,
+        31,
+        39,
+        15
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        36,
+        17,
+        20,
+        30,
+        38,
+        3,
+        26,
+        15,
+        37,
+        19
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        2,
+        24,
+        21,
+        23,
+        12,
+        3,
+        16,
+        7,
+        37,
+        33
+      ],
+      "agreements": 15,
+      "hits": 7
+    },
+    {
+      "determining_coordinates": [
+        13,
+        38,
+        22,
+        25,
+        27,
+        17,
+        20,
+        28,
+        37,
+        2
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        31,
+        16,
+        9,
+        15,
+        17,
+        28,
+        27,
+        12,
+        10,
+        8
+      ],
+      "agreements": 15,
+      "hits": 5
+    },
+    {
+      "determining_coordinates": [
+        21,
+        34,
+        33,
+        7,
+        14,
+        10,
+        13,
+        39,
+        12,
+        11
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        17,
+        12,
+        11,
+        7,
+        9,
+        1,
+        24,
+        30,
+        37,
+        6
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        13,
+        17,
+        27,
+        18,
+        33,
+        2,
+        32,
+        11,
+        31,
+        29
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        27,
+        28,
+        3,
+        33,
+        9,
+        11,
+        22,
+        36,
+        23,
+        35
+      ],
+      "agreements": 15,
+      "hits": 1
+    },
+    {
+      "determining_coordinates": [
+        29,
+        2,
+        14,
+        8,
+        39,
+        6,
+        21,
+        7,
+        37,
+        28
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        11,
+        9,
+        16,
+        28,
+        7,
+        19,
+        17,
+        39,
+        22,
+        26
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        15,
+        6,
+        37,
+        27,
+        14,
+        11,
+        3,
+        12,
+        18,
+        28
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        26,
+        25,
+        39,
+        40,
+        1,
+        2,
+        33,
+        12,
+        7,
+        34
+      ],
+      "agreements": 15,
+      "hits": 7
+    },
+    {
+      "determining_coordinates": [
+        8,
+        35,
+        20,
+        31,
+        6,
+        2,
+        7,
+        34,
+        14,
+        28
+      ],
+      "agreements": 15,
+      "hits": 5
+    },
+    {
+      "determining_coordinates": [
+        27,
+        36,
+        25,
+        22,
+        24,
+        38,
+        28,
+        14,
+        2,
+        4
+      ],
+      "agreements": 15,
+      "hits": 9
+    },
+    {
+      "determining_coordinates": [
+        28,
+        31,
+        36,
+        4,
+        1,
+        5,
+        30,
+        39,
+        17,
+        13
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        11,
+        26,
+        10,
+        15,
+        19,
+        28,
+        2,
+        20,
+        30,
+        6
+      ],
+      "agreements": 15,
+      "hits": 6
+    },
+    {
+      "determining_coordinates": [
+        32,
+        37,
+        8,
+        26,
+        9,
+        24,
+        40,
+        35,
+        33,
+        29
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        13,
+        30,
+        17,
+        38,
+        32,
+        34,
+        39,
+        1,
+        15,
+        8
+      ],
+      "agreements": 15,
+      "hits": 5
+    },
+    {
+      "determining_coordinates": [
+        12,
+        19,
+        39,
+        29,
+        4,
+        16,
+        33,
+        2,
+        7,
+        27
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        28,
+        2,
+        11,
+        17,
+        32,
+        3,
+        36,
+        23,
+        15,
+        16
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        27,
+        34,
+        39,
+        35,
+        30,
+        28,
+        15,
+        25,
+        8,
+        36
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        24,
+        25,
+        32,
+        30,
+        3,
+        22,
+        17,
+        8,
+        15,
+        18
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        35,
+        25,
+        7,
+        27,
+        31,
+        15,
+        17,
+        4,
+        8,
+        10
+      ],
+      "agreements": 15,
+      "hits": 1
+    },
+    {
+      "determining_coordinates": [
+        7,
+        12,
+        4,
+        35,
+        3,
+        21,
+        37,
+        10,
+        13,
+        19
+      ],
+      "agreements": 15,
+      "hits": 5
+    },
+    {
+      "determining_coordinates": [
+        3,
+        15,
+        4,
+        22,
+        14,
+        2,
+        39,
+        5,
+        8,
+        23
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        4,
+        37,
+        17,
+        6,
+        28,
+        19,
+        38,
+        35,
+        27,
+        5
+      ],
+      "agreements": 15,
+      "hits": 7
+    },
+    {
+      "determining_coordinates": [
+        37,
+        28,
+        16,
+        12,
+        27,
+        21,
+        7,
+        10,
+        29,
+        40
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        24,
+        30,
+        18,
+        7,
+        39,
+        6,
+        28,
+        12,
+        10,
+        25
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        40,
+        23,
+        21,
+        15,
+        30,
+        25,
+        27,
+        22,
+        9,
+        10
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        12,
+        27,
+        23,
+        19,
+        5,
+        21,
+        30,
+        3,
+        40,
+        10
+      ],
+      "agreements": 15,
+      "hits": 6
+    },
+    {
+      "determining_coordinates": [
+        3,
+        33,
+        29,
+        37,
+        18,
+        31,
+        1,
+        32,
+        5,
+        24
+      ],
+      "agreements": 15,
+      "hits": 6
+    },
+    {
+      "determining_coordinates": [
+        27,
+        21,
+        28,
+        8,
+        5,
+        7,
+        38,
+        4,
+        37,
+        17
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        22,
+        6,
+        23,
+        9,
+        13,
+        34,
+        19,
+        38,
+        11,
+        10
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        16,
+        2,
+        30,
+        14,
+        24,
+        4,
+        3,
+        17,
+        23,
+        35
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        19,
+        35,
+        27,
+        37,
+        33,
+        10,
+        26,
+        40,
+        18,
+        8
+      ],
+      "agreements": 15,
+      "hits": 1
+    },
+    {
+      "determining_coordinates": [
+        32,
+        27,
+        19,
+        4,
+        14,
+        16,
+        23,
+        9,
+        39,
+        7
+      ],
+      "agreements": 15,
+      "hits": 1
+    },
+    {
+      "determining_coordinates": [
+        2,
+        40,
+        12,
+        17,
+        37,
+        1,
+        31,
+        33,
+        28,
+        20
+      ],
+      "agreements": 15,
+      "hits": 5
+    },
+    {
+      "determining_coordinates": [
+        13,
+        20,
+        18,
+        36,
+        11,
+        16,
+        4,
+        6,
+        24,
+        7
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        29,
+        31,
+        32,
+        7,
+        4,
+        39,
+        26,
+        20,
+        19,
+        36
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        14,
+        2,
+        16,
+        6,
+        11,
+        5,
+        33,
+        13,
+        7,
+        39
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        26,
+        11,
+        34,
+        12,
+        3,
+        27,
+        9,
+        14,
+        22,
+        15
+      ],
+      "agreements": 15,
+      "hits": 5
+    },
+    {
+      "determining_coordinates": [
+        12,
+        13,
+        9,
+        5,
+        31,
+        19,
+        18,
+        14,
+        38,
+        27
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        7,
+        15,
+        39,
+        34,
+        38,
+        8,
+        9,
+        33,
+        11,
+        10
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        21,
+        8,
+        20,
+        18,
+        25,
+        31,
+        26,
+        24,
+        6,
+        36
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        30,
+        4,
+        40,
+        17,
+        26,
+        18,
+        6,
+        35,
+        21,
+        10
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        30,
+        29,
+        1,
+        14,
+        17,
+        25,
+        7,
+        27,
+        34,
+        19
+      ],
+      "agreements": 15,
+      "hits": 5
+    },
+    {
+      "determining_coordinates": [
+        18,
+        5,
+        1,
+        38,
+        9,
+        28,
+        32,
+        40,
+        27,
+        13
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        39,
+        9,
+        20,
+        27,
+        7,
+        2,
+        29,
+        21,
+        28,
+        37
+      ],
+      "agreements": 15,
+      "hits": 5
+    },
+    {
+      "determining_coordinates": [
+        8,
+        4,
+        11,
+        28,
+        13,
+        21,
+        30,
+        12,
+        33,
+        19
+      ],
+      "agreements": 15,
+      "hits": 5
+    },
+    {
+      "determining_coordinates": [
+        14,
+        8,
+        9,
+        17,
+        33,
+        11,
+        39,
+        6,
+        12,
+        29
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        28,
+        5,
+        26,
+        4,
+        15,
+        31,
+        10,
+        7,
+        17,
+        29
+      ],
+      "agreements": 15,
+      "hits": 6
+    },
+    {
+      "determining_coordinates": [
+        32,
+        8,
+        25,
+        39,
+        30,
+        18,
+        29,
+        11,
+        27,
+        31
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        14,
+        10,
+        7,
+        38,
+        6,
+        25,
+        28,
+        35,
+        20,
+        17
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        40,
+        12,
+        7,
+        10,
+        16,
+        9,
+        36,
+        19,
+        17,
+        23
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        29,
+        19,
+        13,
+        11,
+        27,
+        30,
+        22,
+        5,
+        32,
+        18
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        15,
+        20,
+        13,
+        31,
+        12,
+        36,
+        22,
+        7,
+        26,
+        19
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        15,
+        22,
+        14,
+        17,
+        6,
+        18,
+        36,
+        19,
+        4,
+        29
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        26,
+        4,
+        7,
+        40,
+        3,
+        11,
+        6,
+        16,
+        12,
+        37
+      ],
+      "agreements": 15,
+      "hits": 5
+    },
+    {
+      "determining_coordinates": [
+        23,
+        33,
+        34,
+        36,
+        9,
+        3,
+        20,
+        24,
+        11,
+        13
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        34,
+        3,
+        26,
+        7,
+        20,
+        36,
+        17,
+        8,
+        1,
+        6
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        22,
+        4,
+        15,
+        21,
+        39,
+        31,
+        3,
+        29,
+        38,
+        34
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        38,
+        16,
+        11,
+        17,
+        19,
+        23,
+        24,
+        5,
+        13,
+        26
+      ],
+      "agreements": 15,
+      "hits": 7
+    },
+    {
+      "determining_coordinates": [
+        29,
+        16,
+        26,
+        9,
+        6,
+        35,
+        20,
+        3,
+        31,
+        14
+      ],
+      "agreements": 15,
+      "hits": 6
+    },
+    {
+      "determining_coordinates": [
+        33,
+        4,
+        1,
+        20,
+        11,
+        17,
+        21,
+        38,
+        24,
+        29
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        10,
+        34,
+        12,
+        2,
+        37,
+        5,
+        21,
+        35,
+        36,
+        15
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        40,
+        24,
+        13,
+        2,
+        7,
+        36,
+        33,
+        27,
+        22,
+        37
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        16,
+        8,
+        5,
+        15,
+        4,
+        21,
+        17,
+        13,
+        25,
+        23
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        37,
+        1,
+        22,
+        30,
+        25,
+        10,
+        28,
+        34,
+        27,
+        19
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        9,
+        22,
+        3,
+        40,
+        36,
+        4,
+        1,
+        32,
+        10,
+        12
+      ],
+      "agreements": 15,
+      "hits": 5
+    },
+    {
+      "determining_coordinates": [
+        28,
+        36,
+        37,
+        2,
+        3,
+        11,
+        5,
+        13,
+        35,
+        6
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        5,
+        36,
+        9,
+        27,
+        31,
+        38,
+        16,
+        6,
+        22,
+        32
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        6,
+        30,
+        36,
+        9,
+        32,
+        5,
+        29,
+        10,
+        12,
+        25
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        28,
+        14,
+        40,
+        19,
+        1,
+        38,
+        9,
+        37,
+        31,
+        15
+      ],
+      "agreements": 15,
+      "hits": 1
+    },
+    {
+      "determining_coordinates": [
+        1,
+        31,
+        34,
+        12,
+        21,
+        30,
+        2,
+        11,
+        25,
+        39
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        5,
+        15,
+        12,
+        31,
+        26,
+        28,
+        29,
+        8,
+        25,
+        19
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        32,
+        3,
+        35,
+        28,
+        9,
+        18,
+        22,
+        30,
+        1,
+        31
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        26,
+        27,
+        20,
+        13,
+        7,
+        33,
+        12,
+        39,
+        15,
+        35
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        26,
+        16,
+        2,
+        4,
+        32,
+        6,
+        20,
+        18,
+        33,
+        38
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        33,
+        6,
+        34,
+        37,
+        31,
+        13,
+        28,
+        29,
+        39,
+        38
+      ],
+      "agreements": 15,
+      "hits": 5
+    },
+    {
+      "determining_coordinates": [
+        6,
+        34,
+        9,
+        10,
+        40,
+        30,
+        5,
+        17,
+        12,
+        21
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        17,
+        2,
+        27,
+        10,
+        18,
+        11,
+        16,
+        20,
+        19,
+        33
+      ],
+      "agreements": 15,
+      "hits": 5
+    },
+    {
+      "determining_coordinates": [
+        18,
+        27,
+        20,
+        28,
+        13,
+        22,
+        36,
+        31,
+        32,
+        37
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        3,
+        23,
+        28,
+        7,
+        27,
+        19,
+        14,
+        21,
+        24,
+        2
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        33,
+        3,
+        9,
+        15,
+        37,
+        11,
+        19,
+        32,
+        38,
+        8
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        33,
+        4,
+        40,
+        2,
+        35,
+        32,
+        16,
+        1,
+        14,
+        37
+      ],
+      "agreements": 15,
+      "hits": 5
+    },
+    {
+      "determining_coordinates": [
+        3,
+        13,
+        12,
+        10,
+        29,
+        31,
+        21,
+        15,
+        25,
+        14
+      ],
+      "agreements": 15,
+      "hits": 5
+    },
+    {
+      "determining_coordinates": [
+        16,
+        24,
+        32,
+        25,
+        12,
+        1,
+        13,
+        22,
+        18,
+        34
+      ],
+      "agreements": 15,
+      "hits": 5
+    },
+    {
+      "determining_coordinates": [
+        22,
+        28,
+        7,
+        24,
+        19,
+        10,
+        13,
+        33,
+        14,
+        23
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        21,
+        15,
+        7,
+        30,
+        6,
+        35,
+        32,
+        27,
+        10,
+        3
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        40,
+        27,
+        12,
+        28,
+        19,
+        3,
+        1,
+        32,
+        34,
+        15
+      ],
+      "agreements": 15,
+      "hits": 6
+    },
+    {
+      "determining_coordinates": [
+        37,
+        6,
+        32,
+        31,
+        11,
+        10,
+        20,
+        28,
+        1,
+        23
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        7,
+        15,
+        16,
+        29,
+        40,
+        35,
+        11,
+        21,
+        20,
+        36
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        19,
+        39,
+        26,
+        24,
+        31,
+        20,
+        18,
+        14,
+        1,
+        11
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        1,
+        13,
+        36,
+        28,
+        3,
+        14,
+        26,
+        21,
+        19,
+        9
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        8,
+        34,
+        26,
+        30,
+        7,
+        31,
+        33,
+        32,
+        17,
+        25
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        24,
+        6,
+        26,
+        7,
+        34,
+        16,
+        15,
+        35,
+        39,
+        12
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        40,
+        11,
+        15,
+        7,
+        35,
+        17,
+        33,
+        3,
+        9,
+        16
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        16,
+        24,
+        34,
+        1,
+        21,
+        39,
+        35,
+        5,
+        22,
+        3
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        8,
+        7,
+        23,
+        13,
+        9,
+        35,
+        20,
+        11,
+        34,
+        4
+      ],
+      "agreements": 15,
+      "hits": 6
+    },
+    {
+      "determining_coordinates": [
+        16,
+        17,
+        13,
+        1,
+        36,
+        8,
+        34,
+        15,
+        28,
+        29
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        40,
+        19,
+        21,
+        28,
+        5,
+        10,
+        15,
+        26,
+        38,
+        22
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        40,
+        32,
+        29,
+        15,
+        24,
+        4,
+        11,
+        35,
+        5,
+        17
+      ],
+      "agreements": 15,
+      "hits": 7
+    },
+    {
+      "determining_coordinates": [
+        29,
+        4,
+        6,
+        21,
+        37,
+        31,
+        25,
+        23,
+        14,
+        34
+      ],
+      "agreements": 15,
+      "hits": 1
+    },
+    {
+      "determining_coordinates": [
+        11,
+        18,
+        28,
+        22,
+        12,
+        19,
+        38,
+        29,
+        24,
+        15
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        17,
+        5,
+        25,
+        1,
+        27,
+        37,
+        9,
+        32,
+        14,
+        2
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        2,
+        30,
+        32,
+        38,
+        35,
+        13,
+        16,
+        7,
+        10,
+        5
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        23,
+        3,
+        31,
+        13,
+        24,
+        21,
+        16,
+        14,
+        19,
+        11
+      ],
+      "agreements": 15,
+      "hits": 6
+    },
+    {
+      "determining_coordinates": [
+        24,
+        15,
+        8,
+        39,
+        40,
+        31,
+        21,
+        4,
+        1,
+        5
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        18,
+        26,
+        6,
+        2,
+        14,
+        8,
+        34,
+        16,
+        28,
+        21
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        26,
+        22,
+        32,
+        4,
+        18,
+        38,
+        30,
+        21,
+        17,
+        9
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        16,
+        30,
+        6,
+        27,
+        34,
+        35,
+        21,
+        3,
+        40,
+        25
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        25,
+        4,
+        5,
+        24,
+        17,
+        14,
+        39,
+        10,
+        1,
+        3
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        34,
+        37,
+        13,
+        24,
+        6,
+        39,
+        23,
+        8,
+        38,
+        27
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        2,
+        17,
+        3,
+        38,
+        21,
+        7,
+        25,
+        6,
+        13,
+        8
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        38,
+        32,
+        28,
+        1,
+        7,
+        14,
+        35,
+        6,
+        16,
+        19
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        22,
+        10,
+        24,
+        15,
+        33,
+        19,
+        25,
+        11,
+        29,
+        26
+      ],
+      "agreements": 15,
+      "hits": 1
+    },
+    {
+      "determining_coordinates": [
+        8,
+        34,
+        14,
+        39,
+        4,
+        19,
+        29,
+        3,
+        21,
+        5
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        2,
+        25,
+        31,
+        27,
+        26,
+        10,
+        29,
+        32,
+        12,
+        28
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        32,
+        19,
+        29,
+        36,
+        33,
+        1,
+        2,
+        34,
+        16,
+        5
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        8,
+        21,
+        40,
+        6,
+        31,
+        14,
+        34,
+        30,
+        7,
+        19
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        12,
+        23,
+        24,
+        5,
+        13,
+        38,
+        18,
+        19,
+        29,
+        3
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        19,
+        40,
+        13,
+        29,
+        22,
+        18,
+        27,
+        34,
+        3,
+        9
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        9,
+        24,
+        27,
+        34,
+        16,
+        32,
+        3,
+        1,
+        5,
+        36
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        17,
+        6,
+        34,
+        16,
+        29,
+        13,
+        22,
+        25,
+        37,
+        30
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        40,
+        38,
+        27,
+        9,
+        29,
+        3,
+        23,
+        4,
+        14,
+        34
+      ],
+      "agreements": 15,
+      "hits": 4
+    },
+    {
+      "determining_coordinates": [
+        21,
+        9,
+        24,
+        30,
+        39,
+        26,
+        5,
+        28,
+        31,
+        2
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        15,
+        23,
+        38,
+        14,
+        30,
+        29,
+        19,
+        10,
+        7,
+        40
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        4,
+        35,
+        18,
+        8,
+        29,
+        19,
+        20,
+        17,
+        13,
+        39
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        18,
+        20,
+        38,
+        17,
+        27,
+        34,
+        36,
+        23,
+        14,
+        13
+      ],
+      "agreements": 15,
+      "hits": 1
+    },
+    {
+      "determining_coordinates": [
+        1,
+        29,
+        20,
+        30,
+        7,
+        34,
+        22,
+        8,
+        5,
+        26
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        38,
+        39,
+        7,
+        22,
+        35,
+        18,
+        8,
+        1,
+        3,
+        33
+      ],
+      "agreements": 15,
+      "hits": 1
+    },
+    {
+      "determining_coordinates": [
+        8,
+        3,
+        39,
+        24,
+        32,
+        38,
+        7,
+        40,
+        35,
+        19
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        20,
+        22,
+        34,
+        19,
+        29,
+        15,
+        13,
+        17,
+        3,
+        39
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        27,
+        14,
+        11,
+        40,
+        28,
+        24,
+        12,
+        36,
+        30,
+        7
+      ],
+      "agreements": 15,
+      "hits": 1
+    },
+    {
+      "determining_coordinates": [
+        6,
+        20,
+        15,
+        17,
+        4,
+        24,
+        19,
+        32,
+        9,
+        8
+      ],
+      "agreements": 15,
+      "hits": 1
+    },
+    {
+      "determining_coordinates": [
+        3,
+        5,
+        27,
+        31,
+        36,
+        30,
+        20,
+        14,
+        26,
+        1
+      ],
+      "agreements": 15,
+      "hits": 1
+    },
+    {
+      "determining_coordinates": [
+        28,
+        37,
+        39,
+        3,
+        23,
+        6,
+        2,
+        34,
+        38,
+        17
+      ],
+      "agreements": 15,
+      "hits": 1
+    },
+    {
+      "determining_coordinates": [
+        8,
+        31,
+        7,
+        22,
+        23,
+        19,
+        15,
+        13,
+        25,
+        2
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        9,
+        17,
+        23,
+        14,
+        33,
+        12,
+        20,
+        2,
+        4,
+        18
+      ],
+      "agreements": 15,
+      "hits": 1
+    },
+    {
+      "determining_coordinates": [
+        37,
+        38,
+        26,
+        14,
+        30,
+        15,
+        23,
+        3,
+        21,
+        25
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        17,
+        26,
+        37,
+        15,
+        16,
+        21,
+        23,
+        10,
+        5,
+        33
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        36,
+        8,
+        26,
+        29,
+        20,
+        31,
+        14,
+        38,
+        33,
+        11
+      ],
+      "agreements": 15,
+      "hits": 1
+    },
+    {
+      "determining_coordinates": [
+        22,
+        32,
+        18,
+        19,
+        5,
+        11,
+        9,
+        34,
+        31,
+        28
+      ],
+      "agreements": 15,
+      "hits": 1
+    },
+    {
+      "determining_coordinates": [
+        21,
+        26,
+        13,
+        10,
+        15,
+        39,
+        35,
+        30,
+        33,
+        29
+      ],
+      "agreements": 15,
+      "hits": 1
+    },
+    {
+      "determining_coordinates": [
+        23,
+        36,
+        3,
+        28,
+        22,
+        31,
+        27,
+        30,
+        12,
+        9
+      ],
+      "agreements": 15,
+      "hits": 1
+    },
+    {
+      "determining_coordinates": [
+        37,
+        27,
+        15,
+        29,
+        23,
+        39,
+        40,
+        6,
+        13,
+        38
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        15,
+        16,
+        36,
+        12,
+        25,
+        14,
+        11,
+        21,
+        6,
+        26
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        31,
+        5,
+        12,
+        18,
+        29,
+        13,
+        34,
+        25,
+        1,
+        9
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        15,
+        27,
+        4,
+        34,
+        38,
+        18,
+        11,
+        13,
+        32,
+        20
+      ],
+      "agreements": 15,
+      "hits": 1
+    },
+    {
+      "determining_coordinates": [
+        34,
+        22,
+        9,
+        3,
+        11,
+        19,
+        26,
+        40,
+        6,
+        1
+      ],
+      "agreements": 15,
+      "hits": 1
+    },
+    {
+      "determining_coordinates": [
+        1,
+        36,
+        26,
+        5,
+        29,
+        38,
+        35,
+        7,
+        2,
+        32
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        39,
+        30,
+        12,
+        31,
+        29,
+        17,
+        11,
+        22,
+        13,
+        23
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        3,
+        22,
+        9,
+        35,
+        14,
+        13,
+        4,
+        12,
+        27,
+        29
+      ],
+      "agreements": 15,
+      "hits": 3
+    },
+    {
+      "determining_coordinates": [
+        3,
+        30,
+        40,
+        24,
+        14,
+        11,
+        17,
+        37,
+        21,
+        8
+      ],
+      "agreements": 15,
+      "hits": 1
+    },
+    {
+      "determining_coordinates": [
+        5,
+        20,
+        14,
+        36,
+        28,
+        4,
+        9,
+        21,
+        10,
+        19
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        10,
+        32,
+        18,
+        33,
+        36,
+        15,
+        6,
+        31,
+        1,
+        2
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        27,
+        16,
+        13,
+        4,
+        33,
+        34,
+        12,
+        30,
+        20,
+        35
+      ],
+      "agreements": 15,
+      "hits": 2
+    },
+    {
+      "determining_coordinates": [
+        28,
+        36,
+        32,
+        33,
+        8,
+        15,
+        40,
+        14,
+        18,
+        24
+      ],
+      "agreements": 15,
+      "hits": 1
+    },
+    {
+      "determining_coordinates": [
+        8,
+        9,
+        18,
+        14,
+        29,
+        22,
+        20,
+        28,
+        7,
+        13
+      ],
+      "agreements": 15,
+      "hits": 1
+    }
+  ],
+  "seconds": 5.074738292001712,
+  "scope": "Exact discovered witnesses only. No completeness or nonexistence claim; hit probability applies to one fixed candidate under ideal independent uniform sampling, not as a theorem about this PRNG."
+}

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/projective_dickson_search/cyclic_lift_probe.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5455433750030352,
+  "peak_rss_kib": 7280,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

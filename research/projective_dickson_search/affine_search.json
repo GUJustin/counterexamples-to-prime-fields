@@ -1,0 +1,829 @@
+{
+  "scope": "Complete scalar/projective orbit of one seed on a fixed word, with all output translations if affine_output is true; not a complete RS list census.",
+  "fixtures": [
+    {
+      "p": 17,
+      "n": 16,
+      "k": 4,
+      "threshold": 6,
+      "group_elements": 4896,
+      "distinct_candidates_at_threshold": 14,
+      "agreement_histogram": {
+        "6": 14
+      },
+      "above_first_order": 0,
+      "maximum_agreement": 6,
+      "candidates": [
+        {
+          "matrix": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "scale": 1,
+          "shift": 0,
+          "agreements": 6
+        },
+        {
+          "matrix": [
+            1,
+            9,
+            0,
+            1
+          ],
+          "scale": 16,
+          "shift": 11,
+          "agreements": 6
+        },
+        {
+          "matrix": [
+            1,
+            12,
+            0,
+            1
+          ],
+          "scale": 10,
+          "shift": 13,
+          "agreements": 6
+        },
+        {
+          "matrix": [
+            1,
+            14,
+            0,
+            1
+          ],
+          "scale": 7,
+          "shift": 4,
+          "agreements": 6
+        },
+        {
+          "matrix": [
+            2,
+            0,
+            0,
+            1
+          ],
+          "scale": 16,
+          "shift": 0,
+          "agreements": 6
+        },
+        {
+          "matrix": [
+            2,
+            9,
+            0,
+            1
+          ],
+          "scale": 1,
+          "shift": 6,
+          "agreements": 6
+        },
+        {
+          "matrix": [
+            4,
+            0,
+            0,
+            1
+          ],
+          "scale": 1,
+          "shift": 0,
+          "agreements": 6
+        },
+        {
+          "matrix": [
+            4,
+            9,
+            0,
+            1
+          ],
+          "scale": 16,
+          "shift": 11,
+          "agreements": 6
+        },
+        {
+          "matrix": [
+            4,
+            12,
+            0,
+            1
+          ],
+          "scale": 10,
+          "shift": 13,
+          "agreements": 6
+        },
+        {
+          "matrix": [
+            4,
+            14,
+            0,
+            1
+          ],
+          "scale": 7,
+          "shift": 4,
+          "agreements": 6
+        },
+        {
+          "matrix": [
+            8,
+            0,
+            0,
+            1
+          ],
+          "scale": 16,
+          "shift": 0,
+          "agreements": 6
+        },
+        {
+          "matrix": [
+            8,
+            9,
+            0,
+            1
+          ],
+          "scale": 1,
+          "shift": 6,
+          "agreements": 6
+        },
+        {
+          "matrix": [
+            1,
+            2,
+            1,
+            1
+          ],
+          "scale": 7,
+          "shift": 14,
+          "agreements": 6
+        },
+        {
+          "matrix": [
+            1,
+            2,
+            1,
+            1
+          ],
+          "scale": 10,
+          "shift": 14,
+          "agreements": 6
+        }
+      ],
+      "affine_output": true,
+      "affine_survivors": 4624,
+      "seconds": 0.07670441699883668
+    },
+    {
+      "p": 41,
+      "n": 40,
+      "k": 10,
+      "threshold": 15,
+      "group_elements": 68880,
+      "distinct_candidates_at_threshold": 20,
+      "agreement_histogram": {
+        "15": 20
+      },
+      "above_first_order": 0,
+      "maximum_agreement": 15,
+      "candidates": [
+        {
+          "matrix": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "scale": 1,
+          "shift": 0,
+          "agreements": 15
+        },
+        {
+          "matrix": [
+            2,
+            0,
+            0,
+            1
+          ],
+          "scale": 40,
+          "shift": 0,
+          "agreements": 15
+        },
+        {
+          "matrix": [
+            4,
+            0,
+            0,
+            1
+          ],
+          "scale": 1,
+          "shift": 0,
+          "agreements": 15
+        },
+        {
+          "matrix": [
+            5,
+            0,
+            0,
+            1
+          ],
+          "scale": 40,
+          "shift": 0,
+          "agreements": 15
+        },
+        {
+          "matrix": [
+            8,
+            0,
+            0,
+            1
+          ],
+          "scale": 40,
+          "shift": 0,
+          "agreements": 15
+        },
+        {
+          "matrix": [
+            9,
+            0,
+            0,
+            1
+          ],
+          "scale": 40,
+          "shift": 0,
+          "agreements": 15
+        },
+        {
+          "matrix": [
+            10,
+            0,
+            0,
+            1
+          ],
+          "scale": 1,
+          "shift": 0,
+          "agreements": 15
+        },
+        {
+          "matrix": [
+            16,
+            0,
+            0,
+            1
+          ],
+          "scale": 1,
+          "shift": 0,
+          "agreements": 15
+        },
+        {
+          "matrix": [
+            18,
+            0,
+            0,
+            1
+          ],
+          "scale": 1,
+          "shift": 0,
+          "agreements": 15
+        },
+        {
+          "matrix": [
+            20,
+            0,
+            0,
+            1
+          ],
+          "scale": 40,
+          "shift": 0,
+          "agreements": 15
+        },
+        {
+          "matrix": [
+            21,
+            0,
+            0,
+            1
+          ],
+          "scale": 40,
+          "shift": 0,
+          "agreements": 15
+        },
+        {
+          "matrix": [
+            23,
+            0,
+            0,
+            1
+          ],
+          "scale": 1,
+          "shift": 0,
+          "agreements": 15
+        },
+        {
+          "matrix": [
+            25,
+            0,
+            0,
+            1
+          ],
+          "scale": 1,
+          "shift": 0,
+          "agreements": 15
+        },
+        {
+          "matrix": [
+            31,
+            0,
+            0,
+            1
+          ],
+          "scale": 1,
+          "shift": 0,
+          "agreements": 15
+        },
+        {
+          "matrix": [
+            32,
+            0,
+            0,
+            1
+          ],
+          "scale": 40,
+          "shift": 0,
+          "agreements": 15
+        },
+        {
+          "matrix": [
+            33,
+            0,
+            0,
+            1
+          ],
+          "scale": 40,
+          "shift": 0,
+          "agreements": 15
+        },
+        {
+          "matrix": [
+            36,
+            0,
+            0,
+            1
+          ],
+          "scale": 40,
+          "shift": 0,
+          "agreements": 15
+        },
+        {
+          "matrix": [
+            37,
+            0,
+            0,
+            1
+          ],
+          "scale": 1,
+          "shift": 0,
+          "agreements": 15
+        },
+        {
+          "matrix": [
+            39,
+            0,
+            0,
+            1
+          ],
+          "scale": 40,
+          "shift": 0,
+          "agreements": 15
+        },
+        {
+          "matrix": [
+            40,
+            0,
+            0,
+            1
+          ],
+          "scale": 1,
+          "shift": 0,
+          "agreements": 15
+        }
+      ],
+      "affine_output": true,
+      "affine_survivors": 13440,
+      "seconds": 0.5093940829974599
+    },
+    {
+      "p": 73,
+      "n": 72,
+      "k": 18,
+      "threshold": 27,
+      "group_elements": 388944,
+      "distinct_candidates_at_threshold": 36,
+      "agreement_histogram": {
+        "27": 36
+      },
+      "above_first_order": 0,
+      "maximum_agreement": 27,
+      "candidates": [
+        {
+          "matrix": [
+            1,
+            0,
+            0,
+            1
+          ],
+          "scale": 1,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            2,
+            0,
+            0,
+            1
+          ],
+          "scale": 1,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            3,
+            0,
+            0,
+            1
+          ],
+          "scale": 72,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            4,
+            0,
+            0,
+            1
+          ],
+          "scale": 1,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            6,
+            0,
+            0,
+            1
+          ],
+          "scale": 72,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            8,
+            0,
+            0,
+            1
+          ],
+          "scale": 1,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            9,
+            0,
+            0,
+            1
+          ],
+          "scale": 1,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            12,
+            0,
+            0,
+            1
+          ],
+          "scale": 72,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            16,
+            0,
+            0,
+            1
+          ],
+          "scale": 1,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            18,
+            0,
+            0,
+            1
+          ],
+          "scale": 1,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            19,
+            0,
+            0,
+            1
+          ],
+          "scale": 72,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            23,
+            0,
+            0,
+            1
+          ],
+          "scale": 72,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            24,
+            0,
+            0,
+            1
+          ],
+          "scale": 72,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            25,
+            0,
+            0,
+            1
+          ],
+          "scale": 72,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            27,
+            0,
+            0,
+            1
+          ],
+          "scale": 72,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            32,
+            0,
+            0,
+            1
+          ],
+          "scale": 1,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            35,
+            0,
+            0,
+            1
+          ],
+          "scale": 72,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            36,
+            0,
+            0,
+            1
+          ],
+          "scale": 1,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            37,
+            0,
+            0,
+            1
+          ],
+          "scale": 1,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            38,
+            0,
+            0,
+            1
+          ],
+          "scale": 72,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            41,
+            0,
+            0,
+            1
+          ],
+          "scale": 1,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            46,
+            0,
+            0,
+            1
+          ],
+          "scale": 72,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            48,
+            0,
+            0,
+            1
+          ],
+          "scale": 72,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            49,
+            0,
+            0,
+            1
+          ],
+          "scale": 72,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            50,
+            0,
+            0,
+            1
+          ],
+          "scale": 72,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            54,
+            0,
+            0,
+            1
+          ],
+          "scale": 72,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            55,
+            0,
+            0,
+            1
+          ],
+          "scale": 1,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            57,
+            0,
+            0,
+            1
+          ],
+          "scale": 1,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            61,
+            0,
+            0,
+            1
+          ],
+          "scale": 72,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            64,
+            0,
+            0,
+            1
+          ],
+          "scale": 1,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            65,
+            0,
+            0,
+            1
+          ],
+          "scale": 1,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            67,
+            0,
+            0,
+            1
+          ],
+          "scale": 72,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            69,
+            0,
+            0,
+            1
+          ],
+          "scale": 1,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            70,
+            0,
+            0,
+            1
+          ],
+          "scale": 72,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            71,
+            0,
+            0,
+            1
+          ],
+          "scale": 1,
+          "shift": 0,
+          "agreements": 27
+        },
+        {
+          "matrix": [
+            72,
+            0,
+            0,
+            1
+          ],
+          "scale": 1,
+          "shift": 0,
+          "agreements": 27
+        }
+      ],
+      "affine_output": true,
+      "affine_survivors": 5256,
+      "seconds": 1.030163666997396
+    }
+  ]
+}

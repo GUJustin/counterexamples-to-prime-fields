@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/projective_dickson_search/search.py",
+    "--affine-output",
+    "--output",
+    "research/projective_dickson_search/affine_search.json"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 2.1838157910024165,
+  "peak_rss_kib": 32480,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}
