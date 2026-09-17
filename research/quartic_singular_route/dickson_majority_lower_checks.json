@@ -1,0 +1,157 @@
+[
+  {
+    "p": 17,
+    "L": 1,
+    "agreement_counts": [
+      8
+    ],
+    "finite_prime_condition": false,
+    "displayed_gain_met": true
+  },
+  {
+    "p": 17,
+    "L": 2,
+    "agreement_counts": [
+      7,
+      8
+    ],
+    "finite_prime_condition": false,
+    "displayed_gain_met": true
+  },
+  {
+    "p": 17,
+    "L": 4,
+    "agreement_counts": [
+      7,
+      7,
+      7,
+      6
+    ],
+    "finite_prime_condition": false,
+    "displayed_gain_met": false
+  },
+  {
+    "p": 41,
+    "L": 1,
+    "agreement_counts": [
+      20
+    ],
+    "finite_prime_condition": false,
+    "displayed_gain_met": true
+  },
+  {
+    "p": 41,
+    "L": 2,
+    "agreement_counts": [
+      19,
+      18
+    ],
+    "finite_prime_condition": false,
+    "displayed_gain_met": true
+  },
+  {
+    "p": 41,
+    "L": 4,
+    "agreement_counts": [
+      18,
+      17,
+      18,
+      18
+    ],
+    "finite_prime_condition": false,
+    "displayed_gain_met": true
+  },
+  {
+    "p": 97,
+    "L": 1,
+    "agreement_counts": [
+      48
+    ],
+    "finite_prime_condition": false,
+    "displayed_gain_met": true
+  },
+  {
+    "p": 97,
+    "L": 2,
+    "agreement_counts": [
+      44,
+      46
+    ],
+    "finite_prime_condition": false,
+    "displayed_gain_met": true
+  },
+  {
+    "p": 97,
+    "L": 4,
+    "agreement_counts": [
+      43,
+      43,
+      41,
+      42
+    ],
+    "finite_prime_condition": false,
+    "displayed_gain_met": true
+  },
+  {
+    "p": 257,
+    "L": 1,
+    "agreement_counts": [
+      128
+    ],
+    "finite_prime_condition": false,
+    "displayed_gain_met": true
+  },
+  {
+    "p": 257,
+    "L": 2,
+    "agreement_counts": [
+      120,
+      120
+    ],
+    "finite_prime_condition": false,
+    "displayed_gain_met": true
+  },
+  {
+    "p": 257,
+    "L": 4,
+    "agreement_counts": [
+      113,
+      116,
+      114,
+      113
+    ],
+    "finite_prime_condition": false,
+    "displayed_gain_met": true
+  },
+  {
+    "p": 65537,
+    "L": 1,
+    "agreement_counts": [
+      32768
+    ],
+    "finite_prime_condition": true,
+    "displayed_gain_met": true
+  },
+  {
+    "p": 65537,
+    "L": 2,
+    "agreement_counts": [
+      30714,
+      30718
+    ],
+    "finite_prime_condition": false,
+    "displayed_gain_met": true
+  },
+  {
+    "p": 65537,
+    "L": 4,
+    "agreement_counts": [
+      29054,
+      29067,
+      29034,
+      29027
+    ],
+    "finite_prime_condition": false,
+    "displayed_gain_met": true
+  }
+]

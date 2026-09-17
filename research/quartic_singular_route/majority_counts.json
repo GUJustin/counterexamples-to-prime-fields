@@ -1,0 +1,107 @@
+{
+  "exact_checks": 100,
+  "formula": "p_L=1/4+binom(2L,L)/(2*4^L)",
+  "absolute_moment": "E|S_(2L)|=2L*binom(2L,L)/4^L",
+  "uniform_gain_lower_bound": "p_L\u22121/4>=1/(4sqrt(L))",
+  "asymptotic_gain": "(1\u22121/(8L)+O(L^\u22122))/(2sqrt(pi L))",
+  "asymptotic_constant": 0.28209479177387814,
+  "rows": [
+    {
+      "L": 1,
+      "probability": "1/2",
+      "probability_float": 0.5,
+      "gain_float": 0.25,
+      "sqrtL_times_gain": 0.25,
+      "uniform_lower_gain": 0.25
+    },
+    {
+      "L": 2,
+      "probability": "7/16",
+      "probability_float": 0.4375,
+      "gain_float": 0.1875,
+      "sqrtL_times_gain": 0.26516504294495535,
+      "uniform_lower_gain": 0.17677669529663687
+    },
+    {
+      "L": 3,
+      "probability": "13/32",
+      "probability_float": 0.40625,
+      "gain_float": 0.15625,
+      "sqrtL_times_gain": 0.27063293868263705,
+      "uniform_lower_gain": 0.14433756729740646
+    },
+    {
+      "L": 4,
+      "probability": "99/256",
+      "probability_float": 0.38671875,
+      "gain_float": 0.13671875,
+      "sqrtL_times_gain": 0.2734375,
+      "uniform_lower_gain": 0.125
+    },
+    {
+      "L": 5,
+      "probability": "191/512",
+      "probability_float": 0.373046875,
+      "gain_float": 0.123046875,
+      "sqrtL_times_gain": 0.27514117691891943,
+      "uniform_lower_gain": 0.11180339887498948
+    },
+    {
+      "L": 8,
+      "probability": "22819/65536",
+      "probability_float": 0.3481903076171875,
+      "gain_float": 0.0981903076171875,
+      "sqrtL_times_gain": 0.2777241294516256,
+      "uniform_lower_gain": 0.08838834764831843
+    },
+    {
+      "L": 10,
+      "probability": "177261/524288",
+      "probability_float": 0.33809852600097656,
+      "gain_float": 0.08809852600097656,
+      "sqrtL_times_gain": 0.2785920006666513,
+      "uniform_lower_gain": 0.07905694150420949
+    },
+    {
+      "L": 16,
+      "probability": "1374282019/4294967296",
+      "probability_float": 0.3199749670457095,
+      "gain_float": 0.06997496704570949,
+      "sqrtL_times_gain": 0.27989986818283796,
+      "uniform_lower_gain": 0.0625
+    },
+    {
+      "L": 25,
+      "probability": "86170069982383/281474976710656",
+      "probability_float": 0.3061375863296085,
+      "gain_float": 0.056137586329608524,
+      "sqrtL_times_gain": 0.2806879316480426,
+      "uniform_lower_gain": 0.05
+    },
+    {
+      "L": 50,
+      "probability": "91839580582459861760395512493/316912650057057350374175801344",
+      "probability_float": 0.28979461869358936,
+      "gain_float": 0.039794618693589384,
+      "sqrtL_times_gain": 0.28139044732970003,
+      "uniform_lower_gain": 0.035355339059327376
+    },
+    {
+      "L": 100,
+      "probability": "111752192098199802367048152906008183141950760820851219311501/401734511064747568885490523085290650630550748445698208825344",
+      "probability_float": 0.2781742395046282,
+      "gain_float": 0.02817423950462821,
+      "sqrtL_times_gain": 0.2817423950462821,
+      "uniform_lower_gain": 0.025
+    },
+    {
+      "L": 1000,
+      "probability": null,
+      "probability_float": 0.25891950557292714,
+      "gain_float": 0.00891950557292716,
+      "sqrtL_times_gain": 0.28205953213014917,
+      "uniform_lower_gain": 0.007905694150420948
+    }
+  ],
+  "scope": "Independent uniform Rademacher signs. Transfer to finite-field character patterns requires the separately audited equidistribution/error bound."
+}

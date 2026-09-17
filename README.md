@@ -4,8 +4,25 @@ Working draft by Justin Thaler, September 17, 2026.
 
 [Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
-**Current research snapshot (September 17):** the main ePrint-style article
-is 170 pages with one-inch margins. A separate
+**Latest verified results (September 17, evening):** the ePrint-style article
+is 186 pages with one-inch margins. Its new Theorem R.5 proves an exact
+transition for the complete Dickson cubic-ODE solution family: a linear
+list at agreement `3/8`, but at most `ceil(epsilon^-2)` family members for
+any word at agreement `3/8 + epsilon`. A matching majority construction
+works with `p >= 2^36 L^2` and gives `L` candidates at agreement
+`3/8 + 1/(32 sqrt(L))`. The quadratic prime-size bound replaces an earlier
+exponential requirement. [Proof and independent review](research/quartic_singular_route/ROOT_SHARP_TRANSITION_AUDIT.md).
+These are bounds within the classified family, not upper bounds for the
+whole Reed--Solomon code or general proximity-gap tightness.
+
+There is still **no better.codes improvement**. The fully repaired target
+certificate exceeds its allowance by 7.65%; earlier conditional estimates
+were superseded by the complete audit. The current low-degree derivative
+theorem also does not apply directly to the benchmark's raw interpolation
+source, whose ordinary core is the full domain.
+[Benchmark limitation](research/hermite_johnson_route/BENCHMARK_RELEVANCE.md).
+
+**Other results and research history:** A separate
 [20-page first-order tightness note](research/first_order_support_audit/note/main.pdf)
 proves the sharp quarter-rate threshold for the specified interpolation
 framework. A new independently audited converse also proves that the

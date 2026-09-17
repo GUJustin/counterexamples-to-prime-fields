@@ -1,0 +1,244 @@
+\paragraph{The sharp agreement transition inside the solution bank.}
+The complete solution family in
+Proposition~\ref{prop:dickson-cubic-ordinary-core} has a precise
+list-size transition.  This is a statement about that family, not about
+all Reed--Solomon codewords.
+
+\begin{theorem}\label{thm:dickson-sharp-transition}
+Let $p\equiv1\pmod8$ be prime, $n=p-1$, $k=n/4$, and let
+$\mathcal B=\{0\}\cup\{P_a:a\in\F_p^\times/\{\pm1\}\}$ be the
+complete degree-at-most-$k-1$ solution bank of
+Proposition~\ref{prop:dickson-cubic-ordinary-core}.
+For every received word on $\F_p^\times$, including words over an
+extension field, and every $0<\varepsilon\le5/8$, at most
+$\lceil\varepsilon^{-2}\rceil$ members of $\mathcal B$ have agreement
+at least $(3/8+\varepsilon)n$.
+
+Conversely, for every $L\ge1$ and every prime $p\equiv1\pmod8$ with
+\[
+ p\ge2^{36}L^2,
+\]
+there is a received word with $L$ distinct members of $\mathcal B$
+each having agreement at least
+$(3/8+1/(32\sqrt L))n$.  The entire domain remains ordinary core
+for the same differential equation.
+Thus, allowing sufficiently large primes depending on $\varepsilon$,
+the worst-case list size within this bank is
+$\Theta(\varepsilon^{-2})$ above agreement $3/8$.
+At agreement exactly $3/8$, the word in
+Proposition~\ref{prop:dickson-cubic-ordinary-core} has $n/2$ bank members.
+\end{theorem}
+\begin{proof}
+Write $\chi$ for the quadratic character with $\chi(0)=0$.
+Fix $L$ nonzero bank members with representatives $a_1,\ldots,a_L$
+of distinct squares.  Shift each received symbol by $x^k$, so that
+agreements concern $G_a=P_a+X^k$.
+
+At a nonsquare $x$, the identities in the preceding proposition give
+$J_aG_a=0$ and $J_a^2+xG_a^2=a^2-x$.
+Thus $G_a(x)=0$ exactly when $\chi(a^2-x)=1$; otherwise
+$G_a(x)^2=a^2/x-1$.  Every nonzero value therefore occurs for at most
+one selected parameter.  If $N_0(x)$ is the zero-bucket size, then
+\begin{equation}\label{eq:dickson-zero-bucket}
+ \sum_{x\text{ nonsquare}}N_0(x)=Ln/4.
+\end{equation}
+Indeed, for each $a\ne0$,
+\[
+ \sum_{x\text{ nonsquare}}\chi(a^2-x)
+ =\frac12\left(\sum_{x\ne0}\chi(a^2-x)
+                   -\sum_x\chi(x(a^2-x))\right)=0,
+\]
+because both sums in parentheses equal $-1$.
+
+At a square $x=s^2\ne0$, Euler's criterion gives
+\[
+ G_a(s^2)=
+ \frac{(a+s)\chi(a+s)-(a-s)\chi(a-s)}{2s}.
+\]
+Away from $s=\pm a$, equal character signs give the shared value
+$+1$ or $-1$; opposite signs give $\pm a/s$.
+Values outside $\{+1,-1\}$ again occur at most once.
+At $s=\pm a$ the value is $\chi(2a)=\chi(a)$.
+Let $N_+(x),N_-(x)$ count the actual shared buckets.  Then
+\begin{equation}\label{eq:dickson-sign-buckets}
+ \sum_{x\text{ square}}N_+(x)
+ =\sum_{x\text{ square}}N_-(x)=Ln/8.
+\end{equation}
+To include endpoints correctly, consider
+\[
+ I_{a,\tau}(s)=
+ \frac{(1+\tau\chi(a+s))(1+\tau\chi(a-s))}{4},
+ \qquad \tau\in\{+1,-1\}.
+\]
+Its sum over all $s$ is $n/4$.
+Removing $s=0$ subtracts one precisely when $\tau=\chi(a)$;
+at each of $s=\pm a$, replacing $I_{a,\tau}$ by the true bucket
+indicator adds $1/2$ in precisely that case.  These corrections cancel.
+Dividing by two proves~\eqref{eq:dickson-sign-buckets}.
+
+Put
+\[
+ S(s)=\sum_{i=1}^L\bigl(\chi(s+a_i)+\chi(s-a_i)\bigr).
+\]
+This is even in $s$, and
+$N_+(s^2)-N_-(s^2)=S(s)/2+E(s^2)/2$,
+where $E(a_i^2)=\chi(a_i)$ and $E$ vanishes elsewhere.
+The $2L$ shifts are distinct.  The exact correlations
+\[
+ \sum_s\chi(s+b)^2=p-1,\qquad
+ \sum_s\chi(s+b)\chi(s+c)=-1\quad(b\ne c)
+\]
+give
+\[
+ \sum_s S(s)^2=2Lp-4L^2.
+\]
+The second identity follows, for example, by counting
+$y^2=(s+b)(s+c)$ through a change of variables to two factors
+with fixed nonzero product.
+Using $\sum_x|E(x)|=L$, Cauchy--Schwarz, and
+\eqref{eq:dickson-sign-buckets}, we obtain
+\[
+ \sum_{x\text{ square}}\max\{N_+(x),N_-(x)\}
+ \le\frac{Ln}{8}+\frac18\sqrt{n(2Lp-4L^2)}+\frac L4.
+\]
+Allowing singleton buckets costs at most one at each coordinate.
+Together with~\eqref{eq:dickson-zero-bucket}, this bounds the total
+agreements of the selected candidates with any word by
+\begin{equation}\label{eq:dickson-total-agreements}
+ \frac{3Ln}{8}+n+\frac L4+\frac18\sqrt{n(2Lp-4L^2)}.
+\end{equation}
+Symbols outside $\F_p$ contribute no agreements, so the bound also
+holds for extension-field received words.
+
+If all $L$ candidates have agreement at least
+$(3/8+\varepsilon)n$, then, since $L\le n/2$ and $p\le2n$,
+\[
+ \varepsilon
+ \le\frac1L+\frac1{4n}
+        +\frac18\sqrt{\frac{2Lp-4L^2}{L^2n}}
+ \le\frac9{8L}+\frac1{4\sqrt L}.
+\]
+If $L\ge\varepsilon^{-2}$, the right side is at most
+$\varepsilon(9\varepsilon/8+1/4)\le61\varepsilon/64$,
+a contradiction.  Adding the zero solution proves the upper bound.
+
+For the lower bound, put $M=2L$ and choose $a_1,\ldots,a_M$
+independently and uniformly in $\F_p$.  We shall retain $L$ good
+parameters while keeping the majority word built from all $M$.
+For independent uniform signs $\xi_i,\eta_i$, let $\sigma$ be the
+sign of their sum, resolving a tie as $+1$.  The Boolean indicator
+\[
+ F_i=\frac{(1+\sigma\xi_i)(1+\sigma\eta_i)}4
+\]
+has mean
+\begin{equation}\label{eq:dickson-majority-bias}
+ \mu_M=\frac14+
+ \frac{\mathbb E|\sum_i(\xi_i+\eta_i)|}{4M}
+ =\frac14+\frac12\frac{\binom{2M}{M}}{4^M}.
+\end{equation}
+The first equality follows from permutation symmetry and
+$\sigma\sum_i(\xi_i+\eta_i)=|\sum_i(\xi_i+\eta_i)|$;
+the second follows by telescoping binomial probabilities.
+Writing $b_M=\binom{2M}{M}/4^M$, one has
+$b_M\ge1/(2\sqrt M)$: this holds at $M=1$, and
+$(b_{M+1}\sqrt{M+1}/(b_M\sqrt M))^2
+=(2M+1)^2/(4M(M+1))>1$.
+
+For $s\ne0$, evaluate the multilinear extension of $F_i$ at the
+$2M$ signs $\chi(a_j+s),\chi(a_j-s)$ and call the result $Z_i(s)$.
+A zero sign is interpreted as an independent uniform sign followed by
+expectation, so $0\le Z_i(s)\le1$.
+Put $Y_i=n^{-1}\sum_{s\ne0}Z_i(s)$.
+For uniform $a$, the completed pair of signs at $s\ne0$ has law
+\[
+ \pi(\epsilon_1,\epsilon_2)
+ =\frac14(1-\epsilon_1\epsilon_2/p).
+\]
+Indeed both first moments vanish and their product moment is $-1/p$.
+Its total variation distance from the uniform law is $1/(2p)$.
+Independence of the parameters therefore gives
+\begin{equation}\label{eq:dickson-majority-mean}
+ |\mathbb E Y_i-\mu_M|\le M/(2p).
+\end{equation}
+
+We next bound the variance independently of $M$.
+Fix nonzero $s,t$ with $t\ne\pm s$.
+For one uniform parameter $a$, let $\Omega$ be the joint law of the
+completed sign pairs at $s$ and $t$, using independent completions
+of zero signs.  Its two marginals are $\pi$.
+The four shifts are distinct.  Exact pair correlations and the
+product-character bound~\cite[Lemma~17]{bgks-shifted} give, entrywise,
+\[
+ |\Omega-\pi\otimes\pi|
+ \le\frac{4/p+16/\sqrt p+1/p^2}{16}
+ \le\frac{21}{16\sqrt p}.
+\]
+Here the four cross-pair terms contribute $4/p$, the four triple
+terms and one quadruple term contribute $(4\cdot3+4)/\sqrt p$,
+and the product of the internal pair moments contributes $1/p^2$.
+The first moments vanish.  Since $\min\pi\ge1/6$, the $4$-by-$4$
+matrix obtained by dividing each centered entry by the square root
+of its two marginal probabilities has Frobenius norm at most
+$32/\sqrt p$.
+
+This bounds the norm of the conditional-expectation operator on
+mean-zero functions by $\rho=32/\sqrt p<1$.
+For $M$ independent parameter blocks the same bound holds:
+decompose each $L^2(\pi)$ into constants and mean-zero functions.
+The uncentered conditional operator preserves both spaces, acting
+as the identity on constants and with norm at most $\rho$ on the
+other space.  Its tensor product has norm at most $\rho$ on every
+sector containing a mean-zero factor.
+Consequently the covariance of the two Boolean majority indicators
+is at most $\rho/4\le8/\sqrt p$ in absolute value.
+Independent completions at $s,t$, conditional on the parameters,
+show that this covariance equals that of $Z_i(s),Z_i(t)$.
+The pairs $t=\pm s$ cost at most $2/n$ in the averaged variance.
+Thus
+\begin{equation}\label{eq:dickson-majority-variance}
+ \operatorname{Var}(Y_i)\le8/\sqrt p+2/n\le10/\sqrt p.
+\end{equation}
+
+Under the assumed bound $p\ge2^{36}L^2=2^{34}M^2$, both
+$M/(2p)$ and $M/n$ are at most $1/(32\sqrt M)$.
+Chebyshev's inequality and~\eqref{eq:dickson-majority-variance}
+give
+\[
+ \Pr\left\{|Y_i-\mathbb E Y_i|>\frac1{32\sqrt M}\right\}
+ \le\frac{10240M}{\sqrt p}\le\frac5{64}.
+\]
+The expected number of failing indices is at most $5M/64$;
+Markov's inequality bounds the probability of at least $M/2$ failures
+by $5/32$.  The probability that some $a_i=0$ or some
+$a_i=\pm a_j$ is at most $M^2/p\le2^{-34}$.
+There is therefore a choice of parameters with distinct nonzero
+squares and at least $L$ good indices, each satisfying
+$Y_i\ge\mu_M-1/(16\sqrt M)$ by
+\eqref{eq:dickson-majority-mean}.
+
+For this choice define the shifted word $W(x)$ to be zero at
+nonsquares and, for $x=s^2$, the sign of
+$\sum_j(\chi(s+a_j)+\chi(s-a_j))$, again with tie $+1$.
+The sum is even in $s$, so $W$ is well defined.
+Put $w(x)=W(x)-x^k$ and do not change this word when retaining
+only the $L$ good candidates.
+Each candidate has exactly $n/4$ nonsquare agreements.
+Away from the at most $2M$ endpoints $s=\pm a_j$, its square
+agreement indicator is exactly $Z_i(s)$.
+Removing these endpoints and dividing by two gives total agreement
+fraction at least
+\[
+ \frac14+\frac{Y_i}{2}-\frac Mn
+ \ge\frac38+\frac{b_M}{4}
+             -\frac1{32\sqrt M}-\frac1{32\sqrt M}
+ \ge\frac38+\frac1{16\sqrt M}
+ \ge\frac38+\frac1{32\sqrt L}.
+\]
+Both $W=0$ at nonsquares and $W=\pm1$ at squares make the original
+differential equation vanish identically in its derivative variable;
+thus the ordinary core remains the entire domain.
+Finally, for $0<\varepsilon\le1/64$ take
+$L=\lfloor1/(1024\varepsilon^2)\rfloor
+\ge1/(2048\varepsilon^2)$ and choose a sufficiently large prime
+$p\equiv1\pmod8$.  This proves the matching order.
+\end{proof}

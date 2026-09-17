@@ -477,6 +477,16 @@ not by itself an obstruction in this regime; an uncontrolled set of
 coordinates carrying no equation remains a limitation. As with the
 preceding results, one common identity must contain the candidates.
 
+For one explicit equation we can describe the obstruction exactly.
+Its complete polynomial solution family contains a linear-size list at
+agreement $3/8$, but every received word has only
+$O(\varepsilon^{-2})$ members of that family at agreement
+$3/8+\varepsilon$. A majority construction attains
+$\Omega(\varepsilon^{-2})$ for sufficiently large primes
+(Theorem~\ref{thm:dickson-sharp-transition}). Thus the growing list in
+this family has an exact agreement threshold. This conclusion concerns
+the classified solution family, rather than the full Reed--Solomon code.
+
 \subsection{Finite examples on circle codes}
 
 We also study a different regime: the fixed prime $p=2^{31}-1$ and
@@ -546,6 +556,15 @@ sufficiently large lengths. We include an explicit construction that
 also covers the remaining finite parameters $k\ge2$, without claiming
 priority for that construction. The separation here combines these
 list bounds with a line containing many isolated nearby points.
+
+Brakensiek, Chen, Putterman, Zhang, and Zheng~\cite{bcpzz-capacity}
+give polynomial-in-$p$ time list decoding up to capacity for arbitrary
+prime-field evaluation sets at fixed rate and fixed slack, subject to
+their field-size hypotheses. In particular, their all-rates statement
+assumes $p\ge C(R,\delta)n$; their formal Corollary~5.1 gives runtime
+and list size $p^{O_{R,\delta}(1)}$. Such polynomial list bounds allow growing lists;
+they do not imply the uniform reciprocal-gap list bounds or the
+affine-line conclusions considered here.
 
 Goyal, Guruswami, Sun, and Wootters~\cite{ggsw} give further recent
 proximity-gap and correlated-agreement bounds for random Reed--Solomon
@@ -5926,6 +5945,12 @@ ITCS 2020, LIPIcs 151, 5:1--5:32.
 \emph{Random Reed--Solomon Codes Achieve List-Decoding Capacity With
 Linear-Sized Alphabets}. Advances in Combinatorics, 2025:8.
 \url{https://doi.org/10.19086/aic.2025.8}.
+\bibitem{bcpzz-capacity} J. Brakensiek, Y. Chen, A. Putterman,
+Z. Zhang, and K. Z. Zheng.
+\emph{Algorithmic List Decoding of Reed--Solomon Codes up to Capacity}.
+arXiv:2609.08005, 2026.
+\url{https://arxiv.org/abs/2609.08005}.
+
 \bibitem{bgm} J. Brakensiek, S. Gopi, and V. Makam.
 \emph{Generic Reed--Solomon Codes Achieve List-decoding Capacity}.
 arXiv:2206.05256. \url{https://arxiv.org/abs/2206.05256}.

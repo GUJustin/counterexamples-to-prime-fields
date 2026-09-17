@@ -1,0 +1,26 @@
+[
+  {
+    "p": 17,
+    "bank_size": 8,
+    "subsets_checked": 255,
+    "status": "passed"
+  },
+  {
+    "p": 41,
+    "bank_size": 20,
+    "subsets_checked": 60,
+    "status": "passed"
+  },
+  {
+    "p": 73,
+    "bank_size": 36,
+    "subsets_checked": 108,
+    "status": "passed"
+  },
+  {
+    "p": 97,
+    "bank_size": 48,
+    "subsets_checked": 144,
+    "status": "passed"
+  }
+]
