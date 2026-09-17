@@ -1,0 +1,327 @@
+{
+  "status": "passed",
+  "field": "F7[T]/(T^2-3)",
+  "source_dimension": 2,
+  "source_maximum": 3,
+  "source_nearest_list": 4,
+  "positive_zero_blocks": [
+    {
+      "roots": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "maximum": 5,
+      "nearest_list": 4
+    },
+    {
+      "roots": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "maximum": 5,
+      "nearest_list": 4
+    },
+    {
+      "roots": [
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "maximum": 5,
+      "nearest_list": 4
+    },
+    {
+      "roots": [
+        [
+          0,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "maximum": 5,
+      "nearest_list": 4
+    },
+    {
+      "roots": [
+        [
+          0,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "maximum": 5,
+      "nearest_list": 4
+    },
+    {
+      "roots": [
+        [
+          0,
+          1
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "maximum": 5,
+      "nearest_list": 4
+    },
+    {
+      "roots": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "maximum": 5,
+      "nearest_list": 6
+    },
+    {
+      "roots": [
+        [
+          1,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "maximum": 5,
+      "nearest_list": 4
+    },
+    {
+      "roots": [
+        [
+          1,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "maximum": 5,
+      "nearest_list": 4
+    },
+    {
+      "roots": [
+        [
+          1,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "maximum": 5,
+      "nearest_list": 7
+    },
+    {
+      "roots": [
+        [
+          1,
+          1
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "maximum": 5,
+      "nearest_list": 4
+    },
+    {
+      "roots": [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "maximum": 5,
+      "nearest_list": 4
+    },
+    {
+      "roots": [
+        [
+          2,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "maximum": 5,
+      "nearest_list": 4
+    },
+    {
+      "roots": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "maximum": 5,
+      "nearest_list": 4
+    },
+    {
+      "roots": [
+        [
+          2,
+          1
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "maximum": 5,
+      "nearest_list": 7
+    },
+    {
+      "roots": [
+        [
+          3,
+          1
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "maximum": 5,
+      "nearest_list": 4
+    },
+    {
+      "roots": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "maximum": 5,
+      "nearest_list": 4
+    },
+    {
+      "roots": [
+        [
+          3,
+          1
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "maximum": 5,
+      "nearest_list": 4
+    },
+    {
+      "roots": [
+        [
+          4,
+          1
+        ],
+        [
+          5,
+          1
+        ]
+      ],
+      "maximum": 5,
+      "nearest_list": 4
+    },
+    {
+      "roots": [
+        [
+          4,
+          1
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "maximum": 5,
+      "nearest_list": 4
+    },
+    {
+      "roots": [
+        [
+          5,
+          1
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "maximum": 5,
+      "nearest_list": 6
+    }
+  ],
+  "conjugate_pair_negative_control": {
+    "maximum": 7,
+    "preserved_target": 5
+  },
+  "noise": {
+    "assignments": 1764,
+    "maximum_histogram": {
+      "2": 1596,
+      "3": 168
+    },
+    "union_bound": "1/9",
+    "actual_failure_fraction": "2/21",
+    "example": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ]
+  },
+  "scope": "Complete determining-support censuses verify every zero-block fixture and all 1764 noise assignments; negative control shows why conjugate-pair avoidance is needed. General claims rely on the separate proofs."
+}

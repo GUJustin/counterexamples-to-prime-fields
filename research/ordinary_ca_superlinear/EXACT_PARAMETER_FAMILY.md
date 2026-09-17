@@ -9,13 +9,13 @@ families over F_(p^e) with
     rate = b/d, capacity gap = 1/d,
     at least ceil((b+1)n^2/(4d^3)) nearby labels,
     no ordinary correlated agreement at that threshold,
-    p > message degree, and e <= n^b.
+    p > message degree, and fixed extension degree e = 2^b.
 
 They are strictly below characteristic-based Elias for large enough p.
 In particular b=2,d=9 gives exact rate2/9, gap1/9, at least ceil(n^2/972)
-nearby labels, and extension degree at most n^2.
+nearby labels, and extension degree four.
 The new case b=5,d=12 gives rate5/12, gap1/12, at least ceil(n^2/1152)
-nearby labels, and extension degree at most n^5.
+nearby labels, and extension degree32.
 
 ## Source upper bound and the characteristic guard
 
@@ -57,31 +57,26 @@ Delta new agreements, again T-1. Ordinary CA is absent.
 The message degree is bDelta-1<=5(2r/3+1)-1<4r+1<=p for r>5. Also T/n-rate=1/d is fixed,
 so H_p(1-T/n)<=1-T/n+1/log_2(p)<1-rate for sufficiently large p.
 
-## Extension degree
+## Fixed extension degree
 
-Work first over F_(p^2), which supplies all u new base-field coordinates
-for sufficiently large r (b,d are fixed). Add the noise in one block,
-costing extension degree u+1. Perform one single common-zero operation,
-costing degree2. There remain h=bDelta-r common zeros, where
+CONSTANT_EXTENSION_PADDING.md strengthens the field conclusion. The
+common-zero blocks are performed BEFORE the noise block, so the first
+zero block also supplies a field with enough fresh noise coordinates.
 
-    1<=h<=(b-1)Delta.
+Since Delta<=r-1 for large r, s=bDelta-r+1<=(b-1)Delta. Partition the
+common zeros into at most b-1 blocks of size at most Delta. Each needs
+one quadratic extension: choose new roots without both members of a
+Frobenius conjugate pair. Rational interpolation proves that the maximum
+increases exactly by the block size. At least one block is used, so the
+resulting field has size at least p^2.
 
-Partition these into at most b-1 nonempty blocks of size at most Delta.
-At each stage maximum minus dimension plus one is still Delta, so the
-translated-root block lemma applies. If a block has size h_j and the
-current dimension is K_j, its field-degree cost is K_j+2h_j. Since the
-final source dimension is bDelta+1, each cost is at most
-(b+1)Delta+1 <= (b+2)Delta.
-
-Moreover u+1<=(d-b-3)Delta. Therefore
-
-    e <= 4(d-b-3)(b+2)^(b-1) Delta^b <= (dDelta)^b = n^b.
-
-The last inequality holds for b=2,3,4,5 and d>=b+7: the function
-(d-b-3)/d^b decreases beyond d=b(b+3)/(b-1); check the initial integer
-values d=9,10 for b=2, d=10 for b=3, d=11 for b=4, and d=12 for b=5. The resulting
-field has size at least p^4, exceeding2N'r for large r. The compiler
-therefore needs no further extension.
+Append all noise in one further quadratic extension. A union bound over
+agreement supports proves that some outside-base-field value assignment
+preserves the maximum; its failure bound tends to zero for fixed b,d.
+The total degree is at most2^b. All tower degrees are powers of two, so
+enlarge to F_(p^(2^b)) before the final label compiler. Interpolation
+preserves the maximum under enlargement. The degree is fixed independently
+of n. The older polynomial-degree argument is superseded.
 
 This proof relies on the already established nearest-source theorem,
 preservation operations, and label compiler. The new finite parameter

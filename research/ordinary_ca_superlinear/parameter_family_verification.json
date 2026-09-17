@@ -1,6 +1,7 @@
 {
   "status": "passed",
   "cases": 283446,
+  "constant_degree_noise_bound_cases": 1448,
   "b_values": [
     2,
     3,
@@ -13,5 +14,5 @@
     300
   ],
   "m_cases": "lower endpoint, middle, new five-thirds upper endpoint",
-  "scope": "Exact integer identities, characteristic guard, block admissibility and field-degree estimates; no numerical proof of asymptotic existence."
+  "scope": "Exact integer identities, characteristic guard, old and new block admissibility, constant extension-degree accounting, and sufficient logarithmic noise-bound inequalities; no numerical proof of asymptotic source existence."
 }

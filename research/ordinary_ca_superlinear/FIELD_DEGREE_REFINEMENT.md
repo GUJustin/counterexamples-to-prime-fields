@@ -1,5 +1,9 @@
 # Quadratic extension-degree bound for exact-gap normalization
 
+**Superseded field bound:** CONSTANT_EXTENSION_PADDING.md now proves
+that extension degree four suffices at the exact parameters. The older
+polynomial-degree proof below is retained as a valid historical argument.
+
 September 17. Proved and independently checked by complete finite support
 censuses. The exact-rate/exact-gap construction can use F_(p^e) with
 e<=4n^2. It is not asserted over fixed-degree extensions or prime fields.

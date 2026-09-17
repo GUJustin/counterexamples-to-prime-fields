@@ -120,21 +120,21 @@ Corollary N.3 strengthens the parameter quantifier: at exact rate1/8 and
 exact capacity gap1/16, at least ceil(n^2/8192) nearby labels coexist with
 no ordinary correlated agreement. Boundary-preserving additions of new
 received values and common zeros normalize the descended nearest list.
-The ambient field is a finite extension of growing degree; it is not
-asserted quadratic or prime. Characteristic still exceeds the message
+The ambient field can be F_(p^4), with extension degree fixed independently
+of length; it is not asserted quadratic or prime. Characteristic still exceeds the message
 degree, so this is within the current paper's large-characteristic
 capacity field class. It proves that quadratic length dependence cannot
 in general be removed even for ordinary CA at one exact positive gap.
 It does not establish first-order-regime tightness or gap-exponent growth.
 
-Proposition N.4 further bounds the required extension degree by e<=4n^2.
+Proposition N.4 now fixes the required extension degree at four.
 Its block-padding proof preserves the exact parameters and quadratic
 exception count; it does not change the scope restrictions above.
 
-The exact-parameter Corollary N.5 gives rate b/d and gap1/d for b=2,3,4
+The exact-parameter Corollary N.5 gives rate b/d and gap1/d for b=2,3,4,5
 and d>=b+7, with ceil((b+1)n^2/(4d^3)) nearby labels without ordinary
-CA. Characteristic exceeds message degree and e<=n^b. In particular,
-rate2/9 and gap1/9 give ceil(n^2/972) labels and e<=n^2. These are still
+CA. Characteristic exceeds message degree and e=2^b is fixed. In
+particular, rate2/9 and gap1/9 give ceil(n^2/972) labels over F_(p^4). These are still
 capacity-regime examples over extensions, not first-order or prime-field
 tightness.
 

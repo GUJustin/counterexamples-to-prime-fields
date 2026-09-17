@@ -1,12 +1,12 @@
 {
   "command": [
     "/Users/jthaler/.local/bin/python3.12",
-    "research/ordinary_ca_superlinear/verify_parameter_family.py"
+    "research/ordinary_ca_superlinear/verify_constant_extension.py"
   ],
   "reason": "completed",
   "returncode": 0,
-  "seconds": 1.1375406660081353,
-  "peak_rss_kib": 18080,
+  "seconds": 0.5675216660019942,
+  "peak_rss_kib": 3408,
   "rss_limit_mib": 384,
   "time_limit_seconds": 60
 }

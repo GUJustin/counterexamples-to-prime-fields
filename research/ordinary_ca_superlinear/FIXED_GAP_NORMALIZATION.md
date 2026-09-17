@@ -1,8 +1,9 @@
 # Exact fixed-gap ordinary-CA quadratic lower bound
 
 September 17, 2026. Proof checked alongside independent exact finite computations.
-The construction uses finite extensions of growing degree, NOT necessarily
-quadratic extensions and NOT prime ambient fields. No novelty claim.
+The current construction uses F_(p^4), with degree fixed independently
+of length; see CONSTANT_EXTENSION_PADDING.md. It is not asserted over
+quadratic extensions or prime ambient fields. No novelty claim.
 
 Starting from the descended source in PROOF.md, one can obtain exact
 rate1/8, exact capacity gap1/16, and at least ceil(n^2/8192) nearby
@@ -89,19 +90,10 @@ all sufficiently large p by H_p(1-T/n)<=1-T/n+1/log_2(p).
 
 ## Field-size scope
 
-The construction is not claimed over F_(p^2). A direct implementation of
-the preservation lemmas uses a tower of quadratic extensions, one at each
-padding step, and possibly one final enlargement. Its extension degree
-can grow with n. The assertion concerns the full large-characteristic
-field class, where the cited capacity bounds are uniform in field size.
-The independent quadratic-extension result with gap merely bounded below
-remains stronger in its field-degree restriction and is retained separately.
-
-
-## Polynomial extension degree
-
-The block operations in FIELD_DEGREE_REFINEMENT.md now replace the long
-tower by a field F_(p^e) with e<=4n^2, without changing any code parameters
-or the exceptional count. Main-paper Proposition N.4 contains the proof.
-This still permits growing degree and does not assert a quadratic or prime
-ambient field for the exact-gap construction.
+CONSTANT_EXTENSION_PADDING.md and main-paper Proposition N.4 now prove
+that F_(p^4) suffices for the exact rate1/8, gap1/16 construction.
+The extension degree is fixed independently of length. The earlier
+polynomial-degree argument in FIELD_DEGREE_REFINEMENT.md remains a valid
+historical proof but is superseded by quadratic block operations.
+The independent F_(p^2) result with gap only bounded below retains its
+stronger quadratic-extension restriction.

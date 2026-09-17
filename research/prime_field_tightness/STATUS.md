@@ -1,5 +1,16 @@
 # Prime-field upper-bound tightness: target and evidence
 
+Latest September17 strengthening: exact rate1/8 and gap1/16 ordinary-CA
+quadratic exceptions now exist over F_(p^4), with fixed extension degree.
+The exact family b/d,1/d uses fixed degree2^b for b=2,3,4,5.
+A probabilistic noise block and a conjugate-avoiding common-zero block
+each require only a quadratic extension. Independent complete finite
+checks include an essential-hypothesis negative control. See
+../ordinary_ca_superlinear/CONSTANT_EXTENSION_PADDING.md.
+This supersedes growing-degree qualifications in historical entries
+below; prime-ambient and first-order limitations remain.
+
+
 Latest September 17 research: the quadratic-residue indicator on F_p*,
 p=4k+1, has only six degree-at-most-k candidates above agreement 5k/3;
 for degree less than k only the two constants remain. A polynomial abc
@@ -796,7 +807,7 @@ complete bank consists of two twisted orbits. Therefore fewer than2^22
 complete-bank members can simultaneously lie above the first-order
 quarter-rate curve, uniformly in p. This is a restricted-family barrier,
 not a general constant-list theorem, and does not treat punctured domains.
-Exact character branches and orbit identities pass at eight primes.
+Exact character branches and orbit identities pass at four primes.
 Next intrinsic search should change the polynomial family or domain
 substantially rather than merely optimize words on this full-domain bank.
 

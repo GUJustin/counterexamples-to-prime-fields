@@ -224,8 +224,8 @@ inequality for large $p$, as before.
 This proves that quadratic dependence on length is sometimes unavoidable
 for ordinary correlated-agreement exceptions even at a fixed positive
 capacity gap, in the full large-characteristic field class. The extension
-degree can grow with $n$: Corollary~\ref{cor:ordinary-ca-fixed-gap} is not
-asserted over quadratic extensions or prime fields. Theorem~\ref{thm:ordinary-ca-superlinear}
+degree is reduced to four below; Corollary~\ref{cor:ordinary-ca-fixed-gap}
+is not asserted over quadratic extensions or prime fields. Theorem~\ref{thm:ordinary-ca-superlinear}
 retains the stronger quadratic-extension restriction with a gap only
 bounded below. Neither assertion establishes first-order-regime tightness.
 
@@ -243,79 +243,81 @@ all witnesses are independently replayed in
 \path{research/dickson_nearest_threshold/}. This finite result does
 not establish maximum agreement $3/8$ for an unbounded family.
 
-\subsection{A polynomial bound on the extension degree}
+\subsection{A fixed extension degree}
 
 \begin{proposition}\label{prop:ordinary-ca-field-degree}
 The field in Corollary~\ref{cor:ordinary-ca-fixed-gap} can be taken to be
-$\F_{p^e}$ with $e\le4n^2$.
+$\F_{p^4}$, with extension degree four independent of length.
 \end{proposition}
 \begin{proof}
-We replace the long tower by two block operations. First, $u$ new received
-values can be appended simultaneously in an extension of degree $u+1$:
-choose their distinct coordinates in the current field $F$, and choose
-values $b_1,\ldots,b_u$ such that $1,b_1,\ldots,b_u$ are linearly
-independent over $F$. A degree-$<K$ candidate with a new agreement has
-at most $K$ total agreements. Otherwise $K+1$ of its agreements, including
-a new one, give a Vandermonde row dependence over $F$ with every coefficient
-nonzero, contradicting that independence. Thus a true maximum $M\ge K$
-is preserved, as is every selected nearest witness.
+We use two block operations. Throughout, a word on $N$ distinct points
+of $F=\F_q$ has true maximum agreement $M\ge K$ with degree-$<K$
+polynomials, and $\Delta=M-K+1$.
 
-For the second block operation, suppose $1\le s\le M-K+1$ and choose
-distinct $c_1,\ldots,c_s\in F$. Take $\theta$ of degree $D=K+2s$ over
-$F$, and put
+\emph{A common-zero block.}
+For $1\le s\le\Delta$, choose $s$ distinct elements $A$ of
+$E=\F_{q^2}\setminus F$ with $A\cap A^q=\varnothing$; there are
+$(q^2-q)/2$ conjugate pairs available. Let $Z=\prod_{a\in A}(X-a)$.
+Multiply the old word by $Z$, append $A$ with received value zero,
+and increase dimension to $K+s$. The maximum becomes exactly $M+s$.
+Indeed, suppose $Q$ of degree $<K+s$ has more agreements. Divide out
+its $j$ matching new factors, leaving $R$ of degree $<K+h$ and a
+remaining locator $Z_0$ of degree $h=s-j$. On at least
 \[
- Z(X,Y)=\prod_{i=1}^s(X-Y-c_i).
+ \ell=M+h+1=K+\Delta+h\ge K+2h
 \]
-Append coordinates $\theta+c_i$ with value zero, multiply every old
-received value and selected polynomial by $Z(X,\theta)$, and increase
-dimension to $K+s$. We claim the maximum is exactly $M+s$.
+old coordinates, $R(x)=Z_0(x)w(x)$. Coefficientwise $q$-Frobenius
+preserves these equations, so $RZ_0^{(q)}-R^{(q)}Z_0$ has $\ell$
+roots and degree $<K+2h$; it is zero. Thus the reduced rational
+function $R/Z_0$ lies in $F(X)$, by uniqueness of its expression
+with monic denominator. That denominator divides both $Z_0$ and
+$Z_0^{(q)}$, which are coprime by the choice of $A$. Therefore $R/Z_0$
+is a polynomial of degree $<K$ with $\ell>M$ agreements, a contradiction.
+Multiplying every selected old nearest polynomial by $Z$ attains $M+s$.
 
-Suppose a degree-$<K+s$ polynomial $Q$ has $M+s+1$ agreements. At least
-$M+1\ge K+s$ are old, so interpolation lifts it to a polynomial
-$\widetilde Q(X,Y)$ over $F$ with $X$-degree $<K+s$ and $Y$-degree
-at most $s$. At every old agreement $x$,
-\[
- \widetilde Q(x,Y)=Z(x,Y)w(x)
-\]
-as a polynomial identity: the difference has $Y$-degree $\le s<D$ and
-vanishes at $\theta$. For each new match $\theta+c_i$, the polynomial
-$\widetilde Q(Y+c_i,Y)$ has degree $<K+2s=D$ and vanishes at $\theta$.
-It is therefore zero identically, so $X-Y-c_i$ divides $\widetilde Q$.
-Divide out all $j$ matching new factors from both $\widetilde Q$ and $Z$.
-The resulting $Q_0,Z_0$ have $X$-degrees $<K+h,h$ and $Y$-degrees
-$\le h,h$, respectively, where $h=s-j$.
+\emph{A noise block.}
+Choose $u$ fresh coordinates in $F$, requiring $N+u\le q$, and choose
+independent uniform received values in $E\setminus F$. Write $Q=q^2$.
+A candidate with $M+1$ agreements and at least $K$ old agreements has
+coefficients in $F$, so it cannot match a new value. For a fixed support
+with $l<K$ old coordinates and $j=M+1-l$ new ones, at most $Q^{K-l}$
+new-value tuples are possible. Hence the probability that the maximum
+increases is at most
+\begin{align*}
+ &\sum_{l=0}^{K-1}\binom Nl\binom u{M+1-l}
+       \frac{Q^{K-l}}{(Q-q)^{M+1-l}}\\
+ &\hspace{2em}\le 2^{N+u}Q^{-\Delta}(1-1/q)^{-u},
+\end{align*}
+with impossible binomial terms interpreted as zero. Whenever this is
+less than one, some choice preserves the exact maximum and every
+selected nearest witness. Both operations' maxima persist over further
+extensions by interpolation on as many matching points as the dimension.
 
-Let $B(X)=(-1)^h[Y^h]Q_0(X,Y)$. On every old agreement, $B(x)=w(x)$.
-Each $Y$-coefficient of $Q_0-Z_0B$ has $X$-degree $<K+2h$ and at least
-$M+h+1\ge K+2h$ old roots. Consequently $Q_0=Z_0B$, whose $X$-degree
-forces $\deg B<K$, contradicting the old maximum. The selected witnesses
-attain $M+s$ after multiplication by $Z$, proving the claim.
-
-Apply these operations to the parameters of
-Corollary~\ref{cor:ordinary-ca-fixed-gap}. Start over $\F_{p^2}$, perform
-the new-value block of size $u=13\Delta-3r$, and then perform two ordinary
-single-common-zero operations, costing degree $4$. The remaining number
-of common zeros is
+Apply the operations to the source of
+Corollary~\ref{cor:ordinary-ca-fixed-gap}. By
+Corollary~\ref{cor:dickson-word-first-order-barrier}, its descended
+maximum satisfies $m\le5r/3$, so for large $r$,
 \[
- s'=2\Delta-r-1\in[1,\Delta].
+ r/2+1\le\Delta\le2r/3+1\le r-1.
 \]
-The current dimension and maximum are $r+2,m+2$, whose difference plus
-one is $\Delta$. The translated-root block therefore applies with
-$D=r+2+2s'\le3r+4$. No roots of unity need be adjoined. The total
-extension degree satisfies
-\[
- e\le8(u+1)D\le8(10r+14)(3r+4)
-   <4(8r+16)^2\le4n^2.
-\]
-The resulting field already has cardinality at least $p^4\ge2N'r$,
-so the final label compiler needs no additional extension.
+First add the $s=2\Delta-r+1$ common zeros in one block over
+$\F_{p^2}$, since $1\le s\le\Delta$. This field then supplies the
+$u=13\Delta-3r$ fresh noise coordinates. The noise block uses
+$\F_{p^4}$ and succeeds with positive probability for all sufficiently
+large $r$: after the zero block, $N+u=O(r)$, $\Delta\ge r/2$, and
+$q=p^2\ge16r^2$, so the failure bound has logarithm
+$-\Omega(r\log r)+O(r)$. The final label compiler operates in this
+same field, whose size exceeds $2N'r$ for large $r$.
+The exact parameters and ordinary-CA exclusion
+are unchanged.
 \end{proof}
 
-Complete determining-support checks for the block operations over
-$\F_{7^4}$ and $\F_{7^6}$ are recorded in
-\path{research/ordinary_ca_superlinear/verify_block_padding.py}.
-The bound $e\le4n^2$ is a field-size refinement, not a fixed-degree
-extension or prime-field claim.
+Complete support censuses over $\F_{49}$ check $21$ common-zero blocks,
+a conjugate-pair negative control, and all $1{,}764$ outside-base-field
+assignments for a two-coordinate noise block. The latter has $1{,}596$
+successful assignments, and its refined failure bound is $1/9$.
+The checks are in
+\path{research/ordinary_ca_superlinear/verify_constant_extension.py}.
 
 \subsection{A family of exact rates and gaps}
 
@@ -327,12 +329,12 @@ with at least
  \left\lceil\frac{(b+1)n^2}{4d^3}\right\rceil
 \]
 nearby challenges and no ordinary correlated agreement at that threshold.
-The characteristic exceeds the message degree, $e\le n^b$, and the
+The characteristic exceeds the message degree, $e=2^b$ is fixed, and the
 radius is strictly below characteristic-based Elias for sufficiently
 large $p$. In particular, $b=2,d=9$ gives rate $2/9$, gap $1/9$,
-at least $\lceil n^2/972\rceil$ nearby challenges, and $e\le n^2$.
+at least $\lceil n^2/972\rceil$ nearby challenges, over $\F_{p^4}$.
 The case $b=5,d=12$ gives rate $5/12$, gap $1/12$, at least
-$\lceil n^2/1152\rceil$ nearby challenges, and $e\le n^5$.
+$\lceil n^2/1152\rceil$ nearby challenges, over $\F_{p^{32}}$.
 \end{corollary}
 \begin{proof}
 Corollary~\ref{cor:dickson-word-first-order-barrier} bounds the original
@@ -370,27 +372,23 @@ Thus ordinary correlated agreement is absent. Also
 $b\Delta-1\le5(2r/3+1)-1<4r+1\le p$ for $r>5$, and the fixed gap $1/d$ gives strict Elias
 for large $p$.
 
-For the extension degree, start over $\F_{p^2}$, which supplies all
-$u$ new coordinates for sufficiently large $r$. Add the new received
-values in one block, of extension degree $u+1$, and perform one
-single-common-zero operation, of degree two. There remain
-$h=b\Delta-r\le(b-1)\Delta$ common zeros. Partition these into at most
-$b-1$ blocks, each of size at most $\Delta$. The maximum minus dimension
-plus one remains $\Delta$, so each translated-root block applies.
-A block of size $h_j$ at current dimension $K_j$ has degree cost
-$K_j+2h_j\le(b+1)\Delta+1\le(b+2)\Delta$. Hence
-\[
- e\le4(d-b-3)(b+2)^{b-1}\Delta^b\le(d\Delta)^b=n^b.
-\]
-The last inequality follows by checking the initial integer values
-$d=9,10$ for $b=2$, $d=10$ for $b=3$, $d=11$ for $b=4$, and $d=12$ for $b=5$,
-and using that $(d-b-3)/d^b$ decreases for
-$d\ge b(b+3)/(b-1)$. The resulting field has size at least $p^4$,
-which exceeds $2N'r$ for large $r$, so the compiler needs no further
-extension.
+For the extension degree, use the two block operations from
+Proposition~\ref{prop:ordinary-ca-field-degree}, adding common zeros
+before noise. Since $\Delta\le r-1$, the number $s=b\Delta-r+1$ of
+common zeros is at most $(b-1)\Delta$. Partition them into at most
+$b-1$ blocks of size at most $\Delta$. Each uses one quadratic
+extension and preserves $\Delta$. The resulting field has size at least
+$p^2$, supplying all fresh noise coordinates for large $r$.
+Add the $u$ noise values in one further quadratic extension. For fixed
+$b,d$, the failure bound has logarithm $-\Omega(r\log r)+O_{b,d}(r)$.
+The extension degree is therefore at most $2^b$. All degrees in the
+tower are powers of two, so one may enlarge to the fixed field
+$\F_{p^{2^b}}$ before running the label compiler. Interpolation
+preserves the nearest maximum under that enlargement, and this field
+already has size greater than $2N'r$ for large $r$.
 \end{proof}
 
 The exact integer identities and extension-degree accounting are checked
 in \path{research/ordinary_ca_superlinear/verify_parameter_family.py}.
-This corollary still allows growing extension degree and does not place
-the examples above the first-order agreement curve.
+The extension degree is now fixed independently of length. The examples
+still do not lie above the first-order agreement curve or in prime ambient fields.
