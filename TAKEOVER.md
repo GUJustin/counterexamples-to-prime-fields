@@ -1060,3 +1060,41 @@ norm/gcd-of-minorsapproachcouldlocateexceptions. No suchsearchrunyet.
 Couldalsoseekotherselectedsublists/movingdomains; currentauditsdonot
 excludeallthose. Mainfixedgapshortdomainquestionstillopen.
 Noactiveprocess; goaluntil12:30UTC.
+
+
+## September 17 ~06:42 UTC — exceptional-prime census and complete n16 certificate
+
+Previousgoalturnprogress909c4e6d. Newscan_cyclotomic_exceptions.cpp tests
+everyprimitive-rootembedding forq1modn: n16/40 q<=100000,n96/192
+q<=20000. Inputsareexactseed-supportlogindices. Counts1188,582,71,36
+primesand9504,9312,2272,2304embeddings(total23392). Onlyexceptionsare
+seedcharacteristics17,41,97,193 withrootgorg^-1,rankn-K-1. Nonewprime.
+Independentverify_cyclotomic_exception_scan.py replaysall8exceptions,
+2full-ranknewsamplesperseed,andprime/embeddingcoveragecounts. Guarded
+scan20.3sec~2.4MiB,replay5.7sec.
+
+Completeall-characteristicn16obstructionin cyclotomic16_integral_audit.py:
+workZ[zeta16]=Z[X]/(X^8+1), clearLagrangerowsbyanchorVandermonde,
+checkeverydeg<4monomialannihilated. Normalize4wordvalueszero, restrict
+scalars:integer128x96matrix. Square96-rowminordetabs=2^161*17²;
+rowlatticeindexviaHNF=2^151*17². Henceonlypossibleoddcharacteristic17
+foranyprimitive-rootembedding(evenoverextensions); char2hasno16distinct
+roots. Originalchar17works, givingcompleteclassificationforthisfixed
+fullpattern. Nonzerominoralonealreadyprovesexclusion.
+Initialdirect128-columnHNFhit384MiBguardandstopped; final96-column
+modularHNFusesknownminordetmodulus,completes1.2sec~59MiB. Initial
+failedreportretainedseparately. CYCLOTOMIC_EXCEPTION_AUDIT.mdexplainsall.
+DoNOTgeneralizelarger-seedboundedscantobeyondcutoffsormovingdomains.
+
+Paperclarification: actual-list-sizeTheorem5.1 nowexplicitlystates
+ALLremainingp-Mlinepointshavedistance1-rho=theta+eta, maximumpossible
+RSdistance. Thiswasalreadyimpliedbyexactnearbyclassificationplus
+interpolationatKpoints; notanewconstruction. IntroandREADMEexplain
+lineargloballists/exponentiallymanyuniquelynearbylinepointswithall
+otherpointsmaximallyfar. Separatesconceptualmessagefromhuge-list
+densefamilies. Addedexactfarprofileassertiontoexistingcurveendpoint
+checker, plusaffinelinefixturee1,p101,n5,k2. Sevenfixturesnow, all
+parameters/codewordsexhausted; guardedPASS. Makefilecount78unchanged.
+PDF122pagesclean, reviewed2,40,41; finalparagraphsplitsforreadability
+requirelastbuildcompletioncheck. Nootheractiveprocess.
+Goalactiveuntil12:30UTC.

@@ -70,4 +70,4 @@ One must **not** replace the formal degree by the degree after reduction modulo 
 
 ## Reproducible validation
 
-Run `python3 research/curve_audit/verify_curve_endpoint.py`. Six fixtures have degrees 2 through 5, include k=2 and k=3, and enumerate every field parameter and every codeword. The checker also constructs the attained degree-e concurrency curve and verifies exact agreement supports. The output is written beside the checker.
+Run `python3 research/curve_audit/verify_curve_endpoint.py`. Seven fixtures have degrees 1 through 5, include k=2 and k=3, and enumerate every field parameter and every codeword. The checker also constructs the attained degree-e concurrency curve and verifies exact agreement supports. Every parameter outside the nearby set is checked to have maximum agreement exactly k, hence covering-radius distance. The output is written beside the checker.

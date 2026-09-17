@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/dickson_fixed_gap/cyclotomic16_integral_audit.py"
+  ],
+  "reason": "rss_limit",
+  "returncode": -15,
+  "seconds": 23.77398224999706,
+  "peak_rss_kib": 396640,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

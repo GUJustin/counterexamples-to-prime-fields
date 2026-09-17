@@ -1,0 +1,94 @@
+[
+  {
+    "seed_prime": 17,
+    "n": 16,
+    "K": 4,
+    "limit": 100000,
+    "exceptions": [
+      {
+        "p": 17,
+        "root": 3,
+        "embedding": 1,
+        "rank": 11
+      },
+      {
+        "p": 17,
+        "root": 6,
+        "embedding": 15,
+        "rank": 11
+      }
+    ],
+    "primes": 1188,
+    "embeddings": 9504,
+    "native_hits": 2
+  },
+  {
+    "seed_prime": 41,
+    "n": 40,
+    "K": 10,
+    "limit": 100000,
+    "exceptions": [
+      {
+        "p": 41,
+        "root": 6,
+        "embedding": 1,
+        "rank": 29
+      },
+      {
+        "p": 41,
+        "root": 7,
+        "embedding": 39,
+        "rank": 29
+      }
+    ],
+    "primes": 582,
+    "embeddings": 9312,
+    "native_hits": 2
+  },
+  {
+    "seed_prime": 97,
+    "n": 96,
+    "K": 24,
+    "limit": 20000,
+    "exceptions": [
+      {
+        "p": 97,
+        "root": 5,
+        "embedding": 1,
+        "rank": 71
+      },
+      {
+        "p": 97,
+        "root": 39,
+        "embedding": 95,
+        "rank": 71
+      }
+    ],
+    "primes": 71,
+    "embeddings": 2272,
+    "native_hits": 2
+  },
+  {
+    "seed_prime": 193,
+    "n": 192,
+    "K": 48,
+    "limit": 20000,
+    "exceptions": [
+      {
+        "p": 193,
+        "root": 5,
+        "embedding": 1,
+        "rank": 143
+      },
+      {
+        "p": 193,
+        "root": 116,
+        "embedding": 191,
+        "rank": 143
+      }
+    ],
+    "primes": 36,
+    "embeddings": 2304,
+    "native_hits": 2
+  }
+]

@@ -129,7 +129,9 @@ require
 \]
 Thus the exponent must grow almost quadratically in the reciprocal
 gap, rather than linearly. The examples remain strictly below the
-characteristic-based Elias radius. The line constructions give a
+characteristic-based Elias radius.
+
+The line constructions give a
 corresponding obstruction to the proposed coefficient multiplying
 $n$ in an exceptional-parameter bound. The failure can be nearly total:
 at half rate, more than $99.9999\%$ of a line can be nearby although
@@ -145,11 +147,17 @@ grow (Corollary~\ref{fg:growing-far}).
 These results do not establish superlinear growth in $n$ at one fixed
 positive gap on short prime-field domains; that stronger question remains
 open.
+
 In the fixed-gap line examples, every nearby word can have a unique
 nearby codeword. Thus their many nearby parameters do not arise from
 decoding ambiguity at individual points of the line. This uniqueness
 is a statement about the displayed line, not about all received words
 for the code.
+
+A separate construction keeps the code's global maximum list size linear
+in $n$, yet has exponentially many uniquely nearby points on a line;
+every other point on that line is as far from the code as any word can be
+(Theorem~\ref{al:separation}).
 
 \subsection{The main result}
 
@@ -2107,7 +2115,9 @@ $C=\RS(\F_p,D,k)$ with the following properties at
 $\ell_C(\theta)=n-k-1$.
 \item An affine line $f_0+zf_1$ has exactly
 $M=\binom n{k+1}$ parameters within distance $\theta$ of $C$.
-Each has a unique nearby codeword $p_z$.
+Each has a unique nearby codeword $p_z$. All remaining $p-M$ points
+have distance $1-\rho=\theta+1/n$, the maximum possible distance
+from this code.
 \item Every parametrized codeword line contains at most $n-k$ of these
 selected pairs $(z,p_z)$, and this bound is attained. The pair
 $(f_0,f_1)$ has no correlated agreement on $k+1$ coordinates.
@@ -2207,7 +2217,11 @@ $f_z$ on at least $k+1$ coordinates, then $f_z-P$ is monic of degree
 $k+1$ and must equal $V_T$ for its root set $T\subset D$.
 Comparing the coefficient of $X^k$ gives $z=s_T$. Distinct subset sums
 therefore identify both $T$ and $P$ uniquely. There are exactly $M$
-nearby parameters, each with one nearby codeword.
+nearby parameters, each with one nearby codeword. Any received word
+agrees with some degree-below-$k$ polynomial on at least $k$ coordinates,
+by interpolation. Every remaining parameter therefore has maximum
+agreement exactly $k$, hence distance $1-\rho$. Since $p>M$, such
+maximally distant points exist on the same line.
 
 \emph{Bound concurrency.}
 Suppose $P_0+zP_1$ contains $m$ selected pairs, and let $b$ count the

@@ -24,13 +24,13 @@ def vanishing_values(subset, domain, p):
 
 
 def main():
-    fixtures = [(4, 2, 2, 13, 10), (4, 2, 3, 31, 15),
+    fixtures = [(5, 2, 1, 101, 0), (4, 2, 2, 13, 10), (4, 2, 3, 31, 15),
                 (4, 2, 4, 61, 59), (4, 2, 5, 151, 15),
                 (5, 2, 2, 79, 3), (5, 3, 3, 31, 0)]
     results = []
     for n, k, e, p, shift in fixtures:
         assert all(p % d for d in range(2, int(p**0.5)+1))
-        assert p % e == 1
+        assert (p-1) % e == 0
         domain = [2**i for i in range(n)]
         subsets = list(combinations(range(n), k+1))
         labels = {sum(domain[i] for i in support) % p: support
@@ -56,13 +56,16 @@ def main():
                  +h*(v-pow(x, k, p))) % p
                 for x, v in zip(domain, anchor_vanishing))
             witnesses = []
+            max_agreements = 0
             for codeword in codewords:
                 support = tuple(i for i in range(n)
                                 if received[i] == codeword[i])
                 distance_checks += 1
+                max_agreements = max(max_agreements, len(support))
                 if len(support) >= k+1:
                     witnesses.append((codeword, support))
             assert len(witnesses) == (1 if h in labels else 0)
+            assert max_agreements == (k+1 if h in labels else k)
             if witnesses:
                 witness, support = witnesses[0]
                 assert support == labels[h]
@@ -73,12 +76,13 @@ def main():
         assert concurrency == e*(n-k)
         results.append(dict(n=n, k=k, degree=e, field=p, shift=shift,
                             nearby_pairs=nearby,
+                            maximally_far_parameters=p-nearby,
                             attained_concurrency=concurrency,
                             codeword_distance_checks=distance_checks))
     result = dict(status='passed', fixtures=results,
                   total_distance_checks=sum(r['codeword_distance_checks']
                                             for r in results),
-                  scope='All parameters and codewords of six endpoint curves.')
+                  scope='All parameters and codewords of seven endpoint curves, including an affine line; exact covering-radius profile away from the nearby parameters.')
     Path(__file__).with_suffix('.json').write_text(json.dumps(result, indent=2)+'\n')
     print(json.dumps(result, indent=2))
 

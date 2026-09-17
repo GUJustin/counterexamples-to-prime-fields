@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "results": [
+    {
+      "seed_prime": 17,
+      "primes": 1188,
+      "embeddings": 9504,
+      "exception_replays": 2,
+      "full_rank_samples": [
+        97,
+        99809
+      ]
+    },
+    {
+      "seed_prime": 41,
+      "primes": 582,
+      "embeddings": 9312,
+      "exception_replays": 2,
+      "full_rank_samples": [
+        241,
+        99961
+      ]
+    },
+    {
+      "seed_prime": 97,
+      "primes": 71,
+      "embeddings": 2272,
+      "exception_replays": 2,
+      "full_rank_samples": [
+        193,
+        19777
+      ]
+    },
+    {
+      "seed_prime": 193,
+      "primes": 36,
+      "embeddings": 2304,
+      "exception_replays": 2,
+      "full_rank_samples": [
+        577,
+        19777
+      ]
+    }
+  ],
+  "total_embeddings": 23392,
+  "seconds": 5.143618083999172,
+  "scope": "Independent exception and sample rank replay, plus exact prime/embedding-count coverage. The full bounded census is C++; no beyond-cutoff claim except the separate n16 integral certificate."
+}

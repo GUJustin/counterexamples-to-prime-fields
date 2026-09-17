@@ -59,7 +59,8 @@ and radii strictly below the paper's characteristic-based Elias radius.
   whole-line uniqueness is not asserted for that realization.
 - A code can have maximum list size exactly `n-k-1` and nevertheless
   have `binom(n,k+1)` uniquely nearby points on an affine line without
-  correlated agreement. A puncturing bound shows that this parameter
+  correlated agreement. Every other point of that line is at the code's
+  maximum possible distance. A puncturing bound shows that this parameter
   count is optimal at the one-coordinate-gap endpoint.
 - Suitable generic domains have an exact list profile at every integer
   radius below the redundancy. The profile persists under field extension

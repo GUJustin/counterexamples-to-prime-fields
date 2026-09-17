@@ -63,3 +63,8 @@ these fixed cyclotomic patterns regain a nontrivial kernel. For a prime
 q=1 mod n, different primitive nth roots can give different specializations;
 a search of just one embedding would not cover all possibilities.
 No new fixed-gap short-domain list or benchmark improvement is claimed.
+
+The follow-up `CYCLOTOMIC_EXCEPTION_AUDIT.md` records a23392-embedding
+bounded scan and a complete integral certificate for n16: only the
+original characteristic17 can realize the full support pattern on the
+natural cyclotomic domain. Larger-seed conclusions remain bounded.

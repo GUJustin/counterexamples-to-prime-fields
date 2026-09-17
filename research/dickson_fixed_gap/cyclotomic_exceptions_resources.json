@@ -1,0 +1,12 @@
+{
+  "command": [
+    "tmp/scan_cyclotomic_exceptions",
+    "research/dickson_fixed_gap/cyclotomic_exception_inputs.txt"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 20.30643529200097,
+  "peak_rss_kib": 2400,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}
