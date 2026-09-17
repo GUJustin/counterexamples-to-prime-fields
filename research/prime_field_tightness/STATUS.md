@@ -332,3 +332,13 @@ and other seeds remain open. Independent verification does not assert
 the generator's rank216; the direct obstruction is sufficient.
 No expanded lifting census planned without a new symbolic reason.
 Main paper stays157pages. Continue until22:00UTC,18:00 Eastern.
+
+The follow-up SMOOTHNESS_METHOD_LIMIT.md explains why a full-row-rank
+lifting census cannot meet the growing-list target. For L distinct
+candidates, degree<k, selected agreements A_i and m covered nodes, the
+eliminated incidence Jacobian has kernel dimension at least k+4: common
+polynomial addition, scaling, and three projective node motions. Thus
+left-nullity >= sum_i(A_i-k)-2m+k+4. At fixed gap full row rank requires
+L*eta<=2-rho-4/n. This is a limitation of that certificate method only;
+exactly dependent equations can still define a liftable smooth locus.
+A scalable construction must control these dependencies explicitly.
