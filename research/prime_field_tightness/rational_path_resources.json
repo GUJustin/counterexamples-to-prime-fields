@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/prime_field_tightness/check_rational_path.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 2.256328832998406,
+  "peak_rss_kib": 19296,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

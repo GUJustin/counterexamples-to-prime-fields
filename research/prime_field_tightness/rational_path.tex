@@ -1,0 +1,103 @@
+\subsection{Many nearby labels force a rational path to be affine}
+\label{sec:rational-path-rigidity}
+
+There is a stronger restriction when the candidate itself is a rational
+function of the challenge of bounded degree. No bound on the coefficient
+heights in $X$ is needed.
+
+\begin{theorem}[Rational-path rigidity]
+\label{thm:rational-path-rigidity}
+Let $D<A\le n$ be integers, and let $f+Zg$ be a received line on $n$
+distinct points of a field $F$. Suppose $T(X,Z)\in F(X)(Z)$ has numerator
+and denominator degrees in $Z$ at most $h\ge1$. Either
+\[
+ T(X,Z)=U(X)+ZV(X),\qquad \deg U,\deg V\le D,
+\]
+or the number of scalar labels $z$ at which $T(X,z)$ is defined, is a
+polynomial of degree at most $D$, and has at least $A$ agreements with
+$f+zg$ is at most
+\[
+ \frac{(8h+10)n}{A-D}.
+\]
+In the affine case there are at most $n-A+1$ full-support MCA-bad labels.
+These statements hold in every characteristic.
+\end{theorem}
+\begin{proof}
+Write $T=a/b$ with coprime $a,b\in F[X,Z]$, $b\ne0$, and both
+$Z$-degrees at most $h$. For every polynomial specialization $P_z$ under
+consideration, $a(X,z)=b(X,z)P_z(X)$ as polynomials. Put
+\[
+ F_x(Z)=a(x,Z)-b(x,Z)(f(x)+Zg(x)).
+\]
+Call a coordinate persistent if $F_x\equiv0$, and let $H$ count them.
+At a persistent coordinate $b(x,Z)\not\equiv0$, since otherwise $X-x$
+would divide both $a$ and $b$. Thus all but at most $h$ selected labels
+agree there. At any other coordinate agreement requires a root of the
+nonzero polynomial $F_x$, of degree at most $h+1$. This argument includes
+points where specialization makes both $a(x,z)$ and $b(x,z)$ zero.
+
+Put $\delta=A-D$. If $H\le D+\delta/2$, each nearby label needs at
+least $\delta/2$ nonpersistent agreements. Their total incidence is at
+most $(h+1)n$, giving at most $2(h+1)n/\delta$ nearby labels.
+
+Now suppose $H>D+\delta/2$, and choose $L$ nearby labels. If $T$ is
+affine in $Z$ over $F(X)$, two polynomial values give the stated
+polynomial affine form; the case $L\le1$ already satisfies the numerical
+bound. Otherwise any graph line over $F(X)$ meets the graph of $T$ in
+at most $h+1$ labels: the numerator of $T-U-ZV$ is nonzero and has
+$Z$-degree at most $h+1$.
+
+The selected graph points $(z,P_z)$ therefore have at most
+$(h-1)L(L-1)$ ordered collinear triples. A noncollinear triple has a
+nonzero affine-incidence determinant, a polynomial in $X$ of degree
+at most $D$, so it shares at most $D$ persistent agreeing coordinates.
+Every persistent coordinate has at least $L-h$ agreements. For
+$L\ge h+2$, counting ordered triples gives
+\[
+ H(L-h-2)^3\le DL^3+H(h-1)L^2.
+\]
+Using $(L-h-2)^3\ge L^3-3(h+2)L^2$ yields
+\[
+ (H-D)L\le(4h+5)H,
+ \qquad L\le\frac{(4h+5)H}{H-D}
+       <\frac{(8h+10)n}{\delta}.
+\]
+The smaller-$L$ case satisfies the same bound. In the affine alternative,
+the sharp polynomial-pencil bound from the proof of
+Proposition~\ref{prop:rational-envelope} gives $n-A+1$ bad labels.
+\end{proof}
+
+\begin{corollary}[Degree required by a rational witness formula]
+\label{cor:rational-witness-degree}
+Suppose a rational function $T(X,Z)$ selects a degree-at-most-$D$ nearby
+witness at each of $L>n-A+1$ distinct full-support MCA-bad labels, with
+agreement threshold $A>D$. If its numerator and denominator degrees in
+$Z$ are at most $h$, then
+\[
+ h\ge\frac{(A-D)L}{8n}-\frac54.
+\]
+\end{corollary}
+\begin{proof}
+The affine alternative can cover at most $n-A+1$ of the selected bad
+labels. Rearrange the other alternative of
+Theorem~\ref{thm:rational-path-rigidity}. A degree-zero formula is a
+constant polynomial pencil whenever it has a polynomial value, so it
+cannot cover the hypothesized set either.
+\end{proof}
+
+For the complete-coverage examples, $L=p-1$ and
+$A-D=\eta n+1$. Any rational formula selecting witnesses throughout
+the nearby set consequently has challenge degree $\Omega(\eta p)$;
+when $\eta=\Theta(1/\log p)$ this is $\Omega(p/\log p)$.
+This quantifies a failure of low-degree witness coherence. It is a
+degree bound, not a computational lower bound: efficient witness recovery
+may use branching rather than one rational formula.
+
+The reciprocal-gap dependence in the rigidity theorem is necessary up
+to constants for fixed $h$. The construction and proof in
+\path{research/prime_field_tightness/RATIONAL_PATH_RIGIDITY.md} give a
+non-affine projective path with order $1/\eta$ nearby bad labels at fixed
+rate. The exact checker considers lengths $160,320,640$, all at rate
+$1/4$ and capacity gap $1/8$: the path has respectively $41,81,161$
+polynomial members, but exactly ten nearby labels, all full-support bad.
+This count is for the specified path, not for all codewords on the line.

@@ -165,3 +165,32 @@ coefficients modulo a different larger prime does not preserve the
 character identities. No characteristic-zero or large-prime lift is
 currently proved. Shortening also does not automatically help: the
 candidate degree is (p-1)/4-1, requiring length Omega(p) at positive rate.
+
+## Stronger rational-path rigidity, 12:43 UTC
+
+`RATIONAL_PATH_RIGIDITY.md` proves that a rational candidate path T(X,Z)
+of challenge degree at most h has at most(8h+10)n/(A-D) nearby labels,
+unless it is an affine polynomial path U+ZV. The affine path has at most
+n-A+1 full-support bad labels. No X-height or characteristic guard is
+needed. The proof counts persistent received-coordinate identities and
+noncollinear polynomial triples, handling specialization base points.
+
+Thus at fixed positive gap a NON-affine bounded-degree rational path has
+only a CONSTANT number of nearby labels. An explicit projective-path
+construction shows the inverse-gap scale is necessary. Exact checks at
+n160/320/640, rate1/4 and gap1/8 verify respectively41/81/161 polynomial
+members but precisely10 nearby full-support bad labels. These are path
+counts, not a census of all RS codewords.
+
+TheoremI.5 and CorollaryI.6 are now in the manuscript. Any rational formula
+selecting witnesses at L>n-A+1 bad labels has challenge degree at least
+(A-D)L/(8n)-5/4. The complete-coverage construction therefore requires
+Omega(eta*p)=Omega(p/log p) degree for a global rational witness formula.
+This is not a computational hardness claim and does not prohibit branching
+decoders. It quantifies the failure of low-degree witness coherence.
+
+The projective-envelope note can now replace its projective-pencil bound
+by max(n-A+1,18n/(A-D)), improving its constants and high-agreement dependence.
+The earlier rational-parameter height reconstruction note is auxiliary and
+not needed for the stronger rigidity theorem. No intrinsic fixed-gap
+superlinear lower bound or universal prime-field improvement is claimed.

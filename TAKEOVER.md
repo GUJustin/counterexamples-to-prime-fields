@@ -1935,3 +1935,39 @@ bounds, NOT intrinsic tightness or a general prime-field exponent-one result.
 User asked for work until18:00 Eastern=22:00UTC. Do not stop at the OLD
 08:30deadline. Optional async question asks for latest coauthor-paper path;
 no answer yet. No numerical job currently active. No publication/push.
+
+## 2026-09-17 12:43 UTC — rational witness coherence quantified
+
+Previous goal turn was progress: authoritative commit c900f9ded3f314dd37f4b3a0d5a268a7050cd0f6
+saved the155-page manuscript, finite frontier checks, and tightness notes.
+This continuation makes further proved/tested progress; no wait/blocker.
+
+New strongest structural theorem: a candidate rational function T(X,Z)
+with numerator/denominator challenge degree<=h has at most(8h+10)n/(A-D)
+nearby polynomial specializations of degree<=D, unless T is affine in Z
+with polynomial coefficients. The affine exception permits at mostn-A+1
+full-support bad labels. NO coefficient-X-height or characteristic guard.
+Persistent coordinate identities exclude at mosth labels each; other
+coordinates support at mosth+1 labels. Triple incidence and the h+1
+intersection bound with a graph line prove the constant fixed-gap count.
+Full proof at research/prime_field_tightness/RATIONAL_PATH_RIGIDITY.md.
+
+It gives h>=(A-D)L/(8n)-5/4 for any rational witness selection onL>n-A+1
+bad labels. Hence the full-coverage examples need Omega(p/log p) challenge
+degree for any single rational witness formula. This is an algebraic degree
+bound, NOT an algorithmic lower bound or a fixed-gap exponent converse.
+The auxiliary rational-parameter height reconstruction proof is retained
+in notes but is superseded by this stronger, simpler incidence theorem.
+
+New exact construction gives a non-affine projective path with order1/eta
+nearby bad labels, showing inverse-gap dependence is necessary. At exact
+rho1/4,eta1/8 the checker passesn160,320,640 overF1009: path-bank sizes
+41,81,161, exactly10 nearby labels each, all full-support bad by independent
+interpolation. Counts outside this path in the full RS code are NOT claimed.
+Verification took2.3s/19MiB under the384MiB watchdog.
+
+TheoremI.5 and CorollaryI.6 integrated after the rational-envelope result.
+LatestPDF156pages, clean final TeX log (no warnings/overfull/underfull),
+page143 visually inspected. New theorem proof/math locally audited;
+no independent person/agent review. No active numerical/build job now.
+Work must continue until18:00 Eastern=22:00UTC under the user's extension.

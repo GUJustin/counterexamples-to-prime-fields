@@ -40,9 +40,9 @@ Use code degree cap D, length n and threshold A>D. Let M=n-A+1.
 For any nondegenerate T_z as above, the number of full-support MCA-bad
 labels with polynomial candidate degree<=D is at most
 
-    B=max(D+2, M, 2n/(A-D)).
+    B_old=max(D+2, M, 2n/(A-D)).
 
-The finite-member alternative is immediate. In the other alternative,
+This first bound follows from the finite-member alternative immediately. In the other alternative,
 T_z=U+phi(z)V. If phi is affine, the sharp polynomial-pencil bound gives
 M. If phi is genuinely fractional-linear, a coordinate identity
 f(x)+z g(x)=U(x)+phi(z)V(x) can hold identically in z only if V(x)=0,
@@ -52,6 +52,16 @@ polynomial of degree at most2 in z. Every nearby label therefore consumes
 at least A-D nonpersistent incidences, and there are at most2n in total.
 This bounds all nearby labels, hence also the bad ones. No characteristic
 restriction is used.
+
+The stronger rational-path rigidity theorem subsequently proved in
+`RATIONAL_PATH_RIGIDITY.md` replaces this with
+
+    B=max(M,18n/(A-D)).
+
+Indeed a non-affine rational path of Z-degree1 has at most18n/(A-D)
+nearby labels, whereas an affine polynomial path has at most M bad labels.
+Taking the minimum of B and B_old is also valid. The argument in Section3
+below uses the new B, so it no longer pays the potentially large D+2 term.
 
 ## 3. Low-degree projective residuals
 
@@ -66,7 +76,7 @@ of degree<=r, not both zero. The value infinity is allowed. Suppose
 A>D, beta=t/N, and N>=128r/beta^4. Then every received line has at most
 
     38 B/beta^4,
-    B=max(D+2,n-A+1,2n/(A-D)),
+    B=max(n-A+1,18n/(A-D)),
 
 full-support MCA-bad labels witnessed by this family. In particular this
 is O(n) at fixed positive capacity gap and fixed positive beta, for fixed r.

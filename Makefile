@@ -147,11 +147,13 @@ verify: verify-overnight
 verify-overnight:
 	$(PYTHON) research/overnight_2026-09-16/verify.py
 
-.PHONY: verify-rational-envelope verify-projective-envelope verify-proth-frontier
-verify: verify-rational-envelope verify-projective-envelope verify-proth-frontier
+.PHONY: verify-rational-envelope verify-projective-envelope verify-rational-path verify-proth-frontier
+verify: verify-rational-envelope verify-projective-envelope verify-rational-path verify-proth-frontier
 verify-rational-envelope:
 	$(PYTHON) research/prime_field_tightness/check_rational_envelope.py
 verify-projective-envelope:
 	$(PYTHON) research/prime_field_tightness/check_projective_envelope.py
+verify-rational-path:
+	$(PYTHON) research/prime_field_tightness/check_rational_path.py
 verify-proth-frontier:
 	$(PYTHON) research/two_orbit_unique/verify_proth_frontier.py

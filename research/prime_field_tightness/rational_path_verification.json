@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "prime": 1009,
+  "fixtures": [
+    {
+      "n": 160,
+      "K": 40,
+      "D": 39,
+      "A": 60,
+      "rate": "1/4",
+      "capacity_gap": "1/8",
+      "path_polynomial_members": 41,
+      "nearby_labels": 10,
+      "all_nearby_path_labels_full_support_bad": true,
+      "persistent_coordinates": 40,
+      "nonpersistent_incidences": 210,
+      "unused_padding": 15
+    },
+    {
+      "n": 320,
+      "K": 80,
+      "D": 79,
+      "A": 120,
+      "rate": "1/4",
+      "capacity_gap": "1/8",
+      "path_polynomial_members": 81,
+      "nearby_labels": 10,
+      "all_nearby_path_labels_full_support_bad": true,
+      "persistent_coordinates": 80,
+      "nonpersistent_incidences": 410,
+      "unused_padding": 35
+    },
+    {
+      "n": 640,
+      "K": 160,
+      "D": 159,
+      "A": 240,
+      "rate": "1/4",
+      "capacity_gap": "1/8",
+      "path_polynomial_members": 161,
+      "nearby_labels": 10,
+      "all_nearby_path_labels_full_support_bad": true,
+      "persistent_coordinates": 160,
+      "nonpersistent_incidences": 810,
+      "unused_padding": 75
+    }
+  ],
+  "scope": "Complete polynomial-member bank and all agreement supports for the specified rational path; exact full-support badness by independent interpolation. Does not enumerate all codewords of the ambient RS code."
+}
