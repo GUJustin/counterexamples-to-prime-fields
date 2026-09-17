@@ -37,3 +37,24 @@ Zig wrapper targeting aarch64-macos.14.0. Run sequentially under the384MiB,
 stored alongside the sources. This result does not establish a general
 nearestness-preservation theorem under polynomial composition, nor exclude
 other domain enlargements.
+
+## Complete nearest list: no amplification in this case
+
+The subsequent `bank_scan.cpp` exhausts every candidate with at least12
+agreements. Such a candidate has at least3 matches in one coset and at
+least5 outside it (a nonconstant polynomial has at most7 in that coset).
+Three anchors leave a degree-<5 residual. The56 three-subsets have7
+rotation orbits, so the complete cover has
+4*7*binomial(24,5)=1,190,112 determining supports.
+
+There are exactly22 nearest polynomials. Independent tuple-field
+interpolation in `verify_bank.py` shows that ALL have the form Q(X^2),
+where Q is a degree-<4 polynomial over F17 with6 agreements on F17*.
+Thus they are precisely the original22 nearest polynomials composed
+with X^2. Their mu_8 orbit sizes are2,4,4,4,4,4; no orbit grows to8.
+Neither the nearest agreement fraction, list size, nor orbit size is
+amplified by this particular quadratic-extension doubling.
+
+Full evaluation vectors are in `bank_scan.log`; base coefficients and
+independent checks are in `bank_verification.json`. This finite result
+does not imply that composition preserves all nearest lists in general.

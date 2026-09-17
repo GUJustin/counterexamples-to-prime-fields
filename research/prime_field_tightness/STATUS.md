@@ -1036,3 +1036,10 @@ support cover excludes13 agreements; independent tuple-field checks
 verify the domain, lower witness, and cover. This finite enlargement
 preserves3/8 and gives no first-order improvement. See
 ../dickson_domain_doubling/README.md.
+
+
+September17: the doubled-domain census is now complete at the nearest
+threshold12 as well. All22 nearest polynomials over F_(17^2) are Q(X^2)
+for the original22 F17 nearest polynomials. Orbit sizes remain2 and4,
+not8. The1,190,112-support cover and independent coefficient replay
+certify no list/orbit amplification in this particular doubling.
