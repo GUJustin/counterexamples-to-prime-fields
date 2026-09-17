@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "fixtures": [
+    {
+      "p": 17,
+      "k": 4,
+      "constant_mask_points": 7,
+      "residual_points": 9,
+      "orbit_candidates": 8
+    },
+    {
+      "p": 41,
+      "k": 10,
+      "constant_mask_points": 19,
+      "residual_points": 21,
+      "orbit_candidates": 20
+    },
+    {
+      "p": 73,
+      "k": 18,
+      "constant_mask_points": 35,
+      "residual_points": 37,
+      "orbit_candidates": 36
+    },
+    {
+      "p": 89,
+      "k": 22,
+      "constant_mask_points": 43,
+      "residual_points": 45,
+      "orbit_candidates": 44
+    },
+    {
+      "p": 97,
+      "k": 24,
+      "constant_mask_points": 47,
+      "residual_points": 49,
+      "orbit_candidates": 48
+    },
+    {
+      "p": 113,
+      "k": 28,
+      "constant_mask_points": 55,
+      "residual_points": 57,
+      "orbit_candidates": 56
+    },
+    {
+      "p": 137,
+      "k": 34,
+      "constant_mask_points": 67,
+      "residual_points": 69,
+      "orbit_candidates": 68
+    },
+    {
+      "p": 257,
+      "k": 64,
+      "constant_mask_points": 127,
+      "residual_points": 129,
+      "orbit_candidates": 128
+    }
+  ],
+  "scope": "Exact branch and orbit identities plus numerical constant checks. Fourier estimates rely on the stated character-sum argument, not on finite sampling."
+}

@@ -738,3 +738,23 @@ uniform gap dependence, but neither forces the first-order quadratic
 exception count nor an n exponent growing toward capacity. Method
 optimality must not be presented as a substitute. Prioritize a growing
 fixed-gap list or superlinear fixed-gap exception construction next.
+
+## September 17: intrinsic binomial search and the Dickson first-order barrier
+
+Primes p comparable to n are sufficient for intrinsic list-size tightness;
+the large-prime condition belongs to the superlinear exception compiler.
+The new binomial_first_order_search tests273 full candidate banks over
+seven primes; their modal words produce no three-candidate hit above the
+first-order curve. This finite search is not a subbank optimum.
+
+A separate character-mask proof handles the r2,j1 family excluded from
+the earlier higher-section bound. For every arbitrary L-subset of one
+Dickson orbit on F_p^*, minimum agreement is at most
+1.5k+4Lambda+8Lambda*sqrt(k/L)+36k/L+1, Lambda=8(sqrt(p)+3). The
+complete bank consists of two twisted orbits. Therefore fewer than2^22
+complete-bank members can simultaneously lie above the first-order
+quarter-rate curve, uniformly in p. This is a restricted-family barrier,
+not a general constant-list theorem, and does not treat punctured domains.
+Exact character branches and orbit identities pass at eight primes.
+Next intrinsic search should change the polynomial family or domain
+substantially rather than merely optimize words on this full-domain bank.
