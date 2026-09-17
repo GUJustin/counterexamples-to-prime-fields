@@ -182,3 +182,21 @@ the audited inverse-gap exponent obstruction and the remaining fixed-
 gap short-domain target. Better.codes live display remains 68.11 to
 116.13 bits; no verified benchmark improvement. Future strength claims
 must distinguish short/full-length domains and full-set/subset CA.
+
+User explicitly requested that the paper state the clearest audited
+conceptual message. Updated abstract opening and introduction page 2:
+short-domain n=o(p) examples force a nearly quadratic reciprocal-gap
+exponent, versus the proposed linear one; changing universal constants
+cannot repair it. The introduction separately states that superlinear
+exceptional counts at one fixed positive gap on short domains remain
+open. Native build still 110 pages; first three pages rendered and
+visually checked; no overfull boxes or undefined-reference warnings.
+
+Corrected the exploratory TWO_BRANCH_FRONTIER.md: the normalized
+zero-branch equation R_z=P_z-T P_z'/P_z cannot yield the quarter-rate
+target. When n>4D and char=0 or p>D, three labels force proportional
+witnesses and a common correlated set of size at least n-D. Proof uses
+triple support intersection and the zero-Wronskian identity. This is a
+new proof-reviewed research-note closure, not yet a separately checked
+computation or an addition to the manuscript. General two branches
+remain open. Do not describe this normalized case as promising again.

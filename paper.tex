@@ -26,8 +26,10 @@
 Security analyses of hash-based SNARKs use quantitative statements about
 list decoding and proximity gaps of error-correcting codes. We give
 counterexamples to several proposed bounds for Reed--Solomon codes over
-prime fields. The results concern the dependence on the code rate, the
-gap from capacity, the field size, and the evaluation domain.
+prime fields. The main obstruction is their dependence on the gap from
+capacity: even on short domains in large prime fields, the proposed
+list-size exponent grows too slowly as the gap shrinks. Changing
+universal constants cannot repair it.
 
 For every fixed rational rate $\rho\in(0,1)$, we construct codes with
 $2^{\Omega_\rho(n)}$ codewords agreeing with one received word on
@@ -60,11 +62,13 @@ rates, this profile follows from known upper and lower bounds.
 
 Finite constructions on the norm-one circle give examples in the
 polynomial spaces used by Circle STARKs. We apply the general results to
-the two quantitative coding conjectures used in the S-two whitepaper:
-the stated uniform list prescription and the stated line-decodability
-threshold are both contradicted under their published quantifiers. These
-coding conclusions directly invalidate the corresponding premises of the
-S-two security analysis; questions about the soundness of a complete
+the quantitative coding assumptions used in the S-two whitepaper.
+The stated uniform list prescription is false. The proposed numerical
+line coefficient also fails on fixed-gap families, against every
+remainder sublinear along those families. We distinguish this conclusion
+from a conjecture using actual list size with a remainder controlled
+only at each fixed gap. These results invalidate the corresponding
+quantitative premises; questions about the soundness of a complete
 protocol are separate.
 \end{abstract}
 
@@ -107,6 +111,22 @@ we distinguish the largest list at one received word, the number of
 nearby parameters on an affine line, and correlated agreement across
 that line. None of these quantities can be substituted for another
 without a theorem relating them.
+
+The main quantitative message is that the proposed dependence on
+$\eta$ fails even when $n=o(p)$. At any fixed rational rate, the proposed
+list bound has $\log L=O_\rho(1/\eta)$, whereas our short-domain examples
+require
+\[
+ \log L=\Omega_\rho\!\left(
+   \frac{1}{\eta^2\log(1/\eta)}\right).
+\]
+Thus the exponent must grow almost quadratically in the reciprocal
+gap, rather than linearly. The examples remain strictly below the
+characteristic-based Elias radius. The line constructions give a
+corresponding obstruction to the proposed coefficient multiplying
+$n$ in an exceptional-parameter bound. They do not establish that the
+exceptional count must be superlinear in $n$ at one fixed positive gap
+on short prime-field domains; that stronger question remains open.
 
 \subsection{The main result}
 
