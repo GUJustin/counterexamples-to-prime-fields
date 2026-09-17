@@ -1,0 +1,172 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "b": 61,
+      "r": 1,
+      "n": 158,
+      "K": 79,
+      "t": 4,
+      "failure_bits": null,
+      "prescription_exponent": -1,
+      "below_elias": true,
+      "eligible_for_main_table": true
+    },
+    {
+      "b": 127,
+      "r": 1,
+      "n": 294,
+      "K": 147,
+      "t": 5,
+      "failure_bits": null,
+      "prescription_exponent": -20,
+      "below_elias": true,
+      "eligible_for_main_table": true
+    },
+    {
+      "b": 127,
+      "r": 1,
+      "n": 434,
+      "K": 217,
+      "t": 4,
+      "failure_bits": 32,
+      "prescription_exponent": 27,
+      "below_elias": false,
+      "eligible_for_main_table": false
+    },
+    {
+      "b": 521,
+      "r": 1,
+      "n": 1090,
+      "K": 545,
+      "t": 7,
+      "failure_bits": null,
+      "prescription_exponent": -147,
+      "below_elias": true,
+      "eligible_for_main_table": true
+    },
+    {
+      "b": 521,
+      "r": 1,
+      "n": 1234,
+      "K": 617,
+      "t": 6,
+      "failure_bits": 32,
+      "prescription_exponent": -99,
+      "below_elias": true,
+      "eligible_for_main_table": true
+    },
+    {
+      "b": 521,
+      "r": 1,
+      "n": 1362,
+      "K": 681,
+      "t": 6,
+      "failure_bits": 64,
+      "prescription_exponent": -56,
+      "below_elias": true,
+      "eligible_for_main_table": true
+    },
+    {
+      "b": 521,
+      "r": 2,
+      "n": 2142,
+      "K": 1071,
+      "t": 8,
+      "failure_bits": null,
+      "prescription_exponent": -81,
+      "below_elias": true,
+      "eligible_for_main_table": true
+    },
+    {
+      "b": 521,
+      "r": 2,
+      "n": 2286,
+      "K": 1143,
+      "t": 8,
+      "failure_bits": 32,
+      "prescription_exponent": -52,
+      "below_elias": true,
+      "eligible_for_main_table": true
+    },
+    {
+      "b": 521,
+      "r": 2,
+      "n": 2414,
+      "K": 1207,
+      "t": 8,
+      "failure_bits": 64,
+      "prescription_exponent": -26,
+      "below_elias": true,
+      "eligible_for_main_table": true
+    },
+    {
+      "b": 1279,
+      "r": 3,
+      "n": 7742,
+      "K": 3871,
+      "t": 11,
+      "failure_bits": null,
+      "prescription_exponent": -160,
+      "below_elias": true,
+      "eligible_for_main_table": true
+    },
+    {
+      "b": 1279,
+      "r": 3,
+      "n": 7886,
+      "K": 3943,
+      "t": 11,
+      "failure_bits": 32,
+      "prescription_exponent": -139,
+      "below_elias": true,
+      "eligible_for_main_table": true
+    },
+    {
+      "b": 1279,
+      "r": 3,
+      "n": 8014,
+      "K": 4007,
+      "t": 11,
+      "failure_bits": 64,
+      "prescription_exponent": -121,
+      "below_elias": true,
+      "eligible_for_main_table": true
+    },
+    {
+      "b": 1279,
+      "r": 10,
+      "n": 25694,
+      "K": 12847,
+      "t": 17,
+      "failure_bits": null,
+      "prescription_exponent": -40,
+      "below_elias": true,
+      "eligible_for_main_table": true
+    },
+    {
+      "b": 1279,
+      "r": 10,
+      "n": 25842,
+      "K": 12921,
+      "t": 18,
+      "failure_bits": 32,
+      "prescription_exponent": -33,
+      "below_elias": true,
+      "eligible_for_main_table": true
+    },
+    {
+      "b": 1279,
+      "r": 10,
+      "n": 25970,
+      "K": 12985,
+      "t": 18,
+      "failure_bits": 64,
+      "prescription_exponent": -27,
+      "below_elias": true,
+      "eligible_for_main_table": true
+    }
+  ],
+  "seconds": 0.033937332998903,
+  "scope": "Independent exact schedule verification with weaker character and conditioning constants. Search optimality is not claimed. Only rows marked eligible contradict the prescription below Elias."
+}

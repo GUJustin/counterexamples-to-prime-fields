@@ -43,3 +43,18 @@ It is a different construction and probability guarantee. The block argument
 is retained and checked by `verify_joint_images.py`,
 `verify_multiblock_finite.py`, and `audit_multiblock_independent.py`.
 The one-pair curve route is retained in `single_pair.tex`.
+
+
+The finite table also uses `optimized_completion.json`, replayed independently
+by `audit_optimized_completion.py`. Fine upward rounding gives shorter
+sufficient rows: M521/r2/n2142 with prescription below 2^-81 (existence),
+and M1279/r3/n8014 with failure below 2^-64 and prescription below 2^-121.
+The search is not a proof of optimality.
+
+`m31_exact/` contains four fully deterministic finite banks over 2^31-1.
+The n62/K31 instance has 140,916,078 nearby parameters; n68/K33 has
+897,817,238 and beats twice the proposed prefactor. `m31_exact/verify.py`
+compiles two independent C++17 enumerators, runs them sequentially, checks
+all exact inequalities, and recovers explicit witnesses. It uses a 256 MiB
+bitmap and takes about a minute on the restored laptop. Source and compact
+instance files suffice; no bitmap artifact is required.

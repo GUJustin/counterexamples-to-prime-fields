@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "p": 2147483647,
+  "rows": [
+    {
+      "n": 62,
+      "K": 31,
+      "certified_nearby_parameters": 140916078,
+      "violated_prefactor": 1,
+      "far_distance_numerator": 30,
+      "nearby_distance_numerator": 28,
+      "direction_weight": 2,
+      "explicit_witnesses_recovered": 4
+    },
+    {
+      "n": 58,
+      "K": 27,
+      "certified_nearby_parameters": 39763294,
+      "violated_prefactor": 1,
+      "far_distance_numerator": 30,
+      "nearby_distance_numerator": 28,
+      "direction_weight": 2,
+      "explicit_witnesses_recovered": 4
+    },
+    {
+      "n": 64,
+      "K": 31,
+      "certified_nearby_parameters": 281212602,
+      "violated_prefactor": 1,
+      "far_distance_numerator": 32,
+      "nearby_distance_numerator": 30,
+      "direction_weight": 2,
+      "explicit_witnesses_recovered": 4
+    },
+    {
+      "n": 68,
+      "K": 33,
+      "certified_nearby_parameters": 897817238,
+      "violated_prefactor": 2,
+      "far_distance_numerator": 34,
+      "nearby_distance_numerator": 32,
+      "direction_weight": 2,
+      "explicit_witnesses_recovered": 4
+    }
+  ],
+  "independent_enumerators": 2,
+  "seconds": 60.35791333299858,
+  "scope": "Deterministic exact image counts for the displayed locator families. These lower-bound total nearby parameters; additional codewords may give additional nearby parameters. No prescribed FFT-domain transfer."
+}

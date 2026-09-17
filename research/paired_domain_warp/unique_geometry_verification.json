@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "p": 101,
+      "n": 8,
+      "K": 3,
+      "extra_zero": false,
+      "X_factor": 0,
+      "nearby_parameters": 3,
+      "all_nearby_unique": true
+    },
+    {
+      "p": 101,
+      "n": 9,
+      "K": 3,
+      "extra_zero": true,
+      "X_factor": 0,
+      "nearby_parameters": 3,
+      "all_nearby_unique": true
+    },
+    {
+      "p": 101,
+      "n": 9,
+      "K": 4,
+      "extra_zero": true,
+      "X_factor": 1,
+      "nearby_parameters": 3,
+      "all_nearby_unique": true
+    },
+    {
+      "p": 1031,
+      "n": 8,
+      "K": 3,
+      "extra_zero": false,
+      "X_factor": 0,
+      "nearby_parameters": 3,
+      "all_nearby_unique": true
+    },
+    {
+      "p": 1031,
+      "n": 9,
+      "K": 3,
+      "extra_zero": true,
+      "X_factor": 0,
+      "nearby_parameters": 3,
+      "all_nearby_unique": true
+    },
+    {
+      "p": 1031,
+      "n": 9,
+      "K": 4,
+      "extra_zero": true,
+      "X_factor": 1,
+      "nearby_parameters": 3,
+      "all_nearby_unique": true
+    }
+  ],
+  "seconds": 0.33142216700071003
+}

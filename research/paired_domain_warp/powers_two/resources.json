@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/paired_domain_warp/powers_two/check.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 2.7351687499976833,
+  "peak_rss_kib": 21536,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

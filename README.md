@@ -22,6 +22,13 @@ and its decoding list is disjoint from the lists at all other nonzero
 parameters. The direction changes the minimum number of coordinates
 needed for the distance improvement. No common agreement set explains the line.
 
+A separate deterministic construction uses powers of two as its core
+coordinates. **Every nearby point has a unique, efficiently recoverable
+codeword**, while the proposed nearby-count bound is exponentially too small.
+At half rate the entire line can have just two distance levels, with every
+parameter outside the nearby bank at the far level. This failure does not
+require decoding ambiguity or difficulty finding witnesses.
+
 The list-size results separately show that the proposed exponent must
 grow almost quadratically, rather than linearly, in the reciprocal gap.
 Neither result establishes superlinear line counts at one fixed positive
@@ -49,8 +56,21 @@ gap on short domains or transfers automatically to a prescribed FFT domain.
   separation is **20/21 of the gap**. Independent integer replays support
   these bounds. Coverage of the stored sample has a probability guarantee
   over the generator, not an individual deterministic certificate.
-  These results defeat the `c1=c2=1` prescription; the next construction
-  handles arbitrary fixed numerical constants.
+  Optimized certificates give full coverage at length 2142 over `2^521-1`
+  while the prescribed fraction is below `2^-81`, and length 8014 over
+  `2^1279-1` with generator failure below `2^-64` and prescribed fraction
+  below `2^-121`. These results defeat the `c1=c2=1` prescription; the next
+  construction handles arbitrary fixed numerical constants.
+- Deterministic paired-domain banks over `2^31-1` are checked by two
+  independent exhaustive enumerators. At exact half rate and length **62**,
+  there are **140,916,078** certified nearby parameters, against a prescribed
+  bound below **103,199,661**. Its full list distribution is also certified:
+  **136,494,714** parameters are uniquely nearby, and every point on this
+  line has at most **five** nearby codewords. A length-68 instance also beats twice the
+  proposed prefactor. All four stored instances are strictly below Elias;
+  their directions change only two coordinates and their exceptional points
+  are one coordinate short of maximum distance. These are concrete chosen
+  domains, including a length-64 instance, with no prescribed FFT-domain claim.
 - A cubic change of the seed domain gives **complete nonzero coverage**
   at every fixed rational rate: all `p-1` nonzero parameters are nearby
   while zero is a fixed positive fraction of `eta` outside. For every

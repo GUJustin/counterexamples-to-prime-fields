@@ -1,0 +1,23 @@
+[
+  {
+    "supports": 40116600,
+    "distinct_products": 39763294,
+    "bitmap_word_fingerprint": "1273e7cebaa67748",
+    "seconds": 1.316866,
+    "n": 58
+  },
+  {
+    "supports": 300540195,
+    "distinct_products": 281212602,
+    "bitmap_word_fingerprint": "f8241d21052edb0f",
+    "seconds": 7.797646,
+    "n": 64
+  },
+  {
+    "supports": 1166803110,
+    "distinct_products": 897817238,
+    "bitmap_word_fingerprint": "c0ea029f3a29f741",
+    "seconds": 35.522707,
+    "n": 68
+  }
+]

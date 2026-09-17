@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "-c",
+    "import subprocess,pathlib,json; d=pathlib.Path(\"research/paired_domain_warp/m31_exact\"); rows=[]\nfor m,D in [(28,14),(31,16),(33,17)]:\n r=json.loads(subprocess.check_output([\"tmp/m31-paired-count\",str(m),str(D)],text=True)); n=r[\"n\"]; K=r[\"K\"]; J=r[\"distinct_products\"]; r[\"beats_coefficient_one\"]=J**3*K**K*(n-K)**(n-K)>n**(n+3); r[\"beats_coefficient_two\"]=J**3*K**K*(n-K)**(n-K)>8*n**(n+3); rows.append(r); print(json.dumps(r),flush=True)\n(d/\"nearby_lengths.json\").write_text(json.dumps(rows,indent=2)+\"\\n\")"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 11.311508958002378,
+  "peak_rss_kib": 284192,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 180
+}

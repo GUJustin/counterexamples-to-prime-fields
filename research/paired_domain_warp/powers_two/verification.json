@@ -1,0 +1,96 @@
+{
+  "status": "passed",
+  "subset_decodings": 32738,
+  "rows": [
+    {
+      "b": 127,
+      "best_scanned": null,
+      "last_half_rate": null
+    },
+    {
+      "b": 521,
+      "best_scanned": {
+        "b": 521,
+        "n": 74,
+        "K": 15,
+        "m": 36,
+        "D": 8,
+        "product_bit_bound": 520,
+        "nearby_parameters": "30260340",
+        "violation_factor_greater_than_power_two": 0
+      },
+      "last_half_rate": null
+    },
+    {
+      "b": 1279,
+      "best_scanned": {
+        "b": 1279,
+        "n": 106,
+        "K": 27,
+        "m": 52,
+        "D": 14,
+        "product_bit_bound": 1274,
+        "nearby_parameters": "1768966344600",
+        "violation_factor_greater_than_power_two": 5
+      },
+      "last_half_rate": {
+        "b": 1279,
+        "n": 82,
+        "K": 41,
+        "m": 40,
+        "D": 21,
+        "product_bit_bound": 1260,
+        "nearby_parameters": "131282408400",
+        "violation_factor_greater_than_power_two": 3
+      }
+    },
+    {
+      "b": 2203,
+      "best_scanned": {
+        "b": 2203,
+        "n": 140,
+        "K": 35,
+        "m": 69,
+        "D": 18,
+        "product_bit_bound": 2178,
+        "nearby_parameters": "17231414395464984",
+        "violation_factor_greater_than_power_two": 8
+      },
+      "last_half_rate": {
+        "b": 2203,
+        "n": 106,
+        "K": 53,
+        "m": 52,
+        "D": 27,
+        "product_bit_bound": 2106,
+        "nearby_parameters": "477551179875952",
+        "violation_factor_greater_than_power_two": 6
+      }
+    },
+    {
+      "b": 9689,
+      "best_scanned": {
+        "b": 9689,
+        "n": 278,
+        "K": 81,
+        "m": 138,
+        "D": 41,
+        "product_bit_bound": 9676,
+        "nearby_parameters": "214978903513324139147303483585508600",
+        "violation_factor_greater_than_power_two": 28
+      },
+      "last_half_rate": {
+        "b": 9689,
+        "n": 226,
+        "K": 113,
+        "m": 112,
+        "D": 57,
+        "product_bit_bound": 9576,
+        "nearby_parameters": "383737587959312915862780874001472",
+        "violation_factor_greater_than_power_two": 25
+      }
+    }
+  ],
+  "seconds": 2.4199569580014213,
+  "scope": "Exact integer decoder tests and sufficient deterministic power-of-two parameters. Finite search is not an optimality claim."
+}

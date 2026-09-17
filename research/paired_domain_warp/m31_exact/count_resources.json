@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "-c",
+    "import subprocess,pathlib; r=subprocess.run([\"tmp/m31-paired-count\"],check=True,capture_output=True,text=True); pathlib.Path(\"research/paired_domain_warp/m31_exact/count.json\").write_text(r.stdout); print(r.stdout)"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.645921957999235,
+  "peak_rss_kib": 282864,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 600
+}

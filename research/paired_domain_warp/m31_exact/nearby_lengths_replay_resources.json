@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "-c",
+    "import subprocess,pathlib,json; d=pathlib.Path(\"research/paired_domain_warp/m31_exact\"); rows=json.loads((d/\"nearby_lengths.json\").read_text()); out=[]\nfor a in rows:\n r=json.loads(subprocess.check_output([\"tmp/m31-paired-replay\",str(len(a[\"core_representatives\"])),str(a[\"D\"])],input=\" \".join(map(str,a[\"core_representatives\"])),text=True)); assert all(a[k]==r[k] for k in [\"supports\",\"distinct_products\",\"bitmap_word_fingerprint\"]); r[\"n\"]=a[\"n\"]; out.append(r); print(json.dumps(r),flush=True)\n(d/\"nearby_lengths_independent.json\").write_text(json.dumps(out,indent=2)+\"\\n\")"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 45.09500579199812,
+  "peak_rss_kib": 282720,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 180
+}

@@ -1,0 +1,163 @@
+\subsubsection{A deterministic family with unique and recoverable witnesses}
+\label{sec:paired-powers-two}
+
+The unambiguous construction can be made deterministic, with an efficient
+procedure deciding whether a parameter is nearby and recovering its unique
+witness. Its core representatives are simply powers of two.
+
+\begin{lemma}[Decoding products of $4^i-1$]\label{pd:integer-products}
+For distinct subsets $I\subseteq\{1,\ldots,m\}$, the positive integers
+$T_I=\prod_{i\in I}(4^i-1)$ are distinct. Given $T_I$, its support can
+be recovered using a polynomial number of bit operations in $m$ and
+$\log T_I$.
+\end{lemma}
+\begin{proof}
+Write $s=\sum_{i\in I}i$ and
+$U_I=\prod_{i\in I}(1-4^{-i})$, so $T_I=4^sU_I$. The elementary
+product inequality gives $2/3<U_I\le1$. For a nonempty support,
+$T_I$ therefore has exactly $2s$ binary digits, determining $s$ and
+hence the rational number $U_I$.
+
+Process indices in increasing order, removing previously selected factors
+from $U_I$. At index $i$, the remaining product is at most $1-4^{-i}$
+if $i$ is selected. If $i$ is not selected, it is at least
+\[
+ \prod_{j=i+1}^{m}(1-4^{-j})
+ \ge1-\sum_{j=i+1}^{m}4^{-j}
+ >1-\tfrac13 4^{-i}>1-4^{-i}.
+\]
+These comparisons determine every membership bit, proving injectivity.
+They can be implemented with integers: if the remaining integer product
+is $t$ and the remaining index sum is $s$, compare
+$t4^i$ with $(4^i-1)4^s$. On selecting $i$, divide $t$ by $4^i-1$ and
+subtract $i$ from $s$. For an arbitrary input, require exact divisibility
+at every selection and verify the final product and support size.
+All intermediate integers have polynomial bit length.
+\end{proof}
+
+\begin{theorem}[Deterministic, efficiently decoded counterexamples]
+\label{pd:deterministic}
+Let $1\le D<m$, let $p$ be prime with
+\[
+ p>2^{D(2m-D+1)},
+\]
+and use core representatives $a_i=2^i$ for $1\le i\le m$, with padding
+$\pm1$ and the exact-rate parity convention above. At threshold $K+3$,
+the resulting line has exactly $\binom mD$ nearby parameters, each with
+a unique nearby codeword. Parameter zero has distance $1-K/n-1/n$,
+and each nearby parameter has distance $1-K/n-3/n$. The code, line,
+and a procedure deciding membership in the nearby set and recovering
+the unique witness are deterministic and polynomial in $\log p$.
+
+Consequently, for every fixed rational rate $\rho\in(0,1)$ and every
+$c_1>0$, $0<c_2<3/2$, all sufficiently large prime fields have such
+examples at exact rate $\rho$ and length $n=\Theta_\rho(\sqrt{\log p})$,
+strictly below Elias, with no correlated agreement and
+\[
+ \frac{\binom mD}{c_1n2^{c_2H_2(\rho)/(3/n)}}=2^{\Omega_{\rho,c_2}(n)}.
+\]
+\end{theorem}
+\begin{proof}
+Every positive $D$-subset product is less than
+\[
+ \prod_{i=m-D+1}^m4^i=2^{D(2m-D+1)}<p.
+\]
+The displayed field bound also gives $p>2^{m+1}$. No nonzero ternary
+sum of $2,4,\ldots,2^m$ can vanish modulo $p$: its integer absolute
+value is less than $p$, and its largest power exceeds the sum of all
+smaller powers. Thus the signed-relation hypothesis of
+Lemma~\ref{pd:unique-criterion} holds. The nearby labels are
+\[
+ z_I=(-1)^{D+1}T_I\pmod p.
+\]
+Lemma~\ref{pd:integer-products} and the no-wrap bound show that these
+labels are distinct. They also give a decoder: lift
+$(-1)^{D+1}z$ to $\{0,\ldots,p-1\}$, recover and check its support,
+then output the reference locator minus that support's locator, with
+the optional factor $X$. The exact list classification guarantees
+that rejection means the parameter is outside the tested radius.
+The degree and distance assertions follow from the same criterion.
+
+For exact rate $\rho$, choose the admissible $n$ near a sufficiently
+small constant multiple of $\sqrt{\log_2p}$. Then
+$m=n/2+O(1)$, $D=\rho n/2+O_\rho(1)$, and the displayed field bound
+holds. As before,
+$\log_2\binom mD=nH_2(\rho)/2+O_\rho(\log n)$, which proves the
+numerical separation for $c_2<3/2$. Moreover
+$(3/n)\log_2p\to\infty$, proving strict Elias. The far point rules
+out correlated agreement. Forming the locators, evaluating them, and
+performing the integer comparisons use polynomial time in $\log p$.
+\end{proof}
+
+For example, exact arithmetic gives the following deterministic rows.
+Every nearby parameter has a unique witness recoverable by the preceding
+integer decoder; the last column lower-bounds the ratio to the
+$c_1=c_2=1$ numerical prescription.
+\begin{center}
+\begin{tabular}{@{}rrrrll@{}}
+\toprule
+Prime & $n$ & $K$ & $D$ & Nearby count & Ratio $>$\\
+\midrule
+$2^{521}-1$&74&15&8&$\binom{36}{8}$&$1$\\
+$2^{1279}-1$&82&41&21&$\binom{40}{21}$&$2^3$\\
+$2^{2203}-1$&106&53&27&$\binom{52}{27}$&$2^6$\\
+$2^{9689}-1$&226&113&57&$\binom{112}{57}$&$2^{25}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+These are proofs for the specified domains, not guarantees over random
+generation. The checkers in \path{research/paired_domain_warp/powers_two/}
+verify primality, the no-wrap bound, strict Elias, and the numerical
+comparisons with integers, and test support recovery exhaustively on
+small instances. Uniqueness here concerns every nearby point on this
+line; it does not assert a global list-size bound for the code.
+
+\begin{proposition}[An exact two-level distance profile]
+\label{pd:powers-two-level}
+In the unadjusted case $n=2m+2$, $K=2D-1$, assume additionally
+\[
+ p>2^{m(m+1)/2+2m+2}.
+\]
+Every parameter outside the nearby bank has distance exactly
+$(n-K-1)/n$. Thus the line has only two distance levels, and the
+integer decoder determines which level holds. The three half-rate
+rows in the preceding table satisfy this extra bound.
+\end{proposition}
+\begin{proof}
+The zero codeword supplies $K+1$ reference-core agreements at every
+parameter, so distance is always at most $(n-K-1)/n$. Suppose a codeword
+has at least $K+2$ agreements. At least one padding position must agree,
+by the root bound. If exactly one padding position agrees,
+its $K+1$ core roots have sum zero; integer dissociation forces them
+into pairs. Its locator is even, so the other padding position agrees
+too, placing the parameter in the nearby bank.
+
+It remains to consider two padding agreements and only $K$ known core
+roots. The difference polynomial is monic of degree $K+1$, with zero
+coefficient of $X^K$. Its last root is therefore minus the sum of those
+$K$ roots. Cancel complete sign-pairs among the known roots and call
+the remaining signed powers of two $y_1,\ldots,y_u$. Their number is
+odd. If $u=1$, the last root completes its pair, again giving a bank
+locator. For $u\ge3$, put $S=\sum_i y_i$. Equality of the two padding
+values would require
+\[
+ F=(1+S)\prod_i(1-y_i)-(1-S)\prod_i(1+y_i)=0\pmod p.
+\]
+This integer is nonzero. Indeed, writing $e_j$ for the elementary
+symmetric functions of the $y_i$ gives
+\[
+ F/2=(Se_2-e_3)+(Se_4-e_5)+\cdots.
+\]
+If the two smallest-magnitude signed powers are $u=\pm2^a$ and
+$v=\pm2^b$, with $a<b$, the monomial with uniquely smallest $2$-adic
+valuation is $u^2v$ in the first parenthesis, with valuation $2a+b$.
+All other degree-three terms and all higher-degree terms have larger
+valuation. Thus cancellation is impossible.
+Finally,
+\[
+ |F|\le2(1+|S|)\prod_i(1+|y_i|)
+ <2^{m(m+1)/2+2m+2}<p,
+\]
+so $F$ cannot vanish modulo $p$ either. Consequently every improvement
+over the far distance is already a nearby-bank point.
+\end{proof}

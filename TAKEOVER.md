@@ -1479,3 +1479,108 @@ variance. Same completion fills this good set, giving minimumlist>=L0/(2V)
 at everyfull-supportparameter; partialparameterweightj wouldhaveatleast
 (p-1)^(r-j) times that manynearestwords. This is reasoned, NOTyetintegrated
 orverified. Consider whether it improvesmessageenough to merit inclusion.
+
+
+## 2026-09-17 09:53 UTC — deterministic unique witnesses, exact M31 lists
+
+Major additional strengthening integrated. PDF139pages, article1-inch margins,
+cleanbuild. Renderednewdecoderproof andM31listtable inspected. Makefile108checks.
+Noactive numericaljobs. GoalACTIVE until12:30UTC (08:30Eastern), ~2h35left.
+
+New files research/paired_domain_warp/unique.tex andpowers_two/deterministic.tex.
+Exactlistcriterion: g supportedpadding±1, nearbythresholdK+3. AnynearbyQ must
+matchbothpaddingandK+1nonpaddingcoords. H=F-Q monicdegreeK+1, coefficientX^K=0,
+soitsroots sumzero. Cancel fullsign-orbits; remaining singles giveeps_i∈{-1,0,1}
+withsum eps_i a_i=0 andprod((1-a_i)/(1+a_i))^eps_i=1. Ifonlyzerorelation,
+EVERYnearbycodeword ispairedlocator, so listsare EXACTproductfibers. Optionalzero
+root forced/excludedbyparity; all3paritycasesexhaustivelychecked.
+
+Genericrandomunique theorem: n=.5log2p+O_rho1,m=.25log2p+O1. Invaliddomain
+prob<=(m²+2m)/p; productcollisions<=2m4^m/p; nonzero ternaryrelations<=m3^m/p².
+Foru>=3 eliminatesum, polynomialnonzero byspecializationX,Y,-X-Y gives±2XY(X+Y).
+u1,2impossiblevaliddomain. Totalfailurep^-1/2+o1. Exactnearcountbinom(m,D),
+ALLnearbyunique, far1-rho-1/n,near1-rho-3/n. Numericalc2<1.5defeatedexp(n),
+strictEliaseta logp→6. Thisisnotfullnonzero coverage; no globalellbound.
+
+DETERMINISTIC POWERS-OF-TWO FAMILY: a_i=2^i. Let1<=D<m and
+p>2^[D(2m-D+1)]. All D-subsetpositiveproductsT_I=prod(4^i-1) are<p; also
+sumcoremagnitudes<p, so ternarysumaloneforceszero bylargest-powerdomination.
+Productsareinjective ELEMENTARILY: T=4^s U,s=sumI,2/3<U<=1, sobitlengthT=2s.
+Atindexi residualU<=1-4^-i iffi∈I, becauseallfuturefactorsproduct>
+1-(1/3)4^-i. Thisgivesintegergreedydecoder, nofactorization/Zsigmondyneeded.
+Lift(-1)^(D+1)z modp tot, recoverDsupport, returnreference-minuslocator
+(optionalXfactor). Exactclassificationmakes thisa WHOLELINEnear/fardecider
+anduniquewitnessrecovery, deterministicpoly(logp). Allfixedrationalrates,
+alllargeprimep, nTheta_rho(sqrtlogp), eta3/n, strictElias, c2<1.5violated
+exponentially, exceptionalpointonecoordinatebelowmaxRSdistance.
+
+TWOLEVEL REFINEMENT (unadjustedn2m+2,K2D-1 only): additionally
+p>2^[m(m+1)/2+2m+2] ⇒EVERYnonbankparameterhasexactfar distance(n-K-1)/n.
+ProofatK+2agreements: with2paddingandKknowncoreroots,lastroot=-sumroots.
+Cancelpairedroots; remainoddnumberuof signedpowers. u1completespair(bank).
+u>=3 paddingequalityrequiresF=(1+S)prod(1-y)-(1-S)prod(1+y)=0modp.
+F/2=(Se2-e3)+(Se4-e5)+... uniqueleast2-adictermis u0²v0 forsmallest
+magnitudepowers2^a,2^b; valuation2a+b. Fnonzero,|F|<statedfieldbound.
+Onepaddingmatchforcespairedlocatorandhenceboth. Zeroalwaysattainsfar.
+DoNOTextendtwolevelclaimtooddK+optionalzero: deliberatefixturehasmiddlelevel.
+
+Finitefullydeterministicrows powers_two/verify.py (independentrationaldecoder):
+M521 n74K15D8m36 exactJ30260340, beatsc1=1; no twolevelclaim.
+M1279 n82K41D21m40 J131282408400, ratio>2^3; twolevelnear38/82,far40/82.
+M2203 n106K53D27m52 J477551179875952, ratio>2^6; twolevel.
+M9689 n226K113D57m112 J383737587959312915862780874001472, ratio>2^25;twolevel.
+Storedpowers_two/deterministic_instance.json isM1279n82 fullcoordinates and
+3explicitwitnesses; classificationDETERMINISTIC,not samplingguarantee.
+check.py32,738exhaustivesubsetdecodings; verify.py256largesupportrecoveries;
+check_two_adic.py59,028signedvectorsvaluation; check_two_levels.pyexhausts
+allinterpolationpencils, classifiesENTIREfieldsincluding61-bitfield. PASS.
+UNIQUE_PROOF_AUDIT.md recordsallproofobligationsandlimits.
+
+CONCRETE M31 EXHAUSTIVE BANKS m31_exact/: n58K27J39763294;
+n62K31J140916078; n64K31J281212602; n68K33J897817238 (lastbeatsc1=2).
+TwoindependentC++enumerators MITM/Mersennemod versusrecursivecomplements/%mod
+agree. Each256MiBbitmap, whole4rows~60sec<300MiB. Smallcorecoordinatesprinted
+inpaper; sourcecompact, nobigbitmap retained. verify.pyrecovers16witnesses.
+For n62ONLY, twoindependentternaryrelationchecks(3^15eachhalf,219MiB)prove
+onlyzerorelation. Twoindependentsegmentedhistogramcountsgive EXACThistogram
+listsizes0..5:[2006567569,136494714,4337028,83442,891,3]. Thus136494714
+UNIQUELYnearbyparametersalonebeatB<103199661, everypointonthislinehaslist<=5.
+NOTglobalell<=5. verify_local_lists.py~37sec<285MiB PASS.
+
+OPTIMIZED COMPLETION CERTIFICATES: optimize_completion.py searchesfineupward
+fixedpointrecurrenceswithweakerC4r+4andp-8. audit_optimized_completion.py
+independentlychecksinequalities,nohelperimports. Newmaintable:
+M61n158r1existpresc2^-1;M127n294r1exist2^-20;
+M521n1090r1exist2^-147;n2142r2exist2^-81;n2414r2fail2^-64,presc2^-26;
+M1279n7742r3exist2^-160;n8014r3fail2^-64,presc2^-121;
+n25970r10fail2^-64,presc2^-27. AllstrictElias. Searchnotoptimalityproof.
+OriginalM521n2518completion sample remains, failure2^-88, direction4.
+The tabledistinguishesexistenceandrandomizedrows. ExactM31banksareseparate.
+Erdos-Renyirandom-translatestrategycredited (primary1965paperTheorem2read).
+
+CURRENT NEXT RESEARCH IDEA (notyetproved/integrated): replacepairsbyorbits
+ofprimeorderd, tocombineUNIQUENESS+efficientdecodingwithfarfractiond/(d+1)
+arbitrarilyclose1. Forp≡1modd, primitiveω, core2^iω^j (i1..m,j0..d-1),
+paddingω^j, c<dextra singletons2^(m+1)..2^(m+c). n=d(m+1)+c,K=dD-1.
+Referencew=prod(X^d-2^(di)), g1padding0else. Candidatesdeg<=dD-d<K.
+FaragreementK+1=dD, nearK+d+1, eta(d+1)/n, sep d/(d+1)eta.
+ANYnearQmustmatchallpaddinganddDcore/extraroots; theirsum0modp.
+Liftroot sumtoZ[zeta_d]. Boundabsolutealgebraicnormby
+ A^(d-1), A=2^(m+1)(d+2^c). Ifp>A^(d-1), modpzero forcesalgebraiczero.
+Forprimed, minimalpoly1+...+X^(d-1), soallcoefficients(rootmembershipbinary
+sums)equal. BinaryuniquenessforcesfullorbitsandNOextrasingles. ThusEVERYnearQ
+isourlocator. Labels(-1)^(D+1)prod(2^(di)-1), injective/greedydecodedby
+samebase2^dargumentifp>2^[dD(2m-D+1)/2]. Normboundalsoensuresdomainnocollisions.
+Forrho=a/breducedandprimednotdividinga, choosen=btwithat≡-1modd, c=nmodd,
+m=(n-c)/d-1,D=(rhon+1)/d. Allfixedrho realizablebychoosinglargeprimedavoidinga.
+Primesp≡1modd only (infinite, notallprimep). nTheta_{rho,d}(sqrtlogp),
+logJ=nHrho/d+Ologn beatsc2nHrho/(d+1) wheneverc2<1+1/d, inparticular1.
+Givenωdeterministicconstruction/decoder; ωcanbefoundLasVegasbyh^((p-1)/d)
+withsuccess1-1/dpertrial. Avoidclaimunconditionaldeterministicpolylogrootfinding.
+Possiblefinitehalfraterows: d3,M9689,D46,m90,n274,c1 (factor~2^9);
+d5,M19937,D52,m102,n518,c3 (factor~2^2);
+d7,M44497,D65,m128,n908,c5 (factor~2^1).
+KnownMersenneprimesbutneedactualLLchecks; fastMersennefoldreductions
+s=(s*s-2 &p)+(s*s-2 >>b), subtractpifneeded, savehuge%cost.
+No gmpy2installed; sympyavailable. Theseorbitideasareunpromoteduntilproofaudit,
+finitechecksandnorm/cyclotomic/domain/paritydetailsresolved.

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/paired_domain_warp/powers_two/check_two_adic.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5516450830036774,
+  "peak_rss_kib": 2544,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

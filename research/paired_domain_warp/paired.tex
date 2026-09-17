@@ -169,27 +169,35 @@ Prime & $n$ & $r$ & Direction weight & Failure $<$ & Prescription $<$\\
 \midrule
 $2^{61}-1$&158&1&2&existence&$2^{-1}$\\
 $2^{127}-1$&294&1&2&existence&$2^{-20}$\\
-$2^{521}-1$&2518&2&4&$2^{-88}$&$2^{-6}$\\
-$2^{1279}-1$&8678&3&6&$2^{-228}$&$2^{-26}$\\
-$2^{1279}-1$&26218&10&20&$2^{-123}$&$2^{-15}$\\
+$2^{521}-1$&1090&1&2&existence&$2^{-147}$\\
+$2^{521}-1$&2142&2&4&existence&$2^{-81}$\\
+$2^{521}-1$&2414&2&4&$2^{-64}$&$2^{-26}$\\
+$2^{1279}-1$&7742&3&6&existence&$2^{-160}$\\
+$2^{1279}-1$&8014&3&6&$2^{-64}$&$2^{-121}$\\
+$2^{1279}-1$&25970&10&20&$2^{-64}$&$2^{-27}$\\
 \bottomrule
 \end{tabular}
 \end{center}
-The first two rows use successive averaging; the others also have the
+Rows marked existence use successive averaging; the others have the
 stated randomized success guarantees. The $61$-bit example has distance
 $78/158$ at zero and exactly $76/158$ at every nonzero parameter.
 Its line changes only two coordinates. All rows lie strictly below Elias.
 
 The checkers in \path{research/paired_domain_warp/} bound the recurrence
-with dyadic rationals and replay it independently using weaker character
-and conditioning constants. They separately verify primality, strict
+with dyadic or finer fixed-point upper bounds and replay the resulting
+integer inequalities independently using weaker character and conditioning
+constants. The search finds sufficient parameters; no optimality is claimed. They separately verify primality, strict
 Elias, and the numerical comparison. Small-field fixtures verify the
 entire affine distance profile at all $1369$ points of a two-dimensional
 space over $\F_{37}$; these fixtures illustrate the geometry and are
 not claimed to lie below Elias. The stored length-$2518$ sample has a
-four-coordinate direction and a known nearest codeword, zero, at
-parameter one. Its coordinates and distances at zero and one are
+four-coordinate direction, generator failure below $2^{-88}$, and a
+known nearest codeword, zero, at parameter one. Its coordinates and distances at zero and one are
 replayed deterministically. The full-profile probability is over the
 generator's randomness, rather than a deterministic certificate for the
 individual sample. The following cubic construction separately defeats
 arbitrary fixed numerical constants $c_1,c_2$.
+
+\input{research/paired_domain_warp/unique.tex}
+\input{research/paired_domain_warp/powers_two/deterministic.tex}
+\input{research/paired_domain_warp/m31_exact/finite.tex}

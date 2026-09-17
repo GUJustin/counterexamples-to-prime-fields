@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/paired_domain_warp/m31_exact/verify.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 60.88004266600183,
+  "peak_rss_kib": 298608,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 180
+}

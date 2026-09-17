@@ -25,3 +25,15 @@ subset sums, and quantitative Linnik, with polynomial-size fields and
 many nearby labels. The paired-block argument here uses random paired
 short domains, joint product images, and covers every nonzero label.
 This comparison does not claim an exhaustive novelty search.
+
+
+Completion strategy attribution (2026-09-17): Erdős–Rényi, Probabilistic
+methods in group theory, Journal d'Analyse Mathématique 14 (1965),127–138.
+Primary PDF https://renyi.hu/~p_erdos/1965-15.pdf read, especially Theorem2,
+printed pages132–136. Its proof completes a dense subset-sum image by random
+translates and iterates a conditional missing-set estimate. Our completion
+uses that strategy with a nonuniform character-controlled distribution,
+exclusions from previous choices, and paired alternatives preserving degree.
+The manuscript credits the strategy; it does not assert this general
+probabilistic method is new. The institute's publication list independently
+confirms bibliographic metadata: https://renyi.hu/en/node/4094.

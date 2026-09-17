@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/paired_domain_warp/optimize_completion.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 5.6320418329996755,
+  "peak_rss_kib": 19776,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 180
+}

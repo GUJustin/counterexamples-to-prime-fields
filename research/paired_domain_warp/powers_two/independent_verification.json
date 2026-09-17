@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "b": 521,
+      "n": 74,
+      "K": 15,
+      "m": 36,
+      "D": 8,
+      "nearby_count": "30260340",
+      "ratio_greater_than_power_two": 0,
+      "no_wrap_exponent": 520,
+      "two_level_exponent": 740,
+      "two_level": false,
+      "decoded_support_tests": 64
+    },
+    {
+      "b": 1279,
+      "n": 82,
+      "K": 41,
+      "m": 40,
+      "D": 21,
+      "nearby_count": "131282408400",
+      "ratio_greater_than_power_two": 3,
+      "no_wrap_exponent": 1260,
+      "two_level_exponent": 902,
+      "two_level": true,
+      "decoded_support_tests": 64
+    },
+    {
+      "b": 2203,
+      "n": 106,
+      "K": 53,
+      "m": 52,
+      "D": 27,
+      "nearby_count": "477551179875952",
+      "ratio_greater_than_power_two": 6,
+      "no_wrap_exponent": 2106,
+      "two_level_exponent": 1484,
+      "two_level": true,
+      "decoded_support_tests": 64
+    },
+    {
+      "b": 9689,
+      "n": 226,
+      "K": 113,
+      "m": 112,
+      "D": 57,
+      "nearby_count": "383737587959312915862780874001472",
+      "ratio_greater_than_power_two": 25,
+      "no_wrap_exponent": 9576,
+      "two_level_exponent": 6554,
+      "two_level": true,
+      "decoded_support_tests": 64
+    }
+  ],
+  "seconds": 14.704444041999523,
+  "scope": "Deterministic domains and complete mathematical classification of nearby parameters, not a sampling guarantee. Exact rational support recovery is independently replayed."
+}

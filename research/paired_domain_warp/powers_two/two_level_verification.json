@@ -1,0 +1,78 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "p": "65537",
+      "n": 8,
+      "K": 3,
+      "zero": false,
+      "X_factor": false,
+      "interpolation_pencils": 56,
+      "exact_distance_histogram": {
+        "2": "3",
+        "4": "65534"
+      },
+      "nearby_parameters": 3,
+      "all_nearby_unique": true
+    },
+    {
+      "p": "65537",
+      "n": 9,
+      "K": 3,
+      "zero": true,
+      "X_factor": false,
+      "interpolation_pencils": 84,
+      "exact_distance_histogram": {
+        "3": "3",
+        "4": "3",
+        "5": "65531"
+      },
+      "nearby_parameters": 3,
+      "all_nearby_unique": true
+    },
+    {
+      "p": "65537",
+      "n": 9,
+      "K": 4,
+      "zero": true,
+      "X_factor": true,
+      "interpolation_pencils": 126,
+      "exact_distance_histogram": {
+        "2": "3",
+        "4": "65534"
+      },
+      "nearby_parameters": 3,
+      "all_nearby_unique": true
+    },
+    {
+      "p": "2305843009213693951",
+      "n": 10,
+      "K": 3,
+      "zero": false,
+      "X_factor": false,
+      "interpolation_pencils": 120,
+      "exact_distance_histogram": {
+        "4": "6",
+        "6": "2305843009213693945"
+      },
+      "nearby_parameters": 6,
+      "all_nearby_unique": true
+    },
+    {
+      "p": "2305843009213693951",
+      "n": 14,
+      "K": 5,
+      "zero": false,
+      "X_factor": false,
+      "interpolation_pencils": 2002,
+      "exact_distance_histogram": {
+        "6": "20",
+        "8": "2305843009213693931"
+      },
+      "nearby_parameters": 20,
+      "all_nearby_unique": true
+    }
+  ],
+  "seconds": 0.15545900000142865,
+  "scope": "Exhaustive interpolation-pencil classification of every field parameter; the extra-zero odd-K case intentionally has an intermediate distance level."
+}

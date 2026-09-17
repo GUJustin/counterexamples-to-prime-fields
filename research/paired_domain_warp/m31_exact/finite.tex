@@ -1,0 +1,97 @@
+\subsubsection{Deterministic banks over the 31-bit Mersenne prime}
+\label{sec:paired-m31}
+
+The preceding small-bit full-coverage certificates use averaging. At
+$p=2^{31}-1$, direct enumeration instead certifies the following large
+banks for concrete domains. These counts do not depend on a sampling
+success event.
+
+\begin{proposition}[Explicit M31 banks, verified by enumeration]
+\label{pd:m31-exact}
+Over $\F_{2^{31}-1}$ there are the following Reed--Solomon codes and
+received lines. Put $\rho=K/n$, $\eta=3/n$, and
+$B=n2^{H_2(\rho)/\eta}$.
+\begin{center}
+\begin{tabular}{@{}rrrrl@{}}
+\toprule
+$n$ & $K$ & Candidate supports & Certified nearby parameters & Comparison\\
+\midrule
+58&27&40,116,600&39,763,294&$>B$\\
+62&31&145,422,675&140,916,078&$>B$\\
+64&31&300,540,195&281,212,602&$>B$\\
+68&33&1,166,803,110&897,817,238&$>2B$\\
+\bottomrule
+\end{tabular}
+\end{center}
+Parameter zero has exact distance $(n-K-1)/n$, and every certified
+parameter has exact distance $(n-K-3)/n$. The direction changes only
+two coordinates. All four radii are strictly below Elias and have no
+correlated agreement. Thus all four violate the $c_1=c_2=1$ numerical
+prescription; the last also violates $c_1=2,c_2=1$.
+\end{proposition}
+\begin{proof}[Construction and computational verification]
+Let $m=n/2-1$ and $D=(K+1)/2$. Use the first $m$ entries of the following
+list as core representatives, with $\pm1$ as the padding pair:
+\[
+\begin{gathered}
+848979899,\ 738121439,\ 699266884,\ 128913239,\ 806814741,\ 629503248,\\
+179005809,\ 134797481,\ 207154190,\ 1023774369,\ 339671428,\ 287462841,\\
+393054946,\ 39961481,\ 1026875673,\ 850367968,\ 913861226,\ 264277071,\\
+48753053,\ 60664611,\ 1054291373,\ 882987304,\ 134769212,\ 35446086,\\
+175650241,\ 263723351,\ 718238076,\ 6429846,\ 428509650,\ 268381772,\\
+130012564,\ 236350235,\ 900863422.
+\end{gathered}
+\]
+The domain consists of both signs of these representatives and of $1$.
+Set $w(X)=\prod_{i=1}^D(X^2-a_i^2)$, let $f$ be its evaluation word,
+and let $g$ equal one on $\pm1$ and zero elsewhere. A $D$-subset $I$
+supplies the codeword $w-H_I$ at parameter
+\[
+ z_I=-\prod_{i\in I}(1-a_i^2)\ne0.
+\]
+It has $K+1$ core and two padding agreements. The root bound at zero
+and the two-coordinate distance inequality prove both exact distances.
+
+Two independent programs in \path{research/paired_domain_warp/m31_exact/}
+enumerate the image of these subset products. One joins product lists
+from two halves of the core and uses Mersenne reduction; the other
+recursively enumerates complementary supports, using inverse factors
+and ordinary modular reduction. Their bitmaps give the same four
+counts in the table. The verifier also recovers explicit supports and
+codeword coefficients for selected parameters. The counts are exact
+for this candidate family and lower-bound the total number of nearby
+parameters on the line.
+
+The comparison with $c_1B$ is checked by the integer inequality
+\[
+ J^3K^K(n-K)^{n-K}>c_1^3n^{n+3},
+\]
+where $J$ is the certified count. In the half-rate row,
+$B=62\cdot2^{62/3}<103199661$. Finally
+$\eta\log_2p>90/n>1$ proves strict Elias in every row.
+The code's prescribed domain is the displayed paired set; a power-of-two
+length in the third row does not make it an FFT-domain example.
+\end{proof}
+
+
+\paragraph{Exact local lists in the half-rate row.}
+For $n=62,K=31$, the signed-relation condition of
+Lemma~\ref{pd:unique-criterion} is also checked exhaustively. Splitting
+its $30$ variables into two groups gives $3^{15}=14348907$ assignments
+per group; the only matching pair is the empty assignment. Two
+independent implementations agree. The lemma therefore excludes every
+nearby codeword outside the enumerated locator family. Two further
+independent counts give its complete list-size distribution:
+\begin{center}
+\begin{tabular}{@{}rrrrrrr@{}}
+\toprule
+List size&0&1&2&3&4&5\\
+\midrule
+Parameters&2,006,567,569&136,494,714&4,337,028&83,442&891&3\\
+\bottomrule
+\end{tabular}
+\end{center}
+In particular, even the $136494714$ uniquely nearby parameters exceed
+$B<103199661$. Every point on this line has at most five nearby
+codewords at the tested radius. This is an exact statement about the
+displayed line, not a global list-size upper bound for the code.

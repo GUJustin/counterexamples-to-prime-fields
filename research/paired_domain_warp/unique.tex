@@ -1,0 +1,116 @@
+\subsubsection{Unambiguous nearby points and an almost maximally far input}
+\label{sec:paired-unique}
+
+Complete nonzero coverage is not needed to refute the numerical bound.
+A different choice of paired domain makes every nearby point uniquely
+decodable, while retaining the almost maximally far exceptional point.
+The following argument uses only polynomial zero bounds.
+
+\begin{lemma}[A criterion for exact, unambiguous line lists]
+\label{pd:unique-criterion}
+Use one padding pair $\pm1$ and nonzero core representatives
+$a_1,\ldots,a_m$ with distinct squares different from one,
+and the exact-rate parity construction above, with $D$ selected core
+orbits. Suppose the only $\varepsilon\in\{-1,0,1\}^m$ satisfying
+\[
+ \sum_i\varepsilon_i a_i=0,\qquad
+ \prod_i\left(\frac{1-a_i}{1+a_i}\right)^{\varepsilon_i}=1
+\]
+is the zero vector. Set the direction on the padding to one in the
+even-locator case, and to $x$ in the case multiplied by $X$.
+At agreement threshold $K+3$, the nearby parameters are exactly
+\[
+ -\prod_{i\in I}(1-a_i^2),\qquad |I|=D,
+\]
+and the list at each parameter consists exactly of the candidate
+codewords from that product's fiber. If these products are distinct,
+there are exactly $\binom mD$ nearby parameters and each has a unique
+nearby codeword. Parameter zero has exact distance $1-K/n-1/n$;
+every nearby parameter has exact distance $1-K/n-3/n$.
+\end{lemma}
+\begin{proof}
+The usual locators supply the displayed parameter for every support.
+Conversely, a nearby codeword must match both padding
+coordinates and $K+1$ nonpadding coordinates, because the far-point agreement
+bound is $K+1$. Write $F$ for the reference polynomial, including the
+optional factor $X$, and let $Q$ be any nearby codeword polynomial.
+Then $H=F-Q$ is monic of degree $K+1$, has zero coefficient of $X^K$,
+and is the locator of exactly $K+1$ nonpadding roots. Thus those roots sum to zero.
+
+Remove every sign-orbit whose two elements are roots. Each remaining
+nonzero root is $\varepsilon_i a_i$ for a nonzero entry of a ternary
+vector $\varepsilon$. The root-sum condition gives its first equation.
+The padding equalities give
+$H(1)/H(-1)=(-1)^{K+1}$. Factoring this ratio into root contributions
+gives its second equation; a possible zero root contributes one.
+The hypothesis therefore leaves no single roots. When $K+1$ is
+even, zero cannot be a root, and when $K+1$ is odd, zero must be a root.
+Consequently $H$ is exactly one of the paired locators in the candidate
+family, including the optional factor $X$. This proves the exact list
+description; distinct products then give uniqueness and the stated count. The root bound at zero
+and the two-coordinate distance inequality prove the asserted distances.
+\end{proof}
+
+\begin{theorem}[Numerical failure with no local decoding ambiguity]
+\label{pd:unique}
+Fix a rational rate $\rho\in(0,1)$, $c_1>0$, and $0<c_2<3/2$.
+Over every sufficiently large prime field, there is an exact-rate code
+of length
+\[
+ n=\tfrac12\log_2p+O_\rho(1)
+\]
+and a received line with exactly
+\[
+ J=2^{(H_2(\rho)/2+o(1))n}
+\]
+nearby parameters at radius $\theta=1-\rho-3/n$. Every nearby point
+has a unique nearby codeword. Parameter zero has distance
+$1-\rho-1/n$, so its separation is $2/3$ of the capacity gap.
+The radius is strictly below Elias, there is no correlated agreement,
+and
+\[
+ \frac{J}{c_1n2^{c_2H_2(\rho)/(3/n)}}\longrightarrow\infty.
+\]
+Uniform sampling of the core constructs the code and line in expected
+polynomial time in $\log p$, with failure probability
+at most $p^{-1/2+o(1)}$.
+\end{theorem}
+\begin{proof}
+Choose $n$ with the exact-rate parity above and take
+$m=(n-a)/2-1$, where $a\in\{0,1\}$ records the optional zero coordinate.
+Thus $m=\tfrac14\log_2p+O_\rho(1)$ and
+$D=\rho m+O_\rho(1)$. First sample the $a_i$ independently and uniformly
+from $\F_p$. The probability of a zero, a padding collision, or repeated
+squares is at most $(m^2+2m)/p$.
+
+For two distinct supports, equality of their products is a nonzero
+polynomial equation of degree at most $2m$. A union bound over at most
+$\binom mD^2\le4^m$ support pairs bounds the probability of any such
+collision by $2m4^m/p$.
+
+Fix a nonzero ternary vector with support size $u$. For $u=1,2$, its
+sum equation is impossible on a valid domain. For $u\ge3$, change signs
+of the selected variables and eliminate the last using their sum.
+The product-ratio equation becomes a nonzero polynomial of degree at
+most $u$ in the remaining $u-1$ variables. To see it is nonzero, set
+all but three original variables to zero and set the remaining three
+to $X,Y,-X-Y$: the difference of the two products is, up to sign,
+$2XY(X+Y)$. The probability of the two equations is therefore at most
+$u/p^2$, by the polynomial zero bound. Summing over the ternary vectors
+gives at most $m3^m/p^2$.
+
+The total bad probability is at most
+\[
+ \frac{m^2+2m+2m4^m}{p}+\frac{m3^m}{p^2}
+ =p^{-1/2+o(1)}.
+\]
+Rejection sampling for a valid domain preserves this asymptotic bound.
+Lemma~\ref{pd:unique-criterion} applies on every remaining output.
+The binomial entropy estimate gives
+$\log_2J=nH_2(\rho)/2+O_\rho(\log n)$, and hence the displayed ratio
+diverges for $c_2<3/2$. Since $(3/n)\log_2p\to6$, the sufficient
+Elias condition holds with room to spare. The far point rules out
+correlated agreement. Forming and evaluating the reference locator
+costs $O(n^2)$ field operations; the sampler need not verify the two
+combinatorial conditions or recover a witness at a supplied parameter.
+\end{proof}

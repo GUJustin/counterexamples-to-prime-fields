@@ -61,6 +61,9 @@ nonzero coverage at length $\Theta(\log p)$ against arbitrary fixed
 constants in the proposed numerical bound. Both constructions output
 the code and line in expected polynomial time in $\log p$, with
 success probability $1-p^{-\Omega(1)}$.
+A deterministic powers-of-two construction also violates the numerical
+bound with unique, efficiently recoverable nearby witnesses and an
+almost maximally far exceptional point.
 An anchored lift and padding construction
 gives failure of correlated agreement at an exactly fixed positive rate and gap, at
 arbitrarily large lengths, even when every nearby point on the line
@@ -160,8 +163,18 @@ close to one despite an almost maximally far input. Theorem~\ref{cw:punctured-li
 separately defeats any fixed constants $c_1,c_2$, with a fixed positive
 separation fraction depending on $c_2$.
 
-The gap still shrinks as $\Theta(1/\log p)$, and the strongest relative
-separation approaches the Elias boundary. These results do not
+Decoding ambiguity is unnecessary for numerical failure. Separately,
+Theorem~\ref{pd:deterministic} gives explicit powers-of-two domains where
+every nearby point has a unique codeword, recoverable in polynomial time
+in $\log p$, and the number of nearby parameters exceeds the numerical
+prescription exponentially. The exceptional point is again one coordinate
+short of maximum distance. At half rate these examples can have only two
+distance levels: every parameter outside the nearby bank is at the far
+level. Thus the obstruction persists even when proximity along the line
+is easy to decide and every accepted parameter has an unambiguous witness.
+
+In the full-coverage examples the gap shrinks as $\Theta(1/\log p)$,
+and the strongest relative separation approaches the Elias boundary. These results do not
 establish superlinear growth in $n$ at one fixed positive gap on short
 prime-field domains; that stronger question remains open. Separate
 interval-padding constructions give explicit density/separation
@@ -3338,16 +3351,20 @@ existence theorem and a counterexample on an integer interval leave
 this question open. Such a theorem should expose its finite constants
 and its dependence on the challenge field.
 \item \textbf{Complete coverage with unique nearby codewords.}
-Can the full punctured-line behavior of Theorem~\ref{cw:punctured-line}
+Can the full punctured-line behavior of Corollary~\ref{pd:full-gap}
 coexist with a unique nearby codeword at every nonzero parameter?
 The cubic construction necessarily has local ambiguity: at a single
 padding coordinate, more than $p$ candidates produce only $p-1$ labels.
-It also has very large global lists. The fixed-gap construction gives
-whole-line uniqueness, but only a linear lower bound on the nearby count.
+It also has very large global lists. The paired constructions in
+Theorems~\ref{pd:unique} and~\ref{pd:deterministic} have whole-line
+uniqueness and exponentially many nearby parameters, but do not give
+complete nonzero coverage. The fixed-gap construction gives whole-line
+uniqueness with a linear lower bound on the nearby count.
 \item \textbf{Recovering nearby witnesses.}
-Can one efficiently recover nearby codewords for the displayed lines,
-or enumerate enough of the equal-moment classes to match the counting
-lower bounds? Lemma~\ref{pd:sampling} and Proposition~\ref{cw:sampling}
+Can one efficiently recover nearby codewords for the full-coverage
+constructions, or enumerate enough of the equal-moment classes to match
+the counting lower bounds? The deterministic powers-of-two family in
+Theorem~\ref{pd:deterministic} has an efficient witness-recovery algorithm. Lemma~\ref{pd:sampling} and Proposition~\ref{cw:sampling}
 output the code and line in expected polynomial time in $\log p$, but
 do not recover a witness
 for a supplied nonzero parameter.
@@ -5690,6 +5707,11 @@ odd-characteristic bounds $20$ and $62$.
 \input{research/riccati_cross_ratio/appendix.tex}
 
 \begin{thebibliography}{99}
+\bibitem{erdos-renyi-group} P. Erd\H{o}s and A. R\'enyi.
+Probabilistic methods in group theory.
+\emph{Journal d'Analyse Math\'ematique} 14 (1965), 127--138.
+\url{https://renyi.hu/~p_erdos/1965-15.pdf}.
+
 \bibitem{bgks-shifted} J. Bourgain, M. Z. Garaev, S. V. Konyagin,
 and I. E. Shparlinski. \emph{On the hidden shifted power problem}.
 arXiv:1110.0812v2, 2011. \url{https://arxiv.org/abs/1110.0812}.
