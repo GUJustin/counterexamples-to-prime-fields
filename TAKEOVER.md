@@ -2254,3 +2254,28 @@ Characteristic zero is essential: an explicit full-field power family
 violates the analogous finite-field bound below capacity. No uniform
 large-prime transfer is claimed. The introduction already clearly states
 our actual fixed-gap limitation and was left unchanged.
+
+## Coauthor PDF recovered: update comparison before further tightness claims
+
+The continuing Dropbox sync now provides version(7), modified Sep10,
+105pages, by Dao–Kominers–Thaler. Direct statements are recorded with
+SHA256 and page numbers in COAUTHOR_DRAFT_COMPARISON_2026-09-10.md.
+First-order list O(n/eta_1^3), MCA O(n^2/eta_1^5); capacity sufficient
+order ceil(exp(1.5/delta)), not the old6.76/6.88 excerpts. Lists and
+exceptions have powers d,d+1; the draft also states deterministic
+bit-complexity reconstruction without field enumeration. This version
+is not asserted to be the user's latest; version(9) remains unrecovered.
+
+At rate1/4 its first-order curve is (3+sqrt133)/31~=0.46879. Our new
+agreement3/8 profile lies below that curve and does not test first-order
+sharpness. Capacity gap delta and first-order gap eta_1 must stay distinct.
+The exact-halving compiler may also leave the first-order regime.
+Next concrete audit: restored first_order_support_optimum_2026-09-13/
+main.tex and finite_and_spaces.tex, which claim method optimality at
+that same quarter-rate threshold. No independent audit yet.
+
+An older Sep5 Dropbox source already contains a DIFFERENT exact-eight
+boundary construction at rate1/4,gap0.24. Mere list size8 is not novel;
+our new exact-profile deformation has gap1/8 and no other candidates
+above4 agreements. No source PDF or private draft has been committed
+or published; local snapshot is in ignored tmp/recovered-coauthor-draft.
