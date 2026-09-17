@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/two_coset_candidate_lists/check_branches.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.0815097920058179,
+  "peak_rss_kib": 36544,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 300
+}

@@ -1,5 +1,12 @@
 # Proposed branch analysis of binomial sections — not yet a theorem
 
+Historical agenda. The subsequent BINOMIAL_BRANCH_BOUND.md now supplies
+a locally audited proof, including arbitrary candidate subsets and an
+explicit bound. It uses the safer residual bound r*2^r+1 rather than
+the proposed factor-r improvement below. The finite root-filter/mask
+and branch-coefficient checks are saved alongside it. The statements
+below describe the earlier proposal, not additional established claims.
+
 September17, research agenda. The following algebra suggests why the
 quadratic r2,j1 construction is exceptional. It needs a complete local
 audit, explicit character-sum constants and independent finite checks

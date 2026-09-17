@@ -2050,3 +2050,49 @@ Cryptographic Proofs, with Q.Dao and J.Thaler, but no linked draft.
 STATUS.md records the source and version caution. Exact latest coauthor
 theorems remain unavailable beyond restored excerpts. No live jobs.
 Work horizon remains18:00 Eastern=22:00UTC, NOT the original08:30 deadline.
+
+## 2026-09-17 13:35 UTC — binomial branch agenda resolved locally
+
+Previous turn was progress, commita28d1e608f630e37c4dd87aa5a60eb1c8ceb49f6
+saved the120-case two-coset search and its independent replay. This turn
+proves a restricted upper bound suggested by those failures, rather than
+finding the desired new lower-bound family.
+
+research/two_coset_candidate_lists/BINOMIAL_BRANCH_BOUND.md now proves:
+for p=2rk+1, r>=3, any subset of the candidatesG(hX)-X^k, h in mu_k,
+on any n<=c*k coordinates and any word, cannot all have k+1 agreements
+unless L<=2^20*r^3*4^r+24*c*(r*2^r+1). This includes arbitrary non-
+subgroup candidate subsets, non-invariant domains and words, and zero.
+It is NOT a general RS list bound. r2,j1 is the Dickson exception.
+
+Proof: a root filter gives multiquadratic radical branches. Constant
+branches occur only in the rth-power class, and additionally in its
+order2 class for j1. All other per-value fibers are bounded by a
+Galois-invariant nonconstant-branch norm, of degree<=r*2^r; use safe
+B=r*2^r+1, not the earlier proposed factor-r improvement. Character-
+pattern estimates and nontrivial Fourier coefficients are bounded by
+Lambda=2^(r+1)(sqrt(p)+3). Parseval controls arbitrary candidate subsets.
+The leading agreement coefficient is<=7/8 for allr>=3, including a
+separate r4,j1 sign-count refinement. Explicit constants absorb small k.
+
+Locally audited pitfalls: dependent but distinct square classes still
+give independent character spaces; exclude identically constant factors
+from norm products; their multiset remains Galois invariant; clear j0
+denominators; base points add at most1; lifted nontrivial H characters
+are neither principal nor quadratic, preventing a trivial expanded sum.
+Weil input checked at https://web.cs.wpi.edu/~gsarkozy/Cikkek/23.pdf,
+Lemma2. No independent human/agent review or novelty claim.
+
+check_branches.py passes26 exact fixtures including every section for
+r3,4,6 overF12289; checks coefficients, root filter at every nonzero
+t, r-to-one masks and residual fibers. Max observed residual fiber4.
+Uses NumPy integer arrays; FFT values are diagnostic only. Runtime1.1s,
+peak37MiB. check_branch_classification.py passes26104 exact sign-pattern
+coefficient checks forr2..8, stdlib,0.55s/<7MiB. Reports saved. The latter
+is in make verify; NumPy fixtures have a separate optional target.
+
+The exponential-in-r bound leaves r>=Omega(log L) open, so it does not
+resolve the large-prime fixed-gap lower-bound target. Do not spend the
+remaining horizon only expanding restricted upper-bound appendices.
+No new paper appendix: manuscript remains157pages at the previously
+verified build. No live jobs. Continue substantive research to22:00UTC.

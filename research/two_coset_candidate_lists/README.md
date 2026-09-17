@@ -71,3 +71,25 @@ The120-case scan took14.6s at less than38MiB RSS; independent validation
 took6.8s at less than22MiB. Both ran under a384MiB watchdog. The JSON
 contains the selected cosets and symbols needed to reconstruct each
 certificate. The search is finite evidence, not an asymptotic barrier.
+
+## Subsequent structural bound
+
+[BINOMIAL_BRANCH_BOUND.md](BINOMIAL_BRANCH_BOUND.md) proves a restricted
+upper bound for ANY subset of the full mu_k candidate orbit, on arbitrary
+domains and words of length at most c*k. For r>=3, agreement above k
+forces list size at most2^20*r^3*4^r+24*c*(r*2^r+1), independently of k.
+The proof separates constant radical branches, bounds residual fibers
+by a norm, and applies character-sum Fourier mixing to arbitrary subsets.
+The r2,j1 Dickson case is explicitly excluded.
+
+This blocks growing candidate subsets when r is fixed and more generally
+when r grows sufficiently slowly relative to log L. The exponential
+dependence on r leaves the main large-prime target open. This is a
+locally audited family-specific theorem, not a general RS list bound.
+
+check_branches.py passed26 exact root-filter/mask/residual-fiber fixtures,
+including all sections at r3,4,6 overF12289; it uses NumPy integer arrays.
+Its Fourier numbers are floating-point diagnostics only. Separately,
+check_branch_classification.py passed26104 exact sign-pattern coefficient
+checks for every section and Frobenius class at r2 through8, using only
+the standard library. No new manuscript appendix was added.

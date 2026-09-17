@@ -169,3 +169,11 @@ verify-prime-list-amplification:
 verify: verify-two-coset-candidates
 verify-two-coset-candidates:
 	$(PYTHON) research/two_coset_candidate_lists/verify.py
+
+.PHONY: verify-binomial-branch-classification verify-binomial-branch-fixtures
+verify: verify-binomial-branch-classification
+verify-binomial-branch-classification:
+	$(PYTHON) research/two_coset_candidate_lists/check_branch_classification.py
+# Optional research fixtures use NumPy; FFT output is diagnostic only.
+verify-binomial-branch-fixtures:
+	$(PYTHON) research/two_coset_candidate_lists/check_branches.py

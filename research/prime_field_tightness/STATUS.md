@@ -257,3 +257,27 @@ is checked at N5->10 overF101 and N10->20 overF23; the latter checks
 field saturation. Some fixtures explicitly have ordinary CA alongside
 full-support failures. The manuscript includes the exact-scaling
 proposition and an introduction paragraph explaining its conditional role.
+
+## Higher binomial sections: arbitrary-subset obstruction, 13:35 UTC
+
+The120-case two-coset scan produced only a finite full-length tradeoff,
+not a short-domain source list. The subsequent locally audited proof in
+research/two_coset_candidate_lists/BINOMIAL_BRANCH_BOUND.md now bounds
+EVERY subset of that binomial-section orbit, not only subgroup or two-
+coset subsets. For r>=3 and n<=c*k, more than k agreements force
+L<=2^20*r^3*4^r+24*c*(r*2^r+1). Fixed r therefore cannot support
+growing above-capacity lists in this family. The exceptional r2,j1
+quadratic/Dickson mechanism remains valid.
+
+The bound is exponential in r and does not rule out r growing at least
+logarithmically with L. This remains a restricted-family obstruction,
+not a universal prime-field list theorem or exponent-tightness result.
+It suggests moving beyond fixed-index binomial-section mechanisms.
+The proof combines a radical-branch classification, a conservative norm
+degree bound, and multiplicative-character Fourier mixing. Its external
+Weil estimate was checked against Sárközy–Sárközy Lemma2.
+
+Exact checks:26 root-filter/constant-mask/residual-fiber fixtures and
+26104 sign-pattern coefficient checks pass. Fourier diagnostics are
+floating point and are not used as proof certificates. The manuscript
+remains157pages; this family-specific result is kept in research notes.
