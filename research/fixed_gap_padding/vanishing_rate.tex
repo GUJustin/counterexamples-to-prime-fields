@@ -1,10 +1,10 @@
 \subsection{An elementary low-rate boundary case}
 \label{sec:vanishing-rate}
 
-The fixed positive rate qualification matters in the remaining question
-about separation proportional to $\eta$. If the rate may tend to zero,
-even the constant code admits a line with exactly one far point.
-This elementary boundary case is separate from our fixed-rate obstructions.
+For comparison, if the rate may tend to zero, even the constant code
+admits a line with exactly one far point. The construction below uses
+only elementary counting and works on every domain of the specified
+size, with a field polynomial in the length.
 
 \begin{theorem}[A punctured nearby line for the constant code]
 \label{fg:punctured-line}
@@ -87,5 +87,6 @@ The constant code's actual maximum list size at this radius is exactly
 $\lfloor n/(D+1)\rfloor$: distinct constant values use disjoint agreement
 sets, and assigning blocks of $D+1$ positions attains the bound.
 Thus its actual list size times $n$ is $\Theta(n^2)>p$ in this
-construction. This is not an actual-list counterexample, nor does it
-address the fixed positive-rate separation question.
+construction. This is not an actual-list counterexample. Its additional feature is
+that it works on every domain of the given size, whereas the fixed-rate
+construction in Theorem~\ref{cw:punctured-line} uses chosen domains.

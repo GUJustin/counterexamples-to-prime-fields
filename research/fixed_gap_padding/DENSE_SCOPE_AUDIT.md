@@ -84,3 +84,12 @@ Independent headline replay now also verifies the gap-scale far rows
 M2203 (>0.93155073), M4423 (>0.99999974), and M9689 (>0.99999970),
 with numerical-prescription bounds 2^-126, 2^-619, and 2^-1371.
 It imports no construction helpers and separately checks primality.
+
+Cubic-domain update: ../cubic_domain_warp/ now proves complete nonzero
+coverage at fixed rate and fixed positive separation fraction eta/u.
+It uses cubic images of the interval and a published hypersurface
+point-count estimate, unlike the elementary padded-interval results
+reviewed above. This closes the former fixed-relative-buffer frontier,
+but not fixed-gap superlinear growth, prescribed-domain transfer, or
+actual-list-size separation. Local ambiguity is necessary for this
+construction: L>p candidates at one padding point map to p-1 labels.

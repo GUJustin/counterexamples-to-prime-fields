@@ -1,8 +1,7 @@
 # Cubic domain deformation: candidate full punctured-line theorem
 
-September 17, 2026. Written proof and finite arithmetic audits completed;
-final adversarial read and manuscript integration pending. The main paper
-does not yet input proposed.tex. SOURCE_AUDIT.md verifies the published
+September 17, 2026. Written proof, finite arithmetic audits, and final adversarial read
+completed. The main paper now inputs cubic_warp.tex. SOURCE_AUDIT.md verifies the published
 point-count hypotheses; both finite certificates have independent replays.
 
 ## 1. Arrangement irreducibility
@@ -144,7 +143,16 @@ candidate degrees, agreement8, and5095totaloutsidecollisions.
 
 Theorem can be sharpened to prescribed integeru>c2 and kappa=1/u:
 choosebeta justaboverho and C between1/(alpha Hbeta) andu/(c2Hrho),
-then s=u-1. See proposed.tex for the formal formulation/proof.
+then s=u-1. See cubic_warp.tex for the formal formulation/proof.
 The actual global list is still >p asymptotically: on the core use
 thresholdt supports and3(s+1) moments before deformation, preserving
 s+1 moments after, which makes degree<t-(s+1)=K.
+
+Integration completed as Theorem4.18, with the strongest line claim now
+in abstract/intro/README and the former fixed-kappa density frontier
+removed from open questions. The remaining fixed-gap and prescribed-
+domain questions are unchanged. A smaller independently verified row
+has M127,n214,K107,m202,A109,q13, allp-1nearby, farη/2, prescription
+fraction<2^-12. Gramlist151bits, independentbox137bits. Its exact
+rational missing expectation is below1. Larger-row prescription bounds
+were tightened to2^-308(M1279) and2^-593(M9689).

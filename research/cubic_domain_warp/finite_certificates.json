@@ -2,6 +2,25 @@
   "status": "passed",
   "certificates": [
     {
+      "prime_exponent": 127,
+      "n": 214,
+      "K": 107,
+      "m": 202,
+      "threshold": 109,
+      "seed_moments": 3,
+      "transformed_moments": 1,
+      "list_bits": 151,
+      "padding": 13,
+      "image_fraction_lower": "0.99999993",
+      "all_nonzero_parameters_nearby": true,
+      "coverage_method": "exact rational missing-label expectation",
+      "far_coordinates": 1,
+      "separation_fraction": "1/2",
+      "strict_elias": true,
+      "prescription_fraction_less_than_power_two": -12,
+      "list_lower_bound_sha256": "0f7631fd85dc340986463662ded192d679befaf97099113aca49017613c810ac"
+    },
+    {
       "prime_exponent": 1279,
       "n": 3834,
       "K": 1917,
@@ -13,10 +32,11 @@
       "padding": 1279,
       "image_fraction_lower": "0.99999999",
       "all_nonzero_parameters_nearby": true,
+      "coverage_method": "quarter-missing bound",
       "far_coordinates": 1,
       "separation_fraction": "1/4",
       "strict_elias": true,
-      "prescription_fraction_less_than_power_two": -307,
+      "prescription_fraction_less_than_power_two": -308,
       "list_lower_bound_sha256": "801017737dfabcaa7a2717490614929b8b4b91b3d62b2475226dd35ee3ec04fd"
     },
     {
@@ -31,13 +51,14 @@
       "padding": 6055,
       "image_fraction_lower": "0.99999999",
       "all_nonzero_parameters_nearby": true,
+      "coverage_method": "quarter-missing bound",
       "far_coordinates": 1,
       "separation_fraction": "1/2",
       "strict_elias": true,
-      "prescription_fraction_less_than_power_two": -591,
+      "prescription_fraction_less_than_power_two": -593,
       "list_lower_bound_sha256": "f4ee21e98e98523749cb1f263d123205c23e54ce9fde99019fd09abf3be9ccf2"
     }
   ],
-  "seconds": 2.041354417000548,
+  "seconds": 2.2721554999989166,
   "scope": "Exact finite arithmetic conditional on the written cubic-warp geometry and cited point-count theorem. Existence certificates; no coordinates or padding directions enumerated."
 }

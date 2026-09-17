@@ -136,6 +136,11 @@ Finally $\eta\log_2p\to u/C>c_2H_2(\rho)\ge H_2(\rho)$ gives strict
 Elias and the stated numerical comparison.
 \end{proof}
 
+For every selection of nearby witnesses, an affine codeword graph
+contains at most $n-K-u+1\le n$ selected pairs, by
+Lemma~\ref{lem:ct-quantitative-concurrency}. Thus complete coverage also
+violates the numerical line-decodability threshold at concurrency $n$.
+
 For $c_1=c_2=1$, one may take $u=2$: every nonzero point is nearby
 while the remaining point is $\eta/2$ outside. This is a shrinking-gap
 construction on cubic images of intervals with added coordinates.
@@ -145,4 +150,35 @@ Its global lists remain large: on the original core, match $3(s+1)$
 moments for $t$-subsets, and then apply the same cubic map. The count
 still exceeds $p$, and the $s+1$ preserved moments give degree-below-$K$
 candidates at threshold $t$. Thus it does not replace the separate
-actual-list-size separation.
+actual-list-size separation. The displayed line necessarily has local
+ambiguity as well: at any one padding coordinate, $L>p$ candidates
+produce only $p-1$ nonzero labels.
+
+Exact finite certificates give the following half-rate instances.
+Every nonzero parameter is nearby in every row; the last column compares
+$n2^{1/\eta}/p$ with the $c_1=c_2=1$ prescription.
+\begin{center}
+\begin{tabular}{@{}rrrrll@{}}
+\toprule
+Prime & $n$ & $K$ & Agreement threshold & Far separation & Prescription $<$\\
+\midrule
+$2^{127}-1$&214&107&109&$\eta/2$&$2^{-12}$\\
+$2^{1279}-1$&3834&1917&1921&$\eta/4$&$2^{-308}$\\
+$2^{9689}-1$&18162&9081&9083&$\eta/2$&$2^{-593}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+The checker \path{verify_finite_certificate.py} in
+\path{research/cubic_domain_warp/} verifies primality, strict Elias,
+the list count and \eqref{cw:cover-condition}. The independent
+\path{audit_finite_independent.py} uses elementary anchored moment boxes
+and the weaker point-count bound of \cite[Theorem~5.2]{cafure-matera},
+with no construction-helper imports. Both replays verify the missing-label expectation is less than one.
+For the two larger fields, $M/(p-1)>3/4$ and
+$2q\ge\log_2(p+1)$ suffice; for the $127$-bit field, each replay
+checks the rational power directly.
+The finite geometry checker verifies general position, smooth base
+intersections, small-field point counts, and the degree and moment
+identities on all $5692$ injective cubic maps of a $17$-node fixture.
+These are existence certificates for the large examples, not enumerations
+of their domains, directions or nearby codewords.

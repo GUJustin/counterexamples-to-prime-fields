@@ -2,6 +2,20 @@
   "status": "passed",
   "certificates": [
     {
+      "prime_exponent": 127,
+      "n": 214,
+      "K": 107,
+      "m": 202,
+      "threshold": 109,
+      "integer_moment_box_order": 3,
+      "anchored_list_bits": 137,
+      "image_fraction_proven_above": "3/4",
+      "padding": 13,
+      "expected_missing_nonzero_labels_less_than_one": true,
+      "exact_relative_far_fraction": "1/2",
+      "strict_elias": true
+    },
+    {
       "prime_exponent": 1279,
       "n": 3834,
       "K": 1917,
@@ -30,6 +44,6 @@
       "strict_elias": true
     }
   ],
-  "seconds": 2.00510758299788,
+  "seconds": 2.3236051250023593,
   "scope": "Independent finite arithmetic and primality replay; geometry remains a written proof and the point-count estimate a cited theorem."
 }

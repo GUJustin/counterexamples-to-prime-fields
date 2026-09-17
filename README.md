@@ -9,14 +9,18 @@ of hash-based SNARKs. It proves general list and affine-line separations
 over prime fields, gives finite circle-code examples, and treats the S-two
 analysis as an application of those results.
 
-The central message is quantitative: the proposed bounds underestimate how
-rapidly lists grow as the decoding gap shrinks. The line failure can be
-nearly total: a random line parameter is nearby with probability tending
-to one, although the line contains a word one coordinate outside the
-nearby radius and no pair of codewords has the required common agreement.
-The proposed numerical bound can predict a probability tending to zero
-for those same parameters. These examples use prime fields, short domains,
-and radii strictly below the paper's characteristic-based Elias radius.
+The clearest line-level message is that **a line can be close to the code
+at every point but one, with that point half the capacity gap beyond the
+radius**. At every fixed rational rate, the construction has `n=Theta(log p)`,
+all `p-1` nonzero parameters nearby, and a point `eta/2` outside, strictly
+below Elias. No common agreement set explains the line. The `c1=c2=1`
+numerical prescription predicts a nearby fraction tending to zero;
+the actual fraction is `1-1/p`. The gap still shrinks.
+
+The list-size results separately show that the proposed exponent must
+grow almost quadratically, rather than linearly, in the reciprocal gap.
+Neither result establishes superlinear line counts at one fixed positive
+gap on short domains or transfers automatically to a prescribed FFT domain.
 
 ## Results
 
@@ -26,33 +30,29 @@ and radii strictly below the paper's characteristic-based Elias radius.
   out every bound with logarithm `o(eta^-2/log(1/eta))`. For every sufficiently
   large prime, with `b=log2(p)`, the list has at least
   `2^((1/2-o(1))*b^2/log2(b))` codewords below Elias.
-- A padding construction makes the nearby fraction tend to one at exact
-  fixed rate, with `eta=Theta(1/log p)` and polylogarithmic block length,
-  while retaining a point one coordinate beyond the nearby radius and no
-  correlated agreement. A second-moment refinement lets the number of
-  coordinates outside the radius grow, while relative separation vanishes.
-  Every affine codeword graph then contains only `o(n)` selected witnesses,
-  for every choice of witnesses.
-  At half rate, another family has over **99.9999%** nearby parameters
-  while one point is `eta/7` outside the radius and the proposed fraction
-  tends to zero. The gap still shrinks.
-  Another explicit parameter choice gives nearby density tending to one
-  with a point at least `epsilon(p)*eta` outside for **any prescribed
-  positive `epsilon(p)` tending to zero**. A fixed positive separation
-  fraction at density tending to one remains open.
-  At half rate over `2^61-1`, a
-  finite example has over **91%** nearby parameters where the numerical
-  prescription gives less than **1/1024**. Over `2^127-1`, another has over
-  **96%** where it gives less than **2^-40**. These finite comparisons use
-  `c1=c2=1` without an unspecified remainder, on padded interval domains.
-  The shrinking-gap family does not separate from actual maximum list
-  size; the generic-domain result below addresses that different question.
+- A cubic change of the seed domain gives **complete nonzero coverage**
+  at every fixed rational rate: all `p-1` nonzero parameters are nearby
+  while zero is a fixed positive fraction of `eta` outside. For every
+  proposed `c2`, any integer `u>c2` permits separation `eta/u` and defeats
+  the numerical prescription. An exact half-rate certificate over `2^127-1` has length **214**,
+  separation `eta/2`, and prescribed nearby fraction below **1/4096**.
+  Larger certificates over `2^1279-1` and `2^9689-1` give prescribed
+  fractions below `2^-308` and `2^-593`, respectively.
+  The geometry proof and two independent arithmetic implementations support
+  these existence certificates. The domains and directions are not enumerated.
+- Elementary padded-interval variants give explicit density/separation
+  tradeoffs and can make the number of missing coordinates grow while
+  the nearby fraction tends to one. Every affine codeword graph then
+  contains only `o(n)` selected witnesses, for every choice of witnesses.
+  The dense families have large global lists; the generic-domain result
+  below addresses the separate actual-list-size question.
 - If the rate tends to zero, even the constant code can have **every nonzero
   parameter nearby**, with exactly one far point a fixed fraction of the
   capacity gap outside the radius. The prime field has polynomial size in
   the length, and the statement transfers to any domain of that size.
-  This elementary boundary case does not settle the fixed-rate
-  question and does not separate from the actual maximum list size.
+  This elementary boundary case works on every domain of that size;
+  the fixed-rate construction above uses chosen domains. Neither gives
+  a separation from the actual maximum list size.
 - An anchored lift and padding construction gives genuine failure of
   correlated agreement at an exactly fixed positive rate and gap, for
   arbitrarily large lengths. The necessary coefficient of a linear

@@ -26,10 +26,11 @@
 Security analyses of hash-based SNARKs use quantitative statements about
 list decoding and proximity gaps of error-correcting codes. We give
 counterexamples to several proposed bounds for Reed--Solomon codes over
-prime fields. The main obstruction is their dependence on the gap from
-capacity: even on short domains in large prime fields, the proposed
-list-size exponent grows too slowly as the gap shrinks. Changing
-universal constants cannot repair it.
+prime fields. Even on short domains in large prime fields, the proposed list-size
+exponent grows too slowly as the gap from capacity shrinks. Moreover,
+an affine line can be nearby at every point but one, with that point
+a fixed fraction of the capacity gap beyond the radius. Changing
+universal constants cannot repair the proposed bounds.
 
 For every fixed rational rate $\rho\in(0,1)$, we construct codes with
 $2^{\Omega_\rho(n)}$ codewords agreeing with one received word on
@@ -46,14 +47,16 @@ The construction follows by counting subsets
 with matching moments. Concentration and exact polynomial-weight
 certificates sharpen the finite bounds.
 
-We also separate list size from the number of nearby points on an
-affine line. At polylogarithmic block length and gap
-$\Theta(1/\log p)$, the fraction of nearby field parameters can tend to
-one, even though the line contains a word outside the nearby radius,
-with no correlated agreement. The number of coordinates by which that
-word misses the radius can tend to infinity. At any desired fixed
-nearby fraction below one, the outside distance can instead be a fixed
-positive fraction of the capacity gap. An anchored lift and padding construction
+At every fixed rational rate, we construct length-$\Theta(\log p)$
+affine lines whose $p-1$ nonzero parameters are all nearby, while
+parameter zero lies a fixed positive fraction of the capacity gap
+outside the radius. The radius is strictly below Elias, the gap is
+$\Theta(1/\log p)$, and there is no correlated agreement. In particular,
+the far-point separation can be $\eta/2$ when the proposed numerical
+nearby fraction tends to zero. A cubic change of domain preserves
+moment equalities and makes the collision equations absolutely
+irreducible; a point-count estimate then yields complete nonzero coverage.
+An anchored lift and padding construction
 gives failure of correlated agreement at an exactly fixed positive rate and gap, at
 arbitrarily large lengths, even when every nearby point on the line
 has a unique nearby codeword. The necessary coefficient of a linear
@@ -131,28 +134,26 @@ Thus the exponent must grow almost quadratically in the reciprocal
 gap, rather than linearly. The examples remain strictly below the
 characteristic-based Elias radius.
 
-The line constructions give a
-corresponding obstruction to the proposed coefficient multiplying
-$n$ in an exceptional-parameter bound. The failure can be nearly total:
-at half rate, more than $99.9999\%$ of a line can be nearby although
-one point lies $\eta/7$ beyond the decoding radius and no common
-agreement explanation exists (Theorem~\ref{fg:gap-scale-far}).
-The proposed nearby fraction tends to zero. Thus being close to the
-code for a random linear combination need not indicate common agreement
-on a large coordinate set, even with an input separated from the radius
-by a fixed fraction of the capacity gap. A different parameter choice
-makes the nearby fraction tend to one, with an outside separation that
-vanishes relative to $\eta$; the number of missing coordinates can still
-grow (Corollary~\ref{fg:growing-far}). In that family, every affine
-codeword graph contains only $o(n)$ of the nearby witnesses, regardless
-of how those witnesses are chosen.
-The relative outside separation can vanish arbitrarily slowly: for any
-prescribed $\varepsilon(p)\to0$, a point can remain at least
-$\varepsilon(p)\eta$ outside while the nearby fraction tends to one
-(Corollary~\ref{fg:slow-separation}).
-These results do not establish superlinear growth in $n$ at one fixed
-positive gap on short prime-field domains; that stronger question remains
-open.
+The clearest line-level message is that \emph{a line can be close to
+the code everywhere except at one point, even when that point is half
+the capacity gap beyond the radius}. At every fixed rational rate,
+Theorem~\ref{cw:punctured-line} gives prime-field codes with
+$n=\Theta(\log p)$ for which every nonzero parameter is nearby, while
+parameter zero is $\eta/2$ outside. The radius is strictly below Elias,
+and no pair of codewords explains the line on the required common
+coordinate set. The $c_1=c_2=1$ numerical prescription predicts a nearby
+fraction tending to zero; the actual fraction is $1-1/p$.
+Thus testing a random linear combination can find a nearby word with
+probability arbitrarily close to one despite this separated input and
+the absence of correlated agreement. More generally, the theorem defeats
+any fixed constants $c_1,c_2$, with a fixed positive separation fraction
+depending on $c_2$.
+
+The gap still shrinks as $\Theta(1/\log p)$. These results do not
+establish superlinear growth in $n$ at one fixed positive gap on short
+prime-field domains; that stronger question remains open. Separate
+interval-padding constructions give explicit density/separation
+tradeoffs and can make the number of missing coordinates grow.
 
 In the fixed-gap line examples, every nearby word can have a unique
 nearby codeword. Thus their many nearby parameters do not arise from
@@ -165,7 +166,7 @@ in $n$, yet has exponentially many uniquely nearby points on a line;
 every other point on that line is as far from the code as any word can be
 (Theorem~\ref{al:separation}).
 
-\subsection{The main result}
+\subsection{The list-size obstruction}
 
 Our first result concerns a particularly simple evaluation domain:
 $0,1,\ldots,n-1$ in a prime field.
@@ -276,25 +277,24 @@ We give three constructions, because these questions have different
 quantifiers.
 
 \paragraph{Many nearby points without correlated agreement.}
-A large list can be converted into a line by dividing by $X-\tau$,
-where $\tau$ lies outside the evaluation domain. This division lowers
-the witness degree by one. It also makes the direction word
-$1/(X-\tau)$ unable to agree with a low-degree polynomial on too many
-points. A collision count ensures that many members of the original
-list give different parameters $z$. Theorem~\ref{thm:logarithmic-lines}
-also gives such counterexamples over every sufficiently large prime $p$,
-with block length $\Theta(\log p)$ and $\Omega(p/\log p)$ nearby
-labels. Its gap is $\Theta(1/\log p)$.
-A padding refinement (Theorem~\ref{fg:dense-lines}) is stronger:
-for any fixed fraction below one, that fraction of all field parameters
-can be nearby, with no correlated agreement, at length
-$\Theta(\log p)$ and gap $\Theta(1/\sqrt{\log p\,\log\log p})$.
-The proposed numerical bound predicts only $p^{o(1)}$ nearby parameters
-there, compared with an actual count of order $p$.
-Theorem~\ref{fg:near-unit-density} makes the nearby fraction tend to one,
-at polylogarithmic length and gap $\Theta(1/\log p)$, while retaining a
-word one coordinate beyond the radius. Choosing its constant appropriately
-makes the proposed fraction tend to zero.
+Theorem~\ref{cw:punctured-line} gives complete nonzero coverage: all
+$p-1$ nonzero parameters are nearby while the remaining point lies a
+fixed positive fraction of $\eta$ outside. Matching three times as many
+moments permits a cubic change of the seed domain without losing the
+required common locator prefix. A geometric irreducibility argument
+and a finite-field point-count estimate show that most outside values
+are represented by the candidate polynomials. Padding then covers
+every nonzero parameter.
+
+The interval constructions also give elementary alternatives with
+quantified nearby density. Division by $X-\tau$ yields
+$\Omega(p/\log p)$ nearby labels at logarithmic length
+(Theorem~\ref{thm:logarithmic-lines}); padding gives the stronger density
+bounds in Theorems~\ref{fg:dense-lines} and~\ref{fg:near-unit-density}.
+Corollary~\ref{fg:slow-separation} makes the number of coordinates outside
+the radius grow while retaining density tending to one. These variants
+use padded interval domains, whereas the complete-coverage theorem
+uses cubic images of intervals with added coordinates.
 
 \paragraph{An obstruction that persists at a fixed gap.}
 The gap in Theorem~\ref{thm:informal} shrinks with $n$. To address
@@ -3189,13 +3189,13 @@ concurrency at most $n$. Thus the fixed-gap coefficient obstruction
 does not depend on selecting among persistent good witness lines.
 
 The shrinking-gap constructions show how large the numerical failure
-can be. Theorem~\ref{fg:gap-scale-far} permits more than $99.9999\%$
-nearby parameters at half rate, with a point $\eta/7$ outside the radius,
-while the proposed numerical fraction tends to zero.
-Theorem~\ref{fg:near-unit-density} makes the nearby fraction tend to one
-with a smaller relative separation. These comparisons concern the
-prescribed numerical coefficient; they do not replace the fixed-gap
-argument needed to address a remainder controlled separately at each gap.
+can be. Theorem~\ref{cw:punctured-line} makes every nonzero parameter
+nearby, with a point $\eta/2$ outside at $c_1=c_2=1$, while the proposed
+numerical fraction tends to zero. Its length-$214$, half-rate certificate over $2^{127}-1$ compares
+nearby fraction $1-1/p$ with a prescription below $2^{-12}$; the
+larger certificate over $2^{9689}-1$ gives a prescription below $2^{-593}$. These comparisons concern the prescribed numerical
+coefficient; they do not replace the fixed-gap argument needed to
+address a remainder controlled separately at each gap.
 
 These arguments do not establish failure of a fixed-gap threshold
 expressed using the \emph{actual} maximum list size $\ell_C(\theta)$.
@@ -3318,16 +3318,13 @@ FFT domain at the radii used in a proof system? A generic-domain
 existence theorem and a counterexample on an integer interval leave
 this question open. Such a theorem should expose its finite constants
 and its dependence on the challenge field.
-\item \textbf{Nearby density with separation proportional to the gap.}
-At a fixed positive rate and fixed $\kappa>0$, can the nearby fraction tend to one while a
-point of the line remains $\kappa\eta$ outside the decoding radius?
-Theorem~\ref{fg:gap-scale-far} gives any desired fixed nearby fraction,
-but its $\kappa$ depends on that fraction. The constructions with density
-tending to one have separation $o(\eta)$. This question concerns shrinking
-gaps on short prime-field domains, separately from the fixed-gap problem.
-At vanishing rate, Theorem~\ref{fg:punctured-line} already gives exactly
-one far point and all nonzero parameters nearby, with separation
-proportional to $\eta$.
+\item \textbf{Complete coverage with unique nearby codewords.}
+Can the full punctured-line behavior of Theorem~\ref{cw:punctured-line}
+coexist with a unique nearby codeword at every nonzero parameter?
+The cubic construction necessarily has local ambiguity: at a single
+padding coordinate, more than $p$ candidates produce only $p-1$ labels.
+It also has very large global lists. The fixed-gap construction gives
+whole-line uniqueness, but only a linear lower bound on the nearby count.
 \item \textbf{Finding the large classes.}
 Can one efficiently describe or enumerate enough of the equal-moment
 or equal-coefficient classes to match the counting lower bounds?
@@ -5786,6 +5783,12 @@ Proposition III.1 and proof of Corollary III.2.
 \bibitem{guo-sun-wang-gcd} J. Guo, C.-L. Sun, and J. T.-Y. Wang.
 \emph{On Pisot's $d$-th root conjecture for function fields and related GCD estimates}.
 arXiv:2010.01896. \url{https://arxiv.org/abs/2010.01896}.
+
+\bibitem{cafure-matera} A. Cafure and G. Matera.
+\emph{Improved explicit estimates on the number of solutions of equations
+ over a finite field}.
+Finite Fields and Their Applications, 12(2):155--185, 2006.
+\url{https://doi.org/10.1016/j.ffa.2005.03.003}.
 
 \end{thebibliography}
 \end{document}

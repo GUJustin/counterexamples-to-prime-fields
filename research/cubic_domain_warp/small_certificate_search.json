@@ -1,0 +1,133 @@
+{
+  "status": "completed",
+  "fields": [
+    {
+      "prime_exponent": 31,
+      "cases": 328,
+      "hits": 0,
+      "smallest_n": null,
+      "smallest_box_verified_n": null
+    },
+    {
+      "prime_exponent": 61,
+      "cases": 1333,
+      "hits": 10,
+      "smallest_n": {
+        "b": 61,
+        "n": 120,
+        "K": 60,
+        "m": 113,
+        "t": 62,
+        "s": 1,
+        "q": 8,
+        "list_bits": 69,
+        "independent_box_pass": false,
+        "beats_prescription": false,
+        "box_list_bits": 57,
+        "image_fraction_lower": "0.99546497"
+      },
+      "smallest_box_verified_n": null
+    },
+    {
+      "prime_exponent": 89,
+      "cases": 2880,
+      "hits": 258,
+      "smallest_n": {
+        "b": 89,
+        "n": 156,
+        "K": 78,
+        "m": 143,
+        "t": 80,
+        "s": 1,
+        "q": 14,
+        "list_bits": 96,
+        "independent_box_pass": false,
+        "beats_prescription": true,
+        "box_list_bits": 83,
+        "image_fraction_lower": "0.98845332"
+      },
+      "smallest_box_verified_n": {
+        "b": 89,
+        "n": 170,
+        "K": 85,
+        "m": 158,
+        "t": 87,
+        "s": 1,
+        "q": 13,
+        "list_bits": 110,
+        "independent_box_pass": true,
+        "beats_prescription": false,
+        "box_list_bits": 97,
+        "image_fraction_lower": "0.99999933"
+      }
+    },
+    {
+      "prime_exponent": 107,
+      "cases": 4185,
+      "hits": 565,
+      "smallest_n": {
+        "b": 107,
+        "n": 176,
+        "K": 88,
+        "m": 165,
+        "t": 90,
+        "s": 1,
+        "q": 12,
+        "list_bits": 117,
+        "independent_box_pass": false,
+        "beats_prescription": true,
+        "box_list_bits": 103,
+        "image_fraction_lower": "0.99829417"
+      },
+      "smallest_box_verified_n": {
+        "b": 107,
+        "n": 190,
+        "K": 95,
+        "m": 181,
+        "t": 97,
+        "s": 1,
+        "q": 10,
+        "list_bits": 132,
+        "independent_box_pass": true,
+        "beats_prescription": true,
+        "box_list_bits": 118,
+        "image_fraction_lower": "0.99999995"
+      }
+    },
+    {
+      "prime_exponent": 127,
+      "cases": 5920,
+      "hits": 1038,
+      "smallest_n": {
+        "b": 127,
+        "n": 200,
+        "K": 100,
+        "m": 186,
+        "t": 102,
+        "s": 1,
+        "q": 15,
+        "list_bits": 136,
+        "independent_box_pass": false,
+        "beats_prescription": true,
+        "box_list_bits": 122,
+        "image_fraction_lower": "0.99733762"
+      },
+      "smallest_box_verified_n": {
+        "b": 127,
+        "n": 214,
+        "K": 107,
+        "m": 202,
+        "t": 109,
+        "s": 1,
+        "q": 13,
+        "list_bits": 151,
+        "independent_box_pass": true,
+        "beats_prescription": true,
+        "box_list_bits": 137,
+        "image_fraction_lower": "0.99999993"
+      }
+    }
+  ],
+  "seconds": 0.6770665000003646,
+  "scope": "Exact sufficient-condition search, s1 and half rate, b<=n<=2b. Absence of a certificate is not nonexistence."
+}

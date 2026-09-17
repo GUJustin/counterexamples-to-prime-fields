@@ -1270,3 +1270,55 @@ requires s+r moments, nots+r-1 (unanchoredlocatorsneedA-Kmoments).
 Fixedtex/note/checker; strengthenedintegerchecksPASS; asymptoticcost
 andconclusionunchanged. Rebuilt124pagePDFclean. EarlierTAKEOVERentry
 s+r-1 ishistoricalincorrectindex. Noactiveprocess. Goalactiveuntil12:30UTC.
+
+## 2026-09-17 07:32 UTC — cubic theorem promoted, smaller certificate
+
+Final adversarial review passed; see cubic_domain_warp/FINAL_PROOF_REVIEW.md.
+Mainpaper now inputs cubic_warp.tex (renamedfromproposed.tex), Section4.3,
+Lemmas4.16–4.17,Theorem4.18. Abstract/intro/READMEleadwithallnonzero
+nearby andzeroeta/2outside atfixedratebelowElias. Formerfixed-kappa
+openquestionremoved; replacedwithcompletecoveragePLUSuniqueness question.
+Newconstructionnecessarilyhaslocalambiguity (L>p atonepaddingpoint).
+Fixedgap/FFT/actual-list limitationspreserved. SourcebibCafure–Materaadded.
+Oldlowrateintrocorrected: itsfeatureisallprescribeddomains,notfirstfull
+puncturedline anymore. SLOW/DENSEscopenotesupdated. Makefile84checks.
+PDF127pagesclean; renderedintro1–3andproof40–42; finaltable42inspected.
+
+NewindependentlyverifiedM127row:n214,K107,m202,t109,s1,originalmom3,
+q13,allp-1nonzeronearby,farη/2,strictElias,prescriptionfraction<2^-12.
+PrimaryGramlist151bits, independentanchoredbox137bits; bothcheckexact
+missing-labelrationalpower<1 (independentusesintegercross-products).
+Largerrowsboundsimproved: M1279<2^-308, M9689<2^-593. All3primaryand
+independentreplaysPASS~2sec20MiB. ExistinggeometrycheckerunchangedPASS.
+Finitecoveragecheckernowallowsarbitraryn,m; smallrowsdirectpower,
+largerrowsuseM/U>3/4 and2q>=b toavoidmassiveexponents.
+
+Boundedexact search_small_certificates.py covershalf-rates1,b<=n<=2b
+forM31/61/89/107/127. NoM31cert;M61smallestn120,m113 (fullcoverage
+but DOESNOTbeatc1=c2=1numericalbound). M89n156,m143 Gramcertbeatsbound
+butboxfails; M107n176,m165primary andn190,m181box; M127n200,m186primary,
+n214,m202box. Searchrecordsbeats_prescriptionflag; absenceisnotnonexistence.
+Allscannedcaseswereexactarithmetic; nofloatingcertification. ~1.1sec21MiB.
+
+NEXT PROMISING EXTENSION (NOTYETPROVED/IMPLEMENTED): efficient randomized
+construction mayfollowfromsamegeometry, removingneedtofindthelargeclass
+orlargestimages. UniformlysampleanchoredsupportS; momentpartitionhasatmost
+Rvec classes, totalQsupports, soP(classsize<Lmin)<=Rvec*Lmin/Q.
+Chooseuniformcubicmapconditionedoninjectivity (efficientrejectionsampling).
+ForactualclassL, define E=sum_outside_x sum_v r_xv²; deterministic
+E>=R*L²/U sincevaluesnonzero, U=p-1. Good-map meanE<=LR+L(L-1)B.
+ThusD=U*E/(R*L²)-1>=0 hasmean<=U/L+U*B/R-1.
+ForL>=Lmin upperdelta=U/Lmin+U*B/R-1. MarkovP(D>gamma)<=delta/gamma.
+WhenD<=gamma, meanimage>=U/(1+gamma). RANDOMqdistinctoutsidepoints
+andrandomnonzerodirections havemeanmissing<=U*(gamma/(1+gamma))^q:
+useMaclaurin/elementary-symmetricmean inequality forsamplingwithoutreplacement.
+Failurebound<=Lmin/(Q/Rvec)+delta/gamma+U*(gamma/(1+gamma))^q.
+Allquantitiesexact. ChooseLmin betweenp andQ/Rvec andconstantgamma
+smallenoughq/logp→positive; success1-o1. Algorithmonlyneedsrandomsupport,
+cubicmap, randompadding,directions; w=locator(mappedS)/X computable
+poly(logp), noenumerationofmomentclass/witnesses needed! Recheckfullproof.
+Couldyieldpolylog-time randomizedconstructionwithhighprobability, while
+nearbywitnessrecoveryremainsunresolved. FiniteM521paramsn~990,m~900
+likelygivefailure<2^-100; hypotheticaluntilchecked. DoNOTclaimanindividual
+sampledeterministicallyverifiedjustbecausegeneratorhasfailurebound.
+Noactiveprocess. Goalactiveuntil12:30UTC.

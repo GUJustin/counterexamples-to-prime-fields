@@ -72,7 +72,9 @@ Then s→infinity and s^(5/3)log b=o(b). Moreover
 kappa~s^(-2/3)>epsilon(p) eventually, while J/p→1.
 Thus requiring a far point at least epsilon(p)*eta outside does not
 prevent the near-total failure, for ANY prescribed vanishing epsilon.
-This still leaves a fixed positive epsilon unresolved for density→1.
+This parameter choice uses a vanishing epsilon. The later cubic-domain
+construction in ../cubic_domain_warp/ closes the fixed-positive-relative-
+buffer question, with every nonzero parameter nearby at fixed rate.
 For an explicit uncomplicated choice, s=floor(log_2 b) gives
 n~b log_2 b/c, kappa~(log_2 b)^(-2/3), and
 J/p>=1-O(1/log_2 log_2 b), with r~(log_2 b)^(1/3).
