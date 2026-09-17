@@ -1,7 +1,19 @@
 # Agreement-first triangular Riccati bound
 
-September17,2026. Working theorem, awaiting independent audit; no novelty
-claim and no main-manuscript integration yet.
+September17,2026. The proof and its generalization have passed an
+independent subagent mathematical audit, recorded in AUDIT.md. No formal
+verification or novelty claim. Appendix integration is prepared in
+appendix.tex.
+
+The strongest version is now `NEWTON_DEGREE_CRITERION.md`: a first-order
+equation with nonlinear value degree ell and bounded challenge degree has
+linear nearby-exception count whenever its nonlinear terms lie below the
+top coefficient-elimination range and all triangular pivots are nonzero.
+It works in ANY characteristic under that explicit pivot condition,
+including moving nonmonic derivative coefficients. Shared denominators
+have degree O(D), not O(D²); common curve factors are removed before
+bounding isolated points. `SHARED_DENOMINATORS.md` gives intermediate
+Riccati bounds and identifies the nonlinear-interference boundary.
 
 For T monic of degree t>2D, deg_X R<=t-2, deg_X S<=t+D-1,
 deg_z R<=1, deg_z S<=2, and char0 or p>D, actual solutions of
@@ -44,3 +56,8 @@ including genuine domain agreements, persistent codeword pencils, and a
 nonlinear persistent component whose many solutions are mostly not near.
 Both watchdog runs completed within384MiB/60seconds. These finite checks
 corroborate the formulas; the quantified argument is in PROOF.md.
+
+`verify_general.py` checks nine nonmonic symbolic fixtures of value degree
+two through four, with the sharp shared-denominator/residual degree caps.
+It also checks nonzero pivots after reduction to characteristics2,3,5,
+including candidate degrees larger than the characteristic.

@@ -5,7 +5,7 @@ Working draft by Justin Thaler, September 17, 2026.
 [Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
 **Current research snapshot (September 17):** the main ePrint-style article
-is 167 pages with one-inch margins. A separate
+is 170 pages with one-inch margins. A separate
 [20-page first-order tightness note](research/first_order_support_audit/note/main.pdf)
 proves the sharp quarter-rate threshold for the specified interpolation
 framework. A new independently audited converse also proves that the
@@ -431,3 +431,11 @@ and `d>=b+7`, over `F_(p^(2^(b-1)))`. In particular, rate `2/9`
 and gap `1/9` admit at least `ceil(n^2/864)` nearby challenges with no
 ordinary CA over `F_(p^2)`, in characteristic greater than message degree.
 [Parameter-family proof](research/ordinary_ca_superlinear/RANDOM_DIRECTION_QUADRATIC.md).
+
+[Leading-degree separation](research/two_branch_recurrence/NEWTON_DEGREE_CRITERION.md)
+now gives a characteristic-free sufficient condition for linear full-support
+exception counts among actual solutions of a challenge-dependent first-order
+identity. Appendix P includes the proof and the unnormalized two-branch
+Riccati corollary. The condition allows singular agreement coordinates but
+requires nonzero coefficient pivots and separation of the nonlinear terms.
+It is not a general first-order proximity-gap theorem.

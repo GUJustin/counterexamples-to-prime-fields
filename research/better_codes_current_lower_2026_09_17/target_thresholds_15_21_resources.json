@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/better_codes_current_lower_2026_09_17/target_phase_thresholds.py",
+    "15",
+    "21"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 49.700128333992325,
+  "peak_rss_kib": 107200,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

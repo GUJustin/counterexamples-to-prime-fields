@@ -1,0 +1,191 @@
+\section{Linear exception counts from leading-degree separation}
+\label{app:triangular-differential}
+
+A first-order identity can force a linear exceptional-label bound even
+when every agreement coordinate is singular. The criterion below separates
+the nonlinear terms from the highest coefficient equations. Those equations
+determine the nonconstant message coefficients with one denominator of
+degree $O(D)$. The residual solution locus then has bounded degree in
+one remaining message parameter and degree $O(D)$ in the challenge.
+The conclusion concerns actual solutions of the identity: an application
+to all nearby Reed--Solomon candidates must first establish that they all
+satisfy such an equation.
+
+\begin{theorem}[Leading-degree separation]\label{thm:triangular-newton}
+Let $\F$ be any field, $D\ge1$, and $\ell\ge2$. Consider
+\begin{equation}\label{eq:triangular-identity}
+ T(X,z)P'+\sum_{j=0}^{\ell}A_j(X,z)P^j=0,
+ \qquad \deg P\le D.
+\end{equation}
+Suppose $A_\ell\ne0$, $\deg_X T=t$ with leading coefficient
+$\tau(z)\ne0$, and
+\begin{equation}\label{eq:triangular-degree-separation}
+ \deg_X A_1\le t-1,\qquad \deg_X A_0\le t+D-1,\qquad
+ \deg_X A_j+jD<t\quad(2\le j\le\ell,\ A_j\ne0).
+\end{equation}
+Assume all coefficient polynomials have $z$-degree at most an integer $a\ge0$, and
+that every pivot
+\[
+ d_i(z)=i\tau(z)+(A_1)_{t-1}(z),\qquad 1\le i\le D,
+\]
+is a nonzero polynomial. Put $M=a(\ell D+1)$ and $L=aD+1$.
+On any $n$ distinct evaluation points, for any received line $f+zg$ and
+integer $A>D$, outside a set of at most
+\begin{equation}\label{eq:triangular-exception-bound}
+ a(D+1)+2\ell M+\frac{n(M+\ell L)}{A-D}+\ell n
+\end{equation}
+labels, every solution of \eqref{eq:triangular-identity} with at least $A$
+agreements admits degree-at-most-$D$ witnesses $F_0,G_0$ such that
+$P=F_0+zG_0$ and its full agreement set is
+\[
+ \{x:f(x)=F_0(x),\ g(x)=G_0(x)\}.
+\]
+In particular the bound is $O_{a,\ell,\eta}(n)$ if
+$A-D\ge\eta n$ and $D\le n$.
+\end{theorem}
+\begin{proof}
+Write $P=c+\sum_{i=1}^D p_iX^i$. By
+\eqref{eq:triangular-degree-separation}, the nonlinear terms have degree
+less than $t$. Equating coefficients of $X^{t+i-1}$, in decreasing $i$,
+gives a triangular linear system with pivot $d_i$. It does not involve
+$c$. Every off-diagonal coefficient and inhomogeneous term has
+$z$-degree at most $a$.
+
+Set $\Delta_i=\prod_{h=i}^D d_h$ and $\Delta=\Delta_1$.
+Descending induction gives
+\[
+ p_i=N_i/\Delta_i,\qquad \deg_zN_i\le a(D-i+1).
+\]
+Indeed, all higher denominators divide $\Delta_{i+1}$, so multiplying
+the next equation by that product gives precisely the stated degree.
+Passing to the single denominator $\Delta$ yields
+\begin{equation}\label{eq:triangular-parametrization}
+ P=c+\frac{W(X,z)}{\Delta(z)},\qquad W(0,z)=0,
+ \qquad \deg_zW,\deg_z\Delta\le aD.
+\end{equation}
+Discard the at most $aD$ roots of $\Delta$. On the complement this is
+an exact parametrization of the actual candidate locus by $(z,c)$.
+No division by the integer $i$ is required: invertibility of the specified
+pivot is the only characteristic condition needed.
+
+After substituting \eqref{eq:triangular-parametrization} and multiplying
+by $\Delta^\ell$, the remaining coefficient equations are the
+coefficients in $X$ of
+\[
+ \Delta^{\ell-1}T W'
+ +\sum_{j=0}^{\ell}A_j(c\Delta+W)^j\Delta^{\ell-j}.
+\]
+Each has bidegree at most $(M,\ell)$ in $(z,c)$.
+Choose a nonzero coefficient $h(z)$ of $A_\ell$ in $X$ and also discard
+its at most $a$ roots. The corresponding residual has leading
+$c$-coefficient $h\Delta^\ell$, nonzero on this open set.
+
+Work over an algebraic closure and take the gcd $U$ of all nonzero
+residuals. Its factors give their common curve components. Since $U$
+divides the chosen residual, its summed bidegrees are at most $(M,\ell)$.
+Every vertical factor is supported on a root of $h\Delta$ and has already
+been excluded. There are therefore at most $\ell$ reduced horizontal
+components.
+
+Divide the residuals by $U$. Their gcd is one. If one quotient is a
+nonzero constant, there are no common zeros off $U$. Otherwise choose a
+nonzero quotient and a generic constant linear combination of the other
+quotients sharing none of its irreducible factors. Such a combination
+exists because each factor is avoided by some quotient, and the
+algebraic closure is infinite. Both polynomials have bidegrees at most
+$(M,\ell)$. Their proper intersection in
+$\mathbb P^1_z\times\mathbb P^1_c$ has total multiplicity at most
+$2M\ell$. Every isolated point of the original locus lies off its curve
+locus and in this intersection. Thus at most $2M\ell$ additional labels
+come from isolated points. This argument removes common factors before
+using intersection bounds; linear independence alone would not suffice.
+
+At an evaluation coordinate $x$, agreement is the equation
+\begin{equation}\label{eq:triangular-coordinate-agreement}
+ \Delta c+W(x,z)-\Delta(f(x)+zg(x))=0,
+\end{equation}
+of bidegree at most $(L,1)$. For a curve component of bidegrees $(s,r)$,
+unless agreement is identically true, its resultant with
+\eqref{eq:triangular-coordinate-agreement} has degree at most $s+rL$.
+Away from $\Delta=0$, each root gives at most one agreeing point because
+the agreement equation is linear in $c$. Summing over components gives
+at most $M+\ell L$ nonpersistent agreeing points per coordinate.
+
+If a component has at most $D$ persistent agreement coordinates, each
+$A$-near point on it supplies at least $A-D$ nonpersistent incidences.
+Their labels number at most $n(M+\ell L)/(A-D)$. If it has more than $D$
+persistent coordinates, interpolation forces its entire candidate
+polynomial to be a base-field affine codeword graph $F_0+zG_0$.
+Outside at most $n$ labels having an extra agreement, its full agreement
+set is exactly the coefficientwise common agreement set of those
+witnesses. There are at most $\ell$ components. Adding the discarded
+labels, isolated points, and curve contributions proves
+\eqref{eq:triangular-exception-bound}.
+\end{proof}
+
+\begin{corollary}[The unnormalized two-branch family]
+\label{cor:triangular-two-branch}
+Let $T$ be the monic squarefree locator of the $n$ evaluation points,
+assume $n>4D$, and suppose the characteristic is zero or $p>D$.
+Let $U_z,V_z\in\F[X]$ be affine in $z$, each of $X$-degree at most
+$n-1$. For solutions of
+\begin{equation}\label{eq:triangular-two-branch}
+ TP'=(P-U_z)(P-V_z),\qquad\deg P\le D,
+\end{equation}
+on any chosen received line and threshold $A>D$, the full common-witness
+property holds outside at most
+\[
+ 18D+10+\frac{n(8D+4)}{A-D}+2n
+\]
+labels. Thus the family has only $O_\eta(n)$ exceptions when
+$A-D\ge\eta n$.
+\end{corollary}
+\begin{proof}
+Any nonzero coefficient of $U_zV_z$ above $X$-degree $n+D-1$ is a
+polynomial in $z$ of degree at most two, and every solution label must
+be its root. Otherwise the generic product degree is at most $n+D-1$.
+If both generic branch degrees exceed $D$, each is at most $n-2$.
+Apply Theorem~\ref{thm:triangular-newton} with
+$A_2=-1$, $A_1=U_z+V_z$, $A_0=-U_zV_z$, $\ell=2$ and $a=2$.
+The pivots are the nonzero constants $1,\ldots,D$. Substitution in
+\eqref{eq:triangular-exception-bound} gives the displayed bound.
+
+If a branch, say $U_z$, has degree at most $D$, it is an affine codeword
+pencil. Any solution $P\ne U_z$ agrees with $U_z$ at at most $D$ domain
+points and therefore with $V_z$ at at least $n-D$ points.
+Such a solution is unique at each label, since two would agree at
+$n-2D>D$ points. If there are at least three such labels, their
+candidates satisfy the same affine relation as their labels on at least
+$n-3D>D$ common agreement points with $V_z$. It is therefore a polynomial
+identity. Every such candidate lies on the affine codeword pencil
+determined by the first two; if there are at most two labels, discard them.
+All solutions lie on at most two affine codeword pencils outside at most
+two labels. For any received line, each pencil has the full-witness
+property outside at most $n$ extra-agreement labels. This gives $2n+2$,
+which is smaller than the displayed bound.
+\end{proof}
+
+\paragraph{Scope and the nonlinear boundary.}
+The general theorem imposes no nonsingular-agreement requirement and no
+separate characteristic restriction beyond its explicit nonzero pivots.
+It does impose leading-degree separation, fixed challenge and value
+degrees, and a derivative coefficient independent of $P$. Under $p>D$
+there can be at most one identically zero pivot, since
+$d_j-d_i=(j-i)\tau$; that resonant case is not included.
+The quadratic isolated family of
+Theorem~\ref{thm:quadratic-isolated-first-order} has derivative coefficient
+$(z-X^2)R$ of degree $D+3$ and a $P^2$ coefficient of $X$-degree two.
+Its nonlinear term can reach degree $2D+2$, so it violates the strict
+separation condition. Its quadratic isolated count is not a contradiction.
+The conclusion here is a family-specific upper bound for actual nearby
+solutions, not a general linear first-order MCA theorem.
+
+\paragraph{Checks.}
+Independent symbolic elimination verifies the recurrence and residual
+bidegrees through $D=4$, including nonmonic moving coefficients, value
+degrees two through four, and persistent nonlinear components. An
+independent finite-field check exhausts $29968$ polynomial--label pairs
+and checks actual agreements, including persistent codeword pencils.
+The scripts and reports are in \path{research/two_branch_recurrence/}.
+The proofs above, rather than the finite fixtures, establish the
+quantified statements.

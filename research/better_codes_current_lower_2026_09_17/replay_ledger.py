@@ -39,7 +39,7 @@ def potential(r,v,z,j):
 
 def line(r,v,z,witness):
     if witness==0:return base(rows[r,v],z)
-    parent=rows.get((r-1,v),{}).get('prefixValues',[0]*10)
+    parent=rows.get((r-1,v),{}).get('prefixValues',[0]*len(POT))
     return potential(r,v,z,witness-1)+parent[witness-1]
 
 @lru_cache(None)

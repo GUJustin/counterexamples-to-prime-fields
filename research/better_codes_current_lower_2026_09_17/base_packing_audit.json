@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "rows": 4970,
+  "counts": {
+    "carrier": 24850,
+    "singleton_endpoints": 487808,
+    "base_endpoints": 86460,
+    "bellman_pairs": 47358360
+  },
+  "scope": "Baseline carrier,SingleValid/BaseValid and directBellman arithmetic; not all source-provider geometric theorems or updated-target receipt."
+}

@@ -1,3 +1,13 @@
+New Appendix P: an independently audited leading-degree criterion gives
+linear full-support exception counts for actual nearby solutions of a
+specified first-order equation, including singular agreements. The general
+criterion is characteristic-free under its explicit nonzero pivots. It
+covers bounded challenge/value degrees and nonlinear terms below the
+highest coefficient equations; the known quadratic isolated examples
+violate that separation. This is an upper-bound family theorem, not a
+new general first-order bound or an intrinsic lower bound. The main paper
+is now170pages, with the same one-inch-margin ePrint format.
+
 September17 strategy reset: prioritize the actual incumbent moving-fiber
 better.codes certificate over the ePrint single-equation formulas. Exact
 replays reproduce all27 auxiliary source counts, ten primary/phase kernel

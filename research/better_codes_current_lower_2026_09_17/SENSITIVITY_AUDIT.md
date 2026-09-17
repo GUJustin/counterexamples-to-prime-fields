@@ -123,3 +123,22 @@ multiplicity and derivative cap. A credible next attempt must trade its
 shape parameters or improve its rank/constraint accounting, then rerun
 the downstream geometry and receipt. This audit supplies exact local
 sensitivities and bounded minima, not a claim that such a trade will win.
+
+## Finite repetition of already-valid phase sources
+
+A complementary reading of MovingFiberPhaseCore6811 finds no circular
+fixed-point argument in extending the finite phase schedule. capBefore
+recurses strictly in phase, sourceLine(j+1) uses the parent-row charge of
+phase j, and RunValid requires witness<=current phase. Thus a new phase
+can use earlier source cuts and smaller-r parent data. Repeating an
+already-valid source in a longer finite schedule needs new threshold,
+prefix and coverage arithmetic, but no assumption of a new interpolant
+or infinite convergence.
+
+The current implementation must actually be changed consistently:
+phasePotential and TenPhase.sound default EVERY index>=9 to Phase05.
+Simply lengthening arrays would not implement a proposed repeating
+seven-source schedule. Both lookup functions, the Fin10/<10 wrappers,
+arrays and receipt proofs require a finite port. The existing generic
+recursive argument suggests that port, but this audit has not produced
+or kernel-checked a 31-phase Lean certificate.

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/better_codes_current_lower_2026_09_17/repeat_phases.py",
+    "3",
+    "--target"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 13.651286332999007,
+  "peak_rss_kib": 115952,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}
