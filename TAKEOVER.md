@@ -453,3 +453,35 @@ the checker now exhaustively verifies alternate words with exact lists
 0,1,2 in both fixtures. Added a short scope paragraph to the manuscript.
 Native rebuild remains112 pages with no overfull or undefined-reference
 warnings; visually reviewed the new global-list scope paragraph onpage29.
+
+Returned to the fixed-gap subgroup search. New research-note constraint:
+POWER_TWO_BOUNDARY_RIGIDITY.md (actually all prime-power orders) gives
+an EXACT moment-class description for degree<=A received polynomials
+at agreement A, dimension K, s=A-K, on mu_n in characteristic zero.
+For n=ell^e, let h be the smallest ell-power>s and q=n/h. Every class
+freezes all partly occupied mu_h cosets and freely chooses b full cosets
+among the remaining q-r; its size is exactly binom(q-r,b). Thus list
+size <=binom(q,floor(q/2))<2^(n/s), with the q1 case bounded by1.
+Proof: rational difference masks propagate Fourier zeros by cyclotomic
+Galois orbits, leaving only frequencies multiple of h, hence q-periodic
+differences. Whole-coset swaps supply the converse.
+
+Finite-field transfer is stronger than the initial crude norm bound:
+for p=1 mod n, it holds when p>n^E, where
+E=max_{d=ell^j<=s} phi(n/d)/(floor(s/d)-floor(s/(ell*d))) <=2n/s.
+Every vanished conjugate moment contributes a DIFFERENT p factor to
+the integer norm, so p^R divides a nonzero norm of size<=n^phi(n/d).
+This proves the transfer condition. It does NOT apply to arbitrary
+received words or give a better.codes bound. The unbounded-list search
+on these subgroup boundary words must use finite-characteristic
+collisions below this threshold, or leave this low-degree-word setting.
+No novelty claim and no manuscript addition.
+
+Guarded verify_power_two_boundary.py passes321398 exact characteristic-
+zero subset checks at n8,9,16,25, plus exact finite-field class checks
+(n,A,s,p)=(8,4,1,65537),(16,8,3,65537),(16,8,7,1009).
+At n16,A8, char0 maxima for s1..7 are70,6,6,2,2,2,2.
+For s1, finite-field maxima758,198,120 at p17,97,113 demonstrate that
+p>n alone is NOT enough. These finite examples are not below-Elias
+counterexamples. Results and resource report live beside the note;
+not added to Makefile. No research process remains running.

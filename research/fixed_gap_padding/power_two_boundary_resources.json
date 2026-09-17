@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/fixed_gap_padding/verify_power_two_boundary.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 3.8120713339994836,
+  "peak_rss_kib": 125984,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}
