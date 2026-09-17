@@ -1,0 +1,17 @@
+{
+  "active_thresholds_checked": 49220,
+  "inactive_thresholds": 480,
+  "preceding_coordinate_also_passes": [],
+  "minimum_relative_margin": {
+    "location": [
+      13,
+      15,
+      0,
+      3674
+    ],
+    "margin": 582997110101018,
+    "gap": 108584552282495392041818,
+    "relative_margin": 5.369061232432795e-09
+  },
+  "scope": "Phase-band arithmetic only; original kernel dimensions and packing sources not re-proved."
+}

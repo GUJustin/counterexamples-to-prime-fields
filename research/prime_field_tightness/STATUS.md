@@ -1,3 +1,12 @@
+September17 strategy reset: prioritize the actual incumbent moving-fiber
+better.codes certificate over the ePrint single-equation formulas. Exact
+replays reproduce all27 auxiliary source counts, ten primary/phase kernel
+counts, and the stored ledger/threshold arithmetic; full packing and new
+target propagation remain open. The current prefix/threshold choices have
+no free local arithmetic improvement with their fixed source data. See
+../better_codes_current_lower_2026_09_17/ and ../strategy_review/README.md.
+No new score is claimed.
+
 # Prime-field upper-bound tightness: target and evidence
 
 New current-method result (September17): an independently audited proof

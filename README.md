@@ -65,7 +65,11 @@ A [strategic review](research/strategy_review/README.md) now prioritizes the
 actual incumbent's three-source moving-component certificate for better.codes,
 with independent agreement-based and new-source construction work alongside it.
 The earlier 1100-fold deficit applies to weaker single-equation bounds, not
-the current incumbent. No new benchmark score is claimed.
+the current incumbent. An [exact replay and sensitivity audit](research/better_codes_current_lower_2026_09_17/README.md)
+now reproduces the 27 auxiliary interpolation counts, 10 primary/phase
+kernel counts, and the stored ledger and threshold arithmetic. Upstream
+packing validation and the target certificate remain incomplete. No new
+benchmark score is claimed.
 
 The paper studies quantitative coding statements used in security analyses
 of hash-based SNARKs. It proves general list and affine-line separations

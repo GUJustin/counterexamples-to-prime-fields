@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/better_codes_current_lower_2026_09_17/audit_multiplicity_sensitivity.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 20.12140666700725,
+  "peak_rss_kib": 20976,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

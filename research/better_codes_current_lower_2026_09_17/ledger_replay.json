@@ -1,0 +1,266 @@
+{
+  "rows": 4970,
+  "phase_endpoint_checks": 224590,
+  "ledger_endpoint_checks": 121966,
+  "prefix_checks": 99050,
+  "worst": [
+    {
+      "location": [
+        35,
+        124,
+        9090,
+        6,
+        0
+      ],
+      "upper_bound": 274693043573515013,
+      "margin": 287676976235792
+    },
+    {
+      "location": [
+        35,
+        123,
+        9090,
+        6,
+        0
+      ],
+      "upper_bound": 274666146653151482,
+      "margin": 314573896599323
+    },
+    {
+      "location": [
+        35,
+        122,
+        9090,
+        6,
+        0
+      ],
+      "upper_bound": 274639256200600036,
+      "margin": 341464349150769
+    },
+    {
+      "location": [
+        35,
+        121,
+        9090,
+        6,
+        0
+      ],
+      "upper_bound": 274612372215860640,
+      "margin": 368348333890165
+    },
+    {
+      "location": [
+        35,
+        120,
+        9090,
+        6,
+        0
+      ],
+      "upper_bound": 274585494698933294,
+      "margin": 395225850817511
+    },
+    {
+      "location": [
+        35,
+        119,
+        9090,
+        6,
+        0
+      ],
+      "upper_bound": 274558623649817998,
+      "margin": 422096899932807
+    },
+    {
+      "location": [
+        35,
+        118,
+        9090,
+        6,
+        0
+      ],
+      "upper_bound": 274531759068191247,
+      "margin": 448961481559558
+    },
+    {
+      "location": [
+        35,
+        117,
+        9090,
+        6,
+        0
+      ],
+      "upper_bound": 274504900954700086,
+      "margin": 475819595050719
+    },
+    {
+      "location": [
+        35,
+        116,
+        9090,
+        6,
+        0
+      ],
+      "upper_bound": 274478049309020975,
+      "margin": 502671240729830
+    },
+    {
+      "location": [
+        35,
+        115,
+        9090,
+        6,
+        0
+      ],
+      "upper_bound": 274451204131153879,
+      "margin": 529516418596926
+    },
+    {
+      "location": [
+        34,
+        125,
+        9090,
+        6,
+        0
+      ],
+      "upper_bound": 274446616319647352,
+      "margin": 534104230103453
+    },
+    {
+      "location": [
+        35,
+        114,
+        9090,
+        6,
+        0
+      ],
+      "upper_bound": 274424365421098868,
+      "margin": 556355128651937
+    },
+    {
+      "location": [
+        34,
+        124,
+        9090,
+        6,
+        0
+      ],
+      "upper_bound": 274421463839519394,
+      "margin": 559256710231411
+    },
+    {
+      "location": [
+        35,
+        113,
+        9090,
+        6,
+        0
+      ],
+      "upper_bound": 274397533178855907,
+      "margin": 583187370894898
+    },
+    {
+      "location": [
+        34,
+        123,
+        9090,
+        6,
+        0
+      ],
+      "upper_bound": 274396317456638330,
+      "margin": 584403093112475
+    },
+    {
+      "location": [
+        34,
+        122,
+        9090,
+        6,
+        0
+      ],
+      "upper_bound": 274371177170689694,
+      "margin": 609543379061111
+    },
+    {
+      "location": [
+        35,
+        112,
+        9090,
+        6,
+        0
+      ],
+      "upper_bound": 274370707404101701,
+      "margin": 610013145649104
+    },
+    {
+      "location": [
+        34,
+        121,
+        9090,
+        6,
+        0
+      ],
+      "upper_bound": 274346042981673520,
+      "margin": 634677568077285
+    },
+    {
+      "location": [
+        35,
+        111,
+        9090,
+        6,
+        0
+      ],
+      "upper_bound": 274343888097482875,
+      "margin": 636832452267930
+    },
+    {
+      "location": [
+        34,
+        120,
+        9090,
+        6,
+        0
+      ],
+      "upper_bound": 274320914889275444,
+      "margin": 659805660475361
+    }
+  ],
+  "primary_hashes": {
+    "MovingFiberContextData6811R1.lean": "2289146d34f9df460464535ebd36ec46804d4ff10c9660282d804eeb824f90d0",
+    "MovingFiberContextData6811R2.lean": "fa39f99b8c069860414e14a7cdd7d2c90b9167bfd9fd7fcd40ec184fd565a3c2",
+    "MovingFiberContextData6811R3.lean": "2c3eec5d54c8f149253c0ba4da3d686b29b8968aa2f02af3d6d85d79246ccc61",
+    "MovingFiberContextData6811R4.lean": "e238c5bb3630c0b8ac3ab38e6569c73d8918b426d33f6725bbc8a069dc5ecc5a",
+    "MovingFiberContextData6811R5.lean": "0f062f43988ab9f2a8f86e35e03ec936065652530b02ce3a483a8ca867d863f0",
+    "MovingFiberContextData6811R6.lean": "31bfb1d604435f12af44d108f08399ddca7af224edef967885210df3b0df6368",
+    "MovingFiberContextData6811R7.lean": "359c6d784802700fb0c515ac3b0e9bd8621eb1f11d344adb1fb5506307d12b27",
+    "MovingFiberContextData6811R8.lean": "d4d49721285edbc5eb9935510bcd028b141d72b3f427839fb10de1c185440b93",
+    "MovingFiberContextData6811R9.lean": "33bfc2e85d5be84870d56ce2de89ce10e3d28132aacfff064c12c43d49be8328",
+    "MovingFiberContextData6811R10.lean": "ffaa2fde1b47f34aaa97c8b0fcb0f15fad735361c70a074ed5c6095e8c74df79",
+    "MovingFiberContextData6811R11.lean": "a3e7799e9f2d2ee73ee12af14ee956ffb65eb91551b1f31dabdcab97d8f7b185",
+    "MovingFiberContextData6811R12.lean": "44b4720eb0b8a7d1e7f0ed77838c9293f6ca9b9349558c43a07f01f547897def",
+    "MovingFiberContextData6811R13.lean": "bff5eca616aa6a646c2a2a134220d2a2d891d65f7bbfd2279cf0179e48f9438c",
+    "MovingFiberContextData6811R14.lean": "62e075062c1e7e7274ae9e101766e1f6be575b0d9a7d3b41e04598c58c003f8d",
+    "MovingFiberContextData6811R15.lean": "5f684a7b20b632e334131556d6615b6c08bfa9f0fc80aace1e54f76c943a5cce",
+    "MovingFiberContextData6811R16.lean": "031e9658e1c2aab073bae6a565789ceb8c5470eb8b753ee589967dadf1ad4c03",
+    "MovingFiberContextData6811R17.lean": "5c0db1a144ddb955b064265595bfad9fb82cb24ca2ac9d4007adc68762a38cdb",
+    "MovingFiberContextData6811R18.lean": "7e9dd5ec33e9b542963de50e73d55995b9d8746b48e310a1ce6676c024011214",
+    "MovingFiberContextData6811R19.lean": "33b03de2296d3c4677d6ba644ec5f1b477cf6bbe15612e4eebbe597d9d6329f8",
+    "MovingFiberContextData6811R20.lean": "f2b507b22abb3f0c4d4eb5a7f6199a319d19fdf274f31c74946ec9c84facf225",
+    "MovingFiberContextData6811R21.lean": "6b3ab97bfbb4c7a26959a804058268cc50d19919e6b6e4830a318d26f6fc0fd9",
+    "MovingFiberContextData6811R22.lean": "432bf2acfd4b01f7ed23357c3e8d4f11fb660b26c2ea1919498e5d615d9b74b2",
+    "MovingFiberContextData6811R23.lean": "61b22738bb437c3c541020e3c290252e384bac558e36a14e122c1da085e0bfcb",
+    "MovingFiberContextData6811R24.lean": "63a5e4e68583545320011c3e7d3e60cbc42165e463d4d89f16da2811d92a4887",
+    "MovingFiberContextData6811R25.lean": "2a957aba6b1488be85b244c2c4d65d5019a141f3f4dbed2e4e6e26ac88a9758a",
+    "MovingFiberContextData6811R26.lean": "59122a71443e9c88d5ae11214cd405c95be7beddbb3f88fd8641c195d298bfc0",
+    "MovingFiberContextData6811R27.lean": "03c9f5f738969deea1cecb8b4a587ca1e6e866d3a6fc795ee187e3f15088f522",
+    "MovingFiberContextData6811R28.lean": "5c540ecd6e1e7f6b003184d2f5f7483df17c603e609631f171fda5e772c3ee3d",
+    "MovingFiberContextData6811R29.lean": "ecf990c8a878e204dde60674035aee2cb1bd2a7c5aad195434d254ed34b09de1",
+    "MovingFiberContextData6811R30.lean": "d637e325163eeea2b3eccf3258141e3a154ffb3eb50f3a37dcdfe79e60d5a79f",
+    "MovingFiberContextData6811R31.lean": "9753382ae69587ae02e5933357b43203d02fcdf3a2063217cdc069ba70d95ccd",
+    "MovingFiberContextData6811R32.lean": "de18a18453fc923a3812004a937e56f8260a6fc6f857b00476d62c7e50dfff23",
+    "MovingFiberContextData6811R33.lean": "293c79fbaebe50b25ad82885cd944e7751fc0eabc063e3cdfb092504e6e209f7",
+    "MovingFiberContextData6811R34.lean": "bce408e1fea8f6417c499b259c7f8809e270c74c4e84239d8ee094c50285a010",
+    "MovingFiberContextData6811R35.lean": "c7ff0ed5c33cf77aeb1ab1c4b5c0235fce846cda27f5cc7a81d09813b1964dc8"
+  },
+  "scope": "Stored phases, prefix monotonicity, ledger only. Excludes base/packing/threshold derivations."
+}

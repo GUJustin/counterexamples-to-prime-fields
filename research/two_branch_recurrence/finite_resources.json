@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/two_branch_recurrence/verify_finite.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5543501669890247,
+  "peak_rss_kib": 1248,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

@@ -1,0 +1,57 @@
+{
+  "fixtures": [
+    {
+      "kind": "two-high-branches",
+      "p": 7,
+      "D": 1,
+      "pairs_tested": 343,
+      "solutions": 1,
+      "labels": [
+        0
+      ],
+      "agreement_counts": [
+        5
+      ]
+    },
+    {
+      "kind": "two-high-branches",
+      "p": 11,
+      "D": 2,
+      "pairs_tested": 14641,
+      "solutions": 1,
+      "labels": [
+        0
+      ],
+      "agreement_counts": [
+        9
+      ]
+    },
+    {
+      "kind": "persistent-two-pencils",
+      "p": 7,
+      "D": 1,
+      "pairs_tested": 343,
+      "solutions": 13,
+      "nonzero_solutions": 6,
+      "nonzero_agreements": [
+        4,
+        4,
+        4,
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "kind": "persistent-nonlinear-component",
+      "p": 11,
+      "D": 2,
+      "pairs_tested": 14641,
+      "solutions": 11,
+      "near_labels_at_A3": [
+        0
+      ]
+    }
+  ],
+  "total_pairs": 29968
+}

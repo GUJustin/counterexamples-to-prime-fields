@@ -1,0 +1,389 @@
+{
+  "pin": "cdb451f13fdc6c84f5fe363e77ee13a89bd30974",
+  "files": [
+    {
+      "path": "research/better_codes_current_lower_2026_09_17/MovingFiberArithmetic6811A.lean",
+      "sha256": "582bb9ea6813949f191d06d39907f6ec970a4c361ccb18b61bfd0b810fe00925",
+      "bytes": 33439,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberArithmetic6811A.lean"
+    },
+    {
+      "path": "research/better_codes_current_lower_2026_09_17/MovingFiberArithmeticBase6811.lean",
+      "sha256": "bbb9346113bb65a9ec48ebfcd833a709bf5811eb5067dd929d22093ac467f118",
+      "bytes": 6679,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberArithmeticBase6811.lean"
+    },
+    {
+      "path": "research/better_codes_current_lower_2026_09_17/MovingFiberCatalog6811.lean",
+      "sha256": "b62b3576b1dcca96ced90e63ffd69d6c65283353e192c2212133854cd5bcecd4",
+      "bytes": 8515,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberCatalog6811.lean"
+    },
+    {
+      "path": "research/better_codes_current_lower_2026_09_17/MovingFiberCertificate6811.lean",
+      "sha256": "c7d1ba3d9795085c1d03ab61da0cda2e61e7c605056fe51d96ba1c9c9920bf62",
+      "bytes": 465,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberCertificate6811.lean"
+    },
+    {
+      "path": "research/better_codes_current_lower_2026_09_17/MovingFiberClosure6811.lean",
+      "sha256": "06e33a905b75aec0d6da99dc35a8786cd30a07a0b930dd4675d8a19046cee0c0",
+      "bytes": 5257,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberClosure6811.lean"
+    },
+    {
+      "path": "research/better_codes_current_lower_2026_09_17/MovingFiberCount6811.lean",
+      "sha256": "1cc22adcdab1d59313e6769fe9c05bd26107e7ff6e588a0bdd3cd548937d05d7",
+      "bytes": 20941,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberCount6811.lean"
+    },
+    {
+      "path": "research/better_codes_current_lower_2026_09_17/MovingFiberCountingArithmetic6811.lean",
+      "sha256": "a131a464fdceb7fdc2e833136053f7e6858f88ad70bf2322337f6305391de67f",
+      "bytes": 6593,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberCountingArithmetic6811.lean"
+    },
+    {
+      "path": "research/better_codes_current_lower_2026_09_17/MovingFiberInterpolation6811.lean",
+      "sha256": "d29379e0e8da90a8e03cf1f55d6d4b2b85ccbd7dfd7ccd18c6b11b978a35ad7a",
+      "bytes": 2424,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberInterpolation6811.lean"
+    },
+    {
+      "path": "research/better_codes_current_lower_2026_09_17/MovingFiberProfile6811.lean",
+      "sha256": "5074b38ab145ee71626d39cb18095e85d304bb82bce5071e6f8a517f6d5c9477",
+      "bytes": 9852,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberProfile6811.lean"
+    },
+    {
+      "path": "research/better_codes_current_lower_2026_09_17/MovingFiberProtocol6811.lean",
+      "sha256": "135ae9c0beef52b666d601f8c6977d419543c81a54e06fd9a9e99e383fa991eb",
+      "bytes": 12862,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberProtocol6811.lean"
+    },
+    {
+      "path": "research/better_codes_current_lower_2026_09_17/MovingFiberReceipt6811.lean",
+      "sha256": "ea5f9fe4f9f38045cbcac872b3b81b2b10815e47f7a789d03d7fd124162edde7",
+      "bytes": 1469,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberReceipt6811.lean"
+    },
+    {
+      "path": "research/better_codes_current_lower_2026_09_17/MovingFiberReceiptData6811.lean",
+      "sha256": "daa9a679584381ad0b1f6bebb24ad22b3e8b2e6434b51712acff8261345ba63c",
+      "bytes": 2358,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberReceiptData6811.lean"
+    },
+    {
+      "path": "research/better_codes_current_lower_2026_09_17/MovingFiberReceiptTypes6811.lean",
+      "sha256": "36c088bffc4056ef40507c202fa13e21348e9b4ee901c31dce6c108945a92405",
+      "bytes": 5757,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberReceiptTypes6811.lean"
+    },
+    {
+      "path": "research/better_codes_current_lower_2026_09_17/MovingFiberSources6811A.lean",
+      "sha256": "8deb8551e6c40eb0932ee0ca1d88f3d4dd2a60230948ca20dccea8cce35a2b88",
+      "bytes": 13244,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberSources6811A.lean"
+    },
+    {
+      "path": "research/better_codes_current_lower_2026_09_17/MovingFiberSources6811B.lean",
+      "sha256": "1d7fab8eb5e516291d237d35208746bd369fd60a89a14fd93c4310d6ab1c04ba",
+      "bytes": 13249,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberSources6811B.lean"
+    },
+    {
+      "path": "research/better_codes_current_lower_2026_09_17/MovingFiberSources6811C.lean",
+      "sha256": "ab2b867d6b063954821566e69de8ce08da77eee921cfbda47c5ca1ad90132dc2",
+      "bytes": 13252,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberSources6811C.lean"
+    },
+    {
+      "path": "research/better_codes_current_lower_2026_09_17/MovingFiberSources6811D.lean",
+      "sha256": "d1194e9a274a6520ddb8264d89c908dc3d588fe14095289839dd90b23c61d352",
+      "bytes": 11389,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberSources6811D.lean"
+    },
+    {
+      "path": "research/better_codes_current_lower_2026_09_17/SecondJetRefinements.lean",
+      "sha256": "babb222b94a5a792307e9bd6cc1a2cc66d9bb6fd89efcdb22bdfcdb12551bcd7",
+      "bytes": 26975,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/SecondJetRefinements.lean"
+    },
+    {
+      "path": "research/better_codes_current_lower_2026_09_17/Solution.lean",
+      "sha256": "b8b8b76f51b8e63cc7e8947ac0048ef353c151ed1489ae35681828fdd0db7c62",
+      "bytes": 266,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/Solution.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/LowerFoundation.lean",
+      "sha256": "2f21f93ca0687890810239e3c7b8ddf7bcd7b551edbb53ff16c915e4a00b7be2",
+      "bytes": 2195155,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/LowerFoundation.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/LowerGeometry.lean",
+      "sha256": "c13d81118f7a2dcdafee34e46ee77fa6356a7b431ce251a5c7c3c317a931e85a",
+      "bytes": 2188628,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/LowerGeometry.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R1.lean",
+      "sha256": "2289146d34f9df460464535ebd36ec46804d4ff10c9660282d804eeb824f90d0",
+      "bytes": 299046,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R1.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R10.lean",
+      "sha256": "ffaa2fde1b47f34aaa97c8b0fcb0f15fad735361c70a074ed5c6095e8c74df79",
+      "bytes": 303202,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R10.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R11.lean",
+      "sha256": "a3e7799e9f2d2ee73ee12af14ee956ffb65eb91551b1f31dabdcab97d8f7b185",
+      "bytes": 297724,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R11.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R12.lean",
+      "sha256": "44b4720eb0b8a7d1e7f0ed77838c9293f6ca9b9349558c43a07f01f547897def",
+      "bytes": 296718,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R12.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R13.lean",
+      "sha256": "bff5eca616aa6a646c2a2a134220d2a2d891d65f7bbfd2279cf0179e48f9438c",
+      "bytes": 287003,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R13.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R14.lean",
+      "sha256": "62e075062c1e7e7274ae9e101766e1f6be575b0d9a7d3b41e04598c58c003f8d",
+      "bytes": 276128,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R14.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R15.lean",
+      "sha256": "5f684a7b20b632e334131556d6615b6c08bfa9f0fc80aace1e54f76c943a5cce",
+      "bytes": 261805,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R15.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R16.lean",
+      "sha256": "031e9658e1c2aab073bae6a565789ceb8c5470eb8b753ee589967dadf1ad4c03",
+      "bytes": 243230,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R16.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R17.lean",
+      "sha256": "5c0db1a144ddb955b064265595bfad9fb82cb24ca2ac9d4007adc68762a38cdb",
+      "bytes": 231964,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R17.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R18.lean",
+      "sha256": "7e9dd5ec33e9b542963de50e73d55995b9d8746b48e310a1ce6676c024011214",
+      "bytes": 215804,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R18.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R19.lean",
+      "sha256": "33b03de2296d3c4677d6ba644ec5f1b477cf6bbe15612e4eebbe597d9d6329f8",
+      "bytes": 206676,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R19.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R2.lean",
+      "sha256": "fa39f99b8c069860414e14a7cdd7d2c90b9167bfd9fd7fcd40ec184fd565a3c2",
+      "bytes": 299400,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R2.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R20.lean",
+      "sha256": "f2b507b22abb3f0c4d4eb5a7f6199a319d19fdf274f31c74946ec9c84facf225",
+      "bytes": 196655,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R20.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R21.lean",
+      "sha256": "6b3ab97bfbb4c7a26959a804058268cc50d19919e6b6e4830a318d26f6fc0fd9",
+      "bytes": 188358,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R21.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R22.lean",
+      "sha256": "432bf2acfd4b01f7ed23357c3e8d4f11fb660b26c2ea1919498e5d615d9b74b2",
+      "bytes": 179815,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R22.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R23.lean",
+      "sha256": "61b22738bb437c3c541020e3c290252e384bac558e36a14e122c1da085e0bfcb",
+      "bytes": 172344,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R23.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R24.lean",
+      "sha256": "63a5e4e68583545320011c3e7d3e60cbc42165e463d4d89f16da2811d92a4887",
+      "bytes": 164343,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R24.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R25.lean",
+      "sha256": "2a957aba6b1488be85b244c2c4d65d5019a141f3f4dbed2e4e6e26ac88a9758a",
+      "bytes": 157990,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R25.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R26.lean",
+      "sha256": "59122a71443e9c88d5ae11214cd405c95be7beddbb3f88fd8641c195d298bfc0",
+      "bytes": 155206,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R26.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R27.lean",
+      "sha256": "03c9f5f738969deea1cecb8b4a587ca1e6e866d3a6fc795ee187e3f15088f522",
+      "bytes": 150643,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R27.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R28.lean",
+      "sha256": "5c540ecd6e1e7f6b003184d2f5f7483df17c603e609631f171fda5e772c3ee3d",
+      "bytes": 147207,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R28.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R29.lean",
+      "sha256": "ecf990c8a878e204dde60674035aee2cb1bd2a7c5aad195434d254ed34b09de1",
+      "bytes": 142955,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R29.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R3.lean",
+      "sha256": "2c3eec5d54c8f149253c0ba4da3d686b29b8968aa2f02af3d6d85d79246ccc61",
+      "bytes": 296990,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R3.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R30.lean",
+      "sha256": "d637e325163eeea2b3eccf3258141e3a154ffb3eb50f3a37dcdfe79e60d5a79f",
+      "bytes": 138954,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R30.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R31.lean",
+      "sha256": "9753382ae69587ae02e5933357b43203d02fcdf3a2063217cdc069ba70d95ccd",
+      "bytes": 135274,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R31.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R32.lean",
+      "sha256": "de18a18453fc923a3812004a937e56f8260a6fc6f857b00476d62c7e50dfff23",
+      "bytes": 132991,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R32.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R33.lean",
+      "sha256": "293c79fbaebe50b25ad82885cd944e7751fc0eabc063e3cdfb092504e6e209f7",
+      "bytes": 131283,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R33.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R34.lean",
+      "sha256": "bce408e1fea8f6417c499b259c7f8809e270c74c4e84239d8ee094c50285a010",
+      "bytes": 127461,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R34.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R35.lean",
+      "sha256": "c7ff0ed5c33cf77aeb1ab1c4b5c0235fce846cda27f5cc7a81d09813b1964dc8",
+      "bytes": 124341,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R35.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R4.lean",
+      "sha256": "e238c5bb3630c0b8ac3ab38e6569c73d8918b426d33f6725bbc8a069dc5ecc5a",
+      "bytes": 307220,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R4.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R5.lean",
+      "sha256": "0f062f43988ab9f2a8f86e35e03ec936065652530b02ce3a483a8ca867d863f0",
+      "bytes": 311613,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R5.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R6.lean",
+      "sha256": "31bfb1d604435f12af44d108f08399ddca7af224edef967885210df3b0df6368",
+      "bytes": 310663,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R6.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R7.lean",
+      "sha256": "359c6d784802700fb0c515ac3b0e9bd8621eb1f11d344adb1fb5506307d12b27",
+      "bytes": 310149,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R7.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R8.lean",
+      "sha256": "d4d49721285edbc5eb9935510bcd028b141d72b3f427839fb10de1c185440b93",
+      "bytes": 306846,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R8.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberContextData6811R9.lean",
+      "sha256": "33bfc2e85d5be84870d56ce2de89ce10e3d28132aacfff064c12c43d49be8328",
+      "bytes": 306329,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberContextData6811R9.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberKernels6811.lean",
+      "sha256": "07d01d4aa03ee67eec4dacffc451def72c918591f85ceaf56005de21b5b03f52",
+      "bytes": 15208,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberKernels6811.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberLedgerAudit6811.lean",
+      "sha256": "1770d22ad0767b4c42ae9b943a1ba2ccf9365d335ed3f78bb8d0b30964488f4a",
+      "bytes": 13108,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberLedgerAudit6811.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberPhaseCore6811.lean",
+      "sha256": "124bf316c33f0bade061f760965c9a04a6405527634c9b54863f733c44774651",
+      "bytes": 26313,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberPhaseCore6811.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberRouting6811.lean",
+      "sha256": "29528fa48edc4826a952971958982ddc98c525376de688a5d1b97b64eaf65023",
+      "bytes": 77075,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberRouting6811.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberSingleCore6811.lean",
+      "sha256": "e4c84161033d09743952739957a38c6b22100885d6a90c968de0c58faeb4c6b0",
+      "bytes": 7192,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberSingleCore6811.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberSourceSound6811.lean",
+      "sha256": "3b784677d1197a7f0e87fb4c48e7080139fcf9c05260929c0aaaae21b90065ce",
+      "bytes": 19973,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberSourceSound6811.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberTenPhase6811.lean",
+      "sha256": "7ca1e7474898c05f9513cddef423d54e1e0ac5dadbc13a7ddb67a67ebeb7c84f",
+      "bytes": 1688,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberTenPhase6811.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberThresholdClosed6811.lean",
+      "sha256": "cbea1e783197ed3d51c35f8e929edaff39a015c9ad7c6fcca80bb400d01f234c",
+      "bytes": 22958,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberThresholdClosed6811.lean"
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "target_A": 181275,
+  "parameter_ranges": {
+    "dm": [
+      -2,
+      2
+    ],
+    "dB": [
+      -1,
+      0
+    ],
+    "ds": [
+      -1,
+      0
+    ],
+    "dU": [
+      -1,
+      0
+    ],
+    "L": "unchanged",
+    "k": "unchanged",
+    "n0": "unchanged"
+  },
+  "tested": 1080,
+  "results": [
+    {
+      "index": 0,
+      "winners": []
+    },
+    {
+      "index": 1,
+      "winners": [
+        {
+          "parameters": [
+            133,
+            56,
+            24,
+            180,
+            2819,
+            6,
+            8
+          ],
+          "surplus": 69790984828
+        },
+        {
+          "parameters": [
+            133,
+            56,
+            25,
+            180,
+            2819,
+            6,
+            8
+          ],
+          "surplus": 142336033852
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "winners": []
+    },
+    {
+      "index": 3,
+      "winners": []
+    },
+    {
+      "index": 4,
+      "winners": []
+    },
+    {
+      "index": 5,
+      "winners": []
+    },
+    {
+      "index": 6,
+      "winners": []
+    },
+    {
+      "index": 7,
+      "winners": []
+    },
+    {
+      "index": 8,
+      "winners": []
+    },
+    {
+      "index": 9,
+      "winners": []
+    },
+    {
+      "index": 10,
+      "winners": []
+    },
+    {
+      "index": 11,
+      "winners": []
+    },
+    {
+      "index": 12,
+      "winners": []
+    },
+    {
+      "index": 13,
+      "winners": []
+    },
+    {
+      "index": 14,
+      "winners": []
+    },
+    {
+      "index": 15,
+      "winners": []
+    },
+    {
+      "index": 16,
+      "winners": []
+    },
+    {
+      "index": 17,
+      "winners": []
+    },
+    {
+      "index": 18,
+      "winners": []
+    },
+    {
+      "index": 19,
+      "winners": []
+    },
+    {
+      "index": 20,
+      "winners": []
+    },
+    {
+      "index": 21,
+      "winners": []
+    },
+    {
+      "index": 22,
+      "winners": []
+    },
+    {
+      "index": 23,
+      "winners": []
+    },
+    {
+      "index": 24,
+      "winners": []
+    },
+    {
+      "index": 25,
+      "winners": []
+    },
+    {
+      "index": 26,
+      "winners": []
+    }
+  ],
+  "scope": "Dimension-feasible candidates only; downstream proof and complete case coverage not audited."
+}

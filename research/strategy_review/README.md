@@ -20,7 +20,7 @@ The new replay exactly reproduces all 27 interpolation sources. At the
 68.12 target, unchanged parameters fail all 27 sufficient dimension gates.
 A bounded local search has found two valid replacements for one source;
 that is individual-gate progress, not a complete certificate. The active
-next task is to replay the full 35-row, 16-triple receipt and determine
+next task is to replay the full 4,970-row, 16-triple receipt and determine
 whether restoring interpolation feasibility preserves the geometric and
 final error budgets. Follow only exact inequalities valid for every
 required case; a favorable selected case is insufficient.

@@ -1,0 +1,63 @@
+{
+  "fixtures": [
+    {
+      "D": 1,
+      "t": 5,
+      "degrees": [
+        2
+      ],
+      "isolated_zero_fixture": true,
+      "groebner_basis": [
+        "Poly(c, c, z, domain='ZZ')",
+        "Poly(z, c, z, domain='ZZ')"
+      ]
+    },
+    {
+      "D": 2,
+      "t": 9,
+      "degrees": [
+        3,
+        2
+      ],
+      "isolated_zero_fixture": true,
+      "groebner_basis": [
+        "Poly(c, c, z, domain='QQ')",
+        "Poly(z, c, z, domain='QQ')"
+      ]
+    },
+    {
+      "D": 3,
+      "t": 13,
+      "degrees": [
+        4,
+        3,
+        2
+      ],
+      "isolated_zero_fixture": true,
+      "groebner_basis": [
+        "Poly(c, c, z, domain='QQ')",
+        "Poly(z, c, z, domain='QQ')"
+      ]
+    },
+    {
+      "D": 4,
+      "t": 17,
+      "degrees": [
+        5,
+        4,
+        3,
+        2
+      ],
+      "isolated_zero_fixture": true,
+      "groebner_basis": [
+        "Poly(c, c, z, domain='QQ')",
+        "Poly(z, c, z, domain='QQ')"
+      ]
+    }
+  ],
+  "persistent_nonlinear_component": "c^2=z",
+  "bad_characteristic_pivot_failure": {
+    "p": 2,
+    "D": 2
+  }
+}

@@ -1,0 +1,494 @@
+{
+  "pin": "cdb451f13fdc6c84f5fe363e77ee13a89bd30974",
+  "current_A": 181284,
+  "target_A": 181275,
+  "sources": [
+    {
+      "index": 0,
+      "parameters": [
+        132,
+        54,
+        24,
+        180,
+        1786,
+        5,
+        7
+      ],
+      "rank": 7954748802,
+      "coefficients": 2085297060568560,
+      "current_surplus": 7390617072,
+      "next_threshold_surplus": -224058064233,
+      "L_surplus_slope": 9006994049,
+      "min_L_increase": 25
+    },
+    {
+      "index": 1,
+      "parameters": [
+        134,
+        56,
+        25,
+        180,
+        2819,
+        6,
+        8
+      ],
+      "rank": 13960022702,
+      "coefficients": 3659541008959570,
+      "current_surplus": 4817766482,
+      "next_threshold_surplus": -397593127540,
+      "L_surplus_slope": 6078950387,
+      "min_L_increase": 66
+    },
+    {
+      "index": 2,
+      "parameters": [
+        136,
+        56,
+        25,
+        185,
+        2584,
+        6,
+        8
+      ],
+      "rank": 13216860660,
+      "coefficients": 3464727181592755,
+      "current_surplus": 6460737715,
+      "next_threshold_surplus": -378631834487,
+      "L_surplus_slope": 7090084442,
+      "min_L_increase": 54
+    },
+    {
+      "index": 3,
+      "parameters": [
+        116,
+        46,
+        21,
+        158,
+        2772,
+        5,
+        7
+      ],
+      "rank": 7241280630,
+      "coefficients": 1898259608736359,
+      "current_surplus": 1339265639,
+      "next_threshold_surplus": -209225676544,
+      "L_surplus_slope": 2881381403,
+      "min_L_increase": 73
+    },
+    {
+      "index": 4,
+      "parameters": [
+        114,
+        45,
+        21,
+        155,
+        3078,
+        5,
+        7
+      ],
+      "rank": 7498129960,
+      "coefficients": 1965591832836709,
+      "current_surplus": 2052602469,
+      "next_threshold_surplus": -215573370534,
+      "L_surplus_slope": 2360697479,
+      "min_L_increase": 92
+    },
+    {
+      "index": 5,
+      "parameters": [
+        158,
+        63,
+        29,
+        215,
+        3013,
+        7,
+        10
+      ],
+      "rank": 26506952089,
+      "coefficients": 6948643832078647,
+      "current_surplus": 5383659831,
+      "next_threshold_surplus": -763191209298,
+      "L_surplus_slope": 12371377381,
+      "min_L_increase": 62
+    },
+    {
+      "index": 6,
+      "parameters": [
+        166,
+        73,
+        34,
+        226,
+        3117,
+        8,
+        9
+      ],
+      "rank": 38892833461,
+      "coefficients": 10195525571648254,
+      "current_surplus": 2636847870,
+      "next_threshold_surplus": -1143100507710,
+      "L_surplus_slope": 16816225438,
+      "min_L_increase": 68
+    },
+    {
+      "index": 7,
+      "parameters": [
+        114,
+        47,
+        21,
+        154,
+        2781,
+        5,
+        7
+      ],
+      "rank": 7191547636,
+      "coefficients": 1885223559218890,
+      "current_surplus": 2495727306,
+      "next_threshold_surplus": -205962285807,
+      "L_surplus_slope": 2726869854,
+      "min_L_increase": 76
+    },
+    {
+      "index": 8,
+      "parameters": [
+        142,
+        56,
+        26,
+        193,
+        2744,
+        6,
+        9
+      ],
+      "rank": 15629093580,
+      "coefficients": 4097078687674896,
+      "current_surplus": 5580239376,
+      "next_threshold_surplus": -446473041216,
+      "L_surplus_slope": 7939347270,
+      "min_L_increase": 57
+    },
+    {
+      "index": 9,
+      "parameters": [
+        174,
+        76,
+        36,
+        236,
+        2736,
+        8,
+        9
+      ],
+      "rank": 40513371311,
+      "coefficients": 10620344577971942,
+      "current_surplus": 7369021158,
+      "next_threshold_surplus": -1177684076262,
+      "L_surplus_slope": 24358770588,
+      "min_L_increase": 49
+    },
+    {
+      "index": 10,
+      "parameters": [
+        170,
+        71,
+        32,
+        231,
+        3105,
+        8,
+        10
+      ],
+      "rank": 39019336035,
+      "coefficients": 10228691439847595,
+      "current_surplus": 6614288555,
+      "next_threshold_surplus": -1130287928944,
+      "L_surplus_slope": 18042404002,
+      "min_L_increase": 63
+    },
+    {
+      "index": 11,
+      "parameters": [
+        98,
+        41,
+        19,
+        132,
+        2387,
+        4,
+        6
+      ],
+      "rank": 3522727725,
+      "coefficients": 923462732585523,
+      "current_surplus": 795843123,
+      "next_threshold_surplus": -101290346463,
+      "L_surplus_slope": 1542591514,
+      "min_L_increase": 66
+    },
+    {
+      "index": 12,
+      "parameters": [
+        142,
+        59,
+        27,
+        193,
+        2415,
+        6,
+        9
+      ],
+      "rank": 14852041121,
+      "coefficients": 3893377684989207,
+      "current_surplus": 4217365783,
+      "next_threshold_surplus": -428263897733,
+      "L_surplus_slope": 9570192240,
+      "min_L_increase": 45
+    },
+    {
+      "index": 13,
+      "parameters": [
+        158,
+        69,
+        32,
+        214,
+        2416,
+        7,
+        8
+      ],
+      "rank": 24390886813,
+      "coefficients": 6393939096190481,
+      "current_surplus": 14463483409,
+      "next_threshold_surplus": -697864967162,
+      "L_surplus_slope": 17128120892,
+      "min_L_increase": 41
+    },
+    {
+      "index": 14,
+      "parameters": [
+        146,
+        58,
+        27,
+        198,
+        2498,
+        6,
+        9
+      ],
+      "rank": 16001770476,
+      "coefficients": 4194771043943235,
+      "current_surplus": 2924282691,
+      "next_threshold_surplus": -458783248923,
+      "L_surplus_slope": 10155503692,
+      "min_L_increase": 46
+    },
+    {
+      "index": 15,
+      "parameters": [
+        98,
+        41,
+        19,
+        133,
+        2289,
+        4,
+        6
+      ],
+      "rank": 3375264212,
+      "coefficients": 884806673741073,
+      "current_surplus": 1412150545,
+      "next_threshold_surplus": -97193597345,
+      "L_surplus_slope": 1614576084,
+      "min_L_increase": 61
+    },
+    {
+      "index": 16,
+      "parameters": [
+        150,
+        60,
+        28,
+        204,
+        2288,
+        6,
+        9
+      ],
+      "rank": 16420856314,
+      "coefficients": 4304640567595772,
+      "current_surplus": 11610018556,
+      "next_threshold_surplus": -463592464904,
+      "L_surplus_slope": 12868303392,
+      "min_L_increase": 37
+    },
+    {
+      "index": 17,
+      "parameters": [
+        162,
+        71,
+        33,
+        218,
+        2338,
+        7,
+        8
+      ],
+      "rank": 26142431686,
+      "coefficients": 6853094634711026,
+      "current_surplus": 13022816242,
+      "next_threshold_surplus": -745053205838,
+      "L_surplus_slope": 20157101356,
+      "min_L_increase": 37
+    },
+    {
+      "index": 18,
+      "parameters": [
+        114,
+        47,
+        22,
+        155,
+        2711,
+        5,
+        7
+      ],
+      "rank": 7053684309,
+      "coefficients": 1849082264981388,
+      "current_surplus": 1245482892,
+      "next_threshold_surplus": -204663764601,
+      "L_surplus_slope": 2820433191,
+      "min_L_increase": 73
+    },
+    {
+      "index": 19,
+      "parameters": [
+        166,
+        66,
+        31,
+        226,
+        2667,
+        7,
+        10
+      ],
+      "rank": 28292381157,
+      "coefficients": 7416680657483088,
+      "current_surplus": 2691462480,
+      "next_threshold_surplus": -816469359816,
+      "L_surplus_slope": 18022881156,
+      "min_L_increase": 46
+    },
+    {
+      "index": 20,
+      "parameters": [
+        174,
+        76,
+        36,
+        237,
+        2716,
+        8,
+        9
+      ],
+      "rank": 40208136171,
+      "coefficients": 10540329886663022,
+      "current_surplus": 8238252398,
+      "next_threshold_surplus": -1173380094022,
+      "L_surplus_slope": 24556947763,
+      "min_L_increase": 48
+    },
+    {
+      "index": 21,
+      "parameters": [
+        111,
+        46,
+        22,
+        151,
+        3089,
+        5,
+        7
+      ],
+      "rank": 7337935450,
+      "coefficients": 1923596440947592,
+      "current_surplus": 690342792,
+      "next_threshold_surplus": -214034089170,
+      "L_surplus_slope": 2165203684,
+      "min_L_increase": 99
+    },
+    {
+      "index": 22,
+      "parameters": [
+        189,
+        83,
+        39,
+        256,
+        3112,
+        9,
+        10
+      ],
+      "rank": 64415619986,
+      "coefficients": 16886177860853516,
+      "current_surplus": 9575243532,
+      "next_threshold_surplus": -1873954049922,
+      "L_surplus_slope": 32256181540,
+      "min_L_increase": 59
+    },
+    {
+      "index": 23,
+      "parameters": [
+        114,
+        45,
+        20,
+        155,
+        3066,
+        5,
+        7
+      ],
+      "rank": 7414588980,
+      "coefficients": 1943690857433990,
+      "current_surplus": 843860870,
+      "next_threshold_surplus": -214348700917,
+      "L_surplus_slope": 2353822481,
+      "min_L_increase": 92
+    },
+    {
+      "index": 24,
+      "parameters": [
+        190,
+        84,
+        40,
+        258,
+        3048,
+        9,
+        10
+      ],
+      "rank": 65130073176,
+      "coefficients": 17073478385944741,
+      "current_surplus": 20483295397,
+      "next_threshold_surplus": -1890998628257,
+      "L_surplus_slope": 34124955915,
+      "min_L_increase": 56
+    },
+    {
+      "index": 25,
+      "parameters": [
+        111,
+        46,
+        21,
+        151,
+        3071,
+        5,
+        7
+      ],
+      "rank": 7256688379,
+      "coefficients": 1902298102281753,
+      "current_surplus": 783857177,
+      "next_threshold_surplus": -211551618961,
+      "L_surplus_slope": 2168148862,
+      "min_L_increase": 98
+    },
+    {
+      "index": 26,
+      "parameters": [
+        189,
+        83,
+        39,
+        257,
+        3084,
+        9,
+        10
+      ],
+      "rank": 63818941246,
+      "coefficients": 16729782789508276,
+      "current_surplus": 30255516852,
+      "next_threshold_surplus": -1843822937442,
+      "L_surplus_slope": 32586204240,
+      "min_L_increase": 57
+    }
+  ],
+  "scope": "Interpolation dimension gate only; not a complete score certificate."
+}

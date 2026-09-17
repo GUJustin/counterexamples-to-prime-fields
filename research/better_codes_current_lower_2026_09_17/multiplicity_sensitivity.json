@@ -1,0 +1,4589 @@
+{
+  "A": 181275,
+  "complete": true,
+  "scope": "All m in B<=m<=U-s satisfying existing closed-rank formula; fixed B,s,U,k,n0.",
+  "rows": [
+    {
+      "index": 0,
+      "original_parameters": [
+        132,
+        54,
+        24,
+        180,
+        1786,
+        5,
+        7
+      ],
+      "tested": [
+        {
+          "m": 132,
+          "surplus_at_old_L": -224058064233,
+          "L_slope": 9006994049,
+          "minimum_feasible_L": 1811
+        },
+        {
+          "m": 133,
+          "surplus_at_old_L": -499016852896,
+          "L_slope": 9114113587,
+          "minimum_feasible_L": 1841
+        },
+        {
+          "m": 134,
+          "surplus_at_old_L": -1104959966679,
+          "L_slope": 9021217253,
+          "minimum_feasible_L": 1909
+        },
+        {
+          "m": 135,
+          "surplus_at_old_L": -2040424379918,
+          "L_slope": 8729091479,
+          "minimum_feasible_L": 2020
+        },
+        {
+          "m": 136,
+          "surplus_at_old_L": -3303947853381,
+          "L_slope": 8238522697,
+          "minimum_feasible_L": 2188
+        },
+        {
+          "m": 137,
+          "surplus_at_old_L": -4893647931004,
+          "L_slope": 7550559483,
+          "minimum_feasible_L": 2435
+        },
+        {
+          "m": 138,
+          "surplus_at_old_L": -6807643205299,
+          "L_slope": 6666250413,
+          "minimum_feasible_L": 2808
+        },
+        {
+          "m": 139,
+          "surplus_at_old_L": -9044053317354,
+          "L_slope": 5586644063,
+          "minimum_feasible_L": 3405
+        },
+        {
+          "m": 140,
+          "surplus_at_old_L": -11600577953569,
+          "L_slope": 4313051153,
+          "minimum_feasible_L": 4476
+        },
+        {
+          "m": 141,
+          "surplus_at_old_L": -14474918111064,
+          "L_slope": 2846782403,
+          "minimum_feasible_L": 6871
+        },
+        {
+          "m": 142,
+          "surplus_at_old_L": -17664776097679,
+          "L_slope": 1189148533,
+          "minimum_feasible_L": 16641
+        },
+        {
+          "m": 143,
+          "surplus_at_old_L": -21167434528710,
+          "L_slope": -658277593,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 144,
+          "surplus_at_old_L": -24980177592317,
+          "L_slope": -2693923111,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 145,
+          "surplus_at_old_L": -29100291049524,
+          "L_slope": -4916215157,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 146,
+          "surplus_at_old_L": -33524641230955,
+          "L_slope": -7323318723,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 147,
+          "surplus_at_old_L": -38250096302242,
+          "L_slope": -9913398801,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 148,
+          "surplus_at_old_L": -43273526264025,
+          "L_slope": -12684620383,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 149,
+          "surplus_at_old_L": -48591381948688,
+          "L_slope": -15634886317,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 150,
+          "surplus_at_old_L": -54200116285767,
+          "L_slope": -18762099451,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 151,
+          "surplus_at_old_L": -60096184301950,
+          "L_slope": -22064162633,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 152,
+          "surplus_at_old_L": -66275622117813,
+          "L_slope": -25538716567,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 153,
+          "surplus_at_old_L": -72734889216492,
+          "L_slope": -29183664101,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 154,
+          "surplus_at_old_L": -79470026175011,
+          "L_slope": -32996645939,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 155,
+          "surplus_at_old_L": -86477496932954,
+          "L_slope": -36975564929,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 156,
+          "surplus_at_old_L": -93752925520529,
+          "L_slope": -41117799631,
+          "minimum_feasible_L": null
+        }
+      ],
+      "best": {
+        "m": 132,
+        "surplus_at_old_L": -224058064233,
+        "L_slope": 9006994049,
+        "minimum_feasible_L": 1811
+      },
+      "nonworsening": []
+    },
+    {
+      "index": 1,
+      "original_parameters": [
+        134,
+        56,
+        25,
+        180,
+        2819,
+        6,
+        8
+      ],
+      "tested": [
+        {
+          "m": 133,
+          "surplus_at_old_L": 142336033852,
+          "L_slope": 6103497267,
+          "minimum_feasible_L": 2796
+        },
+        {
+          "m": 134,
+          "surplus_at_old_L": -397593127540,
+          "L_slope": 6078950387,
+          "minimum_feasible_L": 2885
+        },
+        {
+          "m": 135,
+          "surplus_at_old_L": -1508148435236,
+          "L_slope": 5842066867,
+          "minimum_feasible_L": 3078
+        },
+        {
+          "m": 136,
+          "surplus_at_old_L": -3186350360532,
+          "L_slope": 5393895283,
+          "minimum_feasible_L": 3410
+        },
+        {
+          "m": 137,
+          "surplus_at_old_L": -5429220423300,
+          "L_slope": 4735484211,
+          "minimum_feasible_L": 3966
+        },
+        {
+          "m": 138,
+          "surplus_at_old_L": -8233089393972,
+          "L_slope": 3868144371,
+          "minimum_feasible_L": 4948
+        },
+        {
+          "m": 139,
+          "surplus_at_old_L": -11594289353700,
+          "L_slope": 2793186483,
+          "minimum_feasible_L": 6970
+        },
+        {
+          "m": 140,
+          "surplus_at_old_L": -15509153694356,
+          "L_slope": 1511921267,
+          "minimum_feasible_L": 13077
+        },
+        {
+          "m": 141,
+          "surplus_at_old_L": -19973325320516,
+          "L_slope": 25921587,
+          "minimum_feasible_L": 773348
+        },
+        {
+          "m": 142,
+          "surplus_at_old_L": -24982448709620,
+          "L_slope": -1663239693,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 143,
+          "surplus_at_old_L": -30532169911972,
+          "L_slope": -3553989709,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 144,
+          "surplus_at_old_L": -36617444752724,
+          "L_slope": -5644493453,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 145,
+          "surplus_at_old_L": -43233230892036,
+          "L_slope": -7932915917,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 146,
+          "surplus_at_old_L": -50374487825076,
+          "L_slope": -10417422093,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 147,
+          "surplus_at_old_L": -58035485084004,
+          "L_slope": -13095914829,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 148,
+          "surplus_at_old_L": -66210494298132,
+          "L_slope": -15966296973,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 149,
+          "surplus_at_old_L": -74893789193924,
+          "L_slope": -19026471373,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 150,
+          "surplus_at_old_L": -84078953796980,
+          "L_slope": -22274078733,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 151,
+          "surplus_at_old_L": -93759574492196,
+          "L_slope": -25706759757,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 152,
+          "surplus_at_old_L": -103929931821780,
+          "L_slope": -29322417293,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 153,
+          "surplus_at_old_L": -114582924829060,
+          "L_slope": -33118429901,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 154,
+          "surplus_at_old_L": -125712838774836,
+          "L_slope": -37092700429,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 155,
+          "surplus_at_old_L": -137312577421028,
+          "L_slope": -41242607437,
+          "minimum_feasible_L": null
+        }
+      ],
+      "best": {
+        "m": 133,
+        "surplus_at_old_L": 142336033852,
+        "L_slope": 6103497267,
+        "minimum_feasible_L": 2796
+      },
+      "nonworsening": [
+        {
+          "m": 133,
+          "surplus_at_old_L": 142336033852,
+          "L_slope": 6103497267,
+          "minimum_feasible_L": 2796
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "original_parameters": [
+        136,
+        56,
+        25,
+        185,
+        2584,
+        6,
+        8
+      ],
+      "tested": [
+        {
+          "m": 136,
+          "surplus_at_old_L": -378631834487,
+          "L_slope": 7090084442,
+          "minimum_feasible_L": 2638
+        },
+        {
+          "m": 137,
+          "surplus_at_old_L": -725320806375,
+          "L_slope": 7156679386,
+          "minimum_feasible_L": 2686
+        },
+        {
+          "m": 138,
+          "surplus_at_old_L": -1596504872023,
+          "L_slope": 7009102682,
+          "minimum_feasible_L": 2812
+        },
+        {
+          "m": 139,
+          "surplus_at_old_L": -2990083209415,
+          "L_slope": 6648140762,
+          "minimum_feasible_L": 3034
+        },
+        {
+          "m": 140,
+          "surplus_at_old_L": -4903326899511,
+          "L_slope": 6074842202,
+          "minimum_feasible_L": 3392
+        },
+        {
+          "m": 141,
+          "surplus_at_old_L": -7333508071847,
+          "L_slope": 5290255578,
+          "minimum_feasible_L": 3971
+        },
+        {
+          "m": 142,
+          "surplus_at_old_L": -10277899904535,
+          "L_slope": 4295429466,
+          "minimum_feasible_L": 4977
+        },
+        {
+          "m": 143,
+          "surplus_at_old_L": -13733147740807,
+          "L_slope": 3091674586,
+          "minimum_feasible_L": 7026
+        },
+        {
+          "m": 144,
+          "surplus_at_old_L": -17695898234615,
+          "L_slope": 1680301658,
+          "minimum_feasible_L": 13116
+        },
+        {
+          "m": 145,
+          "surplus_at_old_L": -22162799350631,
+          "L_slope": 62621402,
+          "minimum_feasible_L": 356502
+        },
+        {
+          "m": 146,
+          "surplus_at_old_L": -27129871480791,
+          "L_slope": -1759793318,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 147,
+          "surplus_at_old_L": -32593136589895,
+          "L_slope": -3785369638,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 148,
+          "surplus_at_old_L": -38548618215607,
+          "L_slope": -6012534694,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 149,
+          "surplus_at_old_L": -44991712584999,
+          "L_slope": -8439453478,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 150,
+          "surplus_at_old_L": -51917817760151,
+          "L_slope": -11064290982,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 151,
+          "surplus_at_old_L": -59322333638151,
+          "L_slope": -13885212198,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 152,
+          "surplus_at_old_L": -67200033067639,
+          "L_slope": -16900119974,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 153,
+          "surplus_at_old_L": -75545690994407,
+          "L_slope": -20106917158,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 154,
+          "surplus_at_old_L": -84354084461399,
+          "L_slope": -23503506598,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 155,
+          "surplus_at_old_L": -93619363725255,
+          "L_slope": -27087528998,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 156,
+          "surplus_at_old_L": -103335681401911,
+          "L_slope": -30856625062,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 157,
+          "surplus_at_old_L": -113497821350055,
+          "L_slope": -34808697638,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 158,
+          "surplus_at_old_L": -124099311758615,
+          "L_slope": -38941125286,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 159,
+          "surplus_at_old_L": -135134941204871,
+          "L_slope": -43251810854,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 160,
+          "surplus_at_old_L": -146598242596343,
+          "L_slope": -47738132902,
+          "minimum_feasible_L": null
+        }
+      ],
+      "best": {
+        "m": 136,
+        "surplus_at_old_L": -378631834487,
+        "L_slope": 7090084442,
+        "minimum_feasible_L": 2638
+      },
+      "nonworsening": []
+    },
+    {
+      "index": 3,
+      "original_parameters": [
+        116,
+        46,
+        21,
+        158,
+        2772,
+        5,
+        7
+      ],
+      "tested": [
+        {
+          "m": 116,
+          "surplus_at_old_L": -209225676544,
+          "L_slope": 2881381403,
+          "minimum_feasible_L": 2845
+        },
+        {
+          "m": 117,
+          "surplus_at_old_L": -445809136027,
+          "L_slope": 2891051195,
+          "minimum_feasible_L": 2927
+        },
+        {
+          "m": 118,
+          "surplus_at_old_L": -1075856321590,
+          "L_slope": 2752609627,
+          "minimum_feasible_L": 3163
+        },
+        {
+          "m": 119,
+          "surplus_at_old_L": -2097848633041,
+          "L_slope": 2466580987,
+          "minimum_feasible_L": 3623
+        },
+        {
+          "m": 120,
+          "surplus_at_old_L": -3509582750060,
+          "L_slope": 2033751707,
+          "minimum_feasible_L": 4498
+        },
+        {
+          "m": 121,
+          "surplus_at_old_L": -5308856138759,
+          "L_slope": 1454908219,
+          "minimum_feasible_L": 6421
+        },
+        {
+          "m": 122,
+          "surplus_at_old_L": -7493467051682,
+          "L_slope": 730836955,
+          "minimum_feasible_L": 13026
+        },
+        {
+          "m": 123,
+          "surplus_at_old_L": -10060529283389,
+          "L_slope": -137413509,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 124,
+          "surplus_at_old_L": -13007157677016,
+          "L_slope": -1148794597,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 125,
+          "surplus_at_old_L": -16330468124275,
+          "L_slope": -2302257733,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 126,
+          "surplus_at_old_L": -20026892321038,
+          "L_slope": -3596492197,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 127,
+          "surplus_at_old_L": -24092863273897,
+          "L_slope": -5030187269,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 128,
+          "surplus_at_old_L": -28524815300164,
+          "L_slope": -6602032229,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 129,
+          "surplus_at_old_L": -33318498783455,
+          "L_slope": -8310454213,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 130,
+          "surplus_at_old_L": -38469665680250,
+          "L_slope": -10153880357,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 131,
+          "surplus_at_old_L": -43974069519893,
+          "L_slope": -12130737797,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 132,
+          "surplus_at_old_L": -49826780160176,
+          "L_slope": -14239191525,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 133,
+          "surplus_at_old_L": -56022869293899,
+          "L_slope": -16477406533,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 134,
+          "surplus_at_old_L": -62557410448870,
+          "L_slope": -18843547813,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 135,
+          "surplus_at_old_L": -69424793743489,
+          "L_slope": -21335518213,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 136,
+          "surplus_at_old_L": -76620096637724,
+          "L_slope": -23951482725,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 137,
+          "surplus_at_old_L": -84137713182135,
+          "L_slope": -26689344197,
+          "minimum_feasible_L": null
+        }
+      ],
+      "best": {
+        "m": 116,
+        "surplus_at_old_L": -209225676544,
+        "L_slope": 2881381403,
+        "minimum_feasible_L": 2845
+      },
+      "nonworsening": []
+    },
+    {
+      "index": 4,
+      "original_parameters": [
+        114,
+        45,
+        21,
+        155,
+        3078,
+        5,
+        7
+      ],
+      "tested": [
+        {
+          "m": 114,
+          "surplus_at_old_L": -215573370534,
+          "L_slope": 2360697479,
+          "minimum_feasible_L": 3170
+        },
+        {
+          "m": 115,
+          "surplus_at_old_L": -528617367181,
+          "L_slope": 2337121938,
+          "minimum_feasible_L": 3305
+        },
+        {
+          "m": 116,
+          "surplus_at_old_L": -1263647667828,
+          "L_slope": 2171202205,
+          "minimum_feasible_L": 3661
+        },
+        {
+          "m": 117,
+          "surplus_at_old_L": -2418989434459,
+          "L_slope": 1863462568,
+          "minimum_feasible_L": 4377
+        },
+        {
+          "m": 118,
+          "surplus_at_old_L": -3992202106434,
+          "L_slope": 1414689459,
+          "minimum_feasible_L": 5900
+        },
+        {
+          "m": 119,
+          "surplus_at_old_L": -5980845909545,
+          "L_slope": 825669310,
+          "minimum_feasible_L": 10322
+        },
+        {
+          "m": 120,
+          "surplus_at_old_L": -8382481856016,
+          "L_slope": 97188553,
+          "minimum_feasible_L": 89328
+        },
+        {
+          "m": 121,
+          "surplus_at_old_L": -11193905497591,
+          "L_slope": -769704236,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 122,
+          "surplus_at_old_L": -14411913434590,
+          "L_slope": -1773960481,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 123,
+          "surplus_at_old_L": -18033303315909,
+          "L_slope": -2914531606,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 124,
+          "surplus_at_old_L": -22054107592108,
+          "L_slope": -4190106891,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 125,
+          "surplus_at_old_L": -26470360024467,
+          "L_slope": -5599375616,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 126,
+          "surplus_at_old_L": -31278095684986,
+          "L_slope": -7141027061,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 127,
+          "surplus_at_old_L": -36472584709473,
+          "L_slope": -8813488362,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 128,
+          "surplus_at_old_L": -42049098806600,
+          "L_slope": -10615186655,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 129,
+          "surplus_at_old_L": -48002911257903,
+          "L_slope": -12544549076,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 130,
+          "surplus_at_old_L": -54328530670870,
+          "L_slope": -14599740617,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 131,
+          "surplus_at_old_L": -61020467487997,
+          "L_slope": -16778926270,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 132,
+          "surplus_at_old_L": -68073233986788,
+          "L_slope": -19080271027,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 133,
+          "surplus_at_old_L": -75480578032843,
+          "L_slope": -21501677736,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 134,
+          "surplus_at_old_L": -83237015835826,
+          "L_slope": -24041311389,
+          "minimum_feasible_L": null
+        }
+      ],
+      "best": {
+        "m": 114,
+        "surplus_at_old_L": -215573370534,
+        "L_slope": 2360697479,
+        "minimum_feasible_L": 3170
+      },
+      "nonworsening": []
+    },
+    {
+      "index": 5,
+      "original_parameters": [
+        158,
+        63,
+        29,
+        215,
+        3013,
+        7,
+        10
+      ],
+      "tested": [
+        {
+          "m": 158,
+          "surplus_at_old_L": -763191209298,
+          "L_slope": 12371377381,
+          "minimum_feasible_L": 3075
+        },
+        {
+          "m": 159,
+          "surplus_at_old_L": -1563738466615,
+          "L_slope": 12401426644,
+          "minimum_feasible_L": 3140
+        },
+        {
+          "m": 160,
+          "surplus_at_old_L": -3141333230876,
+          "L_slope": 12159370435,
+          "minimum_feasible_L": 3272
+        },
+        {
+          "m": 161,
+          "surplus_at_old_L": -5493502959873,
+          "L_slope": 11645995186,
+          "minimum_feasible_L": 3485
+        },
+        {
+          "m": 162,
+          "surplus_at_old_L": -8617775897830,
+          "L_slope": 10862087329,
+          "minimum_feasible_L": 3807
+        },
+        {
+          "m": 163,
+          "surplus_at_old_L": -12510947596491,
+          "L_slope": 9808695440,
+          "minimum_feasible_L": 4289
+        },
+        {
+          "m": 164,
+          "surplus_at_old_L": -17169814656176,
+          "L_slope": 8486868095,
+          "minimum_feasible_L": 5037
+        },
+        {
+          "m": 165,
+          "surplus_at_old_L": -22591174725781,
+          "L_slope": 6897653870,
+          "minimum_feasible_L": 6289
+        },
+        {
+          "m": 166,
+          "surplus_at_old_L": -28771093023866,
+          "L_slope": 5042363485,
+          "minimum_feasible_L": 8719
+        },
+        {
+          "m": 167,
+          "surplus_at_old_L": -35705636079711,
+          "L_slope": 2922307660,
+          "minimum_feasible_L": 15232
+        },
+        {
+          "m": 168,
+          "surplus_at_old_L": -43390871733316,
+          "L_slope": 538797115,
+          "minimum_feasible_L": 83546
+        },
+        {
+          "m": 169,
+          "surplus_at_old_L": -51822135656489,
+          "L_slope": -2106595286,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 170,
+          "surplus_at_old_L": -60994765093902,
+          "L_slope": -5012296679,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 171,
+          "surplus_at_old_L": -70904098863091,
+          "L_slope": -8176734200,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 172,
+          "surplus_at_old_L": -81544743875544,
+          "L_slope": -11598072841,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 173,
+          "surplus_at_old_L": -92911308877757,
+          "L_slope": -15274477594,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 174,
+          "surplus_at_old_L": -104998404451234,
+          "L_slope": -19204113451,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 175,
+          "surplus_at_old_L": -117799909533575,
+          "L_slope": -23384883260,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 176,
+          "surplus_at_old_L": -131309705159532,
+          "L_slope": -27814689869,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 177,
+          "surplus_at_old_L": -145521674461009,
+          "L_slope": -32491436126,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 178,
+          "surplus_at_old_L": -160428969188150,
+          "L_slope": -37412762735,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 179,
+          "surplus_at_old_L": -176024743450395,
+          "L_slope": -42576310400,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 180,
+          "surplus_at_old_L": -192302153716480,
+          "L_slope": -47979719825,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 181,
+          "surplus_at_old_L": -209253625335525,
+          "L_slope": -53620369570,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 182,
+          "surplus_at_old_L": -226871586278090,
+          "L_slope": -59495638195,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 183,
+          "surplus_at_old_L": -245148467136175,
+          "L_slope": -65602904260,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 184,
+          "surplus_at_old_L": -264076701123220,
+          "L_slope": -71939546325,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 185,
+          "surplus_at_old_L": -283647990595193,
+          "L_slope": -78502680806,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 186,
+          "surplus_at_old_L": -303855507749470,
+          "L_slope": -85289948407,
+          "minimum_feasible_L": null
+        }
+      ],
+      "best": {
+        "m": 158,
+        "surplus_at_old_L": -763191209298,
+        "L_slope": 12371377381,
+        "minimum_feasible_L": 3075
+      },
+      "nonworsening": []
+    },
+    {
+      "index": 6,
+      "original_parameters": [
+        166,
+        73,
+        34,
+        226,
+        3117,
+        8,
+        9
+      ],
+      "tested": [
+        {
+          "m": 166,
+          "surplus_at_old_L": -1143100507710,
+          "L_slope": 16816225438,
+          "minimum_feasible_L": 3185
+        },
+        {
+          "m": 167,
+          "surplus_at_old_L": -887385698850,
+          "L_slope": 17317055778,
+          "minimum_feasible_L": 3169
+        },
+        {
+          "m": 168,
+          "surplus_at_old_L": -1684426776070,
+          "L_slope": 17461370278,
+          "minimum_feasible_L": 3214
+        },
+        {
+          "m": 169,
+          "surplus_at_old_L": -3530077932010,
+          "L_slope": 17250479658,
+          "minimum_feasible_L": 3322
+        },
+        {
+          "m": 170,
+          "surplus_at_old_L": -6419436811726,
+          "L_slope": 16685956782,
+          "minimum_feasible_L": 3502
+        },
+        {
+          "m": 171,
+          "surplus_at_old_L": -10347602633138,
+          "L_slope": 15769374514,
+          "minimum_feasible_L": 3774
+        },
+        {
+          "m": 172,
+          "surplus_at_old_L": -15309676187030,
+          "L_slope": 14502305718,
+          "minimum_feasible_L": 4173
+        },
+        {
+          "m": 173,
+          "surplus_at_old_L": -21300001978746,
+          "L_slope": 12886585402,
+          "minimum_feasible_L": 4770
+        },
+        {
+          "m": 174,
+          "surplus_at_old_L": -28312926348638,
+          "L_slope": 10924048574,
+          "minimum_feasible_L": 5709
+        },
+        {
+          "m": 175,
+          "surplus_at_old_L": -36342797472066,
+          "L_slope": 8616530242,
+          "minimum_feasible_L": 7335
+        },
+        {
+          "m": 176,
+          "surplus_at_old_L": -45383207501094,
+          "L_slope": 5966127558,
+          "minimum_feasible_L": 10724
+        },
+        {
+          "m": 177,
+          "surplus_at_old_L": -55427750684938,
+          "L_slope": 2974937674,
+          "minimum_feasible_L": 21749
+        },
+        {
+          "m": 178,
+          "surplus_at_old_L": -66470023369966,
+          "L_slope": -354942258,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 179,
+          "surplus_at_old_L": -78502866141394,
+          "L_slope": -4021152942,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 180,
+          "surplus_at_old_L": -91519121943734,
+          "L_slope": -8021335082,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 181,
+          "surplus_at_old_L": -105511636080794,
+          "L_slope": -12353129382,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 182,
+          "surplus_at_old_L": -120472498357374,
+          "L_slope": -17013914402,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 183,
+          "surplus_at_old_L": -136393801199714,
+          "L_slope": -22001068702,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 184,
+          "surplus_at_old_L": -153267639655494,
+          "L_slope": -27311970842,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 185,
+          "surplus_at_old_L": -171085353535530,
+          "L_slope": -32943737238,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 186,
+          "surplus_at_old_L": -189838285534222,
+          "L_slope": -38893484306,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 187,
+          "surplus_at_old_L": -209517781229554,
+          "L_slope": -45158328462,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 188,
+          "surplus_at_old_L": -230114431224790,
+          "L_slope": -51735123978,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 189,
+          "surplus_at_old_L": -251618829268922,
+          "L_slope": -58620725126,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 190,
+          "surplus_at_old_L": -274022330114974,
+          "L_slope": -65812248322,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 191,
+          "surplus_at_old_L": -297314775682946,
+          "L_slope": -73306285694,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 192,
+          "surplus_at_old_L": -321487527017318,
+          "L_slope": -81099953658,
+          "minimum_feasible_L": null
+        }
+      ],
+      "best": {
+        "m": 167,
+        "surplus_at_old_L": -887385698850,
+        "L_slope": 17317055778,
+        "minimum_feasible_L": 3169
+      },
+      "nonworsening": []
+    },
+    {
+      "index": 7,
+      "original_parameters": [
+        114,
+        47,
+        21,
+        154,
+        2781,
+        5,
+        7
+      ],
+      "tested": [
+        {
+          "m": 114,
+          "surplus_at_old_L": -205962285807,
+          "L_slope": 2726869854,
+          "minimum_feasible_L": 2857
+        },
+        {
+          "m": 115,
+          "surplus_at_old_L": -665235936866,
+          "L_slope": 2648876451,
+          "minimum_feasible_L": 3033
+        },
+        {
+          "m": 116,
+          "surplus_at_old_L": -1529478027733,
+          "L_slope": 2419101672,
+          "minimum_feasible_L": 3414
+        },
+        {
+          "m": 117,
+          "surplus_at_old_L": -2796470820168,
+          "L_slope": 2038331949,
+          "minimum_feasible_L": 4153
+        },
+        {
+          "m": 118,
+          "surplus_at_old_L": -4463308710075,
+          "L_slope": 1507615858,
+          "minimum_feasible_L": 5742
+        },
+        {
+          "m": 119,
+          "surplus_at_old_L": -6527087141934,
+          "L_slope": 828001975,
+          "minimum_feasible_L": 10664
+        },
+        {
+          "m": 120,
+          "surplus_at_old_L": -8984902608801,
+          "L_slope": 538876,
+          "minimum_feasible_L": 16676195
+        },
+        {
+          "m": 121,
+          "surplus_at_old_L": -11833164000020,
+          "L_slope": -973462719,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 122,
+          "surplus_at_old_L": -15068281515655,
+          "L_slope": -2092692090,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 123,
+          "surplus_at_old_L": -18686666666490,
+          "L_slope": -3355838517,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 124,
+          "surplus_at_old_L": -22684043621741,
+          "L_slope": -4761329136,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 125,
+          "surplus_at_old_L": -27056138123488,
+          "L_slope": -6307591083,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 126,
+          "surplus_at_old_L": -31798677486675,
+          "L_slope": -7993051494,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 127,
+          "surplus_at_old_L": -36906701946822,
+          "L_slope": -9815875361,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 128,
+          "surplus_at_old_L": -42375253574457,
+          "L_slope": -11774227676,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 129,
+          "surplus_at_old_L": -48199376275116,
+          "L_slope": -13866273431,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 130,
+          "surplus_at_old_L": -54373427137055,
+          "L_slope": -16089915474,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 131,
+          "surplus_at_old_L": -60892453997970,
+          "L_slope": -18443318797,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 132,
+          "surplus_at_old_L": -67750817878277,
+          "L_slope": -20924386248,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 133,
+          "surplus_at_old_L": -74943570547832,
+          "L_slope": -23531282819,
+          "minimum_feasible_L": null
+        }
+      ],
+      "best": {
+        "m": 114,
+        "surplus_at_old_L": -205962285807,
+        "L_slope": 2726869854,
+        "minimum_feasible_L": 2857
+      },
+      "nonworsening": []
+    },
+    {
+      "index": 8,
+      "original_parameters": [
+        142,
+        56,
+        26,
+        193,
+        2744,
+        6,
+        9
+      ],
+      "tested": [
+        {
+          "m": 142,
+          "surplus_at_old_L": -446473041216,
+          "L_slope": 7939347270,
+          "minimum_feasible_L": 2801
+        },
+        {
+          "m": 143,
+          "surplus_at_old_L": -1126958613120,
+          "L_slope": 7898106192,
+          "minimum_feasible_L": 2887
+        },
+        {
+          "m": 144,
+          "surplus_at_old_L": -2372346941376,
+          "L_slope": 7639809882,
+          "minimum_feasible_L": 3055
+        },
+        {
+          "m": 145,
+          "surplus_at_old_L": -4180414782720,
+          "L_slope": 7165244772,
+          "minimum_feasible_L": 3328
+        },
+        {
+          "m": 146,
+          "surplus_at_old_L": -6548939680320,
+          "L_slope": 6475197294,
+          "minimum_feasible_L": 3756
+        },
+        {
+          "m": 147,
+          "surplus_at_old_L": -9475699963776,
+          "L_slope": 5570453880,
+          "minimum_feasible_L": 4446
+        },
+        {
+          "m": 148,
+          "surplus_at_old_L": -12957806019776,
+          "L_slope": 4452063106,
+          "minimum_feasible_L": 5655
+        },
+        {
+          "m": 149,
+          "surplus_at_old_L": -16992369283584,
+          "L_slope": 3121073548,
+          "minimum_feasible_L": 8189
+        },
+        {
+          "m": 150,
+          "surplus_at_old_L": -21576502239040,
+          "L_slope": 1578533782,
+          "minimum_feasible_L": 16413
+        },
+        {
+          "m": 151,
+          "surplus_at_old_L": -26706649689216,
+          "L_slope": -174245472,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 152,
+          "surplus_at_old_L": -32379257747904,
+          "L_slope": -2135953494,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 153,
+          "surplus_at_old_L": -38590773839616,
+          "L_slope": -4305279564,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 154,
+          "surplus_at_old_L": -45336977970240,
+          "L_slope": -6680650818,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 155,
+          "surplus_at_old_L": -52613651718528,
+          "L_slope": -9260494392,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 156,
+          "surplus_at_old_L": -60416578236096,
+          "L_slope": -12043237422,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 157,
+          "surplus_at_old_L": -68740873518080,
+          "L_slope": -15027044900,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 158,
+          "surplus_at_old_L": -77581655394624,
+          "L_slope": -18210081818,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 159,
+          "surplus_at_old_L": -86934043530880,
+          "L_slope": -21590513168,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 160,
+          "surplus_at_old_L": -96792490697664,
+          "L_slope": -25166241798,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 161,
+          "surplus_at_old_L": -107151451762944,
+          "L_slope": -28935170556,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 162,
+          "surplus_at_old_L": -118005383691840,
+          "L_slope": -32895202290,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 163,
+          "surplus_at_old_L": -129348076817280,
+          "L_slope": -37043977704,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 164,
+          "surplus_at_old_L": -141173323831488,
+          "L_slope": -41379137502,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 165,
+          "surplus_at_old_L": -153474919785984,
+          "L_slope": -45898322388,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 166,
+          "surplus_at_old_L": -166246662091584,
+          "L_slope": -50599173066,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 167,
+          "surplus_at_old_L": -179481681789056,
+          "L_slope": -55479068096,
+          "minimum_feasible_L": null
+        }
+      ],
+      "best": {
+        "m": 142,
+        "surplus_at_old_L": -446473041216,
+        "L_slope": 7939347270,
+        "minimum_feasible_L": 2801
+      },
+      "nonworsening": []
+    },
+    {
+      "index": 9,
+      "original_parameters": [
+        174,
+        76,
+        36,
+        236,
+        2736,
+        8,
+        9
+      ],
+      "tested": [
+        {
+          "m": 173,
+          "surplus_at_old_L": -1496344481103,
+          "L_slope": 23669886051,
+          "minimum_feasible_L": 2800
+        },
+        {
+          "m": 174,
+          "surplus_at_old_L": -1177684076262,
+          "L_slope": 24358770588,
+          "minimum_feasible_L": 2785
+        },
+        {
+          "m": 175,
+          "surplus_at_old_L": -1852092252285,
+          "L_slope": 24660468437,
+          "minimum_feasible_L": 2812
+        },
+        {
+          "m": 176,
+          "surplus_at_old_L": -3515905022484,
+          "L_slope": 24576290318,
+          "minimum_feasible_L": 2880
+        },
+        {
+          "m": 177,
+          "surplus_at_old_L": -6164804350891,
+          "L_slope": 24107809095,
+          "minimum_feasible_L": 2992
+        },
+        {
+          "m": 178,
+          "surplus_at_old_L": -9794473774402,
+          "L_slope": 23256597632,
+          "minimum_feasible_L": 3158
+        },
+        {
+          "m": 179,
+          "surplus_at_old_L": -14400598402777,
+          "L_slope": 22024228793,
+          "minimum_feasible_L": 3390
+        },
+        {
+          "m": 180,
+          "surplus_at_old_L": -19978209558640,
+          "L_slope": 20412537586,
+          "minimum_feasible_L": 3715
+        },
+        {
+          "m": 181,
+          "surplus_at_old_L": -26522340399623,
+          "L_slope": 18423359019,
+          "minimum_feasible_L": 4176
+        },
+        {
+          "m": 182,
+          "surplus_at_old_L": -34028025918366,
+          "L_slope": 16058528100,
+          "minimum_feasible_L": 4856
+        },
+        {
+          "m": 183,
+          "surplus_at_old_L": -42489647582517,
+          "L_slope": 13320141981,
+          "minimum_feasible_L": 5926
+        },
+        {
+          "m": 184,
+          "surplus_at_old_L": -51901588956876,
+          "L_slope": 10210297814,
+          "minimum_feasible_L": 7820
+        },
+        {
+          "m": 185,
+          "surplus_at_old_L": -62258235703395,
+          "L_slope": 6731092751,
+          "minimum_feasible_L": 11986
+        },
+        {
+          "m": 186,
+          "surplus_at_old_L": -73553320221178,
+          "L_slope": 2884886088,
+          "minimum_feasible_L": 28233
+        },
+        {
+          "m": 187,
+          "surplus_at_old_L": -85780577268625,
+          "L_slope": -1325962879,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 188,
+          "surplus_at_old_L": -98933743963432,
+          "L_slope": -5899094854,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 189,
+          "surplus_at_old_L": -113005904422591,
+          "L_slope": -10831888397,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 190,
+          "surplus_at_old_L": -127990145384534,
+          "L_slope": -16121722068,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 191,
+          "surplus_at_old_L": -143879556209133,
+          "L_slope": -21765974427,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 192,
+          "surplus_at_old_L": -160666573517700,
+          "L_slope": -27761761890,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 193,
+          "surplus_at_old_L": -178343636815131,
+          "L_slope": -34106200873,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 194,
+          "surplus_at_old_L": -196903188489906,
+          "L_slope": -40796407792,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 195,
+          "surplus_at_old_L": -216337018454089,
+          "L_slope": -47829236919,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 196,
+          "surplus_at_old_L": -236636919765472,
+          "L_slope": -55201542526,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 197,
+          "surplus_at_old_L": -257794688627575,
+          "L_slope": -62910178885,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 198,
+          "surplus_at_old_L": -279801469029646,
+          "L_slope": -70951738124,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 199,
+          "surplus_at_old_L": -302649063728805,
+          "L_slope": -79323074515,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 200,
+          "surplus_at_old_L": -326328623267900,
+          "L_slope": -88020780186,
+          "minimum_feasible_L": null
+        }
+      ],
+      "best": {
+        "m": 174,
+        "surplus_at_old_L": -1177684076262,
+        "L_slope": 24358770588,
+        "minimum_feasible_L": 2785
+      },
+      "nonworsening": []
+    },
+    {
+      "index": 10,
+      "original_parameters": [
+        170,
+        71,
+        32,
+        231,
+        3105,
+        8,
+        10
+      ],
+      "tested": [
+        {
+          "m": 170,
+          "surplus_at_old_L": -1130287928944,
+          "L_slope": 18042404002,
+          "minimum_feasible_L": 3168
+        },
+        {
+          "m": 171,
+          "surplus_at_old_L": -1917205143248,
+          "L_slope": 18199079198,
+          "minimum_feasible_L": 3211
+        },
+        {
+          "m": 172,
+          "surplus_at_old_L": -3700156835632,
+          "L_slope": 18016540058,
+          "minimum_feasible_L": 3311
+        },
+        {
+          "m": 173,
+          "surplus_at_old_L": -6475790184336,
+          "L_slope": 17495835158,
+          "minimum_feasible_L": 3476
+        },
+        {
+          "m": 174,
+          "surplus_at_old_L": -10240000014320,
+          "L_slope": 16638275218,
+          "minimum_feasible_L": 3721
+        },
+        {
+          "m": 175,
+          "surplus_at_old_L": -14988682461264,
+          "L_slope": 15445170958,
+          "minimum_feasible_L": 4076
+        },
+        {
+          "m": 176,
+          "surplus_at_old_L": -20717734971568,
+          "L_slope": 13917833098,
+          "minimum_feasible_L": 4594
+        },
+        {
+          "m": 177,
+          "surplus_at_old_L": -27422302900496,
+          "L_slope": 12057834502,
+          "minimum_feasible_L": 5380
+        },
+        {
+          "m": 178,
+          "surplus_at_old_L": -35097533176176,
+          "L_slope": 9866748034,
+          "minimum_feasible_L": 6663
+        },
+        {
+          "m": 179,
+          "surplus_at_old_L": -43738574299600,
+          "L_slope": 7346146558,
+          "minimum_feasible_L": 9059
+        },
+        {
+          "m": 180,
+          "surplus_at_old_L": -53339822942768,
+          "L_slope": 4497865082,
+          "minimum_feasible_L": 14964
+        },
+        {
+          "m": 181,
+          "surplus_at_old_L": -63895677612688,
+          "L_slope": 1323738614,
+          "minimum_feasible_L": 51375
+        },
+        {
+          "m": 182,
+          "surplus_at_old_L": -75400538651376,
+          "L_slope": -2174397838,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 183,
+          "surplus_at_old_L": -87848054834000,
+          "L_slope": -5994447122,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 184,
+          "surplus_at_old_L": -101231877032880,
+          "L_slope": -10134312086,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 185,
+          "surplus_at_old_L": -115545658217488,
+          "L_slope": -14591895578,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 186,
+          "surplus_at_old_L": -130782300052592,
+          "L_slope": -19364838302,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 187,
+          "surplus_at_old_L": -146934706562256,
+          "L_slope": -24450780962,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 188,
+          "surplus_at_old_L": -163995784129840,
+          "L_slope": -29847364262,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 189,
+          "surplus_at_old_L": -181957688096144,
+          "L_slope": -35551966762,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 190,
+          "surplus_at_old_L": -200812576423408,
+          "L_slope": -41561967022,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 191,
+          "surplus_at_old_L": -220552609695312,
+          "L_slope": -47874743602,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 192,
+          "surplus_at_old_L": -241169197715120,
+          "L_slope": -54487412918,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 193,
+          "surplus_at_old_L": -262653753169680,
+          "L_slope": -61397091386,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 194,
+          "surplus_at_old_L": -284997691629424,
+          "L_slope": -68600895422,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 195,
+          "surplus_at_old_L": -308192431548368,
+          "L_slope": -76095941442,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 196,
+          "surplus_at_old_L": -332228640862256,
+          "L_slope": -83879083718,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 197,
+          "surplus_at_old_L": -357098497456272,
+          "L_slope": -91947700810,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 198,
+          "surplus_at_old_L": -382791921631472,
+          "L_slope": -100298384846,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 199,
+          "surplus_at_old_L": -409301097302352,
+          "L_slope": -108928514386,
+          "minimum_feasible_L": null
+        }
+      ],
+      "best": {
+        "m": 170,
+        "surplus_at_old_L": -1130287928944,
+        "L_slope": 18042404002,
+        "minimum_feasible_L": 3168
+      },
+      "nonworsening": []
+    },
+    {
+      "index": 11,
+      "original_parameters": [
+        98,
+        41,
+        19,
+        132,
+        2387,
+        4,
+        6
+      ],
+      "tested": [
+        {
+          "m": 97,
+          "surplus_at_old_L": -57599156057,
+          "L_slope": 1499965976,
+          "minimum_feasible_L": 2426
+        },
+        {
+          "m": 98,
+          "surplus_at_old_L": -101290346463,
+          "L_slope": 1542591514,
+          "minimum_feasible_L": 2453
+        },
+        {
+          "m": 99,
+          "surplus_at_old_L": -414037487717,
+          "L_slope": 1467776540,
+          "minimum_feasible_L": 2670
+        },
+        {
+          "m": 100,
+          "surplus_at_old_L": -993949735147,
+          "L_slope": 1276307486,
+          "minimum_feasible_L": 3166
+        },
+        {
+          "m": 101,
+          "surplus_at_old_L": -1839137030513,
+          "L_slope": 968970784,
+          "minimum_feasible_L": 4286
+        },
+        {
+          "m": 102,
+          "surplus_at_old_L": -2947118967287,
+          "L_slope": 546815010,
+          "minimum_feasible_L": 7777
+        },
+        {
+          "m": 103,
+          "surplus_at_old_L": -4315416187517,
+          "L_slope": 10888740,
+          "minimum_feasible_L": 398707
+        },
+        {
+          "m": 104,
+          "surplus_at_old_L": -5941550381827,
+          "L_slope": -637759450,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 105,
+          "surplus_at_old_L": -7822453154697,
+          "L_slope": -1397818840,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 106,
+          "surplus_at_old_L": -9955057421327,
+          "L_slope": -2267978710,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 107,
+          "surplus_at_old_L": -12336297407637,
+          "L_slope": -3246928340,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 108,
+          "surplus_at_old_L": -14962517515547,
+          "L_slope": -4333094866,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 109,
+          "surplus_at_old_L": -17830063719841,
+          "L_slope": -5524905424,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 110,
+          "surplus_at_old_L": -20935283568167,
+          "L_slope": -6820787150,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 111,
+          "surplus_at_old_L": -24273935046317,
+          "L_slope": -8218905036,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 112,
+          "surplus_at_old_L": -27841777975091,
+          "L_slope": -9717424074,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 113,
+          "surplus_at_old_L": -31635165145017,
+          "L_slope": -11314771400,
+          "minimum_feasible_L": null
+        }
+      ],
+      "best": {
+        "m": 97,
+        "surplus_at_old_L": -57599156057,
+        "L_slope": 1499965976,
+        "minimum_feasible_L": 2426
+      },
+      "nonworsening": []
+    },
+    {
+      "index": 12,
+      "original_parameters": [
+        142,
+        59,
+        27,
+        193,
+        2415,
+        6,
+        9
+      ],
+      "tested": [
+        {
+          "m": 142,
+          "surplus_at_old_L": -428263897733,
+          "L_slope": 9570192240,
+          "minimum_feasible_L": 2460
+        },
+        {
+          "m": 143,
+          "surplus_at_old_L": -868587781109,
+          "L_slope": 9645695610,
+          "minimum_feasible_L": 2506
+        },
+        {
+          "m": 144,
+          "surplus_at_old_L": -1849009569125,
+          "L_slope": 9483696516,
+          "minimum_feasible_L": 2610
+        },
+        {
+          "m": 145,
+          "surplus_at_old_L": -3366961823445,
+          "L_slope": 9085243534,
+          "minimum_feasible_L": 2786
+        },
+        {
+          "m": 146,
+          "surplus_at_old_L": -5419878154309,
+          "L_slope": 8451385240,
+          "minimum_feasible_L": 3057
+        },
+        {
+          "m": 147,
+          "surplus_at_old_L": -8005193220533,
+          "L_slope": 7583170210,
+          "minimum_feasible_L": 3471
+        },
+        {
+          "m": 148,
+          "surplus_at_old_L": -11119760245541,
+          "L_slope": 6481909164,
+          "minimum_feasible_L": 4131
+        },
+        {
+          "m": 149,
+          "surplus_at_old_L": -14760433763477,
+          "L_slope": 5148912822,
+          "minimum_feasible_L": 5282
+        },
+        {
+          "m": 150,
+          "surplus_at_old_L": -18924069619205,
+          "L_slope": 3585491904,
+          "minimum_feasible_L": 7693
+        },
+        {
+          "m": 151,
+          "surplus_at_old_L": -23606942484341,
+          "L_slope": 1793219274,
+          "minimum_feasible_L": 15580
+        },
+        {
+          "m": 152,
+          "surplus_at_old_L": -28805328603365,
+          "L_slope": -226332204,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 153,
+          "surplus_at_old_L": -34515505793621,
+          "L_slope": -2471589666,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 154,
+          "surplus_at_old_L": -40733170961349,
+          "L_slope": -4940718104,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 155,
+          "surplus_at_old_L": -47454022847797,
+          "L_slope": -7631882510,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 156,
+          "surplus_at_old_L": -54673762029221,
+          "L_slope": -10543247876,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 157,
+          "surplus_at_old_L": -62387508432917,
+          "L_slope": -13672717050,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 158,
+          "surplus_at_old_L": -70590384083333,
+          "L_slope": -17018192880,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 159,
+          "surplus_at_old_L": -79277513102069,
+          "L_slope": -20577578214,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 160,
+          "surplus_at_old_L": -88443439223909,
+          "L_slope": -24348513756,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 161,
+          "surplus_at_old_L": -98082708542933,
+          "L_slope": -28328640210,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 162,
+          "surplus_at_old_L": -108189869512517,
+          "L_slope": -32515598280,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 163,
+          "surplus_at_old_L": -118758890461365,
+          "L_slope": -36906766526,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 164,
+          "surplus_at_old_L": -129784324823589,
+          "L_slope": -41499785652,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 165,
+          "surplus_at_old_L": -141260145908629,
+          "L_slope": -46292034218,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 166,
+          "surplus_at_old_L": -153180912131333,
+          "L_slope": -51281152928,
+          "minimum_feasible_L": null
+        }
+      ],
+      "best": {
+        "m": 142,
+        "surplus_at_old_L": -428263897733,
+        "L_slope": 9570192240,
+        "minimum_feasible_L": 2460
+      },
+      "nonworsening": []
+    },
+    {
+      "index": 13,
+      "original_parameters": [
+        158,
+        69,
+        32,
+        214,
+        2416,
+        7,
+        8
+      ],
+      "tested": [
+        {
+          "m": 157,
+          "surplus_at_old_L": -781921423013,
+          "L_slope": 16655726003,
+          "minimum_feasible_L": 2463
+        },
+        {
+          "m": 158,
+          "surplus_at_old_L": -697864967162,
+          "L_slope": 17128120892,
+          "minimum_feasible_L": 2457
+        },
+        {
+          "m": 159,
+          "surplus_at_old_L": -1336242248015,
+          "L_slope": 17280962245,
+          "minimum_feasible_L": 2494
+        },
+        {
+          "m": 160,
+          "surplus_at_old_L": -2693847506596,
+          "L_slope": 17115560782,
+          "minimum_feasible_L": 2574
+        },
+        {
+          "m": 161,
+          "surplus_at_old_L": -4767476294649,
+          "L_slope": 16633227223,
+          "minimum_feasible_L": 2703
+        },
+        {
+          "m": 162,
+          "surplus_at_old_L": -7553348233550,
+          "L_slope": 15835534432,
+          "minimum_feasible_L": 2893
+        },
+        {
+          "m": 163,
+          "surplus_at_old_L": -11047684517539,
+          "L_slope": 14724055273,
+          "minimum_feasible_L": 3167
+        },
+        {
+          "m": 164,
+          "surplus_at_old_L": -15246707913720,
+          "L_slope": 13300362610,
+          "minimum_feasible_L": 3563
+        },
+        {
+          "m": 165,
+          "surplus_at_old_L": -20146065520973,
+          "L_slope": 11566291451,
+          "minimum_feasible_L": 4158
+        },
+        {
+          "m": 166,
+          "surplus_at_old_L": -25741406273186,
+          "L_slope": 9523676804,
+          "minimum_feasible_L": 5119
+        },
+        {
+          "m": 167,
+          "surplus_at_old_L": -32028380939255,
+          "L_slope": 7174353677,
+          "minimum_feasible_L": 6881
+        },
+        {
+          "m": 168,
+          "surplus_at_old_L": -39002064881996,
+          "L_slope": 4520419222,
+          "minimum_feasible_L": 11044
+        },
+        {
+          "m": 169,
+          "surplus_at_old_L": -46657535561377,
+          "L_slope": 1563970591,
+          "minimum_feasible_L": 32249
+        },
+        {
+          "m": 170,
+          "surplus_at_old_L": -54989872534518,
+          "L_slope": -1692895064,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 171,
+          "surplus_at_old_L": -63993580214603,
+          "L_slope": -5247818447,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 172,
+          "surplus_at_old_L": -73663165374112,
+          "L_slope": -9098440262,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 173,
+          "surplus_at_old_L": -83993137144821,
+          "L_slope": -13242401213,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 174,
+          "surplus_at_old_L": -94977429776714,
+          "L_slope": -17677079860,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 175,
+          "surplus_at_old_L": -106609980141215,
+          "L_slope": -22399854763,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 176,
+          "surplus_at_old_L": -118884727731188,
+          "L_slope": -27408104482,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 177,
+          "surplus_at_old_L": -131795037419849,
+          "L_slope": -32698945433,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 178,
+          "surplus_at_old_L": -145334276963998,
+          "L_slope": -38269494032,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 179,
+          "surplus_at_old_L": -159495817004019,
+          "L_slope": -44116866695,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 180,
+          "surplus_at_old_L": -174273031063880,
+          "L_slope": -50238179838,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 181,
+          "surplus_at_old_L": -189658718310045,
+          "L_slope": -56630287733,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 182,
+          "surplus_at_old_L": -205646835536882,
+          "L_slope": -63290568940,
+          "minimum_feasible_L": null
+        }
+      ],
+      "best": {
+        "m": 158,
+        "surplus_at_old_L": -697864967162,
+        "L_slope": 17128120892,
+        "minimum_feasible_L": 2457
+      },
+      "nonworsening": []
+    },
+    {
+      "index": 14,
+      "original_parameters": [
+        146,
+        58,
+        27,
+        198,
+        2498,
+        6,
+        9
+      ],
+      "tested": [
+        {
+          "m": 146,
+          "surplus_at_old_L": -458783248923,
+          "L_slope": 10155503692,
+          "minimum_feasible_L": 2544
+        },
+        {
+          "m": 147,
+          "surplus_at_old_L": -1329097480571,
+          "L_slope": 10058428748,
+          "minimum_feasible_L": 2631
+        },
+        {
+          "m": 148,
+          "surplus_at_old_L": -2744623784155,
+          "L_slope": 9729618508,
+          "minimum_feasible_L": 2781
+        },
+        {
+          "m": 149,
+          "surplus_at_old_L": -4703321630779,
+          "L_slope": 9169859404,
+          "minimum_feasible_L": 3011
+        },
+        {
+          "m": 150,
+          "surplus_at_old_L": -7203151277979,
+          "L_slope": 8379937868,
+          "minimum_feasible_L": 3358
+        },
+        {
+          "m": 151,
+          "surplus_at_old_L": -10241470838523,
+          "L_slope": 7360902476,
+          "minimum_feasible_L": 3890
+        },
+        {
+          "m": 152,
+          "surplus_at_old_L": -13815639473755,
+          "L_slope": 6113801804,
+          "minimum_feasible_L": 4758
+        },
+        {
+          "m": 153,
+          "surplus_at_old_L": -17923017393595,
+          "L_slope": 4639684428,
+          "minimum_feasible_L": 6361
+        },
+        {
+          "m": 154,
+          "surplus_at_old_L": -22560362925339,
+          "L_slope": 2939861068,
+          "minimum_feasible_L": 10172
+        },
+        {
+          "m": 155,
+          "surplus_at_old_L": -27724435707003,
+          "L_slope": 1015642444,
+          "minimum_feasible_L": 29796
+        },
+        {
+          "m": 156,
+          "surplus_at_old_L": -33411996687323,
+          "L_slope": -1131660724,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 157,
+          "surplus_at_old_L": -39619205194555,
+          "L_slope": -3500475572,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 158,
+          "surplus_at_old_L": -46342222129819,
+          "L_slope": -6089229236,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 159,
+          "surplus_at_old_L": -53577209967099,
+          "L_slope": -8896348852,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 160,
+          "surplus_at_old_L": -61319729822043,
+          "L_slope": -11919999412,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 161,
+          "surplus_at_old_L": -69565344645307,
+          "L_slope": -15158345908,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 162,
+          "surplus_at_old_L": -78309619222555,
+          "L_slope": -18609553332,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 163,
+          "surplus_at_old_L": -87547517243259,
+          "L_slope": -22271524532,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 164,
+          "surplus_at_old_L": -97274004494043,
+          "L_slope": -26142162356,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 165,
+          "surplus_at_old_L": -107484048858683,
+          "L_slope": -30219369652,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 166,
+          "surplus_at_old_L": -118172017386907,
+          "L_slope": -34500787124,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 167,
+          "surplus_at_old_L": -129332279487739,
+          "L_slope": -38984055476,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 168,
+          "surplus_at_old_L": -140959206929499,
+          "L_slope": -43666815412,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 169,
+          "surplus_at_old_L": -153046570908603,
+          "L_slope": -48546445492,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 170,
+          "surplus_at_old_L": -165588748174107,
+          "L_slope": -53620586420,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 171,
+          "surplus_at_old_L": -178579514903163,
+          "L_slope": -58886616756,
+          "minimum_feasible_L": null
+        }
+      ],
+      "best": {
+        "m": 146,
+        "surplus_at_old_L": -458783248923,
+        "L_slope": 10155503692,
+        "minimum_feasible_L": 2544
+      },
+      "nonworsening": []
+    },
+    {
+      "index": 15,
+      "original_parameters": [
+        98,
+        41,
+        19,
+        133,
+        2289,
+        4,
+        6
+      ],
+      "tested": [
+        {
+          "m": 98,
+          "surplus_at_old_L": -97193597345,
+          "L_slope": 1614576084,
+          "minimum_feasible_L": 2350
+        },
+        {
+          "m": 99,
+          "surplus_at_old_L": -229529525943,
+          "L_slope": 1620001882,
+          "minimum_feasible_L": 2431
+        },
+        {
+          "m": 100,
+          "surplus_at_old_L": -619294794701,
+          "L_slope": 1507987168,
+          "minimum_feasible_L": 2700
+        },
+        {
+          "m": 101,
+          "surplus_at_old_L": -1264676415715,
+          "L_slope": 1279318374,
+          "minimum_feasible_L": 3278
+        },
+        {
+          "m": 102,
+          "surplus_at_old_L": -2163862187513,
+          "L_slope": 934781932,
+          "minimum_feasible_L": 4604
+        },
+        {
+          "m": 103,
+          "surplus_at_old_L": -3314475512591,
+          "L_slope": 475426418,
+          "minimum_feasible_L": 9261
+        },
+        {
+          "m": 104,
+          "surplus_at_old_L": -4714140842021,
+          "L_slope": -97699592,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 105,
+          "surplus_at_old_L": -6360483675451,
+          "L_slope": -783547522,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 106,
+          "surplus_at_old_L": -8250565378641,
+          "L_slope": -1580806652,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 107,
+          "surplus_at_old_L": -10381448628071,
+          "L_slope": -2488166262,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 108,
+          "surplus_at_old_L": -12750197410941,
+          "L_slope": -3504315632,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 109,
+          "surplus_at_old_L": -15353311842707,
+          "L_slope": -4627681898,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 110,
+          "surplus_at_old_L": -18187293611689,
+          "L_slope": -5856692196,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 111,
+          "surplus_at_old_L": -21248645979071,
+          "L_slope": -7189773662,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 112,
+          "surplus_at_old_L": -24533308596437,
+          "L_slope": -8625091288,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 113,
+          "surplus_at_old_L": -28037222950379,
+          "L_slope": -10160810066,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 114,
+          "surplus_at_old_L": -31756897544961,
+          "L_slope": -11795357132,
+          "minimum_feasible_L": null
+        }
+      ],
+      "best": {
+        "m": 98,
+        "surplus_at_old_L": -97193597345,
+        "L_slope": 1614576084,
+        "minimum_feasible_L": 2350
+      },
+      "nonworsening": []
+    },
+    {
+      "index": 16,
+      "original_parameters": [
+        150,
+        60,
+        28,
+        204,
+        2288,
+        6,
+        9
+      ],
+      "tested": [
+        {
+          "m": 150,
+          "surplus_at_old_L": -463592464904,
+          "L_slope": 12868303392,
+          "minimum_feasible_L": 2325
+        },
+        {
+          "m": 151,
+          "surplus_at_old_L": -1166671670967,
+          "L_slope": 12878923137,
+          "minimum_feasible_L": 2379
+        },
+        {
+          "m": 152,
+          "surplus_at_old_L": -2399566183270,
+          "L_slope": 12641816802,
+          "minimum_feasible_L": 2478
+        },
+        {
+          "m": 153,
+          "surplus_at_old_L": -4160389351445,
+          "L_slope": 12157770819,
+          "minimum_feasible_L": 2631
+        },
+        {
+          "m": 154,
+          "surplus_at_old_L": -6447255311556,
+          "L_slope": 11427571620,
+          "minimum_feasible_L": 2853
+        },
+        {
+          "m": 155,
+          "surplus_at_old_L": -9257732678003,
+          "L_slope": 10452267781,
+          "minimum_feasible_L": 3174
+        },
+        {
+          "m": 156,
+          "surplus_at_old_L": -12589391113762,
+          "L_slope": 9232907878,
+          "minimum_feasible_L": 3652
+        },
+        {
+          "m": 157,
+          "surplus_at_old_L": -16439801330385,
+          "L_slope": 7770540487,
+          "minimum_feasible_L": 4404
+        },
+        {
+          "m": 158,
+          "surplus_at_old_L": -20805988779904,
+          "L_slope": 6066476328,
+          "minimum_feasible_L": 5718
+        },
+        {
+          "m": 159,
+          "surplus_at_old_L": -25684980225071,
+          "L_slope": 4122026121,
+          "minimum_feasible_L": 8520
+        },
+        {
+          "m": 160,
+          "surplus_at_old_L": -31073803739358,
+          "L_slope": 1938500586,
+          "minimum_feasible_L": 18318
+        },
+        {
+          "m": 161,
+          "surplus_at_old_L": -36968942398861,
+          "L_slope": -482527413,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 162,
+          "surplus_at_old_L": -43366880852540,
+          "L_slope": -3139485012,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 163,
+          "surplus_at_old_L": -50264105322219,
+          "L_slope": -6030799347,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 164,
+          "surplus_at_old_L": -57656557294490,
+          "L_slope": -9154635410,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 165,
+          "surplus_at_old_L": -65540180090953,
+          "L_slope": -12509158193,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 166,
+          "surplus_at_old_L": -73910918868216,
+          "L_slope": -16092532688,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 167,
+          "surplus_at_old_L": -82764174309799,
+          "L_slope": -19902661743,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 168,
+          "surplus_at_old_L": -92095349196374,
+          "L_slope": -23937448206,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 169,
+          "surplus_at_old_L": -101899848405765,
+          "L_slope": -28194794925,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 170,
+          "surplus_at_old_L": -112172532604852,
+          "L_slope": -32672342604,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 171,
+          "surplus_at_old_L": -122908264819811,
+          "L_slope": -37367731947,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 172,
+          "surplus_at_old_L": -134101910436114,
+          "L_slope": -42278603658,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 173,
+          "surplus_at_old_L": -145747790890433,
+          "L_slope": -47402336297,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 174,
+          "surplus_at_old_L": -157840230240880,
+          "L_slope": -52736308424,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 175,
+          "surplus_at_old_L": -170374101475103,
+          "L_slope": -58278160743,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 176,
+          "surplus_at_old_L": -183343187323854,
+          "L_slope": -64025009670,
+          "minimum_feasible_L": null
+        }
+      ],
+      "best": {
+        "m": 150,
+        "surplus_at_old_L": -463592464904,
+        "L_slope": 12868303392,
+        "minimum_feasible_L": 2325
+      },
+      "nonworsening": []
+    },
+    {
+      "index": 17,
+      "original_parameters": [
+        162,
+        71,
+        33,
+        218,
+        2338,
+        7,
+        8
+      ],
+      "tested": [
+        {
+          "m": 160,
+          "surplus_at_old_L": -187572934086,
+          "L_slope": 19429535654,
+          "minimum_feasible_L": 2348
+        },
+        {
+          "m": 161,
+          "surplus_at_old_L": -98864121226,
+          "L_slope": 19961877097,
+          "minimum_feasible_L": 2343
+        },
+        {
+          "m": 162,
+          "surplus_at_old_L": -745053205838,
+          "L_slope": 20157101356,
+          "minimum_feasible_L": 2375
+        },
+        {
+          "m": 163,
+          "surplus_at_old_L": -2123024344338,
+          "L_slope": 20016519151,
+          "minimum_feasible_L": 2445
+        },
+        {
+          "m": 164,
+          "surplus_at_old_L": -4229107258582,
+          "L_slope": 19541703346,
+          "minimum_feasible_L": 2555
+        },
+        {
+          "m": 165,
+          "surplus_at_old_L": -7059633243290,
+          "L_slope": 18734226805,
+          "minimum_feasible_L": 2715
+        },
+        {
+          "m": 166,
+          "surplus_at_old_L": -10610935166046,
+          "L_slope": 17595662392,
+          "minimum_feasible_L": 2942
+        },
+        {
+          "m": 167,
+          "surplus_at_old_L": -14878791722018,
+          "L_slope": 16127845115,
+          "minimum_feasible_L": 3261
+        },
+        {
+          "m": 168,
+          "surplus_at_old_L": -19858983441382,
+          "L_slope": 14332609982,
+          "minimum_feasible_L": 3724
+        },
+        {
+          "m": 169,
+          "surplus_at_old_L": -25547292689322,
+          "L_slope": 12211792001,
+          "minimum_feasible_L": 4431
+        },
+        {
+          "m": 170,
+          "surplus_at_old_L": -31938947920750,
+          "L_slope": 9767488324,
+          "minimum_feasible_L": 5608
+        },
+        {
+          "m": 171,
+          "surplus_at_old_L": -39029179687730,
+          "L_slope": 7001796103,
+          "minimum_feasible_L": 7913
+        },
+        {
+          "m": 172,
+          "surplus_at_old_L": -46813220639478,
+          "L_slope": 3916812490,
+          "minimum_feasible_L": 14290
+        },
+        {
+          "m": 173,
+          "surplus_at_old_L": -55285749777082,
+          "L_slope": 514896781,
+          "minimum_feasible_L": 109711
+        },
+        {
+          "m": 174,
+          "surplus_at_old_L": -64441448460926,
+          "L_slope": -3201591728,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 175,
+          "surplus_at_old_L": -74275000410690,
+          "L_slope": -7230293741,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 176,
+          "surplus_at_old_L": -84780535960070,
+          "L_slope": -11568587818,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 177,
+          "surplus_at_old_L": -95952188064202,
+          "L_slope": -16213852519,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 178,
+          "surplus_at_old_L": -107784092299662,
+          "L_slope": -21163466404,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 179,
+          "surplus_at_old_L": -120269831119186,
+          "L_slope": -26414545889,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 180,
+          "surplus_at_old_L": -133402989859094,
+          "L_slope": -31964207390,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 181,
+          "surplus_at_old_L": -147177156739290,
+          "L_slope": -37809567323,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 182,
+          "surplus_at_old_L": -161585367117982,
+          "L_slope": -43947479960,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 183,
+          "surplus_at_old_L": -176621215244386,
+          "L_slope": -50375061717,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 184,
+          "surplus_at_old_L": -192277742506022,
+          "L_slope": -57089166866,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 185,
+          "surplus_at_old_L": -208548549181418,
+          "L_slope": -64086911823,
+          "minimum_feasible_L": null
+        }
+      ],
+      "best": {
+        "m": 161,
+        "surplus_at_old_L": -98864121226,
+        "L_slope": 19961877097,
+        "minimum_feasible_L": 2343
+      },
+      "nonworsening": []
+    },
+    {
+      "index": 18,
+      "original_parameters": [
+        114,
+        47,
+        22,
+        155,
+        2711,
+        5,
+        7
+      ],
+      "tested": [
+        {
+          "m": 114,
+          "surplus_at_old_L": -204663764601,
+          "L_slope": 2820433191,
+          "minimum_feasible_L": 2784
+        },
+        {
+          "m": 115,
+          "surplus_at_old_L": -392545976536,
+          "L_slope": 2847102456,
+          "minimum_feasible_L": 2849
+        },
+        {
+          "m": 116,
+          "surplus_at_old_L": -979505990455,
+          "L_slope": 2720155337,
+          "minimum_feasible_L": 3072
+        },
+        {
+          "m": 117,
+          "surplus_at_old_L": -1963380069782,
+          "L_slope": 2440378266,
+          "minimum_feasible_L": 3516
+        },
+        {
+          "m": 118,
+          "surplus_at_old_L": -3342005264373,
+          "L_slope": 2008557675,
+          "minimum_feasible_L": 4375
+        },
+        {
+          "m": 119,
+          "surplus_at_old_L": -5112549370452,
+          "L_slope": 1425742140,
+          "minimum_feasible_L": 6297
+        },
+        {
+          "m": 120,
+          "surplus_at_old_L": -7272181232819,
+          "L_slope": 692980237,
+          "minimum_feasible_L": 13206
+        },
+        {
+          "m": 121,
+          "surplus_at_old_L": -9818070744850,
+          "L_slope": -188679458,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 122,
+          "surplus_at_old_L": -12746718808433,
+          "L_slope": -1217926225,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 123,
+          "surplus_at_old_L": -16054627636176,
+          "L_slope": -2393449344,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 124,
+          "surplus_at_old_L": -19738300751407,
+          "L_slope": -3713938095,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 125,
+          "surplus_at_old_L": -23793572948110,
+          "L_slope": -5177819614,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 126,
+          "surplus_at_old_L": -28216280593133,
+          "L_slope": -6783521037,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 127,
+          "surplus_at_old_L": -33002261626188,
+          "L_slope": -8529469500,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 128,
+          "surplus_at_old_L": -38146685519787,
+          "L_slope": -10413829995,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 129,
+          "surplus_at_old_L": -43644723581450,
+          "L_slope": -12434767514,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 130,
+          "surplus_at_old_L": -49491548953705,
+          "L_slope": -14590447049,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 131,
+          "surplus_at_old_L": -55681666574024,
+          "L_slope": -16878771448,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 132,
+          "surplus_at_old_L": -62209583477031,
+          "L_slope": -19297643559,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 133,
+          "surplus_at_old_L": -69070478834566,
+          "L_slope": -21845228374,
+          "minimum_feasible_L": null
+        }
+      ],
+      "best": {
+        "m": 114,
+        "surplus_at_old_L": -204663764601,
+        "L_slope": 2820433191,
+        "minimum_feasible_L": 2784
+      },
+      "nonworsening": []
+    },
+    {
+      "index": 19,
+      "original_parameters": [
+        166,
+        66,
+        31,
+        226,
+        2667,
+        7,
+        10
+      ],
+      "tested": [
+        {
+          "m": 166,
+          "surplus_at_old_L": -816469359816,
+          "L_slope": 18022881156,
+          "minimum_feasible_L": 2713
+        },
+        {
+          "m": 167,
+          "surplus_at_old_L": -1759793708648,
+          "L_slope": 18076101252,
+          "minimum_feasible_L": 2765
+        },
+        {
+          "m": 168,
+          "surplus_at_old_L": -3450723123208,
+          "L_slope": 17830477188,
+          "minimum_feasible_L": 2861
+        },
+        {
+          "m": 169,
+          "surplus_at_old_L": -5887039078824,
+          "L_slope": 17286795396,
+          "minimum_feasible_L": 3008
+        },
+        {
+          "m": 170,
+          "surplus_at_old_L": -9066523837256,
+          "L_slope": 16445842308,
+          "minimum_feasible_L": 3219
+        },
+        {
+          "m": 171,
+          "surplus_at_old_L": -12986320553192,
+          "L_slope": 15308666500,
+          "minimum_feasible_L": 3516
+        },
+        {
+          "m": 172,
+          "surplus_at_old_L": -17643573429896,
+          "L_slope": 13876316548,
+          "minimum_feasible_L": 3939
+        },
+        {
+          "m": 173,
+          "surplus_at_old_L": -23035427719208,
+          "L_slope": 12149841028,
+          "minimum_feasible_L": 4563
+        },
+        {
+          "m": 174,
+          "surplus_at_old_L": -29158389828040,
+          "L_slope": 10130550660,
+          "minimum_feasible_L": 5546
+        },
+        {
+          "m": 175,
+          "surplus_at_old_L": -36008967474024,
+          "L_slope": 7819756164,
+          "minimum_feasible_L": 7272
+        },
+        {
+          "m": 176,
+          "surplus_at_old_L": -43583669685512,
+          "L_slope": 5218768260,
+          "minimum_feasible_L": 11019
+        },
+        {
+          "m": 177,
+          "surplus_at_old_L": -51878366908072,
+          "L_slope": 2329159812,
+          "minimum_feasible_L": 24941
+        },
+        {
+          "m": 178,
+          "surplus_at_old_L": -60888931160136,
+          "L_slope": -847496316,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 179,
+          "surplus_at_old_L": -70611236033000,
+          "L_slope": -4309627260,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 180,
+          "surplus_at_old_L": -81040516797320,
+          "L_slope": -8055398012,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 181,
+          "surplus_at_old_L": -92172010558760,
+          "L_slope": -12082973564,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 182,
+          "surplus_at_old_L": -104000956257992,
+          "L_slope": -16390518908,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 183,
+          "surplus_at_old_L": -116521954777192,
+          "L_slope": -20975936892,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 184,
+          "surplus_at_old_L": -129729609095688,
+          "L_slope": -25837130364,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 185,
+          "surplus_at_old_L": -143618524289960,
+          "L_slope": -30972002172,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 186,
+          "surplus_at_old_L": -158182667640136,
+          "L_slope": -36378193020,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 187,
+          "surplus_at_old_L": -173416008785640,
+          "L_slope": -42053343612,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 188,
+          "surplus_at_old_L": -189312519725192,
+          "L_slope": -47995094652,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 189,
+          "surplus_at_old_L": -205865534923304,
+          "L_slope": -54200824700,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 190,
+          "surplus_at_old_L": -223068391465928,
+          "L_slope": -60667912316,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 191,
+          "surplus_at_old_L": -240914429060456,
+          "L_slope": -67393736060,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 192,
+          "surplus_at_old_L": -259396350142216,
+          "L_slope": -74375412348,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 193,
+          "surplus_at_old_L": -278506860030120,
+          "L_slope": -81610057596,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 194,
+          "surplus_at_old_L": -298239306820168,
+          "L_slope": -89095050364,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 195,
+          "surplus_at_old_L": -318585761442792,
+          "L_slope": -96827244924,
+          "minimum_feasible_L": null
+        }
+      ],
+      "best": {
+        "m": 166,
+        "surplus_at_old_L": -816469359816,
+        "L_slope": 18022881156,
+        "minimum_feasible_L": 2713
+      },
+      "nonworsening": []
+    },
+    {
+      "index": 20,
+      "original_parameters": [
+        174,
+        76,
+        36,
+        237,
+        2716,
+        8,
+        9
+      ],
+      "tested": [
+        {
+          "m": 174,
+          "surplus_at_old_L": -1173380094022,
+          "L_slope": 24556947763,
+          "minimum_feasible_L": 2764
+        },
+        {
+          "m": 175,
+          "surplus_at_old_L": -1197841357825,
+          "L_slope": 25123154027,
+          "minimum_feasible_L": 2764
+        },
+        {
+          "m": 176,
+          "surplus_at_old_L": -2207240282044,
+          "L_slope": 25302173603,
+          "minimum_feasible_L": 2804
+        },
+        {
+          "m": 177,
+          "surplus_at_old_L": -4197940405111,
+          "L_slope": 25095317211,
+          "minimum_feasible_L": 2884
+        },
+        {
+          "m": 178,
+          "surplus_at_old_L": -7165656721202,
+          "L_slope": 24504157715,
+          "minimum_feasible_L": 3009
+        },
+        {
+          "m": 179,
+          "surplus_at_old_L": -11106105797357,
+          "L_slope": 23530267979,
+          "minimum_feasible_L": 3188
+        },
+        {
+          "m": 180,
+          "surplus_at_old_L": -16015005773480,
+          "L_slope": 22175220867,
+          "minimum_feasible_L": 3439
+        },
+        {
+          "m": 181,
+          "surplus_at_old_L": -21887426507363,
+          "L_slope": 20440851387,
+          "minimum_feasible_L": 3787
+        },
+        {
+          "m": 182,
+          "surplus_at_old_L": -28718439691806,
+          "L_slope": 18328994547,
+          "minimum_feasible_L": 4283
+        },
+        {
+          "m": 183,
+          "surplus_at_old_L": -36503118854617,
+          "L_slope": 15841485355,
+          "minimum_feasible_L": 5021
+        },
+        {
+          "m": 184,
+          "surplus_at_old_L": -45235889503636,
+          "L_slope": 12980420963,
+          "minimum_feasible_L": 6201
+        },
+        {
+          "m": 185,
+          "surplus_at_old_L": -54911179243855,
+          "L_slope": 9747898523,
+          "minimum_feasible_L": 8350
+        },
+        {
+          "m": 186,
+          "surplus_at_old_L": -65523417777418,
+          "L_slope": 6146015187,
+          "minimum_feasible_L": 13378
+        },
+        {
+          "m": 187,
+          "surplus_at_old_L": -77066387048645,
+          "L_slope": 2177130251,
+          "minimum_feasible_L": 38115
+        },
+        {
+          "m": 188,
+          "surplus_at_old_L": -89533871361152,
+          "L_slope": -2156396989,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 189,
+          "surplus_at_old_L": -102919657377851,
+          "L_slope": -6852207237,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 190,
+          "surplus_at_old_L": -117216884265974,
+          "L_slope": -11907679053,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 191,
+          "surplus_at_old_L": -132418693814193,
+          "L_slope": -17320190997,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 192,
+          "surplus_at_old_L": -148518230432620,
+          "L_slope": -23087121629,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 193,
+          "surplus_at_old_L": -165507991297831,
+          "L_slope": -29205587365,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 194,
+          "surplus_at_old_L": -183380476469986,
+          "L_slope": -35672704621,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 195,
+          "surplus_at_old_L": -202128188892829,
+          "L_slope": -42485589813,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 196,
+          "surplus_at_old_L": -221742984538712,
+          "L_slope": -49641097213,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 197,
+          "surplus_at_old_L": -242216722525715,
+          "L_slope": -57136081093,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 198,
+          "surplus_at_old_L": -263541265117646,
+          "L_slope": -64967395725,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 199,
+          "surplus_at_old_L": -285707827869065,
+          "L_slope": -73131633237,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 200,
+          "surplus_at_old_L": -308708279597380,
+          "L_slope": -81625647901,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 201,
+          "surplus_at_old_L": -332533842410751,
+          "L_slope": -90446031845,
+          "minimum_feasible_L": null
+        }
+      ],
+      "best": {
+        "m": 174,
+        "surplus_at_old_L": -1173380094022,
+        "L_slope": 24556947763,
+        "minimum_feasible_L": 2764
+      },
+      "nonworsening": []
+    },
+    {
+      "index": 21,
+      "original_parameters": [
+        111,
+        46,
+        22,
+        151,
+        3089,
+        5,
+        7
+      ],
+      "tested": [
+        {
+          "m": 111,
+          "surplus_at_old_L": -214034089170,
+          "L_slope": 2165203684,
+          "minimum_feasible_L": 3188
+        },
+        {
+          "m": 112,
+          "surplus_at_old_L": -335027989211,
+          "L_slope": 2203135497,
+          "minimum_feasible_L": 3242
+        },
+        {
+          "m": 113,
+          "surplus_at_old_L": -895669096676,
+          "L_slope": 2093480238,
+          "minimum_feasible_L": 3517
+        },
+        {
+          "m": 114,
+          "surplus_at_old_L": -1893499287277,
+          "L_slope": 1837024339,
+          "minimum_feasible_L": 4120
+        },
+        {
+          "m": 115,
+          "surplus_at_old_L": -3326061223158,
+          "L_slope": 1434554232,
+          "minimum_feasible_L": 5408
+        },
+        {
+          "m": 116,
+          "surplus_at_old_L": -5190128173823,
+          "L_slope": 887118493,
+          "minimum_feasible_L": 8940
+        },
+        {
+          "m": 117,
+          "surplus_at_old_L": -7482474457352,
+          "L_slope": 195765698,
+          "minimum_feasible_L": 41311
+        },
+        {
+          "m": 118,
+          "surplus_at_old_L": -10199875440401,
+          "L_slope": -638455577,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 119,
+          "surplus_at_old_L": -13338337359130,
+          "L_slope": -1614234612,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 120,
+          "surplus_at_old_L": -16893867760419,
+          "L_slope": -2730260687,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 121,
+          "surplus_at_old_L": -20862475501868,
+          "L_slope": -3985223082,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 122,
+          "surplus_at_old_L": -25239400572725,
+          "L_slope": -5377548933,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 123,
+          "surplus_at_old_L": -30019884535102,
+          "L_slope": -6905665376,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 124,
+          "surplus_at_old_L": -35199170523975,
+          "L_slope": -8567999547,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 125,
+          "surplus_at_old_L": -40771733068112,
+          "L_slope": -10362716438,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 126,
+          "surplus_at_old_L": -46732048531289,
+          "L_slope": -12287981041,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 127,
+          "surplus_at_old_L": -53074595112290,
+          "L_slope": -14341958348,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 128,
+          "surplus_at_old_L": -59793082665835,
+          "L_slope": -16522551207,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 129,
+          "surplus_at_old_L": -66881223143796,
+          "L_slope": -18827662466,
+          "minimum_feasible_L": null
+        }
+      ],
+      "best": {
+        "m": 111,
+        "surplus_at_old_L": -214034089170,
+        "L_slope": 2165203684,
+        "minimum_feasible_L": 3188
+      },
+      "nonworsening": []
+    },
+    {
+      "index": 22,
+      "original_parameters": [
+        189,
+        83,
+        39,
+        256,
+        3112,
+        9,
+        10
+      ],
+      "tested": [
+        {
+          "m": 188,
+          "surplus_at_old_L": -2168649326182,
+          "L_slope": 31468062160,
+          "minimum_feasible_L": 3181
+        },
+        {
+          "m": 189,
+          "surplus_at_old_L": -1873954049922,
+          "L_slope": 32256181540,
+          "minimum_feasible_L": 3171
+        },
+        {
+          "m": 190,
+          "surplus_at_old_L": -2920863006878,
+          "L_slope": 32585811064,
+          "minimum_feasible_L": 3202
+        },
+        {
+          "m": 191,
+          "surplus_at_old_L": -5304425607610,
+          "L_slope": 32458523596,
+          "minimum_feasible_L": 3276
+        },
+        {
+          "m": 192,
+          "surplus_at_old_L": -9019692835542,
+          "L_slope": 31875892000,
+          "minimum_feasible_L": 3395
+        },
+        {
+          "m": 193,
+          "surplus_at_old_L": -14060968563698,
+          "L_slope": 30839751284,
+          "minimum_feasible_L": 3568
+        },
+        {
+          "m": 194,
+          "surplus_at_old_L": -20422558500110,
+          "L_slope": 29351936456,
+          "minimum_feasible_L": 3808
+        },
+        {
+          "m": 195,
+          "surplus_at_old_L": -28098770187818,
+          "L_slope": 27414282524,
+          "minimum_feasible_L": 4137
+        },
+        {
+          "m": 196,
+          "surplus_at_old_L": -37083164321606,
+          "L_slope": 25028886640,
+          "minimum_feasible_L": 4594
+        },
+        {
+          "m": 197,
+          "surplus_at_old_L": -47369303693410,
+          "L_slope": 22197845956,
+          "minimum_feasible_L": 5246
+        },
+        {
+          "m": 198,
+          "surplus_at_old_L": -58950753192318,
+          "L_slope": 18923257624,
+          "minimum_feasible_L": 6228
+        },
+        {
+          "m": 199,
+          "surplus_at_old_L": -71820331121306,
+          "L_slope": 15207480940,
+          "minimum_feasible_L": 7835
+        },
+        {
+          "m": 200,
+          "surplus_at_old_L": -85970858142646,
+          "L_slope": 11052875200,
+          "minimum_feasible_L": 10891
+        },
+        {
+          "m": 201,
+          "surplus_at_old_L": -101395157277906,
+          "L_slope": 6461799700,
+          "minimum_feasible_L": 18804
+        },
+        {
+          "m": 202,
+          "surplus_at_old_L": -118085305224686,
+          "L_slope": 1436875880,
+          "minimum_feasible_L": 85294
+        },
+        {
+          "m": 203,
+          "surplus_at_old_L": -136033381302026,
+          "L_slope": -4019274820,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 204,
+          "surplus_at_old_L": -155231467450406,
+          "L_slope": -9904030960,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 205,
+          "surplus_at_old_L": -175670899548482,
+          "L_slope": -16214508956,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 206,
+          "surplus_at_old_L": -197343016358494,
+          "L_slope": -22947825224,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 207,
+          "surplus_at_old_L": -220239159526266,
+          "L_slope": -30101096180,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 208,
+          "surplus_at_old_L": -244349924897942,
+          "L_slope": -37671176096,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 209,
+          "surplus_at_old_L": -269665911465394,
+          "L_slope": -45654919244,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 210,
+          "surplus_at_old_L": -296177721366222,
+          "L_slope": -54049179896,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 211,
+          "surplus_at_old_L": -323875211200490,
+          "L_slope": -62850550180,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 212,
+          "surplus_at_old_L": -352748240976134,
+          "L_slope": -72055622224,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 213,
+          "surplus_at_old_L": -382786674108962,
+          "L_slope": -81660988156,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 214,
+          "surplus_at_old_L": -413979628739390,
+          "L_slope": -91662977960,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 215,
+          "surplus_at_old_L": -446316975361114,
+          "L_slope": -102058183764,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 216,
+          "surplus_at_old_L": -479787839192438,
+          "L_slope": -112842935552,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 217,
+          "surplus_at_old_L": -514382097804946,
+          "L_slope": -124013825452,
+          "minimum_feasible_L": null
+        }
+      ],
+      "best": {
+        "m": 189,
+        "surplus_at_old_L": -1873954049922,
+        "L_slope": 32256181540,
+        "minimum_feasible_L": 3171
+      },
+      "nonworsening": []
+    },
+    {
+      "index": 23,
+      "original_parameters": [
+        114,
+        45,
+        20,
+        155,
+        3066,
+        5,
+        7
+      ],
+      "tested": [
+        {
+          "m": 114,
+          "surplus_at_old_L": -214348700917,
+          "L_slope": 2353822481,
+          "minimum_feasible_L": 3158
+        },
+        {
+          "m": 115,
+          "surplus_at_old_L": -524792964508,
+          "L_slope": 2330439370,
+          "minimum_feasible_L": 3292
+        },
+        {
+          "m": 116,
+          "surplus_at_old_L": -1252420005443,
+          "L_slope": 2165760643,
+          "minimum_feasible_L": 3645
+        },
+        {
+          "m": 117,
+          "surplus_at_old_L": -2395562325738,
+          "L_slope": 1860310588,
+          "minimum_feasible_L": 4354
+        },
+        {
+          "m": 118,
+          "surplus_at_old_L": -3951789850513,
+          "L_slope": 1414875637,
+          "minimum_feasible_L": 5860
+        },
+        {
+          "m": 119,
+          "surplus_at_old_L": -5918673291320,
+          "L_slope": 830242222,
+          "minimum_feasible_L": 10195
+        },
+        {
+          "m": 120,
+          "surplus_at_old_L": -8293784146143,
+          "L_slope": 107196775,
+          "minimum_feasible_L": 80436
+        },
+        {
+          "m": 121,
+          "surplus_at_old_L": -11073931598214,
+          "L_slope": -753212128,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 122,
+          "surplus_at_old_L": -14255925879341,
+          "L_slope": -1749935911,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 123,
+          "surplus_at_old_L": -17836578269908,
+          "L_slope": -2881925998,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 124,
+          "surplus_at_old_L": -21811937997691,
+          "L_slope": -4147871669,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 125,
+          "surplus_at_old_L": -26178055601186,
+          "L_slope": -5546462204,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 126,
+          "surplus_at_old_L": -30930982929609,
+          "L_slope": -7076386883,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 127,
+          "surplus_at_old_L": -36066010041712,
+          "L_slope": -8736072842,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 128,
+          "surplus_at_old_L": -41578428569111,
+          "L_slope": -10523947217,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 129,
+          "surplus_at_old_L": -47463531716286,
+          "L_slope": -12438437144,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 130,
+          "surplus_at_old_L": -53715851159397,
+          "L_slope": -14477707615,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 131,
+          "surplus_at_old_L": -60329920409612,
+          "L_slope": -16639923622,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 132,
+          "surplus_at_old_L": -67300274813107,
+          "L_slope": -18923250157,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 133,
+          "surplus_at_old_L": -74621451551066,
+          "L_slope": -21325852212,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 134,
+          "surplus_at_old_L": -82287226538497,
+          "L_slope": -23845632635,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 135,
+          "surplus_at_old_L": -90292903989928,
+          "L_slope": -26481018562,
+          "minimum_feasible_L": null
+        }
+      ],
+      "best": {
+        "m": 114,
+        "surplus_at_old_L": -214348700917,
+        "L_slope": 2353822481,
+        "minimum_feasible_L": 3158
+      },
+      "nonworsening": []
+    },
+    {
+      "index": 24,
+      "original_parameters": [
+        190,
+        84,
+        40,
+        258,
+        3048,
+        9,
+        10
+      ],
+      "tested": [
+        {
+          "m": 190,
+          "surplus_at_old_L": -1890998628257,
+          "L_slope": 34124955915,
+          "minimum_feasible_L": 3104
+        },
+        {
+          "m": 191,
+          "surplus_at_old_L": -2274729850177,
+          "L_slope": 34720573194,
+          "minimum_feasible_L": 3114
+        },
+        {
+          "m": 192,
+          "surplus_at_old_L": -3999144393441,
+          "L_slope": 34847477001,
+          "minimum_feasible_L": 3163
+        },
+        {
+          "m": 193,
+          "surplus_at_old_L": -7059385254017,
+          "L_slope": 34507240200,
+          "minimum_feasible_L": 3253
+        },
+        {
+          "m": 194,
+          "surplus_at_old_L": -11449865618977,
+          "L_slope": 33701697799,
+          "minimum_feasible_L": 3388
+        },
+        {
+          "m": 195,
+          "surplus_at_old_L": -17165000510401,
+          "L_slope": 32432684806,
+          "minimum_feasible_L": 3578
+        },
+        {
+          "m": 196,
+          "surplus_at_old_L": -24199206785377,
+          "L_slope": 30702036229,
+          "minimum_feasible_L": 3837
+        },
+        {
+          "m": 197,
+          "surplus_at_old_L": -32546171754241,
+          "L_slope": 28511849220,
+          "minimum_feasible_L": 4190
+        },
+        {
+          "m": 198,
+          "surplus_at_old_L": -42199584824481,
+          "L_slope": 25864220931,
+          "minimum_feasible_L": 4680
+        },
+        {
+          "m": 199,
+          "surplus_at_old_L": -53153137500737,
+          "L_slope": 22761248514,
+          "minimum_feasible_L": 5384
+        },
+        {
+          "m": 200,
+          "surplus_at_old_L": -65399792003041,
+          "L_slope": 19205291265,
+          "minimum_feasible_L": 6454
+        },
+        {
+          "m": 201,
+          "surplus_at_old_L": -78932512910721,
+          "L_slope": 15198708480,
+          "minimum_feasible_L": 8242
+        },
+        {
+          "m": 202,
+          "surplus_at_old_L": -93744267162401,
+          "L_slope": 10743859455,
+          "minimum_feasible_L": 11774
+        },
+        {
+          "m": 203,
+          "surplus_at_old_L": -109827292674241,
+          "L_slope": 5843365630,
+          "minimum_feasible_L": 21844
+        },
+        {
+          "m": 204,
+          "surplus_at_old_L": -127173829983841,
+          "L_slope": 499848445,
+          "minimum_feasible_L": 257473
+        },
+        {
+          "m": 205,
+          "surplus_at_old_L": -145776122250241,
+          "L_slope": -5284070660,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 206,
+          "surplus_at_old_L": -165625683872161,
+          "L_slope": -11505508101,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 207,
+          "surplus_at_old_L": -186714032131905,
+          "L_slope": -18161580294,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 208,
+          "surplus_at_old_L": -209032687195361,
+          "L_slope": -25249403655,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 209,
+          "surplus_at_old_L": -232572440730241,
+          "L_slope": -32765832456,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 210,
+          "surplus_at_old_L": -257324087549985,
+          "L_slope": -40707720969,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 211,
+          "surplus_at_old_L": -283278425613761,
+          "L_slope": -49071923466,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 212,
+          "surplus_at_old_L": -310425524644705,
+          "L_slope": -57855032075,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 213,
+          "surplus_at_old_L": -338755457773825,
+          "L_slope": -67053638924,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 214,
+          "surplus_at_old_L": -368258301540001,
+          "L_slope": -76664336141,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 215,
+          "surplus_at_old_L": -398923404508225,
+          "L_slope": -86683453710,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 216,
+          "surplus_at_old_L": -430740118913505,
+          "L_slope": -97107321615,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 217,
+          "surplus_at_old_L": -463698532042625,
+          "L_slope": -107932531984,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 218,
+          "surplus_at_old_L": -497787271826721,
+          "L_slope": -119155152657,
+          "minimum_feasible_L": null
+        }
+      ],
+      "best": {
+        "m": 190,
+        "surplus_at_old_L": -1890998628257,
+        "L_slope": 34124955915,
+        "minimum_feasible_L": 3104
+      },
+      "nonworsening": []
+    },
+    {
+      "index": 25,
+      "original_parameters": [
+        111,
+        46,
+        21,
+        151,
+        3071,
+        5,
+        7
+      ],
+      "tested": [
+        {
+          "m": 111,
+          "surplus_at_old_L": -211551618961,
+          "L_slope": 2168148862,
+          "minimum_feasible_L": 3169
+        },
+        {
+          "m": 112,
+          "surplus_at_old_L": -332508894024,
+          "L_slope": 2205919698,
+          "minimum_feasible_L": 3222
+        },
+        {
+          "m": 113,
+          "surplus_at_old_L": -888128970495,
+          "L_slope": 2096889894,
+          "minimum_feasible_L": 3495
+        },
+        {
+          "m": 114,
+          "surplus_at_old_L": -1875968666294,
+          "L_slope": 1841845882,
+          "minimum_feasible_L": 4090
+        },
+        {
+          "m": 115,
+          "surplus_at_old_L": -3293585585773,
+          "L_slope": 1441574094,
+          "minimum_feasible_L": 5356
+        },
+        {
+          "m": 116,
+          "surplus_at_old_L": -5137772659236,
+          "L_slope": 897123106,
+          "minimum_feasible_L": 8798
+        },
+        {
+          "m": 117,
+          "surplus_at_old_L": -7405323865563,
+          "L_slope": 209541494,
+          "minimum_feasible_L": 38412
+        },
+        {
+          "m": 118,
+          "surplus_at_old_L": -10093034232210,
+          "L_slope": -620122166,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 119,
+          "surplus_at_old_L": -13196934374729,
+          "L_slope": -1590557154,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 120,
+          "surplus_at_old_L": -16713056219392,
+          "L_slope": -2700452750,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 121,
+          "surplus_at_old_L": -20637433003191,
+          "L_slope": -3948498234,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 122,
+          "surplus_at_old_L": -24965333813358,
+          "L_slope": -5333120742,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 123,
+          "surplus_at_old_L": -29692029309989,
+          "L_slope": -6852747410,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 124,
+          "surplus_at_old_L": -34812791726044,
+          "L_slope": -8505805374,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 125,
+          "surplus_at_old_L": -40322129406867,
+          "L_slope": -10290459626,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 126,
+          "surplus_at_old_L": -46214552532810,
+          "L_slope": -12204875158,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 127,
+          "surplus_at_old_L": -52484573119233,
+          "L_slope": -14247216962,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 128,
+          "surplus_at_old_L": -59125939556024,
+          "L_slope": -16415387886,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 129,
+          "surplus_at_old_L": -66133167790703,
+          "L_slope": -18707552922,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 130,
+          "surplus_at_old_L": -73500010145318,
+          "L_slope": -21121614918,
+          "minimum_feasible_L": null
+        }
+      ],
+      "best": {
+        "m": 111,
+        "surplus_at_old_L": -211551618961,
+        "L_slope": 2168148862,
+        "minimum_feasible_L": 3169
+      },
+      "nonworsening": []
+    },
+    {
+      "index": 26,
+      "original_parameters": [
+        189,
+        83,
+        39,
+        257,
+        3084,
+        9,
+        10
+      ],
+      "tested": [
+        {
+          "m": 189,
+          "surplus_at_old_L": -1843822937442,
+          "L_slope": 32586204240,
+          "minimum_feasible_L": 3141
+        },
+        {
+          "m": 190,
+          "surplus_at_old_L": -2015007765902,
+          "L_slope": 33228759420,
+          "minimum_feasible_L": 3145
+        },
+        {
+          "m": 191,
+          "surplus_at_old_L": -3514500621754,
+          "L_slope": 33412824744,
+          "minimum_feasible_L": 3190
+        },
+        {
+          "m": 192,
+          "surplus_at_old_L": -6337396528614,
+          "L_slope": 33139973076,
+          "minimum_feasible_L": 3276
+        },
+        {
+          "m": 193,
+          "surplus_at_old_L": -10478792082962,
+          "L_slope": 32411777280,
+          "minimum_feasible_L": 3408
+        },
+        {
+          "m": 194,
+          "surplus_at_old_L": -15933044373054,
+          "L_slope": 31230072364,
+          "minimum_feasible_L": 3595
+        },
+        {
+          "m": 195,
+          "surplus_at_old_L": -22694512322154,
+          "L_slope": 29596693336,
+          "minimum_feasible_L": 3851
+        },
+        {
+          "m": 196,
+          "surplus_at_old_L": -30757556688534,
+          "L_slope": 27513475204,
+          "minimum_feasible_L": 4202
+        },
+        {
+          "m": 197,
+          "surplus_at_old_L": -40115798984386,
+          "L_slope": 24982515120,
+          "minimum_feasible_L": 4690
+        },
+        {
+          "m": 198,
+          "surplus_at_old_L": -50762862819054,
+          "L_slope": 22005910236,
+          "minimum_feasible_L": 5391
+        },
+        {
+          "m": 199,
+          "surplus_at_old_L": -62692373899034,
+          "L_slope": 18585757704,
+          "minimum_feasible_L": 6458
+        },
+        {
+          "m": 200,
+          "surplus_at_old_L": -75897218946886,
+          "L_slope": 14724416820,
+          "minimum_feasible_L": 8239
+        },
+        {
+          "m": 201,
+          "surplus_at_old_L": -90370287044466,
+          "L_slope": 10424246880,
+          "minimum_feasible_L": 11754
+        },
+        {
+          "m": 202,
+          "surplus_at_old_L": -106104469632926,
+          "L_slope": 5687607180,
+          "minimum_feasible_L": 21740
+        },
+        {
+          "m": 203,
+          "surplus_at_old_L": -123091919431626,
+          "L_slope": 517119160,
+          "minimum_feasible_L": 241118
+        },
+        {
+          "m": 204,
+          "surplus_at_old_L": -141324791781366,
+          "L_slope": -5084595740,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 205,
+          "surplus_at_old_L": -160795244644386,
+          "L_slope": -11114916080,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 206,
+          "surplus_at_old_L": -181494697523278,
+          "L_slope": -17570958276,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 207,
+          "surplus_at_old_L": -203414572804218,
+          "L_slope": -24449838744,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 208,
+          "surplus_at_old_L": -226546295756966,
+          "L_slope": -31748673900,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 209,
+          "surplus_at_old_L": -250880553453778,
+          "L_slope": -39464318016,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 210,
+          "surplus_at_old_L": -276408036112638,
+          "L_slope": -47593625364,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 211,
+          "surplus_at_old_L": -303119437097258,
+          "L_slope": -56133450216,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 212,
+          "surplus_at_old_L": -331004711835990,
+          "L_slope": -65080384700,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 213,
+          "surplus_at_old_L": -360053819165058,
+          "L_slope": -74431020944,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 214,
+          "surplus_at_old_L": -390256721328558,
+          "L_slope": -84181951076,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 215,
+          "surplus_at_old_L": -421602642897370,
+          "L_slope": -94329505080,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 216,
+          "surplus_at_old_L": -454081553193478,
+          "L_slope": -104870275084,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 217,
+          "surplus_at_old_L": -487682683865650,
+          "L_slope": -115800591072,
+          "minimum_feasible_L": null
+        },
+        {
+          "m": 218,
+          "surplus_at_old_L": -522396011313758,
+          "L_slope": -127117045172,
+          "minimum_feasible_L": null
+        }
+      ],
+      "best": {
+        "m": 189,
+        "surplus_at_old_L": -1843822937442,
+        "L_slope": 32586204240,
+        "minimum_feasible_L": 3141
+      },
+      "nonworsening": []
+    }
+  ]
+}

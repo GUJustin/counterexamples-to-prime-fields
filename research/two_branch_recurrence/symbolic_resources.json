@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/two_branch_recurrence/verify_symbolic.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.1048319160036044,
+  "peak_rss_kib": 65040,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

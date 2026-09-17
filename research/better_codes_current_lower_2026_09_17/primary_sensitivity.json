@@ -1,0 +1,63 @@
+{
+  "A": 181275,
+  "complete": true,
+  "scope": "Dimension positivity only; m<=oldm,s<=olds,floor(mA/w)<=oldq, one-residue closed counts.",
+  "rows": [
+    {
+      "name": "A",
+      "original": {
+        "m": 115,
+        "L": 274277,
+        "s": 35,
+        "q": 159
+      },
+      "target_surplus": -1455824819235,
+      "tested": 2915,
+      "positive_slope": 0,
+      "best": null,
+      "nonworsening": []
+    },
+    {
+      "name": "B",
+      "original": {
+        "m": 134,
+        "L": 18992,
+        "s": 40,
+        "q": 185
+      },
+      "target_surplus": -155031989640,
+      "tested": 3894,
+      "positive_slope": 77,
+      "best": {
+        "m": 134,
+        "s": 40,
+        "required_L": 22192,
+        "surplus_at_old_L": -155031989640,
+        "slope": 48456465,
+        "surplus_at_min_L": -1066352726895
+      },
+      "nonworsening": []
+    },
+    {
+      "name": "TCap",
+      "original": {
+        "m": 226,
+        "L": 9281,
+        "s": 70,
+        "q": 312
+      },
+      "target_surplus": -363409809704,
+      "tested": 11146,
+      "positive_slope": 1636,
+      "best": {
+        "m": 226,
+        "s": 70,
+        "required_L": 9681,
+        "surplus_at_old_L": -363409809704,
+        "slope": 909424303,
+        "surplus_at_min_L": -8520036383311
+      },
+      "nonworsening": []
+    }
+  ]
+}
