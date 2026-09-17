@@ -46,7 +46,9 @@ For the first-order theorem, even matching the n versus n^2 powers is
 open in our research. A growing fixed-gap source list in its agreement
 regime would address list tightness. A suitable compiler can add a factor
 n to exception counts, but the output parameters must also lie in the
-first-order regime; the exact-halving compiler does not guarantee this.
+first-order regime; the exact-halving compiler does not guarantee this. The subsequent
+FIRST_ORDER_PRESERVING_AMPLIFICATION.md shows that a sufficiently small
+positive padding fraction does preserve any strict first-order margin.
 Do not identify its output with the same first-order threshold silently.
 
 At rate1/4, the recovered curve is

@@ -1,0 +1,65 @@
+{
+  "status": "passed",
+  "source": {
+    "p": 23,
+    "N": 10,
+    "k": 3,
+    "A": 4,
+    "L": 11
+  },
+  "cases": [
+    {
+      "q": 1,
+      "n": 10,
+      "bad_labels": 7,
+      "expectation": "7",
+      "lower": "506/181",
+      "witness_supports": 7,
+      "directions_per_support": 12167
+    },
+    {
+      "q": 2,
+      "n": 11,
+      "bad_labels": 14,
+      "expectation": "273/23",
+      "lower": "1012/203",
+      "witness_supports": 14,
+      "directions_per_support": 12167
+    },
+    {
+      "q": 4,
+      "n": 13,
+      "bad_labels": 21,
+      "expectation": "214305/12167",
+      "lower": "2024/247",
+      "witness_supports": 27,
+      "directions_per_support": 12167
+    },
+    {
+      "q": 11,
+      "n": 20,
+      "bad_labels": 23,
+      "expectation": "934118060241735/41426511213649",
+      "lower": "5566/401",
+      "witness_supports": 65,
+      "directions_per_support": 12167
+    }
+  ],
+  "parameters": [
+    {
+      "rate": "1/4",
+      "agreement": "49/100",
+      "curve_polynomial": "5031/40000",
+      "johnson_slack": "99/10000",
+      "branch_polynomial": "-23/16"
+    },
+    {
+      "rate": "25/101",
+      "agreement": "49/101",
+      "curve_polynomial": "115008/1030301",
+      "johnson_slack": "124/10201",
+      "branch_polynomial": "-14121/10201"
+    }
+  ],
+  "scope": "Variable-q compiler fixtures and exact first-order parameter certificates only; no growing source-list construction."
+}

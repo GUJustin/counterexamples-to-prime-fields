@@ -2335,3 +2335,20 @@ high-rate improvement certificates. It does not claim the full high-rate
 optimum or intrinsic list/MCA tightness. The final LaTeX log has no
 undefined references or layout warnings; all twelve pages were rendered
 and visually inspected. Main counterexample paper remains 157 pages.
+
+## First-order-preserving list amplification
+
+FIRST_ORDER_PRESERVING_AMPLIFICATION.md removes a parameter obstacle in
+the tightness comparison. With q new coordinates and unchanged output
+dimension k, a list of L candidates at threshold A yields at least
+ p*q*A*L/[N*p+(2*(k-2)+q)*A*L]
+full-support MCA-bad labels, provided A>=k+1 and p>=max(2N,N+q).
+Taking q=theta*N+1 preserves rate and agreement up to the exact common
+factor1/(1+theta). Any strictly positive first-order margin survives a
+sufficiently small fixed theta. Thus a source list of size Omega(N^c)
+inside that regime would give Omega(n^(c+1)) full-support exceptions
+at nearby parameters still inside the regime, for sufficiently large
+primes. This is conditional: no growing source list is constructed.
+Exact parameter certificates and four variable-padding finite fixtures
+pass; every selected bad support was checked against all12167 possible
+directions in the F23 fixture.
