@@ -164,6 +164,6 @@
       "scope": "Far point z0, all guaranteed nearby parameters nonzero, no correlated agreement; no whole-line uniqueness."
     }
   ],
-  "seconds": 0.2044023329981428,
+  "seconds": 0.18353087500145193,
   "scope": "Far-point strengthening of dense padding. Uses p-1 multiplicative label universe; exact small-field exhaustion and exact finite density/Elias/prescription certificates. The small F17 fixture is a mechanism check, not an Elias claim."
 }

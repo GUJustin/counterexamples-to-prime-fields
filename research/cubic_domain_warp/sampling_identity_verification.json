@@ -39,6 +39,6 @@
     }
   ],
   "elementary_symmetric_inequalities": 8008,
-  "seconds": 0.06366679200073122,
+  "seconds": 0.05579562499769963,
   "scope": "Exhaustive finite identity and probability checks; the uniform inequality is proved by pairwise averaging."
 }

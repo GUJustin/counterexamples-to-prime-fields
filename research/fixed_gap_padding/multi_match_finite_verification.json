@@ -138,6 +138,6 @@
       "strict_elias": true
     }
   ],
-  "seconds": 0.06367600000157836,
+  "seconds": 0.054880332994798664,
   "scope": "Exact finite certificates on arbitrary padded interval domains. All counts, Elias, primality and numerical-prescription comparisons are exact; floating search only chooses integer parameters. No prescribed-domain or protocol-security claim."
 }

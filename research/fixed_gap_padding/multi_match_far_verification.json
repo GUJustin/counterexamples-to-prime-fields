@@ -210,7 +210,7 @@
           "exact_positive_probability": "3/500"
         }
       ],
-      "seconds": 0.40563900000051945,
+      "seconds": 0.38432058300531935,
       "scope": "Exhaustive finite second-moment mechanism check, not an Elias fixture or asymptotic proof."
     },
     {
@@ -464,7 +464,7 @@
           "exact_positive_probability": "1/100"
         }
       ],
-      "seconds": 0.5577814580028644,
+      "seconds": 0.5710764169998583,
       "scope": "Exhaustive finite second-moment mechanism check, not an Elias fixture or asymptotic proof."
     }
   ]

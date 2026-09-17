@@ -1,0 +1,560 @@
+{
+  "status": "passed",
+  "main_checks": 110,
+  "main_seconds": 427.1796376249986,
+  "overnight_steps": 12,
+  "overnight_seconds": 58.82102195799962,
+  "main_rows": [
+    {
+      "index": 1,
+      "script": "checks/actual_list_tightened_check.py",
+      "returncode": 0
+    },
+    {
+      "index": 2,
+      "script": "checks/actual_list_chain_check.py",
+      "returncode": 0
+    },
+    {
+      "index": 3,
+      "script": "checks/actual_list_chain_conditional_audit.py",
+      "returncode": 0
+    },
+    {
+      "index": 4,
+      "script": "checks/astra_rs_all_surplus_check.py",
+      "returncode": 0
+    },
+    {
+      "index": 5,
+      "script": "checks/actual_list_global_small_check.py",
+      "returncode": 0
+    },
+    {
+      "index": 6,
+      "script": "checks/verify_puncturing_bound.py",
+      "returncode": 0
+    },
+    {
+      "index": 7,
+      "script": "checks/verify_curve_puncturing.py",
+      "returncode": 0
+    },
+    {
+      "index": 8,
+      "script": "checks/astra_syndrome_determinants_check.py",
+      "returncode": 0
+    },
+    {
+      "index": 9,
+      "script": "checks/verify_conditional_moments.py",
+      "returncode": 0
+    },
+    {
+      "index": 10,
+      "script": "moment_certificates/verify_weights.py",
+      "returncode": 0
+    },
+    {
+      "index": 11,
+      "script": "moment_certificates/verify_concentration.py",
+      "returncode": 0
+    },
+    {
+      "index": 12,
+      "script": "checks/check_gram_ellipsoid.py",
+      "returncode": 0
+    },
+    {
+      "index": 13,
+      "script": "research/gram_norm/verify_gram_norm.py",
+      "returncode": 0
+    },
+    {
+      "index": 14,
+      "script": "research/ellipsoid_bound/verify_lattice_bound.py",
+      "returncode": 0
+    },
+    {
+      "index": 15,
+      "script": "research/gaussian_bound/verify_gaussian_hypotheses.py",
+      "returncode": 0
+    },
+    {
+      "index": 16,
+      "script": "research/growing_m/verify_growing_m.py",
+      "returncode": 0
+    },
+    {
+      "index": 17,
+      "script": "research/growing_m/verify_wide_regime.py",
+      "returncode": 0
+    },
+    {
+      "index": 18,
+      "script": "research/curve_audit/verify_curve_endpoint.py",
+      "returncode": 0
+    },
+    {
+      "index": 19,
+      "script": "research/curve_audit/verify_formal_degree.py",
+      "returncode": 0
+    },
+    {
+      "index": 20,
+      "script": "research/puncturing_improvement/verify_support_incidence.py",
+      "returncode": 0
+    },
+    {
+      "index": 21,
+      "script": "research/structured_domains/verify_transfer_limits.py",
+      "returncode": 0
+    },
+    {
+      "index": 22,
+      "script": "research/structured_domains/frobenius_index/verify_rational_frobenius_index.py",
+      "returncode": 0
+    },
+    {
+      "index": 23,
+      "script": "research/structured_domains/frobenius_index/verify_balanced_rational_pencils.py",
+      "returncode": 0
+    },
+    {
+      "index": 24,
+      "script": "research/structured_domains/frobenius_index/check_near_balanced.py",
+      "returncode": 0
+    },
+    {
+      "index": 25,
+      "script": "research/structured_domains/general_cubic_packets/verify.py",
+      "returncode": 0
+    },
+    {
+      "index": 26,
+      "script": "research/fixed_gap_padding/verify_anchored_padding.py",
+      "returncode": 0
+    },
+    {
+      "index": 27,
+      "script": "research/fixed_gap_padding/verify_prescribed_gap.py",
+      "returncode": 0
+    },
+    {
+      "index": 28,
+      "script": "research/fixed_gap_padding/verify_unique_padding.py",
+      "returncode": 0
+    },
+    {
+      "index": 29,
+      "script": "research/fixed_gap_padding/verify_unique_far_padding.py",
+      "returncode": 0
+    },
+    {
+      "index": 30,
+      "script": "research/fixed_gap_padding/verify_multi_match_far_padding.py",
+      "returncode": 0
+    },
+    {
+      "index": 31,
+      "script": "research/fixed_gap_padding/verify_far_concurrency.py",
+      "returncode": 0
+    },
+    {
+      "index": 32,
+      "script": "research/fixed_gap_padding/verify_multi_match_finite.py",
+      "returncode": 0
+    },
+    {
+      "index": 33,
+      "script": "research/fixed_gap_padding/verify_gap_scale_far.py",
+      "returncode": 0
+    },
+    {
+      "index": 34,
+      "script": "research/fixed_gap_padding/verify_density_separation_tradeoff.py",
+      "returncode": 0
+    },
+    {
+      "index": 35,
+      "script": "research/fixed_gap_padding/verify_slow_separation.py",
+      "returncode": 0
+    },
+    {
+      "index": 36,
+      "script": "research/paired_domain_warp/verify_geometry.py",
+      "returncode": 0
+    },
+    {
+      "index": 37,
+      "script": "research/paired_domain_warp/verify_finite.py",
+      "returncode": 0
+    },
+    {
+      "index": 38,
+      "script": "research/paired_domain_warp/verify_parity.py",
+      "returncode": 0
+    },
+    {
+      "index": 39,
+      "script": "research/paired_domain_warp/verify_joint_images.py",
+      "returncode": 0
+    },
+    {
+      "index": 40,
+      "script": "research/paired_domain_warp/verify_multiblock_finite.py",
+      "returncode": 0
+    },
+    {
+      "index": 41,
+      "script": "research/paired_domain_warp/audit_multiblock_independent.py",
+      "returncode": 0
+    },
+    {
+      "index": 42,
+      "script": "research/paired_domain_warp/verify_sample.py",
+      "returncode": 0
+    },
+    {
+      "index": 43,
+      "script": "research/paired_domain_warp/verify_completion.py",
+      "returncode": 0
+    },
+    {
+      "index": 44,
+      "script": "research/paired_domain_warp/audit_completion_independent.py",
+      "returncode": 0
+    },
+    {
+      "index": 45,
+      "script": "research/paired_domain_warp/audit_optimized_completion.py",
+      "returncode": 0
+    },
+    {
+      "index": 46,
+      "script": "research/paired_domain_warp/verify_translate_identity.py",
+      "returncode": 0
+    },
+    {
+      "index": 47,
+      "script": "research/paired_domain_warp/check_small_completion.py",
+      "returncode": 0
+    },
+    {
+      "index": 48,
+      "script": "research/paired_domain_warp/verify_completed_sample.py",
+      "returncode": 0
+    },
+    {
+      "index": 49,
+      "script": "research/paired_domain_warp/verify_extension_profile.py",
+      "returncode": 0
+    },
+    {
+      "index": 50,
+      "script": "research/paired_domain_warp/m31_exact/verify.py",
+      "returncode": 0
+    },
+    {
+      "index": 51,
+      "script": "research/paired_domain_warp/m31_exact/verify_local_lists.py",
+      "returncode": 0
+    },
+    {
+      "index": 52,
+      "script": "research/paired_domain_warp/verify_unique_geometry.py",
+      "returncode": 0
+    },
+    {
+      "index": 53,
+      "script": "research/paired_domain_warp/powers_two/check.py",
+      "returncode": 0
+    },
+    {
+      "index": 54,
+      "script": "research/paired_domain_warp/powers_two/verify.py",
+      "returncode": 0
+    },
+    {
+      "index": 55,
+      "script": "research/paired_domain_warp/powers_two/check_two_levels.py",
+      "returncode": 0
+    },
+    {
+      "index": 56,
+      "script": "research/paired_domain_warp/powers_two/check_two_adic.py",
+      "returncode": 0
+    },
+    {
+      "index": 57,
+      "script": "research/orbit_unique/verify_parameters.py",
+      "returncode": 0
+    },
+    {
+      "index": 58,
+      "script": "research/orbit_unique/check_small.py",
+      "returncode": 0
+    },
+    {
+      "index": 59,
+      "script": "research/orbit_unique/verify.py",
+      "returncode": 0
+    },
+    {
+      "index": 60,
+      "script": "research/cubic_domain_warp/verify_geometry.py",
+      "returncode": 0
+    },
+    {
+      "index": 61,
+      "script": "research/cubic_domain_warp/verify_finite_certificate.py",
+      "returncode": 0
+    },
+    {
+      "index": 62,
+      "script": "research/cubic_domain_warp/audit_finite_independent.py",
+      "returncode": 0
+    },
+    {
+      "index": 63,
+      "script": "research/cubic_domain_warp/verify_randomized_bound.py",
+      "returncode": 0
+    },
+    {
+      "index": 64,
+      "script": "research/cubic_domain_warp/verify_sampling_identity.py",
+      "returncode": 0
+    },
+    {
+      "index": 65,
+      "script": "research/cubic_domain_warp/verify_sample.py",
+      "returncode": 0
+    },
+    {
+      "index": 66,
+      "script": "research/fixed_gap_padding/verify_vanishing_rate_density.py",
+      "returncode": 0
+    },
+    {
+      "index": 67,
+      "script": "research/fixed_gap_padding/verify_constant_code_density.py",
+      "returncode": 0
+    },
+    {
+      "index": 68,
+      "script": "research/fixed_gap_padding/verify_polynomial_fields.py",
+      "returncode": 0
+    },
+    {
+      "index": 69,
+      "script": "research/fixed_gap_padding/verify_average_padding.py",
+      "returncode": 0
+    },
+    {
+      "index": 70,
+      "script": "research/fixed_gap_padding/verify_dense_padding.py",
+      "returncode": 0
+    },
+    {
+      "index": 71,
+      "script": "research/fixed_gap_padding/verify_near_unit_density.py",
+      "returncode": 0
+    },
+    {
+      "index": 72,
+      "script": "research/fixed_gap_padding/audit_density_independent.py",
+      "returncode": 0
+    },
+    {
+      "index": 73,
+      "script": "research/fixed_gap_padding/verify_dense_half_rate.py",
+      "returncode": 0
+    },
+    {
+      "index": 74,
+      "script": "research/fixed_gap_padding/verify_far_point_padding.py",
+      "returncode": 0
+    },
+    {
+      "index": 75,
+      "script": "research/linear_differential_mca/verify.py",
+      "returncode": 0
+    },
+    {
+      "index": 76,
+      "script": "research/spectral_riccati/verify_constant.py",
+      "returncode": 0
+    },
+    {
+      "index": 77,
+      "script": "research/spectral_riccati/verify_weighted.py",
+      "returncode": 0
+    },
+    {
+      "index": 78,
+      "script": "research/power_family_mca/verify_family.py",
+      "returncode": 0
+    },
+    {
+      "index": 79,
+      "script": "research/power_family_mca/verify_wronskian.py",
+      "returncode": 0
+    },
+    {
+      "index": 80,
+      "script": "research/power_family_mca/verify_mca.py",
+      "returncode": 0
+    },
+    {
+      "index": 81,
+      "script": "research/power_family_mca/verify_parameters.py",
+      "returncode": 0
+    },
+    {
+      "index": 82,
+      "script": "research/bounded_root_mca/verify_wronskian.py",
+      "returncode": 0
+    },
+    {
+      "index": 83,
+      "script": "research/bounded_root_mca/verify_clusters.py",
+      "returncode": 0
+    },
+    {
+      "index": 84,
+      "script": "research/first_order_actual_components/verify_reconstruction.py",
+      "returncode": 0
+    },
+    {
+      "index": 85,
+      "script": "research/first_order_actual_components/verify_curve_family.py",
+      "returncode": 0
+    },
+    {
+      "index": 86,
+      "script": "research/first_order_actual_components/verify_isolated_family.py",
+      "returncode": 0
+    },
+    {
+      "index": 87,
+      "script": "research/quasilinear_first_order/verify.py",
+      "returncode": 0
+    },
+    {
+      "index": 88,
+      "script": "research/isolated_solution_sharpness/verify_reconstruction.py",
+      "returncode": 0
+    },
+    {
+      "index": 89,
+      "script": "research/isolated_solution_sharpness/verify_family.py",
+      "returncode": 0
+    },
+    {
+      "index": 90,
+      "script": "research/actual_higher_order_components/verify.py",
+      "returncode": 0
+    },
+    {
+      "index": 91,
+      "script": "research/actual_higher_order_components/verify_fixed_fiber.py",
+      "returncode": 0
+    },
+    {
+      "index": 92,
+      "script": "research/inverse_bernoulli/verify.py",
+      "returncode": 0
+    },
+    {
+      "index": 93,
+      "script": "research/riccati_cross_ratio/verify.py",
+      "returncode": 0
+    },
+    {
+      "index": 94,
+      "script": "research/riccati_cross_ratio/verify_multiplicities.py",
+      "returncode": 0
+    },
+    {
+      "index": 95,
+      "script": "research/riccati_cross_ratio/verify_boundary_extension.py",
+      "returncode": 0
+    },
+    {
+      "index": 96,
+      "script": "research/riccati_cross_ratio/boundary_search/verify_family.py",
+      "returncode": 0
+    },
+    {
+      "index": 97,
+      "script": "research/logarithmic_length_lines/verify.py",
+      "returncode": 0
+    },
+    {
+      "index": 98,
+      "script": "research/prime_exponent_coefficients/verify.py",
+      "returncode": 0
+    },
+    {
+      "index": 99,
+      "script": "research/dickson_fixed_gap/verify.py",
+      "returncode": 0
+    },
+    {
+      "index": 100,
+      "script": "research/binary_affine_locator/verify.py",
+      "returncode": 0
+    },
+    {
+      "index": 101,
+      "script": "research/binary_affine_locator/check_codimension_two_transfer.py",
+      "returncode": 0
+    },
+    {
+      "index": 102,
+      "script": "research/binary_affine_locator/check_multiplicative_orbit_transfer.py",
+      "returncode": 0
+    },
+    {
+      "index": 103,
+      "script": "research/binary_affine_locator/check_multiplicative_label_rigidity.py",
+      "returncode": 0
+    },
+    {
+      "index": 104,
+      "script": "research/structured_domains/verify_balanced_fibers.py",
+      "returncode": 0
+    },
+    {
+      "index": 105,
+      "script": "research/gram_norm/verify_balanced_fibers.py",
+      "returncode": 0
+    },
+    {
+      "index": 106,
+      "script": "research/structured_domains/verify_galois_fibers.py",
+      "returncode": 0
+    },
+    {
+      "index": 107,
+      "script": "research/gram_norm/verify_galois_boundaries.py",
+      "returncode": 0
+    },
+    {
+      "index": 108,
+      "script": "research/finite_weights/verify_chebyshev.py",
+      "returncode": 0
+    },
+    {
+      "index": 109,
+      "script": "research/finite_weights/verify_certificates.py",
+      "returncode": 0
+    },
+    {
+      "index": 110,
+      "script": "radial_certificates/verify_publication.py",
+      "returncode": 0
+    }
+  ],
+  "scope": "All 110 main Makefile verification commands plus the separate verify-overnight prerequisite passed sequentially under 384 MiB per checked process tree. This covers the committed manuscript at 66e13dae; subsequent research additions receive separate checks."
+}

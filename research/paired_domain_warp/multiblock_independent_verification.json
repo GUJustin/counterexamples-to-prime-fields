@@ -80,6 +80,6 @@
       "gamma": "2^-84"
     }
   ],
-  "seconds": 0.027805083998828195,
+  "seconds": 0.01989175000198884,
   "scope": "No construction-helper imports. Coarser analytic Fourier estimate, exact integer probability terms, independent Lucas-Lehmer and integer Elias/prescription replay. A generator probability certificate, not individual-sample coverage verification."
 }

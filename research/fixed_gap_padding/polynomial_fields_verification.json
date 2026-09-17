@@ -271,6 +271,6 @@
       "common_agreement_upper": 14
     }
   ],
-  "seconds": 0.1478986670008453,
+  "seconds": 0.12094091700419085,
   "scope": "Finite character-count and shifted-anchor mechanism checks; asymptotic polynomial field size uses Weil and Linnik, not finite testing. No whole-line uniqueness assertion."
 }

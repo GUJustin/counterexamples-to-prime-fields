@@ -8,6 +8,6 @@
   "generator_failure_probability_less_than": "2^-128",
   "strict_elias": true,
   "prescription_fraction_less_than": "2^-16",
-  "seconds": 0.6537383330032753,
+  "seconds": 0.5192131250005332,
   "scope": "Exact structural replay and an independent integer proof of the generator probability bound. Complete coverage of this particular sample is not deterministically certified."
 }

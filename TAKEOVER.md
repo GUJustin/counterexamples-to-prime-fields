@@ -1585,7 +1585,7 @@ s=(s*s-2 &p)+(s*s-2 >>b), subtractpifneeded, savehuge%cost.
 No gmpy2installed; sympyavailable. Theseorbitideasareunpromoteduntilproofaudit,
 finitechecksandnorm/cyclotomic/domain/paritydetailsresolved.
 
-## 2026-09-17 10:22 UTC — audited orbit strengthening
+## 2026-09-17 10:15 UTC — audited orbit strengthening
 
 The prime-order orbit idea above is now proved, independently checked, and
 integrated as Section 4.3.4 (`research/orbit_unique/orbit.tex`). The paper is
@@ -1598,7 +1598,7 @@ roots independently satisfy exact order; all domain points are distinct;
 ratio is >1, not >2 (correcting the provisional estimate above).
 Small fixtures exhaust 2,048 / 8,192 / 524,288 subset sums and 792 / 12,870 /
 3,060 interpolation pencils. Primality of their fields is checked too.
-Makefile now includes 111 check commands. All newly added checks passed.
+Makefile now includes 111 check commands including verify-overnight. All newly added checks passed.
 The paired powers-of-two two-level theorem now explicitly notes both
 f and f+g are far; its five exhaustive fixtures were rerun successfully.
 
@@ -1618,3 +1618,47 @@ nonempty subset of roots of unity has nonzero sum if p>d^(d-1), by the
 same small-resultant argument. Independent random orbit scalars and extra
 coordinates make each forbidden subset sum a nonzero linear equation.
 This extension remains provisional until independently tested/audited.
+
+## 10:24 UTC working notes — not yet promoted
+
+A logarithmic-length random-orbit theorem is drafted in
+research/orbit_unique/random.tex, with check scripts verify_random.py and
+check_random_geometry.py NOT YET RUN. Exact failure bound before valid-
+domain conditioning: [binom(n,2)+2^(n-d)+dD*binom(binom(m,D),2)]/p.
+For n=alpha log2p+O(1), alpha<1, this is p^(alpha-1+o(1)). Gives near-full
+relative gap, unique lists, J=p^Omega(1), but no arbitrary witness decoder.
+The 110 main Makefile checks are running sequentially in session37155;
+currently check108. Need run the separate verify-overnight prerequisite
+as well: total Makefile check count is 111, not 110. Wrapper clang++ is
+in tmp/eprint-replay-bin. Do not start another numerical job until done.
+
+NEW PROMISING DETERMINISTIC FINITE STRENGTHENING (still provisional):
+Replace core 2^i*omega^j by alpha^i*omega^j, i=2,...,m+1, where alpha^d=2
+and omega has prime order d. Extra coordinates alpha^(m+2)...alpha^(m+c+1),
+padding omega^j. n=d(m+1)+c, K=dD-1. Work in Kummer splitting field
+Q(2^(1/d),zeta_d), degree d(d-1): degrees d and d-1 coprime prove this.
+A root sum groups powers alpha^i by i mod d; independence over Q(zeta)
+then binary coefficient uniqueness again forces whole core orbits and no
+extras. A norm bound suffices for modular lifting:
+ A=n*2^ceil((m+c+1)/d), p>A^[d(d-1)].
+Every complex conjugate has coordinate magnitude <=2^ceil(...), so this
+bounds both subset sums and point differences. Ring evaluation into Fp
+using supplied alpha,omega shows a nonzero norm divisible by p.
+Products are now prod_{i in I}(2^i-1), i>=2; bound
+ p>2^[D(2m-D+3)/2], improving the exponent by about d.
+The elementary decoder works at BASE TWO when the first index is 2:
+normalized product >1/2, so bitlength(T)=sum indices; tail product after i
+is >1-2^-i. Greedy membership and unique products follow without Zsigmondy.
+All-nearby classification and efficient decoder survive verbatim.
+For Mersenne p=2^b-1, d!=b and p≡1modd, alpha=2^(inverse(d) modulo b)
+is an explicit dth root of 2, so no extra root search for alpha.
+Potential finite improvements: d2,M521,m34,D18,n70,K35 half rate;
+d3,M1279,m56,D29,n172,K86; d5,M9689,m158,D80,n798,K399;
+d13,M23209,m247,D123,c0,n3224,K1598 (near half rate), likely ratio>1.
+M44497 admits d19 (b≡1mod18); optimize m,D near rho=.25, perhaps gives
+19/20 separation with unique efficient witnesses. Need check actual ratios!
+For arbitrary rho, exact ratio J > 2^q*n*2^[nH(K/n)/(d+1)] iff
+ J^(d+1)*K^K*(n-K)^(n-K) > 2^[q(d+1)]*n^(n+d+1).
+Do not alter the existing all-p≡1modd asymptotic theorem: this Kummer
+variant additionally requires a dth root of 2. Could present as finite
+refinement / conditional-root theorem, not overclaim same progression.

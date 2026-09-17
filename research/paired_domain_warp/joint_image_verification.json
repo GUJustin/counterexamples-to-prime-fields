@@ -54,6 +54,6 @@
       "collisions_by_support_difference": {}
     }
   ],
-  "seconds": 0.17451120799887576,
+  "seconds": 0.15328874999977415,
   "scope": "Exact integer group convolutions and cyclotomic reductions verify Fourier identities; exhaustive cores verify zero collisions for support difference <= block size. The Weil estimate remains a cited theorem."
 }

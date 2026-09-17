@@ -77,6 +77,6 @@
       "label_lower_bound_sha256": "cdad2ee2eabf1872d3db20360ef096f515f716ee8ab2049c825c7582851e3d46"
     }
   ],
-  "seconds": 4.042825292002817,
+  "seconds": 4.359127249997982,
   "scope": "Exact finite prime-field certificates and exact asymptotic constant inequalities. Arbitrary padded intervals; eta shrinks and the far separation is a fixed fraction of eta. No prescribed-domain result."
 }

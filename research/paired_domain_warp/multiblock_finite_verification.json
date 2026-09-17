@@ -92,6 +92,6 @@
       "success_bound": true
     }
   ],
-  "seconds": 0.6228995420024148,
+  "seconds": 0.4190800409996882,
   "scope": "Exact rational bound using ceil sqrt, Lucas-Lehmer primality, and integer Elias/prescription comparisons. General Fourier and sampling argument is supplied by the written proof."
 }

@@ -2,6 +2,6 @@
   "status": "passed",
   "m": 10,
   "signed_vectors_checked": 59028,
-  "seconds": 0.10926062500220723,
+  "seconds": 0.12892691599699901,
   "scope": "Exact integer valuation identity for all nontrivial signed supports of size at least two among the first ten powers."
 }

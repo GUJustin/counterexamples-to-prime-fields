@@ -55,6 +55,6 @@
     "min_outside_roots": 0,
     "max_outside_roots": 6
   },
-  "seconds": 1.3658988749994023,
+  "seconds": 1.1288845829985803,
   "scope": "Finite checks of Vandermonde general position, smooth triple intersections, point-count bounds, moment preservation, and outside collision identities. Absolute irreducibility is proved in the written argument."
 }

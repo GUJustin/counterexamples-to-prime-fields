@@ -64,6 +64,6 @@
       "all_nearby_unique": true
     }
   ],
-  "seconds": 3.992431166007009,
+  "seconds": 3.615453082995373,
   "scope": "All subset sums in the root fixtures and every potentially nearby codeword on the test lines, via all interpolation pencils. Small fixtures test geometry, not numerical-bound violations."
 }

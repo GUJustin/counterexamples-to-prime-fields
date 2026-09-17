@@ -14,7 +14,7 @@
   "exact_nearby_parameters": 140916078,
   "uniquely_nearby_parameters": 136494714,
   "maximum_list_size_on_this_line": 5,
-  "seconds": 37.11836208299792,
+  "seconds": 34.43476250000094,
   "scope": "Exact lists on this one line at distance28/62. The no-signed-relation lemma excludes all nonpaired witnesses. This is not a global list-size bound for the code.",
   "replays": {
     "relations": {
@@ -22,13 +22,13 @@
       "matching_pairs": 1,
       "nonempty_zero_relations": 0,
       "first_nonempty_key": 0,
-      "seconds": 1.081808
+      "seconds": 0.60762
     },
     "relations_replay": {
       "status": "passed",
       "only_trivial_relation": true,
       "half_assignments": 14348907,
-      "seconds": 0.994901
+      "seconds": 0.564799
     },
     "histogram": {
       "p": 2147483647,
@@ -44,7 +44,7 @@
         891,
         3
       ],
-      "seconds": 10.493286
+      "seconds": 6.298797
     },
     "histogram_replay": {
       "supports": 145422675,
@@ -59,7 +59,7 @@
         891,
         3
       ],
-      "seconds": 20.043802
+      "seconds": 25.975066
     }
   }
 }

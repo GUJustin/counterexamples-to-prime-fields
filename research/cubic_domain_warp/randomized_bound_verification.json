@@ -23,6 +23,6 @@
     "strict_elias": true
   },
   "parameter_trials": 20,
-  "seconds": 0.015710583997133654,
+  "seconds": 0.017069166999135632,
   "scope": "Exact upper bound on the randomized generator failure probability, assuming the written sampling theorem. This does not certify any particular sample has complete coverage."
 }

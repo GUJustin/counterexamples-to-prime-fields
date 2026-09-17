@@ -10,6 +10,6 @@
   "exact_collision_partition_check": true,
   "exact_excess_bits_match": true,
   "excess_bits_lower": 7.046135584869904,
-  "seconds": 30.00886462500057,
+  "seconds": 31.75040745800652,
   "scope": "Different unconditioned recurrence identity and item order; same underlying centered histogram engine."
 }

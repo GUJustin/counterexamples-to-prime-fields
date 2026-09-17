@@ -47,5 +47,5 @@
   ],
   "distinct_nearby_codewords": 35,
   "scope": "Exhaustive all-potential-witness interpolation; exact lists over both fields. Toy geometry, not a below-Elias certificate.",
-  "seconds": 0.19642520799970953
+  "seconds": 0.3809358330036048
 }

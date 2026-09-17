@@ -97,6 +97,6 @@
       "exact_far_agreement": 29911
     }
   ],
-  "seconds": 0.6327049579995219,
+  "seconds": 0.5910381249996135,
   "scope": "Far-point multiplicative-padding certificates with p-1 label universe. Exact finite prime-field certificates at rate1/2 and parameterC2. Floating choices only choose integer parameters; all mathematical inequalities, counts, primality and displayed density lower bounds are verified exactly. Not a convergence proof or a prescribed-domain result."
 }

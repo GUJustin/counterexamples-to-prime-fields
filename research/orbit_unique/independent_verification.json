@@ -41,6 +41,6 @@
       "explicit_witnesses_checked": 2
     }
   ],
-  "seconds": 29.45467208300397,
+  "seconds": 27.492826041001535,
   "scope": "Deterministic classification and decoding given the saved certified roots. Root search is zero-error; no coverage success event is assumed. No global list-size or prescribed-domain claim."
 }

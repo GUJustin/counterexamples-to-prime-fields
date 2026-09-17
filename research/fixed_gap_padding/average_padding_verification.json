@@ -144,6 +144,6 @@
       "gram_denominator_denominator_sha256": "432d34d81db34dc0eca06ae84efc410daba312a1a515094f37e584e1dcec58a3"
     }
   ],
-  "seconds": 0.11248366700237966,
+  "seconds": 0.1175692920005531,
   "scope": "Exact existence certificates for arbitrary padded domains, with actual ordinary correlated-agreement failure. Count-ratio comparison assumes c1=c2=1; no protocol attack, prescribed subgroup, optimality or uniqueness claim."
 }

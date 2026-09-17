@@ -23,8 +23,8 @@
         ],
         "reason": "completed",
         "returncode": 0,
-        "seconds": 1.1101990829993156,
-        "peak_rss_kib": 125392,
+        "seconds": 0.5540679999976419,
+        "peak_rss_kib": 32,
         "rss_limit_mib": 384,
         "time_limit_seconds": 900
       }
@@ -51,8 +51,8 @@
         ],
         "reason": "completed",
         "returncode": 0,
-        "seconds": 1.6619622500002151,
-        "peak_rss_kib": 173824,
+        "seconds": 0.5521183340024436,
+        "peak_rss_kib": 32,
         "rss_limit_mib": 384,
         "time_limit_seconds": 900
       }
@@ -69,8 +69,8 @@
         ],
         "reason": "completed",
         "returncode": 0,
-        "seconds": 6.144485459000862,
-        "peak_rss_kib": 236544,
+        "seconds": 6.210463333001826,
+        "peak_rss_kib": 196960,
         "rss_limit_mib": 384,
         "time_limit_seconds": 900
       }
@@ -87,8 +87,8 @@
         ],
         "reason": "completed",
         "returncode": 0,
-        "seconds": 2.1909747919999063,
-        "peak_rss_kib": 36000,
+        "seconds": 2.7920178339991253,
+        "peak_rss_kib": 36160,
         "rss_limit_mib": 384,
         "time_limit_seconds": 900
       }
@@ -105,8 +105,8 @@
         ],
         "reason": "completed",
         "returncode": 0,
-        "seconds": 0.5406183750001219,
-        "peak_rss_kib": 6960,
+        "seconds": 1.1196827499952633,
+        "peak_rss_kib": 74080,
         "rss_limit_mib": 384,
         "time_limit_seconds": 900
       }
@@ -127,8 +127,8 @@
         ],
         "reason": "completed",
         "returncode": 0,
-        "seconds": 1.0757967919998919,
-        "peak_rss_kib": 71680,
+        "seconds": 1.6868688329996075,
+        "peak_rss_kib": 70864,
         "rss_limit_mib": 384,
         "time_limit_seconds": 900
       }
@@ -149,8 +149,8 @@
         ],
         "reason": "completed",
         "returncode": 0,
-        "seconds": 0.5398768329996528,
-        "peak_rss_kib": 2464,
+        "seconds": 1.13164770900039,
+        "peak_rss_kib": 73344,
         "rss_limit_mib": 384,
         "time_limit_seconds": 900
       }
@@ -179,8 +179,8 @@
         ],
         "reason": "completed",
         "returncode": 0,
-        "seconds": 30.513033499999437,
-        "peak_rss_kib": 103984,
+        "seconds": 31.91647962499701,
+        "peak_rss_kib": 104208,
         "rss_limit_mib": 384,
         "time_limit_seconds": 900
       }
@@ -197,8 +197,8 @@
         ],
         "reason": "completed",
         "returncode": 0,
-        "seconds": 0.564468874999875,
-        "peak_rss_kib": 6480,
+        "seconds": 0.5669608330063056,
+        "peak_rss_kib": 13360,
         "rss_limit_mib": 384,
         "time_limit_seconds": 900
       }
@@ -215,8 +215,8 @@
         ],
         "reason": "completed",
         "returncode": 0,
-        "seconds": 9.98747020799965,
-        "peak_rss_kib": 66080,
+        "seconds": 9.524538124998799,
+        "peak_rss_kib": 64880,
         "rss_limit_mib": 384,
         "time_limit_seconds": 900
       }
@@ -233,8 +233,8 @@
         ],
         "reason": "completed",
         "returncode": 0,
-        "seconds": 0.5569690000011178,
-        "peak_rss_kib": 3568,
+        "seconds": 0.5742245829969761,
+        "peak_rss_kib": 13840,
         "rss_limit_mib": 384,
         "time_limit_seconds": 900
       }
@@ -251,13 +251,13 @@
         ],
         "reason": "completed",
         "returncode": 0,
-        "seconds": 1.6727987499998562,
-        "peak_rss_kib": 32768,
+        "seconds": 1.6854387499988661,
+        "peak_rss_kib": 32912,
         "rss_limit_mib": 384,
         "time_limit_seconds": 900
       }
     }
   ],
-  "seconds": 57.0629116250002,
+  "seconds": 58.82102195799962,
   "scope": "New finite-certificate integration. Includes n64 complementary enumeration, saved projection identities and raw moments, both displaced weights, n82 coordinate recount and exact dual replay, and native-circle arithmetic. Does not rerun the full original projection subset counts or the pre-existing paper suite."
 }
