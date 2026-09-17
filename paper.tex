@@ -271,6 +271,9 @@ agreement at a fixed rate and gap, with a linear count whose coefficient
 has logarithm of order $\eta^{-2}/\log(1/\eta)$.
 Every nearby word on these lines has exactly one nearby codeword;
 the obstruction persists without local list ambiguity.
+The same exceptional-count lower bound also has realizations with
+$p=n^{O_{\rho,\eta}(1)}$ (Corollary~\ref{fg:polynomial-fields});
+uniqueness is not asserted for those smaller-field realizations.
 No remainder that is $o(n)$ along this family can absorb a smaller
 linear coefficient. The simpler selection argument in
 Theorem~\ref{fg:fixed-gap} is retained as a preliminary construction.
@@ -1947,6 +1950,65 @@ challenge. If the graph contains $v$ selected nearby pairs,
 $vA_B\le va+n_B-a$, giving $v\le n_B-A_B+1\le n_B$.
 Exact anchored moment counts and prime-field fixtures of lengths
 $10,20,40$ and $11,22,44$ appear in \path{research/fixed_gap_padding/}.
+
+\begin{corollary}[Polynomial-size prime fields]\label{fg:polynomial-fields}
+For each fixed rational $\rho\in(0,1)$ and every sufficiently small
+rational $\eta>0$, the list lower bound and the exceptional-count lower
+bound $C_\rho(\eta)n$ above also hold along growing lengths with
+\[
+ n=o(p),\qquad p=n^{O_{\rho,\eta}(1)}.
+\]
+The rate and gap are exact, the radius is strictly below Elias, and
+no pair of codewords has correlated agreement at the threshold.
+This assertion does not include uniqueness of nearby codewords.
+\end{corollary}
+\begin{proof}
+Fix the integer seed with $m$ distinct nodes $a_1,\ldots,a_m$ and
+anchor $a_*=1$. If $B\mid p-1$, a standard multiplicative-character
+expansion counts the shifts $c$ for which every $c+a_i$ is a nonzero
+$B$th power. The product-character Weil bound
+\cite[Lemma 17]{bgks-shifted}, with constant additive phase, gives
+\[
+ \#\{c:\ c+a_i\in(\F_p^*)^B\ \text{for all }i\}
+ \ge \frac{p}{B^m}-m\sqrt p-m.
+\]
+Indeed, extend all characters by zero at zero. The all-principal
+term is $p-m$; every other term has absolute value at most
+$m\sqrt p+m$, allowing for the excluded roots. The resulting bound
+is positive if $p>16m^2B^{2m}$.
+
+By Linnik's least-prime theorem \cite{xylouris-linnik}, there are
+absolute constants $C,L_0$ such that the least prime congruent to $1$
+modulo $B^{2m+2}$ satisfies
+\[
+ B^{2m+2}<p\le C B^{(2m+2)L_0}.
+\]
+For all sufficiently large $B$, the nodes remain distinct modulo $p$
+and the preceding shift exists. Write $W_c(Y)=W(Y-c)$ and
+$G_{i,c}(Y)=G_i(Y-c)$, and choose $\alpha^B=c+a_*$. Remove $\alpha$
+from the union of the full fibers and replace the anchored quotients by
+\[
+ \frac{W_c(X^B)-W(a_*)}{X-\alpha},\qquad
+ \frac{G_{i,c}(X^B)-W(a_*)}{X-\alpha}.
+\]
+Their degrees and exact old-agreement counts are unchanged.
+For the padding, separate only the $L$ selected candidates, rather
+than the full interpolation pool $\mathcal T$. The sufficient bounds
+are then
+\[
+ p>mB+(K_B-1)\binom L2+q_B,\qquad p>(q_B-1)L^2.
+\]
+Both are eventually implied by the displayed lower bound on $p$,
+since the seed and $L$ are fixed and $K_B,q_B=O(B)$. This gives
+$Lq_B>C_\rho(\eta)n_B$ distinct nearby labels. The two degree bounds
+excluding correlated agreement do not change. Restoring the anchor
+gives the list-only construction as before. Finally $n_B=\Theta(B)$,
+so $n_B=o(p)$, the field size is polynomial in $n_B$, and strict
+Elias holds eventually. The exponent may depend on $\rho,\eta$;
+the displayed choice is $O_\rho(\eta^{-2}/\log(1/\eta))$ as
+$\eta\to0$. Separating only the selected candidates does not
+establish whole-line uniqueness.
+\end{proof}
 
 \paragraph{Concrete fixed-gap coefficients.}
 The earlier finite integer classes also supply explicit seeds.
@@ -5535,6 +5597,13 @@ odd-characteristic bounds $20$ and $62$.
 \input{research/riccati_cross_ratio/appendix.tex}
 
 \begin{thebibliography}{99}
+\bibitem{bgks-shifted} J. Bourgain, M. Z. Garaev, S. V. Konyagin,
+and I. E. Shparlinski. \emph{On the hidden shifted power problem}.
+arXiv:1110.0812v2, 2011. \url{https://arxiv.org/abs/1110.0812}.
+\bibitem{xylouris-linnik} T. Xylouris. \emph{On Linnik's constant}.
+Acta Arithmetica 150 (2011), 65--91.
+\url{https://arxiv.org/abs/0906.2749}.
+
 \bibitem{gasull-riccati} A. Gasull, J. Torregrosa, and X. Zhang.
 \emph{The number of polynomial solutions of polynomial Riccati equations}.
 arXiv:1602.03503, 2016. \url{https://arxiv.org/abs/1602.03503}.

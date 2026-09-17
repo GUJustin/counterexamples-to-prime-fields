@@ -557,3 +557,26 @@ cross terms individually have degree<K, whiledegAB>K, then
 g=CD hasdegree<K. The line isparalleltoacodeword, soevery nearby
 witness has afullcorrelatedexplanation. This doesnotcoverhighdegree
 cross-term cancellations. No manuscript addition or strongerlowerbound.
+
+NEW manuscript strengthening: fixed-gap selected lists and genuine
+ordinary-CA bad-label lower bounds can be realized with polynomial-size
+prime fields p=n^{O_rho,eta(1)}, still n=o(p), exact rate/gap and strict
+Elias. Corollary fg:polynomial-fields. A multiplicative-character count
+finds a shift c making all m seed nodes c+a Bth powers once
+p>16m^2 B^(2m). Bound N>=p/B^m-m sqrt(p)-m, from BGKS arXiv1110.0812v2
+Lemma17 with constant additive phase (primary source checked).
+Linnik for leastprime1mod B^(2m+2) supplies B^(2m+2)<p<=C B^((2m+2)L0)
+with absoluteL0 (Xylouris arXiv0906.2749 checked; no bestconstant claim).
+Translate seed, choose alpha^B=c+anchor, divide byX-alpha. Padding
+separates ONLY fixedselectedL, so itsfieldbounds O_seed(B) suffice.
+Wholeline uniqueness is NOT included in polynomial-field corollary;
+that older proof separates an exponential interpolationpool. Nor does
+this imply exact-listfiber rigidity or any prescribedsubgroup result.
+Exponent in n can be O_rho(eta^-2/log1/eta); constants/firstlength not
+uniformineta. Fullproof research/fixed_gap_padding/POLYNOMIAL_FIELDS.md.
+Three exact positive shiftcountchecks; two fulltranslatedpadding/list
+fixtures(p,B,n,K,A)=(1009,2,20,6,10),(65539,3,30,9,15), secondshift443,
+anchor2139. Allpass under384MiB watchdog, ~0.6sec. Addedchecker to
+Makefile (now66). NewPDF113pages buildswithno warnings/overfull/undefined;
+visuallyreviewedpages1,2,4,5,29,30,111,112. No livejob. Continue until
+atleast12:30UTC Sep17; currenttimeabout05:16UTC, goalnotcomplete.

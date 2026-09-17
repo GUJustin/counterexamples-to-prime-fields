@@ -39,6 +39,7 @@ verify:
 	$(PYTHON) research/fixed_gap_padding/verify_anchored_padding.py
 	$(PYTHON) research/fixed_gap_padding/verify_prescribed_gap.py
 	$(PYTHON) research/fixed_gap_padding/verify_unique_padding.py
+	$(PYTHON) research/fixed_gap_padding/verify_polynomial_fields.py
 	$(PYTHON) research/linear_differential_mca/verify.py
 	$(PYTHON) research/spectral_riccati/verify_constant.py
 	$(PYTHON) research/spectral_riccati/verify_weighted.py
