@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/nonsplit_torus_first_order/verify.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5525290829973528,
+  "peak_rss_kib": 6240,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

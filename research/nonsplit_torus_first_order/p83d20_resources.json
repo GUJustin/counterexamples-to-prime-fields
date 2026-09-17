@@ -1,0 +1,14 @@
+{
+  "command": [
+    "tmp/nonsplit-torus-scan",
+    "83",
+    "20",
+    "3"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 2.821199957994395,
+  "peak_rss_kib": 1696,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

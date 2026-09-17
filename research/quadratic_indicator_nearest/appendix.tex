@@ -7,7 +7,9 @@ only for the explicit candidate family used in the lower bound.
 It imposes no such restriction on general received words or domains.
 
 \begin{proposition}\label{prop:quadratic-indicator-rigidity}
-Let $p=4k+1$ be prime and let $w(x)=(1+x^{2k})/2$ on $\F_p^*$.
+Let $k\ge1$ and let $F$ contain all $4k$th roots of unity. Suppose
+$F$ has characteristic zero or characteristic $p>8k/3$. Put
+$w(x)=(1+x^{2k})/2$ on $\mu_{4k}\subset F$.
 The polynomials of degree at most $k$ agreeing with $w$ at more than
 $5k/3$ points are exactly $0,1$ and
 \[
@@ -20,7 +22,7 @@ strict degree bound $\deg P<k$, only $0,1$ remain.
 
 \begin{proof}
 For a nonconstant candidate $P$ of degree $\ell\le k$, let $z,o$ count
-its correct zeros on nonsquares and correct ones on squares. Put
+its correct zeros on $x^{2k}=-1$ and correct ones on $x^{2k}=1$. Put
 $A=z+o$ and $h=2k-A$. Root counting gives $A\le2\ell\le2k$, and the
 hypothesis gives $0\le h<k/3$. Let $U,V$ be the monic locators of the
 two agreement sets, and write
@@ -46,8 +48,8 @@ $\deg Y=k+(\alpha+\beta)/2$. Also $\gcd(ab,E)=1$.
 The common gcd of the terms in~\eqref{eq:quadratic-indicator-square}
 is therefore $X^{2t}$ for some $t\ge0$: if $E$ vanishes at zero,
 its order is less than $2k$ and equals the even order of $Y^2$.
-After division the identity is pairwise coprime. All degrees are less
-than $p$, since $2k+2h<p$. Polynomial abc gives
+After division the identity is pairwise coprime. In positive characteristic all degrees are less
+than $p$, since $2k+2h<8k/3<p$. In either characteristic polynomial abc gives
 \[
  2k+\alpha+\beta-2t
  \le (\deg Y-t)+\alpha+\beta+(\deg E-2t),
@@ -57,10 +59,10 @@ and cancels the minus one in abc. Hence
 $k\le(\alpha+\beta)/2+\deg E-t\le3h$, a contradiction.
 Here the required form of abc follows directly from the nonzero
 Wronskian $F'G-FG'$ for a coprime identity $F+G=H$: the repeated-root
-parts of all three polynomials divide this Wronskian. Degrees less
-than $p$ and a nonconstant term exclude a zero Wronskian.
+parts of all three polynomials divide this Wronskian. A nonconstant term excludes a zero Wronskian in characteristic zero;
+in positive characteristic the degree bound less than $p$ does so.
 
-Thus $E=0$. As $-1$ is a square in $\F_p$, we have
+Thus $E=0$. As $F$ contains a square root of $-1$, we have
 $b=\lambda a$ with $\lambda=\pm2\sqrt{-1}$. Cancellation gives
 \[
  (2\lambda P-\lambda-2)^2=-4\lambda X^{2k},
@@ -82,8 +84,9 @@ cannot witness growing first-order lists, even though its nearest
 agreement fraction is $1/2$.
 
 \begin{corollary}\label{cor:dickson-word-first-order-barrier}
-For every prime $p=4k+1>5$, the Dickson received word
-$W(x)=(x^k-1)^2/2$ on $\F_p^*$ has agreement at most
+Under the hypotheses of Proposition~\ref{prop:quadratic-indicator-rigidity},
+and with characteristic different from five, the Dickson received word
+$W(x)=(x^k-1)^2/2$ on $\mu_{4k}$ has agreement at most
 $\lfloor5k/3\rfloor$ with every degree-$<k$ polynomial, even with
 extension coefficients. In particular its maximum agreement fraction
 is at most $5/12$, below the quarter-rate first-order threshold.
@@ -93,11 +96,13 @@ Since $W=w-X^k$, a candidate exceeding the cutoff would give a monic
 degree-$k$ polynomial $P+X^k$ in Proposition~\ref{prop:quadratic-indicator-rigidity}.
 The leading coefficient $c=1/(v-u)$ of each nonconstant listed
 polynomial satisfies $4c^4+1=0$, since $(v-u)^4=-4$.
-It cannot equal one unless $p=5$.
+It cannot equal one unless the characteristic is five.
 \end{proof}
 
-Consequently enlarging the candidate bank for this fixed full-field
-word cannot reach the first-order regime. This does not rule out
+In particular this applies to every prime-field cyclic domain
+$\mu_{4k}\subseteq\F_p^*$ with $p>5$, including the full domain
+when $p=4k+1$. Enlarging the candidate bank for this cyclic word cannot
+reach the first-order regime. This does not rule out arbitrary
 puncturing or changing the word or evaluation domain.
 As a finite check, exhaustive enumeration
 of all $17^5$ polynomials of degree at most four over $\F_{17}$ finds

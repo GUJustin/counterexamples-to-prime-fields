@@ -1,0 +1,187 @@
+{
+  "status": "passed",
+  "total_cases": 71507296,
+  "rows": [
+    {
+      "p": 11,
+      "D": 4,
+      "cases": 1464,
+      "complete_polynomial_space": true,
+      "witnesses": [
+        {
+          "orbit": 3,
+          "projective_agreement": 8,
+          "affine_minimum": 7,
+          "affine_first_order_polynomial": -168
+        },
+        {
+          "orbit": 6,
+          "projective_agreement": 6,
+          "affine_minimum": 5,
+          "affine_first_order_polynomial": -1500
+        }
+      ]
+    },
+    {
+      "p": 19,
+      "D": 4,
+      "cases": 7240,
+      "complete_polynomial_space": true,
+      "witnesses": [
+        {
+          "orbit": 5,
+          "projective_agreement": 8,
+          "affine_minimum": 7,
+          "affine_first_order_polynomial": -3912
+        },
+        {
+          "orbit": 10,
+          "projective_agreement": 7,
+          "affine_minimum": 6,
+          "affine_first_order_polynomial": -5253
+        }
+      ]
+    },
+    {
+      "p": 19,
+      "D": 6,
+      "cases": 2613660,
+      "complete_polynomial_space": true,
+      "witnesses": [
+        {
+          "orbit": 5,
+          "projective_agreement": 8,
+          "affine_minimum": 7,
+          "affine_first_order_polynomial": -7392
+        },
+        {
+          "orbit": 10,
+          "projective_agreement": 10,
+          "affine_minimum": 9,
+          "affine_first_order_polynomial": -4348
+        }
+      ]
+    },
+    {
+      "p": 31,
+      "D": 6,
+      "cases": 29583456,
+      "complete_polynomial_space": true,
+      "witnesses": [
+        {
+          "orbit": 8,
+          "projective_agreement": 8,
+          "affine_minimum": 7,
+          "affine_first_order_polynomial": -24864
+        },
+        {
+          "orbit": 16,
+          "projective_agreement": 11,
+          "affine_minimum": 10,
+          "affine_first_order_polynomial": -16479
+        }
+      ]
+    },
+    {
+      "p": 43,
+      "D": 12,
+      "cases": 390864,
+      "complete_polynomial_space": false,
+      "witnesses": [
+        {
+          "orbit": 11,
+          "projective_agreement": 16,
+          "affine_minimum": 15,
+          "affine_first_order_polynomial": -66952
+        },
+        {
+          "orbit": 22,
+          "projective_agreement": 14,
+          "affine_minimum": 13,
+          "affine_first_order_polynomial": -78780
+        }
+      ]
+    },
+    {
+      "p": 67,
+      "D": 16,
+      "cases": 2447296,
+      "complete_polynomial_space": false,
+      "witnesses": [
+        {
+          "orbit": 17,
+          "projective_agreement": 22,
+          "affine_minimum": 21,
+          "affine_first_order_polynomial": -218748
+        },
+        {
+          "orbit": 34,
+          "projective_agreement": 19,
+          "affine_minimum": 18,
+          "affine_first_order_polynomial": -258969
+        }
+      ]
+    },
+    {
+      "p": 67,
+      "D": 22,
+      "cases": 6723508,
+      "complete_polynomial_space": false,
+      "witnesses": [
+        {
+          "orbit": 17,
+          "projective_agreement": 16,
+          "affine_minimum": 15,
+          "affine_first_order_polynomial": -397728
+        },
+        {
+          "orbit": 34,
+          "projective_agreement": 26,
+          "affine_minimum": 25,
+          "affine_first_order_polynomial": -284988
+        }
+      ]
+    },
+    {
+      "p": 83,
+      "D": 20,
+      "cases": 7680960,
+      "complete_polynomial_space": false,
+      "witnesses": [
+        {
+          "orbit": 21,
+          "projective_agreement": 20,
+          "affine_minimum": 19,
+          "affine_first_order_polynomial": -543512
+        },
+        {
+          "orbit": 42,
+          "projective_agreement": 18,
+          "affine_minimum": 17,
+          "affine_first_order_polynomial": -568892
+        }
+      ]
+    },
+    {
+      "p": 83,
+      "D": 28,
+      "cases": 22058848,
+      "complete_polynomial_space": false,
+      "witnesses": [
+        {
+          "orbit": 21,
+          "projective_agreement": 20,
+          "affine_minimum": 19,
+          "affine_first_order_polynomial": -764856
+        },
+        {
+          "orbit": 42,
+          "projective_agreement": 18,
+          "affine_minimum": 17,
+          "affine_first_order_polynomial": -781692
+        }
+      ]
+    }
+  ],
+  "scope": "All extremal witnesses replayed by homogeneous matrix substitution; case counts checked; full F11 search independently repeated. Other complete or sparse censuses rely on the audited C++ enumeration."
+}

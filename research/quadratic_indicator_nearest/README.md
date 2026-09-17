@@ -84,3 +84,8 @@ For prime p>5 its entire degree-<k nearest-list problem has maximum
 agreement at most floor(5k/3), since none of the four classified
 nonconstant polynomials is monic. Thus enlarging the known Dickson
 candidate bank cannot reach the first-order regime on the full domain.
+
+SUBGROUP_EXTENSION.md extends the near-nearest proof to mu_(4k) in
+any field of characteristic zero or characteristic p>8k/3. In particular
+it covers every prime-field cyclic subgroup, including short domains.
+The main-paper proposition states this stronger form.

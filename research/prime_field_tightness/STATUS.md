@@ -18,6 +18,17 @@ challenges with no ordinary CA, and extension degree at most n^5.
 The characteristic still exceeds message degree. This remains an
 extension-field result below the first-order regime. The expanded
 parameter checker passes283446 cases.
+The rigidity theorem is now generalized to mu_(4k) in characteristic
+zero or p>8k/3. Thus every prime-field cyclic subgroup is covered,
+including the short-domain variant of the same Dickson word.
+
+September17 nonsplit-projective-torus alternative:71,507,296 normalized
+polynomials were checked, with complete small-field spaces and sparse
+larger-field spaces. No first-order crossing survives affine puncturing
+to ordinary RS over the prime field. Independent homogeneous matrix
+replay verifies all extremal witnesses and repeats the smallest complete
+census. This is finite negative evidence only. See
+../nonsplit_torus_first_order/README.md.
 
 September 17, 2026. User priority: assess and pursue tightness of the
 Dao–Kominers–Thaler prime-field proximity-gap paper. Work horizon extended by the user on September 17
