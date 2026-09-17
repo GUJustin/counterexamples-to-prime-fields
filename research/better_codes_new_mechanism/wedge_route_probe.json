@@ -1,0 +1,38 @@
+{
+  "slab_difference_checks": 36,
+  "rows": [
+    {
+      "kappa": 1,
+      "H": 1383,
+      "z": 2975,
+      "gap": 5182612110404058,
+      "slab": 5977445618680445,
+      "margin": -794833508276387
+    },
+    {
+      "kappa": 1,
+      "H": 1383,
+      "z": 3206,
+      "gap": 5182612110404058,
+      "slab": 5752220013667427,
+      "margin": -569607903263369
+    },
+    {
+      "kappa": 2,
+      "H": 1538,
+      "z": 2975,
+      "gap": 771941716506871,
+      "slab": 5869967291515851,
+      "margin": -5098025575008980
+    },
+    {
+      "kappa": 2,
+      "H": 1538,
+      "z": 3206,
+      "gap": 771941716506871,
+      "slab": 5646559205097186,
+      "margin": -4874617488590315
+    }
+  ],
+  "scope": "Fixed small-scale shape; quotient weighted-cap erosion uses only guaranteed max(y,k*r), not assumed maximal factor weighted degree. Requires wedge-source and wedge-band formal lemmas; no helper/count certificate."
+}

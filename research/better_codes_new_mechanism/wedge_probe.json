@@ -1,0 +1,69 @@
+{
+  "shape": {
+    "m": 1000,
+    "L": 60000,
+    "S": 310,
+    "D": 181275000
+  },
+  "B_brute_checks": 90,
+  "C_brute_checks": 24,
+  "rows": [
+    {
+      "kappa": 1,
+      "H": 1383,
+      "C": 1838408675060967898,
+      "rank": 6993202449610,
+      "nullity_lower_bound": 5182612110404058,
+      "positive": true
+    },
+    {
+      "kappa": 2,
+      "H": 1383,
+      "C": 1800148867665392093,
+      "rank": 6960153900510,
+      "nullity_lower_bound": -24413716429901347,
+      "positive": false
+    },
+    {
+      "kappa": 2,
+      "H": 1538,
+      "C": 1833631189107521783,
+      "rank": 6991803159298,
+      "nullity_lower_bound": 771941716506871,
+      "positive": true
+    },
+    {
+      "kappa": 2,
+      "H": 1693,
+      "C": 1838408675060967898,
+      "rank": 6993202449610,
+      "nullity_lower_bound": 5182612110404058,
+      "positive": true
+    },
+    {
+      "kappa": 3,
+      "H": 1383,
+      "C": 1684615670402737623,
+      "rank": 6722714905556,
+      "nullity_lower_bound": -77703705799334441,
+      "positive": false
+    },
+    {
+      "kappa": 3,
+      "H": 1693,
+      "C": 1819186060882666598,
+      "rank": 6971034459030,
+      "nullity_lower_bound": -8228796345293722,
+      "positive": false
+    },
+    {
+      "kappa": 3,
+      "H": 2003,
+      "C": 1838408675060967898,
+      "rank": 6993202449610,
+      "nullity_lower_bound": 5182612110404058,
+      "positive": true
+    }
+  ],
+  "scope": "One finite weighted-support feasibility gate; rank is exact for enclosing local block, upper bound for extraction. No routing/certificate claim."
+}

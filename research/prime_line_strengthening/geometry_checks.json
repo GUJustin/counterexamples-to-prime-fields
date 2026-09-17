@@ -1,0 +1,32 @@
+{
+  "scope": "Upper bounds via exact witnesses; lower bounds via degree-k root counting, not exhaustive enlarged-code enumeration. No below-Elias assertion.",
+  "rows": [
+    {
+      "p": 17,
+      "n": 16,
+      "k": 6,
+      "r": 1,
+      "parameters_checked": 17,
+      "far_distance": 10,
+      "status": "passed"
+    },
+    {
+      "p": 19,
+      "n": 18,
+      "k": 8,
+      "r": 1,
+      "parameters_checked": 19,
+      "far_distance": 10,
+      "status": "passed"
+    },
+    {
+      "p": 37,
+      "n": 36,
+      "k": 16,
+      "r": 2,
+      "parameters_checked": 1369,
+      "far_distance": 20,
+      "status": "passed"
+    }
+  ]
+}

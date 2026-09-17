@@ -1,0 +1,19 @@
+{
+  "rows": [
+    {
+      "actual_weighted_degree": 55,
+      "gap": 771941716506871,
+      "slab": 5646559205097186,
+      "margin": -4874617488590315
+    },
+    {
+      "actual_weighted_degree": 67,
+      "gap": 771941716506871,
+      "slab": 5455308374797857,
+      "margin": -4683366658290986
+    }
+  ],
+  "all_integer_degree_classes_fail": true,
+  "reason": "Slab budget is nonincreasing in the actual weighted factor degree. Even the maximum permissible degree fails for this fixed wedge.",
+  "scope": "Only this fixed source wedge and critical factor context, not an exclusion of other support geometries."
+}
