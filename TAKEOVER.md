@@ -261,3 +261,25 @@ to characteristic-zero upper bounds and a Hadamard norm bound excluding
 the same supports at all sufficiently large primes. Thus full-word
 maximizers eventually cannot have orbit<=7. This is NOT an unbounded
 orbit theorem and remains a research note, not a main-paper claim.
+
+New proof-reviewed deduction: UNBOUNDED_BOUNDARY_LISTS.md uses primes
+p=9 mod16 and p=-1 modulo every odd prime<=R. Dirichlet supplies
+arbitrarily large such primes. Then k=(p-1)/4 has no divisors<=R except
+1,2. A nearest polynomial's multiplicative orbit is therefore >R,
+because orbit1/2 candidates agree on at most k coordinates, whereas
+Dickson gives3k/2. Exact 56 cyclotomic determinant norms exclude orbit2
+in all characteristics>17; verify_two_orbit.py records prime factors
+only2,3,5,7,17. This proves unbounded true boundary lists along chosen
+primes, still n~p. A three-coset version has exact rate1/3, maximum
+agreement>=5/12, and an unused base-field coset. It follows by deleting
+a square coset with at most half the total square agreement incidence.
+Neither version is an ordinary-CA line theorem or n=o(p) result.
+
+The quotient census extended through r9: maxima forr8,r9 are9,12,
+below3r/2. The infinite-family proof needs onlyr1,2 and bypasses the
+general quotient conjecture. Independent three-coset census atp41,k10
+checks30,045,015 interpolation subsets: maximum14, exactly20 nearest
+polynomials. Boundary anchor removal now works via true maximality;
+value diversity on padding points is the remaining line-transfer issue.
+These new results stay research notes pending further review, not
+additional main-paper pages. Last current PDF remains111 pages.

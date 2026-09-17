@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/dickson_fixed_gap/verify_two_orbit.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5501861249995272,
+  "peak_rss_kib": 3488,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

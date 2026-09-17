@@ -1,0 +1,713 @@
+{
+  "status": "PASS",
+  "triples": 56,
+  "possible_exceptional_primes": [
+    2,
+    3,
+    5,
+    7,
+    17
+  ],
+  "records": [
+    {
+      "support": [
+        0,
+        1,
+        2
+      ],
+      "determinant": "-2*x**2 + 4*x - 6",
+      "norm": 1088,
+      "prime_factors": [
+        2,
+        17
+      ]
+    },
+    {
+      "support": [
+        0,
+        1,
+        3
+      ],
+      "determinant": "2*x**3 - 4*x**2 - 2*x",
+      "norm": 576,
+      "prime_factors": [
+        2,
+        3
+      ]
+    },
+    {
+      "support": [
+        0,
+        1,
+        4
+      ],
+      "determinant": "-4*x**2",
+      "norm": 256,
+      "prime_factors": [
+        2
+      ]
+    },
+    {
+      "support": [
+        0,
+        1,
+        5
+      ],
+      "determinant": "-4*x**3",
+      "norm": 256,
+      "prime_factors": [
+        2
+      ]
+    },
+    {
+      "support": [
+        0,
+        1,
+        6
+      ],
+      "determinant": "-2*x**2 + 4*x - 2",
+      "norm": 64,
+      "prime_factors": [
+        2
+      ]
+    },
+    {
+      "support": [
+        0,
+        1,
+        7
+      ],
+      "determinant": "2*x**3 - 4*x**2 + 2*x",
+      "norm": 64,
+      "prime_factors": [
+        2
+      ]
+    },
+    {
+      "support": [
+        0,
+        2,
+        3
+      ],
+      "determinant": "-4*x**3 - 2*x**2 + 2",
+      "norm": 64,
+      "prime_factors": [
+        2
+      ]
+    },
+    {
+      "support": [
+        0,
+        2,
+        4
+      ],
+      "determinant": "8",
+      "norm": 4096,
+      "prime_factors": [
+        2
+      ]
+    },
+    {
+      "support": [
+        0,
+        2,
+        5
+      ],
+      "determinant": "2*x**2 + 4*x + 6",
+      "norm": 1088,
+      "prime_factors": [
+        2,
+        17
+      ]
+    },
+    {
+      "support": [
+        0,
+        2,
+        6
+      ],
+      "determinant": "8*x**2",
+      "norm": 4096,
+      "prime_factors": [
+        2
+      ]
+    },
+    {
+      "support": [
+        0,
+        2,
+        7
+      ],
+      "determinant": "4*x**3 - 2*x**2 + 2",
+      "norm": 64,
+      "prime_factors": [
+        2
+      ]
+    },
+    {
+      "support": [
+        0,
+        3,
+        4
+      ],
+      "determinant": "4*x**2",
+      "norm": 256,
+      "prime_factors": [
+        2
+      ]
+    },
+    {
+      "support": [
+        0,
+        3,
+        5
+      ],
+      "determinant": "2*x**3 + 4*x**2 + 2*x",
+      "norm": 64,
+      "prime_factors": [
+        2
+      ]
+    },
+    {
+      "support": [
+        0,
+        3,
+        6
+      ],
+      "determinant": "4*x**3 + 2*x**2 - 6",
+      "norm": 1088,
+      "prime_factors": [
+        2,
+        17
+      ]
+    },
+    {
+      "support": [
+        0,
+        3,
+        7
+      ],
+      "determinant": "-4*x",
+      "norm": 256,
+      "prime_factors": [
+        2
+      ]
+    },
+    {
+      "support": [
+        0,
+        4,
+        5
+      ],
+      "determinant": "4*x**2",
+      "norm": 256,
+      "prime_factors": [
+        2
+      ]
+    },
+    {
+      "support": [
+        0,
+        4,
+        6
+      ],
+      "determinant": "-8",
+      "norm": 4096,
+      "prime_factors": [
+        2
+      ]
+    },
+    {
+      "support": [
+        0,
+        4,
+        7
+      ],
+      "determinant": "-4*x**2",
+      "norm": 256,
+      "prime_factors": [
+        2
+      ]
+    },
+    {
+      "support": [
+        0,
+        5,
+        6
+      ],
+      "determinant": "-2*x**2 - 4*x - 2",
+      "norm": 64,
+      "prime_factors": [
+        2
+      ]
+    },
+    {
+      "support": [
+        0,
+        5,
+        7
+      ],
+      "determinant": "-2*x**3 - 4*x**2 + 2*x",
+      "norm": 576,
+      "prime_factors": [
+        2,
+        3
+      ]
+    },
+    {
+      "support": [
+        0,
+        6,
+        7
+      ],
+      "determinant": "4*x**3 - 2*x**2 + 6",
+      "norm": 1088,
+      "prime_factors": [
+        2,
+        17
+      ]
+    },
+    {
+      "support": [
+        1,
+        2,
+        3
+      ],
+      "determinant": "-6*x**3 + 6*x - 4",
+      "norm": 3136,
+      "prime_factors": [
+        2,
+        7
+      ]
+    },
+    {
+      "support": [
+        1,
+        2,
+        4
+      ],
+      "determinant": "2*x**2 + 4*x + 2",
+      "norm": 64,
+      "prime_factors": [
+        2
+      ]
+    },
+    {
+      "support": [
+        1,
+        2,
+        5
+      ],
+      "determinant": "4*x**3 + 8*x",
+      "norm": 6400,
+      "prime_factors": [
+        2,
+        5
+      ]
+    },
+    {
+      "support": [
+        1,
+        2,
+        6
+      ],
+      "determinant": "8*x**2 - 4",
+      "norm": 6400,
+      "prime_factors": [
+        2,
+        5
+      ]
+    },
+    {
+      "support": [
+        1,
+        2,
+        7
+      ],
+      "determinant": "2*x**3 + 2*x - 4",
+      "norm": 576,
+      "prime_factors": [
+        2,
+        3
+      ]
+    },
+    {
+      "support": [
+        1,
+        3,
+        4
+      ],
+      "determinant": "2*x**3 + 4*x**2 - 2*x",
+      "norm": 576,
+      "prime_factors": [
+        2,
+        3
+      ]
+    },
+    {
+      "support": [
+        1,
+        3,
+        5
+      ],
+      "determinant": "8*x**3",
+      "norm": 4096,
+      "prime_factors": [
+        2
+      ]
+    },
+    {
+      "support": [
+        1,
+        3,
+        6
+      ],
+      "determinant": "6*x**3 - 6*x - 4",
+      "norm": 3136,
+      "prime_factors": [
+        2,
+        7
+      ]
+    },
+    {
+      "support": [
+        1,
+        3,
+        7
+      ],
+      "determinant": "-8*x",
+      "norm": 4096,
+      "prime_factors": [
+        2
+      ]
+    },
+    {
+      "support": [
+        1,
+        4,
+        5
+      ],
+      "determinant": "4*x**3",
+      "norm": 256,
+      "prime_factors": [
+        2
+      ]
+    },
+    {
+      "support": [
+        1,
+        4,
+        6
+      ],
+      "determinant": "-2*x**2 - 4*x - 6",
+      "norm": 1088,
+      "prime_factors": [
+        2,
+        17
+      ]
+    },
+    {
+      "support": [
+        1,
+        4,
+        7
+      ],
+      "determinant": "-2*x**3 - 4*x**2 - 2*x",
+      "norm": 64,
+      "prime_factors": [
+        2
+      ]
+    },
+    {
+      "support": [
+        1,
+        5,
+        6
+      ],
+      "determinant": "-4*x**3 - 8*x",
+      "norm": 6400,
+      "prime_factors": [
+        2,
+        5
+      ]
+    },
+    {
+      "support": [
+        1,
+        5,
+        7
+      ],
+      "determinant": "-8*x**3",
+      "norm": 4096,
+      "prime_factors": [
+        2
+      ]
+    },
+    {
+      "support": [
+        1,
+        6,
+        7
+      ],
+      "determinant": "2*x**3 + 2*x + 4",
+      "norm": 576,
+      "prime_factors": [
+        2,
+        3
+      ]
+    },
+    {
+      "support": [
+        2,
+        3,
+        4
+      ],
+      "determinant": "-4*x**3 + 2*x**2 - 6",
+      "norm": 1088,
+      "prime_factors": [
+        2,
+        17
+      ]
+    },
+    {
+      "support": [
+        2,
+        3,
+        5
+      ],
+      "determinant": "-2*x**3 - 2*x - 4",
+      "norm": 576,
+      "prime_factors": [
+        2,
+        3
+      ]
+    },
+    {
+      "support": [
+        2,
+        3,
+        6
+      ],
+      "determinant": "-8*x**2 - 4",
+      "norm": 6400,
+      "prime_factors": [
+        2,
+        5
+      ]
+    },
+    {
+      "support": [
+        2,
+        3,
+        7
+      ],
+      "determinant": "-8*x**3 - 4*x",
+      "norm": 6400,
+      "prime_factors": [
+        2,
+        5
+      ]
+    },
+    {
+      "support": [
+        2,
+        4,
+        5
+      ],
+      "determinant": "2*x**2 - 4*x + 2",
+      "norm": 64,
+      "prime_factors": [
+        2
+      ]
+    },
+    {
+      "support": [
+        2,
+        4,
+        6
+      ],
+      "determinant": "-8*x**2",
+      "norm": 4096,
+      "prime_factors": [
+        2
+      ]
+    },
+    {
+      "support": [
+        2,
+        4,
+        7
+      ],
+      "determinant": "-4*x**3 - 2*x**2 + 6",
+      "norm": 1088,
+      "prime_factors": [
+        2,
+        17
+      ]
+    },
+    {
+      "support": [
+        2,
+        5,
+        6
+      ],
+      "determinant": "4 - 8*x**2",
+      "norm": 6400,
+      "prime_factors": [
+        2,
+        5
+      ]
+    },
+    {
+      "support": [
+        2,
+        5,
+        7
+      ],
+      "determinant": "-6*x**3 + 6*x + 4",
+      "norm": 3136,
+      "prime_factors": [
+        2,
+        7
+      ]
+    },
+    {
+      "support": [
+        2,
+        6,
+        7
+      ],
+      "determinant": "8*x**2 + 4",
+      "norm": 6400,
+      "prime_factors": [
+        2,
+        5
+      ]
+    },
+    {
+      "support": [
+        3,
+        4,
+        5
+      ],
+      "determinant": "-2*x**3 + 4*x**2 - 2*x",
+      "norm": 64,
+      "prime_factors": [
+        2
+      ]
+    },
+    {
+      "support": [
+        3,
+        4,
+        6
+      ],
+      "determinant": "-4*x**3 + 2*x**2 - 2",
+      "norm": 64,
+      "prime_factors": [
+        2
+      ]
+    },
+    {
+      "support": [
+        3,
+        4,
+        7
+      ],
+      "determinant": "4*x",
+      "norm": 256,
+      "prime_factors": [
+        2
+      ]
+    },
+    {
+      "support": [
+        3,
+        5,
+        6
+      ],
+      "determinant": "-2*x**3 - 2*x + 4",
+      "norm": 576,
+      "prime_factors": [
+        2,
+        3
+      ]
+    },
+    {
+      "support": [
+        3,
+        5,
+        7
+      ],
+      "determinant": "8*x",
+      "norm": 4096,
+      "prime_factors": [
+        2
+      ]
+    },
+    {
+      "support": [
+        3,
+        6,
+        7
+      ],
+      "determinant": "8*x**3 + 4*x",
+      "norm": 6400,
+      "prime_factors": [
+        2,
+        5
+      ]
+    },
+    {
+      "support": [
+        4,
+        5,
+        6
+      ],
+      "determinant": "2*x**2 - 4*x + 6",
+      "norm": 1088,
+      "prime_factors": [
+        2,
+        17
+      ]
+    },
+    {
+      "support": [
+        4,
+        5,
+        7
+      ],
+      "determinant": "-2*x**3 + 4*x**2 + 2*x",
+      "norm": 576,
+      "prime_factors": [
+        2,
+        3
+      ]
+    },
+    {
+      "support": [
+        4,
+        6,
+        7
+      ],
+      "determinant": "4*x**3 + 2*x**2 - 2",
+      "norm": 64,
+      "prime_factors": [
+        2
+      ]
+    },
+    {
+      "support": [
+        5,
+        6,
+        7
+      ],
+      "determinant": "6*x**3 - 6*x + 4",
+      "norm": 3136,
+      "prime_factors": [
+        2,
+        7
+      ]
+    }
+  ]
+}

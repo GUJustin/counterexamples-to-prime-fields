@@ -78,5 +78,25 @@
     "maximum_agreement": 8,
     "maximizing_polynomials": 70,
     "complete": true
+  },
+  {
+    "r": 8,
+    "p": 65537,
+    "n": 32,
+    "primitive_root": 65529,
+    "interpolation_subsets": 10518300,
+    "maximum_agreement": 9,
+    "maximizing_polynomials": 448,
+    "complete": true
+  },
+  {
+    "r": 9,
+    "p": 65521,
+    "n": 36,
+    "primitive_root": 19784,
+    "interpolation_subsets": 94143280,
+    "maximum_agreement": 12,
+    "maximizing_polynomials": 3,
+    "complete": true
   }
 ]

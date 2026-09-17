@@ -31,7 +31,11 @@ comes with its orbit, all at the true maximum agreement. An unbounded
 orbit of maximizers would give an unbounded boundary list, even if that
 maximum exceeds 3n/8. But small orbits are possible: P=Q(X^(k/r)) with
 r dividing k has orbit at most r and degree Q<r. Such candidates reduce
-to a degree-<r problem on mu_(4r). Their exclusion is NOT proved.
+to a degree-<r problem on mu_(4r). A uniform exclusion for all r is NOT
+proved. However, UNBOUNDED_BOUNDARY_LISTS.md now bypasses that question:
+choose primes for which k has no small odd divisor and v_2(k)=1.
+The certified r=1,2 exclusions then prove unbounded orbits of maximizers
+along the selected sequence of primes. This does not change n/p.
 
 Further obstacles remain even with a boundary list: the construction
 must provide enough distinct candidate values on padding coordinates,
@@ -48,7 +52,7 @@ maximizing interpolation subsets by that value gives its exact count.
 The trivial bound A>=r ensures no maximizer is missed. Memory does not
 grow with the number of interpolation subsets.
 
-At the split auxiliary prime 65521 the complete results are:
+At the split auxiliary prime 65521 (65537 for r=8), the complete results are:
 
 | r | maximum agreement | maximizing polynomials |
 |---|---:|---:|
@@ -59,18 +63,20 @@ At the split auxiliary prime 65521 the complete results are:
 | 5 | 5 | 15504 |
 | 6 | 8 | 9 |
 | 7 | 8 | 70 |
+| 8 | 9 | 448 |
+| 9 | 12 | 3 |
 
 All maxima are strictly below 3r/2. These finite upper bounds also hold
 in characteristic zero on the same root-of-unity domains: every
 interpolation coefficient lies in the cyclotomic field and its
 denominators are products of distinct-node differences. Reduction at a
-prime above 65521 preserves those denominators and all agreement
+prime above the corresponding auxiliary prime preserves those denominators and all agreement
 equalities. Thus a characteristic-zero counterexample would specialize
 to one found by the exhaustive finite-field census. The converse need
 not hold; do not claim that every maximizing finite-field configuration
 lifts to characteristic zero.
 
-For each fixed r<=7 this also excludes such excessive agreement in all
+For each fixed r<=9 this also excludes such excessive agreement in all
 sufficiently large characteristics. For any support of size A+1, some
 (r+1)-row augmented Vandermonde minor is nonzero in characteristic zero.
 Its entries in the first r columns have complex absolute value one,
@@ -81,10 +87,11 @@ bound cannot annihilate that minor. This uniform bound covers all
 supports, since it does not depend on the support or chosen minor.
 
 Consequently, for sufficiently large p, a maximizer of the full Dickson
-word cannot have a multiplicative orbit of size at most seven: its
+word cannot have a multiplicative orbit of size at most nine: its
 agreement is at least 3n/8, while each such quotient would force less.
-This is only a finite lower bound on orbit size, not an unbounded-orbit
-theorem. Extending the strict 3r/2 upper bound to all r is an open step.
+This census alone gives only a finite lower bound on orbit size.
+Extending the strict 3r/2 upper bound to all r remains open; the separate
+prime-selection proof now gives an unbounded-orbit theorem without it.
 
 Reproduction: compile with an available C++17 compiler at -O2 -UNDEBUG,
 outputting `tmp/dickson-quotient-scan`, and run `run_quotient_scan.py`
