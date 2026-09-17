@@ -104,9 +104,9 @@ The source formulas were checked in recovered version7, Theorem1.1 and
 Equation(23), pages7 and22. This is not a claim that every conceivable
 first-order proof has these costs. In particular, sparse-support root
 counting, lower actual degrees, global constraint dependencies, or a
-new agreement argument could improve the ledger. The conclusion also
-uses leading normalized coefficients; it is not a uniform exact
-finite-length lower bound when epsilon shrinks with n.
+new agreement argument could improve the ledger. The argument above uses leading normalized coefficients. The subsequent
+FINITE_LENGTH_GAP_COSTS.md gives an exact finite-length extension for
+full-coefficient monomial sources, using an explicit corrected margin.
 
 ## Extension to translation-stable nonmonomial jet spaces
 

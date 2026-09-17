@@ -139,6 +139,57 @@ nonmonomial jet spaces with the stated filtered benefit.
 They are not lower bounds on actual kernel-vector degrees, candidate
 lists, or exceptional challenges. Global constraint dependencies, finer
 coefficient-degree accounting, or different reconstruction and agreement
-arguments could improve the bounds. Unlike Section~\ref{sec:finite-length},
-this section does not give a uniform exact finite-length converse when
-$\varepsilon$ shrinks with block length.
+arguments could improve the bounds. The statements above use leading coefficients. For the monomial source
+with full coefficient prefixes, the following refinement gives exact
+finite-length accounting.
+
+
+\begin{corollary}[Exact finite-length parameter costs]
+Use the source, degree bounds $U,V$, dimension $G$, and local rank $R$
+of Section~\ref{sec:finite-length}. Suppose $\Delta=G/N-R>0$. Put
+\[
+ a_* =\frac{AN-8}{N(N-8)},\qquad \varepsilon_*=a_*-a_0.
+\]
+If $0<\varepsilon_*\le1/2000$, all four inequalities in
+\eqref{eq:cost-lower} hold with $\varepsilon_*$ in place of
+$\varepsilon$. Thus the exact uniform count
+\[
+ (\ell+1)G>N(\ell+\beta+1)R,\qquad\beta\ge U,
+\]
+requires $\ell=\Omega(\varepsilon_*^{-2})$. The unchanged reconstruction
+budgets have orders at least $\Omega(D\varepsilon_*^{-3})$ and
+$\Omega(D^2\varepsilon_*^{-5})$. These assertions are uniform in $m$.
+\end{corollary}
+\begin{proof}
+The finite-length reduction deletes final diagonals with nonpositive
+surplus and produces a downward support $S_0$ of saturated rank $R_0$.
+Writing $G_0$ for its coefficient dimension and $B_*$ for its leading
+benefit at $a_*$, that reduction proves
+\[
+ R_0\le R,\qquad \Delta_0=G_0/N-R_0\ge\Delta>0,
+ \qquad B_*\ge G_0/N.
+\]
+All retained benefits at $a_*$ are positive. Applying
+Theorem~\ref{thm:gap-costs} to $S_0$ proves the multiplicity and coordinate
+degree bounds, since its degrees do not exceed those of the original
+source. Moreover,
+\[
+ \frac R\Delta\ge\frac{R_0}{\Delta_0}
+ \ge\frac{R_0}{B_*-R_0}\ge\frac1{8\varepsilon_*}.
+\]
+The challenge and reconstruction calculations are unchanged.
+\end{proof}
+
+If $A/N=a_0+\varepsilon$, the exact effective margin is
+\[
+ \varepsilon_*=
+ \frac{N\varepsilon+8a_0-8/N}{N-8}.
+\]
+For $\varepsilon\ge1/N$, it is $\Theta(\varepsilon)$ as $N$ grows.
+At the rounded threshold $A=\lceil Na_0\rceil$, it satisfies
+$0<\varepsilon_*<5/(N-8)$. Consequently this framework requires
+$m=\Omega(N)$ and $\ell=\Omega(N^2)$ there, and its displayed list and
+MCA budgets are respectively $\Omega(N^4)$ and $\Omega(N^7)$.
+These remain costs of the specified sufficient bounds, not lower bounds
+on actual lists or exceptional sets. The exact finite-length extension
+here is monomial; no finite-length nonmonomial degeneration is asserted.

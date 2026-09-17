@@ -6,11 +6,13 @@ Working draft by Justin Thaler, September 17, 2026.
 
 **Current research snapshot (September 17):** the main ePrint-style article
 is 158 pages with one-inch margins. A separate
-[14-page first-order tightness note](research/first_order_support_audit/note/main.pdf)
+[15-page first-order tightness note](research/first_order_support_audit/note/main.pdf)
 proves the sharp quarter-rate threshold for the specified interpolation
 framework, and sharp inverse-margin powers for its unchanged list and MCA
 bounds. These method limitations include translation-stable nonmonomial
-jet spaces; they are not intrinsic list-size or exception-count lower bounds.
+jet spaces. For full-coefficient monomial sources, an exact finite-length
+extension uses an explicit corrected margin, uniformly in multiplicity.
+These are not intrinsic list-size or exception-count lower bounds.
 [Research status](research/prime_field_tightness/STATUS.md) distinguishes
 proved results from open targets. No better.codes improvement is claimed.
 

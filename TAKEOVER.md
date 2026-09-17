@@ -2476,3 +2476,22 @@ current research branch can fast-forward it.
 Live better.codes checked September 17: interval 68.11--116.13 bits; no
 improvement from this work. Method tightness does not resolve the
 prescribed-domain and extension-field transfer obstacle.
+
+## September 17: exact finite-length margin-cost extension
+
+FINITE_LENGTH_GAP_COSTS.md and Corollary 7.4 of the now 15-page technical
+note transfer all four cost inequalities to exact full-coefficient
+monomial sources. With a*=(AN-8)/(N(N-8)) and epsilon*=a*-a0, the
+rank/surplus bound follows by deleting nonpositive-surplus diagonals and
+comparing the retained benefit. This is uniform in multiplicity. At
+A=ceil(N a0), it forces multiplicity Omega(N), challenge budget Omega(N^2),
+and unchanged list/MCA budgets Omega(N^4), Omega(N^7). These remain proof
+framework costs, not intrinsic code lower bounds or a benchmark gain.
+Exact verifier passed 6750 reductions, 1054 positive-surplus ratio
+comparisons, and one near-critical positive length-one-million fixture.
+The note builds cleanly and the new page was visually inspected.
+
+The preceding GitHub main update was verified at
+86facc474c40d8edbe463de6721b99233cf7d5b1, with both manuscript PDFs and
+their principal sources matching remote blob hashes. Continue pushing
+verified updates, as explicitly requested by the user.

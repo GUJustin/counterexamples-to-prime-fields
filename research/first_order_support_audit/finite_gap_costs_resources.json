@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/first_order_support_audit/verify_finite_gap_costs.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5478994999939459,
+  "peak_rss_kib": 7184,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

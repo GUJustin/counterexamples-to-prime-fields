@@ -31,7 +31,9 @@ the asymptotic threshold. Finite-length corrections permit only a
 constant number of agreement coordinates of improvement. Within the unchanged
 first-order interpolation and reconstruction bounds, optimizing monomial supports or translation-stable nonmonomial
 jet spaces also cannot improve the cubic list-budget and
-fifth-power MCA-budget dependence on the margin above this threshold. Two exact
+fifth-power MCA-budget dependence on the margin above this threshold.
+For full-coefficient monomial sources, these cost bounds hold at finite
+length with an explicit corrected margin, uniformly in multiplicity. Two exact
 certificates separately improve a known sufficient curve at higher rates.
 These are statements about a specified dimension-counting method, not
 intrinsic lower bounds on Reed--Solomon lists or proximity gaps.
@@ -478,7 +480,9 @@ lemma. An additional exact verifier checks 3743 arbitrary supports for
 the rank estimates in Section~\ref{sec:gap-costs}, the narrow-cap obstruction,
 and three positive-surplus supports for the parameter inequalities.
 Another verifier checks 504 saturated-rank comparisons under degree-preserving
-nonmonomial degeneration, including 196 strict rank drops.
+nonmonomial degeneration, including 196 strict rank drops. The finite-length cost transfer is
+checked in 6750 reductions, including 1054 positive-surplus ratio
+comparisons and a near-critical positive certificate at length one million.
 These checks corroborate the formulas; the proofs establish the
 quantified statements. Scripts and reports accompany this note in
 \path{research/first_order_support_audit/}.

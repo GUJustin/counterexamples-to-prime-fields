@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "reduction_checks": 6750,
+  "positive_surplus_ratio_checks": 1054,
+  "fixture": {
+    "N": 1000000,
+    "A": 469000,
+    "m": 2048,
+    "monomials": 3147830,
+    "G": 1337059798719148,
+    "R": 1336401790,
+    "normalized_surplus": "164502179787/250000",
+    "effective_agreement": "58624999999/124999000000",
+    "challenge_budget": 7803020
+  },
+  "scope": "Exact finite-length proof-ledger cost transfer; no intrinsic list lower bound."
+}
