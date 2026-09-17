@@ -55,18 +55,30 @@ def fixture(B):
     require(len(seen)==signatures,'all partial-fiber signatures distinct')
     require(len(zero_masks)==2**m,'only full-fiber zero sums')
     W=[0]*(2*B+1);W[2*B]=1;W[B]=-16%p
-    candidates=[]
+    candidates=[];line_profile={}
     for chosen in combinations(range(n),2*B):
         # Every candidate locator must have its first root moment zero.
         if sum(nodes[j] for j in chosen)%p:continue
         F=locator([nodes[j] for j in chosen],p)
+        if all(F[j]==0 for j in range(B,2*B) if j!=B):
+            z=(16+F[B])%p
+            lifted_constant=[-F[0]%p]+[0]*(B-1)
+            require(all(F[j]==0 for j in range(1,B)),'composed line candidate')
+            line_profile.setdefault(z,[]).append(lifted_constant)
         P=[(a-b)%p for a,b in zip(W,F)]
         if any(P[B:]):continue
         candidates.append(P[:B])
     require(sorted(candidates)==sorted([[(-39)%p]+[0]*(B-1),[(-55)%p]+[0]*(B-1)]),'exact composed list')
+    seed_profile={}
+    for a,b in combinations(qs,2):
+        seed_profile.setdefault((16-a-b)%p,[]).append([-a*b%p]+[0]*(B-1))
+    require({z:sorted(v) for z,v in line_profile.items()}=={z:sorted(v) for z,v in seed_profile.items()},'complete line profile preserved')
+    require(len(line_profile)==8 and max(map(len,line_profile.values()))==2,'line counts')
     return dict(B=B,p=p,n=n,k=B,agreement=2*B,seed_primes=qs,fibers=fibers,
                 subset_checks=2**n,distinct_partial_signatures=len(seen),
-                zero_sum_subsets=len(zero_masks),exact_list=candidates,split_primes_tried=attempts)
+                zero_sum_subsets=len(zero_masks),exact_list=candidates,split_primes_tried=attempts,
+                nearby_line_labels=len(line_profile),maximum_list_on_line=max(map(len,line_profile.values())),
+                line_profile=line_profile)
 
 if __name__=='__main__':
     result=dict(status='PASS',fixtures=[fixture(2),fixture(3)])

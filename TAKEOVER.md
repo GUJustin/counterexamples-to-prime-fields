@@ -336,3 +336,22 @@ strict Elias. No stronger inverse-gap exponent is claimed. Guarded
 verify_prime_fiber_rigidity.py passes all1024/32768 subset checks for
 B2/B3 and exactly preserves the two-word seed list on3,5,7,11,13.
 This proof and consequence remain research notes pending further audit.
+
+Extended prime-fiber rigidity to entire received lines U(X^B)+zV(X^B)
+with deg U,deg V<=t: the full nearby-witness profile, nearby labels,
+selected-witness affine concurrency, and ordinary CA at thresholdtB
+are preserved from the seed. Leading-degree cancellation is handled
+separately by root counting. Thus this controlled composition cannot
+amplify line counts. Exact B2/B3 replay of W_z(Y)=Y^2+(z-16)Y has
+exactly8 nearby labels and maximum list2, matching the seed completely.
+
+Potential extension currently being audited: arbitrary distinct integer
+seed nodes q_i and arbitrary B>=2 could use a generic centered monic
+polynomial phi_B with Gal(product_i(phi_B-q_i))=S_B^m. Independent
+transposition monodromy at the distinct discriminant hypersurfaces
+would prove the generic product group; Hilbert irreducibility would
+specialize it over Q. Transpositions rule out every partial-fiber subset
+sum relation. Chebotarev plus finite norm exclusions then gives exact
+list preservation for W(phi_B) without prime-node restrictions. This
+is not yet a verified theorem; check the generic Galois-group and
+specialization steps before using it.

@@ -117,3 +117,42 @@ This retains the previous moment construction's asymptotic lower-bound
 exponent. Its additional conclusion is exact preservation of the entire
 list at the selected word. It is not a new lower bound on the global
 worst-case list size, and does not settle actual-list-size line bounds.
+
+## Entire low-degree received-line profiles are preserved
+
+The correspondence holds simultaneously for every member of any seed
+line W_z(Y)=U(Y)+z V(Y), with deg U,deg V<=t. On the lifted line
+W_z(X^B), at threshold tB and message dimension kB, all nearby
+polynomials are exactly the compositions of seed nearby polynomials at
+threshold t. The statement is valid for parameters in any extension
+alphabet. When W_z has degree t, divide its difference from the candidate
+by its leading coefficient and use the same zero-root-sum proof. When
+deg W_z<t, tB roots force the difference to be identically zero, which
+is possible exactly when W_z itself has degree<k. This is also precisely
+the seed conclusion. Thus no leading-coefficient exceptional parameter
+is omitted.
+
+For selected witness pairs the maximum concurrency on a parametrized
+affine codeword line is preserved too. Any such line containing two
+lifted candidates has composed intercept and direction, by interpolating
+those two candidates at their two distinct labels. It therefore comes
+from a seed codeword line, and conversely composition preserves every
+seed concurrency. Single-pair concurrency causes no exception.
+
+Ordinary correlated agreement at these thresholds is preserved as well.
+If there are explaining F,G of degree<kB on at least tB common
+coordinates, choose two parameters whose received members have degree
+t, when the seed line has a nonzero degree-t coefficient. Each combined
+candidate is composed by the preceding argument, so F and G are composed.
+The common agreement set is then a union of fibers and has at least t
+seed coordinates. If both received coefficients have degree<t, any one
+of their differences from a candidate has degree<tB, so tB common roots
+force polynomial equality; a correlated explanation exists exactly when
+both coefficients are codewords, again matching the seed statement.
+
+Consequently this controlled composition lift cannot increase the
+number of nearby parameter labels or produce a superlinear line count.
+It preserves normalized distance but increases length. Padding leaves
+this low-degree received-line setting; its direction vanishes on too
+many core points to have degree<=tB. The pointwise list control must not
+be carried over to that different line without a new proof.
