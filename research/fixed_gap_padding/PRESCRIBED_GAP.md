@@ -81,6 +81,24 @@ This is an all-small-rational-gap theorem. Each eta has its own fixed
 integer seed and its own unbounded sequence of B and splitting primes.
 There is no uniform bound on the least length or field size.
 
+## List lower bound at each prescribed gap
+
+The same parameters give a list lower bound without removing the anchor.
+Keep the full mB-point union of fibers, and add n-mB arbitrary distinct
+points outside it. Use the received polynomial W(X^B). The L polynomials
+G_i(X^B) have degree at most B(k-1)<K and agree at exactly Bt points:
+their differences are the degree-Bt locators F_i(X^B), whose roots are
+already all in the fiber union. Thus for every sufficiently small rational
+eta there are growing-length, exact-rate-rho, exact-gap-eta codes with
+
+    log_2 list_size >= (H^2/2-o_rho(1))/(eta^2 log_2(1/eta)).
+
+As above, n=o(p) and strict Elias can be imposed. This is a lower bound
+on a displayed list, not an exact list characterization. The list is
+fixed as B grows; unbounded lists at one fixed short-domain gap are
+not proved. This domain differs from the line construction's domain
+by restoring the anchor and dropping one padding point.
+
 ## Checks and limits
 
 verify_prescribed_gap.py checks the exact rational inequalities and
@@ -90,6 +108,10 @@ Its two prime-field fixtures have (p,n,K,A)=(1009,21,5,10) and
 nearby labels. The global common-agreement bounds are 9 and 19.
 These are mechanism checks; they do not demonstrate the asymptotic
 coefficient or prove splitting-prime infinitude.
+The checker also restores the anchor in both fixtures and multiplies
+the quotient word and candidates by X-1. Both candidates then have
+exactly A agreements with the polynomial received word, with degree
+strictly below K, on the unanchored length-n domains.
 
 The whole construction remains linear in n at each fixed gap. It does
 not control the global maximum list size and does not improve a

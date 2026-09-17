@@ -8,7 +8,30 @@ from math import comb, floor, log2
 from pathlib import Path
 import json
 import time
-from verify_anchored_padding import fixture
+from verify_anchored_padding import fixture, value
+
+
+def list_fixture(row):
+    B,p,n,K,A=(row[key] for key in ('B','p','n','k','A'))
+    old_count=9*B-1
+    domain=row['domain'][:old_count]+[1]+row['domain'][old_count:-1]
+    assert len(domain)==n and len(set(domain))==n
+    def multiply_x_minus_one(poly):
+        out=[0]*(len(poly)+1)
+        for j,c in enumerate(poly):
+            out[j]=(out[j]-c)%p
+            out[j+1]=(out[j+1]+c)%p
+        return out
+    word=multiply_x_minus_one(row['old_word_coefficients'])
+    candidates=[multiply_x_minus_one(P) for P in row['candidate_coefficients']]
+    assert len(word)-1==A and all(len(P)-1<K for P in candidates)
+    counts=[sum(value(P,x,p)==value(word,x,p) for x in domain) for P in candidates]
+    assert counts==[A]*len(candidates)
+    assert len({tuple(P) for P in candidates})==len(candidates)
+    return dict(B=B,p=p,n=n,K=K,A=A,domain=domain,
+                word_coefficients=word,candidate_coefficients=candidates,
+                exact_agreement_counts=counts,
+                scope='Selected list lower bound, not exhaustive list enumeration.')
 
 
 def ceiling(x):
@@ -59,6 +82,7 @@ def main():
         assert Fraction(row['k'],row['n'])==Fraction(5,21)
         assert Fraction(row['A']-row['k'],row['n'])==Fraction(5,21)
     result=dict(status='passed',parameter_checks=rows,fixtures=fixtures,
+                list_fixtures=[list_fixture(row) for row in fixtures],
                 seconds=time.monotonic()-start,
                 scope='Exact rational parameter inequalities and moment bounds; two complete prime-field padding fixtures. The all-gap asymptotic and splitting-prime existence use the written proof.')
     Path(__file__).with_name('prescribed_gap_verification.json').write_text(json.dumps(result,indent=2)+'\n')

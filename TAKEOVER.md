@@ -399,3 +399,42 @@ pages, without overfull boxes or undefined references. Visually reviewed
 abstract and theorem/proof pages1,27,28. The old anchored checker also
 passes all six fixtures,70 moment checks,378 affine transforms and its
 two coefficient calculations after the shared fixture signature edit.
+
+Further strengthening: the prescribed-gap parameters also give a list
+lower bound at EVERY small rational gap by keeping the full mB fibers,
+adding n-mB points, and using W(X^B) with candidates G_i(X^B). Added a
+short manuscript consequence and exact unanchored checks for the two
+prescribed-gap fixtures. This is a selected-list lower bound.
+
+Composite fiber rigidity is now proved in a research note: for B
+coprime to private primes, Kummer monomial independence plus the FIRST
+B-1 root moments forces any zero-moment subset to be a union of whole
+fibers. The full DFT replaces the prime cyclotomic single-moment argument.
+Positive integer padding nodes cannot occur in such a subset (the
+rational part of its first moment would be positive). This gives exact
+entire lists at threshold tB for dimensions K<=(t-1)B+1, including K
+not divisible by B. Choosing B through suitable denominator multiples
+gives exact pointwise-list preservation at every small rational gap.
+It does NOT control global lists or amplify a list with length.
+Guarded verify_composite_fibers.py passes all262144 and1048576 subsets
+for B4/B6; exact list sizes2/6 at K4/5 and1/3 at K6/7. Research note
+COMPOSITE_FIBER_RIGIDITY.md; not added to manuscript or Makefile.
+
+IMPORTANT new conceptual strengthening integrated into anchored lemma
+and fixed-gap theorem: EVERY nearby word on the entire received line
+can have EXACTLY ONE nearby codeword. Form the pool T of all code
+polynomials interpolating any K old coordinates, |T|<=M=binom(N,K).
+Because A-q>=K, every possible nearby candidate is in this finite pool.
+Choose all pad evaluation maps injective on T and all (P,pad) labels
+distinct, using p>N+1+q+(K-1)binom(M,2) and p>(q-1)M^2. Then every
+nearby candidate has exactly A-1 old agreements and one new agreement,
+and no label has two candidates. The exact nearby-label count is q
+times the ENTIRE core boundary-list size. No-CA proof unchanged.
+All fields prime; n=o(p) still available. No global-list bound follows.
+Proof UNIQUE_NEARBY_PADDING.md and exhaustive verify_unique_padding.py
+pass fixtures (p,n,K,A)=(1571,11,2,5),(114874079,21,5,10), with core
+interpolant pools18/5918, exact boundarylists2/2, nearbylabels6/8 and
+maximum list ON THE LINE1. Added Makefile checker (now65). Abstract
+and introduction explicitly state this conceptual separation. Native
+rebuild passes at112 pages, without overfull boxes or undefined
+references. Visually reviewed pages1,2,27,28,29 after these edits.

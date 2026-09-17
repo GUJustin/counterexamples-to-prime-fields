@@ -4,6 +4,9 @@ This package supports Lemma 4.5 and Theorem 4.6 in the September 16, 2026
 manuscript. The anchored quotient removes one common agreement point;
 padding then gives many nearby challenges with no correlated agreement.
 The rate and positive capacity gap stay exactly fixed as length grows.
+`UNIQUE_NEARBY_PADDING.md` strengthens the construction so every nearby
+word on the entire line has exactly one nearby codeword. This does not
+bound the code's global maximum list over all received words.
 
 The coefficient of the resulting linear count has logarithm at least
 (H_2(rho)^2/2-o(1))/(eta^2 log_2(1/eta)) at every sufficiently small
@@ -19,6 +22,7 @@ Run from the repository root:
 ```sh
 python3 research/fixed_gap_padding/verify_anchored_padding.py
 python3 research/fixed_gap_padding/verify_prescribed_gap.py
+python3 research/fixed_gap_padding/verify_unique_padding.py
 ```
 
 The standard-library checker constructs six full finite-field fixtures
@@ -36,6 +40,10 @@ Resource reports record sequential execution under a 384 MiB watchdog.
 The prescribed-gap checker adds 15 exact rational parameter checks and
 two full prime-field fixtures of lengths 21 and 42, both at exact rate
 and gap 5/21.
+The unique-padding checker exhausts every determining old-coordinate
+subset in two fixtures (28 and 6,188 subsets), then verifies injectivity
+of every candidate/padding label. Thus it checks all possible nearby
+codewords, not just the selected seed list.
 
 The finite fixtures supplement the written proof; they do not prove
 splitting-prime infinitude or the asymptotic moment estimate. The proof

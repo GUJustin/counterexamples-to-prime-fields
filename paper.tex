@@ -50,7 +50,8 @@ We also separate list size from the number of nearby points on an
 affine line. A large list gives an affine line with many nearby points
 and no correlated agreement. An anchored lift and padding construction
 gives the same failure at an exactly fixed positive rate and gap, at
-arbitrarily large lengths. The necessary coefficient of a linear
+arbitrarily large lengths, even when every nearby point on the line
+has a unique nearby codeword. The necessary coefficient of a linear
 exceptional-count bound has logarithm
 $\Omega_\rho(\eta^{-2}/\log(1/\eta))$ at every sufficiently small
 rational gap.
@@ -128,6 +129,11 @@ corresponding obstruction to the proposed coefficient multiplying
 $n$ in an exceptional-parameter bound. They do not establish that the
 exceptional count must be superlinear in $n$ at one fixed positive gap
 on short prime-field domains; that stronger question remains open.
+In the fixed-gap line examples, every nearby word can have a unique
+nearby codeword. Thus their many nearby parameters do not arise from
+decoding ambiguity at individual points of the line. This uniqueness
+is a statement about the displayed line, not about all received words
+for the code.
 
 \subsection{The main result}
 
@@ -263,6 +269,8 @@ keeping every common coefficient agreement below the threshold.
 Theorem~\ref{fg:anchored-fixed-gap} gives actual failure of correlated
 agreement at a fixed rate and gap, with a linear count whose coefficient
 has logarithm of order $\eta^{-2}/\log(1/\eta)$.
+Every nearby word on these lines has exactly one nearby codeword;
+the obstruction persists without local list ambiguity.
 No remainder that is $o(n)$ along this family can absorb a smaller
 linear coefficient. The simpler selection argument in
 Theorem~\ref{fg:fixed-gap} is retained as a preliminary construction.
@@ -1752,6 +1760,7 @@ there is an arbitrarily large prime $p$ and a Reed--Solomon code with
 \]
 admitting a nonconstant received line $f+zg$ with at least $L(Br+1)$
 distinct nearby challenges at agreement threshold $A_B$.
+Every nearby word on the line has exactly one nearby codeword.
 No degree-<$k_B$ polynomials $F,G$ jointly agree with $f,g$ on
 $A_B$ coordinates. The radius can be chosen strictly below Elias.
 If $k\ge2$, one may instead set $k_B=B(k-1)$ and allow
@@ -1779,20 +1788,33 @@ old coordinates, since their difference is $F_i(X^B)/(X-1)$.
 The candidates remain distinct after reduction, since their old
 agreement supports are distinct. Also $\deg F_{\rm old}=A_B-1$.
 
-Add $q_B=Br+1$ distinct points $x_j$ outside $D_{\rm old}\cup\{1\}$
-at which the $L$ values $P_i(x_j)$ are pairwise distinct.
+Let $\mathcal T$ contain all degree-<$k_B$ polynomials interpolating
+$F_{\rm old}$ on some $k_B$ old coordinates. Then
+$|\mathcal T|\le M:=\binom{mB-1}{k_B}$, and every selected $P_i$
+belongs to $\mathcal T$. Add $q_B=Br+1$ distinct points $x_j$ outside
+$D_{\rm old}\cup\{1\}$ at which all values
+$\{P(x_j):P\in\mathcal T\}$ are pairwise distinct.
 There are enough such points if
 \[
- p>mB+(k_B-1)\binom L2+q_B,
+ p>mB+(k_B-1)\binom M2+q_B,
 \]
-by the root bound for the nonzero differences $P_i-P_{i'}$.
+by the root bound for pairwise differences in $\mathcal T$.
 Choose offsets $b_j$ successively so that all labels
-$z_{ij}=P_i(x_j)-b_j$ are distinct. At step $j$, at most
-$(j-1)L^2$ offsets are forbidden, so $p>(q_B-1)L^2$ suffices.
+$P(x_j)-b_j$, for $P\in\mathcal T$ and all $j$, are distinct.
+At step $j$, at most $(j-1)M^2$ offsets are forbidden, so
+$p>(q_B-1)M^2$ suffices.
 On these new coordinates set $f(x_j)=b_j$ and $g(x_j)=1$.
-At $z_{ij}$, the polynomial $P_i$ agrees at its $A_B-1$ old
+At $z_{ij}=P_i(x_j)-b_j$, the polynomial $P_i$ agrees at its $A_B-1$ old
 coordinates and exactly one new coordinate. This supplies $Lq_B$
 distinct nearby challenges on a domain of size $n_B$.
+
+Any nearby polynomial has at least $A_B-q_B\ge k_B$ old agreements,
+so belongs to $\mathcal T$. It has at most $A_B-1$ old agreements
+and, by label injectivity, at most one new agreement. Thus it has
+exactly $A_B-1$ old agreements and one new agreement. The same
+injectivity prevents two polynomials from being nearby at the same
+challenge. This proves uniqueness for the entire line, not merely
+for the selected witnesses.
 
 Suppose now that $F,G$ have degree less than $k_B$. If $G=0$,
 their common agreement is confined to $D_{\rm old}$ and has size
@@ -1825,6 +1847,7 @@ at least $C_\rho(\eta)n_B$ distinct nearby challenges, where
  \frac{H^2/2-o_\rho(1)}{\eta^2\log_2(1/\eta)}.
 \end{equation}
 No pair of codewords has correlated agreement at that threshold,
+every nearby word on the line has a unique nearby codeword,
 and the radius is strictly below the characteristic-based Elias radius.
 The $o_\rho(1)$ is as rational $\eta$ tends to zero;
 $C_\rho(\eta)$ is fixed as $B$ grows.
@@ -1837,6 +1860,8 @@ length $n$, dimension $K$, and padding count $q=n-mB+1$, provided
 \]
 Indeed, the candidates have degree at most $B(k-1)-1$, and the two
 common-agreement bounds are $Bt-1$ and $K-1+q$.
+The inequality $Bt-q\ge K$ also preserves the full candidate-pool
+argument proving uniqueness at every nearby parameter.
 
 Put $a=\rho+\eta$ and choose
 \[
@@ -1884,6 +1909,17 @@ Arbitrarily large splitting primes ensure $n_B=o(p)$ and strict Elias.
 The rationality of $\eta$ is used only to keep the displayed rate
 and agreement fraction exactly fixed at integer lengths.
 \end{proof}
+
+The same parameters also give a list lower bound at every sufficiently
+small rational gap. Keep all $mB$ fiber points and add $n_B-mB$
+distinct points outside the fibers. The received polynomial $W(X^B)$
+has the $L$ nearby candidates $G_i(X^B)$, each of degree at most
+$B(k-1)<K_B$. Each difference is the degree-$Bt$ locator $F_i(X^B)$,
+so each candidate has exactly $Bt$ agreements. Thus, at exact rate
+$\rho$ and exact gap $\eta$, a displayed list has logarithm at least
+$(H^2/2-o_\rho(1))/(\eta^2\log_2(1/\eta))$ on arbitrarily long
+domains with $n_B=o(p)$ and strict Elias. This is a lower bound on
+one list; it does not assert growth of that list with $B$.
 
 In particular, no uniform exceptional-count bound
 $c_1 2^{c_2/\eta}n+o(n)$ can hold, even when its remainder is

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/fixed_gap_padding/verify_unique_padding.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5478565420016821,
+  "peak_rss_kib": 2704,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

@@ -2,6 +2,11 @@
 
 September 17. Proof-reviewed research note, not a global list-size bound.
 
+Update: COMPOSITE_FIBER_RIGIDITY.md removes the prime-degree restriction
+using all automatically vanishing moments of orders 1,...,B-1. It also
+handles positive integer padding nodes and dimensions not divisible by B.
+The single-moment statements below still require prime degree.
+
 Let q_1,...,q_m be distinct rational primes, and let B be prime. There
 are arbitrarily large primes p such that every X^B-q_i splits into B
 distinct roots in F_p, and the union D of these fibers has the property:
