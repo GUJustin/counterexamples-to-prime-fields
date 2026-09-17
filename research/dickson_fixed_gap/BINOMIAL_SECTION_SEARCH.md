@@ -75,3 +75,11 @@ Elias inequality, which includes one extra c32 case compared with the
 simpler sufficient entropy inequality used in the discovery summary.
 The final summary is regenerated from the exact checker. No new
 manuscript theorem or impossibility claim follows.
+
+The later ORBIT_DOMAIN_OPTIMALITY.md removes the earlier invariant-word
+qualification: for the full chosen subgroup orbit and lengths divisible
+by its order, the modal coset construction maximizes minimum agreement
+over ALL domains and received words, including domains containing zero.
+It also records the independently checked4,326-case subgroup scan.
+Arbitrary non-subgroup subsets of the candidate orbit remain outside
+that optimization statement. No unbounded fixed-gap family was found.

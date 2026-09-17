@@ -1099,7 +1099,7 @@ PDF122pagesclean, reviewed2,40,41; finalparagraphsplitsforreadability
 requirelastbuildcompletioncheck. Nootheractiveprocess.
 Goalactiveuntil12:30UTC.
 
-## 2026-09-17 06:56 UTC — independent headline audit and sharper concurrency
+## 2026-09-17 06:50 UTC — independent headline audit and sharper concurrency
 
 Independent density audit now replays gap-scale far certificates M2203,
 M4423, M9689 with its own variance/root rounding, smooth collision bound,
@@ -1125,4 +1125,28 @@ several directions, all thresholds3,4,5; checks root incidence and final
 bound. PASS2.31sec18MiB. Makefile now79checks. PDF122pages clean; rendered
 pages37,69 and inspected. Existing asymptotic proofs remain written
 mathematics, not formal verification. No live process.
-Goal remains active until12:30UTC; currenttime~06:56UTC.
+Goal remains active until12:30UTC; currenttime~06:50UTC.
+
+## 2026-09-17 06:53 UTC — broadened orbit search and domain optimality
+
+Proved elementary full-orbit optimization lemma in
+research/dickson_fixed_gap/ORBIT_DOMAIN_OPTIMALITY.md. For H=mu_L, L|k,
+P_h=G(hX)-X^k, monic degG=k, n=qL<=p-1, max over ALL domains and words
+of min_h agreements equals sum of q largest coset mode counts of G.
+Averaging gives upper bound; modal full cosets attain. Addingzero gives
+mean<=M+1-m_q/L<M+1, stillinteger min<=M. Thus earlier full-orbit
+search cannot be improved by partialcosets/noninvariantwords/addingzero.
+Scope only chosen complete subgrouporbit, not arbitrarysubsets/otherG.
+Independentexhaustivecheck799domainfixtures10,816nondominatedwords
+across5examples F7/F13 provesfiniteconsistency/attainment; PASS.
+
+New subgroup_sections.cpp covers4,326cases, allj,r2..48,k16/32/64/128,
+primep=2rk+1, subgrouporders4,8,...,k. CachesGvalues, exactmodularcounts.
+Scan2.87sec3.1MiB. verify_subgroup_sections.py checkscoverage, fullorbit
+rowsagainstpreviouscensus, exactEliasand8completecandidatefixtures
+withintegerbinomialcoefficients; PASS~6sec35MiB. c4/8/16/32 belowElias
+cases36/998/1908/2550,maxL64/8/16/32. c4maxL64isknownr2; outside r2
+onlyL4except(r33,j0,k32,p2113,L8,n128,A43). No growingfixedgapfamily.
+Results research-only; Makefile79checks/mainPDF122pagesunchanged.
+Initialcompilehadnarrowingerror,fixedexplicitintcast; finalscanpassed.
+Noactiveprocess. Goalactiveuntil12:30UTC, current06:53UTC.

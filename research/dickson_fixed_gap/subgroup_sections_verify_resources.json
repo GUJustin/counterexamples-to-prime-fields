@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/dickson_fixed_gap/verify_subgroup_sections.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 4.999060999998619,
+  "peak_rss_kib": 35856,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

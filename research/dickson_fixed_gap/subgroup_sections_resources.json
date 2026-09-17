@@ -1,0 +1,11 @@
+{
+  "command": [
+    "tmp/subgroup-sections"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 2.873516291001579,
+  "peak_rss_kib": 3104,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

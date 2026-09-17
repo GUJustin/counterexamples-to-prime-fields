@@ -1,0 +1,88 @@
+{
+  "status": "passed",
+  "fixtures": [
+    {
+      "p": 7,
+      "k": 3,
+      "L": 3,
+      "n": 3,
+      "coeff": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "optimal_agreement": 2,
+      "domains": 35,
+      "received_words": 398,
+      "includes_zero_domains": true
+    },
+    {
+      "p": 7,
+      "k": 3,
+      "L": 3,
+      "n": 3,
+      "coeff": [
+        2,
+        2,
+        0,
+        1
+      ],
+      "optimal_agreement": 1,
+      "domains": 35,
+      "received_words": 675,
+      "includes_zero_domains": true
+    },
+    {
+      "p": 7,
+      "k": 3,
+      "L": 3,
+      "n": 6,
+      "coeff": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "optimal_agreement": 3,
+      "domains": 7,
+      "received_words": 756,
+      "includes_zero_domains": true
+    },
+    {
+      "p": 7,
+      "k": 3,
+      "L": 3,
+      "n": 6,
+      "coeff": [
+        2,
+        2,
+        0,
+        1
+      ],
+      "optimal_agreement": 2,
+      "domains": 7,
+      "received_words": 2187,
+      "includes_zero_domains": true
+    },
+    {
+      "p": 13,
+      "k": 4,
+      "L": 2,
+      "n": 4,
+      "coeff": [
+        0,
+        1,
+        0,
+        1,
+        1
+      ],
+      "optimal_agreement": 3,
+      "domains": 715,
+      "received_words": 6800,
+      "includes_zero_domains": true
+    }
+  ],
+  "seconds": 0.014780334000533912,
+  "scope": "Exhausts all domains and every nondominated received word for the displayed orbit fixtures."
+}

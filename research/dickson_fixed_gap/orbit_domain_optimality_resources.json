@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/dickson_fixed_gap/verify_orbit_domain_optimality.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5655492910009343,
+  "peak_rss_kib": 14336,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}
