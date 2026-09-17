@@ -1,5 +1,20 @@
 # Prime-field upper-bound tightness: target and evidence
 
+Current strongest September17 update: random nonzero padding directions
+remove the noise-field extension. Exact rate1/8 and gap1/16 now admit
+ceil(n^2/192) nearby labels with NO ordinary CA over F_(p^2). The general
+family b/d,1/d uses degree2^(b-1) and count(b+1)n^2/[4(b+6)d^2].
+Independent subagent proof audit and complete F11 direction/CA tests pass.
+See ../ordinary_ca_superlinear/RANDOM_DIRECTION_QUADRATIC.md.
+The quartic and growing-degree statements below are superseded, valid
+historical stages. Prime-ambient and first-order targets remain open.
+
+The user authorized subagents. An independent better.codes re-audit found
+no improvement: the B1024 alternative needs4.0097 times its certified
+count. Exact product-class optimization gives no gain; joint coefficient
+concentration remains unresolved. See ../better_codes_revisit_2026_09_17/.
+
+
 Latest September17 strengthening: exact rate1/8 and gap1/16 ordinary-CA
 quadratic exceptions now exist over F_(p^4), with fixed extension degree.
 The exact family b/d,1/d uses fixed degree2^b for b=2,3,4,5.
@@ -9,6 +24,10 @@ checks include an essential-hypothesis negative control. See
 ../ordinary_ca_superlinear/CONSTANT_EXTENSION_PADDING.md.
 This supersedes growing-degree qualifications in historical entries
 below; prime-ambient and first-order limitations remain.
+The padding can also preserve the entire nearest list exactly, by strict
+common-zero blocks and a stronger noise event. Forty-two strict block
+fixtures and a full1764-assignment noise census verify that refinement.
+This does not by itself reduce the field from quartic to quadratic.
 
 
 Latest September 17 research: the quadratic-residue indicator on F_p*,

@@ -42,6 +42,15 @@ F=Quadratic(7,3);theta=(0,1)
 xs=[F.scalar(x) for x in range(7)]
 ys=[F.scalar(pow((x*x-3)%7,-1,7)) for x in range(7)]
 M,bank=census(F,xs,ys,2);assert M==3
+strict=[]
+for a in [(u,v) for u in range(7) for v in range(1,7)]:
+ newxs=xs+[a];newys=[F.mul(F.sub(x,a),y) for x,y in zip(xs,ys)]+[F.zero]
+ maximum,newbank=census(F,newxs,newys,3)
+ expected=set()
+ for P in bank:
+  expected.add((F.sub(F.zero,F.mul(a,P[0])),F.sub(P[0],F.mul(a,P[1])),P[1]))
+ assert maximum==M+1 and newbank==expected
+ strict.append(dict(root=a,maximum=maximum,nearest_list=len(newbank)))
 positive=[]
 for a,b in combinations(range(7),2):
  A=[(a,1),(b,1)];assert set(A).isdisjoint(F.conj(x) for x in A)
@@ -76,5 +85,19 @@ assert hist=={2:1596,3:168},hist
 bound=sum(Fraction(comb(4,l)*comb(2,3-l)*49**(2-l),42**(3-l)) for l in range(2) if 0<=3-l<=2)
 assert Fraction(hist[3],42**2)<=bound==Fraction(1,9)<1
 
-out=dict(status='passed',field='F7[T]/(T^2-3)',source_dimension=2,source_maximum=M,source_nearest_list=len(bank),positive_zero_blocks=positive,conjugate_pair_negative_control=dict(maximum=badmaximum,preserved_target=M+2),noise=dict(assignments=42**2,maximum_histogram=hist,union_bound=str(bound),actual_failure_fraction=str(Fraction(hist[3],42**2)),example=good_example),scope='Complete determining-support censuses verify every zero-block fixture and all 1764 noise assignments; negative control shows why conjugate-pair avoidance is needed. General claims rely on the separate proofs.')
+# A source with Delta=2 tests the stronger event: no newly introduced
+# nearest polynomial, even when the maximum itself would stay unchanged.
+exactxs=[F.scalar(x) for x in range(4)]
+exactys=[F.zero,F.zero,F.zero,F.one]
+exactM,exactbank=census(F,exactxs,exactys,2);assert exactM==3
+exactcoords=exactxs+[F.scalar(4),F.scalar(5)]
+exact_preserved=0;new_nearest=0
+for noise in product(outside,repeat=2):
+ mx,newbank=census(F,exactcoords,exactys+list(noise),2)
+ assert mx==exactM and exactbank.issubset(newbank)
+ if newbank==exactbank:exact_preserved+=1
+ else:new_nearest+=1
+assert (exact_preserved,new_nearest)==(1596,168)
+
+out=dict(status='passed',field='F7[T]/(T^2-3)',source_dimension=2,source_maximum=M,source_nearest_list=len(bank),strict_zero_blocks=strict,positive_zero_blocks=positive,conjugate_pair_negative_control=dict(maximum=badmaximum,preserved_target=M+2),noise=dict(assignments=42**2,maximum_histogram=hist,union_bound=str(bound),actual_failure_fraction=str(Fraction(hist[3],42**2)),example=good_example),exact_list_noise=dict(assignments=42**2,old_maximum=exactM,old_nearest_list=len(exactbank),maximum_preserved=42**2,exact_list_preserved=exact_preserved,new_nearest_candidates=new_nearest),scope='Complete determining-support censuses verify zero-block fixtures, exact-list preservation for 42 strict blocks, and two complete 1764-assignment noise fixtures; negative controls distinguish maximum preservation, exact-list preservation, and conjugate-pair avoidance. General claims rely on the separate proofs.')
 Path(__file__).with_name('constant_extension_verification.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps(out))

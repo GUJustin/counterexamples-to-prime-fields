@@ -1,12 +1,12 @@
 {
   "command": [
     "/Users/jthaler/.local/bin/python3.12",
-    "research/ordinary_ca_superlinear/verify_constant_extension.py"
+    "research/ordinary_ca_superlinear/verify_random_direction.py"
   ],
   "reason": "completed",
   "returncode": 0,
-  "seconds": 0.5706035839975812,
-  "peak_rss_kib": 2320,
+  "seconds": 0.5497266250022221,
+  "peak_rss_kib": 6240,
   "rss_limit_mib": 384,
   "time_limit_seconds": 60
 }

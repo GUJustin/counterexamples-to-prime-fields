@@ -1,0 +1,63 @@
+{
+  "status": "passed",
+  "p": 11,
+  "length": 7,
+  "dimension": 2,
+  "threshold": 3,
+  "core_maximum": 2,
+  "core_nearest_list": 6,
+  "nonzero_direction_assignments": 1000,
+  "good_direction_assignments": 140,
+  "nonzero_polynomial_direction_maximum_histogram": {
+    "3": 820,
+    "2": 140,
+    "4": 40
+  },
+  "chosen_direction": [
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    3
+  ],
+  "chosen_intercept": [
+    1,
+    6,
+    4,
+    3,
+    0,
+    2,
+    5
+  ],
+  "counted_labels": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "all_near_labels": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "maximum_ordinary_correlated_agreement": 2,
+  "parameter_cases": 13387,
+  "scope": "All1000 nonzero direction assignments and all polynomial witnesses checked over F11; chosen line independently checked for all labels and all121^2 ordinary-CA witness pairs. Parameter checks do not substitute for asymptotic probability proof."
+}

@@ -1,5 +1,11 @@
 # Exact fixed-gap ordinary-CA quadratic lower bound
 
+**Stronger current result:** RANDOM_DIRECTION_QUADRATIC.md and the main
+paper now give the exact-gap result over F_(p^2), with n^2/192 labels,
+and the parameter family over degree2^(b-1). The padding-only argument
+below remains valid but is superseded in field degree and constants.
+
+
 September 17, 2026. Proof checked alongside independent exact finite computations.
 The current construction uses F_(p^4), with degree fixed independently
 of length; see CONSTANT_EXTENSION_PADDING.md. It is not asserted over

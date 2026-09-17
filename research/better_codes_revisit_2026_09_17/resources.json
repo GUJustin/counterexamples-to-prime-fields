@@ -1,12 +1,12 @@
 {
   "command": [
     "/Users/jthaler/.local/bin/python3.12",
-    "research/ordinary_ca_superlinear/verify_constant_extension.py"
+    "research/better_codes_revisit_2026_09_17/frontier.py"
   ],
   "reason": "completed",
   "returncode": 0,
-  "seconds": 0.5706035839975812,
-  "peak_rss_kib": 2320,
+  "seconds": 0.5605424999957904,
+  "peak_rss_kib": 7824,
   "rss_limit_mib": 384,
   "time_limit_seconds": 60
 }

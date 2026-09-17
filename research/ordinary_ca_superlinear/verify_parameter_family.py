@@ -14,6 +14,8 @@ for b in (2,3,4,5):
     assert N-1+D==n and K-1==b*D and M-(K-1)==D
     assert b*D-1<4*r+1
     assert D<=r-1 and 1<=s<=(b-1)*D
+    assert D<=r-b and s<=(b-1)*(D-1)
+    assert (s+D-2)//(D-1)<=b-1
     assert (s+D-1)//D<=b-1
     assert 2*2**((s+D-1)//D)<=2**b
     remaining=s-1;currentK=r+1;currentM=m+1;degree=4*(u+1);blocks=0
@@ -31,7 +33,7 @@ for b in (2,3,4,5):
   for r in (2**d,2**d+1):
    for m in ((3*r+1)//2,5*r//3):
     D=m-r+1;u=(d-b-1)*D-3*r;q=(4*r+1)**2
-    assert 2*D>=r and D<=r and (d-1)*D+1<=q
+    assert 2*(D-1)>=r and D<=r and (d-1)*D+1<=q
     # log_2(failure bound) <= (d-5-2 floor(log_2 r))*r+d+1.
     # Uses log_2 Q>=8+4 floor(log_2 r), Delta>=r/2,
     # and -u log_2(1-1/q)<=3u/q<d.

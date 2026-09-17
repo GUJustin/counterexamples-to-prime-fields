@@ -116,27 +116,20 @@ ratio condition that would permit a prime-field transfer.
 
 ## Exact-gap ordinary-CA normalization
 
-Corollary N.3 strengthens the parameter quantifier: at exact rate1/8 and
-exact capacity gap1/16, at least ceil(n^2/8192) nearby labels coexist with
-no ordinary correlated agreement. Boundary-preserving additions of new
-received values and common zeros normalize the descended nearest list.
-The ambient field can be F_(p^4), with extension degree fixed independently
-of length; it is not asserted quadratic or prime. Characteristic still exceeds the message
-degree, so this is within the current paper's large-characteristic
-capacity field class. It proves that quadratic length dependence cannot
-in general be removed even for ordinary CA at one exact positive gap.
-It does not establish first-order-regime tightness or gap-exponent growth.
+Main-paper Proposition N.4 now gives exact rate1/8, exact gap1/16, and
+at least ceil(n^2/192) nearby labels with no ordinary correlated agreement
+already over F_(p^2). Random nonzero padding directions replace the noise
+block, while conjugate-avoiding common zeros normalize the parameters.
+The characteristic exceeds message degree. Thus quadratic length
+dependence is necessary for ordinary CA even at one exact positive gap
+and with the ambient field restricted to quadratic extensions of primes.
+This does not establish first-order tightness or a growing gap exponent.
 
-Proposition N.4 now fixes the required extension degree at four.
-Its block-padding proof preserves the exact parameters and quadratic
-exception count; it does not change the scope restrictions above.
-
-The exact-parameter Corollary N.5 gives rate b/d and gap1/d for b=2,3,4,5
-and d>=b+7, with ceil((b+1)n^2/(4d^3)) nearby labels without ordinary
-CA. Characteristic exceeds message degree and e=2^b is fixed. In
-particular, rate2/9 and gap1/9 give ceil(n^2/972) labels over F_(p^4). These are still
-capacity-regime examples over extensions, not first-order or prime-field
-tightness.
+Corollary N.5 gives rate b/d and gap1/d, b=2,3,4,5 and d>=b+7,
+with ceil((b+1)n^2/[4(b+6)d^2]) labels, no ordinary CA, and fixed field
+F_(p^(2^(b-1))). In particular rate2/9 and gap1/9 give ceil(n^2/864)
+labels over F_(p^2). These strengthen the earlier quartic and
+polynomial-degree versions. Prime ambient fields remain unresolved.
 
 ## Precise consequence for dependence on length
 

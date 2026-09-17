@@ -1,0 +1,203 @@
+{
+  "p": 2130706433,
+  "n": 262144,
+  "required_count": "274980728111395088",
+  "target_agreement": 139782,
+  "boundary_scores": {
+    "139775": "116.1284071162897043018363154625142445922972660385258122329019283519151",
+    "139781": "116.1204803338806495629178592585723042963193597610178970806543379290243",
+    "139782": "116.1191592365592259488286652641774969687559019633793627875031081343192"
+  },
+  "rows": [
+    {
+      "B": 2,
+      "M": 131072,
+      "H": 69892,
+      "r": 4353,
+      "agreement": 139783,
+      "certified_count": "1",
+      "sufficient": false,
+      "missing_bits": 57.932108124695574
+    },
+    {
+      "B": 4,
+      "M": 65536,
+      "H": 34946,
+      "r": 2175,
+      "agreement": 139783,
+      "certified_count": "1",
+      "sufficient": false,
+      "missing_bits": 57.932108124695574
+    },
+    {
+      "B": 8,
+      "M": 32768,
+      "H": 17473,
+      "r": 1086,
+      "agreement": 139783,
+      "certified_count": "1",
+      "sufficient": false,
+      "missing_bits": 57.932108124695574
+    },
+    {
+      "B": 16,
+      "M": 16384,
+      "H": 8737,
+      "r": 542,
+      "agreement": 139791,
+      "certified_count": "1",
+      "sufficient": false,
+      "missing_bits": 57.932108124695574
+    },
+    {
+      "B": 32,
+      "M": 8192,
+      "H": 4369,
+      "r": 270,
+      "agreement": 139807,
+      "certified_count": "1",
+      "sufficient": false,
+      "missing_bits": 57.932108124695574
+    },
+    {
+      "B": 64,
+      "M": 4096,
+      "H": 2185,
+      "r": 134,
+      "agreement": 139839,
+      "certified_count": "1",
+      "sufficient": false,
+      "missing_bits": 57.932108124695574
+    },
+    {
+      "B": 128,
+      "M": 2048,
+      "H": 1093,
+      "r": 66,
+      "agreement": 139903,
+      "certified_count": "1",
+      "sufficient": false,
+      "missing_bits": 57.932108124695574
+    },
+    {
+      "B": 256,
+      "M": 1024,
+      "H": 547,
+      "r": 32,
+      "agreement": 140031,
+      "certified_count": "6564",
+      "sufficient": false,
+      "missing_bits": 45.25174860118186
+    },
+    {
+      "B": 512,
+      "M": 512,
+      "H": 274,
+      "r": 15,
+      "agreement": 140287,
+      "certified_count": "1647305831",
+      "sufficient": false,
+      "missing_bits": 27.314646846849037
+    },
+    {
+      "B": 1024,
+      "M": 256,
+      "H": 137,
+      "r": 6,
+      "agreement": 140287,
+      "certified_count": "68579341025511059",
+      "sufficient": false,
+      "missing_bits": 2.0034845649217345
+    },
+    {
+      "B": 2048,
+      "M": 128,
+      "H": 69,
+      "r": 2,
+      "agreement": 141311,
+      "certified_count": "15073406664870634",
+      "sufficient": false,
+      "missing_bits": 4.1892530964571435
+    },
+    {
+      "B": 4096,
+      "M": 64,
+      "H": 35,
+      "r": 0,
+      "agreement": 143359,
+      "certified_count": "11867343827126569",
+      "sufficient": false,
+      "missing_bits": 4.534261542305536
+    },
+    {
+      "B": 8192,
+      "M": 32,
+      "H": 18,
+      "r": 0,
+      "agreement": 147455,
+      "certified_count": "8286954",
+      "sufficient": false,
+      "missing_bits": 34.94969764142118
+    },
+    {
+      "B": 16384,
+      "M": 16,
+      "H": 9,
+      "r": 0,
+      "agreement": 147455,
+      "certified_count": "403",
+      "sufficient": false,
+      "missing_bits": 49.27747209616761
+    },
+    {
+      "B": 32768,
+      "M": 8,
+      "H": 5,
+      "r": 0,
+      "agreement": 163839,
+      "certified_count": "5",
+      "sufficient": false,
+      "missing_bits": 55.61018002980821
+    },
+    {
+      "B": 65536,
+      "M": 4,
+      "H": 3,
+      "r": 0,
+      "agreement": 196607,
+      "certified_count": "1",
+      "sufficient": false,
+      "missing_bits": 57.932108124695574
+    },
+    {
+      "B": 131072,
+      "M": 2,
+      "H": 2,
+      "r": 0,
+      "agreement": 262143,
+      "certified_count": "1",
+      "sufficient": false,
+      "missing_bits": 57.932108124695574
+    },
+    {
+      "B": 262144,
+      "M": 1,
+      "H": 1,
+      "r": 0,
+      "agreement": 262143,
+      "certified_count": "1",
+      "sufficient": false,
+      "missing_bits": 57.932108124695574
+    }
+  ],
+  "best_failed_alternative": {
+    "B": 1024,
+    "M": 256,
+    "H": 137,
+    "r": 6,
+    "agreement": 140287,
+    "certified_count": "68579341025511059",
+    "sufficient": false,
+    "missing_bits": 2.0034845649217345
+  }
+}

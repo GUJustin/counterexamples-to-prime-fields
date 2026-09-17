@@ -1,5 +1,11 @@
 # An exact-parameter family in large characteristic
 
+**Stronger current result:** RANDOM_DIRECTION_QUADRATIC.md and the main
+paper now give the exact-gap result over F_(p^2), with n^2/192 labels,
+and the parameter family over degree2^(b-1). The padding-only argument
+below remains valid but is superseded in field degree and constants.
+
+
 September 17, 2026. This generalizes the exact-gap normalization; it does
 not change the prime-field or first-order limitations.
 

@@ -1,5 +1,11 @@
 # Exact rate and gap over a fixed-degree extension
 
+**Stronger current result:** RANDOM_DIRECTION_QUADRATIC.md and the main
+paper now give the exact-gap result over F_(p^2), with n^2/192 labels,
+and the parameter family over degree2^(b-1). The padding-only argument
+below remains valid but is superseded in field degree and constants.
+
+
 September 17, 2026. Two padding refinements replace extension degrees
 growing with length by constant extension degrees. Proof and finite
 checks are kept separate. This still does not give prime ambient fields.
@@ -110,3 +116,8 @@ In particular:
 This strengthens the ambient-field conclusion of the exact-gap results.
 It does not change their quadratic length exponent, place them in the
 first-order regime, or yield a better.codes improvement.
+
+EXACT_LIST_PRESERVATION.md further shows that the same fixed-degree
+construction can preserve the entire nearest list, without creating
+additional nearest candidates. It uses strict zero blocks s<Delta and
+the noise bound with exponent Delta-1; both remain sufficient here.

@@ -224,10 +224,9 @@ inequality for large $p$, as before.
 This proves that quadratic dependence on length is sometimes unavoidable
 for ordinary correlated-agreement exceptions even at a fixed positive
 capacity gap, in the full large-characteristic field class. The extension
-degree is reduced to four below; Corollary~\ref{cor:ordinary-ca-fixed-gap}
-is not asserted over quadratic extensions or prime fields. Theorem~\ref{thm:ordinary-ca-superlinear}
-retains the stronger quadratic-extension restriction with a gap only
-bounded below. Neither assertion establishes first-order-regime tightness.
+degree is reduced to two below; Corollary~\ref{cor:ordinary-ca-fixed-gap}
+is still not asserted over prime fields. Theorem~\ref{thm:ordinary-ca-superlinear}
+gives a different exact rate with a gap only bounded below. Neither assertion establishes first-order-regime tightness.
 
 Independent exhaustive checks of both preservation operations, including
 a negative control showing failure when the common-zero point is chosen
@@ -243,14 +242,15 @@ all witnesses are independently replayed in
 \path{research/dickson_nearest_threshold/}. This finite result does
 not establish maximum agreement $3/8$ for an unbounded family.
 
-\subsection{A fixed extension degree}
+\subsection{Quadratic extensions via random directions}
 
 \begin{proposition}\label{prop:ordinary-ca-field-degree}
 The field in Corollary~\ref{cor:ordinary-ca-fixed-gap} can be taken to be
-$\F_{p^4}$, with extension degree four independent of length.
+$\F_{p^2}$, and the exceptional count can be strengthened to
+$\lceil n^2/192\rceil$.
 \end{proposition}
 \begin{proof}
-We use two block operations. Throughout, a word on $N$ distinct points
+We combine a common-zero block with random padding directions. Throughout, a word on $N$ distinct points
 of $F=\F_q$ has true maximum agreement $M\ge K$ with degree-$<K$
 polynomials, and $\Delta=M-K+1$.
 
@@ -275,49 +275,68 @@ $Z_0^{(q)}$, which are coprime by the choice of $A$. Therefore $R/Z_0$
 is a polynomial of degree $<K$ with $\ell>M$ agreements, a contradiction.
 Multiplying every selected old nearest polynomial by $Z$ attains $M+s$.
 
-\emph{A noise block.}
-Choose $u$ fresh coordinates in $F$, requiring $N+u\le q$, and choose
-independent uniform received values in $E\setminus F$. Write $Q=q^2$.
-A candidate with $M+1$ agreements and at least $K$ old agreements has
-coefficients in $F$, so it cannot match a new value. For a fixed support
-with $l<K$ old coordinates and $j=M+1-l$ new ones, at most $Q^{K-l}$
-new-value tuples are possible. Hence the probability that the maximum
-increases is at most
+\emph{Random padding directions.}
+Suppose a core of length $N_c$ and dimension $K$ has true maximum
+$T-1$, and put $\Delta=T-K>0$. On any $t$ fresh coordinates over a
+field of size $H$, choose the direction independently and uniformly
+nonzero, retaining direction zero on the core. A nonzero degree-$<K$
+polynomial with $T$ direction agreements has $z<K$ old zeros and
+$T-z$ new matches. The probability that any such polynomial exists is
+at most
 \begin{align*}
- &\sum_{l=0}^{K-1}\binom Nl\binom u{M+1-l}
-       \frac{Q^{K-l}}{(Q-q)^{M+1-l}}\\
- &\hspace{2em}\le 2^{N+u}Q^{-\Delta}(1-1/q)^{-u},
+ &\sum_{z=0}^{K-1}\binom{N_c}z\binom t{T-z}
+       \frac{H^{K-z}}{(H-1)^{T-z}}\\
+ &\hspace{2em}\le 2^{N_c+t}H^{-\Delta}(1-1/H)^{-t}.
 \end{align*}
-with impossible binomial terms interpreted as zero. Whenever this is
-less than one, some choice preserves the exact maximum and every
-selected nearest witness. Both operations' maxima persist over further
-extensions by interpolation on as many matching points as the dimension.
+Indeed, the old zeros leave at most $H^{K-z}$ polynomials, and each
+prescribed new value is matched with probability at most $1/(H-1)$.
+If this bound is less than one, a good direction exists. No nonzero
+explaining direction can then give ordinary CA at threshold $T$,
+regardless of the intercept. The zero explaining direction has joint
+agreements only on the core, where its intercept has at most $T-1$.
 
-Apply the operations to the source of
-Corollary~\ref{cor:ordinary-ca-fixed-gap}. By
-Corollary~\ref{cor:dickson-word-first-order-barrier}, its descended
-maximum satisfies $m\le5r/3$, so for large $r$,
+Apply the zero block to the descended source. By
+Corollary~\ref{cor:dickson-word-first-order-barrier},
+$r/2+1\le\Delta=m-r+1\le2r/3+1$. For large $r$, the
+$s=2\Delta-r+1$ common zeros satisfy $1\le s\le\Delta$, so one
+quadratic extension suffices. The resulting source has length
+$3r+2\Delta+1$, dimension $2\Delta+1$, and maximum $3\Delta$.
+One anchor retains
 \[
- r/2+1\le\Delta\le2r/3+1\le r-1.
+ \ell\ge\frac{3\Delta r}{3r+2\Delta+1}
 \]
-First add the $s=2\Delta-r+1$ common zeros in one block over
-$\F_{p^2}$, since $1\le s\le\Delta$. This field then supplies the
-$u=13\Delta-3r$ fresh noise coordinates. The noise block uses
-$\F_{p^4}$ and succeeds with positive probability for all sufficiently
-large $r$: after the zero block, $N+u=O(r)$, $\Delta\ge r/2$, and
-$q=p^2\ge16r^2$, so the failure bound has logarithm
-$-\Omega(r\log r)+O(r)$. The final label compiler operates in this
-same field, whose size exceeds $2N'r$ for large $r$.
-The exact parameters and ordinary-CA exclusion
-are unchanged.
+nearest quotients on a core of length $N_c=3r+2\Delta$, dimension
+$K=2\Delta$, and maximum $T-1=3\Delta-1$.
+Append $t=14\Delta-3r$ coordinates of $\F_{p^2}$, giving $n=16\Delta$.
+With $H=p^2\ge16r^2$, the random-direction failure bound tends to
+zero: its logarithm is $-\Omega(r\log r)+O(r)$.
+
+Choose the $t$ fresh coordinates with largest evaluation diversity
+among the $\ell$ quotients. Pairwise root counting gives average
+diversity at least $\ell/2$ for large $r$. Fix a good direction there.
+At a new coordinate with direction $d_x\ne0$, the counted labels are
+$(P_i(x)-f_0(x))/d_x$. Nonzero scaling preserves diversity, and random
+intercepts give independent uniform translations. Since $t\le7r$
+and $t\ell/(2H)\le7/32<1$, their expected union is at least $t\ell/4$.
+Every counted label has $T-1$ old matches and a new match.
+For large $r$, $r\le2\Delta-2$ gives $t\ge8\Delta$, while
+$r\ge3(\Delta-1)/2$ gives $\ell\ge2\Delta/3$ once $\Delta\ge13$.
+Thus there are at least
+\[
+ t\ell/4\ge4\Delta^2/3=n^2/192
+\]
+nearby labels and no ordinary CA. The rate and gap are exactly $1/8$
+and $1/16$, and $p>K-1$.
 \end{proof}
 
-Complete support censuses over $\F_{49}$ check $21$ common-zero blocks,
-a conjugate-pair negative control, and all $1{,}764$ outside-base-field
-assignments for a two-coordinate noise block. The latter has $1{,}596$
-successful assignments, and its refined failure bound is $1/9$.
-The checks are in
-\path{research/ordinary_ca_superlinear/verify_constant_extension.py}.
+The zero-block checks include a conjugate-pair negative control.
+Independently, a complete $\F_{11}$ test checks all $1{,}000$ nonzero
+padding directions, all line labels, and all $121^2$ ordinary-CA witness
+pairs for a selected line. Its $11$ labels are all nearby at threshold
+three, but its maximum ordinary CA is two. The finite checks and
+parameter inequalities are in
+\path{research/ordinary_ca_superlinear/verify_random_direction.py};
+the asymptotic conclusion follows from the proof above.
 
 \subsection{A family of exact rates and gaps}
 
@@ -326,15 +345,15 @@ Fix $b\in\{2,3,4,5\}$ and an integer $d\ge b+7$. There are unbounded-length
 families over $\F_{p^e}$ of exact rate $b/d$ and capacity gap $1/d$
 with at least
 \[
- \left\lceil\frac{(b+1)n^2}{4d^3}\right\rceil
+ \left\lceil\frac{(b+1)n^2}{4(b+6)d^2}\right\rceil
 \]
 nearby challenges and no ordinary correlated agreement at that threshold.
-The characteristic exceeds the message degree, $e=2^b$ is fixed, and the
+The characteristic exceeds the message degree, $e=2^{b-1}$ is fixed, and the
 radius is strictly below characteristic-based Elias for sufficiently
 large $p$. In particular, $b=2,d=9$ gives rate $2/9$, gap $1/9$,
-at least $\lceil n^2/972\rceil$ nearby challenges, over $\F_{p^4}$.
+at least $\lceil n^2/864\rceil$ nearby challenges, over $\F_{p^2}$.
 The case $b=5,d=12$ gives rate $5/12$, gap $1/12$, at least
-$\lceil n^2/1152\rceil$ nearby challenges, over $\F_{p^{32}}$.
+$\lceil n^2/1056\rceil$ nearby challenges, over $\F_{p^{16}}$.
 \end{corollary}
 \begin{proof}
 Corollary~\ref{cor:dickson-word-first-order-barrier} bounds the original
@@ -346,49 +365,45 @@ $k/r$ therefore gives $m\le5r/3$. Consequently
 for sufficiently large $r$. This also preserves the characteristic
 condition for the additional case $b=5$.
 
-Apply the preservation operations with
+Add $s=b\Delta-r+1$ common zeros, in at most $b-1$ blocks of
+size at most $\Delta$, using the quadratic block operation above.
+This is possible since $\Delta\le r-1$ for large $r$, so
+$s\le(b-1)\Delta$. Enlarge to $\F_{p^{2^{b-1}}}$ if necessary;
+interpolation preserves the nearest maximum under enlargement.
+The new source has
 \[
- u=(d-b-1)\Delta-3r,\qquad s=b\Delta-r+1.
+ N'=3r+b\Delta+1,\qquad K'=b\Delta+1,\qquad M'=(b+1)\Delta.
 \]
-Both are nonnegative, since $d-b-1\ge6$ and $b\ge2$. The resulting
-source has
+An agreement anchor retains
 \[
- N'=(d-1)\Delta+1,\qquad K'=b\Delta+1,
- \qquad M'=(b+1)\Delta,
+ \ell\ge\frac{(b+1)\Delta r}{3r+b\Delta+1}
+       \ge\frac{(b+1)r}{b+6},
 \]
-and retains $r$ selected nearest polynomials. One agreement anchor
-retains $\ell\ge M'r/N'\ge(b+1)r/d$ candidates. After division, append
-$q=\Delta$ challenge coordinates. The established compiler gives
-\[
- J\ge q\ell/4\ge\frac{(b+1)\Delta r}{4d}
-   \ge\frac{(b+1)\Delta^2}{4d}
-   =\frac{(b+1)n^2}{4d^3},\qquad n=d\Delta.
-\]
-The final dimension is $b\Delta$ and the agreement threshold is
-$(b+1)\Delta$. The old core has maximum $(b+1)\Delta-1$.
-A nonzero explaining direction has at most $b\Delta-1$ core zeros
-and $\Delta$ new agreements. A zero direction has only core agreements.
-Thus ordinary correlated agreement is absent. Also
-$b\Delta-1\le5(2r/3+1)-1<4r+1\le p$ for $r>5$, and the fixed gap $1/d$ gives strict Elias
-for large $p$.
+where $r\le2\Delta-2$. After division, the core has length
+$3r+b\Delta$, dimension $K=b\Delta$, and maximum $T-1=(b+1)\Delta-1$.
+Append $t=(d-b)\Delta-3r\ge\Delta$ fresh coordinates, giving
+$n=d\Delta$. With field size $H\ge p^2\ge16r^2$, the random-direction
+failure bound from Proposition~\ref{prop:ordinary-ca-field-degree}
+has logarithm $-\Omega(r\log r)+O_{b,d}(r)$, so a good direction exists.
+It excludes ordinary CA for every choice of new intercepts.
 
-For the extension degree, use the two block operations from
-Proposition~\ref{prop:ordinary-ca-field-degree}, adding common zeros
-before noise. Since $\Delta\le r-1$, the number $s=b\Delta-r+1$ of
-common zeros is at most $(b-1)\Delta$. Partition them into at most
-$b-1$ blocks of size at most $\Delta$. Each uses one quadratic
-extension and preserves $\Delta$. The resulting field has size at least
-$p^2$, supplying all fresh noise coordinates for large $r$.
-Add the $u$ noise values in one further quadratic extension. For fixed
-$b,d$, the failure bound has logarithm $-\Omega(r\log r)+O_{b,d}(r)$.
-The extension degree is therefore at most $2^b$. All degrees in the
-tower are powers of two, so one may enlarge to the fixed field
-$\F_{p^{2^b}}$ before running the label compiler. Interpolation
-preserves the nearest maximum under that enlargement, and this field
-already has size greater than $2N'r$ for large $r$.
+For a uniform count, choose $\Delta$ padding coordinates of largest
+diversity and fill the other positions arbitrarily. Their average
+diversity is at least $\ell/2$ for large $r$, and
+$\Delta\ell/(2H)<1$. Independent intercept translations on these
+counted coordinates yield
+\[
+ J\ge\Delta\ell/4\ge\frac{(b+1)\Delta r}{4(b+6)}
+   \ge\frac{(b+1)n^2}{4(b+6)d^2},
+\]
+using $r\ge\Delta$. The other padding coordinates cannot invalidate
+any counted near label or the direction certificate. Finally,
+$b\Delta-1\le5(2r/3+1)-1<4r+1\le p$ for large $r$, and the exact
+positive gap $1/d$ gives strict Elias for sufficiently large $p$.
 \end{proof}
 
-The exact integer identities and extension-degree accounting are checked
-in \path{research/ordinary_ca_superlinear/verify_parameter_family.py}.
+The exact integer identities and extension-degree accounting are recorded
+in \path{research/ordinary_ca_superlinear/RANDOM_DIRECTION_QUADRATIC.md},
+with independent proof audit and finite checks alongside it.
 The extension degree is now fixed independently of length. The examples
 still do not lie above the first-order agreement curve or in prime ambient fields.

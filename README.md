@@ -37,21 +37,24 @@ Orbit descent gives a linear-size true nearest list on its own domain;
 Dirichlet prime selection and at most two anchors suffice, without a sieve estimate.
 [Full proof and verification](research/ordinary_ca_superlinear/PROOF.md).
 
-Corollary N.3 also fixes **both** parameters: exact rate `1/8` and gap
-`1/16`, with at least `ceil(n^2/8192)` nearby challenges and no ordinary
-correlated agreement. Proposition N.4 now proves that **the fixed field
-extension `F_(p^4)` suffices**; this version is not asserted over quadratic
-extensions or prime fields. The two quadratic padding operations preserve
-the exact nearest boundary, with independent finite checks and a
-conjugate-pair negative control.
-[Exact-gap normalization](research/ordinary_ca_superlinear/FIXED_GAP_NORMALIZATION.md).
+Corollary N.3 fixes both rate and gap. Proposition N.4 now strengthens
+it to **exact rate `1/8`, gap `1/16`, and `ceil(n^2/192)` nearby labels
+with no ordinary correlated agreement over `F_(p^2)`**. Conjugate-avoiding
+common-zero blocks normalize the parameters; random nonzero padding
+directions exclude every nonzero explaining polynomial. The proof has
+an independent subagent audit and exact finite checks.
+[Quadratic-extension proof](research/ordinary_ca_superlinear/RANDOM_DIRECTION_QUADRATIC.md).
 
-The exact-parameter family also gives rate `b/d`, gap `1/d`, and at least
-`ceil((b+1)n^2/(4d^3))` ordinary-CA exceptions over the fixed extension
-`F_(p^(2^b))`, for `b=2,3,4,5` and `d>=b+7`.
-[Fixed-degree proof](research/ordinary_ca_superlinear/CONSTANT_EXTENSION_PADDING.md).
-These are capacity-regime lower bounds, not first-order tightness or
-better.codes improvements.
+The exact family gives rate `b/d`, gap `1/d`, and at least
+`ceil((b+1)n^2/(4(b+6)d^2))` ordinary-CA exceptions over
+`F_(p^(2^(b-1)))`, for `b=2,3,4,5` and `d>=b+7`.
+These are capacity-regime lower bounds, not prime-ambient-field or
+first-order tightness, and they do not improve better.codes.
+
+A fresh [exact better.codes frontier audit](research/better_codes_revisit_2026_09_17/README.md)
+confirms no new score: the closest alternative fixed-domain construction
+still needs just over a fourfold increase in certified family count.
+This numerical target is not a proof that such an increase is possible.
 
 The paper studies quantitative coding statements used in security analyses
 of hash-based SNARKs. It proves general list and affine-line separations
