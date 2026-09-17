@@ -1,0 +1,12 @@
+{
+  "prime": 2130706433,
+  "extension_degree": 6,
+  "target_bits": 128,
+  "total_allowance": 274980728111395087,
+  "incumbent_list_budget": 7561644282,
+  "target_list_budget": 7658131917,
+  "target_mca_allowance": 274980720453263170,
+  "mca_allowance_reduction": 96487635,
+  "field_capacity_slack": 301186360634199111531904678745128042497,
+  "status": "exact arithmetic; requires target scalar and MCA theorem ports, not a new certificate"
+}

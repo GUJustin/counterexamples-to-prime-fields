@@ -558,6 +558,12 @@
       "sha256": "cbea1e783197ed3d51c35f8e929edaff39a015c9ad7c6fcca80bb400d01f234c",
       "bytes": 22958,
       "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberThresholdClosed6811.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberScalar6811.lean",
+      "sha256": "56436f6544e6a4487afaada021de1466bb2318c8f52c34717b17ac975cf25c4c",
+      "bytes": 27184,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberScalar6811.lean"
     }
   ]
 }
