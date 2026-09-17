@@ -1,0 +1,117 @@
+\section{Inverse-margin costs of the unchanged first-order bounds}
+\label{sec:gap-costs}
+
+The quarter-rate converse also controls the dependence on the margin
+above the threshold. Throughout this section, benefits are the leading
+normalized quantities in \eqref{eq:benefit}. The conclusion concerns the
+specific interpolation and reconstruction bounds in the recovered
+working draft~\cite{DKT}, not the smallest possible actual lists.
+
+\begin{theorem}[Necessary parameter costs]\label{thm:gap-costs}
+Let $a=a_0+\varepsilon$, where $0<\varepsilon\le1/2000$, and put
+$c_0=(1-2a_0)/8$. Suppose a nonempty downward-$Y_0$ monomial support
+$S$ has positive benefits and positive surplus at rate $1/4$. Write
+\[
+ B=B_{m,1/4,a}(S),\quad R=r_m(\mathbb F S),\quad
+ \Delta=B-R,\quad s=|S|,
+\]
+and let $U=\max_S u$, $V=\max_S b$, and $J=\max_S(u+b)$. Then
+\begin{equation}\label{eq:cost-lower}
+ m>\frac{c_0}{\varepsilon},\qquad U>\frac m4,\qquad
+ V>\frac m4-1,\qquad \frac R\Delta\ge\frac1{8\varepsilon}.
+\end{equation}
+In particular, $m\ge16$ and $V\ge m/8$.
+\end{theorem}
+\begin{proof}
+The multiplicity bound is Theorem~\ref{thm:quarter}. Direct substitution
+in $31a^2-6a-4$ bounds $a_0<469/1000$, so $a<47/100$ and
+$c_0>3/400$. Thus $m>15$.
+
+If $U\ge m/2$, its claimed bound is immediate. Otherwise each total-degree
+diagonal has at most $U+1$ monomials, all active in \eqref{eq:rank} for
+$\ell\ge U$. For $U\le\ell\le m-U-1$, row capacity is at least $U+1$.
+Consequently $R\ge(m-2U)s$. Since $B\le mas$ and $B>R$, we obtain
+$U>m(1-a)/2>m/4$.
+
+Apply height sorting and diagonal compression. Neither increases the
+maximum second exponent; the compressed support therefore has at most
+$V+1$ columns. Its one-sided continuum lift has strictly positive
+surplus by Lemma~\ref{lem:finite-lift}. Trimming outside the benefit
+triangle improves surplus. Continuum compression and prefix completion
+can be performed within the existing width: sorting replaces level sets
+by initial intervals of the same measure, diagonal compression never
+increases their maximal second coordinate, and completion only adds to
+existing columns. Thus there is a positive cap of width at most
+$(V+1)/m$.
+
+For $0<w\le1/4$ and $a_0\le a\le47/100$, the cap surplus divided by
+width is
+\[
+ 2a^2-\frac12+\frac{1-a}{2}w-\frac7{24}w^2.
+\]
+Both partial derivatives are positive on this rectangle, and its value
+at $(a,w)=(47/100,1/4)$ is $-2443/240000$. Hence positive surplus
+requires width greater than $1/4$, proving $V>m/4-1$. Since $m\ge16$,
+this implies $V\ge m/8$.
+
+For the ratio bound, rearrange again. Every compressed column has height
+$h\le2m$, since positive benefit implies total degree less than $4ma<2m$.
+By \eqref{eq:cell-rank}, its rank is at least
+$\sum_{u=0}^{h-1}(m-u)_+/2$. For $h\le m$ this is at least $mh/4$;
+for $m\le h\le2m$ it is at least $m(m+1)/4\ge mh/8$.
+Rearrangement preserves cardinality and decreases rank, so the original
+support satisfies $R\ge ms/8$.
+
+At $a_0$, every support has nonpositive surplus. This remains true
+when some benefits are nonpositive: deleting those monomials preserves
+downward closure, increases benefit, and decreases rank. Therefore
+\[
+ \Delta\le B_{m,1/4,a}(S)-B_{m,1/4,a_0}(S)
+       =m\varepsilon s.
+\]
+Combining the last two inequalities proves the ratio bound.
+\end{proof}
+
+\begin{corollary}[Sharp margin powers for the stated bounds]
+Suppose the uniform challenge-degree budget $\ell$ is certified by
+\[
+ (\ell+1)B>(\ell+\beta+1)R,\qquad \beta\ge U.
+\]
+Then $\ell=\Omega(\varepsilon^{-2})$. Suppose further that the
+reconstruction parameters satisfy
+$B_{\partial}\ge V$ and $B_{\rm jet}\ge\max(J,B_{\partial})$, and use
+\[
+ B_{\rm rec}=(B_{\rm jet}-B_{\partial})B_{\partial}(B_{\partial}+1)
+  +\frac{B_{\partial}(B_{\partial}+1)(2B_{\partial}+1)}6.
+\]
+The unchanged list and MCA budgets of~\cite{DKT}, Theorem~1.1 and
+Equation~(23), have orders at least
+\[
+ \Omega(D\varepsilon^{-3})\quad\hbox{and}\quad
+ \Omega(D^2\varepsilon^{-5}),
+\]
+respectively, where $D$ is the message-degree cap. At quarter rate these
+match the margin powers in that draft's upper estimates.
+\end{corollary}
+\begin{proof}
+The integer challenge budget obeys
+\[
+ \ell\ge\left\lfloor\frac{\beta R}{\Delta}\right\rfloor
+ >\frac{m}{32\varepsilon}-1
+ >\frac{c_0}{32\varepsilon^2}-1.
+\]
+Also $B_{\rm rec}\ge B_{\partial}^3/3=\Omega(\varepsilon^{-3})$.
+Writing $\lambda=(n-D)/(A-D)\ge1$, the list budget contains
+$2D\lambda B_{\rm rec}$, and the MCA budget contains
+$24D^2\ell\lambda^2B_{\rm rec}$. All their other terms are nonnegative.
+These terms imply the asserted orders.
+\end{proof}
+
+These are sharp powers for these particular sufficient bounds, even
+after arbitrary support optimization in the stated monomial class.
+They are not lower bounds on actual kernel-vector degrees, candidate
+lists, or exceptional challenges. Global constraint dependencies, finer
+coefficient-degree accounting, or different reconstruction and agreement
+arguments could improve the bounds. Unlike Section~\ref{sec:finite-length},
+this section does not give a uniform exact finite-length converse when
+$\varepsilon$ shrinks with block length.

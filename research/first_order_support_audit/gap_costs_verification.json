@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "arbitrary_support_checks": 3743,
+  "cap_corner": "-2443/240000",
+  "positive_fixtures": [
+    {
+      "m": 2048,
+      "monomials": 3147830,
+      "rank": 1336401790,
+      "surplus": "16246624/25",
+      "U": 3842,
+      "V": 931,
+      "challenge_degree": 7900804,
+      "reconstruction_budget": 2795269778
+    },
+    {
+      "m": 4096,
+      "monomials": 12588524,
+      "rank": 10685315692,
+      "surplus": "993822822/125",
+      "U": 7684,
+      "V": 1863,
+      "challenge_degree": 10327037,
+      "reconstruction_budget": 22371274116
+    },
+    {
+      "m": 8192,
+      "monomials": 50348504,
+      "rank": 85458932888,
+      "surplus": "9326297524/125",
+      "U": 15368,
+      "V": 3727,
+      "challenge_degree": 17602549,
+      "reconstruction_budget": 179006647176
+    }
+  ],
+  "scope": "Exact corroboration of a leading-coefficient proof-ledger converse; no intrinsic list or MCA lower bound."
+}

@@ -28,7 +28,10 @@ translation-stable nonmonomial jet spaces. We also account for the exact
 finite-length weights and coefficient cutoff: in the full-coefficient
 monomial model, even multiplicity growing with block length cannot lower
 the asymptotic threshold. Finite-length corrections permit only a
-constant number of agreement coordinates of improvement. Two exact
+constant number of agreement coordinates of improvement. Within the unchanged
+first-order interpolation and reconstruction bounds, arbitrary monomial
+support optimization also cannot improve the cubic list-budget and
+fifth-power MCA-budget dependence on the margin above this threshold. Two exact
 certificates separately improve a known sufficient curve at higher rates.
 These are statements about a specified dimension-counting method, not
 intrinsic lower bounds on Reed--Solomon lists or proximity gaps.
@@ -37,7 +40,8 @@ intrinsic lower bounds on Reed--Solomon lists or proximity gaps.
 \noindent\textit{Provenance.} The fixed-multiplicity proof and high-rate
 certificate construction are recovered from a September 13 research draft.
 This note incorporates their September 17 local audit, smaller finite
-certificates, and a subsequent uniform finite-length extension. No independent referee or formal verification
+certificates, a subsequent uniform finite-length extension, and a
+converse for the inverse-margin costs of the unchanged bounds. No independent referee or formal verification
 of this note is claimed.
 
 \section{The optimization problem and its scope}
@@ -401,6 +405,7 @@ The characteristic assumption has content. In characteristic two, $V=\Span\{1,Y_
 The theorem concerns fixed jet spaces, their total-degree filtration, and saturated local sources. It does not assert that arbitrary global interpolation spaces or alternative local ideals degenerate to this model.
 
 \input{finite_length}
+\input{gap_costs}
 \section{Exact finite certificates for the high-rate improvement}\label{sec:certificates}
 
 The sufficient first-order curve in the recovered Dao--Kominers--Thaler
@@ -469,7 +474,10 @@ certificates by integer column sums. A further verifier checks the
 smaller displayed certificates independently by homogeneous diagonal
 ranks, after 21295 direct checks of its diagonal summation formula. A second verifier checks
 1920 exact finite-cutoff ranks and 32752 instances of the half-rank
-lemma. These checks corroborate the formulas; the proofs establish the
+lemma. An additional exact verifier checks 3743 arbitrary supports for
+the rank estimates in Section~\ref{sec:gap-costs}, the narrow-cap obstruction,
+and three positive-surplus supports for the parameter inequalities.
+These checks corroborate the formulas; the proofs establish the
 quantified statements. Scripts and reports accompany this note in
 \path{research/first_order_support_audit/}.
 

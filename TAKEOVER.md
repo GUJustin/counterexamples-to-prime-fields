@@ -2438,3 +2438,19 @@ The manuscript now credits that mechanism explicitly; it does not claim
 that the older displayed family supplies growing fixed-gap lists. Main
 paper rebuilt cleanly to158pages, with changed pages visually inspected.
 The separate first-order technical note remains12pages.
+
+## September 17: sharp inverse-margin powers for the first-order proof bounds
+
+The new GAP_COST_CONVERSE.md and Section 7 of the 14-page technical note
+prove that at quarter rate, for agreement a0+epsilon, arbitrary positive-
+surplus downward-Y0 monomial supports require m=Omega(1/epsilon), both
+jet degrees Omega(1/epsilon), and rank/surplus >=1/(8epsilon). Hence the
+unchanged uniform challenge count needs Omega(1/epsilon^2), and the
+recovered DKT interpolation-plus-reconstruction budgets necessarily cost
+Omega(D/epsilon^3) for lists and Omega(D^2/epsilon^5) for MCA. These match
+the draft's upper margin powers within that specified framework. They do
+not lower-bound actual lists, exceptions, or all possible first-order
+proofs, and are leading-normalized rather than uniform finite-length
+claims. Exact checks passed for 3743 arbitrary supports, the narrow-cap
+inequality, and three positive-surplus fixtures. The technical note builds
+without warnings and its new pages were visually checked.
