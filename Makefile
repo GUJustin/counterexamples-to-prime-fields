@@ -42,6 +42,7 @@ verify:
 	$(PYTHON) research/fixed_gap_padding/verify_polynomial_fields.py
 	$(PYTHON) research/fixed_gap_padding/verify_average_padding.py
 	$(PYTHON) research/fixed_gap_padding/verify_dense_padding.py
+	$(PYTHON) research/fixed_gap_padding/verify_near_unit_density.py
 	$(PYTHON) research/linear_differential_mca/verify.py
 	$(PYTHON) research/spectral_riccati/verify_constant.py
 	$(PYTHON) research/spectral_riccati/verify_weighted.py

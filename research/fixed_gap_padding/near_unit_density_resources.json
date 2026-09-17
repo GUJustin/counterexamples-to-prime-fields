@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/fixed_gap_padding/verify_near_unit_density.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.539989125001739,
+  "peak_rss_kib": 4336,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

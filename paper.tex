@@ -19,7 +19,7 @@
 \newcommand{\List}{\operatorname{List}}
 \title{Counterexamples to List and Line Decodability Bounds\\over Prime Fields}
 \author{Justin Thaler}
-\date{Working draft --- September 16, 2026}
+\date{Working draft --- September 17, 2026}
 \begin{document}
 \maketitle
 \begin{abstract}
@@ -47,9 +47,9 @@ with matching moments. Concentration and exact polynomial-weight
 certificates sharpen the finite bounds.
 
 We also separate list size from the number of nearby points on an
-affine line. At logarithmic block length and shrinking gap,
-any prescribed fraction below one of all field parameters can be nearby,
-with no correlated agreement. An anchored lift and padding construction
+affine line. At polylogarithmic block length and gap
+$\Theta(1/\log p)$, the fraction of nearby field parameters can tend to
+one, with no correlated agreement. An anchored lift and padding construction
 gives the same failure at an exactly fixed positive rate and gap, at
 arbitrarily large lengths, even when every nearby point on the line
 has a unique nearby codeword. The necessary coefficient of a linear
@@ -127,9 +127,15 @@ Thus the exponent must grow almost quadratically in the reciprocal
 gap, rather than linearly. The examples remain strictly below the
 characteristic-based Elias radius. The line constructions give a
 corresponding obstruction to the proposed coefficient multiplying
-$n$ in an exceptional-parameter bound. They do not establish that the
-exceptional count must be superlinear in $n$ at one fixed positive gap
-on short prime-field domains; that stronger question remains open.
+$n$ in an exceptional-parameter bound. The failure can be nearly total:
+at polylogarithmic length and gap $\Theta(1/\log p)$, the fraction of
+nearby parameters tends to one, although no common agreement explanation
+exists. Choosing the gap constant appropriately makes the proposed
+fraction tend to zero. Thus being close to the code for a random linear
+combination need not indicate common agreement on a large coordinate set.
+These results do not establish superlinear growth in $n$ at one fixed
+positive gap on short prime-field domains; that stronger question remains
+open.
 In the fixed-gap line examples, every nearby word can have a unique
 nearby codeword. Thus their many nearby parameters do not arise from
 decoding ambiguity at individual points of the line. This uniqueness
@@ -262,6 +268,9 @@ can be nearby, with no correlated agreement, at length
 $\Theta(\log p)$ and gap $\Theta(1/\sqrt{\log p\,\log\log p})$.
 The proposed numerical bound predicts only $p^{o(1)}$ nearby parameters
 there, compared with an actual count of order $p$.
+Theorem~\ref{fg:near-unit-density} makes the nearby fraction tend to one,
+at polylogarithmic length and gap $\Theta(1/\log p)$. Choosing its
+constant appropriately makes the proposed fraction tend to zero.
 
 \paragraph{An obstruction that persists at a fixed gap.}
 The gap in Theorem~\ref{thm:informal} shrinks with $n$. To address
@@ -3243,10 +3252,12 @@ The main open questions concern the restrictions needed for useful
 coding bounds and their role in concrete soundness analyses.
 \begin{enumerate}
 \item \textbf{Restrictions on field size and domain.}
-What list bounds hold when $p$ is polynomial in $n$, or when the domain
-is restricted to a specified multiplicative subgroup or circle coset?
-The interval construction separates a universal claim from these more
-structured questions.
+What quantitative bounds hold under a prescribed restriction $p\le n^D$,
+with $D$ fixed independently of the gap, or on a specified multiplicative
+subgroup or circle coset? Corollary~\ref{fg:polynomial-fields} already
+realizes the fixed-gap coefficient obstruction with polynomial-size
+fields, but its field exponent depends on the gap. The domain-specific
+questions remain distinct.
 \item \textbf{The correct dependence on the gap.}
 For a prescribed relation between $p$ and $n$, what dependence on
 $\eta$ is necessary? The exponential-list family has shrinking gap;

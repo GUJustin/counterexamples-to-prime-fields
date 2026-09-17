@@ -1,0 +1,96 @@
+\begin{theorem}[Nearby density tending to one]\label{fg:near-unit-density}
+Fix rational $\rho\in(0,1)$ and a real $c>H_2(\rho)$. Write
+$b=\log_2p$ and $\ell=\log_2b$. For every sufficiently large prime $p$,
+there is a Reed--Solomon code of exact rate $\rho$ and a received line
+with parameters
+\[
+ n=\left(\frac{\sqrt2}{c}+o(1)\right)\frac{b^{3/2}}{\sqrt\ell},
+ \qquad \eta=\frac{c+o(1)}b,
+\]
+for which the number $J$ of nearby parameters satisfies
+\begin{equation}\label{fg:near-unit-count}
+ \frac Jp\ge1-\exp\!\left[-\left(\frac{1-\rho}{2\sqrt2\,c}-o(1)\right)
+ \sqrt{b\ell}\right].
+\end{equation}
+No pair of codewords has correlated agreement at the threshold, and
+the radius is strictly below Elias. In particular, $J/p\to1$ and
+$n=o(p)$.
+\end{theorem}
+\begin{proof}
+Choose $n$ a denominator multiple for $\rho$ within $O(1)$ of
+$\sqrt2\,b^{3/2}/(c\sqrt\ell)$, put $K=\rho n$, and set
+\[
+ s=\lfloor cn/b\rfloor,\quad
+ h=\left\lceil(4+\varepsilon_b)b/\ell\right\rceil,\quad
+ k=K+1,\quad t=k+s,\quad m=t+h,
+\]
+where $\varepsilon_b=\sqrt{\log_2\ell/\ell}$. For large $p$ these
+satisfy $1\le k<t<m<n<p$. The anchored $t$-subsets of an $m$-point
+integer interval number $\binom{m-1}h$. Since
+\[
+ \log_2((m-1)/h)=\ell/2+(\log_2\ell)/2+O_{\rho,c}(1),
+\]
+the bound $\binom{m-1}h\ge((m-1)/h)^h$ gives
+\[
+ \log_2\binom{m-1}h\ge(2+\varepsilon_b/2)b-O_{\rho,c}(b/\ell).
+\]
+The first $s$ binomial moments have a number of possible vectors with
+logarithm at most
+\[
+ \frac{s^2}{2}\log_2(m/s)+O(s^2+s\log m)
+ =b+O_{\rho,c}(b/\ell+\sqrt{b\ell}).
+\]
+Thus an anchored class has $\log_2L\ge b+\Omega(\varepsilon_b b)$,
+so $L/p\to\infty$.
+
+Remove the anchor and divide, using $N=m-1=K+s+h$ old coordinates,
+threshold $A=t$, and $q=n-N$ padding coordinates. With $d=K-1$,
+\[
+ d-\frac{(A-1)^2}{N}
+ =h-s-1-\frac{h^2}{K+s+h}=(1+o(1))h.
+\]
+The balanced collision count therefore gives $M/p=(1+o(1))/h$.
+The direction condition \eqref{fg:direction-condition} holds because
+\[
+ \log_2\binom nA\le nH_2(A/n)=(H_2(\rho)+o(1))n,
+ \qquad (A-K)b=(c+o(1))n,
+\]
+and $q\log_2(p/(p-1))=o(1)$. Apply the averaged-padding construction
+with that direction. Since $1-x\le e^{-x}$,
+\[
+ \frac Jp\ge1-e^{-qM/p},\qquad
+ \frac{qM}{p}=\left(\frac{1-\rho}{2\sqrt2\,c}+o(1)\right)\sqrt{b\ell},
+\]
+which proves \eqref{fg:near-unit-count}. The exact gap is $(s+1)/n$.
+Finally $\eta b\to c>H_2(\rho)$ gives strict Elias.
+\end{proof}
+
+For any fixed $c_1,c_2$, choosing
+$c>\max\{H_2(\rho),c_2H_2(\rho)\}$ makes the proposed threshold
+\[
+ c_1n2^{c_2H_2(\rho)/\eta}=p^{c_2H_2(\rho)/c+o(1)}=o(p),
+\]
+whereas the nearby fraction tends to one. This does not assert that
+all parameters are nearby, and the gap is not fixed.
+
+At rate $1/2$, exact finite certificates illustrate the density:
+\begin{center}
+\begin{tabular}{@{}rrrrl@{}}
+\toprule
+Prime & $n$ & $K$ & $A$ & Nearby fraction $J/p$ greater than\\
+\midrule
+$2^{521}-1$&2800&1400&1411&$0.99485642$\\
+$2^{1279}-1$&10068&5034&5050&$0.99987751$\\
+$2^{2203}-1$&21940&10970&10990&$0.99999545$\\
+\bottomrule
+\end{tabular}
+\end{center}
+All three radii are strictly below Elias, and no common agreement pair
+exists at the threshold. These are existence certificates for padded
+interval domains. The checker
+\path{research/fixed_gap_padding/verify_near_unit_density.py} verifies
+five examples, including primes $2^{3217}-1$ and $2^{4423}-1$, using
+exact list counts, Lucas--Lehmer primality, integer direction and Elias
+inequalities, and rational lower bounds on the union size. Finite list
+counts use the stronger of the binomial-moment box and Gram bounds;
+the asymptotic proof above needs only the box bound.

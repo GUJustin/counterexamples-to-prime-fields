@@ -656,3 +656,34 @@ n~Cb^1.5/sqrtlogb,eta~C'/b,missingfractionexp(-Θsqrt(b logb));
 needuniformentropyerroranddirectionconstantchecks. Noallpclaim.
 Mainopenfixedgapshortdomainsuperlineartargetstillrequiresgrowingseed
 lists; fiberliftkeepsLfixed andcannotresolveit.
+
+NEW near-unit-density theorem integrated asfg:near-unit-density.
+Forfixedrationalρ andc>H2ρ,b=log2p,ell=log2b:
+n~sqrt2/c*b^1.5/sqrtell, eta~c/b,
+J/p>=1-exp(-((1-ρ)/(2sqrt2*c)-o1)*sqrt(b ell))->1,
+noordinaryCA, strictElias, n=o(p), everylargeprime.
+Proofparametersnroundedρdenominator,K=ρn,s=floor(cn/b),
+h=ceil((4+eps)b/ell),k=K+1,t=k+s,m=t+h,N=m-1,q=n-N,
+eps=sqrt(logell/ell). Anchoredsupportcountbinom(m-1,h) haslog
+>= (2+eps/2)b-O(b/ell), momentvectorslog<=b+O(b/ell+sqrt(bell)),
+soL/p->∞. Pairbudgetd-(A-1)^2/N=h-s-1-h²/(K+s+h)~h.
+Directionunionboundneedslogbinom(n,A)~Hρn<cn=(A-K)b, exactly
+sameconstantstrictEliascondition. ThenqM/p~(1-ρ)/(2sqrt2c)sqrtbell.
+Foranyfixedc1,c2 choosec>max(Hρ,c2Hρ):proposedcounto(p),actualp(1-o1).
+Noallpclaim; gapstillshrinks; nofixedgapsuperlinearsolution.
+
+ExactfinitecertificateatM521:n2800,K1400,A1411,eta11/2800,
+nearbyfraction>0.99485642. Furtherhalf-ratefixturesM1279,M2203,
+M3217,M4423give>0.99987751,0.99999545,0.99999976,0.99999998.
+verify_near_unit_density.py usesmax(boxanchoredcount,anchoredGram),
+exactintegerdirection/Eliaschecks,LucasLehmer,downward128bitdyadic
+imageboundand32-termpositivebinomialsumforrationaldensitylower.
+All5passunder384MiBguard<1sec. Initialbox-onlycheckfailedatb127,
+521,1279 (finiteboundsnotyetlargeenough); b127omitted, Gramhandles
+521/1279. Theasymptoticproofrequiresonlyboxandsufficientlylargep.
+ResearchproofNEAR_UNIT_DENSITY.md; manuscriptnear_unit.texinputfrom
+averaged.tex. Makefile69checks. PDF116pagescleanbuild; inspected
+1,2,4,32,33,34. DateupdatedSep17. Abstractandpage2stateclearconcept:
+nearbyfraction->1withoutcommonexplanation, proposedfraction->0.
+Openquestionp<=n^DnowdistinguishesDfixedindependentofgapfromthe
+newpolynomial-fieldcorollary. Noactiveprocess. Goalactiveuntil12:30UTC.
