@@ -1017,3 +1017,14 @@ has rate2/9, gap1/9, count ceil(n^2/972), and e<=n^2. The proof uses
 a strict m<=2r-1 source bound and the existing preservation lemmas;
 213,759 arithmetic cases pass. Prime-ambient and first-order scope
 remain unchanged. See ../ordinary_ca_superlinear/EXACT_PARAMETER_FAMILY.md.
+
+
+September 17 first-order search: complete scans of sparse multiplicative
+orbits cover307,135849,3534929 normalized polynomials over F17,F41,F73.
+Only the two-element orbit crosses the quarter-rate first-order curve.
+For each full orbit, the mode construction optimizes minimum agreement
+over all received words on F_p*. The F17 scan exhausts all degree<4
+polynomials up to output affine changes; the other scans allow at most
+three nonconstant terms. Independent replay passes. This does not rule
+out dense larger-field sources, proper orbit subsets, or other domains.
+See ../sparse_orbit_first_order/README.md.

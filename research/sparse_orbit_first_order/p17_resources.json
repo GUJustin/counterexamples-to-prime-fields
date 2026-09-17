@@ -1,0 +1,12 @@
+{
+  "command": [
+    "tmp/sparse-orbit-first-order",
+    "17"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5632777080027154,
+  "peak_rss_kib": 32,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

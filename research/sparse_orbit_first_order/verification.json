@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "reports": [
+    {
+      "p": 17,
+      "polynomials": 307,
+      "orbit_rows": 2,
+      "above_curve_orbits": [
+        2
+      ]
+    },
+    {
+      "p": 41,
+      "polynomials": 135849,
+      "orbit_rows": 3,
+      "above_curve_orbits": [
+        2
+      ]
+    },
+    {
+      "p": 73,
+      "polynomials": 3534929,
+      "orbit_rows": 5,
+      "above_curve_orbits": [
+        2
+      ]
+    }
+  ],
+  "independent_p17_maxima": {
+    "4": 7,
+    "2": 8
+  },
+  "independent_p17_count": 307,
+  "scope": "All reported witness orbits and mode profiles replayed, normalized search counts checked independently, complete p17 enumeration independently repeated. Larger-field maximum claims rely on the C++ exhaustive sparse scan. No growing-family impossibility theorem."
+}
