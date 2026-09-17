@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "fixtures": [
+    {
+      "p": 17,
+      "status": "smooth_finite_lift_verified",
+      "equations": 32,
+      "variables": 48,
+      "minor_determinant": 1,
+      "source_maximum_agreement": 6,
+      "source_complete_nearest_list": 22,
+      "lifted_selected_candidates": 8,
+      "determining_supports": 1820,
+      "scope": "Full row rank gives an all-orders unramified lift for this finite bank. Source maximum agreement persists, because interpolation denominators are units. No growing-family conclusion."
+    },
+    {
+      "p": 41,
+      "status": "obstruction_verified",
+      "equations": 260,
+      "variables": 240,
+      "nonzero_witness_entries": 178,
+      "obstruction": 14,
+      "scope": "No unramified mod-p-squared lift of this exact incidence seed; ramified lifts are not excluded."
+    }
+  ]
+}

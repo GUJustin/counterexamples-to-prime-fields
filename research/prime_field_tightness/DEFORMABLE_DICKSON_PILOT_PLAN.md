@@ -1,6 +1,8 @@
 # One bounded domain-deformation pilot
 
-Proposed next investigation, September17. Not run yet; no lifting claim.
+Executed September 17. See ../dickson_domain_deformation/README.md and
+its independently replayed certificates: finite smooth lift at p=17,
+unramified first-correction obstruction at p=41. No growing-family claim.
 
 The existing Dickson cyclotomic-lift checks keep the evaluation domain
 fixed. A different possibility is to deform nodes, the received word,

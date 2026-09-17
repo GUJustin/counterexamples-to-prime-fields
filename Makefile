@@ -182,3 +182,8 @@ verify-binomial-branch-fixtures:
 verify: verify-unique-boundary-amplification
 verify-unique-boundary-amplification:
 	$(PYTHON) research/prime_field_tightness/check_unique_boundary_amplification.py
+
+.PHONY: verify-dickson-domain-deformation
+verify: verify-dickson-domain-deformation
+verify-dickson-domain-deformation:
+	$(PYTHON) research/dickson_domain_deformation/verify.py

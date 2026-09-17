@@ -2140,3 +2140,23 @@ The archive's analogous ternary bank pilot already has a positive finite
 case and later unramified obstruction; do not redo that census or infer
 it settles the different Dickson system. No live numerical/build jobs.
 Continue to18:00 Eastern=22:00UTC.
+
+## Free-domain Dickson pilot completed, 13:55 UTC
+
+research/dickson_domain_deformation/README.md records both prescribed
+fixtures, with independent stdlib certificates. At p17 the 32-equation
+Jacobian has a 32-column minor of determinant1 modulo17; a saved first
+correction also verifies modulo289. Hensel gives an all-orders finite
+lift. Exhausting1820 determining supports gives source maximum agreement6
+and nearest list22. Only8 selected candidates lift; they remain nearest.
+A finite-type open-locus argument yields an algebraic-number realization
+and arbitrarily large split-prime reductions. This is finite n16,k4,
+not a growing fixed-gap family.
+
+At p41 a left-kernel witness annihilates all240 Jacobian columns but
+pairs to14 with the correction right side. Hence no unramified mod41^2
+lift of this exact seed exists, even with all nodes free. Ramified lifts
+and other seeds remain open. Independent verification does not assert
+the generator's rank216; the direct obstruction is sufficient.
+No expanded lifting census planned without a new symbolic reason.
+Main paper stays157pages. Continue until22:00UTC,18:00 Eastern.

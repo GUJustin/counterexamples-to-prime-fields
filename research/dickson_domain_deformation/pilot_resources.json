@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/dickson_domain_deformation/pilot.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5806965420051711,
+  "peak_rss_kib": 2704,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}
