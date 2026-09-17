@@ -126,3 +126,7 @@ degree, so this is within the current paper's large-characteristic
 capacity field class. It proves that quadratic length dependence cannot
 in general be removed even for ordinary CA at one exact positive gap.
 It does not establish first-order-regime tightness or gap-exponent growth.
+
+Proposition N.4 further bounds the required extension degree by e<=4n^2.
+Its block-padding proof preserves the exact parameters and quadratic
+exception count; it does not change the scope restrictions above.

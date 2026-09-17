@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/ordinary_ca_superlinear/verify_block_padding.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5741924589965492,
+  "peak_rss_kib": 1456,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

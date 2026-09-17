@@ -96,3 +96,12 @@ can grow with n. The assertion concerns the full large-characteristic
 field class, where the cited capacity bounds are uniform in field size.
 The independent quadratic-extension result with gap merely bounded below
 remains stronger in its field-degree restriction and is retained separately.
+
+
+## Polynomial extension degree
+
+The block operations in FIELD_DEGREE_REFINEMENT.md now replace the long
+tower by a field F_(p^e) with e<=4n^2, without changing any code parameters
+or the exceptional count. Main-paper Proposition N.4 contains the proof.
+This still permits growing degree and does not assert a quadratic or prime
+ambient field for the exact-gap construction.

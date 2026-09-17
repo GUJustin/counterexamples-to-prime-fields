@@ -3,7 +3,7 @@
 September 17, 2026. User priority: assess and pursue tightness of the
 Dao–Kominers–Thaler prime-field proximity-gap paper. Work horizon extended
 to 18:00 Eastern (22:00 UTC). This note separates established results from
-research targets. No intrinsic fixed-gap superlinear lower bound is claimed.
+research targets. No prime-ambient-field fixed-gap superlinear lower bound is claimed.
 
 **Current authoritative comparison:** EPRINT_2056_COMPARISON.md, from the
 public145-page ePrint retrieved September17. It supersedes the older
@@ -978,3 +978,17 @@ inside-field common-zero point is insufficient. All7,383 parameter cases
 pass. The163-page paper builds without warnings; page8 and pages159--161
 were rendered and inspected. A possible polynomial extension-degree
 refinement is recorded separately as pending, not claimed in the paper.
+
+
+## September 17: polynomial extension degree for exact-gap ordinary CA
+
+Proposition N.4 proves that Corollary N.3 can use F_(p^e) with e<=4n^2.
+A block of linearly independent new received values and a block of
+translated common zeros replace the long tower. The exact rate1/8,
+gap1/16, and ceil(n^2/8192) nearby labels without ordinary CA are
+unchanged. Complete support censuses over F_(7^4) and F_(7^6), together
+with 7,383 parameter checks, pass. The 164-page manuscript builds without
+TeX warnings, and the new proof pages were visually inspected.
+This is an extension-degree refinement, not progress on the missing
+prime-ambient-field or first-order-regime claim. See
+../ordinary_ca_superlinear/FIELD_DEGREE_REFINEMENT.md.

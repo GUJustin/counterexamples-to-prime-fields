@@ -1,0 +1,135 @@
+{
+  "status": "passed",
+  "noise_block": {
+    "prime": 7,
+    "degree": 4,
+    "modulus_coefficients_low_to_high": [
+      1,
+      1,
+      0,
+      0,
+      1
+    ],
+    "source": {
+      "length": 4,
+      "dimension": 2,
+      "determining_subsets": 6,
+      "maximum": 2,
+      "nearest_list": 6
+    },
+    "result": {
+      "length": 7,
+      "dimension": 2,
+      "determining_subsets": 21,
+      "maximum": 2,
+      "nearest_list": 21
+    },
+    "new_values": [
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1
+      ]
+    ]
+  },
+  "common_zero_block": {
+    "prime": 7,
+    "degree": 6,
+    "modulus_coefficients_low_to_high": [
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "block_size": 2,
+    "minimal_degree_required": 6,
+    "fixtures": [
+      {
+        "variant": "roots_of_unity",
+        "source": {
+          "length": 6,
+          "dimension": 2,
+          "determining_subsets": 15,
+          "maximum": 3,
+          "nearest_list": 2
+        },
+        "result": {
+          "length": 8,
+          "dimension": 4,
+          "determining_subsets": 70,
+          "maximum": 5,
+          "nearest_list": 2
+        }
+      },
+      {
+        "variant": "roots_of_unity",
+        "source": {
+          "length": 6,
+          "dimension": 2,
+          "determining_subsets": 15,
+          "maximum": 4,
+          "nearest_list": 1
+        },
+        "result": {
+          "length": 8,
+          "dimension": 4,
+          "determining_subsets": 70,
+          "maximum": 6,
+          "nearest_list": 1
+        }
+      },
+      {
+        "variant": "translates",
+        "source": {
+          "length": 6,
+          "dimension": 2,
+          "determining_subsets": 15,
+          "maximum": 3,
+          "nearest_list": 2
+        },
+        "result": {
+          "length": 8,
+          "dimension": 4,
+          "determining_subsets": 70,
+          "maximum": 5,
+          "nearest_list": 2
+        }
+      },
+      {
+        "variant": "translates",
+        "source": {
+          "length": 6,
+          "dimension": 2,
+          "determining_subsets": 15,
+          "maximum": 4,
+          "nearest_list": 1
+        },
+        "result": {
+          "length": 8,
+          "dimension": 4,
+          "determining_subsets": 70,
+          "maximum": 6,
+          "nearest_list": 1
+        }
+      }
+    ]
+  },
+  "field_degree_parameter_cases": 7383,
+  "scope": "Complete determining-support censuses, not random search. Field irreducibility checked by SymPy; all node-difference inverses checked using independent tuple arithmetic. Asymptotic conclusions use the separately written algebraic proof."
+}

@@ -233,3 +233,77 @@ Independent exhaustive checks of both preservation operations, including
 a negative control showing failure when the common-zero point is chosen
 inside the current field, are in
 \path{research/ordinary_ca_superlinear/verify_normalization.py}.
+
+\subsection{A polynomial bound on the extension degree}
+
+\begin{proposition}\label{prop:ordinary-ca-field-degree}
+The field in Corollary~\ref{cor:ordinary-ca-fixed-gap} can be taken to be
+$\F_{p^e}$ with $e\le4n^2$.
+\end{proposition}
+\begin{proof}
+We replace the long tower by two block operations. First, $u$ new received
+values can be appended simultaneously in an extension of degree $u+1$:
+choose their distinct coordinates in the current field $F$, and choose
+values $b_1,\ldots,b_u$ such that $1,b_1,\ldots,b_u$ are linearly
+independent over $F$. A degree-$<K$ candidate with a new agreement has
+at most $K$ total agreements. Otherwise $K+1$ of its agreements, including
+a new one, give a Vandermonde row dependence over $F$ with every coefficient
+nonzero, contradicting that independence. Thus a true maximum $M\ge K$
+is preserved, as is every selected nearest witness.
+
+For the second block operation, suppose $1\le s\le M-K+1$ and choose
+distinct $c_1,\ldots,c_s\in F$. Take $\theta$ of degree $D=K+2s$ over
+$F$, and put
+\[
+ Z(X,Y)=\prod_{i=1}^s(X-Y-c_i).
+\]
+Append coordinates $\theta+c_i$ with value zero, multiply every old
+received value and selected polynomial by $Z(X,\theta)$, and increase
+dimension to $K+s$. We claim the maximum is exactly $M+s$.
+
+Suppose a degree-$<K+s$ polynomial $Q$ has $M+s+1$ agreements. At least
+$M+1\ge K+s$ are old, so interpolation lifts it to a polynomial
+$\widetilde Q(X,Y)$ over $F$ with $X$-degree $<K+s$ and $Y$-degree
+at most $s$. At every old agreement $x$,
+\[
+ \widetilde Q(x,Y)=Z(x,Y)w(x)
+\]
+as a polynomial identity: the difference has $Y$-degree $\le s<D$ and
+vanishes at $\theta$. For each new match $\theta+c_i$, the polynomial
+$\widetilde Q(Y+c_i,Y)$ has degree $<K+2s=D$ and vanishes at $\theta$.
+It is therefore zero identically, so $X-Y-c_i$ divides $\widetilde Q$.
+Divide out all $j$ matching new factors from both $\widetilde Q$ and $Z$.
+The resulting $Q_0,Z_0$ have $X$-degrees $<K+h,h$ and $Y$-degrees
+$\le h,h$, respectively, where $h=s-j$.
+
+Let $B(X)=(-1)^h[Y^h]Q_0(X,Y)$. On every old agreement, $B(x)=w(x)$.
+Each $Y$-coefficient of $Q_0-Z_0B$ has $X$-degree $<K+2h$ and at least
+$M+h+1\ge K+2h$ old roots. Consequently $Q_0=Z_0B$, whose $X$-degree
+forces $\deg B<K$, contradicting the old maximum. The selected witnesses
+attain $M+s$ after multiplication by $Z$, proving the claim.
+
+Apply these operations to the parameters of
+Corollary~\ref{cor:ordinary-ca-fixed-gap}. Start over $\F_{p^2}$, perform
+the new-value block of size $u=13\Delta-3r$, and then perform two ordinary
+single-common-zero operations, costing degree $4$. The remaining number
+of common zeros is
+\[
+ s'=2\Delta-r-1\in[1,\Delta].
+\]
+The current dimension and maximum are $r+2,m+2$, whose difference plus
+one is $\Delta$. The translated-root block therefore applies with
+$D=r+2+2s'\le3r+4$. No roots of unity need be adjoined. The total
+extension degree satisfies
+\[
+ e\le8(u+1)D\le8(10r+14)(3r+4)
+   <4(8r+16)^2\le4n^2.
+\]
+The resulting field already has cardinality at least $p^4\ge2N'r$,
+so the final label compiler needs no additional extension.
+\end{proof}
+
+Complete determining-support checks for the block operations over
+$\F_{7^4}$ and $\F_{7^6}$ are recorded in
+\path{research/ordinary_ca_superlinear/verify_block_padding.py}.
+The bound $e\le4n^2$ is a field-size refinement, not a fixed-degree
+extension or prime-field claim.

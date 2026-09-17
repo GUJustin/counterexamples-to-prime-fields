@@ -133,5 +133,6 @@ result above uses F_(p^2) and does not require this ratio condition.
 FIXED_GAP_NORMALIZATION.md and main-paper Corollary N.3 now give ordinary-CA
 quadratic counts at exact rate1/8 and gap1/16, allowing larger extension
 degree. The present theorem retains its stronger quadratic-extension
-restriction. FIELD_DEGREE_REFINEMENT.md records a further degree bound
-awaiting independent checking; that bound is not yet a manuscript claim.
+restriction. FIELD_DEGREE_REFINEMENT.md proves that the exact-gap version can use
+extension degree at most4n^2; its block operations have independent
+complete finite checks and are now included in the manuscript.
