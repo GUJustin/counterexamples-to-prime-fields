@@ -1179,7 +1179,7 @@ not yet manuscriptclaims. General slowlygrowings mayyieldarbitrarily
 slowlyvanishingκ but avoid assertingwithoutuniformproof.
 Goalactiveuntil12:30UTC.
 
-## 2026-09-17 07:04 UTC — slowly vanishing relative separation integrated
+## 2026-09-17 07:02 UTC — slowly vanishing relative separation integrated
 
 Completed the proposed parameter analysis. New Cor4.15 in
 slow_separation.tex, proof audit SLOW_SEPARATION.md:
