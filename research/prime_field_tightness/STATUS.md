@@ -1028,3 +1028,11 @@ polynomials up to output affine changes; the other scans allow at most
 three nonconstant terms. Independent replay passes. This does not rule
 out dense larger-field sources, proper orbit subsets, or other domains.
 See ../sparse_orbit_first_order/README.md.
+
+
+September17 domain-doubling test: over F_(17^2), W=(X^8-1)^2/2 on
+mu_32 has maximum agreement exactly12 for degree<8. A complete425040-
+support cover excludes13 agreements; independent tuple-field checks
+verify the domain, lower witness, and cover. This finite enlargement
+preserves3/8 and gives no first-order improvement. See
+../dickson_domain_doubling/README.md.

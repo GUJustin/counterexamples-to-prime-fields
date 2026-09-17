@@ -1,0 +1,27 @@
+{
+  "status": "passed",
+  "field": "F17[T]/(T^2-3)",
+  "checked_inverses": 288,
+  "domain_size": 32,
+  "lower_witness_coefficients": {
+    "0": 9,
+    "2": 16,
+    "4": 7,
+    "6": 2
+  },
+  "lower_witness_agreement": 12,
+  "anchor_orbit_sizes": [
+    2,
+    4,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8,
+    8
+  ],
+  "covered_supports": 425040,
+  "scope": "Independent field arithmetic, lower witness, and anchor-cover replay. Upper bound uses the complete C++ determining-support enumeration; no general composition theorem."
+}

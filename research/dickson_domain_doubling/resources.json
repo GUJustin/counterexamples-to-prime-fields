@@ -1,0 +1,11 @@
+{
+  "command": [
+    "tmp/dickson-domain-doubling"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5653683329946944,
+  "peak_rss_kib": 32,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}
