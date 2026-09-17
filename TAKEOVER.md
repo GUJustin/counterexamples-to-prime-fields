@@ -616,3 +616,43 @@ s~2(1-eps)sqrt(b/logb),m=n-s,k=ρn+1,t=k+s;
 anchoredlogL>=b+Ω(eps*b) forsloweps->0. q=s+1, balancedbudget
 2T/L²~ρ(1-ρ)n. NewPDF114pages cleanbuild; viewed4,30,31,32,33.
 Makefile67checks,newcheckguardedpassed<1sec. No activeprocess.
+
+MAJOR further strengthening: dense nearby parameters via nonconstant
+padding direction, nowinmanuscriptTheoremfg:dense-lines (replaces
+weakerfg:larger-gap-lines inpaper; oldresultproofretainedinresearchnote).
+ForcoreN, dimensionK, thresholdA, qnew,n=N+q, replaceK-1+q<A by
+binom(n,A)*p^q < p^(A-K)*(p-1)^q. Randomnonzerodirectionvalues
+onpadding, zerooncore: foranyA-support rold,u=A-rnew, nonzeroG
+vanishingroldimpossibleifr>=K; otherwise<=p^(K-r)possiblevectors,
+prob<=p^(K-A)(p/(p-1))^q. UnionboundexcludesALLnonzeroGwithA
+agreements. G0stillconfinesjointagreementtocoredegreeA-1.
+Fixgoodg; randomf offsets translate/scalecandidateimages, soaveraged
+labelunionformulaunchanged. Thispermitsq=Θ(n), henceconstantfractionp.
+
+Forfixedrationalρ<β<1, α=ρ/β,H=H2β,b=log2p, n~2b/(αH),m=αn,
+K=ρn,k=K+1,s~2(1-eps)sqrt(b/logb),t=k+s,N=m-1,q=n-m+1.
+AnchoredlogL>=b+Ω(eps*b), eps=sqrt(loglogb/logb), L/p->∞.
+2T/L²~ρ(1-β)n,M/p~1/[ρ(1-β)n]. Directionunionboundholds because
+logbinom<=n=O(b) whereas(A-K)b~b^1.5/sqrtlogb.
+eta~(ρH2β/β)/sqrt(b logb); J/p>=1-exp(-(β-ρ)/[ρβ(1-β)])-o1.
+Thus ANYfixedfractionbelow1 ofallparameterscanbenearby atloglength,
+noordinaryCA, strictElias, exactρ, everylargeprime. Chooseβnear1
+forfraction1-δ. Gapstillshrinks; constantsdependρ,δ; nofixedgap
+superlinearclaim. Predictedc1*n*2^(c2H2ρ/eta)=p^o1 vsactualΘ(p).
+Abstractandintroexplicitlystatecontrast. NOuniquenessclaimfordensecase.
+
+DENSE_PADDING.md proof; verify_dense_padding.py independentlyexhausts
+F17 coreN6,K2,A4,q4,n10:directionbound30345/32768<1, gnew1112,
+83521offsettuples+83521codewordpairs, guarantee10labels, maxselected
+union12, jointagreementmax3. Oldqrestrictionfails. This smallfixture
+checksmechanism, notElias. Allpassguarded<1sec,Makefile68checks.
+LatestPDF115pages cleanbuild/nooverfull/undefined; renderedreview1,4,
+31,32,33. Noactiveprocess. Continueuntil12:30UTC; current~05:20UTC.
+
+Potentialnextstrongerregime (NOTproved/inpaper): letβ approach1withp
+toobtain J/p->1 ratherthananyfixedfraction. Fixedβtheoremalready
+sufficesforclearclaim. Near1 with1-β~c/sqrt(b logb) suggests
+n~Cb^1.5/sqrtlogb,eta~C'/b,missingfractionexp(-Θsqrt(b logb));
+needuniformentropyerroranddirectionconstantchecks. Noallpclaim.
+Mainopenfixedgapshortdomainsuperlineartargetstillrequiresgrowingseed
+lists; fiberliftkeepsLfixed andcannotresolveit.

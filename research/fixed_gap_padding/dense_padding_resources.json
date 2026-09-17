@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/fixed_gap_padding/verify_dense_padding.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5451468329993077,
+  "peak_rss_kib": 2336,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

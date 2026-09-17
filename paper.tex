@@ -47,8 +47,9 @@ with matching moments. Concentration and exact polynomial-weight
 certificates sharpen the finite bounds.
 
 We also separate list size from the number of nearby points on an
-affine line. A large list gives an affine line with many nearby points
-and no correlated agreement. An anchored lift and padding construction
+affine line. At logarithmic block length and shrinking gap,
+any prescribed fraction below one of all field parameters can be nearby,
+with no correlated agreement. An anchored lift and padding construction
 gives the same failure at an exactly fixed positive rate and gap, at
 arbitrarily large lengths, even when every nearby point on the line
 has a unique nearby codeword. The necessary coefficient of a linear
@@ -255,10 +256,12 @@ list give different parameters $z$. Theorem~\ref{thm:logarithmic-lines}
 also gives such counterexamples over every sufficiently large prime $p$,
 with block length $\Theta(\log p)$ and $\Omega(p/\log p)$ nearby
 labels. Its gap is $\Theta(1/\log p)$.
-A padding refinement (Theorem~\ref{fg:larger-gap-lines}) keeps
-$n=\Theta(\log p)$ while increasing both the gap and the nearby-label
-count to orders $1/\sqrt{\log p\,\log\log p}$ and
-$p/\sqrt{\log p\,\log\log p}$, respectively.
+A padding refinement (Theorem~\ref{fg:dense-lines}) is stronger:
+for any fixed fraction below one, that fraction of all field parameters
+can be nearby, with no correlated agreement, at length
+$\Theta(\log p)$ and gap $\Theta(1/\sqrt{\log p\,\log\log p})$.
+The proposed numerical bound predicts only $p^{o(1)}$ nearby parameters
+there, compared with an actual count of order $p$.
 
 \paragraph{An obstruction that persists at a fixed gap.}
 The gap in Theorem~\ref{thm:informal} shrinks with $n$. To address

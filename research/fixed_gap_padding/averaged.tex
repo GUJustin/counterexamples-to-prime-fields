@@ -46,55 +46,95 @@ For common witnesses $F,G$, if $G=0$ the joint agreement is at most
 $A-1$ by the degree of $w-F$; otherwise it is at most $K-1+q<A$.
 \end{proof}
 
-\begin{theorem}[More nearby parameters at a larger gap]
-\label{fg:larger-gap-lines}
-Fix rational $\rho\in(0,1)$, put $H=H_2(\rho)$, and write $b=\log_2p$.
-For every sufficiently large prime $p$, there is a prime-field
+\paragraph{Choosing the direction allows more padding.}
+The restriction $K-1+q<A$ in Lemma~\ref{fg:averaged-padding} can be
+replaced by
+\begin{equation}\label{fg:direction-condition}
+ \binom nA p^q<p^{A-K}(p-1)^q,\qquad n=N+q.
+\end{equation}
+Choose the same padding coordinates, but choose their direction values
+independently in $\F_p^*$, keeping the old direction zero. For an
+$A$-subset with $r$ old and $u=A-r$ new coordinates, a nonzero polynomial
+$G$ of degree less than $K$ cannot vanish on $r\ge K$ old points.
+If $r<K$, the polynomials vanishing there form a space of dimension
+$K-r$. The probability that one matches the $u$ new direction values
+is at most
+\[
+ \frac{p^{K-r}}{(p-1)^u}
+ \le p^{K-A}\left(\frac p{p-1}\right)^q.
+\]
+A union bound and \eqref{fg:direction-condition} therefore give a
+direction with which no nonzero $G$ has $A$ agreements. A zero $G$
+still confines joint agreement to the core, where $w-F$ has degree
+$A-1$. With this direction fixed, the labels are
+$(P_i(x_j)-f(x_j))/g(x_j)$. Scaling preserves each image size, so
+uniform offsets give exactly the same bound \eqref{fg:averaged-count}.
+
+\begin{theorem}[An arbitrarily large fraction of nearby parameters]
+\label{fg:dense-lines}
+Fix rational $0<\rho<\beta<1$, put $H=H_2(\beta)$, and write
+$b=\log_2p$. For every sufficiently large prime $p$, there is a
 Reed--Solomon code of exact rate $\rho$, length
-$n=(2/H+o(1))b$, and a received line at gap
 \[
- \eta=\frac{H+o(1)}{\sqrt{b\log_2b}}
+ n=\left(\frac{2\beta}{\rho H}+o(1)\right)b,
+ \qquad
+ \eta=\frac{\rho H/\beta+o(1)}{\sqrt{b\log_2b}},
 \]
-with at least
+and a received line with at least
 \[
- \left(\frac{H}{\rho(1-\rho)}-o(1)\right)
- \frac{p}{\sqrt{b\log_2b}}
+ \left(1-\exp\!\left(-\frac{\beta-\rho}
+ {\rho\beta(1-\beta)}\right)-o(1)\right)p
 \]
-nearby parameters. No pair of codewords has correlated agreement at
-the threshold, and the radius is strictly below Elias.
+nearby parameters at gap $\eta$. No pair of codewords has correlated
+agreement at the threshold, and the radius is strictly below Elias.
+Consequently, for any fixed $\delta>0$, choosing $\beta$ sufficiently
+close to $1$ gives at least $(1-\delta)p$ nearby parameters at length
+$\Theta_{\rho,\delta}(\log p)$ and gap
+$\Theta_{\rho,\delta}(1/\sqrt{\log p\,\log\log p})$.
 \end{theorem}
 \begin{proof}
-Choose $n$ a denominator multiple for $\rho$ with $n=2b/H+O(1)$,
-and set
+Put $\alpha=\rho/\beta$. Choose $n$ through common denominator
+multiples for $\rho,\alpha$, with $n=2b/(\alpha H)+O(1)$, and set
 \[
+ m=\alpha n,\quad K=\rho n,\quad k=K+1,\quad
  s=\left\lfloor2(1-\varepsilon_b)\sqrt{b/\log_2b}\right\rfloor,
- \quad m=n-s,\quad k=\rho n+1,\quad t=k+s,
+ \quad t=k+s,
 \]
 where $\varepsilon_b\to0$ sufficiently slowly, for instance
 $\varepsilon_b=\sqrt{\log_2\log_2b/\log_2b}$ for large $b$.
 The anchored integer moment count gives a class of size $L$ with
 \[
  \log_2L\ge mH_2(t/m)-\frac{s^2}{2}\log_2(m/s)
- -O_\rho(s^2+s\log m+\log m)
+ -O_{\rho,\beta}(s^2+s\log m+\log m)
  \ge b+\Omega(\varepsilon_b b).
 \]
-Thus $L/p\to\infty$. Remove the anchor and divide as above.
-Apply Lemma~\ref{fg:averaged-padding} with
-$N=m-1$, $K=\rho n$, $A=t$, $q=s+1$, and $d=K-1$.
-Balanced occupancies give
+Thus $L/p\to\infty$. Remove the anchor and divide as above, giving
+$N=m-1$ old points and a received polynomial of degree $A-1$, where
+$A=t$. Add $q=n-m+1$ coordinates, and use $d=K-1$ in the collision
+bound. Balanced occupancies give
 \[
  \frac{2T}{L^2}=d-\frac{(A-1)^2}{N}+o(1)
- =\bigl(\rho(1-\rho)+o(1)\bigr)n,
+ =\bigl(\rho(1-\beta)+o(1)\bigr)n,
  \qquad
- \frac Mp=\frac{1+o(1)}{\rho(1-\rho)n}.
+ \frac Mp=\frac{1+o(1)}{\rho(1-\beta)n}.
 \]
-Since $q/n\to0$, expanding \eqref{fg:averaged-count} gives
-$J\ge(1+o(1))pq/(\rho(1-\rho)n)$, as asserted. The exact gap
-is $q/n$, and $\eta\log_2p\to\infty$ verifies strict Elias.
+The direction condition holds eventually: $\log_2\binom nA\le n=O(b)$,
+whereas $(A-K)b=(s+1)b=\Theta(b^{3/2}/\sqrt{\log b})$.
+Moreover $q/n\to1-\rho/\beta$. Substitution into
+\eqref{fg:averaged-count} gives the asserted constant fraction.
+The exact gap is $(s+1)/n$, and $\eta\log_2p\to\infty$ verifies
+strict Elias. Finally the exponent in the displayed fraction tends
+to $-\infty$ as $\beta\to1$ with $\rho$ fixed.
 \end{proof}
 
-The gap still tends to zero. The theorem does not prove superlinear
-growth at one fixed positive gap, or uniqueness of nearby codewords.
+Thus almost every parameter can be nearby while no common agreement
+explanation exists. Here ``almost every'' means any fixed fraction
+below one; the length and gap constants depend on that fraction.
+The gap still shrinks. This does not prove superlinear growth at one
+fixed positive gap, or uniqueness of nearby codewords. At these
+parameters, the proposed numerical threshold
+$c_1n2^{c_2H_2(\rho)/\eta}$ is only $p^{o(1)}$ for fixed $c_1,c_2$,
+whereas the actual count is a constant fraction of $p$.
 
 \paragraph{Exact finite comparisons.}
 For a seed with parameters $(m,k,t)$ and $s=t-k$, the same proof uses
@@ -124,3 +164,8 @@ rational Gram bounds, collision arithmetic, outward logarithm intervals,
 Lucas--Lehmer primality, and integer Elias inequalities. Two small-field
 fixtures also exhaust all $5202$ offset tuples and $167042$ codeword
 pairs. The finite search is not an optimality proof.
+
+The direction variant is checked independently in
+\path{research/fixed_gap_padding/verify_dense_padding.py}: over $\F_{17}$,
+it exhausts $83521$ offset tuples and all $83521$ codeword pairs for
+an example where the constant-direction padding condition fails.
