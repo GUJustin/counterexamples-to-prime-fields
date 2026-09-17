@@ -1,0 +1,45 @@
+{
+  "scope": "Correct w versus w\u22121 weights; continuum diagnostics, not finite certificates or global bounds",
+  "rows": [
+    {
+      "sigma": 0.304,
+      "lambda_coefficient": 7.233925061655901e-07,
+      "constant_at_t3261": -0.0002319857168480762,
+      "total_degree_coefficient": 7.541790442135507e-06,
+      "continuum_total_threshold_lambda260": 3266.821384932646,
+      "lambda_needed_t3005": 2989.641241237452
+    },
+    {
+      "sigma": 0.304785714,
+      "lambda_coefficient": 7.748712342284046e-07,
+      "constant_at_t3261": -0.00014742974763836523,
+      "total_degree_coefficient": 7.575236312285907e-06,
+      "continuum_total_threshold_lambda260": 3253.866655107065,
+      "lambda_needed_t3005": 2692.950972249507
+    },
+    {
+      "sigma": 0.305,
+      "lambda_coefficient": 7.581307276514028e-07,
+      "constant_at_t3261": -0.00012435542189544212,
+      "total_degree_coefficient": 7.584345248794936e-06,
+      "continuum_total_threshold_lambda260": 3251.4067437719186,
+      "lambda_needed_t3005": 2725.0548358421006
+    },
+    {
+      "sigma": 0.306,
+      "lambda_coefficient": 5.043697412560386e-07,
+      "constant_at_t3261": -1.6597402491906493e-05,
+      "total_degree_coefficient": 7.626781798496788e-06,
+      "continuum_total_threshold_lambda260": 3245.98203655738,
+      "lambda_needed_t3005": 3903.988248786544
+    },
+    {
+      "sigma": 0.3046214007081862,
+      "lambda_coefficient": 7.787526472368388e-07,
+      "constant_at_t3261": -0.00016511905381895383,
+      "total_degree_coefficient": 7.568247951659231e-06,
+      "continuum_total_threshold_lambda260": 3256.0640313714307,
+      "lambda_needed_t3005": 2699.946558004142
+    }
+  ]
+}

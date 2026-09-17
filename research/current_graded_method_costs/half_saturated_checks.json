@@ -1,0 +1,6 @@
+{
+  "rank_and_surplus_cases": 3357,
+  "small_width_checks": 481,
+  "benchmark_saturated_necessary_m": 114,
+  "status": "passed; Riemann and continuity arguments remain analytic"
+}

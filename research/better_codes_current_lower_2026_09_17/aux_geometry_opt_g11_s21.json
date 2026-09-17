@@ -1,0 +1,444 @@
+{
+  "group": 11,
+  "source": 21,
+  "context": [
+    12,
+    43,
+    3206
+  ],
+  "original": [
+    111,
+    46,
+    22,
+    151,
+    3188,
+    5,
+    7
+  ],
+  "baseline_bound": 288191873412750740,
+  "tested": 169,
+  "valid_at_context": 59,
+  "best": [
+    {
+      "parameters": [
+        111,
+        46,
+        21,
+        151,
+        3169,
+        5,
+        7
+      ],
+      "bound": 288191856605538072,
+      "delta": -16807212668,
+      "source_L": 3169,
+      "group_source_limit": 3171,
+      "flag": [
+        3018,
+        112,
+        44
+      ],
+      "nullity": 926969515
+    },
+    {
+      "parameters": [
+        111,
+        46,
+        22,
+        151,
+        3188,
+        5,
+        7
+      ],
+      "bound": 288191873412750740,
+      "delta": 0,
+      "source_L": 3188,
+      "group_source_limit": 3188,
+      "flag": [
+        3037,
+        112,
+        44
+      ],
+      "nullity": 321075546
+    },
+    {
+      "parameters": [
+        111,
+        46,
+        23,
+        151,
+        3203,
+        5,
+        7
+      ],
+      "bound": 288191886681602847,
+      "delta": 13268852107,
+      "source_L": 3203,
+      "group_source_limit": 3203,
+      "flag": [
+        3052,
+        112,
+        44
+      ],
+      "nullity": 1424750538
+    },
+    {
+      "parameters": [
+        112,
+        46,
+        21,
+        151,
+        3222,
+        5,
+        7
+      ],
+      "bound": 288191903488815515,
+      "delta": 30076064775,
+      "source_L": 3222,
+      "group_source_limit": 3222,
+      "flag": [
+        3071,
+        112,
+        44
+      ],
+      "nullity": 584980374
+    },
+    {
+      "parameters": [
+        112,
+        46,
+        22,
+        151,
+        3242,
+        5,
+        7
+      ],
+      "bound": 288191921180618324,
+      "delta": 47767867584,
+      "source_L": 3242,
+      "group_source_limit": 3242,
+      "flag": [
+        3091,
+        112,
+        44
+      ],
+      "nullity": 2051741830
+    },
+    {
+      "parameters": [
+        112,
+        46,
+        23,
+        151,
+        3256,
+        5,
+        7
+      ],
+      "bound": 288191933564880291,
+      "delta": 60152129551,
+      "source_L": 3256,
+      "group_source_limit": 3256,
+      "flag": [
+        3105,
+        112,
+        44
+      ],
+      "nullity": 946355298
+    },
+    {
+      "parameters": [
+        112,
+        46,
+        21,
+        152,
+        3091,
+        5,
+        7
+      ],
+      "bound": 288357079820400452,
+      "delta": 165206407649712,
+      "source_L": 3091,
+      "group_source_limit": 3171,
+      "flag": [
+        2939,
+        113,
+        44
+      ],
+      "nullity": 742914996
+    },
+    {
+      "parameters": [
+        112,
+        46,
+        22,
+        152,
+        3109,
+        5,
+        7
+      ],
+      "bound": 288357095743022980,
+      "delta": 165222330272240,
+      "source_L": 3109,
+      "group_source_limit": 3171,
+      "flag": [
+        2957,
+        113,
+        44
+      ],
+      "nullity": 1083290473
+    },
+    {
+      "parameters": [
+        112,
+        46,
+        23,
+        152,
+        3122,
+        5,
+        7
+      ],
+      "bound": 288357107242694805,
+      "delta": 165233829944065,
+      "source_L": 3122,
+      "group_source_limit": 3171,
+      "flag": [
+        2970,
+        113,
+        44
+      ],
+      "nullity": 321192154
+    },
+    {
+      "parameters": [
+        113,
+        46,
+        21,
+        152,
+        3205,
+        5,
+        7
+      ],
+      "bound": 288357180663676462,
+      "delta": 165307250925722,
+      "source_L": 3205,
+      "group_source_limit": 3205,
+      "flag": [
+        3053,
+        113,
+        44
+      ],
+      "nullity": 259054935
+    },
+    {
+      "parameters": [
+        113,
+        46,
+        22,
+        152,
+        3224,
+        5,
+        7
+      ],
+      "bound": 288357197470889131,
+      "delta": 165324058138391,
+      "source_L": 3224,
+      "group_source_limit": 3224,
+      "flag": [
+        3072,
+        113,
+        44
+      ],
+      "nullity": 995029499
+    },
+    {
+      "parameters": [
+        113,
+        46,
+        23,
+        152,
+        3238,
+        5,
+        7
+      ],
+      "bound": 288357209855151097,
+      "delta": 165336442400357,
+      "source_L": 3238,
+      "group_source_limit": 3238,
+      "flag": [
+        3086,
+        113,
+        44
+      ],
+      "nullity": 1183127562
+    },
+    {
+      "parameters": [
+        113,
+        46,
+        21,
+        153,
+        3045,
+        5,
+        7
+      ],
+      "bound": 288522331342144120,
+      "delta": 330457929393380,
+      "source_L": 3045,
+      "group_source_limit": 3171,
+      "flag": [
+        2892,
+        114,
+        44
+      ],
+      "nullity": 523141126
+    },
+    {
+      "parameters": [
+        113,
+        46,
+        22,
+        153,
+        3062,
+        5,
+        7
+      ],
+      "bound": 288522346380176507,
+      "delta": 330472967425767,
+      "source_L": 3062,
+      "group_source_limit": 3171,
+      "flag": [
+        2909,
+        114,
+        44
+      ],
+      "nullity": 793814093
+    },
+    {
+      "parameters": [
+        113,
+        46,
+        23,
+        153,
+        3075,
+        5,
+        7
+      ],
+      "bound": 288522357879848333,
+      "delta": 330484467097593,
+      "source_L": 3075,
+      "group_source_limit": 3171,
+      "flag": [
+        2922,
+        114,
+        44
+      ],
+      "nullity": 1924625778
+    },
+    {
+      "parameters": [
+        111,
+        47,
+        21,
+        150,
+        3150,
+        5,
+        7
+      ],
+      "bound": 288618902245385209,
+      "delta": 427028832634469,
+      "source_L": 3150,
+      "group_source_limit": 3171,
+      "flag": [
+        3000,
+        110,
+        45
+      ],
+      "nullity": 20004723
+    },
+    {
+      "parameters": [
+        111,
+        47,
+        22,
+        150,
+        3160,
+        5,
+        7
+      ],
+      "bound": 288618911091286614,
+      "delta": 427037678535874,
+      "source_L": 3160,
+      "group_source_limit": 3171,
+      "flag": [
+        3010,
+        110,
+        45
+      ],
+      "nullity": 609705588
+    },
+    {
+      "parameters": [
+        111,
+        47,
+        23,
+        150,
+        3180,
+        5,
+        7
+      ],
+      "bound": 288618928783089423,
+      "delta": 427055370338683,
+      "source_L": 3180,
+      "group_source_limit": 3180,
+      "flag": [
+        3030,
+        110,
+        45
+      ],
+      "nullity": 1001266394
+    },
+    {
+      "parameters": [
+        111,
+        47,
+        21,
+        151,
+        3060,
+        5,
+        7
+      ],
+      "bound": 288784114845165904,
+      "delta": 592241432415164,
+      "source_L": 3060,
+      "group_source_limit": 3171,
+      "flag": [
+        2909,
+        111,
+        45
+      ],
+      "nullity": 952353363
+    },
+    {
+      "parameters": [
+        111,
+        47,
+        22,
+        151,
+        3069,
+        5,
+        7
+      ],
+      "bound": 288784122806477168,
+      "delta": 592249393726428,
+      "source_L": 3069,
+      "group_source_limit": 3171,
+      "flag": [
+        2918,
+        111,
+        45
+      ],
+      "nullity": 239162534
+    }
+  ],
+  "scope": "Bounded dm,dB,dU in[-2,2],ds in[-1,1], analytically minimumL; ranked by actual roundedroot max4 atcontext. Identity/characteristic/topcandidate global group effects must be audited before use."
+}

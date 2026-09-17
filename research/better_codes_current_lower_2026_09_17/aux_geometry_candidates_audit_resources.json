@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/better_codes_current_lower_2026_09_17/audit_aux_geometry_candidates.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5409031250019325,
+  "peak_rss_kib": 6560,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

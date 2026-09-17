@@ -1,0 +1,37 @@
+{
+  "parameters": {
+    "m": 80000,
+    "L": 5600000,
+    "s": 24800,
+    "Y": 110642
+  },
+  "A": 181275,
+  "coefficients": 87614369246347323571805222,
+  "local_rank": 332991094486374830800,
+  "nullity": 322751773311079926570022,
+  "weighted_shape_slack": 63853,
+  "division_remainder": 42418,
+  "one_residue_condition": true,
+  "global_box": {
+    "r": 36,
+    "y": 163,
+    "t": 9678
+  },
+  "mixed": [
+    441614400,
+    1983593276,
+    8025512
+  ],
+  "characteristic_slack": 147113157,
+  "potential": [
+    5454817957487,
+    300327636571218,
+    1357584972166939
+  ],
+  "potential_slacks": [
+    19042,
+    43672,
+    17514
+  ],
+  "scope": "Exact numeric adapter gates. Direct slope-sum global count and published local-rank polynomial. No routing or full certificate assertion."
+}

@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/better_codes_current_lower_2026_09_17/auxiliary_geometry_optimizer.py",
+    "11",
+    "21",
+    "12",
+    "43",
+    "3206"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.7033566669997526,
+  "peak_rss_kib": 19792,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

@@ -1,0 +1,30 @@
+{
+  "tested": 147,
+  "earlier_valid_sources": 0,
+  "best": [],
+  "continuum_samples": [
+    {
+      "m": 14000,
+      "L": 3640000,
+      "s": 4265,
+      "Y": 19362,
+      "gap": 1435827161536541885457,
+      "thin_at_z3206": 1442372336828082489330,
+      "normalized_margin": "-6545175291540603873/5035223536000000000000",
+      "normalized_float": -0.0012998777998126604,
+      "threshold": 3378
+    },
+    {
+      "m": 28000,
+      "L": 7280000,
+      "s": 8529,
+      "Y": 38724,
+      "gap": 23071642724952273092630,
+      "thin_at_z3206": 23122243146441642622980,
+      "normalized_margin": "-1012008429787390607/1611271531520000000000",
+      "normalized_float": -0.0006280806245193869,
+      "threshold": 3289
+    }
+  ],
+  "scope": "Exactcharlimited highlambda singleton filter; fullpropagation required."
+}

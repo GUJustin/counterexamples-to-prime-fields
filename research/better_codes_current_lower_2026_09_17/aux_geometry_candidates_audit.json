@@ -1,0 +1,123 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "source": 5,
+      "parameters": [
+        158,
+        62,
+        28,
+        215,
+        3230,
+        7,
+        10
+      ],
+      "affected_groups": [
+        {
+          "group": 4,
+          "identity_minima": [
+            62099866966515840,
+            62099866966515840,
+            62099866966515840
+          ]
+        },
+        {
+          "group": 11,
+          "identity_minima": [
+            103499778277526400,
+            103499778277526400,
+            103499778277526400
+          ]
+        },
+        {
+          "group": 12,
+          "identity_minima": [
+            103499778277526400,
+            103499778277526400,
+            103499778277526400
+          ]
+        },
+        {
+          "group": 13,
+          "identity_minima": [
+            103499778277526400,
+            103499778277526400,
+            103499778277526400
+          ]
+        },
+        {
+          "group": 14,
+          "identity_minima": [
+            103499778277526400,
+            103499778277526400,
+            103499778277526400
+          ]
+        },
+        {
+          "group": 15,
+          "identity_minima": [
+            103499778277526400,
+            103499778277526400,
+            103499778277526400
+          ]
+        }
+      ],
+      "characteristic_margin": 2040033937
+    },
+    {
+      "source": 21,
+      "parameters": [
+        111,
+        46,
+        21,
+        151,
+        3169,
+        5,
+        7
+      ],
+      "affected_groups": [
+        {
+          "group": 11,
+          "identity_minima": [
+            103499778277526400,
+            103499778277526400,
+            103499778277526400
+          ]
+        },
+        {
+          "group": 15,
+          "identity_minima": [
+            103499778277526400,
+            103499778277526400,
+            103499778277526400
+          ]
+        }
+      ],
+      "characteristic_margin": 2062679581
+    },
+    {
+      "source": 22,
+      "parameters": [
+        187,
+        83,
+        38,
+        254,
+        3240,
+        9,
+        10
+      ],
+      "affected_groups": [
+        {
+          "group": 11,
+          "identity_minima": [
+            103499778277526400,
+            103499778277526400,
+            103499778277526400
+          ]
+        }
+      ],
+      "characteristic_margin": 2008202995
+    }
+  ],
+  "scope": "All affected group identity polynomials and source shape/characteristic gates. Positive exact kernel counts recorded by optimizer. No global envelope or Lean claim."
+}

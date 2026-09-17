@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/better_codes_new_mechanism/global_rank/small_matrix_check.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5554017500107875,
+  "peak_rss_kib": 6304,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

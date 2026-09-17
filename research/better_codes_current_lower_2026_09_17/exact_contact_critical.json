@@ -1,0 +1,66 @@
+[
+  {
+    "source": 0,
+    "D": 11601600000,
+    "shape_contact_upper": 11601729725,
+    "contact_slack": 129725,
+    "old_threshold": 3207,
+    "exact_D_threshold": 3207
+  },
+  {
+    "source": 1,
+    "D": 5800800000,
+    "shape_contact_upper": 5800930430,
+    "contact_slack": 130430,
+    "old_threshold": 3222,
+    "exact_D_threshold": 3222
+  },
+  {
+    "source": 2,
+    "D": 5800800000,
+    "shape_contact_upper": 5800930430,
+    "contact_slack": 130430,
+    "old_threshold": 3217,
+    "exact_D_threshold": 3216
+  },
+  {
+    "source": 3,
+    "D": 2900400000,
+    "shape_contact_upper": 2900465219,
+    "contact_slack": 65219,
+    "old_threshold": 3229,
+    "exact_D_threshold": 3229
+  },
+  {
+    "source": 4,
+    "D": 1450200000,
+    "shape_contact_upper": 1450298145,
+    "contact_slack": 98145,
+    "old_threshold": 3269,
+    "exact_D_threshold": 3268
+  },
+  {
+    "source": 5,
+    "D": 181275000,
+    "shape_contact_upper": 181401956,
+    "contact_slack": 126956,
+    "old_threshold": 4041,
+    "exact_D_threshold": 4032
+  },
+  {
+    "source": 6,
+    "D": 2537850000,
+    "shape_contact_upper": 2537923506,
+    "contact_slack": 73506,
+    "old_threshold": 3376,
+    "exact_D_threshold": 3374
+  },
+  {
+    "source": 7,
+    "D": 63446250,
+    "shape_contact_upper": 63569328,
+    "contact_slack": 123078,
+    "old_threshold": 5872,
+    "exact_D_threshold": 5860
+  }
+]

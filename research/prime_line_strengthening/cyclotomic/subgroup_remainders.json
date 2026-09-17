@@ -1,0 +1,271 @@
+{
+  "scope": "Exact complete prime obstruction per listed e,N; not an asymptotic classification.",
+  "rows": [
+    {
+      "e": 5,
+      "d": 2,
+      "N": 4,
+      "gcd_nonconstant_remainder": 900,
+      "factors": {
+        "2": 2,
+        "3": 2,
+        "5": 2
+      },
+      "candidates": []
+    },
+    {
+      "e": 5,
+      "d": 2,
+      "N": 6,
+      "gcd_nonconstant_remainder": 80750,
+      "factors": {
+        "2": 1,
+        "5": 3,
+        "17": 1,
+        "19": 1
+      },
+      "candidates": [
+        {
+          "p": 19,
+          "p_over_N": 3.1666666666666665,
+          "root_count": 2,
+          "roots": [
+            13,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "e": 5,
+      "d": 2,
+      "N": 8,
+      "gcd_nonconstant_remainder": 7245000,
+      "factors": {
+        "2": 3,
+        "3": 2,
+        "5": 4,
+        "7": 1,
+        "23": 1
+      },
+      "candidates": []
+    },
+    {
+      "e": 7,
+      "d": 3,
+      "N": 6,
+      "gcd_nonconstant_remainder": 637,
+      "factors": {
+        "7": 2,
+        "13": 1
+      },
+      "candidates": [
+        {
+          "p": 13,
+          "p_over_N": 2.1666666666666665,
+          "root_count": 3,
+          "roots": [
+            2,
+            5,
+            11
+          ]
+        }
+      ]
+    },
+    {
+      "e": 7,
+      "d": 3,
+      "N": 9,
+      "gcd_nonconstant_remainder": 343,
+      "factors": {
+        "7": 3
+      },
+      "candidates": []
+    },
+    {
+      "e": 7,
+      "d": 3,
+      "N": 12,
+      "gcd_nonconstant_remainder": 62426,
+      "factors": {
+        "2": 1,
+        "7": 4,
+        "13": 1
+      },
+      "candidates": [
+        {
+          "p": 13,
+          "p_over_N": 1.0833333333333333,
+          "root_count": 3,
+          "roots": [
+            2,
+            5,
+            11
+          ]
+        }
+      ]
+    },
+    {
+      "e": 11,
+      "d": 5,
+      "N": 10,
+      "gcd_nonconstant_remainder": 121,
+      "factors": {
+        "11": 2
+      },
+      "candidates": []
+    },
+    {
+      "e": 11,
+      "d": 5,
+      "N": 15,
+      "gcd_nonconstant_remainder": 1331,
+      "factors": {
+        "11": 3
+      },
+      "candidates": []
+    },
+    {
+      "e": 11,
+      "d": 5,
+      "N": 20,
+      "gcd_nonconstant_remainder": 14641,
+      "factors": {
+        "11": 4
+      },
+      "candidates": []
+    },
+    {
+      "e": 13,
+      "d": 6,
+      "N": 12,
+      "gcd_nonconstant_remainder": 845,
+      "factors": {
+        "5": 1,
+        "13": 2
+      },
+      "candidates": []
+    },
+    {
+      "e": 13,
+      "d": 6,
+      "N": 18,
+      "gcd_nonconstant_remainder": 2197,
+      "factors": {
+        "13": 3
+      },
+      "candidates": []
+    },
+    {
+      "e": 13,
+      "d": 6,
+      "N": 24,
+      "gcd_nonconstant_remainder": 285610,
+      "factors": {
+        "2": 1,
+        "5": 1,
+        "13": 4
+      },
+      "candidates": []
+    },
+    {
+      "e": 17,
+      "d": 8,
+      "N": 16,
+      "gcd_nonconstant_remainder": 1156,
+      "factors": {
+        "2": 2,
+        "17": 2
+      },
+      "candidates": []
+    },
+    {
+      "e": 17,
+      "d": 8,
+      "N": 24,
+      "gcd_nonconstant_remainder": 9826,
+      "factors": {
+        "2": 1,
+        "17": 3
+      },
+      "candidates": []
+    },
+    {
+      "e": 17,
+      "d": 8,
+      "N": 32,
+      "gcd_nonconstant_remainder": 668168,
+      "factors": {
+        "2": 3,
+        "17": 4
+      },
+      "candidates": []
+    },
+    {
+      "e": 19,
+      "d": 9,
+      "N": 18,
+      "gcd_nonconstant_remainder": 13357,
+      "factors": {
+        "19": 2,
+        "37": 1
+      },
+      "candidates": [
+        {
+          "p": 37,
+          "p_over_N": 2.0555555555555554,
+          "root_count": 9,
+          "roots": [
+            2,
+            5,
+            8,
+            13,
+            17,
+            22,
+            29,
+            31,
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "e": 19,
+      "d": 9,
+      "N": 27,
+      "gcd_nonconstant_remainder": 6859,
+      "factors": {
+        "19": 3
+      },
+      "candidates": []
+    },
+    {
+      "e": 19,
+      "d": 9,
+      "N": 36,
+      "gcd_nonconstant_remainder": 4821877,
+      "factors": {
+        "19": 4,
+        "37": 1
+      },
+      "candidates": [
+        {
+          "p": 37,
+          "p_over_N": 1.0277777777777777,
+          "root_count": 9,
+          "roots": [
+            2,
+            5,
+            8,
+            13,
+            17,
+            22,
+            29,
+            31,
+            35
+          ]
+        }
+      ]
+    }
+  ]
+}

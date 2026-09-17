@@ -1,0 +1,78 @@
+{
+  "shape": {
+    "m": 64000,
+    "L": 3840000,
+    "S": 19840,
+    "D": 11601600000,
+    "automaticY": 88514
+  },
+  "brute_B_checks": 2401,
+  "uncapped_rank_regression": 116784455894414962240,
+  "rows": [
+    {
+      "Y": 88514,
+      "C": 30719523755882442583999165,
+      "rank": 116784455894414962240,
+      "rank_saved": 0,
+      "nullity_lower_bound": 105179349896926722556605,
+      "positive": true
+    },
+    {
+      "Y": 83838,
+      "C": 30612803150109325946197218,
+      "rank": 116784455894411206078,
+      "rank_saved": 3756162,
+      "nullity_lower_bound": -1541255875205259914014,
+      "positive": false
+    },
+    {
+      "Y": 63999,
+      "C": 27775269997090155179506400,
+      "rank": 114329727056614197120,
+      "rank_saved": 2454728837800765120,
+      "nullity_lower_bound": -2195581972438916910318880,
+      "positive": false
+    },
+    {
+      "Y": 56000,
+      "C": 25533059329687618722161120,
+      "rank": 109992396541828773440,
+      "rank_saved": 6792059352586188800,
+      "nullity_lower_bound": -3300787469373543262494240,
+      "positive": false
+    },
+    {
+      "Y": 48000,
+      "C": 22655398423434456657177120,
+      "rank": 102270630002440613440,
+      "rank_saved": 14513825891974348800,
+      "nullity_lower_bound": -4154233607925335512438240,
+      "positive": false
+    },
+    {
+      "Y": 32000,
+      "C": 14983796085065978287209120,
+      "rank": 73294551350341716160,
+      "rank_saved": 43489904544073246080,
+      "nullity_lower_bound": -4229930784118000553837920,
+      "positive": false
+    },
+    {
+      "Y": 16000,
+      "C": 5002478115499070361036000,
+      "rank": 26148311928256056000,
+      "rank_saved": 90636143966158906240,
+      "nullity_lower_bound": -1852144966621685183028000,
+      "positive": false
+    },
+    {
+      "Y": 19840,
+      "C": 7433833532558858392465440,
+      "rank": 38250438621810639680,
+      "rank_saved": 78534017272604322560,
+      "nullity_lower_bound": -2593289449517069935808480,
+      "positive": false
+    }
+  ],
+  "scope": "Exact enclosing local-block rank; valid upper bound on restricted constraint extraction. One fixed source profile. Negative lower bound is failure of dimension certificate, not nonexistence."
+}

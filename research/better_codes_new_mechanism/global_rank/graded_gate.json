@@ -1,0 +1,20 @@
+{
+  "m": 64000,
+  "L": 3840000,
+  "S": 19840,
+  "D": 11601600000,
+  "n": 262144,
+  "saturated_r_inclusive": [
+    0,
+    34335
+  ],
+  "local_saturated_rank": 44663615153314407616,
+  "local_total_rank_bound": 116784455894414962240,
+  "global_saturated_rank": 11708298730750452070088704,
+  "global_total_rank_bound": 30614344405985515861442560,
+  "saturated_fraction": 0.3824448622999525,
+  "source_max_X_coefficient_dimension": 11601600000,
+  "Hermite_jet_dimension_per_family": 16777216000,
+  "familywise_Hermite_cap_savings": 0,
+  "scope": "Universal surjectivity of the stated initial block projection for all distinct nodes and arbitrary received values; full-map rank is not asserted. Safe familywise min(d_ij,n*m) caps give no improvement because D<n*m."
+}

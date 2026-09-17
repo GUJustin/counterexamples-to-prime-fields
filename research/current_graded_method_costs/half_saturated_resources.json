@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/current_graded_method_costs/verify_half_saturated.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.103689374998794,
+  "peak_rss_kib": 18352,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

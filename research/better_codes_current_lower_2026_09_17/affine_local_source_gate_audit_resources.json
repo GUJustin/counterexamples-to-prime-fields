@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/better_codes_current_lower_2026_09_17/verify_affine_local_source_gate.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5546543329983251,
+  "peak_rss_kib": 6624,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

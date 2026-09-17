@@ -1,0 +1,65 @@
+{
+  "context": [
+    12,
+    43
+  ],
+  "rows": [
+    {
+      "source": 0,
+      "old_threshold": 3207,
+      "exact_D_threshold": 3207,
+      "exact_slab_threshold": 3207,
+      "strict_surplus_at_threshold": 9649108885600370743
+    },
+    {
+      "source": 1,
+      "old_threshold": 3222,
+      "exact_D_threshold": 3222,
+      "exact_slab_threshold": 3222,
+      "strict_surplus_at_threshold": 614357872207912841
+    },
+    {
+      "source": 2,
+      "old_threshold": 3217,
+      "exact_D_threshold": 3216,
+      "exact_slab_threshold": 3216,
+      "strict_surplus_at_threshold": 141033638988214159
+    },
+    {
+      "source": 3,
+      "old_threshold": 3229,
+      "exact_D_threshold": 3229,
+      "exact_slab_threshold": 3228,
+      "strict_surplus_at_threshold": 446265200720952
+    },
+    {
+      "source": 4,
+      "old_threshold": 3269,
+      "exact_D_threshold": 3268,
+      "exact_slab_threshold": 3268,
+      "strict_surplus_at_threshold": 1875559247416238
+    },
+    {
+      "source": 5,
+      "old_threshold": 4041,
+      "exact_D_threshold": 4032,
+      "exact_slab_threshold": 4030,
+      "strict_surplus_at_threshold": 611785677239
+    },
+    {
+      "source": 6,
+      "old_threshold": 3376,
+      "exact_D_threshold": 3374,
+      "exact_slab_threshold": 3374,
+      "strict_surplus_at_threshold": 26472313257095656
+    },
+    {
+      "source": 7,
+      "old_threshold": 5872,
+      "exact_D_threshold": 5860,
+      "exact_slab_threshold": 5851,
+      "strict_surplus_at_threshold": 6655873959
+    }
+  ],
+  "scope": "Exact slab arithmetic; requires new support-rank and recursive-budget Lean lemmas. No full-certificate or score claim."
+}

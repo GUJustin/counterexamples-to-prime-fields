@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/better_codes_new_mechanism/global_rank/graded_gate.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5543934169982094,
+  "peak_rss_kib": 13232,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

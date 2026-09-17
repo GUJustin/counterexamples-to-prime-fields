@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/better_codes_current_lower_2026_09_17/auxiliary_taylor_order_probe.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5654434579919325,
+  "peak_rss_kib": 15856,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

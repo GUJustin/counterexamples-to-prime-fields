@@ -524,6 +524,12 @@
       "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberPhaseCore6811.lean"
     },
     {
+      "path": "tmp/current-lower-primary-cache/MovingFiberPhaseSemantics6811.lean",
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberPhaseSemantics6811.lean",
+      "sha256": "a16f646076e445f338fabf177d8fc9cd7703d7296aa195adff776c5cf23976b0",
+      "bytes": 9875
+    },
+    {
       "path": "tmp/current-lower-primary-cache/MovingFiberRegularBridge6811.lean",
       "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberRegularBridge6811.lean",
       "bytes": 10516,
@@ -558,6 +564,12 @@
       "sha256": "e4c84161033d09743952739957a38c6b22100885d6a90c968de0c58faeb4c6b0",
       "bytes": 7192,
       "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberSingleCore6811.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberSingletonGeometry6811.lean",
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberSingletonGeometry6811.lean",
+      "sha256": "19493faae769004ca25db31bbf409f7372426101fedf244f6a79bc90734ea45d",
+      "bytes": 12082
     },
     {
       "path": "tmp/current-lower-primary-cache/MovingFiberSourceSound6811.lean",

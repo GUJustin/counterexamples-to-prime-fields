@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/better_codes_current_lower_2026_09_17/search_early_phase.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 4.636340291996021,
+  "peak_rss_kib": 24064,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

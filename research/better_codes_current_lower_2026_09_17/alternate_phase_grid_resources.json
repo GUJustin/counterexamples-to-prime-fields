@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/better_codes_current_lower_2026_09_17/search_alternate_phase.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 3.451874250007677,
+  "peak_rss_kib": 23648,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

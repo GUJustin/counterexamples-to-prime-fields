@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/better_codes_current_lower_2026_09_17/trace_binding_prefix.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 2.8631502089992864,
+  "peak_rss_kib": 103520,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}
