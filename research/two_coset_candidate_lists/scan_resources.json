@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/two_coset_candidate_lists/search.py",
+    "--output",
+    "research/two_coset_candidate_lists/scan.json"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 14.59854470800201,
+  "peak_rss_kib": 37664,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 600
+}

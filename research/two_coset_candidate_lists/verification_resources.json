@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/two_coset_candidate_lists/verify.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 6.80606912499934,
+  "peak_rss_kib": 21776,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 180
+}

@@ -164,3 +164,8 @@ verify-cyclic-boundary:
 	$(PYTHON) research/prime_field_tightness/check_cyclic_boundary.py
 verify-prime-list-amplification:
 	$(PYTHON) research/prime_field_tightness/check_prime_boundary_amplification.py
+
+.PHONY: verify-two-coset-candidates
+verify: verify-two-coset-candidates
+verify-two-coset-candidates:
+	$(PYTHON) research/two_coset_candidate_lists/verify.py

@@ -31,6 +31,13 @@ research targets. No intrinsic fixed-gap superlinear lower bound is claimed.
 
 ## Recovered references and version caution
 
+- Public source checked September17: Scott Kominers's mathematics page
+  lists *Reed-Solomon Codes Beyond Johnson: Efficient Decoding and Smaller
+  Cryptographic Proofs*, with Q. Dao and J. Thaler, as a2026 working paper:
+  https://www.scottkom.com/research/mathematics/ . That entry has no paper
+  link. This confirms a public title, not the contents or identity of the
+  latest draft; the precise coauthor theorem comparison still relies on
+  recovered excerpts below.
 - Archive `rs_capacity_tr26164/starkware/CONTEXT_STARKWARE_2026-09-05.md`,
   section F, quotes an abstract titled *Reed–Solomon List Decoding and
   Mutual Correlated Agreement up to Capacity*, attributed there to

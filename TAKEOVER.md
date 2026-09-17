@@ -2010,3 +2010,43 @@ paper.pdf now157pages; article11pt, letter, margin1in. Final TeX log
 clean. New proposition pages33–34 visually inspected. Intro explains
 fixed-gap exponent tightness and its missing source-list ingredient.
 No build/numerical job remains active. Continue research until22:00UTC.
+
+## 2026-09-17 13:23 UTC — non-subgroup candidate search checked
+
+Previous turn was progress, committed5655da0f609b261ddfec06e3bcf13fab572cab7e:
+the exact-scaling same-prime amplification proposition,157-page manuscript,
+and cyclic-boundary research notes. The current turn pursued actual source
+lists by testing a previously unscanned family of candidate subsets.
+
+research/two_coset_candidate_lists/ searches two adjacent cosets of H
+inside mu_k, with |H|=k/4. Their union is not a subgroup. An exact DP
+chooses n/|H| coordinate cosets and received symbols to maximize minimum
+agreement across the two candidate groups. The optimum is only in this
+invariant domain/word class. Census:120 cases at k32,64,128; r2..48 with
+p=2rk+1 prime; j0,1,floor(r/2),r-1; n4k.
+
+Only four cases have A>k. The sole below-Elias case is p257,k64,n256,
+L32,A100, gap9/64. It improves agreement for those32 candidates from96
+to100, but the standard96-agreement family has a larger list. It remains
+full-length and gives no short-domain asymptotic or better.codes claim.
+No extra finite example was added to the manuscript.
+
+All120 certificates independently replayed. Four small optimizations
+exhausted290560 domain/word choices total, with the same optima. A genuine
+subgroup control reproduces29agreements. Scan14.6s/<38MiB; validation
+6.8s/<22MiB. Reports and reconstructible coset/symbol data saved.
+
+BRANCH_ANALYSIS_AGENDA.md records a prospective multiquadratic branch
+explanation of why r2,j1 is exceptional. It is explicitly UNPROVED:
+norm-product/base-point bookkeeping and character-sum constants remain
+to audit. Do not state the proposed fixed-r or arbitrary-subset upper
+bounds as established. This may guide the next investigation, but the
+main target is still a growing fixed-gap source list or actual stronger
+counterexample, not simply more restricted upper bounds.
+
+Scott's public research page was checked and gives the working title
+Reed-Solomon Codes Beyond Johnson: Efficient Decoding and Smaller
+Cryptographic Proofs, with Q.Dao and J.Thaler, but no linked draft.
+STATUS.md records the source and version caution. Exact latest coauthor
+theorems remain unavailable beyond restored excerpts. No live jobs.
+Work horizon remains18:00 Eastern=22:00UTC, NOT the original08:30 deadline.

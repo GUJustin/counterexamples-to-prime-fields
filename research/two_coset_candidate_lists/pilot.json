@@ -1,0 +1,1187 @@
+{
+  "status": "complete",
+  "completed": 10,
+  "total": 10,
+  "rows": [
+    {
+      "r": 33,
+      "k": 32,
+      "section": 0,
+      "H": 8,
+      "shift": 1,
+      "p": 2113,
+      "generator": 5,
+      "n": 128,
+      "L": 16,
+      "A": 30,
+      "group_agreements": [
+        30,
+        30
+      ],
+      "positive_gap": false,
+      "below_elias": false,
+      "selected_cosets": [
+        [
+          231,
+          320,
+          3,
+          0
+        ],
+        [
+          198,
+          2049,
+          2,
+          5
+        ],
+        [
+          165,
+          64,
+          3,
+          1
+        ],
+        [
+          132,
+          320,
+          4,
+          3
+        ],
+        [
+          104,
+          1146,
+          0,
+          2
+        ],
+        [
+          99,
+          2049,
+          3,
+          2
+        ],
+        [
+          87,
+          774,
+          0,
+          2
+        ],
+        [
+          66,
+          320,
+          3,
+          4
+        ],
+        [
+          45,
+          1250,
+          0,
+          2
+        ],
+        [
+          33,
+          2049,
+          1,
+          3
+        ],
+        [
+          30,
+          635,
+          2,
+          0
+        ],
+        [
+          28,
+          1952,
+          0,
+          2
+        ],
+        [
+          13,
+          342,
+          2,
+          0
+        ],
+        [
+          2,
+          1527,
+          2,
+          0
+        ],
+        [
+          1,
+          521,
+          0,
+          2
+        ],
+        [
+          0,
+          2049,
+          5,
+          2
+        ]
+      ],
+      "seconds": 0.04239912499906495,
+      "scope": "Optimal among unions of H-cosets with a constant normalized word on each coset; only the selected two candidate cosets."
+    },
+    {
+      "r": 33,
+      "k": 32,
+      "section": 0,
+      "H": 8,
+      "shift": 2,
+      "p": 2113,
+      "generator": 5,
+      "n": 128,
+      "L": 16,
+      "A": 29,
+      "group_agreements": [
+        29,
+        29
+      ],
+      "positive_gap": false,
+      "below_elias": false,
+      "selected_cosets": [
+        [
+          231,
+          2049,
+          1,
+          3
+        ],
+        [
+          198,
+          320,
+          3,
+          3
+        ],
+        [
+          165,
+          64,
+          3,
+          1
+        ],
+        [
+          132,
+          2049,
+          2,
+          5
+        ],
+        [
+          99,
+          2049,
+          3,
+          1
+        ],
+        [
+          70,
+          389,
+          0,
+          2
+        ],
+        [
+          66,
+          320,
+          3,
+          3
+        ],
+        [
+          65,
+          2089,
+          0,
+          2
+        ],
+        [
+          62,
+          1246,
+          2,
+          0
+        ],
+        [
+          38,
+          1146,
+          0,
+          2
+        ],
+        [
+          33,
+          64,
+          1,
+          3
+        ],
+        [
+          30,
+          635,
+          2,
+          0
+        ],
+        [
+          21,
+          774,
+          0,
+          2
+        ],
+        [
+          13,
+          342,
+          2,
+          0
+        ],
+        [
+          2,
+          1527,
+          2,
+          0
+        ],
+        [
+          0,
+          2049,
+          5,
+          2
+        ]
+      ],
+      "seconds": 0.03857699999934994,
+      "scope": "Optimal among unions of H-cosets with a constant normalized word on each coset; only the selected two candidate cosets."
+    },
+    {
+      "r": 5,
+      "k": 64,
+      "section": 0,
+      "H": 16,
+      "shift": 1,
+      "p": 641,
+      "generator": 3,
+      "n": 256,
+      "L": 32,
+      "A": 54,
+      "group_agreements": [
+        54,
+        55
+      ],
+      "positive_gap": false,
+      "below_elias": false,
+      "selected_cosets": [
+        [
+          35,
+          128,
+          6,
+          4
+        ],
+        [
+          30,
+          128,
+          4,
+          10
+        ],
+        [
+          25,
+          128,
+          7,
+          6
+        ],
+        [
+          22,
+          68,
+          1,
+          1
+        ],
+        [
+          21,
+          68,
+          1,
+          1
+        ],
+        [
+          20,
+          513,
+          4,
+          5
+        ],
+        [
+          19,
+          487,
+          1,
+          1
+        ],
+        [
+          15,
+          128,
+          4,
+          7
+        ],
+        [
+          11,
+          255,
+          1,
+          1
+        ],
+        [
+          10,
+          513,
+          5,
+          4
+        ],
+        [
+          9,
+          429,
+          1,
+          1
+        ],
+        [
+          8,
+          397,
+          1,
+          1
+        ],
+        [
+          7,
+          142,
+          2,
+          0
+        ],
+        [
+          5,
+          513,
+          6,
+          7
+        ],
+        [
+          1,
+          541,
+          0,
+          2
+        ],
+        [
+          0,
+          128,
+          10,
+          4
+        ]
+      ],
+      "seconds": 0.04655395799636608,
+      "scope": "Optimal among unions of H-cosets with a constant normalized word on each coset; only the selected two candidate cosets."
+    },
+    {
+      "r": 5,
+      "k": 64,
+      "section": 1,
+      "H": 16,
+      "shift": 1,
+      "p": 641,
+      "generator": 3,
+      "n": 256,
+      "L": 32,
+      "A": 17,
+      "group_agreements": [
+        17,
+        17
+      ],
+      "positive_gap": false,
+      "below_elias": false,
+      "selected_cosets": [
+        [
+          20,
+          1,
+          2,
+          1
+        ],
+        [
+          19,
+          163,
+          1,
+          1
+        ],
+        [
+          18,
+          243,
+          1,
+          1
+        ],
+        [
+          17,
+          622,
+          2,
+          0
+        ],
+        [
+          15,
+          586,
+          1,
+          1
+        ],
+        [
+          13,
+          639,
+          1,
+          1
+        ],
+        [
+          12,
+          157,
+          1,
+          1
+        ],
+        [
+          10,
+          1,
+          1,
+          2
+        ],
+        [
+          8,
+          99,
+          1,
+          1
+        ],
+        [
+          7,
+          622,
+          0,
+          2
+        ],
+        [
+          6,
+          100,
+          2,
+          0
+        ],
+        [
+          5,
+          1,
+          1,
+          1
+        ],
+        [
+          4,
+          586,
+          1,
+          1
+        ],
+        [
+          3,
+          447,
+          1,
+          1
+        ],
+        [
+          2,
+          156,
+          1,
+          1
+        ],
+        [
+          0,
+          294,
+          0,
+          2
+        ]
+      ],
+      "seconds": 0.04472399999940535,
+      "scope": "Optimal among unions of H-cosets with a constant normalized word on each coset; only the selected two candidate cosets."
+    },
+    {
+      "r": 6,
+      "k": 64,
+      "section": 0,
+      "H": 16,
+      "shift": 1,
+      "p": 769,
+      "generator": 11,
+      "n": 256,
+      "L": 32,
+      "A": 53,
+      "group_agreements": [
+        53,
+        53
+      ],
+      "positive_gap": false,
+      "below_elias": false,
+      "selected_cosets": [
+        [
+          42,
+          0,
+          5,
+          5
+        ],
+        [
+          36,
+          0,
+          6,
+          4
+        ],
+        [
+          30,
+          256,
+          6,
+          5
+        ],
+        [
+          24,
+          0,
+          8,
+          6
+        ],
+        [
+          18,
+          513,
+          6,
+          4
+        ],
+        [
+          16,
+          327,
+          1,
+          1
+        ],
+        [
+          13,
+          641,
+          1,
+          1
+        ],
+        [
+          12,
+          0,
+          6,
+          8
+        ],
+        [
+          11,
+          197,
+          1,
+          1
+        ],
+        [
+          7,
+          92,
+          1,
+          1
+        ],
+        [
+          6,
+          513,
+          5,
+          6
+        ],
+        [
+          5,
+          487,
+          1,
+          1
+        ],
+        [
+          4,
+          230,
+          1,
+          1
+        ],
+        [
+          3,
+          158,
+          0,
+          2
+        ],
+        [
+          2,
+          79,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          4,
+          6
+        ]
+      ],
+      "seconds": 0.0575762499938719,
+      "scope": "Optimal among unions of H-cosets with a constant normalized word on each coset; only the selected two candidate cosets."
+    },
+    {
+      "r": 6,
+      "k": 64,
+      "section": 1,
+      "H": 16,
+      "shift": 1,
+      "p": 769,
+      "generator": 11,
+      "n": 256,
+      "L": 32,
+      "A": 27,
+      "group_agreements": [
+        27,
+        28
+      ],
+      "positive_gap": false,
+      "below_elias": false,
+      "selected_cosets": [
+        [
+          45,
+          0,
+          1,
+          2
+        ],
+        [
+          39,
+          0,
+          1,
+          2
+        ],
+        [
+          36,
+          0,
+          1,
+          2
+        ],
+        [
+          33,
+          0,
+          4,
+          1
+        ],
+        [
+          30,
+          513,
+          2,
+          2
+        ],
+        [
+          27,
+          0,
+          3,
+          1
+        ],
+        [
+          21,
+          0,
+          2,
+          4
+        ],
+        [
+          18,
+          0,
+          1,
+          1
+        ],
+        [
+          15,
+          0,
+          1,
+          3
+        ],
+        [
+          12,
+          256,
+          0,
+          2
+        ],
+        [
+          11,
+          385,
+          2,
+          1
+        ],
+        [
+          9,
+          0,
+          2,
+          2
+        ],
+        [
+          7,
+          583,
+          1,
+          1
+        ],
+        [
+          6,
+          256,
+          2,
+          2
+        ],
+        [
+          3,
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          0,
+          2,
+          1
+        ]
+      ],
+      "seconds": 0.07714670799759915,
+      "scope": "Optimal among unions of H-cosets with a constant normalized word on each coset; only the selected two candidate cosets."
+    },
+    {
+      "r": 3,
+      "k": 128,
+      "section": 0,
+      "H": 32,
+      "shift": 1,
+      "p": 769,
+      "generator": 11,
+      "n": 512,
+      "L": 64,
+      "A": 109,
+      "group_agreements": [
+        109,
+        109
+      ],
+      "positive_gap": false,
+      "below_elias": false,
+      "selected_cosets": [
+        [
+          22,
+          753,
+          1,
+          2
+        ],
+        [
+          21,
+          256,
+          12,
+          12
+        ],
+        [
+          20,
+          392,
+          2,
+          1
+        ],
+        [
+          18,
+          513,
+          11,
+          12
+        ],
+        [
+          17,
+          113,
+          1,
+          2
+        ],
+        [
+          15,
+          256,
+          12,
+          12
+        ],
+        [
+          12,
+          256,
+          14,
+          14
+        ],
+        [
+          9,
+          256,
+          12,
+          12
+        ],
+        [
+          7,
+          172,
+          1,
+          1
+        ],
+        [
+          6,
+          256,
+          14,
+          14
+        ],
+        [
+          5,
+          48,
+          1,
+          1
+        ],
+        [
+          4,
+          753,
+          2,
+          0
+        ],
+        [
+          3,
+          256,
+          12,
+          12
+        ],
+        [
+          2,
+          274,
+          0,
+          2
+        ],
+        [
+          1,
+          36,
+          2,
+          1
+        ],
+        [
+          0,
+          513,
+          12,
+          11
+        ]
+      ],
+      "seconds": 0.400816000001214,
+      "scope": "Optimal among unions of H-cosets with a constant normalized word on each coset; only the selected two candidate cosets."
+    },
+    {
+      "r": 3,
+      "k": 128,
+      "section": 1,
+      "H": 32,
+      "shift": 1,
+      "p": 769,
+      "generator": 11,
+      "n": 512,
+      "L": 64,
+      "A": 44,
+      "group_agreements": [
+        44,
+        44
+      ],
+      "positive_gap": false,
+      "below_elias": false,
+      "selected_cosets": [
+        [
+          21,
+          768,
+          5,
+          3
+        ],
+        [
+          18,
+          1,
+          5,
+          6
+        ],
+        [
+          17,
+          672,
+          1,
+          1
+        ],
+        [
+          16,
+          120,
+          2,
+          0
+        ],
+        [
+          15,
+          768,
+          6,
+          5
+        ],
+        [
+          12,
+          768,
+          4,
+          2
+        ],
+        [
+          11,
+          308,
+          1,
+          1
+        ],
+        [
+          10,
+          120,
+          0,
+          2
+        ],
+        [
+          9,
+          768,
+          2,
+          6
+        ],
+        [
+          7,
+          150,
+          1,
+          1
+        ],
+        [
+          6,
+          768,
+          2,
+          4
+        ],
+        [
+          5,
+          7,
+          1,
+          1
+        ],
+        [
+          3,
+          1,
+          5,
+          6
+        ],
+        [
+          2,
+          514,
+          2,
+          0
+        ],
+        [
+          1,
+          504,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          6,
+          5
+        ]
+      ],
+      "seconds": 0.40081408400146756,
+      "scope": "Optimal among unions of H-cosets with a constant normalized word on each coset; only the selected two candidate cosets."
+    },
+    {
+      "r": 13,
+      "k": 128,
+      "section": 0,
+      "H": 32,
+      "shift": 1,
+      "p": 3329,
+      "generator": 3,
+      "n": 512,
+      "L": 64,
+      "A": 66,
+      "group_agreements": [
+        66,
+        66
+      ],
+      "positive_gap": false,
+      "below_elias": false,
+      "selected_cosets": [
+        [
+          91,
+          768,
+          9,
+          2
+        ],
+        [
+          78,
+          3073,
+          7,
+          6
+        ],
+        [
+          65,
+          768,
+          6,
+          9
+        ],
+        [
+          52,
+          2561,
+          10,
+          5
+        ],
+        [
+          39,
+          3073,
+          9,
+          10
+        ],
+        [
+          30,
+          2024,
+          0,
+          2
+        ],
+        [
+          26,
+          2561,
+          5,
+          10
+        ],
+        [
+          24,
+          2379,
+          1,
+          1
+        ],
+        [
+          22,
+          1771,
+          0,
+          2
+        ],
+        [
+          21,
+          2749,
+          1,
+          1
+        ],
+        [
+          13,
+          2561,
+          9,
+          6
+        ],
+        [
+          11,
+          1282,
+          1,
+          1
+        ],
+        [
+          9,
+          2274,
+          1,
+          1
+        ],
+        [
+          4,
+          2417,
+          0,
+          2
+        ],
+        [
+          2,
+          2680,
+          1,
+          1
+        ],
+        [
+          0,
+          3073,
+          6,
+          7
+        ]
+      ],
+      "seconds": 0.35278974999528145,
+      "scope": "Optimal among unions of H-cosets with a constant normalized word on each coset; only the selected two candidate cosets."
+    },
+    {
+      "r": 13,
+      "k": 128,
+      "section": 1,
+      "H": 32,
+      "shift": 1,
+      "p": 3329,
+      "generator": 3,
+      "n": 512,
+      "L": 64,
+      "A": 16,
+      "group_agreements": [
+        16,
+        16
+      ],
+      "positive_gap": false,
+      "below_elias": false,
+      "selected_cosets": [
+        [
+          30,
+          2195,
+          2,
+          0
+        ],
+        [
+          27,
+          1850,
+          0,
+          2
+        ],
+        [
+          26,
+          2658,
+          1,
+          1
+        ],
+        [
+          23,
+          881,
+          2,
+          0
+        ],
+        [
+          22,
+          2329,
+          0,
+          2
+        ],
+        [
+          21,
+          364,
+          1,
+          1
+        ],
+        [
+          18,
+          1760,
+          2,
+          0
+        ],
+        [
+          17,
+          2026,
+          2,
+          0
+        ],
+        [
+          14,
+          180,
+          0,
+          2
+        ],
+        [
+          11,
+          1560,
+          0,
+          2
+        ],
+        [
+          9,
+          1806,
+          1,
+          1
+        ],
+        [
+          7,
+          2777,
+          1,
+          1
+        ],
+        [
+          5,
+          1035,
+          1,
+          1
+        ],
+        [
+          4,
+          2195,
+          0,
+          2
+        ],
+        [
+          1,
+          1734,
+          1,
+          1
+        ],
+        [
+          0,
+          2696,
+          2,
+          0
+        ]
+      ],
+      "seconds": 0.3619320419966243,
+      "scope": "Optimal among unions of H-cosets with a constant normalized word on each coset; only the selected two candidate cosets."
+    }
+  ]
+}

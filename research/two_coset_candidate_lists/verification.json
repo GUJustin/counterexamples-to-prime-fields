@@ -1,0 +1,128 @@
+{
+  "status": "passed",
+  "cases": 120,
+  "positive_gap": [
+    {
+      "r": 3,
+      "k": 32,
+      "section": 0,
+      "H": 8,
+      "shift": 1,
+      "p": 193,
+      "n": 128,
+      "L": 16,
+      "A": 34,
+      "below_elias": false
+    },
+    {
+      "r": 4,
+      "k": 32,
+      "section": 0,
+      "H": 8,
+      "shift": 1,
+      "p": 257,
+      "n": 128,
+      "L": 16,
+      "A": 37,
+      "below_elias": false
+    },
+    {
+      "r": 2,
+      "k": 64,
+      "section": 0,
+      "H": 16,
+      "shift": 1,
+      "p": 257,
+      "n": 256,
+      "L": 32,
+      "A": 70,
+      "below_elias": false
+    },
+    {
+      "r": 2,
+      "k": 64,
+      "section": 1,
+      "H": 16,
+      "shift": 1,
+      "p": 257,
+      "n": 256,
+      "L": 32,
+      "A": 100,
+      "below_elias": true
+    }
+  ],
+  "below_elias": [
+    {
+      "r": 2,
+      "k": 64,
+      "section": 1,
+      "H": 16,
+      "shift": 1,
+      "p": 257,
+      "n": 256,
+      "L": 32,
+      "A": 100,
+      "below_elias": true
+    }
+  ],
+  "small_exhaustive": [
+    {
+      "r": 3,
+      "k": 2,
+      "section": 0,
+      "H": 1,
+      "shift": 1,
+      "p": 13,
+      "n": 8,
+      "L": 2,
+      "A": 4,
+      "below_elias": false,
+      "brute_choices": 126720,
+      "brute_optimum": 4
+    },
+    {
+      "r": 3,
+      "k": 2,
+      "section": 1,
+      "H": 1,
+      "shift": 1,
+      "p": 13,
+      "n": 8,
+      "L": 2,
+      "A": 4,
+      "below_elias": false,
+      "brute_choices": 126720,
+      "brute_optimum": 4
+    },
+    {
+      "r": 2,
+      "k": 4,
+      "section": 0,
+      "H": 2,
+      "shift": 1,
+      "p": 17,
+      "n": 16,
+      "L": 4,
+      "A": 6,
+      "below_elias": false,
+      "brute_choices": 20736,
+      "brute_optimum": 6
+    },
+    {
+      "r": 2,
+      "k": 4,
+      "section": 1,
+      "H": 2,
+      "shift": 1,
+      "p": 17,
+      "n": 16,
+      "L": 4,
+      "A": 6,
+      "below_elias": false,
+      "brute_choices": 16384,
+      "brute_optimum": 6
+    }
+  ],
+  "subgroup_control_agreement": 29,
+  "scope": "All exhibited candidate lists replayed. DP optima independently exhausted in four small fixtures; large-instance optimality rests on the stated recurrence. No asymptotic growing short-domain list claim."
+}
