@@ -1,5 +1,13 @@
 # Prime-field upper-bound tightness: target and evidence
 
+Latest September 17 research: the quadratic-residue indicator on F_p*,
+p=4k+1, has only six degree-at-most-k candidates above agreement 5k/3;
+for degree less than k only the two constants remain. A polynomial abc
+proof closes this particular word throughout the first-order range.
+This is an upper bound on a proposed source, not progress on better.codes
+or an intrinsic first-order lower bound. See
+../quadratic_indicator_nearest/NEAR_RIGIDITY.md.
+
 September 17, 2026. User priority: assess and pursue tightness of the
 Dao–Kominers–Thaler prime-field proximity-gap paper. Work horizon extended by the user on September 17
 to 08:00 Eastern on September 18 (12:00 UTC on September 18). This note separates established results from

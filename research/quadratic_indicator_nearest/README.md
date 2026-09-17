@@ -67,3 +67,14 @@ the limiting parameters above the first-order curve, but the list size
 is the constant6. The smallest finite cases need not themselves meet a
 particular first-order theorem's regime and characteristic requirements.
 This is not a lower-bound improvement or a better.codes result.
+
+## Stronger prime-field rigidity
+
+NEAR_RIGIDITY.md proves that for prime p=4k+1, the same six polynomials
+are the entire list at every agreement threshold greater than 5k/3.
+At degree strictly less than k, only the constants 0 and 1 occur.
+Consequently this word has a constant list throughout the quarter-rate
+first-order range, not just at its nearest threshold. A polynomial abc
+argument proves the statement; a full 17^5-polynomial census tests its
+cutoff over F17. The prime-power generality above applies to the exact
+nearest classification, not to this stronger statement.

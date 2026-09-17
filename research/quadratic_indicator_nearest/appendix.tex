@@ -1,0 +1,86 @@
+\section{A constant first-order list for the quadratic indicator}
+\label{app:quadratic-indicator}
+
+The following elementary obstruction concerns one alternative to the
+Dickson received word. It rules out a growing list for this alternative
+throughout the quarter-rate first-order regime; it imposes no such
+restriction on general received words.
+
+\begin{proposition}\label{prop:quadratic-indicator-rigidity}
+Let $p=4k+1$ be prime and let $w(x)=(1+x^{2k})/2$ on $\F_p^*$.
+The polynomials of degree at most $k$ agreeing with $w$ at more than
+$5k/3$ points are exactly $0,1$ and
+\[
+ P_{u,v}(X)=\frac{X^k-u}{v-u},\qquad u^2=-1,\quad v^2=1.
+\]
+Each of these six polynomials has exactly $2k$ agreements. The same
+classification holds over every extension coefficient field. With the
+strict degree bound $\deg P<k$, only $0,1$ remain.
+\end{proposition}
+
+\begin{proof}
+For a nonconstant candidate $P$ of degree $\ell\le k$, let $z,o$ count
+its correct zeros on nonsquares and correct ones on squares. Put
+$A=z+o$ and $h=2k-A$. Root counting gives $A\le2\ell\le2k$, and the
+hypothesis gives $0\le h<k/3$. Let $U,V$ be the monic locators of the
+two agreement sets, and write
+\[
+ P=UR,\quad P-1=VS,\quad X^{2k}+1=UC,\quad X^{2k}-1=VD.
+\]
+Set $a=RS$ and $b=CS-DR$. Subtraction gives $Pb+DR=2a$.
+Since $\deg a=2\ell-A\le h$ and $\deg(DR)=\ell+h$, we have
+$\deg b\le h$. Also $b\ne0$: otherwise $D=2S$, contradicting
+$\deg D=2k-o>\ell-o=\deg S$. Substitution yields
+\[
+ bP^2-(b+2a)P+a(X^{2k}+1)=0.
+\]
+Divide $a,b$ by their gcd, retaining these names, and set
+$\alpha=\deg a$, $\beta=\deg b$, $Y=2bP-b-2a$, and $E=b^2+4a^2$.
+Then $\alpha,\beta\le h$, $\gcd(a,b)=1$, and
+\begin{equation}\label{eq:quadratic-indicator-square}
+ Y^2+4abX^{2k}=E.
+\end{equation}
+
+Suppose $E\ne0$. Since $\deg E\le2h<2k$, we have
+$\deg Y=k+(\alpha+\beta)/2$. Also $\gcd(ab,E)=1$.
+The common gcd of the terms in~\eqref{eq:quadratic-indicator-square}
+is therefore $X^{2t}$ for some $t\ge0$: if $E$ vanishes at zero,
+its order is less than $2k$ and equals the even order of $Y^2$.
+After division the identity is pairwise coprime. All degrees are less
+than $p$, since $2k+2h<p$. Polynomial abc gives
+\[
+ 2k+\alpha+\beta-2t
+ \le (\deg Y-t)+\alpha+\beta+(\deg E-2t),
+\]
+where the possible root zero contributes one to the radical degree
+and cancels the minus one in abc. Hence
+$k\le(\alpha+\beta)/2+\deg E-t\le3h$, a contradiction.
+Here the required form of abc follows directly from the nonzero
+Wronskian $F'G-FG'$ for a coprime identity $F+G=H$: the repeated-root
+parts of all three polynomials divide this Wronskian. Degrees less
+than $p$ and a nonconstant term exclude a zero Wronskian.
+
+Thus $E=0$. As $-1$ is a square in $\F_p$, we have
+$b=\lambda a$ with $\lambda=\pm2\sqrt{-1}$. Cancellation gives
+\[
+ (2\lambda P-\lambda-2)^2=-4\lambda X^{2k},
+\]
+so unique factorization implies $P=cX^k+d$, with $c\ne0$.
+Such a polynomial agrees with the zero value on at most one quartic
+coset, and with the one value on at most one quartic coset. Each coset
+has size $k$, so $A>5k/3>k$ forces both matches and $A=2k$.
+The zero coset has $X^k=u$ with $u^2=-1$, and the one coset has
+$X^k=v$ with $v^2=1$, giving precisely the four displayed candidates.
+The constant cases are immediate. Finally $A\ge k+1$ base-field
+agreements force base-field coefficients by interpolation, proving
+the extension assertion.
+\end{proof}
+
+The cutoff fraction $5/12$ is strictly below the quarter-rate
+first-order threshold $(3+\sqrt{133})/31$. Thus this received word
+cannot witness growing first-order lists, even though its nearest
+agreement fraction is $1/2$. As a finite check, exhaustive enumeration
+of all $17^5$ polynomials of degree at most four over $\F_{17}$ finds
+no polynomial with seven agreements and exactly the stated six with
+eight. The proof above, rather than this census, establishes the
+uniform bound.

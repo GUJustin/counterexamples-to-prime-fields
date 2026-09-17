@@ -20,6 +20,18 @@ for p in (5,13,17,29,37,41,73,97,113,193,257):
   scan=json.loads((folder/f'p{p}.log').read_text().splitlines()[0]);assert scan['complete']
   assert {tuple(c) for c in scan['coefficients']}==bank
   assert scan['root_subsets']==comb(2*k,k)
+ if p==17:
+  brute=json.loads((folder/'brute17.log').read_text().splitlines()[0])
+  assert brute['total']==17**5==sum(brute['histogram'])
+  assert brute['threshold']==7 and brute['bank_size']==6
+  assert brute['histogram'][7]==0 and brute['histogram'][8]==6
+  assert sum(brute['histogram'][9:])==0
+  assert {tuple(c) for c in brute['coefficients']}==bank
+ if p==41:
+  near=json.loads((folder/'near_p41.log').read_text().splitlines()[0])
+  assert near['threshold']==19 and near['complete']
+  assert near['root_subsets']==comb(20,10)
+  assert {tuple(c) for c in near['coefficients']}==bank
  rows.append(dict(p=p,length=p-1,dimension=k+1,maximum_agreement=2*k,nearest_list_size=6))
 out=dict(status='passed',rows=rows,scope='Exact replay of exhaustive p17 and p41 lists and closed-form witnesses at eleven primes. The separate divisibility proof establishes completeness for all odd prime powers q=1 mod4 and extension coefficients.')
 (folder/'verification.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps(out,indent=2))
