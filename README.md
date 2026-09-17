@@ -41,7 +41,8 @@ and radii strictly below the paper's characteristic-based Elias radius.
   arbitrarily large lengths. The necessary coefficient of a linear
   exceptional-count bound has logarithm of order
   `eta^-2/log(1/eta)` at every sufficiently small rational gap. Every
-  nearby word on the displayed line can have a unique nearby codeword.
+  nearby word on the displayed line can have a unique nearby codeword,
+  while the line contains a word one coordinate beyond the decoding radius.
   A concrete family has more than `3.76e17*n` nearby challenges.
   The same count also has polynomial-size prime-field realizations;
   whole-line uniqueness is not asserted for that realization.
@@ -216,8 +217,8 @@ make paper
 make verify
 ```
 
-`make verify` runs the general coding-theory checks using Python's standard
-library and compiles the rational-fiber enumeration with `clang++` (C++17).
+`make verify` runs the general coding-theory checks using Python
+(with SymPy required by the interpolation-pool checks) and compiles the rational-fiber enumeration with `clang++` (C++17).
 It recomputes the high-moment certificate and its independent
 complementary-subset identity. These finite checks supplement the proofs;
 they do not replace the cited generic-rank and proximity-gap theorems.

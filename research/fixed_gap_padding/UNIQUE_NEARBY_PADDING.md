@@ -83,3 +83,15 @@ without bound, so the global maximum is eventually at least L. This
 explicitly rules out interpreting line-wise uniqueness as global
 unique decodability. The verifier constructs all available cardinalities
 0,1,2 for each of its two fixtures and exhausts the entire candidate pool.
+
+
+## Far-point strengthening (September 17)
+
+The manuscript now uses the multiplicative padding variant in
+`UNIQUE_FAR_PADDING.md`: extend the core polynomial globally and choose
+nonzero padding directions. The line then contains a word with exact
+agreement A-1, while the nearby threshold is A. The count, rate, and gap
+are unchanged. For selected-list polynomial-field realizations, the extra
+root exclusions are linear in B and preserve the field-size exponent.
+Whole-line uniqueness still requires the full interpolation pool and is
+not asserted by the polynomial-field realization.

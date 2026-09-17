@@ -765,3 +765,30 @@ Samefixed-gapcoefficientandparameters, slightlylargerfieldbound.
 Needs new exactfiniteunique-poolreplay beforeeditingoldlemma/theorem.
 This would unifyallmainlinefamilieswithafarpoint. Existingoldunique
 verifierfields1571and114874079likelymeetnewguardbutcheckcarefully.
+
+
+## September 17 ~05:56 UTC — fixed-gap unique-nearby far point verified
+
+Completed the next-step strengthening described above. Main anchored-padding
+lemma and fixed-gap theorem now use f=F_old globally, nonzero padding g_j,
+and multiplicative labels (P(x_j)-F_old(x_j))/g_j. Extra exclusions cost
+(A-1)M roots, and p-1>(q-1)M² separates labels. Every nearby word still has
+a unique nearby codeword; z=0 has EXACT maximum agreement A-1. No correlated
+agreement follows immediately from the global degree bound. Fixed gap, rate,
+count and asymptotic coefficient unchanged. Polynomial-size selected-list
+corollary also upgraded, with extra O_seed(B) exclusions; still no whole-line
+uniqueness in that corollary.
+
+New UNIQUE_FAR_PADDING.md and verify_unique_far_padding.py with exact whole
+interpolation-pool replay: B1/p1571/n11/K2/A5 (18 pool polynomials, 6 labels),
+B2/p114874079/n21/K5/A10 (5918 pool polynomials, 8 labels), max list online1,
+exact far agreements4,9. Both PASS under384MiB watchdog. Shared old verifier
+replayed and PASS. Shifted polynomial-field fixtures now multiplicative
+far-point too: p1009/B2 and p65539/B3, PASS with exact far agreements9,14.
+Makefile now73checks. README and companion notes updated. TeX clean117pages,
+visually reviewed2,27,28,29,30; no clipped text. No active process.
+
+Continue until12:30UTC. Next mathematical possibilities: try r-coordinate
+far points (r>1) using multi-padding matches and second moments; or pursue
+growing fixed-gap lists on short domains, still the main unresolved target.
+Do not conflate fixed-gap unique-nearby family with dense shrinking-gap family.

@@ -47,24 +47,30 @@ def fixture(p,B):
     old=[x for x in full if x!=alpha]
     assert len(old)==m*B-1 and len(set(full))==m*B
     assert all(sum(value(P,x,p)==value(oldword,x,p) for x in old)==A-1 for P in Ps)
-    assert p>m*B+(K-1)*comb(len(Ps),2)+q and p>(q-1)*len(Ps)**2
+    assert p>m*B+(K-1)*comb(len(Ps),2)+(A-1)*len(Ps)+q
+    assert p-1>(q-1)*len(Ps)**2
     points=[]
     for x in range(p):
-        if x not in full and len({value(P,x,p) for P in Ps})==len(Ps):
+        if (x not in full and len({value(P,x,p) for P in Ps})==len(Ps)
+                and all(value(P,x,p)!=value(oldword,x,p) for P in Ps)):
             points.append(x)
             if len(points)==q:break
     assert len(points)==q
-    labels=set();offsets=[];witnesses=[]
+    labels=set();directions=[];witnesses=[]
     for x in points:
-        vals=[value(P,x,p) for P in Ps]
-        b=next(b for b in range(p) if not labels.intersection((v-b)%p for v in vals))
-        offsets.append(b)
+        vals=[(value(P,x,p)-value(oldword,x,p))%p for P in Ps]
+        h=next(h for h in range(1,p) if not labels.intersection(
+            v*pow(h,-1,p)%p for v in vals))
+        directions.append(h)
         for i,v in enumerate(vals):
-            z=(v-b)%p;assert z not in labels
+            z=v*pow(h,-1,p)%p;assert z and z not in labels
             labels.add(z);witnesses.append((z,i))
-    domain=old+points;f=[value(oldword,x,p) for x in old]+offsets
-    g=[0]*len(old)+[1]*q
+    domain=old+points;f=[value(oldword,x,p) for x in domain]
+    g=[0]*len(old)+directions
     assert len(domain)==n and max(A-1,K-1+q)<A
+    # Degree bounds the agreement of f with every codeword by A-1;
+    # the selected candidates attain that bound on the core.
+    assert all(sum(value(P,x,p)==y for x,y in zip(domain,f))==A-1 for P in Ps)
     for z,i in witnesses:
         S=[j for j,x in enumerate(domain) if value(Ps[i],x,p)==(f[j]+z*g[j])%p]
         assert len(S)==A
@@ -76,7 +82,8 @@ def fixture(p,B):
                    for x in list_domain)==A for G in Gs)
     return dict(p=p,B=B,shift=c,anchor=alpha,number_of_shifts=len(good),
                 n=n,K=K,A=A,labels=sorted(labels),domain=domain,f=f,g=g,
-                candidates=Ps,common_agreement_upper=max(A-1,K-1+q))
+                candidates=Ps,exact_far_agreement=A-1,
+                common_agreement_upper=A-1)
 
 
 def main():

@@ -24,11 +24,12 @@ def interpolate(xs,ys,p):
     return tuple(out)
 
 
-def fixture(B,K,q):
+def fixture(B,K,q,far_point=False):
     m,k,t=9,3,5
     N=m*B-1;A=t*B;n=N+q;M=comb(N,K)
     assert K-1+q<A and K>=B*(k-1)
-    lower=max(N+1+q+(K-1)*comb(M,2),(q-1)*M*M,1000)
+    lower=max(N+1+q+(K-1)*comb(M,2)+(A-1)*M*far_point,
+              (q-1)*M*M+int(far_point),1000)
     p=int(sym.nextprime(lower))
     while p%B!=1%B or not all(pow(a,(p-1)//B,p)==1 for a in range(1,m+1)):
         p=int(sym.nextprime(p))
@@ -59,24 +60,32 @@ def fixture(B,K,q):
         if x in reserved:
             continue
         values=[value(P,x,p) for P in pool]
-        if len(set(values))==len(pool):
+        if len(set(values))==len(pool) and (not far_point or value(core_word,x,p) not in values):
             points.append(x);evaluations.append(values)
             if len(points)==q:
                 break
     assert len(points)==q
-    used=set();offsets=[];nearby={}
+    used=set();offsets=[];directions=[];nearby={}
     for j,values in enumerate(evaluations):
-        b=0
-        while used.intersection((v-b)%p for v in values):
-            b+=1
-        labels=[(v-b)%p for v in values]
+        if far_point:
+            b=value(core_word,points[j],p);direction=1
+            while True:
+                inverse=pow(direction,-1,p)
+                labels=[(v-b)*inverse%p for v in values]
+                if not used.intersection(labels):break
+                direction+=1
+            assert 0 not in labels
+        else:
+            b=0;direction=1
+            while used.intersection((v-b)%p for v in values):b+=1
+            labels=[(v-b)%p for v in values]
         assert len(set(labels))==len(pool) and not used.intersection(labels)
-        used.update(labels);offsets.append(b)
+        used.update(labels);offsets.append(b);directions.append(direction)
         for i in boundary:
             assert labels[i] not in nearby
             nearby[labels[i]]=i
     assert len(used)==q*len(pool) and len(nearby)==q*len(boundary)
-    domain=old+points;f=ys+offsets;g=[0]*N+[1]*q
+    domain=old+points;f=ys+offsets;g=[0]*N+directions
     for z,i in nearby.items():
         assert sum(value(pool[i],x,p)==(y+z*h)%p for x,y,h in zip(domain,f,g))==A
     # Every possible nearby codeword is in the exhaustive pool because
@@ -97,10 +106,15 @@ def fixture(B,K,q):
             evaluations[j][i]==pad_values[j] for j in range(q))>=A]
         assert nearby_indices==boundary[:r]
         if r>=2:
-            assert len({(v-b)%p for v,b in zip(pad_values,offsets)})>1
+            assert len({(v-b)*pow(h,-1,p)%p for v,b,h in zip(pad_values,offsets,directions)})>1
         alternative_words.append(dict(exact_list_size=r,padding_values=pad_values,
                                       nearby_boundary_indices=nearby_indices))
-    return dict(B=B,p=p,n=n,K=K,A=A,padding=q,
+    if far_point:
+        assert all(y==value(core_word,x,p) for x,y in zip(domain,f))
+        assert 0 not in nearby
+        assert max(counts[i]+sum(evaluations[j][i]==offsets[j] for j in range(q)) for i in range(len(pool)))==A-1
+    return dict(B=B,p=p,n=n,K=K,A=A,padding=q,far_point=far_point,
+                exact_far_agreement=A-1 if far_point else None,
                 determining_subsets=M,distinct_core_interpolants=len(pool),
                 entire_boundary_list_size=len(boundary),
                 entire_nearby_label_count=len(nearby),maximum_list_size_on_line=1,

@@ -1,5 +1,5 @@
 {
-  "status": "PASS",
+  "status": "passed",
   "fixtures": [
     {
       "B": 1,
@@ -8,8 +8,8 @@
       "K": 2,
       "A": 5,
       "padding": 3,
-      "far_point": false,
-      "exact_far_agreement": null,
+      "far_point": true,
+      "exact_far_agreement": 4,
       "determining_subsets": 28,
       "distinct_core_interpolants": 18,
       "entire_boundary_list_size": 2,
@@ -38,9 +38,9 @@
         1460,
         602,
         1371,
-        0,
-        0,
-        0
+        523,
+        1561,
+        113
       ],
       "g": [
         0,
@@ -53,15 +53,15 @@
         0,
         1,
         1,
-        1
+        2
       ],
       "nearby_labels": [
-        22,
-        167,
-        190,
-        303,
-        1025,
-        1145
+        177,
+        313,
+        502,
+        622,
+        740,
+        824
       ],
       "alternative_words": [
         {
@@ -115,8 +115,8 @@
       "K": 5,
       "A": 10,
       "padding": 4,
-      "far_point": false,
-      "exact_far_agreement": null,
+      "far_point": true,
+      "exact_far_agreement": 9,
       "determining_subsets": 6188,
       "distinct_core_interpolants": 5918,
       "entire_boundary_list_size": 2,
@@ -164,10 +164,10 @@
         114861911,
         114871640,
         0,
-        0,
-        0,
-        0,
-        3
+        8310063,
+        31550819,
+        74311521,
+        10558924
       ],
       "g": [
         0,
@@ -190,17 +190,17 @@
         1,
         1,
         1,
-        1
+        2
       ],
       "nearby_labels": [
-        1681512,
-        1718136,
-        2560576,
-        2616768,
-        3096363,
-        3164499,
-        3702021,
-        3783669
+        43658921,
+        43727057,
+        85883836,
+        85940028,
+        108245528,
+        108282152,
+        111445629,
+        111486453
       ],
       "alternative_words": [
         {
@@ -257,6 +257,6 @@
       ]
     }
   ],
-  "scope": "Exhaustive enumeration of every old K-subset interpolant and injectivity of every pool/padding label. These exhaust all potentially nearby candidates, not just the selected seed list.",
-  "seconds": 0.17672233300254447
+  "seconds": 0.19158075000086683,
+  "scope": "All potentially nearby interpolants are exhausted. Injective nonzero multiplicative labels prove whole-line uniqueness, and f is globally the degree-A-1 polynomial, giving an exact far point and no correlated agreement."
 }

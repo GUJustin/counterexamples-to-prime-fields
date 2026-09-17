@@ -116,3 +116,15 @@ strictly below K, on the unanchored length-n domains.
 The whole construction remains linear in n at each fixed gap. It does
 not control the global maximum list size and does not improve a
 prescribed-code or better.codes benchmark.
+
+
+## Far-point strengthening (September 17)
+
+The manuscript now uses the multiplicative padding variant in
+`UNIQUE_FAR_PADDING.md`: extend the core polynomial globally and choose
+nonzero padding directions. The line then contains a word with exact
+agreement A-1, while the nearby threshold is A. The count, rate, and gap
+are unchanged. For selected-list polynomial-field realizations, the extra
+root exclusions are linear in B and preserve the field-size exponent.
+Whole-line uniqueness still requires the full interpolation pool and is
+not asserted by the polynomial-field realization.

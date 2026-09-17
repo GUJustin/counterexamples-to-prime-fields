@@ -93,3 +93,15 @@ an exponentially large interpolation pool. Its field bound is not
 polynomial by this argument. Nor does the shifted-fiber construction
 imply the exact-list rigidity proved by a different prime-selection
 argument. No fixed prescribed subgroup or better.codes instance follows.
+
+
+## Far-point strengthening (September 17)
+
+The manuscript now uses the multiplicative padding variant in
+`UNIQUE_FAR_PADDING.md`: extend the core polynomial globally and choose
+nonzero padding directions. The line then contains a word with exact
+agreement A-1, while the nearby threshold is A. The count, rate, and gap
+are unchanged. For selected-list polynomial-field realizations, the extra
+root exclusions are linear in B and preserve the field-size exponent.
+Whole-line uniqueness still requires the full interpolation pool and is
+not asserted by the polynomial-field realization.

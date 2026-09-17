@@ -44,12 +44,12 @@
       "K": 6,
       "A": 10,
       "labels": [
-        440,
-        532,
-        543,
-        609,
-        620,
-        689
+        55,
+        361,
+        449,
+        836,
+        895,
+        982
       ],
       "domain": [
         2,
@@ -91,9 +91,9 @@
         949,
         588,
         0,
-        0,
-        0,
-        0
+        171,
+        554,
+        716
       ],
       "g": [
         0,
@@ -131,6 +131,7 @@
           729
         ]
       ],
+      "exact_far_agreement": 9,
       "common_agreement_upper": 9
     },
     {
@@ -143,14 +144,14 @@
       "K": 9,
       "A": 15,
       "labels": [
-        4025,
-        21086,
-        24708,
-        32982,
-        33426,
-        34972,
-        41603,
-        46892
+        9463,
+        16292,
+        17897,
+        25010,
+        38414,
+        52330,
+        54993,
+        56983
       ],
       "domain": [
         3781,
@@ -211,10 +212,10 @@
         38630,
         31276,
         33455,
-        0,
-        0,
-        0,
-        0
+        3189,
+        8416,
+        43528,
+        60101
       ],
       "g": [
         0,
@@ -266,9 +267,10 @@
           18060
         ]
       ],
+      "exact_far_agreement": 14,
       "common_agreement_upper": 14
     }
   ],
-  "seconds": 0.10250112500216346,
+  "seconds": 0.1478986670008453,
   "scope": "Finite character-count and shifted-anchor mechanism checks; asymptotic polynomial field size uses Weil and Linnik, not finite testing. No whole-line uniqueness assertion."
 }
