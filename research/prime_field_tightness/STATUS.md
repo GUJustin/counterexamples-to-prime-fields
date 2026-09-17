@@ -1,8 +1,8 @@
 # Prime-field upper-bound tightness: target and evidence
 
 September 17, 2026. User priority: assess and pursue tightness of the
-Dao–Kominers–Thaler prime-field proximity-gap paper. Work horizon extended
-to 18:00 Eastern (22:00 UTC). This note separates established results from
+Dao–Kominers–Thaler prime-field proximity-gap paper. Work horizon extended by the user on September 17
+to 08:00 Eastern on September 18 (12:00 UTC on September 18). This note separates established results from
 research targets. No prime-ambient-field fixed-gap superlinear lower bound is claimed.
 
 **Current authoritative comparison:** EPRINT_2056_COMPARISON.md, from the
@@ -1043,3 +1043,13 @@ threshold12 as well. All22 nearest polynomials over F_(17^2) are Q(X^2)
 for the original22 F17 nearest polynomials. Orbit sizes remain2 and4,
 not8. The1,190,112-support cover and independent coefficient replay
 certify no list/orbit amplification in this particular doubling.
+
+
+September17 quadratic-indicator route: for every odd q=1 mod4, with
+k=(q-1)/4, the indicator (1+X^(2k))/2 on F_q* has exactly six nearest
+degree-at-most-k polynomials at agreement2k. A divisibility argument
+classifies them as0,1 and four affine functions of X^k; their nonconstant
+orbits have size2. The statement also holds over extension coefficient
+fields. Exact p17,p41 root-subset censuses and eleven prime-field witness
+checks pass. This closes the indicator as a growing-nearest-list source,
+not a general first-order claim. See ../quadratic_indicator_nearest/README.md.

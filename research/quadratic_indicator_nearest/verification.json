@@ -1,0 +1,83 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "p": 5,
+      "length": 4,
+      "dimension": 2,
+      "maximum_agreement": 2,
+      "nearest_list_size": 6
+    },
+    {
+      "p": 13,
+      "length": 12,
+      "dimension": 4,
+      "maximum_agreement": 6,
+      "nearest_list_size": 6
+    },
+    {
+      "p": 17,
+      "length": 16,
+      "dimension": 5,
+      "maximum_agreement": 8,
+      "nearest_list_size": 6
+    },
+    {
+      "p": 29,
+      "length": 28,
+      "dimension": 8,
+      "maximum_agreement": 14,
+      "nearest_list_size": 6
+    },
+    {
+      "p": 37,
+      "length": 36,
+      "dimension": 10,
+      "maximum_agreement": 18,
+      "nearest_list_size": 6
+    },
+    {
+      "p": 41,
+      "length": 40,
+      "dimension": 11,
+      "maximum_agreement": 20,
+      "nearest_list_size": 6
+    },
+    {
+      "p": 73,
+      "length": 72,
+      "dimension": 19,
+      "maximum_agreement": 36,
+      "nearest_list_size": 6
+    },
+    {
+      "p": 97,
+      "length": 96,
+      "dimension": 25,
+      "maximum_agreement": 48,
+      "nearest_list_size": 6
+    },
+    {
+      "p": 113,
+      "length": 112,
+      "dimension": 29,
+      "maximum_agreement": 56,
+      "nearest_list_size": 6
+    },
+    {
+      "p": 193,
+      "length": 192,
+      "dimension": 49,
+      "maximum_agreement": 96,
+      "nearest_list_size": 6
+    },
+    {
+      "p": 257,
+      "length": 256,
+      "dimension": 65,
+      "maximum_agreement": 128,
+      "nearest_list_size": 6
+    }
+  ],
+  "scope": "Exact replay of exhaustive p17 and p41 lists and closed-form witnesses at eleven primes. The separate divisibility proof establishes completeness for all odd prime powers q=1 mod4 and extension coefficients."
+}
