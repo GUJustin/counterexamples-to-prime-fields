@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/dickson_fixed_gap/verify.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.540087332999974,
+  "peak_rss_kib": 8352,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

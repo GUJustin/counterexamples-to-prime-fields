@@ -156,3 +156,29 @@ The main fixed-gap quadratic target remains open. An exploratory
 two-branch Riccati route is recorded in
 research/riccati_cross_ratio/TWO_BRANCH_FRONTIER.md; do not mistake its
 local necessary conditions for an actual construction or upper theorem.
+
+September 17: direct source audit of the March 24 S-two whitepaper is in
+research/paper_referee/STWO_QUANTIFIER_AUDIT.md, with PDF provenance JSON.
+The abstract now states the numerical coefficient/remainder distinction
+explicitly. Native rebuild passed; first-page visual review and commit
+of this editorial change are still pending.
+
+Recovered and independently audited the old full-field Dickson seed:
+research/dickson_fixed_gap/AUDIT.md and verify.py. At p=1 mod 8,
+n=p-1, rate 1/4, agreement 3/8, list size n/2 over F_p. For p>256 this
+is strictly below Elias. Thus the unrestricted prime-field list claim
+has a fixed-gap obstruction as well, but the archive records that the
+owner explicitly did not accept n=p-1 as solving the n=o(p) target.
+At p=1 mod 16 the old extension-field line gives n^2/64+n/16 full-set
+MCA failures at agreement 5/16; persistent core correlated subsets mean
+this is NOT the ordinary/subset CA result sought in the manuscript.
+Six-prime independent exact verification passed under 384 MiB guard,
+including p=257,337. This is recovered September 8 research, not a new
+discovery. Priority review and a concise full-length comparison for the
+ePrint remain pending. Do not inflate this into a short-domain result.
+
+Latest user asks for a clearer, stronger conceptual message. Explained
+the audited inverse-gap exponent obstruction and the remaining fixed-
+gap short-domain target. Better.codes live display remains 68.11 to
+116.13 bits; no verified benchmark improvement. Future strength claims
+must distinguish short/full-length domains and full-set/subset CA.

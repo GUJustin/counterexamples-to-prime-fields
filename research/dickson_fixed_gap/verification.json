@@ -1,0 +1,74 @@
+{
+  "status": "PASS",
+  "scope": "seed lists and full-set MCA; not subset CA",
+  "results": [
+    {
+      "p": 17,
+      "n": 16,
+      "k": 4,
+      "list_size": 8,
+      "agreements": 6,
+      "strictly_below_elias_certified": false,
+      "full_set_mca_labels": 5,
+      "minimum_witness_agreement": 6,
+      "maximum_witness_agreement": 7,
+      "subset_correlated_explanation_persists": true
+    },
+    {
+      "p": 41,
+      "n": 40,
+      "k": 10,
+      "list_size": 20,
+      "agreements": 15,
+      "strictly_below_elias_certified": false
+    },
+    {
+      "p": 97,
+      "n": 96,
+      "k": 24,
+      "list_size": 48,
+      "agreements": 36,
+      "strictly_below_elias_certified": false,
+      "full_set_mca_labels": 150,
+      "minimum_witness_agreement": 31,
+      "maximum_witness_agreement": 36,
+      "subset_correlated_explanation_persists": true
+    },
+    {
+      "p": 193,
+      "n": 192,
+      "k": 48,
+      "list_size": 96,
+      "agreements": 72,
+      "strictly_below_elias_certified": false,
+      "full_set_mca_labels": 588,
+      "minimum_witness_agreement": 63,
+      "maximum_witness_agreement": 69,
+      "subset_correlated_explanation_persists": true
+    },
+    {
+      "p": 257,
+      "n": 256,
+      "k": 64,
+      "list_size": 128,
+      "agreements": 96,
+      "strictly_below_elias_certified": true,
+      "full_set_mca_labels": 1040,
+      "minimum_witness_agreement": 84,
+      "maximum_witness_agreement": 95,
+      "subset_correlated_explanation_persists": true
+    },
+    {
+      "p": 337,
+      "n": 336,
+      "k": 84,
+      "list_size": 168,
+      "agreements": 126,
+      "strictly_below_elias_certified": true,
+      "full_set_mca_labels": 1785,
+      "minimum_witness_agreement": 108,
+      "maximum_witness_agreement": 121,
+      "subset_correlated_explanation_persists": true
+    }
+  ]
+}
