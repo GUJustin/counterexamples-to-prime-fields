@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/first_order_support_audit/verify_nonmonomial_cost_transfer.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5414817909986596,
+  "peak_rss_kib": 7824,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

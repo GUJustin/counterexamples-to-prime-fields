@@ -72,8 +72,34 @@ downward closure, increases benefit, and decreases rank. Therefore
 Combining the last two inequalities proves the ratio bound.
 \end{proof}
 
+\begin{corollary}[Translation-stable nonmonomial spaces]
+Let $W\subseteq\mathbb F[Y_0,Y_1]_{\le d}$ be translation-stable in
+$Y_0$, in characteristic zero or greater than $d$. Give it the filtered
+positive-part benefit $B=\mathsf B_{m,1/4,a}(W)$ of
+Section~\ref{sec:degeneration}. Suppose $\Delta=B-r_m(W)>0$.
+If every polynomial in $W$ has $Y_0$ degree at most $U$ and $Y_1$
+degree at most $V$, all four inequalities in \eqref{eq:cost-lower}
+hold with $R=r_m(W)$.
+\end{corollary}
+\begin{proof}
+The two flat degenerations in Theorem~\ref{thm:degeneration} preserve
+the ambient rectangle of monomials $u\le U$, $b\le V$: coordinate
+scalings preserve that rectangle, and taking leading parts or limits
+cannot create a monomial outside it. They also preserve the total-degree
+filtration. Let $S$ be their downward-$Y_0$ monomial limit, and delete
+monomials with nonpositive benefit. The retained support $S_+$ still
+has downward closure, has benefit exactly $B$, and has rank
+$R_+\le r_m(W)=R$. It is nonempty and has positive surplus
+$B-R_+\ge\Delta>0$. Apply Theorem~\ref{thm:gap-costs} to $S_+$.
+Its coordinate degrees are at most $U,V$, giving the first three
+inequalities. For the fourth, since $0\le R_+\le R<B$,
+\[
+ \frac{R}{B-R}\ge\frac{R_+}{B-R_+}\ge\frac1{8\varepsilon}.
+\]
+\end{proof}
+
 \begin{corollary}[Sharp margin powers for the stated bounds]
-Suppose the uniform challenge-degree budget $\ell$ is certified by
+In either of the preceding source classes, suppose the uniform challenge-degree budget $\ell$ is certified by
 \[
  (\ell+1)B>(\ell+\beta+1)R,\qquad \beta\ge U.
 \]
@@ -108,7 +134,8 @@ These terms imply the asserted orders.
 \end{proof}
 
 These are sharp powers for these particular sufficient bounds, even
-after arbitrary support optimization in the stated monomial class.
+after arbitrary support optimization or passage to translation-stable
+nonmonomial jet spaces with the stated filtered benefit.
 They are not lower bounds on actual kernel-vector degrees, candidate
 lists, or exceptional challenges. Global constraint dependencies, finer
 coefficient-degree accounting, or different reconstruction and agreement

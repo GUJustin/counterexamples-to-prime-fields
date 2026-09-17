@@ -4,6 +4,16 @@ Working draft by Justin Thaler, September 17, 2026.
 
 [Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
+**Current research snapshot (September 17):** the main ePrint-style article
+is 158 pages with one-inch margins. A separate
+[14-page first-order tightness note](research/first_order_support_audit/note/main.pdf)
+proves the sharp quarter-rate threshold for the specified interpolation
+framework, and sharp inverse-margin powers for its unchanged list and MCA
+bounds. These method limitations include translation-stable nonmonomial
+jet spaces; they are not intrinsic list-size or exception-count lower bounds.
+[Research status](research/prime_field_tightness/STATUS.md) distinguishes
+proved results from open targets. No better.codes improvement is claimed.
+
 The paper studies quantitative coding statements used in security analyses
 of hash-based SNARKs. It proves general list and affine-line separations
 over prime fields, gives finite circle-code examples, and treats the S-two

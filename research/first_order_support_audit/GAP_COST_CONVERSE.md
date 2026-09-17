@@ -107,3 +107,28 @@ counting, lower actual degrees, global constraint dependencies, or a
 new agreement argument could improve the ledger. The conclusion also
 uses leading normalized coefficients; it is not a uniform exact
 finite-length lower bound when epsilon shrinks with n.
+
+## Extension to translation-stable nonmonomial jet spaces
+
+Let W be the fixed translation-stable source class of the audited
+nonmonomial theorem, in characteristic zero or greater than its degree.
+Use the filtered positive-part benefit B and saturated rank R=r_m(W).
+The two flat degenerations preserve the ambient degree rectangle
+u<=U,b<=V: coordinate scalings, leading parts, and limits cannot add
+monomials outside it. They preserve filtered total-degree multiplicities.
+After deleting nonpositive-benefit monomials from the monomial limit,
+the remaining downward support S+ has benefit B and rank R+<=R.
+If B-R>0 then B-R+>0. Apply the monomial cost theorem to S+;
+its coordinate degrees are at most U,V, and
+
+    R/(B-R) >= R+/(B-R+) >= 1/(8epsilon).
+
+Thus all four necessary parameter inequalities, and the unchanged
+ledger's sharp margin powers, extend to this nonmonomial class.
+No new assertion about arbitrary global sources is made.
+
+An independent finite matrix check applies homogeneous and nonlinear
+shears and translations to 72 monomial source spaces over F_1009.
+It verifies the filtered monomial limit, degree rectangle preservation,
+and 504 saturated-rank comparisons (196 strict). These corroborate the
+flat-limit proof; they do not replace it.

@@ -29,8 +29,8 @@ finite-length weights and coefficient cutoff: in the full-coefficient
 monomial model, even multiplicity growing with block length cannot lower
 the asymptotic threshold. Finite-length corrections permit only a
 constant number of agreement coordinates of improvement. Within the unchanged
-first-order interpolation and reconstruction bounds, arbitrary monomial
-support optimization also cannot improve the cubic list-budget and
+first-order interpolation and reconstruction bounds, optimizing monomial supports or translation-stable nonmonomial
+jet spaces also cannot improve the cubic list-budget and
 fifth-power MCA-budget dependence on the margin above this threshold. Two exact
 certificates separately improve a known sufficient curve at higher rates.
 These are statements about a specified dimension-counting method, not
@@ -477,6 +477,8 @@ ranks, after 21295 direct checks of its diagonal summation formula. A second ver
 lemma. An additional exact verifier checks 3743 arbitrary supports for
 the rank estimates in Section~\ref{sec:gap-costs}, the narrow-cap obstruction,
 and three positive-surplus supports for the parameter inequalities.
+Another verifier checks 504 saturated-rank comparisons under degree-preserving
+nonmonomial degeneration, including 196 strict rank drops.
 These checks corroborate the formulas; the proofs establish the
 quantified statements. Scripts and reports accompany this note in
 \path{research/first_order_support_audit/}.

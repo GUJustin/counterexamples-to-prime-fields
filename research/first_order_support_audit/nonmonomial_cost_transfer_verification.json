@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "matrix_comparisons": 504,
+  "strict_rank_drops": 196,
+  "nonlinear_shear_spaces": 36,
+  "characteristic": 1009,
+  "scope": "Degree bounds and saturated-rank domination under filtered monomial degeneration; finite corroboration, not an intrinsic list lower bound."
+}

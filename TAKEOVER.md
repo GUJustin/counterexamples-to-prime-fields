@@ -2454,3 +2454,25 @@ proofs, and are leading-normalized rather than uniform finite-length
 claims. Exact checks passed for 3743 arbitrary supports, the narrow-cap
 inequality, and three positive-surplus fixtures. The technical note builds
 without warnings and its new pages were visually checked.
+
+## September 17: nonmonomial cost extension and GitHub synchronization
+
+The inverse-margin cost theorem now also covers the audited fixed
+translation-stable nonmonomial jet-space class. Both flat degenerations
+preserve separate jet-degree bounds; deleting nonpositive-benefit
+monomials preserves benefit and lowers rank. Monotonicity of R/(B-R)
+transfers the ratio bound. 504 direct finite-field rank comparisons pass,
+including 196 strict drops. The technical note remains 14 pages, builds
+cleanly, and the updated page was visually checked.
+
+The user explicitly instructed keeping the current paper pushed to
+https://github.com/GUJustin/counterexamples-to-prime-fields. This supersedes
+earlier local-only/no-push working assumptions. Keep verified manuscripts,
+sources, and certificates synchronized; do not upload ignored temporary
+files or recovered third-party manuscripts. The remote main was checked
+at the original baseline 540a9853b2c392a898697595a4bc263f7796ef11, so the
+current research branch can fast-forward it.
+
+Live better.codes checked September 17: interval 68.11--116.13 bits; no
+improvement from this work. Method tightness does not resolve the
+prescribed-domain and extension-field transfer obstacle.
