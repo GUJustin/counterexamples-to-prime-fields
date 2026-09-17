@@ -5,7 +5,29 @@ September17,2026. Live GitHub main was checked and equals
 68.11--116.13. This directory examines the current68.11 moving-fiber
 certificate, not the weaker single-explainer formulas in ePrint2026/2056.
 
-## Concrete result
+## Current result: complete numerical reconstruction still fails
+
+The target181275 pipeline has now been rebuilt with repaired primary,
+auxiliary, scalar-list, carrier, and derivative-chain arithmetic. It misses
+the corrected MCA budget by **7.65%**, with2841of5238contexts failing.
+This is not a better.codes improvement. The baseline control reproduces
+or improves all4970x8 incumbent singleton allowances, so this deficit is
+not a failure to reproduce the old numerical inputs.
+
+See [FULL_TARGET_RECONSTRUCTION.md](FULL_TARGET_RECONSTRUCTION.md) for
+parameters, exact numbers, limitations and reproduction commands. The
+immediate target is the singleton(r12,v43,z3206), which propagates through
+prefix ancestors(13,43) and(17,45). Separate agents are improving auxiliary
+source geometry and seeking an earlier phase-source activation there.
+The unified input manifest restores101 checksum-verified pinned inputs.
+
+The first integer score improvement really requires agreement181275;
+[the exact score-cell audit](SCORE_CELL_FEASIBILITY.md) rules out the
+intervening cells for6812centibits. Earlier sub-percent deficits used
+frozen incumbent allowances and are retained only as historical conditional
+diagnostics.
+
+## Initial source audit
 
 An independent Python implementation exactly reproduces all27 stored
 coefficient counts and local-rank bounds from the current Lean source

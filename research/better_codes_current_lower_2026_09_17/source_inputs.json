@@ -386,6 +386,12 @@
       "sha256": "a131a464fdceb7fdc2e833136053f7e6858f88ad70bf2322337f6305391de67f"
     },
     {
+      "path": "tmp/current-lower-primary-cache/MovingFiberIdentityArithmetic6811.lean",
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberIdentityArithmetic6811.lean",
+      "bytes": 1164,
+      "sha256": "e22ea972a4239bdc27ddda8d8d6fd4ea3009807c01f339b77b1050956ea0ba8a"
+    },
+    {
       "path": "tmp/current-lower-primary-cache/MovingFiberInitialArithmetic6811.lean",
       "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberInitialArithmetic6811.lean",
       "bytes": 3160,
@@ -500,6 +506,12 @@
       "bytes": 3207
     },
     {
+      "path": "tmp/current-lower-primary-cache/MovingFiberPaddedIdentity6811.lean",
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberPaddedIdentity6811.lean",
+      "bytes": 5331,
+      "sha256": "5d72fed8e971b16ab295678649b2ed0ff1291f7915ab70777255947c9e7411cc"
+    },
+    {
       "path": "tmp/current-lower-primary-cache/MovingFiberPairGeometry6811.lean",
       "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberPairGeometry6811.lean",
       "bytes": 5528,
@@ -522,6 +534,12 @@
       "sha256": "29528fa48edc4826a952971958982ddc98c525376de688a5d1b97b64eaf65023",
       "bytes": 77075,
       "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberRouting6811.lean"
+    },
+    {
+      "path": "tmp/current-lower-primary-cache/MovingFiberScalar6811.lean",
+      "sha256": "56436f6544e6a4487afaada021de1466bb2318c8f52c34717b17ac975cf25c4c",
+      "bytes": 27184,
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberScalar6811.lean"
     },
     {
       "path": "tmp/current-lower-primary-cache/MovingFiberSelection6811.lean",
@@ -554,16 +572,40 @@
       "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberTenPhase6811.lean"
     },
     {
+      "path": "tmp/current-lower-primary-cache/MovingFiberThreeSources6811.lean",
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberThreeSources6811.lean",
+      "bytes": 15675,
+      "sha256": "457c0f9d1eca61dd450bfe21228ad16c133fa8c7e63b3cd485cd0f1f5f05bbdb"
+    },
+    {
       "path": "tmp/current-lower-primary-cache/MovingFiberThresholdClosed6811.lean",
       "sha256": "cbea1e783197ed3d51c35f8e929edaff39a015c9ad7c6fcca80bb400d01f234c",
       "bytes": 22958,
       "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberThresholdClosed6811.lean"
     },
     {
-      "path": "tmp/current-lower-primary-cache/MovingFiberScalar6811.lean",
-      "sha256": "56436f6544e6a4487afaada021de1466bb2318c8f52c34717b17ac975cf25c4c",
-      "bytes": 27184,
-      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberScalar6811.lean"
+      "path": "tmp/scoring-primary-cache/ProximityPrize__Benchmark__TargetLower.lean",
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/Benchmark/TargetLower.lean",
+      "sha256": "7d11762452db502cc244e2522eb83f01d3d4b8318ec1771d0c86041181bdc474",
+      "bytes": 2340
+    },
+    {
+      "path": "tmp/scoring-primary-cache/README.md",
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/README.md",
+      "sha256": "dd02a77161d778c67119b87b81563ac0c3ebe0f55e301ec81b1cf1745bd5a136",
+      "bytes": 3999
+    },
+    {
+      "path": "tmp/scoring-primary-cache/scripts__write-benchmark-score.py",
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/scripts/write-benchmark-score.py",
+      "sha256": "69077e40a4fd379f0a55d948d8da0f4d153098c64ea346074bad22731b481c7b",
+      "bytes": 4650
+    },
+    {
+      "path": "tmp/scoring-primary-cache/scripts__write-verifier-score.py",
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/scripts/write-verifier-score.py",
+      "sha256": "b44c974ff43077b32591376c80e94ff8e2f5eb3794dca99ed2abf4d5240ee700",
+      "bytes": 7183
     }
   ]
 }
