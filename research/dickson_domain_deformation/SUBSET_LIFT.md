@@ -56,3 +56,9 @@ unsuccessful tested subsets cannot lift.
 
 Reproduce with verify_subset_lift.py. The run passes under the384MiB
 watchdog in about half a second.
+
+Subsequent structural bound: FULL_ROW_LIFT_LIMIT.md proves that this
+full-row-rank lifting criterion always requires L<2/eta at fixed capacity
+gap eta. Thus larger full-row-rank seed searches cannot generate growing
+fixed-gap banks, even with increasing seed primes. Dependent-equation
+lifting remains open.

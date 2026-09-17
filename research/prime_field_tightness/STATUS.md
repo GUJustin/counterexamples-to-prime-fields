@@ -671,3 +671,24 @@ The preceding GitHub main update was verified at
 86facc474c40d8edbe463de6721b99233cf7d5b1, with both manuscript PDFs and
 their principal sources matching remote blob hashes. Continue pushing
 verified updates, as explicitly requested by the user.
+
+## September 17: full-row lifting test cannot yield growing fixed-gap banks
+
+New research/dickson_domain_deformation/FULL_ROW_LIFT_LIMIT.md proves a
+necessary condition for the uncompressed incidence Jacobian to have full
+row rank. With c covered nodes, L distinct degree-<k candidates and
+agreement counts A_i, the k common additions, one scaling, and three
+projective coordinate motions give k+4 independent kernel directions.
+Thus sum_i(A_i-k)<=2c-k-4 is necessary. At fixed capacity gap eta this
+forces L<2/eta, independently of length. Consequently searching for larger
+full-row-rank seeds cannot solve the growing-list target. This does NOT
+exclude lifts with dependent equations, smooth reduced loci with redundant
+presentations, or singular lifting.
+
+The full p41 seed has44 row dependencies, at least34 forced by this count;
+the additional10 correspond to the normalized tangent directions used in
+the separate second-order obstruction. Exact matrices and all geometric
+motions checked for the p17 bank, full p41 bank, liftable ten-candidate
+subset, and a two-candidate subset with uncovered nodes. Next intrinsic
+construction work must handle compatible equation dependencies rather
+than merely enlarge the existing full-row minor search.

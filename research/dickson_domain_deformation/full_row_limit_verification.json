@@ -1,0 +1,54 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "p": 17,
+      "k": 4,
+      "L": 8,
+      "covered_nodes": 16,
+      "equations": 32,
+      "variables": 48,
+      "rank": 32,
+      "geometric_kernel": 8,
+      "forced_row_dependencies": 0,
+      "actual_row_dependencies": 0
+    },
+    {
+      "p": 41,
+      "k": 10,
+      "L": 20,
+      "covered_nodes": 40,
+      "equations": 260,
+      "variables": 240,
+      "rank": 216,
+      "geometric_kernel": 14,
+      "forced_row_dependencies": 34,
+      "actual_row_dependencies": 44
+    },
+    {
+      "p": 41,
+      "k": 10,
+      "L": 10,
+      "covered_nodes": 40,
+      "equations": 110,
+      "variables": 140,
+      "rank": 110,
+      "geometric_kernel": 14,
+      "forced_row_dependencies": 0,
+      "actual_row_dependencies": 0
+    },
+    {
+      "p": 41,
+      "k": 10,
+      "L": 2,
+      "covered_nodes": 24,
+      "equations": 6,
+      "variables": 44,
+      "rank": 6,
+      "geometric_kernel": 14,
+      "forced_row_dependencies": 0,
+      "actual_row_dependencies": 0
+    }
+  ],
+  "scope": "Necessary bound for the uncompressed full-row Jacobian lifting test, not a nonexistence theorem for lifts or growing lists."
+}
