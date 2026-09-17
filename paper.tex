@@ -51,7 +51,10 @@ existence without that recovery guarantee. A different construction
 gives complete nonzero coverage against arbitrary fixed numerical
 constants.
 
-For lists, integer-interval domains give
+Fixing the rate and gap does not bound list size independently of
+length: full-length prime-field codes have $n/2$ list elements at
+rate $1/4$ and gap $1/8$, still strictly below Elias for large $p$.
+Integer-interval domains separately give
 $\log L=\Omega_\rho(\eta^{-2}/\log(1/\eta))$, ruling out every uniform
 $\exp(O_\rho(1/\eta))$ prescription. Over every sufficiently large
 prime, with $b=\log_2p$, we obtain
@@ -556,6 +559,8 @@ whose degree can be bounded by $4n^2$
 (Proposition~\ref{prop:ordinary-ca-field-degree}).
 Thus quadratic length dependence is necessary for ordinary
 correlated-agreement exceptions in the large-characteristic capacity regime.
+In particular, at these parameter pairs no uniform $o(n^2)$
+exceptional-count bound holds in this field class.
 Corollary~\ref{cor:ordinary-ca-parameter-family} extends the exact
 parameters to rate $b/d$ and gap $1/d$ for $b\in\{2,3,4\}$ and
 $d\ge b+7$, including rate $2/9$ and gap $1/9$.

@@ -137,3 +137,13 @@ CA. Characteristic exceeds message degree and e<=n^b. In particular,
 rate2/9 and gap1/9 give ceil(n^2/972) labels and e<=n^2. These are still
 capacity-regime examples over extensions, not first-order or prime-field
 tightness.
+
+## Precise consequence for dependence on length
+
+At each fixed parameter pair in Corollary N.5, the unbounded-length
+family excludes every exceptional-count bound B(n)=o(n^2) uniform over
+the stated large-characteristic field class, even for ordinary CA. This
+is stronger than merely excluding a linear bound. It does not prove a
+quadratic upper bound or match the current capacity exponent. Separately,
+full-length prime-field lists of size n/2 at fixed rate1/4 and gap1/8
+exclude list bounds independent of length at those parameters.
