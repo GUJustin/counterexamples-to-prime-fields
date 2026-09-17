@@ -844,3 +844,27 @@ no manuscript expansion or new asymptotic claim. Larger random-support
 sampling has rapidly vanishing hit probabilities and is not the next
 route. Continue searching for a structurally different growing family,
 with the prime ambient-field condition enforced. Work horizon22:00UTC.
+
+## September17: exact characteristic-zero cyclic-word test
+
+research/cyclotomic_dickson_word/ tests W=(X^k-1)^2/2 on mu_(4k)
+directly in characteristic zero. A (k+1)-point agreement support is
+equivalent to h_k(S)=2. Exhaustive split-prime filtering followed by
+integer cyclotomic reduction gives complete above-capacity list sizes
+0,0,3,0,0,9,28 at lengths4,8,12,16,20,24,28. Independent exact
+cyclotomic-field interpolation verifies every resulting polynomial and
+reconstructs every retained support. At n12 and24, the agreements are
+4 and8, respectively, so both have fixed gap1/12 and rate1/4.
+
+The apparent3-to-9 growth does not continue in the tested shared-zero
+class. Exhaustive residual interpolation with at least2r zero-word
+agreements at n12r,k3r,A4r gives3,9,3,9 witnesses for r1,2,3,4.
+All lift exactly and descend by composition to length12 or24. The n36
+and48 searches are not complete unrestricted lists. No asymptotically
+growing family is established. The main paper remains159pages.
+
+Live better.codes still reports68.11--116.13 bits. A fresh primary-source
+search found the current przchojecki/rs-mca repository synthesis, but
+its additional claimed finite parameter results have not been audited
+here or imported. The earlier pinned paving-source audit remains the
+only checked claim from that project in our literature notes.

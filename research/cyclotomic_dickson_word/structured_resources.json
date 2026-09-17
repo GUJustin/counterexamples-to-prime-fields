@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/cyclotomic_dickson_word/structured_search.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 5.619920124998316,
+  "peak_rss_kib": 136144,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

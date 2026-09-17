@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/cyclotomic_dickson_word/verify.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.646028583003499,
+  "peak_rss_kib": 63424,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

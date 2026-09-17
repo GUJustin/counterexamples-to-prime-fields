@@ -1,0 +1,244 @@
+{
+  "fixtures": [
+    {
+      "r": 1,
+      "n": 12,
+      "k": 3,
+      "A": 4,
+      "split_prime": 1000033,
+      "primitive_nth_root": 385966,
+      "zero_pattern_orbits": 1,
+      "residual_interpolations": 9,
+      "finite_field_candidate_orbits": 1,
+      "finite_field_orbit_size_sum": 3,
+      "maximum_seen_agreement": 4,
+      "candidates": [
+        {
+          "zero_exponents": [
+            0,
+            4
+          ],
+          "determining_exponents": [
+            5
+          ],
+          "finite_field_agreements": 4,
+          "finite_field_support": [
+            0,
+            4,
+            5,
+            11
+          ],
+          "finite_field_orbit_size": 3
+        }
+      ],
+      "seconds": 0.3499069169993163,
+      "scope": "Specified shared-zero class over the split prime only. Exact characteristic-zero lifting is separate; no full-list or growing-family conclusion."
+    },
+    {
+      "r": 2,
+      "n": 24,
+      "k": 6,
+      "A": 8,
+      "split_prime": 1000033,
+      "primitive_nth_root": 879518,
+      "zero_pattern_orbits": 3,
+      "residual_interpolations": 459,
+      "finite_field_candidate_orbits": 2,
+      "finite_field_orbit_size_sum": 9,
+      "maximum_seen_agreement": 8,
+      "candidates": [
+        {
+          "zero_exponents": [
+            0,
+            4,
+            12,
+            16
+          ],
+          "determining_exponents": [
+            1,
+            15
+          ],
+          "finite_field_agreements": 8,
+          "finite_field_support": [
+            0,
+            1,
+            4,
+            12,
+            15,
+            16,
+            19,
+            21
+          ],
+          "finite_field_orbit_size": 6
+        },
+        {
+          "zero_exponents": [
+            0,
+            4,
+            12,
+            16
+          ],
+          "determining_exponents": [
+            5,
+            11
+          ],
+          "finite_field_agreements": 8,
+          "finite_field_support": [
+            0,
+            4,
+            5,
+            11,
+            12,
+            16,
+            17,
+            23
+          ],
+          "finite_field_orbit_size": 3
+        }
+      ],
+      "seconds": 0.3755485840010806,
+      "scope": "Specified shared-zero class over the split prime only. Exact characteristic-zero lifting is separate; no full-list or growing-family conclusion."
+    },
+    {
+      "r": 3,
+      "n": 36,
+      "k": 9,
+      "A": 12,
+      "split_prime": 1000081,
+      "primitive_nth_root": 953873,
+      "zero_pattern_orbits": 10,
+      "residual_interpolations": 29250,
+      "finite_field_candidate_orbits": 1,
+      "finite_field_orbit_size_sum": 3,
+      "maximum_seen_agreement": 12,
+      "candidates": [
+        {
+          "zero_exponents": [
+            0,
+            4,
+            12,
+            16,
+            24,
+            28
+          ],
+          "determining_exponents": [
+            5,
+            11,
+            17
+          ],
+          "finite_field_agreements": 12,
+          "finite_field_support": [
+            0,
+            4,
+            5,
+            11,
+            12,
+            16,
+            17,
+            23,
+            24,
+            28,
+            29,
+            35
+          ],
+          "finite_field_orbit_size": 3
+        }
+      ],
+      "seconds": 0.35264170900336467,
+      "scope": "Specified shared-zero class over the split prime only. Exact characteristic-zero lifting is separate; no full-list or growing-family conclusion."
+    },
+    {
+      "r": 4,
+      "n": 48,
+      "k": 12,
+      "A": 16,
+      "split_prime": 1000033,
+      "primitive_nth_root": 363328,
+      "zero_pattern_orbits": 43,
+      "residual_interpolations": 2532915,
+      "finite_field_candidate_orbits": 2,
+      "finite_field_orbit_size_sum": 9,
+      "maximum_seen_agreement": 16,
+      "candidates": [
+        {
+          "zero_exponents": [
+            0,
+            4,
+            12,
+            16,
+            24,
+            28,
+            36,
+            40
+          ],
+          "determining_exponents": [
+            1,
+            15,
+            19,
+            21
+          ],
+          "finite_field_agreements": 16,
+          "finite_field_support": [
+            0,
+            1,
+            4,
+            12,
+            15,
+            16,
+            19,
+            21,
+            24,
+            25,
+            28,
+            36,
+            39,
+            40,
+            43,
+            45
+          ],
+          "finite_field_orbit_size": 6
+        },
+        {
+          "zero_exponents": [
+            0,
+            4,
+            12,
+            16,
+            24,
+            28,
+            36,
+            40
+          ],
+          "determining_exponents": [
+            5,
+            11,
+            17,
+            23
+          ],
+          "finite_field_agreements": 16,
+          "finite_field_support": [
+            0,
+            4,
+            5,
+            11,
+            12,
+            16,
+            17,
+            23,
+            24,
+            28,
+            29,
+            35,
+            36,
+            40,
+            41,
+            47
+          ],
+          "finite_field_orbit_size": 3
+        }
+      ],
+      "seconds": 3.966744915996969,
+      "scope": "Specified shared-zero class over the split prime only. Exact characteristic-zero lifting is separate; no full-list or growing-family conclusion."
+    }
+  ]
+}
