@@ -1,0 +1,58 @@
+[
+  {
+    "p": 5,
+    "k": 1,
+    "parameter_tests": 5,
+    "exact_monic_count": 3,
+    "exhaustive_monic_polynomials": 5,
+    "status": "passed"
+  },
+  {
+    "p": 13,
+    "k": 3,
+    "parameter_tests": 13,
+    "exact_monic_count": 7,
+    "exhaustive_monic_polynomials": 2197,
+    "status": "passed"
+  },
+  {
+    "p": 17,
+    "k": 4,
+    "parameter_tests": 17,
+    "exact_monic_count": 9,
+    "exhaustive_monic_polynomials": null,
+    "status": "passed"
+  },
+  {
+    "p": 29,
+    "k": 7,
+    "parameter_tests": 29,
+    "exact_monic_count": 15,
+    "exhaustive_monic_polynomials": null,
+    "status": "passed"
+  },
+  {
+    "p": 41,
+    "k": 10,
+    "parameter_tests": 41,
+    "exact_monic_count": 21,
+    "exhaustive_monic_polynomials": null,
+    "status": "passed"
+  },
+  {
+    "p": 73,
+    "k": 18,
+    "parameter_tests": 73,
+    "exact_monic_count": 37,
+    "exhaustive_monic_polynomials": null,
+    "status": "passed"
+  },
+  {
+    "p": 97,
+    "k": 24,
+    "parameter_tests": 97,
+    "exact_monic_count": 49,
+    "exhaustive_monic_polynomials": null,
+    "status": "passed"
+  }
+]

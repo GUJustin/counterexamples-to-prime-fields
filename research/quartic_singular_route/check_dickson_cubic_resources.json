@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/quartic_singular_route/check_dickson_cubic.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5541765420057345,
+  "peak_rss_kib": 6576,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

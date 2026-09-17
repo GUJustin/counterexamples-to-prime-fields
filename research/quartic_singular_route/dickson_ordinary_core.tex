@@ -1,0 +1,117 @@
+\paragraph{A primitive equation with a full ordinary core.}
+The ordinary core can contain a genuine growing list of actual polynomial
+solutions, even when the differential equation is primitive and irreducible.
+The following identity places the existing full-length Dickson list inside
+a cubic first-order equation; it does not provide a new list lower bound.
+
+\begin{proposition}\label{prop:dickson-cubic-ordinary-core}
+Let $p\equiv1\pmod8$ be prime, $k=(p-1)/4$, and $D=k-1$.
+There is a primitive irreducible polynomial
+$Q\in\F_p[X,u,v]$ of total $(u,v)$-degree three and $v$-degree one,
+and a word $w$ on $\F_p^\times$, such that:
+\begin{enumerate}
+\item $Q(X,P,P')=0$ for $2k$ distinct degree-$D$ polynomials $P$,
+      each agreeing with $w$ at exactly $3k/2$ coordinates; together with
+      $P=0$, these are all degree-at-most-$D$ polynomial solutions,
+      even over every extension of $\F_p$;
+\item $Q(x,w(x),v)$ is the zero polynomial in $v$ for every
+      $x\in\F_p^\times$.
+\end{enumerate}
+The equation has no challenge dependence.  Thus its ordinary core is the
+entire domain for the constant received line $f=w$, $g=0$.
+\end{proposition}
+\begin{proof}
+Put $e=(p+1)/2$, $q=X^{2k}$, and $S=1+q$.  Use the polynomials
+$G_a,P_a=G_a-X^k$ from Proposition~\ref{prop:full-length-fixed-gap},
+with $a\in\F_p^\times$ modulo sign.  That proposition gives their
+number, degrees, and agreement counts with
+$w(x)=(1+x^{2k})/2-x^k$.  Define
+\[
+ \mathcal Q(X,G,V)
+ =4X(2G^2-1-X^{2k})V+G(4G^2-1-3X^{2k}),
+ \qquad
+ Q(X,u,v)=\mathcal Q(X,u+X^k,v+kX^{k-1}).
+\]
+We prove $\mathcal Q(X,G_a,G_a')=0$.  With $t^2=X$, write
+\[
+ J=\frac{(a+t)^e+(a-t)^e}{2},\qquad
+ G=\frac{(a+t)^e-(a-t)^e}{2t}=G_a(X).
+\]
+Frobenius, using $a^p=a$ and $2e=p+1$, gives
+\[
+ J^2+XG^2=a^2+X^{2k+1},\qquad 2JG=aS.
+\]
+Differentiation, with $e=1/2$ in $\F_p$, gives
+$2(a^2-X)(2XG'+G)=aJ-XG$.  Consequently
+\[
+ a^2[4G(2XG'+G)-S]=2XG(4XG'+G),\qquad
+ a^2(S^2-4G^2)=4XG^2(q-G^2).
+\]
+Eliminating $a^2$ and cancelling the nonzero polynomial $2XG$ yields
+\[
+ (4XG'+G)(S^2-4G^2)
+ -2G(q-G^2)[4G(2XG'+G)-S]=0.
+\]
+The left side factors as
+$(2G^2-S)\mathcal Q(X,G,G')$.
+Since $G$ is monic of degree $k$, the degree-$2k$ coefficient of
+$2G^2-S$ is $2-1=1$.  Cancellation proves the claimed identity.
+
+The same calculation includes $a=0$, which gives $P=0$.
+To prove completeness over any extension field, write a prospective
+monic solution as $G=X^k+\sum_{r=1}^k c_rX^{k-r}$.
+For $1\le r\le k$, the coefficient of $X^{3k-r}$ in
+$\mathcal Q(X,G,G')$ is
+\[
+ 4(1-r)c_r+F_r(c_1,\ldots,c_{r-1}).
+\]
+Indeed its linear multiplier is $20k-4r+9=4(1-r)$ in $\F_p$;
+any nonlinear occurrence of $c_r$ has larger coefficient deficit.
+The terms of degree at most $k$ do not contribute.
+Only $r=1$ is resonant, with $F_1=0$, so $c_1$ uniquely determines
+all the other coefficients.  Set $\tau=-8c_1$ and define
+\[
+ \widetilde G_\tau(X)
+ =\sum_{j=0}^k\binom{2k+1}{2j+1}\tau^{k-j}X^j.
+\]
+Its next-to-leading coefficient is $-\tau/8$.
+For each $r\le k$, its coefficient of $X^{3k-r}$ in the residual
+is a polynomial of degree at most $r$ in $\tau$.
+It vanishes at the $2k+1$ values consisting of zero and all nonzero
+squares in $\F_p$, by the identities already proved for $G_a$.
+It therefore vanishes identically, and the recurrence forces
+$G=\widetilde G_\tau$.
+The constant term of the differential equation now gives
+\[
+ 0=G(0)(4G(0)^2-1)
+   =\tfrac12\tau^k(\tau^{2k}-1).
+\]
+All roots of $\tau^{2k}-1$ are already the nonzero squares in $\F_p$.
+Thus no extension contributes further solutions, proving the exact
+count $2k+1$ after shifting back to $P=G-X^k$.
+
+For $W(X)=S/2-X^k$, direct substitution gives the stronger fiber identity
+\[
+ Q(X,W(X),v)
+ =(X^{p-1}-1)\bigl[2X(v+kX^{k-1})+X^{2k}/2\bigr].
+\]
+This proves the ordinary-core assertion.  Finally, the coefficients of
+$V$ and of $1$ in $\mathcal Q$ are coprime in $\F_p[X,G]$.
+Indeed $X$ does not divide the latter, $G$ does not divide $2G^2-S$,
+and
+\[
+ (4G^2-1-3q)-2(2G^2-S)=1-q
+\]
+shares no factor with $2G^2-S$, whose leading $G$-coefficient is the
+nonzero constant $2$.  Gauss's lemma and linearity in $V$ give
+irreducibility.  The displayed affine change of variables preserves it.
+\end{proof}
+
+Here $n=p-1$, the rate is $1/4$, and the agreement fraction is $3/8$.
+The construction depends on the Frobenius identity at this characteristic;
+it does not supply a short-domain family by enlarging $p$ while keeping
+$k$ fixed.  Nor does it show that an ordinary-core hypothesis is necessary
+for a linear bad-label bound: the displayed received line has $g=0$, so
+$(P,0)$ explains the full support of every witness and there are no bad
+labels.  Its agreement fraction is below the first-order threshold at
+rate $1/4$, so it is not a tightness example for that threshold.

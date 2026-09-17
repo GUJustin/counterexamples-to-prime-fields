@@ -1,0 +1,9 @@
+# Independent root audit of the cubic Dickson equation
+
+The Frobenius identities, derivative identity, elimination, and cancellation in DICKSON_CUBIC_ORDINARY_CORE.md check symbolically. The cancelled factor has leading coefficient one. Substituting the received polynomial gives exactly the displayed domain-locator factor, while the original derivative and constant coefficients are coprime; no global content was silently removed.
+
+The solution classification also checks independently. For a monic degree-k G, the coefficient of X^(3k-r) has new-coefficient multiplier 20k-4r+9=4(1-r) modulo p. Only r=1 is resonant. Universal binomial coefficients have parameter degree at most r in each top residual, and the 2k+1 known parameter values force those residuals to vanish identically. The constant coefficient then restricts the parameter to zero or the 2k nonzero squares, already in the prime field. This proves completeness over extensions without assuming Frobenius fixes arbitrary extension parameters.
+
+For the weighted-list bound, an important endpoint exception was caught during the root derivation: at x=a^2 the derivative is -3 sigma/(8x), rather than -sigma/(4x). The final proof removes that one candidate-coordinate incidence. Together with unique-value incidences this costs at most one incidence per coordinate, because the two cases are disjoint. The final squaring step separates LA<n; it does not square a negative lower bound.
+
+Replayed exact checks under the watchdog: 275 parameter checks, 2202 exhaustive monic polynomials, 270 differential identities, and 2214 weighted pair budgets all passed. These finite checks supplement the symbolic proofs. The construction retains the known full-length list agreement and does not establish a new prime-field proximity-gap lower bound or a better.codes gain.

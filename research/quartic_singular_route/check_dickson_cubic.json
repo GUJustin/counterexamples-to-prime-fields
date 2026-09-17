@@ -1,0 +1,50 @@
+[
+  {
+    "p": 13,
+    "D": 2,
+    "all_parameter_identities": 13,
+    "distinct_nonzero_bank": 6,
+    "ordinary_core": 12,
+    "agreement": null
+  },
+  {
+    "p": 17,
+    "D": 3,
+    "all_parameter_identities": 17,
+    "distinct_nonzero_bank": 8,
+    "ordinary_core": 16,
+    "agreement": 6
+  },
+  {
+    "p": 29,
+    "D": 6,
+    "all_parameter_identities": 29,
+    "distinct_nonzero_bank": 14,
+    "ordinary_core": 28,
+    "agreement": null
+  },
+  {
+    "p": 41,
+    "D": 9,
+    "all_parameter_identities": 41,
+    "distinct_nonzero_bank": 20,
+    "ordinary_core": 40,
+    "agreement": 15
+  },
+  {
+    "p": 73,
+    "D": 17,
+    "all_parameter_identities": 73,
+    "distinct_nonzero_bank": 36,
+    "ordinary_core": 72,
+    "agreement": 27
+  },
+  {
+    "p": 97,
+    "D": 23,
+    "all_parameter_identities": 97,
+    "distinct_nonzero_bank": 48,
+    "ordinary_core": 96,
+    "agreement": 36
+  }
+]

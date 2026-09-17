@@ -1,0 +1,50 @@
+[
+  {
+    "p": 13,
+    "bank": 7,
+    "pair_budgets": 21,
+    "endpoint_derivatives": 6,
+    "regular_derivatives": 18,
+    "words": 21
+  },
+  {
+    "p": 17,
+    "bank": 9,
+    "pair_budgets": 36,
+    "endpoint_derivatives": 8,
+    "regular_derivatives": 32,
+    "words": 21
+  },
+  {
+    "p": 29,
+    "bank": 15,
+    "pair_budgets": 105,
+    "endpoint_derivatives": 14,
+    "regular_derivatives": 98,
+    "words": 21
+  },
+  {
+    "p": 41,
+    "bank": 21,
+    "pair_budgets": 210,
+    "endpoint_derivatives": 20,
+    "regular_derivatives": 200,
+    "words": 21
+  },
+  {
+    "p": 73,
+    "bank": 37,
+    "pair_budgets": 666,
+    "endpoint_derivatives": 36,
+    "regular_derivatives": 648,
+    "words": 21
+  },
+  {
+    "p": 97,
+    "bank": 49,
+    "pair_budgets": 1176,
+    "endpoint_derivatives": 48,
+    "regular_derivatives": 1152,
+    "words": 21
+  }
+]
