@@ -1,0 +1,76 @@
+{
+  "threshold": 183960,
+  "rows": [
+    {
+      "S": 0,
+      "finite_max_slope": {
+        "m": 1,
+        "S": 0,
+        "Y": 1,
+        "L_lower": 1,
+        "margin_at_lower": -103482,
+        "slope": -25297,
+        "feasible": false,
+        "minimum_L": null
+      },
+      "tail_upper_at64": "-11102382348031/524284",
+      "tail_derivative_at64": "-76623791639/131071"
+    },
+    {
+      "S": 1,
+      "finite_max_slope": {
+        "m": 1,
+        "S": 1,
+        "Y": 1,
+        "L_lower": 1,
+        "margin_at_lower": -312737,
+        "slope": -234552,
+        "feasible": false,
+        "minimum_L": null
+      },
+      "tail_upper_at64": "-8616340171003/524284",
+      "tail_derivative_at64": "-66375821545/131071"
+    },
+    {
+      "S": 2,
+      "finite_max_slope": {
+        "m": 1,
+        "S": 2,
+        "Y": 1,
+        "L_lower": 2,
+        "margin_at_lower": -547289,
+        "slope": -234552,
+        "feasible": false,
+        "minimum_L": null
+      },
+      "tail_upper_at64": "-18803210842309/1572852",
+      "tail_derivative_at64": "-56127851451/131071"
+    },
+    {
+      "S": 3,
+      "finite_max_slope": {
+        "m": 19,
+        "S": 3,
+        "Y": 26,
+        "L_lower": 26,
+        "margin_at_lower": -416226167,
+        "slope": -1750,
+        "feasible": false,
+        "minimum_L": null
+      },
+      "tail_upper_at64": "-4056572677331/524284",
+      "tail_derivative_at64": "-45879881357/131071"
+    }
+  ],
+  "witness": {
+    "m": 19,
+    "S": 3,
+    "Y": 26,
+    "L_lower": 26,
+    "margin_at_lower": -416200441,
+    "slope": 188,
+    "feasible": true,
+    "minimum_L": 2213859
+  },
+  "scope": "Sharp for positive affine-L slope of automatic untrimmed source across ALL integer multiplicities and S0..3. Not a universal lower bound on arbitrary supports or finite-L positive intercepts."
+}

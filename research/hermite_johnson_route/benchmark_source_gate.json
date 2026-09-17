@@ -1,0 +1,158 @@
+{
+  "n": 262144,
+  "w": 131071,
+  "target_A": 181275,
+  "finite_restricted_support_gates": [
+    {
+      "S": 0,
+      "tested": 2909,
+      "positive": 0,
+      "best_normalized_slope": {
+        "m": 64,
+        "S": 0,
+        "Y": 0,
+        "L_lower": 63,
+        "margin_at_lower": -331239424,
+        "slope": -5175616,
+        "feasible": false,
+        "minimum_L": null
+      }
+    },
+    {
+      "S": 1,
+      "tested": 2909,
+      "positive": 0,
+      "best_normalized_slope": {
+        "m": 64,
+        "S": 1,
+        "Y": 0,
+        "L_lower": 64,
+        "margin_at_lower": -336415040,
+        "slope": -5175616,
+        "feasible": false,
+        "minimum_L": null
+      }
+    },
+    {
+      "S": 2,
+      "tested": 2909,
+      "positive": 0,
+      "best_normalized_slope": {
+        "m": 64,
+        "S": 2,
+        "Y": 0,
+        "L_lower": 65,
+        "margin_at_lower": -341590656,
+        "slope": -5175616,
+        "feasible": false,
+        "minimum_L": null
+      }
+    },
+    {
+      "S": 3,
+      "tested": 2909,
+      "positive": 0,
+      "best_normalized_slope": {
+        "m": 64,
+        "S": 3,
+        "Y": 0,
+        "L_lower": 66,
+        "margin_at_lower": -346766272,
+        "slope": -5175616,
+        "feasible": false,
+        "minimum_L": null
+      }
+    }
+  ],
+  "best_full_box_thresholds": [
+    {
+      "A": 183960,
+      "m": 19,
+      "S": 3,
+      "Y": 26,
+      "L_lower": 26,
+      "margin_at_lower": -416200441,
+      "slope": 188,
+      "feasible": true,
+      "minimum_L": 2213859
+    },
+    {
+      "A": 183960,
+      "m": 21,
+      "S": 3,
+      "Y": 29,
+      "L_lower": 29,
+      "margin_at_lower": -572568457,
+      "slope": 222,
+      "feasible": true,
+      "minimum_L": 2579167
+    },
+    {
+      "A": 183976,
+      "m": 18,
+      "S": 3,
+      "Y": 25,
+      "L_lower": 25,
+      "margin_at_lower": -349935253,
+      "slope": 830,
+      "feasible": true,
+      "minimum_L": 421634
+    },
+    {
+      "A": 183977,
+      "m": 20,
+      "S": 3,
+      "Y": 28,
+      "L_lower": 28,
+      "margin_at_lower": -489656175,
+      "slope": 844,
+      "feasible": true,
+      "minimum_L": 580190
+    },
+    {
+      "A": 183985,
+      "m": 22,
+      "S": 3,
+      "Y": 30,
+      "L_lower": 30,
+      "margin_at_lower": -662933217,
+      "slope": 720,
+      "feasible": true,
+      "minimum_L": 920771
+    },
+    {
+      "A": 183989,
+      "m": 23,
+      "S": 3,
+      "Y": 32,
+      "L_lower": 32,
+      "margin_at_lower": -763386645,
+      "slope": 1518,
+      "feasible": true,
+      "minimum_L": 502922
+    },
+    {
+      "A": 184005,
+      "m": 24,
+      "S": 3,
+      "Y": 33,
+      "L_lower": 33,
+      "margin_at_lower": -873007165,
+      "slope": 2670,
+      "feasible": true,
+      "minimum_L": 327002
+    },
+    {
+      "A": 184015,
+      "m": 17,
+      "S": 3,
+      "Y": 23,
+      "L_lower": 23,
+      "margin_at_lower": -290878411,
+      "slope": 1524,
+      "feasible": true,
+      "minimum_L": 190889
+    }
+  ],
+  "scope": "All m1..64,S0..3,YS caps0..automatic cap; exact affine-L regime L>=max(Y,m+S\u22121). Finite failure does not assert no kernel. Threshold comparison uses untrimmed support only."
+}

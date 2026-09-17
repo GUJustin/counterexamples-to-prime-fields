@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/hermite_johnson_route/benchmark_source_gate.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.1044743340025889,
+  "peak_rss_kib": 19952,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

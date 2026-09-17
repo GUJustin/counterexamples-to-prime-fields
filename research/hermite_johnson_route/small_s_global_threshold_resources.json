@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/hermite_johnson_route/small_s_global_threshold.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5635111250012415,
+  "peak_rss_kib": 2400,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

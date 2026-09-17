@@ -1,0 +1,57 @@
+{
+  "target_A": 181275,
+  "target_agreement_fraction": 0.6915092468261719,
+  "small_S_best_tested_A": 183960,
+  "small_S_best_tested_fraction": 0.701751708984375,
+  "rows": [
+    {
+      "S": 0,
+      "m_lower": 1,
+      "quadratic": [
+        "-1498850599/131071",
+        "-80869",
+        "131071/4"
+      ],
+      "maximizer_on_real_domain": "1",
+      "upper_bound_maximum": "-31214118151/524284",
+      "upper_bound_float": -59536.65980842444
+    },
+    {
+      "S": 1,
+      "m_lower": 2,
+      "quadratic": [
+        "-1498850599/131071",
+        "181275/131071",
+        "-120258559995/524284"
+      ],
+      "maximizer_on_real_domain": "2",
+      "upper_bound_maximum": "-144238719379/524284",
+      "upper_bound_float": -275115.62317179237
+    },
+    {
+      "S": 2,
+      "m_lower": 4,
+      "quadratic": [
+        "-1498850599/131071",
+        "10599943249/131071",
+        "-1185407041477/1572852"
+      ],
+      "maximizer_on_real_domain": "4",
+      "upper_bound_maximum": "-964389080533/1572852",
+      "upper_bound_float": -613146.7426897127
+    },
+    {
+      "S": 3,
+      "m_lower": 6,
+      "quadratic": [
+        "-1498850599/131071",
+        "21199705223/131071",
+        "-807451754451/524284"
+      ],
+      "maximizer_on_real_domain": "21199705223/2997701198",
+      "upper_bound_maximum": "-190205511070097196605/196455846861529",
+      "upper_bound_float": -968184.5264914038
+    }
+  ],
+  "scope": "For automatic untrimmed source and m>=max(1,2S), proves affine-L nullity slope negative for all multiplicities. Does not alone exclude positive intercept at smaller L or all trimmed supports."
+}

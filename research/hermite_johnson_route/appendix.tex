@@ -9,6 +9,13 @@ The conclusion below concerns actual solutions of one common identity,
 and controls their original full agreement supports.  It does not assert
 that every first-order interpolant has the required quadratic form.
 
+The Hermite Johnson threshold and interpolation with derivative data are
+classical; see Kopparty~\cite[Section~1.2]{kopparty-multiplicity} and the
+univariate results cited there.  Algebraic solution covers and
+full-support incidence arguments also appear in Jeronimo~\cite{jeronimo}.
+We give the explicit specialization and degree bounds needed for the
+linear exceptional count below; we do not claim a new decoding radius.
+
 \input{research/hermite_johnson_route/root_lemma.tex}
 
 Fix $n$ distinct coordinates over $F$, a received line $f+zg$, and
@@ -230,5 +237,18 @@ domain, and even rational challenge dependence in its derivative data.
 It identifies an explicit remaining mechanism: many coordinates where
 the whole derivative equation vanishes on the received line, rather
 than merely a large set of persistent quadratic singularities.
+In particular, an interpolation source constructed to vanish identically
+on every received fiber has $u=n$.  The theorem gives no bound for such
+a raw source without an additional reduction to a different identity.
+
+\paragraph{Sharpness of the linear order.}
+Proposition~\ref{prop:all-singular-linear-lower} supplies matching
+$\Omega(n)$ examples within this class.  Its equation has leading
+$v^2$ coefficient one, so $S_{\rm ord}=\varnothing$, and bounded
+value and challenge degrees.  With $n=100m$, $D=25m-1$, and $A=48m$,
+the margin $A>\sqrt{Dn/2}$ is fixed, while the construction has
+$52m+1$ bad labels, all of whose displayed agreements are singular.
+Thus the order $O(n)$ cannot be improved to $o(n)$ uniformly even
+in the quadratic, empty-ordinary-core case.
 
 \input{research/hermite_johnson_route/cubic_corollary.tex}
