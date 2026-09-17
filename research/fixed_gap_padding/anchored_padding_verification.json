@@ -4,6 +4,7 @@
     {
       "B": 1,
       "tight_dimension": false,
+      "retuned": false,
       "p": 1009,
       "n": 10,
       "k": 3,
@@ -83,6 +84,7 @@
     {
       "B": 2,
       "tight_dimension": false,
+      "retuned": false,
       "p": 1009,
       "n": 20,
       "k": 6,
@@ -203,6 +205,7 @@
     {
       "B": 4,
       "tight_dimension": false,
+      "retuned": false,
       "p": 14449,
       "n": 40,
       "k": 12,
@@ -405,6 +408,7 @@
     {
       "B": 1,
       "tight_dimension": true,
+      "retuned": false,
       "p": 1009,
       "n": 11,
       "k": 2,
@@ -489,6 +493,7 @@
     {
       "B": 2,
       "tight_dimension": true,
+      "retuned": false,
       "p": 1009,
       "n": 22,
       "k": 4,
@@ -619,6 +624,7 @@
     {
       "B": 4,
       "tight_dimension": true,
+      "retuned": false,
       "p": 14449,
       "n": 44,
       "k": 8,
@@ -881,6 +887,6 @@
     }
   ],
   "integer_affine_checks": 378,
-  "seconds": 1.5353558330007218,
+  "seconds": 0.8491040829976555,
   "scope": "Exact integer/finite-field checks of the anchored quotient and padding construction. Splitting-prime infinitude and the asymptotic moment estimate are supplied by the written proof."
 }

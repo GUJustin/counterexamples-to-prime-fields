@@ -370,3 +370,32 @@ the two-word list0,-2 and all five nearby line labels. Original prime-
 node fixtures retain eight labels. The note also spells out extension
 to fixed-degree parameter curves via interpolation at d+1 labels; this
 is profile preservation, not amplification. No manuscript pages added.
+
+Rechecked primary TR26-169 PDF (37 pages, September 5): Theorems1.1/1.2
+give polynomial-in-n list/MCA bounds at fixed slack, not exponent-one
+exception bounds. Section8.5 disclaims competitive numerical exponents.
+Scope audit saved as research/paper_referee/JERONIMO_SCOPE_AUDIT.md.
+This is not an independent proof audit; the fixed-gap superlinear target
+remains compatible with its stated bounds.
+
+NEW strengthened anchored-padding theorem: its coefficient lower bound
+now holds at EVERY sufficiently small rational eta, not merely along a
+sequence, with exact fixed rational rate rho and exact gap eta.
+Flexible padding permits arbitrary integer n,K provided q=n-mB+1>=1,
+K>=B(k-1), and K-1+q<Bt. Choose a=rho+eta,
+m=floor(H/(eta^2 log2(1/eta))), t=ceil(a*m/(1-eta/2)),
+k=floor(rho*t/a). Then am<t<am/(1-eta), and B can range over multiples
+making n=Bt/a,K=rho*n integral. The old moment estimate gives the same
+log2 C >= (H^2/2-o(1))/(eta^2 log2(1/eta)), with
+C=(1-am/t)*L. No denominator restriction on eta and no uniform bound on
+the first length/field. Counts remain linear at each fixed gap.
+Proof in research/fixed_gap_padding/PRESCRIBED_GAP.md; integrated into
+paper theorem fg:anchored-fixed-gap, abstract and application statements.
+Guarded verify_prescribed_gap.py passes15 exact rational/moment checks
+and full prime-field fixtures (p,n,K,A)=(1009,21,5,10),(14449,42,10,20).
+Rate and gap both5/21; labels8,14; global joint-agreement bounds9,19.
+Added checker to Makefile (now64 checks). Native rebuild passes at111
+pages, without overfull boxes or undefined references. Visually reviewed
+abstract and theorem/proof pages1,27,28. The old anchored checker also
+passes all six fixtures,70 moment checks,378 affine transforms and its
+two coefficient calculations after the shared fixture signature edit.

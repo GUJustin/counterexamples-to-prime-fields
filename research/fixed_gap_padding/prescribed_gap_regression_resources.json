@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/fixed_gap_padding/verify_anchored_padding.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.0866583329989226,
+  "peak_rss_kib": 19152,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

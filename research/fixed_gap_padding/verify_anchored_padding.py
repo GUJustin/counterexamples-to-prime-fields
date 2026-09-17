@@ -65,11 +65,14 @@ def compose_power(P,B):
     return out
 
 
-def fixture(B,tight_dimension=False):
+def fixture(B,tight_dimension=False,retuned=False):
     m,k,t,r=9,3,5,2 if tight_dimension else 1
     code_k=k-1 if tight_dimension else k
     subsets=[(1,2,5,7,8),(1,3,4,6,9)]
     L=len(subsets);n=B*(m+r);K=B*code_k;A=B*t;added=B*r+1
+    if retuned:
+        assert B%2==0 and not tight_dimension
+        n=21*B//2;K=5*B//2;added=n-m*B+1
     lower=max(m*B+(K-1)*comb(L,2)+added,(added-1)*L*L,1000)
     p=splitting_prime(B,m,lower)
     roots=defaultdict(list)
@@ -124,7 +127,7 @@ def fixture(B,tight_dimension=False):
     for z in range(p):
         if any(sum(value(P,x,p)==(y+z*h)%p for x,y,h in zip(domain,f,g))>=A for P in family):direct.add(z)
     assert direct==labels
-    return dict(B=B,tight_dimension=tight_dimension,p=p,n=n,k=K,A=A,seed_list_size=L,
+    return dict(B=B,tight_dimension=tight_dimension,retuned=retuned,p=p,n=n,k=K,A=A,seed_list_size=L,
                 added_points=added,nearby_challenges=len(labels),
                 global_joint_agreement_upper=common_bound,
                 exact_rate=[K,n],exact_gap=[A-K,n],

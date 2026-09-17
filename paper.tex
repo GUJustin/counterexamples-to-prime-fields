@@ -52,7 +52,8 @@ and no correlated agreement. An anchored lift and padding construction
 gives the same failure at an exactly fixed positive rate and gap, at
 arbitrarily large lengths. The necessary coefficient of a linear
 exceptional-count bound has logarithm
-$\Omega_\rho(\eta^{-2}/\log(1/\eta))$ along a sequence of gaps.
+$\Omega_\rho(\eta^{-2}/\log(1/\eta))$ at every sufficiently small
+rational gap.
 Finally, at gap $1/n$, we construct codes whose maximum list size is
 exactly $n-k-1$, but with $\binom n{k+1}$ uniquely nearby points on
 one affine line. This parameter count attains an unconditional
@@ -1815,8 +1816,7 @@ Elias inequality.
 \begin{theorem}[The linear coefficient at a fixed positive gap]
 \label{fg:anchored-fixed-gap}
 Fix rational $\rho\in(0,1)$ and put $H=H_2(\rho)$.
-There is a sequence of positive gaps $\eta\to0$ with the following
-property. For each gap separately, there are prime-field
+For every sufficiently small rational gap $\eta>0$, there are prime-field
 Reed--Solomon codes of lengths $n_B\to\infty$, exact rate $\rho$,
 and exact agreement fraction $\rho+\eta$, and received lines with
 at least $C_\rho(\eta)n_B$ distinct nearby challenges, where
@@ -1826,19 +1826,32 @@ at least $C_\rho(\eta)n_B$ distinct nearby challenges, where
 \end{equation}
 No pair of codewords has correlated agreement at that threshold,
 and the radius is strictly below the characteristic-based Elias radius.
-The $o_\rho(1)$ is as the sequence of gaps tends to zero;
+The $o_\rho(1)$ is as rational $\eta$ tends to zero;
 $C_\rho(\eta)$ is fixed as $B$ grows.
 \end{theorem}
 \begin{proof}
-Let $b$ be the denominator of $\rho$, and let $m$ grow through
-multiples of $b$. Set $c^2=2H$ and choose
+The proof of Lemma~\ref{fg:anchored-padding} allows arbitrary integer
+length $n$, dimension $K$, and padding count $q=n-mB+1$, provided
 \[
- s=\left\lfloor c\sqrt{m/\log_2m}\right\rfloor,\qquad
- r=b\left\lfloor\frac{s}{2b}\right\rfloor,\qquad
- k=\rho(m+r),\qquad t=k+s.
+ q\ge1,\qquad K\ge B(k-1),\qquad K-1+q<Bt.
 \]
-For sufficiently large $m$, all these are integers with
-$1\le r<s$, $1\le k<t<m$. Among the $t$-subsets containing $1$,
+Indeed, the candidates have degree at most $B(k-1)-1$, and the two
+common-agreement bounds are $Bt-1$ and $K-1+q$.
+
+Put $a=\rho+\eta$ and choose
+\[
+ m=\left\lfloor\frac{H}{\eta^2\log_2(1/\eta)}\right\rfloor,
+ \quad t=\left\lceil\frac{am}{1-\eta/2}\right\rceil,
+ \quad k=\left\lfloor\frac{\rho t}{a}\right\rfloor,
+ \quad s=t-k.
+\]
+For sufficiently small $\eta$, one has $1\le k<t<m$ and
+\[
+ am<t<\frac{am}{1-\eta},\qquad
+ \frac tm\to\rho,\qquad s=(1+o(1))\eta m.
+\]
+The strict upper inequality absorbs the rounding error because
+$\eta m\to\infty$. Among the $t$-subsets containing $1$,
 the same binomial-moment count as in Lemma~\ref{im:finite-list}
 gives a class of size
 \[
@@ -1847,22 +1860,29 @@ gives a class of size
 \]
 where $R_j$ are the full moment-range sizes for length $m$.
 They still bound the ranges after the anchor is fixed.
-Since $k/m=\rho+O(s/m)$ and
-$\binom{m-1}{t-1}=(t/m)\binom mt$, the estimate in the proof
-of Theorem~\ref{im:all-list} gives
+The moment-range estimate used in Theorem~\ref{im:all-list} gives
 \[
- \log_2 L\ge (H-c^2/4-o(1))m=(H/2-o(1))m.
+ \log_2\prod_{j=1}^s R_j
+ \le\frac{s^2}{2}\log_2(m/s)+O(s^2+s\log m)
+ =(H/2+o(1))m.
 \]
-Apply Lemma~\ref{fg:anchored-padding}. Its rate is exactly $\rho$,
-its gap is $\eta=s/(m+r)$, and one can take
-$C_\rho(\eta)=rL/(m+r)$. Here $r/(m+r)\sim\eta/2$ and
+Since $\binom{m-1}{t-1}=(t/m)\binom mt$, it follows that
 \[
- m=\frac{H+o(1)}{\eta^2\log_2(1/\eta)}.
+ \log_2 L\ge(H/2-o(1))m.
 \]
-The logarithm of the prefactor $r/(m+r)$ is only
-$O(\log(1/\eta))$. Substitution proves
-\eqref{fg:anchored-coefficient}. Once the seed is fixed, $B$
-can grow without changing the rate, gap, or coefficient.
+Let $B$ grow through multiples making $n_B=Bt/a$ and $K_B=\rho n_B$
+integers, and set $q_B=n_B-mB+1$. Then $K_B\ge Bk$ and
+\[
+ K_B-1+q_B=B\bigl((1+\rho)t/a-m\bigr)<Bt.
+\]
+The flexible padding construction therefore has exact rate $\rho$,
+exact gap $\eta$, and more than $C_\rho(\eta)n_B$ nearby labels for
+$C_\rho(\eta)=(1-am/t)L$. Since $1-am/t\sim\eta/2$, this
+prefactor costs only $O(\log(1/\eta))$ in its logarithm.
+Substituting the chosen $m$ proves \eqref{fg:anchored-coefficient}.
+Arbitrarily large splitting primes ensure $n_B=o(p)$ and strict Elias.
+The rationality of $\eta$ is used only to keep the displayed rate
+and agreement fraction exactly fixed at integer lengths.
 \end{proof}
 
 In particular, no uniform exceptional-count bound
@@ -3008,7 +3028,7 @@ Theorem~\ref{fg:anchored-fixed-gap} strengthens this conclusion:
 its lines have no correlated agreement at their exactly fixed rate
 and gap, yet have at least $C_\rho(\eta)n$ nearby challenges with
 $\log_2 C_\rho(\eta)=\Omega_\rho(\eta^{-2}/\log(1/\eta))$
-along a sequence of gaps. Their selected witnesses also have
+at every sufficiently small rational gap. Their selected witnesses also have
 concurrency at most $n$. Thus the fixed-gap coefficient obstruction
 does not depend on selecting among persistent good witness lines.
 
@@ -3118,7 +3138,7 @@ $\eta$ is necessary? The exponential-list family has shrinking gap;
 the fixed-gap lifts retain fixed seed lists rather than exponentially
 growing ones. The anchored lift forces the logarithm of any universal
 linear proximity-gap coefficient to grow at least as
-$\eta^{-2}/\log(1/\eta)$ along a sequence of gaps. Whether a fixed
+$\eta^{-2}/\log(1/\eta)$ at every sufficiently small rational gap. Whether a fixed
 positive gap permits superlinear growth in length remains open here.
 Theorem~\ref{thm:bounded-root-linear-mca} excludes all candidate
 families with boundedly many distinct roots as a route to such growth

@@ -4,6 +4,12 @@ September 16, 2026. Self-reviewed proof with passing exact finite checks; no ind
 the earlier selected-witness fixed-gap construction. It does not establish
 quadratic growth in block length at one fixed gap.
 
+September 17 update: `PRESCRIBED_GAP.md` strengthens the sequence-of-gaps
+quantifier below to every sufficiently small rational gap, with the same
+leading coefficient and exact fixed rate. The manuscript uses that
+stronger proof. The finite construction and earlier parametrization
+recorded here remain valid.
+
 ## Finite integer seed
 
 Let 1<=k<t<m and let L distinct t-subsets A_i of {1,...,m}, all containing
