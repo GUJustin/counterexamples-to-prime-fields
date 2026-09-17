@@ -2237,3 +2237,20 @@ requires only p>=32(8B+1)^2, but the source specialization may require
 much larger split primes. Do NOT claim polynomial field size, growing
 list size, superlinear exceptions, or constant far/near separation.
 New results stay in notes; main paper remains157pages.
+
+## Degree-growing scaled-power family excluded in characteristic zero
+
+SHIFTED_POWER_LIST_BOUND.md proves that, on arbitrary complex nodes,
+a fixed-exponent family (uX+v)^m has at most2 candidates through any
+three prescribed values. The proof uses three independent Hermitian
+magnitude equations and a quadratic determinant on their affine line.
+Hence L<=2*binom(n,3)/binom(A,3), independent of the growing exponent m.
+A common offset S and multiplier R give the corresponding bound after
+removing R-zero nodes; at positive capacity gap this is O(eta^-3).
+The proof is locally audited, not independently reviewed; no novelty
+claim. It covers a growing-degree family missed by fixed residual-degree
+bounds. Mixed exponents and candidate-dependent factors remain outside.
+Characteristic zero is essential: an explicit full-field power family
+violates the analogous finite-field bound below capacity. No uniform
+large-prime transfer is claimed. The introduction already clearly states
+our actual fixed-gap limitation and was left unchanged.
