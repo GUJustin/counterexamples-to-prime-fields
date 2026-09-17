@@ -870,3 +870,37 @@ rounding/exactrate andpresentcleanly. Can amplifycoordinatecount by
 multi-match withfixedr andnCb ifdesired butunnecessaryforthismessage.
 Relativegapscale distinction could meaningfully sharpenintro.
 Continuegoaluntil12:30UTC, current~06:03UTC.
+
+
+## September 17 ~06:08 UTC — far separation proportional to eta
+
+Previousgoalturnprogresscommitc4bce4d9. Implementedpromisingnexttheorem
+fromlastentry, nowTheorem4.11 in gap_scale_far.tex. Foranyfixedrho,delta,
+c1,c2 choosebeta withlambda=(beta-rho)/(rho beta(1-beta))>ln(2/mindelta1),
+alpha=rho/beta,C>1/(alphaHbeta),fixedintegers>=1 with(s+1)/C>max(Hrho,c2Hrho).
+n=Cb+O1 exactdenoms,m=alpha n,K=rho n,t=K+s+1. MomentcostO_s(logb),
+logL>=alphaCHbeta*b-Ologb>b+Omega(b). Originalfarlemma gives
+J/p>=1-exp(-lambda)-o1, eta=(s+1)/n, farpointdistanceθ+eta/(s+1).
+Numericalthresholdp^{c2Hrho*C/(s+1)+o1}=o(p), strictElias. Fixedkappa
+1/(s+1)>0 dependsontargetfraction/constants. DoesNOTgiveJ/p->1 atfixedkappa.
+Gapstillshrinks, arbitrarypaddedintervals, noactualgloballistseparation.
+
+Concreteheadline:rho1/2,beta15/16,C6,s6, alpha8/15. Exactentropyguard
+15^15<2^59 provesCalphaHbeta>1. Nearbyfraction>1-exp(-224/15)>0.999999,
+farpointeta/7outside, n~6log2p,eta~(7/6)/log2p, prescriptionfraction
+p^-1/7+o1 for c1=c2=1. Otherchoicebeta3/4,C15/8,s1 gives>93% nearby
+withfarpointeta/2outside; exactentropyguard3^5<2^8.
+
+Exactfiniteverify_gap_scale_far.py passedguarded: M4423 n26520,K13260,
+A13267,eta7/n,J/p>0.99999974,prescription<2^-619,farpointeta/7.
+M2203 n4128,K2064,A2066,J/p>0.93155073,prescription<2^-126,farpointeta/2.
+AlsoM521/4423halfgapandM9689seventhgap. AllGram/primality/Elias/count
+comparisons exact; publisheddecimalsandparamsasserted. Only3.3sec/<384MiB.
+Makefile76checks. Abstractandintro/README nowexplainfixedfractioneta
+separation; introconcrete99.9999%example. PDF120pagesclean, reviewed1,2,33,34.
+Noactiveprocess. Newtheoremstrongerconceptually thanmerelygrowingnumber
+ofcoordinates; keepbothasdistincttrades.
+
+Remainingresearchprioritystillfixedpositivegapshortdomainswithgrowing
+lists/superlinearlinecount, or a domaintransfer relevanttobetter.codes.
+Currentnewresultsdonotsolvethose. Goalcontinuesto12:30UTC.

@@ -1,0 +1,90 @@
+\begin{theorem}[Separation by a fixed fraction of the capacity gap]
+\label{fg:gap-scale-far}
+Fix rational $\rho\in(0,1)$, a desired error fraction $\delta>0$,
+and finite $c_1,c_2\ge1$. There is a constant $\kappa>0$ and, for
+every sufficiently large prime $p$, a code of exact rate $\rho$ and
+a received line with
+\[
+ n=\Theta(\log p),\qquad \eta=\Theta(1/\log p),\qquad
+ J\ge(1-\delta)p,
+\]
+whose parameter-zero word has distance
+\[
+ 1-\rho-\eta+\kappa\eta.
+\]
+The nearby radius is strictly below Elias, there is no correlated
+agreement at the threshold, and
+$c_1n2^{c_2H_2(\rho)/\eta}=o(p)$.
+The constants, including $\kappa$, may depend on
+$\rho,\delta,c_1,c_2$. This does not assert density tending to one
+with the same positive $\kappa$.
+\end{theorem}
+\begin{proof}
+Choose rational $\rho<\beta<1$ so that
+\[
+ \lambda:=\frac{\beta-\rho}{\rho\beta(1-\beta)}
+ >\ln(2/\min\{\delta,1\}).
+\]
+Put $\alpha=\rho/\beta$, choose a fixed
+$C>1/(\alpha H_2(\beta))$, and choose a fixed positive integer $s$
+satisfying
+\[
+ \frac{s+1}{C}>\max\{H_2(\rho),c_2H_2(\rho)\}.
+\]
+Write $b=\log_2p$. Choose $n=Cb+O(1)$ through common denominator
+multiples for $\rho,\alpha$, and set
+$m=\alpha n$, $K=\rho n$, $k=K+1$, and $t=k+s$.
+The anchored support count, divided by the number of first-$s$ moment
+vectors, gives
+\[
+ \log_2L\ge mH_2(t/m)-O_s(\log m)
+ =\alpha C H_2(\beta)b-O_{\rho,\beta,s,C}(\log b)>b+\Omega(b).
+\]
+Thus $L/p\to\infty$. Apply exactly the anchored core and far-point
+padding argument of Theorem~\ref{fg:dense-lines}, now with this fixed
+$s$. Its collision calculation is unchanged to leading order, so
+$J/p\ge1-e^{-\lambda}-o(1)>1-\delta$ eventually.
+The exact gap is $\eta=(s+1)/n$, and the parameter-zero word is
+$1/n=\eta/(s+1)$ beyond the nearby radius. Set $\kappa=1/(s+1)$.
+The choice of $s$ gives strict Elias and
+\[
+ c_1n2^{c_2H_2(\rho)/\eta}
+ =p^{c_2H_2(\rho)C/(s+1)+o(1)}=o(p).
+\]
+The global degree bound excludes correlated agreement as before.
+\end{proof}
+
+For a concrete interpretation, take $\rho=1/2$, $\beta=15/16$,
+$C=6$, and $s=6$. Then $\alpha=8/15$ and
+$C\alpha H_2(\beta)>1$, since $15^{15}<2^{59}$.
+This gives
+\begin{equation}\label{fg:seven-gap-example}
+ n=(6+o(1))\log_2p,\qquad
+ \eta=\frac{7/6+o(1)}{\log_2p},\qquad
+ \frac Jp\ge1-e^{-224/15}-o(1)>0.999999
+\end{equation}
+for sufficiently large $p$. Yet the line contains a word at distance
+$1/2-\eta+\eta/7$, and the $c_1=c_2=1$ numerical prescription has
+fraction $p^{-1/7+o(1)}\to0$. Thus a point can lie a fixed fraction
+of the capacity gap outside the radius even when more than
+$99.9999\%$ of the line is nearby.
+
+There are exact finite certificates of this behavior. Over
+$p=2^{4423}-1$, the parameters
+\[
+ n=26520,\quad K=13260,\quad A=13267,\quad \eta=7/n
+\]
+give $J/p>0.99999974$, a parameter-zero word exactly $\eta/7$ outside
+the radius, and numerical prescription fraction below $2^{-619}$.
+A larger separation is also possible: choosing
+$\beta=3/4$, $C=15/8$, and $s=1$ gives asymptotic nearby fraction
+at least $1-e^{-8/3}>0.93$ with separation $\eta/2$.
+For $p=2^{2203}-1$, the finite parameters
+$(n,K,A)=(4128,2064,2066)$ give $J/p>0.93155073$ and prescription
+fraction below $2^{-126}$, with exact separation $\eta/2$.
+The checker \path{verify_gap_scale_far.py} in
+\path{research/fixed_gap_padding/} verifies these statements with
+exact arithmetic, including primality and strict Elias. The domains
+are padded intervals; these statements do not transfer automatically
+to a prescribed evaluation subgroup.
+

@@ -51,7 +51,9 @@ affine line. At polylogarithmic block length and gap
 $\Theta(1/\log p)$, the fraction of nearby field parameters can tend to
 one, even though the line contains a word outside the nearby radius,
 with no correlated agreement. The number of coordinates by which that
-word misses the radius can tend to infinity. An anchored lift and padding construction
+word misses the radius can tend to infinity. At any desired fixed
+nearby fraction below one, the outside distance can instead be a fixed
+positive fraction of the capacity gap. An anchored lift and padding construction
 gives failure of correlated agreement at an exactly fixed positive rate and gap, at
 arbitrarily large lengths, even when every nearby point on the line
 has a unique nearby codeword. The necessary coefficient of a linear
@@ -130,14 +132,16 @@ gap, rather than linearly. The examples remain strictly below the
 characteristic-based Elias radius. The line constructions give a
 corresponding obstruction to the proposed coefficient multiplying
 $n$ in an exceptional-parameter bound. The failure can be nearly total:
-at polylogarithmic length and gap $\Theta(1/\log p)$, the fraction of
-nearby parameters tends to one, although the line contains a word one
-coordinate beyond the radius and no common agreement explanation exists.
-A refinement increases this separation to a growing number of coordinates,
-while the relative separation still tends to zero
-(Corollary~\ref{fg:growing-far}). Choosing the gap constant appropriately makes the proposed
-fraction tend to zero. Thus being close to the code for a random linear
-combination need not indicate common agreement on a large coordinate set.
+at half rate, more than $99.9999\%$ of a line can be nearby although
+one point lies $\eta/7$ beyond the decoding radius and no common
+agreement explanation exists (Theorem~\ref{fg:gap-scale-far}).
+The proposed nearby fraction tends to zero. Thus being close to the
+code for a random linear combination need not indicate common agreement
+on a large coordinate set, even with an input separated from the radius
+by a fixed fraction of the capacity gap. A different parameter choice
+makes the nearby fraction tend to one, with an outside separation that
+vanishes relative to $\eta$; the number of missing coordinates can still
+grow (Corollary~\ref{fg:growing-far}).
 These results do not establish superlinear growth in $n$ at one fixed
 positive gap on short prime-field domains; that stronger question remains
 open.

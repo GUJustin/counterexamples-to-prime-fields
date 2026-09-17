@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/fixed_gap_padding/verify_gap_scale_far.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 4.475124207998306,
+  "peak_rss_kib": 21856,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

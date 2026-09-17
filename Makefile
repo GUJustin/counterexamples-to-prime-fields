@@ -42,6 +42,7 @@ verify:
 	$(PYTHON) research/fixed_gap_padding/verify_unique_far_padding.py
 	$(PYTHON) research/fixed_gap_padding/verify_multi_match_far_padding.py
 	$(PYTHON) research/fixed_gap_padding/verify_multi_match_finite.py
+	$(PYTHON) research/fixed_gap_padding/verify_gap_scale_far.py
 	$(PYTHON) research/fixed_gap_padding/verify_polynomial_fields.py
 	$(PYTHON) research/fixed_gap_padding/verify_average_padding.py
 	$(PYTHON) research/fixed_gap_padding/verify_dense_padding.py

@@ -1,0 +1,82 @@
+{
+  "status": "passed",
+  "certificates": [
+    {
+      "prime_exponent": 521,
+      "n": 972,
+      "K": 486,
+      "A": 488,
+      "m": 648,
+      "moments": 1,
+      "far_separation_over_eta": "1/2",
+      "exact_far_agreement": 487,
+      "nearby_fraction_lower": "0.00355700",
+      "prescription_fraction_less_than_power_two": -25,
+      "strict_elias": true,
+      "list_lower_bound_sha256": "7dc497bc92fd18076974961ca1a58642a0947a59b6bd9fc98cc4e7e1cf4ff1c2",
+      "label_lower_bound_sha256": "04e67df44514e6b56ef39fbac5b74593b65edf38f4a6bce59b7f378ccbec42f5"
+    },
+    {
+      "prime_exponent": 2203,
+      "n": 4128,
+      "K": 2064,
+      "A": 2066,
+      "m": 2752,
+      "moments": 1,
+      "far_separation_over_eta": "1/2",
+      "exact_far_agreement": 2065,
+      "nearby_fraction_lower": "0.93155073",
+      "prescription_fraction_less_than_power_two": -126,
+      "strict_elias": true,
+      "list_lower_bound_sha256": "e3fe9e19b637808f415ddb6d3e2784fc7d5ef28dc2d77d6e7ecc0b4ffa70ef74",
+      "label_lower_bound_sha256": "b819483de5e2a25b68182f89aa1cac3adde115249bc283bf14d48713c3af7136"
+    },
+    {
+      "prime_exponent": 4423,
+      "n": 8292,
+      "K": 4146,
+      "A": 4148,
+      "m": 5528,
+      "moments": 1,
+      "far_separation_over_eta": "1/2",
+      "exact_far_agreement": 4147,
+      "nearby_fraction_lower": "0.93104109",
+      "prescription_fraction_less_than_power_two": -263,
+      "strict_elias": true,
+      "list_lower_bound_sha256": "0abc11175cd0ee1343893eb93eef54ef517ca3aa0c08443d146c6f0b57a5b4dc",
+      "label_lower_bound_sha256": "dce41c2165284698acebba0e8e6c9ebd5e9ce36773743e8568d2b477740cbbe6"
+    },
+    {
+      "prime_exponent": 4423,
+      "n": 26520,
+      "K": 13260,
+      "A": 13267,
+      "m": 14144,
+      "moments": 6,
+      "far_separation_over_eta": "1/7",
+      "exact_far_agreement": 13266,
+      "nearby_fraction_lower": "0.99999974",
+      "prescription_fraction_less_than_power_two": -619,
+      "strict_elias": true,
+      "list_lower_bound_sha256": "61d9cb43916a1a67e4c602a629d80470eac53db372a1133c4d3d61bf36f6a41a",
+      "label_lower_bound_sha256": "daf469baf8c19bd04c040ac1bfccbaf9d0b34450f8b77a70503f3c75abbe5a2c"
+    },
+    {
+      "prime_exponent": 9689,
+      "n": 58110,
+      "K": 29055,
+      "A": 29062,
+      "m": 30992,
+      "moments": 6,
+      "far_separation_over_eta": "1/7",
+      "exact_far_agreement": 29061,
+      "nearby_fraction_lower": "0.99999970",
+      "prescription_fraction_less_than_power_two": -1371,
+      "strict_elias": true,
+      "list_lower_bound_sha256": "b7a4dc5557519f058164ec851ffc1ace5640853f681a500c13365d068d328184",
+      "label_lower_bound_sha256": "cdad2ee2eabf1872d3db20360ef096f515f716ee8ab2049c825c7582851e3d46"
+    }
+  ],
+  "seconds": 4.042825292002817,
+  "scope": "Exact finite prime-field certificates and exact asymptotic constant inequalities. Arbitrary padded intervals; eta shrinks and the far separation is a fixed fraction of eta. No prescribed-domain result."
+}
