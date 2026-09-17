@@ -82,12 +82,31 @@ def fixture(B,K,q):
     # Every possible nearby codeword is in the exhaustive pool because
     # A-q>=K; the global injective label map allows it only one pad hit.
     assert A-q>=K and max(A-1,K-1+q)<A
+    alternative_words=[]
+    for r in range(min(q,len(boundary))+1):
+        pad_values=[]
+        for j,values in enumerate(evaluations):
+            if j<r:
+                pad_values.append(values[boundary[j]])
+            else:
+                excluded=set(values);v=0
+                while v in excluded:
+                    v+=1
+                pad_values.append(v)
+        nearby_indices=[i for i in range(len(pool)) if counts[i]+sum(
+            evaluations[j][i]==pad_values[j] for j in range(q))>=A]
+        assert nearby_indices==boundary[:r]
+        if r>=2:
+            assert len({(v-b)%p for v,b in zip(pad_values,offsets)})>1
+        alternative_words.append(dict(exact_list_size=r,padding_values=pad_values,
+                                      nearby_boundary_indices=nearby_indices))
     return dict(B=B,p=p,n=n,K=K,A=A,padding=q,
                 determining_subsets=M,distinct_core_interpolants=len(pool),
                 entire_boundary_list_size=len(boundary),
                 entire_nearby_label_count=len(nearby),maximum_list_size_on_line=1,
                 global_joint_agreement_upper=max(A-1,K-1+q),
                 domain=domain,f=f,g=g,nearby_labels=sorted(nearby),
+                alternative_words=alternative_words,
                 boundary_polynomials=[pool[i] for i in boundary])
 
 

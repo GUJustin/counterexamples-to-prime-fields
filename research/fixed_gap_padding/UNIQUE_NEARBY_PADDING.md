@@ -58,3 +58,28 @@ multiple nearby codewords at any individual parameter. It does NOT
 show that the code's maximum list over all received words is one or
 bounded, and does NOT refute a conjecture using that global maximum.
 It also does not make the fixed-gap count superlinear in block length.
+
+## The same code still has ambiguous received words
+
+Write L_boundary for the entire old boundary list. For every integer
+0<=r<=min(q,L_boundary), this SAME code has a received word with
+exactly r nearby codewords at threshold A. Keep F_old on the old
+coordinates. Assign r distinct boundary polynomials to r distinct new
+coordinates and set each new value to its assigned polynomial's value.
+At every remaining new coordinate choose a value outside the evaluation
+image of T, which is possible since p>|T|.
+
+Every possible nearby polynomial again belongs to T. Injectivity of
+each padding evaluation map means that only the assigned polynomial
+hits its coordinate. The assigned polynomials have A-1 old agreements
+and one new agreement; all others have no new agreement. Thus the list
+is exactly the r assigned polynomials. For r>=2 this word is necessarily
+off the displayed line, because every word on that line has list size
+at most one.
+
+In particular the code's global maximum list is at least
+min(q,L_boundary). For any fixed selected seed list of size L, q grows
+without bound, so the global maximum is eventually at least L. This
+explicitly rules out interpreting line-wise uniqueness as global
+unique decodability. The verifier constructs all available cardinalities
+0,1,2 for each of its two fixtures and exhausts the entire candidate pool.

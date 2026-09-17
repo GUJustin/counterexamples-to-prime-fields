@@ -61,6 +61,40 @@
         1025,
         1145
       ],
+      "alternative_words": [
+        {
+          "exact_list_size": 0,
+          "padding_values": [
+            0,
+            0,
+            0
+          ],
+          "nearby_boundary_indices": []
+        },
+        {
+          "exact_list_size": 1,
+          "padding_values": [
+            1145,
+            0,
+            0
+          ],
+          "nearby_boundary_indices": [
+            4
+          ]
+        },
+        {
+          "exact_list_size": 2,
+          "padding_values": [
+            1145,
+            167,
+            0
+          ],
+          "nearby_boundary_indices": [
+            4,
+            13
+          ]
+        }
+      ],
       "boundary_polynomials": [
         [
           1094,
@@ -164,6 +198,43 @@
         3702021,
         3783669
       ],
+      "alternative_words": [
+        {
+          "exact_list_size": 0,
+          "padding_values": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "nearby_boundary_indices": []
+        },
+        {
+          "exact_list_size": 1,
+          "padding_values": [
+            1718136,
+            0,
+            0,
+            0
+          ],
+          "nearby_boundary_indices": [
+            5851
+          ]
+        },
+        {
+          "exact_list_size": 2,
+          "padding_values": [
+            1718136,
+            2560576,
+            0,
+            0
+          ],
+          "nearby_boundary_indices": [
+            5851,
+            5877
+          ]
+        }
+      ],
       "boundary_polynomials": [
         [
           114873602,
@@ -183,5 +254,5 @@
     }
   ],
   "scope": "Exhaustive enumeration of every old K-subset interpolant and injectivity of every pool/padding label. These exhaust all potentially nearby candidates, not just the selected seed list.",
-  "seconds": 0.1258744580009079
+  "seconds": 0.14224066600218066
 }

@@ -1931,6 +1931,14 @@ common agreement set of the required size at all.
 The construction remains linear in $n$ at each fixed gap and does
 not establish a quadratic lower bound there.
 
+Uniqueness is restricted to the displayed line. Once $q_B\ge L$,
+the same code has another received word with exactly the $L$ selected
+codewords nearby: retain the old word, assign each selected codeword
+its own padding coordinate, and set all remaining padding values
+outside the corresponding evaluation image of $\mathcal T$.
+Injectivity of those evaluation maps excludes every other candidate.
+Thus line-wise uniqueness does not imply a small global maximum list.
+
 It also supplies a selected-witness counterexample with concurrency
 at most $n_B$. Indeed, on any proposed affine codeword graph let $a$
 coordinates agree identically with the received line. Then

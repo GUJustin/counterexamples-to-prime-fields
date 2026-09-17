@@ -438,3 +438,18 @@ maximum list ON THE LINE1. Added Makefile checker (now65). Abstract
 and introduction explicitly state this conceptual separation. Native
 rebuild passes at112 pages, without overfull boxes or undefined
 references. Visually reviewed pages1,2,27,28,29 after these edits.
+
+Audited the distinction between line-wise and global list size further.
+The SAME unique-padding code realizes every exact list cardinality
+r<=min(q,L_boundary): retain the core word, assign r different boundary
+polynomials to r different padding coordinates, and choose all remaining
+pad symbols outside the corresponding evaluation image of the complete
+pool T. Every possible nearby candidate is in T, and pad evaluation
+injectivity leaves exactly those r. Thus global maximum list is at least
+min(q,L_boundary), eventually at least the fixed selected seed size L.
+This explicitly prevents interpreting the new line-wise uniqueness as
+global unique decodability. UNIQUE_NEARBY_PADDING.md records the proof;
+the checker now exhaustively verifies alternate words with exact lists
+0,1,2 in both fixtures. Added a short scope paragraph to the manuscript.
+Native rebuild remains112 pages with no overfull or undefined-reference
+warnings; visually reviewed the new global-list scope paragraph onpage29.
