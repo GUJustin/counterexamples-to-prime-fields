@@ -1,0 +1,57 @@
+\paragraph{Full-length comparison at a fixed gap.}
+The short-domain condition is a substantive distinction. The following
+elementary comparison already rules out a list bound depending only on
+rate and gap when the domain occupies almost the whole prime field.
+We make no novelty claim for this full-length observation.
+
+\begin{proposition}\label{prop:full-length-fixed-gap}
+Let $p\equiv1\pmod8$ be prime, $n=p-1$, and $k=n/4$.
+On $\F_p^\times$, there is a received word with $n/2$ distinct
+degree-$(k-1)$ polynomials, each agreeing on exactly $3n/8$ coordinates.
+Thus the rate is $1/4$ and the gap is $1/8$. For $p>256$, the radius
+$5/8$ is strictly below the characteristic-based Elias radius.
+\end{proposition}
+\begin{proof}
+Let $\chi$ be the quadratic character, with $\chi(0)=0$, and put
+$e=(p+1)/2=2k+1$. For $a\ne0$ define
+\[
+ G_a(X)=\sum_{j=0}^k\binom e{2j+1}a^{e-2j-1}X^j,
+ \qquad P_a(X)=G_a(X)-X^k,
+ \qquad w(x)=\frac{1+\chi(x)}2-x^k.
+\]
+The degree-$k$ terms cancel, and
+$[X^{k-1}]P_a=-a^2/8$. All powers of $a$ are even, so the parameters
+$a$ modulo sign give exactly $n/2$ distinct polynomials of degree $k-1$.
+The binomial identity
+\[
+ G_a(s^2)=\frac{(a+s)^e-(a-s)^e}{2s}
+\]
+counts their agreements. If $x=s^2$ is nonsquare, take $s$ in
+$\F_{p^2}$. Then $s^p=-s$, and $u=(a+s)^e$ satisfies
+$u^2=a^2-x$ and $(a-s)^e=u^p$. Hence $G_a(x)=0$ exactly when
+$\chi(a^2-x)=1$. There are $(p-1)/4$ such nonsquare $x$.
+
+For square $x=s^2$ with $s\in\F_p^\times$, Euler's criterion gives
+\[
+ G_a(s^2)=
+ \frac{(a+s)\chi(a+s)-(a-s)\chi(a-s)}{2s}.
+\]
+Away from $s=\pm a$, this equals one exactly when both characters
+are one. The weighted count
+$\frac14\sum_s(1+\chi(a+s))(1+\chi(a-s))=(p-1)/4$
+uses $\sum_s\chi(a^2-s^2)=-1$. Removing $s=0$ and correcting the
+half-weights at $s=\pm a$ cancel: at the endpoints the actual value is
+$\chi(2a)=\chi(a)$. Dividing by two for $s$ and $-s$ gives
+$(p-1)/8$ square agreements. The nonsquare count above follows from
+the same quadratic-character identity, applied to
+$(1-\chi(x))(1+\chi(a^2-x))/4$ with its endpoints removed.
+Thus the total is $3n/8$. Finally,
+$H_p(5/8)\le5/8+1/\log_2p<3/4$ for $p>256$.
+\end{proof}
+
+Here $n/p\to1$. In contrast, Theorem~\ref{im:all-list} and
+Corollary~\ref{gm:gap-field} give exponentially large lists on short
+integer intervals, with the stated quantitative dependence on the gap.
+The full-length example does not settle the fixed-gap, short-domain
+proximity-gap question. Exact checks of the displayed agreement counts
+are in \path{research/dickson_fixed_gap/}.

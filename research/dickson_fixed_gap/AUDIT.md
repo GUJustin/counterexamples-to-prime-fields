@@ -73,12 +73,19 @@ at least 4k=p-1. The relevant short-domain target remains open.
 
 ## Editorial decision
 
-Keep the full construction in research notes for now. Do not advertise
-it as the sought short-domain proximity-gap result, and do not silently
-change the user's recorded n=o(p) target. Before ePrint release, explain
-this full-length comparison and check attribution; an unrestricted
-conceptual claim that only the reciprocal-gap exponent is known to fail
-would omit the simpler fixed-gap obstruction in this regime.
+The seed-list comparison is now included with proof in `comparison.tex`
+and the manuscript, explicitly with no novelty claim. The extension-field
+full-set MCA construction stays in research notes. Neither is advertised
+as the sought short-domain proximity-gap result. The user's recorded
+n=o(p) target is unchanged. Priority remains unsettled: the inspected
+Guruswami--Rudra paper (STOC 2005, author-hosted rs-limits.pdf) establishes
+other full-field large-list results at vanishing rate, and its displayed
+results do not identify this exact quarter-rate Dickson seed. A search
+without a matching result is not evidence of novelty.
+
+The added comparison prevents the unrestricted conceptual claim that
+only the reciprocal-gap exponent is known to fail from omitting the
+simpler fixed-gap obstruction in the full-length regime.
 
 Related primary source inspected: Gao--Yang--Xu--Kan,
 https://arxiv.org/html/2607.10572v1 (July 12, 2026). Their list-to-full-set-MCA

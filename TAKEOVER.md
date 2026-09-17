@@ -224,3 +224,17 @@ The leading moment-count constant was rechecked: the main theorem
 already retains binomial factorial savings, so that does not offer a
 new asymptotic improvement. Continue seeking a different source of
 growing fixed-gap lists/line witnesses rather than rediscovering it.
+
+Added the full-length Dickson seed as a compact proved comparison,
+Proposition full-length-fixed-gap, via dickson_fixed_gap/comparison.tex.
+It explicitly makes no novelty claim; the full-set MCA construction is
+NOT added. The S-two application distinguishes the unrestricted
+fixed-gap obstruction from the short-domain inverse-gap obstruction.
+The primary Guruswami--Rudra STOC 2005 paper was inspected; its displayed
+full-field list results concern vanishing rate and do not establish
+priority for this exact quarter-rate example. No novelty inference.
+The manuscript is now 111 pages. Comparison pages 9-10 and application
+page 48 were rendered and visually checked; no build warnings. Makefile
+now includes the previously passed Dickson verifier: 63 checks total,
+with the earlier 62-check replay plus dickson_fixed_gap/verification.json
+covering them. A full rerun was not needed for this isolated addition.

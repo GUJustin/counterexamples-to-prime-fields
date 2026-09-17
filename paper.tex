@@ -648,6 +648,8 @@ cannot hold uniformly over prime fields and evaluation domains,
 even below Elias. In terms of field size, the exhibited lists are
 superpolynomial in $p$.
 
+\input{research/dickson_fixed_gap/comparison.tex}
+
 \paragraph{Finite examples.}
 At $p=2^{127}-1$, $n=64$, $k=32$, $s=2$, Lemma~\ref{im:finite-list} gives
 \[
@@ -2964,6 +2966,12 @@ It does not assert exponential lists at a fixed positive gap, and it
 does not rule out stronger guarantees for a restricted class of
 evaluation domains or a restricted relation between field size and
 length.
+
+Proposition~\ref{prop:full-length-fixed-gap} gives a separate obstruction
+at rate $1/4$ and gap $1/8$: when $n=p-1$, even a finite list bound
+depending only on rate and gap is impossible. The short-domain theorem
+above shows that restricting to $n=o(p)$ does not rescue the proposed
+reciprocal-gap exponent.
 
 \subsection{The quantitative line coefficient and its remainder}
 
