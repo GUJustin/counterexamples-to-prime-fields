@@ -65,7 +65,52 @@ full-support bound at the latter parameters would imply constant
 source list sizes whenever $p/N\to\infty$. This identifies a sufficient
 route to exponent lower bounds; it does not supply the growing lists.
 The full-length lists with $N=p-1$ fall outside its field-size hypothesis.
+
+\begin{corollary}[Amplification within an open agreement regime]
+\label{cor:sparse-list-amplification}
+Under the source hypotheses of Proposition~\ref{prop:exact-list-amplification},
+fix rational $0<\tau\le1$ with $\tau N$ integral. There is a line of
+length $(1+\tau)N$, dimension $k$, and agreement threshold $A$ with
+at least
+\[
+ \frac{\tau}{5}\min\{AL,p\}
+\]
+full-support MCA-bad labels. Its rate and agreement fraction are
+$\rho/(1+\tau)$ and $a/(1+\tau)$, where $\rho=k/N$ and $a=A/N$.
+If $a>h(\rho)$ for a continuous sufficient agreement curve $h$, then
+every sufficiently small positive $\tau$ preserves that strict inequality
+at the output parameters. If $a^2<\rho$, the output also remains below
+Johnson.
+\end{corollary}
+\begin{proof}
+Use the same proof with $q=\tau N+1$ padding coordinates. Before
+specializing $q$, its count gives
+\[
+ J\ge\frac{pq\ell}{p+(2(k-2)+q)\ell}
+   \ge\frac{pqAL}{Np+(2(k-2)+q)AL}.
+\]
+Here the first inequality follows from
+$\mu\ge\ell p/(p+2(k-2)\ell)$ and
+$p(1-(1-\mu/p)^q)\ge pq\mu/(p+q\mu)$; the second uses monotonicity
+in $\ell$. Since $q\ge\tau N$ and $2(k-2)+q<4N$, this is at least
+$\tau pAL/(p+4AL)\ge(\tau/5)\min\{AL,p\}$.
+The old $A-1\ge k$ agreements still exclude a full-support direction
+witness. The parameter identities are exact. The strict inequality
+$a/(1+\tau)>h(\rho/(1+\tau))$ follows by continuity at $\tau=0$.
+Finally $a^2/(1+\tau)^2<\rho/(1+\tau)$ whenever $a^2<\rho$.
+\end{proof}
+
+Thus, within any such open regime, source lists of size $\Omega(N^c)$
+over sufficiently large primes would force $\Omega(n^{c+1})$ full-support
+exceptions at nearby parameters in the same regime. This remains a
+conditional statement: it requires the growing source lists. For arbitrary
+lengths, taking $q=\lfloor\tau N\rfloor+1$ preserves the strict margin
+eventually, with parameters converging to the displayed pair.
+
 The exact finite checks in
 \path{research/prime_field_tightness/check_prime_boundary_amplification.py}
 include parameter halving over $\F_{101}$ and examples where full-support
 failure coexists with ordinary correlated agreement.
+The variable-padding checks in
+\path{research/prime_field_tightness/check_sparse_padding.py}
+independently exhaust all direction witnesses for the selected bad supports.

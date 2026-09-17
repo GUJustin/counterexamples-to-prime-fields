@@ -2364,3 +2364,12 @@ An independent homogeneous-diagonal recount agrees with both original
 column sums, after21295 checks of the summation identity. These remain
 very large theoretical certificates, with no practical parameter claim.
 See research/first_order_support_audit/SMALLER_FINITE_CERTIFICATES.md.
+
+## Main manuscript: open-regime amplification integrated
+
+Corollary4.10 now states and proves sparse-padding list amplification
+inside any strict continuous agreement regime. The introduction points
+to it when explaining the missing fixed-gap source-list target. The
+main article still has157pages, letter format with1inch margins. Its
+final build has no reference/layout warnings; the changed introduction
+and corollary pages were rendered and inspected.
