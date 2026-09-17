@@ -317,3 +317,22 @@ this argument, and that is not known. Recorded in the amplification
 note. The full-length boundary route should not monopolize further
 research: return to n=o(p) constructions, preserving this conditional
 route without claiming its missing value-diversity step.
+
+Returned to short-domain lifts. PRIME_FIBER_RIGIDITY.md proves that for
+distinct rational-prime seed nodes and prime fiber degree B, arbitrarily
+large splitting primes can be chosen so subset sums vanish only for
+unions of whole fibers. More strongly, equal-sum subsets differ only by
+whole/empty fibers. Kummer independence over Q(zeta_B), the prime
+cyclotomic relation, and exclusion of finitely many nonzero norms prove
+this. Consequently the ENTIRE decoding list at W(X^B), for monic W of
+degree t and code dimension kB<tB, consists exactly of seed candidates
+P(X^B). This is pointwise list control, NOT a global maximum-list bound.
+
+Distinct-prime seed domains preserve the leading moment-count exponent:
+q_m=O(m log m) gives the same (c^2/4+o(1))*m moment cost. Fixing such
+a seed, the resulting growing-prime-B family has exact fixed rate, gap,
+and full list size L at its displayed word; p can ensure n=o(p) and
+strict Elias. No stronger inverse-gap exponent is claimed. Guarded
+verify_prime_fiber_rigidity.py passes all1024/32768 subset checks for
+B2/B3 and exactly preserves the two-word seed list on3,5,7,11,13.
+This proof and consequence remain research notes pending further audit.

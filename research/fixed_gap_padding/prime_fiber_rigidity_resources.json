@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/fixed_gap_padding/verify_prime_fiber_rigidity.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5486573329999374,
+  "peak_rss_kib": 3968,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}
