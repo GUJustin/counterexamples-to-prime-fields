@@ -3,6 +3,12 @@
 
 The preceding constructions required distinct labels. Allowing collisions
 and averaging their union gives a stronger bound when the field is fixed.
+The mechanism is simple: many codewords already agree with a fixed core
+on $A-1$ coordinates, just one short of the threshold. Each added
+coordinate lets some of them acquire the missing agreement, at different
+line parameters. With enough added coordinates, these opportunities
+cover almost all parameters. We choose the direction so that none of
+this closeness can come from a common agreement explanation.
 Write $\mathcal P(h,N)$ for the minimum number of colliding pairs for
 $h$ objects in $N$ bins, as in Section~\ref{sec:agreement-collisions}.
 

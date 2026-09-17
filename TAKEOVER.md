@@ -687,3 +687,44 @@ averaged.tex. Makefile69checks. PDF116pagescleanbuild; inspected
 nearbyfraction->1withoutcommonexplanation, proposedfraction->0.
 Openquestionp<=n^DnowdistinguishesDfixedindependentofgapfromthe
 newpolynomial-fieldcorollary. Noactiveprocess. Goalactiveuntil12:30UTC.
+
+Audit and finite-density work after near-unit theorem: new independent
+checker audit_density_independent.py imports none of the construction
+helpers. It uses alternative binomial Gram variances, integer sqrtupper,
+smooth occupancy instead of balanced, and complement-box sums atM2203.
+AllM31/61/127/521 displayed density rows plusM2203replay. All65536F17
+nonzero directions independently classified:5984bad,59552good, exact
+badprob187/2048 vsunion30345/32768. Makefile now71checks (includes
+independent audit and newverify_dense_half_rate.py).
+
+New half-rate density table in near_unit.tex:
+M31 n92 K46 A50 J/p>0.74303810, finiteprescription<2^-1;
+M61 n216 K108 A113 >0.91025173, prescription<2^-10;
+M127 n468 K234 A240 >0.96160200, prescription<2^-40;
+M521 n2800 K1400 A1411 >0.99485642, prescription<2^-255.
+AllstrictElias, arbitrarypaddedintervaldomains. AlsoM61n168K84A89
+>.69859851 vs2^-20 in savedcertificate. Search1,381,044triples,notoptimal.
+READMEupdatedcentralmessage, alldenseclaims,everyrationalgapquantifier,
+polynomialfieldscope. Paper117pages clean; viewed30,31,33,34.
+
+DENSE_SCOPE_AUDIT.md records whitepaperDefinition24/Conjecture2 reread:
+noCA impliesanyselectedwitnessconcurrency<=n via vA<=va+n-a,a<A.
+No farpoint was asserted by additive-offset construction (important
+forotherformulationsofproximitygaps). Nearunitfamilyhasactualglobal
+maxlist>p asymptotically:oneextramomentoncore costsO(sqrt(b logb)),
+less thaneps*b seedslack. Addedscopeparagraphinpaper. Notanactual-list
+separation; generic-domainsectionprovidesthatseparateresult.
+
+PROMISING NEXT ACTION: FAR_POINT_PADDING.md contains a simpler STRONGER
+variant, notyetintegrated/replayed. Setf=w globally (degreeA-1) and
+randommultiplicativedirectionsg_j onpadding, g0core. DifferencesP_i-w
+haveallA-1rootsinthecore, henceeachnewimageexcludes0. Randomscalings
+covernonzerolabelswith union>=ceil((p-1)*(1-(1-M/(p-1))^q)).
+No qrestriction or directionunionboundneeded! z0 isexactlyonecoordinate
+farther thanthreshold, andf alonecannotagreewithanycodewordonApoints,
+so noCA automatic. Same dense asymptotics, now WITH a farpoint.
+NeednewF17mechanismcheck and exactp-1densityreplay; rounded finite
+counts maychangebyone, don'tsilentlyreusep-basedformula. Then replace
+complicateddirectionparagraphinpaperwiththiscleanerlemma/proof,
+strengthentheoremswithfarpoint, updateREADME/mainmessageandscopeaudit.
+Oldadditivecertificatesstayvalid; canretain inresearchnotmaintext.

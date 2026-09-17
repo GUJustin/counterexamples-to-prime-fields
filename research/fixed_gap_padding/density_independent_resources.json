@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/fixed_gap_padding/audit_density_independent.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5499137499973585,
+  "peak_rss_kib": 3152,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

@@ -72,25 +72,44 @@ $c>\max\{H_2(\rho),c_2H_2(\rho)\}$ makes the proposed threshold
 \]
 whereas the nearby fraction tends to one. This does not assert that
 all parameters are nearby, and the gap is not fixed.
+This family also has very large off-line lists. Matching one additional
+moment on the core loses only $O(\sqrt{b\log b})$ bits from the preceding
+count and gives more than $p$ codewords near another received word at
+the same threshold. Thus the comparison here is with the proposed
+numerical list prescription, not with the code's actual maximum list
+size; Section~\ref{sec:actual-list} addresses the latter distinction.
 
-At rate $1/2$, exact finite certificates illustrate the density:
+At rate $1/2$, exact finite certificates give the following contrast.
+The last column is the finite prescription $n2^{1/\eta}/p$, with
+$c_1=c_2=1$ and without an unspecified remainder.
 \begin{center}
-\begin{tabular}{@{}rrrrl@{}}
+\begin{tabular}{@{}rrrrll@{}}
 \toprule
-Prime & $n$ & $K$ & $A$ & Nearby fraction $J/p$ greater than\\
+Prime & $n$ & $K$ & $A$ & Proven $J/p>$ & Prescription $<$\\
 \midrule
-$2^{521}-1$&2800&1400&1411&$0.99485642$\\
-$2^{1279}-1$&10068&5034&5050&$0.99987751$\\
-$2^{2203}-1$&21940&10970&10990&$0.99999545$\\
+$2^{31}-1$&92&46&50&$0.74303810$&$2^{-1}$\\
+$2^{61}-1$&216&108&113&$0.91025173$&$2^{-10}$\\
+$2^{127}-1$&468&234&240&$0.96160200$&$2^{-40}$\\
+$2^{521}-1$&2800&1400&1411&$0.99485642$&$2^{-255}$\\
 \bottomrule
 \end{tabular}
 \end{center}
-All three radii are strictly below Elias, and no common agreement pair
-exists at the threshold. These are existence certificates for padded
-interval domains. The checker
-\path{research/fixed_gap_padding/verify_near_unit_density.py} verifies
-five examples, including primes $2^{3217}-1$ and $2^{4423}-1$, using
-exact list counts, Lucas--Lehmer primality, integer direction and Elias
-inequalities, and rational lower bounds on the union size. Finite list
-counts use the stronger of the binomial-moment box and Gram bounds;
-the asymptotic proof above needs only the box bound.
+Every row lies strictly below Elias, and no common agreement pair exists
+at the threshold. These are coding-count comparisons on padded interval
+domains, not protocol-security estimates or prescribed-subgroup results.
+The exact checker
+\path{research/fixed_gap_padding/verify_dense_half_rate.py} verifies the
+density and prescription inequalities. The related checker
+\path{verify_near_unit_density.py} in that directory also certifies
+nearby fractions above $0.99999545$, $0.99999976$, and $0.99999998$
+for primes $2^{2203}-1$, $2^{3217}-1$, and $2^{4423}-1$, respectively.
+Finite list counts use the stronger of the binomial-moment box and Gram
+bounds; the asymptotic proof needs only the box bound. All certificates
+use Lucas--Lehmer primality, integer direction and Elias inequalities,
+and rational lower bounds on the union size.
+
+A separate arithmetic audit, \path{audit_density_independent.py} in the
+same directory, rederives all four displayed bounds and the $2203$-bit bound without
+importing the construction checker. It also counts all $65536$ nonzero
+padding directions in the small-field example: $59552$ satisfy the
+required exclusion of nonzero direction polynomials.

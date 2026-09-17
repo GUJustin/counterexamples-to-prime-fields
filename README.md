@@ -1,6 +1,6 @@
 # Counterexamples to List and Line Decodability Bounds over Prime Fields
 
-Working draft by Justin Thaler, September 16, 2026.
+Working draft by Justin Thaler, September 17, 2026.
 
 [Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
@@ -8,6 +8,14 @@ The paper studies quantitative coding statements used in security analyses
 of hash-based SNARKs. It proves general list and affine-line separations
 over prime fields, gives finite circle-code examples, and treats the S-two
 analysis as an application of those results.
+
+The central message is quantitative: the proposed bounds underestimate how
+rapidly lists grow as the decoding gap shrinks. The line failure can be
+nearly total: a random line parameter is nearby with probability tending
+to one, although no pair of codewords has the required common agreement.
+The proposed numerical bound can predict a probability tending to zero
+for those same parameters. These examples use prime fields, short domains,
+and radii strictly below the paper's characteristic-based Elias radius.
 
 ## Results
 
@@ -17,12 +25,24 @@ analysis as an application of those results.
   out every bound with logarithm `o(eta^-2/log(1/eta))`. For every sufficiently
   large prime, with `b=log2(p)`, the list has at least
   `2^((1/2-o(1))*b^2/log2(b))` codewords below Elias.
+- A padding construction makes the nearby fraction tend to one at exact
+  fixed rate, with `eta=Theta(1/log p)` and polylogarithmic block length,
+  while no correlated agreement exists. At half rate over `2^61-1`, a
+  finite example has over **91%** nearby parameters where the numerical
+  prescription gives less than **1/1024**. Over `2^127-1`, another has over
+  **96%** where it gives less than **2^-40**. These finite comparisons use
+  `c1=c2=1` without an unspecified remainder, on padded interval domains.
+  The shrinking-gap family does not separate from actual maximum list
+  size; the generic-domain result below addresses that different question.
 - An anchored lift and padding construction gives genuine failure of
   correlated agreement at an exactly fixed positive rate and gap, for
   arbitrarily large lengths. The necessary coefficient of a linear
   exceptional-count bound has logarithm of order
-  `eta^-2/log(1/eta)` along a sequence of gaps. A concrete family has more
-  than `3.76e17*n` nearby challenges. The prime field grows with length.
+  `eta^-2/log(1/eta)` at every sufficiently small rational gap. Every
+  nearby word on the displayed line can have a unique nearby codeword.
+  A concrete family has more than `3.76e17*n` nearby challenges.
+  The same count also has polynomial-size prime-field realizations;
+  whole-line uniqueness is not asserted for that realization.
 - A code can have maximum list size exactly `n-k-1` and nevertheless
   have `binom(n,k+1)` uniquely nearby points on an affine line without
   correlated agreement. A puncturing bound shows that this parameter
@@ -96,6 +116,15 @@ restrictions. They do not establish a complete protocol attack or an
 improved better.codes submission.
 
 ## Supplementary research notes
+
+[Nearby density tending to one](research/fixed_gap_padding/NEAR_UNIT_DENSITY.md)
+contains the asymptotic parameter calculation.
+[Dense padding](research/fixed_gap_padding/DENSE_PADDING.md) gives the
+finite direction argument, and the
+[scope audit](research/fixed_gap_padding/DENSE_SCOPE_AUDIT.md) distinguishes
+numerical prescriptions, actual maximum list size, and far-point premises.
+The finite density table has a separate arithmetic replay and a complete
+small-field direction count.
 
 [Nonsingular agreement coordinates and first-order MCA](research/quasilinear_first_order/README.md)
 contains the local reconstruction proof, its value-independent-separant

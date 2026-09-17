@@ -1,0 +1,82 @@
+{
+  "status": "passed",
+  "fixtures": [
+    {
+      "prime_exponent": 31,
+      "n": 92,
+      "K": 46,
+      "A": 50,
+      "seed_length": 75,
+      "moments": 3,
+      "q": 18,
+      "anchored_list_lower": 1791135926,
+      "nearby_fraction_lower": "0.74303810",
+      "prescription_fraction_less_than_power_two": -1,
+      "label_lower_bound": 1595662174,
+      "strict_elias": true,
+      "direction_condition": true
+    },
+    {
+      "prime_exponent": 61,
+      "n": 216,
+      "K": 108,
+      "A": 113,
+      "seed_length": 154,
+      "moments": 4,
+      "q": 63,
+      "anchored_list_lower": 3700597092013891772,
+      "nearby_fraction_lower": "0.91025173",
+      "prescription_fraction_less_than_power_two": -10,
+      "label_lower_bound": 2098897595989169945,
+      "strict_elias": true,
+      "direction_condition": true
+    },
+    {
+      "prime_exponent": 61,
+      "n": 168,
+      "K": 84,
+      "A": 89,
+      "seed_length": 135,
+      "moments": 4,
+      "q": 34,
+      "anchored_list_lower": 872245911960147176,
+      "nearby_fraction_lower": "0.69859851",
+      "prescription_fraction_less_than_power_two": -20,
+      "label_lower_bound": 1610858498535843964,
+      "strict_elias": true,
+      "direction_condition": true
+    },
+    {
+      "prime_exponent": 127,
+      "n": 468,
+      "K": 234,
+      "A": 240,
+      "seed_length": 308,
+      "moments": 5,
+      "q": 161,
+      "anchored_list_lower": 87079164082007917506566574008777026144,
+      "nearby_fraction_lower": "0.96160200",
+      "prescription_fraction_less_than_power_two": -40,
+      "label_lower_bound": 163608102599897370270539414928434797454,
+      "strict_elias": true,
+      "direction_condition": true
+    },
+    {
+      "prime_exponent": 521,
+      "n": 2800,
+      "K": 1400,
+      "A": 1411,
+      "seed_length": 1677,
+      "moments": 10,
+      "q": 1124,
+      "anchored_list_lower": 118225878809410486560359370805540781416072846164548109232352420928561408811635719319789037471554694290655134280201588087750971182340332721533079601286023890461224077122817770340568898,
+      "nearby_fraction_lower": "0.99485642",
+      "prescription_fraction_less_than_power_two": -255,
+      "label_lower_bound": 6829488082096909798828148050320264937054428474029205061138036814470154380561728337691925762591907578309406119321932299137578313582537593229804534413863071283,
+      "strict_elias": true,
+      "direction_condition": true
+    }
+  ],
+  "seconds": 0.014012499999807915,
+  "scope": "Prime-field, exact half-rate, padded interval-domain existence certificates. The numerical prescription uses c1=c2=1 without an unspecified remainder. No prescribed subgroup, whole-line uniqueness or protocol-security claim."
+}

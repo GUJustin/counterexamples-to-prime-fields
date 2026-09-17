@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "direction_audit": {
+    "total_directions": 65536,
+    "bad_directions": 5984,
+    "good_directions": 59552,
+    "exact_bad_probability": "187/2048",
+    "union_bound": "30345/32768"
+  },
+  "independent_certificates": [
+    {
+      "b": 31,
+      "n": 92,
+      "K": 46,
+      "A": 50,
+      "verified_density_lower": "0.74303810",
+      "independent_count_method": "Independent binomial variance and integral sqrt upper bound",
+      "full_entropy_checked": false
+    },
+    {
+      "b": 61,
+      "n": 216,
+      "K": 108,
+      "A": 113,
+      "verified_density_lower": "0.91025173",
+      "independent_count_method": "Independent binomial variance and integral sqrt upper bound",
+      "full_entropy_checked": false
+    },
+    {
+      "b": 127,
+      "n": 468,
+      "K": 234,
+      "A": 240,
+      "verified_density_lower": "0.96160200",
+      "independent_count_method": "Independent binomial variance and integral sqrt upper bound",
+      "full_entropy_checked": false
+    },
+    {
+      "b": 521,
+      "n": 2800,
+      "K": 1400,
+      "A": 1411,
+      "verified_density_lower": "0.99485642",
+      "independent_count_method": "Independent binomial variance and integral sqrt upper bound",
+      "full_entropy_checked": true
+    },
+    {
+      "b": 2203,
+      "n": 21940,
+      "K": 10970,
+      "A": 10990,
+      "verified_density_lower": "0.99999545",
+      "independent_count_method": "Direct sums for complement moment ranges, no Gram bound",
+      "full_entropy_checked": false
+    }
+  ],
+  "scope": "Independent finite arithmetic and complete F17 direction counting. The all-prime asymptotic still rests on the written proof.",
+  "seconds": 0.1171994590004033
+}

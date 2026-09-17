@@ -1,0 +1,1135 @@
+{
+  "scope": "Floating search, not an optimality proof. Exact moment counts, density, direction and Elias checks required.",
+  "cases": 1381044,
+  "seconds": 5.091515874999459,
+  "best": {
+    "31": [
+      {
+        "missing_fraction_log2_upper": -4.208554899647356,
+        "n": 124,
+        "K": 62,
+        "A": 66,
+        "m": 87,
+        "s": 3,
+        "log2_list": 30.268186401850404,
+        "prescription_log2_fraction": 6.954196310386877
+      },
+      {
+        "missing_fraction_log2_upper": -4.17015040901678,
+        "n": 122,
+        "K": 61,
+        "A": 65,
+        "m": 87,
+        "s": 3,
+        "log2_list": 31.763490761948752,
+        "prescription_log2_fraction": 6.4307373375628885
+      },
+      {
+        "missing_fraction_log2_upper": -4.115014899019989,
+        "n": 124,
+        "K": 62,
+        "A": 66,
+        "m": 89,
+        "s": 3,
+        "log2_list": 33.84362706041748,
+        "prescription_log2_fraction": 6.954196310386877
+      },
+      {
+        "missing_fraction_log2_upper": -4.050220251881248,
+        "n": 92,
+        "K": 46,
+        "A": 49,
+        "m": 66,
+        "s": 2,
+        "log2_list": 31.805254786523935,
+        "prescription_log2_fraction": 6.19022862272368
+      },
+      {
+        "missing_fraction_log2_upper": -4.028742249742918,
+        "n": 120,
+        "K": 60,
+        "A": 64,
+        "m": 86,
+        "s": 3,
+        "log2_list": 31.4455840650577,
+        "prescription_log2_fraction": 5.906890595608516
+      },
+      {
+        "missing_fraction_log2_upper": -4.0112601503704886,
+        "n": 122,
+        "K": 61,
+        "A": 65,
+        "m": 88,
+        "s": 3,
+        "log2_list": 33.51272306457562,
+        "prescription_log2_fraction": 6.4307373375628885
+      }
+    ],
+    "61": [
+      {
+        "missing_fraction_log2_upper": -6.869857744420868,
+        "n": 304,
+        "K": 152,
+        "A": 157,
+        "m": 192,
+        "s": 4,
+        "log2_list": 61.62697227933648,
+        "prescription_log2_fraction": 8.047927513443582
+      },
+      {
+        "missing_fraction_log2_upper": -6.789185473338102,
+        "n": 302,
+        "K": 151,
+        "A": 156,
+        "m": 191,
+        "s": 4,
+        "log2_list": 61.41358329204264,
+        "prescription_log2_fraction": 7.6384047393250825
+      },
+      {
+        "missing_fraction_log2_upper": -6.704245493504107,
+        "n": 300,
+        "K": 150,
+        "A": 155,
+        "m": 190,
+        "s": 4,
+        "log2_list": 61.19892398204849,
+        "prescription_log2_fraction": 7.228818690495885
+      },
+      {
+        "missing_fraction_log2_upper": -6.614436596073317,
+        "n": 298,
+        "K": 149,
+        "A": 154,
+        "m": 189,
+        "s": 4,
+        "log2_list": 60.98297912688567,
+        "prescription_log2_fraction": 6.819168520462171
+      },
+      {
+        "missing_fraction_log2_upper": -6.591543649094424,
+        "n": 244,
+        "K": 122,
+        "A": 126,
+        "m": 154,
+        "s": 3,
+        "log2_list": 60.37184194937216,
+        "prescription_log2_fraction": 7.9307373375628885
+      },
+      {
+        "missing_fraction_log2_upper": -6.499437927074654,
+        "n": 244,
+        "K": 122,
+        "A": 126,
+        "m": 156,
+        "s": 3,
+        "log2_list": 64.91697306740649,
+        "prescription_log2_fraction": 7.9307373375628885
+      }
+    ],
+    "127": [
+      {
+        "missing_fraction_log2_upper": -10.571934803287826,
+        "n": 762,
+        "K": 381,
+        "A": 387,
+        "m": 443,
+        "s": 5,
+        "log2_list": 126.66016872707151,
+        "prescription_log2_fraction": 9.573647187493322
+      },
+      {
+        "missing_fraction_log2_upper": -10.510473513747833,
+        "n": 760,
+        "K": 380,
+        "A": 386,
+        "m": 442,
+        "s": 5,
+        "log2_list": 126.51479240346724,
+        "prescription_log2_fraction": 9.236522274997611
+      },
+      {
+        "missing_fraction_log2_upper": -10.445884094700121,
+        "n": 758,
+        "K": 379,
+        "A": 385,
+        "m": 441,
+        "s": 5,
+        "log2_list": 126.36905783550196,
+        "prescription_log2_fraction": 8.899387371504417
+      },
+      {
+        "missing_fraction_log2_upper": -10.377874267429242,
+        "n": 756,
+        "K": 378,
+        "A": 384,
+        "m": 440,
+        "s": 5,
+        "log2_list": 126.22296325275613,
+        "prescription_log2_fraction": 8.562242424221068
+      },
+      {
+        "missing_fraction_log2_upper": -9.952971939138937,
+        "n": 730,
+        "K": 365,
+        "A": 371,
+        "m": 429,
+        "s": 5,
+        "log2_list": 129.86803119190776,
+        "prescription_log2_fraction": 4.178419320434045
+      },
+      {
+        "missing_fraction_log2_upper": -9.951583838562442,
+        "n": 742,
+        "K": 371,
+        "A": 377,
+        "m": 436,
+        "s": 5,
+        "log2_list": 133.58851893864173,
+        "prescription_log2_fraction": 6.201942043287488
+      }
+    ],
+    "521": [
+      {
+        "missing_fraction_log2_upper": -18.40093274050794,
+        "n": 3736,
+        "K": 1868,
+        "A": 1876,
+        "m": 2030,
+        "s": 7,
+        "log2_list": 526.4000195290657,
+        "prescription_log2_fraction": -42.13272126029034
+      },
+      {
+        "missing_fraction_log2_upper": -18.39576621105694,
+        "n": 3760,
+        "K": 1880,
+        "A": 1888,
+        "m": 2043,
+        "s": 7,
+        "log2_list": 531.1911698081905,
+        "prescription_log2_fraction": -39.123483053434995
+      },
+      {
+        "missing_fraction_log2_upper": -18.390726498270123,
+        "n": 3734,
+        "K": 1867,
+        "A": 1875,
+        "m": 2029,
+        "s": 7,
+        "log2_list": 526.3062485306345,
+        "prescription_log2_fraction": -42.38349378777377
+      },
+      {
+        "missing_fraction_log2_upper": -18.38583732630598,
+        "n": 3758,
+        "K": 1879,
+        "A": 1887,
+        "m": 2042,
+        "s": 7,
+        "log2_list": 531.0972606844606,
+        "prescription_log2_fraction": -39.37425064857996
+      },
+      {
+        "missing_fraction_log2_upper": -18.380505606634078,
+        "n": 3732,
+        "K": 1866,
+        "A": 1874,
+        "m": 2028,
+        "s": 7,
+        "log2_list": 526.2124291232188,
+        "prescription_log2_fraction": -42.63426672914824
+      },
+      {
+        "missing_fraction_log2_upper": -18.37783133565204,
+        "n": 3782,
+        "K": 1891,
+        "A": 1899,
+        "m": 2055,
+        "s": 7,
+        "log2_list": 535.8901478999196,
+        "prescription_log2_fraction": -36.365066352050235
+      }
+    ]
+  },
+  "prescription_below_half": {
+    "31": [
+      {
+        "missing_fraction_log2_upper": -1.9603746650834284,
+        "n": 92,
+        "K": 46,
+        "A": 50,
+        "m": 75,
+        "s": 3,
+        "log2_list": 30.738235477171305,
+        "prescription_log2_fraction": -1.4764380439429878
+      },
+      {
+        "missing_fraction_log2_upper": -1.8917696948441634,
+        "n": 70,
+        "K": 35,
+        "A": 38,
+        "m": 57,
+        "s": 2,
+        "log2_list": 30.29436215860265,
+        "prescription_log2_fraction": -1.5373836497217006
+      },
+      {
+        "missing_fraction_log2_upper": -1.8587560636442344,
+        "n": 92,
+        "K": 46,
+        "A": 50,
+        "m": 74,
+        "s": 3,
+        "log2_list": 29.34779743406052,
+        "prescription_log2_fraction": -1.4764380439429878
+      },
+      {
+        "missing_fraction_log2_upper": -1.857356414343475,
+        "n": 70,
+        "K": 35,
+        "A": 38,
+        "m": 58,
+        "s": 2,
+        "log2_list": 31.68154006481212,
+        "prescription_log2_fraction": -1.5373836497217006
+      },
+      {
+        "missing_fraction_log2_upper": -1.8051958556898733,
+        "n": 90,
+        "K": 45,
+        "A": 49,
+        "m": 74,
+        "s": 3,
+        "log2_list": 30.27403007330999,
+        "prescription_log2_fraction": -2.008146903670326
+      },
+      {
+        "missing_fraction_log2_upper": -1.7738445945174697,
+        "n": 90,
+        "K": 45,
+        "A": 49,
+        "m": 75,
+        "s": 3,
+        "log2_list": 31.611349829085174,
+        "prescription_log2_fraction": -2.008146903670326
+      }
+    ],
+    "61": [
+      {
+        "missing_fraction_log2_upper": -5.144302870713472,
+        "n": 258,
+        "K": 129,
+        "A": 134,
+        "m": 172,
+        "s": 4,
+        "log2_list": 62.52868925699746,
+        "prescription_log2_fraction": -1.388772744576741
+      },
+      {
+        "missing_fraction_log2_upper": -5.080436439498716,
+        "n": 256,
+        "K": 128,
+        "A": 133,
+        "m": 171,
+        "s": 4,
+        "log2_list": 62.25494623353818,
+        "prescription_log2_fraction": -1.7999999999999972
+      },
+      {
+        "missing_fraction_log2_upper": -5.051549163750746,
+        "n": 208,
+        "K": 104,
+        "A": 108,
+        "m": 139,
+        "s": 3,
+        "log2_list": 62.12168532997105,
+        "prescription_log2_fraction": -1.2995602818589091
+      },
+      {
+        "missing_fraction_log2_upper": -4.887016060833393,
+        "n": 254,
+        "K": 127,
+        "A": 132,
+        "m": 169,
+        "s": 4,
+        "log2_list": 59.97133555759276,
+        "prescription_log2_fraction": -2.2113153132278356
+      },
+      {
+        "missing_fraction_log2_upper": -4.857111037403528,
+        "n": 252,
+        "K": 126,
+        "A": 131,
+        "m": 170,
+        "s": 4,
+        "log2_list": 63.67434700288584,
+        "prescription_log2_fraction": -2.6227200765000873
+      },
+      {
+        "missing_fraction_log2_upper": -4.852709337893211,
+        "n": 258,
+        "K": 129,
+        "A": 134,
+        "m": 174,
+        "s": 4,
+        "log2_list": 66.50098690257987,
+        "prescription_log2_fraction": -1.388772744576741
+      }
+    ],
+    "127": [
+      {
+        "missing_fraction_log2_upper": -9.141141539014425,
+        "n": 698,
+        "K": 349,
+        "A": 355,
+        "m": 415,
+        "s": 5,
+        "log2_list": 132.67030534409687,
+        "prescription_log2_fraction": -1.219583440457015
+      },
+      {
+        "missing_fraction_log2_upper": -9.112729025850939,
+        "n": 696,
+        "K": 348,
+        "A": 354,
+        "m": 414,
+        "s": 5,
+        "log2_list": 132.49808629056594,
+        "prescription_log2_fraction": -1.5570565041512765
+      },
+      {
+        "missing_fraction_log2_upper": -9.106466434429056,
+        "n": 686,
+        "K": 343,
+        "A": 349,
+        "m": 408,
+        "s": 5,
+        "log2_list": 128.96927841403306,
+        "prescription_log2_fraction": -3.244601900493862
+      },
+      {
+        "missing_fraction_log2_upper": -9.093512191583558,
+        "n": 812,
+        "K": 406,
+        "A": 413,
+        "m": 483,
+        "s": 6,
+        "log2_list": 132.4800071183744,
+        "prescription_log2_fraction": -1.3346640828148253
+      },
+      {
+        "missing_fraction_log2_upper": -9.089354302345177,
+        "n": 802,
+        "K": 401,
+        "A": 408,
+        "m": 477,
+        "s": 6,
+        "log2_list": 129.01388716840822,
+        "prescription_log2_fraction": -2.7811130021165127
+      },
+      {
+        "missing_fraction_log2_upper": -9.084248047188995,
+        "n": 694,
+        "K": 347,
+        "A": 353,
+        "m": 413,
+        "s": 5,
+        "log2_list": 132.32540895781574,
+        "prescription_log2_fraction": -1.8945414807550662
+      }
+    ],
+    "521": [
+      {
+        "missing_fraction_log2_upper": -18.40093274050794,
+        "n": 3736,
+        "K": 1868,
+        "A": 1876,
+        "m": 2030,
+        "s": 7,
+        "log2_list": 526.4000195290657,
+        "prescription_log2_fraction": -42.13272126029034
+      },
+      {
+        "missing_fraction_log2_upper": -18.39576621105694,
+        "n": 3760,
+        "K": 1880,
+        "A": 1888,
+        "m": 2043,
+        "s": 7,
+        "log2_list": 531.1911698081905,
+        "prescription_log2_fraction": -39.123483053434995
+      },
+      {
+        "missing_fraction_log2_upper": -18.390726498270123,
+        "n": 3734,
+        "K": 1867,
+        "A": 1875,
+        "m": 2029,
+        "s": 7,
+        "log2_list": 526.3062485306345,
+        "prescription_log2_fraction": -42.38349378777377
+      },
+      {
+        "missing_fraction_log2_upper": -18.38583732630598,
+        "n": 3758,
+        "K": 1879,
+        "A": 1887,
+        "m": 2042,
+        "s": 7,
+        "log2_list": 531.0972606844606,
+        "prescription_log2_fraction": -39.37425064857996
+      },
+      {
+        "missing_fraction_log2_upper": -18.380505606634078,
+        "n": 3732,
+        "K": 1866,
+        "A": 1874,
+        "m": 2028,
+        "s": 7,
+        "log2_list": 526.2124291232188,
+        "prescription_log2_fraction": -42.63426672914824
+      },
+      {
+        "missing_fraction_log2_upper": -18.37783133565204,
+        "n": 3782,
+        "K": 1891,
+        "A": 1899,
+        "m": 2055,
+        "s": 7,
+        "log2_list": 535.8901478999196,
+        "prescription_log2_fraction": -36.365066352050235
+      }
+    ]
+  },
+  "by_prescription_bits": {
+    "10": {
+      "31": [
+        {
+          "missing_fraction_log2_upper": -0.00964533118710936,
+          "n": 46,
+          "K": 23,
+          "A": 26,
+          "m": 44,
+          "s": 2,
+          "log2_list": 22.212886248549136,
+          "prescription_log2_fraction": -10.143104710609652
+        },
+        {
+          "missing_fraction_log2_upper": -0.006017755872056507,
+          "n": 46,
+          "K": 23,
+          "A": 26,
+          "m": 43,
+          "s": 2,
+          "log2_list": 21.104667272117716,
+          "prescription_log2_fraction": -10.143104710609652
+        },
+        {
+          "missing_fraction_log2_upper": -0.006017755872056507,
+          "n": 46,
+          "K": 23,
+          "A": 26,
+          "m": 43,
+          "s": 2,
+          "log2_list": 21.104667272117716,
+          "prescription_log2_fraction": -10.143104710609652
+        },
+        {
+          "missing_fraction_log2_upper": -0.004600491708571226,
+          "n": 60,
+          "K": 30,
+          "A": 34,
+          "m": 58,
+          "s": 3,
+          "log2_list": 21.136753993227835,
+          "prescription_log2_fraction": -10.09310940439148
+        },
+        {
+          "missing_fraction_log2_upper": -0.0034027002029597708,
+          "n": 46,
+          "K": 23,
+          "A": 26,
+          "m": 42,
+          "s": 2,
+          "log2_list": 19.954465089486398,
+          "prescription_log2_fraction": -10.143104710609652
+        },
+        {
+          "missing_fraction_log2_upper": -0.002991948615608487,
+          "n": 60,
+          "K": 30,
+          "A": 34,
+          "m": 57,
+          "s": 3,
+          "log2_list": 20.093322609569316,
+          "prescription_log2_fraction": -10.09310940439148
+        }
+      ],
+      "61": [
+        {
+          "missing_fraction_log2_upper": -3.616373229355803,
+          "n": 216,
+          "K": 108,
+          "A": 113,
+          "m": 154,
+          "s": 4,
+          "log2_list": 61.682465028669554,
+          "prescription_log2_fraction": -10.045112497836527
+        },
+        {
+          "missing_fraction_log2_upper": -3.545087513073786,
+          "n": 214,
+          "K": 107,
+          "A": 112,
+          "m": 153,
+          "s": 4,
+          "log2_list": 61.33316646298641,
+          "prescription_log2_fraction": -10.458533013598853
+        },
+        {
+          "missing_fraction_log2_upper": -3.44694156731848,
+          "n": 174,
+          "K": 87,
+          "A": 91,
+          "m": 124,
+          "s": 3,
+          "log2_list": 60.231682975438,
+          "prescription_log2_fraction": -10.05705650415127
+        },
+        {
+          "missing_fraction_log2_upper": -3.3905917544891198,
+          "n": 174,
+          "K": 87,
+          "A": 91,
+          "m": 126,
+          "s": 3,
+          "log2_list": 63.70395779506482,
+          "prescription_log2_fraction": -10.05705650415127
+        },
+        {
+          "missing_fraction_log2_upper": -3.38601359918689,
+          "n": 214,
+          "K": 107,
+          "A": 112,
+          "m": 155,
+          "s": 4,
+          "log2_list": 64.75164607702239,
+          "prescription_log2_fraction": -10.458533013598853
+        },
+        {
+          "missing_fraction_log2_upper": -3.375963963712312,
+          "n": 210,
+          "K": 105,
+          "A": 110,
+          "m": 152,
+          "s": 4,
+          "log2_list": 62.32673477955353,
+          "prescription_log2_fraction": -11.285754482333878
+        }
+      ],
+      "127": [
+        {
+          "missing_fraction_log2_upper": -8.285454634009534,
+          "n": 644,
+          "K": 322,
+          "A": 328,
+          "m": 388,
+          "s": 5,
+          "log2_list": 127.85201496249749,
+          "prescription_log2_fraction": -10.33574978855205
+        },
+        {
+          "missing_fraction_log2_upper": -8.261154483129783,
+          "n": 752,
+          "K": 376,
+          "A": 383,
+          "m": 453,
+          "s": 6,
+          "log2_list": 127.44791615585336,
+          "prescription_log2_fraction": -10.016839719750934
+        },
+        {
+          "missing_fraction_log2_upper": -8.243650105294575,
+          "n": 642,
+          "K": 321,
+          "A": 327,
+          "m": 387,
+          "s": 5,
+          "log2_list": 127.66650207679614,
+          "prescription_log2_fraction": -10.673570512877703
+        },
+        {
+          "missing_fraction_log2_upper": -8.222635296480139,
+          "n": 750,
+          "K": 375,
+          "A": 382,
+          "m": 452,
+          "s": 6,
+          "log2_list": 127.2738521481371,
+          "prescription_log2_fraction": -10.306396071759622
+        },
+        {
+          "missing_fraction_log2_upper": -8.200009757602372,
+          "n": 640,
+          "K": 320,
+          "A": 326,
+          "m": 386,
+          "s": 5,
+          "log2_list": 127.48045727481488,
+          "prescription_log2_fraction": -11.011405238445974
+        },
+        {
+          "missing_fraction_log2_upper": -8.182314345277883,
+          "n": 748,
+          "K": 374,
+          "A": 381,
+          "m": 451,
+          "s": 6,
+          "log2_list": 127.09935853279241,
+          "prescription_log2_fraction": -10.5959626829695
+        }
+      ],
+      "521": [
+        {
+          "missing_fraction_log2_upper": -18.40093274050794,
+          "n": 3736,
+          "K": 1868,
+          "A": 1876,
+          "m": 2030,
+          "s": 7,
+          "log2_list": 526.4000195290657,
+          "prescription_log2_fraction": -42.13272126029034
+        },
+        {
+          "missing_fraction_log2_upper": -18.39576621105694,
+          "n": 3760,
+          "K": 1880,
+          "A": 1888,
+          "m": 2043,
+          "s": 7,
+          "log2_list": 531.1911698081905,
+          "prescription_log2_fraction": -39.123483053434995
+        },
+        {
+          "missing_fraction_log2_upper": -18.390726498270123,
+          "n": 3734,
+          "K": 1867,
+          "A": 1875,
+          "m": 2029,
+          "s": 7,
+          "log2_list": 526.3062485306345,
+          "prescription_log2_fraction": -42.38349378777377
+        },
+        {
+          "missing_fraction_log2_upper": -18.38583732630598,
+          "n": 3758,
+          "K": 1879,
+          "A": 1887,
+          "m": 2042,
+          "s": 7,
+          "log2_list": 531.0972606844606,
+          "prescription_log2_fraction": -39.37425064857996
+        },
+        {
+          "missing_fraction_log2_upper": -18.380505606634078,
+          "n": 3732,
+          "K": 1866,
+          "A": 1874,
+          "m": 2028,
+          "s": 7,
+          "log2_list": 526.2124291232188,
+          "prescription_log2_fraction": -42.63426672914824
+        },
+        {
+          "missing_fraction_log2_upper": -18.37783133565204,
+          "n": 3782,
+          "K": 1891,
+          "A": 1899,
+          "m": 2055,
+          "s": 7,
+          "log2_list": 535.8901478999196,
+          "prescription_log2_fraction": -36.365066352050235
+        }
+      ]
+    },
+    "20": {
+      "31": [],
+      "61": [
+        {
+          "missing_fraction_log2_upper": -1.793512700647559,
+          "n": 168,
+          "K": 84,
+          "A": 89,
+          "m": 135,
+          "s": 4,
+          "log2_list": 59.59751408876943,
+          "prescription_log2_fraction": -20.00768257722124
+        },
+        {
+          "missing_fraction_log2_upper": -1.7203364288601841,
+          "n": 166,
+          "K": 83,
+          "A": 88,
+          "m": 136,
+          "s": 4,
+          "log2_list": 61.818963847697596,
+          "prescription_log2_fraction": -20.42496056865307
+        },
+        {
+          "missing_fraction_log2_upper": -1.7116838276344375,
+          "n": 168,
+          "K": 84,
+          "A": 89,
+          "m": 138,
+          "s": 4,
+          "log2_list": 63.66997967369025,
+          "prescription_log2_fraction": -20.00768257722124
+        },
+        {
+          "missing_fraction_log2_upper": -1.6825417846804966,
+          "n": 166,
+          "K": 83,
+          "A": 88,
+          "m": 134,
+          "s": 4,
+          "log2_list": 59.109140360651345,
+          "prescription_log2_fraction": -20.42496056865307
+        },
+        {
+          "missing_fraction_log2_upper": -1.6606007436684747,
+          "n": 164,
+          "K": 82,
+          "A": 87,
+          "m": 134,
+          "s": 4,
+          "log2_list": 59.96841745915836,
+          "prescription_log2_fraction": -20.842447995381917
+        },
+        {
+          "missing_fraction_log2_upper": -1.6434966632918293,
+          "n": 134,
+          "K": 67,
+          "A": 71,
+          "m": 110,
+          "s": 3,
+          "log2_list": 60.511034915220534,
+          "prescription_log2_fraction": -20.433910809542226
+        }
+      ],
+      "127": [
+        {
+          "missing_fraction_log2_upper": -7.1066151529628225,
+          "n": 586,
+          "K": 293,
+          "A": 299,
+          "m": 362,
+          "s": 5,
+          "log2_list": 129.53169145381588,
+          "prescription_log2_fraction": -20.138576478911077
+        },
+        {
+          "missing_fraction_log2_upper": -7.104319227602024,
+          "n": 682,
+          "K": 341,
+          "A": 348,
+          "m": 421,
+          "s": 6,
+          "log2_list": 128.34090269635863,
+          "prescription_log2_fraction": -20.157800642404396
+        },
+        {
+          "missing_fraction_log2_upper": -7.07897937321876,
+          "n": 584,
+          "K": 292,
+          "A": 298,
+          "m": 360,
+          "s": 5,
+          "log2_list": 126.91008451090471,
+          "prescription_log2_fraction": -20.476842107786652
+        },
+        {
+          "missing_fraction_log2_upper": -7.073372233318048,
+          "n": 680,
+          "K": 340,
+          "A": 347,
+          "m": 420,
+          "s": 6,
+          "log2_list": 128.13963952606142,
+          "prescription_log2_fraction": -20.447751921005164
+        },
+        {
+          "missing_fraction_log2_upper": -7.041282327324024,
+          "n": 678,
+          "K": 339,
+          "A": 346,
+          "m": 419,
+          "s": 6,
+          "log2_list": 127.93783488401124,
+          "prescription_log2_fraction": -20.737715679720793
+        },
+        {
+          "missing_fraction_log2_upper": -7.02638134263775,
+          "n": 582,
+          "K": 291,
+          "A": 297,
+          "m": 359,
+          "s": 5,
+          "log2_list": 126.69882565397143,
+          "prescription_log2_fraction": -20.815124657091715
+        }
+      ],
+      "521": [
+        {
+          "missing_fraction_log2_upper": -18.40093274050794,
+          "n": 3736,
+          "K": 1868,
+          "A": 1876,
+          "m": 2030,
+          "s": 7,
+          "log2_list": 526.4000195290657,
+          "prescription_log2_fraction": -42.13272126029034
+        },
+        {
+          "missing_fraction_log2_upper": -18.39576621105694,
+          "n": 3760,
+          "K": 1880,
+          "A": 1888,
+          "m": 2043,
+          "s": 7,
+          "log2_list": 531.1911698081905,
+          "prescription_log2_fraction": -39.123483053434995
+        },
+        {
+          "missing_fraction_log2_upper": -18.390726498270123,
+          "n": 3734,
+          "K": 1867,
+          "A": 1875,
+          "m": 2029,
+          "s": 7,
+          "log2_list": 526.3062485306345,
+          "prescription_log2_fraction": -42.38349378777377
+        },
+        {
+          "missing_fraction_log2_upper": -18.38583732630598,
+          "n": 3758,
+          "K": 1879,
+          "A": 1887,
+          "m": 2042,
+          "s": 7,
+          "log2_list": 531.0972606844606,
+          "prescription_log2_fraction": -39.37425064857996
+        },
+        {
+          "missing_fraction_log2_upper": -18.380505606634078,
+          "n": 3732,
+          "K": 1866,
+          "A": 1874,
+          "m": 2028,
+          "s": 7,
+          "log2_list": 526.2124291232188,
+          "prescription_log2_fraction": -42.63426672914824
+        },
+        {
+          "missing_fraction_log2_upper": -18.37783133565204,
+          "n": 3782,
+          "K": 1891,
+          "A": 1899,
+          "m": 2055,
+          "s": 7,
+          "log2_list": 535.8901478999196,
+          "prescription_log2_fraction": -36.365066352050235
+        }
+      ]
+    },
+    "40": {
+      "31": [],
+      "61": [
+        {
+          "missing_fraction_log2_upper": -9.124542728681423e-12,
+          "n": 46,
+          "K": 23,
+          "A": 26,
+          "m": 44,
+          "s": 2,
+          "log2_list": 22.212886248549136,
+          "prescription_log2_fraction": -40.14310471060965
+        },
+        {
+          "missing_fraction_log2_upper": -5.643424148357067e-12,
+          "n": 46,
+          "K": 23,
+          "A": 26,
+          "m": 43,
+          "s": 2,
+          "log2_list": 21.104667272117716,
+          "prescription_log2_fraction": -40.14310471060965
+        },
+        {
+          "missing_fraction_log2_upper": -5.643424148357067e-12,
+          "n": 46,
+          "K": 23,
+          "A": 26,
+          "m": 43,
+          "s": 2,
+          "log2_list": 21.104667272117716,
+          "prescription_log2_fraction": -40.14310471060965
+        },
+        {
+          "missing_fraction_log2_upper": -4.327758530577509e-12,
+          "n": 60,
+          "K": 30,
+          "A": 34,
+          "m": 58,
+          "s": 3,
+          "log2_list": 21.136753993227835,
+          "prescription_log2_fraction": -40.093109404391484
+        },
+        {
+          "missing_fraction_log2_upper": -3.1783911819418928e-12,
+          "n": 46,
+          "K": 23,
+          "A": 26,
+          "m": 42,
+          "s": 2,
+          "log2_list": 19.954465089486398,
+          "prescription_log2_fraction": -40.14310471060965
+        },
+        {
+          "missing_fraction_log2_upper": -2.7996104944327343e-12,
+          "n": 60,
+          "K": 30,
+          "A": 34,
+          "m": 57,
+          "s": 3,
+          "log2_list": 20.093322609569316,
+          "prescription_log2_fraction": -40.093109404391484
+        }
+      ],
+      "127": [
+        {
+          "missing_fraction_log2_upper": -4.80001390069657,
+          "n": 468,
+          "K": 234,
+          "A": 240,
+          "m": 308,
+          "s": 5,
+          "log2_list": 126.03366745739041,
+          "prescription_log2_fraction": -40.12963528041659
+        },
+        {
+          "missing_fraction_log2_upper": -4.74617174419336,
+          "n": 544,
+          "K": 272,
+          "A": 279,
+          "m": 358,
+          "s": 6,
+          "log2_list": 125.50139340348728,
+          "prescription_log2_fraction": -40.19825144446395
+        },
+        {
+          "missing_fraction_log2_upper": -4.732862007313211,
+          "n": 466,
+          "K": 233,
+          "A": 239,
+          "m": 307,
+          "s": 5,
+          "log2_list": 125.7461120229248,
+          "prescription_log2_fraction": -40.469147188679045
+        },
+        {
+          "missing_fraction_log2_upper": -4.676462913066061,
+          "n": 542,
+          "K": 271,
+          "A": 278,
+          "m": 357,
+          "s": 6,
+          "log2_list": 125.22870639793715,
+          "prescription_log2_fraction": -40.4892795300747
+        },
+        {
+          "missing_fraction_log2_upper": -4.671742730956027,
+          "n": 464,
+          "K": 232,
+          "A": 238,
+          "m": 309,
+          "s": 5,
+          "log2_list": 131.52463213126697,
+          "prescription_log2_fraction": -40.808685671539095
+        },
+        {
+          "missing_fraction_log2_upper": -4.661854119250641,
+          "n": 536,
+          "K": 268,
+          "A": 275,
+          "m": 357,
+          "s": 6,
+          "log2_list": 130.42057675039786,
+          "prescription_log2_fraction": -41.36248223811366
+        }
+      ],
+      "521": [
+        {
+          "missing_fraction_log2_upper": -18.40093274050794,
+          "n": 3736,
+          "K": 1868,
+          "A": 1876,
+          "m": 2030,
+          "s": 7,
+          "log2_list": 526.4000195290657,
+          "prescription_log2_fraction": -42.13272126029034
+        },
+        {
+          "missing_fraction_log2_upper": -18.390726498270123,
+          "n": 3734,
+          "K": 1867,
+          "A": 1875,
+          "m": 2029,
+          "s": 7,
+          "log2_list": 526.3062485306345,
+          "prescription_log2_fraction": -42.38349378777377
+        },
+        {
+          "missing_fraction_log2_upper": -18.380505606634078,
+          "n": 3732,
+          "K": 1866,
+          "A": 1874,
+          "m": 2028,
+          "s": 7,
+          "log2_list": 526.2124291232188,
+          "prescription_log2_fraction": -42.63426672914824
+        },
+        {
+          "missing_fraction_log2_upper": -18.37026907898405,
+          "n": 3730,
+          "K": 1865,
+          "A": 1873,
+          "m": 2027,
+          "s": 7,
+          "log2_list": 526.1185612568048,
+          "prescription_log2_fraction": -42.885040084857394
+        },
+        {
+          "missing_fraction_log2_upper": -18.3600158614077,
+          "n": 3728,
+          "K": 1864,
+          "A": 1872,
+          "m": 2026,
+          "s": 7,
+          "log2_list": 526.0246448812863,
+          "prescription_log2_fraction": -43.1358138553457
+        },
+        {
+          "missing_fraction_log2_upper": -18.35604691144511,
+          "n": 3752,
+          "K": 1876,
+          "A": 1884,
+          "m": 2039,
+          "s": 7,
+          "log2_list": 530.8152440992012,
+          "prescription_log2_fraction": -40.12655588748464
+        }
+      ]
+    }
+  }
+}
