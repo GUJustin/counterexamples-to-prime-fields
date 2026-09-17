@@ -39,6 +39,27 @@ No bound on the least acceptable p is asserted.
 
 ## Exact decoding-list consequence
 
+The distinct-prime-node hypothesis can be replaced by private prime
+valuations. It suffices that each integer node a_i has a rational prime
+r_i with v_(r_i)(a_i)=1 and v_(r_i)(a_j)=0 for j!=i. The same valuation
+argument over Q(zeta_B) proves Kummer independence for every prime B.
+This includes B=r_i, since the ramification index B-1 is coprime to B.
+
+Every fixed set of distinct integer seed nodes admits such a translation.
+For nodes q_i, choose distinct primes r_i larger than every nonzero
+absolute difference |q_i-q_j|. The Chinese remainder theorem supplies c
+with c= r_i-q_i modulo r_i^2 for every i. Increase c by a multiple of
+the product of these moduli until all a_i=q_i+c are positive. Then
+a_i=r_i modulo r_i^2, and a_j=q_j-q_i modulo r_i for j!=i, proving
+the required valuations. Translating the variable preserves degrees,
+agreements, and the entire decoding list. Thus the theorem applies to
+arbitrary distinct integer seeds after this harmless change of coordinates.
+No generic-polynomial Galois theorem or Hilbert irreducibility is needed.
+The verifier also checks the CRT translation of {0,1,2,3}, with private
+primes 5,7,11,13, and verifies the complete lists and received-line
+profiles of its B=2 and B=3 lifts. The translated quadratic word has
+exactly the two constant witnesses 0 and -2, just as before translation.
+
 Let W(Y) be monic of degree t, with 1<=k<t<=m. On the seed domain
 {q_1,...,q_m}, consider degree-<k polynomials agreeing with W on at
 least t points. On the lifted domain D, use degree-<kB polynomials and
@@ -156,3 +177,16 @@ It preserves normalized distance but increases length. Padding leaves
 this low-degree received-line setting; its direction vanishes on too
 many core points to have degree<=tB. The pointwise list control must not
 be carried over to that different line without a new proof.
+
+The pointwise correspondence also applies to polynomial received curves
+of any fixed parameter degree d, provided their degree in Y is at most
+t. A codeword curve of parameter degree d containing d+1 lifted witness
+pairs at distinct labels has composed coefficients, by interpolation
+in the label. Thus degree-d selected-witness concurrency is preserved.
+For the corresponding common coefficient-agreement statement, choose
+d+1 labels where the received leading Y^t coefficient is nonzero;
+there are enough whenever the alphabet has at least 2d+1 elements.
+The same interpolation argument then forces every explaining coefficient
+to be composed. If that leading coefficient vanishes identically, the
+lower-degree root-counting case applies coefficient by coefficient.
+This extension supplies no label-count amplification either.

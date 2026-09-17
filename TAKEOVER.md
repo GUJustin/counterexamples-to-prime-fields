@@ -355,3 +355,18 @@ sum relation. Chebotarev plus finite norm exclusions then gives exact
 list preservation for W(phi_B) without prime-node restrictions. This
 is not yet a verified theorem; check the generic Galois-group and
 specialization steps before using it.
+
+The arbitrary-integer-seed extension is now proved by a simpler route:
+translate all nodes q_i by c chosen via CRT so v_(r_i)(q_i+c)=1 and
+v_(r_i)(q_j+c)=0 for j!=i, with private primes r_i larger than every
+node difference. These private valuations give Kummer independence
+for every prime B, including B=r_i (ramification index B-1). Thus the
+existing exact-list and line-profile proof applies to any integer seed
+after translation, with no Hilbert irreducibility or generic Galois
+claim. The earlier generic-polynomial idea is unnecessary for this
+extension and remains unaudited for arbitrary composite fiber degrees.
+Guarded CRT replay on seed0,1,2,3 and B2/B3 passed, preserving exactly
+the two-word list0,-2 and all five nearby line labels. Original prime-
+node fixtures retain eight labels. The note also spells out extension
+to fixed-degree parameter curves via interpolation at d+1 labels; this
+is profile preservation, not amplification. No manuscript pages added.
