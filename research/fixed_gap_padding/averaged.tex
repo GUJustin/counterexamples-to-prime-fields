@@ -7,8 +7,9 @@ The mechanism is simple: many codewords already agree with a fixed core
 on $A-1$ coordinates, just one short of the threshold. Each added
 coordinate lets some of them acquire the missing agreement, at different
 line parameters. With enough added coordinates, these opportunities
-cover almost all parameters. We choose the direction so that none of
-this closeness can come from a common agreement explanation.
+cover almost all parameters. Keeping the starting word equal to a
+polynomial of degree $A-1$ makes it one coordinate too far from the code
+and rules out any common agreement explanation.
 Write $\mathcal P(h,N)$ for the minimum number of colliding pairs for
 $h$ objects in $N$ bins, as in Section~\ref{sec:agreement-collisions}.
 
@@ -52,29 +53,42 @@ For common witnesses $F,G$, if $G=0$ the joint agreement is at most
 $A-1$ by the degree of $w-F$; otherwise it is at most $K-1+q<A$.
 \end{proof}
 
-\paragraph{Choosing the direction allows more padding.}
-The restriction $K-1+q<A$ in Lemma~\ref{fg:averaged-padding} can be
-replaced by
-\begin{equation}\label{fg:direction-condition}
- \binom nA p^q<p^{A-K}(p-1)^q,\qquad n=N+q.
+\begin{lemma}[Padding around a far point]\label{fg:far-padding}
+Keep the core hypotheses and $R,T,M$ of Lemma~\ref{fg:averaged-padding},
+but allow any $1\le q\le p-N$, without requiring $K-1+q<A$.
+There is a nonconstant received line on $n=N+q$ coordinates with at least
+\begin{equation}\label{fg:far-count}
+ J=\left\lceil(p-1)\left(1-\left(1-\frac{M}{p-1}\right)^q\right)\right\rceil
 \end{equation}
-Choose the same padding coordinates, but choose their direction values
-independently in $\F_p^*$, keeping the old direction zero. For an
-$A$-subset with $r$ old and $u=A-r$ new coordinates, a nonzero polynomial
-$G$ of degree less than $K$ cannot vanish on $r\ge K$ old points.
-If $r<K$, the polynomials vanishing there form a space of dimension
-$K-r$. The probability that one matches the $u$ new direction values
-is at most
+nearby parameters at agreement threshold $A$. Its parameter-zero word
+has distance exactly $(n-A+1)/n$, one coordinate beyond the nearby
+radius. No pair of codewords has correlated agreement at threshold $A$.
+\end{lemma}
+\begin{proof}
+Each $P_i-w$ has degree $A-1$ and already has $A-1$ roots on the core.
+It therefore has no roots outside the core. At an available point $x$,
+the difference image $S_x=\{P_i(x)-w(x):1\le i\le L\}$ is a subset
+of $\F_p^*$ of size $s_x$. The preceding collision bound still gives
+average image size at least $M$, so in particular $M\le p-1$.
+Choose the $q$ points with largest images.
+
+Set $f=w$ on the entire domain, let $g=0$ on the core, and choose
+$g(x_j)$ independently uniformly in $\F_p^*$ on the padding.
+The candidate $P_i$ is nearby at the nonzero parameter
 \[
- \frac{p^{K-r}}{(p-1)^u}
- \le p^{K-A}\left(\frac p{p-1}\right)^q.
+ z=\frac{P_i(x_j)-w(x_j)}{g(x_j)}.
 \]
-A union bound and \eqref{fg:direction-condition} therefore give a
-direction with which no nonzero $G$ has $A$ agreements. A zero $G$
-still confines joint agreement to the core, where $w-F$ has degree
-$A-1$. With this direction fixed, the labels are
-$(P_i(x_j)-f(x_j))/g(x_j)$. Scaling preserves each image size, so
-uniform offsets give exactly the same bound \eqref{fg:averaged-count}.
+For each fixed $z\ne0$, these independent multiplicative translates
+hit $z$ with probabilities $s_{x_j}/(p-1)$. The expected union size is
+\[
+ (p-1)\left(1-\prod_j(1-s_{x_j}/(p-1))\right)
+ \ge(p-1)\left(1-(1-M/(p-1))^q\right).
+\]
+Some direction attains the ceiling. Finally $f=w$ agrees with every
+codeword on at most $A-1$ coordinates by its degree, and each selected
+$P_i$ attains that number. This proves the exact distance at zero and
+also rules out correlated agreement, regardless of the chosen direction.
+\end{proof}
 
 \begin{theorem}[An arbitrarily large fraction of nearby parameters]
 \label{fg:dense-lines}
@@ -91,8 +105,9 @@ and a received line with at least
  \left(1-\exp\!\left(-\frac{\beta-\rho}
  {\rho\beta(1-\beta)}\right)-o(1)\right)p
 \]
-nearby parameters at gap $\eta$. No pair of codewords has correlated
-agreement at the threshold, and the radius is strictly below Elias.
+nearby parameters at gap $\eta$. The parameter-zero word has distance
+$1-\rho-\eta+1/n$. No pair of codewords has correlated agreement at the
+threshold, and the nearby radius is strictly below Elias.
 Consequently, for any fixed $\delta>0$, choosing $\beta$ sufficiently
 close to $1$ gives at least $(1-\delta)p$ nearby parameters at length
 $\Theta_{\rho,\delta}(\log p)$ and gap
@@ -124,10 +139,9 @@ bound. Balanced occupancies give
  \qquad
  \frac Mp=\frac{1+o(1)}{\rho(1-\beta)n}.
 \]
-The direction condition holds eventually: $\log_2\binom nA\le n=O(b)$,
-whereas $(A-K)b=(s+1)b=\Theta(b^{3/2}/\sqrt{\log b})$.
-Moreover $q/n\to1-\rho/\beta$. Substitution into
-\eqref{fg:averaged-count} gives the asserted constant fraction.
+Apply Lemma~\ref{fg:far-padding}. Since $q/n\to1-\rho/\beta$
+and $(p-1)/p\to1$, substitution into \eqref{fg:far-count} gives the
+asserted constant fraction and the exact distance at zero.
 The exact gap is $(s+1)/n$, and $\eta\log_2p\to\infty$ verifies
 strict Elias. Finally the exponent in the displayed fraction tends
 to $-\infty$ as $\beta\to1$ with $\rho$ fixed.
@@ -173,7 +187,9 @@ Lucas--Lehmer primality, and integer Elias inequalities. Two small-field
 fixtures also exhaust all $5202$ offset tuples and $167042$ codeword
 pairs. The finite search is not an optimality proof.
 
-The direction variant is checked independently in
-\path{research/fixed_gap_padding/verify_dense_padding.py}: over $\F_{17}$,
-it exhausts $83521$ offset tuples and all $83521$ codeword pairs for
-an example where the constant-direction padding condition fails.
+The far-point variant is checked in
+\path{research/fixed_gap_padding/verify_far_point_padding.py}: over
+$\F_{17}$, it exhausts all $65536$ nonzero padding directions and then
+the full agreement profile and all codeword pairs of a selected line.
+The parameter-zero word on that line has maximum agreement $A-1$; $15$ of its
+$16$ nonzero parameters are nearby.

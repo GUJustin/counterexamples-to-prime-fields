@@ -728,3 +728,40 @@ counts maychangebyone, don'tsilentlyreusep-basedformula. Then replace
 complicateddirectionparagraphinpaperwiththiscleanerlemma/proof,
 strengthentheoremswithfarpoint, updateREADME/mainmessageandscopeaudit.
 Oldadditivecertificatesstayvalid; canretain inresearchnotmaintext.
+
+Far-point variant NOW VERIFIED AND INTEGRATED. Lemmafg:far-padding
+replaces the random-direction union-bound paragraph in the main paper.
+f=w globally, g0core, randomnonzerog_jpadding. All differencesP_i-w
+haveallA-1rootsinthecore, so eachoutsideimageexcludes0. Multiplicative
+averaging givesJ>=ceil((p-1)*(1-(1-M/(p-1))^q)), anyq<=p-N.
+z0hasEXACTagreementA-1; noCA automatic becausef alonecannotagreeA.
+Bothdenseasymptotictheoremsnowincludeexactfarpointdistanceθ+1/n.
+NearunitproofusesJ/(p-1)>=1-exp(-qM/(p-1)); 1/p lossabsorbedo1.
+No directionunionboundneeded; strictEliasstillneedsc>Hρ.
+Abstract,page2,READMEstatefarpointonecoordinateoutside,notconstantfar.
+
+verify_far_point_padding.py: all65536F17nonzerodirectionsexhausted,
+expectedselectedunion36975/4096, maxselected12; fullcodewordprofile
+has15nearby nonzero labels, farlabels0and11 (maxagreement3,A4),
+allcodewordpairsjointmax3. NotanEliasfixture. MainM31/61/127/521
+exactp-1replaypreserveseightdecimaldensitybounds; integerJatM61,
+M127,M521dropsbyonefromadditiveversion. verify_near_unit_density.py
+andindependentauditalsoupdatedtop-1, allpasssequentialguardedchecks.
+LargerM1279/2203/3217/4423densitydecimalsunchanged. Makefile72checks.
+Oldadditive-directionchecksandproofretainedasvalidhistoricalalternative.
+DENSE_SCOPE_AUDIT.mdupdated: finalconstructionDOEShaveafarpoint;
+actualglobal-listdistinctionunchanged. PDF117pagescleanbuild,reviewed
+1,2,31,32,33,34 (alsoearlier4). Noactiveprocess.
+
+Possible next clean strengthening: give the fixed-gap UNIQUE-nearby
+construction a farpoint too. Keep oldqrestrictionA-q>=K so everynearby
+candidate belongs interpolationpoolT (size<=M=binom(N,K)). Choosepads
+excluding roots of everyP-P' AND everyP-w, P inT, so all differences
+P(x)-w(x) distinctnonzero. Sufficientp>N+q+(K-1)binomM2+(A-1)M.
+Greedyg_j!=0 make(P(x_j)-w(x_j))/g_j distinctacrossall(P,j);
+p-1>(q-1)M²suffices. Setf=wglobally,g0core. Thennearby iffPboundary
+(A-1oldagreements)+onepad; allnearbywordsunique; z0far; noCAbyfdegree.
+Samefixed-gapcoefficientandparameters, slightlylargerfieldbound.
+Needs new exactfiniteunique-poolreplay beforeeditingoldlemma/theorem.
+This would unifyallmainlinefamilieswithafarpoint. Existingoldunique
+verifierfields1571and114874079likelymeetnewguardbutcheckcarefully.

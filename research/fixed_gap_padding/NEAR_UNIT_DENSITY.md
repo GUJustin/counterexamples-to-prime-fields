@@ -1,6 +1,6 @@
 # Nearby density tending to one at reciprocal-logarithmic gap
 
-September 17, 2026. Proof refinement of DENSE_PADDING.md.
+September 17, 2026. Uses the final far-point construction in FAR_POINT_PADDING.md.
 
 Fix rational rho in (0,1) and a real C>H_2(rho). Write b=log_2 p,
 ell=log_2 b. For every sufficiently large prime p, choose n a denominator
@@ -38,7 +38,7 @@ Remove its anchor and divide by the corresponding linear factor.
 The resulting L polynomials have degree<K and exactly A-1 old
 agreements, for A=t.
 
-## Images and a good direction
+## Images and a far point
 
 Put d=K-1 and T=d*binom(L,2)-pairs(L*(A-1),N). Since A-1=K+s
 and N=K+s+h,
@@ -47,23 +47,20 @@ and N=K+s+h,
 
 Balanced occupancies imply 2T/L^2=(1+o(1))*h, and the image bound
 M=L^2(p-N)/(L(p-N)+2T) satisfies M/p=(1+o(1))/h.
-The direction union bound is valid: log_2 binom(n,A) is at most
-n*H_2(A/n)=(H_2(rho)+o(1))*n, while
-
-    (A-K)*log_2 p = (s+1)*b = (C+o(1))*n.
-
-The extra q*log_2(p/(p-1)) tends to zero, and C>H_2(rho).
-The same strict inequality gives the characteristic-based Elias
-condition eta*log_2 p>H_2(A/n), for eta=(A-K)/n.
+Apply the far-point padding lemma with f=w globally and independent
+nonzero direction values on the padding. No direction union bound is
+needed. The parameter-zero word has exact distance (n-A+1)/n. The
+strict Elias condition follows from eta*b->C>H_2(rho).
 
 ## Result
 
-Choose a direction by the support union bound and offsets by the image
-union bound. No pair of degree<K codewords has A joint agreements.
+Choose a direction by multiplicative averaging of the difference images
+in F_p^*. No pair of degree<K codewords has A joint agreements because
+even f=w alone has at most A-1 agreements with every such codeword.
 Moreover 1-x<=exp(-x) gives
 
-    J >= p*(1-exp(-q*M/p)),
-    q*M/p = ((1-rho)/(2*sqrt(2)*C)+o(1))*sqrt(b*ell).
+    J >= (p-1)*(1-exp(-q*M/(p-1))),
+    q*M/(p-1) = ((1-rho)/(2*sqrt(2)*C)+o(1))*sqrt(b*ell).
 
 Thus every sufficiently large prime admits exact-rate-rho codes with
 
@@ -72,7 +69,9 @@ Thus every sufficiently large prime admits exact-rate-rho codes with
     J/p >= 1-exp(-((1-rho)/(2*sqrt(2)*C)-o(1))*sqrt(b*log_2 b)),
 
 strictly below Elias and with no ordinary correlated agreement.
-The nearby fraction tends to one; this is stronger than merely
+The loss (p-1)/p is absorbed in the o(1) exponent since 1/p is much
+smaller than exp(-Theta(sqrt(b*ell))). The nearby fraction tends to one;
+this is stronger than merely
 choosing an arbitrarily high fixed fraction. It does not say that all
 p parameters are nearby. Length is polylogarithmic in p, hence n=o(p).
 The gap still shrinks, so the fixed-gap superlinear target remains open.

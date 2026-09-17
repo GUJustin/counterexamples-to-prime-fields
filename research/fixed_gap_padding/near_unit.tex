@@ -12,8 +12,9 @@ for which the number $J$ of nearby parameters satisfies
  \frac Jp\ge1-\exp\!\left[-\left(\frac{1-\rho}{2\sqrt2\,c}-o(1)\right)
  \sqrt{b\ell}\right].
 \end{equation}
+The parameter-zero word has distance $1-\rho-\eta+1/n$.
 No pair of codewords has correlated agreement at the threshold, and
-the radius is strictly below Elias. In particular, $J/p\to1$ and
+the nearby radius is strictly below Elias. In particular, $J/p\to1$ and
 $n=o(p)$.
 \end{theorem}
 \begin{proof}
@@ -50,18 +51,15 @@ threshold $A=t$, and $q=n-N$ padding coordinates. With $d=K-1$,
  =h-s-1-\frac{h^2}{K+s+h}=(1+o(1))h.
 \]
 The balanced collision count therefore gives $M/p=(1+o(1))/h$.
-The direction condition \eqref{fg:direction-condition} holds because
+Apply Lemma~\ref{fg:far-padding}. Since $1-x\le e^{-x}$,
 \[
- \log_2\binom nA\le nH_2(A/n)=(H_2(\rho)+o(1))n,
- \qquad (A-K)b=(c+o(1))n,
+ \frac{J}{p-1}\ge1-e^{-qM/(p-1)},\qquad
+ \frac{qM}{p-1}=\left(\frac{1-\rho}{2\sqrt2\,c}+o(1)\right)\sqrt{b\ell}.
 \]
-and $q\log_2(p/(p-1))=o(1)$. Apply the averaged-padding construction
-with that direction. Since $1-x\le e^{-x}$,
-\[
- \frac Jp\ge1-e^{-qM/p},\qquad
- \frac{qM}{p}=\left(\frac{1-\rho}{2\sqrt2\,c}+o(1)\right)\sqrt{b\ell},
-\]
-which proves \eqref{fg:near-unit-count}. The exact gap is $(s+1)/n$.
+The loss from replacing $p-1$ by $p$ is $1/p$ and is absorbed by the
+$o(1)$ in \eqref{fg:near-unit-count}. The lemma also gives the exact
+far-point distance and excludes correlated agreement.
+The exact gap is $(s+1)/n$.
 Finally $\eta b\to c>H_2(\rho)$ gives strict Elias.
 \end{proof}
 
@@ -94,22 +92,22 @@ $2^{521}-1$&2800&1400&1411&$0.99485642$&$2^{-255}$\\
 \bottomrule
 \end{tabular}
 \end{center}
-Every row lies strictly below Elias, and no common agreement pair exists
-at the threshold. These are coding-count comparisons on padded interval
+Every row lies strictly below Elias, has a parameter-zero word exactly
+one coordinate beyond the radius, and has no common agreement pair at
+the threshold. These are coding-count comparisons on padded interval
 domains, not protocol-security estimates or prescribed-subgroup results.
 The exact checker
-\path{research/fixed_gap_padding/verify_dense_half_rate.py} verifies the
+\path{research/fixed_gap_padding/verify_far_point_padding.py} verifies the
 density and prescription inequalities. The related checker
 \path{verify_near_unit_density.py} in that directory also certifies
 nearby fractions above $0.99999545$, $0.99999976$, and $0.99999998$
 for primes $2^{2203}-1$, $2^{3217}-1$, and $2^{4423}-1$, respectively.
 Finite list counts use the stronger of the binomial-moment box and Gram
 bounds; the asymptotic proof needs only the box bound. All certificates
-use Lucas--Lehmer primality, integer direction and Elias inequalities,
+use Lucas--Lehmer primality, integer Elias inequalities,
 and rational lower bounds on the union size.
 
 A separate arithmetic audit, \path{audit_density_independent.py} in the
 same directory, rederives all four displayed bounds and the $2203$-bit bound without
-importing the construction checker. It also counts all $65536$ nonzero
-padding directions in the small-field example: $59552$ satisfy the
-required exclusion of nonzero direction polynomials.
+importing the construction checker. The separate small-field replay also verifies the far point and the
+complete agreement profile.

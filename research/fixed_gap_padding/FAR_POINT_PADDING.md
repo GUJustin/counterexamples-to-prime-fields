@@ -1,7 +1,7 @@
 # A far point with almost all other parameters nearby
 
 September 17, 2026. New simplification of averaged padding; proof below.
-Not yet integrated into the manuscript at this checkpoint.
+Integrated in the manuscript after exact and independent arithmetic replay.
 
 Keep the core hypotheses of AVERAGED_PADDING.md: w has degree A-1,
 P_1,...,P_L are distinct degree<K<A polynomials, each has exactly A-1
@@ -47,8 +47,14 @@ strict Elias; it no longer needs it to construct a suitable direction.
 The family now genuinely has a farther point, unlike the previous
 additive-offset argument, which did not assert one.
 
-Finite replay must use the new p-1 union formula, not silently reuse
-p-based rounded counts. The change in the unrounded count is at most
-one, but an integer or eighth-decimal endpoint can change. Recheck all
-displayed density bounds before modifying the manuscript. Prior additive
-construction certificates remain independently valid.
+Finite replay uses the new p-1 union formula. All four displayed
+M31/M61/M127/M521 density lower bounds retain the same eight decimals;
+some integer label lower bounds decrease by one. The larger-prime
+near-unit fixtures and independent arithmetic audit also use p-1.
+verify_far_point_padding.py exhausts all65536 F17 directions. The exact
+mean selected union is36975/4096; a direction attains12 selected labels,
+and full codeword enumeration gives15nearby nonzero parameters. Parameter
+zero has exactly3agreements at threshold4, as does one other parameter.
+The complete joint-codeword check also gives maximum3. This F17 fixture
+is a mechanism check, not an Elias claim; the four main finite certificates
+verify strict Elias with exact integer inequalities.

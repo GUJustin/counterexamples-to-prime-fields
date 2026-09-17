@@ -48,10 +48,11 @@ def replay(b,n,K,A,m,s,expected,bits=None):
  residual=Q(degree)-Q(old*old,N)
  M=Q(L*R)/(R+L*residual+old-degree)
  assert 0<M<p
- scale=1<<128;x=Q((M/p*scale).__floor__(),scale)
+ U=p-1
+ scale=1<<128;x=Q((M/U*scale).__floor__(),scale)
  polynomial=sum((Q(comb(q,j))*x**j for j in range(min(q,32)+1)),Q(0))
- density=1-1/polynomial
- if b==31:density=max(density,Q(ceilq(p*(1-(1-x)**q)),p))
+ density=Q(U,p)*(1-1/polynomial)
+ if b==31:density=max(density,Q(ceilq(U*(1-(1-x)**q)),p))
  if bits is not None:assert n**(A-K)*2**(n+bits*(A-K))<p**(A-K)
  assert density>Q(expected)
  assert p>2*q and 2*comb(n,A)<p**(A-K)
@@ -98,7 +99,7 @@ def main():
                                     replay(127,468,234,240,308,5,'0.96160200',40),
                                     replay(521,2800,1400,1411,1677,10,'0.99485642',255),
                                     replay(2203,21940,10970,10990,11895,19,'0.99999545')],
-          scope='Independent finite arithmetic and complete F17 direction counting. The all-prime asymptotic still rests on the written proof.')
+          scope='Far-point multiplicative p-1 label formula. Independent finite arithmetic and complete F17 direction counting. The all-prime asymptotic still rests on the written proof.')
  out['seconds']=time.monotonic()-start
  Path(__file__).with_name('density_independent_audit.json').write_text(json.dumps(out,indent=2)+'\n')
  print(json.dumps(out,indent=2))

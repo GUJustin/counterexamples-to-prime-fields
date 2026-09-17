@@ -14,10 +14,11 @@
       "list_log2_lower": "604.83245",
       "density_decimal_lower": "0.99485642",
       "exact_eta": "11/2800",
-      "label_lower_bound_sha256": "eeba696d57d9986194ba4e53111a2282dc29451a5d11bf2f953ddb1b99cded6a",
+      "label_lower_bound_sha256": "1e25e669d38ac2a2412f08310a4bc8438553f69e760324c6478a4c44d1ca1cc9",
       "list_lower_bound_sha256": "cc59394b1a1fa0295793280ad041668973b5773abc029dfaae3d43c5d3d34dca",
       "direction_condition": true,
-      "strict_elias": true
+      "strict_elias": true,
+      "exact_far_agreement": 1410
     },
     {
       "prime_exponent": 1279,
@@ -32,10 +33,11 @@
       "list_log2_lower": "1544.98938",
       "density_decimal_lower": "0.99987751",
       "exact_eta": "4/2517",
-      "label_lower_bound_sha256": "f62c9cd6d678170915a1f67508a8e1dbec341b065a31b15df13f8dfa9563258c",
+      "label_lower_bound_sha256": "41e8efc5f52f848769a140de9dfd14eaba177f7b096916d7c313fc50820d4cf3",
       "list_lower_bound_sha256": "6ca9188137889db983b24324a65b328ccda2c60b9ece02a8b652cf9241aec081",
       "direction_condition": true,
-      "strict_elias": true
+      "strict_elias": true,
+      "exact_far_agreement": 5049
     },
     {
       "prime_exponent": 2203,
@@ -50,10 +52,11 @@
       "list_log2_lower": "2741.68748",
       "density_decimal_lower": "0.99999545",
       "exact_eta": "1/1097",
-      "label_lower_bound_sha256": "8035f791ef3c5cafad3014f94260a124f25d23aba4b2b85c9d615a7e05bcc869",
+      "label_lower_bound_sha256": "81241d5ba644c0593f76b13d33bdbe9c8caf5c8251f100a5bedd58959b508ee7",
       "list_lower_bound_sha256": "2c83101ff030698507efecaceabf30258e877f759355571f8f9f544e72293ff1",
       "direction_condition": true,
-      "strict_elias": true
+      "strict_elias": true,
+      "exact_far_agreement": 10989
     },
     {
       "prime_exponent": 3217,
@@ -68,10 +71,11 @@
       "list_log2_lower": "3947.19183",
       "density_decimal_lower": "0.99999976",
       "exact_eta": "12/18899",
-      "label_lower_bound_sha256": "c450815b51ebbd37049afeedb724b73ea454eedeef9db770d3f26a146a32eb66",
+      "label_lower_bound_sha256": "2f5b303a720b98aa27e2af4f0886b58b08a535abf9207030665e8abf64aaa79c",
       "list_lower_bound_sha256": "e001f57c1ebc1466cb447d39a0a637b02ccfcc29cc45054a26156976df7c4c59",
       "direction_condition": true,
-      "strict_elias": true
+      "strict_elias": true,
+      "exact_far_agreement": 18922
     },
     {
       "prime_exponent": 4423,
@@ -86,12 +90,13 @@
       "list_log2_lower": "5351.98037",
       "density_decimal_lower": "0.99999998",
       "exact_eta": "7/14942",
-      "label_lower_bound_sha256": "0dee0506c942f0f929861417f31e6dde6ec8af4e96274c8e2a8f01cdf30f962a",
+      "label_lower_bound_sha256": "ac01050583acc93c793abbb9fddef5081482020df7d2a19d527281fb85da4f36",
       "list_lower_bound_sha256": "df53ec9c213f909fffe8ba25445a90067680bf3de026019222c52be8fd60056c",
       "direction_condition": true,
-      "strict_elias": true
+      "strict_elias": true,
+      "exact_far_agreement": 29911
     }
   ],
-  "seconds": 0.40393979200234753,
-  "scope": "Exact finite prime-field certificates at rate1/2 and parameterC2. Floating choices only choose integer parameters; all mathematical inequalities, counts, primality and displayed density lower bounds are verified exactly. Not a convergence proof or a prescribed-domain result."
+  "seconds": 0.6327049579995219,
+  "scope": "Far-point multiplicative-padding certificates with p-1 label universe. Exact finite prime-field certificates at rate1/2 and parameterC2. Floating choices only choose integer parameters; all mathematical inequalities, counts, primality and displayed density lower bounds are verified exactly. Not a convergence proof or a prescribed-domain result."
 }

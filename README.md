@@ -12,7 +12,8 @@ analysis as an application of those results.
 The central message is quantitative: the proposed bounds underestimate how
 rapidly lists grow as the decoding gap shrinks. The line failure can be
 nearly total: a random line parameter is nearby with probability tending
-to one, although no pair of codewords has the required common agreement.
+to one, although the line contains a word one coordinate outside the
+nearby radius and no pair of codewords has the required common agreement.
 The proposed numerical bound can predict a probability tending to zero
 for those same parameters. These examples use prime fields, short domains,
 and radii strictly below the paper's characteristic-based Elias radius.
@@ -27,7 +28,8 @@ and radii strictly below the paper's characteristic-based Elias radius.
   `2^((1/2-o(1))*b^2/log2(b))` codewords below Elias.
 - A padding construction makes the nearby fraction tend to one at exact
   fixed rate, with `eta=Theta(1/log p)` and polylogarithmic block length,
-  while no correlated agreement exists. At half rate over `2^61-1`, a
+  while retaining a point one coordinate beyond the nearby radius and no
+  correlated agreement. At half rate over `2^61-1`, a
   finite example has over **91%** nearby parameters where the numerical
   prescription gives less than **1/1024**. Over `2^127-1`, another has over
   **96%** where it gives less than **2^-40**. These finite comparisons use
@@ -119,8 +121,8 @@ improved better.codes submission.
 
 [Nearby density tending to one](research/fixed_gap_padding/NEAR_UNIT_DENSITY.md)
 contains the asymptotic parameter calculation.
-[Dense padding](research/fixed_gap_padding/DENSE_PADDING.md) gives the
-finite direction argument, and the
+[Far-point padding](research/fixed_gap_padding/FAR_POINT_PADDING.md) gives
+the simpler multiplicative-averaging proof, and the
 [scope audit](research/fixed_gap_padding/DENSE_SCOPE_AUDIT.md) distinguishes
 numerical prescriptions, actual maximum list size, and far-point premises.
 The finite density table has a separate arithmetic replay and a complete

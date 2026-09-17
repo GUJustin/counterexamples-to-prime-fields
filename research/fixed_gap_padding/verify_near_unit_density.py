@@ -30,14 +30,15 @@ def certificate(b,rho=F(1,2),C=2):
  assert p**(A-K)*A**A*(n-A)**(n-A)>n**n
  # Avoid huge rational powers: (1-x)^q <=1/(1+q*x), an exact
  # Bernoulli consequence, provides a compact conservative density bound.
- density=F(q)*M/(p+F(q)*M)
+ U=p-1
+ density=F(U,p)*F(q)*M/(U+F(q)*M)
  # A sharper rational exponential bound uses (1-x)^q <=(1+x)^(-q)
  # and truncates the positive binomial series at a fixed degree.
  scale=2**128
- x=F((M/p*scale).__floor__(),scale)
- assert 0<x<=M/p
+ x=F((M/U*scale).__floor__(),scale)
+ assert 0<x<=M/U
  positive_sum=sum((F(comb(q,j))*x**j for j in range(min(q,32)+1)),F(0))
- density=max(density,1-1/positive_sum)
+ density=max(density,F(U,p)*(1-1/positive_sum))
  J=h.ceil(p*density)
  assert 0<J<=p
  logL,_=c.narrow_log2(F(L))
@@ -45,13 +46,13 @@ def certificate(b,rho=F(1,2),C=2):
              seed_moments=s,box_list_bits=box_L.bit_length(),list_log2_lower=c.decimal_lower(logL),
              density_decimal_lower=c.decimal_lower(density,8),
              exact_eta=str(F(A-K,n)),label_lower_bound_sha256=c.digest_integer(J),
-             list_lower_bound_sha256=c.digest_integer(L),direction_condition=True,strict_elias=True)
+             list_lower_bound_sha256=c.digest_integer(L),direction_condition=True,strict_elias=True,exact_far_agreement=A-1)
 
 
 def main():
  start=time.monotonic();rows=[certificate(b) for b in (521,1279,2203,3217,4423)]
  out=dict(status='passed',fixtures=rows,seconds=time.monotonic()-start,
-          scope='Exact finite prime-field certificates at rate1/2 and parameterC2. Floating choices only choose integer parameters; all mathematical inequalities, counts, primality and displayed density lower bounds are verified exactly. Not a convergence proof or a prescribed-domain result.')
+          scope='Far-point multiplicative-padding certificates with p-1 label universe. Exact finite prime-field certificates at rate1/2 and parameterC2. Floating choices only choose integer parameters; all mathematical inequalities, counts, primality and displayed density lower bounds are verified exactly. Not a convergence proof or a prescribed-domain result.')
  Path(__file__).with_name('near_unit_density_verification.json').write_text(json.dumps(out,indent=2)+'\n')
  print(json.dumps(out,indent=2))
 if __name__=='__main__':main()

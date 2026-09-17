@@ -49,7 +49,8 @@ certificates sharpen the finite bounds.
 We also separate list size from the number of nearby points on an
 affine line. At polylogarithmic block length and gap
 $\Theta(1/\log p)$, the fraction of nearby field parameters can tend to
-one, with no correlated agreement. An anchored lift and padding construction
+one, even though the line contains a word one coordinate beyond the
+nearby radius, with no correlated agreement. An anchored lift and padding construction
 gives the same failure at an exactly fixed positive rate and gap, at
 arbitrarily large lengths, even when every nearby point on the line
 has a unique nearby codeword. The necessary coefficient of a linear
@@ -129,8 +130,8 @@ characteristic-based Elias radius. The line constructions give a
 corresponding obstruction to the proposed coefficient multiplying
 $n$ in an exceptional-parameter bound. The failure can be nearly total:
 at polylogarithmic length and gap $\Theta(1/\log p)$, the fraction of
-nearby parameters tends to one, although no common agreement explanation
-exists. Choosing the gap constant appropriately makes the proposed
+nearby parameters tends to one, although the line contains a word one
+coordinate beyond the radius and no common agreement explanation exists. Choosing the gap constant appropriately makes the proposed
 fraction tend to zero. Thus being close to the code for a random linear
 combination need not indicate common agreement on a large coordinate set.
 These results do not establish superlinear growth in $n$ at one fixed
@@ -269,8 +270,9 @@ $\Theta(\log p)$ and gap $\Theta(1/\sqrt{\log p\,\log\log p})$.
 The proposed numerical bound predicts only $p^{o(1)}$ nearby parameters
 there, compared with an actual count of order $p$.
 Theorem~\ref{fg:near-unit-density} makes the nearby fraction tend to one,
-at polylogarithmic length and gap $\Theta(1/\log p)$. Choosing its
-constant appropriately makes the proposed fraction tend to zero.
+at polylogarithmic length and gap $\Theta(1/\log p)$, while retaining a
+word one coordinate beyond the radius. Choosing its constant appropriately
+makes the proposed fraction tend to zero.
 
 \paragraph{An obstruction that persists at a fixed gap.}
 The gap in Theorem~\ref{thm:informal} shrinks with $n$. To address

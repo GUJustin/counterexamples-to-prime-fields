@@ -1,6 +1,9 @@
 # Dense nearby-parameter sets by choosing the padding direction
 
-September 17, 2026. Self-audited proof with passing exact finite check; extends AVERAGED_PADDING.md.
+September 17, 2026. Historical additive-offset proof with passing exact finite check. The final
+manuscript uses FAR_POINT_PADDING.md instead: it removes the direction
+union-bound condition and guarantees a far point, with p-1 in the union
+formula. The argument below remains valid as a separate construction.
 
 ## Removing the padding-size restriction
 
