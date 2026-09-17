@@ -1,0 +1,82 @@
+[
+  {
+    "r": 4,
+    "p": 17,
+    "n": 16,
+    "primitive_root": 3,
+    "interpolation_subsets": 1820,
+    "maximum_agreement": 6,
+    "maximizing_polynomials": 22,
+    "complete": true
+  },
+  {
+    "r": 1,
+    "p": 65521,
+    "n": 4,
+    "primitive_root": 41224,
+    "interpolation_subsets": 4,
+    "maximum_agreement": 1,
+    "maximizing_polynomials": 4,
+    "complete": true
+  },
+  {
+    "r": 2,
+    "p": 65521,
+    "n": 8,
+    "primitive_root": 57852,
+    "interpolation_subsets": 28,
+    "maximum_agreement": 2,
+    "maximizing_polynomials": 28,
+    "complete": true
+  },
+  {
+    "r": 3,
+    "p": 65521,
+    "n": 12,
+    "primitive_root": 53059,
+    "interpolation_subsets": 220,
+    "maximum_agreement": 4,
+    "maximizing_polynomials": 3,
+    "complete": true
+  },
+  {
+    "r": 4,
+    "p": 65521,
+    "n": 16,
+    "primitive_root": 61640,
+    "interpolation_subsets": 1820,
+    "maximum_agreement": 4,
+    "maximizing_polynomials": 1820,
+    "complete": true
+  },
+  {
+    "r": 5,
+    "p": 65521,
+    "n": 20,
+    "primitive_root": 16095,
+    "interpolation_subsets": 15504,
+    "maximum_agreement": 5,
+    "maximizing_polynomials": 15504,
+    "complete": true
+  },
+  {
+    "r": 6,
+    "p": 65521,
+    "n": 24,
+    "primitive_root": 49491,
+    "interpolation_subsets": 134596,
+    "maximum_agreement": 8,
+    "maximizing_polynomials": 9,
+    "complete": true
+  },
+  {
+    "r": 7,
+    "p": 65521,
+    "n": 28,
+    "primitive_root": 22734,
+    "interpolation_subsets": 1184040,
+    "maximum_agreement": 8,
+    "maximizing_polynomials": 70,
+    "complete": true
+  }
+]

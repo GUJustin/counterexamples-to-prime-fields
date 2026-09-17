@@ -249,3 +249,15 @@ needs guarded saved replay before citation. Multiplicative orbits of
 true maximizers may supply a boundary list, but small-orbit candidates
 reduce to low-degree problems on mu_(4r) and remain an obstruction.
 Do not assert ordinary CA failure from the recovered full-set MCA count.
+
+Saved guarded exhaustive Dickson quotient census in quotient_scan.cpp,
+run_quotient_scan.py, quotient_scan_results.json, resource record. For
+r=1..7 on mu_(4r) over65521, degree<r maximum agreements are
+1,2,4,4,5,8,8, all strictly below3r/2. Complete interpolation enumeration
+uses constant memory; build -UNDEBUG is required. The p17 fixture
+independently reproduces maximum6 with22 maximizers, replacing the
+earlier unsaved observation. BOUNDARY_TRANSFER.md proves specialization
+to characteristic-zero upper bounds and a Hadamard norm bound excluding
+the same supports at all sufficiently large primes. Thus full-word
+maximizers eventually cannot have orbit<=7. This is NOT an unbounded
+orbit theorem and remains a research note, not a main-paper claim.

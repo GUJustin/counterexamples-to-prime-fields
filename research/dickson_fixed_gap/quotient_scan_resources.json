@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/dickson_fixed_gap/run_quotient_scan.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.1150806670011661,
+  "peak_rss_kib": 20640,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}
