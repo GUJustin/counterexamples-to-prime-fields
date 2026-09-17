@@ -528,6 +528,21 @@ family has a shrinking gap. Our fixed-gap family preserves a fixed finite
 list of witnesses as $n$ grows; it does not bound the full decoding list
 by that constant. Neither construction contradicts such a polynomial bound.
 
+The current Dao--Kominers--Thaler paper~\cite{dkt2026} gives, above its
+first-order curve by margin $\eta_1$, list bound
+$O_\rho(n/\eta_1^2)$ and full agreement-set MCA exceptional count
+$O_\rho(n^2/\eta_1^4)$ in sufficiently large characteristic. Its capacity
+bounds have exponents depending on the fixed capacity gap. Our examples
+do not show these block-length exponents are necessary: even a
+superlinear exceptional-count lower bound at one fixed positive gap
+remains open here. The large gap-dependent coefficient in our linear
+lower bound must not be confused with a growing exponent of $n$.
+Likewise, optimality of a specified interpolation dimension count is a
+statement about that proof method, not an intrinsic list or MCA lower
+bound. The capacity gap and the margin above the first-order curve are
+different parameters.
+
+
 Sections~\ref{sec:lists}--\ref{sec:actual-list} prove the general list
 and line results. Section~\ref{sec:circle-overview} gives finite circle
 examples. Section~\ref{sec:snark-security} explains what these results
@@ -5902,6 +5917,12 @@ Andr\'as S\'ark\"ozy and G\'abor N. S\'ark\"ozy.
 \newblock On the size of partial block designs with large blocks.
 \newblock \emph{Discrete Mathematics}, 305:264--275, 2005.
 \newblock \href{https://doi.org/10.1016/j.disc.2005.09.014}{doi:10.1016/j.disc.2005.09.014}.
+
+\bibitem{dkt2026} Q. Dao, S. D. Kominers, and J. Thaler.
+\emph{Reed--Solomon Codes Beyond Johnson: Efficient Decoding and Smaller
+Cryptographic Proofs}. Cryptology ePrint Archive, Report 2026/2056,
+September 2026. The 145-page version retrieved September 17, 2026.
+\url{https://eprint.iacr.org/2026/2056}.
 
 \end{thebibliography}
 \end{document}

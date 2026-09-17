@@ -1,5 +1,8 @@
 # Direct comparison with a recovered coauthor draft
 
+**Superseded for current theorem statements by EPRINT_2056_COMPARISON.md.**
+The public ePrint has quadratic/fourth-power first-order gap bounds.
+
 Recovered September17 from the continuing Dropbox sync. This supersedes
 the older excerpt-only comparison for the statements below, but is NOT
 a claim that the recovered file is the user's latest version.

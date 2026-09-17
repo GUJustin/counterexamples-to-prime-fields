@@ -28,10 +28,11 @@ translation-stable nonmonomial jet spaces. We also account for the exact
 finite-length weights and coefficient cutoff: in the full-coefficient
 monomial model, even multiplicity growing with block length cannot lower
 the asymptotic threshold. Finite-length corrections permit only a
-constant number of agreement coordinates of improvement. Within the unchanged
-first-order interpolation and reconstruction bounds, optimizing monomial supports or translation-stable nonmonomial
-jet spaces also cannot improve the cubic list-budget and
-fifth-power MCA-budget dependence on the margin above this threshold.
+constant number of agreement coordinates of improvement. For historical comparison, optimizing monomial supports or
+translation-stable nonmonomial jet spaces cannot improve the cubic
+list-budget and fifth-power MCA-budget dependence in the September 10
+draft's specified reconstruction formulas. These are not converses for
+the current ePrint, which has improved quadratic and fourth-power bounds.
 For full-coefficient monomial sources, these cost bounds hold at finite
 length with an explicit corrected margin, uniformly in multiplicity. An explicit high-rate support optimization gives the sharp continuum
 threshold above half rate, improving a known sufficient curve at every
@@ -40,6 +41,14 @@ finite certificates instantiate this improvement.
 These are statements about a specified dimension-counting method, not
 intrinsic lower bounds on Reed--Solomon lists or proximity gaps.
 \end{abstract}
+
+\noindent\textbf{Version distinction.} The current 145-page ePrint
+2026/2056~\cite{DKTcurrent} proves first-order list and MCA bounds
+$O_\rho(n/\eta_1^2)$ and $O_\rho(n^2/\eta_1^4)$, respectively.
+Section~\ref{sec:gap-costs}'s cubic/fifth-power budget converse concerns
+only the explicitly stated older reconstruction formulas. It does not
+establish tightness of these current bounds. The current ePrint also
+acknowledges the high-rate refinement audited in Section~\ref{sec:high-rate}.
 
 \noindent\textit{Provenance.} The fixed-multiplicity proof and high-rate
 certificate construction are recovered from a September 13 research draft.
@@ -511,5 +520,10 @@ quadratic exceptional-count bound for first-order MCA.
 Agreement: From Johnson to Capacity}. September 2026 working draft.
 The sufficient curve used here was checked in the recovered 105-page
 version dated September 10; this does not assert it is the latest version.
+\bibitem{DKTcurrent} Q. Dao, S. D. Kominers, and J. Thaler.
+\emph{Reed--Solomon Codes Beyond Johnson: Efficient Decoding and Smaller
+Cryptographic Proofs}. Cryptology ePrint Archive, Report 2026/2056.
+145-page version retrieved September 17, 2026.
+\url{https://eprint.iacr.org/2026/2056}.
 \end{thebibliography}
 \end{document}

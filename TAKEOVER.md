@@ -2582,3 +2582,24 @@ not a general constant-list theorem, and does not treat punctured domains.
 Exact character branches and orbit identities pass at eight primes.
 Next intrinsic search should change the polynomial family or domain
 substantially rather than merely optimize words on this full-domain bank.
+
+## September 17: CURRENT EPRINT RETRIEVED; quantitative comparison corrected
+
+The public145-page ePrint2026/2056 was successfully retrieved using the
+normal download query after plain URL403. SHA256
+b67c188ec477b6063caf9c1c06b214c71e358ff09b9517adcdb1db212ea2700a.
+Read-only snapshot stays ignored under tmp/eprint-2056. Current source
+comparison is EPRINT_2056_COMPARISON.md, superseding version7 for theorem
+statements. Theorem1.1 has eta1^-2 lists and eta1^-4 MCA, not the older
+eta1^-3/eta1^-5. Proposition5.10 has graded challenge counts, and the
+capacity characteristic guard is p>k-1. Page47 already acknowledges the
+high-rate curve refinement. Do not present our old-budget converse as
+current-theorem tightness or the high-rate refinement as absent from
+the current paper.
+
+The note abstract and first-page notice, legacy cost statements, README,
+and comparison documents now make this distinction explicit. Main paper
+related work now cites the public ePrint and states the missing intrinsic
+lower bounds against its correct powers. Whole145-page proof and Lean
+formalization have not been independently audited here. The user's
+intrinsic tightness target remains unresolved.

@@ -1,5 +1,10 @@
 # Quarter-rate inverse-gap costs of the unchanged first-order ledger
 
+**Current-version caution (September17):** ePrint2026/2056 has improved
+quadratic/fourth-power first-order gap bounds and graded challenge tests.
+The cubic/fifth-power budget statements here apply only to the older
+September10 reconstruction formulas. See ../prime_field_tightness/EPRINT_2056_COMPARISON.md.
+
 September 17, 2026. New consequence of the audited support converse.
 This establishes sharp orders for a specified proof ledger, not for
 actual Reed–Solomon list sizes or exceptional-challenge counts.

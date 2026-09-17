@@ -1,5 +1,10 @@
 # Exact finite-length inverse-margin costs
 
+**Current-version caution (September17):** ePrint2026/2056 has improved
+quadratic/fourth-power first-order gap bounds and graded challenge tests.
+The cubic/fifth-power budget statements here apply only to the older
+September10 reconstruction formulas. See ../prime_field_tightness/EPRINT_2056_COMPARISON.md.
+
 September 17, 2026. This extends the leading-coefficient cost converse
 using the already audited exact finite-length reduction. It concerns
 full-coefficient-prefix monomial sources, not arbitrary nonmonomial

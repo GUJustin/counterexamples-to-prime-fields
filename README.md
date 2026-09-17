@@ -8,12 +8,15 @@ Working draft by Justin Thaler, September 17, 2026.
 is 158 pages with one-inch margins. A separate
 [18-page first-order tightness note](research/first_order_support_audit/note/main.pdf)
 proves the sharp quarter-rate threshold for the specified interpolation
-framework, and sharp inverse-margin powers for its unchanged list and MCA
-bounds. These method limitations include translation-stable nonmonomial
+framework. Its cubic/fifth-power budget converse concerns **only the
+September 10 draft's older reconstruction formulas**: the current
+[ePrint 2026/2056](https://eprint.iacr.org/2026/2056) already improves these
+to quadratic/fourth-power bounds. The support limitations include translation-stable nonmonomial
 jet spaces. For full-coefficient monomial sources, an exact finite-length
 extension uses an explicit corrected margin, uniformly in multiplicity.
 The audited high-rate shape also yields a strict agreement-curve
-improvement at every rate above `8-3*sqrt(6)`. These are not intrinsic
+refinement at every rate above `8-3*sqrt(6)`, already acknowledged by the
+current ePrint. [Current-paper comparison](research/prime_field_tightness/EPRINT_2056_COMPARISON.md) records these distinctions. These are not intrinsic
 list-size or exception-count lower bounds.
 [Research status](research/prime_field_tightness/STATUS.md) distinguishes
 proved results from open targets. No better.codes improvement is claimed.
