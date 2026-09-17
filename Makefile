@@ -177,3 +177,8 @@ verify-binomial-branch-classification:
 # Optional research fixtures use NumPy; FFT output is diagnostic only.
 verify-binomial-branch-fixtures:
 	$(PYTHON) research/two_coset_candidate_lists/check_branches.py
+
+.PHONY: verify-unique-boundary-amplification
+verify: verify-unique-boundary-amplification
+verify-unique-boundary-amplification:
+	$(PYTHON) research/prime_field_tightness/check_unique_boundary_amplification.py

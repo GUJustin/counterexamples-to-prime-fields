@@ -2096,3 +2096,47 @@ resolve the large-prime fixed-gap lower-bound target. Do not spend the
 remaining horizon only expanding restricted upper-bound appendices.
 No new paper appendix: manuscript remains157pages at the previously
 verified build. No live jobs. Continue substantive research to22:00UTC.
+
+## 2026-09-17 13:45 UTC — ordinary-CA amplification strengthened
+
+Previous turn was progress: commit20004eb071973b45272ec5bb986ab1682c09b7cd
+saved the restricted binomial-branch bound and its checks. Current turn
+proves/checks a stronger transfer for NEAREST source lists, kept in notes.
+
+UNIQUE_BOUNDARY_AMPLIFICATION.md: source maximum agreement M>=k+1,
+complete nearest list L, pool U at threshold k+1<=T<=M, padding q.
+If p>=N+q+(k-1)binom(U,2) and
+(qU+binom(q,2)U^2)/p+binom(N+q,M+1)/p^(M+1-T)<1,
+there is a same-prime line with EXACTLY qL nearby labels, all uniquely
+decodable at agreement M+1. Every other label, including0, has maximum
+agreement M. Thus no ordinary CA at the threshold. Far/near separation
+is only one coordinate; no global list-size bound follows.
+
+Proof separates every pool evaluation, chooses offsets with all pool
+labels distinct/nonzero, and excludes all outside-pool candidates at
+all labels via a support union bound. Unlike the older unique-padding
+lemma, no condition q<A-k and no degree bound on the received word is
+needed. With q=N rate halves exactly, but gap is eta/2+1/(2N); do not
+erase this quantifier distinction. Polynomial U from a cited capacity
+list theorem suffices over superpolynomial primes; that is an explicit
+dependency. p>=8N^2*4^N is an unconditional sufficient cutoff via the
+trivial interpolation pool bound. Missing ingredient: growing fixed-gap
+nearest lists in sufficiently large prime fields, still not found.
+
+check_unique_boundary_amplification.py independently exhausts all labels
+and all determining pairs overF263 andF2003. Exact near counts10 and21;
+all other253 and1982 labels have agreement3, nearby agreement4. The
+second source has polynomial interpolation degree6, exceeding maximum
+agreement3. An additional exhaustive343-offset F7 fixture gives96 good
+profiles and42 outside-pool failure cases. All pass in0.56s/<15MiB.
+Checker added to make verify; no manuscript expansion (still157pages).
+
+Next proposed bounded pilot is DEFORMABLE_DICKSON_PILOT_PLAN.md. It
+allows ALL nodes, received symbols and candidate coefficients to deform,
+unlike the existing fixed-cyclotomic-domain tests. Only p17 and p41
+initially: compute first p^2-lift systems, save a correction or exact
+left-kernel obstruction, and independently replay. This has NOT run yet.
+The archive's analogous ternary bank pilot already has a positive finite
+case and later unramified obstruction; do not redo that census or infer
+it settles the different Dickson system. No live numerical/build jobs.
+Continue to18:00 Eastern=22:00UTC.

@@ -281,3 +281,34 @@ Exact checks:26 root-filter/constant-mask/residual-fiber fixtures and
 26104 sign-pattern coefficient checks pass. Fourier diagnostics are
 floating point and are not used as proof certificates. The manuscript
 remains157pages; this family-specific result is kept in research notes.
+
+## Ordinary CA and unique nearby points from nearest lists, 13:45 UTC
+
+UNIQUE_BOUNDARY_AMPLIFICATION.md extends the interpolation-pool compiler
+to arbitrary source words and arbitrary padding sizes, using a union
+bound to exclude every outside-pool candidate at every scalar label.
+Let a source word on N points have maximum agreement M>=k+1 and complete
+nearest list L. With U candidates at an intermediate threshold T,
+k+1<=T<=M, the explicit sufficient conditions are
+
+    p>=N+q+(k-1)*binom(U,2),
+    (q*U+binom(q,2)*U^2)/p+binom(N+q,M+1)/p^(M+1-T)<1.
+
+The output line has EXACTLY qL nearby labels, each with exactly one
+nearby codeword and maximum agreement M+1. Every other label, including0,
+has maximum agreement M. This implies ordinary-CA failure, but only a
+one-coordinate far/near separation. It is not a global list-size bound.
+
+For q=N, rate halves exactly; gap becomes eta/2+1/(2N), not exactly
+eta/2. With polynomial U at a looser fixed-gap threshold and
+p=N^{omega(1)}, the hypotheses hold eventually. Importing such a bound
+on U from a capacity list theorem is an explicit external dependency.
+An exponential-in-N sufficient field cutoff is available without it.
+The missing source now is a growing NEAREST list; arbitrary lists are
+insufficient for this ordinary-CA version.
+
+Complete line replays pass overF263 andF2003, including a source of
+interpolation degree6 but maximum agreement3. They give exactly10 and21
+unique nearby labels. All343 offsets in a separate small F7 fixture are
+also exhausted. Main-paper length stays157; the compiler is kept in the
+research notes pending a growing source family.

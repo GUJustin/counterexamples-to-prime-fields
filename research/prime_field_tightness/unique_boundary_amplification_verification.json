@@ -1,0 +1,392 @@
+{
+  "status": "passed",
+  "fixtures": [
+    {
+      "p": 263,
+      "N": 5,
+      "n": 10,
+      "k": 2,
+      "M": 3,
+      "A": 4,
+      "T": 3,
+      "L": 2,
+      "U": 2,
+      "q": 5,
+      "failure_bound": "260/263",
+      "source_word_degree": 3,
+      "domain": [
+        261,
+        262,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "f": [
+        255,
+        262,
+        0,
+        1,
+        8,
+        195,
+        170,
+        118,
+        85,
+        197
+      ],
+      "g": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "nearest_source_polynomials": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "pool": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "nearby": {
+        "71": [
+          [
+            0,
+            1
+          ]
+        ],
+        "73": [
+          [
+            0,
+            1
+          ]
+        ],
+        "80": [
+          [
+            0,
+            4
+          ]
+        ],
+        "94": [
+          [
+            0,
+            4
+          ]
+        ],
+        "97": [
+          [
+            0,
+            1
+          ]
+        ],
+        "109": [
+          [
+            0,
+            4
+          ]
+        ],
+        "150": [
+          [
+            0,
+            1
+          ]
+        ],
+        "165": [
+          [
+            0,
+            4
+          ]
+        ],
+        "184": [
+          [
+            0,
+            1
+          ]
+        ],
+        "202": [
+          [
+            0,
+            4
+          ]
+        ]
+      },
+      "maximum_agreement_histogram": {
+        "3": 253,
+        "4": 10
+      },
+      "unique_nearby_count": 10,
+      "far_at_zero": true,
+      "source_rate": "2/5",
+      "target_rate": "1/5",
+      "source_gap": "1/5",
+      "target_gap": "1/5",
+      "all_labels_replayed": 263,
+      "determining_pairs_per_label": 45,
+      "attempts": 1,
+      "seconds": 0.013477917003910989
+    },
+    {
+      "p": 2003,
+      "N": 7,
+      "n": 14,
+      "k": 2,
+      "M": 3,
+      "A": 4,
+      "T": 3,
+      "L": 3,
+      "U": 3,
+      "q": 7,
+      "failure_bound": "1211/2003",
+      "source_word_degree": 6,
+      "domain": [
+        2000,
+        2001,
+        2002,
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "f": [
+        1976,
+        1995,
+        2002,
+        0,
+        1,
+        8,
+        99,
+        78,
+        585,
+        1425,
+        1561,
+        294,
+        1964,
+        947
+      ],
+      "g": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "nearest_source_polynomials": [
+        [
+          0,
+          1
+        ],
+        [
+          1997,
+          7
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "pool": [
+        [
+          0,
+          1
+        ],
+        [
+          1997,
+          7
+        ],
+        [
+          0,
+          4
+        ]
+      ],
+      "nearby": {
+        "48": [
+          [
+            0,
+            1
+          ]
+        ],
+        "75": [
+          [
+            0,
+            4
+          ]
+        ],
+        "96": [
+          [
+            1997,
+            7
+          ]
+        ],
+        "449": [
+          [
+            0,
+            1
+          ]
+        ],
+        "470": [
+          [
+            0,
+            4
+          ]
+        ],
+        "485": [
+          [
+            1997,
+            7
+          ]
+        ],
+        "584": [
+          [
+            0,
+            1
+          ]
+        ],
+        "602": [
+          [
+            0,
+            4
+          ]
+        ],
+        "614": [
+          [
+            1997,
+            7
+          ]
+        ],
+        "1066": [
+          [
+            0,
+            1
+          ]
+        ],
+        "1096": [
+          [
+            0,
+            4
+          ]
+        ],
+        "1120": [
+          [
+            1997,
+            7
+          ]
+        ],
+        "1423": [
+          [
+            0,
+            1
+          ]
+        ],
+        "1438": [
+          [
+            0,
+            4
+          ]
+        ],
+        "1447": [
+          [
+            1997,
+            7
+          ]
+        ],
+        "1717": [
+          [
+            0,
+            1
+          ]
+        ],
+        "1741": [
+          [
+            0,
+            4
+          ]
+        ],
+        "1759": [
+          [
+            1997,
+            7
+          ]
+        ],
+        "1929": [
+          [
+            0,
+            1
+          ]
+        ],
+        "1941": [
+          [
+            0,
+            4
+          ]
+        ],
+        "1947": [
+          [
+            1997,
+            7
+          ]
+        ]
+      },
+      "maximum_agreement_histogram": {
+        "3": 1982,
+        "4": 21
+      },
+      "unique_nearby_count": 21,
+      "far_at_zero": true,
+      "source_rate": "2/7",
+      "target_rate": "1/7",
+      "source_gap": "1/7",
+      "target_gap": "1/7",
+      "all_labels_replayed": 2003,
+      "determining_pairs_per_label": 91,
+      "attempts": 1,
+      "seconds": 0.31149529100366635
+    }
+  ],
+  "exhaustive_offsets": {
+    "p": 7,
+    "all_offset_tuples": 343,
+    "good_two_distance_profiles": 96,
+    "offsets_with_outside_pool_nearby_candidates": 42,
+    "all_labels_per_offset": 7,
+    "scope": "Exhaustive mechanism check; this small field does not satisfy the sufficient union-bound hypothesis."
+  },
+  "scope": "All scalar labels and all determining pairs replayed, giving complete maximum-agreement and nearby-list profiles. One source word has interpolation degree greater than its maximum agreement. Finite checks supplement the proof."
+}

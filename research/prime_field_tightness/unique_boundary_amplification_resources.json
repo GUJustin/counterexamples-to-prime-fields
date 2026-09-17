@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/prime_field_tightness/check_unique_boundary_amplification.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.556109083998308,
+  "peak_rss_kib": 3488,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 180
+}
