@@ -1,0 +1,11 @@
+{
+  "command": [
+    "tmp/binomial-sections"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.6499315829969419,
+  "peak_rss_kib": 2800,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

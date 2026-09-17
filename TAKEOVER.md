@@ -519,3 +519,24 @@ positions by Vandermonde, so2^r disjoint choices satisfylog2L=r<1/eta.
 Removing the log needs exponentially many compatible relations, not
 just one high-multiplicity pair. Existing Gram factorial savings are
 already included. No lower-bound improvement or manuscript edit here.
+
+New attempted short-domain character route: p=2rk+1 prime, section
+0<=j<r, G(X)=sum_i binom(rk+j,ri+j)X^i, and P_h=G(hX)-X^k for
+h inmu_k. Exactly k distinct degree<k candidates. On eachmu_k coset,
+choose the modal value of G minusX^k as received symbol; all candidates
+get the same agreement count. Selecting topc cosets givesn=ck and
+rate1/c. If r,k grew and topc modal sum M/k>1+c*eta at fixedc,eta,
+this would give unbounded fixed-gap lists withn=o(p). This received
+word is generally outside the low-degree boundary-word setting.
+
+Scanned726 cases: r2..80, k8,11,16,23,32,47,64,97,128, sectionsamong
+0,1,floor(r/2),r-1. Initial184 section1 cases had nofour-coset positive
+surplus except r2. Extendedscan has finitepositive higher-section
+examples, but rate1/4 below-Elias examples remain only r2,j1 (known
+Dickson). Atc8,16,32, below-Elias casesnumber30,143,240 and largest
+observedk11,16,32: no growing-family evidence. Independentinteger-
+binomial checks verifyallcosets and allcandidateorbits infivefixtures.
+Example r78,j0,k8,p1249,n64,A16 hasrate/gap1/8 andlist8; no universal
+bound violation follows. BINOMIAL_SECTION_SEARCH.md and allcensus/
+verification sources/results inresearch/dickson_fixed_gap/. No
+manuscript addition, no active numerical job, no asymptotic claim.
