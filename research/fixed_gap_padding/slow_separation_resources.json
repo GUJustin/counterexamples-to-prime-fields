@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/fixed_gap_padding/verify_slow_separation.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 2.8263444580006762,
+  "peak_rss_kib": 20192,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

@@ -1178,3 +1178,32 @@ parameterchecker, THEN integrate. These are hypotheses/calculations,
 not yet manuscriptclaims. General slowlygrowings mayyieldarbitrarily
 slowlyvanishingκ but avoid assertingwithoutuniformproof.
 Goalactiveuntil12:30UTC.
+
+## 2026-09-17 07:04 UTC — slowly vanishing relative separation integrated
+
+Completed the proposed parameter analysis. New Cor4.15 in
+slow_separation.tex, proof audit SLOW_SEPARATION.md:
+s→infinity, s^(5/3)log2b=o(b), n=sb/c+O(1), r=floor(s^(1/3)),
+h=ceil(3(r+1)b/log2s),D=K+s,N=D+h. Supportlog>=(2-o1)rb;
+momentcostO(s²logb)=o(rb). Uniformpaircap e=h-s-1~h,
+r²e/(q-r+1)=(3c/(1-rho)+o1)/log2s. Existingmulti-matchlemma yields
+J/p>=1-(3c/(1-rho)+o1)/log2s; eta~c/b; farκeta whereκ=r/(s+r)~s^-2/3,
+r→infinity. NoCA,strictElias,o(n)graphconcurrency. Prescriptiono(p)
+ifc>c2Hrho. Foranyepsilon(p)>0→0, take
+s=floor(min(epsilon^-3/4,b^1/4)); κ>epsilon eventually andJ/p→1.
+Intro/READMEstate this clearly; fixedpositiveκ withdensity→1 stillopen.
+Qualitative arbitrarybuffer result also follows fromdiagonalization;
+newparameterproof suppliesexplicitlengths/growingdeficits, notnewmechanism.
+
+Companionone-matchchoice under s²logb=o(b): h=ceil2b/log2s,r1,
+κ=1/(s+1), density>=1-exp[-((1-rho)/(2c)-o1)s log2s]. Samelemma.
+Allthesedensefamilies stillhaveofflinelist>p: A=D+rsubsetsofthecore,
+s+r-1moments,supportlog(2-o1)rb,momentcosto(rb). Notactual-listseparation.
+
+verify_slow_separation.py audits7largeformalparameterfixturesusing
+integerbitbounds (b=2^ell,s=ell,ell32..2048), including offlinelists
+andone-matchvariant. AlsoexactM9689 instance:n62978,K31489,A31504,
+r2,s13,m60570,J/p>.00563848,prescription<2^-5000,strictElias.
+Thefiniteinstancevalidatesthemechanism,NOTnearunitdensityatthatprime.
+PASS~2.9sec22MiB. Makefile81checks. PDF124pagesclean; rendered38/39,
+finalpage39inspected. Noactiveprocess. Goalactiveuntil12:30UTC.

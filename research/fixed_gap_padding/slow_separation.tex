@@ -1,0 +1,112 @@
+\paragraph{The relative separation may vanish arbitrarily slowly.}
+The parameter choice in Corollary~\ref{fg:growing-far} gives a faster
+approach to density one. A more slowly growing seed surplus permits
+a larger separation relative to $\eta$. The following is another consequence of the same padding
+lemma, with explicit dependence on a freely chosen schedule.
+
+\begin{corollary}[Slowly vanishing relative separation]
+\label{fg:slow-separation}
+Fix rational $\rho\in(0,1)$ and $c>H_2(\rho)$. Write $b=\log_2p$,
+and let $s=s(b)$ be any positive integer function satisfying
+\[
+ s\longrightarrow\infty,\qquad s^{5/3}\log_2b=o(b).
+\]
+For every sufficiently large prime, there are a code of exact rate
+$\rho$ and a received line with
+\[
+ n=(1/c+o(1))sb,\qquad \eta=(c+o(1))/b,\qquad
+ \frac Jp\ge1-\frac{3c/(1-\rho)+o(1)}{\log_2s}.
+\]
+The parameter-zero word is exactly $r/n=\kappa\eta$ outside the radius,
+where
+\[
+ r=\lfloor s^{1/3}\rfloor\to\infty,
+ \qquad \kappa=\frac r{s+r}\sim s^{-2/3}.
+\]
+The radius is strictly below Elias, and there is no correlated agreement.
+Every affine codeword graph contains only $o(n)$ selected witnesses,
+for every selection of nearby witnesses. If also $c>c_2H_2(\rho)$,
+the numerical prescription $c_1n2^{c_2H_2(\rho)/\eta}$ is $o(p)$.
+\end{corollary}
+\begin{proof}
+Choose $n=sb/c+O(1)$ through denominator multiples for $\rho$, and put
+\[
+ K=\rho n,\quad h=\left\lceil\frac{3(r+1)b}{\log_2s}\right\rceil,
+ \quad D=K+s,\quad t=D+1,\quad m=t+h,\quad N=m-1.
+\]
+Here $h=o(n)$ and
+\[
+ \log_2(N/h)=\tfrac23\log_2s+\log_2\log_2s+O_{\rho,c}(1).
+\]
+Thus the anchored support count has logarithm
+$\log_2\binom Nh\ge h\log_2(N/h)\ge(2-o(1))rb$.
+The first $s$ binomial moment ranges have total logarithm
+$O(s^2\log m)=O(s^2\log b)=o(rb)$, by the schedule condition.
+The anchored class therefore has
+$\log_2L\ge(2-o(1))rb$.
+
+Remove the anchor and use Lemma~\ref{fg:multi-padding} with
+$q=n-N$ new coordinates. The uniform pair cap is
+$e=h-s-1\sim h$, and
+\[
+ \frac{r^2e}{q-r+1}
+ =\frac{3c/(1-\rho)+o(1)}{\log_2s}.
+\]
+In \eqref{fg:multi-simple}, $U^r/L\le2^{-(1-o(1))rb}$ and
+$(U/(R-r+1))^r=1+o(1/\log s)$, since $n,r$ are polynomial in $b$.
+The second-moment ratio is consequently at most
+$\exp((3c/(1-\rho)+o(1))/\log_2s)$.
+Inverting and averaging gives the stated nearby count.
+The global degree-$D$ word gives exact far separation $r/n$;
+$\eta=(s+r)/n$ gives the displayed value of $\kappa$ and strict Elias.
+The incidence bound in Lemma~\ref{lem:ct-quantitative-concurrency}
+gives at most $\lfloor(n-D)/r\rfloor=o(n)$ witnesses on each graph.
+Finally the numerical prescription is
+$p^{c_2H_2(\rho)/c+o(1)}=o(p)$ under the stated condition.
+\end{proof}
+
+If one only requires a one-coordinate far point, the nearby density
+can approach one much faster. Under the stronger schedule condition
+$s^2\log_2b=o(b)$, keep $n=sb/c+O(1)$ but take $r=1$ and
+$h=\lceil2b/\log_2s\rceil$. Then
+\[
+ \kappa=\frac1{s+1},\qquad
+ \frac Jp\ge1-\exp\!\left[-\left(\frac{1-\rho}{2c}-o(1)\right)
+ s\log_2s\right].
+\]
+Indeed, the support logarithm is at least $(2-o(1))b$, the moment
+cost is $o(b)$, and the averaged image bound satisfies $M/p\sim1/h$.
+Lemma~\ref{fg:far-padding} gives the displayed exponent from
+$q/h\sim(1-\rho)s\log_2s/(2c)$. The $1/p$ loss is negligible because
+$s\log s=o(b)$. This choice preserves a larger relative separation
+than the earlier near-unit-density parameter choice, at the cost of
+a slower approach to density one.
+
+In particular, apply Corollary~\ref{fg:slow-separation} to \emph{any}
+prescribed function $\varepsilon(p)>0$
+tending to zero. Taking
+\[
+ s=\left\lfloor\min\{\varepsilon(p)^{-3/4},b^{1/4}\}\right\rfloor
+\]
+satisfies the schedule condition and gives
+$\kappa>\varepsilon(p)$ eventually. Hence requiring a point at least
+$\varepsilon(p)\eta$ outside the radius does not prevent nearby density
+tending to one. This does not settle density tending to one with a
+\emph{fixed positive} separation fraction. The qualitative statement
+can also be obtained by diagonalization from fixed-fraction families;
+the corollary supplies explicit lengths and growing coordinate deficits.
+For example, $s=\lfloor\log_2b\rfloor$ gives
+$n\sim b\log_2b/c$, $\kappa\sim(\log_2b)^{-2/3}$, and
+$J/p\ge1-O(1/\log_2\log_2b)$.
+
+These codes still have global lists larger than $p$. On the core, take
+$(D+r)$-subsets and match $s+r-1$ moments. Their support count has
+logarithm $(2-o(1))rb$, while the moment cost is still
+$O((s+r)^2\log b)=o(rb)$; their common locator prefix yields
+degree-below-$K$ candidates at the desired threshold. Extend the
+received word over the padding. Thus this remains a comparison with
+the numerical prescription, not an actual-list-size separation.
+
+The checker \path{verify_slow_separation.py} audits sufficient integer
+parameter inequalities and an exact prime-field instance; the general
+schedule is justified by the preceding proof.

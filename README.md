@@ -36,6 +36,10 @@ and radii strictly below the paper's characteristic-based Elias radius.
   At half rate, another family has over **99.9999%** nearby parameters
   while one point is `eta/7` outside the radius and the proposed fraction
   tends to zero. The gap still shrinks.
+  Another explicit parameter choice gives nearby density tending to one
+  with a point at least `epsilon(p)*eta` outside for **any prescribed
+  positive `epsilon(p)` tending to zero**. A fixed positive separation
+  fraction at density tending to one remains open.
   At half rate over `2^61-1`, a
   finite example has over **91%** nearby parameters where the numerical
   prescription gives less than **1/1024**. Over `2^127-1`, another has over
