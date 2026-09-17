@@ -126,3 +126,12 @@ n'=8br, exact rate1/8 and gap1/16, with
 Thus r->infinity and r/p->0 suffice. Neither condition on the ratio is
 proved by the orbit argument. The unconditional quadratic ordinary-CA
 result above uses F_(p^2) and does not require this ratio condition.
+
+
+## Exact-gap extension
+
+FIXED_GAP_NORMALIZATION.md and main-paper Corollary N.3 now give ordinary-CA
+quadratic counts at exact rate1/8 and gap1/16, allowing larger extension
+degree. The present theorem retains its stronger quadratic-extension
+restriction. FIELD_DEGREE_REFINEMENT.md records a further degree bound
+awaiting independent checking; that bound is not yet a manuscript claim.

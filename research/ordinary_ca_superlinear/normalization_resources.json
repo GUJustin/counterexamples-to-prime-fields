@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/ordinary_ca_superlinear/verify_normalization.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5663462500015157,
+  "peak_rss_kib": 13280,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

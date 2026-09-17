@@ -954,3 +954,27 @@ The strengthened161-page paper builds without TeX warnings. Updated page8
 and Appendix N on pages157--159 were rendered and visually checked. The
 quadratic ordinary-CA proof is the current main-paper statement; the
 previous quantitative-sieve proof is preserved only as a research variant.
+
+
+## September 17: fixed exact gap for quadratic ordinary-CA failures
+
+Corollary N.3 now gives at least ceil(n^2/8192) labels at exact rate1/8
+and exact gap1/16, with no ordinary correlated agreement. This version
+allows growing extension degree. The quadratic-extension theorem with
+gap bounded below remains separate. Neither is a prime-field or
+first-order tightness result.
+
+Two boundary-preserving operations are proved: a new received value
+outside the current field leaves the maximum unchanged; a common zero
+outside the current field raises dimension and maximum by one. For the
+descended source, Delta=m-r+1, u=13Delta-3r new-value coordinates and
+s=2Delta-r+1 common zeros give source N'=15Delta+1,K'=2Delta+1,M'=3Delta.
+One anchor and Delta challenge coordinates then give n16Delta,K2Delta,
+T3Delta and the quadratic label count. Characteristic remains >K-1.
+
+Independent exhaustive F5/F25 checks cover both preservation operations,
+all selected nearest witnesses, and a negative control showing why an
+inside-field common-zero point is insufficient. All7,383 parameter cases
+pass. The163-page paper builds without warnings; page8 and pages159--161
+were rendered and inspected. A possible polynomial extension-degree
+refinement is recorded separately as pending, not claimed in the paper.

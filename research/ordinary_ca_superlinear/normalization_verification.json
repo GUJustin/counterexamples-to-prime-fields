@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "p": 5,
+  "quadratic_nonresidue": 2,
+  "source_length": 4,
+  "source_dimension": 2,
+  "source_maximum": 2,
+  "source_nearest_list": 6,
+  "maximum_after_extension": 2,
+  "maximum_after_new_value": 2,
+  "maximum_after_external_common_zero": 3,
+  "internal_common_zero_negative_control": 4,
+  "external_common_zero_polynomials_enumerated": 15625,
+  "parameter_cases": 7383,
+  "scope": "Complete independent finite checks of the two individual operations, preservation of every selected nearest witness, and an essential-hypothesis negative control. Iteration and asymptotic conclusions rely on the proved lemmas, not these finite checks."
+}

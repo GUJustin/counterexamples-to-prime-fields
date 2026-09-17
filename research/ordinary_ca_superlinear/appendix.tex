@@ -1,4 +1,4 @@
-\section{Quadratic ordinary correlated-agreement failures in quadratic extensions}
+\section{Quadratic ordinary correlated-agreement failures in large characteristic}
 \label{app:ordinary-ca-superlinear}
 
 Corollary~\ref{cor:quadratic-extension-fixed-gap} concerns full agreement-set
@@ -131,3 +131,105 @@ and the prime-field exact-halving compiler would give superlinear
 full-support MCA failures over prime fields at exact rate $1/8$ and gap
 $1/16$. This ratio condition remains unproved. Details and independent
 small-field checks are in \path{research/ordinary_ca_superlinear/}.
+
+
+\subsection{Fixing both the rate and the gap}
+
+Allowing larger finite extensions permits an exact positive gap as well.
+The following operations preserve the true nearest-codeword boundary;
+their field extensions, rather than just fresh coordinates, are essential.
+
+\begin{lemma}[Boundary-preserving padding]\label{lem:boundary-preserving-padding}
+Let a word $w$ on $N$ distinct points of a finite field $F$ have maximum
+agreement $M\ge K$ with degree-$<K$ polynomials. Keep any selected nearest
+list. The following operations preserve that list as nearest witnesses.
+\begin{enumerate}
+\item If $a\in F$ is outside the domain and $b\notin F$ lies in a finite
+extension, appending $(a,b)$ preserves dimension $K$ and maximum $M$.
+\item If $a\notin F$, replace every old value by $(x-a)w(x)$, append
+$(a,0)$, and increase dimension to $K+1$. The maximum becomes $M+1$;
+replace each selected polynomial $P$ by $(X-a)P$.
+\end{enumerate}
+\end{lemma}
+\begin{proof}
+Maximum agreement cannot increase upon extending the coefficient field,
+since $K$ matching base-field coordinates and values force coefficients
+into $F$. For the first operation, a polynomial with $M+1$ agreements
+would match the new point and at least $M\ge K$ old ones. Its coefficients
+would belong to $F$, contradicting its new value $b$ at $a\in F$.
+
+For the second operation, the displayed polynomials attain $M+1$.
+Suppose a degree-$\le K$ polynomial attained $M+2$. If it matches at $a$,
+dividing by $X-a$ contradicts the old maximum. Otherwise take a set $S$
+of $M+2$ old matches. Modulo the degree-$\le K$ evaluation space on $S$,
+the interpolation condition reads $[xw]-a[w]=0$. This is a linear system
+over $F$, so $a\notin F$ forces both classes to vanish. There are
+polynomials $A,B$ of degree at most $K$ interpolating $xw,w$ on $S$.
+But $A-XB$ has degree at most $K+1$ and at least $M+2\ge K+2$ roots.
+Thus $A=XB$, so $\deg B<K$, contradicting the old maximum.
+\end{proof}
+
+\begin{corollary}[Quadratic ordinary-CA failures at a fixed exact gap]
+\label{cor:ordinary-ca-fixed-gap}
+For unbounded lengths $n$ there are finite fields of characteristic
+$p>n/8-1$ and Reed--Solomon codes of exact rate $1/8$, with a received
+line having at least $\lceil n^2/8192\rceil$ nearby labels at agreement
+$3n/16$, but no ordinary correlated agreement of that size. The capacity
+gap is exactly $1/16$. The radius is strictly below the characteristic-based
+Elias radius for all sufficiently large members.
+\end{corollary}
+\begin{proof}
+Use the descended source from the proof of
+Theorem~\ref{thm:ordinary-ca-superlinear}: length $4r$, dimension $r$,
+true maximum $m\in[3r/2,2r]$, and $r$ selected nearest polynomials over
+$\F_p$, with $p\ge4r+1$ and $r>40$. Put
+\[
+ \Delta=m-r+1,\qquad u=13\Delta-3r,\qquad s=2\Delta-r+1.
+\]
+These are nonnegative integers. First apply the first operation of
+Lemma~\ref{lem:boundary-preserving-padding} $u$ times, and then the second
+operation $s$ times. One may initially pass to $\F_{p^2}$ to provide
+all $u$ fresh first-stage coordinates; each subsequent new value or
+common-zero coordinate is chosen outside the entire current field.
+A tower of quadratic extensions suffices. The resulting source has
+\[
+ N'=15\Delta+1,\qquad K'=2\Delta+1,\qquad M'=3\Delta,
+\]
+and retains $r$ selected nearest polynomials.
+
+An agreement anchor is incident to at least
+$\ell\ge M'r/N'\ge r/6$ candidates. Dividing by its linear factor gives
+an old core of length $15\Delta$, dimension $2\Delta$, and true maximum
+$3\Delta-1$. Append $q=\Delta$ challenge coordinates with direction one,
+retaining direction zero on the core. Enlarge the field if necessary to
+cardinality $Q\ge2N'r$. The same root-count and random-translation
+argument gives at least $q\ell/4\ge\Delta r/24$ nearby labels.
+The final parameters are
+\[
+ n=16\Delta,\qquad K=2\Delta,\qquad T=3\Delta.
+\]
+A zero explaining direction has common agreement at most $3\Delta-1$
+on the core. A nonzero direction has at most $2\Delta-1$ core zeros and
+$\Delta$ padding agreements, again at most $3\Delta-1$.
+Thus ordinary correlated agreement at threshold $T$ is absent.
+
+Since $\Delta\le r+1$ and $\Delta\ge4$, we have $r\ge3\Delta/4$, giving
+\[
+ J\ge\Delta r/24\ge\Delta^2/32=n^2/8192.
+\]
+Also $K-1=2\Delta-1\le2r+1<p$. The exact gap $1/16$ yields the Elias
+inequality for large $p$, as before.
+\end{proof}
+
+This proves that quadratic dependence on length is sometimes unavoidable
+for ordinary correlated-agreement exceptions even at a fixed positive
+capacity gap, in the full large-characteristic field class. The extension
+degree can grow with $n$: Corollary~\ref{cor:ordinary-ca-fixed-gap} is not
+asserted over quadratic extensions or prime fields. Theorem~\ref{thm:ordinary-ca-superlinear}
+retains the stronger quadratic-extension restriction with a gap only
+bounded below. Neither assertion establishes first-order-regime tightness.
+
+Independent exhaustive checks of both preservation operations, including
+a negative control showing failure when the common-zero point is chosen
+inside the current field, are in
+\path{research/ordinary_ca_superlinear/verify_normalization.py}.

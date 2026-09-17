@@ -112,3 +112,17 @@ be proportional to length. This therefore does not resolve the central
 prime-field or first-order tightness questions. See
 `../ordinary_ca_superlinear/PROOF.md` for the full proof and the remaining
 ratio condition that would permit a prime-field transfer.
+
+
+## Exact-gap ordinary-CA normalization
+
+Corollary N.3 strengthens the parameter quantifier: at exact rate1/8 and
+exact capacity gap1/16, at least ceil(n^2/8192) nearby labels coexist with
+no ordinary correlated agreement. Boundary-preserving additions of new
+received values and common zeros normalize the descended nearest list.
+The ambient field is a finite extension of growing degree; it is not
+asserted quadratic or prime. Characteristic still exceeds the message
+degree, so this is within the current paper's large-characteristic
+capacity field class. It proves that quadratic length dependence cannot
+in general be removed even for ordinary CA at one exact positive gap.
+It does not establish first-order-regime tightness or gap-exponent growth.
