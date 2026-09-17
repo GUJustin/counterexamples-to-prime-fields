@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/hermite_johnson_route/check_cubic_jets.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.1534895410004538,
+  "peak_rss_kib": 63504,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

@@ -1,0 +1,128 @@
+[
+  {
+    "p": 7,
+    "fixture": 0,
+    "generic_degree": 3,
+    "singular_pairs": 12,
+    "status": "passed"
+  },
+  {
+    "p": 7,
+    "fixture": 1,
+    "generic_degree": 3,
+    "singular_pairs": 12,
+    "status": "passed"
+  },
+  {
+    "p": 7,
+    "fixture": 2,
+    "generic_degree": 2,
+    "singular_pairs": 6,
+    "status": "passed"
+  },
+  {
+    "p": 7,
+    "fixture": 3,
+    "generic_degree": 1,
+    "singular_pairs": 7,
+    "status": "passed"
+  },
+  {
+    "p": 7,
+    "fixture": 4,
+    "generic_degree": 3,
+    "singular_pairs": 0,
+    "status": "passed"
+  },
+  {
+    "p": 7,
+    "fixture": 5,
+    "generic_degree": 0,
+    "singular_pairs": 14,
+    "status": "passed"
+  },
+  {
+    "p": 11,
+    "fixture": 0,
+    "generic_degree": 3,
+    "singular_pairs": 20,
+    "status": "passed"
+  },
+  {
+    "p": 11,
+    "fixture": 1,
+    "generic_degree": 3,
+    "singular_pairs": 20,
+    "status": "passed"
+  },
+  {
+    "p": 11,
+    "fixture": 2,
+    "generic_degree": 2,
+    "singular_pairs": 10,
+    "status": "passed"
+  },
+  {
+    "p": 11,
+    "fixture": 3,
+    "generic_degree": 1,
+    "singular_pairs": 11,
+    "status": "passed"
+  },
+  {
+    "p": 11,
+    "fixture": 4,
+    "generic_degree": 3,
+    "singular_pairs": 0,
+    "status": "passed"
+  },
+  {
+    "p": 11,
+    "fixture": 5,
+    "generic_degree": 0,
+    "singular_pairs": 22,
+    "status": "passed"
+  },
+  {
+    "p": 13,
+    "fixture": 0,
+    "generic_degree": 3,
+    "singular_pairs": 24,
+    "status": "passed"
+  },
+  {
+    "p": 13,
+    "fixture": 1,
+    "generic_degree": 3,
+    "singular_pairs": 24,
+    "status": "passed"
+  },
+  {
+    "p": 13,
+    "fixture": 2,
+    "generic_degree": 2,
+    "singular_pairs": 12,
+    "status": "passed"
+  },
+  {
+    "p": 13,
+    "fixture": 3,
+    "generic_degree": 1,
+    "singular_pairs": 13,
+    "status": "passed"
+  },
+  {
+    "p": 13,
+    "fixture": 4,
+    "generic_degree": 3,
+    "singular_pairs": 1,
+    "status": "passed"
+  },
+  {
+    "p": 13,
+    "fixture": 5,
+    "generic_degree": 0,
+    "singular_pairs": 26,
+    "status": "passed"
+  }
+]

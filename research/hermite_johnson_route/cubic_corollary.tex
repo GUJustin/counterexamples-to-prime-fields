@@ -1,0 +1,126 @@
+\subsection{Cubic derivative equations also prescribe a unique singular jet}
+\label{sec:hermite-johnson-cubic}
+
+A nonzero cubic has at most one distinct repeated root.  When such a
+root persists with the challenge, it is rational in the coefficients.
+This extends the preceding argument without selecting among several
+possible derivative branches.
+
+\begin{corollary}[Cubic derivative identities]
+\label{cor:hermite-johnson-cubic}
+Retain the domain, received line, degree bound, and definition of bad
+pairs from Theorem~\ref{thm:hermite-johnson-quadratic}.  Let
+$Q(X,z,u,v)\ne0$ have derivative degree at most three, total $(u,v)$
+degree at most $B_0$, and challenge degree at most $H_0$, with unrestricted
+$X$-degree.  Put $h=B_0+H_0$ and
+\[
+ F_x(z,v)=Q(x,z,f_x+zg_x,v)\in F[z,v].
+\]
+Define $S_{\rm ord}$ by $F_x=0$ identically.  Define $S_{\rm jet}$
+to consist of those other coordinates where the nonzero polynomial
+$F_x\in F(z)[v]$ has a repeated root over an algebraic closure of
+$F(z)$.  Write $u=|S_{\rm ord}|$ and $s=|S_{\rm jet}|$.
+
+Suppose $D/n\ge\rho_{\min}>0$ and
+\[
+ A-D\ge\eta n,\qquad
+ A-u\ge\sqrt{Ds/2}+\varepsilon n
+\]
+for fixed positive $\eta,\varepsilon$.  In characteristic zero, or
+characteristic $p>\max\{D,3,B\}$ for the bounded interpolation degree
+$B$ below, there are
+$O_{\rho_{\min},\eta,\varepsilon,B_0,H_0}(n)$ bad labels admitting
+an actual solution $Q(X,z,P,P')=0$.
+
+More precisely, retain $L,e,b,M,T,B,V,c_M$ from
+\eqref{eq:hj-interpolation-parameters}, with $V>sc_M$, and replace
+\eqref{eq:hj-challenge-degree} by
+\begin{equation}
+ H=\left\lfloor\frac{sc_MB(2h+1)}{V-sc_M}\right\rfloor.
+ \label{eq:hj-cubic-challenge-degree}
+\end{equation}
+Then the finite bound~\eqref{eq:hj-finite-bound} holds with its
+singular-incidence term $2dn/(e+1)$ replaced by $4hn/(e+1)$,
+and with its algebraic terms evaluated at these new $B,H,T$.
+The regular-incidence term still uses the original $B_0,H_0$.
+\end{corollary}
+
+\begin{proof}
+Every coefficient of $F_x$ has challenge degree at most $h$.  We show
+that outside at most $4h$ exceptional labels at each nonordinary
+coordinate, every singular match belongs to $S_{\rm jet}$ and has
+one prescribed rational derivative, of numerator and denominator
+degrees at most $2h$.  All degree classifications below are generic
+over $F(z)$; the exceptional sets explicitly include degree drops.
+
+First suppose
+\[
+ F_x=a v^3+b v^2+c v+d,\qquad a\ne0.
+\]
+Set
+\begin{align*}
+ \Delta&=b^2c^2-4ac^3-4b^3d-27a^2d^2+18abcd,\\
+ \Delta_0&=b^2-3ac,\qquad V_0=9ad-bc.
+\end{align*}
+Their challenge degrees are at most $4h,2h,2h$, respectively.
+If $\Delta\ne0$ as a polynomial in $z$, every singular specialization
+lies among its at most $4h$ roots.  This includes leading-coefficient
+zeros: at $a(z)=0$ the expression becomes
+$b(z)^2(c(z)^2-4b(z)d(z))$, which vanishes at a repeated quadratic
+root and at any further degree drop admitting a singular root.
+
+If $\Delta=0$ identically and $\Delta_0\ne0$, exclude the roots of
+$a\Delta_0$, at most $3h$ labels.  At every remaining label the unique
+repeated root is
+\begin{equation}
+ r_x(z)=\frac{V_0(z)}{2\Delta_0(z)}.
+ \label{eq:hj-cubic-repeated-root}
+\end{equation}
+Indeed, writing the cubic over an algebraic closure as
+$a(v-r)^2(v-t)$ with $r\ne t$ gives
+$\Delta_0=a^2(r-t)^2$ and $V_0=2a^2r(r-t)^2$.
+If both $\Delta$ and $\Delta_0$ vanish identically, exclude the roots
+of $a$.  The remaining polynomial is
+$a(v+b/(3a))^3$, and its unique repeated root is $-b/(3a)$.
+This follows from $c=b^2/(3a)$ and $d=b^3/(27a^2)$, using
+characteristic different from two and three.  These are exactly the
+persistent repeated-root cases of generic cubic degree; all their
+prescriptions have rational height at most $2h$.
+
+If the generic degree is two, write $F_x=bv^2+cv+d$, with $b\ne0$.
+A nonzero discriminant $c^2-4bd$ confines every singular specialization,
+including degree drops, to at most $2h$ labels.  An identically zero
+discriminant prescribes the unique repeated root $-c/(2b)$ outside
+the at most $h$ roots of $b$.
+For generic degree one, singular agreement requires the nonzero linear
+coefficient to vanish.  For a nonzero constant polynomial in $v$, an
+actual agreement requires that constant coefficient to vanish.  Each
+case contributes at most $h$ exceptional labels and no persistent
+jet core.  The identically zero case is precisely $S_{\rm ord}$.
+
+Thus the exceptional coordinate--label incidence budget is $4hn$,
+uniformly over all candidates.  After the regular-incidence deletion
+and deletion of at most $4hn/(e+1)$ further labels, every remaining
+bad witness has at least $A-u-(L-1)-e$ matches in $S_{\rm jet}$ with
+$P'(x)=r_x(z)$ defined.  Write $r_x=N_x/E_x$ with both degrees at
+most $2h$.  In the local Hermite expansion multiply by $E_x^B$.
+Each cleared constraint now has challenge degree at most
+$H+B(2h+1)$, so~\eqref{eq:hj-cubic-challenge-degree} gives
+\[
+ (H+1)V>sc_M\bigl(H+B(2h+1)+1\bigr).
+\]
+The multiplicity argument, specialization-safe algebraic-root lemma,
+and original full-support incidence count are unchanged.  The same
+fixed-margin choices of $L,e,M$ make $B,H$ bounded and give the
+claimed linear bound.
+\end{proof}
+
+The assertion is not that every cubic has a repeated derivative root:
+generically squarefree specializations contribute only the bounded
+exceptional incidences.  It is the \emph{uniqueness and rationality}
+of a persistent repeated root that permits this extension.  Degree
+four is the first degree allowing two distinct repeated derivative
+roots, as in $(v-r_1)^2(v-r_2)^2$.  The corollary leaves the ordinary
+core, the agreement margin, and containment in one common bounded-degree
+identity as explicit hypotheses; it is not an unconditional obstruction
+to all proximity-gap counterexamples.

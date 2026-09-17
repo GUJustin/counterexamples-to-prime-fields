@@ -1,0 +1,108 @@
+\begin{lemma}[Polynomial roots under specialization]\label{lem:hj-algebraic-root}
+Let $Q\in\mathbb F[X,z,Y]$ be nonzero, with
+$\deg_XQ\le T$, $\deg_zQ\le H$, and $1\le\deg_YQ\le B$.
+Assume characteristic zero or characteristic $p>B$, and fix $D\ge0$.
+Put
+\[
+ C=B+H,\qquad N=T+BD,\qquad
+ I=\max\{0,2N-1\}C^2,\qquad
+ J=C\bigl(1+\max\{0,2D-1\}C\bigr).
+\]
+Over $\overline{\mathbb F}$ there are at most $(2B+1)H$ exceptional
+challenge values such that, outside them, all pairs $(z,P)$ satisfying
+\[
+ \deg P\le D,\qquad Q(X,z,P(X))\equiv0
+\]
+are contained in at most $I$ exceptional solution pairs and at most $C$
+irreducible curves of actual polynomial solutions. In the affine space
+of $z$ and the coefficients of $P$, these curves have total degree at
+most $J$. Each retained curve is parametrized by an initial-value plane
+curve through a map regular outside the exceptional challenge values.
+\end{lemma}
+\begin{proof}
+Work over the algebraically closed constant field
+$K=\overline{\mathbb F}$. Factor $Q$ in $K[X,z,Y]$, remove its
+$Y$-independent content, and retain each positive-$Y$-degree irreducible
+factor once. Call the resulting product $R$. Its separate degrees do
+not increase. Since $p>B$ when the characteristic is positive, each
+retained factor is separable in $Y$, so $R$ is squarefree over
+$K(X,z)$. The removed content can specialize to zero identically in
+$X$ at at most $H$ challenge values: exclude the roots of any one of
+its nonzero $X$-coefficients. Outside these values, substitution into
+$Q$ vanishes if and only if substitution into $R$ vanishes. If there
+are no positive-$Y$-degree factors, this already proves the claim.
+
+Choose a constant $\alpha\in K$ for which the $Y$-leading coefficient
+of $R(\alpha,z,Y)$ and
+$\operatorname{Res}_Y(R,R_Y)(\alpha,z)$ are nonzero polynomials in $z$.
+Such a constant exists because only finitely many constants annihilate
+all $z$-coefficients of either nonzero polynomial in $X,z$.
+Their $z$-degrees are at most $H$ and $(2B-1)H$, respectively.
+Exclude their roots as well. The combined exceptional set has size
+at most $(2B+1)H$.
+
+Write
+\[
+ F(z,u)=R(\alpha,z,u),\qquad A(z,u)=R_Y(\alpha,z,u).
+\]
+At every remaining point of $F=0$, one has $A\ne0$.
+The nonvertical irreducible components of this plane curve have total
+degree at most $C$, and there are at most $C$ of them. Vertical
+components lie over the excluded leading-coefficient values.
+On each nonvertical component the formal implicit solution has the
+form
+\[
+ P(\alpha+t)=u+\sum_{j\ge1}a_jt^j,
+ \qquad
+ a_j=\frac{N_j(z,u)}{A(z,u)^{2j-1}},\qquad
+ \deg N_j\le(2j-1)C.                         \tag{$*$}
+\]
+Here and below degrees in $(z,u)$ are total degrees.
+For completeness, expand using Hasse coefficients,
+$R(\alpha+t,z,u+v)=\sum c_{ab}(z,u)t^av^b$.
+All $c_{ab}$ have degree at most $C$; on $F=0$ the constant term
+vanishes and the linear term in $v$ is $Av$.
+After solving the coefficient of $t^j$ for $a_j$, any remaining term
+with $t$-degree $a$ and $v$-degree $b$ has denominator exponent
+$e=2(j-a)-b+1\le2j-1$ and numerator degree at most $eC$,
+by induction. Bringing it to denominator $A^{2j-1}$ proves $(*)$.
+The term with $b=0$ has $a=j$ and denominator exponent one.
+This recursion divides by $A$ only; it requires no factorial inverses.
+
+Retain a component if its generic formal solution is a polynomial of
+degree at most $D$. On every other component, some coefficient $a_j$
+with $D<j\le N$ is nonzero. Indeed, otherwise the truncation $P_D$
+through degree $D$ agrees with the formal solution through degree $N$.
+The polynomial $R(\alpha+t,z,P_D(\alpha+t))$ then vanishes through
+order $N$ and has degree at most $T+BD=N$, so it vanishes identically.
+Uniqueness of the formal implicit root would make the original series
+this degree-$D$ polynomial, a contradiction.
+Choose one such $j$ on each discarded component. Every specialized
+polynomial root of degree at most $D$ on it must satisfy $N_j=0$.
+This numerator is not identically zero on that component.
+B\'ezout's theorem, summed over components, bounds these initial
+points by $\max\{0,2N-1\}C^2=I$.
+Each regular initial point determines at most one polynomial solution,
+so this counts solution pairs, not merely auxiliary points.
+
+For $D\ge1$, put $\delta=A^{2D-1}$. On a retained component the map
+to $(z,u,a_1,\ldots,a_D)$ has homogeneous coordinates represented by
+\[
+ \delta,\quad z\delta,\quad u\delta,\quad
+ N_jA^{2D-2j}\quad(1\le j\le D).
+\]
+Their degrees are at most $1+(2D-1)C$. A rational map given by forms
+of degree at most $L$ sends a plane curve of degree $d$ to a curve of
+degree at most $dL$, by intersection with a generic hyperplane.
+Summing proves the bound $J$; base points can only reduce it.
+For $D=0$ the map is the identity on $(z,u)$ and the bound is $C$.
+Changing from Taylor coefficients at $\alpha$ to coefficients in $X$
+is an invertible linear transformation.
+The maps are regular wherever $A\ne0$, and every such point of a
+retained component is an actual polynomial solution: substitution of
+the truncated polynomial is an identity in its function field, hence
+at all points where its coefficients are regular. Their closures also
+consist of actual solutions, since the substitution equations are
+polynomial. Finally the maps remember both $z$ and $u$, and therefore
+are generically injective. This proves all assertions.
+\end{proof}

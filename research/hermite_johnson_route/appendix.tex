@@ -1,0 +1,234 @@
+\section{Hermite--Johnson control of quadratic and cubic derivative identities}
+\label{app:hermite-johnson}
+
+A persistent singular agreement of a quadratic derivative equation often
+prescribes both the value and the first derivative.  Using these two
+conditions in interpolation removes the small-singular-cover restriction:
+the relevant threshold is the order-two Hermite Johnson threshold.
+The conclusion below concerns actual solutions of one common identity,
+and controls their original full agreement supports.  It does not assert
+that every first-order interpolant has the required quadratic form.
+
+\input{research/hermite_johnson_route/root_lemma.tex}
+
+Fix $n$ distinct coordinates over $F$, a received line $f+zg$, and
+integers $1\le D<A\le n$.  A pair $(z,P)$, $\deg P\le D$, is
+\emph{bad} if its full value-agreement support
+\[
+ S(z,P)=\{x:P(x)=f_x+zg_x\}
+\]
+has size at least $A$ and no degree-at-most-$D$ polynomial agrees with
+$g$ on all of $S(z,P)$.  Consider a nonzero identity
+\begin{equation}
+ Q(X,z,u,v)=a_2(X,z,u)v^2+a_1(X,z,u)v+a_0(X,z,u),
+ \label{eq:hj-quadratic}
+\end{equation}
+of total degree at most $B_0\ge1$ in $(u,v)$ and degree at most $H_0$
+in $z$.  Its coefficient degrees in $X$ are unrestricted.  Write
+$d=B_0+H_0$ and, at each domain coordinate, define
+\[
+ w_x(z)=f_x+zg_x,\qquad
+ \alpha_{i,x}(z)=a_i(x,z,w_x(z)),\qquad
+ \Delta_x=\alpha_{1,x}^2-4\alpha_{2,x}\alpha_{0,x}.
+\]
+Each $\alpha_{i,x}$ has degree at most $d$.  The following are fixed
+sets of coordinates, defined by polynomial identities in $z$:
+\begin{align*}
+ S_{\rm ord}&=\{x:\alpha_{0,x}=\alpha_{1,x}=\alpha_{2,x}=0\},\\
+ S_{\rm jet}&=\{x:\alpha_{2,x}\ne0,\ \Delta_x=0\}.
+\end{align*}
+Put $u=|S_{\rm ord}|$ and $s=|S_{\rm jet}|$.  The ordinary core is an
+explicit limitation: on it the specialized equation vanishes identically
+in both the derivative variable and the challenge, and supplies no
+additional derivative information.
+
+\begin{theorem}[Quadratic derivative identities above the Hermite Johnson threshold]
+\label{thm:hermite-johnson-quadratic}
+Fix positive constants $\rho_{\min},\eta,\varepsilon$ and bounded
+$B_0,H_0$.  Suppose
+\begin{equation}
+ \frac Dn\ge\rho_{\min},\qquad
+ A-D\ge\eta n,\qquad
+ A-u\ge\sqrt{\frac{Ds}{2}}+\varepsilon n.
+ \label{eq:hj-signed-margin}
+\end{equation}
+Then the number of bad labels admitting an actual solution
+$Q(X,z,P,P')=0$ is
+\[
+ O_{\rho_{\min},\eta,\varepsilon,B_0,H_0}(n).
+\]
+The characteristic may be zero, or $p>\max\{D,2,B\}$, where $B$ is
+the bounded interpolation $Y$-degree constructed below.  In particular,
+there is a choice of this characteristic threshold depending only on
+the displayed fixed parameters, apart from the requirement $p>D$.
+
+If $S_{\rm ord}$ is empty, it suffices to have
+$A\ge\sqrt{Dn/2}+\varepsilon n$.  More generally,
+$A-u\ge\sqrt{D(n-u)/2}+\varepsilon n$ is sufficient.
+No bound on the size of the persistent Hermite core is required.
+\end{theorem}
+
+We give finite inequalities underlying the asymptotic statement.  For
+integers $L\ge1$ and $e\ge0$, set
+\[
+ b=A-u-(L-1)-e.
+\]
+If $b>s$, no singular-heavy witnesses remain after the two exceptional
+sets counted below.  Otherwise assume $1\le b\le s$.  Choose an integer
+$M\ge1$ and put
+\begin{equation}
+ T=Mb-1,\quad B=\left\lfloor\frac TD\right\rfloor,\quad
+ V=\sum_{j=0}^{B}(T-Dj+1),\quad
+ c_M=\left\lfloor\frac{(M+1)^2}{4}\right\rfloor.
+ \label{eq:hj-interpolation-parameters}
+\end{equation}
+Whenever $V>sc_M$, the nonnegative integer
+\begin{equation}
+ H=\left\lfloor\frac{sc_MB(d+1)}{V-sc_M}\right\rfloor
+ \label{eq:hj-challenge-degree}
+\end{equation}
+is sufficient.  These parameters give an explicit finite bound as
+follows.  In Theorem~\ref{thm:nonsingular-agreement-mca}, use $B_0,H_0$
+and write
+\[
+ C_{\rm reg}=qK+qT_0\frac{n-D}{A-D}+qn
+\]
+for its parenthesized bound, with $q,K,T_0$ as defined there.
+For the interpolation parameters set
+\begin{align*}
+ C&=B+H,\\
+ E_{\rm alg}&=(2B+1)H+
+             \max\{0,2(T+BD)-1\}C^2,\\
+ J_{\rm alg}&=C\bigl(1+\max\{0,2D-1\}C\bigr).
+\end{align*}
+Then the number of bad labels is at most
+\begin{equation}
+ \frac nL C_{\rm reg}+\frac{2dn}{e+1}
+ +E_{\rm alg}+J_{\rm alg}\frac{n-D}{A-D}+Cn.
+ \label{eq:hj-finite-bound}
+\end{equation}
+Here the algebraic terms use Lemma~\ref{lem:hj-algebraic-root}; the
+last three terms may be omitted when $b>s$.
+
+\begin{proof}
+\emph{Separating regular and exceptional singular agreements.}
+Theorem~\ref{thm:nonsingular-agreement-mca} removes at most
+$(n/L)C_{\rm reg}$ labels possessing a bad witness with at least $L$
+agreements where $Q_v\ne0$.  At all remaining labels every bad witness
+has at most $L-1$ such agreements.
+
+On $S_{\rm jet}$, outside the roots of $\alpha_{2,x}$, a singular
+agreement forces
+\begin{equation}
+ P'(x)=-\frac{\alpha_{1,x}(z)}{2\alpha_{2,x}(z)}.
+ \label{eq:hj-rational-jet}
+\end{equation}
+There are at most $d$ excluded labels per such coordinate.  Outside
+$S_{\rm ord}\cup S_{\rm jet}$, if $\alpha_{2,x}\ne0$, singular
+agreement forces the nonzero polynomial $\Delta_x$ to vanish, at at
+most $2d$ labels.  If $\alpha_{2,x}=0$ but $\alpha_{1,x}\ne0$, it
+forces $\alpha_{1,x}=0$, at at most $d$ labels.  If both vanish
+identically, the nonzero $\alpha_{0,x}$ must vanish at an actual
+agreement, again at at most $d$ labels.  Thus the total number of
+exceptional singular coordinate--label incidences, including the
+poles in~\eqref{eq:hj-rational-jet}, is at most $2dn$.
+At most $2dn/(e+1)$ labels have more than $e$ such coordinates.
+Every remaining bad witness has at least $b$ singular matches in
+$S_{\rm jet}$ with the derivative prescription
+\eqref{eq:hj-rational-jet} defined.
+
+\emph{Hermite interpolation with bounded challenge degree.}
+Seek $R(X,z,Y)\ne0$ with $\deg_zR\le H$, $\deg_YR\le B$, and
+weighted $(X,Y)$-degree at most $T$ for weights $(1,D)$.  Its
+coefficient space has dimension $(H+1)V$.  At each $x\in S_{\rm jet}$,
+expand
+\[
+ R\left(x+t,z,w_x(z)-
+       \frac{\alpha_{1,x}(z)}{2\alpha_{2,x}(z)}t+U\right)
+\]
+and impose vanishing of the coefficients of $t^aU^j$ for $a+2j<M$,
+after multiplying the expansion by $(2\alpha_{2,x}(z))^B$.
+There are
+\[
+ \sum_{j=0}^{\lfloor(M-1)/2\rfloor}(M-2j)=c_M
+\]
+such conditions per coordinate.  Each cleared coefficient has challenge
+degree at most $H+B(d+1)$: a source $Y$-power $j$ contributes a
+numerator of degree at most $j(d+1)$ and a clearing factor of degree
+at most $(B-j)d$.  Consequently there are at most
+$sc_M(H+B(d+1)+1)$ scalar linear equations.
+Equations~\eqref{eq:hj-interpolation-parameters}--\eqref{eq:hj-challenge-degree}
+give
+\[
+ (H+1)V>sc_M(H+B(d+1)+1),
+\]
+so a nonzero interpolant exists over $F$.
+
+At a good singular match, the difference between $P(x+t)$ and its
+prescribed affine first jet is divisible by $t^2$.  The local
+conditions therefore imply a zero of multiplicity at least $M$ in
+$R(X,z,P(X))$.  This argument is valid in every characteristic and
+uses no factorial denominators.  Its $X$-degree is at most $T<Mb$,
+so $b$ distinct such matches force
+\begin{equation}
+ R(X,z,P(X))=0.
+ \label{eq:hj-algebraic-root-identity}
+\end{equation}
+The interpolant has positive $Y$-degree: a nonzero $Y$-independent
+polynomial satisfying the local conditions would have at least $Ms$
+zeros counted with multiplicity over $F(z)$, contrary to $T<Mb\le Ms$.
+
+\emph{Specialization and original full supports.}
+Lemma~\ref{lem:hj-algebraic-root} applies to
+\eqref{eq:hj-algebraic-root-identity}.  It accounts for at most
+$E_{\rm alg}$ exceptional labels or isolated solution pairs, including
+polynomial roots that exist only at special challenges.  All other
+solutions lie on at most $C$ coefficient curves, including the
+challenge coordinate, of total degree at most $J_{\rm alg}$.
+
+Each original coordinate agreement is the hyperplane
+$P(x)=f_x+zg_x$ in this coefficient space.  If more than $D$ distinct
+such hyperplanes contain a curve, interpolation forces that curve
+to lie on an affine codeword pencil $P=F_0+zG_0$.  A nonaffine curve
+therefore has at most $D$ persistent agreement hyperplanes.
+B\'ezout and incidence counting bound its labels with at least $A$
+agreements by its degree times $(n-D)/(A-D)$.
+
+On an affine pencil, let $I$ be the persistent value-agreement set.
+A bad witness must agree at some coordinate outside $I$: otherwise
+$G_0$ agrees with $g$ on its full support. Since this support has
+more than $D$ distinct $F$-coordinates, interpolation then forces
+$G_0\in F[X]$, even if the pencil was initially defined over
+$\overline F$.  Each coordinate outside
+$I$ contributes at most one label, so each pencil has at most $n$
+bad labels.  There are at most $C$ pencils.  This proves
+\eqref{eq:hj-finite-bound}.  In particular this last argument uses
+\emph{all original value agreements}, not merely the Hermite matches
+used to construct $R$.
+
+\emph{Fixed-margin parameters.}
+Under~\eqref{eq:hj-signed-margin}, take
+$L=\max\{1,\lfloor\varepsilon n/4\rfloor\}$ and
+$e=\lfloor\varepsilon n/4\rfloor$.  Then
+$b\ge\sqrt{Ds/2}+\varepsilon n/2$, while both $L$ and $e+1$
+are bounded below by positive multiples of $n$.  If $b>s$ we are done.  Otherwise, as $M$ increases,
+\[
+ V=\frac{M^2b^2}{2D}+O(Mn),\qquad
+ sc_M=\frac{sM^2}{4}+O(Ms).
+\]
+The fixed margins and $D/n\ge\rho_{\min}$ permit constant $M$, and
+then constant $B,H$, with $V>sc_M$.  These choices also cover the integer roundings for small $n$.
+Now $T=O(n)$,
+$E_{\rm alg},J_{\rm alg}=O(n)$, and every term in
+\eqref{eq:hj-finite-bound} is $O(n)$ with the stated dependencies.
+\end{proof}
+
+The ordinary-core qualification cannot be suppressed by squaring the
+margin: the signed quantity $A-u$ must be positive.  When $u=0$, the
+argument controls even a persistent Hermite core occupying the entire
+domain, and even rational challenge dependence in its derivative data.
+It identifies an explicit remaining mechanism: many coordinates where
+the whole derivative equation vanishes on the received line, rather
+than merely a large set of persistent quadratic singularities.
+
+\input{research/hermite_johnson_route/cubic_corollary.tex}

@@ -1,0 +1,36 @@
+{
+  "n": 10000,
+  "D": 2500,
+  "A": 4220,
+  "regular_cutoff": 100,
+  "outside_singular_allowance": 100,
+  "ordinary_core": 0,
+  "Hermite_core": 10000,
+  "forced_jet_matches": 4021,
+  "Johnson_slack_twice": 7336882,
+  "rows": [
+    {
+      "M": 16,
+      "T": 64335,
+      "B": 25,
+      "H": 128,
+      "coefficient_volume": 860236,
+      "local_conditions": 72,
+      "unknowns": 110970444,
+      "constraint_upper_bound": 110880000,
+      "strict_dimension_slack": 90444
+    },
+    {
+      "M": 32,
+      "T": 128671,
+      "B": 51,
+      "H": 211,
+      "coefficient_volume": 3375944,
+      "local_conditions": 272,
+      "unknowns": 715700128,
+      "constraint_upper_bound": 715360000,
+      "strict_dimension_slack": 340128
+    }
+  ],
+  "scope": "Exact interpolation existence only; specialization-safe algebraic-root theorem supplies full-support line bound. Not a numerical better.codes improvement."
+}

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/hermite_johnson_route/finite_gate.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.6256310000026133,
+  "peak_rss_kib": 8976,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}
