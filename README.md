@@ -41,10 +41,12 @@ and radii strictly below the paper's characteristic-based Elias radius.
   `c1=c2=1` without an unspecified remainder, on padded interval domains.
   The shrinking-gap family does not separate from actual maximum list
   size; the generic-domain result below addresses that different question.
-- If the rate tends to zero, a separate construction makes **every nonzero
+- If the rate tends to zero, even the constant code can have **every nonzero
   parameter nearby**, with exactly one far point a fixed fraction of the
   capacity gap outside the radius. The prime field has polynomial size in
-  the length. This does not settle the corresponding fixed-rate question.
+  the length, and the statement transfers to any domain of that size.
+  This elementary boundary case does not settle the fixed-rate
+  question and does not separate from the actual maximum list size.
 - An anchored lift and padding construction gives genuine failure of
   correlated agreement at an exactly fixed positive rate and gap, for
   arbitrarily large lengths. The necessary coefficient of a linear

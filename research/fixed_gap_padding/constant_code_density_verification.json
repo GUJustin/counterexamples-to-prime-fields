@@ -1,0 +1,97 @@
+{
+  "status": "passed",
+  "fiber_count_audits": [
+    {
+      "p": 5,
+      "D": 2,
+      "polynomials": 5,
+      "total_full_fibers": 10,
+      "maximum": 2
+    },
+    {
+      "p": 5,
+      "D": 3,
+      "polynomials": 25,
+      "total_full_fibers": 10,
+      "maximum": 1
+    },
+    {
+      "p": 7,
+      "D": 3,
+      "polynomials": 49,
+      "total_full_fibers": 35,
+      "maximum": 2
+    },
+    {
+      "p": 11,
+      "D": 4,
+      "polynomials": 1331,
+      "total_full_fibers": 330,
+      "maximum": 1
+    }
+  ],
+  "certificates": [
+    {
+      "prime_exponent": 31,
+      "n": 397336,
+      "K": 1,
+      "A": 3,
+      "core_length": 198668,
+      "list_size": 99334,
+      "far_separation_over_eta": "1/2",
+      "exact_far_agreement": 2,
+      "all_nonzero_parameters_nearby": false,
+      "nearby_fraction_lower": "0.99989788",
+      "prescription_fraction_less_than_power_two": -2,
+      "actual_global_maximum_list_size": 132445,
+      "strict_elias": true
+    },
+    {
+      "prime_exponent": 61,
+      "n": 104159249330,
+      "K": 1,
+      "A": 3,
+      "core_length": 52079624664,
+      "list_size": 26039812332,
+      "far_separation_over_eta": "1/2",
+      "exact_far_agreement": 2,
+      "all_nonzero_parameters_nearby": true,
+      "nearby_fraction_lower": "0.99999999",
+      "prescription_fraction_less_than_power_two": -5,
+      "actual_global_maximum_list_size": 34719749776,
+      "strict_elias": true
+    },
+    {
+      "prime_exponent": 127,
+      "n": 86793193769047925630241,
+      "K": 1,
+      "A": 3,
+      "core_length": 43396596884523962815120,
+      "list_size": 21698298442261981407560,
+      "far_separation_over_eta": "1/2",
+      "exact_far_agreement": 2,
+      "all_nonzero_parameters_nearby": true,
+      "nearby_fraction_lower": "0.99999999",
+      "prescription_fraction_less_than_power_two": -11,
+      "actual_global_maximum_list_size": 28931064589682641876747,
+      "strict_elias": true
+    },
+    {
+      "prime_exponent": 521,
+      "n": 12646683344518610018496872653932397398731469590117962655330208383476972704198637076244510691190,
+      "K": 1,
+      "A": 3,
+      "core_length": 6323341672259305009248436326966198699365734795058981327665104191738486352099318538122255345594,
+      "list_size": 3161670836129652504624218163483099349682867397529490663832552095869243176049659269061127672797,
+      "far_separation_over_eta": "1/2",
+      "exact_far_agreement": 2,
+      "all_nonzero_parameters_nearby": true,
+      "nearby_fraction_lower": "0.99999999",
+      "prescription_fraction_less_than_power_two": -51,
+      "actual_global_maximum_list_size": 4215561114839536672832290884644132466243823196705987551776736127825657568066212358748170230396,
+      "strict_elias": true
+    }
+  ],
+  "seconds": 0.14099541600080556,
+  "scope": "Elementary vanishing-rate constant-code examples; exact fiber counting and existence certificates. No fixed-positive-rate or actual-global-list separation."
+}

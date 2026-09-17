@@ -76,3 +76,41 @@ have a certified count J=p-1: a 96-term positive binomial sum makes the
 expected uncovered count <1. All are strict Elias, far eta/2, n=o(p).
 No directions or all list members were enumerated at these huge sizes;
 these are exact existence certificates from the proved averaging lemma.
+
+## Final manuscript simplification: constant codes, every large prime
+
+The low-rate statement is stronger and simpler with K=1. Choose integer
+D>c2 and1+c2/D<a<2. Every sufficiently large prime admits a monic
+degree-D polynomial f with Omega_D(p) full D-element fibers: group all
+binom(p,D) monic locator polynomials F by F-F(0), of which there are
+at mostp^(D-1). Distinct locators in one group give distinct fibers.
+Select L=floor(n/(2D)) fibers,n=floor(p^(1/a)); their constant values
+are codewords. Every outside image has EXACTLY L distinct nonzero
+differences. Random nonzero directions atq=n-DL padding points leave
+expected uncovered count <=p exp(-qL/(p-1))<1. Allnonzeroznearbyat
+A=D+1,zeroexactD,far eta/D,etaD/n. Elias andnumericalprescription
+followfromaD>D+1 anda>1+c2/D. No congruence restriction on p isneeded.
+
+The mainpaper now uses this elementary constant-code proof. The earlier
+moment-based all-prime theorem remains valid, saved as
+vanishing_rate_moment_variant.tex (not input) and its checker retained.
+The constant code's actual global maxlist isfloor(n/(D+1)), soell*n
+~n²>p: noactual-list separation. This is deliberately presented as
+a low-rate boundary case, not a main fixed-rate obstruction.
+
+Forc1c2=1,D2,a5/3: n=floorp^.6,N=2floor(n/4),
+f=X²-(N+1)X,core1..N hasL=N/2 pairedfibers. Exactchecker
+verify_constant_code_density.py verifiesfiber-countidentityforfour
+small(p,D), andallnonzeroznearbyforM61n104159249330,M127,M521.
+M31n397336givesfraction>0.99989788,prescription<1/4. AllstrictElias.
+
+The final constant-code statement holds on EVERY evaluation domain of
+the same size: the code is invariant under arbitrary coordinate
+permutations, so relabel f,g onto any desired domain. This does not
+transfer the construction to a positive-rate code on that domain.
+The obvious rate-raising padding (add h common zero positions and
+multiply by their vanishing polynomial) preserves a gap O(1/n), but
+a fixed positive raised rate and p polynomial in n have eta*log p->0.
+That lies above the characteristic Elias radius eventually, since
+H2(rho)>0 stays fixed. Thus rate raising does not resolve the main
+fixed-positive-rate question.

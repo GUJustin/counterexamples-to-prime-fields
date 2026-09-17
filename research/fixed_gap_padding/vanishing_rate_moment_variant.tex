@@ -1,0 +1,98 @@
+\subsection{Exactly one far point at vanishing rate}
+\label{sec:vanishing-rate}
+
+The fixed positive rate qualification matters in the remaining question
+about separation proportional to $\eta$. If the rate may tend to zero,
+the same padding mechanism gives a line with exactly one far point.
+
+\begin{theorem}[A punctured nearby line]\label{fg:punctured-line}
+For every finite $c_1,c_2\ge1$, there are fixed integers $K,s\ge1$ and
+a constant $a>1$ such that, for every sufficiently large prime $p$,
+there is a Reed--Solomon code of dimension $K$ and length
+$n=\lfloor p^{1/a}\rfloor$ with the following properties.
+Put $\rho=K/n$, $\eta=(s+1)/n$, and $\theta=1-\rho-\eta$.
+There is a nonconstant received line $f+zg$ for which
+\[
+ \dist(f+zg,C)\le\theta\quad\text{for every }z\ne0,
+ \qquad
+ \dist(f,C)=\theta+\frac{\eta}{s+1}.
+\]
+There is no correlated agreement at the threshold, $\theta$ is strictly
+below the characteristic-based Elias radius, and
+$c_1n2^{c_2H_2(\rho)/\eta}=o(p)$.
+Here $n=o(p)$ and $p=\Theta(n^a)$, but $\rho\to0$.
+\end{theorem}
+\begin{proof}
+Choose $s+1>c_2$ and then $K$ sufficiently large that
+\[
+ 1+\frac{c_2K}{s+1}<a<u+1,
+ \qquad u:=K-\frac{s(s-1)}2,
+\]
+for some fixed $a$. Put $N=\lfloor2n/3\rfloor$ and take anchored
+supports of size $t=K+s+1$ in $\{0,1,\ldots,N\}$, all containing zero.
+There are $\Theta(N^{K+s})$ such supports. Because $t,s$ are fixed,
+the $j$th binomial-moment range has size $O(N^j)$. Thus the first $s$
+moments have only $O(N^{s(s+1)/2})$ possible vectors, and one class
+has $L=\Omega(n^u)$ members.
+
+Remove the anchor and divide as before. The resulting polynomials
+have degree below $K$ and exactly $A-1$ old agreements, where
+$A=K+s+1$; the global received polynomial $f$ has degree $A-1$.
+With $R=p-N$, $U=p-1$, $q=n-N$, and $d=K-1$, the image-size bound
+in Lemma~\ref{fg:far-padding} satisfies
+\[
+ M\ge\frac{LR}{R+d(L-1)},\qquad
+ \frac{qM}{U}=\Omega\!\left(\min\{n,n^{u+1-a}\}\right).
+\]
+The latter grows as a positive power of $n$. Consequently the
+expected number of uncovered nonzero parameters is at most
+\[
+ U\left(1-\frac MU\right)^q
+ \le p\exp(-qM/U)<1
+\]
+for large $p$. Some choice of padding directions therefore leaves
+no nonzero parameter uncovered. At zero the exact maximum agreement
+is $A-1$, proving the asserted distance and excluding correlated
+agreement on $A$ coordinates.
+
+For fixed $A$, the sufficient Elias inequality has logarithm
+\[
+ \log\!\left(\frac{p^{s+1}A^A(n-A)^{n-A}}{n^n}\right)
+ =\bigl(a(s+1)-A\bigr)\log n+O(1)>0.
+\]
+Finally the small-rate entropy expansion gives
+\[
+ c_1n2^{c_2H_2(K/n)/\eta}
+ =n^{1+c_2K/(s+1)+o(1)}=o(p).
+\]
+Both conclusions follow from the choice of $a$.
+\end{proof}
+
+For $c_1=c_2=1$, a particularly simple choice is
+$K=2$, $s=1$, $a=5/2$. Thus $n=\lfloor p^{2/5}\rfloor$,
+$\rho=\eta=2/n$, and the unique far point is $\eta/2$ beyond the
+radius. On a core $\{1,\ldots,N\}$, some integer sum $S$ occurs for at
+least
+\[
+ L\ge\left\lceil\frac{\binom N3}{3N-8}\right\rceil
+\]
+triples. Set $f(X)=X^3-SX^2$. A triple $\{a,b,c\}$ with sum $S$
+gives the linear polynomial
+\[
+ P(X)=-(ab+ac+bc)X+abc,\qquad
+ f(X)-P(X)=(X-a)(X-b)(X-c).
+\]
+This makes the three core agreements and the exact far-point distance
+transparent. Padding supplies a fourth agreement at every nonzero
+parameter for sufficiently large $p$. The proposed numerical count is
+less than $(3/2)n^2=O(p^{4/5})$, since $e<3$.
+
+The exact checker \path{verify_vanishing_rate_density.py} in
+\path{research/fixed_gap_padding/} certifies all $p-1$ nonzero parameters
+for $p=2^{127}-1$ with $n=1960305596233800$, and also for $p=2^{521}-1$.
+These are existence certificates, not enumerations of those enormous
+lines. The checker also gives more than $45\%$ nearby parameters for
+$p=2^{31}-1$, $n=5404$, where the numerical prescription fraction is
+below $2^{-5}$. It uses integer fifth roots, exact triple counts,
+rational averaging bounds, primality checks, and sufficient integer
+Elias inequalities. None of these examples has a fixed positive rate.

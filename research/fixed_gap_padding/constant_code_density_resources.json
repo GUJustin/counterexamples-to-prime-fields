@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/fixed_gap_padding/verify_constant_code_density.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.567216791001556,
+  "peak_rss_kib": 6800,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

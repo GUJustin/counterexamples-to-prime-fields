@@ -992,3 +992,41 @@ allnonzeroznearby, far eta/2 atthreshold3, rho1/n,eta2/n.
 Currentallprimearbitraryc2theoremstrongerthanconstantcodevariantin
 primeuniformityandcorrect, so do notdeletewithoutreviewingtradeoff.
 Goalactiveuntil12:30UTC; current~06:20UTC.
+
+
+## September 17 ~06:26 UTC — simpler stronger constant-code formulation
+
+Previousgoalturnprogressc7448974. The low-rate theorem is nowprovedfor
+K=1 overEVERYsufficientlylargeprime, notjustprimes1modD. Keyelementary
+pigeonhole: groupallbinom(p,D) moniclocatorsF byf=F-F(0), atmostp^(D-1)
+groups. Onef hasOmega_D(p) fullD-elementfibers. ChooseD>c2,
+1+c2/D<a<2,n=floorp^(1/a),L=floor(n/(2D)) suchfibers,coreN=DL.
+Candidateconstantsarethefiber values. EveryoutsideimagehasEXACTsizeL,
+allnonzero. Withq=n-N, expecteduncovered<=p exp(-qL/(p-1))<1 since
+qL/p=Omega(n^(2-a)). AllnonzeroznearbyatD+1; zeroexactD,far eta/D,
+etaD/n,rho1/n. Elias aD>D+1; prescriptionn^(1+c2/D)=o(p).
+Becauseconstantcodeiscoordinate-permutationinvariant,thisholdsonANY
+prescribedn-pointdomain. DoesNOTtransfertopositiverateonthatsamedomain.
+Actualgloballist= floor(n/(D+1)), soactualell*n~n²>p, noactual-listclaim.
+
+MainpaperSection4.3reframedasanelementarylow-rateboundarycase, not
+mainfixed-rateobstruction. ReplacedmorecomplicatedmomentproofofTheorem4.15
+withthisstrongerK1proof. EarlierallprimefixedKmomentvariantremainstrue,
+savedvanishing_rate_moment_variant.tex (notinput), oldcheckerretained.
+Newverify_constant_code_density.py exactfiberidentityauditsfor(p,D)
+(5,2),(5,3),(7,3),(11,4), pluslargefieldcertificates. D2,c1c2=1 explicit
+f=X²-(N+1)X,N=2floor(n/4),n=floorp^.6 givespairedcorefibers.
+M31n397336density>0.99989788,prescription<1/4; M61n104159249330
+andM127,M521 giveALLp-1nonzeroparametersnearby, far eta/2.
+AllguardedPASS, <1sec. Exactprimality, sufficientElias p²>n³,
+prescriptionupperceil(sqrt(3n³)), andexpecteduncovered<1.
+Makefile78checks. PDF122pagesclean, reviewed38,39. READMEandnotesupdated.
+
+Alsoauditedobviousrate-raisingattempt: addinghcommonzeroanchorsand
+multiplyingbyVraisesratetofixedrho butpreservesgapO(1/n), whilep
+polynomialinn implieseta logp->0. HenceaboveEliasatfixedpositiverate.
+Thiscannotresolvefixedratequestion. Noactiveprocess.
+Goalcontinuesto12:30UTC. Remaininghardtargetsunchanged: fixed-positive
+rate robustdensity->1, or growingfixed-positivegaplists/superlinear
+linecountonshortprime-fielddomains, or prescribed-domaintransferat
+actualbenchmarkrates.
