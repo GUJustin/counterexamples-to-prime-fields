@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "certificates": [
+    {
+      "prime_exponent": 1279,
+      "n": 3834,
+      "K": 1917,
+      "m": 2556,
+      "threshold": 1921,
+      "seed_moments": 9,
+      "transformed_moments": 3,
+      "list_bits": 1653,
+      "padding": 1279,
+      "image_fraction_lower": "0.99999999",
+      "all_nonzero_parameters_nearby": true,
+      "far_coordinates": 1,
+      "separation_fraction": "1/4",
+      "strict_elias": true,
+      "prescription_fraction_less_than_power_two": -307,
+      "list_lower_bound_sha256": "801017737dfabcaa7a2717490614929b8b4b91b3d62b2475226dd35ee3ec04fd"
+    },
+    {
+      "prime_exponent": 9689,
+      "n": 18162,
+      "K": 9081,
+      "m": 12108,
+      "threshold": 9083,
+      "seed_moments": 3,
+      "transformed_moments": 1,
+      "list_bits": 9724,
+      "padding": 6055,
+      "image_fraction_lower": "0.99999999",
+      "all_nonzero_parameters_nearby": true,
+      "far_coordinates": 1,
+      "separation_fraction": "1/2",
+      "strict_elias": true,
+      "prescription_fraction_less_than_power_two": -591,
+      "list_lower_bound_sha256": "f4ee21e98e98523749cb1f263d123205c23e54ce9fde99019fd09abf3be9ccf2"
+    }
+  ],
+  "seconds": 2.041354417000548,
+  "scope": "Exact finite arithmetic conditional on the written cubic-warp geometry and cited point-count theorem. Existence certificates; no coordinates or padding directions enumerated."
+}

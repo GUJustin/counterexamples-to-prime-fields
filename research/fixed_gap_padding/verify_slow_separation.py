@@ -33,7 +33,7 @@ def audit_parameters():
   moment_bits=s+(s*(s+3)//2)*m.bit_length()
   list_bits=support_bits-moment_bits
   assert list_bits>r*b
-  off_h=h-r;off_s=s+r-1
+  off_h=h-r;off_s=s+r
   off_bits=off_h*((N//off_h).bit_length()-1)
   off_moment_bits=off_s+(off_s*(off_s+3)//2)*(N+1).bit_length()
   assert off_bits-off_moment_bits>b

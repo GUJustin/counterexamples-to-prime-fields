@@ -1207,3 +1207,66 @@ r2,s13,m60570,J/p>.00563848,prescription<2^-5000,strictElias.
 Thefiniteinstancevalidatesthemechanism,NOTnearunitdensityatthatprime.
 PASS~2.9sec22MiB. Makefile81checks. PDF124pagesclean; rendered38/39,
 finalpage39inspected. Noactiveprocess. Goalactiveuntil12:30UTC.
+
+## 2026-09-17 07:16 UTC — MAJOR cubic-domain route, integration pending
+
+NEW research/cubic_domain_warp/ contains a written proof apparently
+closing fixed-positive-relative-buffer at density1: ALLp-1nonzero
+parameters nearby atfixedpositive rate, withzeroeta/u outside forANY
+integeru>c2. ShrinkingetaTheta1/logp,nTheta(logp), belowElias,
+noCA,prescriptiono(p). Forc2=1,u2 giveseta/2far. NOTyetinputinmainpaper;
+nextstep adversarial reread thenintegrate/promoteandfixstaleopenclaims.
+MainPDFcurrently124pages, oldclaimsunchangedexceptofflinemomentfixbelow.
+
+Mechanism: match3s integerseedmoments, then cubicwarp
+phi_(a,b)(i)=i³+b i²+a i. Firsts moments remain equal. Injectiveonseed
+for>=p²-binom(m,2)p parameterpairs. Foranysupportpair cancelcommon
+nodes: residualcollisionequation product(X-phi(i))-product(X-phi(j))
+is ABSOLUTELY IRREDUCIBLE in(X,a,b). Selfcontainedproof inproposed.tex:
+homogeneousplanes l_i=X-iU-i²V-i³W areinP3generalposition(Vandermonde).
+EachbaseA_i=B_jline liesonuniquecomponent; triplepoints2A1B or1A2B
+smooth,connectingallbaselinesononecomponentG. RestrictGtooneAplane:
+itcontainsu distinctB-lines ⇒degG>=u=degreeF ⇒Firreducible.
+DehomW1valid,Wnotfactor. u1linearhandled. Carefullyrereadthisproof!
+
+PrimaryCafure–Matera2006PDFdownloaded/read. Cor5.6 printed174:
+ifp>2d², absirredaffinehypersurfacein3vars degree d haspointcount
+<=p²+(d-1)(d-2)p^1.5+3d4p. SourceauditURL/hashsaved; localPDFin tmp.
+Thusonegoodmap totaloutsidepaircollisions<=binom(L,2)*B,
+B=[p+(t-1)(t-2)sqrtp+3t4]/[p-binom(m,2)]=1+o1 formlogp.
+CauchymeanimageM=LR/[R+(L-1)B]~p whenL>p^(1+eps).
+qTheta(logp) paddingcoordinateswithnonzerorandomdirections give
+expectedmissing U(1-M/U)^q<1 ⇒allnonzero labelscovered. Farw=H0/X
+hasdegreeD=t-1, selectedP=(H0-Hi)/X degree<K=t-s-1, agreementDcore.
+Anchorimage0canbeusedasnewpaddingpoint: cancelcommonanchorBEFORE
+residualequation; remainingcommonfactorsrootsonlyincore,soequivalence
+holds alsoat0. NoavailablepointomittedfromR=p-(m-1).
+
+Allprimeparams: rho<beta<1,alpha=rho/beta; chooseC between
+1/(alpha Hbeta) andu/(c2Hrho) possiblewithbetacloserho,u>c2.
+s=u-1,n=Cb+O1,K=rhon,m=alphan,t=K+s+1. Fixed3s momentcostOlogm,
+L>=p^(1+eps). eta=u/n,far1/n=eta/u. Source/geometry/finitechecksallPASS.
+Mainproofinputproposed.tex isNOTyetreferenced; bibkeycafure-matera
+mustbeaddedbeforeintegration. Actualglobal liststill>p asymptotically:
+coret-subsetswith3(s+1)moments preserve s+1 prefix ⇒deg<K, count>p.
+NoFFT/benchmarktransfer,no fixedgap superlinearclaim.
+
+Exactcerts verify_finite_certificate.py usingGram+Cor5.6:
+M1279 n3834K1917m2556A1921 seedmom9→3,q1279,ALLp-1nonzero,
+farη/4,strictElias,prescriptionfraction<2^-307,listbits1653.
+M9689 n18162K9081m12108A9083 seedmom3→1,q6055,ALLp-1nonzero,
+farη/2,strictElias,prescription<2^-591,listbits9724.
+Independent audit_finite_independent.py importsNOconstructionhelpers;
+anchoredmomentBOXcounts1547/9702bits, weakerTheorem5.2error5t5;
+separateLucasLehmer; both proveM/U>3/4 and2q>=b ⇒expectedmissing<1.
+Eachguarded~2.3sec20MiB. GeometrycheckerF7/17/23/37u1..4 checksall
+surfacepoints,Vandermondeminors,smoothtriplepoints; F131anchored
+Thue–Morsepairmatches3moments,all5692injectivecubicmaps preserve
+candidate deg<7, coreagreement8; totaloutsidecollisions5095. PASS1.7sec.
+These areexistencecerts, NOTexplicitlistedmassivecodewords/directions.
+
+CORRECTIONcaughtduringnewaudit: slow-separationofflinelistparagraph
+requires s+r moments, nots+r-1 (unanchoredlocatorsneedA-Kmoments).
+Fixedtex/note/checker; strengthenedintegerchecksPASS; asymptoticcost
+andconclusionunchanged. Rebuilt124pagePDFclean. EarlierTAKEOVERentry
+s+r-1 ishistoricalincorrectindex. Noactiveprocess. Goalactiveuntil12:30UTC.

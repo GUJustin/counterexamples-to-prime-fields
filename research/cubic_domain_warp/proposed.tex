@@ -1,0 +1,148 @@
+\subsection{A cubic change of domain covers every nonzero parameter}
+\label{sec:cubic-warp}
+
+The outside-collision estimate can be improved by changing the domain
+before adding the padding. Matching three times as many integer moments
+allows a two-parameter cubic change of coordinates. The residual
+collision equations are absolutely irreducible surfaces; averaging their
+point counts makes the outside evaluation images occupy almost the
+entire field. The padding can then cover every nonzero parameter.
+
+\begin{lemma}[Irreducibility of a cubic collision equation]
+\label{cw:irreducibility}
+Let $S,T$ be disjoint sets of distinct field elements with
+$|S|=|T|=u\ge1$. Then
+\[
+ F(X,U,V)=\prod_{a\in S}(X-a^3-Va^2-Ua)
+          -\prod_{a\in T}(X-a^3-Va^2-Ua)
+\]
+is absolutely irreducible, of degree at most $u$.
+\end{lemma}
+\begin{proof}
+The case $u=1$ is a nonconstant linear polynomial. Work over the
+algebraic closure and homogenize using $W$. The forms
+$\ell_a=X-aU-a^2V-a^3W$ define planes in $\mathbb P^3$ in general
+position: every four are independent by the Vandermonde determinant.
+Write the two families as $A_i,B_j$. Each base line $A_i=B_j=0$
+is generically smooth on $\prod_iA_i-\prod_jB_j=0$, and hence belongs
+to a unique irreducible component. The lines indexed by $(i,j)$ and
+$(i',j)$ meet at $A_i=A_{i'}=B_j=0$. No other plane passes through
+this point. The derivative of the second product is nonzero there,
+so the point is smooth and the two lines belong to the same component.
+The same argument works for $(i,j)$ and $(i,j')$. Consequently all
+base lines lie on one component $G$.
+
+Restrict $G$ to $A_i=0$. The restriction is nonzero, since $A_i$
+does not divide the difference of products. It vanishes on the $u$
+distinct lines cut out by the $B_j$, so their product divides it.
+Thus $\deg G\ge u$, the degree of the original homogeneous polynomial.
+The latter is irreducible; the smooth base points also exclude a repeated
+factor. Dehomogenizing at $W=1$ preserves irreducibility, because $W$
+is not a factor. The resulting polynomial is nonconstant.
+\end{proof}
+
+\begin{lemma}[Cubic deformation and complete padding]
+\label{cw:finite}
+Let $p>2m^2$ be prime. On an $m$-point seed domain in $\mathbb F_p$,
+suppose $L\ge2$ distinct $t$-subsets contain a common anchor and have
+equal power sums of orders $1,\ldots,3s$. Assume $s\ge0$ and
+$K=t-s-1\ge1$. Set
+\[
+ N=m-1,\quad R=p-N,\quad U_0=p-1,\quad
+ B=\frac{p+(t-1)(t-2)\sqrt p+3t^4}{p-\binom m2},\quad
+ M=\frac{LR}{R+(L-1)B}.
+\]
+If $1\le q\le R$ and
+\begin{equation}\label{cw:cover-condition}
+ U_0(1-M/U_0)^q<1,
+\end{equation}
+there is a length-$n=N+q$, dimension-$K$ prime-field Reed--Solomon code
+and a nonconstant received line such that every nonzero parameter has
+at least $t$ agreements with the code, whereas parameter zero has
+maximum agreement exactly $t-1$. There is no correlated agreement
+at threshold $t$.
+\end{lemma}
+\begin{proof}
+Translate the seed so the anchor is zero; equal power sums are preserved.
+For $(a,b)\in\mathbb F_p^2$ use the map
+$\phi_{a,b}(x)=x^3+bx^2+ax$.
+At least $p^2-\binom m2p$ maps are injective on the seed: each collision
+of two distinct nodes specifies one affine line in the parameter plane.
+The transformed supports have equal power sums through order $s$,
+because $\phi_{a,b}(x)^j$ has degree at most $3s$ for $j\le s$.
+Newton's identities therefore give equal first $s$ locator coefficients.
+For transformed locators $H_i$, choose one $H_0$ and put
+$w=H_0/X$, $P_i=(H_0-H_i)/X$. These are distinct polynomials with
+$\deg P_i<K$, and each agrees with the degree-$(t-1)$ polynomial $w$
+on exactly $t-1$ coordinates of the transformed core.
+
+For a support pair, cancel its common nodes before forming the difference
+of products. At an outside point, collision of $P_i$ and $P_j$ is
+exactly the equation in Lemma~\ref{cw:irreducibility}. Its degree is at
+most $t$. The affine hypersurface estimate of Cafure and Matera
+\cite[Corollary~5.6]{cafure-matera} bounds its number of triples $(X,a,b)$ by
+\[
+ p^2+(t-1)(t-2)p^{3/2}+3t^4p.
+\]
+The hypothesis $p>2m^2$ implies the characteristic condition in that
+estimate; a linear residual equation has exactly $p^2$ points.
+Summing over support pairs and averaging over injective maps gives
+one map with at most $\binom L2B$ outside pair collisions.
+
+For this map, the Cauchy--Schwarz image calculation in
+Lemma~\ref{fg:averaged-padding} gives average outside image size at
+least $M$. The differences $P_i(x)-w(x)$ are all nonzero outside the
+core. Choose the $q$ points with largest images and independent uniform
+nonzero directions there, with direction zero on the core.
+The expected number of uncovered nonzero parameters is at most the
+left-hand side of \eqref{cw:cover-condition}. Some choice leaves none.
+The global degree of $w$ bounds its agreement with every codeword by
+$t-1$, attained on the core. This proves the exact far-point distance
+and excludes correlated agreement at threshold $t$.
+\end{proof}
+
+\begin{theorem}[A full punctured line at fixed rate]
+\label{cw:punctured-line}
+Fix rational $\rho\in(0,1)$, constants $c_1,c_2\ge1$, and an integer
+$u>c_2$. For every sufficiently large prime $p$, there are a code of
+exact rate $\rho$, length $n=\Theta(\log p)$, and a received line
+such that all $p-1$ nonzero parameters are within radius
+$\theta=1-\rho-\eta$, while parameter zero has distance exactly
+\[
+ \theta+\eta/u,\qquad \eta=u/n.
+\]
+The radius is strictly below Elias, there is no correlated agreement,
+and $c_1n2^{c_2H_2(\rho)/\eta}=o(p)$.
+\end{theorem}
+\begin{proof}
+Choose rational $\rho<\beta<1$, close enough to $\rho$ that, with
+$\alpha=\rho/\beta$, there is a constant $C$ satisfying
+\[
+ \frac1{\alpha H_2(\beta)}<C<\frac u{c_2H_2(\rho)}.
+\]
+This is possible because $u>c_2$. Put $s=u-1$, $b=\log_2p$,
+and choose $n=Cb+O(1)$ through common denominator multiples for
+$\rho,\alpha$. Set $K=\rho n$, $m=\alpha n$, and $t=K+s+1$.
+The anchored $t$-subsets of an integer interval of length $m$ number
+$2^{mH_2(t/m)-O(\log m)}$. Their first $3s$ integer moments have
+only $m^{O_s(1)}$ possible vectors. Thus some anchored class has
+$L\ge p^{1+\epsilon}$ for a fixed $\epsilon>0$.
+
+In Lemma~\ref{cw:finite}, $B=1+o(1)$ and $M/(p-1)\to1$.
+Take $q=n-m+1=\Theta(\log p)$. Then
+$(p-1)(1-M/(p-1))^q\to0$, proving complete nonzero coverage.
+The zero parameter is $1/n=\eta/u$ beyond the radius.
+Finally $\eta\log_2p\to u/C>c_2H_2(\rho)\ge H_2(\rho)$ gives strict
+Elias and the stated numerical comparison.
+\end{proof}
+
+For $c_1=c_2=1$, one may take $u=2$: every nonzero point is nearby
+while the remaining point is $\eta/2$ outside. This is a shrinking-gap
+construction on cubic images of intervals with added coordinates.
+It does not prove superlinear nearby counts at a fixed positive gap
+or transfer the result to a prescribed evaluation subgroup.
+Its global lists remain large: on the original core, match $3(s+1)$
+moments for $t$-subsets, and then apply the same cubic map. The count
+still exceeds $p$, and the $s+1$ preserved moments give degree-below-$K$
+candidates at threshold $t$. Thus it does not replace the separate
+actual-list-size separation.

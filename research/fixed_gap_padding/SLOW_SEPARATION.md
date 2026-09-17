@@ -85,7 +85,7 @@ explicit. Finite computation cannot prove these asymptotics.
 
 ## Actual global lists remain large
 
-On the same core N=D+h, take A=D+r subsets and match s+r-1 integer
+On the same core N=D+h, take A=D+r subsets and match s+r integer
 moments. The complement size is h-r~h; its support logarithm remains
 (2-o(1))*r*b. The moment cost O((s+r)^2 log b)=o(rb). Subtracting each
 monic locator from the common degree-A received polynomial leaves a

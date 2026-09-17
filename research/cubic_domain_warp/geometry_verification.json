@@ -1,0 +1,60 @@
+{
+  "status": "passed",
+  "arrangements": [
+    {
+      "p": 7,
+      "u": 1,
+      "vandermonde_minors": 0,
+      "smooth_triple_points": 0,
+      "hypersurface_points": 49,
+      "point_count_upper": 70,
+      "injective_maps": 42,
+      "outside_collisions": 0
+    },
+    {
+      "p": 17,
+      "u": 2,
+      "vandermonde_minors": 1,
+      "smooth_triple_points": 4,
+      "hypersurface_points": 289,
+      "point_count_upper": 1105,
+      "injective_maps": 197,
+      "outside_collisions": 183
+    },
+    {
+      "p": 23,
+      "u": 3,
+      "vandermonde_minors": 15,
+      "smooth_triple_points": 18,
+      "hypersurface_points": 645,
+      "point_count_upper": 6348,
+      "injective_maps": 258,
+      "outside_collisions": 232
+    },
+    {
+      "p": 37,
+      "u": 4,
+      "vandermonde_minors": 70,
+      "smooth_triple_points": 48,
+      "hypersurface_points": 1785,
+      "point_count_upper": 31339,
+      "injective_maps": 604,
+      "outside_collisions": 546
+    }
+  ],
+  "moment_preservation": {
+    "p": 131,
+    "seed_nodes": 17,
+    "support_size": 9,
+    "original_moments": 3,
+    "transformed_moments": 1,
+    "code_dimension": 7,
+    "far_agreement": 8,
+    "injective_maps": 5692,
+    "outside_pair_collisions": 5095,
+    "min_outside_roots": 0,
+    "max_outside_roots": 6
+  },
+  "seconds": 1.3658988749994023,
+  "scope": "Finite checks of Vandermonde general position, smooth triple intersections, point-count bounds, moment preservation, and outside collision identities. Absolute irreducibility is proved in the written argument."
+}

@@ -89,6 +89,6 @@
     "label_lower_bound_sha256": "ea98bc116645925bc3b49c18f2a0fdee3132ba4e619c909f68574d07b3cd969b",
     "strict_elias": true
   },
-  "seconds": 2.781700332998298,
+  "seconds": 2.9246677500013902,
   "scope": "Exact sufficient parameter inequalities and a prime-field instance. The all-prime slowly varying schedule is justified by the written proof, not finite testing."
 }

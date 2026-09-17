@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "certificates": [
+    {
+      "prime_exponent": 1279,
+      "n": 3834,
+      "K": 1917,
+      "m": 2556,
+      "threshold": 1921,
+      "integer_moment_box_order": 9,
+      "anchored_list_bits": 1547,
+      "image_fraction_proven_above": "3/4",
+      "padding": 1279,
+      "expected_missing_nonzero_labels_less_than_one": true,
+      "exact_relative_far_fraction": "1/4",
+      "strict_elias": true
+    },
+    {
+      "prime_exponent": 9689,
+      "n": 18162,
+      "K": 9081,
+      "m": 12108,
+      "threshold": 9083,
+      "integer_moment_box_order": 3,
+      "anchored_list_bits": 9702,
+      "image_fraction_proven_above": "3/4",
+      "padding": 6055,
+      "expected_missing_nonzero_labels_less_than_one": true,
+      "exact_relative_far_fraction": "1/2",
+      "strict_elias": true
+    }
+  ],
+  "seconds": 2.00510758299788,
+  "scope": "Independent finite arithmetic and primality replay; geometry remains a written proof and the point-count estimate a cited theorem."
+}
