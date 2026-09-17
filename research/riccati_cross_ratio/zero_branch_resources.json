@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/riccati_cross_ratio/verify_zero_branch.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.549281499999779,
+  "peak_rss_kib": 9136,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

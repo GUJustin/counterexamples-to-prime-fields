@@ -200,3 +200,15 @@ triple support intersection and the zero-Wronskian identity. This is a
 new proof-reviewed research-note closure, not yet a separately checked
 computation or an addition to the manuscript. General two branches
 remain open. Do not describe this normalized case as promising again.
+
+The normalized closure now has an independent exhaustive verifier:
+verify_zero_branch.py checks 586 candidates, 151605 pairs, 2040
+collinearity events across (p,n,D)=(7,5,1),(11,9,2), with repeated
+roots included. Passed under the resource guard. The frontier note
+also records the elementary extension excluding a low-degree moving
+branch: n-D agreement and n>4D force all three-or-more witnesses onto
+one codeword line, with common coefficient agreement >=n-2D and at
+most 2D selected full-set exceptions. This closes this route at quarter
+rate; the genuinely two-high-degree-branch case remains open. Keep
+these routine rigidity observations in research notes, not more pages
+of the ePrint's main result section.

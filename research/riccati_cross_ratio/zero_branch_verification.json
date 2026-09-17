@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "fixtures": [
+    {
+      "p": 7,
+      "n": 5,
+      "D": 1,
+      "candidates": 36,
+      "pairs": 630,
+      "collinear_triple_checks": 60
+    },
+    {
+      "p": 11,
+      "n": 9,
+      "D": 2,
+      "candidates": 550,
+      "pairs": 150975,
+      "collinear_triple_checks": 1980
+    }
+  ]
+}
