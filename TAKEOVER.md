@@ -501,3 +501,21 @@ orbit and are mu2-invariant: no growing-orbit or growing-characteristic
 family is proved. Details in SUBGROUP_EXCEPTION_SEARCH.md and saved
 censuses/checkers under research/fixed_gap_padding/. No manuscript
 addition, no Makefile addition, no research process remains running.
+
+Audited removal of the logarithmic loss in the reciprocal-gap lower
+bound. MOMENT_LOGARITHM_AUDIT.md records the connection to height-one
+polynomials: two distinct INTEGER interval subsets matching moments
+0..s give nonzero F with coefficients{-1,0,1} and (X-1)^(s+1)|F.
+The classical O(sqrt n) multiplicity upper bound implies n=O(eta^-2)
+at eta=s/n, hence log(seed list)<=O(eta^-2). Our lower bound is within
+a logarithmic factor of this mechanism's ceiling, not of a universal
+code bound. Source checked: Erdelyi arXiv2409.09553v5 Theorem3.1 (M1
+case attributed there to BEK99 Theorem4.1); Borwein--Mossinghoff P153
+first page visually inspected for classical height-one degree bounds.
+No claim that the search proves current open-problem status. Real-
+coefficient sharpness in the2024 paper does not supply binary subsets.
+Disjoint binary switches cannot help: each needs at leasts+2 nonzero
+positions by Vandermonde, so2^r disjoint choices satisfylog2L=r<1/eta.
+Removing the log needs exponentially many compatible relations, not
+just one high-multiplicity pair. Existing Gram factorial savings are
+already included. No lower-bound improvement or manuscript edit here.
