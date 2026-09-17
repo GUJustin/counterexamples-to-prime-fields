@@ -1,0 +1,82 @@
+{
+  "status": "passed",
+  "decoded_subsets": 32766,
+  "root_sum_rows": [
+    {
+      "b": 61,
+      "d": 3,
+      "m": 3,
+      "c": 1,
+      "subsets_checked": 1024,
+      "zero_sum_subsets": 8
+    },
+    {
+      "b": 521,
+      "d": 5,
+      "m": 2,
+      "c": 2,
+      "subsets_checked": 4096,
+      "zero_sum_subsets": 4
+    },
+    {
+      "b": 1279,
+      "d": 7,
+      "m": 2,
+      "c": 5,
+      "subsets_checked": 524288,
+      "zero_sum_subsets": 4
+    }
+  ],
+  "line_rows": [
+    {
+      "b": 61,
+      "d": 2,
+      "m": 3,
+      "D": 2,
+      "c": 0,
+      "n": 8,
+      "K": 3,
+      "interpolation_pencils": 56,
+      "nearby_count": 3,
+      "every_nearby_unique": true
+    },
+    {
+      "b": 61,
+      "d": 3,
+      "m": 3,
+      "D": 2,
+      "c": 1,
+      "n": 13,
+      "K": 5,
+      "interpolation_pencils": 1287,
+      "nearby_count": 3,
+      "every_nearby_unique": true
+    },
+    {
+      "b": 61,
+      "d": 3,
+      "m": 4,
+      "D": 3,
+      "c": 1,
+      "n": 16,
+      "K": 8,
+      "interpolation_pencils": 12870,
+      "nearby_count": 4,
+      "every_nearby_unique": true
+    },
+    {
+      "b": 521,
+      "d": 5,
+      "m": 2,
+      "D": 1,
+      "c": 2,
+      "n": 17,
+      "K": 4,
+      "interpolation_pencils": 2380,
+      "nearby_count": 2,
+      "every_nearby_unique": true
+    }
+  ],
+  "seconds": 3.9369638330026646,
+  "scope": "Exhaustive integer product decoding, all subset sums on small Kummer domains, and every potentially nearby codeword via interpolation pencils."
+}

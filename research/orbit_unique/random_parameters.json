@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "b": 521,
+      "d": 3,
+      "n": 466,
+      "K": 233,
+      "m": 154,
+      "D": 78,
+      "extra_coordinates": 1,
+      "nearby_count": "1447071989964361112291274818489740979880253080",
+      "probability_failure_less_than_power_two_minus": 57,
+      "ratio_greater_than_power_two": 24,
+      "separation_fraction": "3/4",
+      "root_subset_bound_bits": 463,
+      "product_collision_numerator_bits": 307,
+      "far_distance_numerator": 232,
+      "nearby_distance_numerator": 229
+    },
+    {
+      "b": 521,
+      "d": 5,
+      "n": 468,
+      "K": 234,
+      "m": 92,
+      "D": 47,
+      "extra_coordinates": 3,
+      "nearby_count": "402055120730525975942130720",
+      "probability_failure_less_than_power_two_minus": 57,
+      "ratio_greater_than_power_two": 1,
+      "separation_fraction": "5/6",
+      "root_subset_bound_bits": 463,
+      "product_collision_numerator_bits": 184,
+      "far_distance_numerator": 233,
+      "nearby_distance_numerator": 228
+    },
+    {
+      "b": 1279,
+      "d": 7,
+      "n": 1146,
+      "K": 573,
+      "m": 162,
+      "D": 82,
+      "extra_coordinates": 5,
+      "nearby_count": "361445494049053959079522545097996787863472033940",
+      "probability_failure_less_than_power_two_minus": 139,
+      "ratio_greater_than_power_two": 4,
+      "separation_fraction": "7/8",
+      "root_subset_bound_bits": 1139,
+      "product_collision_numerator_bits": 325,
+      "far_distance_numerator": 572,
+      "nearby_distance_numerator": 565
+    }
+  ],
+  "seconds": 0.008520750001480337,
+  "scope": "Exact union-bound success certificates for random valid domains, not deterministic classification certificates for specific samples. No witness recovery claim."
+}

@@ -108,3 +108,12 @@ as f. `verify_extension_profile.py` exhausts all 4368 interpolation subsets
 for the F17 fixture, determining all potential nearby witnesses over F17^2.
 All 272 nonbase parameters have distance 10; the 16 nonzero base parameters
 have distance 8 and disjoint lists, with 35 codewords total.
+
+
+## Two far endpoints and multiple far inputs
+
+The exact affine profile immediately supplies a line with exactly two far parameters: split an even number r of padding directions into equal groups and take the two endpoint coefficient vectors to be complementary indicator vectors. At z=0 and z=1 the weight is r/2; elsewhere it is r. Thus both endpoints have distance theta+r/n, all p-2 remaining parameters have distance theta, and the relative endpoint separation tends to half the capacity gap. No new sampling hypothesis is used.
+
+For the r words f+e_j, each has distance theta+2(r-1)/n. Uniform affine coefficients give nearby probability ((p-1)^r-(-1)^r)/p^r, by counting nonzero coordinates summing to one. This tends to one while every input lies almost the whole capacity gap outside the radius. These are coding statements on the constructed domains, not an implementation-level soundness claim.
+
+`check_far_inputs.py` verified explicit witnesses for all 37 parameters of a complete r=2 product-image fixture (n=36,K=15), with endpoint distances 18 and all 35 other distances 16. The degree/direction lower bound proves exactness. It also exhausted coefficient counts for 16 small (p,r) cases. The toy fixture itself is not claimed below Elias; that qualification comes from the asymptotic completion theorem and separately certified finite parameters.

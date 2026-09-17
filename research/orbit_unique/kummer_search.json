@@ -1,0 +1,72 @@
+[
+  {
+    "b": 521,
+    "d": 2,
+    "n": 80,
+    "K": 29,
+    "m": 39,
+    "D": 15,
+    "c": 0,
+    "product_exponent": 495,
+    "norm_bound_bits": 53,
+    "nearby_count": "25140840660",
+    "ratio_greater_than_power_two": 3,
+    "separation_fraction": "2/3"
+  },
+  {
+    "b": 1279,
+    "d": 3,
+    "n": 198,
+    "K": 68,
+    "m": 65,
+    "D": 23,
+    "c": 0,
+    "product_exponent": 1265,
+    "norm_bound_bits": 178,
+    "nearby_count": "227068876035237600",
+    "ratio_greater_than_power_two": 4,
+    "separation_fraction": "3/4"
+  },
+  {
+    "b": 9689,
+    "d": 5,
+    "n": 905,
+    "K": 324,
+    "m": 180,
+    "D": 65,
+    "c": 0,
+    "product_exponent": 9685,
+    "norm_bound_bits": 937,
+    "nearby_count": "83272458987810162058104340058558942063993933814600",
+    "ratio_greater_than_power_two": 14,
+    "separation_fraction": "5/6"
+  },
+  {
+    "b": 23209,
+    "d": 13,
+    "n": 3588,
+    "K": 1338,
+    "m": 275,
+    "D": 103,
+    "c": 0,
+    "product_exponent": 23175,
+    "norm_bound_bits": 5275,
+    "nearby_count": "477889169644616277624432664477150333061830182495067715804376835767090093588000",
+    "ratio_greater_than_power_two": 2,
+    "separation_fraction": "13/14"
+  },
+  {
+    "b": 44497,
+    "d": 19,
+    "n": 7068,
+    "K": 2830,
+    "m": 371,
+    "D": 149,
+    "c": 0,
+    "product_exponent": 44402,
+    "norm_bound_bits": 11214,
+    "nearby_count": "147273693373639889514066953061266635020000684264395011738562837727844211462695924349340124324934726432703600",
+    "ratio_greater_than_power_two": 0,
+    "separation_fraction": "19/20"
+  }
+]

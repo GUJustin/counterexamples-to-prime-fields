@@ -1,6 +1,6 @@
 \documentclass[11pt,letterpaper]{article}
 \usepackage[margin=1in]{geometry}
-\usepackage{amsmath,amssymb,amsthm,booktabs,array,enumitem}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array,enumitem,graphicx}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern,microtype,xurl,hyperref}
 \hypersetup{colorlinks=true,linkcolor=blue,citecolor=blue,urlcolor=blue}
@@ -53,7 +53,9 @@ coordinate short of the maximum possible Reed--Solomon distance.
 The radius is strictly below Elias, and its gap is
 $\eta\sim H_2(\rho)/\log_2p$. The far point lies $(1-o(1))\eta$
 outside that radius, while the proposed numerical nearby fraction
-tends to zero. The length can be $\Theta_\rho(\log p\log\log p)$.
+tends to zero. The length can be $\Theta_\rho(\log p\log\log p)$. The same codes
+also contain lines with two far endpoints and every other point nearby;
+both endpoints can lie almost half a gap outside the tested radius.
 Paired evaluation domains and a multiplicative-character estimate
 produce this behavior; all nonzero points have exactly the tested
 distance and have pairwise disjoint decoding lists. A separate cubic deformation gives complete
@@ -145,9 +147,27 @@ Thus the exponent must grow almost quadratically in the reciprocal
 gap, rather than linearly. The examples remain strictly below the
 characteristic-based Elias radius.
 
-The clearest line-level message is that \emph{a line can be close to
-the code everywhere except at one point, and that point can be only
-one coordinate short of being maximally far}. At every fixed rational
+The clearest line-level message is that \emph{even below Elias,
+two far words can have every affine combination other than the two
+endpoints close to the code}. Corollary~\ref{pd:two-far-inputs} places
+both endpoints almost half a gap outside the tested radius, while a
+random mixture is nearby with probability $1-2/p$. More generally,
+$r$ words can each lie almost an entire gap outside the radius while
+a random affine combination is nearby with probability $1-O(r/p)$.
+
+\begin{figure}[tb]
+\centering
+\includegraphics[width=\linewidth]{figures/two_far_inputs.pdf}
+\caption{Two far inputs, but all $p-2$ other affine combinations are
+nearby (Corollary~\ref{pd:two-far-inputs}). The endpoint separation
+$r/n$ approaches half the capacity gap $\eta=(2r+1)/n$. The diagram
+suppresses most field parameters.}
+\label{fig:two-far-inputs}
+\end{figure}
+
+The underlying construction gives an even sharper exceptional point:
+\emph{a line can be close to the code everywhere except at one point,
+and that point can be only one coordinate short of being maximally far}. At every fixed rational
 rate, Corollary~\ref{pd:full-gap} gives prime-field codes for which
 all $p-1$ nonzero parameters are nearby, but parameter zero has distance
 $1-\rho-1/n$. Every word is within $1-\rho$ of a Reed--Solomon code,
@@ -182,6 +202,10 @@ unique-witness examples whose far point lies at least $(1-\varepsilon)\eta$
 outside the nearby radius. These examples use scaled prime-order orbits
 and retain efficient witness recovery. They have a sparse nearby set;
 they are separate from the complete-coverage construction.
+Theorem~\ref{ou:random} obtains the same relative separation and
+uniqueness on domains of length $\Theta(\log p)$ by random sampling,
+with a polynomial-in-$p$ violation of the numerical bound, but without
+a witness-recovery guarantee.
 
 In the full-coverage examples the gap shrinks as $\Theta(1/\log p)$,
 and the strongest relative separation approaches the Elias boundary. These results do not
@@ -3366,7 +3390,7 @@ coexist with a unique nearby codeword at every nonzero parameter?
 The cubic construction necessarily has local ambiguity: at a single
 padding coordinate, more than $p$ candidates produce only $p-1$ labels.
 It also has very large global lists. The paired constructions in
-Theorems~\ref{pd:unique} and~\ref{pd:deterministic} have whole-line
+Theorems~\ref{pd:unique}, \ref{pd:deterministic}, and~\ref{ou:random} have whole-line
 uniqueness and exponentially many nearby parameters, but do not give
 complete nonzero coverage. The fixed-gap construction gives whole-line
 uniqueness with a linear lower bound on the nearby count.
@@ -3374,7 +3398,8 @@ uniqueness with a linear lower bound on the nearby count.
 Can one efficiently recover nearby codewords for the full-coverage
 constructions, or enumerate enough of the equal-moment classes to match
 the counting lower bounds? The deterministic powers-of-two family in
-Theorem~\ref{pd:deterministic} has an efficient witness-recovery algorithm. Lemma~\ref{pd:sampling} and Proposition~\ref{cw:sampling}
+Theorem~\ref{pd:deterministic} and the orbit family in
+Theorem~\ref{ou:finite} have efficient witness-recovery algorithms. Lemma~\ref{pd:sampling} and Proposition~\ref{cw:sampling}
 output the code and line in expected polynomial time in $\log p$, but
 do not recover a witness
 for a supplied nonzero parameter.

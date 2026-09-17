@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/orbit_unique/verify_random.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5657003750020522,
+  "peak_rss_kib": 6192,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

@@ -23,3 +23,23 @@ For prime d and p congruent to 1 modulo d, the core consists of the d-th-root or
 - `instances.json`: compact reproducible domains and witness coefficients in powers of X^d. No enormous field enumeration is claimed.
 
 Finite separation fractions are 3/4, 5/6, and 7/8 of eta. The corresponding ratios exceed 2^9, 2^2, and 1 (the final ratio is not claimed to exceed 2). Independent replay passed within 31 MiB and 30 seconds on the restored laptop.
+
+
+## Random representatives at logarithmic length
+
+Theorem `ou:random` keeps prime-order padding and samples independent core representatives and extras. For p>d^(d-1), no proper nonempty subset of the d-th roots sums to zero: the nonzero cyclotomic norm is too small to be divisible by p. Each forbidden nonpadding zero-sum subset is therefore a nonzero linear equation in the random representatives, with probability exactly 1/p before domain conditioning. There are at most 2^(n-d) such subsets. Distinct D-support products differ by a nonzero polynomial of degree at most dD, giving at most dD*binom(binom(m,D),2)/p collision probability. Domain collisions cost at most binom(n,2)/p. Valid-domain rejection changes the bound by the explicitly recorded denominator p-binom(n,2).
+
+For n=alpha log2(p)+O(1), alpha<1 fixed, the bad probability is at most p^(alpha-1+o(1)). All-codeword classification is deterministic on the good event, but the sampler need not test that event. This theorem deliberately does not claim efficient witness recovery. Its nearby set is sparse.
+
+`verify_random.py` uses exact integers/rationals and fresh Lucas-Lehmer checks for three finite half-rate certificates. `check_random_geometry.py` exhausts all subset sums and all interpolation pencils for nine fixed small random domains, with separately checked primality. Both passed. These tests check the sufficient criterion; the probabilistic estimate is proved by the union bound, not inferred from experiment.
+
+
+## Root-of-two finite refinement
+
+Proposition `ou:kummer` requires both alpha^d=2 and an order-d root omega in F_p. Its zero-sum lift lies in Q(2^(1/d),zeta_d), of degree d(d-1). The coprime degrees of the two subfields prove the degree statement. The integral order with basis u^s*zeta^j maps to F_p using the supplied roots; multiplication by a nonzero element mapping to zero has determinant (norm) divisible by p. Every conjugate of a subset sum or point difference is bounded by A=n*2^ceil((m+c+1)/d), so p>A^[d(d-1)] rules out a nonzero modular vanishing. Independence of the u powers, followed by binary uniqueness within each exponent residue class, forces complete core orbits and no extras.
+
+Indices begin at TWO. Then products of (2^i-1) have normalized value strictly between 1/2 and 1, and their bit length is exactly the sum of the indices. The base-two greedy threshold is valid because the finite tail product is strictly larger than 1-2^-i. The no-wrap exponent is D(2m-D+3)/2, a factor approximately d smaller than the earlier orbit exponent. This is a conditional-root finite refinement; it does not assert alpha exists at every p congruent to 1 modulo d.
+
+`generate_kummer.py` certified five Mersenne fields and saved roots, including d=13 over M23209 and d=19 over M44497. `verify_kummer.py` independently checked primality, roots, every domain coordinate, exact entropy inequalities, 80 decoded supports and 10 fully evaluated witnesses. Largest domain: n=7068, K=2830, d=19, m=371, D=149, c=0, ratio >1, separation 19/20 eta. Replay took 36 seconds and less than 89 MiB.
+
+`check_kummer_small.py` independently decoded all 32,766 subsets up to core size 14, exhausted 1,024 / 4,096 / 524,288 subset sums, and classified all nearby codewords via 56 / 1,287 / 12,870 / 2,380 interpolation pencils. All passed, including extra-coordinate cases. Saved `kummer_instances.json` contains compact domain recipes and exact witness polynomial coefficients. No sampling-success assumption remains after the roots are certified.

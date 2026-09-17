@@ -60,6 +60,7 @@ verify:
 	$(PYTHON) research/paired_domain_warp/check_small_completion.py
 	$(PYTHON) research/paired_domain_warp/verify_completed_sample.py
 	$(PYTHON) research/paired_domain_warp/verify_extension_profile.py
+	$(PYTHON) research/paired_domain_warp/check_far_inputs.py
 	$(PYTHON) research/paired_domain_warp/m31_exact/verify.py
 	$(PYTHON) research/paired_domain_warp/m31_exact/verify_local_lists.py
 	$(PYTHON) research/paired_domain_warp/verify_unique_geometry.py
@@ -70,6 +71,10 @@ verify:
 	$(PYTHON) research/orbit_unique/verify_parameters.py
 	$(PYTHON) research/orbit_unique/check_small.py
 	$(PYTHON) research/orbit_unique/verify.py
+	$(PYTHON) research/orbit_unique/verify_random.py
+	$(PYTHON) research/orbit_unique/check_random_geometry.py
+	$(PYTHON) research/orbit_unique/verify_kummer.py
+	$(PYTHON) research/orbit_unique/check_kummer_small.py
 	$(PYTHON) research/cubic_domain_warp/verify_geometry.py
 	$(PYTHON) research/cubic_domain_warp/verify_finite_certificate.py
 	$(PYTHON) research/cubic_domain_warp/audit_finite_independent.py

@@ -1662,3 +1662,89 @@ For arbitrary rho, exact ratio J > 2^q*n*2^[nH(K/n)/(d+1)] iff
 Do not alter the existing all-p≡1modd asymptotic theorem: this Kummer
 variant additionally requires a dth root of 2. Could present as finite
 refinement / conditional-root theorem, not overclaim same progression.
+
+## 2026-09-17 10:43 UTC — new results integrated and checked
+
+Paper now146pages, clean build, fullmarginarticle. Newfigureonpage3 and
+Kummerproofpage46visuallyinspected. All110mainchecks+12overnightstepsPASSED;
+summary research/verification_2026-09-17.json, commitd0bfd041. Newadditions
+separatelychecked; Makefile now116commands includingovernight.
+
+NEWMAINMESSAGE: twofarinputsu,v canhaveALLp-2otheraffinemixturesnearby,
+eachendpointalmosthalfgapoutside. Corollarypd:two-far-inputs followsby
+partitioningrpaddingdirectionsintoequalgroups. Endpointsparameterweight
+r/2, otherparametersweightr, soendpointdistanceθ+r/n. Moreoverrinputs
+f+e_j eachθ+2(r-1)/n, uniformaffinecombinationsnearwithprobability
+((p-1)^r-(-1)^r)/p^r =1-O(r/p), whileeachinputalmostwholegapoutside.
+far_inputs.tex+check_far_inputs.py: all37parametersofp37,n36,K15,r2toy
+fixtureexactdistances18at0,1and16else;16exhaustiveaffinecoefficientcounts.
+ToynotbelowElias; asymptoticcompletionprovidesthat. Figuregenerator
+figures/two_far_inputs.py withPDF/PNG. Matplotlibinstalledusinguvandpinned
+inuser-localtoolchainrequirements.
+
+RANDOMORBITTHEOREM ou:random nowintegrated: n=alpha log2p+O(1),alpha<1,
+allp≡1modfixedprimed, nearfractiond/(d+1)gap, allnearbyunique,
+J/prescription=p^Omega(1) forc2<1+1/d. Failureatmostp^(alpha-1+o1).
+Noarbitrarywitnessdecoder. Finitehalfrateunionbounds:
+M521d3n466K233ratio>2^24failure<2^-57;
+M521d5n468K234ratio>2failure<2^-57;
+M1279d7n1146K573ratio>2^4failure<2^-139.
+verify_random.pyand9exhaustivecheck_random_geometry.pyfixturesPASSED.
+
+KUMMERREFINEMENT ou:kummer nowproved/integrated/certified. Root-of-two
+corealpha^iω^j,i2..m+1, alpha^d2. NormboundA=n2^ceil((m+c+1)/d),
+p>A^[d(d-1)], productboundp>2^[D(2m-D+3)/2]. ClassifiesALLnearQ;
+base2decoderworksstartindex2(normalizedproduct>1/2). Fiveexactrows:
+M521d2n80K29,m39D15,ratio>2^3;
+M1279d3n198K68,m65D23,ratio>2^4;
+M9689d5n905K324,m180D65,ratio>2^14;
+M23209d13n3588K1338,m275D103,ratio>2^2;
+M44497d19n7068K2830,m371D149,ratio>1, separation19/20eta.
+Allc0, ratesvary. IndependentLLroot/domain/entropy/witnessreplay36sec89MiB.
+80decodedrandomsupports,10fullwitnesspolynomials. 32766exhaustivebase2
+subsetdecodings, 1024/4096/524288rootsubsets,56/1287/12870/2380interpolation
+pencilsPASSED. Savedkummer_instances.json~compactrecipesandcoefficients.
+No samplingfailureassumptionafterrootscertified. Requiresbothroots; NOT
+allp≡1modd. Existingintegerorbitasymptotictheoremunchanged.
+
+Noactive numericaljobs atthischeckpoint. Continueuntil12:30UTC.
+
+PROVISIONALNEXTIDEA — NOTYETPROVED/INTEGRATED:
+Two padding orbits can potentially double the exponent-constant range
+while retaining near-full separation and unique recoverable witnesses.
+Fix prime d, choose q a large power of2 with q-1>3*d^(d-1). For indices
+i=L,...,L+m-1 set R_i=(q^(i+1)-1)/(q^i-1)=q+(q-1)/(q^i-1), positive
+real a_i=R_i^(1/d), t=q^(1/d), and corea_i*zeta_d^j. Paddingorbitsat
+x^d=1 andx^d=q (2dpoints). Extra c<d singletonsatnextindices forrate.
+LetM=m+c, chooseq^L>4*(dM)^(d-2). Then eacha_i=t+δ_i with
+ t/(3d)*q^-i < δ_i <=t/d*q^-i.
+Forselectedrootssum S=Σa_i C_i, C_i=sumselecteddthroots, |C_i|<=d;
+nonzeroC_i has|C_i|>=d^-(d-2). IfΣC_i≠0 itsabsolutevalue>=
+(dM)^-(d-2), so tΣC dominatesδtail bychoiceL. IfΣC_i=0, firstnonzero
+δ_i C_i dominateslaterterms byq-1>3d^(d-1). ThuszerosumforcesALLC_i0,
+whichforprimedforceswholecoreorbitsandnoextras. Formaldomainpointsdistinct.
+Choose primes splitting the finite Galois field of these radicals plus
+zeta_d,t, avoiding finitely many nonzero norms/denominators. Infinitelymany
+suchprimes (standard splitting-prime existence; can prove viaSchurprime
+divisorsofminimalpolynomialofprimitiveintegralGaloisgenerator+degree-one
+primeideal). Choosep arbitrarilylarge toalsoavoidwrap ofallq^s/products.
+ThenallnearQ classifiedasDwholeorbits asbefore, w degree dD,K=dD-1.
+Now n=d(m+2)+c, farK+1agreements,nearK+1+2d, eta=(2d+1)/n,
+separation2d/(2d+1)eta. ForDsupportI:
+ H_I(1)/H_I(t)=q^(sumI),
+ -H_I(t)=(-1)^(D+1)(q-1)^D / prod(q^i-1).
+ChoosefixedsumS maximizing number ofDsupports (atleastbinom(m,D)/
+[D(m-D)+1]). Directionq^S onfirstpaddingorbit,1onsecond,0core.
+Allnearby iff sumI=S (p>q^maxsum preventsmodularpowercollision).
+Labelinverse yieldsintegerproductT<p, greedilydecodablebaseq (i>=1,q>=4).
+Hencewhole-linenearlistsunique andefficientlyrecoverable. EntropylogJ=
+mHrho+O(logm), n~dm, beatsc2< (2d+1)/d =2+1/d!
+Thusforc2=2, arbitrarilynearfullgapseparationbylarged, astrongeruniform
+constantobstruction than currentorbitc2<1+1/d. Fields may be extremelylarge;
+noallprime/noTheta(logp) claim. Need rigorous reduction/primeexistence,
+exact-rate n congruence nowm=(n-c)/d-2, D=(rhon+1)/d, andtoychecks.
+Onecanboundthemultiradicalnorms explicitly withfielddegree<=d^(m+c+1)(d-1),
+sochoosep enormous; existence alone suffices foruniformboundcounterexample.
+For d2, a_i=sqrt(4+3/(4^i-1)) realdescendingperturbations of2 already
+force signed dissociation. Moregenerald usescyclotomicnormlowerbounds.
+Do not claimthisuntilproofandtestsarefinished.

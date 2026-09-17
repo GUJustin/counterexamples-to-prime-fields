@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/orbit_unique/generate_kummer.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 58.142096750001656,
+  "peak_rss_kib": 20992,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 300
+}

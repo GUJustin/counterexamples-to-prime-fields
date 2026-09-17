@@ -1,0 +1,150 @@
+{
+  "status": "passed",
+  "fixture": {
+    "p": 37,
+    "n": 36,
+    "K": 15,
+    "r": 2,
+    "exact_line_distances": [
+      18,
+      18,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16
+    ],
+    "nearby_parameters": 35,
+    "endpoint_separation_coordinates": 2
+  },
+  "affine_coefficient_counts": [
+    {
+      "p": 3,
+      "r": 2,
+      "nearby_affine_coefficients": 1,
+      "total": 3
+    },
+    {
+      "p": 3,
+      "r": 3,
+      "nearby_affine_coefficients": 3,
+      "total": 9
+    },
+    {
+      "p": 3,
+      "r": 4,
+      "nearby_affine_coefficients": 5,
+      "total": 27
+    },
+    {
+      "p": 3,
+      "r": 5,
+      "nearby_affine_coefficients": 11,
+      "total": 81
+    },
+    {
+      "p": 5,
+      "r": 2,
+      "nearby_affine_coefficients": 3,
+      "total": 5
+    },
+    {
+      "p": 5,
+      "r": 3,
+      "nearby_affine_coefficients": 13,
+      "total": 25
+    },
+    {
+      "p": 5,
+      "r": 4,
+      "nearby_affine_coefficients": 51,
+      "total": 125
+    },
+    {
+      "p": 5,
+      "r": 5,
+      "nearby_affine_coefficients": 205,
+      "total": 625
+    },
+    {
+      "p": 7,
+      "r": 2,
+      "nearby_affine_coefficients": 5,
+      "total": 7
+    },
+    {
+      "p": 7,
+      "r": 3,
+      "nearby_affine_coefficients": 31,
+      "total": 49
+    },
+    {
+      "p": 7,
+      "r": 4,
+      "nearby_affine_coefficients": 185,
+      "total": 343
+    },
+    {
+      "p": 7,
+      "r": 5,
+      "nearby_affine_coefficients": 1111,
+      "total": 2401
+    },
+    {
+      "p": 11,
+      "r": 2,
+      "nearby_affine_coefficients": 9,
+      "total": 11
+    },
+    {
+      "p": 11,
+      "r": 3,
+      "nearby_affine_coefficients": 91,
+      "total": 121
+    },
+    {
+      "p": 11,
+      "r": 4,
+      "nearby_affine_coefficients": 909,
+      "total": 1331
+    },
+    {
+      "p": 11,
+      "r": 5,
+      "nearby_affine_coefficients": 9091,
+      "total": 14641
+    }
+  ],
+  "seconds": 0.03472662500280421,
+  "scope": "Explicit witnesses plus the degree/direction lower bound certify all field parameters of the toy line. The toy fixture is not a below-Elias numerical-bound violation; asymptotic and finite field guarantees come from completion certificates."
+}

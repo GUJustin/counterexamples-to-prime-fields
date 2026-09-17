@@ -9,9 +9,15 @@ of hash-based SNARKs. It proves general list and affine-line separations
 over prime fields, gives finite circle-code examples, and treats the S-two
 analysis as an application of those results.
 
-The clearest line-level message is that **a line can be close to the code
-at every point but one, and that point can be only one coordinate short
-of being maximally far**. At every fixed rational rate, all `p-1` nonzero
+The clearest line-level message is that **even below Elias, two far words
+can have every affine combination other than the endpoints close to the
+code**. Both endpoints can lie almost half a gap outside the radius, while
+a random mixture is nearby with probability `1-2/p`. With `r` inputs,
+each input can lie almost an entire gap outside the radius while a random
+affine combination is nearby with probability `1-O(r/p)`.
+
+The underlying construction also gives a line close to the code at every
+point but one, with that point only one coordinate short of maximally far. At every fixed rational rate, all `p-1` nonzero
 parameters are nearby while zero has distance `1-rho-1/n`. Its separation
 from the radius is `(1-o(1))*eta`, almost the entire capacity gap. The
 radius remains strictly below Elias. The `c1=c2=1` numerical prescription

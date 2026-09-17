@@ -1,0 +1,72 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "b": 521,
+      "d": 2,
+      "n": 80,
+      "K": 29,
+      "ratio_greater_than_power_two": 3,
+      "separation": "2/3",
+      "domain_sha256": "07bed094cf4389d1ee787d9dc96781eddb5adad3850df071b2eae8103446d2e1",
+      "distinct_domain_points": 80,
+      "decoded_supports": 16,
+      "fully_evaluated_witnesses": 2,
+      "seconds": 0.002902250002080109
+    },
+    {
+      "b": 1279,
+      "d": 3,
+      "n": 198,
+      "K": 68,
+      "ratio_greater_than_power_two": 4,
+      "separation": "3/4",
+      "domain_sha256": "f90a8a710b83d861ba3767189a7bd676a54bbe9870ddb4b4bd3227a6142d84cf",
+      "distinct_domain_points": 198,
+      "decoded_supports": 16,
+      "fully_evaluated_witnesses": 2,
+      "seconds": 0.008022332993277814
+    },
+    {
+      "b": 9689,
+      "d": 5,
+      "n": 905,
+      "K": 324,
+      "ratio_greater_than_power_two": 14,
+      "separation": "5/6",
+      "domain_sha256": "467446e24d3025c731f1b1d0423e0b5e49dc9dc4ea496dde3a0d1b37f25c9399",
+      "distinct_domain_points": 905,
+      "decoded_supports": 16,
+      "fully_evaluated_witnesses": 2,
+      "seconds": 0.5436766249986249
+    },
+    {
+      "b": 23209,
+      "d": 13,
+      "n": 3588,
+      "K": 1338,
+      "ratio_greater_than_power_two": 2,
+      "separation": "13/14",
+      "domain_sha256": "75c30dbbf934ab647e09eb09369ef6f4de8b80da01f0d440a7659fa6c55e3bb4",
+      "distinct_domain_points": 3588,
+      "decoded_supports": 16,
+      "fully_evaluated_witnesses": 2,
+      "seconds": 5.642951249996258
+    },
+    {
+      "b": 44497,
+      "d": 19,
+      "n": 7068,
+      "K": 2830,
+      "ratio_greater_than_power_two": 0,
+      "separation": "19/20",
+      "domain_sha256": "1ce9d092c77242af5a3f9caf10a288b10d200171fb93297e5c55e779f6079d7a",
+      "distinct_domain_points": 7068,
+      "decoded_supports": 16,
+      "fully_evaluated_witnesses": 2,
+      "seconds": 29.65566354100156
+    }
+  ],
+  "seconds": 35.85878849999426,
+  "scope": "Deterministic specific-domain certificates with supplied certified roots. No random coverage event, global list upper bound, or prescribed FFT-domain assertion."
+}

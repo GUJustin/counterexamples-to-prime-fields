@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/orbit_unique/check_random_geometry.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 10.722300708002876,
+  "peak_rss_kib": 19040,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 180
+}

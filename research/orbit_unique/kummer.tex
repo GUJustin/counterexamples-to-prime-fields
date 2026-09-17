@@ -1,0 +1,109 @@
+\paragraph{Smaller finite fields using roots of two.}
+When the field also contains a $d$th root of two, the same decoder can
+use the factors $2^i-1$ instead of $2^{di}-1$. This reduces the integer
+product bound substantially. The following statement requires both
+specified roots in the field; it does not replace the prime-progression
+hypothesis of Corollary~\ref{ou:asymptotic}.
+
+\begin{proposition}[A root-of-two refinement]\label{ou:kummer}
+Let $d$ be prime and let $\omega,\alpha\in\F_p$ satisfy
+$\operatorname{ord}(\omega)=d$ and $\alpha^d=2$.
+Take $m\ge2$, $1\le D<m$, $0\le c<d$, and put
+\[
+ n=d(m+1)+c,\qquad K=dD-1,\qquad
+ A=n2^{\lceil(m+c+1)/d\rceil}.
+\]
+Assume
+\[
+ p>A^{d(d-1)},\qquad p>2^{D(2m-D+3)/2}.
+\]
+Use the core $\{\alpha^i\omega^j:2\le i\le m+1,\ 0\le j<d\}$,
+extra coordinates $\alpha^{m+2},\ldots,\alpha^{m+c+1}$, and padding
+$\{\omega^j:0\le j<d\}$.
+These points are distinct. The corresponding locator line has exactly
+$\binom mD$ nearby parameters at radius $1-K/n-(d+1)/n$;
+each has a unique codeword, recoverable in polynomial time in $\log p$.
+Parameter zero has exact distance $1-K/n-1/n$.
+The construction and decoder are deterministic given the two roots.
+\end{proposition}
+\begin{proof}
+Let $u=2^{1/d}>0$ and let $\zeta$ be a complex primitive $d$th root.
+The field $L=\mathbb Q(u,\zeta)$ has degree $d(d-1)$: the degrees
+$d$ and $d-1$ of its two subfields are relatively prime, so their
+product both divides and bounds $[L:\mathbb Q]$.
+The ring $\mathbb Z[u,\zeta]$ is free on the basis
+$u^s\zeta^j$ for $0\le s<d$, $0\le j<d-1$.
+The given finite-field roots define a ring homomorphism to $\F_p$.
+Consequently a nonzero element mapping to zero has nonzero integer
+norm divisible by $p$, as follows by reducing its multiplication
+matrix modulo $p$.
+
+For a lifted subset sum or a difference of two displayed formal
+coordinates, every conjugate has absolute value at most $A$.
+Thus its norm has absolute value at most $A^{d(d-1)}<p$.
+A modular zero must therefore already be zero in $L$. Distinct formal
+coordinates have different positive magnitudes unless their indices
+agree, in which case their root-of-unity factors are distinct. This
+proves distinctness after reduction.
+
+For a subset sum of nonpadding coordinates, group exponents of $u$
+according to their residue modulo $d$, using $u^{qd+s}=2^qu^s$.
+The powers $1,u,\ldots,u^{d-1}$ are linearly independent over
+$\mathbb Q(\zeta)$, so each resulting polynomial in $\zeta$ vanishes.
+Its degree is at most $d-1$, forcing all its coefficients to agree.
+Within each residue class, each coefficient is a sum of distinct
+powers of two. Binary uniqueness again forces whole core orbits and
+excludes all extra coordinates.
+
+The all-codeword classification from Theorem~\ref{ou:finite} now
+applies, with locators
+\[
+ H_I(X)=\prod_{i\in I}(X^d-2^i),\qquad
+ I\subseteq\{2,\ldots,m+1\},\quad |I|=D.
+\]
+Their signed labels lift to positive integers
+$T_I=\prod_{i\in I}(2^i-1)<2^{D(2m-D+3)/2}<p$.
+Writing $s=\sum_{i\in I}i$, the normalized product satisfies
+\[
+ \tfrac12<\prod_{i\in I}(1-2^{-i})<1,
+\]
+so $T_I$ has exactly $s$ binary digits. At index $i$, membership is
+equivalent to the remaining normalized product being at most
+$1-2^{-i}$; the product of all later factors is strictly greater than
+that threshold. The greedy decoder therefore works in base two.
+Starting the indices at two is essential to this normalization argument.
+The remaining degree, count, and distance conclusions are unchanged.
+\end{proof}
+
+For a Mersenne prime $p=2^b-1$ with $d\ne b$, one can take
+$\alpha=2^v$, where $dv\equiv1\pmod b$. The check
+$\alpha^d=2$ is immediate. An order-$d$ root is still required, so
+$d\mid p-1$ remains a separate condition.
+
+Exact certificates give the following specific domains. Rates are $K/n$
+and need not be one half. Each comparison uses that row's exact binary
+entropy, evaluated through integer powers rather than floating-point logs.
+\begin{center}
+\begin{tabular}{@{}rrrrll@{}}
+\toprule
+Prime & $d$ & $n$ & $K$ & Separation & Ratio $>$\\
+\midrule
+$2^{521}-1$&2&80&29&$2\eta/3$&$2^3$\\
+$2^{1279}-1$&3&198&68&$3\eta/4$&$2^4$\\
+$2^{9689}-1$&5&905&324&$5\eta/6$&$2^{14}$\\
+$2^{23209}-1$&13&3588&1338&$13\eta/14$&$2^2$\\
+$2^{44497}-1$&19&7068&2830&$19\eta/20$&$1$\\
+\bottomrule
+\end{tabular}
+\end{center}
+The ratio is $\binom mD/(n2^{H_2(K/n)/\eta})$, with
+$\eta=(d+1)/n$. The respective $(m,D,c)$ are
+$(39,15,0)$, $(65,23,0)$, $(180,65,0)$, $(275,103,0)$,
+and $(371,149,0)$.
+All five primes have independent Lucas--Lehmer replays; saved roots,
+domain distinctness, the two field bounds, strict Elias, and representative
+witness evaluations are checked independently. These are deterministic
+specific-domain certificates once the certified roots are supplied.
+The final row has a uniquely recoverable nearby witness at every accepted
+parameter, even though the far point is $19/20$ of the capacity gap
+outside the radius and the numerical prescription is too small.

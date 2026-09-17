@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/paired_domain_warp/check_far_inputs.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5549467499949969,
+  "peak_rss_kib": 3488,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

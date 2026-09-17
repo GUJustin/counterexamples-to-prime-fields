@@ -1,0 +1,50 @@
+\begin{corollary}[Two far inputs and almost-certain nearby mixtures]
+\label{pd:two-far-inputs}
+In Corollary~\ref{pd:full-gap}, let $r\ge2$ be even. There are words
+$u,v$ with
+\[
+ \dist(u,C)=\dist(v,C)=\theta+\frac{r}{2r+1}\eta
+\]
+such that
+\[
+ \dist((1-z)u+zv,C)=\theta
+ \qquad\text{for every }z\in\F_p\setminus\{0,1\}.
+\]
+Thus exactly the two endpoints are outside the tested radius, and a
+uniform affine mixture is nearby with probability $1-2/p$.
+For $r\to\infty$, both endpoints are almost half a gap outside that
+radius, although the numerical prescription predicts a nearby fraction
+tending to zero. All the same rate, domain-length, strict-Elias, and
+sampling guarantees apply.
+
+More generally, the same code has $r$ words $v_1,\ldots,v_r$, each at
+distance
+\[
+ \theta+\frac{2(r-1)}{2r+1}\eta,
+\]
+whose uniform affine combination is nearby with exact probability
+\[
+ \left(1-\frac1p\right)^r-\frac{(-1)^r}{p^r}
+ =1-O(r/p).
+\]
+Here the coefficients are uniform subject to summing to one.
+\end{corollary}
+\begin{proof}
+Partition the $r$ directions into two equal sets $A,B$ and put
+$u=f+\sum_{j\in A}e_j$, $v=f+\sum_{j\in B}e_j$.
+Their affine mixture has parameter coordinates $1-z$ on $A$ and
+$z$ on $B$. At the endpoints exactly $r/2$ coordinates are nonzero;
+at every other parameter all $r$ are nonzero.
+The exact distance profile~\eqref{pd:exact-profile} proves every claim
+about the line. Its $p-2$ nearby parameters still exceed the prescribed
+bound by a factor tending to infinity.
+
+For the second statement take $v_j=f+e_j$. Each has parameter weight
+one, giving the stated distance. An affine combination with coefficients
+$\lambda_j$ has parameter vector $(\lambda_1,\ldots,\lambda_r)$, so
+it is nearby exactly when all coefficients are nonzero.
+The number of nonzero-coordinate vectors with sum one is
+$((p-1)^r-(-1)^r)/p$: this follows by inclusion--exclusion, or by
+separating the zero and nonzero target sums in a recurrence on $r$.
+Dividing by the $p^{r-1}$ affine coefficient vectors proves the formula.
+\end{proof}
