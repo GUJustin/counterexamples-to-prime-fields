@@ -1,12 +1,12 @@
 {
   "command": [
     "/Users/jthaler/.local/bin/python3.12",
-    "research/fixed_gap_padding/verify_multi_match_far_padding.py"
+    "research/fixed_gap_padding/verify_multi_match_finite.py"
   ],
   "reason": "completed",
   "returncode": 0,
-  "seconds": 1.131254791001993,
-  "peak_rss_kib": 19088,
+  "seconds": 0.5773582500005432,
+  "peak_rss_kib": 7936,
   "rss_limit_mib": 384,
   "time_limit_seconds": 120
 }

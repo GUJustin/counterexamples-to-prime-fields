@@ -835,3 +835,38 @@ primes using existing gram/list bounds, r>=2. Need L>>p^r, q large vs
 r²e to certifyhighdensity; existingone-matchtabledoesnottransferunchanged.
 Or further theoreticalimprovement to growingfixedgapshortdomainlists.
 Continue until12:30UTC; currentlyonly~06:00UTC.
+
+
+## September 17 ~06:03 UTC — exact multi-coordinate finite certificates
+
+Previousgoalturnprogresscommit2eb879916. Added floatingsearch
+search_multi_match.py (expandedn<=40b afterr3besthitboundary), exactreplay
+verify_multi_match_finite.py. New4rowtableonpage36: half-rate M127
+(n694,K347,A356,r2) J/p>0.25107817, prescription<2^-40;
+(n830,K415,A426,r3)>0.02273637 vs2^-40; M521
+(n5840,K2920,A2936,r2)>0.59499256 vs2^-100;
+(n8140,K4070,A4091,r3)>0.28599616 vs2^-100. Also M61/M1279 r2/3.
+Allprime/Elias/Gram/count/prescriptioninequalitiesexact, guardedPASS.
+Refinedaggregatebounduses(e-1)fallinsteadof(d-1)fallbecauseuniformpair
+rootcap e alreadyproved; lemma explicitlynotesreplacement. Smallfixtures
+replayedagainstrefinedboundPASS. Makefile75checks, PDF119pagesclean,
+newpage36tablevisuallychecked. Noactiveprocess.
+
+PROMISING NEXT THEOREM (notyetintegrated): dense lines with far distance
+a FIXED POSITIVE FRACTION OF eta, rather thanonlycoordinatecountgrowth.
+Use originalfar-paddinglemma with n=C*b (b=log2p), fixedinteger s,
+K=rho*n, t=K+s+1,m~K/beta for fixedrho<beta<1. Anchoredsupportlog
+~(rho/beta)*C*H2(beta)*b; fixeds momentcostO_s(logb). Pick
+C>beta/(rho*H2(beta)) so L/p->infinity. Residualcollision~rho(1-beta)n,
+q~(1-rho/beta)n, so nearbyfraction>=1-exp(-(beta-rho)/(rho*beta*(1-beta)))-o1.
+Pickbeta near1 to make this>1-epsilon, thenCconstantlargeenough, then
+fixedinteger s with(s+1)/C>max(Hrho,c2Hrho). Exacteta=(s+1)/n~c/b,
+strictElias, numericalprescriptiono(p), farpointseparation1/n=eta/(s+1).
+Thus for anyepsilon,c1,c2 obtain fixedkappa=1/(s+1)>0, fraction>1-epsilon
+andfarpointkappa*eta beyondradius. kappa depends on epsilon/constants;
+no assertiondensity->1 atfixedkappa. nTheta(logp), etaTheta(1/logp).
+This may be conceptually stronger than growingcoordinatecount; verify
+rounding/exactrate andpresentcleanly. Can amplifycoordinatecount by
+multi-match withfixedr andnCb ifdesired butunnecessaryforthismessage.
+Relativegapscale distinction could meaningfully sharpenintro.
+Continuegoaluntil12:30UTC, current~06:03UTC.

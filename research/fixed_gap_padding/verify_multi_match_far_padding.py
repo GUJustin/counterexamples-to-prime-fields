@@ -59,7 +59,7 @@ def fixture(p,K,D,core):
   for a in range(r+1):
    if not 0<=r-a<=q-r:continue
    v=F(comb(r,a)*comb(q-r,r-a),comb(q,r))
-   bound+=v if a==0 else v*U**a*(F(1,L)+F(2*T*fall(d-1,a-1),L**2*fall(R,a)))
+   bound+=v if a==0 else v*U**a*(F(1,L)+F(2*T*fall(e-1,a-1),L**2*fall(R,a)))
   assert F(sums[r-1],total)==mean
   assert F(squares[r-1],total)/mean**2==ratio<=bound
   assert F(positive[r-1],total)>=1/bound

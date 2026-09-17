@@ -60,7 +60,8 @@ The common core also gives a uniform bound
 \end{equation}
 whenever there are at least two selected polynomials. Indeed, their
 core agreement sets intersect in at least $2D-N$ positions.
-For $e\ge1$, the same proof therefore permits the simpler bound
+For $e\ge1$, one may replace $(d-1)_{a-1}$ by $(e-1)_{a-1}$
+in Lemma~\ref{fg:multi-padding}. The same proof also permits the simpler bound
 \begin{equation}\label{fg:multi-simple}
  \frac{\mathbb EX^2}{(\mathbb EX)^2}
  \le\frac{U^r}{L}
@@ -132,3 +133,28 @@ The checker \path{verify_multi_match_far_padding.py} in
 and direction over $\F_{11}$ and verifies the exact first and second
 moments for $r=1,2,3$, as well as the uniform pair cap and $1968$
 hypergeometric identities. These small fixtures check the mechanism, not Elias.
+
+
+Exact finite certificates also give the following half-rate examples.
+Here $r$ is the number of coordinates by which the parameter-zero word
+misses the radius; the last column is the same numerical prescription
+$n2^{1/\eta}/p$, with $c_1=c_2=1$ and no unspecified remainder.
+\begin{center}
+\begin{tabular}{@{}rrrrrll@{}}
+\toprule
+Prime & $n$ & $K$ & $A$ & $r$ & Proven $J/p>$ & Prescription $<$\\
+\midrule
+$2^{127}-1$&694&347&356&2&$0.25107817$&$2^{-40}$\\
+$2^{127}-1$&830&415&426&3&$0.02273637$&$2^{-40}$\\
+$2^{521}-1$&5840&2920&2936&2&$0.59499256$&$2^{-100}$\\
+$2^{521}-1$&8140&4070&4091&3&$0.28599616$&$2^{-100}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+All four radii are strictly below Elias. The certificate
+\path{verify_multi_match_finite.py} in the same directory verifies
+primality, the anchored Gram list count, the rational second-moment
+bound, and the displayed inequalities using exact arithmetic.
+It also certifies two- and three-coordinate far points over $2^{61}-1$
+and $2^{1279}-1$. These are existence statements on padded interval
+domains, not prescribed-domain or protocol-security estimates.

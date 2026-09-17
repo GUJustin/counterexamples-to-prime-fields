@@ -101,3 +101,17 @@ Here e=h-s-1~h, r²e/q=O(ell^-1/2), and the field-ratio factor is
 rate and gap and r coordinate separation. This supersedes the weaker
 sqrt(ell) coordinate-separation corollary above. Neither asserts constant
 relative separation or a fixed positive gap.
+
+## Exact finite replay
+
+`verify_multi_match_finite.py` applies the improved pair cap in the
+falling-factorial bound, takes the better of the aggregate-T and uniform
+cap bounds, and checks all inequalities exactly. At half rate:
+M127 n694,K347,A356,r2: nearby fraction>0.25107817, prescription<2^-40;
+M127 n830,K415,A426,r3: >0.02273637, prescription<2^-40;
+M521 n5840,K2920,A2936,r2: >0.59499256, prescription<2^-100;
+M521 n8140,K4070,A4091,r3: >0.28599616, prescription<2^-100.
+All strict Elias. The displayed polynomial has exact maximum agreement
+D=A-r, so these are exact far-point distances, not just selected-witness
+claims. Additional M61/M1279 rows are in the exact results JSON.
+Search is floating discovery only, not an optimality claim.
