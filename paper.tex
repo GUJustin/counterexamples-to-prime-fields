@@ -255,6 +255,10 @@ list give different parameters $z$. Theorem~\ref{thm:logarithmic-lines}
 also gives such counterexamples over every sufficiently large prime $p$,
 with block length $\Theta(\log p)$ and $\Omega(p/\log p)$ nearby
 labels. Its gap is $\Theta(1/\log p)$.
+A padding refinement (Theorem~\ref{fg:larger-gap-lines}) keeps
+$n=\Theta(\log p)$ while increasing both the gap and the nearby-label
+count to orders $1/\sqrt{\log p\,\log\log p}$ and
+$p/\sqrt{\log p\,\log\log p}$, respectively.
 
 \paragraph{An obstruction that persists at a fixed gap.}
 The gap in Theorem~\ref{thm:informal} shrinks with $n$. To address
@@ -2033,6 +2037,8 @@ while correlated agreement at the threshold is impossible.
 These are growing-prime-field families obtained from the integer
 classes; they are not statements about retaining the M31 alphabet
 or a prescribed subgroup domain.
+
+\input{research/fixed_gap_padding/averaged.tex}
 
 % Standalone section for integration into paper/main.tex or core_theory.tex.
 % Uses existing macros \F, \RS and theorem environments; no new macros.

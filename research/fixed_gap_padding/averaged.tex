@@ -1,0 +1,126 @@
+\subsection{Padding with collisions improves the finite-field bounds}
+\label{sec:averaged-padding}
+
+The preceding constructions required distinct labels. Allowing collisions
+and averaging their union gives a stronger bound when the field is fixed.
+Write $\mathcal P(h,N)$ for the minimum number of colliding pairs for
+$h$ objects in $N$ bins, as in Section~\ref{sec:agreement-collisions}.
+
+\begin{lemma}[Averaged padding]\label{fg:averaged-padding}
+Let $D_{\rm old}\subset\F_p$ have $N$ points, and let $w$ be a polynomial
+of degree $A-1$. Suppose $P_1,\ldots,P_L$ are distinct polynomials of
+degree less than $K<A$, each agreeing with $w$ at exactly $A-1$ old
+coordinates, and each pairwise difference has degree at most $d$.
+Choose $1\le q\le p-N$ with $K-1+q<A$, and put
+\[
+ R=p-N,\qquad T=d\binom L2-\mathcal P(L(A-1),N),\qquad
+ M=\frac{L^2R}{LR+2T}.
+\]
+Then $T\ge0$. On a domain of size $n=N+q$, there is a received line
+with at least
+\begin{equation}\label{fg:averaged-count}
+ J=\left\lceil p\left(1-\left(1-\frac Mp\right)^q\right)\right\rceil
+\end{equation}
+nearby parameters at agreement threshold $A$, and no pair of
+codewords has correlated agreement at that threshold.
+\end{lemma}
+\begin{proof}
+For $x\notin D_{\rm old}$, let $s_x$ be the number of distinct values
+among the $P_i(x)$, with multiplicities $r_{x,v}$. Each polynomial pair
+has at most $d$ coincidences. Their old common agreements consume at
+least $\mathcal P(L(A-1),N)$ such coincidences, so
+\[
+ \sum_{x\notin D_{\rm old}}\sum_v r_{x,v}^2\le LR+2T.
+\]
+Cauchy--Schwarz gives $R^{-1}\sum_xs_x\ge M$. Choose the $q$ points
+$x_j$ with largest $s_x$. Set $f=w,g=0$ on the old coordinates, and
+$f(x_j)=b_j,g(x_j)=1$ on the new ones. For independent uniform offsets
+$b_j$, the expected size of the union of labels $P_i(x_j)-b_j$ is
+\[
+ p\left(1-\prod_{j=1}^q(1-s_{x_j}/p)\right)
+ \ge p\left(1-(1-M/p)^q\right),
+\]
+by arithmetic--geometric mean. Some offsets attain its ceiling.
+Every label in the union gives a candidate with at least $A$ agreements.
+For common witnesses $F,G$, if $G=0$ the joint agreement is at most
+$A-1$ by the degree of $w-F$; otherwise it is at most $K-1+q<A$.
+\end{proof}
+
+\begin{theorem}[More nearby parameters at a larger gap]
+\label{fg:larger-gap-lines}
+Fix rational $\rho\in(0,1)$, put $H=H_2(\rho)$, and write $b=\log_2p$.
+For every sufficiently large prime $p$, there is a prime-field
+Reed--Solomon code of exact rate $\rho$, length
+$n=(2/H+o(1))b$, and a received line at gap
+\[
+ \eta=\frac{H+o(1)}{\sqrt{b\log_2b}}
+\]
+with at least
+\[
+ \left(\frac{H}{\rho(1-\rho)}-o(1)\right)
+ \frac{p}{\sqrt{b\log_2b}}
+\]
+nearby parameters. No pair of codewords has correlated agreement at
+the threshold, and the radius is strictly below Elias.
+\end{theorem}
+\begin{proof}
+Choose $n$ a denominator multiple for $\rho$ with $n=2b/H+O(1)$,
+and set
+\[
+ s=\left\lfloor2(1-\varepsilon_b)\sqrt{b/\log_2b}\right\rfloor,
+ \quad m=n-s,\quad k=\rho n+1,\quad t=k+s,
+\]
+where $\varepsilon_b\to0$ sufficiently slowly, for instance
+$\varepsilon_b=\sqrt{\log_2\log_2b/\log_2b}$ for large $b$.
+The anchored integer moment count gives a class of size $L$ with
+\[
+ \log_2L\ge mH_2(t/m)-\frac{s^2}{2}\log_2(m/s)
+ -O_\rho(s^2+s\log m+\log m)
+ \ge b+\Omega(\varepsilon_b b).
+\]
+Thus $L/p\to\infty$. Remove the anchor and divide as above.
+Apply Lemma~\ref{fg:averaged-padding} with
+$N=m-1$, $K=\rho n$, $A=t$, $q=s+1$, and $d=K-1$.
+Balanced occupancies give
+\[
+ \frac{2T}{L^2}=d-\frac{(A-1)^2}{N}+o(1)
+ =\bigl(\rho(1-\rho)+o(1)\bigr)n,
+ \qquad
+ \frac Mp=\frac{1+o(1)}{\rho(1-\rho)n}.
+\]
+Since $q/n\to0$, expanding \eqref{fg:averaged-count} gives
+$J\ge(1+o(1))pq/(\rho(1-\rho)n)$, as asserted. The exact gap
+is $q/n$, and $\eta\log_2p\to\infty$ verifies strict Elias.
+\end{proof}
+
+The gap still tends to zero. The theorem does not prove superlinear
+growth at one fixed positive gap, or uniqueness of nearby codewords.
+
+\paragraph{Exact finite comparisons.}
+For a seed with parameters $(m,k,t)$ and $s=t-k$, the same proof uses
+$N=m-1$, $K=k-1$, $A=t$, $q=s+1$, and $d=k-2$.
+The Gram bound supplies $L_0$ supports, and anchor averaging gives
+$L=\lceil tL_0/m\rceil$. Exact evaluation of
+\eqref{fg:averaged-count} yields the following certificates.
+The last column is a strict lower bound on
+$\log_2(J/(n2^{H_2(K/n)/\eta}))$, where $\eta=(A-K)/n$.
+\begin{center}
+\begin{tabular}{@{}rrrrrl@{}}
+\toprule
+Prime & $n$ & $K$ & $A$ & Nearby labels $J$ & Excess bits\\
+\midrule
+$2^{31}-1$&72&12&15&$381222100$&$6.73559$\\
+$2^{61}-1$&155&35&40&$>3.2687\cdot10^{17}$&$27.01590$\\
+$2^{127}-1$&273&70&76&$>1.6423\cdot10^{37}$&$78.16602$\\
+$2^{521}-1$&1065&381&393&$>3.1200\cdot10^{155}$&$422.98809$\\
+\bottomrule
+\end{tabular}
+\end{center}
+All radii are strictly below Elias. These compare coding counts with
+the prescription $c_1=c_2=1$; they are not protocol-security estimates.
+The padded domains are not prescribed subgroups. The exact checker
+\path{research/fixed_gap_padding/verify_average_padding.py} verifies
+rational Gram bounds, collision arithmetic, outward logarithm intervals,
+Lucas--Lehmer primality, and integer Elias inequalities. Two small-field
+fixtures also exhaust all $5202$ offset tuples and $167042$ codeword
+pairs. The finite search is not an optimality proof.

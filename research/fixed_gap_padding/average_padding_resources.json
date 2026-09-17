@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/fixed_gap_padding/verify_average_padding.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5576292499972624,
+  "peak_rss_kib": 3616,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

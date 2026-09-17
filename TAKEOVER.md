@@ -591,3 +591,28 @@ and externaltheorem; nottheexplicitO(eta^-2/log1/eta) boundofthe
 standalonecorollary. This is recorded asdependency, NOT integrated
 or described asan independentlyauditedupperbound. Currentclock05:09UTC
 (earlier05:16estimatewasincorrect); goalstillactive, cutoff12:30UTC.
+
+NEW stronger padding lemma and asymptotic integrated: averaged.tex under
+research/fixed_gap_padding/, inputafterpolynomialfields/concretecoeffs.
+Allowlabelcollisions; coreN worddegreeA-1, L candidatesdegree<K,
+pairdiffdegree<=d, eachA-1oldagreements; q<=p-N andK-1+q<A.
+T=d binomL2-pairs(L(A-1),N)>=0,R=p-N,M=L^2R/(LR+2T).
+Chooseqavailablepointswithlargest evaluationimages, offsetaverage gives
+J>=ceil(p*(1-(1-M/p)^q)). Oldjointdegreeargumentunchanged. Integer
+momentseedB1 givesN=m-1,K=k-1,A=t,q=t-k+1,n=m+t-k.
+Exactnewfinitecertificates(p exponent,n,K,A,J,excessbits c1=c2=1):
+31,72,12,15,381222100,6.73559;
+61,155,35,40,326877636368105821,27.01590;
+127,273,70,76,16423077798015443787467749084096814366,78.16602;
+521,1065,381,393,>3.1200e155,422.98809.
+AllstrictElias; arbitrarypaddedintervaldomains, nosecurity/subgroupclaim.
+verify_average_padding.py usesexactGram,anchoring,balancedpairs,rational
+unionformula,outwardlogintervals,LucasLehmer. TwoF17fixturesexhaust
+5202offsets+167042codewordpairs. 5.4m discoverytriples,notoptimality.
+AsymptoticTheoremfg:larger-gap-lines: eachlargeprimeb=log2p,
+n~2b/H exactrateρ, eta~H/sqrt(b log2b),
+J>=(H/[ρ(1-ρ)]-o)p/sqrt(b log2b), noCA. Choose
+s~2(1-eps)sqrt(b/logb),m=n-s,k=ρn+1,t=k+s;
+anchoredlogL>=b+Ω(eps*b) forsloweps->0. q=s+1, balancedbudget
+2T/L²~ρ(1-ρ)n. NewPDF114pages cleanbuild; viewed4,30,31,32,33.
+Makefile67checks,newcheckguardedpassed<1sec. No activeprocess.
