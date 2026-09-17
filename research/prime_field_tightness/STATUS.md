@@ -372,3 +372,9 @@ specializations (B2,F1009,t3 and B3,F10009,t53). Their complete nearest
 lists have size2, maximum agreements6 and9. Noncomposed controls stay
 below the theorem threshold. All checks pass under384MiB watchdog.
 Main manuscript remains157pages; new lemma is retained in research notes.
+
+A separate source check is recorded in PUBLIC_LIST_BOUND_SCOPE.md:
+arXiv2609.08005v1's formal bounds are polynomial in q; do not silently
+substitute that proof for the n-polynomial pool dependency over
+superpolynomial prime fields. No claim of falsity of its informal
+stronger statement. Current external dependency remains explicit.
