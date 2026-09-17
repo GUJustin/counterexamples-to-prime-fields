@@ -1,0 +1,104 @@
+\section{The optimal high-rate shape and a strict curve improvement}\label{sec:high-rate}
+
+The high-rate problem also has an explicit global solution, but its endpoints need not be constant.
+\begin{theorem}[Optimal high-rate shape]\label{thm:high-shape}
+Suppose $1/2<\rho<1$ and $\rho<a<\sqrt\rho$. Put
+\[
+ c=a/\rho-1,\qquad d=(a-\rho)/(1-\rho).
+\]
+The global optimum is
+\begin{equation}\label{eq:high-total}
+ \max_{0\le B\le d}\left\{
+ \left(\frac{a^2}{2\rho}-\frac12\right)B
+ +\frac{1-a}{2}B^2-\frac{2-\rho}{6}B^3
+ +\frac{\rho}{6(2\rho-1)}(B-c)_+^3\right\}.
+\end{equation}
+An optimal support has decreasing endpoints
+\[
+ R_*(s)=\min\left(\frac a\rho,\frac{2a-1-s}{2\rho-1}\right),\qquad 0\le s\le B.
+\]
+\end{theorem}
+\begin{proof}
+Set $h_0=(1-a)/(1-\rho)=1-d$. Since $a<\sqrt\rho<(1+\rho)/2$, we have $h_0>1/2$ and $0<c<d<1/2$. The density is bounded above by the minimum of
+\[
+ a-1+(1-\rho)h,\qquad a-\frac12-\frac s2-(\rho-1/2)h.
+\]
+Their intersection at $h=1-s$ has value $a-\rho-(1-\rho)s$. Thus columns $s\ge d$ are nonpositive and may be deleted. Columns ending below $h_0$ form another nonpositive suffix, since the first expression is negative throughout them.
+
+Every remaining column ends at or above $h_0$. The function $R_*$ decreases, lies between $h_0$ and $L$, and exceeds $s$. All three affine expressions whose minimum is $w_s$ are nonnegative on $[h_0,R_*(s)]$. Above $R_*(s)$, if that interval exists below $L$, the second expression is negative. Moving every remaining endpoint to $R_*(s)$ therefore increases surplus and preserves feasibility. Only the prefix width remains to be chosen.
+
+For $s\le c$, the column surplus is
+\[
+ f(s)=\frac{a^2}{2\rho}-\frac12+(1-a)s-\frac{2-\rho}{2}s^2.
+\]
+For $c\le s\le d$, integration to the stationary endpoint gives
+\begin{equation}\label{eq:tail}
+ M(s)=\frac{1-\rho}{2}
+ \left[\frac{(d-s)^2}{2\rho-1}-(1-d-s)^2\right]
+ =f(s)+\frac{\rho}{2(2\rho-1)}(s-c)^2.
+\end{equation}
+Integrating these two expressions proves \eqref{eq:high-total}.
+\end{proof}
+
+
+\begin{corollary}[Strict improvement throughout a rate interval]
+For every $8-3\sqrt6<\rho<1$, the continuum dimension comparison has
+positive surplus at some agreement strictly below
+\[
+ a_{\rm DKT}(\rho)=
+ \frac{3\rho+2\sqrt{\rho(5-\rho)(2-\rho)}}{8-\rho}.
+\]
+At every such rate, a finite support and multiplicity achieve a strict
+improvement in characteristic zero and sufficiently large prime
+characteristic. No uniform bound on that multiplicity or prime is claimed
+here.
+\end{corollary}
+\begin{proof}
+Set $a=a_{\rm DKT}(\rho)$ and $B_0=3(1-a)/(2(2-\rho))$.
+This $a$ is the positive root of
+\[
+ F_\rho(a)=(8-\rho)a^2-6\rho a+\rho(4\rho-5).
+\]
+Since $F_\rho(\rho)=-\rho(1-\rho)(5-\rho)<0$ and
+$F_\rho(\sqrt\rho)=3\rho(1-\sqrt\rho)^2>0$,
+we have $\rho<a<\sqrt\rho$. Also $0<B_0<1/2$ for $\rho>1/2$.
+Let $c=a/\rho-1$. The saturated cap polynomial is
+\[
+ P(B)=\left(\frac{a^2}{2\rho}-\frac12\right)B
+       +\frac{1-a}{2}B^2-\frac{2-\rho}{6}B^3.
+\]
+The quadratic equation gives $P(B_0)=0$.
+
+The actual untrimmed cap $0\le s\le B_0$, $s\le h\le a/\rho$
+has surplus
+\[
+ P(B_0)+\frac{(B_0-c)_+^3}{12}.
+\]
+Indeed, for $s>c$ the endpoint $a/\rho$ truncates the last triangular
+rank region, removing rank $(s-c)^2/4$ per column. Integration gives
+the displayed correction.
+
+It remains to check $B_0>c$. This is equivalent to
+$a<T=\rho(7-2\rho)/(4+\rho)$. The polynomial $F_\rho$ is strictly
+increasing for arguments at least $\rho$, and $T>\rho$. Direct
+substitution yields
+\[
+ F_\rho(T)=
+ -\frac{4\rho(\rho-2)(\rho-1)(\rho^2-16\rho+10)}{(\rho+4)^2}>0
+\]
+for $8-3\sqrt6<\rho<1$. Therefore $T>a$ and the cap has strictly
+positive surplus. By continuity, a cap remains positive at some smaller
+agreement, still above $\rho$. Fine integer-grid approximations of
+this fixed positive-area cap give finite positive-surplus supports:
+normalized rank and benefit converge to their continuum integrals.
+The exact rank formula applies in characteristic zero or in primes
+exceeding the chosen finite jet degree.
+\end{proof}
+
+The interval improvement and the shape formula above are recovered
+from the September 13 draft and audited here; they are not claimed as
+new discoveries of this continuation. The explicit cubic formula for
+the optimized threshold at every high rate is not needed for these
+statements and is not asserted in this note. The following finite
+certificates give independently checkable instances with explicit
+multiplicity and prime-characteristic degree guards.

@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "rational_polygon_integrals": 220,
+  "column_endpoint_comparisons": 4851,
+  "positive_examples": [
+    {
+      "rate": "3/4",
+      "agreement": "43049/50000",
+      "width": "173/1000",
+      "surplus": "2168362591/3375000000000000"
+    },
+    {
+      "rate": "9/10",
+      "agreement": "47389/50000",
+      "width": "49/500",
+      "surplus": "187229473/97200000000000"
+    }
+  ],
+  "scope": "Corroborates restored optimal high-rate shape formula; quantified optimality follows from the compression and endpoint proof. No practical benchmark gain."
+}

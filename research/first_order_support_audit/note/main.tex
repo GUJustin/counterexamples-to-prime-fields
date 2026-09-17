@@ -33,8 +33,9 @@ first-order interpolation and reconstruction bounds, optimizing monomial support
 jet spaces also cannot improve the cubic list-budget and
 fifth-power MCA-budget dependence on the margin above this threshold.
 For full-coefficient monomial sources, these cost bounds hold at finite
-length with an explicit corrected margin, uniformly in multiplicity. Two exact
-certificates separately improve a known sufficient curve at higher rates.
+length with an explicit corrected margin, uniformly in multiplicity. An explicit high-rate support optimization proves a strict improvement
+of a known sufficient curve at every rate above $8-3\sqrt6$. Two exact
+finite certificates instantiate this improvement.
 These are statements about a specified dimension-counting method, not
 intrinsic lower bounds on Reed--Solomon lists or proximity gaps.
 \end{abstract}
@@ -408,6 +409,7 @@ The theorem concerns fixed jet spaces, their total-degree filtration, and satura
 
 \input{finite_length}
 \input{gap_costs}
+\input{high_rate}
 \section{Exact finite certificates for the high-rate improvement}\label{sec:certificates}
 
 The sufficient first-order curve in the recovered Dao--Kominers--Thaler
@@ -484,7 +486,9 @@ nonmonomial degeneration, including 196 strict rank drops. The finite-length cos
 checked in 6750 reductions, including 1054 positive-surplus ratio
 comparisons and a near-critical positive certificate at length one million.
 These checks corroborate the formulas; the proofs establish the
-quantified statements. Scripts and reports accompany this note in
+quantified statements. The restored high-rate shape formula also passes 220 exact rational
+polygon integrations and 4851 endpoint comparisons.
+Scripts and reports accompany this note in
 \path{research/first_order_support_audit/}.
 
 The sufficient challenge degrees obtained by the displayed conservative

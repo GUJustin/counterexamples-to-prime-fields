@@ -155,3 +155,27 @@ to the audited saturated comparison. The resulting necessary agreement
 is (1-8/N)*(a_0+(1-2*a_0)/(8m))+8/N^2, uniformly in m. This does not
 extend the finite-length result to all nonmonomial global spaces or to
 certificates exploiting dependencies between coordinates.
+
+## September 17: high-rate support shape audited over an interval
+
+The restored high-rate shape theorem is now independently audited and
+included in Section 8 of the 17-page technical note. For rho>1/2, the
+optimal decreasing endpoint is min(a/rho,(2a-1-s)/(2rho-1)), with prefix
+width optimized in [0,(a-rho)/(1-rho)]. The exact surplus adds
+rho*(B-(a/rho-1))_+^3/(6*(2rho-1)) to the old cubic cap polynomial.
+The proof completes/deletes columns according to the signs of three
+affine densities; it does not rely on numerical optimization.
+
+A simpler untrimmed-cap argument already proves a strict improvement
+over the recovered DKT curve at every rate 8-3sqrt(6)<rho<1: its rank
+truncation adds (B0-(a/rho-1))^3/12>0 at the old threshold. Continuity
+and lattice approximation give finite certificates at a smaller agreement.
+This is recovered mathematics newly audited, not a new discovery claim.
+The explicit optimized-threshold cubic and its asymptotics have not yet
+been included in this audit verdict.
+
+Independent verifier passed 220 exact rational polygon integrals and
+4851 endpoint comparisons, plus positive examples at both certified
+rates. The note builds without warnings; new theorem/proof pages were
+rendered and inspected. No practical parameter or better.codes gain is
+claimed.
