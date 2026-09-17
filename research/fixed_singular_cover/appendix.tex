@@ -224,6 +224,58 @@ identities, or equations with a nonconstant quadratic value coefficient.
 It also does not prove that an interpolating identity of this form
 contains every nearby candidate.
 
+\begin{corollary}[Polynomial gauges of low degree]
+\label{cor:riccati-polynomial-gauge}
+Consider
+\[
+ T(X,z)P'-B(X,z)P^2+R(X,z)P-S(X,z)=0,
+ \qquad \deg P\le D,
+\]
+where $T,B\ne0$, all challenge degrees are bounded by a fixed $h$,
+and $B$ divides $T\partial_XB$ in $\F[X,z]$. Put $a=\deg_XB$.
+Assume characteristic zero or greater than $D+a$. If
+\[
+ A-\frac{5D+4a}{3}\ge\lambda n
+\]
+for fixed $\lambda>0$, there are only $O_{h,\lambda}(n)$ bad labels.
+\end{corollary}
+\begin{proof}
+Write $E=D+a$. The substitution $Y=BP$ gives
+\[
+ TY'-Y^2+\left(R-\frac{T\partial_XB}{B}\right)Y-BS=0,
+ \qquad \deg_XY\le E.
+\]
+The divisibility assumption makes all coefficients polynomial, of bounded
+challenge degree. If $\deg_XT\le2E$, apply the fixed-cover argument directly
+to the original degree-$D$ candidates. The persistent singular set has
+size at most $2E$, and the total singular incidences outside it are at
+most $hn$. Its triple-intersection threshold is at most
+$(4E+D)/3=(5D+4a)/3$, so the stated slack gives a linear bound.
+
+If $\deg_XT>2E$, use the high-degree recurrence and plane-incidence
+arguments of Theorem~\ref{thm:monic-riccati-linear} for $Y$. The
+characteristic assumption here is needed through degree $E$, not just
+through degree $D$. The received values become
+$B(x,z)(f(x)+zg(x))$, of bounded challenge degree. Thus the agreement
+incidence degrees remain bounded in the message parameter and $O(E)$
+in $z$. Remove coordinates where $B(x,z)$ vanishes identically; there
+are at most $a$. On a source curve with at most $D$ persistent remaining
+coordinates, each actual nearby candidate contributes at least $A-a-D$
+nonpersistent incidences. This has positive linear slack under the
+hypothesis, while $E=O(n)$.
+
+If more than $D$ remaining coordinates persist, fix $D+1$ of them and
+exclude the roots of their nonzero $B(x,z)$ values, at most $h(D+1)$
+labels. At all other labels, division by these values shows that the
+original polynomial $P$ agrees with the original affine received line
+on the fixed $D+1$ coordinates. Interpolation forces all such actual
+candidates onto one affine codeword pencil, giving at most $n$ bad labels.
+There are only a bounded number of source curves; isolated points and
+recurrence exceptions are already $O(E)$. Labels at which $B(X,z)$
+vanishes identically contribute at most $h$ more. This proves the claim
+without assuming that every transformed candidate is divisible by $B$.
+\end{proof}
+
 \begin{proposition}[A linear lower example with all agreements singular]
 \label{prop:all-singular-linear-lower}
 Let $\F_q$ have characteristic greater than $D$, with $n$ distinct domain

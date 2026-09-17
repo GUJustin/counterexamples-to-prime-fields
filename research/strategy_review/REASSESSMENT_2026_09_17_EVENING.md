@@ -48,3 +48,15 @@ This allocation separates productive certificate rebuilding from open-ended
 construction search. More agents are useful for these independent proof
 obligations; duplicating the same parameter scan would not address the
 current bottleneck.
+
+## Subsequent full-reconstruction diagnostic
+
+Replacing all frozen singleton bounds by the repaired target-source envelopes
+raises the apparent deficit to 20940349231653054, about 7.615 percent of
+the corrected budget274980720453263170, with2838of5238rows failing.
+This calculation is itself under baseline-control review: excess slack
+in the regenerated envelopes must be separated from the actual effect
+of repairing the source parameters. The earlier 0.0368/0.1476 percent
+figures are conditional diagnostics, not the distance to a valid score
+improvement. The scalar-list source has now been repaired exactly and
+reduces the available MCA allowance by96487635.
