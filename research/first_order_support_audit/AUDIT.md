@@ -144,3 +144,13 @@ linear-list and quadratic-line upper bounds?
 The restored all-rate continuum theorem, including optimality of its
 new high-rate cubic curve, is not included in this audit verdict.
 The finite strict improvements above stand independently of that claim.
+
+## Subsequent finite-length extension
+
+UNIFORM_FINITE_LENGTH_CONVERSE.md removes the growing-multiplicity caveat
+for the explicitly weighted, full-coefficient MONOMIAL model. Its exact
+cutoff rank and half-rank lemma reduce any positive finite-length count
+to the audited saturated comparison. The resulting necessary agreement
+is (1-8/N)*(a_0+(1-2*a_0)/(8m))+8/N^2, uniformly in m. This does not
+extend the finite-length result to all nonmonomial global spaces or to
+certificates exploiting dependencies between coordinates.

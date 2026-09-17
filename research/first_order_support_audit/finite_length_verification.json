@@ -1,0 +1,8 @@
+{
+  "status": "passed",
+  "half_rank_subsets": 32752,
+  "largest_dimension_rank_ratio": "15/8",
+  "exact_cutoff_matrix_checks": 1920,
+  "finite_length_domination_checks": 1920,
+  "scope": "Finite checks of the exact cutoff formula, half-rank inequality, and reduction. The uniform all-m theorem requires the separate injection and reduction proof."
+}

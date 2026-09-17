@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/first_order_support_audit/verify_finite_length.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5393467499961844,
+  "peak_rss_kib": 6256,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 90
+}

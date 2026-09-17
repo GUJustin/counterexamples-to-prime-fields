@@ -204,3 +204,8 @@ verify-dickson-exact-profile:
 verify: verify-first-order-support-audit
 verify-first-order-support-audit:
 	$(PYTHON) research/first_order_support_audit/verify.py
+
+.PHONY: verify-first-order-finite-length
+verify: verify-first-order-finite-length
+verify-first-order-finite-length:
+	$(PYTHON) research/first_order_support_audit/verify_finite_length.py

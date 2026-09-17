@@ -2302,3 +2302,25 @@ practical better.codes improvement. The full high-rate continuum
 optimality theorem is not included in this audit verdict. No new discovery
 credit claimed: these are restored statements now locally checked.
 Main counterexample manuscript left unchanged at157pages.
+
+## Uniform finite-length method converse added
+
+New UNIFORM_FINITE_LENGTH_CONVERSE.md strengthens the restored quarter-
+rate method result for the exact weighted full-coefficient monomial model.
+For N divisible by4,N>=12,D=N/4-1, any multiplicity m and any downward-Y0
+support with G>N*R must have
+ A/N > (1-8/N)*(a0+(1-2*a0)/(8m))+8/N^2,
+ a0=(3+sqrt133)/31.
+Thus even m growing with N cannot lower the asymptotic threshold; only
+O(1) agreement coordinates can be gained from finite-length corrections.
+
+Key exact identity: at degree q, L_q=mA-(D-1)q, source dimension is
+sum_u(L_q-u), and local rank is the usual sum of minima truncated to
+ell<min(m,L_q). An injection proves G_q<=2R_q whenever L_q<m, so those
+diagonals cannot help an N-times-local-rank count. Remaining diagonals
+have saturated rank and are dominated by the audited quarter-rate
+benefit at a_star=(AN-8)/(N(N-8)). No fixed-m limit is needed.
+Fresh exact tests pass1920 direct cutoff ranks,32752 half-rank subsets,
+and1920 reductions. Still no intrinsic list/MCA lower bound: global
+coordinate dependencies and other source classes remain outside. The
+nonmonomial finite-length extension has NOT been proved.
