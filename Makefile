@@ -75,6 +75,11 @@ verify:
 	$(PYTHON) research/orbit_unique/check_random_geometry.py
 	$(PYTHON) research/orbit_unique/verify_kummer.py
 	$(PYTHON) research/orbit_unique/check_kummer_small.py
+	$(PYTHON) research/two_orbit_unique/verify_finite.py
+	$(PYTHON) research/two_orbit_unique/check_exhaustive.py
+	$(PYTHON) research/two_orbit_unique/check_negative.py
+	$(PYTHON) research/two_orbit_unique/check_formal.py
+	$(PYTHON) research/two_orbit_unique/check_integer.py
 	$(PYTHON) research/cubic_domain_warp/verify_geometry.py
 	$(PYTHON) research/cubic_domain_warp/verify_finite_certificate.py
 	$(PYTHON) research/cubic_domain_warp/audit_finite_independent.py

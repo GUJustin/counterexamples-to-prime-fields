@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/two_orbit_unique/check_integer.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 40.82457070800592,
+  "peak_rss_kib": 21856,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 180
+}

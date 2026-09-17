@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/two_orbit_unique/finite.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 31.07171962499706,
+  "peak_rss_kib": 20480,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 300
+}

@@ -1,0 +1,159 @@
+\paragraph{A logarithmic-length version over prescribed prime progressions.}
+The large splitting-prime requirement can be removed if efficient recovery
+from an arbitrary nearby parameter is not required. Regard $q$ as a
+finite-field parameter, rather than a fixed small integer. Character sums
+supply enough parameters for which all required roots exist; polynomial
+zero bounds exclude unintended root sums and label collisions.
+
+\begin{lemma}[A finite two-orbit existence certificate]\label{tou:finite}
+Let $d$ be prime, $1\le D<m$, $0\le c<d$, and put
+\[
+ M=m+c,\quad n=d(m+2)+c,\quad K=dD-1,\quad
+ U=(M+1)^2,\quad T=M(M+1)/2,
+\]
+\[
+ A_0=\binom mD,\qquad R=D(m-D),\qquad
+ S_{\max}=D(2m-D+1)/2.
+\]
+Let $p\equiv1\pmod d$ be prime with $p>\max\{n,d^{d-1}\}$.
+Define
+\[
+ Q_0=\frac{p-U}{d^{M+1}}-U(\sqrt p+1),
+\]
+\[
+ B_0=(T+1)\bigl((2^d-1)^M-1\bigr)
+       +S_{\max}\binom{A_0}{2}+\frac{R(R+1)}2.
+\]
+If $Q_0>B_0$, the two-orbit construction has a valid parameter
+$q\in\F_p$ for which every nearby point has a unique codeword and
+\[
+ J\ge\frac{\binom mD}{D(m-D)+1}
+\]
+nearby parameters at radius $1-K/n-(2d+1)/n$.
+The far and nearby distances are exact as in Theorem~\ref{tou:theorem}.
+This is an existence certificate; it does not specify a successful
+parameter $q$ or an arbitrary-parameter witness decoder.
+\end{lemma}
+\begin{proof}
+Let
+$R_i(Q)=(Q^{i+1}-1)/(Q^i-1)$ for $1\le i\le M$.
+Exclude $Q=0$ and all zeros of their numerators and denominators.
+There are at most $U$ excluded elements. On the remaining set, the order
+of $q$ exceeds $M+1$, the $R_i(q)$ are distinct and nonzero, and none
+is $1$ or $q$. Thus the two padding orbits and all core/extra orbits
+will be disjoint whenever the roots exist.
+
+\emph{Count parameters with all roots.}
+Fix a character $\chi$ of order $d$. The indicator that
+$q,R_1(q),\ldots,R_M(q)$ are all $d$th powers is the product of their
+$d$-character averages. Every nonprincipal term is a nontrivial
+character sum. To check this, take the largest $i$ with a nonzero
+exponent of $R_i$. At a primitive $(i+1)$st root of unity, its valuation
+is that exponent, nonzero modulo $d$, while every earlier factor is
+regular and nonzero. If no such $i$ exists, the nonzero exponent of $Q$
+has the same property at zero. Here $p>M+1$ ensures separability.
+
+Replace denominator character powers by positive powers modulo $d$.
+The resulting polynomial is not a constant times a $d$th power and
+has at most $U$ distinct roots in the algebraic closure. The classical
+multiplicative-character Weil bound~\cite[Lemma~2]{sarkozy-blocks},
+followed by deletion of at most
+$U$ arguments, bounds the absolute value of each nonprincipal term
+by $U(\sqrt p+1)$. Character averaging therefore gives at least $Q_0$
+parameters with all required roots.
+
+\emph{Exclude unintended zero-sum subsets.}
+Fix an order-$d$ root $\omega\in\F_p$. In the formal series field at
+infinity choose branches $A_i(Q)^d=R_i(Q)$ with
+\[
+ \frac{A_i(Q)}{Q^{1/d}}
+ =1+\frac1dQ^{-i}+O(Q^{-i-1}).
+\]
+For constants $C_i$, not all zero, the function $\sum_i C_iA_i(Q)$
+is nonzero. If $\sum_i C_i\ne0$ its leading term proves this;
+otherwise the least index with $C_i\ne0$ contributes the first
+nonzero term $C_iQ^{1/d-i}/d$.
+A proper nonempty subset sum of $\mu_d$ is nonzero in $\F_p$:
+the cyclotomic norm argument bounds its possible nonzero integer norm
+by $d^{d-1}<p$.
+
+For a support of $u$ nonzero coefficients $C_i$, take the product of
+$\sum C_i\epsilon_i A_i(Q)$ over all $\epsilon_i\in\mu_d$.
+To see explicitly that the product is rational, first form it in
+independent variables $Y_i$. Invariance under each substitution
+$Y_i\mapsto\omega Y_i$ forces every variable exponent in every monomial
+to be divisible by $d$. Substitute $Y_i^d=R_i(Q)$.
+Multiplication by $W_U(Q)^{d^u}$, where
+$W_U(Q)=\prod_{C_i\ne0}(Q^i-1)$, clears all denominators.
+The resulting polynomial is nonzero because every factor is nonzero
+in the formal series field. Its degree is at most $d^u(T+1)$:
+$\deg W_U\le T$, and each radical has pole order $1/d$ at infinity.
+Every specialization at which any of these root sums vanishes is a
+zero of this polynomial.
+
+There are $(2^d-2)/d$ rotation classes of proper nonempty subsets of
+$\mu_d$; primality of $d$ makes every such orbit have size $d$.
+Empty and full subsets both contribute coefficient zero. Counting
+coefficient patterns up to these independent rotations gives the bound
+\[
+ (T+1)\sum_{u=1}^M\binom Mu
+      \left(\frac{2^d-2}{d}\right)^u d^u
+ =(T+1)\bigl((2^d-1)^M-1\bigr)
+\]
+on bad parameters. This also controls any chosen singleton extra
+coordinates, since their nonzero subset coefficients are included.
+Outside this set, every nonpadding zero-sum subset is a union of
+whole core orbits and contains no extra coordinate.
+
+\emph{Exclude collisions of the labels and index sums.}
+For distinct $D$-subsets $I,J$ of $\{1,\ldots,m\}$,
+\[
+ \prod_{i\in I}(Q^i-1)-\prod_{j\in J}(Q^j-1)
+\]
+is a nonzero polynomial of degree at most $S_{\max}$ over any field.
+If the index sums differ, the leading degrees prove this. If they
+agree, cancel common factors; in the expansions at infinity, the
+smallest index in the symmetric difference has coefficient $1$ or
+$-1$ and cannot cancel. A union bound gives at most
+$S_{\max}\binom{A_0}{2}$ bad parameters.
+Finally, exclude roots of $Q^h-1$ for $1\le h\le R$, costing at most
+$R(R+1)/2$ parameters. Equal $D$-support index sums are then the only
+way their powers of $q$ can agree.
+
+Since $Q_0>B_0$, at least one root-admitting parameter avoids all bad
+sets. Choose a largest $D$-support index-sum class and use the two
+padding directions $q^S$ and one. The all-codeword locator argument
+of Theorem~\ref{tou:theorem} now applies. Distinct product labels give
+unique nearby codewords. The integer lift decoder is not available
+here, since the products may wrap modulo $p$.
+\end{proof}
+
+\begin{corollary}[Doubling survives at logarithmic length]\label{tou:short}
+Fix rational $\rho=a/b\in(0,1)$ and a prime $d\nmid a$.
+For every sufficiently large prime $p\equiv1\pmod d$, the conclusions
+of Theorem~\ref{tou:theorem} concerning distances, uniqueness, and
+numerical violation hold at length
+\[
+ n=\tfrac18\log_2p+O_{\rho,d}(1),
+\]
+with no witness-recovery guarantee. In particular they beat every fixed
+$c_1>0$ and $0<c_2<2+1/d$ by a factor $p^{\Omega(1)}$.
+Uniform sampling conditioned on the existence of the required roots
+has failure probability at most $p^{-3/4+o(1)}$; obtaining such a
+sample by rejection takes expected $d^{M+1}(1+o(1))$ trials, rather
+than polynomial time in $\log p$.
+\end{corollary}
+\begin{proof}
+Choose the exact-rate congruences as before with $n$ near
+$\tfrac18\log_2p$. Then $m=(\log_2p)/(8d)+O_{\rho,d}(1)$,
+$M=m+O_d(1)$, and $D=\rho m+O_{\rho,d}(1)$.
+The principal root-admitting count is
+$p/d^{M+1}\ge p^{7/8+o(1)}$, while the character-sum error is
+$p^{1/2+o(1)}$. The combined bad-parameter count is at most
+$p^{1/8+o(1)}$: use $2^d-1<2^d$ and $\binom mD^2\le4^m$.
+Thus Lemma~\ref{tou:finite} applies, and its conditional failure ratio
+is at most $p^{-3/4+o(1)}$. The root-admitting count is
+$p/d^{M+1}(1+o(1))$, proving the rejection cost.
+The same entropy comparison proves the numerical ratio.
+Finally $\eta\log_2p\to8(2d+1)>1$, so the radius is strictly below Elias.
+\end{proof}

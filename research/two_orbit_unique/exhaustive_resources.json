@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/two_orbit_unique/check_exhaustive.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 2.274001166995731,
+  "peak_rss_kib": 26672,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 180
+}

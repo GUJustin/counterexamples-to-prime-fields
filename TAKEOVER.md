@@ -1748,3 +1748,34 @@ sochoosep enormous; existence alone suffices foruniformboundcounterexample.
 For d2, a_i=sqrt(4+3/(4^i-1)) realdescendingperturbations of2 already
 force signed dissociation. Moregenerald usescyclotomicnormlowerbounds.
 Do not claimthisuntilproofandtestsarefinished.
+
+## 2026-09-17 11:15 UTC — two padding orbits, doubled exponent, audited
+
+The previously provisional two-orbit construction is proved and integrated
+in `research/two_orbit_unique/`. It retains unique nearby witnesses and
+separation 2d/(2d+1) of the gap while defeating every c2<2+1/d. Thus
+c2=2 survives with arbitrarily close to full-gap separation. The integer
+form has an efficient witness decoder given roots over sufficiently large
+splitting primes. The function-field form gives n=(log_2 p)/8+O(1) for
+all large p=1 mod d, but no polylog sampler or arbitrary-witness decoder.
+Primary Weil source verified: Sárközy–Sárközy (2005), Lemma 2.
+
+Five finite half-rate existence certificates (not explicit domains) pass
+independent Lucas–Lehmer and integer replay, from M521 (ratio>2^7,
+separation4/5) to M44497 (ratio>2^5,separation38/39). Norm/power bounds,
+formal-series independence, rotation counting, and product injectivity
+are audited. Two million-element-field scans classify all parameters;
+small-field extras and a genuine forbidden-root negative control pass.
+Actual M9689 integer fixtures have all-codeword interpolation audits and
+decoder checks. Every numerical job remains sequential under384MiB.
+One naive-modulo LL replay hit180seconds; the independently written
+folding replay passed all rows in31seconds under19MiB. No claimed
+mathematical failure resulted from that resource timeout.
+
+Paper is151pages, article11pt letter with1-inch margins. New result,
+finite table, and scope are reflected in abstract/introduction. Build
+layout correction removes a long unbreakable tuple list. Still no
+better.codes improvement. Continue until12:30UTC (8:30Eastern).
+Potential next improvements: variance concentration strengthens the
+largest index-sum class; allow code dimension K=dD-h,1<=h<d for a
+c2/separation tradeoff up to c2<3; optimize the logarithmic length constant.

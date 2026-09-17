@@ -68,7 +68,10 @@ bound with unique, efficiently recoverable nearby witnesses and an
 almost maximally far exceptional point. An extension using prime-order
 orbits makes the separation arbitrarily close to the entire gap, on
 suitable infinite progressions of prime fields, while retaining unique
-and efficiently recoverable witnesses.
+and efficiently recoverable witnesses. Two padding orbits strengthen
+this further: uniqueness and almost full-gap separation persist even
+after doubling the proposed exponent constant. A separate existence
+argument gives this strengthening at logarithmic length.
 An anchored lift and padding construction
 gives failure of correlated agreement at an exactly fixed positive rate and gap, at
 arbitrarily large lengths, even when every nearby point on the line
@@ -206,6 +209,14 @@ Theorem~\ref{ou:random} obtains the same relative separation and
 uniqueness on domains of length $\Theta(\log p)$ by random sampling,
 with a polynomial-in-$p$ violation of the numerical bound, but without
 a witness-recovery guarantee.
+Theorem~\ref{tou:theorem} goes further: two padding orbits preserve
+uniqueness and almost full-gap separation even when the proposed
+exponent constant is doubled to $c_2=2$. It provides efficient witness
+recovery over sufficiently large splitting primes.
+Corollary~\ref{tou:short} obtains the same numerical strengthening at
+length $\Theta(\log p)$ without that recovery guarantee; its finite
+half-rate certificates include separation $38\eta/39$ and a violation
+factor greater than $2^5$ over $\F_{2^{44497}-1}$.
 
 In the full-coverage examples the gap shrinks as $\Theta(1/\log p)$,
 and the strongest relative separation approaches the Elias boundary. These results do not
@@ -5868,6 +5879,12 @@ arXiv:2010.01896. \url{https://arxiv.org/abs/2010.01896}.
  over a finite field}.
 Finite Fields and Their Applications, 12(2):155--185, 2006.
 \url{https://doi.org/10.1016/j.ffa.2005.03.003}.
+
+\bibitem{sarkozy-blocks}
+Andr\'as S\'ark\"ozy and G\'abor N. S\'ark\"ozy.
+\newblock On the size of partial block designs with large blocks.
+\newblock \emph{Discrete Mathematics}, 305:264--275, 2005.
+\newblock \href{https://doi.org/10.1016/j.disc.2005.09.014}{doi:10.1016/j.disc.2005.09.014}.
 
 \end{thebibliography}
 \end{document}

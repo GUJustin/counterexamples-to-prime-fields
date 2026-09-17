@@ -1,0 +1,62 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "b": 521,
+      "d": 2,
+      "n": 346,
+      "K": 173,
+      "certified_ratio_power_two": 7,
+      "separation": "4/5",
+      "strict_Elias": true,
+      "good_parameters_more_than_power_two": 348,
+      "status": "passed"
+    },
+    {
+      "b": 1279,
+      "d": 3,
+      "n": 862,
+      "K": 431,
+      "certified_ratio_power_two": 10,
+      "separation": "6/7",
+      "strict_Elias": true,
+      "good_parameters_more_than_power_two": 824,
+      "status": "passed"
+    },
+    {
+      "b": 9689,
+      "d": 5,
+      "n": 6638,
+      "K": 3319,
+      "certified_ratio_power_two": 81,
+      "separation": "10/11",
+      "strict_Elias": true,
+      "good_parameters_more_than_power_two": 6603,
+      "status": "passed"
+    },
+    {
+      "b": 23209,
+      "d": 7,
+      "n": 16504,
+      "K": 8252,
+      "certified_ratio_power_two": 114,
+      "separation": "14/15",
+      "strict_Elias": true,
+      "good_parameters_more_than_power_two": 16580,
+      "status": "passed"
+    },
+    {
+      "b": 44497,
+      "d": 19,
+      "n": 36022,
+      "K": 18011,
+      "certified_ratio_power_two": 5,
+      "separation": "38/39",
+      "strict_Elias": true,
+      "good_parameters_more_than_power_two": 36379,
+      "status": "passed"
+    }
+  ],
+  "seconds": 30.559389416004706,
+  "scope": "Independent Lucas-Lehmer and exact integer replay of finite existence bounds. No explicit parameter, domain, witness, or efficient sampler certified."
+}

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/two_orbit_unique/check_negative.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5584057500018389,
+  "peak_rss_kib": 2336,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 180
+}

@@ -1,0 +1,91 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "p": 1000003,
+      "d": 2,
+      "m": 4,
+      "D": 2,
+      "c": 0,
+      "parameters_scanned": 1000002,
+      "root_admitting": 31372,
+      "bad_root_parameters": 0,
+      "bad_product_parameters": 0,
+      "bad_order_parameters": 0,
+      "good_parameters": 31372,
+      "certified_root_admitting_lower": 6199,
+      "root_bad_upper": 880,
+      "product_bad_upper": 105,
+      "order_bad_upper": 10,
+      "positive_existence_bound": true,
+      "first_bad_parameters": {},
+      "exhaustive_line": {
+        "p": 1000003,
+        "d": 2,
+        "m": 4,
+        "D": 2,
+        "c": 0,
+        "q": 77,
+        "n": 12,
+        "K": 3,
+        "selected_sum": 5,
+        "nearby_count": 2,
+        "interpolation_pencils": 220,
+        "all_nearby_unique": true,
+        "core_roots": [
+          921479,
+          751251,
+          546067,
+          859307
+        ],
+        "extra_roots": [],
+        "padding_radical": 984097,
+        "omega": 1000002
+      },
+      "seconds": 1.3203228339989437
+    },
+    {
+      "p": 1000003,
+      "d": 3,
+      "m": 2,
+      "D": 1,
+      "c": 0,
+      "parameters_scanned": 1000002,
+      "root_admitting": 37728,
+      "bad_root_parameters": 0,
+      "bad_product_parameters": 0,
+      "bad_order_parameters": 0,
+      "good_parameters": 37728,
+      "certified_root_admitting_lower": 28018,
+      "root_bad_upper": 192,
+      "product_bad_upper": 2,
+      "order_bad_upper": 1,
+      "positive_existence_bound": true,
+      "first_bad_parameters": {},
+      "exhaustive_line": {
+        "p": 1000003,
+        "d": 3,
+        "m": 2,
+        "D": 1,
+        "c": 0,
+        "q": 9,
+        "n": 12,
+        "K": 2,
+        "selected_sum": 1,
+        "nearby_count": 1,
+        "interpolation_pencils": 66,
+        "all_nearby_unique": true,
+        "core_roots": [
+          483905,
+          740008
+        ],
+        "extra_roots": [],
+        "padding_radical": 995018,
+        "omega": 500501
+      },
+      "seconds": 0.7350700829993002
+    }
+  ],
+  "seconds": 2.20840633300395,
+  "scope": "Every field parameter examined, including bad parameters, independently of the asymptotic proof. All potentially nearby codewords classified on one good line per row. Toy geometry does not itself violate the numerical prescription."
+}

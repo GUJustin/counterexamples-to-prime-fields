@@ -1,0 +1,45 @@
+\paragraph{Finite existence certificates against $c_2=2$.}
+Table~\ref{tab:two-orbit} gives exact half-rate certificates for
+Lemma~\ref{tou:finite}. Every row has positive $Q_0-B_0$, is strictly
+below Elias, and beats the prescription even with $c_1=1,c_2=2$.
+The last row places the exceptional point $38/39$ of the gap outside
+the tested radius. These are existence certificates for a suitable
+parameter and domain; no particular domain is specified by the table.
+
+\begin{table}[tb]
+\centering
+\begin{tabular}{rrrrrr}
+\toprule
+$p=2^b-1$: $b$ & $d$ & $n$ & $K$ & separation$/\eta$ & ratio $>$\\
+\midrule
+521   & 2  & 346   & 173   & $4/5$   & $2^7$\\
+1279  & 3  & 862   & 431   & $6/7$   & $2^{10}$\\
+9689  & 5  & 6638  & 3319  & $10/11$ & $2^{81}$\\
+23209 & 7  & 16504 & 8252  & $14/15$ & $2^{114}$\\
+44497 & 19 & 36022 & 18011 & $38/39$ & $2^5$\\
+\bottomrule
+\end{tabular}
+\caption{Unique-witness two-orbit existence certificates. The ratio is
+$J/(n2^{2H_2(1/2)/\eta})$, with $\eta=(2d+1)/n$.
+The table does not claim efficient sampling or decoding.}
+\label{tab:two-orbit}
+\end{table}
+
+The certificates use $(m,D,c)=(171,87,0)$, $(285,144,1)$,
+$(1325,664,3)$, $(2355,1179,5)$, and $(1893,948,17)$, respectively.
+They replace $\sqrt p$ by its integer ceiling and check all bounds
+using integer arithmetic. Lucas--Lehmer establishes each prime;
+$(2d+1)(b-1)>n$ gives a strict sufficient Elias certificate.
+Writing $J_0=\lceil\binom mD/(D(m-D)+1)\rceil$, a displayed exponent
+$w$ is certified by
+\[
+ J_0^{2d+1}>n^{2d+1}2^{2n+w(2d+1)}.
+\]
+An independent replay verifies these inequalities.
+Small-field checks separately enumerate every parameter in two fixtures
+over the field of order $1{,}000{,}003$, verify the excluded-parameter counts, and
+classify every potentially nearby codeword on selected lines by
+interpolation. Integer fixtures also check actual radical domains,
+the conservative norm bound, and greedy witness recovery.
+These smaller fixtures test the geometry and proofs; they are not
+additional violations of the numerical prescription.
