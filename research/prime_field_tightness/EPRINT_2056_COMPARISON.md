@@ -130,3 +130,10 @@ It does not establish first-order-regime tightness or gap-exponent growth.
 Proposition N.4 further bounds the required extension degree by e<=4n^2.
 Its block-padding proof preserves the exact parameters and quadratic
 exception count; it does not change the scope restrictions above.
+
+The exact-parameter Corollary N.5 gives rate b/d and gap1/d for b=2,3,4
+and d>=b+7, with ceil((b+1)n^2/(4d^3)) nearby labels without ordinary
+CA. Characteristic exceeds message degree and e<=n^b. In particular,
+rate2/9 and gap1/9 give ceil(n^2/972) labels and e<=n^2. These are still
+capacity-regime examples over extensions, not first-order or prime-field
+tightness.

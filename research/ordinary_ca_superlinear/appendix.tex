@@ -316,3 +316,82 @@ $\F_{7^4}$ and $\F_{7^6}$ are recorded in
 \path{research/ordinary_ca_superlinear/verify_block_padding.py}.
 The bound $e\le4n^2$ is a field-size refinement, not a fixed-degree
 extension or prime-field claim.
+
+\subsection{A family of exact rates and gaps}
+
+\begin{corollary}\label{cor:ordinary-ca-parameter-family}
+Fix $b\in\{2,3,4\}$ and an integer $d\ge b+7$. There are unbounded-length
+families over $\F_{p^e}$ of exact rate $b/d$ and capacity gap $1/d$
+with at least
+\[
+ \left\lceil\frac{(b+1)n^2}{4d^3}\right\rceil
+\]
+nearby challenges and no ordinary correlated agreement at that threshold.
+The characteristic exceeds the message degree, $e\le n^b$, and the
+radius is strictly below characteristic-based Elias for sufficiently
+large $p$. In particular, $b=2,d=9$ gives rate $2/9$, gap $1/9$,
+at least $\lceil n^2/972\rceil$ nearby challenges, and $e\le n^2$.
+\end{corollary}
+\begin{proof}
+We first sharpen the source bound to $m\le2r-1$. Otherwise
+\[
+ F=X^{2r}-2X^r+A,\qquad \deg A<r,
+\]
+would divide $X^{4r}-1$. Its monic quotient has form
+$X^{2r}+2X^r+B$, with $\deg B<r$, and comparison of coefficients
+forces $A+B=4$. Setting $C=A-2$ then gives
+$C^2-4CX^r=5$. For nonzero $C$ the left side has degree
+$r+\deg C>2\deg C$; for $C=0$ it forces characteristic five.
+Both are impossible for the source primes under consideration.
+Thus $\Delta=m-r+1$ satisfies $r/2+1\le\Delta\le r$.
+
+Apply the preservation operations with
+\[
+ u=(d-b-1)\Delta-3r,\qquad s=b\Delta-r+1.
+\]
+Both are nonnegative, since $d-b-1\ge6$ and $b\ge2$. The resulting
+source has
+\[
+ N'=(d-1)\Delta+1,\qquad K'=b\Delta+1,
+ \qquad M'=(b+1)\Delta,
+\]
+and retains $r$ selected nearest polynomials. One agreement anchor
+retains $\ell\ge M'r/N'\ge(b+1)r/d$ candidates. After division, append
+$q=\Delta$ challenge coordinates. The established compiler gives
+\[
+ J\ge q\ell/4\ge\frac{(b+1)\Delta r}{4d}
+   \ge\frac{(b+1)\Delta^2}{4d}
+   =\frac{(b+1)n^2}{4d^3},\qquad n=d\Delta.
+\]
+The final dimension is $b\Delta$ and the agreement threshold is
+$(b+1)\Delta$. The old core has maximum $(b+1)\Delta-1$.
+A nonzero explaining direction has at most $b\Delta-1$ core zeros
+and $\Delta$ new agreements. A zero direction has only core agreements.
+Thus ordinary correlated agreement is absent. Also
+$b\Delta-1\le4r-1<p$, and the fixed gap $1/d$ gives strict Elias
+for large $p$.
+
+For the extension degree, start over $\F_{p^2}$, which supplies all
+$u$ new coordinates for sufficiently large $r$. Add the new received
+values in one block, of extension degree $u+1$, and perform one
+single-common-zero operation, of degree two. There remain
+$h=b\Delta-r\le(b-1)\Delta$ common zeros. Partition these into at most
+$b-1$ blocks, each of size at most $\Delta$. The maximum minus dimension
+plus one remains $\Delta$, so each translated-root block applies.
+A block of size $h_j$ at current dimension $K_j$ has degree cost
+$K_j+2h_j\le(b+1)\Delta+1\le(b+2)\Delta$. Hence
+\[
+ e\le4(d-b-3)(b+2)^{b-1}\Delta^b\le(d\Delta)^b=n^b.
+\]
+The last inequality follows by checking the initial integer values
+$d=9,10$ for $b=2$, $d=10$ for $b=3$, and $d=11$ for $b=4$,
+and using that $(d-b-3)/d^b$ decreases for
+$d\ge b(b+3)/(b-1)$. The resulting field has size at least $p^4$,
+which exceeds $2N'r$ for large $r$, so the compiler needs no further
+extension.
+\end{proof}
+
+The exact integer identities and extension-degree accounting are checked
+in \path{research/ordinary_ca_superlinear/verify_parameter_family.py}.
+This corollary still allows growing extension degree and does not place
+the examples above the first-order agreement curve.

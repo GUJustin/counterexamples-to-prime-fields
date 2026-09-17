@@ -1007,3 +1007,13 @@ nearest polynomials (21 orbits of size10). Independent Python interpolation
 checks every witness and the orbit cover. This replaces the earlier
 sampling-only status for that bank; it does not establish an unbounded
 family with maximum exactly3/8. See ../dickson_nearest_threshold/README.md.
+
+
+September 17: Corollary N.5 generalizes the exact-gap ordinary-CA
+construction to rate b/d, gap1/d for b=2,3,4 and d>=b+7. It gives
+ceil((b+1)n^2/(4d^3)) nearby labels without ordinary CA, p greater than
+message degree, and extension degree at most n^b. The b2,d9 instance
+has rate2/9, gap1/9, count ceil(n^2/972), and e<=n^2. The proof uses
+a strict m<=2r-1 source bound and the existing preservation lemmas;
+213,759 arithmetic cases pass. Prime-ambient and first-order scope
+remain unchanged. See ../ordinary_ca_superlinear/EXACT_PARAMETER_FAMILY.md.

@@ -5,7 +5,7 @@ Working draft by Justin Thaler, September 17, 2026.
 [Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
 **Current research snapshot (September 17):** the main ePrint-style article
-is 164 pages with one-inch margins. A separate
+is 165 pages with one-inch margins. A separate
 [18-page first-order tightness note](research/first_order_support_audit/note/main.pdf)
 proves the sharp quarter-rate threshold for the specified interpolation
 framework. Its cubic/fifth-power budget converse concerns **only the
@@ -397,3 +397,10 @@ nearby labels, without correlated agreement. For each proposed finite
 constant c2 the number of canceled moments is fixed accordingly; the gap
 still shrinks. A pure-prime example over `2^127-1` at n257/k72/t78 exceeds
 the finite c1=c2=1 line prescription by more than `2^76.40420`.
+
+Corollary N.5 generalizes the exact parameters to rate `b/d` and gap
+`1/d`, for `b` in `{2,3,4}` and `d>=b+7`. In particular, rate `2/9`
+and gap `1/9` admit at least `ceil(n^2/972)` nearby challenges with no
+ordinary CA, in characteristic greater than the message degree and
+extension degree at most `n^2`.
+[Parameter-family proof](research/ordinary_ca_superlinear/EXACT_PARAMETER_FAMILY.md).
