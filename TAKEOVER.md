@@ -580,3 +580,14 @@ anchor2139. Allpass under384MiB watchdog, ~0.6sec. Addedchecker to
 Makefile (now66). NewPDF113pages buildswithno warnings/overfull/undefined;
 visuallyreviewedpages1,2,4,5,29,30,111,112. No livejob. Continue until
 atleast12:30UTC Sep17; currenttimeabout05:16UTC, goalnotcomplete.
+
+Further dependency note POLYNOMIAL_UNIQUENESS_DEPENDENCY.md: if one
+uses Jeronimo TR26-169 Theorem1.1's uniformprimefieldpolynomiallistbound,
+wholeline uniqueness can also be realized withpolynomialp. PoolT only
+needs candidateswith>=A-qoldagreements, whosegap overK is Bd-1,
+d=m-(1-eta)t/a>0. Fixedgamma=d/(2m) gives |T|<=N^C; chooseleastprime
+1modB^E withE>max(2m,2C+1), separateT asbefore. Exponentdependsongamma
+and externaltheorem; nottheexplicitO(eta^-2/log1/eta) boundofthe
+standalonecorollary. This is recorded asdependency, NOT integrated
+or described asan independentlyauditedupperbound. Currentclock05:09UTC
+(earlier05:16estimatewasincorrect); goalstillactive, cutoff12:30UTC.
