@@ -35,9 +35,9 @@ intrinsic lower bounds on Reed--Solomon lists or proximity gaps.
 \end{abstract}
 
 \noindent\textit{Provenance.} The fixed-multiplicity proof and high-rate
-certificates are recovered from a September 13 research draft. This note
-incorporates their September 17 local audit and a subsequent uniform
-finite-length extension. No independent referee or formal verification
+certificate construction are recovered from a September 13 research draft.
+This note incorporates their September 17 local audit, smaller finite
+certificates, and a subsequent uniform finite-length extension. No independent referee or formal verification
 of this note is claimed.
 
 \section{The optimization problem and its scope}
@@ -438,13 +438,13 @@ This is the sum of \eqref{eq:cell-rank}, using
  & First certificate & Second certificate\\\midrule
 $\rho$ & $9/10$ & $3/4$\\
 $a$ & $47389/50000$ & $43049/50000$\\
-$m$ & $10000$ & $100000$\\
+$m$ & $4096$ & $65536$\\
 $B$ & $49/500$ & $173/1000$\\
-Columns & $981$ & $17301$\\
-Monomials & $9724108$ & $1830201539$\\
-Exact rank & $44523829596$ & $73254792027652$\\
-Benefit & $445252935317/10$ & $293020925834159/4$\\
-Surplus & $14639357/10$ & $1757723551/4$\\\bottomrule
+Columns & $402$ & $11338$\\
+Monomials & $1632467$ & $786044039$\\
+Exact rank & $3061838715$ & $20619038985535$\\
+Benefit & $9568416878978/3125$ & $128869578783487787/6250$\\
+Surplus & $170894603/3125$ & $585123894037/6250$\\\bottomrule
 \end{tabular}
 \end{center}
 Both agreements are strictly below \eqref{eq:dkt}. The displayed counts are exact rational arithmetic; the large supports are specified by their endpoint formulas rather than enumerated.
@@ -464,15 +464,17 @@ This is a fixed finite budget for either certificate. The resulting nonzero inte
 
 A separate standard-library verifier directly checks 320 local matrices,
 3750 rearrangement and marginal comparisons, and 3128 one-sided column
-inequalities by exact rational polygon integration. It reproduces both
-large certificates by integer column sums. A second verifier checks
+inequalities by exact rational polygon integration. It reproduces the recovered
+certificates by integer column sums. A further verifier checks the
+smaller displayed certificates independently by homogeneous diagonal
+ranks, after 21295 direct checks of its diagonal summation formula. A second verifier checks
 1920 exact finite-cutoff ranks and 32752 instances of the half-rank
 lemma. These checks corroborate the formulas; the proofs establish the
 quantified statements. Scripts and reports accompany this note in
 \path{research/first_order_support_audit/}.
 
 The sufficient challenge degrees obtained by the displayed conservative
-count are $320257184$ and $19137094352$ for the two high-rate certificates.
+count are $241481265$ and $16569483999$ for the two high-rate certificates.
 These are not claimed to be necessary. Together with the large supports,
 they make clear that a strict mathematical curve improvement is not a
 practical parameter improvement for a deployed proof system.

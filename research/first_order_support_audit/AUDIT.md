@@ -36,8 +36,9 @@ It is not optimality of the n versus n^2 list/MCA exponents, and it does
 not prove the existence of bad codes at agreement a_0. In particular,
 a global interpolation kernel can exist despite failure of the count
 'dimension > n times local rank.' Exploiting global dependencies, using
-a different local ideal or source class, or controlling multiplicity
-that grows with block length remains outside this converse.
+a different local ideal or source class, remains outside this restored converse. The subsequent
+UNIFORM_FINITE_LENGTH_CONVERSE.md handles growing multiplicity in the
+full-coefficient monomial model, with its exact stated scope.
 
 ## Checked proof chain for the quarter-rate converse
 

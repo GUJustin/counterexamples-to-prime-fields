@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "direct_diagonal_formula_checks": 21295,
+  "certificates": [
+    {
+      "rho": "9/10",
+      "a": "47389/50000",
+      "m": 4096,
+      "B": "49/500",
+      "columns": 402,
+      "monomials": 1632467,
+      "rank": 3061838715,
+      "benefit": "9568416878978/3125",
+      "surplus": "170894603/3125",
+      "maximum_jet_degree": 4313,
+      "sufficient_challenge_degree": 241481265,
+      "below_DKT_polynomial": "-4370209/25000000000"
+    },
+    {
+      "rho": "3/4",
+      "a": "43049/50000",
+      "m": 65536,
+      "B": "173/1000",
+      "columns": 11338,
+      "monomials": 786044039,
+      "rank": 20619038985535,
+      "benefit": "128869578783487787/6250",
+      "surplus": "585123894037/6250",
+      "maximum_jet_degree": 75233,
+      "sufficient_challenge_degree": 16569483999,
+      "below_DKT_polynomial": "-824371/10000000000"
+    }
+  ],
+  "scope": "Column certificates independently recounted by homogeneous diagonal ranks. No finite-support global optimality or practical parameter improvement is claimed."
+}

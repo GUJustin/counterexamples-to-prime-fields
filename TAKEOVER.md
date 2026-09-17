@@ -2352,3 +2352,15 @@ primes. This is conditional: no growing source list is constructed.
 Exact parameter certificates and four variable-padding finite fixtures
 pass; every selected bad support was checked against all12167 possible
 directions in the F23 fixture.
+
+## Smaller high-rate certificates checked
+
+The first-order technical note remains12pages and now uses smaller
+certificates at the same agreements. At rate.9, multiplicity4096
+uses1632467monomials and sufficient challenge degree241481265; at
+rate.75, multiplicity65536 uses786044039monomials and degree16569483999.
+Both improve the restored support size and conservative challenge degree.
+An independent homogeneous-diagonal recount agrees with both original
+column sums, after21295 checks of the summation identity. These remain
+very large theoretical certificates, with no practical parameter claim.
+See research/first_order_support_audit/SMALLER_FINITE_CERTIFICATES.md.
