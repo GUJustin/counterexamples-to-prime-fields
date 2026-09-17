@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/paired_domain_warp/audit_completion_independent.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5789753749995725,
+  "peak_rss_kib": 8176,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

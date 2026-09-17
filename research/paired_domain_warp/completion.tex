@@ -1,0 +1,198 @@
+\subsubsection{Completing the joint image and determining exact distances}
+
+A few additional core choices can fill the entire product image. This
+removes the need for multiple padding blocks and gives an exact distance
+profile on an affine space.
+
+\begin{lemma}[Completion by pairs of alternatives]\label{pd:completion}
+Fix $r$ nonzero padding representatives with distinct squares. Let
+$m_0,D_0,t$ be positive integers with $D_0<m_0$, put
+$n=2(m_0+2t+r)$ and $C=4r+2$, and assume
+$p>\max\{(n+1)^2,C^2\}$. Define
+\[
+ L_0=\binom{m_0}{D_0},\qquad
+ d_0=\frac{p^r}{L_0}+
+ \frac{C^{2r+2}+2m_0^2}{p-2m_0^2},\qquad
+ \Phi(h)=\frac{h^2+C^2h/p}{1-4/p}.
+\]
+If $(p-1)^r\Phi^{\circ t}(d_0)<1$, there is a core of $m_0+2t$
+sign-orbits and a family of $(D_0+t)$-subsets whose locator values on
+the padding fill $(\F_p^*)^r$.
+More generally, uniform successive sampling of the core succeeds with
+failure probability at most
+\begin{equation}\label{pd:completion-failure}
+ \frac{d_0}{h_0}+\sum_{i=1}^t\frac{\Phi(h_{i-1})}{h_i}
+\end{equation}
+for any positive thresholds $h_0,\ldots,h_t$ with $(p-1)^rh_t<1$.
+\end{lemma}
+\begin{proof}
+Choose $m_0$ base orbits uniformly outside the padding. The energy
+argument in Lemma~\ref{pd:sampling} applies with the padding fixed:
+the mean missing fraction of the product image of all $D_0$-subsets
+is at most $d_0$.
+
+At each subsequent step add two new core orbits, represented by $a,b$.
+Each candidate chooses exactly one of these two. If $S$ is the current
+product image and $v(a)=(x_j^2-a^2)_{j=1}^r$, the new image is
+$Sv(a)\cup Sv(b)$. For its complement $B$ of density $h$, the new
+missing set is the intersection of two translates of $B$.
+
+First sample $a,b$ independently outside zero, the padding, and all
+previous core orbits. At most $n+1<\sqrt p$ field elements are excluded.
+The same character estimate gives every nonprincipal Fourier coefficient
+of the distribution $\mu$ of $v(a)$ absolute value at most $C/\sqrt p$.
+Using normalized Fourier coefficients on $(\F_p^*)^r$, Parseval gives
+\[
+ \mathbb E\frac{|Bv(a)\cap Bv(b)|}{(p-1)^r}
+ =\sum_\chi |\widehat{1_B}(\chi)|^2|\widehat\mu(\chi)|^2
+ \le h^2+\frac{C^2}{p}h.
+\]
+The available set has size at least $p/2$. Conditioning $a\ne\pm b$
+therefore costs at most $1/(1-4/p)$, so the conditional mean missing
+fraction is at most $\Phi(h)$. This bound holds uniformly over every
+previous choice of the core and its image.
+
+Successive averaging proves the existence assertion: at each step
+choose a pair attaining at most the conditional mean. Once the missing
+fraction is less than $1/(p-1)^r$, no vector is missing. Alternatively,
+Markov's inequality at the base step and conditionally at each later
+step, followed by a union bound, gives \eqref{pd:completion-failure}.
+The sampler does not need to compute any of the images.
+\end{proof}
+
+\begin{corollary}[Exact distances and almost the entire capacity gap]
+\label{pd:full-gap}
+Fix rational $\rho\in(0,1)$, put $b=\log_2p$ and $H=H_2(\rho)$,
+and let $r=r(p)\ge1$ satisfy $r\log b=o(b)$. Over every sufficiently
+large prime field, a code of exact rate $\rho$ and length
+\[
+ n=\frac{(2r+4/5)b}{H}+O_\rho(1)
+\]
+has an affine space with independent directions $e_1,\ldots,e_r$,
+each supported on a disjoint pair of coordinates, such that
+\begin{equation}\label{pd:exact-profile}
+ \dist\!\left(f+\sum_{j=1}^r z_je_j,C\right)
+ =1-\rho-\frac{1+2\operatorname{wt}(z)}n
+ \qquad(z\in\F_p^r).
+\end{equation}
+Here $\operatorname{wt}(z)$ counts its nonzero entries. At radius
+$\theta=1-\rho-\eta$, $\eta=(2r+1)/n$, the nearby parameters are
+exactly $(\F_p^*)^r$, and their decoding lists are pairwise disjoint.
+The radius is strictly below Elias, $n2^{H/\eta}=o(p)$, and there is
+no correlated agreement. The code and affine space can be sampled in
+expected polynomial time in $\log p$, with success probability
+$1-p^{-\Omega(1)}$.
+
+In particular, every line through $f$ with all direction coefficients
+nonzero is nearby at all $p-1$ nonzero parameters and has direction
+weight exactly $2r$. Its exceptional point has distance $1-\rho-1/n$,
+only one coordinate short of maximum distance. If $r\to\infty$, the
+separation is $(1-o(1))\eta$ and $\eta\sim H/b$.
+Taking $r=\lfloor\log_2b\rfloor$ gives length $\Theta_\rho(b\log b)$.
+\end{corollary}
+\begin{proof}
+Take $t=16(r+1)$ and choose $n$ as displayed with the exact-rate parity
+specified above. Let $a\in\{0,1\}$ indicate the extra zero coordinate,
+and let $\epsilon\in\{0,1\}$ indicate multiplication by $X$. Set
+\[
+ m_0=(n-a)/2-2t-r,\qquad
+ D_0=(\rho n+1-\epsilon)/2-t.
+\]
+These are positive with $D_0<m_0$ eventually. Since
+$m_0=n/2-O(r)$ and $D_0=\rho n/2-O(r)$, the binomial entropy estimate
+and smoothness of $H_2$ near the fixed rate give
+\[
+ \log_2 L_0=\frac{nH}{2}+O_\rho(r+\log n)
+ =rb+2b/5+o(b).
+\]
+Thus $L_0\ge p^{r+1/3}$ eventually, while
+$C^{2r+2}+m_0^2=p^{o(1)}$. The initial mean missing fraction is at most
+$2p^{-1/3}$. With probability at least $1-2p^{-5/24}$, it is at most
+$p^{-1/8}$. Whenever $h\le p^{-1/8}$, for sufficiently large $p$,
+\[
+ \Phi(h)\le4p^{-1/8}h.
+\]
+Consequently the probability that a step fails to reduce the missing
+fraction by a factor $p^{-1/16}$ is at most $4p^{-1/16}$.
+A zero missing fraction remains zero. A union bound over $t$ steps
+gives failure probability at most
+$2p^{-5/24}+4tp^{-1/16}=p^{-\Omega(1)}$; on success the final missing
+fraction is at most $p^{-1/8-t/16}<p^{-r}$, hence is zero.
+
+Fix a reference locator $w$ in the completed family. Its degree is
+$K+1$ after the parity adjustment, and zero attains its $K+1$ roots,
+so $\dist(f,C)=(n-K-1)/n$. The full product image supplies a candidate
+matching any prescribed nonzero shifts on any subset of padding pairs:
+extend the unspecified components to arbitrary nonzero values. If
+$z$ has weight $j$, this gives $K+1+2j$ agreements. Conversely the
+received word differs from $f$ on exactly $2j$ positions, so the
+Hamming-distance inequality gives the matching lower bound. This
+proves \eqref{pd:exact-profile}.
+
+A codeword within $\theta$ at a full-support parameter must agree on
+all $2r$ padding positions: otherwise changing those positions back to
+$f$ would give a distance smaller than its established minimum.
+Distinct full-support parameters have different padding values, so
+their lists are disjoint. The far point rules out correlated agreement.
+
+Finally $\eta b-H=\Theta_\rho(1/r)$ dominates the
+$O_\rho(1/b)$ entropy-radius change, proving strict Elias, and
+\[
+ \log_2\left(\frac{n2^{H/\eta}}p\right)
+ =\log_2n-\frac{b}{5(2r+1)}+O_\rho(1/r)\longrightarrow-\infty.
+\]
+The construction samples $O(n)$ field elements and forms and evaluates
+one locator in $O(n^2)$ field operations. It does not recover a nearby
+witness for an arbitrary supplied parameter.
+\end{proof}
+
+\begin{corollary}[Witness variation and extension-field challenges]
+\label{pd:witness-extension}
+For a completed line above, a polynomial codeword graph of parameter
+ degree $e\ge1$ supplies nearby witnesses at at most
+\[
+ \left\lfloor\frac{e(n-K-1)}{2r}\right\rfloor
+\]
+parameters. Consequently a polynomial graph selecting a nearby codeword
+at every nonzero parameter has degree at least
+$\lceil 2r(p-1)/(n-K-1)\rceil=\Omega_\rho(p/\log p)$.
+
+Let $E/\F_p$ be any field extension and extend the Reed--Solomon code's
+coefficient field to $E$. In the same affine space, at the same radius,
+the nearby parameter vectors are exactly $(\F_p^*)^r\subseteq E^r$,
+and their decoding lists are unchanged. In particular a completed line
+has exactly the $p-1$ nonzero base-field nearby parameters over $E$.
+Every parameter in $E\setminus\F_p$ has the same distance as the
+exceptional point, namely $1-\rho-1/n$.
+\end{corollary}
+\begin{proof}
+Apply Lemma~\ref{lem:ct-quantitative-concurrency} with $a_0=K+1$ and
+$T=K+2r+1$. If a graph supplies a nearby codeword at several parameters,
+choose those codewords as the selected witnesses in that lemma. The
+asymptotic degree bound follows from $n=\Theta_\rho(r\log p)$.
+
+The distance of $f$ over $E$ is still $(n-K-1)/n$, by the same root
+bound. To reach the tested radius after changing at most $2r$ padding
+positions, every one must change and must match the nearby codeword.
+That codeword also agrees with $f$ on at least $K+1$ core positions.
+Interpolation on any $K$ of them forces its coefficients into $\F_p$,
+since both the evaluation points and the values of $f$ lie in $\F_p$.
+The padding equalities then force all parameter coordinates into
+$\F_p^*$. Conversely every such vector already has a base-field nearby
+codeword, and the same interpolation argument excludes additional
+extension-field codewords from its list.
+
+Finally fix a line parameter $z\notin\F_p$. There is an
+$\F_p$-linear functional $\lambda:E\to\F_p$ with
+$\lambda(1)=1$ and $\lambda(z)=0$. Applying it coefficientwise
+to an extension-field codeword shows that every agreement with
+$f+zg$ is an agreement of a base-field codeword with $f$. There are
+at most $K+1$ such agreements. The zero codeword attains $K+1$ on
+the reference core roots (and the optional common zero coordinate),
+since $g$ vanishes there. This proves the exact distance.
+\end{proof}
+
+The polynomial-degree conclusion concerns algebraic witness selection;
+it is not a lower bound on decoding running time. The extension-field
+statement also limits the scope of the example: over a finite extension,
+the nearby fraction on the line is $(p-1)/|E|$, not $1-1/|E|$.

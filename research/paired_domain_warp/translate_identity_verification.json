@@ -1,0 +1,121 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "p": 257,
+      "r": 1,
+      "old_core_orbits": [
+        2,
+        3,
+        4
+      ],
+      "available": 248,
+      "group_size": 256,
+      "ordered_seed_pairs": 61504,
+      "rows": [
+        {
+          "missing_size": 0,
+          "unconditional": "0",
+          "conditional": "0"
+        },
+        {
+          "missing_size": 1,
+          "unconditional": "1/31744",
+          "conditional": "0"
+        },
+        {
+          "missing_size": 5,
+          "unconditional": "909/1968128",
+          "conditional": "599/1952256"
+        },
+        {
+          "missing_size": 20,
+          "unconditional": "12573/1968128",
+          "conditional": "11333/1952256"
+        },
+        {
+          "missing_size": 100,
+          "unconditional": "302359/1968128",
+          "conditional": "296159/1952256"
+        },
+        {
+          "missing_size": 236,
+          "unconditional": "836601/984064",
+          "conditional": "829285/976128"
+        },
+        {
+          "missing_size": 251,
+          "unconditional": "473039/492032",
+          "conditional": "938297/976128"
+        },
+        {
+          "missing_size": 255,
+          "unconditional": "31497/31744",
+          "conditional": "127/128"
+        },
+        {
+          "missing_size": 256,
+          "unconditional": "1",
+          "conditional": "1"
+        }
+      ]
+    },
+    {
+      "p": 127,
+      "r": 2,
+      "old_core_orbits": [],
+      "available": 122,
+      "group_size": 15876,
+      "ordered_seed_pairs": 14884,
+      "rows": [
+        {
+          "missing_size": 0,
+          "unconditional": "0",
+          "conditional": "0"
+        },
+        {
+          "missing_size": 1,
+          "unconditional": "1/968436",
+          "conditional": "0"
+        },
+        {
+          "missing_size": 5,
+          "unconditional": "103/19691532",
+          "conditional": "1/14526540"
+        },
+        {
+          "missing_size": 20,
+          "unconditional": "328/14768649",
+          "conditional": "23/14526540"
+        },
+        {
+          "missing_size": 100,
+          "unconditional": "4189/29537298",
+          "conditional": "1139/29053080"
+        },
+        {
+          "missing_size": 15856,
+          "unconditional": "4910588/4922883",
+          "conditional": "724498/726327"
+        },
+        {
+          "missing_size": 15871,
+          "unconditional": "59037697/59074596",
+          "conditional": "3226087/3228120"
+        },
+        {
+          "missing_size": 15875,
+          "unconditional": "968315/968436",
+          "conditional": "7937/7938"
+        },
+        {
+          "missing_size": 15876,
+          "unconditional": "1",
+          "conditional": "1"
+        }
+      ]
+    }
+  ],
+  "seconds": 0.20172904200444464,
+  "scope": "Exact translate-intersection averages, exclusion of equal sign-orbits, and conservative Fourier/conditioning recurrence on finite missing sets. General Parseval argument is in the written proof."
+}

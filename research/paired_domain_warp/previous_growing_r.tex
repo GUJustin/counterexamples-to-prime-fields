@@ -1,0 +1,54 @@
+The relative separation can also tend to one within a single family.
+The maximum distance from a dimension-$K$ Reed--Solomon code is
+$n-K$ coordinates: interpolation always gives agreement on $K$
+positions, and a monic degree-$K$ word attains that distance. Thus
+the next result's exceptional point is only one coordinate short of
+being maximally far.
+
+\begin{corollary}[Almost the entire capacity gap]\label{pd:full-gap}
+Fix rational $\rho\in(0,1)$ and write $b=\log_2p$. Let
+$r=r(p)\to\infty$ satisfy $r\log b=o(b)$.
+Over every sufficiently large prime field, there are codes of exact
+rate $\rho$, length $n\sim2rb/H_2(\rho)$, and gap
+$\eta\sim H_2(\rho)/b$ with a received line whose every nonzero
+parameter is nearby, while parameter zero has distance
+\[
+ 1-\rho-1/n
+ =1-\rho-\eta+(1-o(1))\eta.
+\]
+The radius is strictly below Elias, there is no correlated agreement,
+and $n2^{H_2(\rho)/\eta}=o(p)$. The same efficient sampling guarantee
+holds. In particular, $r=\lfloor\log_2b\rfloor$ gives
+$n=\Theta_\rho(b\log b)$.
+\end{corollary}
+\begin{proof}
+Let $H=H_2(\rho)$, $J=-\log_2(1-\rho)>0$, and $t=1/(4J)$. Choose
+\[
+ n=\frac{(2r+1/2)b}{H}+O(1),\qquad
+ m=\frac{n-tb}{2}+O(r),\qquad D=\frac{\rho n}{2}+O(1),
+\]
+with the same parity and block-divisibility adjustments. Then
+$q\sim tb/(2r)\to\infty$. Since $H-\rho H_2'(\rho)=J$, Taylor
+expansion and the binomial entropy estimate give
+\[
+ \log_2 L
+ =\frac{nH}{2}-\frac{tbJ}{2}
+   +O_\rho(b/r+r+\log b)
+ =rb+b/8+o(b).
+\]
+Thus $L\ge p^{r+1/9}$ eventually. Moreover
+$(4r+2)^{2r+2}=p^{o(1)}$ and $m^2=p^{o(1)}$, so
+$\delta=p^{-\Omega(1)}$. Taking $\gamma=p^{-1/20}$ makes the first
+failure term tend to zero polynomially in $p$, and the second is at
+most $p^{1-q/20}$.
+
+The separation fraction is $2r/(2r+1)\to1$. Also
+$\eta b-H=\Theta_\rho(1/r)$, which dominates the
+$O_\rho(1/b)$ change from $H_2(\rho)$ to $H_2(\rho+\eta)$;
+this proves strict Elias. Finally
+\[
+ \log_2\left(\frac{n2^{H/\eta}}p\right)
+ =\log_2n-\frac{b}{4r+2}+O_\rho(1/r)\longrightarrow-\infty.
+\]
+\end{proof}
+

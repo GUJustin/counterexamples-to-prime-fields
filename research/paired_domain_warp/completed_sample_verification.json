@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "sha256": "6d44a20b422122f4234e1f8a4fd5dd410763a78024b558bcf130b0a35935f318",
+  "n": 2518,
+  "K": 1259,
+  "direction_weight": 4,
+  "far_distance_numerator": 1258,
+  "parameter_one_exact_distance_numerator": 1254,
+  "known_nearby_codeword": "zero",
+  "affine_dimension": 2,
+  "generator_completion_failure_less_than": "2^-88",
+  "prescription_less_than": "2^-6",
+  "seconds": 1.121866166999098,
+  "scope": "All coordinates replayed by direct root products. Distances at parameters0 and1 and direction support are deterministic. Full affine-space/line profile is guaranteed over generator randomness, not individually certified for this stored sample."
+}

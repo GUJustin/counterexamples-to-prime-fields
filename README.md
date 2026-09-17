@@ -17,7 +17,10 @@ from the radius is `(1-o(1))*eta`, almost the entire capacity gap. The
 radius remains strictly below Elias. The `c1=c2=1` numerical prescription
 predicts a nearby fraction tending to zero; the actual fraction is `1-1/p`.
 The gap still shrinks, and this strongest relative separation approaches
-the Elias boundary. No common agreement set explains the line.
+the Elias boundary. Every nonzero point has exactly the tested distance,
+and its decoding list is disjoint from the lists at all other nonzero
+parameters. The direction changes the minimum number of coordinates
+needed for the distance improvement. No common agreement set explains the line.
 
 The list-size results separately show that the proposed exponent must
 grow almost quadratically, rather than linearly, in the reciprocal gap.
@@ -33,16 +36,21 @@ gap on short domains or transfers automatically to a prescribed FFT domain.
   large prime, with `b=log2(p)`, the list has at least
   `2^((1/2-o(1))*b^2/log2(b))` codewords below Elias.
 - Random paired domains give **complete nonzero coverage with almost the
-  entire capacity gap as separation**. Their exceptional point has distance
-  `1-rho-1/n`; length can be `Theta(log p * log log p)` and `eta~H(rho)/log2(p)`.
-  A multiplicative-character argument controls joint evaluation images.
-  The sampler runs in expected polynomial time in `log p` and succeeds
-  with probability `1-p^-Omega(1)`. Exact finite certificates include
-  separation **4/5 of the gap**, length2518 over `2^521-1`, with generator
-  failure below `2^-128`, and **20/21 of the gap**, length26218 over
-  `2^1279-1`, with failure below `2^-60`. Independent integer replays
-  support both. These results defeat the `c1=c2=1` prescription; the
-  next construction handles arbitrary fixed numerical constants.
+  entire capacity gap as separation**, and an exact distance formula on an
+  affine space. Their exceptional point has distance `1-rho-1/n`; length
+  can be `Theta(log p * log log p)` and `eta~H(rho)/log2(p)`. A character
+  estimate and successive pairs of extra roots complete the joint product
+  image. The sampler runs in expected polynomial time in `log p` and
+  succeeds with probability `1-p^-Omega(1)`. Exact finite certificates
+  include length **158** over `2^61-1`, changing only two coordinates;
+  length **2518** over `2^521-1`, changing four coordinates with generator
+  failure below `2^-88`; and length **26218** over `2^1279-1`, changing
+  twenty coordinates with failure below `2^-123`. The last example's
+  separation is **20/21 of the gap**. Independent integer replays support
+  these bounds. Coverage of the stored sample has a probability guarantee
+  over the generator, not an individual deterministic certificate.
+  These results defeat the `c1=c2=1` prescription; the next construction
+  handles arbitrary fixed numerical constants.
 - A cubic change of the seed domain gives **complete nonzero coverage**
   at every fixed rational rate: all `p-1` nonzero parameters are nearby
   while zero is a fixed positive fraction of `eta` outside. For every

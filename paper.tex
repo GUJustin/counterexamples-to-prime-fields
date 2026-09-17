@@ -55,7 +55,8 @@ $\eta\sim H_2(\rho)/\log_2p$. The far point lies $(1-o(1))\eta$
 outside that radius, while the proposed numerical nearby fraction
 tends to zero. The length can be $\Theta_\rho(\log p\log\log p)$.
 Paired evaluation domains and a multiplicative-character estimate
-produce this behavior. A separate cubic deformation gives complete
+produce this behavior; all nonzero points have exactly the tested
+distance and have pairwise disjoint decoding lists. A separate cubic deformation gives complete
 nonzero coverage at length $\Theta(\log p)$ against arbitrary fixed
 constants in the proposed numerical bound. Both constructions output
 the code and line in expected polynomial time in $\log p$, with
@@ -146,8 +147,11 @@ all $p-1$ nonzero parameters are nearby, but parameter zero has distance
 $1-\rho-1/n$. Every word is within $1-\rho$ of a Reed--Solomon code,
 so this is almost the largest distance possible. Its separation from
 the tested radius is $(1-o(1))\eta$, almost the entire capacity gap.
-The radius remains strictly below Elias. No pair of codewords explains
-the line on the required common coordinate set.
+The radius remains strictly below Elias. Every nonzero point has
+exactly the tested distance, and no codeword is nearby at two distinct
+nonzero parameters. The line changes only $2r$ coordinates to improve
+the distance by exactly $2r/n$, attaining the Hamming-distance bound.
+No pair of codewords explains the line on the required common coordinate set.
 
 The $c_1=c_2=1$ numerical prescription predicts a nearby fraction
 tending to zero; the actual fraction is $1-1/p$. Thus testing a random

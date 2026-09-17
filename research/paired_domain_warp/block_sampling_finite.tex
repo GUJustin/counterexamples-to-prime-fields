@@ -1,0 +1,26 @@
+Exact half-rate certificates illustrate the separation and sampling
+bounds. The last column bounds $n2^{1/\eta}/p$.
+\begin{center}
+\begin{tabular}{@{}rrrrll@{}}
+\toprule
+Prime & $n$ & $r$ & Far fraction of $\eta$ & Failure $<$ & Prescription $<$\\
+\midrule
+$2^{521}-1$&1458&1&$2/3$&$2^{-134}$&$2^{-24}$\\
+$2^{521}-1$&2518&2&$4/5$&$2^{-128}$&$2^{-6}$\\
+$2^{1279}-1$&8678&3&$6/7$&$2^{-298}$&$2^{-26}$\\
+$2^{1279}-1$&13782&5&$10/11$&$2^{-284}$&$2^{-12}$\\
+$2^{1279}-1$&26218&10&$20/21$&$2^{-60}$&$2^{-15}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+The exact rational checker and independent integer replay are in
+\path{research/paired_domain_warp/}. They use different versions of
+the Fourier error bound and separately check primality, strict Elias,
+and the numerical comparison. Finite Fourier identities are checked
+by integer group convolution and reduction modulo cyclotomic
+polynomials, and small-domain enumeration checks the collision-free
+short support differences. The probability is over the generator's
+randomness; it does not certify complete coverage for an individual
+stored sample. These paired-domain results address the displayed
+constant range. The following cubic-moment construction defeats
+arbitrary fixed constants $c_1,c_2$.

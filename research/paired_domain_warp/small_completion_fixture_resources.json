@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/paired_domain_warp/check_small_completion.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.609703541998897,
+  "peak_rss_kib": 13824,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

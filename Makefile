@@ -53,6 +53,12 @@ verify:
 	$(PYTHON) research/paired_domain_warp/verify_multiblock_finite.py
 	$(PYTHON) research/paired_domain_warp/audit_multiblock_independent.py
 	$(PYTHON) research/paired_domain_warp/verify_sample.py
+	$(PYTHON) research/paired_domain_warp/verify_completion.py
+	$(PYTHON) research/paired_domain_warp/audit_completion_independent.py
+	$(PYTHON) research/paired_domain_warp/verify_translate_identity.py
+	$(PYTHON) research/paired_domain_warp/check_small_completion.py
+	$(PYTHON) research/paired_domain_warp/verify_completed_sample.py
+	$(PYTHON) research/paired_domain_warp/verify_extension_profile.py
 	$(PYTHON) research/cubic_domain_warp/verify_geometry.py
 	$(PYTHON) research/cubic_domain_warp/verify_finite_certificate.py
 	$(PYTHON) research/cubic_domain_warp/audit_finite_independent.py

@@ -1,33 +1,45 @@
-# Paired-domain punctured lines
+# Paired domains and exact affine distance profiles
 
-The integrated proof is [paired.tex](paired.tex); the detailed internal
-review is [PROOF_AUDIT.md](PROOF_AUDIT.md).
+The integrated proof is [paired.tex](paired.tex), including
+[completion.tex](completion.tex). See [COMPLETION_PROOF_AUDIT.md](COMPLETION_PROOF_AUDIT.md)
+for the internal audit of the strongest result and [PROOF_AUDIT.md](PROOF_AUDIT.md)
+for the original multiple-block argument.
 
-At every fixed rational rate, every sufficiently large prime field admits
-a line with all nonzero parameters nearby and a zero parameter at distance
-1-rho-1/n, only one coordinate below the maximum possible RS distance.
-With r paired coordinates per padding block, the far separation is
-2r/(2r+1) of the gap. Taking r~log log p makes this fraction tend to1 at lengthTheta(log p log log p),
-while the radius stays strictly below Elias and the c1=c2=1 numerical
-nearby fraction tends to0. The gap still shrinks. No prescribed FFT-domain
-transfer or nearby-witness recovery algorithm is claimed.
+At every fixed rational rate, every sufficiently large prime field admits a
+line whose nonzero parameters all have exactly the tested distance, while zero
+has distance 1-rho-1/n: one coordinate short of maximum possible RS distance.
+The separation is 2r/(2r+1) of the capacity gap. The direction changes exactly
+2r coordinates, the minimum needed for that improvement. The nonzero points'
+decoding lists are pairwise disjoint. More generally an r-dimensional affine
+space has distance 1-rho-(1+2 wt(z))/n at parameter z.
 
-The sampler is polynomial in log p, with probability1-p^-Omega(1).
-The fixed sample `samples/m521_r2_n2518.json` has2518coordinates over
-p=2^521-1, dimension1259, and separation4/5 of the gap. Its generator
-failure is below2^-128. `verify_sample.py` independently replays every
-coordinate by root products and proves the far distance, prime, Elias
-inequality, and probability terms using integers. The individual sample's
-all-parameter coverage is NOT deterministically certified.
+Taking r about log log p makes the separation approach the entire gap, at
+length Theta(log p log log p), strictly below Elias. The numerical nearby
+fraction tends to zero while the actual fraction tends to one. The gap shrinks;
+no prescribed FFT-domain transfer or witness recovery algorithm is claimed.
 
-Run the standard-library checkers from the repo root:
+The completion sampler is polynomial in log p, with probability 1-p^-Omega(1).
+The sample `completed_samples/m521_r2_n2518.json` has 2518 coordinates over
+p=2^521-1, dimension 1259, and a four-coordinate direction. Its generator
+failure is below 2^-88 by the independent weaker-constant replay. The zero
+codeword is a known nearest word at parameter one. The coordinates, direction
+support, and distances at parameters zero and one are deterministically
+verified. Full coverage is NOT individually deterministically certified.
 
-    python3 research/paired_domain_warp/verify_joint_images.py
-    python3 research/paired_domain_warp/verify_multiblock_finite.py
-    python3 research/paired_domain_warp/audit_multiblock_independent.py
-    python3 research/paired_domain_warp/verify_sample.py
+Run the standard-library checkers from the repository root:
 
-`generate_sample.py --output /tmp/fresh-paired-sample.json` draws a fresh
-sample and refuses to overwrite an existing file. The smaller one-pair
-curve argument andM127certificate are retained as a supplementary route
-in `single_pair.tex`, `verify_geometry.py`, and `verify_finite.py`.
+    python3 research/paired_domain_warp/verify_completion.py
+    python3 research/paired_domain_warp/audit_completion_independent.py
+    python3 research/paired_domain_warp/verify_translate_identity.py
+    python3 research/paired_domain_warp/check_small_completion.py
+    python3 research/paired_domain_warp/verify_completed_sample.py
+
+`generate_completed_sample.py` draws a fresh completion sample; consult its
+arguments for the output path. Its large image is implicit.
+
+The older `samples/m521_r2_n2518.json` uses 24 padding blocks, a 96-coordinate
+direction, and generator failure below 2^-128. `verify_sample.py` replays it.
+It is a different construction and probability guarantee. The block argument
+is retained and checked by `verify_joint_images.py`,
+`verify_multiblock_finite.py`, and `audit_multiblock_independent.py`.
+The one-pair curve route is retained in `single_pair.tex`.

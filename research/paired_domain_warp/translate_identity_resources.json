@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/paired_domain_warp/verify_translate_identity.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5636843329994008,
+  "peak_rss_kib": 7824,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

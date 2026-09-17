@@ -1411,3 +1411,71 @@ so doNOTclaim highprobabilityfrommultiblockthere.
 Makefile94checks. PDF132pages, article1-inch margins, no warnings.
 Renderedintro andnewproof/tablepage35 inspected. No numericaljobactive.
 GoalACTIVE until12:30UTC (08:30Eastern), stillabout4hours remaining.
+
+
+## 2026-09-17 09:09 UTC — completed product image, exact affine geometry
+
+Stronger result integrated in research/paired_domain_warp/completion.tex.
+A single padding block of r sign-orbits now suffices. For every z in Fp^r,
+exact distance is 1-rho-(1+2 wt(z))/n. Nearby locus at eta=(2r+1)/n is
+exactly (Fp*)^r, with pairwise disjoint decoding lists. Every full-support
+line direction changes only 2r coordinates (minimal for the improvement).
+Exceptional point remains one coordinate short of maximal RS distance.
+
+Construction completes the base D0-subset product image by t pairs of new
+core orbits, choosing exactly one orbit from each pair. For missing fraction
+h, expected new missing fraction is at most Phi(h)=(h^2+C^2 h/p)/(1-4/p),
+C=4r+2, uniformly over the entire past when p>(n+1)^2. Fourier/Parseval on
+the intersection of two translates proves this. Initial expectation d0 is
+the original energy bound with m0,D0. Successive averaging gives existence
+if (p-1)^r Phi^t(d0)<1; threshold Markov/union gives sampler failure
+ d0/h0 + sum_i Phi(h_(i-1))/h_i.
+For r log b=o(b), n=(2r+4/5)b/Hrho+O1, t=16(r+1), base list has log2
+rb+2b/5+o(b). Initial missing <=p^-1/8 with high probability; each step
+reduces by p^-1/16 except probability4p^-1/16. Complete image after t.
+Elias and prescription follow; far separation tends to entire eta ifr grows.
+
+Exact certificates, primary + independent weaker C=4r+4, p-8 arithmetic:
+M61 n158r1 direction2, existence, prescription<1/2; M127 n294r1 direction2,
+existence, prescription<2^-20; M521 n2518r2 direction4 failure<2^-88;
+M1279 n8678r3 direction6 failure<2^-228; n26218r10 direction20 failure<2^-123.
+All strict Elias. Canonical primary rows now include M61/158 and M127/294.
+Six new completion checks pass sequentially under384MiB (~4sec40MiB).
+COMPLETION_PROOF_AUDIT.md records proof/quantifier review.
+
+New actual sample completed_samples/m521_r2_n2518.json, SHA256
+6d44a20b422122f4234e1f8a4fd5dd410763a78024b558bcf130b0a35935f318.
+Generator m0=1241,D0=622,t8; direction=-f onpadding, weight4, zero codeword
+nearest atz1. Deterministic exact distances1258/2518 atzero,1254/2518 atone.
+Full coverage is probability OVERGENERATOR, NOT individualcoveragecertificate.
+Original block sample remains separate (weight96,failure2^-128).
+
+New Cor pd:witness-extension: any degree-e polynomial codeword graph hits
+at most floor(e(n-K-1)/(2r)) nearby parameters; selecting all p-1 requires
+degreeOmega(p/logp), not a computationallowerbound. Over any extensionE,
+nearby torus is precisely(Fp*)^r and listsunchanged (interpolation onKcore
+coordinates forcesbasecoeffs). On a scalar line everyzoutsideFp has EXACT
+far distance1-rho-1/n: applyFp-linear functional lambda1=1,lambdaz=0 to any
+codewordagreement; zero codeword attainstheK+1referencecoreagreements.
+verify_extension_profile.py exhausts4368interpolationsF17n16K5, coversall
+289 quadraticextensionparameters:16nonzero base distance8,272outside+zero
+distance10;16disjointlists contain35codewords. No belowEliasclaimforthistoy.
+
+Intro,abstract,README updated; PDF134pages, article1inch, cleanbuild.
+Makefile100checks. Latestnewproof/table rendering inspected; finalintro and
+extensioncorollary renderedunder tmp/completion-final-page-* forinspection.
+No active numericaljob; no push/publication. GoalACTIVE until12:30UTC.
+
+better.codes scope rechecked: fixed KoalaBear prime2130706433, extensionFp^6
+(NOTquartic), n262144,k131072,8rows, winningdensity>2^-128 needsabout2^58
+nearbylabels, largerthanp. Incumbent116.13, pinnedcdb451f13fdc6c84f5fe363e77ee13a89bd30974.
+Newbasefieldline doesNOTimprove it. Archiveagents/better_codes_scope.md and
+better_codes_construction.md have detailed benchmark audit. Do not conflate
+our earlierM31quarticexample withthisbenchmark.
+
+Potential next research: uniform multiplicities follow by declaring base
+outputs with fewer than L0/(2V) witnesses bad; their density <=4Delta by
+variance. Same completion fills this good set, giving minimumlist>=L0/(2V)
+at everyfull-supportparameter; partialparameterweightj wouldhaveatleast
+(p-1)^(r-j) times that manynearestwords. This is reasoned, NOTyetintegrated
+orverified. Consider whether it improvesmessageenough to merit inclusion.

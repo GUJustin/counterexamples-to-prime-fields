@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "-c",
+    "import subprocess,sys; scripts=[\"verify_completion.py\",\"audit_completion_independent.py\",\"verify_translate_identity.py\",\"check_small_completion.py\",\"verify_completed_sample.py\",\"verify_extension_profile.py\"]; [subprocess.run([sys.executable,\"research/paired_domain_warp/\"+s],check=True,stdout=subprocess.DEVNULL) for s in scripts]; print(\"PASS: six completion and extension checks\")"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 3.7530707080004504,
+  "peak_rss_kib": 39760,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 300
+}

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/paired_domain_warp/generate_completed_sample.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 2.2767630420021305,
+  "peak_rss_kib": 20672,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

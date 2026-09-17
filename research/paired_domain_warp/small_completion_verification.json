@@ -1,0 +1,61 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "p": 17,
+      "r": 1,
+      "m": 7,
+      "D": 3,
+      "n": 16,
+      "K": 5,
+      "image_size": 16,
+      "group_size": 16,
+      "complete": true,
+      "affine_points_checked": 17,
+      "distance_by_parameter_weight": {
+        "0": 10,
+        "1": 8
+      },
+      "far_distance": 10,
+      "scope": "Exact finite geometry fixture; no below-Elias or numerical-prescription claim."
+    },
+    {
+      "p": 19,
+      "r": 1,
+      "m": 8,
+      "D": 4,
+      "n": 18,
+      "K": 7,
+      "image_size": 18,
+      "group_size": 18,
+      "complete": true,
+      "affine_points_checked": 19,
+      "distance_by_parameter_weight": {
+        "0": 10,
+        "1": 8
+      },
+      "far_distance": 10,
+      "scope": "Exact finite geometry fixture; no below-Elias or numerical-prescription claim."
+    },
+    {
+      "p": 37,
+      "r": 2,
+      "m": 16,
+      "D": 8,
+      "n": 36,
+      "K": 15,
+      "image_size": 1296,
+      "group_size": 1296,
+      "complete": true,
+      "affine_points_checked": 1369,
+      "distance_by_parameter_weight": {
+        "0": 20,
+        "1": 18,
+        "2": 16
+      },
+      "far_distance": 20,
+      "scope": "Exact finite geometry fixture; no below-Elias or numerical-prescription claim."
+    }
+  ],
+  "seconds": 0.036510208003164735
+}

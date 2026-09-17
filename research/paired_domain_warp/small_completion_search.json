@@ -1,0 +1,233 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "b": 31,
+      "trials": 117,
+      "first_sufficient": null,
+      "first_beating_prescription": null
+    },
+    {
+      "b": 61,
+      "trials": 139,
+      "first_sufficient": {
+        "b": 61,
+        "r": 1,
+        "n": 158,
+        "K": 79,
+        "D": 40,
+        "base_orbits": 70,
+        "base_support": 36,
+        "sprinkling_pairs": 4,
+        "base_list_bits": 67,
+        "dyadic_missing_exponents": [
+          5,
+          9,
+          17,
+          33,
+          65
+        ],
+        "per_event_failure_exponent": 0,
+        "failure_target": null,
+        "mode": "existence",
+        "direction_weight": 2,
+        "affine_dimension": 1,
+        "far_distance_numerator": 78,
+        "nearby_distance_numerator": 76
+      },
+      "first_beating_prescription": {
+        "b": 61,
+        "r": 1,
+        "n": 158,
+        "K": 79,
+        "D": 40,
+        "base_orbits": 70,
+        "base_support": 36,
+        "sprinkling_pairs": 4,
+        "base_list_bits": 67,
+        "dyadic_missing_exponents": [
+          5,
+          9,
+          17,
+          33,
+          65
+        ],
+        "per_event_failure_exponent": 0,
+        "failure_target": null,
+        "mode": "existence",
+        "direction_weight": 2,
+        "affine_dimension": 1,
+        "far_distance_numerator": 78,
+        "nearby_distance_numerator": 76
+      }
+    },
+    {
+      "b": 89,
+      "trials": 154,
+      "first_sufficient": {
+        "b": 89,
+        "r": 1,
+        "n": 218,
+        "K": 109,
+        "D": 55,
+        "base_orbits": 100,
+        "base_support": 51,
+        "sprinkling_pairs": 4,
+        "base_list_bits": 97,
+        "dyadic_missing_exponents": [
+          7,
+          13,
+          25,
+          49,
+          97
+        ],
+        "per_event_failure_exponent": 0,
+        "failure_target": null,
+        "mode": "existence",
+        "direction_weight": 2,
+        "affine_dimension": 1,
+        "far_distance_numerator": 108,
+        "nearby_distance_numerator": 106
+      },
+      "first_beating_prescription": {
+        "b": 89,
+        "r": 1,
+        "n": 218,
+        "K": 109,
+        "D": 55,
+        "base_orbits": 100,
+        "base_support": 51,
+        "sprinkling_pairs": 4,
+        "base_list_bits": 97,
+        "dyadic_missing_exponents": [
+          7,
+          13,
+          25,
+          49,
+          97
+        ],
+        "per_event_failure_exponent": 0,
+        "failure_target": null,
+        "mode": "existence",
+        "direction_weight": 2,
+        "affine_dimension": 1,
+        "far_distance_numerator": 108,
+        "nearby_distance_numerator": 106
+      }
+    },
+    {
+      "b": 107,
+      "trials": 155,
+      "first_sufficient": {
+        "b": 107,
+        "r": 1,
+        "n": 254,
+        "K": 127,
+        "D": 64,
+        "base_orbits": 116,
+        "base_support": 59,
+        "sprinkling_pairs": 5,
+        "base_list_bits": 113,
+        "dyadic_missing_exponents": [
+          5,
+          9,
+          17,
+          33,
+          65,
+          129
+        ],
+        "per_event_failure_exponent": 0,
+        "failure_target": null,
+        "mode": "existence",
+        "direction_weight": 2,
+        "affine_dimension": 1,
+        "far_distance_numerator": 126,
+        "nearby_distance_numerator": 124
+      },
+      "first_beating_prescription": {
+        "b": 107,
+        "r": 1,
+        "n": 254,
+        "K": 127,
+        "D": 64,
+        "base_orbits": 116,
+        "base_support": 59,
+        "sprinkling_pairs": 5,
+        "base_list_bits": 113,
+        "dyadic_missing_exponents": [
+          5,
+          9,
+          17,
+          33,
+          65,
+          129
+        ],
+        "per_event_failure_exponent": 0,
+        "failure_target": null,
+        "mode": "existence",
+        "direction_weight": 2,
+        "affine_dimension": 1,
+        "far_distance_numerator": 126,
+        "nearby_distance_numerator": 124
+      }
+    },
+    {
+      "b": 127,
+      "trials": 155,
+      "first_sufficient": {
+        "b": 127,
+        "r": 1,
+        "n": 294,
+        "K": 147,
+        "D": 74,
+        "base_orbits": 136,
+        "base_support": 69,
+        "sprinkling_pairs": 5,
+        "base_list_bits": 133,
+        "dyadic_missing_exponents": [
+          5,
+          9,
+          17,
+          33,
+          65,
+          129
+        ],
+        "per_event_failure_exponent": 0,
+        "failure_target": null,
+        "mode": "existence",
+        "direction_weight": 2,
+        "affine_dimension": 1,
+        "far_distance_numerator": 146,
+        "nearby_distance_numerator": 144
+      },
+      "first_beating_prescription": {
+        "b": 127,
+        "r": 1,
+        "n": 294,
+        "K": 147,
+        "D": 74,
+        "base_orbits": 136,
+        "base_support": 69,
+        "sprinkling_pairs": 5,
+        "base_list_bits": 133,
+        "dyadic_missing_exponents": [
+          5,
+          9,
+          17,
+          33,
+          65,
+          129
+        ],
+        "per_event_failure_exponent": 0,
+        "failure_target": null,
+        "mode": "existence",
+        "direction_weight": 2,
+        "affine_dimension": 1,
+        "far_distance_numerator": 146,
+        "nearby_distance_numerator": 144
+      }
+    }
+  ],
+  "seconds": 0.0009809169969230425,
+  "scope": "Half-rate r1 dyadic sufficient certificates, 2b<=n<3b, t<=15. No negative existence conclusion."
+}
