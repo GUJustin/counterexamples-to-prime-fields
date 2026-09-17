@@ -41,6 +41,7 @@ verify:
 	$(PYTHON) research/fixed_gap_padding/verify_unique_padding.py
 	$(PYTHON) research/fixed_gap_padding/verify_unique_far_padding.py
 	$(PYTHON) research/fixed_gap_padding/verify_multi_match_far_padding.py
+	$(PYTHON) research/fixed_gap_padding/verify_far_concurrency.py
 	$(PYTHON) research/fixed_gap_padding/verify_multi_match_finite.py
 	$(PYTHON) research/fixed_gap_padding/verify_gap_scale_far.py
 	$(PYTHON) research/fixed_gap_padding/verify_vanishing_rate_density.py

@@ -1,0 +1,215 @@
+{
+  "status": "passed",
+  "p": 5,
+  "n": 5,
+  "K": 2,
+  "graphs_enumerated": 97500,
+  "rows": [
+    {
+      "mode": "point",
+      "seed": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "degree": 1,
+      "far_agreement": 2,
+      "maxima": {
+        "3": 0,
+        "4": 0,
+        "5": 0
+      }
+    },
+    {
+      "mode": "point",
+      "seed": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "degree": 2,
+      "far_agreement": 2,
+      "maxima": {
+        "3": 0,
+        "4": 0,
+        "5": 0
+      }
+    },
+    {
+      "mode": "point",
+      "seed": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "degree": 1,
+      "far_agreement": 2,
+      "maxima": {
+        "3": 3,
+        "4": 1,
+        "5": 0
+      }
+    },
+    {
+      "mode": "point",
+      "seed": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "degree": 2,
+      "far_agreement": 2,
+      "maxima": {
+        "3": 3,
+        "4": 1,
+        "5": 0
+      }
+    },
+    {
+      "mode": "point",
+      "seed": [
+        0,
+        1,
+        4,
+        4,
+        1
+      ],
+      "degree": 1,
+      "far_agreement": 2,
+      "maxima": {
+        "3": 1,
+        "4": 1,
+        "5": 1
+      }
+    },
+    {
+      "mode": "point",
+      "seed": [
+        0,
+        1,
+        4,
+        4,
+        1
+      ],
+      "degree": 2,
+      "far_agreement": 2,
+      "maxima": {
+        "3": 1,
+        "4": 1,
+        "5": 1
+      }
+    },
+    {
+      "mode": "direction",
+      "seed": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "degree": 1,
+      "far_agreement": 2,
+      "maxima": {
+        "3": 1,
+        "4": 1,
+        "5": 1
+      }
+    },
+    {
+      "mode": "direction",
+      "seed": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "degree": 2,
+      "far_agreement": 2,
+      "maxima": {
+        "3": 1,
+        "4": 1,
+        "5": 1
+      }
+    },
+    {
+      "mode": "direction",
+      "seed": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "degree": 1,
+      "far_agreement": 2,
+      "maxima": {
+        "3": 3,
+        "4": 1,
+        "5": 0
+      }
+    },
+    {
+      "mode": "direction",
+      "seed": [
+        0,
+        1,
+        0,
+        1,
+        0
+      ],
+      "degree": 2,
+      "far_agreement": 2,
+      "maxima": {
+        "3": 3,
+        "4": 1,
+        "5": 0
+      }
+    },
+    {
+      "mode": "direction",
+      "seed": [
+        0,
+        1,
+        4,
+        4,
+        1
+      ],
+      "degree": 1,
+      "far_agreement": 2,
+      "maxima": {
+        "3": 1,
+        "4": 1,
+        "5": 1
+      }
+    },
+    {
+      "mode": "direction",
+      "seed": [
+        0,
+        1,
+        4,
+        4,
+        1
+      ],
+      "degree": 2,
+      "far_agreement": 2,
+      "maxima": {
+        "3": 1,
+        "4": 1,
+        "5": 1
+      }
+    }
+  ],
+  "seconds": 1.8254316669990658,
+  "scope": "Exhaustive small-field incidence checks; the general result is proved by coordinate root counting."
+}

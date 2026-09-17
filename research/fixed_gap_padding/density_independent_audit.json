@@ -52,8 +52,35 @@
       "verified_density_lower": "0.99999545",
       "independent_count_method": "Direct sums for complement moment ranges, no Gram bound",
       "full_entropy_checked": false
+    },
+    {
+      "b": 2203,
+      "n": 4128,
+      "K": 2064,
+      "A": 2066,
+      "verified_density_lower": "0.93155073",
+      "independent_count_method": "Independent binomial variance and integral sqrt upper bound",
+      "full_entropy_checked": false
+    },
+    {
+      "b": 4423,
+      "n": 26520,
+      "K": 13260,
+      "A": 13267,
+      "verified_density_lower": "0.99999974",
+      "independent_count_method": "Independent binomial variance and integral sqrt upper bound",
+      "full_entropy_checked": false
+    },
+    {
+      "b": 9689,
+      "n": 58110,
+      "K": 29055,
+      "A": 29062,
+      "verified_density_lower": "0.99999970",
+      "independent_count_method": "Independent binomial variance and integral sqrt upper bound",
+      "full_entropy_checked": false
     }
   ],
   "scope": "Far-point multiplicative p-1 label formula. Independent finite arithmetic and complete F17 direction counting. The all-prime asymptotic still rests on the written proof.",
-  "seconds": 0.13585724999938975
+  "seconds": 2.770413207999809
 }

@@ -92,6 +92,12 @@ The parameter-zero word is exactly $r/n$ beyond the nearby radius,
 where $r=\lfloor b^{1/6}\rfloor\to\infty$.
 The radius is strictly below Elias and there is no correlated agreement
 at the threshold. The relative separation $r/n$ still tends to zero.
+For every choice of nearby witnesses, each affine codeword graph
+contains at most
+$\lfloor(n-A+r)/r\rfloor=O_{\rho,c}(n/b^{1/6})=o(n)$
+of the selected pairs, where $A=(\rho+\eta)n$.
+More generally, a codeword graph of degree at most $e\ge1$ contains
+at most $\lfloor e(n-A+r)/r\rfloor$ pairs.
 \end{corollary}
 \begin{proof}
 Take $n,K,s$ as in Theorem~\ref{fg:near-unit-density}, but now put
@@ -121,6 +127,8 @@ $1+O_{\rho,c}(\ell^{-1/2})$. The averaging argument proves the
 nearby count, and the degree argument gives the exact far-point
 distance and excludes correlated agreement.
 Finally $\eta b\to c>H_2(\rho)$ gives strict Elias.
+Apply Lemma~\ref{lem:ct-quantitative-concurrency} with $a_0=D=A-r$
+and $T=A$ to obtain the graph-intersection bounds.
 \end{proof}
 
 Thus the far point need not merely miss the radius by one coordinate.

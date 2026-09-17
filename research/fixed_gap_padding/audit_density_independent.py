@@ -22,10 +22,10 @@ def prime_mersenne(b):
  return p
 
 
-def replay(b,n,K,A,m,s,expected,bits=None):
+def replay(b,n,K,A,m,s,expected,bits=None,use_box=False):
  p=prime_mersenne(b);missing=m-A;N=m-1;q=n-N;old=A-1;degree=K-1
  assert s==A-K-1 and 0<missing<m and q>0
- if b!=2203:
+ if not use_box:
   variances=[Q(A*(m-A),m-1)*Q(comb(m-1,j)*comb(m+j,j),(2*j+1)*comb(2*j,j)**2)
              for j in range(1,s+1)]
   volume=(Q(355,113)**(s//2)/factorial(s//2) if s%2==0 else
@@ -98,7 +98,10 @@ def main():
                                     replay(61,216,108,113,154,4,'0.91025173',10),
                                     replay(127,468,234,240,308,5,'0.96160200',40),
                                     replay(521,2800,1400,1411,1677,10,'0.99485642',255),
-                                    replay(2203,21940,10970,10990,11895,19,'0.99999545')],
+                                    replay(2203,21940,10970,10990,11895,19,'0.99999545',use_box=True),
+                                    replay(2203,4128,2064,2066,2752,1,'0.93155073',126),
+                                    replay(4423,26520,13260,13267,14144,6,'0.99999974',619),
+                                    replay(9689,58110,29055,29062,30992,6,'0.99999970',1371)],
           scope='Far-point multiplicative p-1 label formula. Independent finite arithmetic and complete F17 direction counting. The all-prime asymptotic still rests on the written proof.')
  out['seconds']=time.monotonic()-start
  Path(__file__).with_name('density_independent_audit.json').write_text(json.dumps(out,indent=2)+'\n')

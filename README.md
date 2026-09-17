@@ -31,6 +31,8 @@ and radii strictly below the paper's characteristic-based Elias radius.
   while retaining a point one coordinate beyond the nearby radius and no
   correlated agreement. A second-moment refinement lets the number of
   coordinates outside the radius grow, while relative separation vanishes.
+  Every affine codeword graph then contains only `o(n)` selected witnesses,
+  for every choice of witnesses.
   At half rate, another family has over **99.9999%** nearby parameters
   while one point is `eta/7` outside the radius and the proposed fraction
   tends to zero. The gap still shrinks.

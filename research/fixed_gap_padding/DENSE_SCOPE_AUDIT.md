@@ -68,3 +68,19 @@ now also uses p-1. A new exhaustive F17 check verifies all65536 directions,
 the exact expected union36975/4096, a12-label selected union, and a full
 line profile with15nearby nonzero parameters and two farther parameters
 (0and11). Its maximum joint agreement is3 at threshold4.
+
+Quantitative far-point refinement: if the far word has at most A-r
+agreements, every selected affine codeword graph contains at most
+floor((n-A+r)/r) pairs. A degree-e graph contains at most e times
+that ratio, rounded down. Count coordinate incidences: coordinates
+identical in the parameter number a<=A-r; each other coordinate
+contributes at most e roots. Thus m*A<=m*a+e*(n-a).
+For the growing-far family r=floor((log_2 p)^(1/6)), this strengthens
+concurrency to O(n/(log_2 p)^(1/6))=o(n), uniformly over witness choices.
+This is an application of the existing incidence argument, not a new
+construction or a fixed-gap result.
+
+Independent headline replay now also verifies the gap-scale far rows
+M2203 (>0.93155073), M4423 (>0.99999974), and M9689 (>0.99999970),
+with numerical-prescription bounds 2^-126, 2^-619, and 2^-1371.
+It imports no construction helpers and separately checks primality.

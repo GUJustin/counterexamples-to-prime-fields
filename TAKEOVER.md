@@ -1098,3 +1098,31 @@ parameters/codewordsexhausted; guardedPASS. Makefilecount78unchanged.
 PDF122pagesclean, reviewed2,40,41; finalparagraphsplitsforreadability
 requirelastbuildcompletioncheck. Nootheractiveprocess.
 Goalactiveuntil12:30UTC.
+
+## 2026-09-17 06:56 UTC — independent headline audit and sharper concurrency
+
+Independent density audit now replays gap-scale far certificates M2203,
+M4423, M9689 with its own variance/root rounding, smooth collision bound,
+32-term exponential estimate, and Lucas–Lehmer primality checks. No
+construction imports. Bounds >.93155073, >.99999974, >.99999970 and
+prescription <2^-126, <2^-619, <2^-1371 all PASS (3.35sec,21MiB).
+Existing M2203 nearunit fixture now explicitly requests its box bound;
+new M2203 gap-scale fixture uses the independent Gram bound.
+
+Generalized existing quantitative incidence lemma (A.8) to either a far
+DIRECTION or a far LINE POINT, and degree-e codeword graphs. If the far
+word has maximum agreement a0<T, graph incidence <=floor(e(n-a0)/(T-a0)).
+Proof: a identically matching coordinates <=a0; others have <=e roots;
+qT<=qa+e(n-a). Coefficients/evaluation give a<=a0 in respective cases.
+Applied to growing-far Cor4.14: r=floor(b^(1/6)), a0=A-r, concurrency
+<=floor((n-A+r)/r)=O(n/b^(1/6))=o(n), uniformly over witness choices.
+Degree-e version included. Intro/README state o(n) affine-graph bound.
+This is elementary strengthening/application, not new construction.
+
+New verify_far_concurrency.py exhausts 97,500 degree1/2 codeword graphs
+over F5, K2,n5, both direction and point hypotheses (point z0=2),
+several directions, all thresholds3,4,5; checks root incidence and final
+bound. PASS2.31sec18MiB. Makefile now79checks. PDF122pages clean; rendered
+pages37,69 and inspected. Existing asymptotic proofs remain written
+mathematics, not formal verification. No live process.
+Goal remains active until12:30UTC; currenttime~06:56UTC.

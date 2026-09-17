@@ -143,7 +143,9 @@ on a large coordinate set, even with an input separated from the radius
 by a fixed fraction of the capacity gap. A different parameter choice
 makes the nearby fraction tend to one, with an outside separation that
 vanishes relative to $\eta$; the number of missing coordinates can still
-grow (Corollary~\ref{fg:growing-far}).
+grow (Corollary~\ref{fg:growing-far}). In that family, every affine
+codeword graph contains only $o(n)$ of the nearby witnesses, regardless
+of how those witnesses are chosen.
 These results do not establish superlinear growth in $n$ at one fixed
 positive gap on short prime-field domains; that stronger question remains
 open.
@@ -3877,28 +3879,31 @@ Lemma~\ref{lem:ct-concurrency}.
 \begin{lemma}[Incidence bound from a quantitative agreement deficit]
 \label{lem:ct-quantitative-concurrency}
 Let $C\subseteq E^D$ be a linear code on $n$ coordinates, and let
-$0\le a_0<T\le n$ be integers. Suppose a word $f_1$ agrees with every
-codeword of $C$ in at most $a_0$ coordinates. For any word $f_0$ and any
-selection of codewords $p_z$, indexed by distinct scalars, with
-$\operatorname{agr}_D(f_0+zf_1,p_z)\ge T$, every parametrized affine
-codeword graph contains at most
+$0\le a_0<T\le n$ be integers. Suppose either the direction $f_1$,
+or some point $f_0+z_0f_1$, agrees with every codeword in at most
+$a_0$ coordinates. Select codewords $p_z$ at distinct scalars with
+$\operatorname{agr}_D(f_0+zf_1,p_z)\ge T$.
+Every parametrized codeword graph $Q(z)=\sum_{j=0}^e z^jP_j$,
+where $P_j\in C$ and $e\ge1$, contains at most
 \[
- \left\lfloor\frac{n-a_0}{T-a_0}\right\rfloor
+ \left\lfloor e\frac{n-a_0}{T-a_0}\right\rfloor
 \]
-of the selected pairs $(z,p_z)$.
+of the selected pairs $(z,p_z)$. In particular, take $e=1$ for affine
+codeword graphs.
 \end{lemma}
 \begin{proof}
-Fix a graph $P_0+zP_1$ containing $q$ selected pairs, and let $a$ count
-the coordinates at which $f_0=P_0$ and $f_1=P_1$ simultaneously. Then
-$a\le a_0$. At every other coordinate the affine equality holds for at
-most one of the distinct selected scalars. Counting agreements gives
-$qT\le qa+n-a$, so
+Let $a$ count coordinates where $f_0+zf_1=Q(z)$ identically as a
+polynomial in $z$. If the hypothesis concerns $f_1$, comparison of
+linear coefficients gives $a\le a_0$. If it concerns a point at $z_0$,
+evaluation there gives the same bound because $Q(z_0)\in C$.
+At every other coordinate the equality has at most $e$ roots.
+If the graph contains $q$ selected pairs, counting agreements gives
+$qT\le qa+e(n-a)$, so
 \[
- q\le\frac{n-a}{T-a}
-   =1+\frac{n-T}{T-a}
-   \le\frac{n-a_0}{T-a_0}.
+ q\le e\frac{n-a}{T-a}
+   =e\left(1+\frac{n-T}{T-a}\right)
+   \le e\frac{n-a_0}{T-a_0}.
 \]
-The final inequality uses $n\ge T$ and $a\le a_0<T$.
 Taking the integer part proves the claim.
 \end{proof}
 
