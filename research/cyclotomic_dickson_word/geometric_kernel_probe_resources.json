@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/cyclotomic_dickson_word/geometric_kernel_probe.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 2.962439291004557,
+  "peak_rss_kib": 59408,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

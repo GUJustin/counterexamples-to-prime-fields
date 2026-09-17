@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/dependent_incidence_pilot/verify.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5636865840060636,
+  "peak_rss_kib": 3936,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/dependent_incidence_pilot/pilot.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 2.9670344579935772,
+  "peak_rss_kib": 37360,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

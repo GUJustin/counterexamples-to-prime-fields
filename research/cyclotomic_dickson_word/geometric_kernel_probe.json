@@ -1,0 +1,322 @@
+[
+  {
+    "r": 11,
+    "t": 1,
+    "p": 1000033,
+    "root": 348510,
+    "anchored_supports": 1,
+    "max_modular_agreement": 12,
+    "witness": {
+      "indices": [
+        0
+      ],
+      "c": 1
+    }
+  },
+  {
+    "r": 11,
+    "t": 2,
+    "p": 1000033,
+    "root": 348510,
+    "anchored_supports": 10,
+    "max_modular_agreement": 10,
+    "witness": {
+      "indices": [
+        0,
+        1
+      ],
+      "c": 853213
+    }
+  },
+  {
+    "r": 11,
+    "t": 3,
+    "p": 1000033,
+    "root": 348510,
+    "anchored_supports": 45,
+    "max_modular_agreement": 9,
+    "witness": {
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "c": 440421
+    }
+  },
+  {
+    "r": 11,
+    "t": 4,
+    "p": 1000033,
+    "root": 348510,
+    "anchored_supports": 120,
+    "max_modular_agreement": 8,
+    "witness": {
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "c": 657331
+    }
+  },
+  {
+    "r": 11,
+    "t": 5,
+    "p": 1000033,
+    "root": 348510,
+    "anchored_supports": 210,
+    "max_modular_agreement": 8,
+    "witness": {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "c": 861230
+    }
+  },
+  {
+    "r": 19,
+    "t": 1,
+    "p": 1000313,
+    "root": 814406,
+    "anchored_supports": 1,
+    "max_modular_agreement": 20,
+    "witness": {
+      "indices": [
+        0
+      ],
+      "c": 1
+    }
+  },
+  {
+    "r": 19,
+    "t": 2,
+    "p": 1000313,
+    "root": 814406,
+    "anchored_supports": 18,
+    "max_modular_agreement": 18,
+    "witness": {
+      "indices": [
+        0,
+        1
+      ],
+      "c": 685643
+    }
+  },
+  {
+    "r": 19,
+    "t": 3,
+    "p": 1000313,
+    "root": 814406,
+    "anchored_supports": 153,
+    "max_modular_agreement": 17,
+    "witness": {
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "c": 902252
+    }
+  },
+  {
+    "r": 19,
+    "t": 4,
+    "p": 1000313,
+    "root": 814406,
+    "anchored_supports": 816,
+    "max_modular_agreement": 16,
+    "witness": {
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "c": 620311
+    }
+  },
+  {
+    "r": 19,
+    "t": 5,
+    "p": 1000313,
+    "root": 814406,
+    "anchored_supports": 3060,
+    "max_modular_agreement": 16,
+    "witness": {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "c": 807023
+    }
+  },
+  {
+    "r": 23,
+    "t": 1,
+    "p": 1000133,
+    "root": 656007,
+    "anchored_supports": 1,
+    "max_modular_agreement": 24,
+    "witness": {
+      "indices": [
+        0
+      ],
+      "c": 1
+    }
+  },
+  {
+    "r": 23,
+    "t": 2,
+    "p": 1000133,
+    "root": 656007,
+    "anchored_supports": 22,
+    "max_modular_agreement": 22,
+    "witness": {
+      "indices": [
+        0,
+        1
+      ],
+      "c": 805743
+    }
+  },
+  {
+    "r": 23,
+    "t": 3,
+    "p": 1000133,
+    "root": 656007,
+    "anchored_supports": 231,
+    "max_modular_agreement": 21,
+    "witness": {
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "c": 411338
+    }
+  },
+  {
+    "r": 23,
+    "t": 4,
+    "p": 1000133,
+    "root": 656007,
+    "anchored_supports": 1540,
+    "max_modular_agreement": 20,
+    "witness": {
+      "indices": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "c": 596794
+    }
+  },
+  {
+    "r": 23,
+    "t": 5,
+    "p": 1000133,
+    "root": 656007,
+    "anchored_supports": 7315,
+    "max_modular_agreement": 20,
+    "witness": {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "c": 508144
+    }
+  },
+  {
+    "r": 31,
+    "t": 1,
+    "p": 1001177,
+    "root": 135316,
+    "anchored_supports": 1,
+    "max_modular_agreement": 32,
+    "witness": {
+      "indices": [
+        0
+      ],
+      "c": 1
+    }
+  },
+  {
+    "r": 31,
+    "t": 2,
+    "p": 1001177,
+    "root": 135316,
+    "anchored_supports": 30,
+    "max_modular_agreement": 30,
+    "witness": {
+      "indices": [
+        0,
+        1
+      ],
+      "c": 371967
+    }
+  },
+  {
+    "r": 31,
+    "t": 3,
+    "p": 1001177,
+    "root": 135316,
+    "anchored_supports": 435,
+    "max_modular_agreement": 29,
+    "witness": {
+      "indices": [
+        0,
+        1,
+        2
+      ],
+      "c": 375951
+    }
+  },
+  {
+    "r": 31,
+    "t": 4,
+    "p": 1001177,
+    "root": 135316,
+    "anchored_supports": 4060,
+    "max_modular_agreement": 29,
+    "witness": {
+      "indices": [
+        0,
+        1,
+        9,
+        11
+      ],
+      "c": 784736
+    }
+  },
+  {
+    "r": 31,
+    "t": 5,
+    "p": 1001177,
+    "root": 135316,
+    "anchored_supports": 27405,
+    "max_modular_agreement": 28,
+    "witness": {
+      "indices": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "c": 444285
+    }
+  }
+]

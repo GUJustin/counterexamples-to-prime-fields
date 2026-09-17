@@ -61,6 +61,12 @@ confirms no new score: the closest alternative fixed-domain construction
 still needs just over a fourfold increase in certified family count.
 This numerical target is not a proof that such an increase is possible.
 
+A [strategic review](research/strategy_review/README.md) now prioritizes the
+actual incumbent's three-source moving-component certificate for better.codes,
+with independent agreement-based and new-source construction work alongside it.
+The earlier 1100-fold deficit applies to weaker single-equation bounds, not
+the current incumbent. No new benchmark score is claimed.
+
 The paper studies quantitative coding statements used in security analyses
 of hash-based SNARKs. It proves general list and affine-line separations
 over prime fields, gives finite circle-code examples, and treats the S-two
