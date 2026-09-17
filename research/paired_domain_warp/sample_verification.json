@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "sha256": "0223dc5525c02b5bc79d77342e718af0dd3d1e8323e06653a59cdc9712d7d635",
+  "n": 2518,
+  "K": 1259,
+  "prime_verified": true,
+  "far_max_agreement": 1260,
+  "far_distance_numerator": 1258,
+  "nearby_agreement_threshold": 1264,
+  "far_fraction": "4/5",
+  "generator_failure_less_than": "2^-128",
+  "prescription_less_than": "2^-6",
+  "seconds": 1.7108241249989078,
+  "scope": "All coordinates replayed by direct root products; monic degree proves exact far distance and no correlated agreement. Probability certificate concerns generator randomness, not deterministic complete coverage of this stored sample."
+}

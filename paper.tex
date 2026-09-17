@@ -28,8 +28,8 @@ list decoding and proximity gaps of error-correcting codes. We give
 counterexamples to several proposed bounds for Reed--Solomon codes over
 prime fields. Even on short domains in large prime fields, the proposed list-size
 exponent grows too slowly as the gap from capacity shrinks. Moreover,
-an affine line can be nearby at every point but one, with that point
-a fixed fraction of the capacity gap beyond the radius. Changing
+an affine line can be nearby at every point but one, with the exception
+only one coordinate short of the maximum possible distance from the code. Changing
 universal constants cannot repair the proposed bounds.
 
 For every fixed rational rate $\rho\in(0,1)$, we construct codes with
@@ -47,17 +47,19 @@ The construction follows by counting subsets
 with matching moments. Concentration and exact polynomial-weight
 certificates sharpen the finite bounds.
 
-At every fixed rational rate, we construct length-$\Theta(\log p)$
-affine lines whose $p-1$ nonzero parameters are all nearby, while
-parameter zero lies a fixed positive fraction of the capacity gap
-outside the radius. The radius is strictly below Elias, the gap is
-$\Theta(1/\log p)$, and there is no correlated agreement. In particular,
-the far-point separation can be $\eta/2$ when the proposed numerical
-nearby fraction tends to zero. A cubic change of domain preserves
-moment equalities and makes the collision equations absolutely
-irreducible; a point-count estimate then yields complete nonzero coverage.
-The code and line can be sampled in expected polynomial time in
-$\log p$, with success probability $1-p^{-\Omega(1)}$.
+At every fixed rational rate, we construct affine lines whose $p-1$
+nonzero parameters are all nearby, while parameter zero is only one
+coordinate short of the maximum possible Reed--Solomon distance.
+The radius is strictly below Elias, and its gap is
+$\eta\sim H_2(\rho)/\log_2p$. The far point lies $(1-o(1))\eta$
+outside that radius, while the proposed numerical nearby fraction
+tends to zero. The length can be $\Theta_\rho(\log p\log\log p)$.
+Paired evaluation domains and a multiplicative-character estimate
+produce this behavior. A separate cubic deformation gives complete
+nonzero coverage at length $\Theta(\log p)$ against arbitrary fixed
+constants in the proposed numerical bound. Both constructions output
+the code and line in expected polynomial time in $\log p$, with
+success probability $1-p^{-\Omega(1)}$.
 An anchored lift and padding construction
 gives failure of correlated agreement at an exactly fixed positive rate and gap, at
 arbitrarily large lengths, even when every nearby point on the line
@@ -137,21 +139,25 @@ gap, rather than linearly. The examples remain strictly below the
 characteristic-based Elias radius.
 
 The clearest line-level message is that \emph{a line can be close to
-the code everywhere except at one point, even when that point is half
-the capacity gap beyond the radius}. At every fixed rational rate,
-Theorem~\ref{cw:punctured-line} gives prime-field codes with
-$n=\Theta(\log p)$ for which every nonzero parameter is nearby, while
-parameter zero is $\eta/2$ outside. The radius is strictly below Elias,
-and no pair of codewords explains the line on the required common
-coordinate set. The $c_1=c_2=1$ numerical prescription predicts a nearby
-fraction tending to zero; the actual fraction is $1-1/p$.
-Thus testing a random linear combination can find a nearby word with
-probability arbitrarily close to one despite this separated input and
-the absence of correlated agreement. More generally, the theorem defeats
-any fixed constants $c_1,c_2$, with a fixed positive separation fraction
-depending on $c_2$.
+the code everywhere except at one point, and that point can be only
+one coordinate short of being maximally far}. At every fixed rational
+rate, Corollary~\ref{pd:full-gap} gives prime-field codes for which
+all $p-1$ nonzero parameters are nearby, but parameter zero has distance
+$1-\rho-1/n$. Every word is within $1-\rho$ of a Reed--Solomon code,
+so this is almost the largest distance possible. Its separation from
+the tested radius is $(1-o(1))\eta$, almost the entire capacity gap.
+The radius remains strictly below Elias. No pair of codewords explains
+the line on the required common coordinate set.
 
-The gap still shrinks as $\Theta(1/\log p)$. These results do not
+The $c_1=c_2=1$ numerical prescription predicts a nearby fraction
+tending to zero; the actual fraction is $1-1/p$. Thus testing a random
+linear combination can find a nearby word with probability arbitrarily
+close to one despite an almost maximally far input. Theorem~\ref{cw:punctured-line}
+separately defeats any fixed constants $c_1,c_2$, with a fixed positive
+separation fraction depending on $c_2$.
+
+The gap still shrinks as $\Theta(1/\log p)$, and the strongest relative
+separation approaches the Elias boundary. These results do not
 establish superlinear growth in $n$ at one fixed positive gap on short
 prime-field domains; that stronger question remains open. Separate
 interval-padding constructions give explicit density/separation
@@ -279,14 +285,19 @@ We give three constructions, because these questions have different
 quantifiers.
 
 \paragraph{Many nearby points without correlated agreement.}
-Theorem~\ref{cw:punctured-line} gives complete nonzero coverage: all
-$p-1$ nonzero parameters are nearby while the remaining point lies a
-fixed positive fraction of $\eta$ outside. Matching three times as many
+Corollary~\ref{pd:full-gap} gives complete nonzero coverage with an
+almost maximally far exception. On a paired core, even locator
+polynomials leave codeword candidates after their common leading term
+cancels. A padding block supplies several pairs of new agreements at
+once. Multiplicative-character estimates show that the candidates'
+joint evaluation images fill almost all possible vectors, so random
+padding directions cover every nonzero line parameter.
+
+Theorem~\ref{cw:punctured-line} gives complete coverage against
+arbitrary fixed numerical constants. Matching three times as many
 moments permits a cubic change of the seed domain without losing the
 required common locator prefix. A geometric irreducibility argument
-and a finite-field point-count estimate show that most outside values
-are represented by the candidate polynomials. Padding then covers
-every nonzero parameter.
+and a finite-field point-count estimate then control outside collisions.
 
 The interval constructions also give elementary alternatives with
 quantified nearby density. Division by $X-\tau$ yields
@@ -295,8 +306,8 @@ $\Omega(p/\log p)$ nearby labels at logarithmic length
 bounds in Theorems~\ref{fg:dense-lines} and~\ref{fg:near-unit-density}.
 Corollary~\ref{fg:slow-separation} makes the number of coordinates outside
 the radius grow while retaining density tending to one. These variants
-use padded interval domains, whereas the complete-coverage theorem
-uses cubic images of intervals with added coordinates.
+use padded interval domains. The complete-coverage constructions use
+random paired domains or cubic images of intervals with added coordinates.
 
 \paragraph{An obstruction that persists at a fixed gap.}
 The gap in Theorem~\ref{thm:informal} shrinks with $n$. To address
@@ -3191,9 +3202,11 @@ concurrency at most $n$. Thus the fixed-gap coefficient obstruction
 does not depend on selecting among persistent good witness lines.
 
 The shrinking-gap constructions show how large the numerical failure
-can be. Theorem~\ref{cw:punctured-line} makes every nonzero parameter
-nearby, with a point $\eta/2$ outside at $c_1=c_2=1$, while the proposed
-numerical fraction tends to zero. Its length-$214$, half-rate certificate over $2^{127}-1$ compares
+can be. Corollary~\ref{pd:full-gap} makes every nonzero parameter
+nearby while the exception is $(1-o(1))\eta$ outside the radius, only
+one coordinate short of maximum distance. The proposed numerical
+fraction tends to zero. Separately, Theorem~\ref{cw:punctured-line} has
+a length-$214$, half-rate certificate over $2^{127}-1$ that compares
 nearby fraction $1-1/p$ with a prescription below $2^{-12}$; the
 larger certificate over $2^{9689}-1$ gives a prescription below $2^{-593}$. These comparisons concern the prescribed numerical
 coefficient; they do not replace the fixed-gap argument needed to
@@ -3330,8 +3343,9 @@ whole-line uniqueness, but only a linear lower bound on the nearby count.
 \item \textbf{Recovering nearby witnesses.}
 Can one efficiently recover nearby codewords for the displayed lines,
 or enumerate enough of the equal-moment classes to match the counting
-lower bounds? Proposition~\ref{cw:sampling} outputs the code and line
-in expected polynomial time in $\log p$, but does not recover a witness
+lower bounds? Lemma~\ref{pd:sampling} and Proposition~\ref{cw:sampling}
+output the code and line in expected polynomial time in $\log p$, but
+do not recover a witness
 for a supplied nonzero parameter.
 Theorem~\ref{thm:binary-affine-locator} limits one possible description:
 an affine binary family with a fixed locator prefix has dimension at

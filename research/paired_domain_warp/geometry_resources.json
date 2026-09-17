@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/paired_domain_warp/verify_geometry.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5713687499992375,
+  "peak_rss_kib": 4848,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

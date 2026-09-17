@@ -1,0 +1,55 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "b": 127,
+      "n": 318,
+      "K": 159,
+      "m": 143,
+      "D": 80,
+      "q": 16,
+      "eta_numerator": 3,
+      "far_numerator": 2,
+      "list_bits": 138,
+      "complete": true,
+      "strict_elias": true,
+      "prescription_below_power_of_two": 12,
+      "sampling_failure_below_power_of_two": 1,
+      "gamma_inverse_log2": 9
+    },
+    {
+      "b": 521,
+      "n": 1458,
+      "K": 729,
+      "m": 685,
+      "D": 365,
+      "q": 44,
+      "eta_numerator": 3,
+      "far_numerator": 2,
+      "list_bits": 678,
+      "complete": true,
+      "strict_elias": true,
+      "prescription_below_power_of_two": 24,
+      "sampling_failure_below_power_of_two": 140,
+      "gamma_inverse_log2": 16
+    },
+    {
+      "b": 521,
+      "n": 1438,
+      "K": 719,
+      "m": 673,
+      "D": 360,
+      "q": 46,
+      "eta_numerator": 3,
+      "far_numerator": 2,
+      "list_bits": 666,
+      "complete": true,
+      "strict_elias": true,
+      "prescription_below_power_of_two": 31,
+      "sampling_failure_below_power_of_two": 129,
+      "gamma_inverse_log2": 15
+    }
+  ],
+  "seconds": 0.007643291999556823,
+  "scope": "Exact integer/rational sufficient certificates; geometry supplied by the written paired-domain argument."
+}

@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "epsilon": 0,
+      "extra_zero": false,
+      "p": 11,
+      "n": 8,
+      "K": 3,
+      "A": 6,
+      "far_max_agreement": 4,
+      "far_distance_numerator": 4,
+      "codewords_checked": 1331,
+      "maximizers": 8
+    },
+    {
+      "epsilon": 0,
+      "extra_zero": true,
+      "p": 11,
+      "n": 9,
+      "K": 3,
+      "A": 6,
+      "far_max_agreement": 4,
+      "far_distance_numerator": 5,
+      "codewords_checked": 1331,
+      "maximizers": 12
+    },
+    {
+      "epsilon": 1,
+      "extra_zero": true,
+      "p": 11,
+      "n": 9,
+      "K": 4,
+      "A": 7,
+      "far_max_agreement": 5,
+      "far_distance_numerator": 4,
+      "codewords_checked": 14641,
+      "maximizers": 12
+    }
+  ],
+  "seconds": 0.0921546669997042
+}

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/paired_domain_warp/verify_parity.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5953240000017104,
+  "peak_rss_kib": 14128,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

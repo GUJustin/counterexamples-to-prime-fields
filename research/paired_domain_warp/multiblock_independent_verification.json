@@ -1,0 +1,85 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "b": 521,
+      "r": 1,
+      "n": 1458,
+      "K": 729,
+      "m": 685,
+      "D": 365,
+      "blocks": 44,
+      "far_fraction": "2/3",
+      "failure_less_than": "2^-134",
+      "prescription_less_than": "2^-24",
+      "gamma": "2^-15"
+    },
+    {
+      "b": 521,
+      "r": 2,
+      "n": 2518,
+      "K": 1259,
+      "m": 1211,
+      "D": 630,
+      "blocks": 24,
+      "far_fraction": "4/5",
+      "failure_less_than": "2^-128",
+      "prescription_less_than": "2^-6",
+      "gamma": "2^-28"
+    },
+    {
+      "b": 521,
+      "r": 3,
+      "n": 3518,
+      "K": 1759,
+      "m": 1711,
+      "D": 880,
+      "blocks": 16,
+      "far_fraction": "6/7",
+      "failure_less_than": "2^-97",
+      "prescription_less_than": "2^-6",
+      "gamma": "2^-39"
+    },
+    {
+      "b": 1279,
+      "r": 3,
+      "n": 8678,
+      "K": 4339,
+      "m": 4186,
+      "D": 2170,
+      "blocks": 51,
+      "far_fraction": "6/7",
+      "failure_less_than": "2^-298",
+      "prescription_less_than": "2^-26",
+      "gamma": "2^-31"
+    },
+    {
+      "b": 1279,
+      "r": 5,
+      "n": 13782,
+      "K": 6891,
+      "m": 6751,
+      "D": 3446,
+      "blocks": 28,
+      "far_fraction": "10/11",
+      "failure_less_than": "2^-284",
+      "prescription_less_than": "2^-12",
+      "gamma": "2^-56"
+    },
+    {
+      "b": 1279,
+      "r": 10,
+      "n": 26218,
+      "K": 13109,
+      "m": 12949,
+      "D": 6555,
+      "blocks": 16,
+      "far_fraction": "20/21",
+      "failure_less_than": "2^-60",
+      "prescription_less_than": "2^-15",
+      "gamma": "2^-84"
+    }
+  ],
+  "seconds": 0.027805083998828195,
+  "scope": "No construction-helper imports. Coarser analytic Fourier estimate, exact integer probability terms, independent Lucas-Lehmer and integer Elias/prescription replay. A generator probability certificate, not individual-sample coverage verification."
+}

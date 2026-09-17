@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/paired_domain_warp/verify_multiblock_finite.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.1248797500011278,
+  "peak_rss_kib": 18624,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

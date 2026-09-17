@@ -1348,3 +1348,66 @@ PDF128pages, 1-inch margins, article, no warnings; sampler page35 visually
 inspected. Main theorem now4.12, randomized proposition4.13; use labels.
 Goal remains active until12:30UTC (08:30Eastern), >4hours remaining.
 No active numerical jobs; no push/publication.
+
+## 2026-09-17 08:23 UTC — paired blocks give almost the entire gap
+
+MAJOR NEW RESULT integrated in research/paired_domain_warp/paired.tex.
+At every fixed rational rate and every sufficiently large primep, ALLp-1
+nonzero line parameters are nearby; zero has exact distance1-rho-1/n,
+one coordinate short of the maximum RS distance. Separation can be
+(1-o(1))*eta, radius strictly below Elias, n*2^(Hrho/eta)=o(p).
+
+Construction: corem random nonzero sign-orbits ±a_i; allD-subsets I
+give H_I(X)=prod(X²-a_i²), w=H_0, P_I=w-H_I ofdegree<=2D-2.
+K=2D-1; q padding blocks ofr sign-orbits each. Shared pair directions.
+A block hit gives2r extraagreements, thresholdK+2r+1, faragreementK+1.
+Exactrateparity handled by optionalzero coordinate and optionalX factor.
+
+Fourier collision proof uses BGKS arXiv1110.0812v2 Lemma17 (primary
+PDFpage10 read). For fixed outside block, seed distribution onFp minus
+0,±x_j has all nonprincipal Fourier coefficients<=(4r+2)/sqrtp.
+Joint group(Fp*)^r. Distinct-square conditioning probability>=1-2m²/p.
+Support pairs with differenceu<=r have ZERO collisions (residual monic
+degreeu locators inY differ degree<=u-1, cannot vanish at rdistinctY).
+Other pairs bounded by character mixing. L=binom(m,D), and
+ delta=p^r/L+((4r+2)^(2r+2)+2m²)/(p-2m²).
+Generator failure <=q*delta/gamma+(p-1)*(gamma/(1+gamma))^q.
+No block-goodness independence assumed; union+Markov. Directions ARE
+independent conditional on core/blocks. Algorithm expectedO(n²)fieldops.
+
+Fixedr: chooseC between2r/(alpha Hbeta) and(2r+1)/(max(1,c2)Hrho),
+possible for c2<1+1/(2r). n~Cblog, farfraction2r/(2r+1).
+Growingr: ANYr→infinity withr logb=o(b), H=Hrho,J=-log2(1-rho),
+t=1/(4J), n=(2r+.5)b/H+O1, m=(n-tb)/2+O(r), D=rhon/2+O1.
+Thenlog2L=rb+b/8+O(b/r+r+logb), soL>=p^(r+1/9).
+Choosegamma=p^-1/20, q~tb/(2r)→infinity; failurep^-Omega1.
+Eliaseta*b-H=Theta1/r dominatesentropychangeO1/b. Prescriptionlog
+log2n-b/(4r+2)+O1/r→-infinity. Take r=floorlog2b forlengthTheta(b logb).
+This defeatsc2=1; arbitraryfixedc2 still uses separate cubic theorem.
+
+Proof audit PROOF_AUDIT.md has15 checked steps; SOURCE_AUDIT.md records
+primarycharacterinput andlimitedKKH/Kambire comparison (notnoveltyproof).
+Primary exact finite rows and independentcoarserintegerreplay allPASS:
+M521 n1458r1 far2/3 fail<2^-134 prescription<2^-24;
+M521 n2518r2 far4/5 fail<2^-128 prescription<2^-6;
+M1279 n8678r3 far6/7 fail<2^-298 prescription<2^-26;
+M1279 n13782r5 far10/11 fail<2^-284 prescription<2^-12;
+M1279 n26218r10 far20/21 fail<2^-60 prescription<2^-15.
+
+Actual random sample samples/m521_r2_n2518.json (672066bytes):
+SHA2560223dc5525c02b5bc79d77342e718af0dd3d1e8323e06653a59cdc9712d7d635.
+Independentdirectrootproduct replay all2518coordinates, farmaxagreement1260,
+far distance1258, threshold1264, prime/Elias/probability PASS~2sec22MiB.
+ProbabilityguaranteeOVERGENERATOR, NOT deterministicallsamplecoverage.
+No nearby-witness recovery. One can optionally reserve one paddingblock
+for knownwitness atz1; notyetimplemented and notneededfortheorem.
+
+ExactFourieridentitychecks useintegerconvolutions andcyclotomicreduction
+overF11r2/r3 andF19r2; exhaustivejointimagesF23r2,F29r3; paritycheck
+allcodewordsatfarpointforall3paritycasesoverF11. AllboundedPASS.
+Simpleonepaircurveproofretained single_pair.tex (notintegrated); smaller
+M127n318 existencecertificate far2/3; multiblockboundtoo weakatthatrow,
+so doNOTclaim highprobabilityfrommultiblockthere.
+Makefile94checks. PDF132pages, article1-inch margins, no warnings.
+Renderedintro andnewproof/tablepage35 inspected. No numericaljobactive.
+GoalACTIVE until12:30UTC (08:30Eastern), stillabout4hours remaining.

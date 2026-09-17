@@ -1,0 +1,239 @@
+\subsection{Every point but one, with an almost maximally far exception}
+\label{sec:paired-domain}
+
+Pairing coordinates as $x,-x$ gives a stronger separation for the
+$c_1=c_2=1$ prescription. The exceptional point can be just one
+coordinate short of the maximum possible Reed--Solomon distance,
+while its separation from the nearby radius approaches the entire
+capacity gap. The construction uses random paired domains and a
+multiplicative-character estimate, without a matching-moment class.
+
+\begin{lemma}[Sampling with blocks of paired coordinates]
+\label{pd:sampling}
+Let $r,m,D,q$ be positive integers with $D<m$ and
+$m+rq\le(p-1)/2$, where $p>\max\{(4r+2)^2,2m^2\}$ is prime. Put
+\[
+ L=\binom mD,\qquad
+ \delta=\frac{p^r}{L}+
+ \frac{(4r+2)^{2r+2}+2m^2}{p-2m^2}.
+\]
+There is an expected $O(n^2)$-field-operation randomized procedure
+outputting a length-$n=2(m+rq)$, dimension-$K=2D-1$ Reed--Solomon
+code and a received line. Every output has maximum agreement exactly
+$2D=K+1$ at parameter zero. For every $\gamma>0$, the probability
+that some nonzero parameter has fewer than $2D+2r$ agreements is at most
+\begin{equation}\label{pd:failure}
+ \frac{q\delta}{\gamma}
+ +(p-1)\left(\frac{\gamma}{1+\gamma}\right)^q.
+\end{equation}
+Whenever all nonzero parameters are nearby, there is no correlated
+agreement at that threshold.
+\end{lemma}
+\begin{proof}
+Choose $m+rq$ distinct orbits $\{a,-a\}$ uniformly from $\F_p^*$.
+Use the first $m$ as the core and divide the remaining orbits into
+$q$ blocks of $r$ orbits each. For every $D$-subset $I$ of the core,
+write
+\[
+ H_I(X)=\prod_{i\in I}(X^2-a_i^2).
+\]
+Fix one reference support $I_0$, put $w=H_{I_0}$, and consider the
+candidates $P_I=w-H_I$. Their leading terms cancel and all odd
+coefficients vanish, so $\deg P_I\le2D-2<K$. Each candidate has
+exactly $2D$ core agreements. On each padding pair choose a shared
+uniform nonzero direction, independently across pairs. Set $f=w$
+everywhere and $g=0$ on the core.
+
+We bound the image of $I\mapsto(-H_I(x_1),\ldots,-H_I(x_r))$ for a
+random outside block. Let $U=p-1$ and $V=U^r$. Fix representatives
+$x_1,\ldots,x_r$ with distinct nonzero squares. Independently sampling
+seed variables from
+\[
+ T=\F_p\setminus\{0,\pm x_1,\ldots,\pm x_r\}
+\]
+induces a probability measure $\mu$ on $(\F_p^*)^r$ by
+$a\mapsto(x_j^2-a^2)_{j=1}^r$. Every nonprincipal Fourier coefficient
+of $\mu$ has absolute value at most
+\[
+ \frac{2r\sqrt p+2r+1}{p-2r-1}
+ \le \frac{4r+2}{\sqrt p}=:\lambda<1.
+\]
+Indeed, factor $x_j^2-a^2$ into the two distinct linear factors at
+$\pm x_j$ and apply the product-character bound
+\cite[Lemma 17]{bgks-shifted}, with constant additive phase. At least
+one of the $2r$ characters is nonprincipal. The extra $2r+1$ allows
+for the deleted arguments. The displayed hypotheses imply the second
+inequality.
+
+For two supports with $u$ indices on each side of their symmetric
+difference, independent seeds give vector-collision probability
+\[
+ \frac1V\sum_{\chi}|\widehat\mu(\chi)|^{2u}
+ \le \frac1V+\lambda^{2u}.
+\]
+Conditioning all $m$ seeds to have distinct squares costs at most
+$1/a_0$, where $a_0=1-2m^2/p>0$, by the union bound.
+After this conditioning, pairs with $1\le u\le r$ cannot collide:
+cancel common factors and regard the residual products as distinct
+monic degree-$u$ polynomials in $Y=X^2$. Their difference has degree
+at most $u-1<r$, so cannot vanish at the $r$ distinct values $x_j^2$.
+For $u\ge r+1$, the conditional collision probability is at most
+$(V^{-1}+\lambda^{2r+2})/a_0$.
+
+Let $E$ be the collision energy of the block image, counting ordered
+support pairs, and set $\Delta=VE/L^2-1\ge0$. Counting the diagonal
+pairs separately gives
+\[
+ \mathbb E\Delta\le\frac VL+
+ \frac{1+V\lambda^{2r+2}}{a_0}-1\le\delta.
+\]
+This expectation applies to a uniform core and an outside block.
+Equivalently one may choose the block first and the admissible core
+second: each has the same number of compatible choices. Every block
+in the sampled domain has this marginal law, so Markov's inequality
+and a union bound give
+$\Pr(\text{some block has }\Delta>\gamma)\le q\delta/\gamma$.
+No independence among these events is assumed.
+
+When $\Delta\le\gamma$, Cauchy--Schwarz gives an image of size at
+least $V/(1+\gamma)$. Conditional on the core and blocks, the random
+direction vectors are independent and uniform in $(\F_p^*)^r$.
+For any fixed nonzero label $z$, multiplication of a direction vector
+by $z$ preserves this distribution. Thus, if all blocks are good, the
+expected number of uncovered labels is at most the second term of
+\eqref{pd:failure}. A block hit supplies $2r$ padding agreements.
+Combining the two failure events proves the bound.
+
+The polynomial $w$ is monic of degree $2D$, and zero already agrees
+at its $2D$ core roots. This proves the exact far distance for every
+output and rules out correlated agreement. Sampling distinct orbits
+and forming and evaluating $w$ take expected $O(n^2)$ field operations.
+\end{proof}
+
+\paragraph{Exact rates and parity.}
+The same construction realizes every fixed rational rate, with at most
+one additional coordinate. Take $n$ through odd multiples of the reduced
+denominator of $\rho$, and set $K=\rho n$. If $K$ is odd, use
+$D=(K+1)/2$ and add zero if $n$ is odd, with $f(0)=w(0),g(0)=0$.
+No selected candidate agrees there, since $H_I(0)\ne0$. If $K$ is
+even, then $n$ is odd. Take $D=K/2$, multiply $w$ and all candidates
+by $X$, and add zero with $f(0)=g(0)=0$. On a padding pair use
+$x h,-x h$ as its directions. Dimension, threshold and exact far
+agreement all increase by one. In both cases the nearby threshold is
+$K+2r+1$, and the exact far agreement is $K+1$.
+The probability bound is unchanged.
+
+\begin{theorem}[Fixed separation arbitrarily close to the full gap]
+\label{pd:punctured-line}
+Fix rational $\rho\in(0,1)$, an integer $r\ge1$, $c_1>0$, and
+$0<c_2<1+1/(2r)$. For every sufficiently large prime $p$, a code of
+exact rate $\rho$ and length $n=\Theta(\log p)$ has a received line
+with every nonzero parameter within radius $\theta=1-\rho-\eta$,
+where $\eta=(2r+1)/n$, and parameter zero at distance
+\[
+ 1-\rho-1/n=\theta+\frac{2r}{2r+1}\eta.
+\]
+The radius is strictly below Elias, there is no correlated agreement,
+and $c_1n2^{c_2H_2(\rho)/\eta}=o(p)$. The code and line can be
+sampled in expected polynomial time in $\log p$, with success
+probability $1-p^{-\Omega(1)}$.
+\end{theorem}
+\begin{proof}
+Choose $\rho<\beta<1$ close to $\rho$, put $\alpha=\rho/\beta$,
+and choose
+\[
+ \frac{2r}{\alpha H_2(\beta)}<C<
+ \frac{2r+1}{\max\{1,c_2\}H_2(\rho)}.
+\]
+Take $n=C\log_2p+O(1)$ with the rate parity above,
+$m=\alpha n/2+O(r)$, and $D=\rho n/2+O(1)$, adjusting $m$ so the
+padding forms complete blocks. Then
+$L=\binom mD\ge p^{r+\epsilon}$ for some fixed $\epsilon>0$,
+and $q=\Theta(\log p)$. Hence $\delta=p^{-\Omega(1)}$.
+A sufficiently small fixed $\gamma$ makes both terms of
+\eqref{pd:failure} $p^{-\Omega(1)}$. The degree and threshold
+identities give the distances. Finally
+$\eta\log_2p\to(2r+1)/C>\max\{1,c_2\}H_2(\rho)$ proves strict
+Elias and the numerical comparison.
+\end{proof}
+
+The relative separation can also tend to one within a single family.
+The maximum distance from a dimension-$K$ Reed--Solomon code is
+$n-K$ coordinates: interpolation always gives agreement on $K$
+positions, and a monic degree-$K$ word attains that distance. Thus
+the next result's exceptional point is only one coordinate short of
+being maximally far.
+
+\begin{corollary}[Almost the entire capacity gap]\label{pd:full-gap}
+Fix rational $\rho\in(0,1)$ and write $b=\log_2p$. Let
+$r=r(p)\to\infty$ satisfy $r\log b=o(b)$.
+Over every sufficiently large prime field, there are codes of exact
+rate $\rho$, length $n\sim2rb/H_2(\rho)$, and gap
+$\eta\sim H_2(\rho)/b$ with a received line whose every nonzero
+parameter is nearby, while parameter zero has distance
+\[
+ 1-\rho-1/n
+ =1-\rho-\eta+(1-o(1))\eta.
+\]
+The radius is strictly below Elias, there is no correlated agreement,
+and $n2^{H_2(\rho)/\eta}=o(p)$. The same efficient sampling guarantee
+holds. In particular, $r=\lfloor\log_2b\rfloor$ gives
+$n=\Theta_\rho(b\log b)$.
+\end{corollary}
+\begin{proof}
+Let $H=H_2(\rho)$, $J=-\log_2(1-\rho)>0$, and $t=1/(4J)$. Choose
+\[
+ n=\frac{(2r+1/2)b}{H}+O(1),\qquad
+ m=\frac{n-tb}{2}+O(r),\qquad D=\frac{\rho n}{2}+O(1),
+\]
+with the same parity and block-divisibility adjustments. Then
+$q\sim tb/(2r)\to\infty$. Since $H-\rho H_2'(\rho)=J$, Taylor
+expansion and the binomial entropy estimate give
+\[
+ \log_2 L
+ =\frac{nH}{2}-\frac{tbJ}{2}
+   +O_\rho(b/r+r+\log b)
+ =rb+b/8+o(b).
+\]
+Thus $L\ge p^{r+1/9}$ eventually. Moreover
+$(4r+2)^{2r+2}=p^{o(1)}$ and $m^2=p^{o(1)}$, so
+$\delta=p^{-\Omega(1)}$. Taking $\gamma=p^{-1/20}$ makes the first
+failure term tend to zero polynomially in $p$, and the second is at
+most $p^{1-q/20}$.
+
+The separation fraction is $2r/(2r+1)\to1$. Also
+$\eta b-H=\Theta_\rho(1/r)$, which dominates the
+$O_\rho(1/b)$ change from $H_2(\rho)$ to $H_2(\rho+\eta)$;
+this proves strict Elias. Finally
+\[
+ \log_2\left(\frac{n2^{H/\eta}}p\right)
+ =\log_2n-\frac{b}{4r+2}+O_\rho(1/r)\longrightarrow-\infty.
+\]
+\end{proof}
+
+Exact half-rate certificates illustrate the separation and sampling
+bounds. The last column bounds $n2^{1/\eta}/p$.
+\begin{center}
+\begin{tabular}{@{}rrrrll@{}}
+\toprule
+Prime & $n$ & $r$ & Far fraction of $\eta$ & Failure $<$ & Prescription $<$\\
+\midrule
+$2^{521}-1$&1458&1&$2/3$&$2^{-134}$&$2^{-24}$\\
+$2^{521}-1$&2518&2&$4/5$&$2^{-128}$&$2^{-6}$\\
+$2^{1279}-1$&8678&3&$6/7$&$2^{-298}$&$2^{-26}$\\
+$2^{1279}-1$&13782&5&$10/11$&$2^{-284}$&$2^{-12}$\\
+$2^{1279}-1$&26218&10&$20/21$&$2^{-60}$&$2^{-15}$\\
+\bottomrule
+\end{tabular}
+\end{center}
+The exact rational checker and independent integer replay are in
+\path{research/paired_domain_warp/}. They use different versions of
+the Fourier error bound and separately check primality, strict Elias,
+and the numerical comparison. Finite Fourier identities are checked
+by integer group convolution and reduction modulo cyclotomic
+polynomials, and small-domain enumeration checks the collision-free
+short support differences. The probability is over the generator's
+randomness; it does not certify complete coverage for an individual
+stored sample. These paired-domain results address the displayed
+constant range. The following cubic-moment construction defeats
+arbitrary fixed constants $c_1,c_2$.

@@ -1,0 +1,118 @@
+\subsection{Paired domains give a two-thirds-gap separation}
+\label{sec:paired-domain}
+
+The isolated point can be farther away than in
+Theorem~\ref{cw:punctured-line} with $c_1=c_2=1$. A second construction
+uses evaluation points in pairs $x,-x$. Its candidates are even
+polynomials, so one successful padding label supplies two agreements.
+This construction uses no matching-moment class.
+
+\begin{lemma}[Paired-domain padding]\label{pd:finite}
+Let $p>\max\{32,m^2\}$ be prime, $1\le D<m$, and put
+\[
+ L=\binom mD,\quad U=p-1,\quad R=(p-1)/2-m,\qquad
+ B=\frac{(p-1)(p+6\sqrt p+768)}{2p(p-m^2)},\quad
+ M=\frac{LR}{R+(L-1)B}.
+\]
+If $1\le q\le R$ and $U(1-M/U)^q<1$, a length
+$n=2(m+q)$ Reed--Solomon code of dimension $K=2D-1$ has a received
+line whose every nonzero parameter has at least $2D+2$ agreements.
+Parameter zero has maximum agreement exactly $2D$, so there is no
+correlated agreement at threshold $2D+2$.
+\end{lemma}
+\begin{proof}
+Choose a tuple $a_1,\ldots,a_m$ of nonzero field elements with distinct
+squares, and use the core $\{\pm a_i:1\le i\le m\}$. For each
+$D$-subset $I$ of the index set, put
+\[
+ H_I(X)=\prod_{i\in I}(X^2-a_i^2).
+\]
+Fix a reference $I_0$, set $w=H_{I_0}$, and take $P_I=w-H_I$.
+The leading terms cancel and all odd coefficients vanish, so
+$\deg P_I\le2D-2<K$. Each candidate agrees with $w$ on exactly
+$2D$ core positions.
+
+We average collisions over all admissible seed tuples. For two supports,
+cancel their common factors and let $u=|I\setminus J|$. If $u=1$,
+there is no collision outside the core, because the seed squares are
+distinct. If $u\ge2$, expose two seed variables $a,b$ occurring only
+on one side, and fix the other variables and a nonzero outside point
+$x$. The collision equation has the form
+\[
+ (x^2-a^2)(x^2-b^2)=C,\qquad C\ne0.
+\]
+This degree-four affine curve is absolutely irreducible. Indeed, over
+the algebraic closure, the equation for $a^2$ is
+$x^2-C/(x^2-b^2)$, which has simple poles at $b=\pm x$ and hence is
+not a square. Its numerator and denominator are coprime, so Gauss's
+lemma applies. By \cite[Corollary~5.6]{cafure-matera}, it has at most
+$p+6\sqrt p+768$ points.
+
+There are at most $p^{m-2}$ choices for the other seed variables and
+$p-1$ choices for $x$. A union bound gives at least
+$p^m(1-m^2/p)$ admissible seed tuples: zero entries exclude at most
+$mp^{m-1}$ tuples, and equal squares exclude at most
+$2\binom m2p^{m-1}$. Divide the collision count by this lower bound
+and by two to count the orbits $\{x,-x\}$. The expected number of
+outside-orbit collisions for each support pair is at most $B$.
+Consequently some core has total collision energy at most
+$LR+L(L-1)B$, and its mean outside image size is at least $M$ by
+Cauchy--Schwarz. All difference values $P_I(x)-w(x)=-H_I(x)$ are
+nonzero and constant on each outside orbit.
+
+Choose the $q$ orbits with largest images. Put $f=w$ everywhere,
+$g=0$ on the core, and give each padding pair a shared independent
+uniform nonzero value of $g$. The expected number of uncovered nonzero
+parameters is at most $U(1-M/U)^q<1$. A choice therefore covers all of
+them. A hit supplies two additional agreements. Finally $w$ is monic
+of degree $2D$ and the zero codeword already attains its $2D$ roots,
+so the exact maximum agreement at parameter zero is $2D$.
+\end{proof}
+
+\begin{theorem}[Every point but one, with two-thirds-gap separation]
+\label{pd:punctured-line}
+Fix a rational rate $\rho\in(0,1)$, $c_1>0$, and $0<c_2<3/2$.
+For every sufficiently large prime $p$, a length-$\Theta(\log p)$
+Reed--Solomon code of exact rate $\rho$ has a received line such that
+all $p-1$ nonzero parameters are within radius
+$\theta=1-\rho-\eta$, where $\eta=3/n$, and parameter zero has distance
+exactly $\theta+2\eta/3$. The radius is strictly below Elias, there is
+no correlated agreement, and
+$c_1n2^{c_2H_2(\rho)/\eta}=o(p)$.
+\end{theorem}
+\begin{proof}
+Choose $\rho<\beta<1$ sufficiently close to $\rho$, set
+$\alpha=\rho/\beta$, and choose $C$ satisfying
+\[
+ \frac{2}{\alpha H_2(\beta)}<C<
+ \frac{3}{\max\{1,c_2\}H_2(\rho)}.
+\]
+Take $n=C\log_2p+O(1)$ through odd multiples of the denominator of
+$\rho$, and let $K=\rho n$. Set $m=\alpha n/2+O(1)$ and
+$D=\rho n/2+O(1)$ with the parity adjustments described below.
+Then
+\[
+ \log_2\binom mD=
+ \left(\frac{\alpha C H_2(\beta)}2+o(1)\right)\log_2p,
+\]
+so $L\ge p^{1+\epsilon}$ for fixed $\epsilon>0$.
+Also $UB/R\to1$, hence $M/U\to1$. With
+$q=(1-\alpha)n/2+O(1)$, the complete-coverage condition holds.
+
+If $K$ is odd, take $D=(K+1)/2$ and use Lemma~\ref{pd:finite},
+adding coordinate zero if $n$ is odd. Give that coordinate values
+$f(0)=w(0)$ and $g(0)=0$; no selected candidate agrees there since
+$H_I(0)\ne0$. If $K$ is even, the reduced numerator of $\rho$ is
+even and its denominator is odd, so $n$ is odd. Take $D=K/2$,
+multiply $w$ and all candidates by $X$, and include zero with
+$f(0)=g(0)=0$. On a padding pair use directions $xh$ and $-xh$.
+The dimension, agreement threshold and exact far agreement each
+increase by one compared with the paired construction. In both cases
+$A-K=3$, while the far point has maximum agreement $A-2$.
+Finally $\eta\log_2p\to3/C>\max\{1,c_2\}H_2(\rho)$ gives
+strict Elias and the numerical comparison.
+\end{proof}
+
+This theorem strengthens the separation for the usual $c_1=c_2=1$
+prescription. Its constant range is explicit; the cubic-moment
+construction remains necessary here to defeat arbitrary fixed $c_2$.

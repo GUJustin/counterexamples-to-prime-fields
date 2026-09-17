@@ -10,12 +10,14 @@ over prime fields, gives finite circle-code examples, and treats the S-two
 analysis as an application of those results.
 
 The clearest line-level message is that **a line can be close to the code
-at every point but one, with that point half the capacity gap beyond the
-radius**. At every fixed rational rate, the construction has `n=Theta(log p)`,
-all `p-1` nonzero parameters nearby, and a point `eta/2` outside, strictly
-below Elias. No common agreement set explains the line. The `c1=c2=1`
-numerical prescription predicts a nearby fraction tending to zero;
-the actual fraction is `1-1/p`. The gap still shrinks.
+at every point but one, and that point can be only one coordinate short
+of being maximally far**. At every fixed rational rate, all `p-1` nonzero
+parameters are nearby while zero has distance `1-rho-1/n`. Its separation
+from the radius is `(1-o(1))*eta`, almost the entire capacity gap. The
+radius remains strictly below Elias. The `c1=c2=1` numerical prescription
+predicts a nearby fraction tending to zero; the actual fraction is `1-1/p`.
+The gap still shrinks, and this strongest relative separation approaches
+the Elias boundary. No common agreement set explains the line.
 
 The list-size results separately show that the proposed exponent must
 grow almost quadratically, rather than linearly, in the reciprocal gap.
@@ -30,6 +32,17 @@ gap on short domains or transfers automatically to a prescribed FFT domain.
   out every bound with logarithm `o(eta^-2/log(1/eta))`. For every sufficiently
   large prime, with `b=log2(p)`, the list has at least
   `2^((1/2-o(1))*b^2/log2(b))` codewords below Elias.
+- Random paired domains give **complete nonzero coverage with almost the
+  entire capacity gap as separation**. Their exceptional point has distance
+  `1-rho-1/n`; length can be `Theta(log p * log log p)` and `eta~H(rho)/log2(p)`.
+  A multiplicative-character argument controls joint evaluation images.
+  The sampler runs in expected polynomial time in `log p` and succeeds
+  with probability `1-p^-Omega(1)`. Exact finite certificates include
+  separation **4/5 of the gap**, length2518 over `2^521-1`, with generator
+  failure below `2^-128`, and **20/21 of the gap**, length26218 over
+  `2^1279-1`, with failure below `2^-60`. Independent integer replays
+  support both. These results defeat the `c1=c2=1` prescription; the
+  next construction handles arbitrary fixed numerical constants.
 - A cubic change of the seed domain gives **complete nonzero coverage**
   at every fixed rational rate: all `p-1` nonzero parameters are nearby
   while zero is a fixed positive fraction of `eta` outside. For every

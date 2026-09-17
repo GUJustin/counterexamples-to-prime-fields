@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/paired_domain_warp/verify_finite.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5605257089991937,
+  "peak_rss_kib": 2320,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

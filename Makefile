@@ -46,6 +46,13 @@ verify:
 	$(PYTHON) research/fixed_gap_padding/verify_gap_scale_far.py
 	$(PYTHON) research/fixed_gap_padding/verify_density_separation_tradeoff.py
 	$(PYTHON) research/fixed_gap_padding/verify_slow_separation.py
+	$(PYTHON) research/paired_domain_warp/verify_geometry.py
+	$(PYTHON) research/paired_domain_warp/verify_finite.py
+	$(PYTHON) research/paired_domain_warp/verify_parity.py
+	$(PYTHON) research/paired_domain_warp/verify_joint_images.py
+	$(PYTHON) research/paired_domain_warp/verify_multiblock_finite.py
+	$(PYTHON) research/paired_domain_warp/audit_multiblock_independent.py
+	$(PYTHON) research/paired_domain_warp/verify_sample.py
 	$(PYTHON) research/cubic_domain_warp/verify_geometry.py
 	$(PYTHON) research/cubic_domain_warp/verify_finite_certificate.py
 	$(PYTHON) research/cubic_domain_warp/audit_finite_independent.py

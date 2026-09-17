@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "curves": [
+    {
+      "p": 37,
+      "curves": 1296,
+      "max_points": 44,
+      "upper": 847
+    },
+    {
+      "p": 41,
+      "curves": 1600,
+      "max_points": 48,
+      "upper": 851
+    },
+    {
+      "p": 43,
+      "curves": 1764,
+      "max_points": 52,
+      "upper": 853
+    }
+  ],
+  "domains": [
+    {
+      "p": 17,
+      "m": 4,
+      "D": 2,
+      "L": 6,
+      "domains": 70,
+      "total_collisions": 48,
+      "max_collisions": 2,
+      "collision_bound": "6520/17"
+    },
+    {
+      "p": 29,
+      "m": 4,
+      "D": 2,
+      "L": 6,
+      "domains": 1001,
+      "total_collisions": 1092,
+      "max_collisions": 3,
+      "collision_bound": "11662/377"
+    },
+    {
+      "p": 23,
+      "m": 5,
+      "D": 3,
+      "L": 10,
+      "domains": 462,
+      "total_collisions": 1914,
+      "max_collisions": 8,
+      "collision_bound": "None"
+    }
+  ],
+  "seconds": 0.42524929200226325,
+  "scope": "Finite curve counts, pair symmetry, support collisions and exact root identities. Absolute irreducibility and the general averaging theorem require the written proof."
+}

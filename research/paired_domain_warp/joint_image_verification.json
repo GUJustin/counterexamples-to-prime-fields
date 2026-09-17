@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "fourier": [
+    {
+      "p": 11,
+      "r": 2,
+      "u": 3,
+      "characters": 100,
+      "allowed_seeds": 6,
+      "product_vectors": 10,
+      "collision_pairs": 5952,
+      "identity": "sum_character_power = group_size * exact_collision_count, reduced modulo cyclotomic polynomial"
+    },
+    {
+      "p": 11,
+      "r": 3,
+      "u": 4,
+      "characters": 1000,
+      "allowed_seeds": 4,
+      "product_vectors": 5,
+      "collision_pairs": 17920,
+      "identity": "sum_character_power = group_size * exact_collision_count, reduced modulo cyclotomic polynomial"
+    },
+    {
+      "p": 19,
+      "r": 2,
+      "u": 3,
+      "characters": 324,
+      "allowed_seeds": 14,
+      "product_vectors": 79,
+      "collision_pairs": 114112,
+      "identity": "sum_character_power = group_size * exact_collision_count, reduced modulo cyclotomic polynomial"
+    }
+  ],
+  "images": [
+    {
+      "p": 23,
+      "r": 2,
+      "m": 6,
+      "D": 3,
+      "cores": 84,
+      "total_energy": 1684,
+      "collisions_by_support_difference": {
+        "3": 2
+      }
+    },
+    {
+      "p": 29,
+      "r": 3,
+      "m": 8,
+      "D": 4,
+      "cores": 165,
+      "total_energy": 11550,
+      "collisions_by_support_difference": {}
+    }
+  ],
+  "seconds": 0.17451120799887576,
+  "scope": "Exact integer group convolutions and cyclotomic reductions verify Fourier identities; exhaustive cores verify zero collisions for support difference <= block size. The Weil estimate remains a cited theorem."
+}

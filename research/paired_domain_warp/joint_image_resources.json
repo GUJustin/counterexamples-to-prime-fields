@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/paired_domain_warp/verify_joint_images.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5580368749979243,
+  "peak_rss_kib": 1888,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}
