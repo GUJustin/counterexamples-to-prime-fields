@@ -307,3 +307,13 @@ not imply. An exact-rate7/22 specialization adjusts p mod7 and sets
 q=(k-15)/7; its gap is bounded below by7/88, but not fixed exactly.
 Do not conflate bounded-below gap with the separately-fixed-gap remainder
 question. No asymptotic counterexample has been obtained from this lemma.
+
+Incidence audit of the value-diversity obstacle: for L distinct cap-D
+polynomials with M old agreements on N nodes and <=V values on each of
+S unused nodes, L*(M^2/N+S/V-D)<=M+S-D. For the three-coset family this
+excludes V<=2 once L>=60, but permits bounded V=3 at the guaranteed
+M/k>=5/4. Only M/k approaching sqrt3 would force unbounded diversity by
+this argument, and that is not known. Recorded in the amplification
+note. The full-length boundary route should not monopolize further
+research: return to n=o(p) constructions, preserving this conditional
+route without claiming its missing value-diversity step.

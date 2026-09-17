@@ -102,3 +102,33 @@ away from zero, with all evaluation points still in the prime field and
 strictly below characteristic Elias for large p. This remains conditional
 on V being unbounded. It does not make the actual agreement fraction M/n
 constant, and the earlier fixed-gap-remainder qualification still applies.
+
+## What pairwise incidence actually proves
+
+For L distinct degree-at-most-D candidates, each with M agreements on
+an old domain of size N, suppose that their values on a disjoint set
+of S points lie in at most V values at each point. Counting agreements
+of pairs on the two disjoint sets and applying Cauchy--Schwarz gives
+
+    L (M^2/N + S/V - D) <= M+S-D.
+
+Indeed the old common-word intersections contribute at least
+(L^2 M^2/N-LM)/2, while the new-coordinate value collisions contribute
+at least S(L^2/V-L)/2. Every pair agrees in at most D coordinates.
+Rearranging proves the inequality. It is a list-recovery Johnson-type
+incidence estimate, not a new general decoding theorem.
+
+For N=3k, S=k, D=k-1, M>=5k/4, and V<=2, its denominator is at least
+
+    M^2/(3k)-k/2+1 >= (5/12)M-(2/5)M+1 = M/60+1.
+
+Thus L <= (M+1)/(M/60+1) < 60. Taking R>=60 in the orbit construction
+rules out V<=2. However, the bound is compatible with V=3 when M/k is
+near5/4, regardless of how large L becomes. It cannot establish the
+unbounded V required for superlinear amplification.
+
+More generally, along a growing family its necessary limiting condition
+is alpha^2/3+1/V<=1, where alpha=M/k. Only if alpha approaches sqrt(3)
+does this argument force V to diverge. The recovered seed guarantees
+alpha>=5/4, substantially less. No near-Johnson maximum-agreement
+statement is known here. This is a concrete limit of the current route.
