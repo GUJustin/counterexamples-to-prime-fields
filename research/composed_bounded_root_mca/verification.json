@@ -1,0 +1,107 @@
+{
+  "status": "PASS",
+  "small_spaces": [
+    {
+      "p": 7,
+      "n": 6,
+      "B": 2,
+      "K": 1,
+      "D": 2,
+      "A": 4,
+      "all_polynomial_label_pairs": 343,
+      "nearby_pairs": 3,
+      "bad_labels": 3,
+      "ordered_determining_incidences": 34,
+      "received_words_not_fiber_invariant": true
+    },
+    {
+      "p": 11,
+      "n": 8,
+      "B": 2,
+      "K": 2,
+      "D": 4,
+      "A": 6,
+      "all_polynomial_label_pairs": 14641,
+      "nearby_pairs": 3,
+      "bad_labels": 3,
+      "ordered_determining_incidences": 336,
+      "received_words_not_fiber_invariant": true
+    },
+    {
+      "p": 13,
+      "n": 10,
+      "B": 3,
+      "K": 2,
+      "D": 6,
+      "A": 8,
+      "all_polynomial_label_pairs": 28561,
+      "nearby_pairs": 3,
+      "bad_labels": 3,
+      "ordered_determining_incidences": 552,
+      "received_words_not_fiber_invariant": true
+    }
+  ],
+  "growing_composition": [
+    {
+      "p": 65537,
+      "n": 16,
+      "D": 5,
+      "A": 10,
+      "composition_degree": 1,
+      "quotient_polynomial": "Y^4(2+zY)",
+      "quotient_root_bound": 2,
+      "generic_composed_distinct_roots": 2,
+      "exact_bad_labels": 7,
+      "justification": "The difference on each noncore coordinate is nonzero H_i times z-j. The >D-point core forces direction G; the extra agreement contradicts it."
+    },
+    {
+      "p": 65537,
+      "n": 32,
+      "D": 10,
+      "A": 20,
+      "composition_degree": 2,
+      "quotient_polynomial": "Y^4(2+zY)",
+      "quotient_root_bound": 2,
+      "generic_composed_distinct_roots": 3,
+      "exact_bad_labels": 13,
+      "justification": "The difference on each noncore coordinate is nonzero H_i times z-j. The >D-point core forces direction G; the extra agreement contradicts it."
+    },
+    {
+      "p": 65537,
+      "n": 64,
+      "D": 20,
+      "A": 40,
+      "composition_degree": 4,
+      "quotient_polynomial": "Y^4(2+zY)",
+      "quotient_root_bound": 2,
+      "generic_composed_distinct_roots": 5,
+      "exact_bad_labels": 25,
+      "justification": "The difference on each noncore coordinate is nonzero H_i times z-j. The >D-point core forces direction G; the extra agreement contradicts it."
+    },
+    {
+      "p": 65537,
+      "n": 128,
+      "D": 40,
+      "A": 80,
+      "composition_degree": 8,
+      "quotient_polynomial": "Y^4(2+zY)",
+      "quotient_root_bound": 2,
+      "generic_composed_distinct_roots": 9,
+      "exact_bad_labels": 49,
+      "justification": "The difference on each noncore coordinate is nonzero H_i times z-j. The >D-point core forces direction G; the extra agreement contradicts it."
+    },
+    {
+      "p": 65537,
+      "n": 256,
+      "D": 80,
+      "A": 160,
+      "composition_degree": 16,
+      "quotient_polynomial": "Y^4(2+zY)",
+      "quotient_root_bound": 2,
+      "generic_composed_distinct_roots": 17,
+      "exact_bad_labels": 97,
+      "justification": "The difference on each noncore coordinate is nonzero H_i times z-j. The >D-point core forces direction G; the extra agreement contradicts it."
+    }
+  ],
+  "scope": "Exhaustive small coefficient/label spaces with non-fiber-invariant words, determining-tuple counts in the original degree-D code, and five exact linear-size bad-label constructions with growing composition degree. These checks supplement the universal proof; they do not instantiate its very large Wronskian thresholds."
+}

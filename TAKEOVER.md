@@ -143,3 +143,16 @@ The updated native PDF is 110 pages, with no overfull boxes or undefined
 references. New certificate page 74 was visually checked. The active
 8:30 a.m. Eastern target is still 12:30 UTC on September 17; the last
 clock check was only 03:14 UTC. Continue research, do not mark complete.
+
+Further progress: research/composed_bounded_root_mca/ contains a new
+self-reviewed common-composition closure proof for the bounded-root
+O(n) full-support MCA theorem. One common phi may have growing degree;
+received words may vary within fibers. Large effective length uses the
+old Wronskian proof with fiber multiplicity B; small effective length
+uses a constant-dimensional linear space. Exact checker passes 43,545
+small polynomial-label pairs and five growing-composition examples.
+This remains an auxiliary research note, not another manuscript appendix.
+The main fixed-gap quadratic target remains open. An exploratory
+two-branch Riccati route is recorded in
+research/riccati_cross_ratio/TWO_BRANCH_FRONTIER.md; do not mistake its
+local necessary conditions for an actual construction or upper theorem.

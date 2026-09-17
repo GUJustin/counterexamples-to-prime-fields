@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/composed_bounded_root_mca/verify.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5585682919991086,
+  "peak_rss_kib": 4976,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 180
+}
