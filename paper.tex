@@ -61,6 +61,12 @@ at gap $1/n$, codes with global maximum list size exactly $n-k-1$
 have $\binom n{k+1}$ uniquely nearby points on one line, attaining
 a general puncturing bound.
 
+At a fixed positive gap, we also prove that quadratic growth in the
+number of nearby line parameters can be unavoidable without ordinary
+correlated agreement. This result has exact rate $1/8$ and gap $1/16$
+over finite extensions of growing prime characteristic. Superlinear
+growth at a fixed positive gap over prime fields themselves remains open.
+
 We apply these results and finite circle-code constructions to the
 quantitative premises in the S-two whitepaper. The shrinking-gap
 and fixed-gap quantifiers, numerical prescriptions and actual-list-size
@@ -398,8 +404,8 @@ identifies a sufficient route: a source list of size $L$ at length $N$
 gives $\Omega(\min\{NL,p\})$ full-support MCA exceptions over the same
 prime field, after exactly halving both rate and gap. Thus lists of size
 $N^c$ over superpolynomial prime fields would force exceptions of order
-$N^{c+1}$. The missing ingredient is such a growing fixed-gap list;
-full-length lists with $N=p-1$ cannot give superlinear scalar-label counts.
+$N^{c+1}$. The missing ingredient is a growing fixed-gap list on domains short
+enough relative to the prime; full-length lists with $N=p-1$ cannot give superlinear scalar-label counts.
 The factor-of-two parameter change is not essential:
 Corollary~\ref{cor:sparse-list-amplification} uses a small positive
 padding fraction to preserve any strict margin above a continuous
@@ -545,7 +551,9 @@ $\Omega(n^2)$ nearby labels with no ordinary
 correlated agreement, over quadratic extensions at exact rate $3/13$
 and capacity gaps bounded below by $3/26$ (not fixed exactly).
 Corollary~\ref{cor:ordinary-ca-fixed-gap} obtains quadratic ordinary-CA
-counts at exact rate $1/8$ and gap $1/16$ over larger finite extensions.
+counts at exact rate $1/8$ and gap $1/16$ over larger finite extensions,
+whose degree can be bounded by $4n^2$
+(Proposition~\ref{prop:ordinary-ca-field-degree}).
 Thus quadratic length dependence is necessary for ordinary
 correlated-agreement exceptions in the large-characteristic capacity regime.
 These results do not establish first-order-regime tightness or force
