@@ -27,7 +27,12 @@ coordinates. **Every nearby point has a unique, efficiently recoverable
 codeword**, while the proposed nearby-count bound is exponentially too small.
 At half rate the entire line can have just two distance levels, with every
 parameter outside the nearby bank at the far level. This failure does not
-require decoding ambiguity or difficulty finding witnesses.
+require decoding ambiguity or difficulty finding witnesses. An extension
+using scaled prime-order orbits makes the separation at least
+`(1-epsilon)*eta` for any fixed positive `epsilon`, on suitable infinite
+progressions of prime fields, with the same unique-witness and recovery
+guarantees. These examples have sparse nearby sets; the full-coverage
+result is a separate construction.
 
 The list-size results separately show that the proposed exponent must
 grow almost quadratically, rather than linearly, in the reciprocal gap.

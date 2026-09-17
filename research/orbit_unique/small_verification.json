@@ -1,0 +1,69 @@
+{
+  "status": "passed",
+  "root_sum_rows": [
+    {
+      "p_bits": 31,
+      "d": 3,
+      "m": 3,
+      "c": 2,
+      "subsets_checked": 2048,
+      "zero_sum_subsets": 8
+    },
+    {
+      "p_bits": 31,
+      "d": 5,
+      "m": 2,
+      "c": 3,
+      "subsets_checked": 8192,
+      "zero_sum_subsets": 4
+    },
+    {
+      "p_bits": 1279,
+      "d": 7,
+      "m": 2,
+      "c": 5,
+      "subsets_checked": 524288,
+      "zero_sum_subsets": 4
+    }
+  ],
+  "list_rows": [
+    {
+      "p": 2013265921,
+      "d": 3,
+      "m": 3,
+      "D": 2,
+      "c": 0,
+      "n": 12,
+      "K": 5,
+      "interpolation_pencils": 792,
+      "nearby_parameters": 3,
+      "all_nearby_unique": true
+    },
+    {
+      "p": 2013265921,
+      "d": 3,
+      "m": 4,
+      "D": 3,
+      "c": 1,
+      "n": 16,
+      "K": 8,
+      "interpolation_pencils": 12870,
+      "nearby_parameters": 4,
+      "all_nearby_unique": true
+    },
+    {
+      "p": 2013265921,
+      "d": 5,
+      "m": 2,
+      "D": 1,
+      "c": 3,
+      "n": 18,
+      "K": 4,
+      "interpolation_pencils": 3060,
+      "nearby_parameters": 2,
+      "all_nearby_unique": true
+    }
+  ],
+  "seconds": 3.992431166007009,
+  "scope": "All subset sums in the root fixtures and every potentially nearby codeword on the test lines, via all interpolation pencils. Small fixtures test geometry, not numerical-bound violations."
+}

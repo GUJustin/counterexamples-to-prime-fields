@@ -120,7 +120,8 @@ In the unadjusted case $n=2m+2$, $K=2D-1$, assume additionally
 \]
 Every parameter outside the nearby bank has distance exactly
 $(n-K-1)/n$. Thus the line has only two distance levels, and the
-integer decoder determines which level holds. The three half-rate
+integer decoder determines which level holds. Both $f$ and $f+g$ are
+at the far level. The three half-rate
 rows in the preceding table satisfy this extra bound.
 \end{proposition}
 \begin{proof}
@@ -159,5 +160,7 @@ Finally,
  <2^{m(m+1)/2+2m+2}<p,
 \]
 so $F$ cannot vanish modulo $p$ either. Consequently every improvement
-over the far distance is already a nearby-bank point.
+over the far distance is already a nearby-bank point. Finally, neither
+zero nor one is a bank label: each positive product lies strictly between
+one and $p-1$. Thus both displayed endpoints are at the far level.
 \end{proof}

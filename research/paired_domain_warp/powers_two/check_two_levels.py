@@ -37,7 +37,9 @@ def check(p,m,D,zero=False,xfactor=False):
   if a>baseline:hist[n-baseline]-=1;hist[n-a]=hist.get(n-a,0)+1
  assert sum(hist.values())==p and baseline==K+1
  assert len(near)==comb(m,D) and all(len(bank)==1 for bank in near.values())
- if not zero or xfactor:assert set(hist)=={n-K-1,n-K-3}
+ if not zero or xfactor:
+  assert set(hist)=={n-K-1,n-K-3}
+  assert max(baseline,maxima.get(1,0))==K+1
  else:assert hist.get(n-K-2,0)>0 # Deliberate negative control for parity scope.
  return dict(p=str(p),n=n,K=K,zero=zero,X_factor=xfactor,interpolation_pencils=comb(n,K),
   exact_distance_histogram={str(k):str(v) for k,v in sorted(hist.items())},nearby_parameters=len(near),all_nearby_unique=True)

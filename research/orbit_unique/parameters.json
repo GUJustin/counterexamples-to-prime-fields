@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "b": 9689,
+      "d": 3,
+      "n": 274,
+      "K": 137,
+      "m": 90,
+      "D": 46,
+      "extra_coordinates": 1,
+      "nearby_count": "101570303433476163296417400",
+      "product_exponent": 9315,
+      "norm_bound_bits": 187,
+      "ratio_greater_than_power_two": 9,
+      "far_distance_numerator": 136,
+      "nearby_distance_numerator": 133,
+      "separation_fraction": "3/4",
+      "seconds_including_primality": 0.23501295800087973
+    },
+    {
+      "b": 19937,
+      "d": 5,
+      "n": 518,
+      "K": 259,
+      "m": 102,
+      "D": 52,
+      "extra_coordinates": 3,
+      "nearby_count": "391924069196230135646771623956",
+      "product_exponent": 19890,
+      "norm_bound_bits": 427,
+      "ratio_greater_than_power_two": 2,
+      "far_distance_numerator": 258,
+      "nearby_distance_numerator": 253,
+      "separation_fraction": "5/6",
+      "seconds_including_primality": 1.6049505000046338
+    },
+    {
+      "b": 44497,
+      "d": 7,
+      "n": 908,
+      "K": 454,
+      "m": 128,
+      "D": 65,
+      "extra_coordinates": 5,
+      "nearby_count": "23582666872052266206656578733667004800",
+      "product_exponent": 43680,
+      "norm_bound_bits": 806,
+      "ratio_greater_than_power_two": 0,
+      "far_distance_numerator": 453,
+      "nearby_distance_numerator": 446,
+      "separation_fraction": "7/8",
+      "seconds_including_primality": 13.33619154200278
+    }
+  ],
+  "seconds": 15.176329000001715,
+  "scope": "Exact parameter and primality certificates for the proposed prime-order orbit theorem. The mathematical norm/classification proof must be audited separately."
+}

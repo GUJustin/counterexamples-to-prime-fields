@@ -1,0 +1,46 @@
+{
+  "status": "passed",
+  "rows": [
+    {
+      "b": 9689,
+      "d": 3,
+      "n": 274,
+      "K": 137,
+      "nearby_count": "101570303433476163296417400",
+      "separation": "3/4",
+      "ratio_greater_than_power_two": 9,
+      "certified_root": true,
+      "distinct_domain_points": 274,
+      "decoded_support_tests": 16,
+      "explicit_witnesses_checked": 2
+    },
+    {
+      "b": 19937,
+      "d": 5,
+      "n": 518,
+      "K": 259,
+      "nearby_count": "391924069196230135646771623956",
+      "separation": "5/6",
+      "ratio_greater_than_power_two": 2,
+      "certified_root": true,
+      "distinct_domain_points": 518,
+      "decoded_support_tests": 16,
+      "explicit_witnesses_checked": 2
+    },
+    {
+      "b": 44497,
+      "d": 7,
+      "n": 908,
+      "K": 454,
+      "nearby_count": "23582666872052266206656578733667004800",
+      "separation": "7/8",
+      "ratio_greater_than_power_two": 0,
+      "certified_root": true,
+      "distinct_domain_points": 908,
+      "decoded_support_tests": 16,
+      "explicit_witnesses_checked": 2
+    }
+  ],
+  "seconds": 29.45467208300397,
+  "scope": "Deterministic classification and decoding given the saved certified roots. Root search is zero-error; no coverage success event is assumed. No global list-size or prescribed-domain claim."
+}

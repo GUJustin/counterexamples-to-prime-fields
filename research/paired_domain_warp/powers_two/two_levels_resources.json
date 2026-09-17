@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/paired_domain_warp/powers_two/check_two_levels.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5644926660024794,
+  "peak_rss_kib": 8976,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

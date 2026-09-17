@@ -67,6 +67,9 @@ verify:
 	$(PYTHON) research/paired_domain_warp/powers_two/verify.py
 	$(PYTHON) research/paired_domain_warp/powers_two/check_two_levels.py
 	$(PYTHON) research/paired_domain_warp/powers_two/check_two_adic.py
+	$(PYTHON) research/orbit_unique/verify_parameters.py
+	$(PYTHON) research/orbit_unique/check_small.py
+	$(PYTHON) research/orbit_unique/verify.py
 	$(PYTHON) research/cubic_domain_warp/verify_geometry.py
 	$(PYTHON) research/cubic_domain_warp/verify_finite_certificate.py
 	$(PYTHON) research/cubic_domain_warp/audit_finite_independent.py

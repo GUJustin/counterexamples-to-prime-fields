@@ -1,0 +1,162 @@
+\subsubsection{Unique witnesses with almost the entire gap as separation}
+\label{sec:unique-orbits}
+
+Larger prime-order orbits strengthen the separation while preserving
+uniqueness and efficient witness recovery. The evaluation domain is a
+union of scaled small orbits, with a bounded number of extra coordinates.
+It is not a prescribed multiplicative subgroup.
+
+\begin{lemma}[Rigidity of root sums on scaled prime-order orbits]
+\label{ou:root-sums}
+Let $d$ be prime, $p\equiv1\pmod d$, and let $\omega\in\F_p$ have
+order $d$. Fix $m\ge2$ and $0\le c<d$, and put
+\[
+ A=2^{m+1}(d+2^c).
+\]
+If $p>A^{d-1}$, the following points are distinct:
+\[
+ \{2^i\omega^j:1\le i\le m,\ 0\le j<d\}
+ \ \cup\ \{2^{m+t}:1\le t\le c\}
+ \ \cup\ \{\omega^j:0\le j<d\}.
+\]
+Every zero-sum subset of the first two sets is a union of complete
+$d$-element orbits from the first set; it contains no extra coordinate.
+\end{lemma}
+\begin{proof}
+Let $\zeta$ be a complex primitive $d$th root of unity. The polynomial
+$\Phi_d(X)=1+X+\cdots+X^{d-1}$ is irreducible over $\mathbb Q$ by Eisenstein
+after translating $X$ by one. For an integer polynomial $P$ of degree
+at most $d-1$, if $P(\omega)=0$ but $P(\zeta)\ne0$, its nonzero
+integer resultant with $\Phi_d$ is divisible by $p$. On the other hand,
+if the sum of the absolute values of its coefficients is at most $A$,
+\[
+ |\operatorname{Res}(\Phi_d,P)|
+ =\prod_{j=1}^{d-1}|P(\zeta^j)|\le A^{d-1}<p,
+\]
+a contradiction.
+
+A difference between two distinct displayed formal points is nonzero
+over $\mathbb C$ and has coefficient sum less than $A$, so their reductions
+cannot collide. Now lift a zero-sum subset of nonpadding points to
+$P(\zeta)$. Its coefficient sum is less than $A$, hence $P(\zeta)=0$.
+Its degree is at most $d-1$, so all its coefficients must be equal.
+Each coefficient records a sum of distinct powers of two. Uniqueness
+of binary expansion forces the same selected indices in every orbit
+position. Thus each core orbit is either fully selected or absent,
+and an extra coordinate, which occurs only in position zero, is absent.
+\end{proof}
+
+\begin{theorem}[Explicit orbit lines with unique witnesses]
+\label{ou:finite}
+With the preceding notation, take $1\le D<m$ and assume also
+\[
+ p>2^{dD(2m-D+1)/2}.
+\]
+There is a length-$n=d(m+1)+c$, dimension-$K=dD-1$ Reed--Solomon
+code and a received line with exactly $\binom mD$ nearby parameters
+at radius
+\[
+ \theta=1-\frac Kn-\frac{d+1}{n}.
+\]
+Every nearby point has a unique codeword, recoverable in polynomial
+time in $\log p$. The exceptional point has exact distance
+$1-K/n-1/n$; every nearby point has exact distance $\theta$.
+The direction has weight $d$, attaining the distance-improvement bound.
+There is no correlated agreement at the tested threshold.
+Given $\omega$, construction and decoding are deterministic. An order-$d$
+root can be found by a zero-error randomized procedure in expected
+polynomial time in $\log p$.
+\end{theorem}
+\begin{proof}
+Use the three displayed sets as the core, extra coordinates, and padding,
+respectively. For $D$-subsets $I\subseteq\{1,\ldots,m\}$ put
+\[
+ H_I(X)=\prod_{i\in I}(X^d-2^{di}).
+\]
+Fix a reference $w=H_{I_0}$, let $f$ be its evaluation word, and let $g$
+equal one on the padding and zero elsewhere. The polynomial $w-H_I$
+has degree at most $dD-d<K$ and supplies the nearby parameter
+\[
+ z_I=-H_I(1)=(-1)^{D+1}\prod_{i\in I}(2^{di}-1).
+\]
+It matches $dD=K+1$ core coordinates and all $d$ padding coordinates.
+The root bound gives exact far agreement $K+1$ for $f$; changing only
+$d$ coordinates proves the exact nearby distance.
+
+Conversely, any nearby codeword must match all padding coordinates
+and $K+1=dD$ nonpadding coordinates. Its difference from $w$ is monic
+of degree $dD$, has zero coefficient of $X^{dD-1}$, and is the locator
+of those $dD$ distinct roots. Their sum is zero, so
+Lemma~\ref{ou:root-sums} forces them to be exactly $D$ complete core
+orbits. Thus every nearby codeword belongs to the displayed family.
+
+The positive integer products are less than
+$2^{dD(2m-D+1)/2}<p$. The proof and greedy decoder of
+Lemma~\ref{pd:integer-products} apply with base $2^d$ in place of four.
+The normalized product is still greater than $2/3$, and the product of
+all later factors exceeds the membership threshold. This proves
+injectivity, the exact count, and unique witness recovery from the
+signed integer lift of $z$.
+Finally, sampling $h\in\F_p^*$ and testing
+$h^{(p-1)/d}\ne1$ finds $\omega$ in expected $d/(d-1)$ trials.
+Every accepted root has order $d$, so this step has no correctness
+failure event.
+\end{proof}
+
+\begin{corollary}[Unambiguous numerical failure with nearly full separation]
+\label{ou:asymptotic}
+Fix a rational rate $\rho=a/b\in(0,1)$ in lowest terms and a prime
+$d\nmid a$. For every sufficiently large prime $p\equiv1\pmod d$,
+the construction has exact rate $\rho$, length
+$n=\Theta_{\rho,d}(\sqrt{\log p})$, and gap $\eta=(d+1)/n$, with
+\[
+ \dist(f,C)=\theta+\frac d{d+1}\eta.
+\]
+Every nearby point has a unique, efficiently recoverable witness.
+The radius is strictly below Elias and, for every fixed $c_1>0$ and
+$0<c_2<1+1/d$,
+\[
+ \frac{\binom mD}{c_1n2^{c_2H_2(\rho)/\eta}}
+ =2^{\Omega_{\rho,d,c_2}(n)}.
+\]
+In particular, for every fixed $\varepsilon>0$, infinitely many prime
+fields admit such counterexamples to the $c_2=1$ prescription, with separation at least
+$(1-\varepsilon)\eta$ and no decoding ambiguity anywhere on the nearby set.
+\end{corollary}
+\begin{proof}
+Take $n=bt$ with $at\equiv-1\pmod d$, let $c$ be the residue of $n$
+in $\{0,\ldots,d-1\}$, and put
+\[
+ m=(n-c)/d-1,\qquad D=(\rho n+1)/d.
+\]
+Choosing $n$ near a sufficiently small constant multiple of
+$\sqrt{\log_2p}$ ensures both field bounds, with $1\le D<m$ eventually.
+Then
+\[
+ \log_2\binom mD=\frac{n}{d}H_2(\rho)+O_{\rho,d}(\log n).
+\]
+Comparing this with $c_2nH_2(\rho)/(d+1)$ proves the ratio. Since
+$\eta\log_2p\to\infty$, strict Elias holds. Choosing a sufficiently
+large prime $d$ not dividing $a$ gives the final separation claim.
+There are infinitely many primes congruent to one modulo this $d$.
+The gap still tends to zero; no fixed-positive-gap conclusion is asserted.
+\end{proof}
+
+Exact half-rate certificates illustrate the tradeoff:
+\begin{center}
+\begin{tabular}{@{}rrrrll@{}}
+\toprule
+Prime & $d$ & $n$ & $K$ & Separation & Ratio $>$\\
+\midrule
+$2^{9689}-1$&3&274&137&$3\eta/4$&$2^9$\\
+$2^{19937}-1$&5&518&259&$5\eta/6$&$2^2$\\
+$2^{44497}-1$&7&908&454&$7\eta/8$&$1$\\
+\bottomrule
+\end{tabular}
+\end{center}
+Here the ratio compares the exact nearby count $\binom mD$ with
+$n2^{1/\eta}$. The respective $(m,D,c)$ are $(90,46,1)$,
+$(102,52,3)$, and $(128,65,5)$. The accompanying integer certificates
+verify the field bounds, primality, strict Elias, and these comparisons.
+Unlike the complete-coverage examples, these lines have a sparse nearby
+bank. Their witness classification and decoder have no sampling failure.

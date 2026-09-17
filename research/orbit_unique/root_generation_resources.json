@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/orbit_unique/generate_roots.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 36.74295250000432,
+  "peak_rss_kib": 19936,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 300
+}

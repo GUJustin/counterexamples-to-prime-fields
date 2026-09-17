@@ -1584,3 +1584,37 @@ KnownMersenneprimesbutneedactualLLchecks; fastMersennefoldreductions
 s=(s*s-2 &p)+(s*s-2 >>b), subtractpifneeded, savehuge%cost.
 No gmpy2installed; sympyavailable. Theseorbitideasareunpromoteduntilproofaudit,
 finitechecksandnorm/cyclotomic/domain/paritydetailsresolved.
+
+## 2026-09-17 10:22 UTC — audited orbit strengthening
+
+The prime-order orbit idea above is now proved, independently checked, and
+integrated as Section 4.3.4 (`research/orbit_unique/orbit.tex`). The paper is
+142 pages, full-margin article; clean TeX build, new proof page visually
+inspected. PROOF_AUDIT.md records the norm/resultant, root classification,
+rate congruence, product decoding, and algorithmic qualifications.
+All three finite Mersenne fields were Lucas-Lehmer certified twice; saved
+roots independently satisfy exact order; all domain points are distinct;
+48 support recoveries and six full polynomial witnesses passed. The d=7
+ratio is >1, not >2 (correcting the provisional estimate above).
+Small fixtures exhaust 2,048 / 8,192 / 524,288 subset sums and 792 / 12,870 /
+3,060 interpolation pencils. Primality of their fields is checked too.
+Makefile now includes 111 check commands. All newly added checks passed.
+The paired powers-of-two two-level theorem now explicitly notes both
+f and f+g are far; its five exhaustive fixtures were rerun successfully.
+
+Orbit conclusion: for every fixed positive epsilon, suitable infinitely
+many prime fields admit unique efficiently recoverable nearby witnesses,
+separation >=(1-epsilon)*eta, and exponential violation of the c2=1 bound.
+Length Theta(sqrt(log p)); sparse nearby bank. Given omega deterministic;
+finding omega is zero-error Las Vegas. NOT full coverage, NOT a global
+list bound, NOT a prescribed FFT domain or better.codes improvement.
+
+Continue research until 12:30 UTC (8:30 Eastern). Next possible improvement:
+random scaled prime-order orbits can give uniqueness and near-full gap
+at length Theta(log p), though efficient arbitrary witness recovery is
+not known. A union bound over nongenuine zero-sum subsets costs 2^(n-d)/p;
+product collisions cost dD*binom(m,D)^2/(2p). For prime d, every proper
+nonempty subset of roots of unity has nonzero sum if p>d^(d-1), by the
+same small-resultant argument. Independent random orbit scalars and extra
+coordinates make each forbidden subset sum a nonzero linear equation.
+This extension remains provisional until independently tested/audited.

@@ -63,7 +63,10 @@ the code and line in expected polynomial time in $\log p$, with
 success probability $1-p^{-\Omega(1)}$.
 A deterministic powers-of-two construction also violates the numerical
 bound with unique, efficiently recoverable nearby witnesses and an
-almost maximally far exceptional point.
+almost maximally far exceptional point. An extension using prime-order
+orbits makes the separation arbitrarily close to the entire gap, on
+suitable infinite progressions of prime fields, while retaining unique
+and efficiently recoverable witnesses.
 An anchored lift and padding construction
 gives failure of correlated agreement at an exactly fixed positive rate and gap, at
 arbitrarily large lengths, even when every nearby point on the line
@@ -170,8 +173,15 @@ in $\log p$, and the number of nearby parameters exceeds the numerical
 prescription exponentially. The exceptional point is again one coordinate
 short of maximum distance. At half rate these examples can have only two
 distance levels: every parameter outside the nearby bank is at the far
-level. Thus the obstruction persists even when proximity along the line
+level, including both displayed endpoints. Thus the obstruction persists
+even when proximity along the line
 is easy to decide and every accepted parameter has an unambiguous witness.
+Corollary~\ref{ou:asymptotic} strengthens this conclusion: for every
+fixed $\varepsilon>0$, suitable infinitely many prime fields admit
+unique-witness examples whose far point lies at least $(1-\varepsilon)\eta$
+outside the nearby radius. These examples use scaled prime-order orbits
+and retain efficient witness recovery. They have a sparse nearby set;
+they are separate from the complete-coverage construction.
 
 In the full-coverage examples the gap shrinks as $\Theta(1/\log p)$,
 and the strongest relative separation approaches the Elias boundary. These results do not
