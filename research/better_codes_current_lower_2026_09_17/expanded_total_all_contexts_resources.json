@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/better_codes_current_lower_2026_09_17/extend_total_cap.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 17.25094954200904,
+  "peak_rss_kib": 350320,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

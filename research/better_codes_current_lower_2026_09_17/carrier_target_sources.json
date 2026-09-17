@@ -1,0 +1,14 @@
+[
+  {
+    "path": "tmp/current-lower-primary-cache/MovingFiberIdentityArithmetic6811.lean",
+    "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberIdentityArithmetic6811.lean",
+    "bytes": 1164,
+    "sha256": "e22ea972a4239bdc27ddda8d8d6fd4ea3009807c01f339b77b1050956ea0ba8a"
+  },
+  {
+    "path": "tmp/current-lower-primary-cache/MovingFiberPaddedIdentity6811.lean",
+    "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/MovingFiberPaddedIdentity6811.lean",
+    "bytes": 5331,
+    "sha256": "5d72fed8e971b16ab295678649b2ed0ff1291f7915ab70777255947c9e7411cc"
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "identity_checks": [
+    {
+      "branch": "high",
+      "flag_coordinate": 0,
+      "smallest_nonzero_coefficient": 2156298024294568
+    },
+    {
+      "branch": "high",
+      "flag_coordinate": 1,
+      "smallest_nonzero_coefficient": 2156298024294568
+    },
+    {
+      "branch": "high",
+      "flag_coordinate": 2,
+      "smallest_nonzero_coefficient": 2156298024294568
+    },
+    {
+      "branch": "low",
+      "flag_coordinate": 0,
+      "smallest_nonzero_coefficient": 3450018931408896
+    },
+    {
+      "branch": "low",
+      "flag_coordinate": 1,
+      "smallest_nonzero_coefficient": 2013939792224468
+    },
+    {
+      "branch": "low",
+      "flag_coordinate": 2,
+      "smallest_nonzero_coefficient": 2685249404239248
+    }
+  ],
+  "high_tangent_min": 131076,
+  "low_tangent_min": 262147,
+  "scope": "Target identity absorption and error-dependent tangent gates; unchanged domain/characteristic conditions from original carrier proof retained, no Lean port."
+}

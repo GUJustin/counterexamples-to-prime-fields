@@ -60,3 +60,11 @@ of repairing the source parameters. The earlier 0.0368/0.1476 percent
 figures are conditional diagnostics, not the distance to a valid score
 improvement. The scalar-list source has now been repaired exactly and
 reduces the available MCA allowance by96487635.
+
+Baseline control subsequently passed: the rebuilt old-parameter generator
+never exceeds any of the 4970x8 incumbent singleton allowances. With
+primary B and both derivative chains also repaired, the final numerical
+deficit is21042194961366305 (about7.65percent);2841contexts fail. See
+FULL_TARGET_RECONSTRUCTION.md for the complete evidence and scope. The
+dominant inherited prefix arises at(17,45), so the next optimization
+target is the auxiliary geometry and phase cost there.

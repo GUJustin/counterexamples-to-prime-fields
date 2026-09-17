@@ -1,0 +1,391 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "group": 0,
+      "alternative": 0,
+      "minimum_coefficient": 1550451774250796890356,
+      "terms": 14
+    },
+    {
+      "group": 0,
+      "alternative": 1,
+      "minimum_coefficient": 1550451774250796890356,
+      "terms": 14
+    },
+    {
+      "group": 0,
+      "alternative": 2,
+      "minimum_coefficient": 1550451774250796890356,
+      "terms": 14
+    },
+    {
+      "group": 0,
+      "alternative": 3,
+      "minimum_coefficient": 35692144872801048,
+      "terms": 14
+    },
+    {
+      "group": 1,
+      "alternative": 0,
+      "minimum_coefficient": 2109828740655299474706,
+      "terms": 14
+    },
+    {
+      "group": 1,
+      "alternative": 1,
+      "minimum_coefficient": 2109828740655299474706,
+      "terms": 14
+    },
+    {
+      "group": 1,
+      "alternative": 2,
+      "minimum_coefficient": 2109828740655299474706,
+      "terms": 14
+    },
+    {
+      "group": 1,
+      "alternative": 3,
+      "minimum_coefficient": 48580974965756982,
+      "terms": 14
+    },
+    {
+      "group": 2,
+      "alternative": 0,
+      "minimum_coefficient": 2109828740655299474706,
+      "terms": 14
+    },
+    {
+      "group": 2,
+      "alternative": 1,
+      "minimum_coefficient": 2109828740655299474706,
+      "terms": 14
+    },
+    {
+      "group": 2,
+      "alternative": 2,
+      "minimum_coefficient": 2109828740655299474706,
+      "terms": 14
+    },
+    {
+      "group": 2,
+      "alternative": 3,
+      "minimum_coefficient": 48580974965756982,
+      "terms": 14
+    },
+    {
+      "group": 3,
+      "alternative": 0,
+      "minimum_coefficient": 1551569772242383519140,
+      "terms": 14
+    },
+    {
+      "group": 3,
+      "alternative": 1,
+      "minimum_coefficient": 1551569772242383519140,
+      "terms": 14
+    },
+    {
+      "group": 3,
+      "alternative": 2,
+      "minimum_coefficient": 1551569772242383519140,
+      "terms": 14
+    },
+    {
+      "group": 3,
+      "alternative": 3,
+      "minimum_coefficient": 35692144872801048,
+      "terms": 14
+    },
+    {
+      "group": 4,
+      "alternative": 0,
+      "minimum_coefficient": 223425880639560487017936,
+      "terms": 14
+    },
+    {
+      "group": 4,
+      "alternative": 1,
+      "minimum_coefficient": 222996569410791221564880,
+      "terms": 14
+    },
+    {
+      "group": 4,
+      "alternative": 2,
+      "minimum_coefficient": 222728249892810430656720,
+      "terms": 14
+    },
+    {
+      "group": 4,
+      "alternative": 3,
+      "minimum_coefficient": 49683465662939058816,
+      "terms": 14
+    },
+    {
+      "group": 5,
+      "alternative": 0,
+      "minimum_coefficient": 684241853150534282595180,
+      "terms": 14
+    },
+    {
+      "group": 5,
+      "alternative": 1,
+      "minimum_coefficient": 683420124626718110438940,
+      "terms": 14
+    },
+    {
+      "group": 5,
+      "alternative": 2,
+      "minimum_coefficient": 681776667579085766126460,
+      "terms": 14
+    },
+    {
+      "group": 5,
+      "alternative": 3,
+      "minimum_coefficient": 278077500703992964968,
+      "terms": 14
+    },
+    {
+      "group": 6,
+      "alternative": 0,
+      "minimum_coefficient": 3481804042596664130466,
+      "terms": 14
+    },
+    {
+      "group": 6,
+      "alternative": 1,
+      "minimum_coefficient": 3481804042596664130466,
+      "terms": 14
+    },
+    {
+      "group": 6,
+      "alternative": 2,
+      "minimum_coefficient": 3481804042596664130466,
+      "terms": 14
+    },
+    {
+      "group": 6,
+      "alternative": 3,
+      "minimum_coefficient": 80307325963802358,
+      "terms": 14
+    },
+    {
+      "group": 7,
+      "alternative": 0,
+      "minimum_coefficient": 3380596505298928774411280,
+      "terms": 14
+    },
+    {
+      "group": 7,
+      "alternative": 1,
+      "minimum_coefficient": 3374103835481121982065680,
+      "terms": 14
+    },
+    {
+      "group": 7,
+      "alternative": 2,
+      "minimum_coefficient": 3370045916844992736849680,
+      "terms": 14
+    },
+    {
+      "group": 7,
+      "alternative": 3,
+      "minimum_coefficient": 3394190784274221142400,
+      "terms": 14
+    },
+    {
+      "group": 8,
+      "alternative": 0,
+      "minimum_coefficient": 3380596505298928774411280,
+      "terms": 14
+    },
+    {
+      "group": 8,
+      "alternative": 1,
+      "minimum_coefficient": 3374103835481121982065680,
+      "terms": 14
+    },
+    {
+      "group": 8,
+      "alternative": 2,
+      "minimum_coefficient": 3370045916844992736849680,
+      "terms": 14
+    },
+    {
+      "group": 8,
+      "alternative": 3,
+      "minimum_coefficient": 3394190784274221142400,
+      "terms": 14
+    },
+    {
+      "group": 9,
+      "alternative": 0,
+      "minimum_coefficient": 3380596505298928774411280,
+      "terms": 14
+    },
+    {
+      "group": 9,
+      "alternative": 1,
+      "minimum_coefficient": 3373292251753896133022480,
+      "terms": 14
+    },
+    {
+      "group": 9,
+      "alternative": 2,
+      "minimum_coefficient": 3369234333117766887806480,
+      "terms": 14
+    },
+    {
+      "group": 9,
+      "alternative": 3,
+      "minimum_coefficient": 3394190784274221142400,
+      "terms": 14
+    },
+    {
+      "group": 10,
+      "alternative": 0,
+      "minimum_coefficient": 223372216735964328836304,
+      "terms": 14
+    },
+    {
+      "group": 10,
+      "alternative": 1,
+      "minimum_coefficient": 222889241603598905201616,
+      "terms": 14
+    },
+    {
+      "group": 10,
+      "alternative": 2,
+      "minimum_coefficient": 222620922085618114293456,
+      "terms": 14
+    },
+    {
+      "group": 10,
+      "alternative": 3,
+      "minimum_coefficient": 49683465662939058816,
+      "terms": 14
+    },
+    {
+      "group": 11,
+      "alternative": 0,
+      "minimum_coefficient": 620478326944871472247440,
+      "terms": 14
+    },
+    {
+      "group": 11,
+      "alternative": 1,
+      "minimum_coefficient": 619434862152723952049040,
+      "terms": 14
+    },
+    {
+      "group": 11,
+      "alternative": 2,
+      "minimum_coefficient": 617944198163941780337040,
+      "terms": 14
+    },
+    {
+      "group": 11,
+      "alternative": 3,
+      "minimum_coefficient": 223670774536219900800,
+      "terms": 14
+    },
+    {
+      "group": 12,
+      "alternative": 0,
+      "minimum_coefficient": 620776459742627906589840,
+      "terms": 14
+    },
+    {
+      "group": 12,
+      "alternative": 1,
+      "minimum_coefficient": 619434862152723952049040,
+      "terms": 14
+    },
+    {
+      "group": 12,
+      "alternative": 2,
+      "minimum_coefficient": 617795131765063563165840,
+      "terms": 14
+    },
+    {
+      "group": 12,
+      "alternative": 3,
+      "minimum_coefficient": 223670774536219900800,
+      "terms": 14
+    },
+    {
+      "group": 13,
+      "alternative": 0,
+      "minimum_coefficient": 620627393343749689418640,
+      "terms": 14
+    },
+    {
+      "group": 13,
+      "alternative": 1,
+      "minimum_coefficient": 619434862152723952049040,
+      "terms": 14
+    },
+    {
+      "group": 13,
+      "alternative": 2,
+      "minimum_coefficient": 617795131765063563165840,
+      "terms": 14
+    },
+    {
+      "group": 13,
+      "alternative": 3,
+      "minimum_coefficient": 223670774536219900800,
+      "terms": 14
+    },
+    {
+      "group": 14,
+      "alternative": 0,
+      "minimum_coefficient": 620627393343749689418640,
+      "terms": 14
+    },
+    {
+      "group": 14,
+      "alternative": 1,
+      "minimum_coefficient": 619434862152723952049040,
+      "terms": 14
+    },
+    {
+      "group": 14,
+      "alternative": 2,
+      "minimum_coefficient": 617944198163941780337040,
+      "terms": 14
+    },
+    {
+      "group": 14,
+      "alternative": 3,
+      "minimum_coefficient": 223670774536219900800,
+      "terms": 14
+    },
+    {
+      "group": 15,
+      "alternative": 0,
+      "minimum_coefficient": 620478326944871472247440,
+      "terms": 14
+    },
+    {
+      "group": 15,
+      "alternative": 1,
+      "minimum_coefficient": 619434862152723952049040,
+      "terms": 14
+    },
+    {
+      "group": 15,
+      "alternative": 2,
+      "minimum_coefficient": 617944198163941780337040,
+      "terms": 14
+    },
+    {
+      "group": 15,
+      "alternative": 3,
+      "minimum_coefficient": 223670774536219900800,
+      "terms": 14
+    }
+  ],
+  "conclusion": "At baseline parameters, generated max4 affine envelope is pointwise <= primary rounded rootUpper for every a,b,c>=0; coefficientwise slope/intercept domination proves this globally, not just at sampled points.",
+  "scope": "Root candidate arithmetic/semantics only; does not compare global singleton option inventories or packing algorithms."
+}

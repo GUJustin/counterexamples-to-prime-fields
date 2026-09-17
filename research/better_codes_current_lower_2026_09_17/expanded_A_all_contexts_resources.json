@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/better_codes_current_lower_2026_09_17/extend_A_contexts.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 16.784220209010527,
+  "peak_rss_kib": 345184,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

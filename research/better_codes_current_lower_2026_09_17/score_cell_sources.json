@@ -1,0 +1,22 @@
+[
+  {
+    "path": "tmp/scoring-primary-cache/README.md",
+    "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/README.md",
+    "sha256": "dd02a77161d778c67119b87b81563ac0c3ebe0f55e301ec81b1cf1745bd5a136"
+  },
+  {
+    "path": "tmp/scoring-primary-cache/scripts__write-benchmark-score.py",
+    "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/scripts/write-benchmark-score.py",
+    "sha256": "69077e40a4fd379f0a55d948d8da0f4d153098c64ea346074bad22731b481c7b"
+  },
+  {
+    "path": "tmp/scoring-primary-cache/scripts__write-verifier-score.py",
+    "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/scripts/write-verifier-score.py",
+    "sha256": "b44c974ff43077b32591376c80e94ff8e2f5eb3794dca99ed2abf4d5240ee700"
+  },
+  {
+    "path": "tmp/scoring-primary-cache/ProximityPrize__Benchmark__TargetLower.lean",
+    "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/Benchmark/TargetLower.lean",
+    "sha256": "7d11762452db502cc244e2522eb83f01d3d4b8318ec1771d0c86041181bdc474"
+  }
+]

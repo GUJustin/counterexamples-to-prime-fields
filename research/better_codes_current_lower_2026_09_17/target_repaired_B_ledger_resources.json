@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/better_codes_current_lower_2026_09_17/finish_target_ledger.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 10.910789707995718,
+  "peak_rss_kib": 137296,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

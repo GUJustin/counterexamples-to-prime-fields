@@ -1,0 +1,375 @@
+{
+  "official_score_scale": 100,
+  "cells": [
+    {
+      "agreement": 181284,
+      "errors": 80860,
+      "score_supremum": "68.1108331969394702476422135308492087188528381281064470327476",
+      "cell_can_reach_6812": false
+    },
+    {
+      "agreement": 181283,
+      "errors": 80861,
+      "score_supremum": "68.1118518554709570463179128401778871693855859671026099805106",
+      "cell_can_reach_6812": false
+    },
+    {
+      "agreement": 181282,
+      "errors": 80862,
+      "score_supremum": "68.1128705196216522666580668887154041665008090835279687250782",
+      "cell_can_reach_6812": false
+    },
+    {
+      "agreement": 181281,
+      "errors": 80863,
+      "score_supremum": "68.1138891893916179032889229253630441265859090713618167446201",
+      "cell_can_reach_6812": false
+    },
+    {
+      "agreement": 181280,
+      "errors": 80864,
+      "score_supremum": "68.1149078647809159518626791683464397104790629332538490389215",
+      "cell_can_reach_6812": false
+    },
+    {
+      "agreement": 181279,
+      "errors": 80865,
+      "score_supremum": "68.1159265457896084090575074433324877811027538567690241839552",
+      "cell_can_reach_6812": false
+    },
+    {
+      "agreement": 181278,
+      "errors": 80866,
+      "score_supremum": "68.1169452324177572725775758221706704007823725551509238170087",
+      "cell_can_reach_6812": false
+    },
+    {
+      "agreement": 181277,
+      "errors": 80867,
+      "score_supremum": "68.1179639246654245411530712622588015351881750338533978313979",
+      "cell_can_reach_6812": false
+    },
+    {
+      "agreement": 181276,
+      "errors": 80868,
+      "score_supremum": "68.1189826225326722145402222465332201316369417751033750632604",
+      "cell_can_reach_6812": false
+    },
+    {
+      "agreement": 181275,
+      "errors": 80869,
+      "score_supremum": "68.1200013260195622935213214240834502402877776836889363088036",
+      "cell_can_reach_6812": true
+    }
+  ],
+  "one_coordinate_target": 181283,
+  "main_A": {
+    "m": 115,
+    "s": 35,
+    "q": 159,
+    "oldL": 274277,
+    "target_gap": -161757088035,
+    "L_slope": 1554840,
+    "required_L": 378312
+  },
+  "TCap_same_shape": {
+    "m": 226,
+    "s": 70,
+    "q": 312,
+    "T": 9275,
+    "slope": 945110607,
+    "min_total_cap": 9318,
+    "peak_L": 9281,
+    "peak_strong_gap": -40610120218,
+    "required_L": null,
+    "nullity": null,
+    "quotient_count": null
+  },
+  "TCap_local_best": {
+    "m": 226,
+    "s": 70,
+    "q": 312,
+    "T": 9275,
+    "slope": 945110607,
+    "min_total_cap": 9318,
+    "peak_L": 9281,
+    "peak_strong_gap": -40610120218,
+    "required_L": null,
+    "nullity": null,
+    "quotient_count": null
+  },
+  "TCap_local_scope": "m210..250,s60..80; exact all-L strong gate within affine regime",
+  "auxiliary": [
+    {
+      "index": 0,
+      "unchanged_gap": -18325903073,
+      "oldL": 1786,
+      "best": {
+        "m": 132,
+        "L": 1789
+      },
+      "necessary_L_increase": 3
+    },
+    {
+      "index": 1,
+      "unchanged_gap": -39894555076,
+      "oldL": 2819,
+      "best": {
+        "m": 133,
+        "L": 2740
+      },
+      "necessary_L_increase": 0
+    },
+    {
+      "index": 2,
+      "unchanged_gap": -36327325863,
+      "oldL": 2584,
+      "best": {
+        "m": 136,
+        "L": 2590
+      },
+      "necessary_L_increase": 6
+    },
+    {
+      "index": 3,
+      "unchanged_gap": -22056839048,
+      "oldL": 2772,
+      "best": {
+        "m": 116,
+        "L": 2780
+      },
+      "necessary_L_increase": 8
+    },
+    {
+      "index": 4,
+      "unchanged_gap": -22128061198,
+      "oldL": 3078,
+      "best": {
+        "m": 114,
+        "L": 3088
+      },
+      "necessary_L_increase": 10
+    },
+    {
+      "index": 5,
+      "unchanged_gap": -80013547850,
+      "oldL": 3013,
+      "best": {
+        "m": 158,
+        "L": 3020
+      },
+      "necessary_L_increase": 7
+    },
+    {
+      "index": 6,
+      "unchanged_gap": -124667302750,
+      "oldL": 3117,
+      "best": {
+        "m": 167,
+        "L": 3110
+      },
+      "necessary_L_increase": 0
+    },
+    {
+      "index": 7,
+      "unchanged_gap": -20666274151,
+      "oldL": 2781,
+      "best": {
+        "m": 114,
+        "L": 2789
+      },
+      "necessary_L_increase": 8
+    },
+    {
+      "index": 8,
+      "unchanged_gap": -44647902912,
+      "oldL": 2744,
+      "best": {
+        "m": 142,
+        "L": 2750
+      },
+      "necessary_L_increase": 6
+    },
+    {
+      "index": 9,
+      "unchanged_gap": -124303545222,
+      "oldL": 2736,
+      "best": {
+        "m": 174,
+        "L": 2742
+      },
+      "necessary_L_increase": 6
+    },
+    {
+      "index": 10,
+      "unchanged_gap": -119708180056,
+      "oldL": 3105,
+      "best": {
+        "m": 170,
+        "L": 3112
+      },
+      "necessary_L_increase": 7
+    },
+    {
+      "index": 11,
+      "unchanged_gap": -10547066831,
+      "oldL": 2387,
+      "best": {
+        "m": 97,
+        "L": 2367
+      },
+      "necessary_L_increase": 0
+    },
+    {
+      "index": 12,
+      "unchanged_gap": -43836107941,
+      "oldL": 2415,
+      "best": {
+        "m": 142,
+        "L": 2420
+      },
+      "necessary_L_increase": 5
+    },
+    {
+      "index": 13,
+      "unchanged_gap": -64684122210,
+      "oldL": 2416,
+      "best": {
+        "m": 158,
+        "L": 2420
+      },
+      "necessary_L_increase": 4
+    },
+    {
+      "index": 14,
+      "unchanged_gap": -48376554155,
+      "oldL": 2498,
+      "best": {
+        "m": 146,
+        "L": 2503
+      },
+      "necessary_L_increase": 5
+    },
+    {
+      "index": 15,
+      "unchanged_gap": -9544043665,
+      "oldL": 2289,
+      "best": {
+        "m": 98,
+        "L": 2295
+      },
+      "necessary_L_increase": 6
+    },
+    {
+      "index": 16,
+      "unchanged_gap": -41190257384,
+      "oldL": 2288,
+      "best": {
+        "m": 150,
+        "L": 2292
+      },
+      "necessary_L_increase": 4
+    },
+    {
+      "index": 17,
+      "unchanged_gap": -71207852878,
+      "oldL": 2338,
+      "best": {
+        "m": 161,
+        "L": 2310
+      },
+      "necessary_L_increase": 0
+    },
+    {
+      "index": 18,
+      "unchanged_gap": -21633322385,
+      "oldL": 2711,
+      "best": {
+        "m": 114,
+        "L": 2719
+      },
+      "necessary_L_increase": 8
+    },
+    {
+      "index": 19,
+      "unchanged_gap": -88326406664,
+      "oldL": 2667,
+      "best": {
+        "m": 166,
+        "L": 2672
+      },
+      "necessary_L_increase": 5
+    },
+    {
+      "index": 20,
+      "unchanged_gap": -123052674982,
+      "oldL": 2716,
+      "best": {
+        "m": 174,
+        "L": 2721
+      },
+      "necessary_L_increase": 5
+    },
+    {
+      "index": 21,
+      "unchanged_gap": -23167927426,
+      "oldL": 3089,
+      "best": {
+        "m": 111,
+        "L": 3100
+      },
+      "necessary_L_increase": 11
+    },
+    {
+      "index": 22,
+      "unchanged_gap": -199705789074,
+      "oldL": 3112,
+      "best": {
+        "m": 189,
+        "L": 3119
+      },
+      "necessary_L_increase": 7
+    },
+    {
+      "index": 23,
+      "unchanged_gap": -23066423773,
+      "oldL": 3066,
+      "best": {
+        "m": 114,
+        "L": 3076
+      },
+      "necessary_L_increase": 10
+    },
+    {
+      "index": 24,
+      "unchanged_gap": -191903585009,
+      "oldL": 3048,
+      "best": {
+        "m": 190,
+        "L": 3054
+      },
+      "necessary_L_increase": 6
+    },
+    {
+      "index": 25,
+      "unchanged_gap": -22808973505,
+      "oldL": 3071,
+      "best": {
+        "m": 111,
+        "L": 3082
+      },
+      "necessary_L_increase": 11
+    },
+    {
+      "index": 26,
+      "unchanged_gap": -177975422514,
+      "oldL": 3084,
+      "best": {
+        "m": 189,
+        "L": 3090
+      },
+      "necessary_L_increase": 6
+    }
+  ],
+  "scope": "Source arithmetic only. Smaller integer-cell progress is not a strict leaderboard score improvement unless centibit score increases."
+}

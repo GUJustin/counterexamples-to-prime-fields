@@ -1,0 +1,17 @@
+{
+  "contexts": 5238,
+  "empty_charge": 17949730212886377,
+  "bellman_pairs": 52534968,
+  "slopes": [
+    0,
+    4000000000000,
+    10000000000000,
+    20000000000000,
+    40000000000000,
+    80000000000000,
+    160000000000000,
+    320000000000000
+  ],
+  "budget": 274980720453263170,
+  "scope": "All8packing sheets rebuilt from regenerated target singleton envelopes; primaryB/chain not yet repaired."
+}

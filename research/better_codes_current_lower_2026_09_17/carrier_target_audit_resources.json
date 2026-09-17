@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/better_codes_current_lower_2026_09_17/carrier_target_audit.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5537597910006298,
+  "peak_rss_kib": 2320,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

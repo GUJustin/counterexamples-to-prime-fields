@@ -1,0 +1,11 @@
+# Root-envelope semantic and carrier audit
+
+The regenerated root evaluator matches the actual Profile.bound alternatives: three helper count caps and one retained graph/scale plus three coefficient count caps. Their maximum is required. Across independently available triples, their minimum may be used.
+
+All16 baseline graph identities match the primary polynomials exactly, including group order, scale, source flags, cell coordinate shifts, and the retained-stage raw flag constant. The root activation domain matches the existing SingleCore predicates; sourceLimit is the maximum source L and the strict inequality sourceLimit<t is retained.
+
+A stronger independent control compares all64 baseline rational alternatives to the authoritative full/denominator expressions. Every difference has nonnegative polynomial coefficients in a=r−3,b=v−2,c=z. Both numerator families are affine in c. Thus their slope and intercept are separately dominated for all a,b>=0; rounding the regenerated coefficients upward still leaves them below the incumbent floor-plus-one rootSlope/rootIntercept. This proves the baseline regenerated max-of-four envelope is never worse than the primary rootUpper, everywhere on its domain. It rules out root-envelope rounding, an extra coefficient sum, or a graph transcription mismatch as explanations for a large baseline regression. It does not test the inventory or global packing implementation used by a separate regeneration engine.
+
+The carrier cost itself is A-independent. Its high/low geometric proofs have error-dependent identity and tangent gates, which were rechecked: all six target identity-coordinate polynomials have nonnegative coefficients at gap50204,errors+1=80870. The high tangent minimum is131076 and low minimum262147, both above80870. Thus the original conservative carrier Active domain can be retained after a target theorem port. Its degree/characteristic assumptions are unchanged; the root source repairs do not enlarge that carrier domain.
+
+Reproduction and outputs: audit_root_semantic_match.py, root_semantic_match_audit.json, carrier_target_audit.py/json, and watchdog records. Exact symbolic checks pass. No Lean build or completed target certificate is claimed.

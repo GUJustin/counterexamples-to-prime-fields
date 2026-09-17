@@ -1,0 +1,7 @@
+{
+  "new_contexts": 268,
+  "new_singleton_bounds": 2144,
+  "packing_pairs": 5176608,
+  "all_new_contexts_have_source_threshold_zero": true,
+  "scope": "New contexts use target source potentials and exact packing extension; old singleton/base inputs remain frozen."
+}

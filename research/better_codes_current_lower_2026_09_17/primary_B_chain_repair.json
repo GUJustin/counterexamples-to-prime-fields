@@ -1,0 +1,126 @@
+{
+  "target_A": 181275,
+  "TCap": {
+    "Y": 312,
+    "s": 70,
+    "L": 9682,
+    "total": 9678
+  },
+  "primary_A": {
+    "Y": 163,
+    "s": 36,
+    "L": 176421
+  },
+  "candidates": [
+    {
+      "name": "preserve_B_caps",
+      "m": 134,
+      "s": 40,
+      "Y": 185,
+      "L": 22192,
+      "D": 24290850,
+      "coefficients": 1642642931574520,
+      "rank": 6266185390,
+      "nullity": 28698360,
+      "tail_exact_cap": 8430483280653,
+      "tail_allowance": 9000000000000,
+      "residual_pair_cap": 1215189223289491,
+      "pair_mixed": [
+        1940720,
+        8715074,
+        25430
+      ],
+      "initial_A_potential": [
+        8964645003,
+        5007800977589,
+        23417115023769
+      ],
+      "gates": {
+        "positive_kernel": true,
+        "shape": true,
+        "weighted_below_char": true,
+        "left_degrees_below_char": true,
+        "pair_mixed_below_char": true,
+        "chain_mixed_below_char": true,
+        "tail_mixed_below_char": true,
+        "tail_allowance_retained": true
+      },
+      "overheads": [
+        {
+          "r": 35,
+          "y": 159,
+          "t": 9249,
+          "value": 6294952113262627
+        },
+        {
+          "r": 36,
+          "y": 163,
+          "t": 9253,
+          "value": 6652237449616200
+        },
+        {
+          "r": 36,
+          "y": 163,
+          "t": 9678,
+          "value": 6681884339081191
+        }
+      ]
+    },
+    {
+      "name": "smaller_B_total",
+      "m": 137,
+      "s": 42,
+      "Y": 189,
+      "L": 18812,
+      "D": 24834675,
+      "coefficients": 1515778270256389,
+      "rank": 5782235069,
+      "nullity": 40328453,
+      "tail_exact_cap": 7300835672419,
+      "tail_allowance": 9000000000000,
+      "residual_pair_cap": 1073295356313793,
+      "pair_mixed": [
+        1723484,
+        7699242,
+        26334
+      ],
+      "initial_A_potential": [
+        9286314134,
+        5249286891152,
+        23900086850896
+      ],
+      "gates": {
+        "positive_kernel": true,
+        "shape": true,
+        "weighted_below_char": true,
+        "left_degrees_below_char": true,
+        "pair_mixed_below_char": true,
+        "chain_mixed_below_char": true,
+        "tail_mixed_below_char": true,
+        "tail_allowance_retained": true
+      },
+      "overheads": [
+        {
+          "r": 35,
+          "y": 159,
+          "t": 9249,
+          "value": 6248687056498801
+        },
+        {
+          "r": 36,
+          "y": 163,
+          "t": 9253,
+          "value": 6604522190694471
+        },
+        {
+          "r": 36,
+          "y": 163,
+          "t": 9678,
+          "value": 6557990472105493
+        }
+      ]
+    }
+  ],
+  "chain_sum_identity_checked_through_d": 42,
+  "scope": "Exact source, pair, tail, chain arithmetic and stated characteristic gates; no Lean target port or final ledger claim."
+}
