@@ -2391,3 +2391,26 @@ An exhaustive20-node fixture at dimension5 has70candidates at threshold6
 on the10-node intermediate word. All15504 determining supports and all
 120residual triples checked. This is stronger scope than the earlier
 dimension8 profile with only2high candidates, but still no growing list.
+
+## Characteristic41 Dickson seed: all DVR lifts excluded
+
+New research/dickson_domain_deformation/RAMIFIED_OBSTRUCTION.md closes
+the ramified-lifting loophole for the exact20-candidate seed over F41.
+After normalizing14 geometric freedoms (three nodes, one polynomial,
+one coefficient difference), the274x240 Jacobian has rank230 and a
+10-dimensional kernel. Ten certified left-kernel quadratic forms are
+t_i^2+c_i*t_i*t9 (i<9), t9^2, so their common zero over any residue
+extension is only zero. Another left-kernel combination kills the
+quadratic map identically on the kernel but has constant obstruction8.
+A valuation split2r<e,2r=e,2r>e excludes every mixed-characteristic DVR
+lift, for every ramification indexe. The normalization preserves all
+incidences via projective node change, weighted polynomial pullback,
+common scaling and addition.
+
+A separate stdlib verifier reconstructs the binomial seed and equations,
+computes rank230, checks the14-dimensional gauge action, all kernel and
+left-kernel identities, and605 quadratic coefficients. Both generator
+and verifier pass below384MiB in about0.5seconds. This supersedes the
+earlier 'ramified lifts remain open' statement for this exactseed only.
+It does not exclude different subsets, incidence patterns, or primes.
+The p17 positive lift is unaffected. No growing fixed-gap list is claimed.

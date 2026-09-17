@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/dickson_domain_deformation/verify_ramified_obstruction.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5370162920007715,
+  "peak_rss_kib": 7664,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

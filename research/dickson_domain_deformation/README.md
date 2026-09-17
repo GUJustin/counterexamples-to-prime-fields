@@ -3,8 +3,11 @@
 September 17, 2026. These results do not establish growing lists at a
 fixed positive gap. They test the exact incidence banks at p=17 and 41,
 allowing every evaluation node, candidate coefficient, and received
-symbol to move. The larger seed has an unramified lifting obstruction;
-ramified lifts and other incidence patterns remain open.
+symbol to move. The larger seed initially had an unramified lifting
+obstruction. The subsequent RAMIFIED_OBSTRUCTION.md and independent
+certificate now exclude every mixed-characteristic DVR lift of this
+exact seed, including all ramification indices and residue extensions.
+Other incidence patterns remain open.
 
 ## Equations and certificates
 
@@ -77,8 +80,10 @@ Consequently the first correction is inconsistent: there is no lift of
 this incidence seed to Z/41^2 with the prescribed reductions, even with
 all nodes, candidates, and received symbols free to move. The same
 witness excludes corrections after any unramified residue-field
-extension. It does not exclude ramified lifts, a different seed, or a
-characteristic-zero construction with different incidences.
+extension. That first-order witness alone does not exclude ramified
+lifts. The subsequent quadratic certificate in RAMIFIED_OBSTRUCTION.md
+does exclude all such DVR lifts of this seed. A different seed or a
+characteristic-zero construction with different incidences is not excluded.
 
 ## Reproduction and next direction
 

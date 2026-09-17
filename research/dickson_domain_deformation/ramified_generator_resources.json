@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/dickson_domain_deformation/generate_ramified_obstruction.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5400188749990775,
+  "peak_rss_kib": 7280,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}
