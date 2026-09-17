@@ -2,6 +2,7 @@
 #include <cassert>
 #include <cstdint>
 #include <iostream>
+#include <set>
 #include <vector>
 using i64 = int64_t;
 i64 power(i64 x,i64 e,i64 p){i64 v=1;for(;e;e>>=1,x=x*x%p)if(e&1)v=v*x%p;return v;}
@@ -21,16 +22,19 @@ int main(int argc,char**argv){
  std::vector<std::vector<i64>> inv(n,std::vector<i64>(n));
  for(int a=0;a<n;a++)for(int b=0;b<n;b++)if(a!=b)inv[a][b]=power((x[a]-x[b]+p)%p,p-2,p);
  std::vector<int>s(r);for(int j=0;j<r;j++)s[j]=j;
- i64 subsets=0,best_subsets=0;int best=0;std::vector<i64> best_coeff;
+ i64 subsets=0,best_subsets=0;int best=0;std::set<std::vector<i64>> maximizers;
  do{
   std::vector<i64> c(r);for(int j=0;j<r;j++)c[j]=w[s[j]];
   for(int j=1;j<r;j++)for(int i=r-1;i>=j;i--)c[i]=(c[i]-c[i-1]+p)*inv[s[i]][s[i-j]]%p;
   int agreements=0;for(int j=0;j<n;j++){i64 v=c[r-1];for(int i=r-2;i>=0;i--)v=(v*((x[j]-x[s[i]]+p)%p)+c[i])%p;agreements+=v==w[j];}
-  subsets++;if(agreements>best){best=agreements;best_subsets=1;best_coeff=c;}else if(agreements==best)best_subsets++;
+  subsets++;if(agreements>best){best=agreements;best_subsets=1;maximizers.clear();}else if(agreements==best)best_subsets++;
+  if(puncture && agreements==best){std::vector<i64>a={c[r-1]};for(int i=r-2;i>=0;i--){std::vector<i64>b(a.size()+1);for(size_t j=0;j<a.size();j++){b[j]=(b[j]+(p-x[s[i]])*a[j])%p;b[j+1]=(b[j+1]+a[j])%p;}b[0]=(b[0]+c[i])%p;a=b;}maximizers.insert(a);}
   int i=r-1;while(i>=0&&s[i]==n-r+i)i--;if(i<0)break;s[i]++;for(int j=i+1;j<r;j++)s[j]=s[j-1]+1;
  }while(true);
  assert(subsets==choose(n,r));assert(best_subsets%choose(best,r)==0);
  std::cout<<"{\"r\":"<<r<<",\"p\":"<<p<<",\"n\":"<<n<<",\"primitive_root\":"<<root
  <<",\"interpolation_subsets\":"<<subsets<<",\"maximum_agreement\":"<<best
- <<",\"maximizing_polynomials\":"<<best_subsets/choose(best,r)<<",\"three_cosets\":"<<(puncture?"true":"false")<<",\"complete\":true}\n";
+ <<",\"maximizing_polynomials\":"<<best_subsets/choose(best,r)<<",\"three_cosets\":"<<(puncture?"true":"false")<<",\"complete\":true";
+ if(puncture){assert((i64)maximizers.size()==best_subsets/choose(best,r));auto array=[](const std::vector<i64>& a){std::cout<<"[";for(size_t j=0;j<a.size();j++){if(j)std::cout<<",";std::cout<<a[j];}std::cout<<"]";};std::cout<<",\"domain\":";array(x);std::cout<<",\"witnesses\":[";bool first=true;for(const auto&a:maximizers){if(!first)std::cout<<",";first=false;array(a);}std::cout<<"]";}
+ std::cout<<"}\n";
 }

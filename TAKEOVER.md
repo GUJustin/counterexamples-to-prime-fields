@@ -283,3 +283,14 @@ polynomials. Boundary anchor removal now works via true maximality;
 value diversity on padding points is the remaining line-transfer issue.
 These new results stay research notes pending further review, not
 additional main-paper pages. Last current PDF remains111 pages.
+
+Extracted all20 p41 three-coset maximizers from the complete C++ census,
+then independently verified an anchored ordinary-CA line. At anchor2,
+10 candidates survive. Five unused padding points have10,10,9,9,9
+distinct values; extension shifts produce47 nearby labels for n34,k9,
+agreement14. No correlated subset of size14 exists: zero direction uses
+the certified core maximum13, nonzero direction has <=8+5=13 common
+coordinates. All labels/witnesses saved in boundary_line_verification.json.
+IMPORTANT: exact Elias check fails for characteristic41. This is only a
+finite mechanism check / coefficient-one obstruction, NOT a new
+below-Elias counterexample or a superlinear family. No manuscript change.

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/dickson_fixed_gap/verify_boundary_line.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5364939589999267,
+  "peak_rss_kib": 6576,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

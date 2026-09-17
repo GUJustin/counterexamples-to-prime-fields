@@ -115,3 +115,37 @@ the received-polynomial degree obstruction in BOUNDARY_TRANSFER.md is
 resolved for these true boundary lists. The remaining ordinary-CA
 padding issue is candidate-value diversity at unused base-field points,
 not the lack of a boundary certificate. No superlinear claim follows yet.
+
+## Exact ordinary correlated-agreement line fixture
+
+`verify_boundary_line.py` takes the 20 nearest p=41 polynomials from the
+complete census. Ten agree with the word at anchor 2. Dividing their
+differences from the anchor value by X-2 gives degree-at-most-8
+polynomials on the remaining 29 seed coordinates, each with exactly
+13 agreements. No degree-at-most-8 polynomial can have 14 old agreements:
+restoring the anchor would contradict the certified old maximum14.
+This upper bound holds over extension alphabets as well, since enough
+base-field interpolation values force base-field coefficients.
+
+At the five unused points 23,37,1,4,10 these candidates take respectively
+10,10,9,9,9 distinct values. Give the direction word value zero on the
+old core and one on these five new points. Use intercept theta*x at
+the new points, where theta is outside F_41. The labels v-theta*x are
+distinct across points and distinct candidate values, giving 47 labels.
+Every selected witness has its 13 core agreements and exactly one new
+agreement: threshold14 on a length34, dimension9 code.
+
+There is no correlated agreement at threshold14. A nonzero explaining
+direction polynomial has at most8 core zeros and can use only5 new
+coordinates, for at most13 common agreements. A zero explaining
+direction is confined to the old core, where the boundary argument also
+limits agreement to13. Thus this is ordinary/subset CA failure, not just
+full-set MCA failure. The associated selected-witness concurrency is at
+most n-A+1=21. All 47 labels and witnesses are explicitly checked.
+
+Limitation: the radius20/34 is NOT below the characteristic-based Elias
+radius at rate9/34 over characteristic41. The verifier checks the entropy
+inequality using integers. This fixture validates the transfer mechanism
+and exceeds the literal coefficient-one count n, but does not supply a
+new below-Elias whitepaper counterexample or an asymptotic superlinear
+family. It remains a research note.
