@@ -238,3 +238,14 @@ page 48 were rendered and visually checked; no build warnings. Makefile
 now includes the previously passed Dickson verifier: 63 checks total,
 with the earlier 62-check replay plus dickson_fixed_gap/verification.json
 covering them. A full rerun was not needed for this isolated addition.
+
+Next exploratory direction recorded in dickson_fixed_gap/BOUNDARY_TRANSFER.md:
+the full-field list-to-ordinary-CA conversion requires a true boundary
+list, not just the known 3n/8 agreement. The natural received polynomial
+has degree n/2, so the anchored padding degree proof does not apply.
+A tiny unsaved interpolation experiment at p17 found maximum6 and22
+maximizers (among1016 candidates determined by 4-node subsets); this
+needs guarded saved replay before citation. Multiplicative orbits of
+true maximizers may supply a boundary list, but small-orbit candidates
+reduce to low-degree problems on mu_(4r) and remain an obstruction.
+Do not assert ordinary CA failure from the recovered full-set MCA count.
