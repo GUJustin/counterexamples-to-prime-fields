@@ -1322,3 +1322,29 @@ nearbywitnessrecoveryremainsunresolved. FiniteM521paramsn~990,m~900
 likelygivefailure<2^-100; hypotheticaluntilchecked. DoNOTclaimanindividual
 sampledeterministicallyverifiedjustbecausegeneratorhasfailurebound.
 Noactiveprocess. Goalactiveuntil12:30UTC.
+
+## 2026-09-17 07:58 UTC — efficient sampler integrated and replayed
+
+The proposed randomized extension is proved and integrated in randomized.tex.
+Failure <= H/mu + delta/gamma + (p-1)(gamma/(1+gamma))^q,
+delta=(p-1)/H+(p-1)B/R-1. Size-biased moment classes, Markov on
+collision excess, and elementary symmetric sampling without replacement
+give success 1-p^-Omega(1), expected O(n²) field operations. No moment
+class enumeration and no nearby-witness recovery required or claimed.
+
+Finite M521,n990,K495,m900,t497,s1,q91,H=p*2^150,gamma2^-8:
+exact failure<2^-137; independent integer replay each term<2^-130,
+hence total<2^-128. Actual random sample samples/m521_n990.json has
+990 coordinates and SHA25648469ccd5bbf61813ea26428b4eea71f5b8e240e099b354678450fc78d89d214.
+Independent direct-root-product replay checks all coordinates, prime,
+exact maxagreement496 at zero, strict Elias, prescriptionfraction<2^-16.
+Complete coverage is a generator probability guarantee, not a deterministic
+certificate for this individual sample. Sampling identity checker covers
+16806 coordinate/direction choices and8008 symmetric-mean inequalities.
+All new bounded checks PASS; Makefile87 check commands.
+
+Strongest cubic section moved ahead of weaker interval refinements.
+PDF128pages, 1-inch margins, article, no warnings; sampler page35 visually
+inspected. Main theorem now4.12, randomized proposition4.13; use labels.
+Goal remains active until12:30UTC (08:30Eastern), >4hours remaining.
+No active numerical jobs; no push/publication.

@@ -39,7 +39,14 @@ gap on short domains or transfers automatically to a prescribed FFT domain.
   Larger certificates over `2^1279-1` and `2^9689-1` give prescribed
   fractions below `2^-308` and `2^-593`, respectively.
   The geometry proof and two independent arithmetic implementations support
-  these existence certificates. The domains and directions are not enumerated.
+  these existence certificates. A separate randomized procedure outputs
+  the code and line in expected polynomial time in `log p`, with success
+  probability `1-p^-Omega(1)`, without finding the large moment class.
+  A stored length-990 sample over `2^521-1` has an independently checked
+  generator failure bound below `2^-128`; its structural properties are
+  replayed exactly. This is a probability guarantee over sampling, not a
+  deterministic complete-coverage certificate for that individual sample.
+  Nearby-witness recovery remains a separate question.
 - Elementary padded-interval variants give explicit density/separation
   tradeoffs and can make the number of missing coordinates grow while
   the nearby fraction tends to one. Every affine codeword graph then

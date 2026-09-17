@@ -49,6 +49,9 @@ verify:
 	$(PYTHON) research/cubic_domain_warp/verify_geometry.py
 	$(PYTHON) research/cubic_domain_warp/verify_finite_certificate.py
 	$(PYTHON) research/cubic_domain_warp/audit_finite_independent.py
+	$(PYTHON) research/cubic_domain_warp/verify_randomized_bound.py
+	$(PYTHON) research/cubic_domain_warp/verify_sampling_identity.py
+	$(PYTHON) research/cubic_domain_warp/verify_sample.py
 	$(PYTHON) research/fixed_gap_padding/verify_vanishing_rate_density.py
 	$(PYTHON) research/fixed_gap_padding/verify_constant_code_density.py
 	$(PYTHON) research/fixed_gap_padding/verify_polynomial_fields.py

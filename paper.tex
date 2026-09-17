@@ -56,6 +56,8 @@ the far-point separation can be $\eta/2$ when the proposed numerical
 nearby fraction tends to zero. A cubic change of domain preserves
 moment equalities and makes the collision equations absolutely
 irreducible; a point-count estimate then yields complete nonzero coverage.
+The code and line can be sampled in expected polynomial time in
+$\log p$, with success probability $1-p^{-\Omega(1)}$.
 An anchored lift and padding construction
 gives failure of correlated agreement at an exactly fixed positive rate and gap, at
 arbitrarily large lengths, even when every nearby point on the line
@@ -3325,10 +3327,12 @@ The cubic construction necessarily has local ambiguity: at a single
 padding coordinate, more than $p$ candidates produce only $p-1$ labels.
 It also has very large global lists. The fixed-gap construction gives
 whole-line uniqueness, but only a linear lower bound on the nearby count.
-\item \textbf{Finding the large classes.}
-Can one efficiently describe or enumerate enough of the equal-moment
-or equal-coefficient classes to match the counting lower bounds?
-The existence arguments alone do not provide such algorithms.
+\item \textbf{Recovering nearby witnesses.}
+Can one efficiently recover nearby codewords for the displayed lines,
+or enumerate enough of the equal-moment classes to match the counting
+lower bounds? Proposition~\ref{cw:sampling} outputs the code and line
+in expected polynomial time in $\log p$, but does not recover a witness
+for a supplied nonzero parameter.
 Theorem~\ref{thm:binary-affine-locator} limits one possible description:
 an affine binary family with a fixed locator prefix has dimension at
 most $\lfloor\min\{t,n-t\}/(s+1)\rfloor$. At a fixed positive

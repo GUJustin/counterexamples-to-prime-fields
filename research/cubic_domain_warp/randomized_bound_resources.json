@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/cubic_domain_warp/verify_randomized_bound.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.619029709003371,
+  "peak_rss_kib": 17616,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

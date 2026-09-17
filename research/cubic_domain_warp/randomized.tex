@@ -1,0 +1,95 @@
+\subsubsection{Sampling the code and line without enumerating a moment class}
+\label{sec:cubic-sampling}
+
+The large moment class and the largest evaluation images need not be
+found explicitly. Random choices produce the code and received line
+with a quantitative success guarantee.
+
+\begin{proposition}[A direct randomized construction]
+\label{cw:sampling}
+Use the parameters of Lemma~\ref{cw:finite}, with seed
+$\{0,\ldots,m-1\}$ and anchor zero. Put
+\[
+ Q=\binom{m-1}{t-1},\qquad
+ \mu=Q/\mathcal V,
+\]
+where $\mathcal V$ is an upper bound on the number of first-$3s$
+integer binomial-moment vectors of the anchored supports. Choose an
+anchored support uniformly, an injective cubic map uniformly, $q$
+distinct outside coordinates uniformly, and independent uniform
+nonzero padding directions. Let $w$ be the locator of the chosen
+transformed support after removing its anchor, and output $w+zg$.
+For every $L_*\ge2$ and $\gamma>0$, the probability that some nonzero
+parameter is not nearby is at most
+\begin{equation}\label{cw:sampling-failure}
+ \frac{L_*}{\mu}+\frac{\delta}{\gamma}
+ +U_0\left(\frac{\gamma}{1+\gamma}\right)^q,
+ \qquad
+ \delta=\frac{U_0}{L_*}+\frac{U_0B}{R}-1.
+\end{equation}
+Every output has the exact far-point distance and absence of correlated
+agreement in Lemma~\ref{cw:finite}.
+\end{proposition}
+\begin{proof}
+The chance that the sampled support belongs to a moment class of size
+less than $L_*$ is at most $\mathcal V L_*/Q=L_*/\mu$, by summing
+the sizes of such classes. Equal binomial moments imply equal power
+sums through the same order. Condition on any class of size $L\ge L_*$.
+For an injective map, let $r_{x,v}$ be the multiplicity of the nonzero
+difference value $v=P_i(x)-w(x)$, and put
+\[
+ E=\sum_{x\text{ outside}}\sum_{v\ne0}r_{x,v}^2,
+ \qquad \Delta=\frac{U_0E}{RL^2}-1.
+\]
+Cauchy--Schwarz gives $\Delta\ge0$. The collision average proved in
+Lemma~\ref{cw:finite} gives
+\[
+ \mathbb E E\le LR+L(L-1)B,
+ \qquad
+ \mathbb E\Delta\le\frac{U_0}{L}
+       +\frac{U_0(L-1)B}{RL}-1\le\delta.
+\]
+Hence $\Pr(\Delta>\gamma)\le\delta/\gamma$.
+If $\Delta\le\gamma$, the average outside image size is at least
+$L^2R/E\ge U_0/(1+\gamma)$.
+
+For sampling distinct coordinates, the mean product of their
+nonnegative missing fractions is at most the corresponding power of
+the population mean. Indeed, replacing two entries by their average
+increases each elementary symmetric mean: with all other entries fixed,
+the only changing term is a nonnegative multiple of their product.
+Iterating this averaging proves the inequality. The expected number
+of uncovered labels is therefore at most
+$U_0(\gamma/(1+\gamma))^q$, and the probability of any uncovered label
+is at most this expectation. Combining the three bad events proves
+\eqref{cw:sampling-failure}. The degree of $w$ and its selected roots
+give the far-point claim for every output, independently of the
+coverage event.
+\end{proof}
+
+For the parameters in Theorem~\ref{cw:punctured-line}, the elementary
+moment ranges give $\mu\ge p^{1+\epsilon}$ for a fixed $\epsilon>0$.
+Taking $L_*=p^{1+\epsilon/2}$ in the analysis gives
+$\delta=p^{-\Omega(1)}$. Since $q=\Theta(\log p)$, a sufficiently small
+fixed $\gamma$ makes the last term in \eqref{cw:sampling-failure}
+$p^{-\Omega(1)}$ as well. Thus the algorithm succeeds with probability
+$1-p^{-\Omega(1)}$. It does not need to compute $L_*$, the moment class,
+or any image size. Rejection sampling makes the cubic map uniform
+among injective maps in expected $O(1)$ trials. Forming and evaluating
+$w$ takes $O(n^2)$ field operations, so the code and line are output
+in expected polynomial time in $\log p$. This does not give a procedure
+for recovering a nearby codeword at a supplied nonzero parameter.
+
+For an exact finite example, take $p=2^{521}-1$,
+$(n,K,m,t)=(990,495,900,497)$, $s=1$, $L_*=p2^{150}$, and
+$\gamma=2^{-8}$. The exact bound in \eqref{cw:sampling-failure} is
+less than $2^{-137}$. An independent integer replay bounds each of
+its three terms by $2^{-130}$, and hence their sum by $2^{-128}$.
+The radius is strictly below Elias, the far point is $\eta/2$ outside,
+and the numerical prescription fraction is below $2^{-16}$.
+The programs \path{generate_sample.py} and \path{verify_sample.py} in
+\path{research/cubic_domain_warp/} output and replay a stored sample.
+Its domain, line values, and exact far-point properties are checked
+deterministically. Complete coverage has the stated probability guarantee
+over the generator's randomness; it is not deterministically certified
+for the individual stored sample.

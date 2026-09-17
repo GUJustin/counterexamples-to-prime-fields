@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "direction_coordinate_choices": 16806,
+  "rows": [
+    {
+      "q": 1,
+      "choices": 30,
+      "expected_missing": "14/5",
+      "mean_bound": "14/5",
+      "failure_probability": "4/5"
+    },
+    {
+      "q": 2,
+      "choices": 360,
+      "expected_missing": "71/60",
+      "mean_bound": "98/75",
+      "failure_probability": "17/30"
+    },
+    {
+      "q": 3,
+      "choices": 2160,
+      "expected_missing": "77/180",
+      "mean_bound": "686/1125",
+      "failure_probability": "11/36"
+    },
+    {
+      "q": 4,
+      "choices": 6480,
+      "expected_missing": "1/9",
+      "mean_bound": "4802/16875",
+      "failure_probability": "1/10"
+    },
+    {
+      "q": 5,
+      "choices": 7776,
+      "expected_missing": "0",
+      "mean_bound": "33614/253125",
+      "failure_probability": "0"
+    }
+  ],
+  "elementary_symmetric_inequalities": 8008,
+  "seconds": 0.06366679200073122,
+  "scope": "Exhaustive finite identity and probability checks; the uniform inequality is proved by pairwise averaging."
+}

@@ -90,6 +90,13 @@ $P_i$ attains that number. This proves the exact distance at zero and
 also rules out correlated agreement, regardless of the chosen direction.
 \end{proof}
 
+\input{research/cubic_domain_warp/cubic_warp.tex}
+
+\subsection{Elementary padded-interval refinements}
+
+The following bounds use the original interval core directly. They give
+additional finite examples and tradeoffs without the cubic deformation.
+
 \begin{theorem}[An arbitrarily large fraction of nearby parameters]
 \label{fg:dense-lines}
 Fix rational $0<\rho<\beta<1$, put $H=H_2(\beta)$, and write
@@ -195,7 +202,5 @@ $\F_{17}$, it exhausts all $65536$ nonzero padding directions and then
 the full agreement profile and all codeword pairs of a selected line.
 The parameter-zero word on that line has maximum agreement $A-1$; $15$ of its
 $16$ nonzero parameters are nearby.
-
-\input{research/cubic_domain_warp/cubic_warp.tex}
 
 \input{research/fixed_gap_padding/vanishing_rate.tex}

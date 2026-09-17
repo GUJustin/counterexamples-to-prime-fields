@@ -1,6 +1,7 @@
 # Final mathematical review before integration
 
-Theorem4.18 and Lemmas4.16–4.17, September17,2026.
+Theorem `cw:punctured-line` and Lemmas `cw:irreducibility`, `cw:finite`, September 17, 2026.
+Labels are used because the strongest construction now precedes the interval refinements.
 
 - Absolute, not merely rational, irreducibility: the entire component
   argument is over the algebraic closure. Vandermonde independence
