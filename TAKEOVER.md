@@ -1971,3 +1971,42 @@ LatestPDF156pages, clean final TeX log (no warnings/overfull/underfull),
 page143 visually inspected. New theorem proof/math locally audited;
 no independent person/agent review. No active numerical/build job now.
 Work must continue until18:00 Eastern=22:00UTC under the user's extension.
+
+## 2026-09-17 13:05 UTC — fixed-gap tightness bridge made precise
+
+Previous turn was progress: STATUS.md recorded the general cyclic-boundary
+audit and clarified the unresolved large-prime source-list target. This
+turn adds a proved and checked transfer, not a new growing list.
+
+Proposition4.9: any L source candidates at length N, dimension k,
+agreement A>=k+1, over prime p>=2N+1 produce a length2N, dimension k
+line with at least ceil(p*A*L/(p+3*A*L)) full-support MCA-bad labels.
+Rate and gap are EXACTLY halved. The bound is Omega(min(NL,p)) at
+fixed source parameters. The proof anchors, divides once, and uses
+averaged additive padding; allowing the target dimension k gives exact
+parameter scaling. This is an application of existing mechanisms, not
+a novelty claim. Ordinary CA may coexist and a far point is not asserted.
+
+Consequences: source lists N^c would force exponent c+1 before field
+saturation; universal linear full-support bounds would force constant
+fixed-gap list sizes whenever p/N tends to infinity. The construction
+does not supply such growing lists. The Dickson p=Theta(N) family
+cannot give superlinear prime-field scalar counts.
+
+Files: research/prime_field_tightness/PRIME_BOUNDARY_AMPLIFICATION.md,
+list_amplification.tex, check_prime_boundary_amplification.py and JSON
+reports. Checker passes exhaustive nearest-list and arbitrary-list
+fixtures, all translations in small cases, all relevant direction
+interpolants, and exact scaling N5->10 overF101 and N10->20 overF23.
+The F23 fixture has11 source candidates and23 exhibited bad labels.
+Runtime1.15s, peak26MiB, bounded by384MiB.
+
+General-order cyclic boundary note and checker from the preceding work
+are also retained, with6 complete subset-class tests and44850 exponent
+inequalities. These restrict boundary-degree words on cyclic domains,
+not arbitrary words. Both new checkers are in Makefile.
+
+paper.pdf now157pages; article11pt, letter, margin1in. Final TeX log
+clean. New proposition pages33–34 visually inspected. Intro explains
+fixed-gap exponent tightness and its missing source-list ingredient.
+No build/numerical job remains active. Continue research until22:00UTC.

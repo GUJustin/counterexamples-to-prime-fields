@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/prime_field_tightness/check_cyclic_boundary.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.6487887920011417,
+  "peak_rss_kib": 118864,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 120
+}

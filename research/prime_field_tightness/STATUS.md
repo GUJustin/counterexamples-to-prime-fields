@@ -189,8 +189,64 @@ Omega(eta*p)=Omega(p/log p) degree for a global rational witness formula.
 This is not a computational hardness claim and does not prohibit branching
 decoders. It quantifies the failure of low-degree witness coherence.
 
+## General cyclic boundary route audited, 12:54 UTC
+
+CYCLIC_BOUNDARY_GENERAL_ORDER.md extends the restricted boundary-word
+list bound to arbitrary cyclic domain order. At fixed eta=(A-K)/n,
+the complete list is at most 2^{sum_{q|n,q<1/eta}phi(q)-1} in
+characteristic zero, and for split primes p>n^{125/eta^3}. Thus this
+particular route cannot yield growing fixed-gap lists over superpolynomial
+prime fields. The restriction deg W<=A is essential. This is not a
+general RS upper bound or an unrestricted nearby-line bound.
+
+Exact checks passed all subset classes on six domains of sizes6 through20,
+their independent finite-field moment classes, and44850 uniform-exponent
+inequalities. Proof locally audited only; no novelty claim. Kept as a
+research note rather than expanding the manuscript with another restricted
+obstruction.
+
+The boundary-value amplification route was reread. It currently uses an
+extension field to separate padding-coordinate labels; base-field evaluation
+points do not make its challenge field prime. In addition, unbounded value
+diversity is unproved. It therefore does not yet answer the user's
+prime-field exponent-tightness question, even conditionally on list growth
+alone. The main open milestone remains superlinear exceptions at one fixed
+positive gap in sufficiently large prime fields.
+
 The projective-envelope note can now replace its projective-pencil bound
 by max(n-A+1,18n/(A-D)), improving its constants and high-agreement dependence.
 The earlier rational-parameter height reconstruction note is auxiliary and
 not needed for the stronger rigidity theorem. No intrinsic fixed-gap
 superlinear lower bound or universal prime-field improvement is claimed.
+
+## Exact-parameter list amplification, 13:03 UTC
+
+PRIME_BOUNDARY_AMPLIFICATION.md and list_amplification.tex make the
+existing appended-coordinate compiler quantitative over the SAME prime
+field. An arbitrary L-element source list at length N, dimension k,
+agreement A>=k+1, over p>=2N+1 gives length2N, dimension k, threshold A
+and at least ceil(p*A*L/(p+3*A*L)) full-support MCA-bad labels. Thus
+rate and gap are EXACTLY halved, and the count is Omega(min(NL,p)) at
+fixed source parameters. No source boundary/maximality hypothesis is
+needed for full-support failure. Ordinary correlated agreement may
+still exist, and a far point is not asserted.
+
+This clarifies the tightness target: source lists N^c would force full-
+support exponent c+1 when the field does not saturate the count. A
+universal linear full-support theorem would imply constant fixed-gap
+lists whenever p/N tends to infinity. No converse is proved, and no
+new growing source list has been found. This is an application of the
+already-used anchor/averaging mechanism, not a novelty claim.
+
+For source lists attaining the maximum possible agreement M, the note
+also proves ordinary-CA failure with q<=M-k+1 padding points, at the
+same averaged union bound. This removes the extension-field dependency
+from the boundary-value note but cannot overcome the p=O(N) cardinality
+obstruction in the existing Dickson family.
+
+The new checker exhausts source lists, padding translations, quotient
+identities and all joint witness pairs in small fixtures. Exact scaling
+is checked at N5->10 overF101 and N10->20 overF23; the latter checks
+field saturation. Some fixtures explicitly have ordinary CA alongside
+full-support failures. The manuscript includes the exact-scaling
+proposition and an introduction paragraph explaining its conditional role.

@@ -1,0 +1,71 @@
+\paragraph{What a growing fixed-gap list would imply.}
+The same averaging mechanism gives a useful transfer without requiring
+the received word to have a low-degree polynomial representation.
+The conclusion here concerns the entire agreement support of a nearby
+candidate; it does not assert the absence of ordinary correlated agreement.
+
+\begin{proposition}[List amplification with exact parameter scaling]
+\label{prop:exact-list-amplification}
+Let $k+1\le A\le N$, $k\ge2$, and let $p\ge2N+1$ be prime.
+Suppose a word on $N$ distinct points of $\F_p$ has $L$ distinct
+degree-$<k$ candidates, each with at least $A$ agreements.
+There is a Reed--Solomon code of length $2N$ and dimension $k$ over
+the same prime field, and a received line $f+zg$, with at least
+\[
+ J\ge \left\lceil\frac{pAL}{p+3AL}\right\rceil
+       \ge \frac14\min\{AL,p\}
+\]
+distinct labels $z$ for which some nearby candidate has at least $A$
+agreements and $g$ has no degree-$<k$ interpolant on its entire
+agreement support. Thus source rate $\rho$ and gap $\eta$ become
+exactly $\rho/2$ and $\eta/2$.
+\end{proposition}
+\begin{proof}
+Some coordinate $a$ belongs to at least $\ell\ge AL/N$ candidate
+agreement supports. Retain those candidates and form
+\[
+ Q_P(X)=\frac{P(X)-w(a)}{X-a},\qquad
+ f(x)=\frac{w(x)-w(a)}{x-a},\quad g(x)=0\quad(x\ne a).
+\]
+The $Q_P$ are distinct of degree at most $k-2$, and have at least
+$A-1\ge k$ agreements on the $N-1$ retained coordinates.
+At each of the $R=p-N$ unused coordinates let $s_x$ be the number
+of distinct values of the $Q_P$. Counting pairwise coincidences and
+applying Cauchy--Schwarz gives
+\[
+ \frac1R\sum_xs_x\ge
+ \mu:=\frac{\ell R}{R+(\ell-1)(k-2)}.
+\]
+Choose the $q=N+1$ unused coordinates with largest $s_x$, put $g=1$
+there, and choose their $f$ values independently and uniformly.
+The expected union of the label sets $\{Q_P(x)-f(x)\}$ is at least
+$p(1-(1-\mu/p)^q)$, exactly as in Lemma~\ref{fg:averaged-padding}.
+Every label in this union adds a new agreement to one selected candidate.
+A degree-$<k$ interpolant for $g$ on that candidate's support would
+vanish at its at least $k$ old agreements, hence vanish identically,
+contradicting its value $1$ at the new agreement.
+
+For the count, $R\ge p/2$ gives
+\[
+ \frac{q\mu}{p}\ge
+ \frac{N\ell}{p+2(k-2)\ell}
+ \ge\frac{N\ell}{p+2N\ell}
+ \ge\frac{AL}{p+2AL}.
+\]
+Using $1-(1-u)^q\ge1-e^{-qu}\ge qu/(1+qu)$ proves the claimed
+bound. The new length is $N-1+q=2N$, while its dimension and agreement
+threshold remain $k$ and $A$, proving exact parameter scaling.
+\end{proof}
+
+At fixed positive rate and gap, this gives
+$J=\Omega(\min\{NL,p\})$. In particular, a list lower bound $N^c$
+over superpolynomial prime fields would force $\Omega(N^{c+1})$
+full-support exceptions at half the rate and gap. A universal linear
+full-support bound at the latter parameters would imply constant
+source list sizes whenever $p/N\to\infty$. This identifies a sufficient
+route to exponent lower bounds; it does not supply the growing lists.
+The full-length lists with $N=p-1$ fall outside its field-size hypothesis.
+The exact finite checks in
+\path{research/prime_field_tightness/check_prime_boundary_amplification.py}
+include parameter halving over $\F_{101}$ and examples where full-support
+failure coexists with ordinary correlated agreement.

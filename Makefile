@@ -157,3 +157,10 @@ verify-rational-path:
 	$(PYTHON) research/prime_field_tightness/check_rational_path.py
 verify-proth-frontier:
 	$(PYTHON) research/two_orbit_unique/verify_proth_frontier.py
+
+.PHONY: verify-cyclic-boundary verify-prime-list-amplification
+verify: verify-cyclic-boundary verify-prime-list-amplification
+verify-cyclic-boundary:
+	$(PYTHON) research/prime_field_tightness/check_cyclic_boundary.py
+verify-prime-list-amplification:
+	$(PYTHON) research/prime_field_tightness/check_prime_boundary_amplification.py

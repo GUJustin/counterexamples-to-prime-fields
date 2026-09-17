@@ -391,6 +391,16 @@ using a known list-decoding theorem for random Reed--Solomon codes.
 Proposition~\ref{prop:puncturing-bound} shows that its nearby-parameter
 count is optimal among lines without correlated agreement at this radius.
 
+\paragraph{What remains open at a fixed positive gap.}
+Our fixed-gap lower bound forces a large coefficient of $n$, but does
+not force a superlinear exponent. Proposition~\ref{prop:exact-list-amplification}
+identifies a sufficient route: a source list of size $L$ at length $N$
+gives $\Omega(\min\{NL,p\})$ full-support MCA exceptions over the same
+prime field, after exactly halving both rate and gap. Thus lists of size
+$N^c$ over superpolynomial prime fields would force exceptions of order
+$N^{c+1}$. The missing ingredient is such a growing fixed-gap list;
+full-length lists with $N=p-1$ cannot give superlinear scalar-label counts.
+
 \paragraph{Sharp algebraic counts need not give sharp proximity gaps.}
 For a differential equation of fixed order $d$, fixed jet degree, and
 fixed challenge degree, Appendix~\ref{app:isolated-sharpness} proves
@@ -404,7 +414,8 @@ also bounds the degree of each positive-dimensional actual stratum
 by $O(D^d)$, and gives examples attaining this exponent. The first-order
 case in Appendix~\ref{app:actual-first-order} is linear in $D$.
 These results distinguish sharpness of algebraic candidate counts
-from the still-open fixed-gap quadratic proximity-gap lower bound.
+from the still-open fixed-gap superlinear proximity-gap lower bound
+over sufficiently large prime fields.
 Proposition~\ref{prop:rational-envelope} extends this obstruction to
 arbitrary candidate families with bounded-degree rational residuals
 after a common normalization: their full-support exceptional count
