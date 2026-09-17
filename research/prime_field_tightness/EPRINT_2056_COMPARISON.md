@@ -94,15 +94,21 @@ of prize submissions do not establish any new benchmark gain from our
 counterexample project.
 
 
-## Ordinary correlated agreement: stronger conclusion in extension fields
+## Ordinary correlated agreement: quadratic counts in extension fields
 
-Appendix N now proves Omega_epsilon(n^(5/4-epsilon)) nearby labels with
-no ordinary correlated agreement at the tested threshold, for unbounded
-lengths over F_(p^2), exact rate3/13, and capacity gaps greater than3/26.
-This combines a true-nearest-list orbit argument, standard lower linear
-sieve and Bombieri--Vinogradov estimates, and extension-field boundary
-padding. It rules out linear ordinary-CA bounds uniform over gaps bounded
-below in this field class. The gap is NOT fixed exactly; the ambient field
-is NOT prime; first-order agreement is NOT guaranteed. It therefore does
-not resolve the central prime-field or first-order tightness questions.
-See `../ordinary_ca_superlinear/PROOF.md` for the full dependency audit.
+Appendix N now proves at least ceil(n^2/4096) nearby labels with no ordinary
+correlated agreement at the tested threshold, for unbounded lengths over
+F_(p^2), exact rate3/13, and capacity gaps greater than3/26. It strengthens
+the earlier n^(5/4-epsilon) result and removes its sieve input. Dirichlet
+prime selection gives unbounded nearest-polynomial orbits; descent makes
+the orbit a linear-size TRUE nearest list relative to its new length.
+At most two anchors enforce the rate, and extension-field padding gives
+the quadratic count. This rules out linear ordinary-CA bounds uniform over
+gaps bounded below in this field class.
+
+The gap is NOT fixed exactly; the ambient field is NOT prime; first-order
+agreement is NOT guaranteed. The characteristic is no longer asserted to
+be proportional to length. This therefore does not resolve the central
+prime-field or first-order tightness questions. See
+`../ordinary_ca_superlinear/PROOF.md` for the full proof and the remaining
+ratio condition that would permit a prime-field transfer.

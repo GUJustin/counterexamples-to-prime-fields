@@ -1,72 +1,39 @@
-\section{Superlinear ordinary correlated-agreement failures in quadratic extensions}
+\section{Quadratic ordinary correlated-agreement failures in quadratic extensions}
 \label{app:ordinary-ca-superlinear}
 
-The quadratic lower bound of Corollary~\ref{cor:quadratic-extension-fixed-gap}
-concerns full agreement-set MCA. A separate construction excludes even
-ordinary correlated agreement, at the cost of a smaller exponent and a
-gap that is bounded below rather than fixed exactly. We make no novelty
-claim for the standard sieve input or the combination below.
+Corollary~\ref{cor:quadratic-extension-fixed-gap} concerns full agreement-set
+MCA at a fixed exact gap. A separate construction excludes even ordinary
+correlated agreement, still with quadratically many nearby labels, but
+with a gap that is bounded below rather than fixed exactly. The key is
+to descend a nearest-polynomial orbit to its own evaluation domain.
 
 \begin{theorem}\label{thm:ordinary-ca-superlinear}
-For every $0<\varepsilon<1/8$, there are unbounded lengths $n$ and primes
-$p=12n/13+5$ for which a Reed--Solomon code over $\F_{p^2}$, of exact rate
-$3/13$, has a received affine line with
-$\Omega_\varepsilon(n^{5/4-\varepsilon})$ nearby labels at an agreement
-threshold $M$, but no ordinary correlated agreement of size $M$.
-The capacity gap satisfies $M/n-3/13>3/26$, and the radius is strictly
-below the characteristic-based Elias radius for all sufficiently large
-members of the family.
+For unbounded lengths $n$ there are primes $p$ and Reed--Solomon codes
+over $\F_{p^2}$, of exact rate $3/13$, with a received affine line having
+at least $\lceil n^2/4096\rceil$ nearby labels at an agreement threshold
+$T$, but no ordinary correlated agreement of size $T$.
+The capacity gap satisfies $T/n-3/13>3/26$, the characteristic exceeds
+the message degree, and the radius is strictly below the
+characteristic-based Elias radius for all sufficiently large members.
 \end{theorem}
 
-Thus a linear ordinary-CA bound uniform over gaps bounded below is
-impossible in this large-characteristic field class. The actual ratio
-$M/n$ is not asserted to be constant. This is neither a prime-ambient-field
-result nor a first-order-regime tightness statement.
+This rules out a linear ordinary-CA bound uniform over gaps bounded below
+in the large-characteristic field class. The actual ratio $T/n$ is not
+asserted to be constant, nor is $p/n$ bounded above. This is neither a
+prime-ambient-field result nor a first-order-regime tightness statement.
 
-\paragraph{The prime-selection input.}
-Put $\theta=1/4-\varepsilon$. The lower linear sieve and
-Bombieri--Vinogradov imply that there are infinitely many primes
-$p\equiv41\pmod{48}$ for which every odd prime divisor of $(p-1)/4$
-is at least $p^\theta$. Here is the specific reduction, so that the fixed
-progression introduces no hidden distribution hypothesis. Sift
-\[
- \mathcal A=\{(p-1)/8:x/2<p\le x,\ p\equiv41\pmod{48}\}.
-\]
-For squarefree $d$ coprime to $6$, the condition $d\mid(p-1)/8$
-selects one reduced residue class modulo $48d$. Hence the local density
-is $g(d)=1/\varphi(d)$, with main size
-$X=(\operatorname{Li}(x)-\operatorname{Li}(x/2))/16$; set $g(2)=g(3)=0$.
-Bombieri--Vinogradov bounds the sum of absolute remainders through
-$D=x^{1/2-\varepsilon}$ by $O_A(x/\log^A x)$ for every fixed $A$.
-With $z=x^{1/4-\varepsilon}$, the sieve parameter
-\[
- s=\frac{\log D}{\log z}
-   =\frac{1/2-\varepsilon}{1/4-\varepsilon}\in(2,3)
-\]
-has positive lower sieve function
-$f(s)=2e^\gamma\log(s-1)/s$. Since
-$\prod_{\ell<z}(1-g(\ell))\asymp1/\log z$, there are
-$\gg_\varepsilon x/\log^2x$ unsifted primes. Their associated odd
-integers $(p-1)/8$ have no prime factor below $z\ge p^\theta$.
-This is the standard shifted-prime sieve argument; see
-\cite[Section~5, Example~3, pp.~36--37]{heath-brown-sieves} and
-\cite[Theorem~2 and equation~(11)]{tao-linear-sieve}.
-
-\paragraph{Excluding small polynomial orbits.}
+\paragraph{An eight-point certificate.}
 Let $\zeta$ be a primitive eighth root of unity. No affine polynomial
 agrees at three distinct points of $\mu_8$ with
-\[
- W_2(Y)=(1+Y^4)/2-Y^2
-\]
-in characteristic $p>17$ with $p\equiv1\pmod8$. For completeness this
-finite assertion can be checked integrally. Write
-$v_j=1+\zeta^{4j}-2\zeta^{2j}$. For $0\le i<j<h<8$, take the norm of
+$W_2(Y)=(1+Y^4)/2-Y^2$ in characteristic $p>17$, $p\equiv1\pmod8$.
+For completeness, write $v_j=1+\zeta^{4j}-2\zeta^{2j}$. For
+$0\le i<j<h<8$, the norm of
 \[
  (\zeta^j-\zeta^i)(v_h-v_i)
  -(\zeta^h-\zeta^i)(v_j-v_i)
 \]
-from $\mathbb Q(\zeta)$ to $\mathbb Q$, equivalently its resultant
-with $Z^4+1$ after reducing powers of $Z$. The complete distribution is
+from $\mathbb Q(\zeta)$ to $\mathbb Q$ has the following complete
+distribution, obtained by reduction modulo $Z^4+1$ and resultants:
 \[
 \begin{array}{c|rrrrrrr}
  |\mathrm{Norm}|&64&256&576&1088&3136&4096&6400\\\hline
@@ -74,80 +41,93 @@ with $Z^4+1$ after reducing powers of $Z$. The complete distribution is
 \end{array}
 \]
 All $56$ determinants are nonzero and their norms have prime factors only
-$2,3,5,7,17$. Reduction at $p>17$ therefore preserves nonvanishing.
-An independent exact verifier and the individual determinants are in
+$2,3,5,7,17$. Reduction at $p>17$ preserves nonvanishing. Exact verification
+and individual determinants are in
 \path{research/dickson_fixed_gap/verify_two_orbit.py} and its JSON output.
 
 \begin{proof}[Proof of Theorem~\ref{thm:ordinary-ca-superlinear}]
-Choose the primes above, put $k=(p-1)/4$ and $N=4k$, and use
-$W(X)=(1+X^{2k})/2-X^k$ on $\F_p^\times$. Let $M$ be its true maximum
-agreement with degree-$<k$ polynomials. Proposition~\ref{prop:full-length-fixed-gap}
-gives $M\ge3k/2$, while the degree of $W-P$ gives $M\le2k$.
+Fix an integer $R\ge40$, and let $B_R$ be the product of odd primes at
+most $R$. By the Chinese remainder theorem and Dirichlet's theorem,
+there are arbitrarily large primes with
+\[
+ p\equiv9\pmod{16},\qquad p\equiv-1\pmod{B_R}.
+\]
+Put $k=(p-1)/4$. Then $v_2(k)=1$, $k\equiv1\pmod3$, and no odd prime
+at most $R$ divides $k$. On $\F_p^\times$ use
+$W_k(X)=(1+X^{2k})/2-X^k$. Its true maximum agreement $M$ with
+degree-$<k$ polynomials is at least $3k/2$ by
+Proposition~\ref{prop:full-length-fixed-gap}, and at most $2k$ by degree.
 The group $H=\mu_k$ preserves the word and acts on its nearest list
 by $P(X)\mapsto P(hX)$.
 
-The size $r$ of any such orbit divides $k$. Here $v_2(k)=1$, so the
-roughness condition implies either $r\in\{1,2\}$ or $r\ge p^\theta$.
-In the former case invariance under a subgroup of order $k/2$ forces
-$P(X)=a+bX^{k/2}$. Passing to $Y=X^{k/2}$, whose fibers have size $k/2$,
-the preceding eight-point calculation bounds its agreement by $k$.
-Such a polynomial cannot be nearest. Consequently there are at least
-$p^\theta$ nearest polynomials. Select $L=\lfloor p^\theta\rfloor$
-of them; for large $p$, $L\le k$.
+Take one nearest polynomial and let $r$ be its orbit size. This divides
+$k$. If $r\le R$, then $r\in\{1,2\}$, forcing
+$P(X)=a+bX^{k/2}$. Passing to $Y=X^{k/2}$, whose eight fibers each have
+size $k/2$, the preceding certificate bounds its agreement by $k$,
+a contradiction. Thus $r>R$, and $3\nmid r$.
 
-This nearest agreement remains $M$ over $\F_{p^2}$: a degree-$<k$
-polynomial matching $k$ base-field coordinates and values has base-field
-coefficients by interpolation. Choose an agreement anchor incident to
-$\ell\ge ML/N$ selected candidates, and divide each candidate minus the
-received anchor value by the anchor's linear factor. On the $N-1$ old
-coordinates the resulting degree-$\le k-2$ quotients each have exactly
-$M-1$ agreements. No polynomial of this degree has $M$ old agreements,
-since restoring the anchor would contradict maximality of $M$.
+\emph{Descent.} Put $d=k/r$. The stabilizer is $\mu_d$, so
+$P(X)=V(X^d)$ with $\deg V<r$. The map $X\mapsto X^d$ sends
+$\F_p^\times$ onto $\mu_{4r}$ with fibers of size $d$, and
+$W_k(X)=W_r(X^d)$. Consequently $M=dm$, where $m\ge3r/2$ is the
+agreement of $V$ with $W_r$ on $\mu_{4r}$. Any closer degree-$<r$
+polynomial would lift to a closer degree-$<k$ polynomial, impossible.
+The $\mu_r$-orbit of $V$ has exactly $r$ members, all nearest at $m$.
+We now have a true nearest list of size $r$ on $4r$ coordinates, in the
+same prime field. Its maximum stays $m$ over $\F_{p^2}$: matching $r$
+base-field coordinates and values forces base-field coefficients by
+interpolation.
 
-Let $Q=p^2$ and $q=(k-10)/3$. This is an integer because
-$p\equiv41\pmod{48}$ gives $k\equiv1\pmod3$. For each of the $Q-N$
-unused field points let $s_x$ count distinct quotient values. Pairwise
-root counting and Cauchy--Schwarz give average diversity at least
+\emph{Anchors and rate.} Choose $t\in\{1,2\}$ with $t\equiv r\pmod3$.
+At each of $t$ steps, choose an agreement anchor incident to the largest
+number of remaining candidates, then divide candidate and word minus
+the anchor value by the anchor's linear factor. At step $j=0$ or $1$,
+the incidence fraction is $(m-j)/(4r-j)\ge1/3$. At least
+$\ell\ge r/9$ quotients remain, with degrees $<K=r-t$ and exactly
+$m-t$ old agreements. No polynomial of degree $<K$ has more: restoring
+the anchors would contradict the old maximum. Set
 \[
- \mu=\frac{\ell(Q-N)}{Q-N+(\ell-1)(k-2)}\ge\ell/2,
+ q=(r-10t)/3,\qquad n=4r-t+q=13(r-t)/3,\qquad T=m-t+1.
 \]
-where $Q\ge2NL$. Choose the $q$ points with largest $s_x$, give them
-direction one, and retain direction zero on the old domain. Independent
-uniform translations of the new value sets have expected union size
+Here $q\ge r/6>0$, $q\le m-r+1$, $K/n=3/13$, and
+\[
+ \frac{T-K}{n}=\frac{m-r+1}{n}>\frac3{26}.
+\]
+
+\emph{Labels and absence of common agreement.} Put $Q=p^2$.
+On the $Q-4r$ points outside the original domain, pairwise root counting
+and Cauchy--Schwarz give average distinct-value count at least
+\[
+ \mu=\frac{\ell(Q-4r)}{Q-4r+(\ell-1)(K-1)}\ge\ell/2,
+\]
+since $p\ge4r+1$ and $\ell\le r$. Choose the $q$ points with largest
+value counts $s_x$, give them direction one, and retain direction zero
+on the old domain. Independent uniform translations of the new value
+sets have expected union size
 \[
  Q\left[1-\prod_x(1-s_x/Q)\right]
- \ge Q[1-(1-\mu/Q)^q]\ge q\ell/4\ge\frac{qML}{4N}.
+ \ge Q[1-(1-\mu/Q)^q]\ge q\ell/4.
 \]
-For the middle inequality, use $1-u\le e^{-u}$ and
-$q\ell/(2Q)\le1/4$. Every counted label has at least $M$ agreements
-with a selected quotient.
-
-If a correlated witness pair $F,G$ of degree at most $k-2$ has $G=0$,
-its joint agreements are confined to the old domain, with maximum
-$M-1$. If $G\ne0$, there are at most $k-2$ old zeros and at most $q$
-new agreements. Since $q\le M-k+1$, this again totals at most $M-1$.
-Thus ordinary correlated agreement of size $M$ is absent.
-
-Finally,
+The last inequality uses $1-u\le e^{-u}$, $\mu\ge\ell/2$, and
+$q\ell/(2Q)\le1/4$. Each counted label adds a new agreement to a
+selected quotient, giving at least $T$ agreements. The count is at least
 \[
- K=k-1,\qquad n=N-1+q=\frac{13(k-1)}3,\qquad
- \frac{M-K}{n}\ge\frac{k/2+1}{n}>\frac3{26}.
+ q\ell/4\ge r^2/216\ge n^2/4056>n^2/4096.
 \]
-For $k\ge20$ we have $q\ge k/6$, so the number of nearby labels is at least
-\[
- \frac{qML}{4N}\ge\frac{kL}{64}
- \ge\frac{3nL}{832}\ge\frac{nL}{300}
- =\Omega_\varepsilon(n^{5/4-\varepsilon}).
-\]
-Here $p=12n/13+5>K-1$. Also
-$H_p(1-M/n)\le1-M/n+1/\log_2p<1-K/n$ for large $p$,
-which proves the strict Elias assertion.
+A correlated witness pair $F,G$ of degree $<K$ with $G=0$ has joint
+agreements only on the old core, with maximum $m-t=T-1$. If $G\ne0$,
+it has at most $K-1$ old zeros and at most $q$ new joint agreements,
+again at most $r-t-1+(m-r+1)=m-t=T-1$. Thus ordinary correlated
+agreement of size $T$ is absent.
+
+Finally $p\ge4r+1>K-1$ and
+$H_p(1-T/n)\le1-T/n+1/\log_2p<1-K/n$ for large $p$.
+Taking $R$ unbounded gives unbounded $r$ and $n$.
 \end{proof}
 
-A complete small-field replay in
-\path{research/ordinary_ca_superlinear/verify.py} exhausts all $17^4$
-source polynomials and all $17^3$ anchored-code polynomials. It certifies
-$27$ nearby labels at threshold $6$ for length $18$ and dimension $3$
-over $\F_{17^2}$, with old and nonzero-direction joint-agreement bounds
-both equal to $5$. This checks the boundary mechanism, not the
-asymptotic sieve theorem or the Elias condition for this small fixture.
+The proof does not show that the descended domain is short relative to
+$p$. If its orbit sizes could be chosen with $r/p\to0$, the same descent
+and the prime-field exact-halving compiler would give superlinear
+full-support MCA failures over prime fields at exact rate $1/8$ and gap
+$1/16$. This ratio condition remains unproved. Details and independent
+small-field checks are in \path{research/ordinary_ca_superlinear/}.

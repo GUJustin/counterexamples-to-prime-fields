@@ -5,7 +5,7 @@ Working draft by Justin Thaler, September 17, 2026.
 [Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
 **Current research snapshot (September 17):** the main ePrint-style article
-is 162 pages with one-inch margins. A separate
+is 161 pages with one-inch margins. A separate
 [18-page first-order tightness note](research/first_order_support_audit/note/main.pdf)
 proves the sharp quarter-rate threshold for the specified interpolation
 framework. Its cubic/fifth-power budget converse concerns **only the
@@ -30,10 +30,11 @@ This is **not** prime-ambient-field or first-order-regime tightness.
 [Proof and exact checks](research/prime_field_tightness/QUADRATIC_EXTENSION_LOWER_BOUND.md).
 
 Appendix N strengthens the logical conclusion by a separate construction:
-`Omega_epsilon(n^(5/4-epsilon))` nearby labels with **no ordinary correlated
+`ceil(n^2/4096)` nearby labels with **no ordinary correlated
 agreement**, over quadratic extensions at exact rate `3/13` and capacity
 gaps greater than `3/26`. The gap is bounded below, not fixed exactly.
-The exponent uses a standard lower-sieve estimate for rough shifted primes.
+Orbit descent gives a linear-size true nearest list on its own domain;
+Dirichlet prime selection and at most two anchors suffice, without a sieve estimate.
 [Full proof and verification](research/ordinary_ca_superlinear/PROOF.md).
 
 The paper studies quantitative coding statements used in security analyses

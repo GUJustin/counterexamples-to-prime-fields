@@ -920,3 +920,37 @@ It verifies the finite boundary mechanism, not the asymptotic sieve input.
 The162-page ePrint PDF builds cleanly; page8 and the new appendix pages
 157--159 were rendered and visually inspected. Files are in
 `../ordinary_ca_superlinear/`.
+
+
+## September 17: ordinary-CA lower bound strengthened to quadratic
+
+The preceding n^(5/4-epsilon) theorem is superseded by ceil(n^2/4096)
+nearby labels with no ordinary correlated agreement, at the same exact
+rate3/13 and gap>3/26 over F_(p^2). The gap remains bounded below rather
+than fixed exactly, and p need not be proportional to length. The sieve
+input has been removed from the manuscript; the valid older proof is
+retained as `../ordinary_ca_superlinear/SIEVE_VARIANT.md`.
+
+Key step: a nearest orbit of size r on F_p^* descends through X^(k/r)
+to exactly r nearest polynomials on mu_(4r), with dimension r and nearest
+agreement at least3r/2. Dirichlet/CRT ensures r grows. One or two anchors
+retain at least r/9 candidates and enforce exact rate3/13. Padding then
+gives J>=r^2/216>=n^2/4056>n^2/4096, with no ordinary CA by the boundary
+and direction root-count argument. This is still not prime-field tightness.
+
+The independent verifier now checks orbit descent against complete small
+quotient censuses, both one- and two-anchor constructions, and6,640 exact
+parameter cases. The fixtures certify27 and15 labels with maximum common
+agreement5 and4, respectively, one below their thresholds6 and5.
+
+For prime ambient fields the unresolved sufficient condition is r/p->0.
+After a parity adjustment and exact-halving, that condition would give
+J/n'>=min(r,p/r)/64 at exact rate1/8 and gap1/16 over F_p. It is not proved.
+The13 complete proper-quotient censuses in `../orbit_descent_prime_field/`
+all stay below agreement3r/2 and do not establish this missing condition.
+
+
+The strengthened161-page paper builds without TeX warnings. Updated page8
+and Appendix N on pages157--159 were rendered and visually checked. The
+quadratic ordinary-CA proof is the current main-paper statement; the
+previous quantitative-sieve proof is preserved only as a research variant.

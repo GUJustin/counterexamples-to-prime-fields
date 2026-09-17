@@ -1,12 +1,12 @@
 {
   "command": [
     "/Users/jthaler/.local/bin/python3.12",
-    "research/ordinary_ca_superlinear/verify.py"
+    "research/orbit_descent_prime_field/scan.py"
   ],
   "reason": "completed",
   "returncode": 0,
-  "seconds": 1.1730683330024476,
-  "peak_rss_kib": 19408,
+  "seconds": 14.968909541996254,
+  "peak_rss_kib": 20736,
   "rss_limit_mib": 384,
   "time_limit_seconds": 60
 }

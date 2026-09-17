@@ -1,0 +1,161 @@
+{
+  "scope": "Complete maximum-agreement census for the listed proper quotients only. Does not compute orbit sizes, full-domain nearestness, or prove a growing family.",
+  "rows": [
+    {
+      "r": 5,
+      "p": 41,
+      "n": 20,
+      "primitive_root": 36,
+      "interpolation_subsets": 15504,
+      "maximum_agreement": 7,
+      "maximizing_polynomials": 15,
+      "three_cosets": false,
+      "complete": true,
+      "reaches_full_dickson_agreement_fraction": false
+    },
+    {
+      "r": 3,
+      "p": 73,
+      "n": 12,
+      "primitive_root": 3,
+      "interpolation_subsets": 220,
+      "maximum_agreement": 4,
+      "maximizing_polynomials": 12,
+      "three_cosets": false,
+      "complete": true,
+      "reaches_full_dickson_agreement_fraction": false
+    },
+    {
+      "r": 6,
+      "p": 73,
+      "n": 24,
+      "primitive_root": 52,
+      "interpolation_subsets": 134596,
+      "maximum_agreement": 8,
+      "maximizing_polynomials": 138,
+      "three_cosets": false,
+      "complete": true,
+      "reaches_full_dickson_agreement_fraction": false
+    },
+    {
+      "r": 3,
+      "p": 97,
+      "n": 12,
+      "primitive_root": 6,
+      "interpolation_subsets": 220,
+      "maximum_agreement": 4,
+      "maximizing_polynomials": 6,
+      "three_cosets": false,
+      "complete": true,
+      "reaches_full_dickson_agreement_fraction": false
+    },
+    {
+      "r": 4,
+      "p": 97,
+      "n": 16,
+      "primitive_root": 8,
+      "interpolation_subsets": 1820,
+      "maximum_agreement": 5,
+      "maximizing_polynomials": 44,
+      "three_cosets": false,
+      "complete": true,
+      "reaches_full_dickson_agreement_fraction": false
+    },
+    {
+      "r": 6,
+      "p": 97,
+      "n": 24,
+      "primitive_root": 43,
+      "interpolation_subsets": 134596,
+      "maximum_agreement": 8,
+      "maximizing_polynomials": 24,
+      "three_cosets": false,
+      "complete": true,
+      "reaches_full_dickson_agreement_fraction": false
+    },
+    {
+      "r": 8,
+      "p": 97,
+      "n": 32,
+      "primitive_root": 28,
+      "interpolation_subsets": 10518300,
+      "maximum_agreement": 11,
+      "maximizing_polynomials": 176,
+      "three_cosets": false,
+      "complete": true,
+      "reaches_full_dickson_agreement_fraction": false
+    },
+    {
+      "r": 3,
+      "p": 193,
+      "n": 12,
+      "primitive_root": 49,
+      "interpolation_subsets": 220,
+      "maximum_agreement": 4,
+      "maximizing_polynomials": 3,
+      "three_cosets": false,
+      "complete": true,
+      "reaches_full_dickson_agreement_fraction": false
+    },
+    {
+      "r": 4,
+      "p": 193,
+      "n": 16,
+      "primitive_root": 64,
+      "interpolation_subsets": 1820,
+      "maximum_agreement": 5,
+      "maximizing_polynomials": 20,
+      "three_cosets": false,
+      "complete": true,
+      "reaches_full_dickson_agreement_fraction": false
+    },
+    {
+      "r": 6,
+      "p": 193,
+      "n": 24,
+      "primitive_root": 186,
+      "interpolation_subsets": 134596,
+      "maximum_agreement": 8,
+      "maximizing_polynomials": 21,
+      "three_cosets": false,
+      "complete": true,
+      "reaches_full_dickson_agreement_fraction": false
+    },
+    {
+      "r": 8,
+      "p": 193,
+      "n": 32,
+      "primitive_root": 185,
+      "interpolation_subsets": 10518300,
+      "maximum_agreement": 11,
+      "maximizing_polynomials": 24,
+      "three_cosets": false,
+      "complete": true,
+      "reaches_full_dickson_agreement_fraction": false
+    },
+    {
+      "r": 4,
+      "p": 257,
+      "n": 16,
+      "primitive_root": 249,
+      "interpolation_subsets": 1820,
+      "maximum_agreement": 5,
+      "maximizing_polynomials": 16,
+      "three_cosets": false,
+      "complete": true,
+      "reaches_full_dickson_agreement_fraction": false
+    },
+    {
+      "r": 8,
+      "p": 257,
+      "n": 32,
+      "primitive_root": 136,
+      "interpolation_subsets": 10518300,
+      "maximum_agreement": 10,
+      "maximizing_polynomials": 984,
+      "three_cosets": false,
+      "complete": true,
+      "reaches_full_dickson_agreement_fraction": false
+    }
+  ]
+}
