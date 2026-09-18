@@ -1,0 +1,186 @@
+\subsection{An upper bound for witnesses on a conic}
+\label{subsec:conic-bank-bound}
+
+\begin{theorem}\label{thm:conic-bank-bound}
+Let $\mathcal D$ be $N$ distinct points of a field $\mathbb F$, and let
+$1\le k\le N$. For words $F,G\in\mathbb F^{\mathcal D}$, define their
+common agreement
+\[
+ A=\max_{\deg P,\deg Q<k}
+   |\{x\in\mathcal D:F(x)=P(x),\ G(x)=Q(x)\}|.
+\]
+Fix polynomials $H,U,V$ of degree less than $k$, with $U,V$ not both zero,
+and a finite set $S\subseteq\mathbb F^*$. Put
+\[
+ Q_\theta=H+\theta U+\theta^{-1}V,\qquad
+ b=|\{x\in\mathcal D:U(x)=V(x)=0\}|\le k-1.
+\]
+For every integer $A<T\le N$, the number of labels $\lambda\in\mathbb F$
+for which some $Q_\theta$, $\theta\in S$, agrees with $F+\lambda G$
+on at least $T$ coordinates is at most
+\begin{equation}\label{eq:conic-bank-bound}
+ \frac{2N(N-1)}{(T-b)(T-A)}
+ \ \le\ \frac{2N(N-1)}{(T-k+1)(T-A)}.
+\end{equation}
+No singleton-list hypothesis is required.
+\end{theorem}
+
+\begin{proof}
+Interpolation on any $k$ coordinates gives $A\ge k$, so the denominators
+are positive. We bound qualifying pairs $(\theta,\lambda)$, which also
+bounds labels even when bank polynomials repeat.
+At a coordinate with $G(x)\ne0$, the agreement equation is the Laurent graph
+\[
+ \lambda=a_x\theta+b_x\theta^{-1}+c_x,\qquad
+ (a_x,b_x,c_x)=\frac{(U(x),V(x),H(x)-F(x))}{G(x)}.
+\]
+Two distinct graphs meet at most twice: multiplying their difference by
+$\theta$ gives a nonzero polynomial of degree at most two.
+
+Remove the set $Z=\{U=V=G=0,\ F=H\}$, of size $z$; these coordinates
+match every pair. Fix a qualifying pair. Group its remaining matches into
+one class with $G=0$, classes of identical nonconstant graphs, and one
+class of constant graphs of size $h$. Matching constant graphs all have
+value $\lambda$, and $z+h\le b$.
+Write $m_i$ for the sizes of the first two kinds of classes and
+$w=\sum_i m_i$, so the total agreement is $s=z+h+w\ge T$.
+
+Every $m_i+z\le A$. For the zero-direction class this follows from the
+simultaneous witnesses $(Q_\theta,0)$. For a nonconstant graph with
+$a_x=a\ne0$, use $(H-c_xU/a,U/a)$; if $a=0$, use
+$(H-c_xV/b_x,V/b_x)$. These polynomial pairs also explain $Z$.
+Hence $\sum_i m_i^2\le(A-z)w$. Coordinate pairs from different classes,
+excluding $Z$ and pairs within the constant class, number at least
+\[
+ hw+\frac{w^2-\sum_i m_i^2}{2}
+ \ge\frac{w(s+h-A)}2
+ \ge\frac{(T-b)(T-A)}2.
+\]
+
+A fixed unordered coordinate pair is counted at most twice over all
+qualifying parameter pairs. For two nonzero-direction coordinates this
+is the distinct-graph intersection bound. For a zero-direction coordinate
+paired with a nonzero-direction coordinate, the former requires
+\[
+ U(x)\theta^2+(H(x)-F(x))\theta+V(x)=0.
+\]
+This is nonzero outside $Z$, has at most two roots, and the other coordinate
+then determines $\lambda$. Pairs of two zero-direction coordinates are
+never counted, nor are pairs of two constant graphs. Thus the total budget
+is at most $2\binom N2=N(N-1)$, proving the first inequality.
+The second follows from $b\le k-1$.
+\end{proof}
+
+\begin{corollary}\label{cor:conic-bank-fixed-rate}
+If $T-k\ge\varepsilon N$ for $\varepsilon>0$, an inherited conic bank
+supplies at most $2N/[\varepsilon(T-A)]$ qualifying labels.
+The bound applies after any common affine-linear transformation of the
+witness space that leaves the transformed witnesses in the stated RS code.
+In particular it covers common polynomial pullbacks and multipliers,
+linear re-encoding, and puncturing. It uses the actual common agreement
+after the transformation.
+\end{corollary}
+
+If the transformation collapses the bank to one polynomial, the stronger
+bound $N/(T-A)$ follows by assigning each nonzero-direction coordinate to
+its unique matching label.
+
+For ordinary shortening, either at most two bank parameters survive, or
+the shortening constraints hold identically in $\theta$: multiplication
+by $\theta$ turns each constraint into a quadratic with at least three
+roots. Subtracting the prescribed interpolation polynomial and dividing
+by the shortening factor then preserves the conic form. Consequently
+these uniform transformations cannot yield superlinear inherited-bank
+populations at a fixed positive capacity margin. This does not constrain
+new witnesses outside the transformed bank.
+
+\begin{proposition}\label{prop:conic-bank-order-sharpness}
+Fix integers $L\ge25$ and $s\ge1$. For every prime $p$ satisfying
+\[
+ 2s\mid p-1,\qquad (p-1)/s>5L^4+32L^2,
+\]
+there is an RS code and a line with
+\[
+ k=2s+1,\quad N=s(2L^2-2L+1),\quad
+ A=2s(L-1),\quad T=s(2L-1),
+\]
+whose two sources and common agreement are exactly $A$, and which has
+exactly $L(L^2-L+1)+1$ nonzero exceptional labels at threshold $T$.
+Every exceptional threshold list is a singleton; all other threshold lists
+are empty. More generally, at every point on this line and every
+agreement threshold strictly greater than $A$, the list has size at most one.
+In the original normalization all finite exceptions are witnessed
+by the fixed conic bank $Q_\theta(X)=\theta+\theta^{-1}X^{2s}$.
+Its exact count $L(L^2-L+1)\sim L^3$ compares with the upper bound
+$(4+o(1))L^3$ in \eqref{eq:conic-bank-bound}, while $p/L^3\to\infty$.
+Also $(k-1)N-T^2=s^2>0$, and along sequences with $L,s\to\infty$,
+$T>N a_1(k/N)$ eventually.
+\end{proposition}
+
+\begin{proof}
+Let $J=(\mathbb F_p^*)^s$. This cyclic group has even order greater than
+$32L^2$. The Sidon-exponent construction from
+Theorem~\ref{thm:growing-gap-random-line}, applied inside $J$, gives
+$a_1,\ldots,a_L\in J$ with distinct squares and distinct core nodes
+$\pm a_i a_j$. Put $P_i(Y)=Y^2/a_i^2+a_i^2$ and
+$Q_i(X)=P_i(X^s)$. Include all $s$ preimages of every core node, assigning
+$f=a_i^2+a_j^2$ and $g=0$ on its fiber. Each bank polynomial has exactly
+$A$ core matches. Every nonbank polynomial of degree at most $2s$ has at
+most $sL$ core matches: each match counts twice against the bank, and each
+of its $L$ differences has at most $2s$ roots.
+
+Choose $t=L^2-L+1$ further nodes $y\in J$ greedily and include their full
+fibers. On these fibers set $f(X)=X^{4s}=y^4$ and
+$g(X)=X^{3s}=y^3$. Require all $Lt$ labels
+\[
+ \lambda_{i,y}=\frac{P_i(y)-y^4}{y^3}
+\]
+to be distinct and outside $\{0,1\}$. At stage $j\le L(L-1)$, exclude
+core nodes, previously selected nodes, and zeros of the degree-four
+polynomials $P_i(Y)-Y^4-\lambda Y^3$, for forbidden labels $0,1$ and
+all $jL$ previous labels. The number excluded is at most
+\[
+ L(L-1)+j+8L+4jL^2<5L^4.
+\]
+Within one new node, two bank labels coincide only at a core node, already
+excluded. Thus the choice exists in $J$. Each chosen base node has exactly
+$s$ distinct preimages because $s\mid p-1$.
+
+Every nonbank polynomial has at most $4s$ fresh matches at any label,
+since $X^{4s}+\lambda X^{3s}-Q(X)$ has degree exactly $4s$.
+Its total agreement is therefore at most $s(L+4)\le A$.
+Each of the $Lt$ labels has exactly one bank witness, with agreement
+$A+s=T$; every other original label has agreement exactly $A$.
+A nonzero degree-at-most-$2s$ polynomial agrees with $g$ on at most $2s$
+core and $3s$ fresh coordinates, fewer than $A$. The zero polynomial
+confines common agreement to the core, whose maximum is $A$.
+Thus the actual common agreement is $A$.
+
+Change sources to $F=f$ and $G=f+g$. Both have agreement exactly $A$.
+For $z\ne-1$, use $\lambda=z/(1+z)$ and multiply witnesses by $1+z$.
+All $Lt$ counted labels become nonzero finite labels; the additional
+parameter $z=-1$ gives $-g$, with singleton threshold witness zero.
+This proves the exact count and the line-wide list statement.
+Substitution into \eqref{eq:conic-bank-bound} gives $(4+o(1))L^3$.
+Finally $k/N\sim L^{-2}$ and, when $s\to\infty$,
+$T/\sqrt{kN/2}\to\sqrt2$, while
+$a_1(k/N)\sim\sqrt{k/(2N)}$.
+\end{proof}
+
+Dirichlet's theorem supplies arbitrarily large eligible primes for every
+prescribed $L,s$. No upper bound on their size, nor a constant exceptional
+fraction, is claimed. For example, taking $s=\Theta(L^b)$ gives gap
+$\Theta(N^{b/(b+2)})$ and count $\Theta(N^{3/(b+2)})$.
+The upper-bound comparison is in the \emph{original} normalization:
+after the endpoint change the witnesses are parameter-dependent scalar
+multiples of the bank, and the count is transported by the parameter
+bijection, with one additional label. This is restricted conic-bank order
+sharpness, not general first-order tightness or a fixed-rate lower bound.
+
+Nor do singleton lists on this line imply small lists for the whole code.
+On the same domain, keep the core word and assign a different fresh fiber
+to each of the $L$ bank polynomials, giving that fiber the polynomial's
+value. Since $t\ge L$, all bank polynomials then reach $A+s=T$.
+The code therefore has a threshold list of size at least $L$ at another
+center. The line-wide singleton assertion does not replace a code-wide
+list-size hypothesis in a general proximity theorem.

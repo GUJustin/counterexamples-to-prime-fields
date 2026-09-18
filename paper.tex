@@ -73,14 +73,19 @@ growth at a fixed positive gap over prime fields themselves remains open.
 At vanishing rate, we give a prime-field line with more than
 $n^{3/2}/4$ exceptional challenges for the code of quadratic polynomials.
 Both inputs are outside the tested radius, and every qualifying list is
-a singleton, at an agreement threshold below Johnson and above the
-first-order agreement curve. The common agreement misses that threshold by one coordinate.
+a singleton, at an error radius beyond Johnson and covered by the
+Dao--Kominers--Thaler upper bounds. The common agreement misses that
+threshold by one coordinate.
 A collision-averaging variant makes a constant fraction of all prime-field
 challenges exceptional with singleton lists.
 Randomized padding further gives a source separation of order
 $\log n/\log\log n$, while a constant fraction of prime-field challenges
 have singleton lists. The message dimension remains three; the rate and
-fractional source separation vanish.
+fractional source separation vanish. Allowing dimension $\Theta(n^\alpha)$
+gives separation $\Theta(n^\alpha)$ and $\Theta(n^{3(1-\alpha)/2})$
+singleton exceptions for every fixed $0<\alpha\le1/3$. These examples
+attain a separate upper bound for their conic family of witnesses up to
+a constant factor, but do not establish tightness of the general bounds.
 A separate extension-field construction has an exact two-level spectrum;
 its affine-witness companion asymptotically attains a universal
 triple-count bound with constant one.
@@ -776,6 +781,13 @@ complete fibers of $x\mapsto x^s$ and makes their fresh values agree.
 A separate argument excludes all new polynomial witnesses introduced by
 the larger code dimension. The fractional source gap and code rate still
 tend to zero; this does not prove fixed-rate tightness.
+Over sufficiently large primes, a deterministic variant makes every list
+above the source agreement empty or a singleton, while attaining the
+separate conic-witness upper bound up to a constant factor
+(Proposition~\ref{prop:conic-bank-order-sharpness}). This is a statement
+about all points on the constructed line, not about all received words:
+other received words for the same code can have at least $L$ witnesses
+at the tested threshold.
 
 These statements should not be read as the first superlinear prime-field
 proximity-gap counterexamples. Diamond and Gruen~\cite{diamond-gruen-random}

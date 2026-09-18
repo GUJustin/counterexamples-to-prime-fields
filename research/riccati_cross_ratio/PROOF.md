@@ -5,7 +5,7 @@ and appendix.tex: ordinary lists and fixed-equation MCA now assume only
 characteristic zero or p>D, with a separate candidate-count bound at
 p=D+1. The narrower proof below remains valid under p>2D.
 
-September 16, 2026. Proof reviewed and exact finite checks replayed on the new laptop; not yet integrated into the manuscript.
+September 16, 2026: proof reviewed and exact finite checks replayed on the new laptop. Integration status updated September 18, 2026: the strengthened result is now integrated through `appendix.tex` in `paper.tex`; this file retains the original narrower proof. Historical replay receipts are unchanged.
 
 ## Setup and source
 

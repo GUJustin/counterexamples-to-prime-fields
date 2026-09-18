@@ -5,7 +5,7 @@ Working draft by Justin Thaler, September 18, 2026.
 [Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
 **Latest verified results (September 18, morning):** the full-page,
-one-inch-margin ePrint draft (244 pages) now proves a prime-field line construction
+one-inch-margin ePrint draft (246 pages) now proves a prime-field line construction
 with more than n^(3/2)/4 exceptional challenges, each having a singleton
 list, at an error radius covered by the Dao–Kominers–Thaler bounds
 and beyond the Johnson radius. Both source words
@@ -30,6 +30,14 @@ The uniform finite upper comparison is
 31000n². A separate extension-field construction gives the same exponent
 and an exact two-level spectrum; its affine-witness companion asymptotically
 attains a universal triple-count bound.
+
+Over sufficiently large primes, a deterministic cover gives exactly
+L(L²−L+1)+1 exceptions with source gap s and length s(2L²−2L+1).
+Every list above the source-agreement level along this line is empty or
+singleton. A separate upper bound for its conic family of witnesses
+matches this count up to a constant factor. This restricted sharpness
+does not establish tightness of the general DKT bound, and small lists
+along one line do not imply a small maximum list size for the code.
 
 These results do not supersede the fixed-rate near-capacity counterexamples
 of Krachun–Kazanin–Haböck or the capacity-conjecture refutation of

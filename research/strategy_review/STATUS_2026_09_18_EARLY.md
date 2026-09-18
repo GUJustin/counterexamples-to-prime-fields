@@ -245,3 +245,29 @@ page176 was rendered and visually checked. Intro/README replace unexplained
 "first-order agreement regime" with the actual comparison to the error rates
 covered by Dao–Kominers–Thaler. API usage and remaining job status are tracked
 separately; no API key or raw credential is included in published files.
+
+## Deterministic covers and the precise limit of the comparison
+
+A deterministic full-fiber lift of the original greedy quartic padding also
+passes independent audit. For arbitrary L>=25,s>=1 and sufficiently large
+primes congruent1mod2s, it gives exactly L(L²−L+1)+1 exceptional labels,
+all singleton, gap s, dimension2s+1, length s(2L²−2L+1). Every line list
+above the exact source/common agreement is empty or singleton. Non-descended
+candidates have at mosts(L+4) matches by core incidence and degree4s.
+This needs no BV for prime existence, but makes no controlled field-size or
+positive-density claim. It gives restricted conic-bank order sharpness
+without the ambient-field cap explaining the bound.
+
+The finite DKT comparison has now been tracked: one valid optimized support
+still gives a dominant quadratic-in-n budget, with no saving in s. The
+ratio to the constructed count is Theta(s²L), so the new cover result does
+not close that gap. Small lists along this line are not codewide list bounds;
+the code has another received word with at leastL witnesses at the sameT.
+
+Recovered Riccati integration has been checked against current sources.
+Headline recovered and singular-cover results are integrated. The subsidiary
+polynomial-gauge corollary received an independent PASS; stale integration
+wording was corrected and current-source hashes were saved separately from
+historical checks. The previous goal turn and this one constitute concrete
+progress (audited proofs, compiled manuscript, and verified repository push),
+not merely status or waiting.

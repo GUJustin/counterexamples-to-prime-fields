@@ -1,0 +1,21 @@
+{
+  "date": "2026-09-18",
+  "kind": "Current source snapshot after independent proof/integration audit; not a fresh numerical replay or PDF build",
+  "historical_receipt_preserved": "research/riccati_cross_ratio/replay_hashes.json",
+  "sha256": {
+    "paper.tex": "cdc9e825ce2f95d6d2fe306ee9ca53e48f98778ac7298c22b0af9a91382b5df2",
+    "research/riccati_cross_ratio/appendix.tex": "c115632e68646e05585d22c9a689ef2cc7b46f319ea41e3a983b50702e920c6a",
+    "research/riccati_cross_ratio/PROOF.md": "62a32506aac10a1b97878b161da05c8e6b30b19fdb2208eb738e9f1cf45366c6",
+    "research/riccati_cross_ratio/CHARACTERISTIC_REFINEMENT.md": "5fe0ab84d7132889ccb7f2f542167476d78a3506cc1d3b29a294ce77ea14a780",
+    "research/riccati_cross_ratio/README.md": "0975acfe89512f0df75d47606c284acd5e71faa69cb6dd804344fe4b7c8613fb",
+    "research/riccati_cross_ratio/verify.py": "8103c33b698109a5349c04869cd43348a9c3b445a3e602e7f414ccdc34b6fc25",
+    "research/riccati_cross_ratio/verify_multiplicities.py": "c2823d1cbbd69c082f6fed6bfb73ca648f6ab05a4f2cc8416ed7b2ae111df23c",
+    "research/riccati_cross_ratio/verify_boundary_extension.py": "2065f1ba4b1a997f92ed2b5a635c8d0e0c3e8ec551aa1c56a8ffced9f8129438",
+    "research/riccati_cross_ratio/CURRENT_INTEGRATION_AUDIT.md": "5b738489f824ec5b0469bd8b6325d45bae7ec6fd6fee2afc798a7e7e9f401e65",
+    "research/fixed_singular_cover/appendix.tex": "3947c4ab08608e8e7d31318eca074491ca7003a36e642681bbf52935291e794e",
+    "research/fixed_singular_cover/ROOT_AUDIT.md": "84f92b3ddc9d5fb108b7b202660f5a8820cdc9d7330d904ef5005a9e6570bfdc",
+    "research/fixed_singular_cover/POLYNOMIAL_GAUGE_INDEPENDENT_AUDIT.md": "e9b88df9b50629b6e99ed2000c4c4db3915f1103a262610083e7d7d4e2602449",
+    "research/quasilinear_first_order/appendix.tex": "ec4d60297454af53ae82c1bfb8893ff32c0e0e818dd341488c52ac813131fd3d",
+    "research/two_branch_recurrence/appendix.tex": "859d4e954063f71e0fe6ef273ea71e2b8b59763a0b7ace0828e2634059d28014"
+  }
+}
