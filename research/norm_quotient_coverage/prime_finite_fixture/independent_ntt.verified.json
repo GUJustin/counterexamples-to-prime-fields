@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "method": "independent radix-two cyclic NTT; all coefficients agree with FLINT",
+  "energy": 125113995212860,
+  "sixth_moment": 1052619325992960,
+  "maximum_c3": 45723,
+  "cauchy_exponent": "63012/355",
+  "cauchy_prefactor": 93125235,
+  "domain_size": 2842,
+  "J": 1421,
+  "A": 1422,
+  "T": 1424,
+  "elapsed_seconds": 1.914318083,
+  "producer_binary_sha256": "06d2fa44e9cd42fc31ccf745ee032401e9396473958f8f333a9bf512ba967b38"
+}

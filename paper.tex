@@ -943,6 +943,15 @@ $n=\Theta(p^{d-1}\log p)$; for quadratic extensions the characteristic
 is $\Theta(n/\log n)$. This matches the known order of capacity margin,
 while retaining the extension-alphabet and specially chosen-domain
 limitations just described.
+Theorem~\ref{thm:prime-random-fiber-log-gap} also removes the
+extension-alphabet requirement: for every fixed $\beta>12/5$, it gives
+prime alphabets $p=\Theta((n/\log n)^\beta)$ on selected unions of
+multiplicative cosets, with the same two-far profile and inverse-logarithmic
+gap. This remains in the already known near-capacity regime, and does
+not settle a prescribed-domain benchmark. An exact certificate over
+$\mathbb F_{65537}$ has length $2842$, dimension $1421$, source/common
+agreement $1422$, and agreement at least $1424$ at every nonzero pencil
+label. Novelty of the two-far refinement remains unestablished.
 
 Likewise, optimality of a specified interpolation dimension count is a
 statement about that proof method, not an intrinsic list or MCA lower
@@ -6213,6 +6222,7 @@ odd-characteristic bounds $20$ and $62$.
 \input{research/binary_characteristic_transfer/growing_characteristic_native.tex}
 \input{research/norm_quotient_coverage/norm_quotient.tex}
 \input{research/norm_quotient_coverage/random_tag_log_gap.tex}
+\input{research/norm_quotient_coverage/prime_random_fiber_log_gap.tex}
 
 \input{research/quadratic_indicator_nearest/appendix.tex}
 
@@ -6330,6 +6340,10 @@ Journal of the American Mathematical Society 2(2), 197--200, 1989.
 \bibitem{crites-stewart2025} E. Crites and A. Stewart.
 \emph{On Reed--Solomon Proximity Gaps Conjectures}.
 IACR ePrint 2025/2046. \url{https://eprint.iacr.org/2025/2046}.
+\bibitem{thorner-zaman2021} J. Thorner and A. Zaman.
+\emph{Refinements to the prime number theorem for arithmetic progressions}.
+arXiv:2108.10878, 2021.
+\url{https://arxiv.org/abs/2108.10878}.
 \bibitem{bchks} E. Ben-Sasson, D. Carmon, U. Hab\"ock, S. Kopparty,
 and S. Saraf. \emph{On Proximity Gaps for Reed--Solomon Codes}.
 IACR ePrint 2025/2055. \url{https://eprint.iacr.org/2025/2055}.

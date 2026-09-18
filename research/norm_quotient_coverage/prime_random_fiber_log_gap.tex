@@ -1,0 +1,164 @@
+\subsection{Prime alphabets on selected multiplicative fibers}
+\label{subsec:prime-random-fibers}
+
+The same quotient construction applies over a prime alphabet when the
+image of the power map is a sufficiently large subgroup.  This gives
+the following exact two-source profile on a chosen union of cosets.
+
+\begin{theorem}\label{thm:prime-random-fiber-log-gap}
+Fix $0<\rho<1$, $\beta>12/5$, and
+$C>\max\{64,4/[\rho(1-\rho)]\}$.
+There are infinitely many powers of two $m$ and primes
+$p\equiv1\pmod m$, with $p=\Theta(m^\beta)$, for which the following
+holds.  Put
+\[
+ s=\lceil C\log p\rceil,\qquad n=(s+1)m,\qquad
+ J=\lfloor\rho n\rfloor.
+\]
+There is an $n$-point domain $D\subset\mathbb F_p^*$ and words
+$f,g:D\to\mathbb F_p$ such that
+\[
+ \operatorname{agr}_J(f)=\operatorname{agr}_J(g)
+ =\operatorname{CA}_J(f,g)=J+m-1,
+\]
+and every $\lambda\in\mathbb F_p^*$ satisfies
+\[
+ \operatorname{agr}_J(f+\lambda g)\ge J+2m-1.
+\]
+Thus the capacity margin is $2/(s+1)-1/n$, the source-agreement gap
+is $1/(s+1)$, and both are $\Theta(1/\log n)$.
+The alphabet is prime, with
+\[
+ p=\Theta\!\left((n/\log n)^\beta\right),\qquad p/J\longrightarrow\infty.
+\]
+The domain is a union of $s+1$ cosets of the subgroup of order $m$.
+\end{theorem}
+
+\begin{proof}
+Use the prime-selection step of Krachun, Kazanin, and
+Hab\"ock~\cite[Theorem~1 and Appendix~A]{kkh}, following
+Thorner--Zaman~\cite[Corollary~3.1 and (3.2)]{thorner-zaman2021}, to choose
+$m\to\infty$ and $p\equiv1\pmod m$ with $p=\Theta(m^\beta)$.
+Let $H=(\mathbb F_p^*)^m$, of order $L=(p-1)/m$, and choose
+$b\in\mathbb F_p^*\setminus H$ and $a_0\in H$.
+
+For every nontrivial multiplicative character $\chi$ of
+$\mathbb F_p^*$, orthogonality over the $m$ characters trivial on $H$
+gives
+\[
+ \sum_{a\in H}\chi(b-a)
+ =\frac1m\sum_{\psi|_H=1}
+   \chi(b)\psi(b)J(\psi,\chi),
+ \qquad
+ J(\psi,\chi)=\sum_{t\in\mathbb F_p}\psi(t)\chi(1-t).
+\]
+All characters, including the trivial one, are extended by zero at zero.
+Each Jacobi sum has absolute value at most $\sqrt p$: the exceptional
+cases $\psi=1$ or $\psi\chi=1$ have absolute value $1$, and otherwise
+the Gauss-sum identity gives $\sqrt p$.
+Consequently
+\[
+ \left|\frac1{L-1}\sum_{a\in H\setminus\{a_0\}}\chi(b-a)\right|
+ \le\frac{\sqrt p+1}{L-1}\longrightarrow0,
+\]
+because $L/\sqrt p=\Theta(m^{\beta/2-1})\to\infty$.
+
+Apply the finite-population concentration \emph{argument} in the proof
+of Lemma~\ref{lem:random-tag-character-bias} to a uniform $s$-subset
+$G\subset H\setminus\{a_0\}$.  Once the displayed mean is at most
+$1/4$, the probability that some nontrivial $\chi$ has
+$|\sum_{a\in G}\chi(b-a)|>s/2$ is at most
+$4(p-2)e^{-s/64}<1$.
+Fix a choice with all these character sums at most $s/2$.
+
+Set $Y=X^m$, $D=Y^{-1}(G\cup\{a_0\})$, and write
+$J-1=(r-2)m+w$, $0\le w<m$.  Then $|D|=(s+1)m$,
+$2\le r<s$ eventually, and $\theta=r/s\to\rho$.
+Lemma~\ref{lem:fixed-cardinality-character-products} shows that every
+element of $\mathbb F_p^*$ is the product of exactly $r$ distinct
+elements of $\{b-a:a\in G\}$ once
+\[
+ (p-2)(s+1)e^{-\theta(1-\theta)s/2}<1.
+\]
+The choice of $C$ ensures this inequality eventually.
+
+Choose $w$ points $B_0$ in the reserved fiber $Y^{-1}(a_0)$ and put
+$R=L_{B_0}$.  Define
+\[
+ f=R\frac{Y^r-b^r}{Y-b},\qquad g=-\frac R{Y-b}.
+\]
+The denominator has no root in $\mathbb F_p$, since $b\notin H$
+and $b\ne0$.  Root counting bounds both source agreements by
+$J+m-1$; interpolation on $r-1$ tags of $G$, followed by substitution
+of $Y$ and multiplication by $R$, attains this bound simultaneously.
+Thus the two individual agreements and their common agreement are
+exactly $J+m-1$.
+
+For $\lambda\ne0$, choose $S\subset G$ of size $r$ with
+$V_S(b)=-\lambda$, where $V_S(Z)=\prod_{a\in S}(Z-a)$.
+Put $P_S(Z)=Z^r-V_S(Z)$.  The witness
+\[
+ h_S=R\frac{P_S(Y)-P_S(b)}{Y-b}
+\]
+has degree at most $J-1$ and residual
+$f+\lambda g-h_S=R V_S(Y)/(Y-b)$.
+Its zeros are the core and the $r$ selected fibers, exactly
+$w+rm=J+2m-1$ points of $D$.
+Finally, $n=\Theta(m\log m)$ and $p=\Theta(m^\beta)$ give the
+stated field-size and characteristic asymptotics.
+\end{proof}
+
+The finite argument works for any prime $p$ and divisor $m\ge2$ of
+$p-1$.  With $L=(p-1)/m$, it suffices that $s<L-1$, $2\le r<s$, and
+\[
+ \frac{\sqrt p+1}{L-1}\le\frac14,\qquad
+ 4(p-2)e^{-s/64}<1,\qquad
+ (p-2)(s+1)e^{-\theta(1-\theta)s/2}<1.
+\]
+At threshold $J+2m-1$, exactly $p-2$ of the mixtures
+$(1-t)f+tg$, $t\in\mathbb F_p$, are nearby, and both endpoints
+are farther by $m/n$.
+This is a prime-alphabet specialization of the same quotient and
+character-sum argument.  It provides a structured exact profile;
+no priority claim is made for almost-complete coverage, already
+available with a far direction from Crites--Stewart~\cite[Corollary~1]{crites-stewart2025}.
+The domain is chosen as a union of multiplicative cosets and need not
+be a subgroup.  The theorem makes no claim for a prescribed evaluation
+domain or for a fixed positive capacity margin.
+
+\paragraph{An exact finite prime-field certificate.}
+The accompanying certificate gives $p=65537$, $m=2$, $b=3$,
+$a_0=1$, and $s=1420$ explicitly listed square tags.
+It has $n=2842$ and $J=1421$, with
+\[
+ \operatorname{agr}_J(f)=\operatorname{agr}_J(g)
+ =\operatorname{CA}_J(f,g)=1422,
+ \qquad
+ \operatorname{agr}_J(f+\lambda g)\ge1424\quad(\lambda\ne0).
+\]
+Here $r=712$, $w=0$, and the words are
+$f=(X^{1424}-3^{712})/(X^2-3)$ and $g=-1/(X^2-3)$ on the
+listed domain.  The denominator is root-free because $3$ is a nonsquare.
+
+Coverage is certified with integer arithmetic.  Take discrete logarithms
+base $3$ of the $1420$ factors $3-a$ in the cyclic group of order $65536$,
+and let $c_3(t)$ count ordered triples of these exponents with sum $t$.
+The supplied convolution has
+\[
+ \sum_t c_3(t)^2=125113995212860.
+\]
+Character orthogonality then gives
+\[
+ \sum_{\chi\ne1}\left|\sum_{a\in G}\chi(3-a)\right|^6
+ =1052619325992960<710^6.
+\]
+Thus every nontrivial character sum is below $s/2=710$.
+For $\theta=712/1420$, the Cauchy exponent is $u=63012/355$;
+the rational inequality $u^5/120>93125235=(p-2)(s+1)$ proves
+the required positivity since $e^u>u^5/120$.
+Two independent integer convolution implementations reproduce every
+coefficient.  In particular, this verifies all $65536$ nonzero pencil
+labels without enumerating their witnesses.  The normalized capacity
+margin is $3/2842$, and the common-agreement loss is $2/2842$.
+The domain, coefficient data, and replay programs are supplied in
+\texttt{research/norm\_quotient\_coverage/prime\_finite\_fixture}.

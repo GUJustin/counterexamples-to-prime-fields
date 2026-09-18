@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "p": 65537,
+  "multiplicative_group_order": 65536,
+  "m": 2,
+  "primitive_generator_and_pole": 3,
+  "primitive_order_half_power": 65536,
+  "image_subgroup_size": 32768,
+  "reserved_tag": 1,
+  "sample_size": 1420,
+  "seed": 20260918,
+  "sample_count": 1,
+  "convolution_modulus": 998244353,
+  "cyclic_coefficient_integer_upper_bound": 2016400,
+  "cyclic_coefficient_observed_maximum": 45723,
+  "cyclic_coefficient_sum": 2863288000,
+  "triple_additive_energy": 125113995212860,
+  "nontrivial_character_sixth_moment": 1052619325992960,
+  "bias_threshold": "710",
+  "bias_threshold_sixth_power": "128100283921000000",
+  "sixth_moment_ratio": "46330075968/5638216721875",
+  "character_bias_conclusion": "every nontrivial character sum has absolute value strictly below 710",
+  "log_sample_size_certificate": {
+    "lower_log_endpoint": "1419/128",
+    "upper_log_endpoint": "355/32",
+    "Taylor_last_degree": 100,
+    "conclusion": "exp(1419/128)<65537<exp(1420/128); sample size is exactly ceil(128 log 65537)"
+  },
+  "code": {
+    "length": 2842,
+    "strict_degree_bound": 1421,
+    "maximum_witness_degree": 1420,
+    "rate": "1/2",
+    "subset_size": 712,
+    "core_size": 0,
+    "exact_each_source_agreement": 1422,
+    "exact_common_agreement": 1422,
+    "certified_near_agreement": 1424,
+    "near_pencil_labels": 65536,
+    "near_fraction_on_pencil": "65536/65537",
+    "near_affine_interpolation_labels": 65535,
+    "near_fraction_between_two_far_sources": "65535/65537"
+  },
+  "cauchy_positivity": {
+    "theta": "178/355",
+    "exponent": "63012/355",
+    "nontrivial_character_prefactor": 93125235,
+    "exponential_lower_bound_used": "exp(exponent)>exponent^5/120",
+    "exponential_rational_lower_bound": "41390920033177952170368/28191083609375",
+    "total_fourier_error_strict_upper_bound": "875100428675898359375/13796973344392650723456",
+    "conclusion": "every nonzero field element is a product of exactly 712 distinct factors b-a with a in sampled_tags"
+  },
+  "sha256": {
+    "tags_and_domain.json": "980d5787085fca18af5de503b215474e0855e86a05fefc1a838e37c4d1ab9faa",
+    "cyclic_triple_convolution_u32le.bin": "06d2fa44e9cd42fc31ccf745ee032401e9396473958f8f333a9bf512ba967b38"
+  },
+  "elapsed_seconds": 0.0867243749962654,
+  "peak_rss_bytes": 51658752,
+  "scope": "explicit finite existence certificate for witnesses via exact product counts; witnesses are not enumerated"
+}
