@@ -1,6 +1,6 @@
 # Current audited position after restoring the full second-jet framework
 
-The main paper remains the 197-page ePrint-style draft with Theorems R.7–R.9. No second-jet leaderboard improvement is claimed.
+The main paper remains the 200-page ePrint-style draft with Theorems R.7–R.9. No second-jet leaderboard improvement is claimed.
 
 1. The local curvature rank saving and its graded challenge count are mathematically valid, independently checked, and already contained in the restored exact SecondJetCounts framework. They are rediscovered specializations, not new rank theorems. The matched comparison 31890 versus5515 is valid source arithmetic.
 2. The existing relaxed second-jet source and routing framework accepts broader profiles after target-parameter changes. Four checked profiles produce positive source dimensions and challenge caps below3261. The source-existence obstruction is therefore resolved for these profiles.
@@ -25,3 +25,6 @@ On the lower-construction side, a targeted exact test and then a generic formula
 
 
 The binding simple-tail model also survives a jet shift by Z*X^(w+1), producing a genuinely non-codeword received line and no common-support correlated-agreement witness above w+1 nodes, while retaining a regular codeword seed at label0, the same flags, and primary slack25714. See BINDING_NONCODEWORD_LINE_MODEL.md. Only one exceptional label is supplied; universal-kernel membership and the target retained source remain absent.
+
+
+Appendix T now certifies a SECOND one-pole extension: six degree≤14 polynomials, each with≥30agreements on60nodes, over a number field and arbitrarily large prime fields. The first F97 witness is independently reconstructed; its residual fresh roots are24and52. Two independent Jacobian systems certify smooth characteristic-zero lifting: the13equation norm system has full rank13, and the25equation pointed system has a25x25minor equal21mod97. The paper now has200pages. This is a fixed-size six-word construction; no unbounded iteration, intrinsic DKT tightness, or better.codes improvement is claimed. The previous twelve-base singleton support was ruled out by its overlap with G5; the successful support instead uses one pole-fiber point and eleven base fibers.

@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/tmp/prime_transversal_search"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.093469875,
+  "peak_rss_kib": 1760,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

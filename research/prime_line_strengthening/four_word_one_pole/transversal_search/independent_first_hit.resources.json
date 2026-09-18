@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/prime_line_strengthening/four_word_one_pole/transversal_search/independent_first_hit.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5783832079905551,
+  "peak_rss_kib": 11904,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

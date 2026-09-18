@@ -5,7 +5,7 @@ Working draft by Justin Thaler, September 17, 2026.
 [Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
 **Latest verified results (September 17, evening):** the ePrint-style article
-is 197 pages with one-inch margins. Its new Theorem R.5 proves an exact
+is 200 pages with one-inch margins. Its new Theorem R.5 proves an exact
 transition for the complete Dickson cubic-ODE solution family: a linear
 list at agreement `3/8`, but at most `ceil(epsilon^-2)` family members for
 any word at agreement `3/8 + epsilon`. A matching majority construction
@@ -501,3 +501,5 @@ identity. Appendix P includes the proof and the unnormalized two-branch
 Riccati corollary. The condition allows singular agreement coordinates but
 requires nonzero coefficient pivots and separation of the nonlinear terms.
 It is not a general first-order proximity-gap theorem.
+
+Appendix T verifies a second one-pole extension: six distinct polynomials of degree at most 14 each agree with one word on 30 of 60 coordinates over arbitrarily large prime fields. An exact F97 witness has two independent nonsingular lifting certificates. This is a fixed-size construction, not unbounded iteration or a leaderboard improvement. [Proof and certificates](research/prime_line_strengthening/four_word_one_pole/transversal_search/SIX_WORD_LIFT.md).

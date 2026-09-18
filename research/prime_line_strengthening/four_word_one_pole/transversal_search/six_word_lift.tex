@@ -1,0 +1,193 @@
+\section{A second one-pole extension over prime fields}
+\label{app:six-word-one-pole}
+
+The following is a fixed-size positive construction.  It does not assert an
+unbounded list, a superlinear line-exception count, or a benchmark improvement.
+
+\begin{theorem}\label{thm:six-word-one-pole}
+There are a number field $K$, a set $\Omega\subset K$ of sixty distinct
+points, a word $w\colon\Omega\to K$, and six distinct polynomials of degree
+at most fourteen, each agreeing with $w$ on at least thirty points.
+The same statement holds over $\mathbb F_p$ for arbitrarily large primes $p$.
+Thus the code dimension is fifteen, exactly one quarter of the length.
+\end{theorem}
+
+\begin{proof}
+We first construct a five-polynomial word of length twenty-eight together
+with a proper one-pole rational function having fourteen agreements.
+
+\paragraph{Four quadratics and the first rational witness.}
+Choose nonzero parameters $a_1,\ldots,a_4$ with distinct squares and with
+all twelve signed pair products distinct.  Put
+\[
+ H_i(X)=X^2/a_i^2+a_i^2,\qquad
+ \Omega_0=\{\pm a_i a_j:i<j\}.
+\]
+At either signed node for the pair $ij$, give the received word the value
+$a_i^2+a_j^2$.  Exactly $H_i,H_j$ agree there, and every $H_i$ has six
+agreements.  Write $e_j$ for the elementary symmetric functions of the
+four parameters and set
+\begin{align*}
+ D_1(X)&=e_1e_4-e_3X,\\
+ N_1(X)&=e_1X^3+(e_3-e_1e_2)X^2
+                 +(e_2e_3-e_1e_4)X-e_3e_4.
+\end{align*}
+The coefficient identity
+\[
+ N_1-D_1H_i
+ =\frac{\prod_{j\ne i}(a_i+a_j)}{a_i^2}
+       \prod_{j\ne i}(X-a_i a_j)
+\]
+follows by using
+$a_i^4-e_1a_i^3+e_2a_i^2-e_3a_i+e_4=0$.
+Assume $e_3\ne0$ and that
+$\alpha=e_1e_4/e_3$ lies outside $\Omega_0$.
+Then $N_1/D_1$ is proper and agrees at the six positive pair nodes.
+Indeed, a common zero of $N_1,D_1$ would, by the identity, lie among the
+positive incident edges for every vertex, which is impossible.
+
+Choose $c$ outside $\Omega_0\cup\{\alpha\}$ and put $y=T^2+c$.
+On the twenty-six-point core
+\[
+ \mathcal C=\{T:T^2+c\in\Omega_0\cup\{\alpha\}\}
+\]
+use the word
+\[
+ W(T)=(y-\alpha)(a_i^2+a_j^2)\quad(y=\pm a_i a_j),
+ \qquad W(T)=0\quad(y=\alpha).
+\]
+The five polynomials
+\[
+ G_i(T)=(y-\alpha)H_i(y)\quad(1\le i\le4),
+ \qquad G_5(T)=-N_1(y)/e_3
+\]
+have degree at most six.  The first four have fourteen core agreements;
+$G_5$ has twelve, over the six positive pair nodes.  They are distinct,
+since equality with $G_5$ would make the first rational witness polynomial.
+All fibers here have two distinct points.
+
+\paragraph{An exact finite-field certificate for a second rational witness.}
+The following data are in $\mathbb F_{97}$:
+\[
+ (a_1,a_2,a_3,a_4)=(48,1,31,32),\quad
+ \alpha=53,\quad c=0,\quad b=81,
+\]
+\begin{align*}
+ N(T)&=34+54T+93T^2+84T^4+3T^5+56T^6+70T^7,\\
+ G_5(T)&=86+17T^4+93T^6.
+\end{align*}
+The proper function $N(T)/(T-b)$ agrees at the following twelve core
+points.  The first row is $T$, the second is $y=T^2+c$, and the third is
+$W(T)$:
+\[
+\begin{array}{c|rrrrrrrrrrrr}
+ T&76&57&90&79&8&88&93&39&56&68&33&47\\
+ y&53&48&49&33&64&81&16&66&32&65&22&75\\
+ W&0&18&92&78&25&64&54&90&9&78&60&20
+\end{array}
+\]
+These are one pole-fiber point and one point above every old base node
+except the positive edge $a_2a_3=31$.  Direct substitution verifies the
+agreements.  The pole is outside the entire core and $N(81)=48\ne0$.
+Moreover, exactly five displayed points are agreements of $G_5$, and
+\[
+ N(T)-(T-81)G_5(T)
+ =\prod_{t\in\{57,79,88,56,33\}}(T-t)\,
+       (74T^2+2T+8).
+\]
+The remaining quadratic has discriminant $61\ne0$ and roots $24,52$,
+both outside the core and the pole.  Giving these two fresh coordinates
+the values of $G_5$ therefore produces the desired length-twenty-eight
+word over $\mathbb F_{97}$.  To transfer this construction to
+characteristic zero, it remains essential to verify smooth lifting;
+the finite-field example alone would not suffice.
+
+\paragraph{Polynomial equations and a nonsingular lifting certificate.}
+Write
+\[
+ N(T)=E(y)+T O(y),\qquad
+ E(y)=\sum_{j=0}^3 u_jy^j,\quad O(y)=\sum_{j=0}^3 v_jy^j.
+\]
+Let $\mathcal Y$ consist of $\alpha$ and all signed pair products except
+$+a_2a_3$.  For $y=\alpha$ put $w_y=0$; for
+$y=\pm a_i a_j$ put $w_y=(y-\alpha)(a_i^2+a_j^2)$.
+Consider the following thirteen polynomial equations in fifteen variables,
+ordered as $(a_1,\ldots,a_4,\alpha,c,b,u_0,\ldots,u_3,v_0,\ldots,v_3)$:
+\begin{equation}\label{eq:six-word-norm-system}
+ e_3\alpha-e_1e_4=0,\qquad
+ (E(y)+b w_y)^2-(y-c)(O(y)-w_y)^2=0
+       \quad(y\in\mathcal Y).
+\end{equation}
+Their solution at the displayed point is
+\[
+ (48,1,31,32,53,0,81,34,93,84,56,54,0,3,70).
+\]
+The $13\times13$ Jacobian minor on the first thirteen columns is nonzero
+modulo $97$.  Exact modular differentiation and elimination certify rank
+thirteen; the reproducible certificate is
+\texttt{transversal\_search/independent\_lift.py} with its accompanying JSON.
+At all twelve nodes $O(y)-w_y\ne0$, so the selected root is recovered by
+\[
+ T=-\frac{E(y)+b w_y}{O(y)-w_y}.
+\]
+Consequently these norm equations do not introduce a spurious square-root
+choice near the certified point.
+
+There is also an independently checked pointed certificate: use variables
+\[
+ (a_1,\ldots,a_4,\alpha,c,b,N_0,\ldots,N_7,T_0,\ldots,T_{11})
+\]
+and equations $e_3\alpha-e_1e_4=0$, followed, in the table order, by
+\[
+ T_j^2+c-y_j=0,\qquad N(T_j)-(T_j-b)w_{y_j}=0.
+\]
+The minor on columns zero through twenty-four has determinant $21$
+modulo $97$.  Thus the lifting conclusion has a second certificate using
+ordinary polynomial evaluations rather than the norm equations.
+
+Fix $v_2=3,v_3=70$ as integers in
+\eqref{eq:six-word-norm-system}.  Multivariate Hensel lifting gives a
+solution of the remaining thirteen equations in $\mathbb Z_{97}$, with
+invertible Jacobian.  Its coordinates are algebraic over $\mathbb Q$:
+in the field they generate, differentiating the thirteen equations and
+using the invertible Jacobian makes every coordinate differential zero;
+in characteristic zero this forces transcendence degree zero.
+They therefore lie in a number field embedded in $\mathbb Q_{97}$.
+
+All required guards hold at the residue point and hence remain nonzero
+in this lift.  They include distinct nonzero seed parameters and signed
+nodes, $e_3\ne0$, the first pole and critical-value exclusions,
+$O(y)-w_y\ne0$, the new pole being off the whole core, and $N(b)\ne0$.
+The five forced roots of $N-(T-b)G_5$ persist.  Its remaining quadratic
+still has nonzero leading coefficient and discriminant and has no root
+in the core or at $b$: these are polynomial nonvanishing conditions,
+verified by the displayed finite-field factorization.
+Adjoin its two roots and the other core square roots to the number field.
+They supply two distinct fresh coordinates.  Thus the five polynomials
+$G_i$ each have at least fourteen agreements on a twenty-eight-point word,
+and the proper function $N/(T-b)$ also has at least fourteen.
+
+\paragraph{The second pole-clearing extension.}
+Choose a quadratic $\psi(U)=U^2+d$ whose critical value avoids the
+length-twenty-eight domain and $b$, and split its finitely many required
+fibers in a number-field extension.  Use the fifty-six preimages of that
+domain, the two preimages of $b$, and two further fresh points.  The six
+polynomials are
+\[
+ (\psi-b)G_i(\psi)\quad(1\le i\le5),\qquad N(\psi).
+\]
+They have degree at most fourteen.  On the first fifty-six points set
+the received word to $(\psi-b)$ times the preceding word, on the pole
+fiber set it to zero, and on the two fresh points give it the value
+$N(\psi)$.  Every old candidate has at least $28+2$ agreements; the new
+one has at least $28+2$.  The old candidates remain distinct, and equality
+of the new candidate with any old one would make $N/(T-b)$ polynomial,
+contrary to properness.
+
+Finally, all data lie in one number field.  Exclude the finitely many
+primes where denominators, distinctness, or any used nonzero guard fails.
+At every remaining completely splitting prime the data reduce into the
+prime field and preserve the sixty nodes, six distinct polynomials,
+degree bounds, and displayed agreements.  There are arbitrarily large
+such primes, proving the theorem.
+\end{proof}

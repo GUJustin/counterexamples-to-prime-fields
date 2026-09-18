@@ -1,0 +1,527 @@
+[
+  {
+    "p": 97,
+    "a": [
+      48,
+      1,
+      31,
+      32
+    ],
+    "N": [
+      34,
+      54,
+      93,
+      0,
+      84,
+      3,
+      56,
+      70
+    ],
+    "E": [
+      34,
+      93,
+      84,
+      56
+    ],
+    "O": [
+      54,
+      0,
+      3,
+      70
+    ],
+    "G5": [
+      86,
+      0,
+      0,
+      0,
+      17,
+      0,
+      93
+    ],
+    "forced_roots": [
+      57,
+      79,
+      88,
+      56,
+      33
+    ],
+    "residual_quadratic": [
+      8,
+      2,
+      74
+    ],
+    "guards": {
+      "seed_nonzero": true,
+      "distinct_squares": true,
+      "distinct_base": true,
+      "first_pole_off": true,
+      "first_pole_relation": true,
+      "critical_off": true,
+      "new_pole_off": true,
+      "proper": true,
+      "single_roots": true,
+      "quadratic": true,
+      "quad_discriminant": true,
+      "quad_off_pole": true,
+      "quad_off_core": true
+    },
+    "all_guards": true,
+    "jacobian_rank": 13,
+    "pivot_columns": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "free_columns": [
+      13,
+      14
+    ],
+    "variables": [
+      48,
+      1,
+      31,
+      32,
+      53,
+      0,
+      81,
+      34,
+      93,
+      84,
+      56,
+      54,
+      0,
+      3,
+      70
+    ]
+  },
+  {
+    "p": 97,
+    "a": [
+      26,
+      84,
+      56,
+      30
+    ],
+    "N": [
+      95,
+      1,
+      76,
+      0,
+      47,
+      3,
+      65,
+      9
+    ],
+    "E": [
+      95,
+      76,
+      47,
+      65
+    ],
+    "O": [
+      1,
+      0,
+      3,
+      9
+    ],
+    "G5": [
+      95,
+      0,
+      0,
+      0,
+      17,
+      0,
+      66
+    ],
+    "forced_roots": [
+      70,
+      96,
+      40,
+      80,
+      15
+    ],
+    "residual_quadratic": [
+      8,
+      82,
+      40
+    ],
+    "guards": {
+      "seed_nonzero": true,
+      "distinct_squares": true,
+      "distinct_base": true,
+      "first_pole_off": true,
+      "first_pole_relation": true,
+      "critical_off": true,
+      "new_pole_off": true,
+      "proper": true,
+      "single_roots": true,
+      "quadratic": true,
+      "quad_discriminant": true,
+      "quad_off_pole": true,
+      "quad_off_core": true
+    },
+    "all_guards": true,
+    "jacobian_rank": 13,
+    "pivot_columns": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "free_columns": [
+      13,
+      14
+    ],
+    "variables": [
+      26,
+      84,
+      56,
+      30,
+      35,
+      0,
+      28,
+      95,
+      76,
+      47,
+      65,
+      1,
+      0,
+      3,
+      9
+    ]
+  },
+  {
+    "p": 97,
+    "a": [
+      10,
+      19,
+      29,
+      92
+    ],
+    "N": [
+      53,
+      1,
+      74,
+      0,
+      64,
+      3,
+      25,
+      88
+    ],
+    "E": [
+      53,
+      74,
+      64,
+      25
+    ],
+    "O": [
+      1,
+      0,
+      3,
+      88
+    ],
+    "G5": [
+      95,
+      0,
+      0,
+      0,
+      17,
+      0,
+      31
+    ],
+    "forced_roots": [
+      75,
+      85,
+      39,
+      14,
+      7
+    ],
+    "residual_quadratic": [
+      8,
+      39,
+      57
+    ],
+    "guards": {
+      "seed_nonzero": true,
+      "distinct_squares": true,
+      "distinct_base": true,
+      "first_pole_off": true,
+      "first_pole_relation": true,
+      "critical_off": true,
+      "new_pole_off": true,
+      "proper": true,
+      "single_roots": true,
+      "quadratic": true,
+      "quad_discriminant": true,
+      "quad_off_pole": true,
+      "quad_off_core": true
+    },
+    "all_guards": true,
+    "jacobian_rank": 13,
+    "pivot_columns": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "free_columns": [
+      13,
+      14
+    ],
+    "variables": [
+      10,
+      19,
+      29,
+      92,
+      62,
+      0,
+      34,
+      53,
+      74,
+      64,
+      25,
+      1,
+      0,
+      3,
+      88
+    ]
+  },
+  {
+    "p": 97,
+    "a": [
+      44,
+      64,
+      65,
+      11
+    ],
+    "N": [
+      42,
+      43,
+      6,
+      0,
+      56,
+      3,
+      84,
+      12
+    ],
+    "E": [
+      42,
+      6,
+      56,
+      84
+    ],
+    "O": [
+      43,
+      0,
+      3,
+      12
+    ],
+    "G5": [
+      11,
+      0,
+      0,
+      0,
+      17,
+      0,
+      88
+    ],
+    "forced_roots": [
+      85,
+      22,
+      38,
+      5,
+      91
+    ],
+    "residual_quadratic": [
+      8,
+      3,
+      21
+    ],
+    "guards": {
+      "seed_nonzero": true,
+      "distinct_squares": true,
+      "distinct_base": true,
+      "first_pole_off": true,
+      "first_pole_relation": true,
+      "critical_off": true,
+      "new_pole_off": true,
+      "proper": true,
+      "single_roots": true,
+      "quadratic": true,
+      "quad_discriminant": true,
+      "quad_off_pole": true,
+      "quad_off_core": true
+    },
+    "all_guards": true,
+    "jacobian_rank": 13,
+    "pivot_columns": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "free_columns": [
+      13,
+      14
+    ],
+    "variables": [
+      44,
+      64,
+      65,
+      11,
+      2,
+      0,
+      54,
+      42,
+      6,
+      56,
+      84,
+      43,
+      0,
+      3,
+      12
+    ]
+  },
+  {
+    "p": 113,
+    "a": [
+      73,
+      66,
+      42,
+      74
+    ],
+    "N": [
+      69,
+      67,
+      31,
+      9,
+      62,
+      92,
+      3,
+      102
+    ],
+    "E": [
+      69,
+      31,
+      62,
+      3
+    ],
+    "O": [
+      67,
+      9,
+      92,
+      102
+    ],
+    "G5": [
+      36,
+      0,
+      28,
+      0,
+      79,
+      0,
+      28
+    ],
+    "forced_roots": [
+      33,
+      69,
+      54,
+      88,
+      82
+    ],
+    "residual_quadratic": [
+      53,
+      60,
+      74
+    ],
+    "guards": {
+      "seed_nonzero": true,
+      "distinct_squares": true,
+      "distinct_base": true,
+      "first_pole_off": true,
+      "first_pole_relation": true,
+      "critical_off": true,
+      "new_pole_off": true,
+      "proper": true,
+      "single_roots": true,
+      "quadratic": true,
+      "quad_discriminant": true,
+      "quad_off_pole": true,
+      "quad_off_core": true
+    },
+    "all_guards": true,
+    "jacobian_rank": 13,
+    "pivot_columns": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "free_columns": [
+      13,
+      14
+    ],
+    "variables": [
+      73,
+      66,
+      42,
+      74,
+      9,
+      0,
+      105,
+      69,
+      31,
+      62,
+      3,
+      67,
+      9,
+      92,
+      102
+    ]
+  }
+]

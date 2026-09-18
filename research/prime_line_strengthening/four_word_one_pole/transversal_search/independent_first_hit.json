@@ -1,0 +1,77 @@
+{
+  "p": 97,
+  "N_coefficients_ascending": [
+    34,
+    54,
+    93,
+    0,
+    84,
+    3,
+    56,
+    70
+  ],
+  "G5_coefficients_ascending": [
+    86,
+    0,
+    0,
+    0,
+    17,
+    0,
+    93
+  ],
+  "all_core_matches": [
+    8,
+    33,
+    39,
+    47,
+    56,
+    57,
+    68,
+    79,
+    88,
+    90,
+    93,
+    76
+  ],
+  "number_core_matches": 12,
+  "selected_matches_verified": 12,
+  "proper_value_N_at_pole": 48,
+  "pole_off_26_core": true,
+  "residual_D_coefficients_ascending": [
+    16,
+    65,
+    93,
+    0,
+    6,
+    83,
+    23,
+    74
+  ],
+  "core_roots_D": [
+    33,
+    56,
+    57,
+    79,
+    88
+  ],
+  "remaining_quadratic_ascending": [
+    8,
+    2,
+    74
+  ],
+  "remaining_discriminant": 61,
+  "remaining_roots_in_Fp": [
+    24,
+    52
+  ],
+  "remaining_two_distinct_roots_over_closure": true,
+  "remaining_roots_off_core_and_pole": true,
+  "old_four_core_agreements": [
+    14,
+    14,
+    14,
+    14
+  ],
+  "G5_core_agreements": 12,
+  "scope": "Verifies a characteristic97 finite extension witness; no characteristic-zero lift or Jacobian claim."
+}

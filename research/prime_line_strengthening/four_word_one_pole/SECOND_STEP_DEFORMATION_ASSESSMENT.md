@@ -67,3 +67,7 @@ and phi(T)=T² has critical value equal to the first pole. Consequently the requ
 ## Assessment
 
 The proven result in this note is the fresh-node selection lemma and the rational degree/pole calculation. The promising unresolved target is a proper twelve-match transversal witness in the displayed determinantal family, or a deformation of the squared-value identity that adds six matches without forcing alpha=0. This differs from previously excluded old-polynomial-part correction patterns. No new growing bank or second valid extension is claimed.
+
+## Subsequent scope correction: the all-twelve-base transversal cannot finish
+
+The root agent identified a decisive residual-degree obstruction after this note was written. Such a transversal shares six selected core matches with G5. The nonzero polynomial N−(T−b)G5 has degree at most seven, leaving at most one fresh root, whereas the proposed completion needs two. Therefore its guard5 is impossible. The displayed parity equations remain correct interpolation equations, but are not a viable complete-extension target. The revised search in `transversal_search/` instead selects one first-pole fiber point and eleven old base fibers, omitting one of G5's positive-edge fibers; its G5 overlap is five and it leaves a quadratic residual for the two fresh points.
