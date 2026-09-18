@@ -1,0 +1,110 @@
+{
+  "status": "PASS_EXACT_INTEGER",
+  "scope": "Fixed domain mu_262144 in the KoalaBear prime field, native alphabet F_(p^6), existential full-degree pole. This is the prior quotient/discriminator mechanism with overlap and Frobenius-orbit root-count refinements.",
+  "prime": 2130706433,
+  "alphabet_size": 93571093019388561295270373781649880353786165192103559169,
+  "full_degree_six_poles": 93571093019388561295270373771976665112346553114349797376,
+  "n": 262144,
+  "dimension": 131072,
+  "required_agreement": 139782,
+  "required_label_count": 274980728111395088,
+  "cases": [
+    {
+      "fiber_size": 1024,
+      "nonreserved_tags": 255,
+      "subset_size": 129,
+      "core_size": 1023,
+      "subset_count": 2839611126271508546268984656777172227686073202135060380392524976909278609885,
+      "ordinary_pair_root_sum": 178160542781246530320617590289325405767645039846897376572156890610084503841374,
+      "full_degree_orbit_pair_root_sum": 171061315754419209954424553754409623637364035897324663751425155441421440510600,
+      "raw_image_bound": {
+        "numerator": 7924884181437665348654165204231667544271755839094104228485077992396739245317071172015202594115633474273177449200863880329297920,
+        "denominator": 5102043538368504233909512194208691606975044925766423300421662550540914767
+      },
+      "distinct_nonzero_labels_at_least": 1553276470857367347050498710657094691569048149670139791,
+      "all_subset_labels_distinct_certified": false,
+      "nonendpoint_affine_mixture_labels_at_least": 1553276470857367347050498710657094691569048149670139790,
+      "exact_source_and_common_agreement": 132095,
+      "exact_nearby_agreement": 133119,
+      "capacity_margin_numerator": 2047,
+      "source_and_common_gap_numerator": 1024,
+      "enough_labels_at_2_to_minus_128": true,
+      "reaches_required_agreement": false
+    },
+    {
+      "fiber_size": 2048,
+      "nonreserved_tags": 127,
+      "subset_size": 65,
+      "core_size": 2047,
+      "subset_count": 11607093851088224773588784845476728925,
+      "ordinary_pair_root_sum": 356712498431475128278086828755084039326,
+      "full_degree_orbit_pair_root_sum": 327959814121272925983136495709514991884,
+      "raw_image_bound": {
+        "numerator": 18101474307082488034769333879246052718064642918557740435272733207298404747757815794950471680,
+        "denominator": 1559518216989809360387169798220826518258050813731079821
+      },
+      "distinct_nonzero_labels_at_least": 11607093851088224732906772708434593182,
+      "all_subset_labels_distinct_certified": false,
+      "nonendpoint_affine_mixture_labels_at_least": 11607093851088224732906772708434593181,
+      "exact_source_and_common_agreement": 133119,
+      "exact_nearby_agreement": 135167,
+      "capacity_margin_numerator": 4095,
+      "source_and_common_gap_numerator": 2048,
+      "enough_labels_at_2_to_minus_128": true,
+      "reaches_required_agreement": false
+    },
+    {
+      "fiber_size": 4096,
+      "nonreserved_tags": 63,
+      "subset_size": 33,
+      "core_size": 4095,
+      "subset_count": 860778005594247069,
+      "ordinary_pair_root_sum": 12665733510886778302,
+      "full_degree_orbit_pair_root_sum": 10471470283220439528,
+      "raw_image_bound": {
+        "numerator": 1118665817090320276131403624901217526090144089413931254971148664047665152,
+        "denominator": 1299598514158174462434310746833009237816916991632919957
+      },
+      "distinct_nonzero_labels_at_least": 860778005594247069,
+      "all_subset_labels_distinct_certified": true,
+      "nonendpoint_affine_mixture_labels_at_least": 860778005594247068,
+      "exact_source_and_common_agreement": 135167,
+      "exact_nearby_agreement": 139263,
+      "capacity_margin_numerator": 8191,
+      "source_and_common_gap_numerator": 4096,
+      "enough_labels_at_2_to_minus_128": true,
+      "reaches_required_agreement": false
+    },
+    {
+      "fiber_size": 8192,
+      "nonreserved_tags": 31,
+      "subset_size": 17,
+      "core_size": 8191,
+      "subset_count": 265182525,
+      "ordinary_pair_root_sum": 1770734926,
+      "full_degree_orbit_pair_root_sum": 1278123036,
+      "raw_image_bound": {
+        "numerator": 2067784892824277720033089022878878857964288969159157750117171200,
+        "denominator": 7797591084949046774605864480998055426028879426302326701
+      },
+      "distinct_nonzero_labels_at_least": 265182525,
+      "all_subset_labels_distinct_certified": true,
+      "nonendpoint_affine_mixture_labels_at_least": 265182524,
+      "exact_source_and_common_agreement": 139263,
+      "exact_nearby_agreement": 147455,
+      "capacity_margin_numerator": 16383,
+      "source_and_common_gap_numerator": 8192,
+      "enough_labels_at_2_to_minus_128": false,
+      "reaches_required_agreement": true
+    }
+  ],
+  "one_pole_counting_frontier": {
+    "largest_possible_fiber_with_required_labels": 4096,
+    "next_fiber": 8192,
+    "number_of_fibers_even_without_reserve": 32,
+    "max_fixed_cardinality_bank_even_without_reserve": 601080390,
+    "reserved_fiber_max_agreement": 139263,
+    "agreement_shortfall": 519,
+    "qualification": "Fixed-cardinality one-pole full-fiber compiler only, not a universal coding bound"
+  }
+}

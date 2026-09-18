@@ -1,0 +1,79 @@
+% Finite instantiation of the prior quotient/discriminator mechanism.
+\subsection{A prescribed-domain discriminator calculation}
+\label{subsec:fixed-ntt-discriminator}
+
+The selected-domain results do not imply that the prescribed NTT domain
+has no lower-threshold proximity-gap example.  The quotient and
+discriminator argument of~\cite[Appendix~A, Lemma~3 and
+Proposition~4]{kkh} supplies such an example directly.  The following
+finite calculation uses the same mechanism, refining its collision
+bound by cancelling shared roots.
+
+Let $p=2130706433$, $E=\mathbb F_{p^6}$, and
+$D=\mu_{262144}\subset\mathbb F_p^*$.  The number of elements of
+$E$ having degree exactly six over $\mathbb F_p$ is
+\[
+ Q=p^6-p^3-p^2+p.
+\]
+For a power-of-two fiber size $m\mid131072$, with $r\le s$ below, put
+\[
+ s=262144/m-1,\quad r=131072/m+1,\quad w=m-1,
+ \quad G=\mu_{s+1}\setminus\{1\},\quad L=\binom sr.
+\]
+Write $V_S(Z)=\prod_{a\in S}(Z-a)$ for an $r$-subset $S$ of $G$.
+If $|S\setminus T|=|T\setminus S|=u>0$, cancelling their common
+factors leaves a nonzero difference of monic degree-$u$ polynomials,
+of degree at most $u-1$.  A full-degree pole $b$ cannot be a shared
+base-field root.  Moreover, its Frobenius orbit has six elements.
+Thus $V_S(b)=V_T(b)$ holds for at most
+$6\lfloor(u-1)/6\rfloor$ full-degree poles.  Define
+\[
+ W=\sum_{u\ge1}\binom ru\binom{s-r}u
+                      6\left\lfloor\frac{u-1}{6}\right\rfloor.
+\]
+Averaging the ordered collision energy over the $Q$ eligible poles
+gives a pole with energy at most $L+LW/Q$.  Cauchy--Schwarz then
+gives at least
+\[
+ \left\lceil\frac{LQ}{Q+W}\right\rceil
+\]
+distinct nonzero values $V_S(b)$.  If $LW<Q$, some pole has no
+off-diagonal collisions, so all $L$ labels are distinct.
+
+Set $Y=X^m$ and let $R$ be the monic locator of any $w$ points in
+the reserved fiber $Y^{-1}(1)$.  The one-pole compiler
+\[
+ f=RY^{r-1},\qquad g=\frac R{Y-b},\qquad
+ h_S=R\frac{(Y-b)Y^{r-1}+V_S(b)-V_S(Y)}{Y-b}
+\]
+has witnesses of degree at most $131071$ and residual
+$RV_S(Y)/(Y-b)$.  Its exact source and common agreement is
+$131072+m-1$, and each represented label has exact agreement
+$131072+2m-1$.  These equalities follow by the root-count and
+interpolation argument in the one-pole compiler.  The domain remains
+the prescribed subgroup $D$ throughout; only the pole is selected.
+
+For $m=1024$, the image bound is
+\[
+ 1553276470857367347050498710657094691569048149670139791
+\]
+at exact nearby agreement $133119$.  More relevant to the desired
+label count, $m=4096$ gives $s=63$, $r=33$, and $LW<Q$, hence
+\[
+ L=\binom{63}{33}=860778005594247069
+\]
+distinct labels, exact source/common agreement $135167$, and exact
+nearby agreement $139263$.  At most one label is lost on converting
+to non-endpoint affine mixtures.  The remaining count exceeds
+$\lceil p^6/2^{128}\rceil=274980728111395088$.
+The agreement is nevertheless $519$ short of $139782$.
+
+This shortfall cannot be removed inside the fixed-cardinality one-pole
+full-fiber compiler merely by increasing $m$: at $m\ge8192$ there
+are at most $32$ fibers even without reserving one, and hence at most
+$\binom{32}{16}=601080390$ subsets of any fixed cardinality.
+This is far below the required label count.  The calculation is a
+finite prescribed-domain application of the prior mechanism, not a
+benchmark bound or a new asymptotic construction.
+Its integer receipt is
+\nolinkurl{research/norm_quotient_coverage/verify_fixed_ntt_discriminator.py}.
