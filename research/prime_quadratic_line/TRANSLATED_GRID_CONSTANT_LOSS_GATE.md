@@ -154,3 +154,43 @@ constant fraction of capacity margin. It does not improve the large
 exceptional-population theorem or supply Omega(p) labels. The useful
 gate is therefore a tradeoff, not an impossibility of any constant
 relative gap.
+
+## 4. A one-grid ceiling at a constant fraction of prime labels
+
+Suppose a construction uses one translated M-by-M grid as above,
+possibly with arbitrary deletions, and p>2(M-1)². Let B distinct labels
+each have a bank witness with at least d>=2 retained grid matches.
+The exact bound (1) implies
+
+    B <= 4M²/d * floor((M-1)/(d-1))²
+      <= 16M⁴/d³,                                   (3)
+
+since d-1>=d/2. If M<=C*sqrt(n), a fixed positive fraction B>=c*p
+of the prime-field labels qualifies, and n distinct evaluation points
+lie in Fp, then p>=n and
+
+    d³ <= 16 C⁴ n²/(c*p) <= (16 C⁴/c)*n.
+
+Thus d=O(n^(1/3)). Allowing one exceptional zero-polynomial label
+changes B to B-1 and leaves this conclusion unchanged. This argument
+does not require a Sidon bank, uniform core agreement, or prime-ratio
+parameters: the integer height restriction follows from grid fibers
+themselves. A source with smaller core agreement must provide even
+more fresh matches to reach a fixed threshold, so asymmetric filler
+banks do not invalidate the necessary condition.
+
+The asymmetric two-biclique construction has M=Theta(sqrt(n)),
+p=Theta(n(log n)^4), B=Omega(p), and
+
+    d=Theta(n^(1/3)/(log n)^2).
+
+It therefore attains the maximal polynomial exponent permitted by
+(3), up to logarithmic factors. Inserting its actual p into (3) gives
+the somewhat sharper upper bound
+
+    d=O(n^(1/3)/(log n)^(4/3)),
+
+leaving a factor (log n)^(2/3) between this grid-counting ceiling and
+the achieved d. This is a scope-specific comparison, not an optimality
+claim for Reed--Solomon codes, arbitrary fresh coordinate sets,
+multiple unrelated grids, or nonproportional received-word values.

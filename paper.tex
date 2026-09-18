@@ -56,13 +56,13 @@ fixed gap $1/8$, full-length prime-field codes have lists of size $n/2$.
 Integer-interval domains give
 $\log L=\Omega_\rho(\eta^{-2}/\log(1/\eta))$ strictly below Elias,
 ruling out every uniform $\exp(O_\rho(1/\eta))$ bound.
-At message dimension three, a regular quadratic intersection bank and a
-translated grid give a positive constant fraction of singleton exceptional
-challenges over primes $p=\Theta(n^{5/4}\log n)$, with source separation
-$\Theta(n^{1/4}/\log n)$ coordinates, in the regime of the
+At message dimension three, an asymmetric quadratic intersection bank
+and a translated grid give a positive constant fraction of singleton
+exceptional challenges over primes $p=\Theta(n(\log n)^4)$, with source
+separation $\Theta(n^{1/3}/(\log n)^2)$ coordinates, in the regime of the
 Dao--Kominers--Thaler bounds. The distance below capacity is
 $\Theta(n^{-1/2})$ and the proximity loss is
-$\Theta(n^{-3/4}/\log n)$. This is a vanishing-rate result, not
+$\Theta(n^{-2/3}/(\log n)^2)$. This is a vanishing-rate result, not
 fixed-rate or quadratic-count tightness.
 
 We distinguish fixed-gap from shrinking-gap claims, prime from
@@ -789,6 +789,26 @@ vanishing fraction of the capacity margin. The absolute exceptional-count
 exponent is smaller than in the preceding construction; this is a new
 tradeoff between these proved constructions, not superiority in every
 parameter or an improvement over the known fixed-rate results.
+
+Using two unequal components separates the task of creating the core
+from that of supplying rich grid witnesses
+(Theorem~\ref{thm:asymmetric-collision-bank}). The smaller component
+supplies all nearby witnesses; the larger component supplies core
+intersections but stays below the threshold at every challenge.
+This gives a constant fraction of singleton exceptional labels with
+$p=\Theta(n(\log n)^4)$ and
+$d=\Theta(n^{1/3}/(\log n)^2)$. The list at the relaxed source threshold
+has size at most $R+1$, where $R=\Theta(n^{1/3}(\log n)^2)$.
+The capacity margin remains $\Theta(n^{-1/2})$, and the proximity loss
+is $\Theta(n^{-2/3}/(\log n)^2)$; their ratio still tends to zero.
+This improves the separation and decreases the required alphabet size,
+while giving a smaller absolute exceptional count than the preceding
+polynomial-count constructions. Within one translated grid with
+$M=O(\sqrt n)$ and a constant fraction of prime-field labels, the gap
+must satisfy $d=O(n^{1/3})$
+(Proposition~\ref{prop:translated-grid-gap-ceiling}); the asymmetric
+construction attains this exponent up to logarithms. This ceiling applies
+to that grid mechanism, not to arbitrary Reed--Solomon counterexamples.
 
 A complementary construction allows the message dimension to grow
 and gives a polynomial source separation. Theorem~\ref{thm:correlated-cover-line} constructs, for every

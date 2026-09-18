@@ -1,0 +1,38 @@
+{
+  "status": "PASS: exact transform arithmetic and full F7 negative control",
+  "seed": [
+    1405,
+    3,
+    52,
+    53,
+    486,
+    10125000000029
+  ],
+  "seed_loss_capacity_ratio": "1/50",
+  "composition_degree": 64,
+  "composition_n_k_A_T": [
+    89920,
+    129,
+    3328,
+    3392
+  ],
+  "composition_loss_capacity_ratio": "64/3263",
+  "ideal_half_rate_padding_roots": 1399,
+  "ideal_half_rate_n_k_A_T": [
+    2804,
+    1402,
+    1451,
+    1452
+  ],
+  "ideal_half_rate_loss_capacity_ratio": "1/50",
+  "half_rate_agreement_below_two_thirds": true,
+  "DKT_half_rate_curve_above_two_thirds": true,
+  "quadratic_extension_block_limit": 50,
+  "required_blocks_for_half_rate": 28,
+  "resulting_extension_degree": 268435456,
+  "F7_root_padding_negative_control": {
+    "old_max": 1,
+    "new_max": 3
+  },
+  "scope": "No new construction or finite fixed-rate benchmark certificate."
+}

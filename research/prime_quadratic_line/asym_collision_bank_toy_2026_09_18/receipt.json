@@ -1,0 +1,211 @@
+{
+  "status": "PASS: exact asymmetric K2,2 plus K4,4 collision-bank mechanism check",
+  "scope": "Toy d=1 override. H,K,t,s and p do not certify the asymptotic parameter prescription, field window, onset, or constant exceptional fraction.",
+  "p": 10125000000029,
+  "H": 600,
+  "K": 1500,
+  "primality": {
+    "method": "trial division by every prime through isqrt(p)",
+    "trial_prime_count": 228976,
+    "isqrt_p": 3181980
+  },
+  "components": [
+    {
+      "id": 0,
+      "width": 600,
+      "size": 2,
+      "candidate_prime_count": 47,
+      "quartic_class_sizes": {
+        "1": 10,
+        "1167152939837": 16,
+        "8957847060192": 14,
+        "10125000000028": 7
+      },
+      "chosen_quartic_class": 1167152939837,
+      "reference_prime": 307,
+      "numerator_primes": [
+        307,
+        313
+      ],
+      "denominator_primes": [
+        331,
+        349
+      ]
+    },
+    {
+      "id": 1,
+      "width": 1500,
+      "size": 4,
+      "candidate_prime_count": 107,
+      "quartic_class_sizes": {
+        "1": 25,
+        "1167152939837": 28,
+        "8957847060192": 27,
+        "10125000000028": 27
+      },
+      "chosen_quartic_class": 1167152939837,
+      "reference_prime": 757,
+      "numerator_primes": [
+        757,
+        809,
+        823,
+        881
+      ],
+      "denominator_primes": [
+        919,
+        937,
+        941,
+        953
+      ]
+    }
+  ],
+  "rich_bank_count": 4,
+  "filler_bank_count": 16,
+  "bank_count": 20,
+  "distinct_unordered_products_including_repetitions": 173,
+  "distinct_pair_product_multiplicities": {
+    "1": 116,
+    "2": 37
+  },
+  "core_nodes": 306,
+  "core_agreement_histogram": {
+    "37": 4,
+    "29": 16
+  },
+  "lost_core_coordinates_histogram": {
+    "9": 16,
+    "1": 4
+  },
+  "M": 2,
+  "grid_retained": 2,
+  "grid_deletions": {
+    "nonsquare": 2
+  },
+  "grid_affine_identities_checked": 40,
+  "screened_rich_raw_interval_pairs": 2604,
+  "rich_raw_label_union_size": 2604,
+  "rich_raw_cross_bank_collision_pairs": 0,
+  "c0": 1,
+  "endpoint_labels": [
+    0,
+    1
+  ],
+  "endpoint_bank_profiles": [
+    [
+      37,
+      37
+    ],
+    [
+      37,
+      37
+    ],
+    [
+      37,
+      37
+    ],
+    [
+      37,
+      37
+    ],
+    [
+      29,
+      29
+    ],
+    [
+      29,
+      29
+    ],
+    [
+      29,
+      29
+    ],
+    [
+      29,
+      29
+    ],
+    [
+      29,
+      29
+    ],
+    [
+      29,
+      29
+    ],
+    [
+      29,
+      29
+    ],
+    [
+      29,
+      29
+    ],
+    [
+      29,
+      29
+    ],
+    [
+      29,
+      29
+    ],
+    [
+      29,
+      29
+    ],
+    [
+      29,
+      29
+    ],
+    [
+      29,
+      29
+    ],
+    [
+      29,
+      29
+    ],
+    [
+      29,
+      29
+    ],
+    [
+      29,
+      29
+    ]
+  ],
+  "exceptional_label": 10125000000028,
+  "exceptional_zero_polynomial_agreement": 2,
+  "toy_d": 1,
+  "asymptotic_formula_d": 0,
+  "domain_size": 723,
+  "code_dimension": 3,
+  "threshold": 38,
+  "neutral_nodes": 415,
+  "neutral_bank_roots_skipped": 0,
+  "maximum_filler_agreement_any_label": 30,
+  "singleton_threshold_label_count": 8,
+  "complete_line_profile": {
+    "labels_at_exact_agreement_38": 8,
+    "all_other_labels_exact_agreement": 37,
+    "relaxed_threshold_37_list_size_everywhere": 4
+  },
+  "nonbank_bound_away_from_zero_exception": 27,
+  "nonzero_direction_bound": 6,
+  "zero_direction_nonbank_bound": 23,
+  "exact_endpoint_agreements": [
+    37,
+    37
+  ],
+  "exact_common_agreement": 37,
+  "johnson_integer_check": {
+    "T_squared": 1444,
+    "two_n": 1446
+  },
+  "first_order_integer_upper_bound": {
+    "sqrt_term_less_than": "1647/50",
+    "fourth_root_term_less_than": "203/50",
+    "curve_agreement_less_than": 37,
+    "source_agreement": 37
+  },
+  "fixture_sha256": "375afd4e550b31fa3e39b794696e11dea5638d1932a376db4b4501235312c9f7",
+  "elapsed_seconds": 0.12367270901449956
+}

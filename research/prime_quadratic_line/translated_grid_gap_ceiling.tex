@@ -1,0 +1,59 @@
+% Scope: bank-witnessed labels from one translated integer grid only.
+\begin{proposition}[A gap ceiling for one translated grid]
+\label{prop:translated-grid-gap-ceiling}
+Let $p$ be an odd prime, $M\ge2$, and $p>2(M-1)^2$.
+Let $\mathcal X\subseteq\{1,\ldots,M\}^2$, let
+$\Theta\subseteq\mathbb F_p^*$, and for each $\theta\in\Theta$
+fix $c_\theta\in\mathbb F_p$.  Assign to $(u,v)\in\mathcal X$
+the bank label
+\[
+ \ell_\theta(u,v)=\theta u+\theta^{-1}v+c_\theta.
+\]
+If $B$ distinct labels each have some bank parameter whose fiber
+contains at least $d\ge2$ points of $\mathcal X$, then
+\[
+ B\le \frac{4M^2}{d}
+       \left\lfloor\frac{M-1}{d-1}\right\rfloor^2
+   \le \frac{16M^4}{d^3}.
+\]
+Consequently, for $M=O(\sqrt n)$ and $B=\Omega(p)$ with $p\ge n$,
+one necessarily has $d=O(n^{1/3})$.
+\end{proposition}
+\begin{proof}
+Suppose a fiber for $\theta$ contains at least $d$ points.
+Every difference vector $(h,k)$ in that fiber satisfies
+$\theta^2h+k=0\pmod p$.  The determinant of any two such
+vectors is divisible by $p$ and has absolute value at most
+$2(M-1)^2<p$, so it vanishes as an integer.  Thus the fiber
+lies on one integer line with a primitive direction $(b,-a)$,
+where $b>0$, $a\ne0$, and $\theta^2=a/b\pmod p$.
+The integer parameters of its distinct points span at least $d-1$.
+The coordinate widths are at most $M-1$, hence
+\[
+ 0<|a|\le K,\qquad 1\le b\le K,
+ \qquad K=\left\lfloor\frac{M-1}{d-1}\right\rfloor.
+\]
+There are at most $2K^2$ such signed ratios and at most two
+square roots $\theta$ per ratio.  At most $4K^2$ bank parameters
+can therefore have a qualifying fiber.  For each parameter the
+fibers partition $\mathcal X$, so at most $M^2/d$ labels qualify.
+This proves the first bound.  The second follows from
+$d-1\ge d/2$.
+
+For explicit constants, if $M\le C\sqrt n$ and $B\ge cp$,
+then $d^3\le16C^4n^2/(cp)\le(16C^4/c)n$.
+\end{proof}
+
+Translations of the grid are absorbed into $c_\theta$, and arbitrary
+deletions of grid points do not weaken the bound.  In the preceding
+construction, a threshold-$A+d$ bank witness has at least $d$ grid
+matches because its core agreement is at most $A$ and its neutral
+padding agreement is zero.  Thus the proposition applies to its
+successful bank-witnessed labels.  Its achieved
+$d=\Theta(n^{1/3}/(\log n)^2)$ has the largest polynomial exponent
+allowed by this one-grid bound.  At its actual field size
+$p=\Theta(n(\log n)^4)$ the bound is
+$d=O(n^{1/3}/(\log n)^{4/3})$.
+This is a bound for the specified grid and bank mechanism; it does
+not restrict arbitrary received words, other fresh-coordinate sets,
+or labels witnessed only by polynomials outside the bank.
