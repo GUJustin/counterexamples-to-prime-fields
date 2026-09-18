@@ -1,6 +1,6 @@
 # Current audited position after restoring the full second-jet framework
 
-The main paper is now the 202-page ePrint-style draft with Theorems R.7–R.9. No second-jet leaderboard improvement is claimed.
+The main paper is now the 207-page ePrint-style draft with Theorems R.7–R.9. No second-jet leaderboard improvement is claimed.
 
 1. The local curvature rank saving and its graded challenge count are mathematically valid, independently checked, and already contained in the restored exact SecondJetCounts framework. They are rediscovered specializations, not new rank theorems. The matched comparison 31890 versus5515 is valid source arithmetic.
 2. The existing relaxed second-jet source and routing framework accepts broader profiles after target-parameter changes. Four checked profiles produce positive source dimensions and challenge caps below3261. The source-existence obstruction is therefore resolved for these profiles.
@@ -58,3 +58,26 @@ certified, not yet a proved universal max7 theorem.
 User has additionally authorized productive Vast.ai rentals. CLI setup and
 authentication checked; no rental launched for this project yet because
 current exact jobs finish in seconds. Other projects' instances are untouched.
+
+
+Further verified strengthening: AppendixU now uses compact Paley identities
+over Q(zeta7), avoiding the large coefficient table. It gives m1 for every
+prime p=1mod7; a fourteen-sign Weil bound gives m2 for all such p>10^10.
+AppendixV proves the GLOBAL maximum seven for cubics on any14-point domain
+in characteristic0 and all sufficientlylargecharacteristics. Pair counting
+reduces8candidates to eight incidence types; deletion reaches one of four
+Fano types, three are impossible and the last is rigid. The 380-node exact
+rational identity DAG is independently verified. Its large intermediate
+denominators prevent claiming every odd characteristic; characteristic3
+indeed admits eight candidates in an extension field. This upper theorem
+is NOT a global max7 at the quarter-rate n28,k7 parameters.
+
+Productive remote work launched with explicit user authorization: Vast.ai
+instance51382288, labelproximity-cyclic-20260918-bounded1h, quote$0.055185/hour.
+Local watchdog PID30499 destroys it at1789706327 Unix (onehour aftercreation).
+State/connection/watchdoglog are under tmp/proximity_vast_*. No credentials
+were sent to the rental; only public search code and manifests. First177job
+batchcompleted: q7smoke positive; no new hits; sixq23jobs timedout and must
+NOT be called exhaustive. Exact q11,19,23Paley andq15Singer algebraicgcd
+checks independently exclude those specified ansatzes. More general cyclic
+supports and other mechanisms remain open.

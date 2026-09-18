@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/prime_line_strengthening/seven_bank_symmetry/actual_symmetry.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5678402920020744,
+  "peak_rss_kib": 2656,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

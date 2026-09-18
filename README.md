@@ -5,11 +5,15 @@ Working draft by Justin Thaler, September 17, 2026.
 [Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
 **Latest verified results (September 17, evening):** the ePrint-style article
-is 202 pages with one-inch margins. New Theorem U.1 gives an exact
+is 207 pages with one-inch margins. New Theorem U.1 gives an exact
 seven-member nearest-codeword list at quarter rate: length28, dimension7,
 and fourteen agreements per candidate, over arbitrarily large prime fields.
-Its explicit cubic-number-field construction and complete-list proof have
-independent arithmetic audits. Polynomial pullback preserves exact list size
+Two short cyclotomic identities give the construction; its complete-list proof
+has independent arithmetic audits. The quarter-rate example works for every
+prime p>10^10 with p=1 modulo7. New Theorem V.1 proves the matching universal
+maximum seven for cubics on any fourteen-point domain in characteristic zero
+and in all sufficiently large characteristics. This upper theorem does not
+assert a universal maximum seven for length28, dimension7. Polynomial pullback preserves exact list size
 seven at length14m and degree bound3m. This strengthens the earlier six-word
 construction, but does not yet give growing lists or a better.codes improvement.
 

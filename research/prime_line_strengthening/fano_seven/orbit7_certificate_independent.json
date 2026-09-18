@@ -1,0 +1,14 @@
+{
+  "verdict": "PASS",
+  "arithmetic": "independent sparse dictionaries over fractions.Fraction; exact AST input parser; no SymPy",
+  "nodes": 380,
+  "input_nodes": 21,
+  "linear_identity_nodes": 359,
+  "verified_targets": [
+    "(z-1)*(w*w+w-z)",
+    "(z-1)*(w*z-2*w+z-1)",
+    "(z-1)*(v-z+1)"
+  ],
+  "certificate_sha256": "d96df86bf5672a44367f45b9c21b6d90f1024d385934822b4aec14512c25d9f4",
+  "seconds": 1.2302265829999999
+}

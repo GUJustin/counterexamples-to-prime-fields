@@ -1,0 +1,119 @@
+\section{An explicit seven-polynomial word and its pullbacks}
+\label{app:seven-cubic-bank}
+
+\begin{theorem}\label{thm:seven-cubic-bank}
+For every integer $m\geq1$, there are a number field $K_m$, a set of
+$14m$ distinct evaluation points, and a word whose complete list of
+polynomials of degree at most $3m$ with at least $7m$ agreements consists
+of exactly seven polynomials, each with exactly $7m$ agreements.
+For each fixed $m$, the same holds over arbitrarily large prime fields.
+For $m=1$ it holds over every prime field with $p\equiv1\pmod7$;
+for $m=2$ it holds over every such field with $p>10^{10}$.
+The latter case has length $28$, dimension $7$, and agreement $14$,
+so has exactly quarter rate.
+\end{theorem}
+
+\begin{proof}
+We first give a construction over any field $k$ of characteristic different
+from $2,3,7$ containing a primitive seventh root $\zeta$.
+Write
+\[
+ \eta=\zeta+\zeta^2+\zeta^4,\qquad
+ \bar\eta=\zeta^3+\zeta^5+\zeta^6=-1-\eta.
+\]
+Then $\eta^2+\eta+2=0$ and $\eta\bar\eta=2$.  Set
+\[
+ A(X)=X^3-\eta X^2+\bar\eta X-1
+     =\prod_{j\in\{1,2,4\}}(X-\zeta^j),\qquad
+ P(X)=\eta X^3+X^2+X+\bar\eta,
+\]
+\[
+ \alpha=\frac{\bar\eta}{\eta}=\frac{\eta-1}{2},
+ \qquad c=\frac{3(\eta+3)}4.
+\]
+The construction rests on the two polynomial identities
+\begin{align}
+ P(X)-X^5&=(\bar\eta-X)(X-1)A(X),\label{eq:paley-seven-first}\\
+ P(\alpha X)-cX^5&=-A(X)(cX^2+c\eta X+\bar\eta).
+ \label{eq:paley-seven-second}
+\end{align}
+Both follow by multiplication and $\eta^2=-\eta-2$.
+All parameters needed below are nonzero, and $\alpha^7\ne1$.
+For completeness, under the involution $\eta\leftrightarrow\bar\eta$,
+\[
+ c\bar c=\frac92,\qquad
+ (\alpha^7-1)(\bar\alpha^7-1)=\frac{7^3}{2^7}.
+\]
+These identities prove the assertions in every allowed characteristic,
+including when the quadratic algebra splits.
+
+Take the fourteen-point domain
+$\Omega=\mu_7\sqcup\alpha\mu_7$ and define its received word by
+\[
+ w(\zeta^t)=\zeta^{5t},\qquad
+ w(\alpha\zeta^t)=c\zeta^{5t}\quad(t\in\mathbb Z/7\mathbb Z).
+\]
+The seven candidates are
+\[
+ P_i(X)=\zeta^{5i}P(\zeta^{-i}X)
+ \qquad(i\in\mathbb Z/7\mathbb Z).
+\]
+Their constant coefficients are distinct.  The identities above give four
+prescribed matches for each candidate on $\mu_7$ and three on
+$\alpha\mu_7$.  Each point of the first orbit has four prescribed matching
+candidates, and each point of the second has three.  These incidences
+already use the entire pairwise root budget:
+\[
+ 7\binom42+7\binom32=63=3\binom72.
+\]
+Indeed, two distinct cubics share at most three evaluation values.
+Consequently there are no further incidences: every candidate has exactly
+seven matches, and the two orbit multiplicities are exactly four and three.
+
+The same argument handles pullbacks and proves completeness.
+Let $\psi(U)\in k[U]$ have degree $m$, and suppose each point of $\Omega$
+has $m$ distinct preimages in $k$.  Pull back the domain, word, and seven
+candidates along $\psi$.  Their degrees are at most $3m$, their agreement
+counts are $7m$, and the matching multiplicities remain four and three.
+If a different polynomial $Q$ of degree at most $3m$ has at least $7m$
+agreements, counting its intersections with the seven candidates gives
+\[
+ 3\,\#\{\text{agreements of }Q\}\leq7(3m).
+\]
+Equality is necessary, so every agreement lies above $\alpha\mu_7$.
+Thus $Q$ agrees at all $7m$ such points with
+$c\alpha^{-5}\psi(U)^5$.  Their difference has degree $5m$, with nonzero
+leading coefficient, and cannot have $7m$ distinct roots.  This proves
+completeness, even for candidates over an extension of $k$.
+
+Over a number field containing $\zeta$, choose any shift $a$ outside
+$\Omega$ and take $\psi(U)=U^m+a$.  Adjoining its finitely many fiber roots
+gives the required $K_m$ and distinct fibers.  Reduction at sufficiently
+large completely split primes of a normal closure preserves all these
+identities and distinctness; there are infinitely many such primes.
+For $m=1$, the construction is already defined over every
+$\mathbb F_p$ with $p\equiv1\pmod7$.
+
+For the asserted uniform prime bound when $m=2$, it remains to find a shift
+$a\in\mathbb F_p$ such that all fourteen values $x-a$, $x\in\Omega$, are
+nonzero squares.  Let $\chi$ be the quadratic character, with $\chi(0)=0$.
+The distinct-root quadratic-character Weil bound
+\cite[Lemma~2.1]{kim-yip-yoo-tuples} gives
+\[
+ \#\{a:\chi(x-a)=1\ \text{for every }x\in\Omega\}
+ \geq \frac{p-98305\sqrt p}{16384}-14.
+\]
+To see the constant directly, expand
+$2^{-14}\sum_a\prod_{x\in\Omega}(1+\chi(x-a))$.
+A nonempty subset of size $j$ contributes error at most
+$(j-1)\sqrt p$, and
+$\sum_{j=1}^{14}\binom{14}{j}(j-1)=98305$.
+Removing the fourteen possible zero locations costs at most fourteen.
+The displayed lower bound is positive for $p>10^{10}$.
+The map $\psi(U)=U^2+a$ therefore supplies the required distinct split
+quadratic fibers.
+\end{proof}
+
+This is a fixed list-size construction.  It does not assert an unbounded
+list, a superlinear number of exceptional challenges, or a universal
+list bound of seven for arbitrary words at length twenty-eight.

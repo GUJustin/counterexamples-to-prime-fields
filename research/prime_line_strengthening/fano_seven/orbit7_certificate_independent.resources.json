@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "research/prime_line_strengthening/fano_seven/orbit7_certificate_independent.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.611318875,
+  "peak_rss_kib": 34768,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

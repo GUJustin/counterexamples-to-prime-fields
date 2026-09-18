@@ -1,0 +1,320 @@
+\section{The sharp cubic list bound on fourteen coordinates}
+\label{app:global-seven-cubics}
+
+\begin{theorem}\label{thm:global-seven-cubics}
+There is an absolute constant $p_0$ with the following property.  If $k$
+has characteristic zero or characteristic greater than $p_0$, then for
+every fourteen-element set $\Omega\subset k$ and every word on $\Omega$,
+at most seven distinct polynomials of degree at most three have at least
+seven agreements with the word.  The bound is attained in characteristic
+zero and over arbitrarily large prime fields.
+\end{theorem}
+
+The lower bound is Theorem~\ref{thm:seven-cubic-bank} with $m=1$.
+The upper bound proved here is specific to cubics on fourteen coordinates;
+it does not assert a universal list bound of seven for the quarter-rate
+length-twenty-eight pullback.  The proof below includes two finite exact
+certificates: an exhaustive incidence enumeration and a rational
+polynomial-identity certificate.  Their algorithms and the mathematical
+conditions they certify are specified explicitly.
+
+\begin{proof}
+\smallskip\noindent\textbf{Saturation and incidence reduction.}
+Suppose eight distinct cubics have at least seven agreements.  For each
+coordinate let $s_x$ be their matching multiplicity.  Pairwise root
+counting and convexity give
+\[
+ \sum_xs_x\geq56,\qquad
+ 84\leq\sum_x\binom{s_x}{2}\leq3\binom82=84.
+\]
+Thus every coordinate has multiplicity four, every candidate has exactly
+seven matches, and every pair has exactly three common matches.  The
+fourteen matching sets form a $2$-$(8,4,3)$ design.
+Its blocks are distinct: fixing a block $B$, the intersections $j$ with
+the other thirteen blocks satisfy $\sum j=24$, $\sum\binom j2=12$, and
+hence $\sum(j-1)(j-2)/2=1$.  All summands are nonnegative, whereas a
+repeated block would contribute three.
+
+Delete a candidate.  The seven coordinates at which it matched become
+triple columns $T$; the other seven remain quadruple columns.  Write $C$
+for the complementary triples of these quadruples in the remaining
+seven candidates.  Both $T$ and $C$ are three-regular collections of
+seven triples, and every pair has combined multiplicity two in $T,C$.
+The extension back to eight candidates is forced: append index eight to
+each $T$-triple and leave the complementary-$C$ quadruples unchanged.
+
+\smallskip\noindent\textbf{The finite incidence certificate.}
+Let
+\[
+ \mathcal F=(123,145,167,246,257,347,356),
+\]
+where strings denote subsets.  Every $2$-$(8,4,3)$ design arising above
+has a deletion which, after relabeling, has $T=\mathcal F$ and one of
+the following four ordered choices for $C$:
+\[
+\begin{array}{c|l}
+4&123,145,167,246,257,347,356\\
+5&123,145,167,247,256,346,357\\
+6&123,146,157,247,256,345,367\\
+7&124,136,157,237,256,345,467.
+\end{array}                                                    \tag{G1}
+\]
+Here is the exhaustive algorithm verifying this finite assertion.
+Enumerate nondecreasing lists of seven of the $35$ triples on seven
+vertices, retaining exactly those with vertex degrees three and pair
+degrees at most two.  Repetitions are permitted.  Encode the $21$ pair
+degrees in base three.  Two lists are compatible exactly when their
+digits sum to two, so a complementary-key lookup lists every ordered
+pair $(T,C)$.  Quotient by simultaneous $S_7$ relabeling, without
+interchanging $T,C$.  There are $12{,}780$ labelled halves, $6{,}150$
+compatible ordered pairs, and eight ordered orbits.  For each
+representative, form the forced eight-candidate extension and try all
+eight deletions.  Each has a deletion of one of the four types (G1).
+The other four types have deletion sets $\{0,3,6\}$, $\{1,5\}$,
+$\{2,7\}$, and $\{0,3,6\}$; the four displayed types have deletion
+sets $\{4\}$, $\{1,5\}$, $\{0,3,6\}$, and $\{2,7\}$, respectively.
+
+The implementations \texttt{designs.cpp} and
+\texttt{independent\_design\_set.py} independently verify the literal
+set of all $6{,}150$ pairs, not only its cardinality.
+\texttt{eight\_bank\_removal\_types.py} checks the deletion assertion.
+All these files and the explicit representatives are in the accompanying
+\texttt{fano\_seven} certificate directory.  The only enumeration
+pruning discards partial lists whose vertex or pair degrees already
+exceed the prescribed bounds, or whose vertices cannot reach degree
+three.  Consequently no admissible incidence pattern is discarded.
+
+We now exclude types 4--6 in characteristic different from two and
+classify type 7 in characteristic zero.  We work over an algebraic
+closure and with binary cubics, so projective coordinate changes are
+permitted.  Every pair already agrees at three prescribed distinct
+points.  Therefore an additional pair equality is impossible, including
+an outsider sharing a quadruple's value.
+
+\smallskip\noindent\textbf{Type 4.}
+Normalize the seven quadruple coordinates, in the order of $C$, to
+$\infty,0,1,u,v,w,z$.  All finite parameters are distinct and different
+from zero and one.  On each $T$-triple, divide the three difference
+identities by the common triple-coordinate factor.  The resulting three
+binary quadratics, whose roots are the prescribed quadruple coordinates,
+are linearly dependent.  For triples $167,246,347$ their determinants are
+\[
+ E_2=-uz+vw,\quad E_3=vw-vz-v+z,\quad E_5=uz-vz+v-z.
+\]
+All vanish, but $E_3-E_5-E_2=2(z-v)$ contradicts distinctness.
+
+\smallskip\noindent\textbf{Type 5.}
+Use the same normalization.  The corresponding quadratic determinants
+for $123,145,167$ give
+\[
+ -uvw-uvz+uv+uwz+vwz-wz=0,
+ \quad -uw+u+vz-v+w-z=0,\quad uz-vw=0.
+\]
+Substitution of $u=vw/z$ into the first two forces
+$v(w+z-1)=z$.  With $s=w+z-1$ we obtain
+$s\ne0$, $u=w/s$, $v=z/s$.
+Subtract $P_1$ so that $P_1=0$.  All quadruple-compatible families are
+\[
+\begin{array}{ll}
+ P_2=(X-w)(X-z)L_0,&P_3=s^2(X-u)(X-v)L_0,\\
+ P_4=(X-z)(X-v)L_1,&P_5=(X-w)(X-u)L_1,\\
+ P_6=(X-z)(X-u)L_2,&P_7=(X-w)(X-v)L_2,
+\end{array}
+\]
+where $L_0=pX+q$, $L_1=\ell(X-1)-s(p+q)$, and
+$L_2=\ell X+sq$.  Indeed the two forced quadruple roots determine each
+quadratic factor, and the equalities at $0,1,\infty$ determine the
+remaining linear factors as displayed.  In particular $\ell\ne0$ and
+$p-\ell\ne0$, by the outsider guards at infinity.
+Define
+\begin{align*}
+ A&=\ell z+pzs+qs(s+1),& B&=\ell w+pws+qs(s+1),\\
+ C_z&=\ell(z-1)+s(w-1)p+s(s-1)q,
+ &C_w&=\ell(w-1)+s(z-1)p+s(s-1)q,\\
+ F_\pm&=\pm(z-w)\ell+s(s+1)p+2s^2q.
+\end{align*}
+The factors $A,B,C_z,C_w$ are nonzero: respectively they are, up to
+nonzero scalar factors, $(P_2-P_4)(0)$, $(P_2-P_5)(0)$,
+$(P_2-P_6)(1)$, and $(P_2-P_7)(1)$.
+For triple $246$, divide the differences by their common factor $X-z$.
+The resultant of
+$s[(X-w)L_0-(X-v)L_1]$ and
+$s[(X-w)L_0-(X-u)L_2]$ equals
+$-(p-\ell)sAC_zF_+$.  The analogous resultant for triple $257$, after
+dividing by $X-w$, is $-(p-\ell)sBC_wF_-$.
+The required additional common roots force both resultants to vanish,
+so $F_+=F_-=0$.  Their difference $2(z-w)\ell$ is nonzero, a contradiction.
+
+\smallskip\noindent\textbf{Type 6.}
+Relabel candidates by $(1,2,3,4,5,6,7)\mapsto(1,2,3,4,7,5,6)$.
+Then $C=\mathcal F$ and
+$T=(123,147,156,245,267,346,357)$.
+Normalize the quadruple coordinates to $\infty,0,1,u,v,w,z$ and
+subtract $P_1$.  Scale the nonzero quadruple value at zero to one, and
+write the values at one and infinity as $K,L$, both nonzero.  Put
+\[
+\begin{array}{lll}
+ Q_2=(X-w)(X-z),&Q_3=(X-u)(X-v),&Q_4=(X-v)(X-z),\\
+ Q_5=(X-u)(X-w),&Q_6=(X-v)(X-w),&Q_7=(X-u)(X-z).
+\end{array}
+\]
+The complete family is
+\begin{align*}
+ P_i&=Q_i[(K/Q_i(1)-1/Q_i(0))X+1/Q_i(0)] &&(i=2,3),\\
+ P_i&=Q_i[L(X-1)+K/Q_i(1)] &&(i=4,5),\\
+ P_i&=Q_i[LX+1/Q_i(0)] &&(i=6,7).
+\end{align*}
+The triple $123$ and the two other triples containing index one force,
+with $s=w+z-1$,
+\[
+ v=\frac{wz(1-u)}{wz-us},\qquad
+ L=\frac{K}{(1-v)(1-z)}-\frac1{uz}
+  =\frac{K}{(1-u)(1-w)}-\frac1{vw}.             \tag{G2}
+\]
+The first denominator cannot vanish, since then its defining equation
+would give $u=1$.  Substitution factors the difference of the two
+expressions for $L$ into nonzero guarded factors times
+\[
+ (us-w)G,\qquad G=Kw^2z(u-z)+(u-w)(w-1)(z-1)^2.
+\]
+On $G=0$, one obtains
+\[
+ K=\frac{(u-w)(w-1)(z-1)^2}{w^2z(z-u)},\qquad
+ L=\frac{us-2wz+w}{w^2z(z-u)}.
+\]
+The leading coefficient of $P_2$ then equals $L$, an impermissible
+extra agreement at infinity.  Thus $u=w/s$, $v=z/s$, where $s\ne0,1$.
+
+For a pair, divide its difference by its two prescribed quadruple-root
+factors and take the determinant of the remaining linear forms on each
+triple.  Set
+\begin{align*}
+ A&=Kwz(w+z),& H&=(w-1)(z-1)(s-1),\\
+ F_3&=-Kw^2z+(w-1)(z-1)^2,& F_4&=Kwz^2-(w-1)^2(z-1).
+\end{align*}
+After (G2), the determinants for $245,267,346,357$ are respectively
+\[
+\begin{array}{cc}
+ \displaystyle\frac{2(z-w)(A+H)}{w^2z^2(w-1)(z-1)},&
+ \displaystyle\frac{2K(z-w)(A+H)}{wz(w-1)^2(z-1)^2},\\[1ex]
+ \displaystyle\frac{2s^2F_3(A-H)}{\Delta},&
+ \displaystyle\frac{-2s^2F_4(A-H)}{\Delta},
+\end{array}
+\qquad \Delta=w^2z^2(w-1)^2(z-1)^2.
+\]
+All denominators are guarded and $H\ne0$.  Hence $A=-H$ and
+$F_3=F_4=0$.  The latter imply $(w-z)(w+z-1)=(w-z)s=0$, again impossible.
+The displayed determinant and resultant identities in these three cases
+are ordinary polynomial identities, independently checked in the
+corresponding \texttt{ORBIT5} and \texttt{ORBIT6} certificate files.
+
+\smallskip\noindent\textbf{Type 7: a complete normalized classification.}
+Normalize its quadruple coordinates to $\infty,0,1,u,v,w,z$, subtract
+$P_1$, and use amplitudes $j,k,\ell$ for the nonzero values at
+$0,1,\infty$.  Put
+\[
+\begin{array}{lll}
+ Q_2=(X-w)(X-z),&Q_3=(X-v)(X-z),&Q_4=(X-u)(X-v),\\
+ Q_5=(X-u)(X-z),&Q_6=(X-u)(X-w),&Q_7=(X-v)(X-w).
+\end{array}
+\]
+Its complete quadruple-compatible family is
+\begin{align*}
+ P_i&=Q_i[(k/Q_i(1)-j/Q_i(0))X+j/Q_i(0)] &&(i=2,4),\\
+ P_i&=Q_i[\ell(X-1)+k/Q_i(1)] &&(i=3,6),\\
+ P_i&=Q_i[\ell X+j/Q_i(0)] &&(i=5,7).
+\end{align*}
+Every denominator is a node guard.
+Dividing pair differences by their two quadruple-root factors
+leaves linear forms.  On each of the seven triples the determinant of
+two such forms vanishes.  In the order
+$123,145,167,246,257,347,356$, divide these determinants by
+\[
+ -k,\ -j,\ -\ell,\ -P_2(u),\ [X^3]P_2-\ell,
+ \ j-P_3(0),\ -P_3(u),                         \tag{G3}
+\]
+respectively.  Each divisor is a nonzero outsider--quadruple difference.
+The resulting seven expressions are linear in $j,k,\ell$, giving a
+$7$-by-$3$ matrix $M$ whose entries are explicit rational functions of
+$u,v,w,z$.  Clear only node-guard denominators.
+
+Number rows from zero.  Minor $(0,1,3)$ factors, up to nonzero guards, as
+\[
+ [(w-1)(z-v)u+vw(w-v)]
+ [(v(w+z-1)-wz)u+wz(1-v)].                    \tag{G4}
+\]
+On the second branch its denominator is nonzero, since otherwise
+$wz(1-v)=0$.  The substituted minors $(0,1,2)$ and $(0,3,4)$ are, up to
+nonzero guards, the squares of
+\[
+ v(w+z-1)-2wz+z,\qquad v(w+z-1)-z.
+\]
+Their simultaneous vanishing contradicts $2z(1-w)\ne0$.  Every
+admissible realization therefore satisfies
+\[
+ u=\frac{vw(v-w)}{(w-1)(z-v)}.                \tag{G5}
+\]
+This assertion also holds after each relabeling preserving the ordered
+pair $(T,C)$ and renormalization of its first three quadruple coordinates.
+There are twenty-one such relabelings; only validity of the listed
+relabelings, not completeness of that group list, is needed below.
+
+Here is the exact identity certificate for the remaining elimination.
+Substitute (G5) in all $35$ minors of $M$ and in the relabeled versions
+of (G5).  Cancel only nonzero node guards.  Adjoin a variable $h$ and
+the equation $h(v-z)(w-1)-1=0$.  Rational polynomial linear combinations
+of these necessary equations give
+\[
+ (z-1)(w^2+w-z)=0,\qquad
+ (z-1)(wz-2w+z-1)=0,\qquad
+ (z-1)(v-z+1)=0.                              \tag{G6}
+\]
+For reproducibility, \texttt{orbit7\_generic.py} constructs $M$ by the
+operations just specified, \texttt{orbit7\_branches.py} performs (G4)--(G5),
+and \texttt{orbit7\_symmetry.py} checks each relabeling and projective
+renormalization.  The identity file
+\texttt{orbit7\_identity\_certificate.json.gz} contains $380$ nodes.
+An input node is one of these necessary equations.  Every subsequent
+node is an explicit sum of polynomial multiples of earlier nodes.
+An independent verifier, \texttt{orbit7\_certificate\_independent.py},
+checks the inputs against the necessary-equation files and checks all
+$359$ subsequent identities by sparse rational arithmetic, then checks
+the three output identities (G6).  It uses no symbolic-algebra library.
+Thus correctness or completeness of a Groebner-basis implementation is
+not a trusted step of this certificate.
+
+Since $z\ne1$, equations (G5)--(G6) imply
+\[
+ w^3+2w^2-w-1=0,\qquad u=w^2,\quad v=w^2+w-1,\quad z=w^2+w.
+\]
+On this cubic locus the minor of rows $0,1$ and columns $j,k$ of $M$
+is $6w^2-2w-2\ne0$.  The matrix has rank two, and after scaling $j=1$
+its unique kernel vector is
+\[
+ (j,k,\ell)=(1,3w^2+4w-5,3w^2+4w-6).
+\]
+Nonvanishing follows from irreducibility of the cubic; substitution
+checks the kernel vector in all seven rows.  Thus every admissible
+type-7 realization has the displayed coefficients, up to the invertible
+transformations already made.  Its first five triple coordinates are
+\[
+ a_1=1-w^2,\quad a_2=w^2+2w-1,\quad a_3=w^2+2w+1,
+ \quad a_4=w^2-1,\quad a_5=-w^2-2w+3.
+\]
+An eighth cubic must match every triple coordinate.  The first three
+received values are zero, so it must be
+$\lambda\prod_{i=1}^3(X-a_i)$.  The fourth value determines
+$\lambda=(1-4w-2w^2)/4$.  At the fifth its difference from the received
+value is $486-390w-270w^2$, which is nonzero modulo
+$w^3+2w^2-w-1$.  These are direct substitutions in the displayed
+polynomials.  This excludes the last possibility in (G1) and proves the
+characteristic-zero upper bound.
+
+Finally the argument uses finitely many rational polynomial identities.
+Exclude primes dividing their coefficient denominators and the nonzero
+integer resultants separating $f(T)=T^3+2T^2-T-1$ from the rank minor and the
+interpolation obstruction.  Outside this finite set, and characteristic
+two, every step remains valid over an algebraic closure.  Taking $p_0$
+larger than those finitely many primes proves the asserted characteristic
+range; no optimal value of $p_0$ is claimed.
+\end{proof}
