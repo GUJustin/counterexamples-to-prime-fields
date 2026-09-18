@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/prime_fixed_gap_new_route/check_subgroup_casorati.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.556666916992981,
+  "peak_rss_kib": 3168,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

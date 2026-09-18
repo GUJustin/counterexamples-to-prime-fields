@@ -1,0 +1,29 @@
+{
+  "p": 1000003,
+  "n": 7,
+  "checks": [
+    {
+      "h": 2,
+      "degree": 2,
+      "leading": 500012,
+      "predicted": 500012,
+      "permutations": 2
+    },
+    {
+      "h": 3,
+      "degree": 6,
+      "leading": 753861,
+      "predicted": 753861,
+      "permutations": 6
+    },
+    {
+      "h": 4,
+      "degree": 12,
+      "leading": 916851,
+      "predicted": 916851,
+      "permutations": 24
+    }
+  ],
+  "result": "PASS",
+  "scope": "Exact polynomial determinant at h2,3,4; independent validation of the analytic formula, not a subgroup scan."
+}

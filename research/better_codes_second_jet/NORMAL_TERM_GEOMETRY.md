@@ -100,3 +100,14 @@ cost=245137512198069634. Including the same local overhead gives
 multiplicity exclusion and is not full propagation or a benchmark improvement.
 The priority is proving or refuting that exclusion, not optimizing hypothetical
 minimum multiplicities.
+
+## Outcome of the multiplicity test
+
+RETAINED_SIMPLE_COMPONENT_MODEL.md now supplies an explicit source/contact/
+reserve/avoidance/retained-stage model with an active first-tail component of
+multiplicity ONE and arbitrarily large retained curvature multiplicity. It
+passes independent audit in SIMPLE_TAIL_INDEPENDENT_CHECK.md. Thus the blanket
+missing implication is false, not merely unproved. The example has A=n and a
+received line of codewords; it does not exclude a new argument using the pinned
+A/n ratio or other additional geometry. The conditional numerical refinements
+above cannot be promoted using retained divisibility alone.
