@@ -1,0 +1,181 @@
+% Standalone research appendix fragment. Not included in paper.tex here.
+\section{An obstruction to the aligned doubled-Hadamard involution model}
+\label{app:c2-norm-obstruction}
+
+The statement concerns a specified geometric involution, not an arbitrary
+combinatorial automorphism of an incidence design. In particular it does not
+exclude the disjoint union of two differently labelled Hadamard designs.
+
+\begin{theorem}\label{thm:c2-norm-obstruction}
+Over a field of characteristic different from two, there is no realization
+of the following sign-twisted aligned doubled-Hadamard model. The eight
+polynomials are
+\[
+ F_i^\pm(T)=\pm A_i(T^2)+T B_i(T^2),\qquad
+ \deg A_i=3,\quad\deg B_i\le2,\qquad 0\le i\le3.
+\]
+Their eight signed leading coefficients are distinct. Six distinct nonzero
+values $e_{ij}$ give the old nodes $\pm\sqrt{e_{ij}}$, at which all four
+polynomials with labels $i,j$ agree. The other sixteen nodes are the roots
+of four monic quadratics and their reversals, indexed by the even transversal
+sign patterns modulo simultaneous sign reversal; the four selected
+polynomials agree at each corresponding node. All twenty-eight nodes are
+distinct.
+\end{theorem}
+
+\begin{proof}
+Subtract a common odd polynomial and rescale to arrange $B_0=0$ and $a_0=1$,
+where $a_i$ is the leading coefficient of $A_i$. Put
+\[
+ C_i(Y)=\prod_{j\ne i}(Y-e_{ij}),\qquad A_i=a_iC_i.
+\]
+The all-plus quadratic is $L_0=T^2-\sigma T+p$. Its roots and their negatives
+are distinct and nonzero, so $\sigma p\ne0$. Write
+$R_0(Y)=(Y+p)^2-\sigma^2Y$. All $R_0(e_{ij})$ are nonzero.
+
+The difference $F_i^+-F_0^+$ is divisible by $(T^2-e_{0i})L_0$.
+Write its quadratic quotient as
+$(a_i-1)T^2+\beta_iT+z_i$. Comparing parity gives, without any division by
+$p+e_{ij}$ or $C_i(-p)$,
+\begin{equation}\label{eq:c2-beta-identity}
+ (Y+p)B_i=\sigma(C_0-a_iC_i)+R_0\beta_i(Y-e_{0i}).
+\end{equation}
+At $e_{ij}$, subtracting these identities yields
+\begin{equation}\label{eq:c2-beta-edge}
+ \beta_i(e_{ij}-e_{0i})=\beta_j(e_{ij}-e_{0j}).
+\end{equation}
+Thus the three $\beta_i$ either all vanish or are all nonzero and pairwise
+distinct. The all-zero case makes the residual quadratic of $F_i^+-F_0^+$
+even, identifying its prescribed transversal with its reversal. This
+contradicts distinctness of the domain. Hence every $\beta_i$ is nonzero
+and the three are distinct.
+
+Let $u_i=[Y^2]B_i$. Equation~\eqref{eq:c2-beta-identity} gives
+$u_i=\beta_i-\sigma(a_i-1)$. For a general pair the monic quadratic
+remaining after removal of its old edge and $L_0$ has linear coefficient
+$(\beta_i-\beta_j)/(a_i-a_j)$, where $\beta_0=0$. Complementary pairs have
+reversed residual quadratics. Setting $d_i=a_i-1$, their three slope
+conditions are
+\[
+ \begin{pmatrix}
+ \beta_2-\beta_3&\beta_1&-\beta_1\\
+ \beta_2&\beta_1-\beta_3&-\beta_2\\
+ \beta_3&-\beta_3&\beta_1-\beta_2
+ \end{pmatrix}
+ \begin{pmatrix}d_1\\d_2\\d_3\end{pmatrix}=0.
+\]
+Put $S=\beta_1+\beta_2+\beta_3$. This matrix kills the vector
+$v_i=\beta_i(S-2\beta_i)$, and its two by two minors include, up to sign,
+these three entries. They cannot all vanish: otherwise $S=2\beta_i$ for
+all $i$, which on summing forces $S=0$ and then $\beta_i=0$.
+The matrix has rank two and therefore
+\begin{equation}\label{eq:c2-amplitudes}
+ a_i=1+t\beta_i(S-2\beta_i),\qquad
+ \frac{u_i}{\beta_i}=1-\sigma t(S-2\beta_i),\qquad t\ne0.
+\end{equation}
+In particular the last expression is a nonconstant affine function of
+three distinct arguments.
+
+At a new node with received value $V$, squaring the selected equalities
+gives $(V-TB_i)^2=A_i^2$ and $V^2=A_0^2$. Consequently
+\[
+ H_{ij}=YB_iB_j(B_i-B_j)-B_j(A_i^2-A_0^2)+B_i(A_j^2-A_0^2)
+\]
+vanishes at all eight new square values. It also vanishes at the three
+old values $e_{0i},e_{0j},e_{ij}$. Since $\deg H_{ij}\le8$, it vanishes
+identically. Its leading coefficient implies
+$u_i(a_j^2-1)=u_j(a_i^2-1)$. All $a_i^2-1$ are nonzero; hence either all
+$u_i$ vanish or none do. The former is incompatible with
+\eqref{eq:c2-amplitudes}. Every $B_i$ therefore has degree two.
+
+We claim $\gcd(B_1,B_2,B_3)=1$. Each $B_i$ vanishes at the distinct point
+$e_{0i}$, so a common divisor has degree at most one. A common root $r$
+would give $B_i=u_i(Y-r)(Y-e_{0i})$. At every $e_{ij}\ne r$, equality of
+the $B_i$ and \eqref{eq:c2-beta-edge} then give
+$u_i/\beta_i=u_j/\beta_j$. At least two of the edges $12,13,23$ differ
+from $r$, and they connect all three labels. This contradicts
+\eqref{eq:c2-amplitudes}.
+
+The identities $H_{ij}=0$ imply that
+\[
+ C=\frac{A_i^2-A_0^2-YB_i^2}{B_i}
+\]
+is independent of $i$. Its reduced denominator divides every $B_i$, so
+$C$ is polynomial, of degree exactly four. Thus
+\[
+ R=C^2-4YA_0^2,\qquad
+ Q_i(T)=C(T^2)+2T^2B_i(T^2)+2TA_i(T^2)
+\]
+satisfy $\deg R=8$ and $Q_i(T)Q_i(-T)=R(T^2)$.
+At every new square value some $B_i$ is nonzero, and the received-value
+equation gives $C=-2TV$. Hence $R$ has precisely the eight distinct
+nonzero new square values as its roots. They are disjoint from the old
+edge values.
+
+Divide all $Q_i$ by their common leading coefficient. Each now chooses
+one root from each of the eight opposite root pairs of $R(T^2)$.
+Their constants agree, so pairwise selector distances are even.
+Distances zero and eight violate the signed leading-coefficient guards.
+Distances two and six are also impossible. Indeed write
+$Q_i=ED$, $Q_j=ED(-T)$, with one of $E,D$ quadratic. At an old edge write
+$E=e(Y)+To(Y)$ and $D=d(Y)+Tp(Y)$. The equations $A_i=A_j=0$ imply
+$ep=od=0$. Since this edge is nonzero and off the norm roots, either
+$o=p=0$ or $e=d=0$. The second alternative gives opposite nonzero even
+parts $Yop,-Yop$, contrary to $B_i=B_j$. The first would make the odd
+part of a quadratic vanish; its two roots would then be opposite,
+contrary to the distinct root-square guard. All pairwise distances are
+therefore four.
+
+It remains to prove that three such selectors force an edge collision.
+Normalize the first selector to all plus. The next two partition the
+columns into four cells of size two, with group signs
+\[
+ (+,+,+,+),\quad (+,+,-,-),\quad (+,-,+,-).
+\]
+Write the roots in cell $g$ as $m_g\pm n_g$ and set $h_g=m_g^2-n_g^2$.
+For a pair of cells $u,v$ with signs $\epsilon_u,\epsilon_v$, the first
+and third elementary root sums of their quartic are
+\[
+ e_1=2(\epsilon_um_u+\epsilon_vm_v),\qquad
+ e_3=2(\epsilon_um_uh_v+\epsilon_vm_vh_u).
+\]
+The preceding odd-part argument gives the three linear conditions
+$e_1d_3-e_3d_1=0$ on $h$. Their matrix kills both
+$\mathbf1$ and $(m_0,-m_1,-m_2,m_3)$.
+
+Here is an explicit rank certificate, avoiding any generic-rank
+assumption. Put
+\[
+ A=m_0m_1m_2,\ B=m_0m_1m_3,\ C'=m_0m_2m_3,\ D=m_1m_2m_3,
+\]
+and $S_0=A+B+C'+D$, $S_1=A+B-C'-D$, $S_2=A-B+C'-D$.
+For the three pairs of matrix rows, their two by two minors are, up to
+sign, respectively $S_0,S_1,S_2$ times
+\[
+ m_2+m_3,\ m_1+m_3,\ m_1-m_2,\ m_0-m_3,\ m_0+m_2,\ m_0+m_1.
+\]
+These six factors are nonzero by the three signed leading guards.
+Rank at most one would force $(A,B,C',D)=(A,-A,-A,A)$.
+If $A\ne0$, this gives $m=(z,-z,-z,z)$ and all three leading sums
+vanish. If $A=0$, at most two $m_g$ are nonzero, and two of the three
+leading sums coincide up to sign. Both alternatives are forbidden.
+Thus the matrix has rank two and
+\[
+ h=H\mathbf1+K(m_0,-m_1,-m_2,m_3).
+\]
+For each of the three pairs, substitution into the displayed elementary
+sums gives $e_3=He_1$. Since $e_1\ne0$, all three old edge squares are
+$-e_3/e_1=-H$, contradicting their distinctness.
+\end{proof}
+
+\paragraph{Certificate and scope.}
+The determinant identities are integer polynomial identities, reproduced
+by \texttt{universal\_beta\_gate.py} and
+\texttt{three\_selector\_gate.py} in the research directory
+\texttt{hadamard\_locator\_family}. They require no parameter sampling or
+Gr\"obner-basis assumption. The proof includes affine opposite-edge
+involutions, finite-pole charts, $p+e_{ij}=0$, and coefficient-rank
+exceptions, because no involution parametrization is used. It does not
+show that a combinatorial design automorphism must lift to a projective
+transformation, and makes no assertion about unsymmetrized eight-sextic
+banks or disjoint Hadamard designs.
