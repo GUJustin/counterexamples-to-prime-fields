@@ -1,0 +1,22 @@
+{
+  "pass_all": true,
+  "target": 18,
+  "systems": 97992,
+  "consistent_double_subsets": {
+    "1": 16,
+    "2": 120,
+    "3": 560,
+    "4": 1820,
+    "5": 4368,
+    "6": 80,
+    "7": 8
+  },
+  "hits": [],
+  "unresolved": [],
+  "nonzero_padded_J_counts": {
+    "ten": 48,
+    "eleven": 61
+  },
+  "scope": "F17-coefficient degree<=9 candidates on full cubic fibers only",
+  "seconds": 4.0783857090136735
+}

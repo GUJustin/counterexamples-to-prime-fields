@@ -1,0 +1,53 @@
+\subsubsection{Completeness under arbitrary quadratic pullback}
+\begin{proposition}\label{prop:padded-quadratic-completeness}
+Let $w$ be either the eighteen-coordinate ten-cubic word of
+Theorem~\ref{thm:ten-cubic-padding} or the nineteen-coordinate eleven-cubic
+word of Theorem~\ref{thm:eleven-cubic-padding}.  Pull $w$ back along any
+connected degree-two map $\mathbb P^1\to\mathbb P^1$ in characteristic zero,
+assuming that every selected fiber is separable.  Among degree-six sections,
+the complete nearest list is precisely the pullback of the original list:
+its members have fourteen agreements, and every other section has at most
+twelve.  Thus the lengths are respectively $36$ and $38$, with list sizes
+$10$ and $11$.
+\end{proposition}
+\begin{proof}
+Work over an algebraic closure.  A quadratic cover can be written in binary
+form as $Z^2=B_2(X,V)$, with $B_2$ squarefree of degree two.  Every section of
+the pullback of $\mathcal O(3)$ uniquely has the form $E_3+ZO_2$, where the
+subscripts denote homogeneous degree.  If $O_2=0$, source completeness proves
+the claim.  Otherwise at most two selected fibers are full agreement fibers.
+The monic norm
+\[
+ H(X,w)=w^2+B_3(X)w+C_6(X)
+       =(w-E_3(X))^2-B_2(X)O_2(X)^2
+\]
+must consequently vanish at either twelve selected base points, or eleven
+selected base points including two full fibers.  At a full fiber it also
+satisfies $H_w=H_X=0$.  These are linear conditions on the eleven coefficients
+of $B_3,C_6$.
+
+An exact exhaustive census solves every twelve-subset system and every
+eleven-subset system with the possible full pairs.  After the closed necessary-condition screen described below, the remaining
+exact norms number $48$ for the ten-word source and $61$ for the eleven-word source.
+Every one has $E_3^2-C_6$ equal to a nonzero scalar binary square; no consistent
+positive-dimensional space remains.  This contradicts the required binary
+squarefree part of degree two for $B_2O_2^2$.
+
+For reproducibility, the census first screens at primes $47$ and $61$.
+A unit coefficient minor fixes an integral norm; its necessary condition
+$E_3^2-C_6=B_2O_2^2$ survives specialization because the image of
+$\mathbb P^2\times\mathbb P^2\to\mathbb P^6$, $(B,O)\mapsto BO^2$, is closed.
+The screen retains square-branch degenerations and the zero sextic.
+Crucially, \emph{every} coefficient-rank-deficient base system, even a
+modularly inconsistent one, is replayed in characteristic zero: there are
+$588$ and $1154$ such systems respectively.  This covers possible nonintegral
+solutions and rank increases.  Exact replay uses
+$\mathbb Q(\sqrt{17})$ and $\mathbb Q(\sqrt{39})$, respectively, retaining all
+systems until after solving and checking the full-fiber conditions.
+The scripts and full receipts are the
+\texttt{ten\_quadratic\_norm\_screen/exact} and
+\texttt{eleven\_quadratic\_norm\_screen/exact} files in
+\path{research/relaxed_eight_cubic_route/}.
+\end{proof}
+This proposition gives robustness of these finite lists; it makes no
+first-order proximity claim for the immediate quadratic-pullback parameters.

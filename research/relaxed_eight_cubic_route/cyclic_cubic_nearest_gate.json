@@ -1,0 +1,19 @@
+{
+  "field": 17,
+  "cover": "Y=T^3",
+  "target_matches": 20,
+  "degree_bound": 9,
+  "systems": 40276,
+  "consistent_double_subsets": {
+    "2": 120,
+    "3": 560,
+    "4": 1820,
+    "5": 4368,
+    "6": 80,
+    "7": 8
+  },
+  "hits": [],
+  "unresolved": [],
+  "seconds": 2.740897124996991,
+  "scope": "F17-rational coefficients; non-even here means not a polynomial in T^3. No exclusion over algebraic closure or characteristic zero."
+}

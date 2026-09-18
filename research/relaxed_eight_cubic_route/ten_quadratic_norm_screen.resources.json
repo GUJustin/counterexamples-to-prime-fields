@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/relaxed_eight_cubic_route/ten_quadratic_norm_screen.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.6252440840034978,
+  "peak_rss_kib": 30400,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}
