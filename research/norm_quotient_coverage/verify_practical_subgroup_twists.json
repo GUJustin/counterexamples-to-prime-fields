@@ -1,0 +1,40 @@
+{
+  "p": 2130706433,
+  "extension_degree": 6,
+  "domain_size": 262144,
+  "subgroup_index": 8128,
+  "sqrtp_strict_lower": "23079787872725347/500000000000",
+  "sqrtp_strict_upper": "9231915149090139/200000000000",
+  "cases": [
+    {
+      "infinity_exception_present": false,
+      "sqrt_coefficient": "48767/8128",
+      "additive_boundary_bound": "1/8128",
+      "proved_bound_expression_strict_lower": "1125532015689196997149/4064000000000000",
+      "proved_bound_expression_strict_upper": "450212806275678808613/1625600000000000",
+      "decimal_lower": "276951.775514074064259104330708661417322834646",
+      "decimal_upper": "276951.775514074070258981299212598425196850394",
+      "excess_over_domain_strict_lower": "60178799689196997149/4064000000000000",
+      "scope": "interval for the theorem bound, not for an actual character sum"
+    },
+    {
+      "infinity_exception_present": true,
+      "sqrt_coefficient": "24383/4064",
+      "additive_boundary_bound": "1/4064",
+      "proved_bound_expression_strict_lower": "562754468200662135901/2032000000000000",
+      "proved_bound_expression_strict_upper": "225101787280264859237/812800000000000",
+      "decimal_lower": "276946.096555443964518208661417322834645669291",
+      "decimal_upper": "276946.096555443970517962598425196850393700787",
+      "excess_over_domain_strict_lower": "30077860200662135901/2032000000000000",
+      "scope": "interval for the theorem bound, not for an actual character sum"
+    }
+  ],
+  "strict_code_degree_bound": 131072,
+  "one_pole_maximum_agreement": 131073,
+  "target_agreement": 139782,
+  "agreement_shortfall": 8709,
+  "target_subset_generic_witness_degree": 139780,
+  "allowed_witness_degree": 131071,
+  "witness_degree_excess": 8709,
+  "scope": "no character search and no practical improvement certificate"
+}
