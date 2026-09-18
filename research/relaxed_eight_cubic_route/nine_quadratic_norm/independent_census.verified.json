@@ -1,0 +1,35 @@
+{
+  "pass_all": true,
+  "norms": 733,
+  "literal_set_equality": true,
+  "cases": [
+    {
+      "f": 0,
+      "base_subsets": 816,
+      "systems": 31,
+      "consistent": 31,
+      "families": 0
+    },
+    {
+      "f": 1,
+      "base_subsets": 3060,
+      "systems": 42308,
+      "consistent": 226,
+      "families": 0
+    },
+    {
+      "f": 2,
+      "base_subsets": 8568,
+      "systems": 667992,
+      "consistent": 988,
+      "families": 0
+    },
+    {
+      "f": 3,
+      "base_subsets": 18564,
+      "systems": 4084080,
+      "consistent": 1498,
+      "families": 0
+    }
+  ]
+}

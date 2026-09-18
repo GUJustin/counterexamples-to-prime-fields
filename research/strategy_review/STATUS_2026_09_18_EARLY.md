@@ -140,3 +140,15 @@ A separate F289 nine-quartic gate enumerates all full-fiber cases and733norms;70
 Root cyclic-cubic cover pilot is independently verified: among F17-coefficient degree9polynomials on the original48point pullback Y=T^3, every non-descended polynomial has at most16matches. No algebraic-closure or characteristic-zero exclusion is inferred. Higher-extension coefficients remain open.
 
 The Dickson mixed-transformation envelope now has an audited ancestry repair covering later puncturing and arbitrary operation counts without accumulated error. Standard inherited-match transformations stay below the first-order boundary. New coincidences or new polynomial families are still required.
+
+## Complete cubic-pullback profile integrated and verified
+
+The manuscript is227pages. PropositionW.10 proves the explicit rational cubic pullback U=(11−T³)/3 has exactly8degree9polynomials with21matches, exactly8with15matches, and everyother at most14, on48nodes. This holds in characteristic zero, over its algebraic closure, and over arbitrarily large good split prime fields. First-order expression1409/18432>0. Build clean and changed pages221–223 visually checked.
+
+Complete finite searches reduce the48point problem to8anchor interpolation planes on two24point halves. Original248980planes and independent490314planes both exclude non-descended16matches. At15matches the orbit closure contains9non-descended F289candidates; all9fail fixed-cover liftingmod289, independently checked with different ten-point supports and Newton interpolation. Unit interpolation excludes ramified coefficient escapes. The exact rational source census then gives the two-tier15/21profile. General movingdegree3cover lifting of one orbit survivesmod289 but failsmod4913; this remains a narrowly scoped research observation.
+
+New rational reconstruction of the nine-quartic exchanged source to17^32 did not produce an exact rational model; no irrationality claim. Allnine-quartic quadratic norm systems now have an independent complete replay, confirming the fixed-residue and good-reduction exclusions.
+
+Better.codes still unchanged. Exact full multiplicity2 weighted boxes for10/11sources have rank123/123, excluding every capped/non-prefix subspace inside that box. A Riccati cancellation toy is real but already explained by an optimized smaller monomial support, so no benchmark saving. New global coupled-gradient formulation is recorded as a target.
+
+Active alternate directions: elliptic/Lattes source models, exceptional cyclotomic primes yielding short Dickson nearest orbits, and prime-field ordinary-CA descent. New coordinate-descent and model-specific elliptic obstructions are being audited; no broad impossibility claim. Deadline14:00UTC remains active.

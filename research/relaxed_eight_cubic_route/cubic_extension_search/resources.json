@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/tmp/cubic_ext"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.07956675,
+  "peak_rss_kib": 2288,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

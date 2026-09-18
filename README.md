@@ -5,7 +5,7 @@ Working draft by Justin Thaler, September 18, 2026.
 [Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
 **Latest verified results (September 18, early morning):** the ePrint-style article
-is 225 pages with one-inch margins. New Theorem U.1 gives an exact
+is 227 pages with one-inch margins. New Theorem U.1 gives an exact
 seven-member nearest-codeword list at quarter rate: length28, dimension7,
 and fourteen agreements per candidate, over arbitrarily large prime fields.
 Two short cyclotomic identities give the construction; its complete-list proof
@@ -54,6 +54,12 @@ the fixed ten- and eleven-cubic sources, unramified on the selected fibers,
 preserves the complete nearest list and leaves a two-match gap to all other
 sextics. This characteristic-zero robustness statement has independent
 exhaustive norm-system verification; it does not itself amplify list size.
+Proposition W.10 gives a complete eight-member list at `(n,k,A)=(48,10,21)`
+from a cubic pullback: exactly eight further polynomials have15 matches,
+and every other polynomial has at most14. Its six-match gap
+is proved by independent complete extension-field interpolation searches and
+an exact characteristic-zero transfer. It also lies above the first-order
+curve, but remains a fixed-list construction.
 
 
 Corollary 2.4 sharpens the shrinking-gap and prime-size lower bounds by

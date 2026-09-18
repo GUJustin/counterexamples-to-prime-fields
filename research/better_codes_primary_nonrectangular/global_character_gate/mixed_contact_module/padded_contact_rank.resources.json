@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/better_codes_primary_nonrectangular/global_character_gate/mixed_contact_module/padded_contact_rank.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5424606659944402,
+  "peak_rss_kib": 7856,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

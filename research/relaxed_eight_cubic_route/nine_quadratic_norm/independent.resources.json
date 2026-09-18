@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/bin/sh",
+    "-c",
+    "/tmp/nine_norm_independent < research/relaxed_eight_cubic_route/nine_quadratic_norm/independent_input.txt > research/relaxed_eight_cubic_route/nine_quadratic_norm/independent_census.json"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.0855055830033962,
+  "peak_rss_kib": 4656,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/tmp/nine_norm"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 2.152375625,
+  "peak_rss_kib": 2976,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

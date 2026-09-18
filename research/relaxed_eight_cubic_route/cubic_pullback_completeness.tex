@@ -1,0 +1,51 @@
+\subsection{Completeness of the cubic pullback}
+\label{app:cubic-pullback-completeness}
+
+\begin{proposition}
+\label{prop:cubic-pullback-completeness}
+The explicit rational eight-cubic source admits a degree-three pullback with parameters
+\[
+ n=48,\qquad k=10,\qquad A=21,
+\]
+whose complete nearest list has exactly eight elements, each with twenty-one agreements. Exactly eight further degree-at-most-nine polynomials have fifteen agreements, and every remaining polynomial has at most fourteen. These assertions hold over a number field and its algebraic closure, and over arbitrarily large prime fields.
+\end{proposition}
+
+\begin{proof}
+Use the rational affine source $(u_j,w_j)$ from Theorem~\ref{thm:eight-cubic-smooth-seed} and pull back by
+\[
+ U=\frac{11-T^3}{3}.
+\]
+The domain comprises all three roots of $T^3=11-3u_j$ for every $j$. Its forty-eight points are distinct. The eight inherited polynomials have degree at most nine and exactly twenty-one agreements.
+
+We first certify a residue-field statement. Modulo $17$, the sixteen radicands reduce to $1,\ldots,16$. All forty-eight cube roots lie in $\mathbb F_{289}$ and are distinct. After a common polynomial subtraction and a nonzero scalar change, the received word is the full cubic pullback of the original sixteen-node $\mathbb F_{17}$ seed.
+
+An exhaustive finite certificate shows that no degree-at-most-nine polynomial not descending through $T^3$ has sixteen matches on this residue word. Its coverage is short: partition the forty-eight points into two halves of twenty-four. Sixteen matches imply eight anchors in one half. For each eight-anchor subset, every interpolant is
+\[
+ q(T)+L(T)(a+bT),
+\]
+where $\deg q\le7$ and $L$ is the monic degree-eight anchor locator. Each of the forty remaining nodes gives a line $a+bT=(w-q(T))/L(T)$ in the parameter plane. Eight concurrent lines are equivalent to sixteen total matches. Every such concurrence yields a descended polynomial. The original census uses $248980$ symmetry-reduced planes. An independent replay changes to alternating base-fiber halves, uses Newton interpolation, and quotients only by deck rotations, not Frobenius; it checks $490314$ planes from $1470942$ anchor subsets. It detects concurrence independently by taking each of the first $33$ residual lines as reference and counting seven equal intersection slopes to the others: any set of eight among forty contains such a reference. Again there is no non-descended hit. Any algebraic-closure candidate with ten matches already has $\mathbb F_{289}$ coefficients by interpolation, so the residue conclusion holds over the algebraic closure.
+
+The same parameter-plane enumeration at threshold fifteen has exactly nine non-descended candidates after closing the three reported representatives under deck transformations and Frobenius. An independent enumeration with the alternate halves and deck-only quotient has the same orbit closure. All nine have exactly fifteen residue matches. None lifts on the fixed rational cover: lift each node uniquely modulo $17^2$ by $T^3=11-3u_j$, apply the residue gauge $C(T)\mapsto10(C(T)-R(T^3))$ with $R(Y)=3+Y+15Y^2+7Y^3$, and interpolate ten of the fifteen matching values. Every candidate has a nonzero residual at a remaining support point modulo $17^2$. Independent replay uses the last ten support nodes and Newton interpolation, instead of the first ten and Gaussian elimination. The residue nodes are unit-separated, so interpolation determines the same unique polynomial in every extension of the local field. Thus this fixed-cover obstruction also excludes ramified lifts.
+
+Now let $Q$ be a characteristic-zero degree-nine polynomial with at least fifteen matches. Ten matching points make its coefficients integral by a unit Vandermonde determinant. The preceding obstruction rules out a non-descended reduction. Its descended residue cubic has at least five and at most seven source matches. If it has seven, it is one of the known eight, and all fifteen actual matching indices of $Q$ belong to that candidate's twenty-one-point residue support. The known lift agrees at all twenty-one corresponding points, hence agrees with $Q$ at fifteen distinct points. The two degree-nine polynomials are equal.
+
+Otherwise all actual matches lie over at most six base fibers. At least three are fully matched, since non-full fibers contribute at most two points. Write
+\[
+ Q(T)=E(T^3)+T O(T^3)+T^2V(T^3),\qquad
+ \deg E\le3,\quad\deg O,\deg V\le2.
+\]
+Full agreement at all three distinct roots of a fiber forces $O$ and $V$ to vanish at its base value. Three full fibers imply $O=V=0$. Therefore $Q$ descends to a cubic with at least five agreements on the exact rational source. The exhaustive rational four-point census gives exactly sixteen such cubics: the eight original seven-match cubics and eight fresh five-match cubics. Their pullbacks have respectively twenty-one and fifteen matches. This proves both complete tiers and excludes every other polynomial at threshold fifteen.
+
+For prime-field descent, take a finite Galois field containing the forty-eight coordinates. Exclude the finitely many primes at which node differences, coefficients, or nonzero evaluation differences of any ten-point interpolant degenerate. At completely split remaining primes every candidate with fifteen matches is still one of the finitely many ten-point interpolants, with its characteristic-zero agreement count unchanged. Arbitrarily large such primes give the asserted complete agreement profiles.
+\end{proof}
+
+The independent finite census and its coverage proof are stored in
+\path{research/relaxed_eight_cubic_route/cubic_extension_search/},
+including \texttt{independent16.cpp}, \texttt{independent15.cpp},
+\texttt{lift15.independent.json}, and
+\texttt{INDEPENDENT\_AUDIT.md}. This is a fixed-cover, fixed-list result, not a general cubic-cover exclusion or an unbounded amplification theorem.
+
+At $\rho=10/48=5/24$ and $a=21/48=7/16$, the audited first-order expression is strictly positive:
+\[
+ (8-\rho)a^2-6\rho a+\rho(4\rho-5)=\frac{1409}{18432}>0.
+\]

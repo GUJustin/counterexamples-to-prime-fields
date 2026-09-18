@@ -1,0 +1,13 @@
+{
+  "histogram": {
+    "degree8_odd0": 658,
+    "degree6_odd0": 44,
+    "degree8_odd6": 17,
+    "degree4_odd0": 2,
+    "degree7_odd5": 1,
+    "degree8_odd8": 6,
+    "degree8_odd4": 4,
+    "degree2_odd0": 1
+  },
+  "proper_polynomial_cover_hits": []
+}

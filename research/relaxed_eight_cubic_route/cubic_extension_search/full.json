@@ -1,0 +1,11 @@
+{
+  "field": "F17(theta),theta^2=7",
+  "zeta": 59,
+  "target": 17,
+  "pencils": 441200,
+  "subsets_visited": 2615008,
+  "complete": true,
+  "descended_encounters": 3348,
+  "hits": [],
+  "seconds": 0.890619
+}

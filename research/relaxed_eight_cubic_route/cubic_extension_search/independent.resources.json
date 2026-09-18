@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/bin/sh",
+    "-c",
+    "/tmp/cubic_ext_independent < research/relaxed_eight_cubic_route/cubic_extension_search/independent_input.txt > research/relaxed_eight_cubic_route/cubic_extension_search/independent.json"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 2.700727832998382,
+  "peak_rss_kib": 4336,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}
