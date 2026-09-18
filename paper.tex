@@ -915,6 +915,19 @@ than the message degree. The first source is nearby and the direction
 is far. This extension-field statement is separate from the
 large-characteristic, above-first-order comparisons above.
 
+A norm-quotient specialization gives a stronger gap with two far sources
+(Theorem~\ref{thm:native-norm-quotient}). For every fixed extension degree
+$d\ge2$, length $q=p^d$, and exact dimension $J=\lfloor\rho q\rfloor$,
+put $m=(q-1)/(p-1)$. Each source has agreement $J+m-1$, and their common
+agreement is also $J+m-1$, while all $q-2$ nonendpoint affine combinations have at least
+$J+2m-1$ agreements. Thus the common-agreement loss is about $1/p$,
+half the approximately $2/p$ distance below capacity. This combines the
+standard quotient construction with Katz's character-sum estimate;
+it still has a smaller capacity margin than the inverse-logarithmic
+counterexamples in~\cite{kkh}. Its full-field domain and extension
+alphabet do not establish the practical benchmark or prime-alphabet
+tightness.
+
 Likewise, optimality of a specified interpolation dimension count is a
 statement about that proof method, not an intrinsic list or MCA lower
 bound. The capacity gap and the margin above the first-order curve are
@@ -6182,6 +6195,7 @@ odd-characteristic bounds $20$ and $62$.
 \input{research/ordinary_ca_superlinear/appendix.tex}
 \input{research/binary_characteristic_transfer/quadratic_frobenius_core/norm_one_direct_list.tex}
 \input{research/binary_characteristic_transfer/growing_characteristic_native.tex}
+\input{research/norm_quotient_coverage/norm_quotient.tex}
 
 \input{research/quadratic_indicator_nearest/appendix.tex}
 
@@ -6292,6 +6306,10 @@ Theorem 8.31 and Corollary 8.32.
 \bibitem{kkh} D. Krachun, S. Kazanin, and U. Hab\"ock.
 \emph{Failure of proximity gaps close to capacity}.
 IACR ePrint 2026/782. \url{https://eprint.iacr.org/2026/782}.
+\bibitem{katz1989-character-sums} N. M. Katz.
+\emph{An estimate for character sums}.
+Journal of the American Mathematical Society 2(2), 197--200, 1989.
+\url{https://web.math.princeton.edu/~nmk/old/estcharsums.pdf}.
 \bibitem{bchks} E. Ben-Sasson, D. Carmon, U. Hab\"ock, S. Kopparty,
 and S. Saraf. \emph{On Proximity Gaps for Reed--Solomon Codes}.
 IACR ePrint 2025/2055. \url{https://eprint.iacr.org/2025/2055}.

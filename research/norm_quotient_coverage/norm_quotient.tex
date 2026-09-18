@@ -1,0 +1,156 @@
+% No novelty claim is made for the quotient or character-sum ingredients.
+\subsection{Full-field norm quotients with almost every challenge}
+\label{subsec:native-norm-quotients}
+
+The quotient construction of Krachun, Kazanin, and Hab\"ock~\cite[Appendix~A]{kkh} can be applied
+directly in the quotient variable.  A pole outside its image suffices; it need
+not be the image of an evaluation-field point.  Combining this observation
+with a character-sum estimate gives the following native-field specialization.
+
+\begin{lemma}\label{lem:fixed-cardinality-character-products}
+Let $\mathcal A$ be an $s$-element subset of a finite abelian group
+$H$ of order $M$.  Suppose every nontrivial character $\chi$ of $H$
+satisfies $|\sum_{a\in\mathcal A}\chi(a)|\le B<s$.
+For $0<r<s$, put $\theta=r/s$ and
+\[
+ \varepsilon=(s+1)\exp\bigl(-\theta(1-\theta)(s-B)\bigr).
+\]
+If $(M-1)\varepsilon<1$, every element of $H$ is the product of
+an $r$-element subset of $\mathcal A$.
+\end{lemma}
+\begin{proof}
+Fix a nontrivial character and write $v_a=\chi(a)$.  For $t>0$ and
+real $\phi$, the identity
+\[
+ |1+te^{i\phi}v_a|^2
+ =(1+t)^2-2t\bigl(1-\operatorname{Re}(e^{i\phi}v_a)\bigr)
+\]
+and $1-u\le e^{-u}$ give
+\[
+ \left|\prod_{a\in\mathcal A}(1+te^{i\phi}v_a)\right|
+ \le (1+t)^s\exp\left(-\frac{t(s-B)}{(1+t)^2}\right).
+\]
+Cauchy's coefficient bound, with $t=r/(s-r)$, bounds the absolute
+value of the degree-$r$ coefficient by
+$t^{-r}(1+t)^s\exp(-\theta(1-\theta)(s-B))$.
+The value $r$ is a mode of the binomial distribution with parameters
+$s,r/s$, so
+$t^{-r}(1+t)^s\le(s+1)\binom sr$.
+Consequently every nontrivial character contributes at most
+$\varepsilon\binom sr$ in absolute value.  Character orthogonality
+therefore bounds the number of $r$-subsets with any prescribed product
+from below by
+\[
+ \frac1M\binom sr\bigl(1-(M-1)\varepsilon\bigr)>0.
+\]
+\end{proof}
+
+\begin{theorem}\label{thm:native-norm-quotient}
+Fix $0<\rho<1$ and an integer $d\ge2$.
+For every sufficiently large prime $p$, put
+\[
+ q=p^d,\qquad E=\mathbb F_q,\qquad
+ m=\frac{q-1}{p-1},\qquad J=\lfloor\rho q\rfloor.
+\]
+There are words $f,g:E\to E$ such that
+\[
+ \operatorname{agr}_J(f)=\operatorname{agr}_J(g)
+ =\operatorname{CA}_J(f,g)=J+m-1,
+\]
+and every $\lambda\in E\setminus\{0\}$ satisfies
+\[
+ \operatorname{agr}_J(f+\lambda g)\ge J+2m-1.
+\]
+Here the code has strict degree bound $J$, the capacity margin is
+$(2m-1)/q=\Theta(p^{-1})$, and the source-agreement gap is
+$m/q=\Theta(p^{-1})$.
+
+For an explicit sufficient condition, write
+$J-1=(r-2)m+w$ with $0\le w<m$, and set $\theta=r/(p-2)$.
+It is enough that $2\le r<p-2$ and
+\[
+ \log\bigl((p^d-2)(p-1)\bigr)
+ <\theta(1-\theta)\bigl(p-4-(d-1)\sqrt p\bigr).
+\]
+\end{theorem}
+
+\begin{proof}
+Choose $b\in E$ of degree exactly $d$ over $\mathbb F_p$.
+Write $N(X)=X^m$, so that $N$ is the
+norm on $E$, with image $\mathbb F_p$.  Fix $a_0\in\mathbb F_p^*$, choose
+a $w$-element subset $B\subset N^{-1}(a_0)$, and put
+$R(X)=\prod_{x\in B}(X-x)$.  In particular $R$ is monic of degree $w<m$.
+Define
+\[
+ f(X)=R(X)\frac{N(X)^r-b^r}{N(X)-b},\qquad
+ g(X)=-\frac{R(X)}{N(X)-b}.
+\]
+The first expression is a monic polynomial of degree
+$(r-1)m+w=J+m-1$; the denominator in the second expression never vanishes
+on $E$.
+
+For every polynomial $h$ of degree less than $J$, root counting bounds the
+agreement of $f$ with $h$ by $J+m-1$.  The same bound applies to $g$:
+its agreement equation is
+$R+(N-b)h=0$, a nonzero polynomial of degree at most $J+m-1$.
+It is nonzero because $\deg R<m$.  These two bounds are attained
+simultaneously.  Choose any $r-1$ distinct tags in
+$\mathbb F_p^*\setminus\{a_0\}$, interpolate both functions
+$(Y^r-b^r)/(Y-b)$ and $-1/(Y-b)$ on those tags by polynomials of degree
+at most $r-2$, substitute $Y=N(X)$, and multiply by $R(X)$.
+Both resulting witnesses have degree at most $(r-2)m+w=J-1$.
+They match on the selected $r-1$ norm fibers and on $B$, a disjoint set
+of size $(r-1)m+w=J+m-1$.  This proves all three stated equalities.
+
+It remains to represent every element of $E^*$ as a product
+\[
+ \prod_{a\in S}(b-a),\qquad
+ S\subset\mathbb F_p^*\setminus\{a_0\},\quad |S|=r.
+\]
+For every nontrivial multiplicative character $\chi$ of $E^*$,
+Katz's affine-line estimate~\cite[Theorem~1]{katz1989-character-sums}
+bounds $|\sum_{a\in\mathbb F_p}\chi(b-a)|$ by $(d-1)\sqrt p$.
+Deleting $0,a_0$ gives a bound $(d-1)\sqrt p+2$ on the remaining $p-2$ terms.
+Lemma~\ref{lem:fixed-cardinality-character-products} consequently proves
+the required surjectivity under the displayed sufficient condition.
+For fixed $\rho,d$,
+$\theta\to\rho$, so this condition holds for all sufficiently large $p$.
+
+For $\lambda\ne0$, choose such an $S$ with product $-\lambda$, and set
+\[
+ V_S(Y)=\prod_{a\in S}(Y-a),\qquad
+ P_S(Y)=Y^r-V_S(Y),\qquad
+ h_S(X)=R(X)\frac{P_S(N(X))-P_S(b)}{N(X)-b}.
+\]
+The quotient is polynomial and
+$\deg h_S\le w+(r-2)m=J-1$.  Since
+$P_S(b)=b^r-V_S(b)=b^r+\lambda$, direct subtraction gives
+\[
+ f(X)+\lambda g(X)-h_S(X)
+ =\frac{R(X)V_S(N(X))}{N(X)-b}.
+\]
+Its zeros are exactly $B$ and the $r$ norm fibers indexed by $S$.
+These sets are disjoint and have total size
+$w+rm=J+2m-1$.  In particular $X=0$ supplies no hidden extra agreement.
+\end{proof}
+
+In particular, put $T=J+2m-1$ and $\delta=1-T/q$.
+Both sources have distance exactly $\delta+m/q$ from the code,
+but every affine combination $(1-t)f+tg$ with $t\notin\{0,1\}$
+has distance at most $\delta$. Indeed, divide by $1-t$ and apply
+the theorem with $\lambda=t/(1-t)\ne0$.
+Thus the nearby fraction on this affine line is exactly $1-2/q$.
+The normalized common-agreement loss $m/q$ is asymptotically half
+the capacity margin $(2m-1)/q$.
+
+For $d=5$, this gives a larger margin, of order $q^{-1/5}$, than
+the order-$q^{-2/5}$ margin of
+Theorem~\ref{thm:growing-characteristic-native}, and both sources
+are individually far. It does not preserve that theorem's exact
+common agreement $J$: here common agreement is $J+m-1$.
+Both margins are smaller than the inverse-logarithmic margin in~\cite{kkh}.
+The conclusion is a native-field coverage refinement of standard
+quotient and character-sum ingredients, not a better capacity-margin
+benchmark. The alphabet is an extension field, $p\ll J$, and the
+evaluation domain has all $p^d$ points. No construction on the short
+domains used by the practical benchmark follows from this theorem.

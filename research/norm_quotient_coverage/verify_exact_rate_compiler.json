@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "prime": 5,
+  "extension_degree": 5,
+  "field_size": 3125,
+  "modulus": "X^5-X-1",
+  "norm_packet_size": 781,
+  "fixtures": [
+    {
+      "r": 2,
+      "padding": 0,
+      "strict_degree": 1,
+      "source_and_common_agreement": 781,
+      "canonical_agreement": 1562,
+      "distinct_labels_tested": 3
+    },
+    {
+      "r": 2,
+      "padding": 1,
+      "strict_degree": 2,
+      "source_and_common_agreement": 782,
+      "canonical_agreement": 1563,
+      "distinct_labels_tested": 3
+    },
+    {
+      "r": 2,
+      "padding": 7,
+      "strict_degree": 8,
+      "source_and_common_agreement": 788,
+      "canonical_agreement": 1569,
+      "distinct_labels_tested": 3
+    },
+    {
+      "r": 3,
+      "padding": 0,
+      "strict_degree": 782,
+      "source_and_common_agreement": 1562,
+      "canonical_agreement": 2343,
+      "distinct_labels_tested": 1
+    },
+    {
+      "r": 3,
+      "padding": 1,
+      "strict_degree": 783,
+      "source_and_common_agreement": 1563,
+      "canonical_agreement": 2344,
+      "distinct_labels_tested": 1
+    },
+    {
+      "r": 3,
+      "padding": 7,
+      "strict_degree": 789,
+      "source_and_common_agreement": 1569,
+      "canonical_agreement": 2350,
+      "distinct_labels_tested": 1
+    }
+  ],
+  "elapsed_seconds": 3.454,
+  "peak_rss_bytes": 13975552,
+  "scope": "Exact degree-five full-domain padded compiler and simultaneous source attainment; no subset-product-surjectivity claim at p=5."
+}

@@ -1,0 +1,39 @@
+{
+  "endpoint_prime": 181,
+  "r": 90,
+  "sqrt_upper": "134537/10000",
+  "sqrt_square_excess": "204369/100000000",
+  "log_upper": "10397/2000",
+  "exp_series_last_degree": 40,
+  "exp_partial_sum_excess_over_prime": "13028478541510677086736752425209661485006520148375821998634964497276754024696134409009718084628319438926804409062365874880949097473388652645648185201877460034478439393231559373/24246171384086814649197985653928523378328449581056000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+  "H181_strict_lower_bound": "1053/10000",
+  "derivative": "H'(x)=(sqrt(x)-6)*(sqrt(x)+4)/(4*x)>0 for x>36",
+  "conclusion": "all odd primes p>=181 satisfy the product-surjectivity sufficient inequality at r=(p-1)/2",
+  "previous_prime": 179,
+  "previous_H_strict_upper_bound": "-1/5",
+  "previous_check_scope": "failure of sufficient inequality only, not failure of product surjectivity",
+  "two_deleted_tags": {
+    "endpoint_prime": 191,
+    "subset_sizes": [
+      94,
+      95
+    ],
+    "sqrt_upper": "138203/10000",
+    "log_upper": "52523/10000",
+    "density_product": "8930/35721",
+    "H191_strict_lower_bound": "252722171/178605000",
+    "derivative_positive_lower_bound": "10656/62075",
+    "conclusion": "all odd primes p>=191 suffice at r=(p-3)/2 or (p-1)/2"
+  },
+  "exact_half_code_dimension": {
+    "endpoint_prime": 191,
+    "subset_size": 96,
+    "available_tags": 189,
+    "density_product": "992/3969",
+    "H191_strict_lower_bound": "27933887/19845000",
+    "derivative_positive_lower_bound": "10656/62075",
+    "general_r": "(p+1)/2",
+    "general_s": "p-2",
+    "conclusion": "all odd primes p>=191 suffice for the exact J=floor(p^5/2) padded compiler"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "prime": 17,
+  "extension_degree": 2,
+  "irreducible": "X^2-3",
+  "domain_size": 289,
+  "strict_degree_bound": 109,
+  "norm_packet_size": 18,
+  "subsets_enumerated": 12870,
+  "nonzero_products_covered": 288,
+  "labels_and_full_domain_residuals_checked": 288,
+  "canonical_agreements": 144,
+  "source_agreement_bound": 126,
+  "common_source_matches_attained": 126,
+  "scope": "Exhaustive toy product coverage and compiler; not a degree-five numerical check"
+}
