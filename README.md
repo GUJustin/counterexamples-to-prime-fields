@@ -5,7 +5,7 @@ Working draft by Justin Thaler, September 18, 2026.
 [Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
 **Latest verified results (September 18):** the full-page,
-one-inch-margin ePrint draft (256 pages) now proves a prime-field line construction
+one-inch-margin ePrint draft (258 pages) now proves a prime-field line construction
 with more than n^(3/2)/4 exceptional challenges, each having a singleton
 list, at an error radius covered by the Dao–Kominers–Thaler bounds
 and beyond the Johnson radius. Both source words

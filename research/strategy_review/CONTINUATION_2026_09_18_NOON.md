@@ -11,3 +11,7 @@ Restarted bounded independent examination of the upper-track coefficient-fiber c
 ## Conservative continuation checkpoint, September 18 at 13:51 Eastern
 
 On resuming the latest 24-hour instruction, retain an earliest stopping time of September 19, 2026, 13:51 Eastern (17:51 UTC), which also satisfies the earlier 12:04 checkpoint. The active goal remains open. Current bounded task: independently audit the local contact-image dimension 182580 against the 48 maximal cyclic profiles (each at least 182584 columns) before allocating any rank-computation resources. Latest verified publication is ec0c44c19e424896cd20459185f5bf221322313c; no better.codes improvement or protocol security ceiling is established.
+
+## Afternoon checkpoint, September 18
+
+The September 19, 13:51 Eastern minimum remains in force; the active goal is not complete. Audited full-domain padding improves the native all-label growing-characteristic example from N=p^10 to N=p^8 at square-root-order gap and fixed rate. This is stored separately from the 258-page manuscript. The current positive target is the d=5,s=2 locator label map: trace duality appears to express each fiber as a five-hyperplane section of Gr(2,5), suggesting genus-one curves when the section is proper and smooth. Degenerate fibers and rational-point existence are unresolved; no all-label theorem is claimed. An independent agent is auditing the d=4 half-coverage calculation.
