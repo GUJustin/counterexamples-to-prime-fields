@@ -19,7 +19,10 @@ restriction: the source gap can grow as c log n / log log n, for any fixed
 At c=1/2 this gives Ω(n log log n) singleton bad challenges.
 The limitation is explicit: dimension is three, and both rate and the
 fractional source gap tend to zero. This is not fixed-rate tightness
-or a better.codes improvement. The uniform finite upper comparison is
+or a better.codes improvement. On the growing-gap examples, the O(n²)
+upper comparison exceeds p and is vacuous as a probability bound; constant
+bad probability does not establish tightness of that upper bound.
+The uniform finite upper comparison is
 31000n². A separate extension-field construction gives the same exponent
 and an exact two-level spectrum; its affine-witness companion asymptotically
 attains a universal triple-count bound.
