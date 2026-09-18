@@ -1,0 +1,111 @@
+\paragraph{Constant fibers supported on two roots.}
+The following treats constant fibers supported on at most two roots in
+every fixed value degree. It does not classify all repeated fibers.
+
+\begin{lemma}[Three scaled two-root covers]
+\label{lem:two-root-three-covers}
+Let $k$ be algebraically closed of characteristic zero or characteristic
+$p>r+s$, where $r,s\ge1$ are coprime. For nonconstant $q\in k(X)$,
+at most two distinct $\lambda\in k^\times$ admit a rational solution of
+\[
+ Y^r(Y+1)^s=\lambda q(X).
+\]
+\end{lemma}
+\begin{proof}
+Put $b=r+s$, $h(Y)=Y^r(Y+1)^s$, and
+$\kappa=(-1)^r r^rs^s/b^b$.
+The cover $t=h(Y)/\lambda$ has inertia cycles $(r)(s)$ over zero,
+a $b$-cycle over infinity, and a transposition over
+$\kappa/\lambda$. Indeed
+$h'=Y^{r-1}(Y+1)^{s-1}(bY+r)$; these are all branch points,
+and ramification is tame. For $r=s=1$, zero is unramified.
+
+Its monodromy group is $S_b$. To see primitivity, first exclude a
+polynomial decomposition $h=A\circ B$ of degrees greater than one.
+If $A$ has two distinct roots, their disjoint preimages under $B$
+are supported on $\{0,-1\}$. Thus
+$B-\alpha=cY^m$ and $B-\beta=c(Y+1)^m$, up to interchange,
+whose difference cannot be constant for $m>1$ in the stated
+characteristic. If $A$ has one root, its degree divides both $r$ and
+$s$, also impossible. Any intermediate field gives such a polynomial
+decomposition: by L\"uroth it is rational, and the unique point over
+infinity makes both maps polynomial after choosing that point as
+infinity. Hence the group is primitive. The graph whose edges are
+conjugates of its transposition has connected components forming a
+block system. It is therefore connected, and its edge transpositions
+generate $S_b$.
+
+For three distinct nonzero $\lambda_i$, take the compositum of the
+three Galois closures. Its group is a subdirect subgroup of $S_b^3$.
+Inertia at $\kappa/\lambda_i$ supplies a transposition in the $i$th
+factor and identities in the others. Conjugation by the surjective
+$i$th projection generates that entire factor, proving the group is
+$S_b^3$. The normalized fiber product is thus connected of degree
+$N=b^3$. At infinity it has $b^2$ inertia orbits; each of the three
+unique simple branch points has index $b^2$. At zero the orbit count is
+\[
+ r^2+s^2+3r+3s.
+\]
+Here the all-$r$ and all-$s$ triples contribute $r^2,s^2$; the mixed
+triples have orbit length $rs$, contributing $3r,3s$.
+Riemann--Hurwitz gives
+\[
+ 2g-2=2b^2-r^2-s^2-3b=b^2+2rs-3b
+ \ge(b-2)(b+1)\ge0.
+\]
+Three rational solutions would embed this positive-genus function
+field into $k(X)$ via $t=q(X)$, contradicting L\"uroth.
+This also excludes inseparable $q$; no assumption $q'\ne0$ is used.
+\end{proof}
+
+\begin{theorem}[Two-root constant fibers]
+\label{thm:two-root-constant-fiber}
+Let $D\ge1$ and let $k$ be algebraically closed of characteristic zero or
+characteristic $p>b=r+s$, with $r,s\ge1$. Suppose $H\in k[X]\setminus\{0\}$ and a polynomial
+$F(X,u)$ has a constant fiber
+\[
+ F(X,u)-c_0H(X)=(u-R(X))^r(u-S(X))^s,
+ \qquad \deg R,\deg S\le D.
+\]
+Put $d=\gcd(r,s)$. The degree-at-most-$D$ polynomial sections
+$F(X,P)=cH$ either all lie in one affine polynomial pencil with
+coefficient degrees at most $D$, or number at most $2b/d+2$.
+Consequently, on any $n$ distinct evaluation points and for any received
+word, at most
+\[
+ \max\left\{2b/d+2,\left\lfloor1/\eta\right\rfloor\right\}
+\]
+such sections agree in at least $D+\eta n$ coordinates, for $\eta>0$.
+\end{theorem}
+\begin{proof}
+If $R\ne S$, put $a=R-S$, $Y=(P-R)/a$, $q=H/a^b$, and
+$\lambda=c-c_0$. Then $Y^r(Y+1)^s=\lambda q$.
+For nonconstant $q$ and $d=1$, Lemma~\ref{lem:two-root-three-covers}
+allows at most two nonzero labels, each with at most $b$ rational
+roots; the zero fiber adds only $Y=0,-1$.
+
+For general $d$, write $h_0(Y)=Y^{r/d}(Y+1)^{s/d}$.
+If a nonzero-label solution $Y_*$ exists, set $q_0=h_0(Y_*)$,
+so $q=q_0^d/\lambda_*$. Every other nonzero-label solution has
+\[
+ \left(\frac{h_0(Y)}{q_0}\right)^d=\frac\lambda{\lambda_*},
+\]
+so $h_0(Y)=\mu q_0$ for a constant $\mu\ne0$.
+The function $q_0$ is nonconstant. Applying the lemma to the coprime
+exponents $r/d,s/d$ permits at most two $\mu$, each with at most
+$b/d$ roots. Including the zero fiber proves $2b/d+2$.
+
+If $q$ is constant, every $Y$ is constant, giving the pencil
+$P=R+ta$. If $R=S$, the identity is
+$(P-R)^b=(c-c_0)H$. One noncritical section $P_*$ expresses $H$
+as a constant multiple of $(P_*-R)^b$, after which every section
+belongs to the pencil $R+t(P_*-R)$. If none exists, there is only
+$P=R$.
+
+Finally, in a pencil $P_0+tP_1$ with $P_1\ne0$ of degree at most
+$D$, at most $D$ coordinates have $P_1=0$; at every other coordinate
+at most one member matches a fixed received symbol. If $L$ members
+have at least $A>D$ agreements, then $LA\le LD+n$, proving
+$L\le n/(A-D)$. Extending constants proves the same upper bound
+for banks over smaller fields.
+\end{proof}

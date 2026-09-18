@@ -127,36 +127,13 @@ different members can match the same received symbol only at zeros
 of $h$, of which there are at most $D$.  A list of $L$ members with
 at least $a>D$ agreements therefore satisfies $L(a-D)\le n$.
 
-If $q$ is nonconstant, there are at most two distinct nonzero labels
-$\lambda=c-c_0$ for which \eqref{eq:cubic-three-cover-equation} has a
-rational solution.  Here is a self-contained cover argument.  Three
-such labels would give three degree-three covers of the $t$-line
-\[
- Y_i^2(Y_i+1)=\lambda_i t.
-\]
-Each has branch points $0,4/(27\lambda_i),\infty$, with inertia
-types a transposition, a transposition, and a three-cycle.  Its Galois
-closure has group $S_3$.  The compositum group projects onto all three
-$S_3$ factors.  At $4/(27\lambda_i)$ inertia is a transposition
-supported only in factor $i$, since the other covers are unramified
-there.  Conjugation supplies that entire $S_3$ factor, proving that
-the compositum group is $S_3^3$.  The original fiber product is thus
-connected of degree $27$.
-
-All ramification is tame in characteristic greater than three.  On the
-$27$ sheets the inertia at zero has one fixed point and thirteen
-two-cycles, so index $13$; at infinity it has nine three-cycles, so
-index $18$; and each separate finite nonzero branch point has index
-$9$.  The smooth normalization $C$ consequently has
-\[
- 2g(C)-2=-54+13+18+3\cdot9=4,
- \qquad g(C)=3.
-\]
-The proposed rational solutions would embed $k(C)$ in $k(X)$ via
-$t=q(X)$, contradicting L\"uroth's theorem.  This also rules out
-inseparable parametrizations.  There are therefore at most six
-sections outside the repeated fiber and at most two within it, for a
-total of eight.  This completes the positive-dimensional case.
+If $q$ is nonconstant, Lemma~\ref{lem:two-root-three-covers}, with
+$r=2$ and $s=1$, permits at most two distinct nonzero labels
+$\lambda=c-c_0$ in \eqref{eq:cubic-three-cover-equation}.
+Its three-cover fiber product has genus three, so the argument also
+excludes inseparable parametrizations. There are at most six sections
+outside the repeated fiber and at most two within it, for a total of
+eight. This completes the positive-dimensional case.
 
 The bounds obtained in this case---at most $3/\eta$ in the Frobenius
 case, at most $1/\eta$ for an affine family, or a bank of at most eight
