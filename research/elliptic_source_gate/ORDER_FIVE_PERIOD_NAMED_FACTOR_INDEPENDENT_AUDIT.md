@@ -1,0 +1,21 @@
+# Independent audit: order-five periods and named factor tests
+
+Verdict: PASS in the corrected current state. One minor CM wording correction was identified and has been applied by the root agent. Reviewed both `ORDER_FIVE_ISOGENY_PERIOD_TARGET_2026_09_18.md` and `ORDER_FIVE_NAMED_FACTOR_TEST_2026_09_18.md`. No manuscript or source-note edits.
+
+For ell=-1 mod5, the order-five character is trivial on F_ell*, since 5 is coprime to ell−1. It descends to the ell+1 projective directions and each value occurs (ell+1)/5 times. Normalized Vélu gives
+
+ x(phi_L(P))=x(P)+sum_(0!=T in L)(x(P+T)−x(T)),
+
+so the note's sign of c_L is correct. The weighted x(P) term cancels exactly, and translating through the isogeny uses its group-homomorphism property. This proves the five-period formula as a rational identity, not just pointwise away from poles. The primary normalization and formula were checked in [Moody–Rasmussen, Sections 2.1–2.2](https://arxiv.org/html/1210.2743).
+
+The full-kernel trace has normalization sum_(U in H)x(P+U)=ell² x([ell]P)+constant, not simply x([ell]P)+constant. At each torsion point the double principal parts match after the ell² factor because multiplication by ell scales the local invariant parameter to first order by ell. The difference is regular everywhere and hence constant. This verifies the cyclic trace formula with both its ell and ell² coefficients.
+
+Coefficient splitting is valid only under the explicitly stated hypotheses: each period remainder lies over K, G is defined over K, and [K(zeta):K]=4. Then 1,zeta,zeta²,zeta³ remain a basis after tensoring with K[X]/(G), even if that ring has several components, and the only five-term relation has all coefficients equal. A field already containing zeta does not permit four independent equations. Denominator invertibility follows from gcd(G,D0)=1. The number-field reduction statement is conditional on an actual algebraic identity and finitely many nonvanishing guards; it supplies no growing prime-size bound.
+
+The cyclic subgroup coefficient trace is correct: outside J its common value is −chi(J), since the total sum vanishes and the ell−1 nonzero cosets have equal sums. Its elliptic consequence controls a SUM, not pairwise remainders. A bucket confined to a subgroup/coset has at most ell labels, yielding average coverage at most 4M*ell/L=O(ell). Fixed indivisible character classes of size at least two have per-member coverage at most M, because any fixed pair in the class agrees at every chosen coordinate; merging whole classes does not evade this. These statements do not exclude coordinate-dependent partitions that split the classes.
+
+**Correction identified and now applied in the named-factor note:** an elliptic automorphism fixing the origin need not have order dividing six: order four occurs at j=1728. The correct possible nonidentity orders in characteristic not two or three are 2,3,4,6. All are coprime to five, so the required conclusion chi(u)=1 is unchanged. Under the additional scalar-action hypothesis on H, reindexing gives F(uP)=k_u F(P) and the claimed translated identity. At a fixed point this is scaled equality, not equality unless k_u=1 or the value is zero. Nontrivial origin-fixing automorphisms have at most four fixed geometric points; their orbits have at most six members. This supplies only bounded coordinates and the indicated orbit equalities, not all possible accidental equalities. Replacing u by −u for uP=−P is valid, except the identity case is already the trivial sign label equivalence.
+
+The degree argument for a separable endomorphism of degree d>1 is sound: pullback multiplies the nonzero pole-divisor degree by d, so F composed with it cannot equal a nonzero scalar multiple of F plus a constant. The division trace formula has factor d² and character factor chi(d)^−1, and its additive constant vanishes after weighting. Again a trace on a fiber does not identify its summands.
+
+With the order-four wording fix applied, the named decisions are accurate and deliberately narrow. They do not exclude the general order-five common-remainder target, accidental factors, or other CM/isogeny identities. No proposed positive factor family or computational job follows from these identities alone.

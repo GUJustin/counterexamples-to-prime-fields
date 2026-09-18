@@ -1,0 +1,66 @@
+[
+  {
+    "p": 11,
+    "n": 5,
+    "exponents_checked": 2,
+    "coefficient_examples_checked": 54,
+    "one_sided_thresholds_checked": 10,
+    "passed": true
+  },
+  {
+    "p": 11,
+    "n": 10,
+    "exponents_checked": 2,
+    "coefficient_examples_checked": 54,
+    "one_sided_thresholds_checked": 20,
+    "passed": true
+  },
+  {
+    "p": 17,
+    "n": 8,
+    "exponents_checked": 2,
+    "coefficient_examples_checked": 54,
+    "one_sided_thresholds_checked": 16,
+    "passed": true
+  },
+  {
+    "p": 17,
+    "n": 16,
+    "exponents_checked": 6,
+    "coefficient_examples_checked": 162,
+    "one_sided_thresholds_checked": 96,
+    "passed": true
+  },
+  {
+    "p": 31,
+    "n": 15,
+    "exponents_checked": 6,
+    "coefficient_examples_checked": 162,
+    "one_sided_thresholds_checked": 90,
+    "passed": true
+  },
+  {
+    "p": 31,
+    "n": 30,
+    "exponents_checked": 6,
+    "coefficient_examples_checked": 162,
+    "one_sided_thresholds_checked": 180,
+    "passed": true
+  },
+  {
+    "p": 47,
+    "n": 23,
+    "exponents_checked": 20,
+    "coefficient_examples_checked": 540,
+    "one_sided_thresholds_checked": 460,
+    "passed": true
+  },
+  {
+    "p": 47,
+    "n": 46,
+    "exponents_checked": 20,
+    "coefficient_examples_checked": 540,
+    "one_sided_thresholds_checked": 920,
+    "passed": true
+  }
+]
