@@ -1,0 +1,165 @@
+[
+  {
+    "p": 3,
+    "cubic": [
+      1,
+      2,
+      0,
+      1
+    ],
+    "s": [
+      0,
+      0,
+      0
+    ],
+    "all_quadratics_covered": 19683,
+    "rich_threshold": "strictly more than four",
+    "rich_counts": {},
+    "maximum_agreement": 4,
+    "passed": true
+  },
+  {
+    "p": 3,
+    "cubic": [
+      1,
+      2,
+      0,
+      1
+    ],
+    "s": [
+      1,
+      0,
+      0
+    ],
+    "all_quadratics_covered": 19683,
+    "rich_threshold": "strictly more than four",
+    "rich_counts": {
+      "square": 1
+    },
+    "maximum_agreement": 6,
+    "passed": true
+  },
+  {
+    "p": 3,
+    "cubic": [
+      1,
+      2,
+      0,
+      1
+    ],
+    "s": [
+      0,
+      1,
+      0
+    ],
+    "all_quadratics_covered": 19683,
+    "rich_threshold": "strictly more than four",
+    "rich_counts": {},
+    "maximum_agreement": 4,
+    "passed": true
+  },
+  {
+    "p": 3,
+    "cubic": [
+      1,
+      2,
+      0,
+      1
+    ],
+    "s": [
+      0,
+      2,
+      2
+    ],
+    "all_quadratics_covered": 19683,
+    "rich_threshold": "strictly more than four",
+    "rich_counts": {},
+    "maximum_agreement": 4,
+    "passed": true
+  },
+  {
+    "p": 5,
+    "cubic": [
+      1,
+      1,
+      0,
+      1
+    ],
+    "s": [
+      0,
+      0,
+      0
+    ],
+    "all_quadratics_covered": 1953125,
+    "rich_threshold": "strictly more than four",
+    "rich_counts": {
+      "square": 30
+    },
+    "maximum_agreement": 5,
+    "passed": true
+  },
+  {
+    "p": 5,
+    "cubic": [
+      1,
+      1,
+      0,
+      1
+    ],
+    "s": [
+      1,
+      0,
+      0
+    ],
+    "all_quadratics_covered": 1953125,
+    "rich_threshold": "strictly more than four",
+    "rich_counts": {
+      "square": 28
+    },
+    "maximum_agreement": 10,
+    "passed": true
+  },
+  {
+    "p": 5,
+    "cubic": [
+      1,
+      1,
+      0,
+      1
+    ],
+    "s": [
+      0,
+      1,
+      0
+    ],
+    "all_quadratics_covered": 1953125,
+    "rich_threshold": "strictly more than four",
+    "rich_counts": {
+      "square": 30
+    },
+    "maximum_agreement": 6,
+    "passed": true
+  },
+  {
+    "p": 5,
+    "cubic": [
+      1,
+      1,
+      0,
+      1
+    ],
+    "s": [
+      2,
+      2,
+      2
+    ],
+    "all_quadratics_covered": 1953125,
+    "rich_threshold": "strictly more than four",
+    "rich_counts": {
+      "even_nonsquare": 4,
+      "square": 30
+    },
+    "maximum_agreement": 6,
+    "passed": true
+  }
+]
