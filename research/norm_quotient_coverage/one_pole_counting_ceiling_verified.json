@@ -1,0 +1,676 @@
+{
+  "status": "PASS_EXACT_MODEL_SPECIFIC_CEILING",
+  "n": 262144,
+  "J": 131072,
+  "model": "n=(s+1)m; one reserved full fiber; 0<=w<m; w+(r-2)m<=J-1; one label per r-subset",
+  "central_127": 11975573020964041433067793888190275875,
+  "cases": [
+    {
+      "name": "Goldilocks_cubic",
+      "p": 18446744069414584321,
+      "extension_degree": 3,
+      "native_nonzero_labels": 6277101731002175853884774869567645561244584131361410908160,
+      "all_compatible_divisors": [
+        {
+          "m": 1,
+          "s": 262143,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 131073,
+          "w": 0,
+          "agreement": 131073,
+          "margin_numerator": 1
+        },
+        {
+          "m": 2,
+          "s": 131071,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 65537,
+          "w": 1,
+          "agreement": 131075,
+          "margin_numerator": 3
+        },
+        {
+          "m": 4,
+          "s": 65535,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 32769,
+          "w": 3,
+          "agreement": 131079,
+          "margin_numerator": 7
+        },
+        {
+          "m": 8,
+          "s": 32767,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 16385,
+          "w": 7,
+          "agreement": 131087,
+          "margin_numerator": 15
+        },
+        {
+          "m": 16,
+          "s": 16383,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 8193,
+          "w": 15,
+          "agreement": 131103,
+          "margin_numerator": 31
+        },
+        {
+          "m": 32,
+          "s": 8191,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 4097,
+          "w": 31,
+          "agreement": 131135,
+          "margin_numerator": 63
+        },
+        {
+          "m": 64,
+          "s": 4095,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 2049,
+          "w": 63,
+          "agreement": 131199,
+          "margin_numerator": 127
+        },
+        {
+          "m": 128,
+          "s": 2047,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 1025,
+          "w": 127,
+          "agreement": 131327,
+          "margin_numerator": 255
+        },
+        {
+          "m": 256,
+          "s": 1023,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 513,
+          "w": 255,
+          "agreement": 131583,
+          "margin_numerator": 511
+        },
+        {
+          "m": 512,
+          "s": 511,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 257,
+          "w": 511,
+          "agreement": 132095,
+          "margin_numerator": 1023
+        },
+        {
+          "m": 1024,
+          "s": 255,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 129,
+          "w": 1023,
+          "agreement": 133119,
+          "margin_numerator": 2047
+        },
+        {
+          "m": 2048,
+          "s": 127,
+          "central_binomial_passes": false
+        },
+        {
+          "m": 4096,
+          "s": 63,
+          "central_binomial_passes": false
+        },
+        {
+          "m": 8192,
+          "s": 31,
+          "central_binomial_passes": false
+        },
+        {
+          "m": 16384,
+          "s": 15,
+          "central_binomial_passes": false
+        },
+        {
+          "m": 32768,
+          "s": 7,
+          "central_binomial_passes": false
+        },
+        {
+          "m": 65536,
+          "s": 3,
+          "central_binomial_passes": false
+        },
+        {
+          "m": 131072,
+          "s": 1,
+          "central_binomial_passes": false
+        },
+        {
+          "m": 262144,
+          "s": 0,
+          "central_binomial_passes": false
+        }
+      ],
+      "maximum_counting_permitted_m": 1024,
+      "maximum_counting_permitted_agreement": 133119,
+      "maximum_margin": {
+        "numerator": 2047,
+        "denominator": 262144
+      },
+      "current_certified_m": 1024,
+      "current_certified_margin": {
+        "numerator": 2047,
+        "denominator": 262144
+      },
+      "remaining_margin_numerator": 0,
+      "next_fiber_central_binomial": 11975573020964041433067793888190275875,
+      "next_fiber_exact_deficit": 6277101731002175853872799296546681519811516337473220632285
+    },
+    {
+      "name": "BabyBear_quartic",
+      "p": 2013265921,
+      "extension_degree": 4,
+      "native_nonzero_labels": 16428751811598850197311699254593454080,
+      "all_compatible_divisors": [
+        {
+          "m": 1,
+          "s": 262143,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 131073,
+          "w": 0,
+          "agreement": 131073,
+          "margin_numerator": 1
+        },
+        {
+          "m": 2,
+          "s": 131071,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 65537,
+          "w": 1,
+          "agreement": 131075,
+          "margin_numerator": 3
+        },
+        {
+          "m": 4,
+          "s": 65535,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 32769,
+          "w": 3,
+          "agreement": 131079,
+          "margin_numerator": 7
+        },
+        {
+          "m": 8,
+          "s": 32767,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 16385,
+          "w": 7,
+          "agreement": 131087,
+          "margin_numerator": 15
+        },
+        {
+          "m": 16,
+          "s": 16383,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 8193,
+          "w": 15,
+          "agreement": 131103,
+          "margin_numerator": 31
+        },
+        {
+          "m": 32,
+          "s": 8191,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 4097,
+          "w": 31,
+          "agreement": 131135,
+          "margin_numerator": 63
+        },
+        {
+          "m": 64,
+          "s": 4095,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 2049,
+          "w": 63,
+          "agreement": 131199,
+          "margin_numerator": 127
+        },
+        {
+          "m": 128,
+          "s": 2047,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 1025,
+          "w": 127,
+          "agreement": 131327,
+          "margin_numerator": 255
+        },
+        {
+          "m": 256,
+          "s": 1023,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 513,
+          "w": 255,
+          "agreement": 131583,
+          "margin_numerator": 511
+        },
+        {
+          "m": 512,
+          "s": 511,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 257,
+          "w": 511,
+          "agreement": 132095,
+          "margin_numerator": 1023
+        },
+        {
+          "m": 1024,
+          "s": 255,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 129,
+          "w": 1023,
+          "agreement": 133119,
+          "margin_numerator": 2047
+        },
+        {
+          "m": 2048,
+          "s": 127,
+          "central_binomial_passes": false
+        },
+        {
+          "m": 4096,
+          "s": 63,
+          "central_binomial_passes": false
+        },
+        {
+          "m": 8192,
+          "s": 31,
+          "central_binomial_passes": false
+        },
+        {
+          "m": 16384,
+          "s": 15,
+          "central_binomial_passes": false
+        },
+        {
+          "m": 32768,
+          "s": 7,
+          "central_binomial_passes": false
+        },
+        {
+          "m": 65536,
+          "s": 3,
+          "central_binomial_passes": false
+        },
+        {
+          "m": 131072,
+          "s": 1,
+          "central_binomial_passes": false
+        },
+        {
+          "m": 262144,
+          "s": 0,
+          "central_binomial_passes": false
+        }
+      ],
+      "maximum_counting_permitted_m": 1024,
+      "maximum_counting_permitted_agreement": 133119,
+      "maximum_margin": {
+        "numerator": 2047,
+        "denominator": 262144
+      },
+      "current_certified_m": 1024,
+      "current_certified_margin": {
+        "numerator": 2047,
+        "denominator": 262144
+      },
+      "remaining_margin_numerator": 0,
+      "next_fiber_central_binomial": 11975573020964041433067793888190275875,
+      "next_fiber_exact_deficit": 4453178790634808764243905366403178205
+    },
+    {
+      "name": "BabyBear_quintic",
+      "p": 2013265921,
+      "extension_degree": 5,
+      "native_nonzero_labels": 33075446146858977625031769923874103810955673600,
+      "all_compatible_divisors": [
+        {
+          "m": 1,
+          "s": 262143,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 131073,
+          "w": 0,
+          "agreement": 131073,
+          "margin_numerator": 1
+        },
+        {
+          "m": 2,
+          "s": 131071,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 65537,
+          "w": 1,
+          "agreement": 131075,
+          "margin_numerator": 3
+        },
+        {
+          "m": 4,
+          "s": 65535,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 32769,
+          "w": 3,
+          "agreement": 131079,
+          "margin_numerator": 7
+        },
+        {
+          "m": 8,
+          "s": 32767,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 16385,
+          "w": 7,
+          "agreement": 131087,
+          "margin_numerator": 15
+        },
+        {
+          "m": 16,
+          "s": 16383,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 8193,
+          "w": 15,
+          "agreement": 131103,
+          "margin_numerator": 31
+        },
+        {
+          "m": 32,
+          "s": 8191,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 4097,
+          "w": 31,
+          "agreement": 131135,
+          "margin_numerator": 63
+        },
+        {
+          "m": 64,
+          "s": 4095,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 2049,
+          "w": 63,
+          "agreement": 131199,
+          "margin_numerator": 127
+        },
+        {
+          "m": 128,
+          "s": 2047,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 1025,
+          "w": 127,
+          "agreement": 131327,
+          "margin_numerator": 255
+        },
+        {
+          "m": 256,
+          "s": 1023,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 513,
+          "w": 255,
+          "agreement": 131583,
+          "margin_numerator": 511
+        },
+        {
+          "m": 512,
+          "s": 511,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 257,
+          "w": 511,
+          "agreement": 132095,
+          "margin_numerator": 1023
+        },
+        {
+          "m": 1024,
+          "s": 255,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 129,
+          "w": 1023,
+          "agreement": 133119,
+          "margin_numerator": 2047
+        },
+        {
+          "m": 2048,
+          "s": 127,
+          "central_binomial_passes": false
+        },
+        {
+          "m": 4096,
+          "s": 63,
+          "central_binomial_passes": false
+        },
+        {
+          "m": 8192,
+          "s": 31,
+          "central_binomial_passes": false
+        },
+        {
+          "m": 16384,
+          "s": 15,
+          "central_binomial_passes": false
+        },
+        {
+          "m": 32768,
+          "s": 7,
+          "central_binomial_passes": false
+        },
+        {
+          "m": 65536,
+          "s": 3,
+          "central_binomial_passes": false
+        },
+        {
+          "m": 131072,
+          "s": 1,
+          "central_binomial_passes": false
+        },
+        {
+          "m": 262144,
+          "s": 0,
+          "central_binomial_passes": false
+        }
+      ],
+      "maximum_counting_permitted_m": 1024,
+      "maximum_counting_permitted_agreement": 133119,
+      "maximum_margin": {
+        "numerator": 2047,
+        "denominator": 262144
+      },
+      "current_certified_m": 1024,
+      "current_certified_margin": {
+        "numerator": 2047,
+        "denominator": 262144
+      },
+      "remaining_margin_numerator": 0,
+      "next_fiber_central_binomial": 11975573020964041433067793888190275875,
+      "next_fiber_exact_deficit": 33075446134883404604067728490806309922765397725
+    },
+    {
+      "name": "KoalaBear_sextic",
+      "p": 2130706433,
+      "extension_degree": 6,
+      "native_nonzero_labels": 93571093019388561295270373781649880353786165192103559168,
+      "all_compatible_divisors": [
+        {
+          "m": 1,
+          "s": 262143,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 131073,
+          "w": 0,
+          "agreement": 131073,
+          "margin_numerator": 1
+        },
+        {
+          "m": 2,
+          "s": 131071,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 65537,
+          "w": 1,
+          "agreement": 131075,
+          "margin_numerator": 3
+        },
+        {
+          "m": 4,
+          "s": 65535,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 32769,
+          "w": 3,
+          "agreement": 131079,
+          "margin_numerator": 7
+        },
+        {
+          "m": 8,
+          "s": 32767,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 16385,
+          "w": 7,
+          "agreement": 131087,
+          "margin_numerator": 15
+        },
+        {
+          "m": 16,
+          "s": 16383,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 8193,
+          "w": 15,
+          "agreement": 131103,
+          "margin_numerator": 31
+        },
+        {
+          "m": 32,
+          "s": 8191,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 4097,
+          "w": 31,
+          "agreement": 131135,
+          "margin_numerator": 63
+        },
+        {
+          "m": 64,
+          "s": 4095,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 2049,
+          "w": 63,
+          "agreement": 131199,
+          "margin_numerator": 127
+        },
+        {
+          "m": 128,
+          "s": 2047,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 1025,
+          "w": 127,
+          "agreement": 131327,
+          "margin_numerator": 255
+        },
+        {
+          "m": 256,
+          "s": 1023,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 513,
+          "w": 255,
+          "agreement": 131583,
+          "margin_numerator": 511
+        },
+        {
+          "m": 512,
+          "s": 511,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 257,
+          "w": 511,
+          "agreement": 132095,
+          "margin_numerator": 1023
+        },
+        {
+          "m": 1024,
+          "s": 255,
+          "central_binomial_passes": true,
+          "best_counting_permitted_r": 129,
+          "w": 1023,
+          "agreement": 133119,
+          "margin_numerator": 2047
+        },
+        {
+          "m": 2048,
+          "s": 127,
+          "central_binomial_passes": false
+        },
+        {
+          "m": 4096,
+          "s": 63,
+          "central_binomial_passes": false
+        },
+        {
+          "m": 8192,
+          "s": 31,
+          "central_binomial_passes": false
+        },
+        {
+          "m": 16384,
+          "s": 15,
+          "central_binomial_passes": false
+        },
+        {
+          "m": 32768,
+          "s": 7,
+          "central_binomial_passes": false
+        },
+        {
+          "m": 65536,
+          "s": 3,
+          "central_binomial_passes": false
+        },
+        {
+          "m": 131072,
+          "s": 1,
+          "central_binomial_passes": false
+        },
+        {
+          "m": 262144,
+          "s": 0,
+          "central_binomial_passes": false
+        }
+      ],
+      "maximum_counting_permitted_m": 1024,
+      "maximum_counting_permitted_agreement": 133119,
+      "maximum_margin": {
+        "numerator": 2047,
+        "denominator": 262144
+      },
+      "current_certified_m": 512,
+      "current_certified_margin": {
+        "numerator": 1023,
+        "denominator": 262144
+      },
+      "remaining_margin_numerator": 1024,
+      "next_fiber_central_binomial": 11975573020964041433067793888190275875,
+      "next_fiber_exact_deficit": 93571093019388561283294800760685838920718371303913283293
+    }
+  ],
+  "unreserved_zero_core_caveat": {
+    "scope": "No reserved tag and zero core; necessary count only, not a coverage proof",
+    "field": "BabyBear_quartic",
+    "m": 2048,
+    "s": 128,
+    "r": 65,
+    "w": 0,
+    "bank_size": 23582666872052266206656578733667004800,
+    "native_nonzero_labels": 16428751811598850197311699254593454080,
+    "witness_degree_upper": 129024,
+    "margin": {
+      "numerator": 2048,
+      "denominator": 262144
+    },
+    "f_and_common_agreement": 131072,
+    "g_root_count_upper": 133119,
+    "near_agreement": 133120
+  },
+  "scope_excludes": [
+    "other support parametrizations",
+    "a universal RS bound",
+    "a sufficient coverage theorem at the counting ceiling"
+  ]
+}
