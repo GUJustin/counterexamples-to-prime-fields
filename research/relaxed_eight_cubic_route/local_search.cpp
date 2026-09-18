@@ -1,0 +1,17 @@
+// Same exact decoder and Jacobian arithmetic; received-word coordinate ascent.
+#define main archived_random_main
+#include "search.cpp"
+#undef main
+int weight(int a){return a>=7?100000:(a==6?100:(a==5?1:0));}
+int main(){auto begin=chrono::steady_clock::now();vector<array<uint8_t,n>>E(codes);for(int k=0;k<codes;k++){auto a=coeff(k);for(int j=0;j<n;j++){int x=j+1;E[k][j]=mod(((a[3]*x+a[2])*x+a[1])*x+a[0]);}}
+state=202609183211ULL;vector<int>A(codes);array<uint8_t,n>w;long steps=0,restarts=0,hits=0;int best=0,best_rank=0;bool success=false;vector<int>savedword,savedcodes,pivots;vector<vector<int>>support;
+while(chrono::duration<double>(chrono::steady_clock::now()-begin).count()<50){restarts++;for(auto&z:w)z=rng()%p;for(int k=0;k<codes;k++){A[k]=0;for(int j=0;j<n;j++)A[k]+=(E[k][j]==w[j]);}
+for(int iter=0;iter<120;iter++){steps++;if(steps%8==0&&chrono::duration<double>(chrono::steady_clock::now()-begin).count()>50)break;
+vector<int>list;for(int k=0;k<codes;k++)if(A[k]>=7)list.push_back(k);int count=list.size();if(count>best){best=count;savedword.assign(w.begin(),w.end());savedcodes=list;}
+if(count>=8){hits++;for(int trial=0;trial<32;trial++){if(trial)for(int i=count-1;i;i--)swap(list[i],list[rng()%(i+1)]);vector<array<int,64>>M;vector<vector<int>>S;for(int i=0;i<8;i++){auto a=coeff(list[i]);vector<int>matches;for(int j=0;j<n;j++)if(E[list[i]][j]==w[j])matches.push_back(j);if(trial)for(int j=matches.size()-1;j;j--)swap(matches[j],matches[rng()%(j+1)]);matches.resize(7);sort(matches.begin(),matches.end());S.push_back(matches);for(int j:matches){array<int,64>row{};int x=j+1,powx=1;for(int e=0;e<4;e++){row[4*i+e]=powx;powx=powx*x%p;}row[32+j]=mod(a[1]+2*a[2]*x+3*a[3]*x*x);row[48+j]=p-1;M.push_back(row);}}vector<int>pv;int r=rank_matrix(M,pv);best_rank=max(best_rank,r);if(r==56){success=true;savedword.assign(w.begin(),w.end());savedcodes.assign(list.begin(),list.begin()+8);support=S;pivots=pv;break;}}if(success)break;}
+long bestdelta=0;vector<pair<int,int>>moves;
+for(int j=0;j<n;j++){long gains[p]={0},loss=0;for(int k=0;k<codes;k++){int a=A[k],v=E[k][j];if(v==w[j])loss+=weight(a-1)-weight(a);else gains[v]+=weight(a+1)-weight(a);}for(int v=0;v<p;v++)if(v!=w[j]){long d=gains[v]+loss;if(d>bestdelta){bestdelta=d;moves.clear();}if(d==bestdelta&&d>0)moves.push_back({j,v});}}
+auto apply=[&](int j,int v){int old=w[j];for(int k=0;k<codes;k++){A[k]-=(E[k][j]==old);A[k]+=(E[k][j]==v);}w[j]=v;};
+if(moves.empty()){for(int z=0;z<2;z++){int j=rng()%n,v=rng()%p;apply(j,v);}}else{auto mv=moves[rng()%moves.size()];apply(mv.first,mv.second);}}
+if(success)break;}
+ofstream o("research/relaxed_eight_cubic_route/local_search.json");o<<"{\"p\":17,\"n\":16,\"degree\":3,\"agreement\":7,\"seed\":202609183211,\"steps\":"<<steps<<",\"restarts\":"<<restarts<<",\"hits\":"<<hits<<",\"best_list\":"<<best<<",\"best_jacobian_rank\":"<<best_rank<<",\"smooth_hit\":"<<(success?"true":"false")<<",\"seconds\":"<<chrono::duration<double>(chrono::steady_clock::now()-begin).count()<<",\"nodes\":[";for(int j=0;j<n;j++){if(j)o<<',';o<<j+1;}o<<"],\"word\":";arr(o,savedword);o<<",\"polynomials\":[";for(int i=0;i<(int)savedcodes.size();i++){if(i)o<<',';auto a=coeff(savedcodes[i]);arr(o,vector<int>(a.begin(),a.end()));}o<<']';if(success){o<<",\"selected_supports\":[";for(int i=0;i<8;i++){if(i)o<<',';arr(o,support[i]);}o<<"],\"pivot_columns\":";arr(o,pivots);}o<<"}\n";o.close();cout<<"steps="<<steps<<" restarts="<<restarts<<" best="<<best<<" rank="<<best_rank<<" smooth="<<success<<endl;}

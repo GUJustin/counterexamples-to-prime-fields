@@ -1,0 +1,11 @@
+{
+  "command": [
+    "research/relaxed_eight_cubic_route/search"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 5.4235421670018695,
+  "peak_rss_kib": 2832,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

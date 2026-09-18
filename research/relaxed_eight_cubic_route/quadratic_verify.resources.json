@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/relaxed_eight_cubic_route/verify_quadratic_pullback.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5431348330021137,
+  "peak_rss_kib": 7232,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

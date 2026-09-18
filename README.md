@@ -5,7 +5,7 @@ Working draft by Justin Thaler, September 18, 2026.
 [Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
 **Latest verified results (September 18, early morning):** the ePrint-style article
-is 218 pages with one-inch margins. New Theorem U.1 gives an exact
+is 220 pages with one-inch margins. New Theorem U.1 gives an exact
 seven-member nearest-codeword list at quarter rate: length28, dimension7,
 and fourteen agreements per candidate, over arbitrarily large prime fields.
 Two short cyclotomic identities give the construction; its complete-list proof
@@ -31,6 +31,13 @@ Theorem W.5 proves the corresponding exclusion for the orbit-2 uniform net,
 using a separately reconstructed degree-62 discriminant and independently
 verified projective multiplicity certificates. Both nets also exclude
 the possible nonprimitive norm powers under the stated augmentation hypotheses.
+
+New Theorem W.6 gives a positive construction: over arbitrarily large prime
+fields, a length-32, dimension-7 word has exactly eight nearest codewords,
+each with 14 agreements. A smooth cubic incidence seed, independent unit
+Jacobian minor, and exhaustive quadratic norm certificates prove the result.
+Its agreement is above the first-order curve at rate 7/32. This is a finite
+seed, not a growing-list construction or a better.codes improvement.
 
 
 Corollary 2.4 sharpens the shrinking-gap and prime-size lower bounds by

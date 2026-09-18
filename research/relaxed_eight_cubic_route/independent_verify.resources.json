@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/relaxed_eight_cubic_route/independent_verify.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5441729170124745,
+  "peak_rss_kib": 6816,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}
