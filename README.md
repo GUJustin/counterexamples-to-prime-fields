@@ -5,7 +5,7 @@ Working draft by Justin Thaler, September 18, 2026.
 [Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
 **Latest verified results (September 18):** the full-page,
-one-inch-margin ePrint draft (254 pages) now proves a prime-field line construction
+one-inch-margin ePrint draft (256 pages) now proves a prime-field line construction
 with more than n^(3/2)/4 exceptional challenges, each having a singleton
 list, at an error radius covered by the Dao–Kominers–Thaler bounds
 and beyond the Johnson radius. Both source words
@@ -30,6 +30,15 @@ The uniform finite upper comparison is
 31000n². A separate extension-field construction gives the same exponent
 and an exact two-level spectrum; its affine-witness companion asymptotically
 attains a universal triple-count bound.
+
+A separate list-size comparison now gives **N/2 ≤ maximum list size ≤ 22N**
+at the same below-Johnson threshold over F_(p³), for N=2(p²+p+1),
+dimension three, and p≥4099. The explicit word has exactly N/2 witnesses;
+every other quadratic has at most p+1 matches. The upper bound applies
+to every received word, using a checked finite DKT certificate. This is
+constant-factor tightness for this varying-rate extension-field list bound,
+not for prime alphabets or received-line exception counts. The construction
+uses classical projective-plane incidence geometry.
 
 Over sufficiently large primes, a deterministic cover gives exactly
 L(L²−L+1)+1 exceptions with source gap s and length s(2L²−2L+1).

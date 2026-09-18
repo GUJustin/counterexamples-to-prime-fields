@@ -1,0 +1,155 @@
+\subsection{A norm-one list with a matched finite upper bound}
+\label{sec:norm-one-direct-list}
+
+The next example concerns the size of one list, rather than the number
+of exceptional parameters on a received line. Its incidence parameters
+are those of the classical projective-plane design, with each coordinate
+doubled. We make no novelty claim for that geometry.
+
+\begin{theorem}\label{thm:norm-one-direct-list}
+Let $p\ge4099$ be prime, let $E=\mathbb F_{p^3}$, and put
+\[
+ L=p^2+p+1,\qquad N=2L,\qquad
+ G=\ker\operatorname{Norm}_{E/\mathbb F_p},\qquad
+ D=\{x\in E^*:x^2\in G\}.
+\]
+The dimension-three Reed--Solomon code on $D$ has a received word
+$f(x)=x^{2p+2}$ whose maximum agreement is $A=2p+2$ and whose complete
+list at that threshold consists of the $L=N/2$ polynomials
+\[
+ Q_a(X)=aX^2-a^{p^2+1},\qquad
+ \operatorname{Norm}_{E/\mathbb F_p}(a)=-1.
+\]
+This list attains the Johnson counting bound exactly. At the lower
+threshold
+\[
+ T=2p-\lceil4\sqrt p\rceil-4
+\]
+the complete list of $f$ is still exactly the displayed $N/2$ witnesses,
+and the same code satisfies
+\[
+ N a_1(3/N)<T<\sqrt{2N},
+\]
+\[
+ \frac N2\le\max_{w\in E^D}
+ \#\{Q\in E[X]:\deg Q\le2,\ |\{x\in D:w(x)=Q(x)\}|\ge T\}
+ \le22N.
+\]
+Thus the lower bound is within a factor $44$ of an explicit uniform
+finite first-order list bound at the same parameters. Here the rate tends
+to zero, $p=\Theta(\sqrt N)$, and $|E|=\Theta(N^{3/2})$; this is not a
+fixed-rate or prime-alphabet assertion.
+\end{theorem}
+
+\begin{proof}
+The group $G$ has odd order $L$ and lies in the squares of $E^*$, so
+$|D|=2L$. For $\operatorname{Norm}(a)=-1$, substitute
+$y=a^{p^2}z$ in $y^{p+1}=ay-a^{p^2+1}$. The result is
+\[
+ z^{p+1}-z+1=0,\qquad z^p=1-1/z.
+\]
+Neither $0$ nor $1$ is a root. The fractional linear map $1-1/z$
+has third iterate the identity, so all roots lie in $E$. The polynomial
+is squarefree: its derivative is $z^p-1$, and a common zero would leave
+residual $1$. Its $p+1$ roots satisfy
+$z^{p^2}=1/(1-z)$ and hence $\operatorname{Norm}(z)=-1$.
+Consequently all $p+1$ values of $y$ have norm one. Each has two square
+roots in $D$, proving exactly $A$ matches for each of the $L$ distinct
+quadratics displayed above.
+
+For any quadratic $Q$, the polynomial $f-Q$ has degree $A$, so no
+quadratic has more than $A$ matches. If the complete threshold-$A$ list
+has size $m$, let $r_x$ count its matching witnesses at $x$. Distinct
+quadratics share at most two matching coordinates. Therefore
+\[
+ \sum_x r_x=mA,\qquad
+ \sum_xr_x^2\le mA+2m(m-1).
+\]
+Cauchy's inequality gives
+\[
+ m\le\frac{N(A-2)}{A^2-2N}=L,
+ \qquad A^2-2N=4p.
+\]
+This proves completeness and exact Johnson saturation. Equality also
+shows that every coordinate belongs to $p+1$ supports and every pair
+of supports shares two coordinates.
+
+We next show that every quadratic outside this bank has at most $p+1$
+matches. We use the following elementary semilinear observation. For
+$v\ne0$, a nonzero root of $z^{p+1}=uz+v$ satisfies
+$z^p=u+v/z$. The threefold Frobenius-twisted composition of this
+fractional linear map is the identity exactly when
+$u\ne0$ and $v=-u^{1+p^2}$: this follows by multiplying the matrices
+$\left(\begin{smallmatrix}u^{p^i}&v^{p^i}\\1&0\end{smallmatrix}\right)$
+for $i=2,1,0$. Otherwise it has at most two fixed points.
+The identity case has exactly $p+1$ roots by the same squarefreeness
+and Frobenius argument as above. When $v=0$, there is at most one
+nonzero root.
+
+For an even quadratic $Q=aX^2+c$, apply this observation to
+$y=x^2$. More than four matches requires
+$a\ne0$ and $c=-a^{1+p^2}$. All its $y$-roots have norm
+$-\operatorname{Norm}(a)$, so any match on $D$ then requires
+$\operatorname{Norm}(a)=-1$.
+For $Q=aX^2+bX+c$ with $b\ne0$, put
+\[
+ r(X)=1-a^pQ(X)-c^pX^2.
+\]
+At a matching $x\in D$, the norm-one condition gives
+$x^2Q(x)^p=1$, hence $r(x)=b^px^{p+2}$. Thus
+\[
+ r(X)^2-b^{2p}X^2Q(X)
+\]
+vanishes at every match. If this polynomial is nonzero, there are at
+most four matches. If it is zero, $X$ divides $r$ and
+\[
+ H(X)=\frac{r(X)}{b^pX}
+\]
+is a polynomial of degree at most one, with $H^2=Q$.
+The original unsquared identity forces
+$x^{p+1}=H(x)$ at every match, giving at most $p+1$ matches.
+As $p+1\ge4$, every outsider has at most $p+1$ matches.
+Consequently the displayed bank is the complete list at every integer
+threshold $p+1<T'\le2p+2$, including $T$.
+
+For the uniform upper bound at $T$, use the derivative-weighted support
+of~\cite[Proposition~5.10]{dkt2026} with
+\[
+ m=6,\quad B_\partial=3,\quad B=B_{\rm jet}=3T,
+ \quad H=B_Z=40B.
+\]
+Its coefficient count is $G_{\rm coef}=4B^2-2B$ and its six local-rank
+contributions are $4,8,12,15,14,9$, totaling $R=62$.
+For $p\ge4099$, $29p/5\le B\le6p$, and
+\[
+ 39G_{\rm coef}-40NR
+ \ge\frac{7196}{25}p^2-5428p-4960>0.
+\]
+Thus $G_{\rm coef}>NR$ and the graded support surplus is at least
+$B(39G_{\rm coef}-40NR)+(G_{\rm coef}-NR)>0$.
+This certificate applies uniformly to evaluation domains and received
+words. Reconstruction requires only $p>\max(2,3)$.
+
+In~\cite[Eq.~(54), Lemma~5.11]{dkt2026}, message degree $2$ and
+$(B,M)=(3T,3)$ give $F_{\rm reg}=7B-12$ and $S=5B-9$.
+Writing $\lambda=(N-2)/(T-2)$, the fixed-word bound is therefore
+\[
+ \lambda F_{\rm reg}+S
+ =21N+30\lambda+15T-51\le21N+90p-51\le22N.
+\]
+Here $T-2\ge p+1$ gives $\lambda\le2p$, and
+$N-90p+51=2p^2-88p+53>0$.
+The exhibited complete list supplies the lower bound at $T$.
+Finally, $T<2p<\sqrt{2N}$, while the first-order curve estimate gives
+\[
+ N a_1(3/N)\le\sqrt{3N/2}+(3N/8)^{1/4}
+ <\frac74p+\sqrt p<T
+\]
+using $T\ge2p-5\sqrt p$ and $\sqrt p>24$.
+\end{proof}
+
+The matched comparison is codewide, not just a bound along one received
+line. Its normalized threshold and normalized separation from the
+first-order curve both vanish with the rate; it makes no claim of
+constant-factor tightness for exceptional-label or common-agreement
+bounds.

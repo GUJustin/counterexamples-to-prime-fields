@@ -1,0 +1,70 @@
+[
+  {
+    "p": 3,
+    "cubic": [
+      1,
+      2,
+      0,
+      1
+    ],
+    "domain_size": 26,
+    "all_quadratics_covered": 19683,
+    "bank_size": 13,
+    "maximum_outside_bank": 4,
+    "agreement_histogram": {
+      "0": 7489,
+      "1": 7124,
+      "2": 3575,
+      "3": 1352,
+      "4": 130,
+      "8": 13
+    },
+    "passed": true
+  },
+  {
+    "p": 5,
+    "cubic": [
+      1,
+      1,
+      0,
+      1
+    ],
+    "domain_size": 62,
+    "all_quadratics_covered": 1953125,
+    "bank_size": 31,
+    "maximum_outside_bank": 6,
+    "agreement_histogram": {
+      "0": 1189719,
+      "1": 586272,
+      "2": 150443,
+      "3": 25544,
+      "4": 1054,
+      "6": 62,
+      "12": 31
+    },
+    "passed": true
+  },
+  {
+    "p": 7,
+    "cubic": [
+      1,
+      1,
+      0,
+      1
+    ],
+    "domain_size": 114,
+    "all_quadratics_covered": 40353607,
+    "bank_size": 57,
+    "maximum_outside_bank": 8,
+    "agreement_histogram": {
+      "0": 28945931,
+      "1": 9595836,
+      "2": 1626267,
+      "3": 179816,
+      "4": 5586,
+      "8": 114,
+      "16": 57
+    },
+    "passed": true
+  }
+]

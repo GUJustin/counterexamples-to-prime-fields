@@ -1,0 +1,38 @@
+[
+  {
+    "p": 4099,
+    "N": 33611802,
+    "T": 7937,
+    "B": 23811,
+    "list_lower": 16805901,
+    "upper_numerator": 373523685134,
+    "upper_denominator": 529,
+    "upper_floor": 706093922,
+    "uniform_22N": 739459644,
+    "graded_surplus": 121131842572776
+  },
+  {
+    "p": 8191,
+    "N": 134201346,
+    "T": 16015,
+    "B": 48045,
+    "list_lower": 67100673,
+    "upper_numerator": 45136161170040,
+    "upper_denominator": 16013,
+    "upper_floor": 2818719863,
+    "uniform_22N": 2952429612,
+    "graded_surplus": 1310435509352508
+  },
+  {
+    "p": 65537,
+    "N": 8590327814,
+    "T": 130045,
+    "B": 390135,
+    "list_lower": 4295163907,
+    "upper_numerator": 23459863373067234,
+    "upper_denominator": 130043,
+    "upper_floor": 180400816445,
+    "uniform_22N": 188987211908,
+    "graded_surplus": 951924105563237912
+  }
+]
