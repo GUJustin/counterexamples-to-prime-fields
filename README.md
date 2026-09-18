@@ -64,15 +64,18 @@ probability one. **The inputs themselves are nearby.** This strengthens
 the common-agreement counterexample, not the result about individually
 far inputs, and does not improve the fixed better.codes benchmark.
 
-The subsequent puncturing theorem **does make two inputs individually
-far over the same F_(p³)**. Deleting at most 3p−2 coordinates erases
-their unique nearby witness, while at least p³−p² mixtures retain
-singleton lists at threshold 2p−ceil(4sqrt(p))−8. Both input agreements
+The subsequent puncturing theorem **makes p inputs individually far
+over the same F_(p³)** by deleting at most p coordinates. At threshold
+2p−ceil(4sqrt(p))−4, its exact mixture profile is p empty lists,
+p³−2p singleton lists, and p lists of size p. Both input agreements
 are at most p+2sqrt(p), so the separation remains of order sqrt(N).
-The exceptional probability is at least 1−1/p and the length is
-2p²−O(p). The finite first-order certificate survives for p≥4099.
-This strengthens the far-input extension-field result as well; it
-does not yet yield prime-alphabet, fixed-rate, or benchmark tightness.
+The nearby-mixture probability is exactly **1−1/p²**, and the singleton
+probability is **1−2/p²**. The length is 2p²−O(p), and the finite
+first-order certificate survives for p≥4099. The far inputs form an
+affine F_p-line: F_p-valued combinations stay far, whereas the stated
+probabilities use F_(p³)-valued coefficients. This strengthens the
+far-input extension-field result; it does not yet yield prime-alphabet,
+fixed-rate, or benchmark tightness.
 
 These results do not supersede the fixed-rate near-capacity counterexamples
 of Krachun–Kazanin–Haböck or the capacity-conjecture refutation of

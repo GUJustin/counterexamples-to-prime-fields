@@ -1,99 +1,98 @@
-\subsection{Puncturing two decoded fibers to obtain far endpoints}
+\subsection{One-fiber puncturing: an exact spectrum with far inputs}
 \label{sec:fp3-far-endpoints}
 
 \begin{theorem}\label{thm:fp3-far-endpoints}
 For every prime $p\ge4099$, there is a dimension-three Reed--Solomon
-code over $E=\mathbb F_{p^3}$ of length $n$ satisfying
+code over $E=\mathbb F_{p^3}$, of length
 \[
- 2p^2-4p+1\le n\le2p^2-p-1,
+ 2p^2-2p-1\le n\le2p^2-p-1,
 \]
-and two words $r_0,r_1$, each with individual agreement at most
-$p+2\sqrt p$, such that at least $p^3-p^2$ of their affine mixtures
-$(1-t)r_0+tr_1$, $t\in E$, have singleton lists at threshold
+and a received affine line with the following exact list-size spectrum
+at agreement threshold
 \[
- T=2p-\lceil4\sqrt p\rceil-8.
+ T=2p-\lceil4\sqrt p\rceil-4:
 \]
-Their ordinary common agreement is also at most $p+2\sqrt p$.
-Moreover
+exactly $p^3-2p$ parameters have singleton lists, $p$ parameters have
+lists of size $p$, and $p$ parameters have empty lists. The empty-list
+parameters form an affine $\mathbb F_p$-line, and their received words
+all have individual agreement at most $p+2\sqrt p$.
+Choose any two distinct such words as endpoints. Their ordinary common
+agreement is at most $p+2\sqrt p$, and a uniform $E$-valued affine
+mixture is nearby with probability $1-p^{-2}$ and has a singleton list
+with probability $1-2p^{-2}$. Moreover
 \[
- n a_1(3/n)<T<\sqrt{2n}.
+ n a_1(3/n)<T<\sqrt{2n},\qquad
+ T-(p+2\sqrt p)\ge p-6\sqrt p-5.
 \]
-Thus the exceptional probability is at least $1-1/p$, with both
-endpoints outside the tested radius by an agreement gap at least
-$p-6\sqrt p-9=\Theta(\sqrt n)$. The characteristic is
-$\Theta(\sqrt n)$ and the alphabet is the native field $\mathbb F_{p^3}$.
-The rate and normalized source separation tend to zero.
+Thus the source separation is $\Theta(\sqrt n)$ and the characteristic
+is $\Theta(\sqrt n)$. There are $p$ distinct collinear far inputs
+available; these are not affinely independent. The rate and normalized
+source separation tend to zero.
 \end{theorem}
 
 \begin{proof}
-Use the construction and notation of
-Theorem~\ref{thm:fp3-common-agreement}, before puncturing, with length
+Start with Theorem~\ref{thm:fp3-common-agreement}, at length
 $N=2p^2-p-1$ and threshold $A=2p-\lceil4\sqrt p\rceil-2$.
-Its proof establishes more than the threshold lists: at any parameter
-outside $\Lambda_0=(\delta/u_0)\mathbb F_p$, exactly one quadratic
-is canonical on both blocks, and every other quadratic has at most
-$\max(p+2\sqrt p,16)=p+2\sqrt p$ matches.
+Retain its notation $\Lambda_0=(\delta/u_0)\mathbb F_p$.
+Its proof classifies all competitors: outside $\Lambda_0$ there is
+exactly one doubly canonical quadratic, and every other quadratic has
+at most $\max(p+2\sqrt p,16)=p+2\sqrt p$ matches. At each parameter
+in $\Lambda_0$, exactly $p$ canonical quadratics meet threshold $A$,
+and all other quadratics have at most the same smaller bound.
 
 Put $u_1=\eta u_0\in W$. Then
 \[
  I_{u_1}=\eta^{-1}\Lambda_0,\qquad
  \eta I_{u_1}=\Lambda_0,\qquad I_{u_1}\ne\Lambda_0.
 \]
-The nonzero core fibers for this direction partition $D_0$ minus its
-zero fiber: their total size is $p^2-p$, over $p-1$ choices of $b$.
-Choose $b\in I_{u_1}^*$ with core fiber size at most $p$.
-The $p$ fresh fibers indexed by $v\in I_{u_1}$ partition the trimmed
-$D_1$, of size $p^2-p$. Choose distinct $v_1,v_2$ indexing the two
-smallest fibers, whose total size is at most $2p-2$.
-These choices are independent. Set
+The nonzero core fibers of $L_{u_1}$ partition $D_0$ minus its zero
+fiber. Their total physical size is $p^2-p$, over $p-1$ possible
+nonzero values. Choose $b_*\in I_{u_1}^*$ whose core fiber $C_*$ has
+size at most $p$, and delete $C_*$ from the domain. This gives
+the asserted length bounds. Put
 \[
- \alpha=b-\eta v_1,\qquad \beta=b-\eta v_2,
- \qquad Q_*=a_{u_1}X^2+b.
+ Q_*=a_{u_1}X^2+b_*,\qquad \Lambda_*=b_*+\Lambda_0.
 \]
-Both parameters lie outside $\Lambda_0$, since their coset
-$b+\Lambda_0$ is disjoint from that line. Their unique doubly canonical
-witness is the same polynomial $Q_*$. Let $S_\alpha,S_\beta$ be its
-full agreement supports at these parameters, and delete
-$S=S_\alpha\cup S_\beta$ from the evaluation domain.
-This union consists of the chosen core fiber and two distinct trimmed
-fresh fibers. The averaging choices give
-\[
- |S|\le p+(2p-2)=3p-2.
-\]
-This proves the asserted length bounds.
+The two parameter lines $\Lambda_*,\Lambda_0$ are disjoint.
+For every $\lambda\in\Lambda_*$, the unique doubly canonical witness
+is $Q_*$, because $\lambda=b_*-\eta v$ for some $v\in I_{u_1}$.
+Deleting $C_*$ removes its entire core agreement; its remaining fresh
+fiber has at most $p+2\sqrt p$ matches. Every other quadratic was
+already below that bound, so these $p$ parameters are far at threshold
+$T=A-2>p+2\sqrt p$.
 
-Let $r_0,r_1$ be the restrictions of $f+\alpha g,f+\beta g$ to the
-remaining coordinates. The witness $Q_*$ now has zero matches at
-either endpoint, since its entire support was removed. Every other
-quadratic already had at most $p+2\sqrt p$ matches there, and puncturing
-cannot increase that number. Thus both endpoints satisfy the claimed
-individual bound, which also bounds their common agreement.
+For any generic parameter outside $\Lambda_*$, let $Q_\lambda$ be its
+unique high witness. If its leading coefficient differs from
+$a_{u_1}$, a common core match with $Q_*$ is a root of the nonzero
+quadratic $Q_\lambda-Q_*$, so at most two matches are removed.
+If its leading coefficient is $a_{u_1}$, its constant term differs
+from $b_*$; the corresponding core fibers are disjoint, and no matches
+are removed. Hence $Q_\lambda$ retains at least $A-2=T$ matches.
+All its competitors remain below $T$. There are exactly $p^3-2p$
+such generic parameters, and their lists are singleton.
 
-Consider any original parameter $\lambda$ outside its direction plane
-\[
- J_{u_1}=I_{u_1}+\eta I_{u_1},\qquad |J_{u_1}|=p^2.
-\]
-This plane contains $\Lambda_0$, so such a parameter has a unique
-canonical witness $Q_\lambda$ with at least $A$ matches. Its leading
-coefficient differs from that of $Q_*$: the map $[u]\mapsto u^{p-1}$
-is injective on projective directions, and $\lambda$ does not belong
-to the $u_1$ plane. At a common core match, $Q_\lambda-Q_*=0$, a
-nonzero quadratic, so at most two core matches are deleted.
-On the fresh fiber belonging to endpoint $\gamma\in\{\alpha,\beta\}$,
-a common match satisfies
-\[
- Q_\lambda-Q_*=(\lambda-\gamma)g=\lambda-\gamma.
-\]
-This is again a nonzero quadratic because the leading coefficients
-differ. At most two matches are lost on each of the two fresh fibers.
-The total loss is at most six, leaving at least $A-6=T$ matches.
-Every competing quadratic had at most $p+2\sqrt p<T$ matches before
-puncturing, so this list remains a singleton.
-There are $p^3-p^2$ parameters outside $J_{u_1}$. The affine bijection
-$\lambda=\alpha+t(\beta-\alpha)$ transports them to the asserted
-mixtures of the two endpoints. This is a lower bound on the number
-of singleton parameters; no exact classification of the remaining
-$p^2$ mixtures is needed or claimed.
+At $\lambda\in\Lambda_0$, consider the $p$ qualifying quadratics
+from the unpunctured classification. The one of direction $u_1$ has
+constant term zero, because $I_{u_1}\cap\Lambda_0=\{0\}$; its core
+fiber is disjoint from $C_*$. Every other one has a different leading
+coefficient and loses at most two matches. All $p$ therefore remain
+above $T$, and no other quadratic can enter. This proves the exact
+three-part list-size spectrum.
+
+The restricted direction $g$ is still nonzero, since no fresh points
+were deleted. Thus the $p$ parameters in $\Lambda_*$ give distinct
+far received words. Their pairwise ordinary common agreement is bounded
+by either individual agreement. For any two distinct parameters
+$\alpha,\beta\in\Lambda_*$, their affine mixtures correspond to
+$\lambda=\alpha+t(\beta-\alpha)$, an affine bijection of $E$.
+The exact spectrum therefore gives nearby probability $1-p^{-2}$
+and singleton probability $1-2p^{-2}$.
+More generally, uniform $E$-valued weights summing to one on any
+$t\ge2$ distinct selected inputs induce a uniform scalar parameter:
+the corresponding affine functional has fibers of size $|E|^{t-2}$.
+In contrast, $\mathbb F_p$-valued affine weights keep the parameter
+inside $\Lambda_*$, where every mixture is far. The challenge field
+in the asserted probabilities is essential.
 
 For the threshold comparison, $p\ge4099$ gives $T\ge2p-5\sqrt p$,
 while
@@ -101,20 +100,20 @@ while
  n a_1(3/n)\le\sqrt{3n/2}+(3n/8)^{1/4}
  <\tfrac74p+\sqrt p<T.
 \]
-Using the lower bound on $n$ and $T\le2p-4\sqrt p$ gives
+Using $n\ge2p^2-2p-1$ and $T\le2p-4\sqrt p$ gives
 \[
- 2n-T^2\ge16p\sqrt p-24p+2>0.
+ 2n-T^2\ge16p\sqrt p-20p-2>0.
 \]
-The source-to-threshold gap is at least
-$T-(p+2\sqrt p)\ge p-6\sqrt p-9$.
-Finally the same finite first-order support can be checked directly:
+The ceiling in $T$ gives the stated source-separation bound.
+A uniform finite first-order certificate is also immediate:
 $m=6$, derivative cap three, $B=3T$, $H=40B$ give
-$G=4B^2-2B$ and local-rank bound $62$.
-Since $29p/5\le B\le6p$ and $n\le2p^2$,
+$G=4B^2-2B$ and local-rank bound $62$. Since
+$29p/5\le B\le6p$ and $n\le2p^2$,
 \[
  39G-40\cdot62n\ge\frac{7196}{25}p^2-468p>0.
 \]
-As before, this implies the strict graded row test, with reconstruction
-characteristic guard $p>3$. It certifies the first-order regime,
-not tightness of a universal exceptional-count budget.
+As $G>62n$, this implies the strict graded row test
+$(H-B+1)G>(H+1)62n$, with reconstruction guard $p>3$.
+This is an extension-field result in the first-order regime, not
+fixed-rate or prime-alphabet tightness of a general upper bound.
 \end{proof}

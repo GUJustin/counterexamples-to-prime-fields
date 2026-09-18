@@ -22,9 +22,9 @@
     "minimum_best_canonical_agreement": 66,
     "maximum_best_canonical_agreement": 120,
     "puncturing": {
-      "deleted_coordinates": 132,
-      "remaining_length": 4238,
-      "threshold": 58,
+      "deleted_coordinates": 44,
+      "remaining_length": 4326,
+      "threshold": 62,
       "endpoints": [
         [
           10,
@@ -37,12 +37,12 @@
           28
         ]
       ],
-      "guaranteed_canonical_bank_singletons": 101614,
-      "all_quadratic_exclusion_applies": false,
+      "exact_empty_labels": 47,
+      "exact_canonical_bank_singletons": 103729,
+      "all_quadratic_exclusion_applies": true,
       "retained_bank_list_histogram": {
-        "47": 45,
-        "1": 103639,
-        "46": 2
+        "47": 47,
+        "1": 103729
       },
       "scope": "canonical bank census; full exclusion requires the recorded threshold guard"
     },
@@ -71,9 +71,9 @@
     "minimum_best_canonical_agreement": 80,
     "maximum_best_canonical_agreement": 130,
     "puncturing": {
-      "deleted_coordinates": 128,
-      "remaining_length": 5436,
-      "threshold": 68,
+      "deleted_coordinates": 44,
+      "remaining_length": 5520,
+      "threshold": 72,
       "endpoints": [
         [
           52,
@@ -86,12 +86,12 @@
           51
         ]
       ],
-      "guaranteed_canonical_bank_singletons": 146068,
+      "exact_empty_labels": 53,
+      "exact_canonical_bank_singletons": 148771,
       "all_quadratic_exclusion_applies": true,
       "retained_bank_list_histogram": {
-        "53": 51,
-        "1": 148669,
-        "52": 2
+        "53": 53,
+        "1": 148771
       },
       "scope": "canonical bank census; full exclusion requires the recorded threshold guard"
     },
