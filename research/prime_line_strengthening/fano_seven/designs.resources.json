@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/tmp/fano_designs"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.593302875,
+  "peak_rss_kib": 32,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

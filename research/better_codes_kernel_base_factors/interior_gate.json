@@ -1,0 +1,33 @@
+{
+  "m": 118,
+  "s": 36,
+  "L": 176421,
+  "n": 262144,
+  "w": 131071,
+  "rows": [
+    {
+      "reserve": 0,
+      "strict_weight_cutoff": 21390450,
+      "coefficient_count": 9126404670615729,
+      "local_rank_bound": 34814470939,
+      "kernel_dimension_lower_bound": 782513,
+      "positive": true
+    },
+    {
+      "reserve": 1,
+      "strict_weight_cutoff": 21390449,
+      "coefficient_count": 9126403718070857,
+      "local_rank_bound": 34814470939,
+      "kernel_dimension_lower_bound": -951762359,
+      "positive": false
+    },
+    {
+      "reserve": 2,
+      "strict_weight_cutoff": 21390448,
+      "coefficient_count": 9126402765525985,
+      "local_rank_bound": 34814470939,
+      "kernel_dimension_lower_bound": -1904307231,
+      "positive": false
+    }
+  ]
+}

@@ -28,3 +28,12 @@ The binding simple-tail model also survives a jet shift by Z*X^(w+1), producing 
 
 
 Appendix T now certifies a SECOND one-pole extension: six degree≤14 polynomials, each with≥30agreements on60nodes, over a number field and arbitrarily large prime fields. The first F97 witness is independently reconstructed; its residual fresh roots are24and52. Two independent Jacobian systems certify smooth characteristic-zero lifting: the13equation norm system has full rank13, and the25equation pointed system has a25x25minor equal21mod97. The paper now has200pages. This is a fixed-size six-word construction; no unbounded iteration, intrinsic DKT tightness, or better.codes improvement is claimed. The previous twelve-base singleton support was ruled out by its overlap with G5; the successful support instead uses one pole-fiber point and eleven base fibers.
+
+
+Latest continuation target: work until at least10:00a.m. Eastern September18 (14:00UTC); see research/ACTIVE_RESEARCH_DEADLINE.md.
+
+The explicit six-word bank has exactly30 actual agreements per word on60 points over F97². Its full incidence Jacobian has rank180 on210 variables, giving local dimension30. Common-polynomial addition, projective node changes with the appropriate value multiplier, and value scaling remove19 dimensions, leaving11 local moduli. This does NOT imply a seventh word: a direct seventh polynomial requires at least4 structural row dependencies; a third one-pole input requires at least2. Exact residue-stress identities describe the needed dependencies.
+
+A separate possible seven-word construction uses seven cubics on14 nodes, each with7 agreements; quadratic pullback would yield7 degree≤6 words at quarter rate. Any such configuration necessarily saturates every pairwise cubic root count and yields a twofold triple multidesign. Exhaustive bounded enumeration gives8 ordered incidence orbits. Orbits4 (aligned Fano) and5 are now excluded in every characteristic other than2 by independently audited proofs. The other6 orbits remain open. No global seven-cubic exclusion or positive construction is claimed. Standard checked arrangement inequalities do not exclude the configuration.
+
+A new primary-kernel differentiation lemma restricts universal fixed factors when a weighted interior source exists. The current fixed-shape count does not certify even one unit of interior reserve (D gives782513; D−1 gives−951762359). This is a failure of that dimension certificate, not proof of kernel nonexistence, and gives no better.codes improvement.

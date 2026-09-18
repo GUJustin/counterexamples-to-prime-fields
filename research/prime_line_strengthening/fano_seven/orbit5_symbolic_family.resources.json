@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/prime_line_strengthening/fano_seven/orbit5_symbolic_family.py"
+  ],
+  "reason": "time_limit",
+  "returncode": -15,
+  "seconds": 60.021749833,
+  "peak_rss_kib": 86080,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

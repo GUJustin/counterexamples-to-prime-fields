@@ -1,0 +1,2 @@
+{"regular_halves":12780,"half_orbits":10,"compatible_half_orbits":3,"ordered_labelled_designs":6150,"ordered_simultaneous_S7_orbits":8}
+{"command": ["/tmp/fano_designs"], "reason": "completed", "returncode": 0, "seconds": 0.593302875, "peak_rss_kib": 32, "rss_limit_mib": 384, "time_limit_seconds": 60}

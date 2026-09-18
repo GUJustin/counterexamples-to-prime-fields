@@ -1,0 +1,9 @@
+{
+  "resultants": [
+    "-(-l + p)*(w + z - 1)*(l*z + p*w*z + p*z**2 - p*z + q*w**2 + 2*q*w*z - q*w + q*z**2 - q*z)*(-l*w + l*z + p*w**2 + 2*p*w*z - p*w + p*z**2 - p*z + 2*q*w**2 + 4*q*w*z - 4*q*w + 2*q*z**2 - 4*q*z + 2*q)*(l*z - l + p*w**2 + p*w*z - 2*p*w - p*z + p + q*w**2 + 2*q*w*z - 3*q*w + q*z**2 - 3*q*z + 2*q)",
+    "-(-l + p)*(w + z - 1)*(l*w + p*w**2 + p*w*z - p*w + q*w**2 + 2*q*w*z - q*w + q*z**2 - q*z)*(l*w - l + p*w*z - p*w + p*z**2 - 2*p*z + p + q*w**2 + 2*q*w*z - 3*q*w + q*z**2 - 3*q*z + 2*q)*(l*w - l*z + p*w**2 + 2*p*w*z - p*w + p*z**2 - p*z + 2*q*w**2 + 4*q*w*z - 4*q*w + 2*q*z**2 - 4*q*z + 2*q)",
+    "(w + z - 1)**4*(-l + p*w**2 + 2*p*w*z - 2*p*w + p*z**2 - 2*p*z + p)*(l*z + p*w*z + p*z**2 - p*z + q*w**2 + 2*q*w*z - q*w + q*z**2 - q*z)*(-l*w + l*z + p*w**2 + 2*p*w*z - p*w + p*z**2 - p*z + 2*q*w + 2*q*z - 2*q)*(l*w - l + p*w*z - p*w + p*z**2 - 2*p*z + p + q*w**2 + 2*q*w*z - 3*q*w + q*z**2 - 3*q*z + 2*q)",
+    "(w + z - 1)**4*(-l + p*w**2 + 2*p*w*z - 2*p*w + p*z**2 - 2*p*z + p)*(l*w + p*w**2 + p*w*z - p*w + q*w**2 + 2*q*w*z - q*w + q*z**2 - q*z)*(l*w - l*z + p*w**2 + 2*p*w*z - p*w + p*z**2 - p*z + 2*q*w + 2*q*z - 2*q)*(l*z - l + p*w**2 + p*w*z - 2*p*w - p*z + p + q*w**2 + 2*q*w*z - 3*q*w + q*z**2 - 3*q*z + 2*q)"
+  ],
+  "seconds": 7.303832054138184
+}
