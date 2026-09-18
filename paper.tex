@@ -56,9 +56,11 @@ fixed gap $1/8$, full-length prime-field codes have lists of size $n/2$.
 Integer-interval domains give
 $\log L=\Omega_\rho(\eta^{-2}/\log(1/\eta))$ strictly below Elias,
 ruling out every uniform $\exp(O_\rho(1/\eta))$ bound.
-At vanishing rate, separate examples have superlinear numbers of
-exceptional challenges with singleton lists in the regime of the
-Dao--Kominers--Thaler bounds; these do not establish general tightness.
+At message dimension three, a translated grid gives
+$\Omega(n^{4/3}\log n)$ singleton exceptional challenges with source
+separation $\Theta(n^{1/6}/\log n)$ coordinates, in the regime of the
+Dao--Kominers--Thaler bounds. This is a vanishing-rate result, not
+fixed-rate or quadratic-count tightness.
 
 We distinguish fixed-gap from shrinking-gap claims, prime from
 extension-field challenges, and chosen from prescribed domains when
@@ -751,8 +753,25 @@ so the uniform $O(n^2)$ exceptional-count upper bound exceeds the entire
 field and gives no nontrivial probability bound. The construction therefore
 does not establish sharpness of that quadratic upper bound.
 
-Allowing the message dimension to grow gives a polynomial source
-separation. Theorem~\ref{thm:correlated-cover-line} constructs, for every
+A translated integer grid makes the source separation polynomial
+while retaining message dimension three
+(Theorem~\ref{thm:translated-grid-polynomial-gap}). It gives
+$d=\Theta(n^{1/6}/\log n)$ and
+$\Omega(n^{4/3}\log n)$ singleton exceptional challenges over prime
+fields of size $\Theta(n^{4/3}(\log n)^4)$. Both endpoints and ordinary
+common agreement are exactly $d$ coordinates below the threshold.
+The threshold remains above the first-order curve and strictly below
+the degree-two Johnson agreement. The construction correlates the
+fresh labels through short integer linear forms; it does not rely on
+rare repeated hits from independent random values. More generally its
+count attains $\Omega(n^{3/2}/d)$ over a range of growing gaps.
+The exceptional fraction is of order $(\log p)^{-3}$, rather than a
+positive constant. These bounds strengthen the count--separation
+tradeoff at vanishing rate; they do not establish quadratic-count
+tightness or a practical fixed-domain improvement.
+
+A complementary construction allows the message dimension to grow
+and gives a polynomial source separation. Theorem~\ref{thm:correlated-cover-line} constructs, for every
 fixed $0<\alpha\le1/3$, examples with dimension and source separation
 $\Theta(n^\alpha)$ and $\Theta(n^{3(1-\alpha)/2})$ singleton exceptional
 challenges. For example, separation $\Theta(n^{1/5})$ coexists with
@@ -775,8 +794,15 @@ refute the capacity conjecture using random-word distance distributions.
 Krachun, Kazanin, and Hab\"ock~\cite{kkh}
 give prime-field counterexamples at distance
 $1-\rho-\Theta_\rho(1/\log n)$ from the code, including fixed positive
-rates. Their distance from capacity is a different parameter from our
-source separation $d/n=\Theta(\log n/(n\log\log n))$.
+rates. For the translated-grid construction, the rate is $3/n$,
+the distance below the capacity radius is
+$(T-3)/n=\Theta(n^{-1/2})$, and the source-to-threshold
+proximity loss is $(T-A)/n=\Theta(n^{-5/6}/\log n)$.
+These are different parameters: neither the larger absolute source
+separation compared with our earlier construction nor the superlinear
+challenge count establishes an improvement over the known
+inverse-logarithmic capacity-gap results. In particular, we do not claim
+fixed-rate tightness or an improvement to a practical security estimate.
 Our examples lie in the range of decoding radii covered by the
 first-derivative upper bounds of Dao, Kominers, and Thaler~\cite{dkt2026}.
 Their purpose is to lower-bound the number of exceptional challenges

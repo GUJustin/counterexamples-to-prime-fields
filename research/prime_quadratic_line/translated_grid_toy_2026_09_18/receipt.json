@@ -1,0 +1,81 @@
+{
+  "status": "PASS: exact translated-grid mechanism check",
+  "scope": "Toy d=1 override; not a finite asymptotic onset or a target-benchmark certificate.",
+  "p": 10125000000029,
+  "H": 1500,
+  "primality": {
+    "method": "trial division by every prime through isqrt(p)",
+    "trial_prime_count": 228976,
+    "isqrt_p": 3181980
+  },
+  "quartic_class_sizes": {
+    "1": 25,
+    "1167152939837": 28,
+    "8957847060192": 27,
+    "10125000000028": 27
+  },
+  "chosen_quartic_class": 1167152939837,
+  "L": 27,
+  "C4_free_graph_edges": 27,
+  "distinct_unordered_products_including_repetitions": 378,
+  "core_nodes": 702,
+  "core_matches_per_bank": 52,
+  "M": 6,
+  "grid_retained": 18,
+  "grid_deletions": {
+    "nonsquare": 18
+  },
+  "grid_affine_identities_checked": 486,
+  "full_raw_interval_pairs": 278517,
+  "raw_label_union_size": 278517,
+  "raw_cross_bank_collision_pairs": 0,
+  "c0": 1,
+  "endpoint_labels": [
+    0,
+    1
+  ],
+  "exceptional_label": 10125000000028,
+  "toy_d": 1,
+  "asymptotic_formula_d": 0,
+  "threshold": 53,
+  "domain_size": 1405,
+  "code_dimension": 3,
+  "neutral_nodes": 685,
+  "neutral_bank_roots_skipped": 0,
+  "singleton_threshold_label_count": 486,
+  "bank_agreement_histogram_at_counted_labels": {
+    "53": 486
+  },
+  "nonbank_bound_away_from_exception": 42,
+  "nonzero_direction_bound": 14,
+  "zero_direction_nonbank_bound": 30,
+  "exact_endpoint_agreements": [
+    52,
+    52
+  ],
+  "exact_common_agreement": 52,
+  "johnson_integer_check": {
+    "T_squared": 2809,
+    "two_n": 2810
+  },
+  "integer_fiber_toy": {
+    "scope": "integer-fiber counting only; no finite-field bank or onset claim",
+    "H": 6,
+    "a": 3,
+    "b": 5,
+    "M": 1024,
+    "d": 2,
+    "retention_rule": "(u+v) mod4 = 0",
+    "retained_points": 262144,
+    "integer_interval_size": 8185,
+    "interval_bound_3HM": 18432,
+    "maximum_full_fiber": 205,
+    "maximum_retained_fiber": 103,
+    "light_points": 30,
+    "rich_labels": 4051,
+    "required_rich_lower_bound_HM_over_16": 384,
+    "independent_diophantine_counts_checked": 8193
+  },
+  "fixture_sha256": "5caff88383dbe1c9b056847b7195cd35fac17b43ce494b1b3a4795e6fb73226b",
+  "elapsed_seconds": 0.2154797499824781
+}

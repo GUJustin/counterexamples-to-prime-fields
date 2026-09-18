@@ -1,0 +1,269 @@
+% Correlated label fibers for a prime-field quadratic bank.
+\subsection{A translated grid with a polynomial source gap}
+\label{subsec:translated-grid-polynomial-gap}
+
+Independent fresh values give a logarithmic source gap in the quadratic
+bank.  A translated integer grid instead makes many labels share a
+polynomial number of fresh coordinates.  The construction below keeps
+message dimension three and uses only prime-field coordinates and values.
+Its exceptional fraction tends to zero; the assertion is a larger
+absolute gap with a superlinear number of singleton labels.
+
+\begin{theorem}[Translated-grid quadratic bank]
+\label{thm:translated-grid-polynomial-gap}
+There is a sequence of primes $p$ and length-$n$, dimension-three
+Reed--Solomon codes over $\mathbb F_p$, with two received words $F,G$
+and integers $A<T=A+d$, such that
+\[
+ \operatorname{agr}_3(F)=\operatorname{agr}_3(G)
+   =\operatorname{CA}_3(F,G)=A,
+ \qquad
+ n a_1(3/n)<A<T<\sqrt{2n}.
+\]
+At least $B$ distinct labels $\lambda\in\mathbb F_p\setminus\{0,1\}$
+have a singleton list at agreement threshold $T$ for
+$(1-\lambda)F+\lambda G$, where
+\[
+ \begin{split}
+ d&=\Theta\!\left(\frac{n^{1/6}}{\log n}\right),\qquad
+ B=\Omega(n^{4/3}\log n),\\
+ p&=\Theta\bigl(n^{4/3}(\log n)^4\bigr),\qquad
+ \frac{T-A}{n}
+   =\Theta\!\left(\frac{n^{-5/6}}{\log n}\right).
+ \end{split}
+\]
+The successful witness need not have exactly $T$ agreements.
+At the relaxed agreement threshold $A$, every member of the affine
+line has a list of size at most $L+1$, where $L=\Theta(\sqrt n)$.
+Thus this is a vanishing-rate construction with polynomial absolute
+source separation; it does not assert a positive constant fraction of
+all prime-field labels.
+\end{theorem}
+\begin{proof}
+We first construct the bank and then the correlated fresh coordinates.
+
+\paragraph{A multiplicative Sidon bank.}
+Let an integer $H$ tend to infinity.  The prime number theorem in the
+fixed progression $1\pmod4$ supplies, for all sufficiently large $H$,
+a prime
+\[
+ 2H^4<p<4H^4,\qquad p\equiv1\pmod4.
+\]
+There are $\Theta(H/\log H)$ primes in $[H/2,H]$.
+One of the four quartic-character classes modulo $p$ contains at
+least a quarter of them.  Choose a power of two $q_0$ of order
+$\sqrt{H/\log H}$ such that this class contains at least
+$2v$ primes, where $v=q_0^2+q_0+1$.  Assign disjoint sets of $v$
+such primes to the points and lines of the projective plane over
+$\mathbb F_{q_0}$.  Join their assigned primes $a,b$ whenever the
+point lies on the line.  This bipartite graph has no four-cycle and
+has
+\[
+ L=(q_0+1)(q_0^2+q_0+1)
+   =\Theta\bigl((H/\log H)^{3/2}\bigr)
+\]
+edges.  For each edge choose a square $\theta\in\mathbb F_p^*$ with
+$\theta^2=a/b$.  Such a choice is possible because $a/b$ is a
+fourth power.  Distinct edges give distinct $\theta$.
+
+These parameters form a multiplicative Sidon set, allowing repeated
+pairs.  Indeed, an equality of two products of parameters, after
+squaring and clearing denominators, gives a congruence between
+positive integers at most $H^4$.  It is an integer equality since
+$p>H^4$.  Unique factorization, together with the disjoint numerator
+and denominator prime sets, forces the same edge multiset unless the
+four edges form a four-cycle.  The latter is excluded.
+
+Take the bank
+\[
+ P_\theta(X)=\theta+X^2/\theta.
+\]
+Two distinct bank words meet at precisely the two points
+$x^2=\theta\phi$, both in $\mathbb F_p^*$ because the parameters
+are squares.  Sidonicity makes these pairs of coordinates disjoint.
+The resulting core has $N_0=L(L-1)$ points.  Set $g=0$ on it and
+set $f$ to the corresponding common value $\theta+\phi$.
+Every bank word has exactly
+\[
+ A=2L-2
+\]
+core matches.  Any other quadratic has at most $L$ core matches:
+each such match is counted against two bank words, and its difference
+with each bank word has at most two roots.
+
+\paragraph{Retaining a translated grid.}
+Put $M=\lfloor L/4\rfloor$, and choose $u_0,v_0$ uniformly and
+independently in $\mathbb F_p$.  For each $1\le u,v\le M$, write
+$U=u_0+u$, $V=v_0+v$.  Keep a grid pair only if $U,V\ne0$ and
+$V/U$ is a nonzero square.  Choose one square root $x$ by a fixed
+rule.  Retain one representative of every repeated ratio, and delete
+ratios belonging to core coordinates.  The resulting fresh coordinates
+are distinct; each keeps its associated pair $(U,V)$.
+
+Let $X$ denote their number.  A fixed grid pair is initially eligible
+with probability $(p-1)^2/(2p^2)$.  Equality of ratios from different
+grid pairs is a nontrivial affine equation in $u_0,v_0$, of probability
+at most $1/p$.  Hitting a specified core squared-coordinate also has
+probability at most $1/p$.  Therefore
+\[
+ \mathbb E X\ge
+ M^2\frac{(p-1)^2}{2p^2}
+ -\frac{\binom{M^2}{2}}p
+ -\frac{M^2\binom L2}p
+ =\left(\frac12-o(1)\right)M^2.
+\]
+Since $0\le X\le M^2$, the event $X\ge M^2/4$ has probability
+at least $1/3-o(1)$.
+
+At a retained coordinate define
+\[
+ g(x)=1/U,\qquad f(x)=c_0/U,
+\]
+where the common shift $c_0$ will be chosen later.  If the bank
+parameter satisfies $\theta^2=a/b$, its possible labels obey
+\begin{equation}\label{eq:translated-grid-label}
+ \lambda+c_0
+   =\theta u_0+v_0/\theta+\frac{au+bv}{b\theta}.
+\end{equation}
+For every bank these raw labels lie in an affine image of the same
+integer interval of size $K=3HM<p$, because $1\le au+bv\le2HM$.
+An integer value of $au+bv$ occurs in at most
+\[
+ 1+\frac{2M}{H}\le\frac{3M}{H}
+\]
+grid pairs, for large $H$.  Here $a,b$ are distinct primes at least
+$H/2$, so solutions differ by integer multiples of $(b,-a)$.
+The bound survives all deletions.
+
+Set
+\[
+ d=\left\lfloor\frac{M}{64H}\right\rfloor,
+\]
+which tends to infinity.  If $X\ge M^2/4$, labels having fewer than
+$d$ retained matches account for at most $K(d-1)\le3M^2/64$ points.
+Dividing the remaining points by the preceding fiber upper bound
+shows that every bank has at least $HM/16$ labels with at least
+$d$ fresh matches.  The same retained-point count works for all
+banks; no independence between their fibers is required.
+
+\paragraph{Distinct labels and far endpoints.}
+For each bank take its entire raw interval of $K$ labels in
+\eqref{eq:translated-grid-label}.  A raw label from one bank and one
+from a different bank coincide with probability exactly $1/p$:
+their difference is a nontrivial affine equation in $u_0,v_0$, with
+coefficient $\theta-\phi\ne0$ at $u_0$.  If $C$ counts unordered
+cross-bank raw-label collisions, then
+\[
+ \mathbb E C\le\binom L2\frac{K^2}{p}=o(LHM),
+ \qquad \frac{LHM}{p}=O((\log H)^{-3}).
+\]
+Markov's inequality gives $C\le LHM/64$ with probability $1-o(1)$.
+Hence some translation satisfies this and $X\ge M^2/4$ simultaneously.
+Of the at least $LHM/16$ rich bank-label pairs, discard every pair
+involved in any cross-bank raw-label collision.  At least $LHM/32$
+remain, each with a unique bank owner even among non-rich fibers.
+
+The union $Z$ of raw label intervals has size at most $LK=o(p)$.
+Choose
+\[
+ c_0\notin Z\cup(Z-1)\cup\{0,-1\}.
+\]
+Then labels zero and one have no bank matches on the grid.  This
+shift does not affect fiber sizes or collision counts.
+
+\paragraph{Neutral padding and exclusion of other quadratics.}
+Set $T=A+d$ and
+\[
+ n=\lfloor T^2/2\rfloor+1.
+\]
+For large $H$, append $n-N_0-X>0$ neutral coordinates, setting
+$g(x)=0$ and $f(x)=x^3$.  Avoid the old domain, zero, and the at most
+$3L$ roots of $x^3-P_\theta(x)$ over all banks.  There are enough
+coordinates since $p\gg n=\Theta(L^2)$.  Banks gain no neutral matches.
+
+Fix a label $\lambda$.  For any nonconstant quadratic $Q$, the grid
+equation $Q(x)=(c_0+\lambda)/U$ has at most two roots for each of the
+$M$ possible values of $U$, hence at most $2M$ grid matches.
+A nonzero constant $Q$ has matches in at most one such column and
+hence at most $M$ matches.  The sole exception is $Q=0$ at
+$\lambda=-c_0$, which we exclude.  Every other nonbank quadratic has
+at most
+\[
+ L+2M+3<A
+\]
+matches on the entire domain, the last three accounting for the neutral
+coordinates.  Consequently every retained rich label except possibly
+$-c_0$ has a singleton list at threshold $T$: its unique bank owner
+has at least $A+d$ matches, other banks have only their $A$ core
+matches, and all nonbank words have fewer than $A$ matches.
+There are at least
+\[
+ B=\left\lfloor\frac{LHM}{32}\right\rfloor-1
+\]
+such labels.  Labels zero and one have exact maximum agreement $A$.
+At every label all $L$ bank words meet the relaxed threshold $A$;
+the only possible additional word is zero at $-c_0$.  Since
+$X\ge M^2/4>A$ eventually, the relaxed list has size exactly $L+1$
+at that exceptional label and exactly $L$ elsewhere.
+
+For common agreement, a nonzero quadratic explaining $g$ has at
+most two matches on the zero-direction coordinates and at most
+$2M$ on the grid.  Its total is below $A$.  The zero explanation
+restricts common matches to the core and neutral coordinates; there
+the maximum agreement of $f$ is exactly $A$, attained by every bank
+word.  Thus $\operatorname{CA}_3(f,g)=A$.
+Finally set $F=f$, $G=f+g$.  Both individual agreements are $A$,
+and the invertible change of the two source coordinates preserves
+common agreement.  Their affine mixtures are exactly $f+\lambda g$.
+
+\paragraph{Parameter comparison.}
+We have $M=\Theta(L)$, $d=\Theta(L/H)=o(L)$, and
+\[
+ n\sim2L^2=\Theta\!\left(\frac{H^3}{(\log H)^3}\right).
+\]
+Therefore $H=\Theta(n^{1/3}\log n)$, giving all displayed scales.
+The equality $n=\lfloor T^2/2\rfloor+1$ implies $T^2<2n$ exactly.
+Moreover $A/\sqrt n\to\sqrt2$, whereas the dimension-three
+first-order agreement bound is
+\[
+ n a_1(3/n)\le\sqrt{3n/2}+(3n/8)^{1/4}.
+\]
+Hence $n a_1(3/n)<A$ eventually, proving the location of the example.
+\end{proof}
+
+The grid uses the incidence budget efficiently: with
+$\varepsilon=d/n$ and relaxed line-local list bound $L+1$, its
+singleton count is $\Omega((L+1)/\varepsilon)$.  This is a statement
+about the displayed coupled parameters, not a universal decoding bound
+or a code-wide list-size estimate.  The characteristic grows much faster
+than the message degree, while the code rate tends to zero.
+Conversely, apart from the single zero-polynomial exception, every
+successful label consumes at least $d$ of the $LX\le LM^2$ fresh
+bank-label incidences.  The total exceptional fraction is therefore
+$O((\log H)^{-3})$, consistent with the theorem's scope.
+
+\begin{corollary}[A range of correlated gaps]
+\label{cor:translated-grid-gap-range}
+There is an absolute constant $c>0$ such that the same construction
+works whenever $H\to\infty$ and integers $L$ satisfy
+\[
+ L/H\longrightarrow\infty,\qquad
+ L\le c(H/\log H)^{3/2}.
+\]
+With $M=\lfloor L/4\rfloor$, $d=\lfloor M/(64H)\rfloor$, and the
+same exact choices of $A,T,n$, it gives
+\[
+ n\sim2L^2,\qquad
+ B=\Omega(n^{3/2}/d),\qquad
+ p=\Theta(n^2/d^4),
+\]
+with the same source, common-agreement, and singleton-list conclusions.
+\end{corollary}
+\begin{proof}
+Retain any $L$ edges of the preceding four-cycle-free graph.
+Its Sidon property and all root counts persist.  The retention and
+cross-label estimates still hold, because $L/H\to\infty$ and
+$LHM/p=O(L^2/H^3)=O((\log H)^{-3})$.
+Now $d=\Theta(L/H)$, $B=\Omega(HL^2)$, and $p=\Theta(H^4)$;
+substituting $n\sim2L^2$ proves the formulas.
+\end{proof}
