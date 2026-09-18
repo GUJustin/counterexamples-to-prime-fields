@@ -1,5 +1,7 @@
 # Independent completion audit: scaled Frobenius blocks
 
+**Update:** the old finite support still fails as calculated below, but the new multiplicity-six support in `scaled_fiber_finite_certificate.tex` now passes. See `FINITE_CERTIFICATE_INDEPENDENT_AUDIT.md`; the construction remains N=9p².
+
 September 18, 2026. **PASS for the coding theorem in `scaled_fiber_padding.tex`, with the DKT-certificate qualification below.** I independently checked its proof using the elementary identities in `PROOF.md`; no exhaustive large-field computation was needed.
 
 ## Field, domain, and complete candidate classification

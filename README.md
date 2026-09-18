@@ -5,7 +5,7 @@ Working draft by Justin Thaler, September 18, 2026.
 [Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
 **Latest verified results (September 18, morning):** the full-page,
-one-inch-margin ePrint draft (248 pages) now proves a prime-field line construction
+one-inch-margin ePrint draft (249 pages) now proves a prime-field line construction
 with more than n^(3/2)/4 exceptional challenges, each having a singleton
 list, at an error radius covered by the Dao–Kominers–Thaler bounds
 and beyond the Johnson radius. Both source words
@@ -44,7 +44,8 @@ p = sqrt(N)/3: over F_(p^4), length N = 9p² and dimension three,
 there are (p+1)(p−1)² singleton exceptional challenges and one
 two-word exception at agreement 4p. Both sources and common agreement
 are at most 2p+3. For p≥41 the threshold is above the DKT curve and
-below Johnson. This retains a gap of order sqrt(N) and an exceptional
+below Johnson. An independently checked finite DKT certificate uses
+derivative degree three and requires only p>3. This retains a gap of order sqrt(N) and an exceptional
 count of order N^(3/2), while improving characteristic from the previous
 N^(1/4) scale to sqrt(N). It remains an extension-field, vanishing-rate
 result, not a prime-alphabet theorem or a better.codes improvement.

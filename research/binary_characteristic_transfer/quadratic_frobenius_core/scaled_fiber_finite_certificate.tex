@@ -1,0 +1,39 @@
+\paragraph{Uniform finite first-order certificate.}
+For the scaled-fiber parameters $N=9p^2$, $K=3$, and $A=4p$,
+there is also an explicit finite certificate, independent of the limiting
+rate curve. In the derivative-weighted support of~\cite[Eq.~(60)]{dkt2026}, take
+\[
+ m=6,\qquad B_\partial=3,\qquad
+ B=B_{\rm jet}=12p,\qquad H=B_Z=40B.
+\]
+Thus the support consists of $X^xY_0^aY_1^b$ with
+$b\le3$, $a+b\le B$, and $x+2a+b<24p$.
+The exact coefficient count in~\cite[Eq.~(61)]{dkt2026} is
+\[
+ G=\sum_{b=0}^{3}\sum_{t=b}^{B}(2B-2t+b)
+   =\sum_{b=0}^{3}B(B-b+1)
+   =4B^2-2B=576p^2-24p.
+\]
+The six local-rank contributions in~\cite[Eq.~(62)]{dkt2026}
+are $4,8,12,15,14,9$, so $R=62$.
+Every column has remaining challenge budget at least $H-B$,
+and every local row has budget at most $H$. Consequently the graded
+challenge test of~\cite[Proposition~5.10]{dkt2026} follows from
+\begin{align*}
+ (H-B+1)G-(H+1)NR
+ &=B(144p^2-936p)+18p^2-24p\\
+ &>0 \qquad (p\ge7).
+\end{align*}
+In particular $G>NR$. This constructs a sound first-order interpolant,
+nonzero at every challenge specialization, uniformly over all evaluation
+sets of this size and all affine received lines. Its actual derivative
+variable degree is at most three, so the reconstruction and counting
+hypothesis is only
+\[
+ \operatorname{char}(\mathbb F)=p>\max\{K-1,B_\partial\}=3.
+\]
+Thus the stated family satisfies an explicit finite first-order test;
+no characteristic bound depending on the growing total jet cap is needed.
+The corresponding uniform list and full-agreement-set MCA bounds follow
+from the counting transfers of~\cite[Lemma~5.6]{dkt2026}; we do not optimize
+their numerical constants here.

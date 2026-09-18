@@ -1,0 +1,77 @@
+[
+  {
+    "p": 7,
+    "G": 28056,
+    "R": 62,
+    "local_ranks": [
+      4,
+      8,
+      12,
+      15,
+      14,
+      9
+    ],
+    "conservative_margin": 43050,
+    "graded_margin": 1669107
+  },
+  {
+    "p": 11,
+    "G": 69432,
+    "R": 62,
+    "local_ranks": [
+      4,
+      8,
+      12,
+      15,
+      14,
+      9
+    ],
+    "conservative_margin": 942810,
+    "graded_margin": 7187971
+  },
+  {
+    "p": 19,
+    "G": 207480,
+    "R": 62,
+    "local_ranks": [
+      4,
+      8,
+      12,
+      15,
+      14,
+      9
+    ],
+    "conservative_margin": 7803642,
+    "graded_margin": 39742755
+  },
+  {
+    "p": 41,
+    "G": 967272,
+    "R": 62,
+    "local_ranks": [
+      4,
+      8,
+      12,
+      15,
+      14,
+      9
+    ],
+    "conservative_margin": 100243770,
+    "graded_margin": 419378011
+  },
+  {
+    "p": 101,
+    "G": 5873352,
+    "R": 62,
+    "local_ranks": [
+      4,
+      8,
+      12,
+      15,
+      14,
+      9
+    ],
+    "conservative_margin": 1665963690,
+    "graded_margin": 6422962891
+  }
+]
