@@ -1,0 +1,14 @@
+{
+  "status": "PASS: symbolic identities, not a parameter scan",
+  "operator": "(T^2-4alpha)d^2 +(2kappa+1)T d -e(e+2kappa)",
+  "checks": [
+    "power-contact residual",
+    "derivative linear factor",
+    "coefficient diagonal",
+    "coefficient recurrence cancellation",
+    "first-kind second coefficient",
+    "second-kind second coefficient"
+  ],
+  "proposition_scope": "e>=7, characteristic p>2e+2, nonzero Dickson parameter; either kind; arbitrary Mobius-cleared whole fiber",
+  "proof_file": "BALANCED_SPLIT_LOCATOR_COSET_DICKSON_GATE.md"
+}
