@@ -235,3 +235,7 @@ by a blanket assertion that the primary source excludes simple
 components. The resource inequality does exclude the expensive
 binding-shaped locator model, while leaving genuinely new component
 geometry to be proved.
+
+## Subsequent binding-cell test
+
+BINDING_CONTACT_SIMPLE_TAIL_MODEL.md and BINDING_SIMPLE_TAIL_INDEPENDENT_AUDIT.md give a different, target-compatible irreducible carrier with the exact binding flags, uniform contact ten, charge 45w, and a simple first-tail component. Unlike the E=55 locator model excluded above, it does fit the primary resource. Thus exclusion of that earlier modeled factor is not exclusion of the binding context. The new example still lacks universal primary-kernel divisibility and the target retained second-jet source.

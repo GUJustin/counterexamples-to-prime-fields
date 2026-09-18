@@ -1,0 +1,27 @@
+{
+  "symbolic_identities_passed": 4,
+  "parameters": [
+    "1",
+    "2",
+    "5",
+    "13"
+  ],
+  "elementary": [
+    "21",
+    "121",
+    "231",
+    "130"
+  ],
+  "pole": "130/11",
+  "numerator_at_pole": "-26535600/1331",
+  "matches": [
+    "2",
+    "5",
+    "13",
+    "10",
+    "26",
+    "65"
+  ],
+  "proper": true,
+  "distinct_domain": true
+}

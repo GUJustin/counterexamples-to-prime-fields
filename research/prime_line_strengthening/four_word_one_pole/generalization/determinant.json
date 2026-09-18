@@ -1,0 +1,98 @@
+[
+  {
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "factor": "0",
+    "zero": true
+  },
+  {
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1
+    ],
+    "factor": "2*a*b*c*d*(a - b)**2*(a + b)*(a - c)*(a + c)*(a - d)*(a + d)*(b - c)*(b + c)*(b - d)*(b + d)*(c - d)**2*(c + d)",
+    "zero": false
+  },
+  {
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      -1,
+      1
+    ],
+    "factor": "-2*a*b*c*d*(a - b)*(a + b)*(a - c)**2*(a + c)*(a - d)*(a + d)*(b - c)*(b + c)*(b - d)**2*(b + d)*(c - d)*(c + d)",
+    "zero": false
+  },
+  {
+    "signs": [
+      1,
+      1,
+      1,
+      1,
+      -1,
+      -1
+    ],
+    "factor": "-2*a*b*c*d*(a - b)*(a + b)*(a - c)*(a + c)*(a - d)*(a + d)**2*(b - c)**2*(b + c)*(b - d)*(b + d)*(c - d)*(c + d)",
+    "zero": false
+  },
+  {
+    "signs": [
+      1,
+      1,
+      1,
+      -1,
+      1,
+      1
+    ],
+    "factor": "2*a*b*c*d*(a - b)*(a + b)*(a - c)*(a + c)*(a - d)**2*(a + d)*(b - c)**2*(b + c)*(b - d)*(b + d)*(c - d)*(c + d)",
+    "zero": false
+  },
+  {
+    "signs": [
+      1,
+      1,
+      1,
+      -1,
+      1,
+      -1
+    ],
+    "factor": "2*a*b*c*d*(a - b)*(a + b)*(a - c)*(a + c)**2*(a - d)*(a + d)*(b - c)*(b + c)*(b - d)**2*(b + d)*(c - d)*(c + d)",
+    "zero": false
+  },
+  {
+    "signs": [
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      1
+    ],
+    "factor": "-2*a*b*c*d*(a - b)*(a + b)**2*(a - c)*(a + c)*(a - d)*(a + d)*(b - c)*(b + c)*(b - d)*(b + d)*(c - d)**2*(c + d)",
+    "zero": false
+  },
+  {
+    "signs": [
+      1,
+      1,
+      1,
+      -1,
+      -1,
+      -1
+    ],
+    "factor": "0",
+    "zero": true
+  }
+]
