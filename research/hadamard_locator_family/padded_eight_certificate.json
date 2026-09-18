@@ -1,0 +1,77 @@
+{
+  "field": "q^3-10q^2+3q+1",
+  "source": "orbit2_independent_field_audit.json",
+  "new_cubic": [
+    [
+      "-16335448",
+      "35463792",
+      "-3410044"
+    ],
+    [
+      "-99242641",
+      "218537644",
+      "-20688633"
+    ],
+    [
+      "-201153517",
+      "446770228",
+      "-43052681"
+    ],
+    [
+      "-136316430",
+      "301632285",
+      "-30232810"
+    ]
+  ],
+  "old_matches": [
+    2,
+    6,
+    7,
+    11
+  ],
+  "fresh_integer_nodes": [
+    1,
+    2,
+    3
+  ],
+  "fresh_exact_values": [
+    [
+      "-453048036",
+      "1002403949",
+      "-97384168"
+    ],
+    [
+      "-2109966238",
+      "4672678272",
+      "-458860514"
+    ],
+    [
+      "-5804988634",
+      "12856080471",
+      "-1269235942"
+    ]
+  ],
+  "avoidance_prime": 10847,
+  "field_root_mod_prime": 100,
+  "distinct_old_nodes_mod_prime": 14,
+  "other_four_point_interpolants_checked": 1000,
+  "fresh_avoidance_checks": 3000,
+  "old_modular_max_agreement": 7,
+  "old_modular_complete_list_size": 7,
+  "new_modular_complete_list_size": 8,
+  "source_parameters": {
+    "n": 17,
+    "k": 4,
+    "agreement": 7,
+    "complete_nearest_list_size": 8
+  },
+  "cubic_pullback_parameters": {
+    "n": 51,
+    "k": 10,
+    "agreement": 21,
+    "list_size_lower_bound": 8,
+    "complete_list_claim": false
+  },
+  "first_order_polynomial_margin": "536/44217",
+  "scope": "Finite baseline only; no growing-list or better.codes claim."
+}

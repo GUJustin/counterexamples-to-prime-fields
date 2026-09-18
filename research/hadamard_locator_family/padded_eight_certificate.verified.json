@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "certificate_sha256": "6620a0edf497b33005e21c8c37a3d5a78907b25b5c4e9a77f904bc8d95f8be06",
+  "source_sha256": "f1c8a6765238a7cafbf3d9b0c3b96606555074c3d64d4544a5ea2f05dfc2c51c",
+  "method": "independent 4x4 Vandermonde Gauss-Jordan, all2380 padded supports",
+  "prime": 10847,
+  "field_root": 100,
+  "old_supports": 1001,
+  "avoidance_checks": 3000,
+  "padded_supports": 2380,
+  "distinct_padded_interpolants": 2108,
+  "maximum_agreement": 7,
+  "complete_nearest_list_size": 8,
+  "nearest_coefficients": [
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1185,
+      787,
+      274,
+      5414
+    ],
+    [
+      5676,
+      1051,
+      8938,
+      3379
+    ],
+    [
+      7568,
+      4232,
+      4614,
+      1845
+    ],
+    [
+      8209,
+      943,
+      3800,
+      4961
+    ],
+    [
+      8209,
+      2348,
+      8295,
+      6322
+    ],
+    [
+      8209,
+      7041,
+      6532,
+      1595
+    ],
+    [
+      8209,
+      8220,
+      5946,
+      10677
+    ]
+  ],
+  "first_order_polynomial_margin": "536/44217",
+  "seconds": 0.03658604621887207
+}

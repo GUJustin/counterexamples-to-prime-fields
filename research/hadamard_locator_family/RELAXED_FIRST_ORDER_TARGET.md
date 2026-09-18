@@ -37,3 +37,12 @@ sixteen triple transversal blocks give64 new incidences. The n28 obstruction
 used a balanced orthogonal16-row sign pattern; this relaxed incidence pattern
 need not satisfy that hypothesis. It remains necessary to solve the actual
 polynomial matching equations and check distinctness; no realization is known.
+
+Subsequent scope correction: RELAXED_EVEN_SEED_SCOPE.md excludes the particular
+20-distinct-mask pattern for an EVEN preserved seed, even allowing extra
+agreements. In that case the words are cubics in Y=T^2 and the quotient pair
+budget is too small. The relaxed parameter target remains open, but that
+particular pattern must not be pursued with an even seed. A direct eight-cubic
+16-node, seven-agreement bank would instead lift quadratically to the n32 target.
+The elementary17-node finite baseline is separately recorded in
+FINITE_EIGHT_PADDING_BASELINE.md and is not an asymptotic breakthrough.

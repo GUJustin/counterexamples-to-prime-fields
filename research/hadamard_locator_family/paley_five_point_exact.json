@@ -1,0 +1,43 @@
+{
+  "field": "Q(zeta7), phi7(z)=1+z+...+z^6",
+  "modular_prime": 29,
+  "records": [
+    {
+      "representative": [
+        0,
+        1,
+        10,
+        12,
+        13
+      ],
+      "orbit_size": 7,
+      "exact_determinant": "959*z**5/128 + 833*z**4/128 - 917*z**3/128 + 777*z**2/32 - 945*z/64 + 2415/128",
+      "vanishes": false
+    },
+    {
+      "representative": [
+        0,
+        7,
+        9,
+        10,
+        12
+      ],
+      "orbit_size": 7,
+      "exact_determinant": "-8869*z**5/256 - 4459*z**4/256 - 11025*z**3/256 - 2205*z**2/64 - 1029*z/128 - 2205/256",
+      "vanishes": false
+    },
+    {
+      "representative": [
+        0,
+        8,
+        11,
+        12,
+        13
+      ],
+      "orbit_size": 7,
+      "exact_determinant": "-1365*z**5/256 - 3003*z**4/128 - 469*z**3/128 + 1407*z**2/128 - 5775*z/256 - 2205/256",
+      "vanishes": false
+    }
+  ],
+  "seconds": 0.1621431250096066
+}
