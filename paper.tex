@@ -86,9 +86,10 @@ gives separation $\Theta(n^\alpha)$ and $\Theta(n^{3(1-\alpha)/2})$
 singleton exceptions for every fixed $0<\alpha\le1/3$. These examples
 attain a separate upper bound for their conic family of witnesses up to
 a constant factor, but do not establish tightness of the general bounds.
-A separate extension-field construction has an exact two-level spectrum;
-its affine-witness companion asymptotically attains a universal
-triple-count bound with constant one.
+Over extension fields, a further construction retains $\Theta(n^{3/2})$
+exceptions and a $\Theta(\sqrt n)$ agreement gap while raising the
+characteristic to $\Theta(\sqrt n)$. A separate affine-witness
+construction asymptotically attains a universal triple-count bound.
 
 We apply these results and finite circle-code constructions to the
 quantitative premises in the S-two whitepaper. The shrinking-gap
@@ -813,6 +814,19 @@ has agreement $2(p+1)$. Its affine-witness companion in
 Corollary~\ref{cor:projective-linear-sharp-packing} asymptotically
 attains the universal triple-count bound with constant one. That separate
 sharpness statement is not above the rate-only first-order curve.
+
+Proposition~\ref{prop:scaled-frobenius-padding} improves the characteristic
+scale of the extension-field construction from $\Theta(n^{1/4})$ to
+$\Theta(\sqrt n)$, retaining the $n^{3/2}$ exceptional-count scale and
+$\sqrt n$ agreement-gap scale. Explicitly, over $\F_{p^4}$ it has
+$n=9p^2$, dimension three, and threshold $4p$, while both source
+agreements and common agreement are at most $2p+3$. There are exactly
+$(p+1)(p-1)^2$ singleton exceptions and one two-word exception.
+The construction satisfies an explicit finite DKT certificate whose
+characteristic condition is only $p>3$. Its ambient field has size
+$n^2/81$. This improves the characteristic and field-size parameters;
+it does not increase the known exceptional-count exponent or yield
+prime-alphabet, fixed-rate, or general-bound tightness.
 
 Likewise, optimality of a specified interpolation dimension count is a
 statement about that proof method, not an intrinsic list or MCA lower
