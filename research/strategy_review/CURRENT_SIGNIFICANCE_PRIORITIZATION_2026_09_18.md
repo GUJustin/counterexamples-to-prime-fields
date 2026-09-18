@@ -1,0 +1,46 @@
+# Current significance: bounded independent prioritization
+
+Updated after the September 18 afternoon cubic-extension and direct-list audits. This assessment compares the current manuscript with the locally archived primary DG, KKH, and DKT texts and the existing priority audits. It is not an exhaustive novelty certification or a prediction of conference acceptance.
+
+## Strongest subsequent positive results
+
+Theorem N.22 now gives two individually far inputs over F_(p³) whose uniformly sampled extension-field affine mixture is nearby with probability exactly 1−p^−2. The exact spectrum is p empty lists, p³−2p singleton lists, and p lists of size p; the p far inputs form an affine F_p-line. Length is 2p²−O(p), dimension three, threshold 2p−ceil(4sqrt(p))−4, and individual source agreement is at most p+2sqrt(p). Thus the absolute source separation is Theta(sqrt(n)), and the characteristic is Theta(sqrt(n)). A finite first-order certificate holds for p≥4099. F_p-valued mixtures of the far inputs remain far, so the challenge-field distinction is essential. This improves the earlier extension-field parameters, not the prime-alphabet or fixed-rate theorem.
+
+Theorem N.25 gives a separate, genuine matched finite list comparison: N=2(p²+p+1), dimension three, and threshold T=2p−ceil(4sqrt(p))−4. One explicit norm word has exactly N/2 witnesses, whereas a checked finite DKT certificate bounds EVERY received word's list by 22N, uniformly over domains of this size. Every quadratic outside the displayed bank has at most p+1 matches. This proves the correct linear order in N for these parameter tuples, within a factor of 44. It is not merely an interpolation-dimension comparison. The construction uses classical projective-plane incidence, its rate and normalized margin vanish, and its alphabet is F_(p³). It does not settle fixed-parameter or prime-alphabet tightness, nor any received-line exceptional-count question.
+
+The two results answer different questions and should not be merged into a single claimed tightness theorem. Neither improves the fixed better.codes benchmark. Their proofs, independent reviews, exact arithmetic, and small-field exhaustive checks are in `../binary_characteristic_transfer/quadratic_frobenius_core/`.
+
+## Strongest prime-alphabet theorem
+
+The strongest distinct current package is the **prime-field first-order-regime line construction with singleton lists**, especially its deterministic polynomial-gap version: both source words and their common agreement equal `A`; every point of the constructed line has at most one witness above `A`; nevertheless there are superlinearly many labels at a threshold `T>A` lying below Johnson agreement and above the DKT first-order curve. Allowing dimension `Theta(n^alpha)`, `0<alpha<1/3`, gives absolute source gap `Theta(n^alpha)` and `Theta(n^(3(1-alpha)/2))` exceptions. The dimension-three random version separately gives a constant fraction of field labels with singleton lists and gap of order `log n/loglog n`.
+
+The conceptual contribution is a separation between **small attained lists everywhere on a particular line** and **few exceptional challenges on that line** in a regime where nontrivial algebraic upper bounds are available. It is not a statement that this RS code has small lists for every received word. The underlying quadratic core is a classical Johnson-equality configuration; the substantive assembly is its received-line padding, all-nonbank exclusion, and exact source/common-agreement control. The deterministic cover is a clean strengthening of that theorem, not a separate foundational mechanism.
+
+## Precise non-subsumption by the compared theorems
+
+- **DG, Theorems 2.5 and 4.14.** The primary text gives arbitrarily large fixed polynomial exceptional-count exponents for MDS codes via random-word mass and a line through a deep hole. Its displayed family has agreement and rate both of order `n^(-2/3)`, whereas the first-order agreement scale there is `n^(-1/3)`. It does not supply the above-first-order/singleton conjunction. Conversely our result does not subsume DG's domain-independent MDS conclusion or arbitrary exponent. The existing direct random-word union bound in `../prime_quadratic_line/PRIOR_WORK_COMPARISON.md` explains why that specific averaging specialization cannot produce the dimension-three constant-density pair.
+- **KKH, Theorem 1.** I reread its statement in the archived primary text: fixed rate, subgroup domain, primes `p=Theta(n^beta)`, `eta~c/(tau log n)`, at least `n^(tau-o(1))` line labels at agreement `rho+2eta`, with direction agreement at most `rho+eta`. Thus prime alphabets, fixed-rate superlinear exceptions, polynomial field size, and growing absolute source separation are already present in prior work. Its threshold tends to capacity `rho`, strictly below `a_1(rho)` at fixed positive rate. The theorem does not assert singleton threshold lists, exact equal source/common agreements, or the above-first-order conjunction. This is a comparison of stated theorems, not a claim that their methods could never be adapted.
+- **DKT, Theorem 1.1 and Section 10.4.** The archived current public primary text states first-order list and full-support-MCA bounds at `a_1(rho)+eta_1`, with list scale linear in `n` and MCA scale quadratic in `n` at fixed parameters. Section 10.4 explicitly leaves improvement of the quadratic dependence open. Our finite certificates put the new examples in the applicable regime, but the lower bounds have vanishing rate and normalized margins. They therefore do not settle DKT's fixed-parameter quadratic-versus-linear question. Positive-density constructions have `p=o(n^2)`, so their quadratic certificate is capped trivially by the field; the large-field deterministic examples remove that vacuity but still do not match the universal quadratic exponent.
+
+The justified prime-alphabet novelty candidate is this **particular structural and parameter conjunction**, not “the first prime-field counterexample,” “a first growing gap,” or unqualified “tight DKT bounds.” The separate finite extension-field list comparison above now supports a precisely qualified constant-factor statement.
+
+## Other proved results and priority risks
+
+The exact almost-complete prime-field line profile with two far endpoints is a strong, intelligible companion: it gives nearly certain mixing with quantified endpoint separation at fixed rate but shrinking capacity gap. Its near-complete coverage differs from the specific KKH theorem, at the cost of a much larger field/domain tradeoff. It remains a plausible second focal theorem.
+
+The interval reciprocal-gap lower bound is quantitatively striking, but `INTERVAL_PRIORITY_AUDIT.md` identifies the classical Borwein–Erdelyi–Kos integer-moment counting mechanism. It should be sold as a sharp coding consequence/refinement, not a newly discovered combinatorial method. The fixed-gap quadratic exception theorem over degree-two extension fields is also a substantive separate result; it must not be advertised as resolving the prime-field case.
+
+The recovered Riccati and singular-cover results supply rigorous structural upper bounds and equality examples. They help explain why some natural approaches fail, but do not by themselves turn the prime-field lower construction into a general upper-bound improvement. More appendices or larger explicit histograms do not address that limitation.
+
+## Missing decisive advance and useful priority
+
+The clearest next mathematical advance would be a **fixed positive rate, fixed positive above-first-order margin prime-field family with superlinear exceptions and genuine source/common separation**, or an actual improvement to the universal first-order upper bound. A matching quadratic lower bound in a nonvacuous field regime would be stronger still. Current results do not establish these.
+
+For a coding/theory submission, the immediate useful work is a short, self-contained presentation of the singleton-line separation and its exact prior-work comparison, with the strongest theorem visible early and the field/rate/gap quantifiers explicit. For a cryptographic claim, a further bridge to a specified protocol's domain, challenge sampler, and complete soundness statement is missing; coding examples alone do not establish an accepted false proof or a concrete security break. Neither additional cover constants nor unconnected negative gates supplies that bridge.
+
+## Primary/evidence locations used
+
+- DG: `/Users/jthaler/Dropbox/Documents-full-2026-09-16/Documents/binary_pg_flock/rounds/san/B334/lit/eprint2025-2010.txt`, Theorems 2.5 and 4.14; public source https://eprint.iacr.org/2025/2010.
+- KKH: `/Users/jthaler/Dropbox/Documents-full-2026-09-16/Documents/stwo_audit_2026-09-15/sources/actual_list_literature/kkh2026_782.txt`, Theorem 1; public source https://eprint.iacr.org/2026/782.
+- DKT: `tmp/eprint-2056/paper.txt`, Theorem 1.1, finite Sections 5.6–5.10, Section 10.4; public source https://eprint.iacr.org/2026/2056. Archived version/hash qualifications are in `../prime_field_tightness/EPRINT_2056_COMPARISON.md`.
+- Existing detailed comparisons: `../prime_quadratic_line/PRIOR_WORK_COMPARISON.md`, `DKT_GROWING_GAP_COMPARISON.md`, and this directory's `CORE_RESULTS_NOVELTY_STRENGTH_AUDIT.md` with its explicit interval-priority correction.
