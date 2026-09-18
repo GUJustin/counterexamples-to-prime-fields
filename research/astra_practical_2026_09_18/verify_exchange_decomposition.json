@@ -1,0 +1,132 @@
+[
+  {
+    "p": 13,
+    "m": 12,
+    "r": 6,
+    "moments": 2,
+    "direct_collisions": 1072,
+    "decomposed_collisions": 1072,
+    "layers": [
+      {
+        "t": 0,
+        "ordered_disjoint_equal_signature_pairs": 1,
+        "contribution": 924
+      },
+      {
+        "t": 1,
+        "ordered_disjoint_equal_signature_pairs": 0,
+        "contribution": 0
+      },
+      {
+        "t": 2,
+        "ordered_disjoint_equal_signature_pairs": 0,
+        "contribution": 0
+      },
+      {
+        "t": 3,
+        "ordered_disjoint_equal_signature_pairs": 0,
+        "contribution": 0
+      },
+      {
+        "t": 4,
+        "ordered_disjoint_equal_signature_pairs": 24,
+        "contribution": 144
+      },
+      {
+        "t": 5,
+        "ordered_disjoint_equal_signature_pairs": 0,
+        "contribution": 0
+      },
+      {
+        "t": 6,
+        "ordered_disjoint_equal_signature_pairs": 4,
+        "contribution": 4
+      }
+    ]
+  },
+  {
+    "p": 17,
+    "m": 12,
+    "r": 5,
+    "moments": 2,
+    "direct_collisions": 836,
+    "decomposed_collisions": 836,
+    "layers": [
+      {
+        "t": 0,
+        "ordered_disjoint_equal_signature_pairs": 1,
+        "contribution": 792
+      },
+      {
+        "t": 1,
+        "ordered_disjoint_equal_signature_pairs": 0,
+        "contribution": 0
+      },
+      {
+        "t": 2,
+        "ordered_disjoint_equal_signature_pairs": 0,
+        "contribution": 0
+      },
+      {
+        "t": 3,
+        "ordered_disjoint_equal_signature_pairs": 0,
+        "contribution": 0
+      },
+      {
+        "t": 4,
+        "ordered_disjoint_equal_signature_pairs": 10,
+        "contribution": 40
+      },
+      {
+        "t": 5,
+        "ordered_disjoint_equal_signature_pairs": 4,
+        "contribution": 4
+      }
+    ]
+  },
+  {
+    "p": 17,
+    "m": 12,
+    "r": 6,
+    "moments": 3,
+    "direct_collisions": 924,
+    "decomposed_collisions": 924,
+    "layers": [
+      {
+        "t": 0,
+        "ordered_disjoint_equal_signature_pairs": 1,
+        "contribution": 924
+      },
+      {
+        "t": 1,
+        "ordered_disjoint_equal_signature_pairs": 0,
+        "contribution": 0
+      },
+      {
+        "t": 2,
+        "ordered_disjoint_equal_signature_pairs": 0,
+        "contribution": 0
+      },
+      {
+        "t": 3,
+        "ordered_disjoint_equal_signature_pairs": 0,
+        "contribution": 0
+      },
+      {
+        "t": 4,
+        "ordered_disjoint_equal_signature_pairs": 0,
+        "contribution": 0
+      },
+      {
+        "t": 5,
+        "ordered_disjoint_equal_signature_pairs": 0,
+        "contribution": 0
+      },
+      {
+        "t": 6,
+        "ordered_disjoint_equal_signature_pairs": 0,
+        "contribution": 0
+      }
+    ]
+  }
+]

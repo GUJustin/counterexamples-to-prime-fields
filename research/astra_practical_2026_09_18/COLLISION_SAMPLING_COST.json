@@ -1,0 +1,11 @@
+{
+  "p": 2130706433,
+  "signature_space": "23954199812963471691589215688102369370569258289178511147264",
+  "log2_signature_space": 193.9321081246956,
+  "log2_support_count": 249.8607316844694,
+  "required_collision_probability": 1.6738914151243634e-58,
+  "uniform_collision_probability": 4.174633291064152e-59,
+  "collision_multiplier": 4.009672942309319,
+  "uniform_birthday_samples": 2.1887987487644208e+29,
+  "target_second_moment_birthday_samples": 1.093078511766288e+29
+}
