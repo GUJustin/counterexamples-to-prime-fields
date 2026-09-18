@@ -1,0 +1,124 @@
+\subsection{Growing source separation with quadratic witnesses}
+\label{subsec:growing-gap-random-line}
+
+\begin{theorem}\label{thm:growing-gap-random-line}
+For every sufficiently large prime $p$ there are a domain of size $n$ in
+$\mathbb F_p$, two received words $F,G$, and integers $A,T$ such that
+both words and their common agreement with degree-at-most-two polynomials
+are exactly $A$, while at least $(1/e-o(1))p$ nonzero parameters $z$ have
+a singleton list of polynomials agreeing with $F+zG$ on at least $T$ coordinates.
+Moreover,
+\[
+ T^2<2n,\qquad T>n a_1(3/n),\qquad
+ T-A\sim\frac{\log n}{4\log\log n},\qquad
+ \frac pn\sim2e\log n\log\log n.
+\]
+Thus the number of these parameters is superlinear in $n$ and the absolute
+source separation grows, with the polynomial degree fixed at two.
+The rate and the relative source separation tend to zero.
+\end{theorem}
+
+\begin{proof}
+We first construct the quadratic intersection bank over a field of size
+$O(L^2)$ or larger. Choose an odd prime $q\in[L,2L]$ and put
+$b_i=2qi+(i^2\bmod q)$ for $0\le i<L$.
+Equality of two pair sums of the $b_i$ forces equality of the sums of
+the indices, since the difference of the two remainder sums has absolute
+value less than $2q$. Reduction modulo $q$ then forces equality of the
+unordered index pairs. Also $0\le b_i<8L^2$.
+If $p-1>32L^2$ and $\gamma$ generates $\mathbb F_p^*$, set
+$a_i=\gamma^{b_i}$ and $P_i(X)=X^2/a_i^2+a_i^2$.
+The $L(L-1)$ points $\pm a_i a_j$ for $i<j$ are distinct, and the
+$a_i^2$ are distinct. Assign the value $a_i^2+a_j^2$ at these points.
+Every $P_i$ agrees on exactly $A=2L-2$ core points; a nonbank quadratic
+agrees on at most $L$, by counting its roots against all $L$ bank polynomials.
+
+Put $d=\lfloor\log p/(4\log\log p)\rfloor$ and
+$L=\lfloor(p^d d!)^{1/(2d+1)}\rfloor$. Define
+$T=2L-2+d$, $n=\lceil(T^2+1)/2\rceil$, and
+$t=n-L(L-1)$. Stirling's formula gives
+\[
+ t=L^2+O(Ld+d^2),\quad
+ \frac{L(t/p)^d}{d!}\longrightarrow1,\quad
+ \frac pn\sim2e\log p\log\log p.
+\]
+In particular the core exists and we can choose $t$ additional distinct
+nonzero coordinates outside it. Set $g=0$ on the core and $g(x)=x^3$
+on the additional coordinates. Independently at each additional coordinate,
+choose $f(x)$ uniformly outside
+$\{P_i(x),P_i(x)-g(x):0\le i<L\}$; on the core use the assigned word.
+
+Fix $\lambda\notin\{0,1\}$. Let $X_{i,\lambda}$ count additional
+agreements of $P_i$ with $f+\lambda g$, and let
+$Y_\lambda=\#\{i:X_{i,\lambda}\ge d\}$.
+For each $i$, at most $6(L-1)$ coordinates forbid its desired value:
+the equations causing a prohibition are
+$P_i-P_j=\lambda X^3$ or $P_i-P_j=(\lambda-1)X^3$.
+At all remaining coordinates its probability is between $1/p$ and
+$1/(p-2L)$. Different incumbents have distinct desired values.
+For every fixed positive integer $k$, selecting disjoint $d$-sets of
+agreements for $k$ specified incumbents gives the bounds
+\[
+ \frac{(t-6L-kd)_{kd}}{(d!)^k p^{kd}}
+ \left(1-\frac{k}{p-2L}\right)^{t-kd}
+ \ \le\ \Pr(X_{i_1,\lambda},\ldots,X_{i_k,\lambda}\ge d)
+ \ \le\ \frac{(t)_{kd}}{(d!)^k(p-2L)^{kd}}.
+\]
+Here $(u)_v$ denotes a falling factorial. For the lower bound require
+exactly the selected matches and no others for these incumbents.
+Multiplication by $(L)_k$ shows
+$\mathbb E(Y_\lambda)_k=1+o(1)$ uniformly in $\lambda$.
+For every fixed positive integer $m$, the pointwise Bonferroni inequality
+\[
+ \mathbf1_{Y=1}\ge
+ \sum_{j=1}^{2m}\frac{(-1)^{j-1}(Y)_j}{(j-1)!}
+\]
+therefore gives a uniform lower limit of
+$\sum_{r=0}^{2m-1}(-1)^r/r!$ for $\Pr(Y_\lambda=1)$.
+Letting $m$ tend to infinity after $p$ proves
+$\Pr(Y_\lambda=1)\ge1/e-o(1)$.
+
+A union bound over all at most $p^4$ quadratic/parameter pairs shows that
+the probability any nonbank quadratic has $L-1$ additional matches is at most
+\[
+ p^4\binom{t}{L-1}(p-2L)^{-(L-1)}=o(1).
+\]
+Consequently some realization has no such pair and has at least
+$(1/e-o(1))p$ singleton threshold lists. Every nonbank polynomial then
+has total agreement at most $A$, uniformly in the parameter. The blacklist
+ensures that $f$ and $f+g$ each have agreement exactly $A$.
+Any nonzero quadratic agrees with $g$ at at most two core points and three
+additional points. The zero polynomial confines common agreements to the
+core, whose maximum is $A$. Thus the common agreement is exactly $A$.
+
+Finally set $F=f$ and $G=f+g$.
+For $z\ne-1$, the substitution $\lambda=z/(1+z)$ and multiplication
+by $1+z$ preserve the lists, and the counted parameters become nonzero.
+At $z=-1$, the word $-g$ additionally has singleton threshold list $\{0\}$.
+The asserted asymptotics follow from the parameter choice.
+Finally $T/\sqrt n\to\sqrt2$, whereas
+$n a_1(3/n)/\sqrt n\to\sqrt{3/2}$, proving the first-order inequality.
+\end{proof}
+
+\begin{remark}
+The same argument permits any fixed $0<c\le1/2$ with
+$d=\lfloor c\log p/\log\log p\rfloor$. In this case
+\[
+ T-A\sim\frac{c\log n}{\log\log n},\qquad
+ \frac pn\sim\frac{e}{2c}(\log n)^{1/(2c)-1}\log\log n,
+\]
+and the singleton fraction remains at least $1/e-o(1)$.
+In particular $c=1/2$ gives separation asymptotic to
+$\log n/(2\log\log n)$ and $\Omega(n\log\log n)$ singleton parameters.
+The factorial-moment bounds above require $t/p\to0$, not $d t/p\to0$,
+so this endpoint is included.
+\end{remark}
+
+\paragraph{An exact finite existence certificate.}
+For $p=18120497$, the parameters $n=4503001$, $K=3$, $A=2998$,
+and $T=3001$ admit at least $4680342$ singleton exceptional challenges,
+more than $n$. Both source agreements and common agreement are exactly
+$A$. Exact rational factorial-moment bounds and a nonbank union bound
+certify existence; this certificate does not specify a sampled received
+word. The independent replay is in
+\path{research/prime_quadratic_line/finite_gap3/}.

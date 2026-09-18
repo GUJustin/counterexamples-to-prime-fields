@@ -73,10 +73,14 @@ growth at a fixed positive gap over prime fields themselves remains open.
 At vanishing rate, we give a prime-field line with more than
 $n^{3/2}/4$ exceptional challenges for the code of quadratic polynomials.
 Both inputs are outside the tested radius, and every qualifying list is
-a singleton, at a threshold below Johnson and above the first-order
-curve. The common agreement misses that threshold by one coordinate.
+a singleton, at an agreement threshold below Johnson and above the
+first-order agreement curve. The common agreement misses that threshold by one coordinate.
 A collision-averaging variant makes a constant fraction of all prime-field
 challenges exceptional with singleton lists.
+Randomized padding further gives a source separation of order
+$\log n/\log\log n$, while a constant fraction of prime-field challenges
+have singleton lists. The message dimension remains three; the rate and
+fractional source separation vanish.
 A separate extension-field construction has an exact two-level spectrum;
 its affine-witness companion asymptotically attains a universal
 triple-count bound with constant one.
@@ -743,6 +747,35 @@ lists being singletons.
 The rate is $3/n$, and the source common agreement misses the tested
 threshold by only one coordinate. This is a superlinear lower bound in
 the applicable regime, not fixed-rate or fixed-gap tightness.
+
+The one-coordinate restriction can be removed without increasing the
+message dimension. Theorem~\ref{thm:growing-gap-random-line} gives, for
+every sufficiently large prime, two words whose individual and common
+agreements are exactly $A$, while a constant fraction of their linear
+combinations have exactly one codeword with at least $A+d$ agreements.
+Here $d$ grows on the order of $\log n/\log\log n$. For example, one
+choice gives $d\sim\log n/(2\log\log n)$ and
+$\Omega(n\log\log n)$ singleton exceptional challenges.
+The construction replaces polynomial padding by independent random values
+with the two source lists excluded, and uses a multiplicative Sidon set
+to realize the core over small prime fields. Its scope remains vanishing
+rate and vanishing fractional gap; it does not prove fixed-rate tightness.
+
+These statements should not be read as the first superlinear prime-field
+proximity-gap counterexamples. Diamond and Gruen~\cite{diamond-gruen-random}
+refute the capacity conjecture using random-word distance distributions.
+Krachun, Kazanin, and Hab\"ock~\cite{krachun-kazanin-habock}
+give prime-field counterexamples at distance
+$1-\rho-\Theta_\rho(1/\log n)$ from the code, including fixed positive
+rates. Their distance from capacity is a different parameter from our
+source separation $d/n=\Theta(\log n/(n\log\log n))$.
+Our examples lie in the range of decoding radii covered by the
+first-derivative upper bounds of Dao, Kominers, and Thaler~\cite{dkt2026}.
+Their purpose is to lower-bound the number of exceptional challenges
+within that range, even when the relevant lists are singletons.
+This does not supersede those fixed-rate near-capacity
+results. Throughout this comparison, ``below Johnson'' for an agreement
+threshold means a decoding radius beyond the Johnson radius.
 
 An independent projective construction in
 Theorem~\ref{thm:projective-quadratic-line} gives the same $3/2$
@@ -6218,6 +6251,16 @@ Working manuscript, September 2026.
 Cryptographic Proofs}. Cryptology ePrint Archive, Report 2026/2056,
 September 2026. The 145-page version retrieved September 17, 2026.
 \url{https://eprint.iacr.org/2026/2056}.
+
+\bibitem{diamond-gruen-random} B. E. Diamond and A. Gruen.
+\emph{On the Distribution of the Distances of Random Words}.
+Cryptology ePrint Archive, Report 2025/2010; full version of CRYPTO 2026.
+\url{https://eprint.iacr.org/2025/2010}.
+
+\bibitem{krachun-kazanin-habock} D. Krachun, S. Kazanin, and U. Hab\"ock.
+\emph{Failure of proximity gaps close to capacity}.
+Cryptology ePrint Archive, Report 2026/782.
+\url{https://eprint.iacr.org/2026/782}.
 
 \end{thebibliography}
 \end{document}

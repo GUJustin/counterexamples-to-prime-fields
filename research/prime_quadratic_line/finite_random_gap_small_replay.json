@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "p": 18120497,
+  "L": 1500,
+  "d": 3,
+  "n": 4503001,
+  "A": 2998,
+  "T": 3001,
+  "guaranteed_finite_singleton_labels": 4680341,
+  "guaranteed_total_singleton_labels": 4680342,
+  "excess_over_n": 177341,
+  "mathematical_audit": "Categorical domination, multinomial geometric tail, exact-support lower bound, and finite Bonferroni truncation verified.",
+  "scope": "Exact finite existence; no received word enumerated."
+}

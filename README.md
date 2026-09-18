@@ -5,7 +5,7 @@ Working draft by Justin Thaler, September 18, 2026.
 [Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
 **Latest verified results (September 18, morning):** the full-page,
-one-inch-margin ePrint draft (240 pages) now proves a prime-field line construction
+one-inch-margin ePrint draft (242 pages) now proves a prime-field line construction
 with more than n^(3/2)/4 exceptional challenges, each having a singleton
 list, above the first-order curve and below Johnson. Both source words
 are outside the tested radius. A collision-averaging variant gives
@@ -13,12 +13,22 @@ more than p/36 singleton bad challenges over an infinite sequence of
 prime fields with n = Θ(p^(2/3)). Thus singleton lists can coexist with
 a constant exceptional probability even over prime fields in this regime.
 
-The limitation is explicit: dimension is three, rate tends to zero,
-and the source gap is one coordinate. This is not fixed-rate tightness
+A further audited random-padding theorem removes the one-coordinate
+restriction: the source gap can grow as c log n / log log n, for any fixed
+0<c≤1/2, while at least (1/e−o(1))p challenges have singleton lists.
+At c=1/2 this gives Ω(n log log n) singleton bad challenges.
+The limitation is explicit: dimension is three, and both rate and the
+fractional source gap tend to zero. This is not fixed-rate tightness
 or a better.codes improvement. The uniform finite upper comparison is
 31000n². A separate extension-field construction gives the same exponent
 and an exact two-level spectrum; its affine-witness companion asymptotically
 attains a universal triple-count bound.
+
+These results do not supersede the fixed-rate near-capacity counterexamples
+of Krachun–Kazanin–Haböck or the capacity-conjecture refutation of
+Diamond–Gruen. Our source separation and their gap from capacity are
+different quantities. The distinction pursued here is the first-order
+agreement regime together with singleton threshold lists.
 
 Reproducible prime-field examples include n=1201 over F_2000003 with
 exactly 15,026 singleton exceptions, and an optimized domain over F_20011
