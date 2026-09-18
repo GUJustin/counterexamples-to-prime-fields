@@ -1,0 +1,62 @@
+\section{A complete nine-word quartic list by incidence exchange}
+\label{app:nine-quartic-exchange}
+
+\begin{theorem}
+\label{thm:nine-quartic-exchange}
+There are arbitrarily large prime fields admitting a length-$18$ Reed--Solomon code of dimension $5$ and a received word whose maximum agreement is $8$ and whose complete nearest list has exactly nine elements. There are also arbitrarily large prime fields admitting length $216$, dimension $49$, and a received word with at least nine distinct codewords having agreement $96$. Completeness is asserted only for the length-$18$ construction.
+\end{theorem}
+
+\begin{proof}
+Start with the eight-cubic seed over $\mathbb F_{17}$ from the preceding construction. Its nodes are $1,\ldots,16$, its received word is
+\[
+(9,3,12,15,0,14,8,13,11,13,11,8,10,14,10,13),
+\]
+and the ascending cubic coefficient vectors are
+\[
+\begin{array}{rrrr}
+1&10&7&2\\16&11&12&4\\13&4&7&5\\3&1&15&7\\
+0&10&2&10\\15&12&5&12\\14&15&0&14\\16&1&13&15.
+\end{array}
+\]
+Write these cubics as $P_0,\ldots,P_7$. Each has exactly seven agreements with the displayed word. Set
+\[
+ N(X)=2+15X+8X^2+5X^3+13X^4,\qquad b=0.
+\]
+The numerator equations $N(x)=(x-b)w(x)$ hold at
+$x\in\{1,2,5,6,7,8,9,12\}$. Consider the $64$ equations consisting of these eight equations and the $56$ selected cubic agreements. Their variables are the $32$ cubic coefficients, $16$ nodes, $16$ received values, $b$, and five coefficients of $N$.
+
+Delete the equation $P_0(3)=w(3)$ and the equation $N(1)=(1-b)w(1)$. The remaining $62$ equations have Jacobian rank $62$. An independently reconstructed original $62\times62$ minor has determinant $8$ modulo $17$. Fix the eight complementary variables to their integral representatives. Multivariate Hensel lifting produces a solution over $\mathbb Z_{17}$; the invertible square Jacobian shows that its coordinates are algebraic over $\mathbb Q$, hence belong to a number field.
+
+The identity
+\[
+ N(X)-XP_0(X)=11(X-5)(X-6)(X^2+10)
+\]
+holds in the residue field. Let $\theta^2=7$ in $\mathbb F_{289}$. This is a fresh root, and the derivative of the displayed difference at $\theta$ is $6+15\theta\ne0$. Thus the equation
+$N(\theta)=(\theta-b)P_0(\theta)$ lifts uniquely near this root over the unramified quadratic extension. Append the node $b$, with received value zero, and this lifted node $\theta$, with received value $N(\theta)$. On the old nodes replace $w(x)$ by $(x-b)w(x)$. The nine quartics are
+\[
+ (X-b)P_0(X),\ldots,(X-b)P_7(X),N(X).
+\]
+All have eight selected agreements: the common node $b$ supplies one to each old cubic, while $\theta$ replaces each of the two deleted incidences. The pole is proper since $N(b)$ reduces to $2$, and all domain separations and polynomial distinctions are units.
+
+We verify that the lifted list is complete and has maximum agreement exactly eight. Over $\mathbb F_{289}$, enumeration of all $\binom{18}{5}=8568$ five-point interpolants produces $5628$ distinct quartics. Exactly the nine displayed quartics have at least eight agreements; their actual agreement counts are
+\[
+(9,8,8,8,8,8,8,8,9).
+\]
+This census is valid over the algebraic closure as well, since any quartic with five matches is already determined by five residue-field points. It has been independently replayed using Newton divided differences in place of the original Lagrange interpolation.
+
+The two extra agreements do not survive lifting. Evaluate the $64$ original equations on their integer representatives, divide by $17$, and reduce modulo $17$. Two independently checked left-null vectors of the full Jacobian give an invertible system on the two deleted coordinates. Since all retained equations vanish, that system forces the deleted equation residuals divided by $17$ to be respectively $13$ and $2$ modulo $17$. Both are nonzero. Therefore each lifted listed quartic has exactly eight agreements.
+
+Any characteristic-zero quartic with at least eight agreements is integral at this place, by interpolation at five unit-separated matching nodes. Its reduction is one of the nine listed residue quartics, with support of size at most nine. Its support and the corresponding listed lift's eight selected matches therefore overlap in at least $8+8-9=7$ nodes. Two quartics agreeing at seven distinct nodes are equal. This proves completeness and excludes agreement greater than eight.
+
+Finally, pass to a finite Galois number field containing all coordinates. Outside finitely many primes, all domain and coefficient guards remain nonzero; completeness also persists, by retaining the finitely many nonzero evaluation differences of all five-point interpolants. Arbitrarily large rational primes split completely in this field, proving the prime-field assertion.
+
+For the second assertion choose a constant $c$ different from all eighteen source nodes and pull back by $X=U^{12}+c$. After adjoining the roots, the domain consists of $216$ distinct points. The nine polynomials have degree at most $48$ and each agrees on $12\cdot8=96$ points. Split-prime specialization again gives arbitrarily large prime fields. This step asserts at least nine codewords, not completeness of the pulled-back list.
+\end{proof}
+
+At $\rho=49/216$ and $a=96/216=4/9$, the first-order expression used above is strictly positive:
+\[
+ (8-\rho)a^2-6\rho a+\rho(4\rho-5)=\frac{73}{34992}>0.
+\]
+These are fixed finite list constructions, not a growing-list amplification theorem. Reproducible independent certificates are stored in
+\nolinkurl{research/relaxed_eight_cubic_route/verify_nine_exchange.py},
+\texttt{verify\_nine\_complete.py}, and their JSON receipts; the latter verifies both the exhaustive decoder and the two left-null defect identities.

@@ -1,0 +1,101 @@
+\documentclass[10pt]{article}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{amsmath,amssymb,amsthm,longtable,array}
+\newtheorem{theorem}{Theorem}
+\begin{document}
+\title{A complete ten-cubic nearest list and a finite first-order example}
+\author{}\date{}\maketitle
+\begin{theorem}
+Over $K=\mathbb Q(\sqrt{17})$ there is a word on eighteen distinct nodes whose maximum agreement with a polynomial of degree at most three is seven, and whose complete nearest list has ten elements. The same parameters occur over infinitely many prime fields. A degree-five pullback gives at least ten degree-at-most-fifteen polynomials on ninety nodes, each agreeing in thirty-five positions, over a number field and infinitely many prime fields. Its rate is $16/90=8/45$ and its agreement $7/18$ lies strictly above the first-order boundary.
+\end{theorem}
+Here ``complete'' in the first assertion also excludes extra polynomials over the algebraic closure. No completeness assertion is made for the pullback. This is a finite-list construction, not an unbounded-list family.
+
+\paragraph{The rational source.}
+Use the following sixteen nodes and received values, indexed from zero:
+\[
+\begin{array}{c|r|r@{\qquad}c|r|r}
+i&x_i&w_i&i&x_i&w_i\\\hline
+0&-\frac{9}{16}&0&8&-\frac{10}{19}&-\frac{110}{6859}\\
+1&-\frac{5}{4}&\frac{165}{8}&9&-\frac{95}{208}&0\\
+2&-\frac{65}{118}&-\frac{15015}{410758}&10&0&0\\
+3&-\frac{1}{2}&0&11&-\frac{1}{3}&0\\
+4&-\frac{65}{129}&0&12&\frac{5}{18}&-\frac{605}{162}\\
+5&-\frac{25}{53}&\frac{1650}{148877}&13&-\frac{25}{42}&0\\
+6&-\frac{5}{9}&-\frac{20}{891}&14&-\frac{95}{186}&-\frac{1045}{178746}\\
+7&-\frac{52}{101}&-\frac{7722}{1030301}&15&-\frac{35}{72}&\frac{55}{5184}\\
+\end{array}\]
+The eight source cubics $P_i(U)=\sum_{j=0}^3p_{ij}U^j$ have coefficient rows
+\[
+\begin{array}{c|rrrr}i&p_{i0}&p_{i1}&p_{i2}&p_{i3}\\\hline
+0&-\frac{6175}{242}&-\frac{36149}{242}&-\frac{35067}{121}&-\frac{563472}{3025}\\
+1&0&-\frac{81}{14}&-\frac{153}{7}&-\frac{144}{7}\\
+2&0&-\frac{65}{11}&-\frac{1191}{55}&-\frac{5418}{275}\\
+3&0&0&0&0\\
+4&0&1&5&6\\
+5&-\frac{130}{121}&-\frac{752}{121}&-\frac{6462}{605}&-\frac{3096}{605}\\
+6&0&-\frac{54}{11}&-\frac{258}{11}&-\frac{288}{11}\\
+7&-\frac{50}{11}&-\frac{334}{11}&-\frac{720}{11}&-\frac{504}{11}\\
+\end{array}\]
+Each has exactly seven matches. The complete set of additional cubics with at least five source matches consists of the following eight $Q_i$:
+\[
+\begin{array}{c|rrrr}i&q_{i0}&q_{i1}&q_{i2}&q_{i3}\\\hline
+0&0&-9&-34&-32\\
+1&0&-\frac{702}{77}&-\frac{13206}{385}&-\frac{12384}{385}\\
+2&0&\frac{27}{77}&\frac{129}{77}&\frac{144}{77}\\
+3&-\frac{225}{242}&-\frac{1453}{242}&-\frac{1503}{121}&-\frac{1008}{121}\\
+4&-\frac{1235}{132}&-\frac{3499}{66}&-\frac{16312}{165}&-\frac{3328}{55}\\
+5&0&-\frac{225}{22}&-\frac{411}{11}&-\frac{9324}{275}\\
+6&-\frac{2470}{11}&-\frac{14249}{11}&-\frac{136821}{55}&-\frac{87462}{55}\\
+7&-\frac{475}{44}&-\frac{2843}{44}&-\frac{7032}{55}&-\frac{4599}{55}\\
+\end{array}\]
+All eight $Q_i$ have exactly five matches. These finite completeness statements can be checked without solving any nonlinear equations: for each of the $\binom{16}{4}=1820$ four-node subsets interpolate its unique cubic, deduplicate the coefficient vectors, and count its matches with the displayed table. Exact rational arithmetic gives
+\[
+\begin{array}{c|rrr}\text{agreement}&4&5&7\\\hline
+\text{distinct interpolants}&1500&8&8\end{array}.
+\]
+This also certifies that no six-match or higher-than-seven-match cubic exists. Any cubic with at least four matches necessarily occurs in this interpolation census.
+
+\paragraph{Two simultaneous promotions.}
+Direct subtraction gives
+\[
+Q_0-Q_3=-\frac{(16U+9)(358U^2+125U-25)}{242}.
+\]
+Set $g(U)=358U^2+125U-25$. Its discriminant is $55^2\cdot17$, so its two roots
+\[
+u_\pm=\frac{-125\pm55\sqrt{17}}{716}
+\]
+are distinct, irrational, and outside the rational source domain. At either root, append the common received value
+\[
+Q_0(u_\pm)=Q_3(u_\pm)
+=\frac{-104594u_\pm-51075}{32041}.
+\]
+Reduction modulo $g$ verifies that none of $P_0,\ldots,P_7$ equals this value at either root. Among $Q_0,\ldots,Q_7$, precisely $Q_0,Q_3$ do. These are exact quadratic-remainder checks with the displayed coefficient tables. Since $g$ is irreducible over $\mathbb Q$, a rational cubic has the prescribed value at one root if and only if it does at both.
+
+Thus the eight $P_i$ retain seven matches, $Q_0,Q_3$ increase from five to seven, and the other six $Q_i$ retain five. Any polynomial over $\overline{\mathbb Q}$ with at least seven matches on the enlarged domain has at least five source matches. Four of these rational interpolation conditions force its coefficients to be rational, so the source census applies. This proves both maximum agreement seven and completeness of the ten-element list.
+
+All data and all nonzero remainder and interpolation determinants are algebraic. Outside finitely many primes their reductions remain nonzero; at completely split primes the nodes and values lie in the prime field. The same completeness argument applies. As an explicit check, reduction modulo $103$ and enumeration of all $\binom{18}{4}=3060$ interpolation subsets gives agreement histogram
+\[
+\begin{array}{c|rrrr}\text{agreement}&4&5&6&7\\\hline
+\text{distinct interpolants}&2480&43&1&10\end{array}.
+\]
+
+\paragraph{First-order pullback.}
+None of the eighteen nodes equals $3$. Pull back by $U=T^5+3$, taking all five roots above each node in a finite splitting field. The ninety nodes are distinct, and composition carries each of the ten cubics to degree at most fifteen with exactly thirty-five inherited matches. Good completely split prime specializations preserve these assertions.
+
+For precision about the first-order comparison, in the low-rate branch $\rho<11-3\sqrt{13}$ write $t=\sqrt{\rho/2}$ and let $v>0$ satisfy $v^2(v+3)=t$; the boundary is $a_1(\rho)=t(1+v)$. Put $a=7/18$ and $K=t^4+3at^2-a^3$. Here $a>t$ and $K>0$, so
+\[
+a>a_1(\rho)\quad\Longleftrightarrow\quad4t^6-K^2>0.
+\]
+At $\rho=8/45$ the right side equals
+\[
+\frac{475871}{21257640000}>0,
+\]
+and the agreement margin is approximately $0.00113940394$. Degree five is the smallest pullback degree giving this comparison: degrees one through three fail the high-rate test, while degree four is on the low-rate branch and gives $4t^6-K^2=-1557169/34828517376<0$.
+
+\paragraph{Verification artifacts.}
+{\small\raggedright The rational source, independent Newton-interpolation census, exact quadratic remainders, and independent modular Vandermonde census are recorded respectively in
+\texttt{rational\_seed.json}, \texttt{rational\_nine.py},
+\texttt{ten\_cubic\_certificate.py/json}, and
+\texttt{ten\_cubic\_modular.py/json}, under
+\texttt{research/relaxed\_eight\_cubic\_route}.\par}
+\end{document}

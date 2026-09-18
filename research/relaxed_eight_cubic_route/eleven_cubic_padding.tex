@@ -1,0 +1,73 @@
+\subsubsection{Three simultaneous additions}
+The same fresh-five family admits a triangle of fresh intersections.  We use
+$Q_0,Q_2,Q_5$ from Table~\ref{tab:fresh-five-cubics}, in the same affine
+coordinate as that table.
+\begin{theorem}\label{thm:eleven-cubic-padding}
+Over $\mathbb Q(\sqrt{39})$ there is a received word on nineteen distinct
+coordinates whose complete nearest list among polynomials of degree at most
+three consists of eleven polynomials, each agreeing at exactly seven
+coordinates.  Such examples also exist over arbitrarily large prime fields.
+A degree-thirteen pullback gives length $247$, dimension $40$, and agreement
+$91$, with at least eleven polynomials in the threshold list; these parameters
+lie strictly above the first-order proximity threshold.
+\end{theorem}
+\begin{proof}
+Retain the sixteen coordinates and received values of the rational eight-word
+seed.  Add the two rational coordinates
+\[
+ r=-\frac{80}{163},\qquad s=-\frac{135}{262},
+\]
+with values $Q_0(r)=Q_2(r)$ and $Q_0(s)=Q_5(s)$, respectively.  Finally add
+either root $\theta$ of
+\[
+ g(U)=U^2+\frac{4175}{3826}U+\frac{4525}{15304},
+\]
+with value $Q_2(\theta)=Q_5(\theta)$.  Its discriminant is
+$117975/14638276=55^2\cdot39/3826^2$.  The three added coordinates are
+pairwise distinct and avoid all sixteen old coordinates.  The relevant
+polynomial differences vanish at the stated coordinates, so each of
+$Q_0,Q_2,Q_5$ gains two matches and all eight original candidates retain their
+seven matches.
+
+Completeness is checked by a finite exact interpolation certificate, not by
+counting only these eleven candidates.  Any cubic agreeing at seven of the
+nineteen coordinates agrees at at least four old coordinates.  Those
+coordinates and their received values are rational, so the cubic is uniquely
+determined over $\mathbb Q$ by one of the $\binom{16}{4}=1820$ old four-subsets.
+The resulting $1516$ distinct interpolants are evaluated at all old
+coordinates, at $r,s$, and modulo the irreducible quadratic $g$ for the last
+coordinate.  Exactly the eleven displayed candidates have seven matches;
+none has eight.  The exact coefficients, supports, and exhaustive replay are
+recorded in \path{research/relaxed_eight_cubic_route/eleven_cubic_certificate.py}
+and its accompanying JSON certificate.
+
+All distinctness conditions and failed interpolation equalities exclude only
+finitely many primes.  Passing to primes that split completely in a normal
+closure of the coefficient field therefore gives the claimed arbitrarily
+large prime-field examples, including completeness of the source list.
+
+For the pullback choose $c$ away from the nineteen coordinates and substitute
+$U=T^{13}+c$.  All nineteen fibers then have thirteen distinct roots in a
+number-field extension.  Pulling back the eleven cubics gives eleven
+polynomials of degree at most $39$, with $91$ matches on $247$ coordinates.
+After adjoining the fiber roots and again taking completely split good
+primes, these are also prime-field examples.  Completeness is not asserted
+for the pulled-back list.
+
+For the threshold comparison put $\rho=40/247$, $a=91/247=7/19$,
+$t^2=\rho/2$, and $K=3at^2+t^4-a^3$.  These parameters are in the low-rate
+branch, and $a>t$, $K>0$, and
+\[
+ 4t^6-K^2=\frac{4666871}{1343677407241}>0.
+\]
+Thus $a$ strictly exceeds the first-order threshold.  Exact tests of the
+smaller positive pullback degrees show that thirteen is the first degree
+with this property for this source.
+\end{proof}
+Within the eight fresh-five cubics, this padding is optimal for three added
+coordinates: the exact factor census of all pair differences shows that no
+fresh coordinate, including infinity, has three of these cubics taking the
+same section value.  Each added coordinate can therefore supply at most two
+matches to this family, and each promoted cubic requires two.  The triangle
+attains the resulting upper bound of three promotions.  This is a statement
+about this finite family, not an asymptotic list-size lower bound.

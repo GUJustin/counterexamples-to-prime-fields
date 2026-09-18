@@ -1,0 +1,191 @@
+{
+  "field": "Q(sqrt(17))",
+  "new_node_polynomial": [
+    358,
+    125,
+    -25
+  ],
+  "discriminant": 51425,
+  "new_nodes": "(-125 +/- 55 sqrt(17))/716",
+  "new_word_remainder": [
+    "-104594/32041",
+    "-51075/32041"
+  ],
+  "new_candidate_coefficients": [
+    [
+      "0",
+      "-9",
+      "-34",
+      "-32"
+    ],
+    [
+      "-225/242",
+      "-1453/242",
+      "-1503/121",
+      "-1008/121"
+    ]
+  ],
+  "all_old_ge5_candidates": [
+    {
+      "index": 0,
+      "old_matches": 7,
+      "new_matches": 0,
+      "total": 7,
+      "remainder": [
+        "-2583722/32041",
+        "-1269425/32041"
+      ]
+    },
+    {
+      "index": 1,
+      "old_matches": 7,
+      "new_matches": 0,
+      "total": 7,
+      "remainder": [
+        "37355/32041",
+        "255375/448574"
+      ]
+    },
+    {
+      "index": 2,
+      "old_matches": 7,
+      "new_matches": 0,
+      "total": 7,
+      "remainder": [
+        "36478/32041",
+        "18015/32041"
+      ]
+    },
+    {
+      "index": 3,
+      "old_matches": 7,
+      "new_matches": 0,
+      "total": 7,
+      "remainder": [
+        "104594/32041",
+        "51075/32041"
+      ]
+    },
+    {
+      "index": 4,
+      "old_matches": 7,
+      "new_matches": 0,
+      "total": 7,
+      "remainder": [
+        "117560/32041",
+        "57575/32041"
+      ]
+    },
+    {
+      "index": 5,
+      "old_matches": 7,
+      "new_matches": 0,
+      "total": 7,
+      "remainder": [
+        "-6483/32041",
+        "-3250/32041"
+      ]
+    },
+    {
+      "index": 6,
+      "old_matches": 7,
+      "new_matches": 0,
+      "total": 7,
+      "remainder": [
+        "48845/32041",
+        "19050/32041"
+      ]
+    },
+    {
+      "index": 7,
+      "old_matches": 7,
+      "new_matches": 0,
+      "total": 7,
+      "remainder": [
+        "-417510/32041",
+        "-205225/32041"
+      ]
+    },
+    {
+      "index": 8,
+      "old_matches": 5,
+      "new_matches": 2,
+      "total": 7,
+      "remainder": [
+        "0"
+      ]
+    },
+    {
+      "index": 9,
+      "old_matches": 5,
+      "new_matches": 0,
+      "total": 5,
+      "remainder": [
+        "-9769/224287",
+        "-3810/224287"
+      ]
+    },
+    {
+      "index": 10,
+      "old_matches": 5,
+      "new_matches": 0,
+      "total": 5,
+      "remainder": [
+        "1520065/448574",
+        "106725/64082"
+      ]
+    },
+    {
+      "index": 11,
+      "old_matches": 5,
+      "new_matches": 2,
+      "total": 7,
+      "remainder": [
+        "0"
+      ]
+    },
+    {
+      "index": 12,
+      "old_matches": 5,
+      "new_matches": 0,
+      "total": 5,
+      "remainder": [
+        "-5158885/192246",
+        "-5071565/384492"
+      ]
+    },
+    {
+      "index": 13,
+      "old_matches": 5,
+      "new_matches": 0,
+      "total": 5,
+      "remainder": [
+        "-13399/32041",
+        "-12075/64082"
+      ]
+    },
+    {
+      "index": 14,
+      "old_matches": 5,
+      "new_matches": 0,
+      "total": 5,
+      "remainder": [
+        "-23339420/32041",
+        "-11467355/32041"
+      ]
+    },
+    {
+      "index": 15,
+      "old_matches": 5,
+      "new_matches": 0,
+      "total": 5,
+      "remainder": [
+        "-1049048/32041",
+        "-515570/32041"
+      ]
+    }
+  ],
+  "maximum_agreement": 7,
+  "complete_nearest_list": 10,
+  "reason": "Any >=7 match cubic on18 nodes matches>=5 rational old nodes, so is one of the exactly enumerated16 old >=5 interpolants. Irreducible quadratic means each rational candidate matches both fresh nodes or neither."
+}

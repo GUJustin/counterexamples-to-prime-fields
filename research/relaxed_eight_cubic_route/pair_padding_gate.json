@@ -1,0 +1,625 @@
+{
+  "candidates": [
+    {
+      "coefficients": [
+        "0",
+        "-9",
+        "-34",
+        "-32"
+      ],
+      "support": [
+        0,
+        1,
+        3,
+        8,
+        10
+      ]
+    },
+    {
+      "coefficients": [
+        "0",
+        "-702/77",
+        "-13206/385",
+        "-12384/385"
+      ],
+      "support": [
+        0,
+        1,
+        4,
+        10,
+        14
+      ]
+    },
+    {
+      "coefficients": [
+        "0",
+        "27/77",
+        "129/77",
+        "144/77"
+      ],
+      "support": [
+        0,
+        5,
+        10,
+        11,
+        15
+      ]
+    },
+    {
+      "coefficients": [
+        "-225/242",
+        "-1453/242",
+        "-1503/121",
+        "-1008/121"
+      ],
+      "support": [
+        0,
+        11,
+        12,
+        13,
+        15
+      ]
+    },
+    {
+      "coefficients": [
+        "-1235/132",
+        "-3499/66",
+        "-16312/165",
+        "-3328/55"
+      ],
+      "support": [
+        1,
+        2,
+        3,
+        9,
+        14
+      ]
+    },
+    {
+      "coefficients": [
+        "0",
+        "-225/22",
+        "-411/11",
+        "-9324/275"
+      ],
+      "support": [
+        1,
+        2,
+        10,
+        13,
+        14
+      ]
+    },
+    {
+      "coefficients": [
+        "-2470/11",
+        "-14249/11",
+        "-136821/55",
+        "-87462/55"
+      ],
+      "support": [
+        2,
+        3,
+        4,
+        6,
+        14
+      ]
+    },
+    {
+      "coefficients": [
+        "-475/44",
+        "-2843/44",
+        "-7032/55",
+        "-4599/55"
+      ],
+      "support": [
+        3,
+        5,
+        6,
+        13,
+        14
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "difference": "X*(4*X + 5)*(16*X + 9)/385",
+      "old_root_indices": [
+        0,
+        1,
+        10
+      ],
+      "simple_outside_degree": 0,
+      "simple_outside_factor": "64/385"
+    },
+    {
+      "pair": [
+        0,
+        2
+      ],
+      "difference": "-X*(16*X + 9)*(163*X + 80)/77",
+      "old_root_indices": [
+        0,
+        10
+      ],
+      "simple_outside_degree": 1,
+      "simple_outside_factor": "-16*(163*X + 80)/77"
+    },
+    {
+      "pair": [
+        0,
+        3
+      ],
+      "difference": "-(16*X + 9)*(358*X**2 + 125*X - 25)/242",
+      "old_root_indices": [
+        0
+      ],
+      "simple_outside_degree": 2,
+      "simple_outside_factor": "-8*(358*X**2 + 125*X - 25)/121"
+    },
+    {
+      "pair": [
+        0,
+        4
+      ],
+      "difference": "(2*X + 1)*(4*X + 5)*(2352*X + 1235)/660",
+      "old_root_indices": [
+        1,
+        3
+      ],
+      "simple_outside_degree": 1,
+      "simple_outside_factor": "2*(2352*X + 1235)/165"
+    },
+    {
+      "pair": [
+        0,
+        5
+      ],
+      "difference": "X*(4*X + 5)*(262*X + 135)/550",
+      "old_root_indices": [
+        1,
+        10
+      ],
+      "simple_outside_degree": 1,
+      "simple_outside_factor": "2*(262*X + 135)/275"
+    },
+    {
+      "pair": [
+        0,
+        6
+      ],
+      "difference": "(2*X + 1)*(42851*X**2 + 46050*X + 12350)/55",
+      "old_root_indices": [
+        3
+      ],
+      "simple_outside_degree": 2,
+      "simple_outside_factor": "2*(42851*X**2 + 46050*X + 12350)/55"
+    },
+    {
+      "pair": [
+        0,
+        7
+      ],
+      "difference": "(2*X + 1)*(5678*X**2 + 7485*X + 2375)/220",
+      "old_root_indices": [
+        3
+      ],
+      "simple_outside_degree": 2,
+      "simple_outside_factor": "(5678*X**2 + 7485*X + 2375)/110"
+    },
+    {
+      "pair": [
+        1,
+        2
+      ],
+      "difference": "-9*X*(16*X + 9)*(91*X + 45)/385",
+      "old_root_indices": [
+        0,
+        10
+      ],
+      "simple_outside_degree": 1,
+      "simple_outside_factor": "-144*(91*X + 45)/385"
+    },
+    {
+      "pair": [
+        1,
+        3
+      ],
+      "difference": "-(16*X + 9)*(12618*X**2 + 4485*X - 875)/8470",
+      "old_root_indices": [
+        0
+      ],
+      "simple_outside_degree": 2,
+      "simple_outside_factor": "-8*(12618*X**2 + 4485*X - 875)/4235"
+    },
+    {
+      "pair": [
+        1,
+        4
+      ],
+      "difference": "(4*X + 5)*(176*X + 91)*(186*X + 95)/4620",
+      "old_root_indices": [
+        1,
+        14
+      ],
+      "simple_outside_degree": 1,
+      "simple_outside_factor": "62*(176*X + 91)/385"
+    },
+    {
+      "pair": [
+        1,
+        5
+      ],
+      "difference": "9*X*(4*X + 5)*(186*X + 95)/3850",
+      "old_root_indices": [
+        1,
+        10,
+        14
+      ],
+      "simple_outside_degree": 0,
+      "simple_outside_factor": "3348/1925"
+    },
+    {
+      "pair": [
+        1,
+        6
+      ],
+      "difference": "(25*X + 14)*(129*X + 65)*(186*X + 95)/385",
+      "old_root_indices": [
+        4,
+        14
+      ],
+      "simple_outside_degree": 1,
+      "simple_outside_factor": "23994*(25*X + 14)/385"
+    },
+    {
+      "pair": [
+        1,
+        7
+      ],
+      "difference": "(186*X + 95)*(426*X**2 + 557*X + 175)/1540",
+      "old_root_indices": [
+        14
+      ],
+      "simple_outside_degree": 2,
+      "simple_outside_factor": "93*(426*X**2 + 557*X + 175)/770"
+    },
+    {
+      "pair": [
+        2,
+        3
+      ],
+      "difference": "5*(3*X + 1)*(16*X + 9)*(72*X + 35)/1694",
+      "old_root_indices": [
+        0,
+        11,
+        15
+      ],
+      "simple_outside_degree": 0,
+      "simple_outside_factor": "8640/847"
+    },
+    {
+      "pair": [
+        2,
+        4
+      ],
+      "difference": "(288192*X**3 + 464476*X**2 + 246550*X + 43225)/4620",
+      "old_root_indices": [],
+      "simple_outside_degree": 3,
+      "simple_outside_factor": "(288192*X**3 + 464476*X**2 + 246550*X + 43225)/4620"
+    },
+    {
+      "pair": [
+        2,
+        5
+      ],
+      "difference": "9*X*(15304*X**2 + 16700*X + 4525)/3850",
+      "old_root_indices": [
+        10
+      ],
+      "simple_outside_degree": 2,
+      "simple_outside_factor": "9*(15304*X**2 + 16700*X + 4525)/3850"
+    },
+    {
+      "pair": [
+        2,
+        6
+      ],
+      "difference": "2*(306477*X**3 + 479196*X**2 + 249425*X + 43225)/385",
+      "old_root_indices": [],
+      "simple_outside_degree": 3,
+      "simple_outside_factor": "2*(306477*X**3 + 479196*X**2 + 249425*X + 43225)/385"
+    },
+    {
+      "pair": [
+        2,
+        7
+      ],
+      "difference": "(53*X + 25)*(2484*X**2 + 2592*X + 665)/1540",
+      "old_root_indices": [
+        5
+      ],
+      "simple_outside_degree": 2,
+      "simple_outside_factor": "53*(2484*X**2 + 2592*X + 665)/1540"
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "difference": "(378816*X**3 + 627548*X**2 + 341300*X + 61175)/7260",
+      "old_root_indices": [],
+      "simple_outside_degree": 3,
+      "simple_outside_factor": "(378816*X**3 + 627548*X**2 + 341300*X + 61175)/7260"
+    },
+    {
+      "pair": [
+        3,
+        5
+      ],
+      "difference": "(42*X + 25)*(3684*X**2 + 1400*X - 225)/6050",
+      "old_root_indices": [
+        13
+      ],
+      "simple_outside_degree": 2,
+      "simple_outside_factor": "21*(3684*X**2 + 1400*X - 225)/3025"
+    },
+    {
+      "pair": [
+        3,
+        6
+      ],
+      "difference": "(1914084*X**3 + 2995032*X**2 + 1560125*X + 270575)/1210",
+      "old_root_indices": [],
+      "simple_outside_degree": 3,
+      "simple_outside_factor": "(1914084*X**3 + 2995032*X**2 + 1560125*X + 270575)/1210"
+    },
+    {
+      "pair": [
+        3,
+        7
+      ],
+      "difference": "(42*X + 25)*(4338*X**2 + 4069*X + 955)/2420",
+      "old_root_indices": [
+        13
+      ],
+      "simple_outside_degree": 2,
+      "simple_outside_factor": "21*(4338*X**2 + 4069*X + 955)/1210"
+    },
+    {
+      "pair": [
+        4,
+        5
+      ],
+      "difference": "-(4*X + 5)*(118*X + 65)*(186*X + 95)/3300",
+      "old_root_indices": [
+        1,
+        2,
+        14
+      ],
+      "simple_outside_degree": 0,
+      "simple_outside_factor": "-7316/275"
+    },
+    {
+      "pair": [
+        4,
+        6
+      ],
+      "difference": "23*(2*X + 1)*(118*X + 65)*(186*X + 95)/660",
+      "old_root_indices": [
+        2,
+        3,
+        14
+      ],
+      "simple_outside_degree": 0,
+      "simple_outside_factor": "84134/55"
+    },
+    {
+      "pair": [
+        4,
+        7
+      ],
+      "difference": "(2*X + 1)*(41*X + 10)*(186*X + 95)/660",
+      "old_root_indices": [
+        3,
+        14
+      ],
+      "simple_outside_degree": 1,
+      "simple_outside_factor": "31*(41*X + 10)/55"
+    },
+    {
+      "pair": [
+        5,
+        6
+      ],
+      "difference": "(39*X + 20)*(118*X + 65)*(186*X + 95)/550",
+      "old_root_indices": [
+        2,
+        14
+      ],
+      "simple_outside_degree": 1,
+      "simple_outside_factor": "10974*(39*X + 20)/275"
+    },
+    {
+      "pair": [
+        5,
+        7
+      ],
+      "difference": "(7*X + 5)*(42*X + 25)*(186*X + 95)/1100",
+      "old_root_indices": [
+        13,
+        14
+      ],
+      "simple_outside_degree": 1,
+      "simple_outside_factor": "1953*(7*X + 5)/275"
+    },
+    {
+      "pair": [
+        6,
+        7
+      ],
+      "difference": "-9*(2*X + 1)*(9*X + 5)*(186*X + 95)/20",
+      "old_root_indices": [
+        3,
+        6,
+        14
+      ],
+      "simple_outside_degree": 0,
+      "simple_outside_factor": "-7533/5"
+    }
+  ],
+  "hits": [
+    {
+      "pair": [
+        0,
+        3
+      ],
+      "difference": "-(16*X + 9)*(358*X**2 + 125*X - 25)/242",
+      "old_root_indices": [
+        0
+      ],
+      "simple_outside_degree": 2,
+      "simple_outside_factor": "-8*(358*X**2 + 125*X - 25)/121"
+    },
+    {
+      "pair": [
+        0,
+        6
+      ],
+      "difference": "(2*X + 1)*(42851*X**2 + 46050*X + 12350)/55",
+      "old_root_indices": [
+        3
+      ],
+      "simple_outside_degree": 2,
+      "simple_outside_factor": "2*(42851*X**2 + 46050*X + 12350)/55"
+    },
+    {
+      "pair": [
+        0,
+        7
+      ],
+      "difference": "(2*X + 1)*(5678*X**2 + 7485*X + 2375)/220",
+      "old_root_indices": [
+        3
+      ],
+      "simple_outside_degree": 2,
+      "simple_outside_factor": "(5678*X**2 + 7485*X + 2375)/110"
+    },
+    {
+      "pair": [
+        1,
+        3
+      ],
+      "difference": "-(16*X + 9)*(12618*X**2 + 4485*X - 875)/8470",
+      "old_root_indices": [
+        0
+      ],
+      "simple_outside_degree": 2,
+      "simple_outside_factor": "-8*(12618*X**2 + 4485*X - 875)/4235"
+    },
+    {
+      "pair": [
+        1,
+        7
+      ],
+      "difference": "(186*X + 95)*(426*X**2 + 557*X + 175)/1540",
+      "old_root_indices": [
+        14
+      ],
+      "simple_outside_degree": 2,
+      "simple_outside_factor": "93*(426*X**2 + 557*X + 175)/770"
+    },
+    {
+      "pair": [
+        2,
+        4
+      ],
+      "difference": "(288192*X**3 + 464476*X**2 + 246550*X + 43225)/4620",
+      "old_root_indices": [],
+      "simple_outside_degree": 3,
+      "simple_outside_factor": "(288192*X**3 + 464476*X**2 + 246550*X + 43225)/4620"
+    },
+    {
+      "pair": [
+        2,
+        5
+      ],
+      "difference": "9*X*(15304*X**2 + 16700*X + 4525)/3850",
+      "old_root_indices": [
+        10
+      ],
+      "simple_outside_degree": 2,
+      "simple_outside_factor": "9*(15304*X**2 + 16700*X + 4525)/3850"
+    },
+    {
+      "pair": [
+        2,
+        6
+      ],
+      "difference": "2*(306477*X**3 + 479196*X**2 + 249425*X + 43225)/385",
+      "old_root_indices": [],
+      "simple_outside_degree": 3,
+      "simple_outside_factor": "2*(306477*X**3 + 479196*X**2 + 249425*X + 43225)/385"
+    },
+    {
+      "pair": [
+        2,
+        7
+      ],
+      "difference": "(53*X + 25)*(2484*X**2 + 2592*X + 665)/1540",
+      "old_root_indices": [
+        5
+      ],
+      "simple_outside_degree": 2,
+      "simple_outside_factor": "53*(2484*X**2 + 2592*X + 665)/1540"
+    },
+    {
+      "pair": [
+        3,
+        4
+      ],
+      "difference": "(378816*X**3 + 627548*X**2 + 341300*X + 61175)/7260",
+      "old_root_indices": [],
+      "simple_outside_degree": 3,
+      "simple_outside_factor": "(378816*X**3 + 627548*X**2 + 341300*X + 61175)/7260"
+    },
+    {
+      "pair": [
+        3,
+        5
+      ],
+      "difference": "(42*X + 25)*(3684*X**2 + 1400*X - 225)/6050",
+      "old_root_indices": [
+        13
+      ],
+      "simple_outside_degree": 2,
+      "simple_outside_factor": "21*(3684*X**2 + 1400*X - 225)/3025"
+    },
+    {
+      "pair": [
+        3,
+        6
+      ],
+      "difference": "(1914084*X**3 + 2995032*X**2 + 1560125*X + 270575)/1210",
+      "old_root_indices": [],
+      "simple_outside_degree": 3,
+      "simple_outside_factor": "(1914084*X**3 + 2995032*X**2 + 1560125*X + 270575)/1210"
+    },
+    {
+      "pair": [
+        3,
+        7
+      ],
+      "difference": "(42*X + 25)*(4338*X**2 + 4069*X + 955)/2420",
+      "old_root_indices": [
+        13
+      ],
+      "simple_outside_degree": 2,
+      "simple_outside_factor": "21*(4338*X**2 + 4069*X + 955)/1210"
+    }
+  ]
+}

@@ -532,10 +532,27 @@ $n=32$ and dimension $k=7$, all eight codewords have exactly $14$
 agreements, and no other codeword attains that agreement
 (Theorem~\ref{thm:eight-cubic-smooth-seed}). This holds over arbitrarily
 large prime fields and lies strictly above the first-order curve at
-rate $7/32$. The construction lifts a nonsingular sixteen-node cubic
+rate $7/32$. The construction gives an explicit rational sixteen-node cubic
 incidence configuration and proves completeness by exact interpolation
 and a quadratic norm calculation. It is a finite seed; growing the
 list while preserving this agreement regime remains open.
+Shared intersections of two additional cubics strengthen this to a complete
+ten-member nearest list on eighteen nodes, with seven agreements each.
+A degree-five pullback gives at least ten candidates at
+$(n,k,A)=(90,16,35)$, strictly above the first-order curve
+(Theorem~\ref{thm:ten-cubic-padding}). Completeness is proved for the
+cubic source, but is not asserted for this pullback.
+A triangle of shared intersections similarly gives a complete eleven-member
+cubic list on nineteen nodes, with seven agreements each; its degree-thirteen
+pullback has at least eleven candidates at $(n,k,A)=(247,40,91)$ above the
+same curve (Theorem~\ref{thm:eleven-cubic-padding}). These finite extensions
+do not yet give an unbounded-list family.
+A separate incidence exchange gives a complete nine-member quartic list
+with eight agreements on eighteen nodes. Its degree-twelve pullback
+has at least nine nearby codewords at $(n,k,A)=(216,49,96)$, again above
+the first-order curve (Theorem~\ref{thm:nine-quartic-exchange}). This step
+removes two selected incidences before lifting and restores both at a
+fresh intersection; it does not assert an indefinitely repeatable extension.
 
 Another construction verifies two successive one-pole extensions at
 quarter rate. Over arbitrarily large prime fields, it gives six distinct
@@ -5978,6 +5995,9 @@ odd-characteristic bounds $20$ and $62$.
 \input{research/prime_line_strengthening/octic_three_pole_route/quarter_rate_small_cover_addendum.tex}
 \input{research/prime_line_strengthening/degree_ten_four_pole_route/paley_net_rational_exclusion.tex}
 \input{research/relaxed_eight_cubic_route/eight_cubic_smooth_seed.tex}
+\input{research/relaxed_eight_cubic_route/ten_cubic_padding.tex}
+\input{research/relaxed_eight_cubic_route/eleven_cubic_padding.tex}
+\input{research/relaxed_eight_cubic_route/nine_quartic_exchange.tex}
 
 \begin{thebibliography}{99}
 \bibitem{erdos-renyi-group} P. Erd\H{o}s and A. R\'enyi.

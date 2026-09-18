@@ -1,0 +1,12 @@
+{
+  "five_subsets": 8568,
+  "distinct_interpolants": 5628,
+  "maximum_residue_agreement": 9,
+  "exactly_known_nine": true,
+  "deleted_equation_residual_div17": [
+    13,
+    2
+  ],
+  "left_null_verified": true,
+  "all_pass": true
+}

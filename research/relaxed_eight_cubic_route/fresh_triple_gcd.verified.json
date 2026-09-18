@@ -1,0 +1,597 @@
+{
+  "pass_all": true,
+  "triples": 56,
+  "no_fresh_finite_triple": true,
+  "no_infinity_triple": true,
+  "scope": "The eight fresh FIVE-match cubics only; not all four-match interpolants.",
+  "records": [
+    {
+      "triple": [
+        0,
+        1,
+        2
+      ],
+      "original_gcd": [
+        "0",
+        "9/16",
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        0,
+        1,
+        3
+      ],
+      "original_gcd": [
+        "9/16",
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        0,
+        1,
+        4
+      ],
+      "original_gcd": [
+        "5/4",
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        0,
+        1,
+        5
+      ],
+      "original_gcd": [
+        "0",
+        "5/4",
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        0,
+        1,
+        6
+      ],
+      "original_gcd": [
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        0,
+        1,
+        7
+      ],
+      "original_gcd": [
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        0,
+        2,
+        3
+      ],
+      "original_gcd": [
+        "9/16",
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        0,
+        2,
+        4
+      ],
+      "original_gcd": [
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        0,
+        2,
+        5
+      ],
+      "original_gcd": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        0,
+        2,
+        6
+      ],
+      "original_gcd": [
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        0,
+        2,
+        7
+      ],
+      "original_gcd": [
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        0,
+        3,
+        4
+      ],
+      "original_gcd": [
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        0,
+        3,
+        5
+      ],
+      "original_gcd": [
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        0,
+        3,
+        6
+      ],
+      "original_gcd": [
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        0,
+        3,
+        7
+      ],
+      "original_gcd": [
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        0,
+        4,
+        5
+      ],
+      "original_gcd": [
+        "5/4",
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        0,
+        4,
+        6
+      ],
+      "original_gcd": [
+        "1/2",
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        0,
+        4,
+        7
+      ],
+      "original_gcd": [
+        "1/2",
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        0,
+        5,
+        6
+      ],
+      "original_gcd": [
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        0,
+        5,
+        7
+      ],
+      "original_gcd": [
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        0,
+        6,
+        7
+      ],
+      "original_gcd": [
+        "1/2",
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        1,
+        2,
+        3
+      ],
+      "original_gcd": [
+        "9/16",
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        1,
+        2,
+        4
+      ],
+      "original_gcd": [
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        1,
+        2,
+        5
+      ],
+      "original_gcd": [
+        "0",
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        1,
+        2,
+        6
+      ],
+      "original_gcd": [
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        1,
+        2,
+        7
+      ],
+      "original_gcd": [
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        1,
+        3,
+        4
+      ],
+      "original_gcd": [
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        1,
+        3,
+        5
+      ],
+      "original_gcd": [
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        1,
+        3,
+        6
+      ],
+      "original_gcd": [
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        1,
+        3,
+        7
+      ],
+      "original_gcd": [
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        1,
+        4,
+        5
+      ],
+      "original_gcd": [
+        "475/744",
+        "655/372",
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        1,
+        4,
+        6
+      ],
+      "original_gcd": [
+        "95/186",
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        1,
+        4,
+        7
+      ],
+      "original_gcd": [
+        "95/186",
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        1,
+        5,
+        6
+      ],
+      "original_gcd": [
+        "95/186",
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        1,
+        5,
+        7
+      ],
+      "original_gcd": [
+        "95/186",
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        1,
+        6,
+        7
+      ],
+      "original_gcd": [
+        "95/186",
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        2,
+        3,
+        4
+      ],
+      "original_gcd": [
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        2,
+        3,
+        5
+      ],
+      "original_gcd": [
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        2,
+        3,
+        6
+      ],
+      "original_gcd": [
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        2,
+        3,
+        7
+      ],
+      "original_gcd": [
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        2,
+        4,
+        5
+      ],
+      "original_gcd": [
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        2,
+        4,
+        6
+      ],
+      "original_gcd": [
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        2,
+        4,
+        7
+      ],
+      "original_gcd": [
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        2,
+        5,
+        6
+      ],
+      "original_gcd": [
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        2,
+        5,
+        7
+      ],
+      "original_gcd": [
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        2,
+        6,
+        7
+      ],
+      "original_gcd": [
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        3,
+        4,
+        5
+      ],
+      "original_gcd": [
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        3,
+        4,
+        6
+      ],
+      "original_gcd": [
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        3,
+        4,
+        7
+      ],
+      "original_gcd": [
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        3,
+        5,
+        6
+      ],
+      "original_gcd": [
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        3,
+        5,
+        7
+      ],
+      "original_gcd": [
+        "25/42",
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        3,
+        6,
+        7
+      ],
+      "original_gcd": [
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        4,
+        5,
+        6
+      ],
+      "original_gcd": [
+        "6175/21948",
+        "5825/5487",
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        4,
+        5,
+        7
+      ],
+      "original_gcd": [
+        "95/186",
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        4,
+        6,
+        7
+      ],
+      "original_gcd": [
+        "95/372",
+        "94/93",
+        "1"
+      ]
+    },
+    {
+      "triple": [
+        5,
+        6,
+        7
+      ],
+      "original_gcd": [
+        "95/186",
+        "1"
+      ]
+    }
+  ]
+}

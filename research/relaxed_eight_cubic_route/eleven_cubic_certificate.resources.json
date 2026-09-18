@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/relaxed_eight_cubic_route/eleven_cubic_certificate.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5442660840053577,
+  "peak_rss_kib": 704,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

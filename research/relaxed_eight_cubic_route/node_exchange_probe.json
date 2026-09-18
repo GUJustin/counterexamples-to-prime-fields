@@ -1,0 +1,27 @@
+{
+  "ten_fresh_six_count": 0,
+  "ten_fresh_six": [],
+  "ten_exchange_leads": [],
+  "eleven_rational_six_count": 0,
+  "eleven_nonrational_test_count": 16,
+  "eleven_nonrational_old_match_counts": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "eleven_nonrational_six_count": 0,
+  "eleven_nonrational_six": []
+}

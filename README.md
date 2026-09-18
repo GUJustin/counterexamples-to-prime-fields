@@ -5,7 +5,7 @@ Working draft by Justin Thaler, September 18, 2026.
 [Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
 **Latest verified results (September 18, early morning):** the ePrint-style article
-is 220 pages with one-inch margins. New Theorem U.1 gives an exact
+is 224 pages with one-inch margins. New Theorem U.1 gives an exact
 seven-member nearest-codeword list at quarter rate: length28, dimension7,
 and fourteen agreements per candidate, over arbitrarily large prime fields.
 Two short cyclotomic identities give the construction; its complete-list proof
@@ -34,10 +34,21 @@ the possible nonprimitive norm powers under the stated augmentation hypotheses.
 
 New Theorem W.6 gives a positive construction: over arbitrarily large prime
 fields, a length-32, dimension-7 word has exactly eight nearest codewords,
-each with 14 agreements. A smooth cubic incidence seed, independent unit
-Jacobian minor, and exhaustive quadratic norm certificates prove the result.
+each with 14 agreements. An explicit rational cubic seed and independently replayed interpolation
+and quadratic norm certificates prove the result.
 Its agreement is above the first-order curve at rate 7/32. This is a finite
 seed, not a growing-list construction or a better.codes improvement.
+
+Theorems W.7 and W.8 extend that rational seed by shared intersections:
+complete nearest lists of ten cubics on eighteen nodes and eleven cubics on
+nineteen nodes, all with seven agreements, over quadratic number fields and
+arbitrarily large prime fields. Independent exact interpolation verifies
+completeness. Their pullbacks give at least ten candidates at `(n,k,A)=(90,16,35)`
+and at least eleven at `(247,40,91)`, both above the first-order curve;
+completeness is not asserted for these pullbacks. Theorem X.1 gives a separate
+complete nine-quartic list with eight agreements on eighteen nodes by an
+incidence exchange. None of these finite constructions establishes growing
+lists, intrinsic asymptotic tightness, or a better.codes improvement.
 
 
 Corollary 2.4 sharpens the shrinking-gap and prime-size lower bounds by

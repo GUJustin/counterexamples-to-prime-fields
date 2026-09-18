@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/relaxed_eight_cubic_route/batch_padding_gate.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5455178339907434,
+  "peak_rss_kib": 7856,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

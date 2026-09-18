@@ -1,0 +1,56 @@
+{
+  "source_sha256": "ca34d23390ba8302708223639210294660f38dfa7f761ce0dda99dff30269a76",
+  "p": 17,
+  "pole": 0,
+  "interpolation_subsets": 4368,
+  "distinct_interpolants": 2508,
+  "proper_agreement_histogram": {
+    "6": 248,
+    "5": 2124,
+    "7": 18,
+    "8": 1
+  },
+  "maximum_proper_agreement": 8,
+  "best": [
+    {
+      "coefficients": [
+        2,
+        15,
+        8,
+        5,
+        13
+      ],
+      "support": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        11
+      ]
+    }
+  ],
+  "hits": [
+    {
+      "coefficients": [
+        2,
+        15,
+        8,
+        5,
+        13
+      ],
+      "support": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        11
+      ]
+    }
+  ]
+}

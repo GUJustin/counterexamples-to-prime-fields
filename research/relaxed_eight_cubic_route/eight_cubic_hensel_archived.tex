@@ -1,0 +1,164 @@
+\subsection{A smooth eight-cubic seed at relaxed length}
+\label{app:eight-cubic-smooth-seed}
+
+\begin{theorem}
+\label{thm:eight-cubic-smooth-seed}
+Over a number field, and over arbitrarily large prime fields, there is a
+word on $16$ distinct coordinates whose maximum agreement with cubics is
+$7$ and whose complete nearest list consists of exactly eight cubics.
+Consequently, over arbitrarily large prime fields there is a length-$32$,
+dimension-$7$ Reed--Solomon word whose maximum agreement is $14$ and
+whose complete nearest list consists of exactly eight codewords. This agreement exceeds the audited
+first-order curve at rate $7/32$. The construction has fixed length and
+list size; no growing-list or asymptotic-tightness assertion follows.
+\end{theorem}
+
+\begin{proof}
+We first give a smooth point of the incidence equations modulo $17$.
+The coordinates are $x_j=j$, $1\le j\le16$, and the received word is
+\[
+ (9,3,12,15,0,14,8,13,11,13,11,8,10,14,10,13).
+\]
+The eight cubics $P_i(X)=\sum_{r=0}^3 c_{ir}X^r$ and their exact agreement
+sets are as follows; entries and evaluations in this table are modulo $17$.
+\[
+\begin{array}{c|rrrr|l}
+ i&c_{i0}&c_{i1}&c_{i2}&c_{i3}&\text{agreement coordinates}\\\hline
+ 1&1&10&7&2&3,5,6,10,14,15,16\\
+ 2&16&11&12&4&1,4,8,11,13,15,16\\
+ 3&13&4&7&5&5,7,9,11,13,14,15\\
+ 4&3&1&15&7&1,4,5,10,11,12,14\\
+ 5&0&10&2&10&3,4,6,9,11,12,15\\
+ 6&15&12&5&12&3,5,8,9,12,13,16\\
+ 7&14&15&0&14&1,2,3,7,11,12,13\\
+ 8&16&1&13&15&2,4,7,9,12,14,16
+\end{array}
+\]
+All nodes are distinct and nonzero, all leading coefficients are nonzero
+and distinct, and each displayed polynomial agrees exactly seven times.
+For completeness, interpolate every four-point received subset. The
+$\binom{16}{4}=1820$ subsets produce $1022$ distinct cubics, whose maximum
+agreement is seven, with exactly the eight maximizers displayed above.
+This exhausts every possible cubic with at least four agreements, so it
+proves completeness even over the algebraic closure of $\mathbb F_{17}$.
+An independent verifier uses four-by-four Vandermonde elimination rather
+than the search algorithm.
+
+Introduce $64$ variables: the $32$ coefficients $c_{ir}$, the $16$
+coordinates $x_j$, and the $16$ received values $w_j$. Impose the $56$
+equations
+\[
+ \sum_{r=0}^3c_{ir}x_j^r-w_j=0\qquad(j\text{ in the displayed support of }i).
+\]
+A row of their Jacobian has entries $1,x_j,x_j^2,x_j^3$ in the four
+coefficient columns of $P_i$, entry $P_i'(x_j)$ in its coordinate column,
+and $-1$ in its received-value column. Select all $32$ coefficient
+columns, the first $14$ coordinate columns, and the first $10$
+received-value columns. The resulting $56$-by-$56$ determinant is
+\[
+                         14\pmod {17}.
+\]
+This determinant was independently reconstructed from the table.
+
+Fix the remaining eight variables, namely $x_{15},x_{16}$ and
+$w_{11},\ldots,w_{16}$, to their displayed integer representatives.
+The selected determinant is a unit, so multivariate Hensel lifting gives
+a solution in $\mathbb Z_{17}$ to the resulting square system, with
+invertible Jacobian. The solution lies on a zero-dimensional component
+of the characteristic-zero system: its local dimension is zero by that
+Jacobian. Its coordinates are consequently algebraic over $\mathbb Q$.
+They generate a number field embedded in $\mathbb Q_{17}$, equipped with
+the indicated reduction. Distinct nodes, nonzero nodes, distinct cubics,
+and all unselected disagreement inequalities persist, since their
+reductions are nonzero.
+
+The lifted word still has the same complete nearest list. Indeed, any
+cubic with at least seven agreements is determined by four of them.
+The corresponding interpolation denominators are units at the chosen
+place, so the cubic is integral there and reduces to a cubic with at
+least seven agreements in the table's word. It must reduce to one of
+the eight listed cubics, and its seven matching indices must be exactly
+that cubic's seven-index support. Both characteristic-zero polynomials
+agree with the word on this support, so four-point uniqueness makes
+them identical. Agreement greater than seven would contradict the
+modular maximum. This also proves the assertion over an algebraic
+closure of the number field, since four-point interpolation already
+puts every such cubic in the number field.
+
+Now adjoin the square roots of the sixteen lifted coordinates. They
+are nonzero and pairwise distinct, so the $32$ points
+$\{\pm\sqrt{x_j}:1\le j\le16\}$ are distinct. Give both points above
+$x_j$ the received value $w_j$. The eight distinct polynomials
+$P_i(T^2)$ have degree six and exactly fourteen agreements each.
+We verify its completeness first over $\overline{\mathbb F}_{17}$.
+A non-even competitor has the unique form
+$Q(T)=E(Y)+T O(Y)$, $Y=T^2$, with $\deg E\le3$, $\deg O\le2$ and
+$O\ne0$. At most two fibers can match at both signs, so fourteen
+agreements require at least twelve distinct matched fibers. At each,
+\[
+ w_j^2+B(x_j)w_j+C(x_j)=0,\qquad
+ B=-2E,\quad C=E^2-YO^2.
+\]
+There are eleven coefficients, four in $B$ and seven in $C$.
+Enumerating the $1820$ twelve-fiber subsets gives $1686$ inconsistent
+rank-eleven systems, $132$ consistent rank-eleven systems, and two
+inconsistent rank-ten systems. The consistent systems give $84$
+distinct solutions, all defined over $\mathbb F_{17}$ even when the
+candidate coefficients are allowed in its algebraic closure.
+Every solution violates at least one of
+\[
+ C(0)=E(0)^2,\qquad [Y^6]C=([Y^3]E)^2,
+\]
+which are necessary since $\deg(YO^2)\le5$. Thus there is no such
+non-even competitor. Even competitors are exactly the eight supplied
+by the complete cubic source. This proves maximum agreement fourteen
+and complete nearest-list size eight over $\overline{\mathbb F}_{17}$.
+
+For characteristic-zero completeness, use the unramified quadratic
+extension of $\mathbb Q_{17}$. All sixteen nonzero residue coordinates
+have square roots in its residue field $\mathbb F_{17^2}$; their two
+roots are simple and distinct. The $32$ lifted nodes are consequently
+unit-separated. A degree-six competitor with fourteen agreements has
+integral coefficients by interpolation on seven matching nodes. Its
+reduction must be one of the eight just classified, with exactly that
+codeword's fourteen-index support. Seven-point uniqueness then identifies
+the characteristic-zero competitor with the corresponding $P_i(T^2)$.
+This excludes also a non-even polynomial whose odd part would reduce
+to zero.
+
+Take a finite Galois number-field extension containing this construction.
+Outside finitely many primes, all coefficients and points reduce, and
+all displayed distinctness and disagreement conditions persist.
+For completeness one likewise excludes the finitely many nonzero
+evaluation differences arising from four-point interpolation on the
+source and seven-point interpolation on the pullback.
+There are arbitrarily large rational primes splitting completely in
+this extension; their residue fields are prime fields and contain all
+$32$ pullback coordinates. Thus the construction and both complete nearest-list assertions
+specialize as claimed.
+
+Finally, for $\rho=7/32$ and $a=14/32$, one has
+$\rho>11-3\sqrt{13}$ and
+\[
+ (8-\rho)a^2-6\rho a+\rho(4\rho-5)=\frac{105}{8192}>0.
+\]
+The audited high-rate first-order curve is the positive root of this
+quadratic, so the agreement is strictly above it. The capacity gap is
+$a-\rho=7/32$. These are finite parameters, not an unbounded-list family.
+\end{proof}
+
+The reproducibility directory is
+\path{research/relaxed_eight_cubic_route/}.
+The seed, supports, and selected Jacobian columns are in
+\path{local_search.json}; the independent incidence, determinant, and
+complete four-point census replay is
+\path{independent_verify.py} with receipt
+\path{independent_verify.json}. The independent replay uses only exact
+modular arithmetic and verifies the first-order margin as a rational
+number.
+
+The additional norm census is \path{quadratic_pullback_gate.json}.
+Its independent replay, \path{verify_quadratic_pullback.py}, reverses the
+coefficient-column order and uses forward elimination and back substitution;
+\path{quadratic_pullback_gate.verified.json} records all $84$ coefficient
+obstructions. No square-root test or numerical approximation is needed.

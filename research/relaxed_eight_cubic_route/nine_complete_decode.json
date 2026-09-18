@@ -1,0 +1,235 @@
+{
+  "prime": 17,
+  "field": "F17[theta]/(theta^2-7)",
+  "encoding": "a+17*b represents a+b*theta",
+  "input_sha256": "ca34d23390ba8302708223639210294660f38dfa7f761ce0dda99dff30269a76",
+  "nodes_encoded": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    0,
+    17
+  ],
+  "word_encoded": [
+    9,
+    6,
+    2,
+    9,
+    0,
+    16,
+    5,
+    2,
+    14,
+    11,
+    2,
+    11,
+    11,
+    9,
+    14,
+    4,
+    0,
+    287
+  ],
+  "five_subsets": 8568,
+  "distinct_interpolants": 5628,
+  "maximum_agreement": 9,
+  "hits": [
+    {
+      "coefficients_encoded": [
+        0,
+        14,
+        15,
+        0,
+        14
+      ],
+      "support": [
+        0,
+        1,
+        2,
+        6,
+        10,
+        11,
+        12,
+        16
+      ],
+      "agreements": 8
+    },
+    {
+      "coefficients_encoded": [
+        2,
+        15,
+        8,
+        5,
+        13
+      ],
+      "support": [
+        0,
+        1,
+        4,
+        5,
+        6,
+        7,
+        8,
+        11,
+        17
+      ],
+      "agreements": 9
+    },
+    {
+      "coefficients_encoded": [
+        0,
+        3,
+        1,
+        15,
+        7
+      ],
+      "support": [
+        0,
+        3,
+        4,
+        9,
+        10,
+        11,
+        13,
+        16
+      ],
+      "agreements": 8
+    },
+    {
+      "coefficients_encoded": [
+        0,
+        16,
+        11,
+        12,
+        4
+      ],
+      "support": [
+        0,
+        3,
+        7,
+        10,
+        12,
+        14,
+        15,
+        16
+      ],
+      "agreements": 8
+    },
+    {
+      "coefficients_encoded": [
+        0,
+        16,
+        1,
+        13,
+        15
+      ],
+      "support": [
+        1,
+        3,
+        6,
+        8,
+        11,
+        13,
+        15,
+        16
+      ],
+      "agreements": 8
+    },
+    {
+      "coefficients_encoded": [
+        0,
+        0,
+        10,
+        2,
+        10
+      ],
+      "support": [
+        2,
+        3,
+        5,
+        8,
+        10,
+        11,
+        14,
+        16
+      ],
+      "agreements": 8
+    },
+    {
+      "coefficients_encoded": [
+        0,
+        1,
+        10,
+        7,
+        2
+      ],
+      "support": [
+        2,
+        4,
+        5,
+        9,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "agreements": 9
+    },
+    {
+      "coefficients_encoded": [
+        0,
+        15,
+        12,
+        5,
+        12
+      ],
+      "support": [
+        2,
+        4,
+        7,
+        8,
+        11,
+        12,
+        15,
+        16
+      ],
+      "agreements": 8
+    },
+    {
+      "coefficients_encoded": [
+        0,
+        13,
+        4,
+        7,
+        5
+      ],
+      "support": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        13,
+        14,
+        16
+      ],
+      "agreements": 8
+    }
+  ],
+  "exactly_known_nine": true,
+  "seconds": 0.19673212499765214
+}

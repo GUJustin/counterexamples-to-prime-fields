@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/relaxed_eight_cubic_route/nine_complete_decode.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5449574999947799,
+  "peak_rss_kib": 6352,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}
