@@ -1,0 +1,168 @@
+{
+  "profile": [
+    108,
+    41,
+    19,
+    146,
+    4,
+    7,
+    2557
+  ],
+  "agreement": 181275,
+  "source_count": 1240263536362199,
+  "local_rank_upper": 4731221937,
+  "kernel_lower": 2092909271,
+  "scalar_counts": {
+    "C": 496877347482,
+    "M": 30748718496757,
+    "R": 1887186,
+    "T": 96199851
+  },
+  "cutoff_caps": [
+    149,
+    148,
+    148,
+    148,
+    147,
+    147,
+    147,
+    147,
+    147,
+    147,
+    147,
+    147,
+    147,
+    147,
+    147,
+    147,
+    147,
+    147,
+    147,
+    147
+  ],
+  "source_hypotheses": {
+    "two_s_le_B": true,
+    "B_le_m": true,
+    "m_plus_s_le_U": true,
+    "m_plus_B_plus_s_le_L": true,
+    "all_cutoff_caps_cover_U": true,
+    "k_lt_m": true,
+    "k_le_s": true,
+    "k_plus_one_le_n0": true,
+    "retained_flag_nonnegative": true,
+    "L_lt_3261": true
+  },
+  "identity_target_slack_coefficients": {
+    "z": {
+      "1": 3403566806837518,
+      "a": 0,
+      "a^2": 0,
+      "b": 5175107361177600,
+      "b^2": 0,
+      "s": 7571493700964460,
+      "s^2": 1725022626381824,
+      "ab": 0,
+      "as": 0,
+      "bs": 3450045252763648
+    },
+    "yz": {
+      "1": 6806995426311568,
+      "a": 5175107361177600,
+      "a^2": 0,
+      "b": 5175107361177600,
+      "b^2": 0,
+      "s": 11692869765339296,
+      "s^2": 1725022626381824,
+      "ab": 0,
+      "as": 3450045252763648,
+      "bs": 3450045252763648
+    },
+    "all": {
+      "1": 6713708058693544,
+      "a": 7571493700964460,
+      "a^2": 0,
+      "b": 11692869765339296,
+      "b^2": 1725022626381824,
+      "s": 11692869765339296,
+      "s^2": 1725022626381824,
+      "ab": 3450045252763648,
+      "as": 3450045252763648,
+      "bs": 3450045252763648
+    }
+  },
+  "characteristic_gates": [
+    {
+      "r": 12,
+      "y": 55,
+      "t": 3261,
+      "helper_caps": [
+        250,
+        1172,
+        64497
+      ],
+      "helper_mixed": [
+        1589214,
+        7369227,
+        27814
+      ],
+      "coefficient_mixed": [
+        164385,
+        616741,
+        4007
+      ],
+      "retained_reduced_mixed": 328466444,
+      "retained_identity_mixed": 335672843,
+      "retained_characteristic_pass": true,
+      "helper_characteristic_pass": true
+    },
+    {
+      "r": 30,
+      "y": 136,
+      "t": 6917,
+      "helper_caps": [
+        592,
+        2711,
+        133961
+      ],
+      "helper_mixed": [
+        8113694,
+        36970683,
+        161842
+      ],
+      "coefficient_mixed": [
+        360307,
+        1357634,
+        9956
+      ],
+      "retained_reduced_mixed": 2095579166,
+      "retained_identity_mixed": 2113388834,
+      "retained_characteristic_pass": true,
+      "helper_characteristic_pass": true
+    },
+    {
+      "r": 36,
+      "y": 163,
+      "t": 9678,
+      "helper_caps": [
+        706,
+        3224,
+        186420
+      ],
+      "helper_mixed": [
+        13543788,
+        61588332,
+        231142
+      ],
+      "coefficient_mixed": [
+        488850,
+        1829779,
+        11939
+      ],
+      "retained_reduced_mixed": 3024355364,
+      "retained_identity_mixed": 3045696863,
+      "retained_characteristic_pass": false,
+      "helper_characteristic_pass": true
+    }
+  ],
+  "scope": "Independent integer audit of source and explicit target routing gates; no Lean build or full receipt."
+}
