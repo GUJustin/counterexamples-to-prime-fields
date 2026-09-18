@@ -1,0 +1,72 @@
+{
+  "N": 262144,
+  "d": 131071,
+  "T": 139782,
+  "C": 139781,
+  "required": 274980728111395088,
+  "rows": [
+    {
+      "r": 1,
+      "line_numerator": 11453202432,
+      "line_denominator": 23297,
+      "line_floor": 491617,
+      "fixed_word_floor": 1
+    },
+    {
+      "r": 2,
+      "line_numerator": 3002365391929344,
+      "line_denominator": 202940167,
+      "line_floor": 14794337,
+      "fixed_word_floor": 56
+    },
+    {
+      "r": 3,
+      "line_numerator": 787043066205750165504,
+      "line_denominator": 1767811794737,
+      "line_floor": 445207498,
+      "fixed_word_floor": 1698
+    },
+    {
+      "r": 4,
+      "line_numerator": 206315469375175348385218560,
+      "line_denominator": 15399408543954007,
+      "line_floor": 13397622953,
+      "fixed_word_floor": 51108
+    },
+    {
+      "r": 5,
+      "line_numerator": 54083330826539090650352808099840,
+      "line_denominator": 134144247826383354977,
+      "line_floor": 403172940345,
+      "fixed_word_floor": 1538012
+    },
+    {
+      "r": 6,
+      "line_numerator": 14177296176207304144902184409675857920,
+      "line_denominator": 1168530542815625405204647,
+      "line_floor": 12132585034573,
+      "fixed_word_floor": 46283198
+    },
+    {
+      "r": 7,
+      "line_numerator": 3716393887742454086632223914599200367575040,
+      "line_denominator": 10179069558466912904737680017,
+      "line_floor": 365101531765363,
+      "fixed_word_floor": 1392789006
+    },
+    {
+      "r": 8,
+      "line_numerator": 31425826714750191756562085421850838308214538240,
+      "line_denominator": 2860318545929202526231288084777,
+      "line_floor": 10986827589352011,
+      "fixed_word_floor": 41912700237
+    },
+    {
+      "r": 9,
+      "line_numerator": 8237809085871041516106402262056869499923817981542400,
+      "line_denominator": 24916234853589283206000750506492447,
+      "line_floor": 330620141216254116,
+      "fixed_word_floor": 1261259050551
+    }
+  ]
+}
