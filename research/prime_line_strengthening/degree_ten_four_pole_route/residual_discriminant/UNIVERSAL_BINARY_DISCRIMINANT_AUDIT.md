@@ -41,8 +41,10 @@ points force delta at least
 
 The fixed discriminant factor T has degree294. Its divisibility follows
 at each point from the local identity and the standard plane-multiplicity
-delta bound, or from the dense ordinary locus followed by polynomial
-identity. The homogeneous residual discriminant D_h is a binary form of
+delta bound on the dense reduced, separable locus, followed by polynomial
+identity. A verified nonzero discriminant establishes this dense locus,
+and the generic leading coefficient is nonzero at the selected base points.
+Monic division by T preserves the integral coefficient model. The homogeneous residual discriminant D_h is a binary form of
 degree48.
 
 For rational normalization, total different is18 and total delta is162.
@@ -56,10 +58,11 @@ In characteristic zero this is exactly
 
     deg gcd(D(X), D'(X)) + max(47-deg D(X),0) >= 15,
 
-where D(X)=D_h(X,1). The second term includes base infinity. The displayed
-inequality is still necessary in characteristic29: differentiating a
-multiplicity divisible by29 only increases the finite gcd contribution.
-Equivalently, a convenient necessary condition in both characteristics is
+where D(X)=D_h(X,1). The second term includes base infinity. For an exact characteristic29 test put e=48-deg D(X): the infinity
+contribution is zero for e=0 and e-1+indicator(29 divides e) for e>0.
+The preceding max expression alone omitted this extra unit when e=29.
+Recorded line/conic fibers have e in {1,2,3,4} and are unaffected.
+The homogeneous condition in both characteristics is
 
     deg gcd(partial_X D_h, partial_V D_h) >= 15.
 

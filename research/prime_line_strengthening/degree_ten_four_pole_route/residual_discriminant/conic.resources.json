@@ -1,0 +1,17 @@
+{
+  "command": [
+    "sage",
+    "-python",
+    "conic_subresultants.sage.py",
+    "--input",
+    "reconstruction.json",
+    "--output",
+    "conic.json"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 18.17173695913516,
+  "peak_rss_kib": 218416,
+  "rss_limit_mib": 2048,
+  "time_limit_seconds": 120
+}

@@ -44,11 +44,26 @@ The Euler identity48D=S D_S+T D_T is valid with48 invertible in characteristic z
 
 Concretely, both partial derivatives are binary forms of degree47. Their homogeneous Sylvester matrix has size94. The necessary condition can be imposed as rank at most79. A zero partial derivative is allowed; both partials vanish only if D=0 in these characteristics. This formulation is global on the projective parameter plane. It may be computationally more expensive than open-chart subresultants, but it avoids an unproved removal of boundary strata.
 
-For an affine residual polynomial d(X) of degree d, a weaker directly usable inequality is
+For a nonzero affine residual polynomial d(X) of degree d, put e=48-d.
+The exact homogeneous-gradient condition is
 
-    deg gcd(d,d') + max(47-d,0) >=15.
+    deg gcd(d,d') + I_infinity >=15,
+    I_infinity = 0 if e=0,
+                 e-1 in characteristic zero if e>0,
+                 e-1 + indicator(29 divides e) in characteristic29 if e>0.
 
-In characteristic zero this is exactly the homogeneous repeated-root count. In characteristic29 an infinity multiplicity divisible by29 may contribute an additional common factor, so this displayed affine inequality remains a valid necessary condition through the direct local estimate (its infinity term e-1 still bounds k). The homogeneous gradient condition is the cleaner exact encoding.
+Indeed D=V^e h with h(X,0) nonzero. If e is nonzero modulo the
+characteristic, D_V has exact V-order e-1. If29 divides e>0, D_X has
+exact V-order e, since48-e is a unit modulo29. The extra unit is required
+when testing the entire closed gradient-gcd locus. Recorded line/conic
+fibers have infinity multiplicities1,2,3,4 and are unchanged.
+
+For the fixed-divisor identity, a verified nonzero discriminant gives a
+dense reduced, separable locus, with generic Y-leading coefficient nonzero
+at the selected base points. The local order identity and multiplicity-delta
+bound prove divisibility there without ordinary singularities. Polynomial
+identity extends it to the whole net; division by monic T preserves the
+integral local coefficient model.
 
 ## 4. Lower actual class and artificial vertical factors
 

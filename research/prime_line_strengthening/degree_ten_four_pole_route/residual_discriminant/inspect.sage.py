@@ -95,7 +95,10 @@ elif args.phase=='line-subresultants':
     f=PX(fc)
     assert f
     generic_degree=int(f.degree())
-    infinity_generic=max(47-generic_degree,0)
+    def infinity_gcd_contribution(degree):
+        e=48-degree
+        return e-1+int(e%29==0) if e>0 else 0
+    infinity_generic=infinity_gcd_contribution(generic_degree)
     finite_required=max(15-infinity_generic,0)
     out['generic_X_degree']=generic_degree
     out['generic_infinity_gcd_contribution']=infinity_generic
@@ -116,7 +119,7 @@ elif args.phase=='line-subresultants':
                          'curve_candidate_requires_separate_analysis':True,
                          'separate_degenerate_case':True}
         dg=int(g.degree());gg=int(g.gcd(g.derivative()).degree())
-        inf=max(47-dg,0)
+        inf=infinity_gcd_contribution(dg)
         return {'X_degree':dg,'finite_gcd_degree':gg,'infinity_gcd_contribution':inf,
                 'binary_partial_gcd_degree':gg+inf,'eligible':gg+inf>=15}
     out['projective_endpoint']=binary_check(endpoint,k)

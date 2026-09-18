@@ -269,14 +269,14 @@ of these necessary equations give
  (z-1)(wz-2w+z-1)=0,\qquad
  (z-1)(v-z+1)=0.                              \tag{G6}
 \]
-For reproducibility, \texttt{orbit7\_generic.py} constructs $M$ by the
-operations just specified, \texttt{orbit7\_branches.py} performs (G4)--(G5),
-and \texttt{orbit7\_symmetry.py} checks each relabeling and projective
+For reproducibility, \path{orbit7_generic.py} constructs $M$ by the
+operations just specified, \path{orbit7_branches.py} performs (G4)--(G5),
+and \path{orbit7_symmetry.py} checks each relabeling and projective
 renormalization.  The identity file
-\texttt{orbit7\_identity\_certificate.json.gz} contains $380$ nodes.
+\path{orbit7_identity_certificate.json.gz} contains $380$ nodes.
 An input node is one of these necessary equations.  Every subsequent
 node is an explicit sum of polynomial multiples of earlier nodes.
-An independent verifier, \texttt{orbit7\_certificate\_independent.py},
+An independent verifier, \path{orbit7_certificate_independent.py},
 checks the inputs against the necessary-equation files and checks all
 $359$ subsequent identities by sparse rational arithmetic, then checks
 the three output identities (G6).  It uses no symbolic-algebra library.

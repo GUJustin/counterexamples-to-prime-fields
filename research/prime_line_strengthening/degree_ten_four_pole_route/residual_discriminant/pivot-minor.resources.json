@@ -1,0 +1,18 @@
+{
+  "command": [
+    "sage",
+    "-python",
+    "pivot_minor.sage.py",
+    "--input",
+    "reconstruction.json",
+    "--output",
+    "pivot-minor.json",
+    "--compute-minor"
+  ],
+  "reason": "time_limit",
+  "returncode": -15,
+  "seconds": 60.21216920996085,
+  "peak_rss_kib": 490260,
+  "rss_limit_mib": 2048,
+  "time_limit_seconds": 60
+}

@@ -1,5 +1,7 @@
 # Active discriminant computation rental
 
+**Closed at approximately09:00UTC September18:** instance51405922 was explicitly destroyed and verified absent from the account's instance listing. All useful completed outputs and the timed-out pivot checkpoint were retrieved. The watchdog state records destruction. No task rental remains active.
+
 Task-owned Vast instance: 51405922. Created for the explicit Sage10.6 residual-discriminant computation; no other instances are in scope.
 
 Quoted base price: $0.032222/hour, excluding transfer/storage charges. Automatic destruction deadline: 2026-09-18 10:25:26 UTC. Local watchdog PID46814 monitors `tmp/discriminant-vast-state.json`; it destroys this instance at the deadline. Do not infer the instance stopped from a transient SSH failure.

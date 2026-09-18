@@ -1,0 +1,450 @@
+{
+  "input_sha256": "44d077d43686928aef94f1c51364361dce982e49e60c9ad2bdd32d1c1b0916a5",
+  "p": 29,
+  "parameterization": "[a:b:c]=[5u^2:u:1]",
+  "endpoint": "[1:0:0]",
+  "status": "complete",
+  "scope": "All algebraic parameters on the modular conic; necessary rationality condition only.",
+  "stage": "subresultants_complete",
+  "parameter_degree": 36,
+  "leading_coefficient": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    10,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    20,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    23,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    19
+  ],
+  "leading_factors": [
+    {
+      "coefficients": [
+        0,
+        1
+      ],
+      "degree": 1,
+      "exponent": 6
+    },
+    {
+      "coefficients": [
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "degree": 7,
+      "exponent": 1
+    },
+    {
+      "coefficients": [
+        7,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        25,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "degree": 21,
+      "exponent": 1
+    }
+  ],
+  "seconds": 15.06693242606707,
+  "subresultant_profile": [
+    {
+      "X_degree": 0,
+      "maximum_parameter_degree": 3406
+    },
+    {
+      "X_degree": 1,
+      "maximum_parameter_degree": 3340
+    },
+    {
+      "X_degree": 2,
+      "maximum_parameter_degree": 3268
+    },
+    {
+      "X_degree": 3,
+      "maximum_parameter_degree": 3194
+    },
+    {
+      "X_degree": 4,
+      "maximum_parameter_degree": 3121
+    },
+    {
+      "X_degree": 5,
+      "maximum_parameter_degree": 3049
+    },
+    {
+      "X_degree": 6,
+      "maximum_parameter_degree": 2978
+    },
+    {
+      "X_degree": 7,
+      "maximum_parameter_degree": 2908
+    },
+    {
+      "X_degree": 8,
+      "maximum_parameter_degree": 2836
+    },
+    {
+      "X_degree": 9,
+      "maximum_parameter_degree": 2764
+    },
+    {
+      "X_degree": 10,
+      "maximum_parameter_degree": 2690
+    },
+    {
+      "X_degree": 11,
+      "maximum_parameter_degree": 2617
+    },
+    {
+      "X_degree": 12,
+      "maximum_parameter_degree": 2545
+    },
+    {
+      "X_degree": 13,
+      "maximum_parameter_degree": 2474
+    },
+    {
+      "X_degree": 14,
+      "maximum_parameter_degree": 2404
+    },
+    {
+      "X_degree": 15,
+      "maximum_parameter_degree": 2332
+    },
+    {
+      "X_degree": 16,
+      "maximum_parameter_degree": 2260
+    },
+    {
+      "X_degree": 17,
+      "maximum_parameter_degree": 2186
+    },
+    {
+      "X_degree": 18,
+      "maximum_parameter_degree": 2113
+    },
+    {
+      "X_degree": 19,
+      "maximum_parameter_degree": 2041
+    },
+    {
+      "X_degree": 20,
+      "maximum_parameter_degree": 1970
+    },
+    {
+      "X_degree": 21,
+      "maximum_parameter_degree": 1900
+    },
+    {
+      "X_degree": 22,
+      "maximum_parameter_degree": 1828
+    },
+    {
+      "X_degree": 23,
+      "maximum_parameter_degree": 1756
+    },
+    {
+      "X_degree": 24,
+      "maximum_parameter_degree": 1682
+    },
+    {
+      "X_degree": 25,
+      "maximum_parameter_degree": 1609
+    },
+    {
+      "X_degree": 26,
+      "maximum_parameter_degree": 1537
+    },
+    {
+      "X_degree": 27,
+      "maximum_parameter_degree": 1466
+    },
+    {
+      "X_degree": 28,
+      "maximum_parameter_degree": 1396
+    },
+    {
+      "X_degree": 29,
+      "maximum_parameter_degree": 1324
+    },
+    {
+      "X_degree": 30,
+      "maximum_parameter_degree": 1252
+    },
+    {
+      "X_degree": 31,
+      "maximum_parameter_degree": 1178
+    },
+    {
+      "X_degree": 32,
+      "maximum_parameter_degree": 1105
+    },
+    {
+      "X_degree": 33,
+      "maximum_parameter_degree": 1033
+    },
+    {
+      "X_degree": 34,
+      "maximum_parameter_degree": 962
+    },
+    {
+      "X_degree": 35,
+      "maximum_parameter_degree": 892
+    },
+    {
+      "X_degree": 36,
+      "maximum_parameter_degree": 820
+    },
+    {
+      "X_degree": 37,
+      "maximum_parameter_degree": 748
+    },
+    {
+      "X_degree": 38,
+      "maximum_parameter_degree": 674
+    },
+    {
+      "X_degree": 39,
+      "maximum_parameter_degree": 601
+    },
+    {
+      "X_degree": 40,
+      "maximum_parameter_degree": 529
+    },
+    {
+      "X_degree": 41,
+      "maximum_parameter_degree": 458
+    },
+    {
+      "X_degree": 42,
+      "maximum_parameter_degree": 388
+    },
+    {
+      "X_degree": 43,
+      "maximum_parameter_degree": 316
+    },
+    {
+      "X_degree": 44,
+      "maximum_parameter_degree": 244
+    },
+    {
+      "X_degree": 45,
+      "maximum_parameter_degree": 174
+    },
+    {
+      "X_degree": 46,
+      "maximum_parameter_degree": 104
+    }
+  ],
+  "low_polynomials": 15,
+  "necessary_gcd": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    28,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    27,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    18,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+  ],
+  "candidate_factors": [
+    {
+      "coefficients": [
+        0,
+        1
+      ],
+      "degree": 1,
+      "exponent": 18
+    },
+    {
+      "coefficients": [
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "degree": 7,
+      "exponent": 2
+    },
+    {
+      "coefficients": [
+        7,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        25,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "degree": 21,
+      "exponent": 2
+    }
+  ],
+  "algebraic_tests": [
+    {
+      "factor": [
+        0,
+        1
+      ],
+      "degree": 1,
+      "residual_X_degree": 46,
+      "homogeneous_partial_gcd_degree": 4,
+      "passes_necessary_bound": false
+    },
+    {
+      "factor": [
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "degree": 7,
+      "residual_X_degree": 47,
+      "homogeneous_partial_gcd_degree": 0,
+      "passes_necessary_bound": false
+    },
+    {
+      "factor": [
+        7,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        25,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "degree": 21,
+      "residual_X_degree": 47,
+      "homogeneous_partial_gcd_degree": 0,
+      "passes_necessary_bound": false
+    }
+  ],
+  "endpoint_test": {
+    "member": "F0",
+    "residual_X_degree": 44,
+    "homogeneous_partial_gcd_degree": 4,
+    "separate_known_scope": "The eigenmember has genus at least6 by the saved Kummer certificate."
+  }
+}

@@ -1,0 +1,190 @@
+\subsection{A finite parameter locus in the degree-ten norm net}
+\label{sec:degree-ten-finite-locus}
+
+The first four-pole norm system not excluded by the preceding dimension
+tests has a three-dimensional kernel.  The following result makes its
+remaining rational-member problem finite; it neither produces a rational
+member nor excludes all such members.
+
+Use the Paley word of Appendix~\ref{app:seven-cubic-bank}.  Thus
+$\eta^2+\eta+2=0$, $\alpha=(\eta-1)/2$, and
+$\gamma=3(\eta+3)/4$.  Its fourteen points in the $(X,Y)$ plane are
+\[
+ Q_j=(\zeta^j,\zeta^{5j}),\qquad
+ T_j=(\alpha\zeta^j,\gamma\zeta^{5j})
+ \quad(0\le j<7).
+\]
+Let $\mathcal N$ consist of polynomials
+\[
+ F(X,Y)=\sum_{j=0}^{10}A_j(X)Y^j,
+ \qquad \deg A_j\le34-3j,
+\]
+having multiplicity at least four at every $Q_j$ and at least six at
+every $T_j$.  Equivalently these are sections of
+$10C_0+34f$ on $\mathbb F_3$, with the indicated prescribed points,
+where $C_0^2=-3$.
+
+\begin{theorem}\label{thm:degree-ten-finite-rational-locus}
+Over characteristic zero, $\dim\mathcal N=3$.
+The parameters in $\mathbb P(\mathcal N)$ defining geometrically integral
+curves with rational normalization belong to a finite closed set.
+An explicit necessary determinantal locus containing them is finite or
+empty, and has at most $1\,411\,344$ geometric points.
+The same finiteness statement for this necessary locus holds for the
+specified reduction modulo $29$.
+\end{theorem}
+
+\begin{proof}
+There are $220$ coefficient variables and
+$7\binom52+7\binom72=217$ prescribed jet conditions.
+At the prime with $\eta\mapsto7$ and $\zeta\mapsto16$ modulo $29$,
+the exact interpolation matrix has rank $217$.
+An exact characteristic-zero construction gives three eigenvectors
+$F_0,F_1,F_2$ of characters $1,3,5$ for
+$(X,Y)\mapsto(\zeta X,\zeta^5Y)$.
+For each character it suffices to solve the $31$ jet conditions at
+$(1,1)$ and $(\alpha,\gamma)$ in its $32$ allowed monomials.
+Each such matrix has rank $31$.
+Normalize the coefficients of $Y^{10},X^2Y^{10},X^4Y^{10}$ in
+$F_0,F_1,F_2$ to $25,27,20$, respectively.
+These vectors are integral at the chosen prime and reduce to the
+archived modular kernel.  The unit $217$-minor proves that they span the
+whole kernel, both over characteristic zero and over the local integral
+model.  Write $F=aF_0+bF_1+cF_2$.
+Every nonzero member retains fiber degree ten: its leading coefficient
+is $25a+27bX^2+20cX^4$.
+The weighted-infinity restrictions of the three modular basis vectors are
+$23z^8+10z$, $15z^9+7z^2$, and $20z^{10}+2z^3$.
+Their disjoint character supports and unit coefficients also hold for
+the exact lifts.  Thus every nonzero member has actual class
+$10C_0+34f$, rather than a smaller class with an artificial infinity fiber.
+
+We first establish a boundary-independent necessary rationality condition.
+Let $C$ be an integral member with rational normalization.
+Its binary-fiber discriminant $\Delta$ is a section of degree
+\[
+ 18\cdot34-3\cdot10\cdot9=342
+\]
+on the base.  At any base point, trivialize the ruled surface over the
+local DVR.  The binary equation has nonzero reduction, since $C$ has no
+fiber component.  After a constant projective change of fiber coordinate,
+its leading coefficient is a unit.  The resulting monic order satisfies
+the discriminant-index identity
+\[
+ \operatorname{ord}_x\Delta=r_x+2\delta_x,
+\]
+where $r_x$ is the total different contribution and $\delta_x$ is the
+sum of normalization indices in that fiber.  This argument also covers
+fiber-infinite branches and the base point at infinity.
+
+A reduced plane singularity of multiplicity $m$ has
+$\delta\ge\binom m2$.  The prescribed points therefore contribute at
+least $7\binom42+7\binom62=147$ index units.
+Divide $\Delta$ by the fixed degree-$294$ base divisor
+\[
+ T(X)=\prod_{j=0}^6(X-\zeta^j)^{12}
+                    (X-\alpha\zeta^j)^{30}.
+\]
+Its quotient is a homogeneous binary form $D(X,V)$ of degree $48$.
+The divisibility is a polynomial identity throughout the net.
+The verified nonzero discriminant gives a dense reduced, separable locus;
+the generic leading coefficient is nonzero at the specified base points.
+The local order identity and multiplicity--index bound therefore imply
+the divisibility there, without requiring ordinary singularities, and
+hence identically. Division by the monic fixed polynomial $T$ preserves
+the integral coefficient model at the chosen prime.
+For a rational degree-ten normalization, Riemann--Hurwitz gives
+$\sum_xr_x=18$.  Thus the residual divisor has local orders
+$r_x+2k_x$, with $k_x\ge0$ and
+\[
+ \sum_xk_x=(48-18)/2=15.
+\]
+At a root of multiplicity $e=r_x+2k_x$, the two homogeneous derivatives
+have a common factor of multiplicity at least $e-1\ge k_x$ when
+$k_x>0$.  Consequently
+\begin{equation}\label{eq:degree-ten-binary-gcd}
+ \deg\gcd(D_X,D_V)\ge15.
+\end{equation}
+This reasoning is also valid in characteristic $29$: the degree-ten
+cover is separable and tame, and derivative cancellations can only
+increase the common factor.  Since $48$ is a unit, Euler's identity
+ensures that a common factor of the derivatives also divides $D$.
+A zero discriminant is included in the determinantal condition, but is
+not evidence of an integral rational member.
+
+Every discriminant coefficient is homogeneous of degree $18$ in
+$(a,b,c)$.  Hence \eqref{eq:degree-ten-binary-gcd} defines a closed locus
+$Z$ in the entire projective parameter plane, including $a=0$ and every
+base-infinity degree drop.  No boundary or reducible-parameter divisor
+is removed.  For example, it is the rank-at-most-$79$ locus of the
+$94$-square Sylvester matrix of the degree-$47$ forms $D_X,D_V$.
+
+Here is the finite certificate showing that $Z$ misses the line $c=a$
+modulo $29$.  On its affine chart $[a:b:c]=[1:u:1]$, the residual
+polynomial has generic degree $48$.  The gcd of its first fifteen low
+principal subresultant coefficients with its derivative is, up to a
+unit, its degree-$16$ leading coefficient, with factorization
+\begin{align*}
+ u(u+20)&(u^2+24u+13)
+ (u^4+7u^3+5u^2+26u+9)\\
+ &\cdot(u^8+7u^7+13u^6+4u^5+17u^4+19u^2+5u+16).
+\end{align*}
+Away from these factors, the subresultants exclude
+\eqref{eq:degree-ten-binary-gcd}.  At their roots, computation over the
+respective residue fields of degrees $1,1,2,4,8$ gives residual degree
+$47$ and derivative-gcd degrees $0,2,0,0,0$.
+The root at base infinity then has multiplicity one and contributes
+nothing to the homogeneous derivative gcd.
+At the remaining projective parameter $[0:1:0]$, the residual degree is
+$45$, its finite derivative gcd has degree two, and base infinity
+contributes two, giving total four.  Thus the entire projective line
+misses $Z$, including all extension-field points and all leading-degree
+drops.  None of these tested discriminants is zero.
+
+Every positive-dimensional closed subset of $\mathbb P^2$ meets every
+projective line.  Therefore $Z$ is finite or empty modulo $29$.
+The integral kernel model gives the same projective determinantal
+locus and the line $c=a$ over the local DVR.  Their intersection is
+proper over that DVR.  A geometric generic point in the intersection
+would specialize, after finite base extension, to a geometric special
+point.  Since the latter does not exist, the characteristic-zero locus
+also misses the line and is finite or empty.
+
+For an explicit coarse bound, consider the structured map
+\[
+ \operatorname{Sym}^{32}(k^2)\oplus\operatorname{Sym}^{32}(k^2)
+ \longrightarrow\operatorname{Sym}^{79}(k^2),
+ \qquad (A,B)\longmapsto A D_X+B D_V.
+\]
+Its $80$-by-$66$ matrix has entries of parameter degree $18$.
+For two degree-$47$ forms with gcd degree $d$, the primitive syzygy has
+degree $47-d$; hence the matrix has a kernel precisely when $d\ge15$.
+This also includes a zero form.  Its maximal minors, of degree
+$66\cdot18=1188$, thus define a determinantal scheme with support $Z$.
+Because this support is finite, two general linear combinations of the
+minors have no common curve.  Their complete intersection contains the
+scheme and has length $1188^2=1\,411\,344$, proving the claimed bound.
+\end{proof}
+
+\paragraph{Exact certificates and reproduction.}
+The accompanying directory
+\path{research/prime_line_strengthening/degree_ten_four_pole_route}
+contains the coefficient matrix and unit minor in \texttt{gate.json},
+the three exact $\mathbb Q(\eta)$ eigenvectors in
+\texttt{exact\_kernel.json}, and independent replays of both calculations.
+In its \texttt{residual\_discriminant} subdirectory,
+\texttt{reconstruction.json} stores every coefficient of
+$D(X,1;1,s,t)$.  Total parameter degree $18$ permits exact triangular
+Newton interpolation from the $190$ pairs
+$s,t\ge0$, $s+t\le18$ modulo $29$; all relevant factorials are units.
+Each evaluation computes the degree-ten discriminant and divides by
+$T$ exactly.  Independent dense interpolation and additional resultant
+evaluations verify the reconstruction.  Homogenizing its coefficients
+to parameter degree $18$ recovers the entire parameter plane.
+The complete line subresultants and extension-field checks are in
+\texttt{line-t1.json}; the projective endpoint is independently replayed
+in \texttt{endpoint\_independent.json}.
+
+The theorem concerns a necessary locus in this particular Paley norm net.
+Its isolated points have not been enumerated or classified here, and
+the theorem supplies no new nearby polynomial or augmentation.
