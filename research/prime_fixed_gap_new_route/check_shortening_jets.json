@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "exact_jet_checks": 4164,
+  "primes": [
+    13,
+    17,
+    29,
+    41,
+    73,
+    97
+  ]
+}

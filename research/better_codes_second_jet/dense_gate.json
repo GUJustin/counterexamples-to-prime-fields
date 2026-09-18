@@ -1,0 +1,110 @@
+{
+  "n": 262144,
+  "w": 131071,
+  "A": 181275,
+  "finite": [
+    {
+      "m": 4,
+      "tested_J": 6,
+      "positive_count": 0,
+      "best_normalized_slope": {
+        "m": 4,
+        "J": 3,
+        "slope": -3454774,
+        "margin_L_equals_J": -6471870,
+        "feasible_affine_L": false
+      }
+    },
+    {
+      "m": 8,
+      "tested_J": 12,
+      "positive_count": 0,
+      "best_normalized_slope": {
+        "m": 8,
+        "J": 6,
+        "slope": -21837356,
+        "margin_L_equals_J": -62458088,
+        "feasible_affine_L": false
+      }
+    },
+    {
+      "m": 16,
+      "tested_J": 23,
+      "positive_count": 0,
+      "best_normalized_slope": {
+        "m": 16,
+        "J": 13,
+        "slope": -236987480,
+        "margin_L_equals_J": -1182580408,
+        "feasible_affine_L": false
+      }
+    },
+    {
+      "m": 32,
+      "tested_J": 45,
+      "positive_count": 0,
+      "best_normalized_slope": {
+        "m": 32,
+        "J": 27,
+        "slope": -3032479538,
+        "margin_L_equals_J": -28075564886,
+        "feasible_affine_L": false
+      }
+    },
+    {
+      "m": 64,
+      "tested_J": 89,
+      "positive_count": 0,
+      "best_normalized_slope": {
+        "m": 64,
+        "J": 55,
+        "slope": -42934702636,
+        "margin_L_equals_J": -764366242388,
+        "feasible_affine_L": false
+      }
+    },
+    {
+      "m": 128,
+      "tested_J": 178,
+      "positive_count": 0,
+      "best_normalized_slope": {
+        "m": 128,
+        "J": 110,
+        "slope": -627167166472,
+        "margin_L_equals_J": -21840192720976,
+        "feasible_affine_L": false
+      }
+    }
+  ],
+  "continuum": [
+    {
+      "c": "1/3",
+      "normalized_margin": "-192403/84934008"
+    },
+    {
+      "c": "1/2",
+      "normalized_margin": "-7112935/1358944128"
+    },
+    {
+      "c": "3/4",
+      "normalized_margin": "-247126063/21743106048"
+    },
+    {
+      "c": "9/10",
+      "normalized_margin": "-15906743911/849340080000"
+    },
+    {
+      "c": "1",
+      "normalized_margin": "-2311243/84934008"
+    },
+    {
+      "c": "6/5",
+      "normalized_margin": "-395016962/6635469375"
+    },
+    {
+      "c": "181275/131071",
+      "normalized_margin": "-22608581953427827785109/191250005957898550641288"
+    }
+  ],
+  "scope": "Sufficient rank-bound gate for dense jet degree<=J and total jet+challenge degree<=L, all L>=J. Failure does not prove actual global kernel is zero."
+}

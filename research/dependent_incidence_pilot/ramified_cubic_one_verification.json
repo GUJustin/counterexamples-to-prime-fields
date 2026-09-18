@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "pattern_index": 11,
+  "normalized_rank": 195,
+  "tangent_dimension": 5,
+  "cubic_cokernel_rank": 0,
+  "unisolvent_checks": 56,
+  "cubic_monomials": 35,
+  "residual": 18,
+  "scope": "No ramification-index-three lift; higher ramification not excluded"
+}

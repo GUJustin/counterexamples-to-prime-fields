@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/prime_fixed_gap_new_route/audit_reynolds_modal.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5452212500094902,
+  "peak_rss_kib": 7392,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

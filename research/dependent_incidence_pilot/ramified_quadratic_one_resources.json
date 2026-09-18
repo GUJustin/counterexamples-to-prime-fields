@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/dependent_incidence_pilot/ramified_quadratic_one.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5472005420015194,
+  "peak_rss_kib": 4624,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

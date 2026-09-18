@@ -1,5 +1,12 @@
 # Positive sparse-bank attempt: an explicit Reynolds-projected source
 
+**Follow-up, September 17:** the [exact finite survey](REYNOLDS_FINITE_SURVEY.md)
+finds no surplus for the original word in 377 cases. Optimizing the word
+for the complete bank also gives no surplus in the tested cases with
+`r>=5`. The [shortening and lift gates](SHORTENING_AND_REYNOLDS_GATES.md)
+give separate rigorous obstructions. The initial construction and its
+unproved sufficient lemma below are retained for reference.
+
 This note constructs a sparse bank with a forced growing stabilizer and isolates its exact remaining agreement lemma. The algebraic construction succeeds; the required fixed surplus has not been proved. Generic averaging of the known agreement bound is insufficient.
 
 ## Explicit family

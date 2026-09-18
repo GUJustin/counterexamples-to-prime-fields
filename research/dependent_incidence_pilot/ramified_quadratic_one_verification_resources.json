@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/dependent_incidence_pilot/verify_ramified_quadratic_one.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.578483374993084,
+  "peak_rss_kib": 2352,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

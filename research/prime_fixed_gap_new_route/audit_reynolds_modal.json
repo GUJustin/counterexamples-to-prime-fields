@@ -1,0 +1,40 @@
+{
+  "fixtures": [
+    {
+      "p": 37,
+      "r": 3,
+      "d": 3,
+      "optimal_bank_agreement": 5,
+      "checks": "passed"
+    },
+    {
+      "p": 41,
+      "r": 5,
+      "d": 2,
+      "optimal_bank_agreement": 5,
+      "checks": "passed"
+    },
+    {
+      "p": 61,
+      "r": 3,
+      "d": 5,
+      "optimal_bank_agreement": 5,
+      "checks": "passed"
+    },
+    {
+      "p": 89,
+      "r": 11,
+      "d": 2,
+      "optimal_bank_agreement": 10,
+      "checks": "passed"
+    },
+    {
+      "p": 101,
+      "r": 5,
+      "d": 5,
+      "optimal_bank_agreement": 4,
+      "checks": "passed"
+    }
+  ],
+  "scope": "Independent averaging on every nonzero x; filter on every square x; all rotation candidates and five arbitrary-word double counts."
+}

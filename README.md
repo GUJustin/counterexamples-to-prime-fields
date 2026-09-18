@@ -22,6 +22,13 @@ theorem also does not apply directly to the benchmark's raw interpolation
 source, whose ordinary core is the full domain.
 [Benchmark limitation](research/hermite_johnson_route/BENCHMARK_RELEVANCE.md).
 
+The follow-up [source search](research/prime_fixed_gap_new_route/NEXT_SOURCE_STATUS.md)
+now records exact obstructions to common-factor Dickson shortening,
+primitive squarefree split-cubic pencils, and all degree-two rational
+pencils in characteristic `p>max(2,10D)`, together with bounded projection and
+second-derivative experiments. These results narrow the search; they do
+not supply a new prime-field lower bound.
+
 **Other results and research history:** A separate
 [20-page first-order tightness note](research/first_order_support_audit/note/main.pdf)
 proves the sharp quarter-rate threshold for the specified interpolation
