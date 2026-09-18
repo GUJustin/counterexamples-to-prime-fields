@@ -104,6 +104,12 @@ $\sqrt n$, at a radius covered by an explicit finite first-order
 certificate. The far inputs form an affine $\F_p$-line; the random
 mixing coefficients here range over $\F_{p^3}$.
 
+For one-word lists over $\F_{p^3}$, a classical norm-one construction
+and finite DKT certificates give matching linear growth in length:
+with $N=2(p^2+p+1)$ and dimension three, the maximum list size is
+$\Theta_c(N)$ at agreement $\lceil cp\rceil$ for every fixed
+$\sqrt2<c<2$. This is a vanishing-rate extension-field comparison.
+
 We apply these results and finite circle-code constructions to the
 quantitative premises in the S-two whitepaper. The shrinking-gap
 and fixed-gap quantifiers, numerical prescriptions and actual-list-size
@@ -887,7 +893,12 @@ linear growth to every fixed threshold $T=\lceil cp\rceil$ with
 $\sqrt3<c<2$: for $p\ge401$, the same word has $N/2$ witnesses
 and the uniform upper bound is $137N$. Thus linear list growth is
 necessary throughout the asymptotic interior between the two boundaries,
-rather than only at one chosen threshold. The example uses
+rather than only at one chosen threshold. More generally,
+Corollary~\ref{cor:norm-one-general-range} gives $\Theta_c(N)$ lists
+for every fixed $\sqrt2<c<2$, using the same finite support machinery
+with larger fixed derivative caps. The additional range below $\sqrt3$
+is a finite-degree consequence, rather than a change to the rate-only
+first-order curve. The example uses
 classical projective-plane incidence geometry; its rate and normalized
 agreement vanish. This establishes neither prime-alphabet tightness nor
 tightness of the received-line exceptional count.

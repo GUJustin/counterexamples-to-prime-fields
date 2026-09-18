@@ -20,8 +20,16 @@ list at that threshold consists of the $L=N/2$ polynomials
  Q_a(X)=aX^2-a^{p^2+1},\qquad
  \operatorname{Norm}_{E/\mathbb F_p}(a)=-1.
 \]
-This list attains the Johnson counting bound exactly. At the lower
-threshold
+There are exactly $2L$ further quadratics
+\[
+ (uX-u^{p^2+1})^2,\qquad \operatorname{Norm}(u)\in\{1,-1\},
+\]
+each with exactly $p+1$ matches. Every quadratic outside these two
+banks has at most four matches. Thus the complete list has size $3L$
+for $5\le T'\le p+1$, size $L$ for $p+2\le T'\le2p+2$, and is
+empty above $2p+2$.
+The threshold-$A$ list attains the Johnson counting bound exactly.
+At the lower threshold
 \[
  T=\lceil19p/10\rceil
 \]
@@ -109,11 +117,29 @@ most four matches. If it is zero, $X$ divides $r$ and
  H(X)=\frac{r(X)}{b^pX}
 \]
 is a polynomial of degree at most one, with $H^2=Q$.
-The original unsquared identity forces
-$x^{p+1}=H(x)$ at every match, giving at most $p+1$ matches.
-As $p+1\ge4$, every outsider has at most $p+1$ matches.
-Consequently the displayed bank is the complete list at every integer
-threshold $p+1<T'\le2p+2$, including $T$.
+Write $H=uX+v$. Since $b\ne0$, both $u$ and $v$ are nonzero.
+Comparing the constant and linear coefficients in $r=b^pXH$ gives
+\[
+ (u^pv)^2=1,\qquad v^p=-u^{p+1}.
+\]
+Hence $v=-u^{p^2+1}$ and $\operatorname{Norm}(u)^2=1$.
+Conversely these conditions imply the full quartic identity, with
+$r/(b^pX)=uX-u^{p^2+1}$.
+The original unsquared identity fixes the sign: at every match,
+\[
+ x^{p+1}=u x-u^{p^2+1}.
+\]
+This equation has exactly $p+1$ roots in $E$, all with norm
+$-\operatorname{Norm}(u)\in\{1,-1\}$, by the semilinear observation.
+All lie in $D$ and are matches, so the agreement is exactly $p+1$.
+Writing $H_u(X)=uX-u^{p^2+1}$, the $2L$ resulting squares are distinct:
+equal squares would give $H_{u'}=\pm H_u$; the minus case forces
+$u'=-u$ but has incompatible constant coefficients because $p^2+1$
+is even and $p$ is odd.
+Their nonzero linear coefficients separate them from the original
+even bank. Every remaining quadratic has at most four matches.
+This proves the stated complete profile, and in particular the
+original bank remains the complete list at $T$.
 
 For the uniform upper bound at $T$, use the derivative-weighted support
 of~\cite[Proposition~5.10]{dkt2026} with
@@ -206,3 +232,84 @@ has the asserted two strict margins for all sufficiently large $p$.
 The finite band in the first statement need not itself lie wholly
 between those two boundaries.
 \end{proof}
+
+
+\begin{corollary}\label{cor:norm-one-general-range}
+Fix $\sqrt2<c<2$. For all sufficiently large primes $p$ depending on
+$c$, the maximum list size for the norm-one code at
+$T=\lceil cp\rceil$ satisfies
+\[
+ \frac N2\le L_{\max}(T)\le C_cN,
+ \qquad C_c=O\bigl((c^2-2)^{-3}\bigr).
+\]
+The upper bound holds on every length-$N$, dimension-three
+Reed--Solomon domain in characteristic $p$.
+The lower bound uses the same word and exactly the same $N/2$ witnesses
+as Theorem~\ref{thm:norm-one-direct-list}.
+\end{corollary}
+
+\begin{proof}
+Put $\delta=c^2-2$ and choose the fixed integers
+\[
+ h=\lceil8/\delta\rceil,\qquad
+ s=\lceil8h/\delta\rceil,\qquad
+ \kappa=\lceil4c^2/\delta\rceil.
+\]
+Use multiplicity $m=2h$, derivative cap $s$, joint cap $B=hT$,
+and challenge cap $H=\kappa B$. For sufficiently large $p$,
+$B\ge2h+s$ and $p>s$. The exact derivative-weighted counts are
+\[
+ G=(s+1)B(B+1-s/2),\qquad
+ R=\frac{h(h+1)(6s+2h+7)}6.
+\]
+For the first identity, the coefficient allowance at a fixed derivative
+exponent $b$ sums to $B(B-b+1)$. For the second, the local block at
+index $a\in\{0,\ldots,2h-1\}$ has rank
+$q(a+s+2-q)$, where $q=\min(a+1,2h-a)$; summing gives $R$.
+The assumed joint cap makes all nonzero blocks active.
+
+The leading coefficient condition is controlled by
+\[
+ \gamma:=\frac{2R}{(s+1)h^2}
+ =2+\frac2h+\frac{(h+1)(2h+1)}{3h(s+1)}
+ \le2+\frac\delta2<c^2.
+\]
+Indeed, $2/h\le\delta/4$ and the final term is at most
+$2h/(s+1)\le\delta/4$. The exact expression
+$(\kappa-1)G-\kappa NR$ has leading coefficient in $p$
+\[
+ (s+1)h^2\bigl(\kappa(c^2-\gamma)-c^2\bigr)>0;
+\]
+the rounding of $T$ contributes only $O_c(p)$.
+Hence it is positive for all sufficiently large $p$. It follows that
+$G>NR$ and the full graded surplus
+\[
+ (H-B+1)G-(H+1)NR
+ =B\bigl((\kappa-1)G-\kappa NR\bigr)+(G-NR)
+\]
+is strictly positive. This checks the finite support certificate,
+with reconstruction guard $p>\max(2,s)$.
+
+The fixed-word transfer gives
+\[
+ F_{\rm reg}=(2s+1)B-s(s+1),\qquad
+ S=(2s-1)B-s^2.
+\]
+Since $\lambda=(N-2)/(T-2)=O_c(p)$, its list bound is
+\[
+ \lambda F_{\rm reg}+S
+ =h(2s+1)N+O_c(p)
+ \le\bigl(h(2s+1)+1\bigr)N
+\]
+for sufficiently large $p$.
+Thus one can take $C_c=h(2s+1)+1=O(\delta^{-3})$.
+Finally $p+1<T\le2p+2$ eventually, so the complete list of the
+exhibited word is still exactly $N/2$.
+\end{proof}
+
+This wider range is a finite-degree consequence of the same DKT support
+machinery, using message degree two. For $\sqrt2<c\le\sqrt3$ it is
+not the strict interior above the rate-only curve $Na_1(3/N)$.
+The result concerns growing lists at vanishing rate over extension
+fields; it does not change the stated first-order curve or supply
+prime-alphabet tightness.

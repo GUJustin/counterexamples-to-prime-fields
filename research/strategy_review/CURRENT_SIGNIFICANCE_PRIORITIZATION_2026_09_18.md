@@ -48,3 +48,7 @@ For a coding/theory submission, the immediate useful work is a short, self-conta
 ## Verified full-interior list comparison
 
 Corollary N.26 now gives exact list N/2 and uniform maximum-list bound137N for p>=401 and every integer ceil(sqrt(3)*p)<=T<=2p+2. Consequently every fixedc in(sqrt(3),2) has matched linear list growth atT=ceil(cp), eventually strictly between the first-order and Johnson boundaries with both marginsTheta(sqrt(N)). This strengthens the positive extension-field comparison beyond a single chosen threshold; it does not establish prime-alphabet/fixed-rate/line-exception tightness or improve better.codes. The original sharper22N bound atceil(1.9p),p>=53 remains in place. Finite support arithmetic and rendered PDF have been checked.
+
+## Wider verified range and complete high-agreement profile
+
+Corollary N.27 now proves maximum list Theta_c(N) for every fixed sqrt(2)<c<2 atT=ceil(cp), with uniform upper constantO((c²−2)^−3) and an explicit c-dependent finite onset in the supporting audit. This uses actual message degree two in the existing finite DKT machinery; it does not change the rate-only a1 curve. Theorem N.25 now identifies all quadratics above four agreements: L=N/2 even witnesses at2p+2, and2L=N squared-linear witnesses atp+1, with no other high-agreement words. These refinements are included in the abstract/overview and 258-page ePrint PDF, which builds and renders cleanly. Independent audits and exact small-field/finite-support receipts passed. No benchmark improvement or prime-alphabet tightness is claimed.

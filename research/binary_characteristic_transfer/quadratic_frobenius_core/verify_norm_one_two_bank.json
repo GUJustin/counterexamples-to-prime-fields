@@ -1,0 +1,20 @@
+[
+  {
+    "p": 5,
+    "domain_size": 62,
+    "new_bank_size": 62,
+    "matches_each": 6,
+    "coordinate_checks": 3844,
+    "archived_complete_counts_match": true,
+    "passed": true
+  },
+  {
+    "p": 7,
+    "domain_size": 114,
+    "new_bank_size": 114,
+    "matches_each": 8,
+    "coordinate_checks": 12996,
+    "archived_complete_counts_match": true,
+    "passed": true
+  }
+]

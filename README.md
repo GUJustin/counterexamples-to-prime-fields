@@ -35,8 +35,9 @@ A separate list-size comparison now gives **N/2 ≤ maximum list size ≤ 22N**
 at the same below-Johnson threshold over F_(p³), for N=2(p²+p+1),
 dimension three, p≥53, and threshold ceil(19p/10). This threshold stays
 a constant times sqrt(N) from both the first-order and Johnson boundaries.
-The explicit word has exactly N/2 witnesses;
-every other quadratic has at most p+1 matches. The upper bound applies
+The explicit word has exactly N/2 witnesses at that threshold. Its complete
+profile above four matches is now classified: N/2 quadratics have 2p+2
+matches, N further quadratics have p+1 matches, and all others have at most four. The upper bound applies
 to every received word, using a checked finite DKT certificate. This is
 constant-factor tightness for this varying-rate extension-field list bound,
 not for prime alphabets or received-line exception counts. The construction
@@ -45,6 +46,10 @@ The comparison now extends to every fixed threshold ceil(c p), sqrt(3)<c<2:
 for p≥401 the uniform upper bound is 137N, while the same word still has
 exactly N/2 witnesses. Hence linear list growth is necessary throughout
 the asymptotic interval between the first-order and Johnson boundaries.
+A further exact support calculation extends Theta(N) maximum lists to
+every fixed sqrt(2)<c<2, with upper constant O((c²−2)^−3) and a
+c-dependent finite onset. The portion c≤sqrt(3) uses the actual message
+degree two; it does not change the stated rate-only first-order curve.
 
 Over sufficiently large primes, a deterministic cover gives exactly
 L(L²−L+1)+1 exceptions with source gap s and length s(2L²−2L+1).
