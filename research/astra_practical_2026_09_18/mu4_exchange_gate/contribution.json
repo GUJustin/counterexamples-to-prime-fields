@@ -1,0 +1,13 @@
+{
+  "independent_characteristic_zero_unordered_pairs": 3150,
+  "product_fiber_histogram": {
+    "15": 17,
+    "14": 15
+  },
+  "E16_certified": 6300,
+  "weighted_contribution": "2376314568678687355794479078793118224775766455514061282397602685986000",
+  "required_collision_target": "451728231290648825339968113311834576280642383637619255627431363786586959879424237399168654126",
+  "contribution_log2_fraction_of_target": -77.33107543394925,
+  "contribution_to_second_moment_lower_bound": "0",
+  "contribution_to_second_moment_lower_bound_float": 1.4465350293693455e-06
+}

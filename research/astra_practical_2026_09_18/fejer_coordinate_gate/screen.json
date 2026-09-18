@@ -1,0 +1,51 @@
+{
+  "status": "floating-point screening only; no certified error bound",
+  "target": "274980728111395088",
+  "exact_maximum_mean_to_target": "0.2493968995446454291946975724296372319690066405480515320165570930168467",
+  "zero_frequency_relative_replay_error": 1.222740142280171e-16,
+  "directions": [
+    {
+      "direction": 1,
+      "maximum_all_center_triangle_ratio_to_target": 0.24939689954464547,
+      "argmax_product_class": 0,
+      "maximum_relative_fourier_excess": 6.519079022074806e-56,
+      "maximum_single_harmonic_relative_amplitude": 3.5913909933862047e-56
+    },
+    {
+      "direction": 2,
+      "maximum_all_center_triangle_ratio_to_target": 0.24939689954464547,
+      "argmax_product_class": 0,
+      "maximum_relative_fourier_excess": 5.939103125566805e-48,
+      "maximum_single_harmonic_relative_amplitude": 3.795638024728134e-48
+    },
+    {
+      "direction": 3,
+      "maximum_all_center_triangle_ratio_to_target": 0.24939689954464547,
+      "argmax_product_class": 0,
+      "maximum_relative_fourier_excess": 6.519078244291054e-56,
+      "maximum_single_harmonic_relative_amplitude": 3.5913910129956814e-56
+    },
+    {
+      "direction": 4,
+      "maximum_all_center_triangle_ratio_to_target": 0.24939689954464547,
+      "argmax_product_class": 0,
+      "maximum_relative_fourier_excess": 1.8735655006934425e-39,
+      "maximum_single_harmonic_relative_amplitude": 4.091082624745884e-39
+    },
+    {
+      "direction": 5,
+      "maximum_all_center_triangle_ratio_to_target": 0.24939689954464547,
+      "argmax_product_class": 0,
+      "maximum_relative_fourier_excess": 6.519056959828556e-56,
+      "maximum_single_harmonic_relative_amplitude": 3.5913910217752755e-56
+    },
+    {
+      "direction": 6,
+      "maximum_all_center_triangle_ratio_to_target": 0.24939689954464547,
+      "argmax_product_class": 0,
+      "maximum_relative_fourier_excess": 5.939103125565062e-48,
+      "maximum_single_harmonic_relative_amplitude": 3.7956380247274223e-48
+    }
+  ],
+  "center_search_performed": false
+}

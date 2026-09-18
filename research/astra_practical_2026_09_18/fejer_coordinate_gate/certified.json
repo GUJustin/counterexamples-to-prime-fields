@@ -1,0 +1,20 @@
+{
+  "phase_enclosures": "exact fixed-point integer intervals; Machin alternating series and Taylor remainder",
+  "phase_samples_checked": 12240,
+  "distinct_phase_arguments": 2048,
+  "phase_complex_absolute_error_bound": "1e-10",
+  "per_stage_pathwise_error_factor": "1+1e-9",
+  "DP_absolute_error_bound_formula": "((1+1e-9)^255-1)*C(255,136)+1",
+  "relative_error_to_total_support_count_upper": 2.5500003238500274e-07,
+  "certified_all_center_upper_ratio_to_target": 0.24952714459800474,
+  "maximizer": [
+    4,
+    30
+  ],
+  "certified_directions": 6,
+  "product_classes_each": 256,
+  "harmonics": 8,
+  "verdict": "all tested Fejer certificates strictly below target at every center",
+  "arithmetic_assumptions": "recorded IEEE binary64, round-to-nearest; compiled -O2 without fast-math; standard complex add/multiply; no overflow; underflow covered by +1",
+  "seconds": 8.465763
+}

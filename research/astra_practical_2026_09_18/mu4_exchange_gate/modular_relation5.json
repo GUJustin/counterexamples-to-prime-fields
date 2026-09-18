@@ -1,0 +1,8 @@
+{
+  "polynomial": "-x**29 + x**28 - x**25 - x**12 - x**11 - x**6 + 2*x**5 + x + 1",
+  "integer_factorization": "-(x - 1)*(x + 1)*(x**27 - x**26 + x**25 - x**24 + 2*x**23 - x**22 + 2*x**21 - x**20 + 2*x**19 - x**18 + 2*x**17 - x**16 + 2*x**15 - x**14 + 2*x**13 - x**12 + 2*x**11 + 3*x**9 + 3*x**7 + 3*x**5 + x**4 + x**3 + x**2 + x + 1)",
+  "cyclotomic_norm": "127654883813896",
+  "benchmark_prime_valuation": 1,
+  "seconds": 0.010230582999999988,
+  "remaining_norm": "59912"
+}
