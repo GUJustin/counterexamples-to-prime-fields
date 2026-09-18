@@ -1,35 +1,33 @@
-# What a prime-field transfer of the rich core still needs
+# Correction: characteristic-zero rich-core lifting is excluded
 
-Read against `research/prime_quadratic_line/REGULAR_JOHNSON_DESIGN_GATE.md`, `modular_cyclic_bank/RESULTS.md`, and the exact F49 gate. This is a construction target and transfer lemma, not a new obstruction or a claim that every dense core is a finite plane.
+**Corrected September 18, 2026.** This filename is retained for history. The earlier version incorrectly described the following number-field rich-core assertion as an open construction target. It is excluded by an existing complex incidence theorem. The reduction-to-primes observation was conditionally correct, but its proposed growing characteristic-zero input cannot exist.
 
-## Precise sufficient arithmetic core lemma
+## Primary theorem and application
 
-A useful characteristic-zero route would supply, for arbitrarily large integers s, a number field K_s, n_s=Theta(s²) distinct evaluation coordinates x_j, received values w_j, and L_s=Theta(s²) distinct quadratics P_i in K_s[X], each matching at least c*s coordinates, with c and the length constant large enough for the subsequent first-order ledger. Equivalently, coefficient points (a_i,b_i,c_i) must lie on many selected planes
+Sheffer, Szabó and Zahl, *Point-curve incidences in the complex plane*, Theorem 1.3, [arXiv:1502.07003v4](https://arxiv.org/html/1502.07003v4), gives the bound
 
-    a*x_j²+b*x_j+c=w_j.
+    I = O_epsilon(m^(3/5+epsilon) L^(4/5) + m + L)
 
-The selected planes have pairwise distinct x_j. Total selected incidences are Theta(s³), so the average plane contains Theta(s) coefficient points. This is the actual missing rich-core lemma. A growing finite list alone, or full coefficient rank alone, does not imply it.
+for degree-at-most-two complex curves with three degrees of freedom and multiplicity type two. The theorem does not require transverse intersections. Its constant depends only on these fixed parameters and epsilon.
 
-If such a configuration exists, its finite equations and strict inequalities DO transfer to infinitely many prime alphabets: clear denominators, take a finite normal extension containing all entries, choose primes splitting completely and avoiding the finitely many bad norms, then reduce into F_P. Distinct nodes, distinct quadratics, selected incidences, and any explicitly imposed nonincidences survive. One may choose arbitrarily large such P, so n_s<P poses no obstruction. This gives no useful upper bound on P and no automatic label population or probability bound.
+Apply it to the received points (x_j,w_j) and graphs y=P_i(x) of distinct degree-at-most-two polynomials. Distinct x_j ensure three received points determine at most one quadratic; two distinct quadratic graphs meet at at most two points. Their degrees are at most two. Thus all hypotheses hold, including for linear or constant members of the bank.
 
-For exact nearest-list control one must additionally certify a nonbank cap in characteristic zero and preserve it: every quadratic with at least three matches is determined by one of finitely many three-point supports. Thus the full support-interpolation census, or a symbolic bound replacing it, provides finitely many algebraic tests whose nonzero values can also be protected at reduction. Merely reducing the displayed bank does not supply completeness.
+Suppose m=Theta(s²), L=Theta(s²), and each polynomial has Omega(s) matches, with uniform positive constants. Then I=Omega(s³). Choose epsilon=1/20. The theorem instead gives
 
-This transfer step is routine once the arithmetic core exists. The currently missing step is constructing the arithmetic core itself, not selecting splitting primes.
+    I=O(s^(14/5+2epsilon)+s²)=O(s^(29/10))=o(s³),
 
-## Why the current families do not prove that lemma
+a contradiction for sufficiently large s. Every number field embeds in C. The fields may vary with s: the incidence constant is independent of their degrees, coefficients, and coordinate heights.
 
-* The Frobenius core uses complete affine F_p lines, paired square lifts, and the identity y^p−ay=b. Its large population depends on the characteristic. Copying its full repeated incidence design and asking for a characteristic-zero realization retains precisely the finite-geometry issue; it is not a formal lift of polynomial coefficients. The existing regular-design note excludes one duplicated projective-plane model, but does not classify all dense or partial designs.
-* Generic smooth lifting is not a growing-size mechanism here. There are 3L_s+2n_s=Theta(s²) coefficient/node/word variables, versus Theta(s³) selected incidence equations. Thus a full-row-rank Jacobian certificate is impossible for large s. A genuine lift would have to retain extensive algebraic dependencies; this dimension count does not rule out a structured singular family.
-* The rational conic and elliptic constructions already reduce to prime fields, but their coordinate buckets have bounded richness two or three. They do not yield Theta(s) richness with L_s,n_s both Theta(s²). Whole-domain covers replicate incidences and increase polynomial degree; they do not preserve degree two.
-* A coefficient bank sampled on a fixed algebraic curve of bounded degree also cannot provide the target via transverse plane sections: each selected plane not containing a curve component has at most that fixed degree of intersection. Such an approach needs growing curve degree, plane-contained components with controlled cross incidences, or a genuinely modular geometry. No such realization has been established here.
-* The modular cyclic action is an actual growing population mechanism if one can prove a suitable root count: on mu_n, a single full-coefficient quadratic agreeing with X^m at A points gives an orbit of n quadratics with the same agreement. The missing uniform assertion is A>=c*sqrt(n), at the required constant and with a usable nonbank cap, for infinitely many prime fields with spare evaluation coordinates. The existing 698-profile gate and the F49 gate give isolated rank-three orbits, not that assertion. The fixed-character-order exponents already have the recorded asymptotic limitation; enlarging the census is not a proof strategy.
+Therefore a growing characteristic-zero quadratic rich core at these scales is impossible. This is not merely a failure of a full-rank Jacobian or a particular finite-plane design. No singular lifting, varying number field, or splitting-prime choice repairs this proposed characteristic-zero route while retaining those incidence scales.
 
-## What this would and would not improve
+## What remains valid and what remains open
 
-Even the arithmetic core lemma only transfers the high-multiplicity core. To obtain Theta(n^(3/2)) affine labels with Theta(sqrt(n)) extra agreement, one still needs the independent-intercept pairing identity supplied by the two Frobenius blocks, or another correlated padding mechanism. In the extension construction it is
+Any *fixed* algebraic configuration can still be reduced at sufficiently large splitting primes after protecting its finitely many nonzero guards. This does not supply the impossible growing family above. In particular, finite seed realizations do not justify the proposed asymptotic transfer.
 
-    z=b−eta*v,  b,v in the same F_p-line Ia.
+The theorem is over C and gives no blanket obstruction to intrinsically modular configurations over prime fields. A modular prime-field construction must generate its dense incidence pattern in positive characteristic, rather than reduce an equally dense characteristic-zero configuration. It need not preserve the full affine-plane design. The exact design note `research/prime_quadratic_line/REGULAR_JOHNSON_DESIGN_GATE.md` excludes one duplicated-projective-plane model, not all positive-characteristic quadratic banks.
 
-A core realization with unrelated coefficients does not automatically retain this additive label factorization. Therefore the precise constructive goal has two stages: (i) a growing arithmetic or genuinely prime-field quadratic rich core, (ii) a compatible repeated-label identity. Existing conic covers establish a weaker gap/count tradeoff but do not establish either stage at the stronger parameters.
+A concrete modular target remains: on mu_n in a prime field, find a full-coefficient quadratic agreeing with a monomial word X^m at c*sqrt(n) points at the required constant, uniformly along a growing family, with enough field/domain room and a usable nonbank bound. Multiplicative scaling would then give n distinct quadratics. Existing small cyclic gates and the F49 gate prove isolated orbits, not that uniform root-count assertion. No larger scan is justified by those examples alone.
 
-Assessment: no verified growing-size prime-field transfer of this rich core is currently supplied by the available methods. The arithmetic-core lemma above is a concrete sufficient route, and the cyclic root-count assertion is a separate modular route. Neither follows from finite seeds or from reducing the characteristic-p affine-plane formulas. No new isolated-seed search is recommended without an identity addressing one of these two missing assertions.
+Finally, even a modular rich core does not automatically provide the strong affine-label population. The two-block extension construction uses the additional identity z=b−eta*v for two intercepts in the same F_p-line. A prime-field replacement must also supply compatible repeated labels, sufficient distinctness, and source control. The proven prime-field conic-cover tradeoffs remain valid but do not realize these stronger parameters.
+
+**Revised assessment:** the arithmetic/number-field rich-core route is closed by Theorem 1.3. The remaining constructive route is intrinsically modular, with a separate label-pairing requirement. No general prime-field impossibility is claimed.
