@@ -4,8 +4,8 @@ Working draft by Justin Thaler, September 17, 2026.
 
 [Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
-**Latest verified results (September 17, evening):** the ePrint-style article
-is 207 pages with one-inch margins. New Theorem U.1 gives an exact
+**Latest verified results (September 18, early morning):** the ePrint-style article
+is 208 pages with one-inch margins. New Theorem U.1 gives an exact
 seven-member nearest-codeword list at quarter rate: length28, dimension7,
 and fourteen agreements per candidate, over arbitrarily large prime fields.
 Two short cyclotomic identities give the construction; its complete-list proof
@@ -16,6 +16,14 @@ and in all sufficiently large characteristics. This upper theorem does not
 assert a universal maximum seven for length28, dimension7. Polynomial pullback preserves exact list size
 seven at length14m and degree bound3m. This strengthens the earlier six-word
 construction, but does not yet give growing lists or a better.codes improvement.
+
+
+Corollary 2.4 sharpens the shrinking-gap and prime-size lower bounds by
+an explicit second-order term. The companion method audit now proves
+fourth-power inverse-margin cost for coordinatewise monomial order ideals
+under either current challenge-counting test; the column test also permits
+all supports downward in the value variable. This is a limitation of the
+specified interpolation ledger, not intrinsic proximity-gap tightness.
 
 Theorem R.5 proves an exact
 transition for the complete Dickson cubic-ODE solution family: a linear

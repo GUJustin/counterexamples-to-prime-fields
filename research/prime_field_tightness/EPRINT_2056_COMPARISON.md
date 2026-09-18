@@ -58,17 +58,20 @@ lower bounds for the current finite budgets, whose upper scales there
 are n^3 and n^6. There is no contradiction: the counting formulas changed.
 
 A subsequent independent audit establishes a new CURRENT-formula converse:
-for the Eq60 standard derivative-capped, total-degree-capped support and
-Eq63 graded row test, the squarefree list and regular-MCA ledgers necessarily
+for every coordinatewise monomial order ideal with full derivative-weighted
+coefficient prefixes, using either the Eq63 row test or Eq64 column test,
+and additionally for merely Y0-downward supports using Eq64, the squarefree list and regular-MCA ledgers necessarily
 cost Omega(D/(epsilon*)^2) and Omega(D^2/(epsilon*)^4), respectively.
 Here epsilon*=(An-8)/(n(n-8))-(3+sqrt(133))/31, n is divisible by4,
 D=n/4-1, and 0<epsilon*<=1/2000. The characteristic must exceed every
 retained total jet degree. A mandatory low-degree triangle forces enough
 negative prefix area to require challenge height Omega(m/epsilon*).
 This is restricted method tightness for CURRENT formulas, independent of
-the historical cubic/fifth-power claim. Arbitrary supports, Eq64,
-multiple equations, and actual component counts remain outside its scope.
-See ../current_graded_method_costs/STANDARD_SUPPORT_FOURTH_POWER.md and AUDIT.md.
+the historical cubic/fifth-power claim. Eq63 on merely Y0-downward supports,
+equal-weight coefficient cutoffs, nonmonomial spaces, multiple equations,
+and actual component counts remain outside its scope.
+See ../current_graded_method_costs/ORDER_IDEAL_FOURTH_POWER.md; the earlier
+STANDARD_SUPPORT_FOURTH_POWER.md gives the original capped-support case.
 
 No intrinsic lower bound matching the current first-order n versus n^2
 powers is established by this project. The growing Dickson bank lies

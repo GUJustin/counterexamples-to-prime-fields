@@ -1,0 +1,487 @@
+{
+  "slope": "27/715793",
+  "intercept": "-5633856/55061",
+  "loss": "640622/55061",
+  "rational_lower": "164462990425824/715793",
+  "lower": 229763340,
+  "upper": 236715234,
+  "residual": 6951894,
+  "rows": [
+    {
+      "a": 0,
+      "rank": 0,
+      "phi": 0,
+      "minimum_B_order": 0,
+      "slack": "5633856/55061"
+    },
+    {
+      "a": 1,
+      "rank": 42328,
+      "phi": 0,
+      "minimum_B_order": 0,
+      "slack": "5545944/55061"
+    },
+    {
+      "a": 2,
+      "rank": 87905,
+      "phi": 1,
+      "minimum_B_order": 0,
+      "slack": "71582486/715793"
+    },
+    {
+      "a": 3,
+      "rank": 175796,
+      "phi": 3,
+      "minimum_B_order": 0,
+      "slack": "70641015/715793"
+    },
+    {
+      "a": 4,
+      "rank": 270183,
+      "phi": 6,
+      "minimum_B_order": 0,
+      "slack": "70239945/715793"
+    },
+    {
+      "a": 5,
+      "rank": 406869,
+      "phi": 10,
+      "minimum_B_order": 0,
+      "slack": "69412595/715793"
+    },
+    {
+      "a": 6,
+      "rank": 553296,
+      "phi": 15,
+      "minimum_B_order": 0,
+      "slack": "69038031/715793"
+    },
+    {
+      "a": 7,
+      "rank": 742006,
+      "phi": 21,
+      "minimum_B_order": 0,
+      "slack": "68237619/715793"
+    },
+    {
+      "a": 8,
+      "rank": 943700,
+      "phi": 28,
+      "minimum_B_order": 0,
+      "slack": "67802432/715793"
+    },
+    {
+      "a": 9,
+      "rank": 1187660,
+      "phi": 36,
+      "minimum_B_order": 0,
+      "slack": "66941856/715793"
+    },
+    {
+      "a": 10,
+      "rank": 1447845,
+      "phi": 45,
+      "minimum_B_order": 0,
+      "slack": "66358998/715793"
+    },
+    {
+      "a": 11,
+      "rank": 1750278,
+      "phi": 55,
+      "minimum_B_order": 0,
+      "slack": "65351237/715793"
+    },
+    {
+      "a": 12,
+      "rank": 2072175,
+      "phi": 66,
+      "minimum_B_order": 0,
+      "slack": "64533741/715793"
+    },
+    {
+      "a": 13,
+      "rank": 2436301,
+      "phi": 78,
+      "minimum_B_order": 0,
+      "slack": "63291855/715793"
+    },
+    {
+      "a": 14,
+      "rank": 2823128,
+      "phi": 91,
+      "minimum_B_order": 0,
+      "slack": "62152835/715793"
+    },
+    {
+      "a": 15,
+      "rank": 3252164,
+      "phi": 105,
+      "minimum_B_order": 0,
+      "slack": "60589965/715793"
+    },
+    {
+      "a": 16,
+      "rank": 3707136,
+      "phi": 120,
+      "minimum_B_order": 0,
+      "slack": "59042616/715793"
+    },
+    {
+      "a": 17,
+      "rank": 4204296,
+      "phi": 136,
+      "minimum_B_order": 0,
+      "slack": "57071984/715793"
+    },
+    {
+      "a": 18,
+      "rank": 4730625,
+      "phi": 153,
+      "minimum_B_order": 0,
+      "slack": "55029582/715793"
+    },
+    {
+      "a": 19,
+      "rank": 5299120,
+      "phi": 171,
+      "minimum_B_order": 0,
+      "slack": "52564491/715793"
+    },
+    {
+      "a": 20,
+      "rank": 5900015,
+      "phi": 190,
+      "minimum_B_order": 0,
+      "slack": "49940393/715793"
+    },
+    {
+      "a": 21,
+      "rank": 6543053,
+      "phi": 210,
+      "minimum_B_order": 0,
+      "slack": "46894227/715793"
+    },
+    {
+      "a": 22,
+      "rank": 7221720,
+      "phi": 231,
+      "minimum_B_order": 0,
+      "slack": "43601871/715793"
+    },
+    {
+      "a": 23,
+      "rank": 7942506,
+      "phi": 253,
+      "minimum_B_order": 0,
+      "slack": "3068315/55061"
+    },
+    {
+      "a": 24,
+      "rank": 8702148,
+      "phi": 276,
+      "minimum_B_order": 0,
+      "slack": "2757000/55061"
+    },
+    {
+      "a": 25,
+      "rank": 9503884,
+      "phi": 300,
+      "minimum_B_order": 0,
+      "slack": "2413320/55061"
+    },
+    {
+      "a": 26,
+      "rank": 10347701,
+      "phi": 326,
+      "minimum_B_order": 0,
+      "slack": "2092363/55061"
+    },
+    {
+      "a": 27,
+      "rank": 11233586,
+      "phi": 354,
+      "minimum_B_order": 0,
+      "slack": "1794156/55061"
+    },
+    {
+      "a": 28,
+      "rank": 12161526,
+      "phi": 384,
+      "minimum_B_order": 0,
+      "slack": "1518726/55061"
+    },
+    {
+      "a": 29,
+      "rank": 13131508,
+      "phi": 416,
+      "minimum_B_order": 0,
+      "slack": "1266100/55061"
+    },
+    {
+      "a": 30,
+      "rank": 14143519,
+      "phi": 450,
+      "minimum_B_order": 0,
+      "slack": "1036305/55061"
+    },
+    {
+      "a": 31,
+      "rank": 15197546,
+      "phi": 486,
+      "minimum_B_order": 0,
+      "slack": "829368/55061"
+    },
+    {
+      "a": 32,
+      "rank": 16293576,
+      "phi": 524,
+      "minimum_B_order": 0,
+      "slack": "645316/55061"
+    },
+    {
+      "a": 33,
+      "rank": 17431596,
+      "phi": 564,
+      "minimum_B_order": 0,
+      "slack": "484176/55061"
+    },
+    {
+      "a": 34,
+      "rank": 18611593,
+      "phi": 606,
+      "minimum_B_order": 0,
+      "slack": "345975/55061"
+    },
+    {
+      "a": 35,
+      "rank": 19833554,
+      "phi": 650,
+      "minimum_B_order": 0,
+      "slack": "230740/55061"
+    },
+    {
+      "a": 36,
+      "rank": 21097466,
+      "phi": 696,
+      "minimum_B_order": 0,
+      "slack": "138498/55061"
+    },
+    {
+      "a": 37,
+      "rank": 22403316,
+      "phi": 744,
+      "minimum_B_order": 0,
+      "slack": "69276/55061"
+    },
+    {
+      "a": 38,
+      "rank": 23751091,
+      "phi": 794,
+      "minimum_B_order": 0,
+      "slack": "23101/55061"
+    },
+    {
+      "a": 39,
+      "rank": 25140778,
+      "phi": 846,
+      "minimum_B_order": 0,
+      "slack": "0"
+    },
+    {
+      "a": 40,
+      "rank": 26572364,
+      "phi": 900,
+      "minimum_B_order": 0,
+      "slack": "0"
+    },
+    {
+      "a": 41,
+      "rank": 28045836,
+      "phi": 956,
+      "minimum_B_order": 0,
+      "slack": "23128/55061"
+    },
+    {
+      "a": 42,
+      "rank": 29561181,
+      "phi": 1014,
+      "minimum_B_order": 0,
+      "slack": "69411/55061"
+    },
+    {
+      "a": 43,
+      "rank": 31118386,
+      "phi": 1074,
+      "minimum_B_order": 0,
+      "slack": "138876/55061"
+    },
+    {
+      "a": 44,
+      "rank": 32717438,
+      "phi": 1135,
+      "minimum_B_order": 1,
+      "slack": "817111/55061"
+    },
+    {
+      "a": 45,
+      "rank": 34358324,
+      "phi": 1197,
+      "minimum_B_order": 1,
+      "slack": "822899/55061"
+    },
+    {
+      "a": 46,
+      "rank": 36041031,
+      "phi": 1260,
+      "minimum_B_order": 2,
+      "slack": "1437511/55061"
+    },
+    {
+      "a": 47,
+      "rank": 37765546,
+      "phi": 1324,
+      "minimum_B_order": 2,
+      "slack": "1379730/55061"
+    },
+    {
+      "a": 48,
+      "rank": 39531856,
+      "phi": 1389,
+      "minimum_B_order": 3,
+      "slack": "1930827/55061"
+    },
+    {
+      "a": 49,
+      "rank": 41339948,
+      "phi": 1455,
+      "minimum_B_order": 3,
+      "slack": "1809585/55061"
+    },
+    {
+      "a": 50,
+      "rank": 43189809,
+      "phi": 1522,
+      "minimum_B_order": 4,
+      "slack": "2297275/55061"
+    },
+    {
+      "a": 51,
+      "rank": 45081426,
+      "phi": 1590,
+      "minimum_B_order": 4,
+      "slack": "2112680/55061"
+    },
+    {
+      "a": 52,
+      "rank": 47014786,
+      "phi": 1659,
+      "minimum_B_order": 5,
+      "slack": "2537071/55061"
+    },
+    {
+      "a": 53,
+      "rank": 48989876,
+      "phi": 1729,
+      "minimum_B_order": 5,
+      "slack": "2289231/55061"
+    },
+    {
+      "a": 54,
+      "rank": 51006683,
+      "phi": 1800,
+      "minimum_B_order": 6,
+      "slack": "2650431/55061"
+    },
+    {
+      "a": 55,
+      "rank": 53065194,
+      "phi": 1872,
+      "minimum_B_order": 6,
+      "slack": "2339454/55061"
+    },
+    {
+      "a": 56,
+      "rank": 55165396,
+      "phi": 1945,
+      "minimum_B_order": 7,
+      "slack": "2637571/55061"
+    },
+    {
+      "a": 57,
+      "rank": 57307276,
+      "phi": 2019,
+      "minimum_B_order": 7,
+      "slack": "2263565/55061"
+    },
+    {
+      "a": 58,
+      "rank": 59490821,
+      "phi": 2094,
+      "minimum_B_order": 8,
+      "slack": "2498707/55061"
+    },
+    {
+      "a": 59,
+      "rank": 61716018,
+      "phi": 2170,
+      "minimum_B_order": 8,
+      "slack": "2061780/55061"
+    },
+    {
+      "a": 60,
+      "rank": 63982854,
+      "phi": 2247,
+      "minimum_B_order": 9,
+      "slack": "2234055/55061"
+    },
+    {
+      "a": 61,
+      "rank": 66291316,
+      "phi": 2325,
+      "minimum_B_order": 9,
+      "slack": "1734315/55061"
+    },
+    {
+      "a": 62,
+      "rank": 68641391,
+      "phi": 2404,
+      "minimum_B_order": 10,
+      "slack": "1843831/55061"
+    },
+    {
+      "a": 63,
+      "rank": 71033066,
+      "phi": 2484,
+      "minimum_B_order": 10,
+      "slack": "1281386/55061"
+    },
+    {
+      "a": 64,
+      "rank": 73466328,
+      "phi": 2565,
+      "minimum_B_order": 11,
+      "slack": "1328251/55061"
+    },
+    {
+      "a": 65,
+      "rank": 75941164,
+      "phi": 2647,
+      "minimum_B_order": 11,
+      "slack": "703209/55061"
+    },
+    {
+      "a": 66,
+      "rank": 78457561,
+      "phi": 2730,
+      "minimum_B_order": 12,
+      "slack": "687531/55061"
+    },
+    {
+      "a": 67,
+      "rank": 81015506,
+      "phi": 2814,
+      "minimum_B_order": 12,
+      "slack": "0"
+    }
+  ]
+}

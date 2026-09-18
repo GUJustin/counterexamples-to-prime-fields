@@ -1,9 +1,13 @@
 # What the quarter-rate converse proves for the current graded ledger
 
-**Update:** `STANDARD_SUPPORT_FOURTH_POWER.md` now proves the missing fourth
-power for the standard derivative-capped, total-degree-capped Eq60 supports
-using a mandatory low-degree triangle. The general-support missing lemma
-below remains open.
+**Current result:** `ORDER_IDEAL_FOURTH_POWER.md` proves the fourth power for
+all coordinatewise monomial order ideals with full derivative-weighted
+coefficient prefixes, under either Eq63 or Eq64. Diagonal compression forces
+a mandatory triangle in the original support; no preservation of graded
+moments under rearrangement is assumed. Eq64 additionally covers supports downward only in Y0 by exact weighted
+height sorting. The remaining open support class below refers to Eq63 on
+supports downward only in Y0, rather than in both coordinates.
+The body records the earlier partial argument and its motivation.
 
 September17,2026. A method-level consequence and a precise remaining lemma.
 This concerns the numerical upper bounds produced by a specified proof
@@ -131,8 +135,9 @@ though they did would be a gap. The possible new route is a weighted
 compression or near-extremizer stability theorem, followed by an exact
 finite-length reduction. Until then, the current-method list exponent is
 proved necessary, while fourth-power graded MCA method-tightness remains
-open for arbitrary downward supports. The standard capped supports are
-now handled separately in `STANDARD_SUPPORT_FOURTH_POWER.md`.
+open for arbitrary downward supports. All coordinatewise order ideals are now handled in
+`ORDER_IDEAL_FOURTH_POWER.md`, including the column test; the open case is
+Eq63 on merely Y0-downward support.
 
 ## Scope and source
 
@@ -142,5 +147,5 @@ assert a finite-length nonmonomial theorem beyond the existing audit.
 Current reconstruction formulas: ePrint2026/2056, Eq54--58, pages45--48;
 graded Eq63, page50. Cached authoritative PDF checksum:
 b67c188ec477b6063caf9c1c06b214c71e358ff09b9517adcdb1db212ea2700a.
-This proof adaptation has a local algebraic check, not independent human
-or formal verification.
+The order-ideal extension is separately proved in the linked note; no
+formal verification or independent human referee is claimed.

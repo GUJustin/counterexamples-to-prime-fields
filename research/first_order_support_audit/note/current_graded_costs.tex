@@ -1,21 +1,24 @@
-\section{Necessary costs of the current graded standard-support bounds}
+\section{Necessary costs of the current order-ideal bounds}
 \label{sec:current-graded}
 
 We now use the current ePrint's graded challenge count and squarefree
-reconstruction formulas~\cite[Equations (54)--(58), (60), (63)]{DKTcurrent}.
-For the standard derivative-capped, total-degree-capped source, their
+reconstruction formulas~\cite[Equations (54)--(58), (60), (63)--(64)]{DKTcurrent}.
+For monomial supports with full derivative-weighted coefficient prefixes,
+their
 quadratic list-budget and fourth-power regular-MCA-budget dependence
-cannot be improved by choosing different cap parameters or a smaller
-height certified by the same graded row test. This is a statement about
+cannot be improved by choosing a different such support or a smaller
+height certified by the graded row test on coordinatewise order ideals,
+or by the column-only test on supports downward in $Y_0$. This is a statement about
 these numerical bounds, not actual component degrees, lists or exceptions.
 The support restriction below is essential.
 
-\begin{theorem}[Current graded standard-support costs]\label{thm:current-graded}
+\begin{theorem}[Current order-ideal costs]\label{thm:current-graded}
 Let $N\ge12$ be divisible by four, $D=N/4-1$, and let $D+1<A\le N$
-be an integer. For integers $m\ge1$ and $0\le b\le B$, use all monomials
+be an integer. Let $S$ be a nonempty finite monomial support downward in $Y_0$,
+let $m\ge1$, $B=\max_S(u+v)$ and $b=\max_S v$, and use all monomials
 \[
  X^xY_0^uY_1^v,\qquad
- v\le b,\quad u+v\le B,\quad x+Du+(D-1)v<mA,
+ (u,v)\in S,\quad x+Du+(D-1)v<mA,
  \qquad x,u,v\ge0.
 \]
 Assume characteristic zero or greater than every retained total jet degree.
@@ -25,8 +28,8 @@ degree $q$, and put
  a_* =\frac{AN-8}{N(N-8)},\qquad
  \varepsilon_*=a_*-a_0,\qquad c_0=\frac{1-2a_0}{8}.
 \]
-Suppose $0<\varepsilon_*\le1/2000$ and an integer $H\ge0$ passes the
-graded row test for an affine received line:
+Suppose $0<\varepsilon_*\le1/2000$. If $S$ is also downward in $Y_1$
+and an integer $H\ge0$ passes the following graded row test for an affine received line:
 \begin{equation}\label{eq:current-graded-test}
  \sum_q(H-q+1)_+(G_q-NR_q)>0.
 \end{equation}
@@ -37,7 +40,17 @@ Then
  H+1>\frac{m}{36864\varepsilon_*},\qquad
  H>\frac{m}{73728\varepsilon_*}.
 \end{equation}
-The current squarefree list budget is therefore
+Without requiring downward closure in $Y_1$, if $G_u^{(0)}$ counts source coefficients of $Y_0$ exponent $u$
+and $G=\sum_uG_u^{(0)}$, $R=\sum_qR_q$, the column test
+\[
+ \sum_u(H-u+1)_+G_u^{(0)}>NR(H+1)
+\]
+gives the same bounds on $m,B,b$, and
+\[
+ H+1>\frac{m}{589824\varepsilon_*},\qquad
+ H>\frac{m}{1179648\varepsilon_*}.
+\]
+Under either test, the current squarefree list budget is therefore
 $\Omega(D\varepsilon_*^{-2})$, and its regular-family MCA budget is
 $\Omega(D^2\varepsilon_*^{-4})$, even after optimizing the latter's
 integer incidence threshold.
@@ -70,8 +83,15 @@ at $a_0$ yields
 The middle inequality remains valid if some benefits at $a_0$ are
 nonpositive, by deleting those monomials. Empty $S_0$ causes no problem.
 
-Put $J=\lfloor m/8\rfloor$. The standard support contains all $q+1$
-jet monomials on every degree $q\le J$. Their coefficient prefixes are
+To force a triangle in the original support, apply the preceding finite
+reduction to a positive prefix. Its retained order ideal has positive
+leading surplus. If $d$ is its first incomplete diagonal, every diagonal
+has length at most $d$, by the upward-shadow argument in
+Lemma~\ref{lem:lex}. Diagonal compression preserves leading benefit and
+weakly decreases rank, and has derivative degree at most $d-1$. The
+positive-surplus derivative-degree bound therefore gives $d>m/4$.
+Consequently, putting $J=\lfloor m/8\rfloor$, the original support contains
+all $q+1$ jet monomials on every degree $q\le J$. Their coefficient prefixes are
 nonempty and locally saturated, since
 \[
  L_q=mA-(D-1)q\ge m\bigl(A-(D-1)/8\bigr)\ge m.
@@ -98,6 +118,45 @@ $3\varepsilon_*m^3(H+1)>m^4/12288$, proving the $H+1$ bound.
 Since $H\ge m/8\ge2$, also $H\ge(H+1)/2$, proving the last inequality
 in \eqref{eq:current-graded-costs}.
 
+For the column test, first reduce a merely downward-$Y_0$ support to an
+order ideal without increasing $H,B,b$. Write $h=H+1$ and
+$w_u=(h-u)_+$. A final diagonal with $L_q<m$ contributes at most
+$h(G_q-NR_q)\le0$ to the column margin, by the finite half-rank lemma.
+Delete these diagonals. The retained local rank is saturated, and the
+retained jet support still has column heights $h_v$.
+Its exact weighted coefficient contribution in column $v$ is
+\[
+ \alpha(h_v)-(D-1)v\beta(h_v),\qquad
+ \alpha(d)=\sum_{u<d}w_u(mA-Du),\quad
+ \beta(d)=\sum_{u<d}w_u.
+\]
+Since $\beta$ is nondecreasing, sorting the heights in decreasing order
+increases this coefficient sum by rearrangement. The height-sorting
+lemma weakly decreases the saturated local rank. Sorting respects every
+decreasing upper bound on column heights: otherwise the first violating
+sorted height would require more large original columns than the bound
+allows. In particular it preserves the total-degree cutoff used for
+saturation, the original total-degree cap $B$, and positive coefficient
+prefixes; the derivative cap $b$ cannot increase. Thus the same column
+test holds for the sorted order ideal, with no larger declared caps.
+
+For this order ideal, put $\Delta=G/N-R$. The column test is exactly
+\[
+ (H+1)\Delta>\sum_u\min(u,H+1)G_u^{(0)}/N.
+\]
+Thus $\Delta>0$; the same mandatory-triangle argument applies to the full
+support, and $\Delta\le3\varepsilon_*m^3$. The support truncated to
+$u\le H$ also has positive surplus: its source dimension exceeds $NR$,
+and its rank is at most $R$. The finite converse gives $H>m/4$.
+Every triangle monomial has at least $Nm/8$ coefficient monomials, since
+$(mA-Du-(D-1)v)/N\ge(mA-Dm/8)/N\ge m/8$. Hence, using $J\ge m/16$,
+\[
+ \sum_u\min(u,H+1)G_u^{(0)}/N
+ \ge\frac m8\frac{J(J+1)(J+2)}6
+ \ge\frac{m^4}{196608}.
+\]
+This proves the two stated column-test height bounds.
+
 For the current reconstruction formulas, write
 \[
  \tau=2D-3,\quad u=1+\tau(B-1),\quad
@@ -114,7 +173,7 @@ $Dc_0^2/(128\varepsilon_*^2)$. The declared joint-degree bound is
 \[
  J_{\rm reg}=H(2uv-v^2)+2(1+\tau H)F
  \ge\frac{D^2HBb}{4}
- >\frac{D^2c_0^3}{9437184\varepsilon_*^4}.
+ >\frac{D^2c_0^3}{150994944\varepsilon_*^4}.
 \]
 For every permitted incidence threshold $D+1\le L\le A$, its multiplier
 in the current regular MCA bound is
@@ -125,11 +184,11 @@ The other terms are nonnegative, completing the proof.
 \end{proof}
 
 \begin{remark}[Scope of current-method tightness]
-The mandatory low-degree triangle is specific to the standard source
-above; arbitrary downward supports may omit small derivative exponents.
-No graded converse is proved here for those supports, for nonmonomial
-sources, or for the current ePrint's alternative column-only test
-(Equation (64)). The characteristic hypothesis remains the stronger
+The mandatory triangle follows for every coordinatewise order ideal,
+without assuming that rearrangement preserves a graded moment. For the row test, supports
+downward only in $Y_0$ remain outside the argument; for the column test,
+height sorting handles this larger class. Neither argument covers
+nonmonomial spaces or the alternative equal-weight coefficient cutoff. The characteristic hypothesis remains the stronger
 local-rank hypothesis of this note, not merely the reconstruction
 condition $p>\max\{D,b\}$. Optimizing actual component degrees, exploiting
 global kernel dependencies, or using additional equations is outside the

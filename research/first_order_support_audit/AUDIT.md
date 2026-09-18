@@ -11,13 +11,16 @@ version(7) has the same first-order curve at the rates used here.
 ## Subsequent current-version result
 
 The technical note now separately proves necessary quadratic list-budget
-and fourth-power regular-MCA-budget costs for the current ePrint's standard
-derivative-capped, total-degree-capped supports and graded row test (Eq63).
+and fourth-power regular-MCA-budget costs for every coordinatewise monomial
+order ideal with full derivative-weighted coefficient prefixes, using
+either the current ePrint's graded row test (Eq63) or column test (Eq64).
+The Eq64 conclusion extends to supports downward only in Y0 by exact
+weighted height sorting.
 The proof uses the exact corrected finite-length margin and this audit's
-stronger local-rank characteristic hypothesis. It does not cover arbitrary
-supports, the alternative column-only Eq64 test, or intrinsic list/MCA
-lower bounds. See `note/current_graded_costs.tex` and
-`../current_graded_method_costs/STANDARD_SUPPORT_FOURTH_POWER.md`.
+stronger local-rank characteristic hypothesis. It does not cover merely
+Eq63 on merely Y0-downward supports, equal-weight coefficient cutoffs, or intrinsic
+list/MCA lower bounds. See `note/current_graded_costs.tex` and
+`../current_graded_method_costs/ORDER_IDEAL_FOURTH_POWER.md`.
 The older cubic/fifth-power analysis remains historical and has its
 separately stated broader source scope.
 

@@ -1,3 +1,5 @@
+**Scope update:** `ORDER_IDEAL_FOURTH_POWER.md` now extends this result to all coordinatewise monomial order ideals, and covers both Eq63 and Eq64. The restrictions below describe this original proof only. Eq64 also covers supports downward only in Y0; Eq63 on that larger class remains open.
+
 # Fourth-power necessity for the current graded standard support ledger
 
 September17,2026. This closes the missing moment step for the STANDARD
