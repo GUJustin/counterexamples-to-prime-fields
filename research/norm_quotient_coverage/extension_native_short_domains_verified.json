@@ -1,0 +1,488 @@
+{
+  "status": "ALL_FOUR_PASS",
+  "arithmetic": "Integers and exact Fractions only",
+  "case_count": 4,
+  "cases": [
+    {
+      "name": "Goldilocks_cubic",
+      "status": "PASS_FINITE_EXISTENCE_CRITERION",
+      "p": 18446744069414584321,
+      "extension_degree": 3,
+      "proth_certificate": {
+        "odd_factor": 4294967295,
+        "two_exponent": 32,
+        "witness": 7,
+        "half_power_residue": 18446744069414584320
+      },
+      "m": 1024,
+      "s": 255,
+      "r": 129,
+      "completion_pairs": 4,
+      "seed_size": 247,
+      "seed_weight": 125,
+      "population_size": 18014398505287679,
+      "target_group_order": 6277101731002175853884774869567645561244584131361410908160,
+      "sqrt_upper": 4294967296,
+      "bias_numerator": 12884901889,
+      "bias_denominator": 18014398505287679,
+      "seed_binomial": 11263683867637392095191555618057631957520383740542879070970028797147039376,
+      "distinctness_lower": {
+        "numerator": 18014398505257298,
+        "denominator": 18014398505287679
+      },
+      "seed_bound_uses": "(1+epsilon)^s0, an upper bound on the exact moment polynomial",
+      "dyadic_precision": 512,
+      "seed_dyadic_numerator": 7473313832364755244630930888751903666878918785753567919659285330601320846073982998812539926299111557063931576099855433401168468130354477635,
+      "recurrence_trace": [
+        {
+          "step": 0,
+          "dyadic_numerator": 7473313832364755244630930888751903666878918785753567919659285330601320846073982998812539926299111557063931576099855433401168468130354477635,
+          "strict_power_two_exponent": -50
+        },
+        {
+          "step": 1,
+          "remaining_population": 18014398505287432,
+          "gamma_numerator": 1610612767,
+          "gamma_denominator": 2251799813160929,
+          "dyadic_numerator": 3827444039615040485125704046877234423392379587135979457370305894487747015651726590241983214069325860162585825454516721571668834,
+          "strict_power_two_exponent": -91
+        },
+        {
+          "step": 2,
+          "remaining_population": 18014398505287430,
+          "gamma_numerator": 6442451069,
+          "gamma_denominator": 9007199252643715,
+          "dyadic_numerator": 1958085119286828148577768877634163998491357000372755846612937600624111708136855520718125954992191146634719379325748,
+          "strict_power_two_exponent": -132
+        },
+        {
+          "step": 3,
+          "remaining_population": 18014398505287428,
+          "gamma_numerator": 1073741845,
+          "gamma_denominator": 1501199875440619,
+          "dyadic_numerator": 1001738313056668457745649723497408095868424091696139442259773962212757484504421803362026280368530056570,
+          "strict_power_two_exponent": -173
+        },
+        {
+          "step": 4,
+          "remaining_population": 18014398505287426,
+          "gamma_numerator": 6442451071,
+          "gamma_denominator": 9007199252643713,
+          "dyadic_numerator": 512480095105685486026786173355338576491623550634101397149232676744102532052768555814875136,
+          "strict_power_two_exponent": -213
+        }
+      ],
+      "final_Mh_strict_power_two_exponent": -21,
+      "exact_final_positive_margin": 13407804713052905007515950912084544606842200190796805256213492978636775266279135883093110966031327988114535674366608950142109761687825758533945910242574336,
+      "n": 262144,
+      "J": 131072,
+      "w": 1023,
+      "max_witness_degree": 131071,
+      "exact_source_and_common_agreement": 132095,
+      "exact_nonzero_native_pencil_agreement": 133119,
+      "capacity_margin": {
+        "numerator": 2047,
+        "denominator": 262144
+      },
+      "source_common_loss": {
+        "numerator": 1024,
+        "denominator": 262144
+      },
+      "nonzero_native_labels": 6277101731002175853884774869567645561244584131361410908160,
+      "domain": "Existential selected union of m-point fibers over F_p; not a prescribed NTT subgroup"
+    },
+    {
+      "name": "BabyBear_quartic",
+      "status": "PASS_FINITE_EXISTENCE_CRITERION",
+      "p": 2013265921,
+      "extension_degree": 4,
+      "proth_certificate": {
+        "odd_factor": 15,
+        "two_exponent": 27,
+        "witness": 11,
+        "half_power_residue": 2013265920
+      },
+      "m": 1024,
+      "s": 255,
+      "r": 129,
+      "completion_pairs": 6,
+      "seed_size": 243,
+      "seed_weight": 123,
+      "population_size": 1966079,
+      "target_group_order": 16428751811598850197311699254593454080,
+      "sqrt_upper": 44870,
+      "bias_numerator": 179481,
+      "bias_denominator": 1966079,
+      "seed_binomial": 709527742357566687911542544436240988975033392425991597111389066644407600,
+      "distinctness_lower": {
+        "numerator": 1936676,
+        "denominator": 1966079
+      },
+      "seed_bound_uses": "(1+epsilon)^s0, an upper bound on the exact moment polynomial",
+      "dyadic_precision": 512,
+      "seed_dyadic_numerator": 522256608197819156046401527786992818271120108695188127019355222381105857561361922267249399254397377387459680605538434162627715739,
+      "recurrence_trace": [
+        {
+          "step": 0,
+          "dyadic_numerator": 522256608197819156046401527786992818271120108695188127019355222381105857561361922267249399254397377387459680605538434162627715739,
+          "strict_power_two_exponent": -84
+        },
+        {
+          "step": 1,
+          "remaining_population": 1965836,
+          "gamma_numerator": 44931,
+          "gamma_denominator": 491459,
+          "dyadic_numerator": 4365175897479813012359859489693068212826781145479175051238308106660833085870776996696919813428849732746455295128488215846681033,
+          "strict_power_two_exponent": -91
+        },
+        {
+          "step": 2,
+          "remaining_population": 1965834,
+          "gamma_numerator": 89863,
+          "gamma_denominator": 982917,
+          "dyadic_numerator": 36486323353958049447120087069762499495446990953283437880093561003935321710433521633307881527486219394047126413668568564549135,
+          "strict_power_two_exponent": -98
+        },
+        {
+          "step": 3,
+          "remaining_population": 1965832,
+          "gamma_numerator": 22466,
+          "gamma_denominator": 245729,
+          "dyadic_numerator": 304978346952767185259960969081254116177953241527799163692475165848536585918661289743288365092771660112355437474423327148707,
+          "strict_power_two_exponent": -105
+        },
+        {
+          "step": 4,
+          "remaining_population": 1965830,
+          "gamma_numerator": 17973,
+          "gamma_denominator": 196583,
+          "dyadic_numerator": 2549285400379115528855141132504487541122257226522520219647598226333883552668000993863027986311035619736043344039771972204,
+          "strict_power_two_exponent": -112
+        },
+        {
+          "step": 5,
+          "remaining_population": 1965828,
+          "gamma_numerator": 44933,
+          "gamma_denominator": 491457,
+          "dyadic_numerator": 21309755194950052750683752424934843746675021977753940187951770020680379884745858711745070318480927526035908125151063322,
+          "strict_power_two_exponent": -118
+        },
+        {
+          "step": 6,
+          "remaining_population": 1965826,
+          "gamma_numerator": 89867,
+          "gamma_denominator": 982913,
+          "dyadic_numerator": 178134898808328344523073178257171486610019977380034187568386621218546835759581508621280389625836131503066520664737096,
+          "strict_power_two_exponent": -125
+        }
+      ],
+      "final_Mh_strict_power_two_exponent": -2,
+      "exact_final_positive_margin": 10481273888436294948308487580093851682789628115557751553537847113074493140993860370820204013837368239208063669766831785737496787063653161817214723257532416,
+      "n": 262144,
+      "J": 131072,
+      "w": 1023,
+      "max_witness_degree": 131071,
+      "exact_source_and_common_agreement": 132095,
+      "exact_nonzero_native_pencil_agreement": 133119,
+      "capacity_margin": {
+        "numerator": 2047,
+        "denominator": 262144
+      },
+      "source_common_loss": {
+        "numerator": 1024,
+        "denominator": 262144
+      },
+      "nonzero_native_labels": 16428751811598850197311699254593454080,
+      "domain": "Existential selected union of m-point fibers over F_p; not a prescribed NTT subgroup"
+    },
+    {
+      "name": "BabyBear_quintic",
+      "status": "PASS_FINITE_EXISTENCE_CRITERION",
+      "p": 2013265921,
+      "extension_degree": 5,
+      "proth_certificate": {
+        "odd_factor": 15,
+        "two_exponent": 27,
+        "witness": 11,
+        "half_power_residue": 2013265920
+      },
+      "m": 1024,
+      "s": 255,
+      "r": 129,
+      "completion_pairs": 22,
+      "seed_size": 211,
+      "seed_weight": 107,
+      "population_size": 1966079,
+      "target_group_order": 33075446146858977625031769923874103810955673600,
+      "sqrt_upper": 44870,
+      "bias_numerator": 224351,
+      "bias_denominator": 1966079,
+      "seed_binomial": 176764317070672564913304677381418327954564552603515703201714600,
+      "distinctness_lower": {
+        "numerator": 1943924,
+        "denominator": 1966079
+      },
+      "seed_bound_uses": "(1+epsilon)^s0, an upper bound on the exact moment polynomial",
+      "dyadic_precision": 512,
+      "seed_dyadic_numerator": 20243519648441754746722711041867316957354398699961777320327759529077572618243452051406584058688900588106489094931907750180722935678054039389538737655,
+      "recurrence_trace": [
+        {
+          "step": 0,
+          "dyadic_numerator": 20243519648441754746722711041867316957354398699961777320327759529077572618243452051406584058688900588106489094931907750180722935678054039389538737655,
+          "strict_power_two_exponent": -19
+        },
+        {
+          "step": 1,
+          "remaining_population": 1965868,
+          "gamma_numerator": 112281,
+          "gamma_denominator": 982934,
+          "dyadic_numerator": 264180234529618466855708589151924957833578745799421822369968233959159799958728139385836335133646699210444914450897572974172845494895424226394827616,
+          "strict_power_two_exponent": -25
+        },
+        {
+          "step": 2,
+          "remaining_population": 1965866,
+          "gamma_numerator": 112282,
+          "gamma_denominator": 982933,
+          "dyadic_numerator": 3447256871468400839514412473896570178621396974320436593537759976773649159388059676776257102407188145091267485531374847524560337033833077692380861,
+          "strict_power_two_exponent": -31
+        },
+        {
+          "step": 3,
+          "remaining_population": 1965864,
+          "gamma_numerator": 112283,
+          "gamma_denominator": 982932,
+          "dyadic_numerator": 44983676027146723543516659050794520549231708212126013699251172197298705181394190402162767923336970535504821330673728538012726750016634269120359,
+          "strict_power_two_exponent": -38
+        },
+        {
+          "step": 4,
+          "remaining_population": 1965862,
+          "gamma_numerator": 112284,
+          "gamma_denominator": 982931,
+          "dyadic_numerator": 587009122326053751450261806837329771302455948851654572926256000889020535049662387075160609271368862162950989406939330287277237521975369298015,
+          "strict_power_two_exponent": -44
+        },
+        {
+          "step": 5,
+          "remaining_population": 1965860,
+          "gamma_numerator": 22457,
+          "gamma_denominator": 196586,
+          "dyadic_numerator": 7660257650184558083734565558728549357279690155097783992395975029704880421309549590280326105667729203352543826187118656485600550644518445253,
+          "strict_power_two_exponent": -50
+        },
+        {
+          "step": 6,
+          "remaining_population": 1965858,
+          "gamma_numerator": 112286,
+          "gamma_denominator": 982929,
+          "dyadic_numerator": 99965587635357733755039119764853315980059865879994775411833003610010241256041292764879344846544516915219095600392759795643080689013707631,
+          "strict_power_two_exponent": -56
+        },
+        {
+          "step": 7,
+          "remaining_population": 1965856,
+          "gamma_numerator": 112287,
+          "gamma_denominator": 982928,
+          "dyadic_numerator": 1304566699477544517637859354714549359557547044282614913010098095849928078793502208952697613852032413022502894287470499470010124925721810,
+          "strict_power_two_exponent": -63
+        },
+        {
+          "step": 8,
+          "remaining_population": 1965854,
+          "gamma_numerator": 10208,
+          "gamma_denominator": 89357,
+          "dyadic_numerator": 17025139250872046744525848590891420182854714920254739886848820552401320860952786075319283199188076210741611431112878332636246992405195,
+          "strict_power_two_exponent": -69
+        },
+        {
+          "step": 9,
+          "remaining_population": 1965852,
+          "gamma_numerator": 112289,
+          "gamma_denominator": 982926,
+          "dyadic_numerator": 222189573868012394423840470506736721389515486660284031257209564015817735983482754636531959402359769705406310105704172175865835572676,
+          "strict_power_two_exponent": -75
+        },
+        {
+          "step": 10,
+          "remaining_population": 1965850,
+          "gamma_numerator": 22458,
+          "gamma_denominator": 196585,
+          "dyadic_numerator": 2899781656512595288525133251365891997440594118867498556645359451655298326602904710459086708258048631406833303548118251872010939606,
+          "strict_power_two_exponent": -81
+        },
+        {
+          "step": 11,
+          "remaining_population": 1965848,
+          "gamma_numerator": 112291,
+          "gamma_denominator": 982924,
+          "dyadic_numerator": 37845612590371583430372724763743670087425534236305321097451426859220506842995213331251249134392967217444690868868115957197074822,
+          "strict_power_two_exponent": -88
+        },
+        {
+          "step": 12,
+          "remaining_population": 1965846,
+          "gamma_numerator": 112292,
+          "gamma_denominator": 982923,
+          "dyadic_numerator": 493940229593956870283217882022252641970738209656010232838731833006075895583239762292358992025161669581277319843283548662310470,
+          "strict_power_two_exponent": -94
+        },
+        {
+          "step": 13,
+          "remaining_population": 1965844,
+          "gamma_numerator": 112293,
+          "gamma_denominator": 982922,
+          "dyadic_numerator": 6446765571344228472891562143035529906365721084318287948222562009654588804486716473320640081615067539692774586474136071953975,
+          "strict_power_two_exponent": -100
+        },
+        {
+          "step": 14,
+          "remaining_population": 1965842,
+          "gamma_numerator": 112294,
+          "gamma_denominator": 982921,
+          "dyadic_numerator": 84142996728984950767680927456601879199818000491469590244716053393609621550381155067298426748707997432414832318445254537002,
+          "strict_power_two_exponent": -106
+        },
+        {
+          "step": 15,
+          "remaining_population": 1965840,
+          "gamma_numerator": 22459,
+          "gamma_denominator": 196584,
+          "dyadic_numerator": 1098253740655040629476347387633885109225332969645496323419154659297721273303895989319941781984661624330232028285046101151,
+          "strict_power_two_exponent": -113
+        },
+        {
+          "step": 16,
+          "remaining_population": 1965838,
+          "gamma_numerator": 112296,
+          "gamma_denominator": 982919,
+          "dyadic_numerator": 14334944821904537292995087836514900529465551745879193011397522727431516776882860154776160108897119470119830324456099037,
+          "strict_power_two_exponent": -119
+        },
+        {
+          "step": 17,
+          "remaining_population": 1965836,
+          "gamma_numerator": 112297,
+          "gamma_denominator": 982918,
+          "dyadic_numerator": 187110422110331058906479435472818338406553143220310299004411596916318717889612829413465912356612288851672323265254741,
+          "strict_power_two_exponent": -125
+        },
+        {
+          "step": 18,
+          "remaining_population": 1965834,
+          "gamma_numerator": 112298,
+          "gamma_denominator": 982917,
+          "dyadic_numerator": 2442353651833885669527649189595624445628901640901299933006299078935911950426996869884488839408263324566327093540850,
+          "strict_power_two_exponent": -132
+        },
+        {
+          "step": 19,
+          "remaining_population": 1965832,
+          "gamma_numerator": 10209,
+          "gamma_denominator": 89356,
+          "dyadic_numerator": 31880691991440979182655701594187973612705270537521435320473786726904003887797856487501327384097112063384386623904,
+          "strict_power_two_exponent": -138
+        },
+        {
+          "step": 20,
+          "remaining_population": 1965830,
+          "gamma_numerator": 22460,
+          "gamma_denominator": 196583,
+          "dyadic_numerator": 416155412461170371535744788517632237487755843531785788405851635742051672161560939681518964650445654837017297457,
+          "strict_power_two_exponent": -144
+        },
+        {
+          "step": 21,
+          "remaining_population": 1965828,
+          "gamma_numerator": 112301,
+          "gamma_denominator": 982914,
+          "dyadic_numerator": 5432402913733527672219684743953787824004789631207349137967638504181144329656488174395596059489263472158499179,
+          "strict_power_two_exponent": -150
+        },
+        {
+          "step": 22,
+          "remaining_population": 1965826,
+          "gamma_numerator": 112302,
+          "gamma_denominator": 982913,
+          "dyadic_numerator": 70914822094480658847210526352131276790967442084731632934248215951079905607231841745435393776373213965260277,
+          "strict_power_two_exponent": -157
+        }
+      ],
+      "final_Mh_strict_power_two_exponent": -2,
+      "exact_final_positive_margin": 11062268550742516898572247311077114848353954558472309967012997184144485864791017137591699089650615374055493265190371879338244273490034498845327715148496896,
+      "n": 262144,
+      "J": 131072,
+      "w": 1023,
+      "max_witness_degree": 131071,
+      "exact_source_and_common_agreement": 132095,
+      "exact_nonzero_native_pencil_agreement": 133119,
+      "capacity_margin": {
+        "numerator": 2047,
+        "denominator": 262144
+      },
+      "source_common_loss": {
+        "numerator": 1024,
+        "denominator": 262144
+      },
+      "nonzero_native_labels": 33075446146858977625031769923874103810955673600,
+      "domain": "Existential selected union of m-point fibers over F_p; not a prescribed NTT subgroup"
+    },
+    {
+      "name": "KoalaBear_sextic",
+      "status": "PASS_FINITE_EXISTENCE_CRITERION",
+      "p": 2130706433,
+      "extension_degree": 6,
+      "proth_certificate": {
+        "odd_factor": 127,
+        "two_exponent": 24,
+        "witness": 3,
+        "half_power_residue": 2130706432
+      },
+      "m": 512,
+      "s": 511,
+      "r": 257,
+      "completion_pairs": 0,
+      "seed_size": 511,
+      "seed_weight": 257,
+      "population_size": 4161535,
+      "target_group_order": 93571093019388561295270373781649880353786165192103559168,
+      "sqrt_upper": 46160,
+      "bias_numerator": 276961,
+      "bias_denominator": 4161535,
+      "seed_binomial": 234437922771432015315556642729674181550474187721464747193032799774629081587206917734213670051914068467536274297180279406387499124901157519793400731280605,
+      "distinctness_lower": {
+        "numerator": 115178,
+        "denominator": 118901
+      },
+      "seed_bound_uses": "(1+epsilon)^s0, an upper bound on the exact moment polynomial",
+      "dyadic_precision": 512,
+      "seed_dyadic_numerator": 1099596431150627920031670027965465252708129364929234061370044139455383330,
+      "recurrence_trace": [
+        {
+          "step": 0,
+          "dyadic_numerator": 1099596431150627920031670027965465252708129364929234061370044139455383330,
+          "strict_power_two_exponent": -272
+        }
+      ],
+      "final_Mh_strict_power_two_exponent": -86,
+      "exact_final_positive_margin": 13407807929942597099574024895315406184496270901487935395003111246916799199345859726887368095042963261156377564372249494004077014345072157678108818230214656,
+      "n": 262144,
+      "J": 131072,
+      "w": 511,
+      "max_witness_degree": 131071,
+      "exact_source_and_common_agreement": 131583,
+      "exact_nonzero_native_pencil_agreement": 132095,
+      "capacity_margin": {
+        "numerator": 1023,
+        "denominator": 262144
+      },
+      "source_common_loss": {
+        "numerator": 512,
+        "denominator": 262144
+      },
+      "nonzero_native_labels": 93571093019388561295270373781649880353786165192103559168,
+      "domain": "Existential selected union of m-point fibers over F_p; not a prescribed NTT subgroup"
+    }
+  ],
+  "scope": "Finite existence proofs for selected domains; no explicit tag lists, no prescribed-domain or benchmark claim"
+}

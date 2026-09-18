@@ -1,5 +1,14 @@
 # Two individually far endpoints: bounded primary-source audit
 
+**Subsequent correction:** `N37_NARROW_CONJUNCTION_PRIOR_AUDIT.md` shows
+that an immediate origin shift in KKH's explicit quotient construction
+already supplies two far endpoints and exact source/common agreement.
+The headline theorem's one-far wording must not be used to distinguish
+our theorem from that mechanism. The remaining comparison concerns
+all-interior saturation at polynomial prime alphabet and below-Elias
+parameters. The older KKH endpoint assessment below is superseded.
+
+
 2026-09-18. Verdict: the inspected CS, Diamond–Gruen, KKH, and BCH statements do **not explicitly give two individually far endpoints with almost-all interior affine mixtures near at inverse-logarithmic gap in growing characteristic**. This is a bounded negative finding about the actual statements and arguments, not a priority claim for the norm construction.
 
 ## Exact endpoint premises

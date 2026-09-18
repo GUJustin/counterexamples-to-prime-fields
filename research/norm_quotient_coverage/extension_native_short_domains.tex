@@ -1,0 +1,141 @@
+\subsection{Finite extension alphabets on selected base-field domains}
+\label{subsec:extension-native-short-domains}
+
+The same compiler has finite instances at length $2^{18}$ and dimension
+$2^{17}$ over cubic, quartic, quintic, and sextic alphabets.  Their
+evaluation points remain in the prime subfield.  The assertion is the
+existence of a selected union of fibers; it does not specify a list of
+tags or establish the profile on a prescribed NTT subgroup.
+
+\begin{proposition}\label{prop:extension-native-selected-fibers}
+Let $p$ be prime, $d\ge2$, $E=\mathbb F_{p^d}$, and $m\ge2$ divide
+$p-1$.  Choose $b\in E$ of degree $d$ over $\mathbb F_p$, and put
+\[
+ P=(p-1)/m-1,\qquad M=p^d-1,\qquad
+ \varepsilon=\frac{d\sqrt p+1}{P}.
+\]
+Let $2\le r\le s\le P$ and $0\le w<m$, and set
+\[
+ n=(s+1)m,\qquad J=(r-2)m+w+1.
+\]
+Suppose an integer $t\ge0$, with $s_0=s-2t$ and $r_0=r-t$,
+satisfies the finite criterion of
+Lemma~\ref{lem:fixed-weight-product-completion} for the displayed
+$P,M,\varepsilon$, in particular $Mh_t<1$.
+Then there are an $n$-point set $D\subset\mathbb F_p^*$ and words
+$f,g:D\to E$ such that
+\[
+ \operatorname{agr}_J(f)=\operatorname{agr}_J(g)
+ =\operatorname{CA}_J(f,g)=J+m-1,
+\]
+and
+\[
+ \operatorname{agr}_J(f+\lambda g)=J+2m-1
+ \qquad(\lambda\in E^*).
+\]
+The domain is a union of $s+1$ fibers of $X\mapsto X^m$.
+Thus all $|E|-2$ non-endpoint affine mixtures of the two far sources
+are at exactly the tested distance.  The capacity margin and source
+separation are, respectively, $(2m-1)/n$ and $m/n$.
+\end{proposition}
+\begin{proof}
+Let $H=(\mathbb F_p^*)^m$ and reserve $a_0\in H$.
+For every nontrivial character $\chi$ of $E^*$ and every character
+$\psi$ of $\mathbb F_p^*$, Katz's character-sum estimate on the
+finite etale algebra $E\times\mathbb F_p$, at its regular element
+$(b,0)$, gives~\cite[Theorem~2 and its proof]{katz1989-character-sums}
+\[
+ \left|\sum_{a\in\mathbb F_p^*}\chi(b-a)\psi(a)\right|
+ \le d\sqrt p
+ .
+\]
+The algebra has dimension $d+1$; the full-degree hypothesis makes the
+$d$ conjugates of $b$ distinct and nonzero, and the nontriviality of
+$\chi$ ensures geometric nontriviality.  Averaging over the $m$
+characters trivial on $H$, and then removing $a_0$, bounds every
+nontrivial character mean of
+\[
+ \mathcal A=\{b-a:a\in H\setminus\{a_0\}\}\subset E^*
+\]
+by $\varepsilon$.  This population has exactly $P$ distinct elements.
+The finite completion lemma supplies $s$ distinct tags
+$G\subset H\setminus\{a_0\}$ whose exact $r$-element products
+of factors $b-a$ cover $E^*$.
+
+Set $Y=X^m$, $D=Y^{-1}(G\cup\{a_0\})$, and let $R$ be the monic
+locator of $w$ points in the reserved fiber $Y^{-1}(a_0)$.
+Define
+\[
+ f=R\frac{Y^r-b^r}{Y-b},\qquad g=-\frac R{Y-b}.
+\]
+The denominator has no base-field root.  The monic polynomial $f$
+has degree $J+m-1$.  For $\deg h<J$, the nonzero cleared numerator
+$-R-(Y-b)h$ has degree at most $J+m-1$ as well.  Interpolating the
+two quotient values on any $r-1$ tags, and multiplying by $R$,
+gives simultaneous degree-at-most-$(J-1)$ witnesses with exactly
+$w+(r-1)m=J+m-1$ common agreements.  This proves the source and
+common-agreement equalities.
+
+For $\lambda\ne0$, choose $S\subset G$, $|S|=r$, with
+$V_S(b)=-\lambda$, and put $P_S(Z)=Z^r-V_S(Z)$.
+The witness
+\[
+ h_S=R\frac{P_S(Y)-P_S(b)}{Y-b}
+\]
+has degree at most $w+(r-2)m=J-1$ and residual
+$RV_S(Y)/(Y-b)$, which vanishes exactly on the core and the $r$
+selected fibers.  This gives $w+rm=J+2m-1$ agreements.
+For any other degree-below-$J$ polynomial $h$,
+\[
+ (Y-b)(f+\lambda g-h)
+ =R(Y^r-b^r-\lambda)-(Y-b)h
+\]
+is monic of degree $J+2m-1$, since the second term has degree at
+most $J+m-1$.  Root counting proves the matching upper bound.
+\end{proof}
+
+\paragraph{Four exact finite instances.}
+Put
+\[
+ p_G=2^{64}-2^{32}+1,\qquad
+ p_B=2013265921,\qquad p_K=2130706433.
+\]
+All four cases below have $n=262144$, $J=131072$, and $w=m-1$.
+Write $A=J+m-1$ and $T=J+2m-1$ for the exact source/common and
+nonzero-pencil agreements.  The parameter $t$ counts completion pairs.
+\[
+\begin{array}{c|r|r|r|r|c|c}
+ E&m&t&A&T&\text{capacity margin}&\text{source separation}\\\hline
+ \mathbb F_{p_G^3}&1024&4&132095&133119&2047/262144&1/256\\
+ \mathbb F_{p_B^4}&1024&6&132095&133119&2047/262144&1/256\\
+ \mathbb F_{p_B^5}&1024&22&132095&133119&2047/262144&1/256\\
+ \mathbb F_{p_K^6}&512&0&131583&132095&1023/262144&1/512
+\end{array}
+\]
+For the first three cases, $(s,r)=(255,129)$; for the last,
+$(s,r)=(511,257)$.  The proof uses the upper bounds
+$\sqrt{p_G}<2^{32}$, $\sqrt{p_B}<44870$, and
+$\sqrt{p_K}<46160$.  Exact rational evaluation of the seed majorant
+$(1+\varepsilon)^{s_0}$ and the completion recurrence gives,
+in table order,
+\[
+ Mh_t<2^{-21},\qquad Mh_t<2^{-2},\qquad
+ Mh_t<2^{-2},\qquad Mh_t<2^{-86}.
+\]
+Every recurrence step is rounded upward to denominator $2^{512}$.
+These inequalities are integer comparisons, not floating-point tests.
+Primality is certified by Proth witnesses $7,11,3$, respectively:
+$p_G-1=(2^{32}-1)2^{32}$, $p_B-1=15\cdot2^{27}$, and
+$p_K-1=127\cdot2^{24}$.
+
+The script and exact receipts are supplied in
+\texttt{research/norm\_quotient\_coverage/verify\_extension\_native\_short\_domains.py}
+and \texttt{extension\_native\_short\_domains\_verified.json}.
+They certify existence of the selected tag sets through the finite
+lemma, without enumerating a domain or an extension field.  The
+characteristic exceeds $J$ in every case.  These statements do not
+provide the prescribed-domain agreement threshold $139782$.  Their
+contribution is a finite existence guarantee at the displayed fields and
+length, not a larger asymptotic distance from capacity than prior
+inverse-logarithmic counterexamples.  They establish neither a
+better.codes improvement nor tightness of the prime-field upper bounds.
