@@ -1,0 +1,120 @@
+\subsection{Fixed rate with growing characteristic and almost every native challenge}
+\label{subsec:growing-characteristic-native}
+
+The locator compiler of \cite{binary-counterexamples} also admits a growing-characteristic specialization.  The improvement below uses its full seed domain, padding inside that domain, and an exact five-dimensional label calculation.  Write $\operatorname{agr}_J$ for agreement with polynomials of strict degree less than $J$, and $\operatorname{CA}_J$ for common agreement with two such polynomials.
+
+\begin{theorem}\label{thm:growing-characteristic-native}
+Fix $0<\rho<1$. For every sufficiently large prime $p$, put
+\[
+ E=\mathbb F_{p^5},\quad N=p^5,\quad J=\lfloor\rho N\rfloor,
+ \quad \Delta=\left\lfloor\frac{1-\rho}{2}p^3\right\rfloor.
+\]
+There are words $f,g:E\to E$ with
+\[
+ \operatorname{agr}_J(g)=\operatorname{CA}_J(f,g)=J
+\]
+such that at least $N-3$ values $\lambda\in E$ satisfy
+$\operatorname{agr}_J(f+\lambda g)\ge J+\Delta$.
+For an infinite set of primes, of relative density $1/3$ among the primes, the same construction has this property for every $\lambda\in E$.
+A sufficient onset is
+\[
+ p\ge37,\quad p\ge\frac4{1-\rho},\quad p^3\ge\frac2\rho,
+ \qquad \frac{(1-\rho)^2p^3}{64}>\log4+6\log p.
+\]
+\end{theorem}
+
+The characteristic is $N^{1/5}$ and the additive gap is
+$\Theta_\rho(N^{3/5})$.  The alphabet remains an extension field, the normalized gap tends to zero, and $p\ll J$.  Thus this is not a prime-alphabet or large-characteristic first-order counterexample.  The first source $f$ is itself close for every admissible prime, since the canonical label zero always occurs. Thus the native pair has only its direction individually far.
+
+\begin{lemma}\label{lem:d5-exact-native-labels}
+For each three-dimensional $\mathbb F_p$-subspace $W\subset E$, write
+\[
+ L_W(X)=X^{p^3}+a_1X^{p^2}+a_2X^p+a_3X,
+ \qquad z_W=a_1+a_2^p-a_1^{p+1}.
+\]
+If $p\ge37$, then
+\[
+ \{z_W\}=E\setminus\{z\in\mathbb F_p:z^3+2z^2+3z+1=0\}.
+\]
+\end{lemma}
+\begin{proof}
+Let $U=W^\perp$ for the trace pairing, and for a basis $u,v$ of $U$ write
+$P_{ij}=u^{p^i}v^{p^j}-u^{p^j}v^{p^i}$, with indices modulo five.
+Complementary Moore minors give
+$a_1=P_{24}/P_{34}$ and $a_2=P_{14}/P_{34}$.
+Consecutive Moore minors are nonzero at every rational two-space.
+Frobenius and the Pl\"ucker relation
+$P_{02}P_{34}-P_{03}P_{24}+P_{04}P_{23}=0$ give
+\[
+ z_W=(P_{24}-P_{23})/P_{34}.
+\]
+Evaluate the determinant of
+\[
+ u\longmapsto (u-zu^{p^2},\ u^p-u^{p^2})
+\]
+on the two-space $U^{p^2}$. It equals
+$P_{23}-P_{24}+zP_{34}$ on the original basis of $U$.
+The map is injective for $z\ne1$, so absence of that label is
+exactly maximum scatteredness of its five-dimensional image.
+Montanucci--Zanella's Proposition~4.3 \cite{mz2022-linearsets} excludes maximum scatteredness when $z\notin\mathbb F_p$; the theoretical bound in that proof applies for $p\ge37$.  Thus it remains to analyze scalar $z$.  The value $1$ occurs by taking any three-space in the kernel of $\operatorname{Tr}_{E/\mathbb F_p}$.
+
+Here is a direct scalar calculation, avoiding the full classification of scattered linear sets.  Over an algebraic closure, let indices be cyclic modulo five and put
+\[
+ \ell_j=e_j\wedge e_{j+2}-e_j\wedge e_{j+1}
+                 -z e_{j+1}\wedge e_{j+2}.
+\]
+These five forms are independent. The primal Grassmannian section encoding the label and the dual section
+$D=\operatorname{Gr}(2,5)\cap\mathbb P\langle\ell_0,\ldots,\ell_4\rangle$
+have equal numbers of $\mathbb F_p$-points. This elementary incidence identity, valid also for improper sections, is \cite[Lemma~2.3]{lu2026-scattered}: count pairs consisting of a two-space and an alternating form vanishing on it. Rank-two and rank-four forms have incidence counts differing by $p^4$, while a two-space in the primal section contributes $p^4$ extra forms.
+
+For completeness the relevant geometry of $D$ can be checked explicitly. Its equations are the five principal Pfaffians of $\sum t_j\ell_j$. The coordinate vertices belong to $D$ and Frobenius cycles them. At $e_0$, the Jacobian in $t_1,\ldots,t_4$ is
+\[
+ \begin{pmatrix}
+ 0&z^2&z&0\\0&-z&-1&0\\0&z&1&0\\
+ 0&-1&-z^2&1-z\\z-1&1&z&0
+ \end{pmatrix}.
+\]
+For $z\ne1$ it has rank three. On $t_0=t_1=0$ the Pfaffians force
+$t_2t_4=(1-z)t_2t_3=(z-1)t_3t_4=0$, leaving only three vertices. A component of dimension at least two would meet this plane at a vertex, contradicting the local dimension one there. Hence the section is proper. The height-three Pfaffian resolution has terms
+$R(-5),R(-3)^5,R(-2)^5,R$; consequently $D$ is a pure, connected degree-five curve of arithmetic genus one.
+
+Its tangent direction at $e_0$ is
+\[
+ v=(0,z+1,1,-z,z^2+z+1).
+\]
+Substitution in the five Pfaffians gives
+$(zH,-H,H,-H,z^2H)$, where $H=z^3+2z^2+3z+1$.
+If $D$ has no rational point, the component through this smooth vertex has Frobenius orbit of length five: an invariant component would contain all five spanning vertices and have normalization of genus at most one, hence a rational point by Hasse--Weil. This is the smooth-orbit argument of \cite[Lemma~3.1]{lu2026-scattered}. Degree five then forces five lines, so the tangent line is contained in $D$ and $H=0$.
+Conversely, if $H=0$, all five conjugate tangent lines lie in $D$. The minor testing the first line against its Frobenius image is $-(z^2+z+1)$, which is nonzero since $H$ modulo $z^2+z+1$ is $z$. These two lines are disjoint. Their orbit has length five and exhausts $D$; a rational point would belong to all conjugates, which is impossible. Thus precisely the roots of $H$ are absent. Since $H(1)=7$, the previously separated value causes no exception for $p\ge37$.
+\end{proof}
+
+\begin{proof}[Proof of Theorem~\ref{thm:growing-characteristic-native}]
+For each $W$, coefficient elimination gives
+\[
+ L_W^p+(1-a_1^p)L_W
+ =X^{p^4}+X^{p^3}+z_WX^{p^2}+R_W,
+ \qquad \deg R_W\le p,\quad R_W(0)=0.
+\]
+Thus $f_0=X^{p^4-1}+X^{p^3-1}$ and $g_0=X^{p^2-1}$ have a witness $h_W=-R_W/X$, of degree at most $p-1$, on $W\setminus\{0\}$ at challenge $z_W$. This is the locator compiler of \cite{binary-counterexamples}, with its degrees displayed explicitly.
+
+Set $w=J-p^2+1$ and choose a uniformly random $w$-subset $B\subset E$. For each $W$, the hypergeometric variable $X_W=|B\cap W|$ has mean at most $\rho p^3$ and satisfies
+\[
+ \Pr\{X_W>(\rho+\varepsilon)p^3\}
+ \le \exp(-\varepsilon^2p^3/4),\qquad
+ \varepsilon=(1-\rho)/4.
+\]
+For example this follows from
+$\mathbb E\binom{X_W}{j}\le\binom{p^3}{j}(w/N)^j$
+and the exponential moment bound. There are
+$\genfrac{[}{]}{0pt}{}{5}{2}_p<4p^6$ subspaces. The stated onset therefore gives a single $B$ with the required intersection bound for every $W$.
+
+Let $L_B=\prod_{b\in B}(X-b)$ and set $f=L_Bf_0$, $g=L_Bg_0$ on $E$. The padded witness $L_Bh_W$ has degree at most
+$w+p-1=J-p^2+p<J$. Its matches include $B\cup(W\setminus\{0\})$, so their number is at least
+\[
+ w+p^3-1-|B\cap W|
+ \ge J+(1-\rho-\varepsilon-1/p)p^3
+ \ge J+(1-\rho)p^3/2.
+\]
+The polynomial $g$ is monic of degree exactly $J$. Root counting bounds its agreement with every strict-degree witness by $J$, and interpolation attains $J$. Interpolating explanations for both words on any $J$ coordinates also proves $\operatorname{CA}_J(f,g)=J$.
+Lemma~\ref{lem:d5-exact-native-labels} now supplies at least $N-3$ challenges. Finally $H$ is irreducible over $\mathbb Q$ by the rational-root test and has discriminant $-23$. Its Galois group is $S_3$, so Chebotarev gives density $1/3$ for primes where it remains irreducible. On those primes it has no scalar root, giving every native challenge. Padding can create additional good challenges; no exact post-padding exclusion is asserted.
+\end{proof}

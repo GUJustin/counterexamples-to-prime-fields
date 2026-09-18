@@ -1,0 +1,56 @@
+[
+  {
+    "name": "M31",
+    "prime": 2147483647,
+    "cubic_factors": [
+      {
+        "polynomial": "x + 490020868",
+        "multiplicity": 1
+      },
+      {
+        "polynomial": "x^2 + 1657462781*x + 2045307032",
+        "multiplicity": 1
+      }
+    ],
+    "scalar_missing_labels": [
+      1657462779
+    ],
+    "full_native_domain_size": 45671926060252476630107084286792841360213803007,
+    "domain_size_bits": 155,
+    "scope": "Degree-five extension and full native evaluation domain; not a practical-parameter security bound."
+  },
+  {
+    "name": "BabyBear",
+    "prime": 2013265921,
+    "cubic_factors": [
+      {
+        "polynomial": "x + 1061114946",
+        "multiplicity": 1
+      },
+      {
+        "polynomial": "x^2 + 952150977*x + 1348658439",
+        "multiplicity": 1
+      }
+    ],
+    "scalar_missing_labels": [
+      952150975
+    ],
+    "full_native_domain_size": 33075446146858977625031769923874103810955673601,
+    "domain_size_bits": 155,
+    "scope": "Degree-five extension and full native evaluation domain; not a practical-parameter security bound."
+  },
+  {
+    "name": "Goldilocks",
+    "prime": 18446744069414584321,
+    "cubic_factors": [
+      {
+        "polynomial": "x^3 + 2*x^2 + 3*x + 1",
+        "multiplicity": 1
+      }
+    ],
+    "scalar_missing_labels": [],
+    "full_native_domain_size": 2135987033434293902082969833143585405490115481162544232032811052120416417467265840012020259225601,
+    "domain_size_bits": 320,
+    "scope": "Degree-five extension and full native evaluation domain; not a practical-parameter security bound."
+  }
+]

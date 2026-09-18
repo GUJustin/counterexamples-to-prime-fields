@@ -1,0 +1,92 @@
+{
+  "method": "recursive subspace locators on RREF three-spaces, followed by trace-dual checks",
+  "rows": [
+    {
+      "p": 3,
+      "field": "Context for fq_default in GF(3^5)[a]/(a^5 + 2*a + 1)",
+      "actual_three_spaces": 1210,
+      "directly_constructed_locators": 1210,
+      "trace_dual_checks": 1210,
+      "labels": 243,
+      "alphabet": 243,
+      "missing": [],
+      "fiber_histogram": {
+        "2": 15,
+        "3": 35,
+        "4": 50,
+        "5": 57,
+        "6": 55,
+        "7": 20,
+        "8": 10,
+        "40": 1
+      },
+      "archived_receipt_matches": true,
+      "seconds": 0.1031,
+      "passed": true
+    },
+    {
+      "p": 5,
+      "field": "Context for fq_default in GF(5^5)[a]/(a^5 + 4*a + 3)",
+      "actual_three_spaces": 20306,
+      "directly_constructed_locators": 20306,
+      "trace_dual_checks": 20306,
+      "labels": 3124,
+      "alphabet": 3125,
+      "missing": [
+        [
+          3,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "fiber_histogram": {
+        "2": 80,
+        "3": 190,
+        "4": 305,
+        "5": 457,
+        "6": 630,
+        "7": 525,
+        "8": 395,
+        "9": 260,
+        "10": 191,
+        "11": 30,
+        "12": 60,
+        "156": 1
+      },
+      "archived_receipt_matches": true,
+      "seconds": 1.9203,
+      "passed": true
+    }
+  ],
+  "p11_prediction_counterexample": {
+    "p": 11,
+    "label": 4,
+    "locator_coefficients": [
+      8,
+      5,
+      8,
+      1
+    ],
+    "composition_quotient_coefficients": [
+      4,
+      3,
+      1
+    ],
+    "composition_coefficients": [
+      10,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "locator_separable": true,
+    "root_space_dimension": 3,
+    "proposed_missing_equation_value": 0,
+    "passed": true
+  },
+  "total_seconds": 2.0239,
+  "passed": true
+}

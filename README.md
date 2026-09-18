@@ -5,7 +5,7 @@ Working draft by Justin Thaler, September 18, 2026.
 [Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
 **Latest verified results (September 18):** the full-page,
-one-inch-margin ePrint draft (258 pages) now proves a prime-field line construction
+one-inch-margin ePrint draft (261 pages) now proves a prime-field line construction
 with more than n^(3/2)/4 exceptional challenges, each having a singleton
 list, at an error radius covered by the Dao–Kominers–Thaler bounds
 and beyond the Johnson radius. Both source words
@@ -50,6 +50,18 @@ A further exact support calculation extends Theta(N) maximum lists to
 every fixed sqrt(2)<c<2, with upper constant O((c²−2)^−3) and a
 c-dependent finite onset. The portion c≤sqrt(3) uses the actual message
 degree two; it does not change the stated rate-only first-order curve.
+
+A new fixed-rate extension-field theorem gives at least **N−3 bad native
+challenges at N=p^5**, and every native challenge on an infinite prime
+sequence. Its common-agreement gap is Theta(N^(3/5)) and characteristic
+N^(1/5). The exact canonical exclusions are the scalar roots of
+Z^3+2Z^2+3Z+1; published finite geometry and a checked Pfaffian calculation
+establish the classification. The first source is nearby and the direction
+is far. The characteristic is smaller than the message degree, and this
+is not a prime-alphabet or practical-parameter security result. Exact
+factorization at M31 and BabyBear gives one excluded canonical label in
+each quintic extension, hence at least p^5−1 bad challenges, but the
+required length is approximately 2^155.
 
 Over sufficiently large primes, a deterministic cover gives exactly
 L(L²−L+1)+1 exceptions with source gap s and length s(2L²−2L+1).

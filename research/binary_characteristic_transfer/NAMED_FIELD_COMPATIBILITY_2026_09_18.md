@@ -1,0 +1,9 @@
+# Compatibility with the user's named extension fields
+
+The new degree-five theorem applies directly to F_(p^5) for M31 p=2147483647 and BabyBear p=2013265921. The independently checked integer root and irreducible quadratic cofactor in verify_d5_named_fields.py/.json show that H=Z³+2Z²+3Z+1 has exactly one root in each field: 1657462779 for M31 and 952150975 for BabyBear. Thus the fixed-rate internally padded theorem guarantees at least p^5−1 bad native challenges in either quintic extension. Its domain is the FULL extension field, lengthp^5, approximately2^155. Padding may fill the one canonical exclusion, so this is a lower count, not an exact full bad set.
+
+The new five-dimensional domain does not embed in a degree-three or degree-four extension. Earlier separate cubic-extension theorems apply over Goldilocks cubed at length about2p² (approximately2^129). The earlier quartic-extension construction applies over M31/BabyBear quartic extensions at length9p² (approximately2^65), dimensionthree, source/commonagreement2p and threshold4p. These are distinct constructions and parameter regimes.
+
+Matching the alphabet alone is insufficient for a concrete cryptographic conclusion. These evaluation domains and lengths are not the smaller base-field subgroup or circle domains used in a specified practical protocol. No concrete security-bit upper bound or better.codes improvement follows from this field substitution.
+
+The prime moduli agree with their implementation documentation: https://docs.rs/p3-mersenne-31 , https://docs.rs/p3-baby-bear , https://docs.rs/p3-goldilocks/latest/p3_goldilocks/struct.Goldilocks.html . Goldilocks is p=18446744069414584321. Its H is irreducible, but this gives all native labels only for a QUINTIC extension, not for the cubic extension asked about. The cubic case uses the earlier theorem.
