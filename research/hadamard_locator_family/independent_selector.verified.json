@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "exact_integer_quartic_identities": 6,
+  "linear_decompositions": 6,
+  "compatibility_minor_identities": 15,
+  "method": "Independent sparse integer polynomial arithmetic; no symbolic algebra library",
+  "existence_claim": false
+}
