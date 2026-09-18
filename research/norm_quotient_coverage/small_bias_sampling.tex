@@ -1,0 +1,93 @@
+% Standalone input after Lemma lem:fixed-cardinality-character-products.
+% Natural logarithms throughout.  This proves existence for one fixed pole b.
+\begin{lemma}\label{lem:random-tag-character-bias}
+Let $E=\mathbb F_q$, where $q=p^d$ and $d\ge2$, and let
+$b\in E$ have degree $d$ over $\mathbb F_p$.
+Fix a set $T\subset\mathbb F_p$ of $e$ excluded tags, put
+$U=\mathbb F_p\setminus T$, and define
+\[
+ N=p-e,\qquad \mu=\frac{(d-1)\sqrt p+e}{p-e}.
+\]
+For $1\le s\le N$, choose an $s$-element subset $G$ of $U$ uniformly
+without replacement.  For any real $\beta>\mu$,
+\[
+ \Pr\left[\exists\chi\ne1:
+   \left|\sum_{a\in G}\chi(b-a)\right|>\beta s\right]
+ \le 4(q-2)\exp\left(-\frac{s(\beta-\mu)^2}{4}\right),
+\]
+where the quantifier ranges over all nontrivial multiplicative characters
+of $E^*$.
+\end{lemma}
+\begin{proof}
+Katz's affine-line estimate~\cite[Theorem~1]{katz1989-character-sums}
+and deletion of the $e$ tags give
+$|N^{-1}\sum_{a\in U}\chi(b-a)|\le\mu$ for every nontrivial $\chi$.
+We prove the needed concentration estimate without assuming independence
+of the sampled tags.
+
+For a real population $x_1,\ldots,x_N\in[-1,1]$ with mean $\bar x$,
+let $S$ be the sum over a uniform $s$-element subset.  For real $t$,
+\[
+ \mathbb E e^{tS}
+ =\frac{e_s(e^{tx_1},\ldots,e^{tx_N})}{\binom Ns}
+ \le\left(\frac1N\sum_{i=1}^N e^{tx_i}\right)^s.
+\]
+Here $e_s$ denotes the elementary symmetric polynomial.  Its displayed
+bound follows by averaging pairs of positive arguments with fixed sum:
+with all other arguments fixed, it has the form
+$A y_i y_j+B(y_i+y_j)+D$ with $A\ge0$.
+Equivalently, its maximum on the nonnegative simplex occurs when all
+arguments are equal.  Indeed, for $s\ge2$ a maximizing tuple has at least
+$s$ positive arguments, so averaging any unequal pair strictly increases
+the value; the case $s=1$ is immediate.
+
+If $X$ is one uniform population entry, the second derivative of
+$\log\mathbb E e^{t(X-\bar x)}$ is the variance under an exponential
+tilt, and is at most $1$ because $X\in[-1,1]$.  Its value and first
+derivative vanish at $t=0$.  Thus
+$\mathbb E e^{t(S-s\bar x)}\le e^{st^2/2}$.
+Chernoff's bound, applied with both signs of $t$, yields
+\[
+ \Pr[|S-s\bar x|>su]\le2e^{-su^2/2}.
+\]
+Apply this separately to the real and imaginary parts of
+$\chi(b-a)$.  A complex deviation of modulus greater than $sv$ has
+a coordinate of absolute value greater than $sv/\sqrt2$, so its
+probability is at most $4e^{-sv^2/4}$.
+Set $v=\beta-\mu$ and take the union bound over the $q-2$ nontrivial
+characters.
+\end{proof}
+
+\begin{corollary}\label{cor:logarithmic-tag-product-coverage}
+Fix $0<\eta\le1/2$, set $\kappa=\eta(1-\eta)$ and
+\[
+ C=\max\{128,8/\kappa\},\qquad s=\lceil C\log q\rceil.
+\]
+Fix $a_0\in\mathbb F_p^*$, and suppose
+\[
+ q\ge C+2,\qquad s\le p-2,\qquad
+ \frac{(d-1)\sqrt p+2}{p-2}\le\frac14.
+\]
+With probability at least $1-4/q$, a uniform $s$-element subset
+$G\subset\mathbb F_p^*\setminus\{a_0\}$ has the following property
+simultaneously for every integer $r$ with $\eta\le r/s\le1-\eta$:
+every element of $E^*$ is a product of exactly $r$ distinct elements of
+$\{b-a:a\in G\}$.
+\end{corollary}
+\begin{proof}
+Use Lemma~\ref{lem:random-tag-character-bias} with $e=2$ and
+$\beta=1/2$.  The failure probability is at most
+\[
+ 4(q-2)e^{-s/64}\le4q^{1-C/64}\le4/q.
+\]
+For any successful $G$, Lemma~\ref{lem:fixed-cardinality-character-products}
+applies with $B=s/2$.  Its total nontrivial-character error is at most
+\[
+ (q-2)(s+1)e^{-\kappa s/2}
+ \le\frac{s+1}{q^3}\le\frac1q<1.
+\]
+For the last inequality, use $s+1\le C\log q+2\le Cq+2\le q^2$,
+which follows from $q\ge C+2$.
+One simultaneous character-bias event suffices for every indicated $r$;
+no further probability union bound is needed.
+\end{proof}

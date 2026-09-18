@@ -1,7 +1,7 @@
 # Native norm quotient compiler and matched comparison
 
 September 18, 2026. Exact symbolic audit; `norm_quotient.tex` is integrated
-as Theorem N.31 of the 263-page manuscript. This is a specialization of known quotient and
+as Theorem N.31 of the manuscript. This is a specialization of known quotient and
 character-sum ingredients, not a priority claim. The elementary character
 argument is in `CAUCHY_SUBSET_PRODUCT_LEMMA.md`.
 
@@ -134,12 +134,20 @@ prime-existence step needs only `beta>12/5`. Its separate condition
 `beta>tau+1` must not be retained when replacing its original label
 separation argument.
 
-Thus the precise unresolved comparison is whether the logarithmic-size
-subset-product bank can cover almost all native labels at the same
-inverse-logarithmic margin. Neither Appendix A's stated lower bound nor
-the collision argument settles that question. The full-norm result above
-proves almost-all coverage at the weaker but improved `Theta(q^-1/5)`
-margin.
+The collision argument alone does not settle almost-all coverage for
+that logarithmic-size subgroup bank. However, random norm tags do give
+all nonzero labels at inverse-logarithmic margin; see
+`random_tag_log_gap.tex`. The resulting domain is a chosen union of norm
+fibers, generally not a subgroup.
+
+More importantly, this is not a new existential coverage regime:
+Crites--Stewart Corollary 1 already gives every affine label nearby at
+inverse-logarithmic margin over arbitrary fields and domains. It also
+subsumes the older full-field degree-five existential result with exact
+direction/common agreement J; see `CS_FULL_DOMAIN_EXACT_CA_SUBSUMPTION.md`.
+The norm constructions supply two individually far sources with exact
+source/common agreement. Novelty of that additional refinement is not
+established here.
 
 ## Bounded verification
 

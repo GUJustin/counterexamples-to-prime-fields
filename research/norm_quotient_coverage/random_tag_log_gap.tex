@@ -1,0 +1,126 @@
+\subsection{Two far endpoints at inverse-logarithmic margin}
+\label{subsec:random-norm-tags}
+
+A logarithmic-size selection of norm fibers gives the inverse-logarithmic
+capacity margin of the quotient construction while retaining almost every
+native challenge.  The evaluation domain is chosen for the construction.
+Crites--Stewart~\cite[Corollary~1]{crites-stewart2025} already give
+every affine challenge nearby at this order of margin, over arbitrary
+fields and domains, with a far direction. The point of the following
+specialization is its two far endpoints and exact agreement profile;
+no novelty claim for that refinement is made.
+
+\input{research/norm_quotient_coverage/small_bias_sampling.tex}
+
+\begin{theorem}\label{thm:random-norm-tag-log-gap}
+Fix $0<\rho<1$, an integer $d\ge2$, and
+\[
+ C>\max\left\{64,\frac4{\rho(1-\rho)}\right\}.
+\]
+For every sufficiently large prime $p$, put
+\[
+ q=p^d,\quad E=\mathbb F_q,\quad
+ m=\frac{q-1}{p-1},\quad s=\lceil C\log q\rceil,\quad
+ n=(s+1)m,\quad J=\lfloor\rho n\rfloor.
+\]
+There is an $n$-point domain $D\subset E$ and words $f,g:D\to E$ with
+\[
+ \operatorname{agr}_J(f)=\operatorname{agr}_J(g)
+ =\operatorname{CA}_J(f,g)=J+m-1,
+\]
+such that every $\lambda\in E\setminus\{0\}$ satisfies
+\[
+ \operatorname{agr}_J(f+\lambda g)\ge J+2m-1.
+\]
+The capacity margin and source-agreement gap are respectively
+\[
+ \frac{2m-1}{n}=\frac2{s+1}-\frac1n,
+ \qquad \frac mn=\frac1{s+1},
+\]
+both of order $1/\log n$.  The alphabet and characteristic obey
+\[
+ q=\Theta\!\left((n/\log n)^{d/(d-1)}\right),\qquad
+ p=\Theta\!\left((n/\log n)^{1/(d-1)}\right).
+\]
+\end{theorem}
+
+\begin{proof}
+Choose $b\in E$ of degree $d$ over $\mathbb F_p$ and fix
+$a_0\in\mathbb F_p^*$.  For every nontrivial multiplicative character
+$\chi$ of $E^*$, Katz's estimate~\cite[Theorem~1]{katz1989-character-sums}
+gives
+\[
+ \left|\frac1{p-2}
+ \sum_{a\in\mathbb F_p^*\setminus\{a_0\}}\chi(b-a)\right|
+ \le\frac{(d-1)\sqrt p+2}{p-2}\le\frac14
+\]
+for sufficiently large $p$.
+Choose an $s$-element subset $G$ of this population uniformly without
+replacement.  Lemma~\ref{lem:random-tag-character-bias} and a union bound
+show that, with probability at least
+$1-4(q-2)\exp(-s/64)>0$, it satisfies
+\[
+ \left|\sum_{a\in G}\chi(b-a)\right|\le s/2
+ \quad\hbox{for every nontrivial $\chi$}.
+\]
+Fix such a $G$, write $N(X)=X^m$, and set
+$D=N^{-1}(G\cup\{a_0\})$.  Each nonzero norm fiber has size $m$,
+so $|D|=(s+1)m=n$.
+
+Write $J-1=(r-2)m+w$, where $0\le w<m$, and put $\theta=r/s$.
+Then $\theta\to\rho$ and $2\le r<s$ for sufficiently large $p$.
+Lemma~\ref{lem:fixed-cardinality-character-products}, with
+$\mathcal A=\{b-a:a\in G\}$ and $B=s/2$, shows that all elements of
+$E^*$ are products of exactly $r$ distinct elements of $\mathcal A$,
+provided
+\[
+ (q-2)(s+1)\exp\bigl(-\theta(1-\theta)s/2\bigr)<1.
+\]
+Our choice of $C$ makes both displayed probability conditions hold
+eventually.  Also $s<p-2$ eventually, so the sampling is defined.
+
+Choose a $w$-point set $B_0\subset N^{-1}(a_0)$, put $R=L_{B_0}$,
+and use the norm quotient words
+\[
+ f=R\frac{N^r-b^r}{N-b},\qquad g=-\frac R{N-b}
+ \quad\hbox{on }D.
+\]
+The denominator is nonzero on $E$.  The polynomial $f$ is monic of
+degree $J+m-1$, and the agreement equation for $g$ is the nonzero
+polynomial $R+(N-b)h=0$, of degree at most $J+m-1$ for every
+$\deg h<J$.  These source bounds are attained simultaneously by
+interpolating the two quotient-variable functions on any $r-1$ tags
+of $G$, substituting $N$, and multiplying by $R$.  The resulting
+degree-at-most-$J-1$ witnesses match on those fibers and $B_0$,
+giving exactly $J+m-1$ common agreements.
+
+For $\lambda\ne0$, choose $S\subset G$, $|S|=r$, with
+$V_S(b)=-\lambda$, where $V_S(Y)=\prod_{a\in S}(Y-a)$.
+Writing $P_S(Y)=Y^r-V_S(Y)$, the polynomial
+\[
+ h_S=R\frac{P_S(N)-P_S(b)}{N-b}
+\]
+has degree at most $w+(r-2)m=J-1$ and satisfies
+\[
+ f+\lambda g-h_S=\frac{R V_S(N)}{N-b}.
+\]
+Its zeros on $D$ are exactly $B_0$ and the $r$ norm fibers indexed
+by $S$, totaling $w+rm=J+2m-1$.
+Finally, $n=\Theta(p^{d-1}\log p)$ proves the parameter assertions.
+\end{proof}
+
+For finite parameters the proof requires only $s<p-2$, $2\le r<s$,
+and the three explicit inequalities
+\[
+ \frac{(d-1)\sqrt p+2}{p-2}\le\frac14,\qquad
+ 4(q-2)e^{-s/64}<1,\qquad
+ (q-2)(s+1)e^{-\theta(1-\theta)s/2}<1.
+\]
+At threshold $T=J+2m-1$, exactly $q-2$ of the affine mixtures
+$(1-t)f+tg$, $t\in E$, are nearby; the two endpoints are farther by
+$m/n$.  This gives almost-complete coverage at an inverse-logarithmic
+margin by standard quotient and character-sum ingredients.
+The domain is a chosen union of norm fibers, without a subgroup
+requirement.  The alphabet remains an extension field, and the domain
+length is $\Theta(p^{d-1}\log p)$, rather than $p^d$.
+No prescribed short evaluation domain is obtained.
