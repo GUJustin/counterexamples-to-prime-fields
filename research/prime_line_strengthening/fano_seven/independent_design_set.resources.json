@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/prime_line_strengthening/fano_seven/independent_design_set.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5581389590000001,
+  "peak_rss_kib": 3824,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

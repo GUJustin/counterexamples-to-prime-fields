@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/prime_line_strengthening/fano_seven/orbit7_factor_audit.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.1059914580109762,
+  "peak_rss_kib": 64480,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

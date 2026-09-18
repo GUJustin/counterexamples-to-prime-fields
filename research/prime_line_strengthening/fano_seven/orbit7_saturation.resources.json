@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/prime_line_strengthening/fano_seven/orbit7_saturation.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 2.227059915996506,
+  "peak_rss_kib": 65904,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

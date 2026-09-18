@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/prime_line_strengthening/fano_seven/orbit6_root_identity_audit.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.7201510419981787,
+  "peak_rss_kib": 64128,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

@@ -1,0 +1,114 @@
+{
+  "nodes": [
+    "infinity",
+    "0",
+    "1",
+    "u",
+    "v",
+    "z",
+    "d"
+  ],
+  "row_division_requires_content_guards": true,
+  "rows": [
+    {
+      "T": [
+        1,
+        2,
+        3
+      ],
+      "x_degree": 5,
+      "row_content": "1",
+      "primitive_row": [
+        "d*(d - 1)",
+        "d**3 + d**2*u - d*u*v - d*u*z + d*v*z - d + u*v*z - v*z",
+        "d**4 + d**3*u + d**2*u**2 - d*u**2*v - d*u**2*z - d*u*v**2 - d*u*v*z - d*u*z**2 + d*v**2*z + d*v*z**2 + d*v*z - d + u**2*v*z + u*v**2*z + u*v*z**2 - v**2*z - v*z**2 - v*z"
+      ]
+    },
+    {
+      "T": [
+        1,
+        2,
+        4
+      ],
+      "x_degree": 4,
+      "row_content": "1",
+      "primitive_row": [
+        "d + u*z - u - z",
+        "d**2*v - d*u*v + d*u - d*v*z + d*z + d + u**2*z - u**2 + u*v*z + u*z**2 - u*z - u - z**2 - z",
+        "d**3*v + d**2*v**2 - d*u**2*v + d*u**2 - d*u*v**2 - d*u*v*z + d*u*z + d*u - d*v**2*z - d*v*z**2 + d*z**2 + d*z + d + u**3*z - u**3 + u**2*v*z + u**2*z**2 - u**2*z - u**2 + u*v**2*z + u*v*z**2 + u*z**3 - u*z**2 - u*z - u - z**3 - z**2 - z"
+      ]
+    },
+    {
+      "T": [
+        1,
+        5,
+        6
+      ],
+      "x_degree": 2,
+      "row_content": "1",
+      "primitive_row": [
+        "-1",
+        "-d*z + u*z - u - v - 1",
+        "-d**2*z - d*v*z - d*z**2 + u**2*z - u**2 + u*v*z - u*v + u*z**2 - u - v**2 - v - 1"
+      ]
+    },
+    {
+      "T": [
+        2,
+        5,
+        7
+      ],
+      "x_degree": 4,
+      "row_content": "1",
+      "primitive_row": [
+        "d + u*v - u - v",
+        "d**2 + d*u*z - d*u + d + u**2*v - u**2*z + u*v**2 - u - v**2 - v",
+        "d**3 + d**2*u*z - d**2*u + d**2 + d*u*z**2 - d*u + d + u**3*v - u**3*z + u**2*v**2 - u**2*z**2 + u*v**3 - u - v**3 - v**2 - v"
+      ]
+    },
+    {
+      "T": [
+        3,
+        4,
+        6
+      ],
+      "x_degree": 4,
+      "row_content": "1",
+      "primitive_row": [
+        "-d + u",
+        "-d**2 - d*v + u**2 + u*z + u - z",
+        "-d**3 - d**2*v - d*v**2 + u**3 + u**2*z + u**2 + u*z**2 + u*z + u - v*z - z**2 - z"
+      ]
+    },
+    {
+      "T": [
+        3,
+        5,
+        7
+      ],
+      "x_degree": 5,
+      "row_content": "1",
+      "primitive_row": [
+        "-(u - 1)*(u - v)",
+        "-d*u**2 + d*u*z - u**3 + u*v**2 + 2*u*v + u - v**2 - v*z - v",
+        "-d**2*u**2 + d**2*u*z - d*u**3 + d*u*z**2 - u**4 + u*v**3 + 2*u*v**2 + u*v*z + 2*u*v + u - v**3 - v**2*z - v**2 - v*z**2 - v*z - v"
+      ]
+    },
+    {
+      "T": [
+        4,
+        6,
+        7
+      ],
+      "x_degree": 4,
+      "row_content": "1",
+      "primitive_row": [
+        "1 - v",
+        "-d*v - u*z + u - v**2 + z + 1",
+        "-d**2*v - d*u*z - d*v**2 - u**2*z + u**2 - u*z**2 + u*z + u - v**3 + z**2 + z + 1"
+      ]
+    }
+  ],
+  "minors": [],
+  "seconds": 1.36837187501078
+}

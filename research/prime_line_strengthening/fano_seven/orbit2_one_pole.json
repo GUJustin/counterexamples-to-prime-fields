@@ -1,0 +1,10 @@
+{
+  "complete": true,
+  "supports": 3432,
+  "bases": 792,
+  "polynomial_bases": 67,
+  "hits": [],
+  "quartic_at_infinity_supports": [],
+  "seconds": 1.9045967499999998,
+  "scope": "Exact second cubic-number-field coefficients; proper finite pole off the 14-node affine domain, numerator degree at most four."
+}

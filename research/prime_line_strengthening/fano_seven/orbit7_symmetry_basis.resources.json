@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/prime_line_strengthening/fano_seven/orbit7_symmetry_basis.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 14.929927500008489,
+  "peak_rss_kib": 70256,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

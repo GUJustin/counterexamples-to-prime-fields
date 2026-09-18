@@ -1,6 +1,6 @@
 # Current audited position after restoring the full second-jet framework
 
-The main paper remains the 200-page ePrint-style draft with Theorems R.7–R.9. No second-jet leaderboard improvement is claimed.
+The main paper is now the 202-page ePrint-style draft with Theorems R.7–R.9. No second-jet leaderboard improvement is claimed.
 
 1. The local curvature rank saving and its graded challenge count are mathematically valid, independently checked, and already contained in the restored exact SecondJetCounts framework. They are rediscovered specializations, not new rank theorems. The matched comparison 31890 versus5515 is valid source arithmetic.
 2. The existing relaxed second-jet source and routing framework accepts broader profiles after target-parameter changes. Four checked profiles produce positive source dimensions and challenge caps below3261. The source-existence obstruction is therefore resolved for these profiles.
@@ -37,3 +37,24 @@ The explicit six-word bank has exactly30 actual agreements per word on60 points 
 A separate possible seven-word construction uses seven cubics on14 nodes, each with7 agreements; quadratic pullback would yield7 degree≤6 words at quarter rate. Any such configuration necessarily saturates every pairwise cubic root count and yields a twofold triple multidesign. Exhaustive bounded enumeration gives8 ordered incidence orbits. Orbits4 (aligned Fano) and5 are now excluded in every characteristic other than2 by independently audited proofs. The other6 orbits remain open. No global seven-cubic exclusion or positive construction is claimed. Standard checked arrangement inequalities do not exclude the configuration.
 
 A new primary-kernel differentiation lemma restricts universal fixed factors when a weighted interior source exists. The current fixed-shape count does not certify even one unit of interior reserve (D gives782513; D−1 gives−951762359). This is a failure of that dimension certificate, not proof of kernel nonexistence, and gives no better.codes improvement.
+
+
+September18 continuation: Theorem U.1 is a POSITIVE exact seven-list result.
+Orbit7 over Q(theta), theta^3+2theta^2-theta-1=0, gives seven cubics on14
+nodes with exactly7 matches each. Independent Fraction arithmetic verifies
+all nodes and exact masks; a separate five-point interpolation obstruction
+excludes an eighth candidate. Affine conversion and polynomial pullback give
+complete list7 at n14m,D3m,A7m; m2 is exactquarterrate n28,k7,A14.
+Number-field specialization supplies arbitrarilylargeprime instances.
+This supersedes the earlier open seven-cubic status above.
+Orbits0,1,3,4,5,6 are excluded in odd characteristic by independently audited
+proofs. Orbit2 also now has a positive cubic-number-field realization
+(discriminant65^2), independently audited, with exact list7. Both positive
+banks exclude every proper one-pole(4,1) seven-match witness, including the
+pole-at-infinity case. No unbounded-list claim follows.
+The eight-bank deletion design computation shows every possible eight-cubic
+bank must contain an orbit7 subbank; global orbit7 classification is being
+certified, not yet a proved universal max7 theorem.
+User has additionally authorized productive Vast.ai rentals. CLI setup and
+authentication checked; no rental launched for this project yet because
+current exact jobs finish in seconds. Other projects' instances are untouched.

@@ -1,0 +1,32 @@
+{
+  "pass": true,
+  "test": "first five triple nodes",
+  "locator_roots": [
+    [
+      "1",
+      "0",
+      "-1"
+    ],
+    [
+      "-1",
+      "2",
+      "1"
+    ],
+    [
+      "1",
+      "2",
+      "1"
+    ]
+  ],
+  "scale": [
+    "1/4",
+    "-1",
+    "-1/2"
+  ],
+  "fifth_point_error": [
+    "486",
+    "-390",
+    "-270"
+  ],
+  "conclusion": "No cubic meets all seven triple targets; the degree-at-most-three list at agreement seven is exactly seven."
+}

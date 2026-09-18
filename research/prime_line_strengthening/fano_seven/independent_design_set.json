@@ -1,0 +1,21 @@
+{
+  "algorithm": "fill all blocks by their least vertex; no lexicographic35-triple recursion",
+  "regular_halves": 12780,
+  "vertex_states": 110382,
+  "ordered_labelled_pairs": 6150,
+  "expanded_representative_pairs": 6150,
+  "orbit_sizes": [
+    1260,
+    630,
+    1680,
+    1680,
+    30,
+    210,
+    420,
+    240
+  ],
+  "orbits_disjoint": true,
+  "literal_set_equality": true,
+  "ordered_pair_sha256": "d0806606d1268684cf035572c74d6b74ccf3ad71c59458bb88f2c304cd038fa7",
+  "seconds": 0.33982324600219727
+}

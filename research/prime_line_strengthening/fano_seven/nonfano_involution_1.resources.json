@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/prime_line_strengthening/fano_seven/nonfano_involution.py",
+    "1"
+  ],
+  "reason": "completed",
+  "returncode": 1,
+  "seconds": 1.113251290997141,
+  "peak_rss_kib": 62528,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

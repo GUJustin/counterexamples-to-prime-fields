@@ -1,0 +1,32 @@
+{
+  "identities": [
+    {
+      "branch": "F",
+      "rows": [
+        0,
+        2,
+        3
+      ],
+      "exact_determinant": "2*z*(-u + z)**3*(u - v)**2*(u + v)**3*(u + z)*(-v + z)*(v + z)*(u**2*v + 3*u**2*z + 3*v*z**2 + z**3)*(-u**2*v + u**2*z + 3*u*v**2 + 2*u*v*z + 3*u*z**2 + v**2*z - v*z**2)/(u**2 + 2*v*z + z**2)**3"
+    },
+    {
+      "branch": "F",
+      "rows": [
+        2,
+        4,
+        5
+      ],
+      "exact_determinant": "2*z*(-u + z)**3*(u - v)**3*(u + v)**3*(u + z)**2*(-v + z)*(v + z)**2*(-3*u**2*v - u**2*z + u*v**2 - 2*u*v*z + u*z**2 - v**2*z - 3*v*z**2)/(u**2 + 2*v*z + z**2)**3"
+    },
+    {
+      "branch": "G",
+      "rows": [
+        0,
+        3,
+        4
+      ],
+      "exact_determinant": "16*u*v*z**2*(-u + z)**2*(u - v)**2*(u + v)**3*(u + z)**4*(-v + z)**2*(v + z)/(u**2 + u*v + 3*u*z - v*z)**3"
+    }
+  ],
+  "seconds": 1.0083797499974025
+}

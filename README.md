@@ -5,7 +5,15 @@ Working draft by Justin Thaler, September 17, 2026.
 [Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
 **Latest verified results (September 17, evening):** the ePrint-style article
-is 200 pages with one-inch margins. Its new Theorem R.5 proves an exact
+is 202 pages with one-inch margins. New Theorem U.1 gives an exact
+seven-member nearest-codeword list at quarter rate: length28, dimension7,
+and fourteen agreements per candidate, over arbitrarily large prime fields.
+Its explicit cubic-number-field construction and complete-list proof have
+independent arithmetic audits. Polynomial pullback preserves exact list size
+seven at length14m and degree bound3m. This strengthens the earlier six-word
+construction, but does not yet give growing lists or a better.codes improvement.
+
+Theorem R.5 proves an exact
 transition for the complete Dickson cubic-ODE solution family: a linear
 list at agreement `3/8`, but at most `ceil(epsilon^-2)` family members for
 any word at agreement `3/8 + epsilon`. A matching majority construction

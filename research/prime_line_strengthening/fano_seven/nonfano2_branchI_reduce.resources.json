@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/prime_line_strengthening/fano_seven/nonfano2_branchI_reduce.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.0934058330021799,
+  "peak_rss_kib": 63312,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

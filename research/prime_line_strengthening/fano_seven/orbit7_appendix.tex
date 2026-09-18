@@ -1,0 +1,158 @@
+\section{A seven-polynomial word with a complete list of size seven}
+\label{app:seven-cubic-bank}
+
+This construction gives an exact list, rather than only seven exhibited
+nearby polynomials.  Its list size is fixed; no assertion about an unbounded
+list or about exceptional labels on a received affine line follows from it.
+
+\begin{theorem}\label{thm:seven-cubic-bank}
+For every integer $m\geq1$, there are a number field $K_m$, a set
+$\Omega_m\subset K_m$ of $14m$ distinct points, and a word on $\Omega_m$
+whose complete list of polynomials of degree at most $3m$ with at least
+$7m$ agreements has exactly seven elements.  Each of those seven
+polynomials has exactly $7m$ agreements.  For each fixed $m$, the same
+statement holds over $\mathbb F_p$ for arbitrarily large primes $p$.
+In particular, $m=2$ gives length $28$, dimension $7$, agreement $14$,
+and complete list size seven, at exactly quarter rate.
+\end{theorem}
+
+\begin{proof}
+Let $\theta$ be a root of
+\[
+ f(T)=T^3+2T^2-T-1,
+\]
+and work first over $K=\mathbb Q(\theta)$.  The polynomial $f$ is
+irreducible: its only possible rational roots are $1,-1$, and neither
+is a root.  Put
+\[
+ u=\theta^2,\quad v=\theta^2+\theta-1,\quad z=\theta^2+\theta,
+ \qquad j=1,\quad k=3\theta^2+4\theta-5,\quad \ell=k-1.
+\]
+We initially evaluate binary cubics on the projective line; at infinity,
+the value of an affine polynomial is its coefficient of $X^3$.
+Set $P_1=0$ and define
+\[
+\begin{array}{lll}
+ Q_2=(X-\theta)(X-z),&Q_3=(X-v)(X-z),&Q_4=(X-u)(X-v),\\
+ Q_5=(X-u)(X-z),&Q_6=(X-u)(X-\theta),&Q_7=(X-v)(X-\theta).
+\end{array}
+\]
+The other six cubics are
+\begin{align*}
+ P_i&=Q_i\left[\left(\frac{k}{Q_i(1)}-\frac{j}{Q_i(0)}\right)X
+                  +\frac{j}{Q_i(0)}\right] &&(i=2,4),\\
+ P_i&=Q_i\left[\ell(X-1)+\frac{k}{Q_i(1)}\right] &&(i=3,6),\\
+ P_i&=Q_i\left[\ell X+\frac{j}{Q_i(0)}\right] &&(i=5,7).
+\end{align*}
+All these denominators are nonzero.
+
+Here is the entire incidence certificate.  A string such as $123$
+denotes the set $\{1,2,3\}$.  At each coordinate the received value is
+the common value of the indicated polynomials.
+\[
+\begin{array}{c|c@{\qquad}c|c}
+ \text{coordinate}&\text{matching indices}&
+ \text{coordinate}&\text{matching indices}\\ \hline
+ \infty&3567&1-\theta^2&123\\
+ 0&2457&\theta^2+2\theta-1&145\\
+ 1&2346&\theta^2+2\theta+1&167\\
+ u&1456&\theta^2-1&246\\
+ v&1347&-\theta^2-2\theta+3&257\\
+ \theta&1267&3\theta^2-1&347\\
+ z&1235&(3\theta^2+4\theta-1)/7&356
+\end{array}
+\]
+The fourteen coordinates are distinct.  Substitution in the displayed
+formulas, followed by reduction using $f(\theta)=0$, verifies every
+equality in the table and verifies that there are no additional matches.
+In particular the seven cubics are distinct.  Each index occurs in four
+of the left-hand quadruples and three of the right-hand triples, hence
+each polynomial has exactly seven agreements.  This certificate consists
+of identities in the explicit cubic field; it requires no genericity
+assumption or geometric classification of other configurations.
+
+We next show that the list is complete, even over an algebraic closure.
+If an eighth distinct cubic had at least seven agreements, and $s_x$
+were the number of matching polynomials among these eight at coordinate
+$x$, then
+\[
+ \sum_x s_x\geq56,
+ \qquad
+ \sum_x\binom{s_x}{2}\leq3\binom82=84.
+\]
+Convexity gives the reverse bound $\sum_x\binom{s_x}{2}\geq84$,
+with equality only if all fourteen $s_x$ equal four.  Thus the eighth
+cubic would have to match exactly the seven triple coordinates in the
+right-hand column of the table.
+Let those coordinates be $a_1,\ldots,a_7$, with received values
+$r_1,\ldots,r_7$.  The leading coefficient of their degree-at-most-six
+Lagrange interpolant $R$ is
+\[
+ [X^6]R
+ =\sum_{i=1}^7\frac{r_i}{\prod_{h\ne i}(a_i-a_h)}
+ =\frac{42\theta^2+81\theta-30}{8}\ne0.
+\]
+The equality is another direct reduction modulo $f$; nonvanishing follows
+from its irreducibility.  Consequently no cubic interpolates those seven
+values.  An eighth candidate, and hence any larger list, is impossible.
+
+For an affine domain, change coordinates by
+\[
+ t=\frac1{X-2},\qquad H_i(t)=t^3P_i(2+1/t).
+\]
+None of the fourteen coordinates equals $2$: every nonconstant finite
+coordinate in the table has degree at most two in $\theta$.
+This change therefore gives fourteen distinct finite coordinates, with
+the old infinity mapped to zero.  Scale the received value at a finite
+old coordinate by $t^3$, and retain the old infinity value at $t=0$.
+The $H_i$ have degree at most three and all agreements are preserved.
+Call this affine domain $\Omega$ and its word $r$.
+
+For the general construction choose a degree-$m$ polynomial $\psi$
+such that the fourteen fibers over $\Omega$ are disjoint and each has
+$m$ distinct points.  Such a choice exists over a finite extension of
+$K$: for example $\psi(U)=U^m+c$ with $c\notin\Omega$ suffices in
+characteristic zero.  On $\Omega_m=\psi^{-1}(\Omega)$ use the word
+$r\circ\psi$ and the seven polynomials $H_i\circ\psi$.
+Their matching sets have sizes $7m$.
+If an eighth polynomial of degree at most $3m$ had at least $7m$
+agreements, the preceding pair count, multiplied by $m$, would again
+force it to match every point above the seven triple coordinates and
+none above the quadruple coordinates.
+Let $\widetilde R$ be the interpolant of the seven triple values on the
+affine domain.  Its degree lies between four and six: a cubic interpolant
+would contradict the projective argument just proved.
+The difference between the alleged eighth polynomial and
+$\widetilde R\circ\psi$ has at least $7m$ distinct roots and degree at
+most $6m$, so it is zero.  This is impossible because
+$\deg(\widetilde R\circ\psi)>3m$.  Thus the pulled-back list is also
+exactly seven.
+
+Finally all coefficients and fiber points lie in a number field.
+Exclude the finitely many primes dividing their denominators, the
+nonzero coordinate differences, the nonzero incidence differences,
+and the relevant leading interpolation coefficients.  At primes
+splitting completely in a Galois closure, reduction then preserves the
+entire construction and the complete-list proof.  There are arbitrarily
+large such primes.  This proves the prime-field assertion.
+\end{proof}
+
+For a small explicit instance with $m=1$, take $p=97$.  In the displayed
+order, the domain and word are
+\[
+\begin{split}
+ \Omega={}&(0,48,96,91,79,11,41,51,52,55,13,42,78,21),\\
+ r={}&(74,12,22,0,0,0,0,0,0,0,72,50,91,75).
+\end{split}
+\]
+The seven coefficient vectors, in increasing degree order, are
+\[
+\begin{gathered}
+ (0,0,0,0),\ (47,12,72,85),\ (74,90,75,37),\
+ (40,96,82,4),\\
+ (74,26,3,10),\ (74,46,10,16),\ (74,27,35,70).
+\end{gathered}
+\]
+They arise from $\theta=55$ in the construction.  The seven-point
+interpolation obstruction above reduces to $5\ne0$ modulo $97$, so this
+example also has complete list size exactly seven.

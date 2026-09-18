@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/prime_line_strengthening/fano_seven/nonfano2_projective.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 2.2961085830029333,
+  "peak_rss_kib": 65968,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

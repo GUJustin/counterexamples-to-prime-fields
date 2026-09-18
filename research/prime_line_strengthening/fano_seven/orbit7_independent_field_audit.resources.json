@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "research/prime_line_strengthening/fano_seven/orbit7_independent_field_audit.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.567499667,
+  "peak_rss_kib": 6368,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

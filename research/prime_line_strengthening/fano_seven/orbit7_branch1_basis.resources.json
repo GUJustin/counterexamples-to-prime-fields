@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/prime_line_strengthening/fano_seven/orbit7_branch1_basis.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 17.08512508298736,
+  "peak_rss_kib": 71712,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

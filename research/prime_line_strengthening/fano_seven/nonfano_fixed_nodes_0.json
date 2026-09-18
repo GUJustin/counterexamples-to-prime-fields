@@ -1,0 +1,844 @@
+{
+  "scope": "One exact rational quadruple-node specialization only",
+  "orbit": 0,
+  "nodes": [
+    0,
+    1,
+    3,
+    7,
+    11,
+    17,
+    23
+  ],
+  "polynomials": {
+    "1": "58*X**3*a + 2176*X**3*b + 67422*X**3*c - 1188*X**2*a - 58786*X**2*b - 2028351*X**2*c + 10118*X*a + 556737*X*b + 20270562*X*c - 30107*a - 1746206*b - 65512832*c",
+    "2": "27*X**3*a + 634*X**3*b + 14622*X**3*c - 95*X**2*a - 2496*X**2*b - 58367*X**2*c + 69*X*a + 1863*X*b + 43746*X*c",
+    "3": "32*X**3*a + 722*X**3*b + 14272*X**3*c - 302*X**2*a - 8832*X**2*b - 191981*X**2*c + 832*X*a + 26063*X*b + 582752*X*c - 561*a - 17952*b - 405042*c",
+    "4": "27*X**3*a + 538*X**3*b + 9726*X**3*c - 191*X**2*a - 4800*X**2*b - 93119*X**2*c + 357*X*a + 9639*X*b + 192066*X*c",
+    "5": "19*X**3*a + 266*X**3*b + 3326*X**3*c - 95*X**2*a - 1728*X**2*b - 23807*X**2*c + 77*X*a + 1463*X*b + 20482*X*c",
+    "6": "34*X**3*a + 872*X**3*b + 20726*X**3*c - 284*X**2*a - 8922*X**2*b - 223175*X**2*c + 734*X*a + 24473*X*b + 623626*X*c - 483*a - 16422*b - 421176*c",
+    "7": "51*X**3*a + 1770*X**3*b + 52190*X**3*c - 831*X**2*a - 38080*X**2*b - 1251519*X**2*c + 4301*X*a + 219351*X*b + 7612770*X*c"
+  },
+  "forbidden_linear_forms": {
+    "a + 1542*b/31 + 52800*c/31": [
+      [
+        "pair_degree",
+        1,
+        2
+      ]
+    ],
+    "a + 727*b/13 + 26575*c/13": [
+      [
+        "pair_degree",
+        1,
+        3
+      ]
+    ],
+    "a + 1638*b/31 + 57696*c/31": [
+      [
+        "pair_degree",
+        1,
+        4
+      ]
+    ],
+    "a + 1910*b/39 + 64096*c/39": [
+      [
+        "pair_degree",
+        1,
+        5
+      ]
+    ],
+    "a + 163*b/3 + 5837*c/3": [
+      [
+        "pair_degree",
+        1,
+        6
+      ]
+    ],
+    "a + 58*b + 2176*c": [
+      [
+        "pair_degree",
+        1,
+        7
+      ],
+      [
+        "extra_quad_match",
+        1,
+        0
+      ],
+      [
+        "extra_quad_match",
+        7,
+        3
+      ]
+    ],
+    "a + 88*b/5 - 70*c": [
+      [
+        "pair_degree",
+        2,
+        3
+      ]
+    ],
+    "b + 51*c": [
+      [
+        "pair_degree",
+        2,
+        4
+      ]
+    ],
+    "a + 46*b + 1412*c": [
+      [
+        "pair_degree",
+        2,
+        5
+      ]
+    ],
+    "a + 34*b + 872*c": [
+      [
+        "pair_degree",
+        2,
+        6
+      ],
+      [
+        "extra_quad_match",
+        6,
+        0
+      ],
+      [
+        "extra_quad_match",
+        2,
+        3
+      ]
+    ],
+    "a + 142*b/3 + 4696*c/3": [
+      [
+        "pair_degree",
+        2,
+        7
+      ]
+    ],
+    "a + 184*b/5 + 4546*c/5": [
+      [
+        "pair_degree",
+        3,
+        4
+      ]
+    ],
+    "a + 456*b/13 + 842*c": [
+      [
+        "pair_degree",
+        3,
+        5
+      ]
+    ],
+    "a + 75*b + 3227*c": [
+      [
+        "pair_degree",
+        3,
+        6
+      ]
+    ],
+    "a + 1048*b/19 + 37918*c/19": [
+      [
+        "pair_degree",
+        3,
+        7
+      ]
+    ],
+    "a + 34*b + 800*c": [
+      [
+        "pair_degree",
+        4,
+        5
+      ]
+    ],
+    "a + 334*b/7 + 11000*c/7": [
+      [
+        "pair_degree",
+        4,
+        6
+      ]
+    ],
+    "a + 154*b/3 + 5308*c/3": [
+      [
+        "pair_degree",
+        4,
+        7
+      ]
+    ],
+    "a + 202*b/5 + 1160*c": [
+      [
+        "pair_degree",
+        5,
+        6
+      ]
+    ],
+    "a + 47*b + 1527*c": [
+      [
+        "pair_degree",
+        5,
+        7
+      ]
+    ],
+    "a + 898*b/17 + 31464*c/17": [
+      [
+        "pair_degree",
+        6,
+        7
+      ]
+    ],
+    "a + 32*b + 722*c": [
+      [
+        "extra_quad_match",
+        3,
+        0
+      ]
+    ],
+    "a + 59*b + 2235*c": [
+      [
+        "extra_quad_match",
+        1,
+        1
+      ]
+    ],
+    "a + 28*b + 566*c": [
+      [
+        "extra_quad_match",
+        4,
+        1
+      ]
+    ],
+    "a + 52*b + 1822*c": [
+      [
+        "extra_quad_match",
+        7,
+        1
+      ]
+    ],
+    "a + 61*b + 2359*c": [
+      [
+        "extra_quad_match",
+        1,
+        2
+      ]
+    ],
+    "a + 22*b + 332*c": [
+      [
+        "extra_quad_match",
+        5,
+        2
+      ]
+    ],
+    "a + 54*b + 1932*c": [
+      [
+        "extra_quad_match",
+        7,
+        2
+      ]
+    ],
+    "a + 39*b + 995*c": [
+      [
+        "extra_quad_match",
+        3,
+        3
+      ]
+    ],
+    "a + 38*b + 1052*c": [
+      [
+        "extra_quad_match",
+        2,
+        4
+      ]
+    ],
+    "a + 38*b + 956*c": [
+      [
+        "extra_quad_match",
+        4,
+        4
+      ]
+    ],
+    "a + 45*b + 1367*c": [
+      [
+        "extra_quad_match",
+        6,
+        4
+      ]
+    ],
+    "a + 44*b + 1382*c": [
+      [
+        "extra_quad_match",
+        2,
+        5
+      ]
+    ],
+    "a + 36*b + 878*c": [
+      [
+        "extra_quad_match",
+        5,
+        5
+      ]
+    ],
+    "a + 51*b + 1739*c": [
+      [
+        "extra_quad_match",
+        6,
+        5
+      ]
+    ],
+    "a + 55*b + 1987*c": [
+      [
+        "extra_quad_match",
+        3,
+        6
+      ]
+    ],
+    "a + 50*b + 1688*c": [
+      [
+        "extra_quad_match",
+        4,
+        6
+      ]
+    ],
+    "a + 42*b + 1232*c": [
+      [
+        "extra_quad_match",
+        5,
+        6
+      ]
+    ]
+  },
+  "triples": [
+    {
+      "triple": [
+        1,
+        2,
+        3
+      ],
+      "common_quad_indices": [],
+      "degrees": [
+        3,
+        3
+      ],
+      "factors": [
+        {
+          "factor": "a + 38*b + 1052*c",
+          "multiplicity": 1,
+          "forbidden_reason": [
+            [
+              "extra_quad_match",
+              2,
+              4
+            ]
+          ]
+        },
+        {
+          "factor": "a + 44*b + 1382*c",
+          "multiplicity": 1,
+          "forbidden_reason": [
+            [
+              "extra_quad_match",
+              2,
+              5
+            ]
+          ]
+        },
+        {
+          "factor": "a + 55*b + 1987*c",
+          "multiplicity": 1,
+          "forbidden_reason": [
+            [
+              "extra_quad_match",
+              3,
+              6
+            ]
+          ]
+        },
+        {
+          "factor": "a + 59*b + 2235*c",
+          "multiplicity": 1,
+          "forbidden_reason": [
+            [
+              "extra_quad_match",
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "factor": "a + 61*b + 2359*c",
+          "multiplicity": 1,
+          "forbidden_reason": [
+            [
+              "extra_quad_match",
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "factor": "a + 17926*b/509 + 459100*c/509",
+          "multiplicity": 1,
+          "forbidden_reason": null
+        }
+      ],
+      "retained_equation": "a + 17926*b/509 + 459100*c/509"
+    },
+    {
+      "triple": [
+        1,
+        2,
+        4
+      ],
+      "common_quad_indices": [],
+      "degrees": [
+        3,
+        3
+      ],
+      "factors": [
+        {
+          "factor": "a + 34*b + 872*c",
+          "multiplicity": 1,
+          "forbidden_reason": [
+            [
+              "pair_degree",
+              2,
+              6
+            ],
+            [
+              "extra_quad_match",
+              6,
+              0
+            ],
+            [
+              "extra_quad_match",
+              2,
+              3
+            ]
+          ]
+        },
+        {
+          "factor": "a + 44*b + 1382*c",
+          "multiplicity": 1,
+          "forbidden_reason": [
+            [
+              "extra_quad_match",
+              2,
+              5
+            ]
+          ]
+        },
+        {
+          "factor": "a + 50*b + 1688*c",
+          "multiplicity": 1,
+          "forbidden_reason": [
+            [
+              "extra_quad_match",
+              4,
+              6
+            ]
+          ]
+        },
+        {
+          "factor": "a + 58*b + 2176*c",
+          "multiplicity": 1,
+          "forbidden_reason": [
+            [
+              "pair_degree",
+              1,
+              7
+            ],
+            [
+              "extra_quad_match",
+              1,
+              0
+            ],
+            [
+              "extra_quad_match",
+              7,
+              3
+            ]
+          ]
+        },
+        {
+          "factor": "a + 61*b + 2359*c",
+          "multiplicity": 1,
+          "forbidden_reason": [
+            [
+              "extra_quad_match",
+              1,
+              2
+            ]
+          ]
+        },
+        {
+          "factor": "a + 38*b + 34236*c/31",
+          "multiplicity": 1,
+          "forbidden_reason": null
+        }
+      ],
+      "retained_equation": "a + 38*b + 34236*c/31"
+    },
+    {
+      "triple": [
+        1,
+        5,
+        6
+      ],
+      "common_quad_indices": [
+        3
+      ],
+      "degrees": [
+        2,
+        2
+      ],
+      "factors": [
+        {
+          "factor": "a + 42*b + 1232*c",
+          "multiplicity": 1,
+          "forbidden_reason": [
+            [
+              "extra_quad_match",
+              5,
+              6
+            ]
+          ]
+        },
+        {
+          "factor": "a + 45*b + 1367*c",
+          "multiplicity": 1,
+          "forbidden_reason": [
+            [
+              "extra_quad_match",
+              6,
+              4
+            ]
+          ]
+        },
+        {
+          "factor": "a + 59*b + 2235*c",
+          "multiplicity": 1,
+          "forbidden_reason": [
+            [
+              "extra_quad_match",
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "factor": "a + 1598*b/23 + 64392*c/23",
+          "multiplicity": 1,
+          "forbidden_reason": null
+        }
+      ],
+      "retained_equation": "a + 1598*b/23 + 64392*c/23"
+    },
+    {
+      "triple": [
+        2,
+        5,
+        7
+      ],
+      "common_quad_indices": [
+        0
+      ],
+      "degrees": [
+        2,
+        2
+      ],
+      "factors": [
+        {
+          "factor": "a + 38*b + 1052*c",
+          "multiplicity": 1,
+          "forbidden_reason": [
+            [
+              "extra_quad_match",
+              2,
+              4
+            ]
+          ]
+        },
+        {
+          "factor": "a + 42*b + 1232*c",
+          "multiplicity": 1,
+          "forbidden_reason": [
+            [
+              "extra_quad_match",
+              5,
+              6
+            ]
+          ]
+        },
+        {
+          "factor": "a + 52*b + 1822*c",
+          "multiplicity": 1,
+          "forbidden_reason": [
+            [
+              "extra_quad_match",
+              7,
+              1
+            ]
+          ]
+        },
+        {
+          "factor": "a + 622*b/13 + 21116*c/13",
+          "multiplicity": 1,
+          "forbidden_reason": null
+        }
+      ],
+      "retained_equation": "a + 622*b/13 + 21116*c/13"
+    },
+    {
+      "triple": [
+        3,
+        4,
+        5
+      ],
+      "common_quad_indices": [],
+      "degrees": [
+        3,
+        3
+      ],
+      "factors": [
+        {
+          "factor": "a + 22*b + 332*c",
+          "multiplicity": 1,
+          "forbidden_reason": [
+            [
+              "extra_quad_match",
+              5,
+              2
+            ]
+          ]
+        },
+        {
+          "factor": "a + 28*b + 566*c",
+          "multiplicity": 1,
+          "forbidden_reason": [
+            [
+              "extra_quad_match",
+              4,
+              1
+            ]
+          ]
+        },
+        {
+          "factor": "a + 32*b + 722*c",
+          "multiplicity": 1,
+          "forbidden_reason": [
+            [
+              "extra_quad_match",
+              3,
+              0
+            ]
+          ]
+        },
+        {
+          "factor": "a + 36*b + 878*c",
+          "multiplicity": 1,
+          "forbidden_reason": [
+            [
+              "extra_quad_match",
+              5,
+              5
+            ]
+          ]
+        },
+        {
+          "factor": "a + 38*b + 956*c",
+          "multiplicity": 1,
+          "forbidden_reason": [
+            [
+              "extra_quad_match",
+              4,
+              4
+            ]
+          ]
+        },
+        {
+          "factor": "a + 39*b + 995*c",
+          "multiplicity": 1,
+          "forbidden_reason": [
+            [
+              "extra_quad_match",
+              3,
+              3
+            ]
+          ]
+        }
+      ],
+      "retained_equation": "1"
+    },
+    {
+      "triple": [
+        3,
+        6,
+        7
+      ],
+      "common_quad_indices": [],
+      "degrees": [
+        3,
+        3
+      ],
+      "factors": [
+        {
+          "factor": "a + 45*b + 1367*c",
+          "multiplicity": 1,
+          "forbidden_reason": [
+            [
+              "extra_quad_match",
+              6,
+              4
+            ]
+          ]
+        },
+        {
+          "factor": "a + 51*b + 1739*c",
+          "multiplicity": 1,
+          "forbidden_reason": [
+            [
+              "extra_quad_match",
+              6,
+              5
+            ]
+          ]
+        },
+        {
+          "factor": "a + 52*b + 1822*c",
+          "multiplicity": 1,
+          "forbidden_reason": [
+            [
+              "extra_quad_match",
+              7,
+              1
+            ]
+          ]
+        },
+        {
+          "factor": "a + 54*b + 1932*c",
+          "multiplicity": 1,
+          "forbidden_reason": [
+            [
+              "extra_quad_match",
+              7,
+              2
+            ]
+          ]
+        },
+        {
+          "factor": "a + 55*b + 1987*c",
+          "multiplicity": 1,
+          "forbidden_reason": [
+            [
+              "extra_quad_match",
+              3,
+              6
+            ]
+          ]
+        },
+        {
+          "factor": "a + 1182*b/61 - 13708*c/61",
+          "multiplicity": 1,
+          "forbidden_reason": null
+        }
+      ],
+      "retained_equation": "a + 1182*b/61 - 13708*c/61"
+    },
+    {
+      "triple": [
+        4,
+        6,
+        7
+      ],
+      "common_quad_indices": [],
+      "degrees": [
+        3,
+        3
+      ],
+      "factors": [
+        {
+          "factor": "a + 34*b + 872*c",
+          "multiplicity": 1,
+          "forbidden_reason": [
+            [
+              "pair_degree",
+              2,
+              6
+            ],
+            [
+              "extra_quad_match",
+              6,
+              0
+            ],
+            [
+              "extra_quad_match",
+              2,
+              3
+            ]
+          ]
+        },
+        {
+          "factor": "a + 50*b + 1688*c",
+          "multiplicity": 1,
+          "forbidden_reason": [
+            [
+              "extra_quad_match",
+              4,
+              6
+            ]
+          ]
+        },
+        {
+          "factor": "a + 51*b + 1739*c",
+          "multiplicity": 1,
+          "forbidden_reason": [
+            [
+              "extra_quad_match",
+              6,
+              5
+            ]
+          ]
+        },
+        {
+          "factor": "a + 54*b + 1932*c",
+          "multiplicity": 1,
+          "forbidden_reason": [
+            [
+              "extra_quad_match",
+              7,
+              2
+            ]
+          ]
+        },
+        {
+          "factor": "a + 58*b + 2176*c",
+          "multiplicity": 1,
+          "forbidden_reason": [
+            [
+              "pair_degree",
+              1,
+              7
+            ],
+            [
+              "extra_quad_match",
+              1,
+              0
+            ],
+            [
+              "extra_quad_match",
+              7,
+              3
+            ]
+          ]
+        },
+        {
+          "factor": "a + 3946*b/67 + 146252*c/67",
+          "multiplicity": 1,
+          "forbidden_reason": null
+        }
+      ],
+      "retained_equation": "a + 3946*b/67 + 146252*c/67"
+    }
+  ],
+  "seconds": 0.4197999159950996
+}

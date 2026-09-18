@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/prime_line_strengthening/fano_seven/nonfano3_exact_minors.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.659418832990923,
+  "peak_rss_kib": 65824,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

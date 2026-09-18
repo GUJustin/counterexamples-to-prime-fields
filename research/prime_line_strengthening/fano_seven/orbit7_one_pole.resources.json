@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "research/prime_line_strengthening/fano_seven/orbit7_one_pole.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 2.141573167,
+  "peak_rss_kib": 12880,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}
