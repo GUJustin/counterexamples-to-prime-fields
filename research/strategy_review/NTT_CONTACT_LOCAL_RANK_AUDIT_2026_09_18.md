@@ -28,3 +28,11 @@ Write r(q) for the same local dimension with joint cap q. Including all Z coeffi
 This is exactly the PRE-EXISTING frozen row count. The original column count is 13123663101701085, smaller by 1455824819235. Consequently this calculation supplies no new uniform cokernel saving and no better.codes improvement. The special word's extra kernel does not establish the needed all-word assertion.
 
 The useful change in next action is to cancel the 48-profile injectivity test and any associated matrix allocation. A different exponent must first pass the dimension ceiling; a perturbation must first supply a justified map between the old kernel and cokernel. Neither condition alone proves injectivity or repairs the benchmark.
+
+## Independent check of the elementary exponent restriction
+
+For a received word X^a with 0<=a<n and second row zero, the polynomial (Y-X^a)^115 is a nonzero contact helper. Its weight is 115*max(w,a), hence strictly below W=115*181275 whenever a<181275. Its joint degree is115 and its R degree is zero, so both other caps hold.
+
+For a>211940=n+w-181275, use (X^(n-a)Y-1)^115 instead. The inner polynomial vanishes at all prescribed domain values because X^n=1 there, giving contact order at least115 after taking the power. Its weight115*(n-a+w) is strictly below W. The other caps again hold.
+
+Thus only the inclusive30666-element interval181275<=a<=211940 can possibly give an injective monomial-word map. Endpoint equality is correctly retained because the source weight bound is strict. This restriction is algebraic, independent of a rank computation, and applies only to the monomial received pair (X^a,0).

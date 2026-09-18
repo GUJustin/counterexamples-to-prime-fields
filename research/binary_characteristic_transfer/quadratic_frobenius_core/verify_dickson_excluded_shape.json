@@ -1,0 +1,647 @@
+{
+  "schema": 1,
+  "profiles": 64,
+  "threshold_tests": 1792,
+  "rows": [
+    {
+      "p": 11,
+      "n": 5,
+      "e": 3,
+      "inverse_height": 2,
+      "nonzero_mass": 4,
+      "energy": 8,
+      "excluded_second_moment": 56,
+      "passed": true
+    },
+    {
+      "p": 11,
+      "n": 5,
+      "e": 4,
+      "inverse_height": 2,
+      "nonzero_mass": 4,
+      "energy": 8,
+      "excluded_second_moment": 56,
+      "passed": true
+    },
+    {
+      "p": 11,
+      "n": 10,
+      "e": 4,
+      "inverse_height": 3,
+      "nonzero_mass": 8,
+      "energy": 16,
+      "excluded_second_moment": 48,
+      "passed": true
+    },
+    {
+      "p": 11,
+      "n": 10,
+      "e": 8,
+      "inverse_height": 3,
+      "nonzero_mass": 8,
+      "energy": 16,
+      "excluded_second_moment": 48,
+      "passed": true
+    },
+    {
+      "p": 17,
+      "n": 8,
+      "e": 4,
+      "inverse_height": 3,
+      "nonzero_mass": 4,
+      "energy": 8,
+      "excluded_second_moment": 88,
+      "passed": true
+    },
+    {
+      "p": 17,
+      "n": 8,
+      "e": 6,
+      "inverse_height": 3,
+      "nonzero_mass": 4,
+      "energy": 8,
+      "excluded_second_moment": 88,
+      "passed": true
+    },
+    {
+      "p": 17,
+      "n": 16,
+      "e": 4,
+      "inverse_height": 5,
+      "nonzero_mass": 12,
+      "energy": 32,
+      "excluded_second_moment": 240,
+      "passed": true
+    },
+    {
+      "p": 17,
+      "n": 16,
+      "e": 6,
+      "inverse_height": 3,
+      "nonzero_mass": 12,
+      "energy": 32,
+      "excluded_second_moment": 240,
+      "passed": true
+    },
+    {
+      "p": 17,
+      "n": 16,
+      "e": 8,
+      "inverse_height": 7,
+      "nonzero_mass": 8,
+      "energy": 16,
+      "excluded_second_moment": 144,
+      "passed": true
+    },
+    {
+      "p": 17,
+      "n": 16,
+      "e": 10,
+      "inverse_height": 7,
+      "nonzero_mass": 8,
+      "energy": 16,
+      "excluded_second_moment": 144,
+      "passed": true
+    },
+    {
+      "p": 17,
+      "n": 16,
+      "e": 12,
+      "inverse_height": 3,
+      "nonzero_mass": 12,
+      "energy": 32,
+      "excluded_second_moment": 240,
+      "passed": true
+    },
+    {
+      "p": 17,
+      "n": 16,
+      "e": 14,
+      "inverse_height": 5,
+      "nonzero_mass": 12,
+      "energy": 32,
+      "excluded_second_moment": 240,
+      "passed": true
+    },
+    {
+      "p": 31,
+      "n": 15,
+      "e": 3,
+      "inverse_height": 7,
+      "nonzero_mass": 12,
+      "energy": 24,
+      "excluded_second_moment": 440,
+      "passed": true
+    },
+    {
+      "p": 31,
+      "n": 15,
+      "e": 5,
+      "inverse_height": 4,
+      "nonzero_mass": 8,
+      "energy": 16,
+      "excluded_second_moment": 368,
+      "passed": true
+    },
+    {
+      "p": 31,
+      "n": 15,
+      "e": 8,
+      "inverse_height": 2,
+      "nonzero_mass": 12,
+      "energy": 24,
+      "excluded_second_moment": 440,
+      "passed": true
+    },
+    {
+      "p": 31,
+      "n": 15,
+      "e": 9,
+      "inverse_height": 2,
+      "nonzero_mass": 12,
+      "energy": 24,
+      "excluded_second_moment": 440,
+      "passed": true
+    },
+    {
+      "p": 31,
+      "n": 15,
+      "e": 12,
+      "inverse_height": 4,
+      "nonzero_mass": 8,
+      "energy": 16,
+      "excluded_second_moment": 368,
+      "passed": true
+    },
+    {
+      "p": 31,
+      "n": 15,
+      "e": 14,
+      "inverse_height": 7,
+      "nonzero_mass": 12,
+      "energy": 24,
+      "excluded_second_moment": 440,
+      "passed": true
+    },
+    {
+      "p": 31,
+      "n": 30,
+      "e": 8,
+      "inverse_height": 13,
+      "nonzero_mass": 24,
+      "energy": 72,
+      "excluded_second_moment": 1016,
+      "passed": true
+    },
+    {
+      "p": 31,
+      "n": 30,
+      "e": 12,
+      "inverse_height": 11,
+      "nonzero_mass": 16,
+      "energy": 32,
+      "excluded_second_moment": 480,
+      "passed": true
+    },
+    {
+      "p": 31,
+      "n": 30,
+      "e": 14,
+      "inverse_height": 7,
+      "nonzero_mass": 24,
+      "energy": 72,
+      "excluded_second_moment": 1016,
+      "passed": true
+    },
+    {
+      "p": 31,
+      "n": 30,
+      "e": 18,
+      "inverse_height": 7,
+      "nonzero_mass": 24,
+      "energy": 72,
+      "excluded_second_moment": 1016,
+      "passed": true
+    },
+    {
+      "p": 31,
+      "n": 30,
+      "e": 20,
+      "inverse_height": 11,
+      "nonzero_mass": 16,
+      "energy": 32,
+      "excluded_second_moment": 480,
+      "passed": true
+    },
+    {
+      "p": 31,
+      "n": 30,
+      "e": 24,
+      "inverse_height": 13,
+      "nonzero_mass": 24,
+      "energy": 72,
+      "excluded_second_moment": 1016,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 23,
+      "e": 3,
+      "inverse_height": 11,
+      "nonzero_mass": 22,
+      "energy": 44,
+      "excluded_second_moment": 1096,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 23,
+      "e": 4,
+      "inverse_height": 8,
+      "nonzero_mass": 22,
+      "energy": 52,
+      "excluded_second_moment": 1472,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 23,
+      "e": 5,
+      "inverse_height": 6,
+      "nonzero_mass": 22,
+      "energy": 76,
+      "excluded_second_moment": 2568,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 23,
+      "e": 6,
+      "inverse_height": 9,
+      "nonzero_mass": 22,
+      "energy": 52,
+      "excluded_second_moment": 1472,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 23,
+      "e": 7,
+      "inverse_height": 4,
+      "nonzero_mass": 22,
+      "energy": 76,
+      "excluded_second_moment": 2568,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 23,
+      "e": 8,
+      "inverse_height": 10,
+      "nonzero_mass": 22,
+      "energy": 60,
+      "excluded_second_moment": 1848,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 23,
+      "e": 9,
+      "inverse_height": 3,
+      "nonzero_mass": 22,
+      "energy": 52,
+      "excluded_second_moment": 1472,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 23,
+      "e": 10,
+      "inverse_height": 5,
+      "nonzero_mass": 22,
+      "energy": 52,
+      "excluded_second_moment": 1472,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 23,
+      "e": 11,
+      "inverse_height": 7,
+      "nonzero_mass": 22,
+      "energy": 60,
+      "excluded_second_moment": 1848,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 23,
+      "e": 12,
+      "inverse_height": 2,
+      "nonzero_mass": 22,
+      "energy": 44,
+      "excluded_second_moment": 1096,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 23,
+      "e": 13,
+      "inverse_height": 2,
+      "nonzero_mass": 22,
+      "energy": 44,
+      "excluded_second_moment": 1096,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 23,
+      "e": 14,
+      "inverse_height": 7,
+      "nonzero_mass": 22,
+      "energy": 60,
+      "excluded_second_moment": 1848,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 23,
+      "e": 15,
+      "inverse_height": 5,
+      "nonzero_mass": 22,
+      "energy": 52,
+      "excluded_second_moment": 1472,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 23,
+      "e": 16,
+      "inverse_height": 3,
+      "nonzero_mass": 22,
+      "energy": 52,
+      "excluded_second_moment": 1472,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 23,
+      "e": 17,
+      "inverse_height": 10,
+      "nonzero_mass": 22,
+      "energy": 60,
+      "excluded_second_moment": 1848,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 23,
+      "e": 18,
+      "inverse_height": 4,
+      "nonzero_mass": 22,
+      "energy": 76,
+      "excluded_second_moment": 2568,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 23,
+      "e": 19,
+      "inverse_height": 9,
+      "nonzero_mass": 22,
+      "energy": 52,
+      "excluded_second_moment": 1472,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 23,
+      "e": 20,
+      "inverse_height": 6,
+      "nonzero_mass": 22,
+      "energy": 76,
+      "excluded_second_moment": 2568,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 23,
+      "e": 21,
+      "inverse_height": 8,
+      "nonzero_mass": 22,
+      "energy": 52,
+      "excluded_second_moment": 1472,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 23,
+      "e": 22,
+      "inverse_height": 11,
+      "nonzero_mass": 22,
+      "energy": 44,
+      "excluded_second_moment": 1096,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 46,
+      "e": 4,
+      "inverse_height": 15,
+      "nonzero_mass": 44,
+      "energy": 128,
+      "excluded_second_moment": 2128,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 46,
+      "e": 6,
+      "inverse_height": 9,
+      "nonzero_mass": 44,
+      "energy": 152,
+      "excluded_second_moment": 3256,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 46,
+      "e": 8,
+      "inverse_height": 13,
+      "nonzero_mass": 44,
+      "energy": 160,
+      "excluded_second_moment": 3632,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 46,
+      "e": 10,
+      "inverse_height": 5,
+      "nonzero_mass": 44,
+      "energy": 152,
+      "excluded_second_moment": 3256,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 46,
+      "e": 12,
+      "inverse_height": 21,
+      "nonzero_mass": 44,
+      "energy": 144,
+      "excluded_second_moment": 2880,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 46,
+      "e": 14,
+      "inverse_height": 7,
+      "nonzero_mass": 44,
+      "energy": 160,
+      "excluded_second_moment": 3632,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 46,
+      "e": 16,
+      "inverse_height": 3,
+      "nonzero_mass": 44,
+      "energy": 128,
+      "excluded_second_moment": 2128,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 46,
+      "e": 18,
+      "inverse_height": 19,
+      "nonzero_mass": 44,
+      "energy": 160,
+      "excluded_second_moment": 3504,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 46,
+      "e": 20,
+      "inverse_height": 17,
+      "nonzero_mass": 44,
+      "energy": 160,
+      "excluded_second_moment": 3504,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 46,
+      "e": 22,
+      "inverse_height": 11,
+      "nonzero_mass": 44,
+      "energy": 144,
+      "excluded_second_moment": 2880,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 46,
+      "e": 26,
+      "inverse_height": 11,
+      "nonzero_mass": 44,
+      "energy": 144,
+      "excluded_second_moment": 2880,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 46,
+      "e": 28,
+      "inverse_height": 17,
+      "nonzero_mass": 44,
+      "energy": 160,
+      "excluded_second_moment": 3504,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 46,
+      "e": 30,
+      "inverse_height": 19,
+      "nonzero_mass": 44,
+      "energy": 160,
+      "excluded_second_moment": 3504,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 46,
+      "e": 32,
+      "inverse_height": 3,
+      "nonzero_mass": 44,
+      "energy": 128,
+      "excluded_second_moment": 2128,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 46,
+      "e": 34,
+      "inverse_height": 7,
+      "nonzero_mass": 44,
+      "energy": 160,
+      "excluded_second_moment": 3632,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 46,
+      "e": 36,
+      "inverse_height": 21,
+      "nonzero_mass": 44,
+      "energy": 144,
+      "excluded_second_moment": 2880,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 46,
+      "e": 38,
+      "inverse_height": 5,
+      "nonzero_mass": 44,
+      "energy": 152,
+      "excluded_second_moment": 3256,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 46,
+      "e": 40,
+      "inverse_height": 13,
+      "nonzero_mass": 44,
+      "energy": 160,
+      "excluded_second_moment": 3632,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 46,
+      "e": 42,
+      "inverse_height": 9,
+      "nonzero_mass": 44,
+      "energy": 152,
+      "excluded_second_moment": 3256,
+      "passed": true
+    },
+    {
+      "p": 47,
+      "n": 46,
+      "e": 44,
+      "inverse_height": 15,
+      "nonzero_mass": 44,
+      "energy": 128,
+      "excluded_second_moment": 2128,
+      "passed": true
+    }
+  ]
+}

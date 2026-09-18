@@ -1,5 +1,7 @@
 # Non-divisor monomial orbits: exact discriminant and shape-energy gates
 
+Current refinement: `DICKSON_EXCLUDED_SHAPE_ENERGY_2026_09_18.md` removes the forced excluded beta=4 spike exactly, improving the remaining moments and the necessary collision-energy bound. It also records the inverse-Dickson restriction. The original identities below remain valid; use the refined bound for admissible beta outside {0,4}.
+
 September 18, 2026. Symbolic assessment with independent audit PASS; see `NONDIVISOR_DISCRIMINANT_INDEPENDENT_AUDIT.md`. No construction search or rental. The pure-character divisor-exponent case is independently closed in PURE_CHARACTER_WRONSKIAN_CLOSURE.md. This note does not reopen it.
 
 Let p be odd, n|p-1, D=mu_n, 3<=e<=n-1, and P=aX^2+bX+c with abc!=0. Write S={x in D:P(x)=x^e}, A=|S|. The orbit P_t=t^e P(X/t), t in D, has n distinct members because its three coefficient exponents are consecutive. Every member has A matches.
