@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/tmp/primary_gate",
+    "research/better_codes_primary_nonrectangular/b22191",
+    "134",
+    "22191",
+    "185",
+    "40"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.54024475,
+  "peak_rss_kib": 11920,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

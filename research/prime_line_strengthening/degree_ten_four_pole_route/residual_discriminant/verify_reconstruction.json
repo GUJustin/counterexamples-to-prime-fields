@@ -1,0 +1,45 @@
+{
+  "status": "PASS",
+  "input_sha256": "13463ca0a58b56fdd93494dbad94c7a56ff49714f8058ca4b20e06270ec69dd9",
+  "interpolation_method": "independent dense monomial Vandermonde inversion",
+  "nodes": 190,
+  "parameter_terms": 1278,
+  "mu7_identity": "k-2a-4b=2 mod7",
+  "new_checks": [
+    {
+      "s": 19,
+      "t": 1,
+      "residual_degree": 48,
+      "derivative_gcd_degree": 4,
+      "seconds": 0.007257208999362774
+    },
+    {
+      "s": 20,
+      "t": 2,
+      "residual_degree": 48,
+      "derivative_gcd_degree": 0,
+      "seconds": 0.006764208999811672
+    },
+    {
+      "s": 21,
+      "t": 3,
+      "residual_degree": 48,
+      "derivative_gcd_degree": 0,
+      "seconds": 0.005555165989790112
+    },
+    {
+      "s": 22,
+      "t": 4,
+      "residual_degree": 48,
+      "derivative_gcd_degree": 4,
+      "seconds": 0.0055035419936757535
+    },
+    {
+      "s": 28,
+      "t": 28,
+      "residual_degree": 48,
+      "derivative_gcd_degree": 0,
+      "seconds": 0.005466125003295019
+    }
+  ]
+}

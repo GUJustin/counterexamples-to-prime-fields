@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/tmp/partial_prefix",
+    "research/better_codes_primary_nonrectangular/partial_prefix"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 16.824592291988665,
+  "peak_rss_kib": 221728,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

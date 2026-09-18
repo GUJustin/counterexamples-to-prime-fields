@@ -1,0 +1,93 @@
+[
+  {
+    "name": "nearby_q160_m116_s35",
+    "rectangle": {
+      "qcap": 160,
+      "m": 116,
+      "s": 35,
+      "D": 21027900,
+      "slope": -750564,
+      "required_L": null
+    },
+    "tested_L": -1,
+    "optimum": 0
+  },
+  {
+    "name": "nearby_q160_m116_s36",
+    "rectangle": {
+      "qcap": 160,
+      "m": 116,
+      "s": 36,
+      "D": 21027900,
+      "slope": -1812778,
+      "required_L": null
+    },
+    "tested_L": -1,
+    "optimum": 0
+  },
+  {
+    "name": "nearby_q160_m117_s35",
+    "rectangle": {
+      "qcap": 160,
+      "m": 117,
+      "s": 35,
+      "D": 21102396,
+      "slope": -554904036,
+      "required_L": null
+    },
+    "tested_L": -1,
+    "optimum": 0
+  },
+  {
+    "name": "nearby_q160_m117_s36",
+    "rectangle": {
+      "qcap": 160,
+      "m": 117,
+      "s": 36,
+      "D": 21102395,
+      "slope": -567893205,
+      "required_L": null
+    },
+    "tested_L": -1,
+    "optimum": 0
+  },
+  {
+    "name": "nearby_q161_m117_s35",
+    "rectangle": {
+      "qcap": 161,
+      "m": 117,
+      "s": 35,
+      "D": 21209175,
+      "slope": 559692,
+      "required_L": 1118298
+    },
+    "tested_L": 1118297,
+    "optimum": 0
+  },
+  {
+    "name": "nearby_q161_m117_s36",
+    "rectangle": {
+      "qcap": 161,
+      "m": 117,
+      "s": 36,
+      "D": 21209175,
+      "slope": 1029969,
+      "required_L": 613675
+    },
+    "tested_L": 613674,
+    "optimum": 0
+  },
+  {
+    "name": "nearby_q163_m118_s36",
+    "rectangle": {
+      "qcap": 163,
+      "m": 118,
+      "s": 36,
+      "D": 21390450,
+      "slope": 3696226,
+      "required_L": 176421
+    },
+    "tested_L": 176420,
+    "optimum": 0
+  }
+]

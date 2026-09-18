@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "name": "tcap9281",
+  "m": 226,
+  "L": 9281,
+  "Q": 312,
+  "S": 70,
+  "edges": 1902097,
+  "flow": 3312257750425304,
+  "coefficient_count": 0,
+  "local_rank": 0,
+  "maximum_surplus": 0,
+  "selected_support_size": 0
+}

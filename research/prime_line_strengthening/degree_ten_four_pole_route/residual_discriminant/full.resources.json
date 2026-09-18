@@ -1,0 +1,19 @@
+{
+  "command": [
+    "sage",
+    "-python",
+    "reconstruct.sage.py",
+    "--input",
+    "gate.json",
+    "--output",
+    "reconstruction.json",
+    "--max-evaluations",
+    "190"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 31.31801313511096,
+  "peak_rss_kib": 205032,
+  "rss_limit_mib": 2048,
+  "time_limit_seconds": 600
+}

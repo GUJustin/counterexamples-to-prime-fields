@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/prime_line_strengthening/degree_ten_four_pole_route/exact_conic.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.543567125001573,
+  "peak_rss_kib": 14336,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

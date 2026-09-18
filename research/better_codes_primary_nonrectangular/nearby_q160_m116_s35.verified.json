@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "name": "nearby_q160_m116_s35",
+  "m": 116,
+  "L": -1,
+  "Q": 160,
+  "S": 35,
+  "edges": 265438,
+  "flow": 48791063580,
+  "coefficient_count": 0,
+  "local_rank": 0,
+  "maximum_surplus": 0,
+  "selected_support_size": 0
+}

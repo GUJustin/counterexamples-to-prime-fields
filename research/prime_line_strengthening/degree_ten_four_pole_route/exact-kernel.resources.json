@@ -1,0 +1,19 @@
+{
+  "command": [
+    "sage",
+    "-python",
+    "exact_kernel.sage.py",
+    "--gate",
+    "gate.json",
+    "--fibers",
+    "fiber_patterns.json",
+    "--output",
+    "exact_kernel.json"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 36.37923968792893,
+  "peak_rss_kib": 211640,
+  "rss_limit_mib": 2048,
+  "time_limit_seconds": 60
+}

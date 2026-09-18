@@ -52,3 +52,13 @@ The previously unoptimized frozen primary-A support class is now fully closed by
 A separate octahedral construction was tested in exactQ(i,sqrt2) arithmetic. For36points anddegree8, neither18nor15agreements can occur for an actual orbit of8sections under the stated equivariant/sign-equivariant word construction. The finite polynomial-gcd gates retain only4-section degeneracies. This does not exclude nonequivariant words or other octahedral domains.
 
 No better.codes improvement or new positive8-word characteristic-zero bank is claimed. No rental is active.
+
+## Checkpoint 08:54 UTC: exact characteristic-zero net and finite candidate locus
+
+The degree-ten Paley norm net has now been constructed over Q(eta), eta^2+eta+2=0. An independent standard-library Fraction-pair verifier checks all93 representative Hasse conditions, eigenweights, three rank31 modular witnesses, and reduction to the saved modular net. This establishes the exact three-dimensional characteristic-zero family, not a presumed lift of a modular nullspace.
+
+The degree48 residual discriminant over F29 is reconstructed from190 evaluations and independently verified by dense interpolation and five fresh resultant computations. The global necessary rationality condition is degree gcd(D_S,D_T)>=15 for its homogeneous binary form. A complete algebraic test of the parameter line c=a excludes this condition, including extension-field parameters and its projective endpoint. An initial endpoint lookup bug was caught independently by two agents; the corrected full job was rerun successfully. Therefore the closed necessary locus in the parameter plane is zero-dimensional or empty. The characteristic-zero transfer and exact finite-locus proof are being documented. This is a reduction to isolated candidate parameters, not a rational member or an emptiness proof.
+
+The primary-A full-prefix support optimization now excludes every multiplicity and challenge cap at the fixed jet caps Q159/S35, using194 independently replayed minimum-cut certificates and an analytic tail bound. A separate frozen-m115 graph excludes partial X/Z-prefix monomial supports as well. Nearby A thresholds and the specified TCap/B alternatives also have exact negative certificates. None improves better.codes; these are limitations of the specified dimension tests.
+
+Task-owned Vast instance51405922 is active for bounded Sage jobs at quoted base$0.032222/hour, with automatic destruction deadline10:25:26UTC. The exact-kernel job used36.4seconds and about207MiB; the corrected projective-line job used30.8seconds and about208MiB. The user research deadline remains14:00UTC. The main manuscript remains213pages; these latest computations are research notes pending integration.

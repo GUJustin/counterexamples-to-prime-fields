@@ -1,0 +1,21 @@
+{
+  "command": [
+    "sage",
+    "-python",
+    "inspect.sage.py",
+    "--phase",
+    "inspect",
+    "--gate",
+    "gate.json",
+    "--input",
+    "reconstruction.json",
+    "--output",
+    "inspect.json"
+  ],
+  "reason": "time_limit",
+  "returncode": -15,
+  "seconds": 60.21063079801388,
+  "peak_rss_kib": 379496,
+  "rss_limit_mib": 2048,
+  "time_limit_seconds": 60
+}

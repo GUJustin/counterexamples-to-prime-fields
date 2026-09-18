@@ -11,7 +11,7 @@ This is a finite exact optimization, not a wedge/rectangle sample. The local ran
 
     13123663101701085.
 
-The residual source-side cut is just the source vertex, with the same capacity, so its selected support is empty. `mincut.flow` records every nonzero original-edge flow as an edge index and integer amount; `mincut.json` records the cut and totals. Independent capacity/conservation replay is delegated separately; the generator itself checks flow=cut.
+The residual source-side cut is just the source vertex, with the same capacity, so its selected support is empty. `mincut.flow` records every nonzero original-edge flow as an edge index and integer amount; `mincut.json` records the cut and totals. Independent capacity/conservation replay passed in `verify_flow.py/json`: all261039 capacities, flow conservation, cut equality, support closure, and exact zero surplus were checked.
 
 The bounded run completed in0.54seconds. The wrapper's instantaneous peak-RSS sample is not an accurate memory measurement; the job was capped at384MiB and60seconds.
 

@@ -1,5 +1,7 @@
 # Positive genus in the Paley norm net
 
+**Subsequent sharpening:** independent residual-discriminant reconstruction proves generic genus exactly15 on the stated ordinary/simple-boundary open chart. See `../residual_discriminant/RECONSTRUCTION_INDEPENDENT_AUDIT.md`. The genus≥9 argument below remains a separate conservative geometric check.
+
 The three symmetric eigenbasis members are not rational: their normalization genus is at least six. A general member of the characteristic-zero net has genus at least nine. These statements do **not** exclude special rational members elsewhere in the parameter plane. In particular, no conclusion about the entire rational locus follows from checking the three basis curves.
 
 ## Source and reduction

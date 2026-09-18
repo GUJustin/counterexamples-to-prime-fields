@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "P0_coefficients": [
+    [
+      "-1",
+      "-1"
+    ],
+    [
+      "1",
+      "0"
+    ],
+    [
+      "1",
+      "0"
+    ],
+    [
+      "0",
+      "1"
+    ]
+  ],
+  "restriction_pivot_X_degree": 0,
+  "lambda": [
+    [
+      "28175/208",
+      "-13475/208"
+    ],
+    [
+      "-604611/512",
+      "112455/512"
+    ],
+    [
+      "2028355/13312",
+      "44345/13312"
+    ]
+  ],
+  "kappa": [
+    "123201/8000",
+    "0"
+  ],
+  "kappa_mod29": 5,
+  "conic": "a*c=kappa*b^2",
+  "parameterization": "[kappa*u^2:u:1]",
+  "restriction_proportionality_checked": true,
+  "conic_family_parameter_discriminant": "F1^2-4*kappa*F0*F2",
+  "structural_factor": "product_(j=0)^6(Y-P_j(X)) divides F1^2-4*kappa*F0*F2"
+}

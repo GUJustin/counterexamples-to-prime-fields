@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "name": "tcap_slope",
+  "m": 226,
+  "L": -1,
+  "Q": 312,
+  "S": 70,
+  "edges": 1902097,
+  "flow": 360816574464,
+  "coefficient_count": 361725998767,
+  "local_rank": 1376406,
+  "maximum_surplus": 909424303,
+  "selected_support_size": 19738
+}

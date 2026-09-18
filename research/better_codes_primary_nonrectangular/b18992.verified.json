@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "name": "b18992",
+  "m": 134,
+  "L": 18992,
+  "Q": 185,
+  "S": 40,
+  "edges": 398821,
+  "flow": 1405002184102520,
+  "coefficient_count": 0,
+  "local_rank": 0,
+  "maximum_surplus": 0,
+  "selected_support_size": 0
+}

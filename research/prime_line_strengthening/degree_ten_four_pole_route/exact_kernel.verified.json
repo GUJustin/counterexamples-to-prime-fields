@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "input_sha256": "c54642a07249bd9c3b24655c9cf18dac60a8daff370f51ee53d4534ee72261b0",
+  "components": [
+    {
+      "character": 1,
+      "exact_jets_verified": 31,
+      "rank_mod29": 31,
+      "reduction_matches": true
+    },
+    {
+      "character": 3,
+      "exact_jets_verified": 31,
+      "rank_mod29": 31,
+      "reduction_matches": true
+    },
+    {
+      "character": 5,
+      "exact_jets_verified": 31,
+      "rank_mod29": 31,
+      "reduction_matches": true
+    }
+  ],
+  "scope": "Exact representative jets, eigenweights, normalization, and independent rank31 modular witnesses; equivariance gives all14 points."
+}

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "python3",
+    "-c",
+    "import subprocess,sys; [subprocess.run([sys.executable,\"research/better_codes_primary_nonrectangular/verify_receipt.py\",n],check=True) for n in [\"tcap9281\",\"tcap_slope\",\"b18992\",\"b22191\"]]"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 3.214285125,
+  "peak_rss_kib": 32256,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

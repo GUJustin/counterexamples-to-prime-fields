@@ -1,0 +1,305 @@
+{
+  "phase": "line-subresultants",
+  "input_sha256": "44d077d43686928aef94f1c51364361dce982e49e60c9ad2bdd32d1c1b0916a5",
+  "status": "complete",
+  "seconds": 27.66478461190127,
+  "projective_line": "[1:u:1]; endpoint [0:1:0]",
+  "generic_X_degree": 48,
+  "generic_infinity_gcd_contribution": 0,
+  "required_finite_gcd_degree": 15,
+  "leading_coefficient": "24*u^16 + 7*u^14 + 2*u^12 + 9*u^10 + 5*u^9 + 13*u^8 + 28*u^7 + 18*u^6 + 21*u^5 + 21*u^4 + 8*u^3 + 14*u^2 + 24*u",
+  "subresultant_profile": [
+    {
+      "X_degree": 0,
+      "coefficient_degree": 1702,
+      "coefficient_terms": 1703
+    },
+    {
+      "X_degree": 1,
+      "coefficient_degree": 1668,
+      "coefficient_terms": 3337
+    },
+    {
+      "X_degree": 2,
+      "coefficient_degree": 1633,
+      "coefficient_terms": 4898
+    },
+    {
+      "X_degree": 3,
+      "coefficient_degree": 1597,
+      "coefficient_terms": 6386
+    },
+    {
+      "X_degree": 4,
+      "coefficient_degree": 1560,
+      "coefficient_terms": 7799
+    },
+    {
+      "X_degree": 5,
+      "coefficient_degree": 1523,
+      "coefficient_terms": 9137
+    },
+    {
+      "X_degree": 6,
+      "coefficient_degree": 1487,
+      "coefficient_terms": 10408
+    },
+    {
+      "X_degree": 7,
+      "coefficient_degree": 1452,
+      "coefficient_terms": 11613
+    },
+    {
+      "X_degree": 8,
+      "coefficient_degree": 1417,
+      "coefficient_terms": 12747
+    },
+    {
+      "X_degree": 9,
+      "coefficient_degree": 1381,
+      "coefficient_terms": 13803
+    },
+    {
+      "X_degree": 10,
+      "coefficient_degree": 1345,
+      "coefficient_terms": 14788
+    },
+    {
+      "X_degree": 11,
+      "coefficient_degree": 1308,
+      "coefficient_terms": 15691
+    },
+    {
+      "X_degree": 12,
+      "coefficient_degree": 1271,
+      "coefficient_terms": 16519
+    },
+    {
+      "X_degree": 13,
+      "coefficient_degree": 1235,
+      "coefficient_terms": 17288
+    },
+    {
+      "X_degree": 14,
+      "coefficient_degree": 1200,
+      "coefficient_terms": 17995
+    },
+    {
+      "X_degree": 15,
+      "coefficient_degree": 1165,
+      "coefficient_terms": 18629
+    },
+    {
+      "X_degree": 16,
+      "coefficient_degree": 1129,
+      "coefficient_terms": 19180
+    },
+    {
+      "X_degree": 17,
+      "coefficient_degree": 1093,
+      "coefficient_terms": 19662
+    },
+    {
+      "X_degree": 18,
+      "coefficient_degree": 1056,
+      "coefficient_terms": 20058
+    },
+    {
+      "X_degree": 19,
+      "coefficient_degree": 1019,
+      "coefficient_terms": 20377
+    },
+    {
+      "X_degree": 20,
+      "coefficient_degree": 983,
+      "coefficient_terms": 20640
+    },
+    {
+      "X_degree": 21,
+      "coefficient_degree": 948,
+      "coefficient_terms": 20849
+    },
+    {
+      "X_degree": 22,
+      "coefficient_degree": 913,
+      "coefficient_terms": 20983
+    },
+    {
+      "X_degree": 23,
+      "coefficient_degree": 877,
+      "coefficient_terms": 21030
+    },
+    {
+      "X_degree": 24,
+      "coefficient_degree": 841,
+      "coefficient_terms": 21008
+    },
+    {
+      "X_degree": 25,
+      "coefficient_degree": 804,
+      "coefficient_terms": 20897
+    },
+    {
+      "X_degree": 26,
+      "coefficient_degree": 766,
+      "coefficient_terms": 20673
+    },
+    {
+      "X_degree": 27,
+      "coefficient_degree": 730,
+      "coefficient_terms": 20429
+    },
+    {
+      "X_degree": 28,
+      "coefficient_degree": 696,
+      "coefficient_terms": 20172
+    },
+    {
+      "X_degree": 29,
+      "coefficient_degree": 661,
+      "coefficient_terms": 19807
+    },
+    {
+      "X_degree": 30,
+      "coefficient_degree": 625,
+      "coefficient_terms": 19352
+    },
+    {
+      "X_degree": 31,
+      "coefficient_degree": 589,
+      "coefficient_terms": 18821
+    },
+    {
+      "X_degree": 32,
+      "coefficient_degree": 552,
+      "coefficient_terms": 18204
+    },
+    {
+      "X_degree": 33,
+      "coefficient_degree": 515,
+      "coefficient_terms": 17502
+    },
+    {
+      "X_degree": 34,
+      "coefficient_degree": 479,
+      "coefficient_terms": 16759
+    },
+    {
+      "X_degree": 35,
+      "coefficient_degree": 444,
+      "coefficient_terms": 15972
+    },
+    {
+      "X_degree": 36,
+      "coefficient_degree": 409,
+      "coefficient_terms": 15103
+    },
+    {
+      "X_degree": 37,
+      "coefficient_degree": 373,
+      "coefficient_terms": 14148
+    },
+    {
+      "X_degree": 38,
+      "coefficient_degree": 337,
+      "coefficient_terms": 13116
+    },
+    {
+      "X_degree": 39,
+      "coefficient_degree": 300,
+      "coefficient_terms": 11989
+    },
+    {
+      "X_degree": 40,
+      "coefficient_degree": 263,
+      "coefficient_terms": 10777
+    },
+    {
+      "X_degree": 41,
+      "coefficient_degree": 227,
+      "coefficient_terms": 9528
+    },
+    {
+      "X_degree": 42,
+      "coefficient_degree": 192,
+      "coefficient_terms": 8243
+    },
+    {
+      "X_degree": 43,
+      "coefficient_degree": 157,
+      "coefficient_terms": 6876
+    },
+    {
+      "X_degree": 44,
+      "coefficient_degree": 121,
+      "coefficient_terms": 5431
+    },
+    {
+      "X_degree": 45,
+      "coefficient_degree": 85,
+      "coefficient_terms": 3917
+    },
+    {
+      "X_degree": 46,
+      "coefficient_degree": 51,
+      "coefficient_terms": 2383
+    }
+  ],
+  "low_principal_subresultant_gcd": "u^16 + 16*u^14 + 17*u^12 + 4*u^10 + 28*u^9 + 9*u^8 + 6*u^7 + 8*u^6 + 19*u^5 + 19*u^4 + 10*u^3 + 3*u^2 + u",
+  "line_candidate_factorization": "u * (u + 20) * (u^2 + 24*u + 13) * (u^4 + 7*u^3 + 5*u^2 + 26*u + 9) * (u^8 + 7*u^7 + 13*u^6 + 4*u^5 + 17*u^4 + 19*u^2 + 5*u + 16)",
+  "projective_endpoint": {
+    "X_degree": 45,
+    "finite_gcd_degree": 2,
+    "infinity_gcd_contribution": 2,
+    "binary_partial_gcd_degree": 4,
+    "eligible": false
+  },
+  "exact_algebraic_parameter_checks": [
+    {
+      "parameter_polynomial": "u",
+      "residue_degree": 1,
+      "X_degree": 47,
+      "finite_gcd_degree": 0,
+      "infinity_gcd_contribution": 0,
+      "binary_partial_gcd_degree": 0,
+      "eligible": false
+    },
+    {
+      "parameter_polynomial": "u + 20",
+      "residue_degree": 1,
+      "X_degree": 47,
+      "finite_gcd_degree": 2,
+      "infinity_gcd_contribution": 0,
+      "binary_partial_gcd_degree": 2,
+      "eligible": false
+    },
+    {
+      "parameter_polynomial": "u^2 + 24*u + 13",
+      "residue_degree": 2,
+      "X_degree": 47,
+      "finite_gcd_degree": 0,
+      "infinity_gcd_contribution": 0,
+      "binary_partial_gcd_degree": 0,
+      "eligible": false
+    },
+    {
+      "parameter_polynomial": "u^4 + 7*u^3 + 5*u^2 + 26*u + 9",
+      "residue_degree": 4,
+      "X_degree": 47,
+      "finite_gcd_degree": 0,
+      "infinity_gcd_contribution": 0,
+      "binary_partial_gcd_degree": 0,
+      "eligible": false
+    },
+    {
+      "parameter_polynomial": "u^8 + 7*u^7 + 13*u^6 + 4*u^5 + 17*u^4 + 19*u^2 + 5*u + 16",
+      "residue_degree": 8,
+      "X_degree": 47,
+      "finite_gcd_degree": 0,
+      "infinity_gcd_contribution": 0,
+      "binary_partial_gcd_degree": 0,
+      "eligible": false
+    }
+  ],
+  "scope": "Global binary gcd>=15 test on this projective parameter line; zero discriminants require separate treatment; no plane exclusion."
+}

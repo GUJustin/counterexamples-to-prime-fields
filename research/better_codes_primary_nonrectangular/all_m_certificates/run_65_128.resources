@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/tmp/primary_all_m_slope",
+    "65",
+    "128",
+    "research/better_codes_primary_nonrectangular/all_m_certificates"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 5.3481027919915505,
+  "peak_rss_kib": 31840,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

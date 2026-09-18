@@ -1,0 +1,80 @@
+{
+  "phase": "inspect",
+  "input_sha256": "44d077d43686928aef94f1c51364361dce982e49e60c9ad2bdd32d1c1b0916a5",
+  "status": "started",
+  "seconds": 0.03845938900485635,
+  "specialized_gcds": [
+    {
+      "s": 0,
+      "t": 0,
+      "degree": 44,
+      "gcd_degree": 1
+    },
+    {
+      "s": 0,
+      "t": 1,
+      "degree": 47,
+      "gcd_degree": 0
+    },
+    {
+      "s": 1,
+      "t": 0,
+      "degree": 48,
+      "gcd_degree": 0
+    },
+    {
+      "s": 1,
+      "t": 1,
+      "degree": 48,
+      "gcd_degree": 0
+    },
+    {
+      "s": 1,
+      "t": 2,
+      "degree": 48,
+      "gcd_degree": 0
+    },
+    {
+      "s": 2,
+      "t": 1,
+      "degree": 48,
+      "gcd_degree": 0
+    },
+    {
+      "s": 2,
+      "t": 3,
+      "degree": 48,
+      "gcd_degree": 0
+    },
+    {
+      "s": 3,
+      "t": 2,
+      "degree": 48,
+      "gcd_degree": 0
+    },
+    {
+      "s": 4,
+      "t": 7,
+      "degree": 47,
+      "gcd_degree": 2
+    },
+    {
+      "s": 7,
+      "t": 4,
+      "degree": 48,
+      "gcd_degree": 4
+    },
+    {
+      "s": 11,
+      "t": 13,
+      "degree": 48,
+      "gcd_degree": 1
+    },
+    {
+      "s": 13,
+      "t": 11,
+      "degree": 48,
+      "gcd_degree": 0
+    }
+  ]
+}

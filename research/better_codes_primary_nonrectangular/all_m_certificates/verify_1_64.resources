@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/better_codes_primary_nonrectangular/verify_all_m.py",
+    "1",
+    "64"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5378212079958757,
+  "peak_rss_kib": 6416,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}
