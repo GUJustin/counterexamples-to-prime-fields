@@ -185,6 +185,37 @@ $\mathbb F_q$ under the same conditions with $p$ replaced by $q$.
 It uses the cyclic multiplicative group and polynomial root bounds,
 so it does not give a separation specific to prime characteristic.
 
+\begin{proposition}[A resource bound for disjoint scalar blocks]
+\label{prop:scalar-block-resource-bound}
+Partition a nonzero evaluation domain into a set $Z$ and disjoint
+blocks $E_j$.  Suppose $g=0$ on $Z$, and $f=0$, $g=X^2/b_j$ on
+$E_j$, for distinct nonzero $b_j$.  If ordinary common agreement
+is at most $A>0$, then the number of nonzero parameters having a
+pure quadratic witness at agreement at least $A+d$, for $d>0$, is
+at most
+\[
+ \frac{|Z|\sum_j|E_j|}{Ad}\le\frac{n^2}{4Ad}.
+\]
+If every threshold witness at a nonzero parameter is pure quadratic,
+this bounds all nonzero successful parameters.  In particular,
+$A,d=\Omega(\sqrt n)$ forces an $O(n)$ count in this architecture.
+\end{proposition}
+\begin{proof}
+For $a\ne0$ put $c_a=|\{x\in Z:f(x)=ax^2\}|$ and $D_j=|E_j|$.
+Nonzero coordinates give $\sum_a c_a\le|Z|$.  The explaining pairs
+$(aX^2,0)$ and $(0,X^2/b_j)$ give $c_a,D_j\le A$.
+At a nonzero parameter, a pure quadratic can match at most one
+fresh block, and does so precisely when $\lambda=ab_j$.
+Thus a qualifying pair satisfies $c_a+D_j\ge A+d$.
+There are none if $d>A$; otherwise this inequality and
+$c_a,D_j\le A$ imply $c_aD_j\ge Ad$.
+Summing over qualifying pairs gives their number at most
+$(\sum_a c_a)(\sum_jD_j)/(Ad)$.  Their products $ab_j$ cover
+the successful parameters under consideration, proving the claim.
+The zero polynomial cannot qualify at a nonzero parameter: it has
+no fresh matches and at most $A$ zero-direction matches.
+\end{proof}
+
 \begin{corollary}[A certified length-$65536$ instance]
 \label{cor:square-linear-block-bank-65536}
 Over $\mathbb F_{131071}$ there is a dimension-three Reed--Solomon

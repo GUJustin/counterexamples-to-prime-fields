@@ -1,0 +1,1003 @@
+{
+  "status": "PASS: bounded full-field census and independent all-triples selected replay",
+  "profile_count": 224,
+  "prime_exponent_counts": {
+    "31": 28,
+    "43": 40,
+    "61": 58,
+    "101": 98
+  },
+  "threshold_maxima": [
+    {
+      "p": 31,
+      "A": 3,
+      "c_numerator": 1,
+      "c_denominator": 2,
+      "maximum_list_size": 4495,
+      "attaining_exponents": [
+        3
+      ],
+      "L_over_sqrt_n": 807.3258326103532
+    },
+    {
+      "p": 31,
+      "A": 6,
+      "c_numerator": 1,
+      "c_denominator": 1,
+      "maximum_list_size": 56,
+      "attaining_exponents": [
+        6,
+        26
+      ],
+      "L_over_sqrt_n": 10.057896913499395
+    },
+    {
+      "p": 31,
+      "A": 8,
+      "c_numerator": 13,
+      "c_denominator": 10,
+      "maximum_list_size": 3,
+      "attaining_exponents": [
+        10,
+        11,
+        12,
+        20,
+        21,
+        22
+      ],
+      "L_over_sqrt_n": 0.5388159060803247
+    },
+    {
+      "p": 43,
+      "A": 4,
+      "c_numerator": 1,
+      "c_denominator": 2,
+      "maximum_list_size": 2870,
+      "attaining_exponents": [
+        4
+      ],
+      "L_over_sqrt_n": 437.6708968545754
+    },
+    {
+      "p": 43,
+      "A": 7,
+      "c_numerator": 1,
+      "c_denominator": 1,
+      "maximum_list_size": 13,
+      "attaining_exponents": [
+        7,
+        8,
+        37
+      ],
+      "L_over_sqrt_n": 1.9824814143238607
+    },
+    {
+      "p": 43,
+      "A": 9,
+      "c_numerator": 13,
+      "c_denominator": 10,
+      "maximum_list_size": 3,
+      "attaining_exponents": [
+        14,
+        15,
+        16,
+        28,
+        29,
+        30
+      ],
+      "L_over_sqrt_n": 0.457495710997814
+    },
+    {
+      "p": 61,
+      "A": 4,
+      "c_numerator": 1,
+      "c_denominator": 2,
+      "maximum_list_size": 8555,
+      "attaining_exponents": [
+        4
+      ],
+      "L_over_sqrt_n": 1095.355507825925
+    },
+    {
+      "p": 61,
+      "A": 8,
+      "c_numerator": 1,
+      "c_denominator": 1,
+      "maximum_list_size": 11,
+      "attaining_exponents": [
+        12,
+        50
+      ],
+      "L_over_sqrt_n": 1.4084056792618558
+    },
+    {
+      "p": 61,
+      "A": 11,
+      "c_numerator": 13,
+      "c_denominator": 10,
+      "maximum_list_size": 11,
+      "attaining_exponents": [
+        12
+      ],
+      "L_over_sqrt_n": 1.4084056792618558
+    },
+    {
+      "p": 101,
+      "A": 6,
+      "c_numerator": 1,
+      "c_denominator": 2,
+      "maximum_list_size": 1420,
+      "attaining_exponents": [
+        6
+      ],
+      "L_over_sqrt_n": 141.29528100981847
+    },
+    {
+      "p": 101,
+      "A": 11,
+      "c_numerator": 1,
+      "c_denominator": 1,
+      "maximum_list_size": 10,
+      "attaining_exponents": [
+        11,
+        12,
+        31,
+        32,
+        71,
+        72,
+        91,
+        92
+      ],
+      "L_over_sqrt_n": 0.9950371902099892
+    },
+    {
+      "p": 101,
+      "A": 14,
+      "c_numerator": 13,
+      "c_denominator": 10,
+      "maximum_list_size": 5,
+      "attaining_exponents": [
+        20,
+        21,
+        22,
+        40,
+        41,
+        42,
+        60,
+        61,
+        62,
+        80,
+        81,
+        82
+      ],
+      "L_over_sqrt_n": 0.4975185951049946
+    }
+  ],
+  "selected_bank_summaries": [
+    {
+      "p": 31,
+      "e": 5,
+      "coefficient_order": "quadratic, linear, constant",
+      "all_coefficients_nonzero": false,
+      "threshold": 5,
+      "bank_size": 186,
+      "bank_agreement_histogram": {
+        "5": 186
+      },
+      "ownership_histogram": {
+        "30": 31
+      },
+      "augmented_coefficient_rank": 4,
+      "L_over_sqrt_n": 33.406586176980134,
+      "minimum_agreement_over_sqrt_n": 0.8980265101338746,
+      "maximum_ownership": 30,
+      "coordinates_with_at_least_three_owners": 31,
+      "primitive_generator": 3,
+      "multiplicative_orbits": [
+        {
+          "representative_coefficients_descending": [
+            0,
+            0,
+            1
+          ],
+          "size": 6
+        },
+        {
+          "representative_coefficients_descending": [
+            1,
+            6,
+            7
+          ],
+          "size": 30
+        },
+        {
+          "representative_coefficients_descending": [
+            3,
+            4,
+            25
+          ],
+          "size": 30
+        },
+        {
+          "representative_coefficients_descending": [
+            3,
+            11,
+            18
+          ],
+          "size": 30
+        },
+        {
+          "representative_coefficients_descending": [
+            5,
+            1,
+            10
+          ],
+          "size": 30
+        },
+        {
+          "representative_coefficients_descending": [
+            5,
+            2,
+            22
+          ],
+          "size": 30
+        },
+        {
+          "representative_coefficients_descending": [
+            5,
+            6,
+            0
+          ],
+          "size": 30
+        }
+      ],
+      "selection_reason": "balanced factor"
+    },
+    {
+      "p": 31,
+      "e": 6,
+      "coefficient_order": "quadratic, linear, constant",
+      "all_coefficients_nonzero": false,
+      "threshold": 6,
+      "bank_size": 56,
+      "bank_agreement_histogram": {
+        "6": 56
+      },
+      "ownership_histogram": {
+        "6": 1,
+        "11": 30
+      },
+      "augmented_coefficient_rank": 4,
+      "L_over_sqrt_n": 10.057896913499395,
+      "minimum_agreement_over_sqrt_n": 1.0776318121606494,
+      "maximum_ownership": 11,
+      "coordinates_with_at_least_three_owners": 31,
+      "primitive_generator": 3,
+      "multiplicative_orbits": [
+        {
+          "representative_coefficients_descending": [
+            0,
+            0,
+            1
+          ],
+          "size": 5
+        },
+        {
+          "representative_coefficients_descending": [
+            0,
+            1,
+            0
+          ],
+          "size": 6
+        },
+        {
+          "representative_coefficients_descending": [
+            1,
+            0,
+            7
+          ],
+          "size": 15
+        },
+        {
+          "representative_coefficients_descending": [
+            3,
+            1,
+            23
+          ],
+          "size": 30
+        }
+      ],
+      "selection_reason": "balanced factor"
+    },
+    {
+      "p": 31,
+      "e": 6,
+      "coefficient_order": "quadratic, linear, constant",
+      "all_coefficients_nonzero": true,
+      "threshold": 6,
+      "bank_size": 30,
+      "bank_agreement_histogram": {
+        "6": 30
+      },
+      "ownership_histogram": {
+        "0": 1,
+        "6": 30
+      },
+      "augmented_coefficient_rank": 4,
+      "L_over_sqrt_n": 5.388159060803248,
+      "minimum_agreement_over_sqrt_n": 1.0776318121606494,
+      "maximum_ownership": 6,
+      "coordinates_with_at_least_three_owners": 30,
+      "primitive_generator": 3,
+      "multiplicative_orbits": [
+        {
+          "representative_coefficients_descending": [
+            3,
+            1,
+            23
+          ],
+          "size": 30
+        }
+      ],
+      "selection_reason": "full-coefficient rich bank"
+    },
+    {
+      "p": 43,
+      "e": 6,
+      "coefficient_order": "quadratic, linear, constant",
+      "all_coefficients_nonzero": false,
+      "threshold": 6,
+      "bank_size": 70,
+      "bank_agreement_histogram": {
+        "6": 70
+      },
+      "ownership_histogram": {
+        "0": 1,
+        "10": 42
+      },
+      "augmented_coefficient_rank": 4,
+      "L_over_sqrt_n": 10.674899923282327,
+      "minimum_agreement_over_sqrt_n": 0.914991421995628,
+      "maximum_ownership": 10,
+      "coordinates_with_at_least_three_owners": 42,
+      "primitive_generator": 3,
+      "multiplicative_orbits": [
+        {
+          "representative_coefficients_descending": [
+            0,
+            0,
+            1
+          ],
+          "size": 7
+        },
+        {
+          "representative_coefficients_descending": [
+            1,
+            0,
+            38
+          ],
+          "size": 21
+        },
+        {
+          "representative_coefficients_descending": [
+            1,
+            12,
+            36
+          ],
+          "size": 42
+        }
+      ],
+      "selection_reason": "balanced factor"
+    },
+    {
+      "p": 43,
+      "e": 7,
+      "coefficient_order": "quadratic, linear, constant",
+      "all_coefficients_nonzero": false,
+      "threshold": 7,
+      "bank_size": 13,
+      "bank_agreement_histogram": {
+        "7": 13
+      },
+      "ownership_histogram": {
+        "7": 1,
+        "2": 42
+      },
+      "augmented_coefficient_rank": 3,
+      "L_over_sqrt_n": 1.9824814143238607,
+      "minimum_agreement_over_sqrt_n": 1.0674899923282326,
+      "maximum_ownership": 7,
+      "coordinates_with_at_least_three_owners": 1,
+      "primitive_generator": 3,
+      "multiplicative_orbits": [
+        {
+          "representative_coefficients_descending": [
+            0,
+            0,
+            1
+          ],
+          "size": 6
+        },
+        {
+          "representative_coefficients_descending": [
+            0,
+            1,
+            0
+          ],
+          "size": 7
+        }
+      ],
+      "selection_reason": "balanced factor"
+    },
+    {
+      "p": 43,
+      "e": 20,
+      "coefficient_order": "quadratic, linear, constant",
+      "all_coefficients_nonzero": false,
+      "threshold": 7,
+      "bank_size": 7,
+      "bank_agreement_histogram": {
+        "7": 7
+      },
+      "ownership_histogram": {
+        "7": 1,
+        "1": 42
+      },
+      "augmented_coefficient_rank": 2,
+      "L_over_sqrt_n": 1.0674899923282326,
+      "minimum_agreement_over_sqrt_n": 1.0674899923282326,
+      "maximum_ownership": 7,
+      "coordinates_with_at_least_three_owners": 1,
+      "primitive_generator": 3,
+      "multiplicative_orbits": [
+        {
+          "representative_coefficients_descending": [
+            1,
+            0,
+            0
+          ],
+          "size": 7
+        }
+      ],
+      "selection_reason": "selected complete nearest list"
+    },
+    {
+      "p": 43,
+      "e": 20,
+      "coefficient_order": "quadratic, linear, constant",
+      "all_coefficients_nonzero": true,
+      "threshold": 6,
+      "bank_size": 84,
+      "bank_agreement_histogram": {
+        "6": 84
+      },
+      "ownership_histogram": {
+        "0": 1,
+        "12": 42
+      },
+      "augmented_coefficient_rank": 4,
+      "L_over_sqrt_n": 12.809879907938793,
+      "minimum_agreement_over_sqrt_n": 0.914991421995628,
+      "maximum_ownership": 12,
+      "coordinates_with_at_least_three_owners": 42,
+      "primitive_generator": 3,
+      "multiplicative_orbits": [
+        {
+          "representative_coefficients_descending": [
+            6,
+            2,
+            36
+          ],
+          "size": 42
+        },
+        {
+          "representative_coefficients_descending": [
+            9,
+            1,
+            7
+          ],
+          "size": 42
+        }
+      ],
+      "selection_reason": "full-coefficient rich bank"
+    },
+    {
+      "p": 61,
+      "e": 6,
+      "coefficient_order": "quadratic, linear, constant",
+      "all_coefficients_nonzero": false,
+      "threshold": 6,
+      "bank_size": 142,
+      "bank_agreement_histogram": {
+        "6": 142
+      },
+      "ownership_histogram": {
+        "12": 1,
+        "14": 60
+      },
+      "augmented_coefficient_rank": 4,
+      "L_over_sqrt_n": 18.18123695047123,
+      "minimum_agreement_over_sqrt_n": 0.7682212795973759,
+      "maximum_ownership": 14,
+      "coordinates_with_at_least_three_owners": 61,
+      "primitive_generator": 2,
+      "multiplicative_orbits": [
+        {
+          "representative_coefficients_descending": [
+            0,
+            0,
+            1
+          ],
+          "size": 10
+        },
+        {
+          "representative_coefficients_descending": [
+            0,
+            1,
+            0
+          ],
+          "size": 12
+        },
+        {
+          "representative_coefficients_descending": [
+            1,
+            0,
+            12
+          ],
+          "size": 30
+        },
+        {
+          "representative_coefficients_descending": [
+            6,
+            0,
+            9
+          ],
+          "size": 30
+        },
+        {
+          "representative_coefficients_descending": [
+            6,
+            19,
+            40
+          ],
+          "size": 60
+        }
+      ],
+      "selection_reason": "balanced factor"
+    },
+    {
+      "p": 61,
+      "e": 9,
+      "coefficient_order": "quadratic, linear, constant",
+      "all_coefficients_nonzero": false,
+      "threshold": 7,
+      "bank_size": 60,
+      "bank_agreement_histogram": {
+        "7": 60
+      },
+      "ownership_histogram": {
+        "0": 1,
+        "7": 60
+      },
+      "augmented_coefficient_rank": 4,
+      "L_over_sqrt_n": 7.682212795973759,
+      "minimum_agreement_over_sqrt_n": 0.8962581595302719,
+      "maximum_ownership": 7,
+      "coordinates_with_at_least_three_owners": 60,
+      "primitive_generator": 2,
+      "multiplicative_orbits": [
+        {
+          "representative_coefficients_descending": [
+            1,
+            26,
+            24
+          ],
+          "size": 60
+        }
+      ],
+      "selection_reason": "selected complete nearest list"
+    },
+    {
+      "p": 61,
+      "e": 9,
+      "coefficient_order": "quadratic, linear, constant",
+      "all_coefficients_nonzero": true,
+      "threshold": 7,
+      "bank_size": 60,
+      "bank_agreement_histogram": {
+        "7": 60
+      },
+      "ownership_histogram": {
+        "0": 1,
+        "7": 60
+      },
+      "augmented_coefficient_rank": 4,
+      "L_over_sqrt_n": 7.682212795973759,
+      "minimum_agreement_over_sqrt_n": 0.8962581595302719,
+      "maximum_ownership": 7,
+      "coordinates_with_at_least_three_owners": 60,
+      "primitive_generator": 2,
+      "multiplicative_orbits": [
+        {
+          "representative_coefficients_descending": [
+            1,
+            26,
+            24
+          ],
+          "size": 60
+        }
+      ],
+      "selection_reason": "full-coefficient rich bank"
+    },
+    {
+      "p": 61,
+      "e": 10,
+      "coefficient_order": "quadratic, linear, constant",
+      "all_coefficients_nonzero": false,
+      "threshold": 10,
+      "bank_size": 6,
+      "bank_agreement_histogram": {
+        "10": 6
+      },
+      "ownership_histogram": {
+        "0": 1,
+        "1": 60
+      },
+      "augmented_coefficient_rank": 2,
+      "L_over_sqrt_n": 0.7682212795973759,
+      "minimum_agreement_over_sqrt_n": 1.2803687993289599,
+      "maximum_ownership": 1,
+      "coordinates_with_at_least_three_owners": 0,
+      "primitive_generator": 2,
+      "multiplicative_orbits": [
+        {
+          "representative_coefficients_descending": [
+            0,
+            0,
+            1
+          ],
+          "size": 6
+        }
+      ],
+      "selection_reason": "balanced factor"
+    },
+    {
+      "p": 101,
+      "e": 6,
+      "coefficient_order": "quadratic, linear, constant",
+      "all_coefficients_nonzero": false,
+      "threshold": 6,
+      "bank_size": 1420,
+      "bank_agreement_histogram": {
+        "6": 1420
+      },
+      "ownership_histogram": {
+        "120": 1,
+        "84": 100
+      },
+      "augmented_coefficient_rank": 4,
+      "L_over_sqrt_n": 141.29528100981847,
+      "minimum_agreement_over_sqrt_n": 0.5970223141259935,
+      "maximum_ownership": 120,
+      "coordinates_with_at_least_three_owners": 101,
+      "primitive_generator": 2,
+      "multiplicative_orbits": [
+        {
+          "representative_coefficients_descending": [
+            0,
+            1,
+            0
+          ],
+          "size": 20
+        },
+        {
+          "representative_coefficients_descending": [
+            1,
+            0,
+            49
+          ],
+          "size": 50
+        },
+        {
+          "representative_coefficients_descending": [
+            1,
+            13,
+            46
+          ],
+          "size": 100
+        },
+        {
+          "representative_coefficients_descending": [
+            1,
+            17,
+            52
+          ],
+          "size": 100
+        },
+        {
+          "representative_coefficients_descending": [
+            1,
+            34,
+            14
+          ],
+          "size": 100
+        },
+        {
+          "representative_coefficients_descending": [
+            2,
+            0,
+            1
+          ],
+          "size": 50
+        },
+        {
+          "representative_coefficients_descending": [
+            2,
+            3,
+            46
+          ],
+          "size": 100
+        },
+        {
+          "representative_coefficients_descending": [
+            2,
+            9,
+            77
+          ],
+          "size": 100
+        },
+        {
+          "representative_coefficients_descending": [
+            2,
+            13,
+            0
+          ],
+          "size": 100
+        },
+        {
+          "representative_coefficients_descending": [
+            4,
+            0,
+            14
+          ],
+          "size": 50
+        },
+        {
+          "representative_coefficients_descending": [
+            4,
+            0,
+            45
+          ],
+          "size": 50
+        },
+        {
+          "representative_coefficients_descending": [
+            4,
+            5,
+            82
+          ],
+          "size": 100
+        },
+        {
+          "representative_coefficients_descending": [
+            4,
+            14,
+            88
+          ],
+          "size": 100
+        },
+        {
+          "representative_coefficients_descending": [
+            8,
+            13,
+            64
+          ],
+          "size": 100
+        },
+        {
+          "representative_coefficients_descending": [
+            8,
+            18,
+            85
+          ],
+          "size": 100
+        },
+        {
+          "representative_coefficients_descending": [
+            8,
+            26,
+            74
+          ],
+          "size": 100
+        },
+        {
+          "representative_coefficients_descending": [
+            8,
+            34,
+            11
+          ],
+          "size": 100
+        }
+      ],
+      "selection_reason": "selected complete nearest list"
+    },
+    {
+      "p": 101,
+      "e": 10,
+      "coefficient_order": "quadratic, linear, constant",
+      "all_coefficients_nonzero": false,
+      "threshold": 10,
+      "bank_size": 10,
+      "bank_agreement_histogram": {
+        "10": 10
+      },
+      "ownership_histogram": {
+        "0": 1,
+        "1": 100
+      },
+      "augmented_coefficient_rank": 2,
+      "L_over_sqrt_n": 0.9950371902099892,
+      "minimum_agreement_over_sqrt_n": 0.9950371902099892,
+      "maximum_ownership": 1,
+      "coordinates_with_at_least_three_owners": 0,
+      "primitive_generator": 2,
+      "multiplicative_orbits": [
+        {
+          "representative_coefficients_descending": [
+            0,
+            0,
+            1
+          ],
+          "size": 10
+        }
+      ],
+      "selection_reason": "balanced factor"
+    },
+    {
+      "p": 101,
+      "e": 37,
+      "coefficient_order": "quadratic, linear, constant",
+      "all_coefficients_nonzero": false,
+      "threshold": 8,
+      "bank_size": 100,
+      "bank_agreement_histogram": {
+        "8": 100
+      },
+      "ownership_histogram": {
+        "0": 1,
+        "8": 100
+      },
+      "augmented_coefficient_rank": 4,
+      "L_over_sqrt_n": 9.950371902099892,
+      "minimum_agreement_over_sqrt_n": 0.7960297521679913,
+      "maximum_ownership": 8,
+      "coordinates_with_at_least_three_owners": 100,
+      "primitive_generator": 2,
+      "multiplicative_orbits": [
+        {
+          "representative_coefficients_descending": [
+            3,
+            9,
+            83
+          ],
+          "size": 100
+        }
+      ],
+      "selection_reason": "selected complete nearest list"
+    },
+    {
+      "p": 101,
+      "e": 37,
+      "coefficient_order": "quadratic, linear, constant",
+      "all_coefficients_nonzero": true,
+      "threshold": 8,
+      "bank_size": 100,
+      "bank_agreement_histogram": {
+        "8": 100
+      },
+      "ownership_histogram": {
+        "0": 1,
+        "8": 100
+      },
+      "augmented_coefficient_rank": 4,
+      "L_over_sqrt_n": 9.950371902099892,
+      "minimum_agreement_over_sqrt_n": 0.7960297521679913,
+      "maximum_ownership": 8,
+      "coordinates_with_at_least_three_owners": 100,
+      "primitive_generator": 2,
+      "multiplicative_orbits": [
+        {
+          "representative_coefficients_descending": [
+            3,
+            9,
+            83
+          ],
+          "size": 100
+        }
+      ],
+      "selection_reason": "full-coefficient rich bank"
+    }
+  ],
+  "independent_replays": [
+    {
+      "p": 31,
+      "e": 5,
+      "triples_reconstructed": 4495,
+      "complete_histogram_matches": true,
+      "full_coefficient_histogram_ge3_matches": true
+    },
+    {
+      "p": 31,
+      "e": 6,
+      "triples_reconstructed": 4495,
+      "complete_histogram_matches": true,
+      "full_coefficient_histogram_ge3_matches": true
+    },
+    {
+      "p": 43,
+      "e": 6,
+      "triples_reconstructed": 12341,
+      "complete_histogram_matches": true,
+      "full_coefficient_histogram_ge3_matches": true
+    },
+    {
+      "p": 43,
+      "e": 7,
+      "triples_reconstructed": 12341,
+      "complete_histogram_matches": true,
+      "full_coefficient_histogram_ge3_matches": true
+    },
+    {
+      "p": 43,
+      "e": 20,
+      "triples_reconstructed": 12341,
+      "complete_histogram_matches": true,
+      "full_coefficient_histogram_ge3_matches": true
+    },
+    {
+      "p": 61,
+      "e": 6,
+      "triples_reconstructed": 35990,
+      "complete_histogram_matches": true,
+      "full_coefficient_histogram_ge3_matches": true
+    },
+    {
+      "p": 61,
+      "e": 9,
+      "triples_reconstructed": 35990,
+      "complete_histogram_matches": true,
+      "full_coefficient_histogram_ge3_matches": true
+    },
+    {
+      "p": 61,
+      "e": 10,
+      "triples_reconstructed": 35990,
+      "complete_histogram_matches": true,
+      "full_coefficient_histogram_ge3_matches": true
+    },
+    {
+      "p": 101,
+      "e": 6,
+      "triples_reconstructed": 166650,
+      "complete_histogram_matches": true,
+      "full_coefficient_histogram_ge3_matches": true
+    },
+    {
+      "p": 101,
+      "e": 10,
+      "triples_reconstructed": 166650,
+      "complete_histogram_matches": true,
+      "full_coefficient_histogram_ge3_matches": true
+    },
+    {
+      "p": 101,
+      "e": 37,
+      "triples_reconstructed": 166650,
+      "complete_histogram_matches": true,
+      "full_coefficient_histogram_ge3_matches": true
+    }
+  ],
+  "selected_banks_sha256": "d68422b0b042e7b84353759fe4398c84e42f1141ee43cfddaed6e72cf890112f",
+  "scope": "Fixed small fields only; no asymptotic scaling or finite DKT placement claim.",
+  "elapsed_seconds": 0.3730550839973148
+}
