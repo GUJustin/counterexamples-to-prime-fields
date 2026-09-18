@@ -28,6 +28,6 @@ The rational irreducibility step above fails after reduction: T^128+1 splits int
 
 ## Remaining decisive lemma
 
-A positive next result must concern the REDUCED six-moment-plus-product distribution itself: either exhibit a fiber of size274980728111395088, or prove an excess-collision estimate of the strength already stated in SECOND_MOMENT_TARGET.md. A negative result would need a uniform modular fiber upper bound below that threshold. The packet identity supplies neither.
+A positive next result must concern the REDUCED six-moment-plus-product distribution itself: either exhibit a fiber of size274980728111395088, or prove an excess-collision estimate of the strength already stated in ../SECOND_MOMENT_TARGET.md. A negative result would need a uniform modular fiber upper bound below that threshold. The packet identity supplies neither.
 
 The inexpensive discriminating check is now exact: any proposed concentration construction whose equality proof lives over Q(zeta_256) is capped by8287155 and should be stopped before a larger computation. A proposed genuinely modular mechanism must identify which finite-field relations defeat this packet structure; rerunning product-class counts, coarser packets, or rotational quotienting does not do so. No inexpensive complete test of the six-dimensional modular distribution has been identified, and no large search is recommended on this evidence.
