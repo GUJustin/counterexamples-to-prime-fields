@@ -1,0 +1,34 @@
+[
+  {
+    "p": 3,
+    "quadratics": 729,
+    "histogram": {
+      "0": 261,
+      "2": 136,
+      "1": 288,
+      "3": 32,
+      "4": 4,
+      "6": 8
+    },
+    "bank": 8,
+    "zero_bank": 4,
+    "max_non_even_B_coefficients": 3
+  },
+  {
+    "p": 5,
+    "quadratics": 15625,
+    "histogram": {
+      "0": 5723,
+      "2": 3288,
+      "3": 848,
+      "1": 5592,
+      "4": 120,
+      "8": 6,
+      "10": 24,
+      "5": 24
+    },
+    "bank": 24,
+    "zero_bank": 6,
+    "max_non_even_B_coefficients": 5
+  }
+]

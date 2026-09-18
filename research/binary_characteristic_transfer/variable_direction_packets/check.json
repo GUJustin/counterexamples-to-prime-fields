@@ -1,0 +1,115 @@
+[
+  {
+    "p": 3,
+    "nonsquare": 2,
+    "r": 2,
+    "sets": 6,
+    "first_nonzero_elementary_symmetric": {
+      "2": 2,
+      "1": 4
+    },
+    "vanishing_prefix_counts": {
+      "1": 2
+    }
+  },
+  {
+    "p": 3,
+    "nonsquare": 2,
+    "r": 3,
+    "sets": 4,
+    "first_nonzero_elementary_symmetric": {
+      "1": 4
+    },
+    "vanishing_prefix_counts": {
+      "1": 0,
+      "2": 0
+    }
+  },
+  {
+    "p": 3,
+    "nonsquare": 2,
+    "r": 4,
+    "sets": 1,
+    "first_nonzero_elementary_symmetric": {
+      "4": 1
+    },
+    "vanishing_prefix_counts": {
+      "1": 1,
+      "2": 1,
+      "3": 1
+    }
+  },
+  {
+    "p": 5,
+    "nonsquare": 2,
+    "r": 2,
+    "sets": 15,
+    "first_nonzero_elementary_symmetric": {
+      "1": 12,
+      "2": 3
+    },
+    "vanishing_prefix_counts": {
+      "1": 3
+    }
+  },
+  {
+    "p": 5,
+    "nonsquare": 2,
+    "r": 3,
+    "sets": 20,
+    "first_nonzero_elementary_symmetric": {
+      "3": 2,
+      "1": 18
+    },
+    "vanishing_prefix_counts": {
+      "1": 2,
+      "2": 2
+    }
+  },
+  {
+    "p": 5,
+    "nonsquare": 2,
+    "r": 4,
+    "sets": 15,
+    "first_nonzero_elementary_symmetric": {
+      "1": 12,
+      "2": 3
+    },
+    "vanishing_prefix_counts": {
+      "1": 3,
+      "2": 0,
+      "3": 0
+    }
+  },
+  {
+    "p": 5,
+    "nonsquare": 2,
+    "r": 5,
+    "sets": 6,
+    "first_nonzero_elementary_symmetric": {
+      "1": 6
+    },
+    "vanishing_prefix_counts": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    }
+  },
+  {
+    "p": 5,
+    "nonsquare": 2,
+    "r": 6,
+    "sets": 1,
+    "first_nonzero_elementary_symmetric": {
+      "6": 1
+    },
+    "vanishing_prefix_counts": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 1,
+      "5": 1
+    }
+  }
+]
