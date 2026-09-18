@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "algorithm": "stdlib coefficient summation, no RREF",
+  "affine_identity": "1",
+  "boundary_identity": "1",
+  "endpoint_010_multiplicity": 0,
+  "seconds": 1.3570470809936523,
+  "input_sha256": "8883be6e1722b22614506dc18ddd0288361e17b7a630461447adc30751c3cae1",
+  "certificate_sha256": "009b85fc60fca273531f45926484a63fcec83fd83b19ebafb4c86b3a03ad6ae6"
+}

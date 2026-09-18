@@ -1,0 +1,25 @@
+{
+  "status": "PASS",
+  "method": "independent Hasse entries, exact integer Bareiss determinant",
+  "cases": [
+    {
+      "t": 2,
+      "rows": 63,
+      "columns": 63,
+      "minor_mod83": 67
+    },
+    {
+      "t": 5,
+      "rows": 28,
+      "columns": 12,
+      "minor_mod83": 49
+    },
+    {
+      "t": 10,
+      "rows": 14,
+      "columns": 5,
+      "minor_mod83": 31
+    }
+  ],
+  "seconds": 0.01949520800553728
+}

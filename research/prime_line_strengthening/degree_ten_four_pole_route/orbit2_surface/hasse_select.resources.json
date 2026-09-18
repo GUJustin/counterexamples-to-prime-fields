@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/prime_line_strengthening/degree_ten_four_pole_route/orbit2_surface/hasse_select.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.606655249997857,
+  "peak_rss_kib": 174976,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

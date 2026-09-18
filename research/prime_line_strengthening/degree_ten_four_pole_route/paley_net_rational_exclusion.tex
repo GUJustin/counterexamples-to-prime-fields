@@ -204,3 +204,111 @@ part preserves these contacts. Norm transitivity gives a power of the
 minimal monic equation; Gauss's lemma gives the same power after primitive
 polynomial clearing. The weighted norm bound must also hold, as in the
 stated uniform four-pole construction.
+
+\paragraph{The orbit-2 net.}
+The same method closes the other rigid seven-cubic bank, but its base
+geometry and interpolation have to be checked separately. Let $V_2$ be
+the space of weighted-degree-at-most-$34$, $Y$-degree-at-most-$10$
+polynomials having multiplicity at least four at the seven
+four-agreement points and at least six at the seven three-agreement
+points of the orbit-2 bank. Use its archived affine model over
+$\mathbb Q(q)$, where $q^3-10q^2+3q+1=0$.
+
+\begin{theorem}
+\label{thm:orbit-two-net-no-rational}
+No member of $V_2$ is an integral curve with rational normalization.
+Moreover, $V_2$ contains no nonzero polynomial $G^t$ with
+$t\in\{2,5,10\}$. Consequently this bank also admits no proper uniform
+degree-ten four-pole augmentation whose primitive norm equation has the
+stated caps and contacts.
+\end{theorem}
+
+\begin{proof}
+Reduce at $q=4$ above $83$. The fourteen points remain distinct. The
+$217$ prescribed Hasse equations have a $217$-column minor equal to
+$3$ modulo $83$ among the $220$ columns, independently checked by an
+exact integer determinant. Since there are exactly $217$ equations, this proves
+rank $217$ over the exact cubic field as well. Over the chosen DVR,
+solving those pivot variables with each of the three free variables
+set to one gives an integral kernel basis reducing to the saved modular
+basis. Thus no unverified lifting of a modular kernel is needed.
+
+In this case there are exactly fourteen basepoints, not sixteen.
+After dividing two pairwise resultants by their forced degree-$364$
+factor, their residual gcd is one. Specialized ordinate gcds at every
+known base coordinate contain only the prescribed point and power.
+The leading and infinity restrictions have gcd one, including the
+projective corner. All fourteen tangent-cone triples have rank three
+and no common projective zero. Hence one blowup at each point resolves
+the net, giving
+\[
+ L_2^2=16,\qquad K_SL_2=12,\qquad c_2(S)=18,
+ \qquad p_a(L_2)=15.
+\]
+The rank-three tangent maps also prohibit every base-multiplicity jump:
+an integral original member remains integral on the resolved surface.
+The affine jet-minor gcd is one. The boundary restrictions are
+nonconstant of degrees at most $4$ and $10$, and the exceptional
+restrictions have degrees $4$ or $6$. All are below $83$, so they are
+generically separable. The rank-one jet locus is finite on the whole
+surface.
+
+The expected-dimensional jet incidence therefore pushes to a degree-$90$
+discriminant cycle. Every old graph again contributes four: the
+ramification determinant is simple along it, and its two normal quartics
+are coprime of maximum degree four. The residual effective cycle has
+degree $62$. The remaining ramification factor $\Gamma_2$ is irreducible
+modulo $83$, of bidegree $(76,21)$ with $986$ terms. Its smooth rational
+point $(1,75)$, with gradient $(64,11)$, proves geometric irreducibility.
+
+No cyclic symmetry is assumed in the interpolation. There are $4,102$
+distinct certified images over
+$\mathbb F_{83}[r]/(r^3-r-3)$. Full homogeneous-degree-$62$
+interpolation has rank $2,015$ on $2,016$ columns; its unique relation
+$H_2$ has $1,990$ terms and vanishes at all the certified points.
+Since $4,102>62^2$, the same B\'ezout and kernel-dimension argument shows
+that its image has degree $62$ and exhausts the residual cycle with
+multiplicity one. The relative complete-intersection and proper
+cycle-specialization argument in the preceding proof identifies $H_2$
+as the reduction of the characteristic-zero residual discriminant.
+
+An integral rational member would have total delta $15$, hence residual
+discriminant multiplicity at least $15$, by the same generic-pencil
+Milnor-number argument. It lies off the old-factor lines. Explicit
+Hasse identities exclude that multiplicity everywhere in the parameter
+plane: on $a=1$ a linear combination of degree-bounded derivative
+multiples is $1$; on $a=0,c=1$ a univariate B\'ezout identity is $1$;
+and $[0:1:0]$ is not on $H_2$. The affine certificate comes from a
+full-rank $2,560$-by-$2,016$ row span and all identities are independently
+replayed by coefficient summation. Properness of the closed relative
+multiplicity locus then excludes the characteristic-zero member.
+
+For the nonprimitive cases, the same smaller jet matrices as above have
+full column rank modulo $83$:
+\[
+\begin{array}{c|c|c|c}
+ t&\text{matrix size}&\text{rank}&\text{certified maximal minor}\\\hline
+ 2&63\mathbin{\times}63&63&67\\
+ 5&28\mathbin{\times}12&12&49\\
+ 10&14\mathbin{\times}5&5&31
+\end{array}
+\]
+The selected original-row determinants were independently recomputed
+by integer Bareiss elimination. These unit minors exclude all three
+exact kernels. The primitive norm-power argument and properness
+hypotheses from the preceding paragraph now give the augmentation
+conclusion, without assuming that its pole allowance is attained.
+\end{proof}
+
+The separate receipts are in
+\path{research/prime_line_strengthening/degree_ten_four_pole_route/orbit2_surface/}.
+The complete proof and scope are in \path{EXCLUSION.md};
+\path{profile.json} and \path{old_graph_degrees.json} certify the base
+geometry and the seven degree-four contributions.
+\path{gauss_samples.verified.json} replays every source and jet-kernel
+witness; \path{gauss_image_interpolation.json} records the full
+interpolation. The explicit final identities and their independent
+replay are \path{hasse_multiplicity_gate.json} and
+\path{hasse_multiplicity_gate.verified.json}.
+The norm-power determinants are in \path{nonprimitive_norm_gate.json}
+and \path{nonprimitive_norm_gate.verified.json}.

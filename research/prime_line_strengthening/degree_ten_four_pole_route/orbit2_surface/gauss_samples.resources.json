@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/prime_line_strengthening/degree_ten_four_pole_route/orbit2_surface/sample_gauss.py",
+    "--target",
+    "4100",
+    "--seconds",
+    "50",
+    "--max-x",
+    "4000"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 9.170524125001975,
+  "peak_rss_kib": 41408,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

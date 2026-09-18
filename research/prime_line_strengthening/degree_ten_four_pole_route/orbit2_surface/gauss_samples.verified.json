@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "sample_sha256": "2e5e15d63e633ea7e0200142ce14d39a9da23cec63ce270b1e4e83b4175b9884",
+  "field_arithmetic": "independent tuple arithmetic, r^3=r+3",
+  "distinct_projective_images": 4102,
+  "source_curve_checks": 4102,
+  "jet_kernel_equations_checked": 12306,
+  "rank_two_checks": 4102,
+  "Bezout_threshold": 3844,
+  "seconds": 3.21102879200771
+}

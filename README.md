@@ -5,7 +5,7 @@ Working draft by Justin Thaler, September 18, 2026.
 [Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
 **Latest verified results (September 18, early morning):** the ePrint-style article
-is 216 pages with one-inch margins. New Theorem U.1 gives an exact
+is 218 pages with one-inch margins. New Theorem U.1 gives an exact
 seven-member nearest-codeword list at quarter rate: length28, dimension7,
 and fourteen agreements per candidate, over arbitrarily large prime fields.
 Two short cyclotomic identities give the construction; its complete-list proof
@@ -27,6 +27,10 @@ in characteristic zero and proves that it has no integral rational
 member. Its proof reconstructs a degree-62 discriminant and gives exact
 polynomial identities excluding the required multiplicity. The theorem
 concerns this particular net, not arbitrary degree-ten constructions.
+Theorem W.5 proves the corresponding exclusion for the orbit-2 uniform net,
+using a separately reconstructed degree-62 discriminant and independently
+verified projective multiplicity certificates. Both nets also exclude
+the possible nonprimitive norm powers under the stated augmentation hypotheses.
 
 
 Corollary 2.4 sharpens the shrinking-gap and prime-size lower bounds by

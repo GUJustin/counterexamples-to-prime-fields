@@ -1,0 +1,334 @@
+{
+  "status": "PASS",
+  "prime": 83,
+  "graphs": [
+    {
+      "old_graph": 0,
+      "parameter_line": [
+        0,
+        0,
+        1
+      ],
+      "line_basis": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "agreement": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "forced_degree": 27,
+      "normal_quartics": [
+        [
+          19,
+          6,
+          65,
+          1
+        ],
+        [
+          7,
+          36,
+          18,
+          37,
+          1
+        ]
+      ],
+      "Gauss_degree": 4
+    },
+    {
+      "old_graph": 1,
+      "parameter_line": [
+        1,
+        0,
+        33
+      ],
+      "line_basis": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          50,
+          0,
+          1
+        ]
+      ],
+      "agreement": [
+        0,
+        1,
+        2,
+        6,
+        7,
+        8,
+        10
+      ],
+      "forced_degree": 27,
+      "normal_quartics": [
+        [
+          41,
+          62,
+          53,
+          82,
+          7
+        ],
+        [
+          51,
+          70,
+          4,
+          49,
+          20
+        ]
+      ],
+      "Gauss_degree": 4
+    },
+    {
+      "old_graph": 2,
+      "parameter_line": [
+        1,
+        9,
+        3
+      ],
+      "line_basis": [
+        [
+          74,
+          1,
+          0
+        ],
+        [
+          80,
+          0,
+          1
+        ]
+      ],
+      "agreement": [
+        1,
+        2,
+        4,
+        5,
+        7,
+        11,
+        12
+      ],
+      "forced_degree": 27,
+      "normal_quartics": [
+        [
+          23,
+          48,
+          51,
+          34,
+          72
+        ],
+        [
+          42,
+          80,
+          6,
+          34,
+          27
+        ]
+      ],
+      "Gauss_degree": 4
+    },
+    {
+      "old_graph": 3,
+      "parameter_line": [
+        0,
+        1,
+        52
+      ],
+      "line_basis": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          31,
+          1
+        ]
+      ],
+      "agreement": [
+        0,
+        2,
+        3,
+        5,
+        8,
+        11,
+        13
+      ],
+      "forced_degree": 27,
+      "normal_quartics": [
+        [
+          56,
+          76,
+          46,
+          7,
+          79
+        ],
+        [
+          28,
+          74,
+          56,
+          23,
+          13
+        ]
+      ],
+      "Gauss_degree": 4
+    },
+    {
+      "old_graph": 4,
+      "parameter_line": [
+        1,
+        65,
+        50
+      ],
+      "line_basis": [
+        [
+          18,
+          1,
+          0
+        ],
+        [
+          33,
+          0,
+          1
+        ]
+      ],
+      "agreement": [
+        0,
+        2,
+        3,
+        4,
+        9,
+        10,
+        12
+      ],
+      "forced_degree": 27,
+      "normal_quartics": [
+        [
+          34,
+          64,
+          63,
+          49,
+          59
+        ],
+        [
+          34,
+          13,
+          8,
+          56,
+          20
+        ]
+      ],
+      "Gauss_degree": 4
+    },
+    {
+      "old_graph": 5,
+      "parameter_line": [
+        1,
+        66,
+        79
+      ],
+      "line_basis": [
+        [
+          17,
+          1,
+          0
+        ],
+        [
+          4,
+          0,
+          1
+        ]
+      ],
+      "agreement": [
+        0,
+        1,
+        4,
+        6,
+        9,
+        11,
+        13
+      ],
+      "forced_degree": 27,
+      "normal_quartics": [
+        [
+          51,
+          73,
+          82,
+          65,
+          73
+        ],
+        [
+          46,
+          11,
+          4,
+          24,
+          66
+        ]
+      ],
+      "Gauss_degree": 4
+    },
+    {
+      "old_graph": 6,
+      "parameter_line": [
+        1,
+        62,
+        24
+      ],
+      "line_basis": [
+        [
+          21,
+          1,
+          0
+        ],
+        [
+          59,
+          0,
+          1
+        ]
+      ],
+      "agreement": [
+        1,
+        3,
+        5,
+        6,
+        10,
+        12,
+        13
+      ],
+      "forced_degree": 27,
+      "normal_quartics": [
+        [
+          76,
+          42,
+          78,
+          29,
+          78
+        ],
+        [
+          42,
+          48,
+          48,
+          18,
+          56
+        ]
+      ],
+      "Gauss_degree": 4
+    }
+  ]
+}
