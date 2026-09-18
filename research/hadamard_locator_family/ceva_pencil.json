@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "Ceva_polynomial": "-a*b*e + a*b*f + a*c*d - a*c*f - a*d*f + a*e*f - b*c*d + b*c*e + b*d*e - b*e*f - c*d*e + c*d*f",
+  "opposite_pair_determinant_identity": true,
+  "fixture_edges": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "sigma": 1,
+  "p": 2,
+  "leading_pencil": [
+    "1",
+    "(tau + 30)/63",
+    "(tau + 15)/48",
+    "(tau + 9)/42"
+  ],
+  "B_pencil": [
+    "0",
+    "20*Y**2*tau/63 + 11*Y**2/21 + 4*Y*tau/21 - 16*Y/7 - 32*tau/63 + 37/21",
+    "23*Y**2*tau/48 + 11*Y**2/16 - 5*Y*tau/24 - 29*Y/8 - 3*tau/2 + 9/2",
+    "9*Y**2*tau/14 + 11*Y**2/14 - 20*Y*tau/21 - 32*Y/7 - 41*tau/14 + 93/14"
+  ],
+  "all_edge_equalities": true,
+  "all_plus_divisibility": true,
+  "scope": "Exact special-class identity, not a full eight-sextic realization."
+}

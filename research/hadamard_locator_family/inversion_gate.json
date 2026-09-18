@@ -1,0 +1,29 @@
+{
+  "H_times_t": [
+    "(b**2*c**2*q*t - b**2*c*q**2*t + b**2*c*q*t - b**2*q**2*t - b*c**2*q**2*t + b*c**2*q*t + b*c + b*q**3*t - b*q**2*t + b*q - c**2*q**2*t + c*q**3*t - c*q**2*t + c*q + q**3*t + q)/(b*c*(b*c - b - c + q))",
+    "(b**2*c**2*q*t - b**2*c*q**2*t + b**2*c*q*t - b**2*q**2*t - b*c**2*q**2*t + b*c**2*q*t + b*c + b*q**3*t - b*q**2*t + b*q - c**2*q**2*t + c*q**3*t - c*q**2*t + c*q + q**3*t + q)/(b*c*(-b*c - b + c + q))",
+    "(b**2*c**2*q*t - b**2*c*q**2*t + b**2*c*q*t - b**2*q**2*t - b*c**2*q**2*t + b*c**2*q*t + b*c + b*q**3*t - b*q**2*t + b*q - c**2*q**2*t + c*q**3*t - c*q**2*t + c*q + q**3*t + q)/(b*c*(-b*c + b - c + q))"
+  ],
+  "seconds": 0.26848987500125077,
+  "t_solution": "-(b*c + b*q + c*q + q)/(q*(b**2*c**2 - b**2*c*q + b**2*c - b**2*q - b*c**2*q + b*c**2 + b*q**2 - b*q - c**2*q + c*q**2 - c*q + q**2))",
+  "leading": [
+    "1",
+    "-b*c*(-b**2*c**2 - b**2*c*q + b**2*c + b**2*q - b*c**2*q + b*c**2 + b*q**2 - b*q + c**2*q + c*q**2 - c*q - q**2)/(q*(b**2*c**2 - b**2*c*q + b**2*c - b**2*q - b*c**2*q + b*c**2 + b*q**2 - b*q - c**2*q + c*q**2 - c*q + q**2))",
+    "c*(-b**2*c**2 + b**2*c*q - b**2*c + b**2*q - b*c**2*q + b*c**2 + b*q**2 - b*q + c**2*q - c*q**2 + c*q - q**2)/(q*(b**2*c**2 - b**2*c*q + b**2*c - b**2*q - b*c**2*q + b*c**2 + b*q**2 - b*q - c**2*q + c*q**2 - c*q + q**2))",
+    "-b*(b**2*c**2 + b**2*c*q - b**2*c - b**2*q - b*c**2*q + b*c**2 + b*q**2 - b*q - c**2*q - c*q**2 + c*q + q**2)/(q*(b**2*c**2 - b**2*c*q + b**2*c - b**2*q - b*c**2*q + b*c**2 + b*q**2 - b*q - c**2*q + c*q**2 - c*q + q**2))"
+  ],
+  "H_consistent": [
+    true,
+    true,
+    true
+  ],
+  "all_plus": [
+    "-(-b*c + q)*(b**2*c**2*k*p*q + b**2*c**2*p**2 - b**2*c**2*q - b**2*c*k*p*q**2 + b**2*c*k*p*q + b**2*c*p**2*q - b**2*c*p**2 + b**2*c*q**2 - b**2*c*q - b**2*k*p*q**2 - b**2*p**2*q + 2*b**2*p*q**2 - 2*b**2*p*q + b**2*q**2 - b*c**2*k*p*q**2 + b*c**2*k*p*q + b*c**2*p**2*q - b*c**2*p**2 + b*c**2*q**2 - b*c**2*q + 4*b*c*p*q**2 - 4*b*c*p*q + b*k*p*q**3 - b*k*p*q**2 + b*p**2*q**2 - b*p**2*q + b*q**3 - b*q**2 - c**2*k*p*q**2 - c**2*p**2*q + 2*c**2*p*q**2 - 2*c**2*p*q + c**2*q**2 + c*k*p*q**3 - c*k*p*q**2 + c*p**2*q**2 - c*p**2*q + c*q**3 - c*q**2 + k*p*q**3 + p**2*q**2 - q**3)/(q*(b**2*c**2 - b**2*c*q + b**2*c - b**2*q - b*c**2*q + b*c**2 + b*q**2 - b*q - c**2*q + c*q**2 - c*q + q**2))",
+    "-(-c + q)*(b**2*c**2*k*p*q - b**2*c**2*p**2 - 2*b**2*c**2*p*q - b**2*c**2*q - b**2*c*k*p*q**2 + b**2*c*k*p*q - b**2*c*p**2*q - b**2*c*p**2 - 4*b**2*c*p*q - b**2*c*q**2 - b**2*c*q - b**2*k*p*q**2 - b**2*p**2*q - 2*b**2*p*q - b**2*q**2 - b*c**2*k*p*q**2 + b*c**2*k*p*q - b*c**2*p**2*q + b*c**2*p**2 + b*c**2*q**2 - b*c**2*q + b*k*p*q**3 - b*k*p*q**2 + b*p**2*q**2 - b*p**2*q - b*q**3 + b*q**2 - c**2*k*p*q**2 + c**2*p**2*q + 2*c**2*p*q**2 + c**2*q**2 + c*k*p*q**3 - c*k*p*q**2 + c*p**2*q**2 + c*p**2*q + 4*c*p*q**2 + c*q**3 + c*q**2 + k*p*q**3 + p**2*q**2 + 2*p*q**2 + q**3)/(q*(b**2*c**2 - b**2*c*q + b**2*c - b**2*q - b*c**2*q + b*c**2 + b*q**2 - b*q - c**2*q + c*q**2 - c*q + q**2))",
+    "-(-b + q)*(b**2*c**2*k*p*q - b**2*c**2*p**2 - 2*b**2*c**2*p*q - b**2*c**2*q - b**2*c*k*p*q**2 + b**2*c*k*p*q - b**2*c*p**2*q + b**2*c*p**2 + b**2*c*q**2 - b**2*c*q - b**2*k*p*q**2 + b**2*p**2*q + 2*b**2*p*q**2 + b**2*q**2 - b*c**2*k*p*q**2 + b*c**2*k*p*q - b*c**2*p**2*q - b*c**2*p**2 - 4*b*c**2*p*q - b*c**2*q**2 - b*c**2*q + b*k*p*q**3 - b*k*p*q**2 + b*p**2*q**2 + b*p**2*q + 4*b*p*q**2 + b*q**3 + b*q**2 - c**2*k*p*q**2 - c**2*p**2*q - 2*c**2*p*q - c**2*q**2 + c*k*p*q**3 - c*k*p*q**2 + c*p**2*q**2 - c*p**2*q - c*q**3 + c*q**2 + k*p*q**3 + p**2*q**2 + 2*p*q**2 + q**3)/(q*(b**2*c**2 - b**2*c*q + b**2*c - b**2*q - b*c**2*q + b*c**2 + b*q**2 - b*q - c**2*q + c*q**2 - c*q + q**2))"
+  ],
+  "eliminate_k": [
+    "2*(b - 1)*(-c + q)*(-b*c + q)*(c*p + q)*(b*c*p + b*c*q + b*p*q + b*q + c*p*q + c*q + p*q + q**2)/(q*(b**2*c**2 - b**2*c*q + b**2*c - b**2*q - b*c**2*q + b*c**2 + b*q**2 - b*q - c**2*q + c*q**2 - c*q + q**2))",
+    "2*(-b + q)*(c - 1)*(-b*c + q)*(b*p + q)*(b*c*p + b*c*q + b*p*q + b*q + c*p*q + c*q + p*q + q**2)/(q*(b**2*c**2 - b**2*c*q + b**2*c - b**2*q - b*c**2*q + b*c**2 + b*q**2 - b*q - c**2*q + c*q**2 - c*q + q**2))"
+  ]
+}

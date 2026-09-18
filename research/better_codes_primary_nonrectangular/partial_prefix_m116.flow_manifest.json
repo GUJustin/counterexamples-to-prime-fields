@@ -1,0 +1,6 @@
+{
+  "sha256_raw": "e0105312c720298c0ab68f25896af5773a51c4148a5b9cf99c2839536aeef74a",
+  "raw_bytes": 19346508,
+  "regenerate": "tmp/partial-prefix-flex research/better_codes_primary_nonrectangular/partial_prefix_m116 116",
+  "verify": "python3 research/better_codes_primary_nonrectangular/verify_partial_prefix.py --stem research/better_codes_primary_nonrectangular/partial_prefix_m116"
+}

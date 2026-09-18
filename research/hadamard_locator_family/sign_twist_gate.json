@@ -1,0 +1,59 @@
+{
+  "scope": "single rational fixture; no existence/exclusion theorem for variable shapes",
+  "edge_nodes": {
+    "(0, 1)": "1",
+    "(0, 2)": "2",
+    "(0, 3)": "3",
+    "(1, 2)": "4",
+    "(1, 3)": "5",
+    "(2, 3)": "6"
+  },
+  "L0": "T**2 - T + 2",
+  "all_plus_matrix_rank": 5,
+  "amplitude_pencil": [
+    "44*z/69 - 203/184",
+    "62*z/207 - 95/184",
+    "107*z/552 - 245/736",
+    "3*z/23 - 41/184",
+    "357/184 - 52*z/69",
+    "1",
+    "z"
+  ],
+  "eight_leading_coefficients_distinct": true,
+  "partition_checks": [
+    {
+      "partition": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "Q0i": "(560*T**2*z - 972*T**2 + 144*T*z - 315*T - 1792*z + 3069)/(560*z - 972)",
+      "Qkl": "(140*T**2*z - 243*T**2 + 96*T*z - 210*T - 448*z + 750)/(140*z - 243)",
+      "necessary_reversal_difference": "528*T*z - 1155*T + 69"
+    },
+    {
+      "partition": [
+        0,
+        2,
+        1,
+        3
+      ],
+      "Q0i": "(980*T**2*z - 1701*T**2 + 288*T*z - 630*T - 3024*z + 5166)/(980*z - 1701)",
+      "Qkl": "(280*T**2*z - 486*T**2 + 144*T*z - 315*T - 952*z + 1611)/(280*z - 486)",
+      "necessary_reversal_difference": "1584*T*z - 3465*T + 616*z - 945"
+    },
+    {
+      "partition": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "Q0i": "(140*T**2*z - 243*T**2 + 48*T*z - 105*T - 364*z + 618)/(140*z - 243)",
+      "Qkl": "(700*T**2*z - 1215*T**2 + 288*T*z - 630*T - 2744*z + 4680)/(700*z - 1215)",
+      "necessary_reversal_difference": "528*T*z - 1155*T + 924*z - 1590"
+    }
+  ],
+  "reversal_gcd": "1"
+}

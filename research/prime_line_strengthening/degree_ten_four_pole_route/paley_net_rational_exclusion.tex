@@ -1,0 +1,206 @@
+% Standalone addendum fragment. No new package dependencies.
+\subsection{The uniform degree-ten Paley net has no rational integral member}
+\label{app:paley-net-rational-exclusion}
+
+We work over an algebraically closed field of characteristic zero. Put
+$\eta^2+\eta+2=0$, $\alpha=(\eta-1)/2$, and $\gamma=3(\eta+3)/4$.
+On $\mathbb F_3$, with negative section $C_0$ and fiber $f$, consider the
+net $V\subset H^0(10C_0+34f)$ whose members have multiplicity at least
+four at $Q_i=(\zeta^i,\zeta^{5i})$ and at least six at
+$T_i=(\alpha\zeta^i,\gamma\zeta^{5i})$, $0\le i<7$. Here $\zeta$ is a primitive
+seventh root. Its dimension is three. An exact basis $F_0,F_1,F_2$ has
+characters $1,3,5$ under $(X,Y)\mapsto(\zeta X,\zeta^5Y)$, normalized
+by the coefficients $25,27,20$ of $Y^{10},X^2Y^{10},X^4Y^{10}$,
+respectively. These specifications and the prescribed jets determine the
+basis over $\mathbb Q(\eta)$.
+
+\begin{theorem}
+\label{thm:paley-net-no-rational}
+No member of this net is an integral curve with rational normalization.
+In particular, the Paley uniform degree-ten, four-pole norm net cannot
+supply an augmentation through an integral norm equation. This statement concerns this net, not all
+possible eight-word constructions or all degree-ten incidence patterns.
+\end{theorem}
+
+\begin{proof}
+We give the geometric argument and specify the finite certificates on
+which it depends. Reduction is at the prime above $29$ with $\eta=7$;
+thus $\alpha=3$ and $\gamma=22$. The exact basis and its reduction are checked
+coefficientwise, using two orbit representatives for the prescribed jets.
+The $217$ prescribed jet conditions on $220$ coefficients have rank
+$217$ modulo $29$. For each of the three indicated characters, the
+$31$ representative jet equations in its $32$ allowed monomials give
+one exact eigenvector over $\mathbb Q(\eta)$. The independently verified
+vectors have the stated normalizations and reduce to the modular kernel.
+The unit rank minor therefore proves that they span the entire net and
+its integral model. Every nonzero member has actual class
+$10C_0+34f$: the leading coefficient is $25a+27bX^2+20cX^4$, and the
+three weighted-infinity restrictions below have disjoint supports.
+
+Besides the fourteen prescribed basepoints, the net has exactly two
+simple basepoints: $(X,Y)=(0,0)$ and $(t,Z)=(0,0)$ in the chart
+$t=1/X$, $Z=Y/X^3$. One blowup at each of these sixteen points resolves
+the net. On the resulting smooth surface $S$, its moving line bundle $L$
+satisfies
+\[
+ L^2=14,\qquad K_S L=14,\qquad c_2(S)=20,\qquad p_a(L)=15.
+\]
+These assertions hold over the DVR at the chosen prime: the closed
+relative base locus has empty special fiber, and properness then excludes
+basepoints on the geometric generic fiber.
+
+Here are the boundary checks needed for the discriminant computation.
+On the affine chart, the nine two-by-two minors of the jet matrix have
+no common divisorial factor. Along the fourteen exceptional curves, the
+net restrictions are basepoint-free tangent-cone maps of degree at most
+six. Their coefficient matrices have rank three; the displayed
+three-column minors at the two orbit representatives are $5$ and $20$
+modulo $29$. The two remaining exceptional curves have degree-one maps.
+On $C_0$ the restriction is $[25:27X^2:20X^4]$, and on the original
+infinity fiber it is represented by
+\[
+ [23Z^8+10Z:\;15Z^9+7Z^2:\;20Z^{10}+2Z^3].
+\]
+After removal of the common basepoint factor this is nonconstant of
+degree at most ten. All these degrees are below $29$, so the maps are
+generically separable. Thus the jet matrix has rank at least two at the
+generic point of every boundary divisor. Its rank-one locus is finite
+on all of $S$.
+
+The universal first-jet incidence on $S\times\mathbb P^2$ consequently
+has the expected dimension one: over jet-rank-two points its fiber is a
+point, and over the finitely many rank-one points its fiber is a line.
+Jet rank zero is excluded by basepoint-freeness. Its cycle is therefore
+the top Chern class, and its pushforward is an effective discriminant
+divisor of degree
+\[
+ c_2(J^1L)=c_2(S)+2K_SL+3L^2=90.
+\]
+This is a statement about a divisor with multiplicities; it assumes
+neither generic nodality nor that every component has Gauss degree one.
+
+The seven old cubic graphs yield seven parameter lines. Each contributes
+multiplicity four. Indeed, the ramification determinant is simple along
+each old graph; the two normal sections on the first graph are the
+coprime quartics
+\[
+ 24+14X+2X^2+27X^3+12X^4,\qquad
+ 25+27X+28X^2+9X^3+6X^4.
+\]
+They define a separable degree-four map to its parameter line.
+Equivariance supplies the other six cases. Subtracting these contributions
+leaves an effective discriminant divisor of degree $62$.
+
+Modulo $29$, the remaining ramification factor $\Gamma$ has $135$ terms
+and bidegree $(73,21)$. It is irreducible, and its smooth rational point
+$(1,10)$, with gradient $(27,14)$, proves geometric irreducibility.
+There are $4,018$ distinct certified Gauss-image points over $\mathbb
+F_{29^3}$. Each receipt includes a point of $\Gamma$, a rank-two jet
+witness, and its normalized parameter image. Interpolation in all seven
+character spaces of homogeneous degree $62$ has total kernel dimension
+one: the character-five block has rank $287$ of $288$, and the other six
+blocks have full rank. Its equation $H(a,b,c)$ has $271$ terms.
+Since $4,018>62^2$, B\'ezout's theorem implies that every interpolated
+relation contains the Gauss image. If that image had degree less than
+$62$, all its degree-$62$ multiples would give a kernel of dimension
+larger than one. Thus the image has degree $62$ and exhausts the residual
+discriminant cycle, including possible contributions from isolated
+rank-one points.
+
+For completeness, this identifies the reduction of a characteristic-zero
+divisor, not just a modular curve. On the smooth relative surface times
+the parameter plane, the three jet equations and the uniformizer form a
+regular sequence, since the special incidence has expected codimension.
+The incidence is therefore flat over the DVR, and proper pushforward of
+its fundamental cycle commutes with specialization. Subtract the seven
+horizontal old-line contributions. The primitive equation of the
+remaining degree-$62$ divisor reduces to $H$ up to a nonzero scalar.
+
+An integral rational original member must have multiplicity at least
+$15$ in this residual divisor. One minor boundary issue is relevant here.
+The rank-three tangent matrices prohibit multiplicity jumps at the
+fourteen prescribed points. At the two additional simple points the
+linear-part kernel is exactly $[0:1:0]$. The corresponding member $F_1$
+has order exactly two at each, with quadratic terms $24Y^2$ and $7Z^2$
+modulo $29$. Thus its resolved divisor is reduced as well: if the
+original member were integral rational, its components would be its
+rational strict transform and the two exceptional curves, each once.
+For any of these reduced connected divisors with $k$ rational components,
+\[
+ \sum\delta=p_a(L)+k-1\ge15.
+\]
+A generic pencil through it avoids its singular points with its other
+section, so its local total spaces are smooth. The discriminant
+intersection length is the sum of the local Milnor numbers, at least
+$\sum\delta$. Hence its parameter has discriminant multiplicity at
+least $15$. An integral original member lies on none of the seven
+old-factor lines, so the same assertion holds for the residual divisor.
+
+Finally explicit polynomial identities exclude every multiplicity-$15$
+point of $H$ over $\overline{\mathbb F}_{29}$. On $a=1$, a recorded linear
+combination of monomial multiples of Hasse derivatives of orders below
+$15$ is $1$. On $a=0,c=1$, a univariate B\'ezout identity in $b$ gives
+$1$ using restrictions of those derivatives. The remaining point
+$[0:1:0]$ has multiplicity six. These are coefficient identities, not
+pointwise finite-field tests, and have been independently replayed.
+The multiplicity-$15$ locus is closed in the proper relative parameter
+plane. Its empty geometric special fiber therefore implies an empty
+geometric generic fiber, even when a putative characteristic-zero
+parameter specializes onto an old-factor line. This contradicts the
+necessary multiplicity established above.
+\end{proof}
+
+\paragraph{Certificate provenance.}
+The reproducibility directory is
+\path{research/prime_line_strengthening/degree_ten_four_pole_route/}.
+The exact kernel and independent coefficient check are
+\path{exact_kernel.json} and \path{verify_exact_kernel.py}.
+In its \path{surface/} subdirectory, the base-locus, boundary, and Gauss
+receipts are \path{base_locus.json},
+\path{base_locus_boundary.verified.json}, and
+\path{gauss_determinant.json}; the boundary supplement is regenerated
+by \path{verify_base_boundary.py}.
+The point and interpolation receipts are
+\path{gauss_samples.json} and
+\path{gauss_image_interpolation.json}, with independent source replay
+\path{verify_gauss_samples.py}.
+The final explicit identities are
+\path{hasse_multiplicity_gate.json}, replayed by
+\path{verify_hasse_gate.py} without elimination.
+The relative-cycle and exceptional-component audit is recorded in
+\path{RELATIVE_DISCRIMINANT_AUDIT.md}.
+
+\paragraph{Nonprimitive norm powers.}
+The theorem alone does not exclude a norm equation that is a power
+of an irreducible rational curve. This possibility is excluded by separate
+small linear certificates. If a nonzero polynomial $G^t$ belongs to the
+uniform norm net, where $t\mid10$ and $t>1$, then
+\[
+ \deg_YG\le10/t,\qquad \operatorname{wdeg}_{(1,3)}G\le\lfloor34/t\rfloor,
+ \qquad \operatorname{mult}_{Q_i}G\ge\lceil4/t\rceil,
+ \quad \operatorname{mult}_{T_i}G\ge\lceil6/t\rceil.
+\]
+The corresponding jet matrices modulo $29$ have full column rank:
+\[
+\begin{array}{c|c|c|c}
+ t&\text{matrix size}&\text{rank}&\text{certified maximal minor}\\\hline
+ 2&63\mathbin{\times}63&63&27\\
+ 5&28\mathbin{\times}12&12&27\\
+ 10&14\mathbin{\times}5&5&8
+\end{array}
+\]
+All entries are Hasse evaluations at the same fourteen points. These
+nonzero minors exclude the corresponding characteristic-zero kernels.
+Thus the net contains no such power, without assuming that a declared
+four-pole allowance is attained. For an augmentation whose eliminated
+norm equation is a scalar multiple of a pure power of its irreducible
+image equation, these three cases account for every nonbirational
+intermediate degree. The receipts, including selected original rows,
+are \path{surface/nonprimitive_norm_gate.py} and
+\path{surface/nonprimitive_norm_gate.json}.
+For a proper augmentation, separability of the selected fibers and
+regularity of the added function there ensure that taking the primitive
+part preserves these contacts. Norm transitivity gives a power of the
+minimal monic equation; Gauss's lemma gives the same power after primitive
+polynomial clearing. The weighted norm bound must also hold, as in the
+stated uniform four-pole construction.

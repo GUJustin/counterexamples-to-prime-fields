@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/hadamard_locator_family/spectral_seed_gate.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5423049999953946,
+  "peak_rss_kib": 7824,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

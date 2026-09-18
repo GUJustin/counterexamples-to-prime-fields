@@ -1,0 +1,3 @@
+import json,sympy as s,time
+from pathlib import Path
+start=time.monotonic();D=Path(__file__).parent;data=json.loads((D/'shifted_internal.json').read_text());b,c,q,h,P,k=s.symbols('b c q h P k');loc={str(v):v for v in[b,c,q,h,P,k]};N=b*c+b*q+c*q+q;J=b*c+b+c+q;PP=-(h*N+q*J)/(N+h*J);G=[s.sympify(v,locals=loc)for v in data['all_plus']];kk=s.factor(s.cancel((-G[0].subs(k,0)/s.diff(G[0],k)).subs(P,PP)));out={'P':str(PP),'p':str(s.factor(PP-h)),'sigma_tau':str(kk),'verified':[s.cancel(g.subs({P:PP,k:kk}))==0 for g in G],'seconds':time.monotonic()-start};(D/'shifted_parameters.json').write_text(json.dumps(out,indent=2));print(out)

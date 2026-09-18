@@ -1,0 +1,35 @@
+{
+  "linear_dependence": "(w-x)E01|23+(y-v)E02|13-(z-u)E03|12=0",
+  "quadrics": [
+    "a0*a2*y*(-u + z) + a0*a3*z*(v - y) + a1*a2*u*(-v + y) + a1*a3*v*(u - z)",
+    "a0*a1*x*(-u + z) + a0*a3*z*(w - x) + a1*a2*u*(-w + x) + a2*a3*w*(u - z)",
+    "a0*a1*x*(-v + y) + a0*a2*y*(w - x) + a1*a3*v*(-w + x) + a2*a3*w*(v - y)"
+  ],
+  "fixture_edges": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "affine_curve": "-5*A**2 - 9*A + B**2*(72*A + 12) + B*(30 - 100*A**2)",
+  "quartic_discriminant": "4*(2500*A**4 + 360*A**3 - 792*A**2 + 108*A + 225)",
+  "quartic_squarefree": true,
+  "normalization_genus": 1,
+  "starting_point": [
+    "3/10",
+    "1/8"
+  ],
+  "tangent_slope": "5/8",
+  "tangent_restriction": "-(10*A - 3)**2*(22*A + 13)/64",
+  "rational_amplitudes": [
+    "1",
+    "-13/22",
+    "-19/44",
+    "4/11"
+  ],
+  "nonzero_distinct_signed_amplitude_guard": true,
+  "H01": "56/5",
+  "scope": "Constant complement equations only; not an incidence-bank realization."
+}

@@ -1,0 +1,3 @@
+import sympy as s,json,time
+from pathlib import Path
+P=Path(__file__).parent;d=json.loads((P/'inversion_gate.json').read_text());b,c,q,p,k,h=s.symbols('b c q p k h');D={str(z):z for z in[b,c,q,p,k,h]};a=list(map(lambda v:s.sympify(v,locals=D),d['leading']));G=list(map(lambda v:s.sympify(v,locals=D),d['all_plus']));pp=-q*(b*c+b+c+q)/(b*c+b*q+c*q+q);kk=s.factor(s.cancel((-G[0].subs(k,0)/s.diff(G[0],k)).subs(p,pp)));out={'p':str(s.factor(pp)),'sigma_tau':str(kk),'all_plus_verified':[s.cancel(g.subs({p:pp,k:kk}))==0 for g in G]};(P/'inversion_parameters.json').write_text(json.dumps(out,indent=2));print(out)

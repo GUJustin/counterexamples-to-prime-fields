@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "forced_degree": 27,
+  "residual_sections": [
+    [
+      24,
+      14,
+      2,
+      27,
+      12
+    ],
+    [
+      25,
+      27,
+      28,
+      9,
+      6
+    ]
+  ],
+  "gcd_degree": 0,
+  "map_degree": 4,
+  "separable": true
+}

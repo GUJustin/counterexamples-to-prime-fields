@@ -1,0 +1,13 @@
+{
+  "command": [
+    "tmp/partial-prefix-flex",
+    "research/better_codes_primary_nonrectangular/partial_prefix_m116",
+    "116"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 9.676123124998412,
+  "peak_rss_kib": 222768,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

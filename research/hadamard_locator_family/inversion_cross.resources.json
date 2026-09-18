@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/hadamard_locator_family/inversion_cross.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 15.018309791,
+  "peak_rss_kib": 106720,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

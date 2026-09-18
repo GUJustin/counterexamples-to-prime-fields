@@ -1,0 +1,171 @@
+{
+  "seed_parameters": [
+    1,
+    2,
+    4,
+    8
+  ],
+  "seed_polynomials": [
+    "X**2 + X + 1",
+    "2*X**2 + 4*X + 8",
+    "4*X**2 + 16*X + 64",
+    "8*X**2 + 64*X + 512"
+  ],
+  "spectral_leading_coefficients": [
+    -21,
+    12,
+    -24,
+    168
+  ],
+  "old_locator": "X**12 + 45*X**11 + 1140*X**10 + 19065*X**9 + 233492*X**8 + 2149785*X**7 + 15260695*X**6 + 83131920*X**5 + 347311188*X**4 + 1078003920*X**3 + 2414473040*X**2 + 3478184640*X + 2826802944",
+  "old_locator_squarefree": true,
+  "ansatz": "P_i + sign_i*z*product_(j!=i)(P_i-P_j)",
+  "patterns": [
+    {
+      "signs": [
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      "minor_degrees": [
+        8,
+        8,
+        8
+      ],
+      "raw_gcd": "1",
+      "off_domain_gcd": "1"
+    },
+    {
+      "signs": [
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "minor_degrees": [
+        8,
+        8,
+        8
+      ],
+      "raw_gcd": "X**2 + 15*X + 147",
+      "off_domain_gcd": "X**2 + 15*X + 147",
+      "lambda_resultants": [
+        "101873735921664*z**2 - 1558045440*z + 15568",
+        "687647717471232*z**2 - 10516806720*z + 105084",
+        "1317212747375616*z**2 - 20145303360*z + 201292"
+      ]
+    },
+    {
+      "signs": [
+        1,
+        -1,
+        1,
+        -1
+      ],
+      "minor_degrees": [
+        8,
+        8,
+        8
+      ],
+      "raw_gcd": "X**2 + 51*X/5 + 91",
+      "off_domain_gcd": "X**2 + 51*X/5 + 91",
+      "lambda_resultants": [
+        "22578591241285632*z**2/15625 + 423698688*z/15625 + 140112/25",
+        "132263438260552704*z**2/15625 + 2481990336*z/15625 + 820764/25",
+        "46334842817098752*z**2/15625 + 869496768*z/15625 + 287532/25"
+      ]
+    },
+    {
+      "signs": [
+        1,
+        -1,
+        1,
+        1
+      ],
+      "minor_degrees": [
+        8,
+        8,
+        8
+      ],
+      "raw_gcd": "1",
+      "off_domain_gcd": "1"
+    },
+    {
+      "signs": [
+        1,
+        1,
+        -1,
+        -1
+      ],
+      "minor_degrees": [
+        8,
+        8,
+        8
+      ],
+      "raw_gcd": "X**2 + 25*X/3 + 63",
+      "off_domain_gcd": "X**2 + 25*X/3 + 63",
+      "lambda_resultants": [
+        "10918188617728*z**2/27 - 5058618880*z/243 + 21952/9",
+        "1935750277888*z**2 - 896872480*z/9 + 11676",
+        "15889863791872*z**2/27 - 7362097120*z/243 + 31948/9"
+      ]
+    },
+    {
+      "signs": [
+        1,
+        1,
+        -1,
+        1
+      ],
+      "minor_degrees": [
+        8,
+        8,
+        8
+      ],
+      "raw_gcd": "1",
+      "off_domain_gcd": "1"
+    },
+    {
+      "signs": [
+        1,
+        1,
+        1,
+        -1
+      ],
+      "minor_degrees": [
+        8,
+        8,
+        8
+      ],
+      "raw_gcd": "1",
+      "off_domain_gcd": "1"
+    },
+    {
+      "signs": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "minor_degrees": [
+        8,
+        8,
+        8
+      ],
+      "raw_gcd": "1",
+      "off_domain_gcd": "1"
+    }
+  ],
+  "off_domain_root_degrees": [
+    0,
+    2,
+    2,
+    0,
+    2,
+    0,
+    0,
+    0
+  ],
+  "scope": "Complete sign-pattern coincidence gate for this single seed and common spectral scale; no general gluing exclusion."
+}

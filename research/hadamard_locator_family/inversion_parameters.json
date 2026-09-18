@@ -1,0 +1,9 @@
+{
+  "p": "-q*(b*c + b + c + q)/(b*c + b*q + c*q + q)",
+  "sigma_tau": "(-b**2 + q)*(-c**2 + q)*(q - 1)/(q*(b**2*c**2 - b**2*c*q + b**2*c - b**2*q - b*c**2*q + b*c**2 + b*q**2 - b*q - c**2*q + c*q**2 - c*q + q**2))",
+  "all_plus_verified": [
+    true,
+    true,
+    true
+  ]
+}

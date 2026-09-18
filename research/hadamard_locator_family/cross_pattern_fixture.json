@@ -1,0 +1,22 @@
+{
+  "status": "EXCLUDED_FIXED_EDGE_CLASS",
+  "edges": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "leading_coefficients": [
+    "1",
+    "-13/22",
+    "-19/44",
+    "4/11"
+  ],
+  "p": "-7/2",
+  "sigma_tau": "15/88",
+  "remaining_variable": "h=sigma nonzero",
+  "cross_coefficient_gcd": "1",
+  "scope": "All sigma for this one edge fixture after the specified nondegenerate H/slope solution; not the variable Ceva class."
+}

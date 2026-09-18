@@ -13,8 +13,9 @@ I dfs(int u,I f){if(u==1)return f;for(int &k=it[u];k<(int)g[u].size();k++){auto&
 
 
 struct Var{int x,i,j;};
-int main(int argc,char**argv){assert(argc==2);string stem=argv[1];
- int m=115,Q=159,S=35;I n=262144,w=131071,D=I(m)*181275;node();node();
+int main(int argc,char**argv){assert(argc==2||argc==3);string stem=argv[1];
+ int m=argc==3?stoi(argv[2]):115;assert(m>=115&&m<=371);
+ int Q=159,S=35;I n=262144,w=131071,D=I(m)*181275;node();node();
  vector<int>ids(160*36*m,-1);auto at=[&](int x,int i,int j)->int&{return ids[(i*36+j)*m+x];};
  vector<Var>vars;I B=0;
  for(int j=0;j<=S;j++)for(int i=0;i+j<=Q;i++){

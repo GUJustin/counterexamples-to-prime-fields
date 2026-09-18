@@ -1,0 +1,197 @@
+{
+  "status": "PASS",
+  "input_sha256": "13463ca0a58b56fdd93494dbad94c7a56ff49714f8058ca4b20e06270ec69dd9",
+  "tangent_rank_three": [
+    {
+      "representative": 0,
+      "multiplicity": 4,
+      "coefficient_columns": [
+        0,
+        1,
+        2
+      ],
+      "matrix": [
+        [
+          11,
+          16,
+          12
+        ],
+        [
+          25,
+          2,
+          28
+        ],
+        [
+          12,
+          0,
+          8
+        ]
+      ],
+      "determinant": 5
+    },
+    {
+      "representative": 7,
+      "multiplicity": 6,
+      "coefficient_columns": [
+        0,
+        1,
+        2
+      ],
+      "matrix": [
+        [
+          12,
+          0,
+          10
+        ],
+        [
+          10,
+          23,
+          1
+        ],
+        [
+          14,
+          14,
+          14
+        ]
+      ],
+      "determinant": 20
+    }
+  ],
+  "extra_basepoints": [
+    {
+      "chart": "origin",
+      "linear_rows": [
+        [
+          19,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          25
+        ]
+      ],
+      "kernel": [
+        0,
+        1,
+        0
+      ],
+      "F1_order": 2,
+      "F1_initial_terms": [
+        [
+          [
+            0,
+            2
+          ],
+          24
+        ]
+      ]
+    },
+    {
+      "chart": "weighted_infinity",
+      "linear_rows": [
+        [
+          0,
+          10
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "kernel": [
+        0,
+        1,
+        0
+      ],
+      "F1_order": 2,
+      "F1_initial_terms": [
+        [
+          [
+            0,
+            2
+          ],
+          7
+        ]
+      ]
+    }
+  ],
+  "C0_restriction": [
+    [
+      [
+        0,
+        25
+      ]
+    ],
+    [
+      [
+        2,
+        27
+      ]
+    ],
+    [
+      [
+        4,
+        20
+      ]
+    ]
+  ],
+  "infinity_restriction": [
+    [
+      [
+        8,
+        23
+      ],
+      [
+        1,
+        10
+      ]
+    ],
+    [
+      [
+        9,
+        15
+      ],
+      [
+        2,
+        7
+      ]
+    ],
+    [
+      [
+        10,
+        20
+      ],
+      [
+        3,
+        2
+      ]
+    ]
+  ],
+  "boundary_separability": {
+    "old_exceptionals": {
+      "nonconstant": "rank-three tangent maps",
+      "degree_upper_bound": 6
+    },
+    "extra_exceptionals": {
+      "nonconstant": "rank-two linear maps",
+      "degree": 1
+    },
+    "C0": {
+      "nonconstant": true,
+      "degree_upper_bound": 4
+    },
+    "infinity": {
+      "nonconstant": "distinct exponent supports",
+      "degree_upper_bound": 10
+    },
+    "reason": "All nonconstant map degrees are below characteristic 29; thus every boundary restriction is generically separable and the surface map has rank at least one there."
+  }
+}

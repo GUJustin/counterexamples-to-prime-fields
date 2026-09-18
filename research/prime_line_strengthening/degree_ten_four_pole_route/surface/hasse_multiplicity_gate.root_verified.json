@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "polynomial_sha256": "cd3092a2d4c372e3d4384a4085c6b93ecee96039446a78f556e8c5ef9f2621b9",
+  "certificate_sha256": "404f0badb7512d942bd50e50109727f5cf8c65364d31a5c5dbcad52653a22384",
+  "affine_identity_terms": 276,
+  "boundary_identity_terms": 7,
+  "endpoint_order": 6,
+  "scope": "No multiplicity-at-least-15 point of the recorded homogeneous polynomial over F29 algebraic closure; no CAS or row reduction used."
+}

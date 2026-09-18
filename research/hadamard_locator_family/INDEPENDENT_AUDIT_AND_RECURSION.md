@@ -1,5 +1,9 @@
 # Independent audit and an exact recursive gluing target
 
+Update: the L=4 to8 preserved-word step proposed below is now excluded in
+characteristic different from2 by `PRESERVED_QUADRATIC_SEED_OBSTRUCTION.md`.
+The recursive equivalence itself remains valid; it is not an existence claim.
+
 ## Audit verdict
 
 The saturation, locator equivalence, and complete-list assertions in

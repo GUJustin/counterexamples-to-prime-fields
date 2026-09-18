@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/tmp/hadamard_shifted_search",
+    "43",
+    "research/hadamard_locator_family/shifted_p43.json"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 5.8664435,
+  "peak_rss_kib": 2832,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

@@ -1,0 +1,11 @@
+{
+  "P": "(-h*(b*c + b*q + c*q + q) - q*(b*c + b + c + q))/(b*c + b*q + c*q + h*(b*c + b + c + q) + q)",
+  "p": "-(b*c*h**2 + 2*b*c*h + b*c*q + b*h**2 + 2*b*h*q + b*q + c*h**2 + 2*c*h*q + c*q + h**2*q + 2*h*q + q**2)/(b*c*h + b*c + b*h + b*q + c*h + c*q + h*q + q)",
+  "sigma_tau": "(-b**2 + q)*(-c**2 + q)*(q - 1)/(-b**2*c**2*h*q + 2*b**2*c**2*h + b**2*c**2*q - b**2*c*q**2 + b**2*c*q - b**2*h*q - b**2*q**2 - b*c**2*q**2 + b*c**2*q + b*q**3 - b*q**2 - c**2*h*q - c**2*q**2 + c*q**3 - c*q**2 + h*q**3 + q**3)",
+  "verified": [
+    true,
+    true,
+    true
+  ],
+  "seconds": 37.600050749999355
+}

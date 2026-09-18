@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/prime_line_strengthening/degree_ten_four_pole_route/surface/interpolate_gauss_image.py",
+    "research/prime_line_strengthening/degree_ten_four_pole_route/surface/gauss_samples.json"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 4.823217500001192,
+  "peak_rss_kib": 53936,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

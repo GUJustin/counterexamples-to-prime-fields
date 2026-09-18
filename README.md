@@ -22,9 +22,11 @@ nearby word by the proper one-extra-pole construction. This excludes a specific
 augmentation mechanism, not arbitrary eight-word constructions. Corollary W.3
 extends the obstruction to every proper denominator compatible with quarter
 rate for cover degrees through nine.
-Theorem W.4 constructs the remaining degree-ten Paley norm net exactly
-in characteristic zero and proves that its necessary rationality locus
-is finite or empty. It does not assert that a rational member exists.
+Theorem W.4 constructs the uniform degree-ten Paley norm net exactly
+in characteristic zero and proves that it has no integral rational
+member. Its proof reconstructs a degree-62 discriminant and gives exact
+polynomial identities excluding the required multiplicity. The theorem
+concerns this particular net, not arbitrary degree-ten constructions.
 
 
 Corollary 2.4 sharpens the shrinking-gap and prime-size lower bounds by

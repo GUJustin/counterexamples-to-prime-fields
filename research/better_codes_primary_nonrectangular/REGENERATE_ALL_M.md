@@ -36,3 +36,13 @@ Expected: maximum slope zero, flow=cut47859086760, 600647 nodes and2011395
 original directed edges. The generator used about217MiB and17seconds;
 verification used about48MiB and2seconds. The same optional macOS SDK flag
 applies. `partial_prefix.flow_manifest.json` records the raw flow hash.
+
+The partial-prefix generator also accepts an optional multiplicity argument
+after the output stem, from115 through371 (all ambient X prefixes then
+have height at least m). The independent verifier accepts `--stem` and
+reconstructs the graph using the receipt's checked multiplicity and degree.
+The adjacent case m116 was tested separately: maximum slope0,
+flow=cut48789027510,605928nodes and2031076edges;
+generation9.68seconds/218MiB, independent replay1.08seconds/43MiB.
+This is another scoped exclusion, not a complete partial-prefix sweep or
+a better.codes improvement.

@@ -1,0 +1,14 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/better_codes_primary_nonrectangular/verify_partial_prefix.py",
+    "--stem",
+    "research/better_codes_primary_nonrectangular/partial_prefix_m116"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.0771647919900715,
+  "peak_rss_kib": 43872,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

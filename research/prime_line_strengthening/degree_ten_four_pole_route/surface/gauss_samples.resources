@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/prime_line_strengthening/degree_ten_four_pole_route/surface/sample_gauss.py",
+    "--target",
+    "4000",
+    "--output",
+    "research/prime_line_strengthening/degree_ten_four_pole_route/surface/gauss_samples.json"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.6082207089930307,
+  "peak_rss_kib": 39776,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

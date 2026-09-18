@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/prime_line_strengthening/degree_ten_four_pole_route/surface/verify_hasse_identities.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5363554170035059,
+  "peak_rss_kib": 6864,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

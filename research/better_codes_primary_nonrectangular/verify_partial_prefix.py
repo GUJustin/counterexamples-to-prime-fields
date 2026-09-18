@@ -1,10 +1,13 @@
 """Independent edge reconstruction and primal-dual replay; no optimization."""
 from array import array
-import gzip,json,struct
+import argparse,gzip,json,struct
 from pathlib import Path
-P=Path(__file__).parent;stem=P/'partial_prefix'
+P=Path(__file__).parent
+ap=argparse.ArgumentParser();ap.add_argument('--stem',type=Path,default=P/'partial_prefix')
+stem=ap.parse_args().stem
 r=json.loads(stem.with_suffix('.json').read_text())
-m,n,w,D=115,262144,131071,115*181275
+m,n,w,D=r['m'],262144,131071,r['D']
+assert 115<=m<=371 and D==m*181275
 def node(x,i,j):return 2+m*(160*j-j*(j-1)//2+i)+x
 pairs=[(i,j) for j in range(36) for i in range(160-j)]
 height=lambda i,j:D-w*i-(w-1)*j
