@@ -1,0 +1,43 @@
+{
+  "status": "PASS_EXACT_RATIONAL_REPLAY",
+  "grid_cases": [
+    {
+      "H": 2,
+      "bank_size": 4,
+      "collision_coordinates": 7,
+      "sum_max_buckets": 14,
+      "proved_bound": 128
+    },
+    {
+      "H": 3,
+      "bank_size": 9,
+      "collision_coordinates": 19,
+      "sum_max_buckets": 44,
+      "proved_bound": 288
+    },
+    {
+      "H": 4,
+      "bank_size": 16,
+      "collision_coordinates": 41,
+      "sum_max_buckets": 94,
+      "proved_bound": 512
+    },
+    {
+      "H": 6,
+      "bank_size": 36,
+      "collision_coordinates": 97,
+      "sum_max_buckets": 236,
+      "proved_bound": 1152
+    },
+    {
+      "H": 8,
+      "bank_size": 64,
+      "collision_coordinates": 177,
+      "sum_max_buckets": 442,
+      "proved_bound": 2048
+    }
+  ],
+  "sparse_bank_size": 10,
+  "sparse_distinct_pair_roots": 90,
+  "scope": "small exact checks support, not replace, the symbolic proof"
+}
