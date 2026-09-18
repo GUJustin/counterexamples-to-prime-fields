@@ -1,0 +1,20 @@
+{
+  "pole_exclusion_strict": true,
+  "density_strict": true,
+  "score_exact": true,
+  "agreement_bank": 140287,
+  "direction_agreement_upper": 132095,
+  "radius_start_index": 122362,
+  "handoff_index": 122641,
+  "start_agreement": 139782,
+  "handoff_agreement": 139503,
+  "source_sha256": {
+    "TargetUpper.lean": "6aebed6c075924fd9fd2db9a6e347744c1c8252c0a9b6ab3536aa4c15c7768b3",
+    "Benchmark__IRSProfile.lean": "75d40b94814bdc0ad00b107a2cf6a995c79f45a4b8c1ec1ce2f18ec612e81126",
+    "OrbitPencil.lean": "86ba1702d47c0a8eb6300fd5b116b0a8dbc39a8b20b2b7f309aec15eaa8d4b7f",
+    "PrescribedTop.lean": "3946924e5d7d08a4c73e808c84fe0775fb433ae77d7d3fe19779be30d56d79c4",
+    "SubmissionUpper__Solution.lean": "5a7e538ae723672ec733f2f494f968624cb53e26cc96ba7c6334a384cc58811e",
+    "ArkLib__Definitions.lean": "4d44909832b91df721c079cd7cc9f2d033fdd62899f9d3b9410a99951bc0f713",
+    "ArkLib__SoundnessBounds.lean": "9d55d566e8c11b660148dd66ffe1ceb98aff0b96756fc114f56d281601be1dcf"
+  }
+}
