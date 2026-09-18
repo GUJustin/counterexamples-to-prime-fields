@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/prime_line_strengthening/fano_seven/cubic_fiber_analytic/independent_rank_minors.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5506063339998946,
+  "peak_rss_kib": 13248,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

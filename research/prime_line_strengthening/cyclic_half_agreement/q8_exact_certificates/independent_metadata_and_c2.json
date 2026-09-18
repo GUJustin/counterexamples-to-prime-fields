@@ -1,0 +1,98 @@
+[
+  {
+    "file": "metadata_c0_h1.json",
+    "sha256": "4caddd82f326f0eb1793aaf594012ff139539d851fb2a13ddd566bc2f57e9874",
+    "case": 0,
+    "h": 1,
+    "equations_reconstructed": true,
+    "guarded_divisions_verified": true,
+    "seconds": 0.04531787500309292
+  },
+  {
+    "file": "metadata_c0_h2.json",
+    "sha256": "c6a38ac02c736c5bf224ce26c8974078796dde3791e87ec3ed3da00d88b18b38",
+    "case": 0,
+    "h": 2,
+    "equations_reconstructed": true,
+    "guarded_divisions_verified": true,
+    "seconds": 0.03913158400973771
+  },
+  {
+    "file": "metadata_c1_h1.json",
+    "sha256": "f8d4d0ef04ecb82135842181c5ec1b758bcb2fe470dec9843f498cb8af5519af",
+    "case": 1,
+    "h": 1,
+    "equations_reconstructed": true,
+    "guarded_divisions_verified": true,
+    "seconds": 0.043212333010160364
+  },
+  {
+    "file": "metadata_c1_h2.json",
+    "sha256": "e63365462a4b4fde7f03168463e42b065be0f38abc1947faa873f000d54ee10e",
+    "case": 1,
+    "h": 2,
+    "equations_reconstructed": true,
+    "guarded_divisions_verified": true,
+    "seconds": 0.039229958987561986
+  },
+  {
+    "file": "metadata_c2_h1.json",
+    "sha256": "7d5e23f34efe942a11c1ad73ba8a7b53e13ce34231ad9bd60f1d7a34ea27e368",
+    "case": 2,
+    "h": 1,
+    "equations_reconstructed": true,
+    "guarded_divisions_verified": true,
+    "seconds": 0.05033991600794252
+  },
+  {
+    "file": "metadata_c2_h2.json",
+    "sha256": "4329aec1bc2f6cbda4cbdeffc0959b7fd206ec29b8e6f9d74c1fccee148a1d6a",
+    "case": 2,
+    "h": 2,
+    "equations_reconstructed": true,
+    "guarded_divisions_verified": true,
+    "seconds": 0.04771566700947005
+  },
+  {
+    "file": "metadata_c3_h1.json",
+    "sha256": "a6e806b7c36f5dbd5a78c14ea2e4b6cd03bbb59995a97c108f1f49e22fab5ca2",
+    "case": 3,
+    "h": 1,
+    "equations_reconstructed": true,
+    "guarded_divisions_verified": true,
+    "seconds": 0.04883008399337996
+  },
+  {
+    "file": "metadata_c3_h2.json",
+    "sha256": "a54bf3bd07c4172d3320dd087e3f91b627becac33cd22cb2be998163443ebc3e",
+    "case": 3,
+    "h": 2,
+    "equations_reconstructed": true,
+    "guarded_divisions_verified": true,
+    "seconds": 0.04473666599369608
+  },
+  {
+    "file": "cert_c2_h1.json",
+    "sha256": "b1cbd6be8547d4360d3a253dace85b119facb19591048cb39ac32e4dffeb8c44",
+    "case": 2,
+    "h": 1,
+    "identity_verified": true,
+    "equation_terms": [
+      13,
+      13,
+      13,
+      13,
+      13,
+      13
+    ],
+    "multiplier_terms": [
+      65,
+      65,
+      73,
+      73,
+      67,
+      67
+    ],
+    "seconds": 0.5518943330098409
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "q": 5,
+    "pairs": 2,
+    "rows": 4,
+    "certified": 0,
+    "claimed": 0,
+    "diagnostic": ""
+  },
+  {
+    "q": 7,
+    "pairs": 4,
+    "rows": 12,
+    "certified": 10,
+    "claimed": 10,
+    "diagnostic": ""
+  },
+  {
+    "q": 9,
+    "pairs": 12,
+    "rows": 48,
+    "certified": 48,
+    "claimed": 48,
+    "diagnostic": ""
+  },
+  {
+    "q": 13,
+    "pairs": 42,
+    "rows": 252,
+    "certified": 252,
+    "claimed": 252,
+    "diagnostic": ""
+  },
+  {
+    "q": 15,
+    "pairs": 172,
+    "rows": 1204,
+    "certified": 1204,
+    "claimed": 1204,
+    "diagnostic": ""
+  },
+  {
+    "q": 17,
+    "pairs": 322,
+    "rows": 2576,
+    "certified": 2576,
+    "claimed": 2576,
+    "diagnostic": ""
+  },
+  {
+    "q": 19,
+    "pairs": 448,
+    "rows": 4032,
+    "certified": 4032,
+    "claimed": 4032,
+    "diagnostic": ""
+  },
+  {
+    "q": 21,
+    "pairs": 984,
+    "rows": 9840,
+    "certified": 9840,
+    "claimed": 9840,
+    "diagnostic": ""
+  },
+  {
+    "q": 23,
+    "pairs": 2336,
+    "rows": 25696,
+    "certified": 25696,
+    "claimed": 25696,
+    "diagnostic": ""
+  }
+]

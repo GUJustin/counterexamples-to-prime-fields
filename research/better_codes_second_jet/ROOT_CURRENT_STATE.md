@@ -101,3 +101,23 @@ an irreducible universal full-kernel factor has a one-dimensional own
 interpolation system. Its binding-shape Hilbert gate forces somecontact>=40,
 but does not close the better.codes ledger. No benchmark improvement.
 Continue work until at least14:00UTC /10a.m. Eastern.
+
+
+September18 ~05:00UTC: the small-q cyclic exclusion now has independent
+modular receipt verification AND independent composite support census.
+A new fully audited five-by-three omitted-root gate proves the shift-zero
+Paley cubic lift has no proper finite-pole augmentation over characteristiczero:
+all2187phaseassignments checked, everyconsistentcase gives an improperquotient.
+The same fiber-count reduction works for general depressed cubic covers and
+for the second (orbit2) seven-bank. The finite gate is far faster thanGS.
+Primep211/p421 finite-pole searches complete with nohits; all15F29pure-cubic
+shifts also negative. Generalcubiccovers andorbit2 are now being tested.
+The polynomialdegree10 / pole-at-infinity gate was separately identified
+and is being added; finite-pole completeness does not cover it.
+Four-orbit cyclicq8/q9 and seven-orbit-plus-zero candidates produced only
+scoped algebraic exclusions, with independentcertification incomplete for
+some new Groebner branches; seeQ8_AUDIT_STATUS.md.
+A proposedleading-R-coefficient helper failed multiplicity transfer; explicit
+counterexample is saved inLEADING_COEFFICIENT_TRANSFER_OBSTRUCTION.md.
+No better.codes improvement, intrinsicfirst-ordertightness, oreight-word
+positive construction. Livebetter.codes checked:68.11/116.13stillcurrent.

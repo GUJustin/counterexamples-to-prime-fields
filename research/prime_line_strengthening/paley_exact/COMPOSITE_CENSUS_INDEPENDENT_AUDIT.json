@@ -1,0 +1,23 @@
+[
+  {
+    "q": 9,
+    "all_rotation_classes": 14,
+    "retained_classes": 9,
+    "ordered_pairs": 12,
+    "pass_all": true
+  },
+  {
+    "q": 15,
+    "all_rotation_classes": 429,
+    "retained_classes": 82,
+    "ordered_pairs": 172,
+    "pass_all": true
+  },
+  {
+    "q": 21,
+    "all_rotation_classes": 16796,
+    "retained_classes": 408,
+    "ordered_pairs": 984,
+    "pass_all": true
+  }
+]

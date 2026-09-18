@@ -1,0 +1,26 @@
+[
+  {
+    "file": "cert_c0_h1.json",
+    "sha256": "a51c7cf0ed54c05978cba82ac09df7705c89526252f2f8091d1017b9c20fabdd",
+    "case": 0,
+    "h": 1,
+    "identity_verified": true,
+    "equation_terms": [
+      13,
+      13,
+      13,
+      13,
+      13,
+      13
+    ],
+    "multiplier_terms": [
+      65,
+      65,
+      73,
+      73,
+      67,
+      67
+    ],
+    "seconds": 0.380686374992365
+  }
+]

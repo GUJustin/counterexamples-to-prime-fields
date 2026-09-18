@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/prime_line_strengthening/fano_seven/cubic_fiber_analytic/rank21.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.1167498339927988,
+  "peak_rss_kib": 62992,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}
