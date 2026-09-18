@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/ordinary_ca_superlinear/verify_exceptional_r5.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5395623329968657,
+  "peak_rss_kib": 7712,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

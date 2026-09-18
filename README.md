@@ -5,7 +5,7 @@ Working draft by Justin Thaler, September 18, 2026.
 [Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
 **Latest verified results (September 18, early morning):** the ePrint-style article
-is 227 pages with one-inch margins. New Theorem U.1 gives an exact
+is 228 pages with one-inch margins. New Theorem U.1 gives an exact
 seven-member nearest-codeword list at quarter rate: length28, dimension7,
 and fourteen agreements per candidate, over arbitrarily large prime fields.
 Two short cyclotomic identities give the construction; its complete-list proof
@@ -60,6 +60,13 @@ and every other polynomial has at most14. Its six-match gap
 is proved by independent complete extension-field interpolation searches and
 an exact characteristic-zero transfer. It also lies above the first-order
 curve, but remains a fixed-list construction.
+
+A separate ramified-reduction argument bounds the characteristic-zero cyclic
+word `W_r` by `r+2` agreements when `r>5` is prime, and by `r+2r/ell`
+when `r=ell^a`, `ell>5` prime. Thus growing prime orders cannot supply a fixed
+positive capacity gap through this word; fixed-prime powers and general
+composite orders remain open. This is a family-specific obstruction, not a
+universal list-decoding bound.
 
 
 Corollary 2.4 sharpens the shrinking-gap and prime-size lower bounds by

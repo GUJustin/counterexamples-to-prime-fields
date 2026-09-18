@@ -1,0 +1,15 @@
+{
+  "pass": true,
+  "method": "Newton power-sum recurrence with exact integer coefficient division; explicit primitive-root evaluations rather than polynomial gcd",
+  "orbit_representatives": 3326,
+  "covered_supports": 125970,
+  "candidate_primes": [
+    41,
+    61,
+    101,
+    181,
+    401
+  ],
+  "actual_exceptional_embeddings": [],
+  "seconds": 0.19700691699108575
+}

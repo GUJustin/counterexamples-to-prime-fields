@@ -1,0 +1,110 @@
+\subsection{Characteristic-zero obstructions at prime and prime-power cyclic orders}
+\label{sec:ordinary-ca-prime-order-obstruction}
+
+The following restriction concerns a characteristic-zero cyclic source;
+it does not restrict exceptional split characteristics in which such a
+source may exist only after reduction.
+The prime-order statement also follows from the more general coset-word
+argument recorded in
+\path{research/cyclotomic_dickson_word/PRIME_ORDER_COSET_WORD_OBSTRUCTION.md}.
+We give a direct proof that extends to the prime-power bound below.
+
+\begin{proposition}\label{prop:ordinary-ca-prime-order-obstruction}
+Let $r>5$ be prime, let $\mu_{4r}$ be the $4r$th roots of unity in an
+algebraically closed field of characteristic zero, and put
+\[
+ W_r(X)=\frac{1+X^{2r}}2-X^r.
+\]
+Every polynomial of degree below $r$ agrees with $W_r$ on at most $r+2$
+points of $\mu_{4r}$. Thus this length-$4r$, dimension-$r$ source has
+maximum agreement fraction at most
+$1/4+1/(2r)$, and capacity gap at most $1/(2r)$.
+\end{proposition}
+\begin{proof}
+Suppose $P$ agrees on a subset $S$ of size $M\ge r+3$. Write
+\[
+ F=X^{2r}-2X^r+1-2P=A_S Q,
+ \qquad A_S=\prod_{z\in S}(X-z).
+\]
+The monic quotient $Q$ has degree $k=2r-M\le r-3$.
+Its coefficients are determined successively by the coefficients of
+$F$ in degrees $2r,\ldots,M$, all above $r$. Those coefficients are
+$1,0,\ldots,0$, so monic division gives
+$Q\in\mathbb Z[\zeta_{4r}][X]$ and hence
+$P\in\mathbb Z[\zeta_{4r},1/2][X]$.
+In particular, this conclusion requires no Vandermonde inverse at a
+ramified prime.
+
+Reduce at a prime above $r$. The roots in $\mu_{4r}$ collapse to the
+four distinct fourth roots of unity, with exactly $r$ original roots
+in each reduction bucket. If the selected multiplicities are $n_c$,
+then $\overline F$ is divisible by
+$\prod_c(X-c)^{n_c}$. Consequently
+\[
+ \overline F'=-2\overline P'
+ \quad\text{is divisible by}\quad
+ \prod_{n_c>0}(X-c)^{n_c-1}.
+\]
+If nonzero, this derivative would have degree at least $M-4\ge r-1$,
+whereas $\deg\overline P'\le r-2$. Thus $\overline P'=0$, and
+$\deg\overline P<r$ makes $\overline P$ constant.
+At the four fourth roots, $\overline W_r$ takes the values
+$0,2,i,-i$, in some order. These are distinct in characteristic $r>5$:
+a collision of $2$ with $\pm i$ would force characteristic $5$.
+Only one bucket can therefore be occupied, contradicting $M>r$.
+The agreement-fraction statement follows by division by $4r$.
+\end{proof}
+
+\begin{corollary}\label{cor:ordinary-ca-prime-power-obstruction}
+If $r=\ell^a$ with $a\ge1$ and prime $\ell>5$, the same
+characteristic-zero source has maximum agreement at most
+$r+2r/\ell$, and capacity gap at most $1/(2\ell)$.
+\end{corollary}
+\begin{proof}
+Suppose instead that $M>r+2r/\ell$. The monic-division argument above
+again makes $P$ integral at $\ell$. Reduction collapses the selected
+roots into four buckets of multiplicities $n_c\le r$ with
+$\sum_c n_c=M$. Inductively, after $j$ Frobenius roots, write
+\[
+ \overline F=F_j^{\ell^j},\qquad
+ F_j=X^{2r/\ell^j}-2X^{r/\ell^j}+1-2P_j,
+ \qquad \deg P_j<r/\ell^j.
+\]
+For $0\le j<a$, the derivative is $-2P_j'$ and has root multiplicity
+at least $\lceil n_c/\ell^j\rceil-1$ in each occupied bucket.
+If it were nonzero, its degree would therefore be at least
+\[
+ \sum_c\lceil n_c/\ell^j\rceil-4
+ \ \ge\ M/\ell^j-4
+ \ >\ r/\ell^j-2,
+\]
+where the last inequality uses
+$M-r>2\ell^{a-1}\ge2\ell^j$.
+This contradicts $\deg P_j'\le r/\ell^j-2$.
+The residue field is perfect, so taking an $\ell$th root gives the
+next stage. At $j=a$, $P_a$ is constant and agrees with $W_1$ at
+every occupied fourth root. The four values $0,2,i,-i$ are distinct,
+so only one bucket is occupied, contradicting $M>r$.
+\end{proof}
+
+Thus growing prime orders, and prime-power orders whose prime bases
+also grow, cannot supply a fixed positive capacity margin in this
+characteristic-zero source, and hence cannot supply a fixed positive
+margin above the first-order agreement threshold. This does not exclude
+powers of a fixed prime or arbitrary composite orders, nor a separate
+positive-characteristic source at another split prime.
+
+More generally, the same induction with $4s$ buckets shows the following
+reduction, rather than an exclusion: if $r=\ell^a s$ with $\ell$ an odd prime, $a\ge1$,
+$\gcd(\ell,s)=1$, and
+$M>r+(4s-2)\ell^{a-1}$, then a polynomial of degree below $s$
+agrees with $W_s$ on at least $\lceil M/\ell^a\rceil$ points of
+$\mu_{4s}$ in the residue field of characteristic $\ell$.
+This field is a prime field when $\ell\equiv1\pmod{4s}$;
+in general it is an extension field. The reduction preserves or
+increases the normalized capacity gap, but does not rule out the
+smaller source. Independent proof audits and the detailed reduction
+are recorded in
+\path{research/ordinary_ca_superlinear/PRIME_ORDER_INDEPENDENT_AUDIT.md}
+and
+\path{research/ordinary_ca_superlinear/PRIME_POWER_FROBENIUS_SOURCE_REDUCTION.md}.

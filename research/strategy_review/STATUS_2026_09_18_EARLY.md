@@ -152,3 +152,11 @@ New rational reconstruction of the nine-quartic exchanged source to17^32 did not
 Better.codes still unchanged. Exact full multiplicity2 weighted boxes for10/11sources have rank123/123, excluding every capped/non-prefix subspace inside that box. A Riccati cancellation toy is real but already explained by an optimized smaller monomial support, so no benchmark saving. New global coupled-gradient formulation is recorded as a target.
 
 Active alternate directions: elliptic/Lattes source models, exceptional cyclotomic primes yielding short Dickson nearest orbits, and prime-field ordinary-CA descent. New coordinate-descent and model-specific elliptic obstructions are being audited; no broad impossibility claim. Deadline14:00UTC remains active.
+
+## Cyclic-order arithmetic clarification and extension
+
+The prime-order r+2 bound was already present, more generally, in the September17 archived PRIME_ORDER_COSET_WORD_OBSTRUCTION.md. The current prime-order argument is an independent proof and manuscript integration, NOT a new research discovery. The fixed-word prime-power extension M≤r+2r/ell has now passed independent audit and is integrated as CorollaryN.7 following PropositionN.6. For generalr=ell^a*s, the derived high-agreement Frobenius reduction produces a smaller characteristic-ell source; this is a reduction, not an exclusion of all nonsmooth orders.
+
+The exact all-prime r5/M8 support gate independently passes:3326safe orbits cover125970supports, candidate norm primes41,61,101,181,401 allfail simultaneousprimitive-root equations. Hence no splitprime admits8agreements in that fixedcyclicmodel. Rootreplay usesNewtonpower sums andexplicitprimitive-root evaluation instead of originalhomogeneousrecurrence/polynomialgcd.
+
+The elliptic shared-polePaleypilot overF211 yields13distinct degree≤25candidates but evenbest100pointdomain has totalbucket227, minimumagreement≤17: belowcapacity, not a viablepositivefixture. Model-specific translationbarriers are audited. No universalellipticexclusion and no better.codes improvement.
