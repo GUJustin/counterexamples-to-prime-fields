@@ -254,12 +254,54 @@ monomial support under the characteristic guard. Caps cannot increase.
 Theorem~\ref{thm:current-graded} applies to the resulting positive row test.
 \end{proof}
 
+\begin{corollary}[A filtered row test]\label{cor:filtered-nonmonomial-cost}
+The same necessary costs hold for a $Y_0$-translation-stable space
+$W\subseteq\mathbb F[Y_0,Y_1]$ of maximum total jet degree $d\le D$,
+with the full source $U=\mathbb F[X]W\cap\{\mathrm{wt}_{(1,D,D-1)}<mA\}$,
+under the following filtered row test. Let $G_q$ be the total-degree
+filtration increments of $U$, let $L$ be its image in the graded local
+contact quotient $V$, and set
+\[
+ R_q=\dim(L\cap V_{\le q})-\dim(L\cap V_{\le q-1}).
+\]
+If $\sum_q(H-q+1)_+(G_q-NR_q)>0$, the conclusions of the row-test
+part of Theorem~\ref{thm:current-graded} follow. These are target-image
+filtration ranks; input-restricted rank increments need not coincide
+with them. This test is an application of the primary graded-kernel
+lemma~\cite[Lemma 3.12]{DKTcurrent}, agreeing with Eq63 on homogeneous
+sources, rather than a claimed nonmonomial statement of its Proposition 5.10.
+\end{corollary}
+\begin{proof}
+A fixed coordinate projection injective on $L$, obtained by decreasing-degree
+pivots, uses exactly $R_q$ rows of degree $q$. Translation in $X$ and $Y_0$
+preserves $U$, so the same rows detect each translated local image.
+An entry from a source vector of jet degree $q$ to a target row of degree
+$r$ has challenge degree at most $q-r$. The graded-kernel lemma gives
+the stated sufficient test without challenge-dependent row operations.
+
+Choose a total-degree-adapted basis of $W$, with increasing-$Y_1$
+pivots in each highest part. A pivot of degree $q$ and derivative
+exponent $v$ has weight $Dq-v$, whereas every lower-degree tail has weight
+at most $D(q-1)\le q(D-1)\le Dq-v$, since $q\le d\le D$.
+The pivot weights and full $X$-prefix lengths therefore persist under
+highest-total-degree degeneration. Independence follows by taking the
+largest jet degree of maximum weight in any proposed relation, then its
+first pivot; ties at $q=D$ cause no problem. Thus the limiting source is
+exactly the full source for $\operatorname{gr}W$, preserving every $G_q$.
+The limit of the local image is $\operatorname{gr}L$, and the image of the
+limiting source is a graded subspace of it. Its rank in degree $q$ is
+therefore at most $R_q$. Corollary~\ref{cor:graded-nonmonomial-cost}
+now supplies a positive monomial row-test certificate with no larger
+height or declared caps, proving the necessary costs.
+\end{proof}
+
 \begin{remark}[Scope of current-method tightness]
 The mandatory triangle follows for every coordinatewise order ideal,
 without assuming that rearrangement preserves a graded moment. Both tests cover supports downward only in $Y_0$: the row test uses
 excess deletion and grouped positive sorting, while the column test uses
-weighted height sorting. The preceding corollary covers a graded translation-stable nonmonomial
-class for Eq63 only. Arbitrary filtered nonmonomial spaces and the
+weighted height sorting. Corollary~\ref{cor:graded-nonmonomial-cost} covers a graded translation-stable nonmonomial
+class for Eq63 only. Beyond the degree restriction in Corollary~\ref{cor:filtered-nonmonomial-cost},
+arbitrary filtered nonmonomial spaces and the
 alternative equal-weight coefficient cutoff remain outside these statements. The characteristic hypothesis remains the stronger
 local-rank hypothesis of this note, not merely the reconstruction
 condition $p>\max\{D,b\}$. Optimizing actual component degrees, exploiting

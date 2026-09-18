@@ -152,3 +152,5 @@ graded Eq63, page50. Cached authoritative PDF checksum:
 b67c188ec477b6063caf9c1c06b214c71e358ff09b9517adcdb1db212ea2700a.
 The order-ideal extension is separately proved in the linked note; no
 formal verification or independent human referee is claimed.
+
+The companion also proves a filtered-row-test corollary for translation-stable jet spaces of maximum total degree d≤D. Its ranks are target-image filtration increments, and its test is derived directly from primary Lemma 3.12; it agrees with Eq63 on homogeneous sources. This does not claim that Proposition 5.10 itself states a nonmonomial theorem. Exact finite coefficient-prefix preservation and an independent audit are in FILTERED_NONMONOMIAL_SCOPE.md and FILTERED_NONMONOMIAL_INDEPENDENT_AUDIT.md under research/current_graded_method_costs/.
