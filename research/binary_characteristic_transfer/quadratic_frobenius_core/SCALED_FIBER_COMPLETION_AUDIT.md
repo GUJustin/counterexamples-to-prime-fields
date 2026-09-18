@@ -41,3 +41,11 @@ Compared with the prior projective quadratic line, this improves characteristic 
 More generally, q=N²/81. An O(N²) exceptional-count upper certificate with constant exceeding 1/81 is already larger than the entire challenge field. Such a comparison supplies no nontrivial failure-probability bound here. The above-first-order threshold is meaningful, but this theorem is not a matching universal quadratic DKT lower bound. Its actual bad probability is Theta(1/p)=Theta(N^(-1/2)), and the rate and normalized source gap vanish.
 
 No new generic tightness claim, prime-field theorem, or fixed-rate separation follows from this audit.
+
+## Exact-source strengthening, September 18 follow-up
+
+Independently checked and applied to `scaled_fiber_padding.tex`: choose alpha,beta outside the parameter-plane union BEFORE selecting neutral nodes. Blacklist cubics for the D0 canonical family and the two D1 canonical families at those endpoints. The union has at most 3p(p+1) quadratics, so the new sufficient field count is p⁴>=18p²+9p, valid already for p>=5.
+
+For a nonzero linear coefficient c, coefficientwise B-valuedness on a physical line uB requires c in uB. The four physical lines are distinct, so at most one can have this property. A quadratic canonical on neither block consequently has at most p+4 active matches. When c=0, the corresponding bounds are four active matches if a is in B, or eight by projection otherwise. Therefore every doubly noncanonical quadratic has at most p+7 matches after padding, at most2p for p>=7. Endpoint canonical quadratics gain no padding matches and have at most2p active matches. Nonzero-constant D0 canonical words attain2p and explain both endpoint words on the same core coordinates.
+
+Thus the updated sources BOTH have agreement exactly2p, and their common agreement is exactly2p. Their threshold gaps are exactly2p. The M singleton exceptions, single two-constant exception, characteristic onset p>=41, and all earlier finite-certificate qualifications are unchanged. This supersedes only the older source upper bound2p+3 in the audit above; it adds no new appendix or new result family.

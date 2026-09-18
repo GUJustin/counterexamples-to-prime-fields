@@ -4,7 +4,7 @@
 \begin{proposition}\label{prop:scaled-frobenius-padding}
 For every prime $p\ge41$, there is a length-$N=9p^2$, dimension-three
 Reed--Solomon code over $E=\mathbb F_{p^4}$ and two received words whose
-individual and common agreement are at most $2p+3$, with the following
+individual and common agreements are all exactly $2p$, with the following
 property. At threshold $T=4p$, their affine linear combination has exactly
 \[
  M=(p+1)(p-1)^2
@@ -13,7 +13,7 @@ exceptional parameters with singleton lists, and one further exceptional
 parameter with a list of size two. All other parameters have empty lists.
 The threshold is above the DKT first-order curve and below the exact
 Johnson threshold. In particular $M=\Theta(N^{3/2})$, the source and common
-agreement gaps are at least $2p-3=\Theta(\sqrt N)$, and
+agreement gaps are exactly $2p=\Theta(\sqrt N)$, and
 $p=\sqrt N/3$ exceeds the message degree.
 \end{proposition}
 
@@ -89,27 +89,47 @@ its norm-one coefficient is already fixed, and the other constant term
 fails the relevant image condition. A quadratic canonical on neither
 block has at most $2p$ matches in total.
 
-Append $5p^2+4$ distinct points outside $D_0\cup D_1$, avoiding all roots
-of $X^3-Q_{a,b}$ for the $p(p+1)$ core canonical quadratics. Put
-$f(x)=x^3$, $g(x)=0$ at these new points. This is possible since
-\[
- p^4\ge12p^2+3p
-\]
-for $p\ge5$. Every canonical core quadratic gains zero matches, and
-any other quadratic gains at most three. Hence the only parameters
-with agreement at least $4p$ are precisely the $M$ parameters above,
-each with its unique canonical witness.
+We also need a sharper bound for a quadratic canonical on neither block.
+The four physical $B$-lines forming $D_0\cup D_1$ are distinct, since
+$\eta\notin B$. Write the quadratic as $aX^2+cX+b$.
+On a component $uB^*$ of block $j$, with $\eta_0=1$ and $\eta_1=\eta$,
+normalizing the received leading coefficient shows that coefficientwise
+$B$-valuedness requires $cu/\eta_j\in B$, or equivalently $c\in uB$.
+If $c\ne0$, this can hold on at most one of the four lines. The block
+containing that line has at most $p$ matches by the noncanonical bound;
+the other block has at most four by projection. If $c=0$ and $a\in B$,
+the linearized equations give at most two matches per block unless it is
+canonical there. If $c=0$ and $a\notin B$, projection gives at most four
+per block. Thus every quadratic canonical on neither block has at most
+$\max(p+4,8)=p+4$ active matches for $p\ge5$.
 
-Outside the union of the planes, the individual agreement is at most
-$2p+3$. The common agreement of $(f,g)$ is also at most $2p+3$.
-Indeed, if the proposed direction quadratic is zero, the simultaneous
-matches lie in the core and padding and number at most $2p+3$; if it
-is one, they lie in $D_1$ and number at most $2p$. Any other direction
-quadratic agrees with this zero--one direction at at most four points.
-Choose two distinct parameters $\alpha,\beta$ outside the union of
-planes, and use the two far words $r=f+\alpha g$ and $s_0=f+\beta g$
-as sources. Their common agreement is unchanged by this invertible
-change of source coordinates. For $z\ne-1$,
+Choose distinct $\alpha,\beta$ outside the union of the parameter planes,
+whose size is $1+(p+1)(p^2-1)<p^4-1$.
+Append $5p^2+4$ distinct points outside $D_0\cup D_1$, avoiding all roots
+of $X^3-Q$ for the following three families: the $p(p+1)$ quadratics
+canonical on $D_0$, and the $p(p+1)$ quadratics canonical on $D_1$ at each
+of the two parameters $\alpha,\beta$.
+Put $f(x)=x^3$, $g(x)=0$ at these new points. There are at most
+$9p(p+1)$ forbidden roots, and the required padding exists since
+\[
+ p^4\ge18p^2+9p
+\]
+for $p\ge5$. Every $D_0$-canonical quadratic gains zero matches, and
+any other quadratic gains at most three. Consequently the only parameters
+with agreement at least $4p$ are precisely the $M$ parameters above,
+each with its unique canonical witness: a quadratic canonical only on
+$D_1$ has at most $2p+3<4p$ matches, and one canonical on neither block
+has at most $p+7<4p$.
+
+At each of $\alpha,\beta$, a quadratic canonical on either block gains
+zero padding matches by construction and has at most $2p$ active matches.
+Every other quadratic has at most $p+7\le2p$ matches for $p\ge7$.
+A $D_0$-canonical quadratic $Q_{a,b}$ with $b\ne0$ attains $2p$ matches.
+Thus the two sources $r=f+\alpha g$ and $s_0=f+\beta g$ each have
+agreement exactly $2p$. Their common agreement is at most either
+individual agreement, and the same $Q_{a,b}$ explains both words on its
+$2p$ matching core coordinates, so common agreement is also exactly $2p$.
+For $z\ne-1$,
 \[
  r+zs_0=(1+z)\left(f+\frac{\alpha+\beta z}{1+z}g\right).
 \]

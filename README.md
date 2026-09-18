@@ -43,7 +43,7 @@ A new extension-field construction raises the characteristic scale to
 p = sqrt(N)/3: over F_(p^4), length N = 9p² and dimension three,
 there are (p+1)(p−1)² singleton exceptional challenges and one
 two-word exception at agreement 4p. Both sources and common agreement
-are at most 2p+3. For p≥41 the threshold is above the DKT curve and
+are exactly 2p. For p≥41 the threshold is above the DKT curve and
 below Johnson. An independently checked finite DKT certificate uses
 derivative degree three and requires only p>3. This retains a gap of order sqrt(N) and an exceptional
 count of order N^(3/2), while improving characteristic from the previous

@@ -4,13 +4,13 @@ Checked September 18, 2026 against the named local primary texts below. This est
 
 ## Matched result
 
-The audited new construction has N=9p², K=3, q=p⁴, T=4p, individual source agreements and common agreement at most 2p+3, and M+1=(p+1)(p−1)²+1 exceptional labels. M lists are singleton; the direction label has two constants. For safely p≥41, T is above first order and below Johnson. The agreement gap is Θ(√N), rate vanishes, characteristic is Θ(√N), and bad-label probability is Θ(1/p)=Θ(N^(−1/2)). It is not a prime-alphabet or fixed-rate result.
+The audited new construction has N=9p², K=3, q=p⁴, T=4p, individual source agreements and common agreement exactly 2p, and M+1=(p+1)(p−1)²+1 exceptional labels. M lists are singleton; the direction label has two constants. For safely p≥41, T is above first order and below Johnson. The agreement gap is Θ(√N), rate vanishes, characteristic is Θ(√N), and bad-label probability is Θ(1/p)=Θ(N^(−1/2)). It is not a prime-alphabet or fixed-rate result.
 
 ## Existing projective theorem: closest direct comparison
 
 `../projective_quadratic_line.tex`, Theorem `thm:projective-quadratic-line`, already proves K=3, Θ(N^(3/2)) labels, Θ(√N) source gap and above-first-order/below-Johnson threshold, with exhaustive singleton lists. Its N=2(p⁴+p³+p²+p+1), q=p¹⁵, source agreement 2(p+1), and exceptional agreement 2(p²+p+1).
 
-It does NOT specialize to N=Θ(p²): its five-dimensional source domain and three-space locator population fix these exponents. The new parameter improvement is characteristic N^(1/4)→N^(1/2), field size Θ(N^(15/4))→Θ(N²), and hence a better exceptional-label probability. It loses exact source/common agreement and the all-singleton property at one direction label. Neither the label exponent nor the square-root agreement-gap scale is new relative to that theorem.
+It does NOT specialize to N=Θ(p²): its five-dimensional source domain and three-space locator population fix these exponents. The new parameter improvement is characteristic N^(1/4)→N^(1/2), field size Θ(N^(15/4))→Θ(N²), and hence a better exceptional-label probability. The enlarged neutral blacklist makes both source agreements and common agreement exactly 2p. It loses the all-singleton property at one direction label. Neither the label exponent nor the square-root agreement-gap scale is new relative to that theorem.
 
 ## Binary repository ingredients
 
