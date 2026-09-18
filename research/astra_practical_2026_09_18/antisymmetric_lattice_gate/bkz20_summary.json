@@ -1,0 +1,11 @@
+{
+  "stage": "bkz20",
+  "seconds": 0.5630389169964474,
+  "min_squared_norm": 41,
+  "min_infinity_norm": 2,
+  "distinct_sign_classes": 0,
+  "ternary_basis_even": 0,
+  "ternary_basis_odd": 0,
+  "ternary_pair_even": 0,
+  "pair_combinations_checked": 16002
+}

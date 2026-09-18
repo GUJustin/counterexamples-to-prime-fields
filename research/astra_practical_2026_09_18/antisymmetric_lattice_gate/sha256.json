@@ -1,0 +1,13 @@
+{
+  "basis.json": "6b1e4e716d6c42c3b321b8620b70422afd5abb1b423884d54cd345f6bb07fb92",
+  "lll_basis.json": "22f14af1d346de3c18f8b0360b3de4522bfc3522b3370b4b02adceb113ecc478",
+  "bkz20_basis.json": "a6d38325bc6641cfa9ecc7fd1b1d4d1c56f47fda4796dfc757f09326adaf1d65",
+  "bkz40_basis.json": "bf52ca8da5f7e859a2dd73d4c92a4fd274e5e7cd78efa909054d8f853e2e83d8",
+  "rotated_result.json": "3fdbdd4b6d2a1d1fee06473635e78e628b03b05498781b72e7d5af7c4e9ce4b6",
+  "verified.json": "a7f4cd4d40484a0f90ada39af53066fcb6caac382589d441079713c1a9f8d16d",
+  "pilot.py": "0d28e11976944999c4f226bf295217945616dfd59430db978e1afa3c36de0c5b",
+  "rotate_ternary.py": "c64a65b212afdb0c2d136a38b64adc9971772dfe6e0a492ecadbdb3eb4f5bd57",
+  "verify.py": "fa2df023cd3008125ffd2ef4945da45e8aa7b3a95d41893ff1217382d4c84b3b",
+  "resources.json": "89b38860d04b972f6b495a4801697169fa86f1e4ec42d8c5013ce1f965ddc45e",
+  "refinement_resources.json": "38b799769d890dbbca26ee28b0f8d1f8058ae882aa86fa742bab1df2f9cf13d6"
+}

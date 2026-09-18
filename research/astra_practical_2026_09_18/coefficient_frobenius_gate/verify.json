@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "prime": 2130706433,
+  "irreducible_polynomial": "X^6+X^2+20",
+  "irreducibility": "Rabin: Frobenius^6 identity; gcd tests at powers2,3",
+  "alpha_frobenius_cubed_equals_negative_alpha": true,
+  "relative_trace_compilers": [
+    {
+      "subfield_degree": 1,
+      "relative_degree": 6,
+      "extra_packets": 5,
+      "domain_length": 32,
+      "row_dimension": 16,
+      "witness_degree_upper": 11,
+      "exact_agreements": 29,
+      "far_direction_agreement_upper": 27,
+      "nonbase_label": false
+    },
+    {
+      "subfield_degree": 2,
+      "relative_degree": 3,
+      "extra_packets": 2,
+      "domain_length": 32,
+      "row_dimension": 16,
+      "witness_degree_upper": 11,
+      "exact_agreements": 23,
+      "far_direction_agreement_upper": 21,
+      "nonbase_label": true
+    },
+    {
+      "subfield_degree": 3,
+      "relative_degree": 2,
+      "extra_packets": 1,
+      "domain_length": 32,
+      "row_dimension": 16,
+      "witness_degree_upper": 11,
+      "exact_agreements": 21,
+      "far_direction_agreement_upper": 19,
+      "nonbase_label": true
+    },
+    {
+      "subfield_degree": 6,
+      "relative_degree": 1,
+      "extra_packets": 0,
+      "domain_length": 32,
+      "row_dimension": 16,
+      "witness_degree_upper": 11,
+      "exact_agreements": 19,
+      "far_direction_agreement_upper": 17,
+      "nonbase_label": true
+    }
+  ],
+  "practical_ledger": [
+    {
+      "subfield_degree": 1,
+      "relative_degree": 6,
+      "head_coordinates": 1,
+      "off_subfield_coordinates": 5,
+      "total_field_coordinates": 6,
+      "mean_fiber": 6.857934102551106e+16,
+      "guaranteed_supports": 68579341025511059,
+      "guaranteed_fixed_word_list": 32186199,
+      "challenge_subfield_size": "2130706433",
+      "distinct_labels_not_automatically_certified": true
+    },
+    {
+      "subfield_degree": 2,
+      "relative_degree": 3,
+      "head_coordinates": 4,
+      "off_subfield_coordinates": 4,
+      "total_field_coordinates": 8,
+      "mean_fiber": 0.01510588150014017,
+      "guaranteed_supports": 1,
+      "guaranteed_fixed_word_list": 1,
+      "challenge_subfield_size": "4539909903627583489",
+      "distinct_labels_not_automatically_certified": true
+    },
+    {
+      "subfield_degree": 3,
+      "relative_degree": 2,
+      "head_coordinates": 5,
+      "off_subfield_coordinates": 3,
+      "total_field_coordinates": 8,
+      "mean_fiber": 0.01510588150014017,
+      "guaranteed_supports": 1,
+      "guaranteed_fixed_word_list": 1,
+      "challenge_subfield_size": "9673215236899702176256884737",
+      "distinct_labels_not_automatically_certified": true
+    },
+    {
+      "subfield_degree": 6,
+      "relative_degree": 1,
+      "head_coordinates": 6,
+      "off_subfield_coordinates": 0,
+      "total_field_coordinates": 6,
+      "mean_fiber": 6.857934102551106e+16,
+      "guaranteed_supports": 68579341025511059,
+      "guaranteed_fixed_word_list": 1,
+      "challenge_subfield_size": "93571093019388561295270373781649880353786165192103559169",
+      "distinct_labels_not_automatically_certified": true
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/astra_practical_2026_09_18/antisymmetric_lattice_gate/pilot.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.142581791,
+  "peak_rss_kib": 54032,
+  "rss_limit_mib": 512,
+  "time_limit_seconds": 60
+}
