@@ -1,0 +1,184 @@
+% Included from the ordinary-CA appendix.
+% Baseline: the existing fixed-characteristic locator compiler.
+% New refinement: exhaustive singleton classification below Johnson.
+\begin{proposition}[A low-rate large-characteristic line with singleton nearest lists]
+\label{prop:low-rate-large-characteristic-singletons}
+Let $p\ge53$ be prime, let $\mathbb B=\mathbb F_{p^5}$, and let
+$\mathbb F=\mathbb F_{p^{15}}$. Choose $\theta\in\mathbb F\setminus\mathbb B$; then
+$1,\theta,\theta^2$ are linearly independent over $\mathbb B$.
+On the evaluation domain $\mathbb B$, put
+\[
+ N=p^5,\qquad K=p,\qquad
+ f=X^{p^4-1}+\theta X^{p^3-1}+\theta^2X^{p^2-1},
+ \qquad g=X^{p^2-1}.
+\]
+For degree-$<K$ witnesses, both individual source agreements and their
+common agreement equal $C=p^2-1$.
+Exactly
+\[
+ M=\genfrac{[}{]}{0pt}{}{5}{2}_p
+  =p^6+p^5+2p^4+2p^3+2p^2+p+1
+\]
+nonzero challenges $z\in\mathbb F$ have nearest agreement $A=p^3-1$.
+Exactly $M$ further nonzero challenges have nearest agreement $p^2$;
+all other challenges have nearest agreement $C=p^2-1$.
+At every challenge in either of the first two classes, the list at
+threshold $p^2$ consists of exactly one polynomial.
+Consequently, at every integer threshold $p^2<T\le A$, the qualifying
+labels are exactly the first $M$ labels and each qualifying list is a singleton.
+
+Exactly these $M>N^{6/5}$ challenges are bad at the lower advertised threshold
+$A_0=p^3-p^2$. This threshold is below $\sqrt{N(K-1)}$ and above the
+first-order curve $Na_1(K/N)$. An explicit first-order certificate uses
+\[
+ m=4,\qquad B_\partial=2,\qquad B_{\rm jet}=4p^2,
+ \qquad B_Z=192p^2.
+\]
+In particular its counting characteristic guard
+$p>\max\{K-1,B_\partial\}$ holds. The finite certificate and squarefree counting formulas
+of~\cite[Proposition~5.10 and Lemma~5.6]{dkt2026} give the uniform
+upper bound $68N$ for the list at threshold $A_0$ of every received word
+on this evaluation set. For every affine received line, they give at most
+$300000N^2$ exceptional challenges for full-agreement-set MCA recovery
+at $A_0$.
+\end{proposition}
+
+\begin{proof}
+For every three-dimensional $\mathbb F_p$-subspace $W\subseteq\mathbb B$,
+write its monic locator as
+\[
+ L_W=X^{p^3}+aX^{p^2}+cX^p+vX.
+\]
+Its linear coefficient $v$ is nonzero. Define
+\[
+ z_W=c^p-a^{p+1}+\theta a-\theta^2,
+ \qquad
+ h_W=-\bigl((\theta-a^p)c+v^p\bigr)X^{p-1}
+        -(\theta-a^p)v.
+\]
+The locator compiler identity is
+\[
+ X(f+z_Wg-h_W)=L_W^p+(\theta-a^p)L_W.
+\]
+On $\mathbb B$ the second factor in
+$L_W(L_W^{p-1}+\theta-a^p)$ never vanishes. Since $h_W(0)\ne0$,
+the agreement set is exactly $W\setminus\{0\}$.
+The coordinates of $z_W$ in $1,\theta,\theta^2$ determine $a,c$.
+Two such locators with the same $a,c$ differ only by a multiple of $X$;
+their subspaces intersect in a nonzero vector, so they coincide.
+Thus the displayed $M$ labels are distinct and nonzero.
+
+We prove exhaustiveness already at threshold $p^2$, including arbitrary
+witness coefficients in $\mathbb F$. Projecting an agreement equation
+onto its $\theta^2$ coordinate gives a polynomial of degree at most
+$p^2-1$ with at least $p^2$ roots. Hence the $\theta^2$ coordinates of
+$z,h$ are respectively $-1,0$. Write
+$z=b+\theta a-\theta^2$ and $h=h_0+\theta h_1$, with coefficients
+in $\mathbb B$, and set
+\[
+ L=X^{p^3}+aX^{p^2}-Xh_1,\qquad
+ T=X^{p^4}+bX^{p^2}-Xh_0.
+\]
+The polynomial
+\[
+ \frac{T-L^p+a^pL}{X}
+ =(b+a^{p+1})X^{p^2-1}+X^{p-1}h_1^p-h_0-a^ph_1
+\]
+has degree at most $p^2-1$ and vanishes at every agreement coordinate.
+At a matched zero this follows from $h_0(0)=h_1(0)=0$, so division by
+$X$ loses no required root. It is identically zero. The distinct
+exponents $p-1+pj$ force $h_1$ to have only degrees $0,p-1$.
+Coefficient comparison gives precisely
+\[
+ L=X^{p^3}+aX^{p^2}+cX^p+vX,\qquad
+ z=c^p-a^{p+1}+\theta a-\theta^2,
+\]
+and the displayed formula for $h_W$, whether or not $L$ is a
+three-space locator.
+
+If $v\ne0$, zero is not matched and the agreement count is
+$|\ker_{\mathbb B}L|-1$. At least $p^2$ agreements therefore forces
+$L$ to be a three-space locator, giving the first class.
+If $v=0$, then $L=J^p$, where
+\[
+ J=X^{p^2}+a^{1/p}X^p+c^{1/p}X.
+\]
+Zero is now matched, and at least $p^2$ agreements forces $J$ to be
+the locator of a two-dimensional subspace $U$. Each such $U$ supplies
+a distinct secondary label, with exactly $p^2$ agreements; there are
+$\genfrac{[}{]}{0pt}{}{5}{2}_p=M$ of them.
+
+The two label classes are disjoint. Otherwise their identical $a,c$
+would give $L_W=J_U^p+vX$ with $v\ne0$.
+Their kernels intersect trivially, so $\mathbb B=U\oplus W$.
+The $\mathbb F_p$-linear map $x\mapsto-J_U(x)^p/v$ is the projection
+onto $W$ along $U$, of operator trace $3$. But its linearized polynomial
+has no $X$ term. For a map $\sum_{i=0}^4 a_i x^{p^i}$ on $\mathbb B$,
+the operator trace is $\operatorname{Tr}_{\mathbb B/\mathbb F_p}(a_0)$:
+after extending scalars, multiplication is diagonal in the five embedding
+coordinates, while every nonidentity Frobenius power permutes these
+coordinates without a fixed point. Thus this projection has trace zero,
+a contradiction since $p\ne3$.
+The coefficient comparison and injectivity show that each label in
+either class has a singleton list at threshold $p^2$.
+
+The source upper bounds follow by projecting $f$ onto its
+$\theta^2$ coordinate and by using the degree of $g$: either source
+has at most $p^2-1$ agreements with a strict witness. For the matching
+common lower bound, choose any two-dimensional subspace $U$.
+Remainders of the additive heads modulo $L_U$ have degree at most
+$p$; division by $X$ gives simultaneous degree-$<p$ witnesses on
+$U\setminus\{0\}$. Hence both individual agreements and common
+agreement equal $C$. The same simultaneous witnesses give every word
+on the line at least $C$ agreements. Exhaustiveness above therefore
+gives nearest agreement exactly $C$ at all remaining challenges,
+completing the three-level classification.
+
+For completeness, the stated finite first-order comparison involves
+no characteristic-dependent hidden constant. Write $d=p-1$ and
+$B=4p^2$. The derivative-weighted support
+\[
+ X^xY_0^uY_1^v,\qquad v\le2,\quad u+v\le B,
+ \quad x+du+(d-1)v<4A_0
+\]
+has
+\[
+ G=24p^5-24p^4-6p^3+18p^2+p-3>\tfrac{47}{2}N
+\]
+coefficients. Its local-rank bound is $23$, from Taylor layers
+$3,6,8,6$. With $H=48B$, the graded challenge test follows from
+\[
+ (H-B+1)G>(47B+1)\tfrac{47}{2}N>(H+1)23N.
+\]
+The finite squarefree counting formulas
+of~\cite[Eqs.~(38), (54), and (55)]{dkt2026} apply with derivative cap two,
+even though $B>p$. To record a reproducible coarse budget, their
+parameters satisfy
+\[
+ \lambda<2p^2,\quad F_{\rm reg}\le28p^3,\quad
+ S<12p^2,\quad H_s=576p^2,\quad J_1\le30776p^6.
+\]
+Choose both incidence thresholds $\lfloor A_0/2\rfloor$.
+The two regular terms are at most $184656p^{10}$ and $112p^{10}$;
+the ordinary tail is at most $82956p^7+15588p^4$.
+These give the asserted bounds.
+Finally $A_0^2<N(K-1)$, while the low-rate curve estimate
+\[
+ a_1(p^{-4})\le\frac{p^{-2}}{\sqrt2}
+     +\frac{p^{-3}}{2^{3/4}\sqrt3}
+     <p^{-2}(1-1/p)
+\]
+holds for $p\ge53$.
+\end{proof}
+
+\paragraph{Scope.}
+The baseline population is an explicit specialization of the existing
+fixed-characteristic locator compiler
+of~\cite{binary-counterexamples}; the refinement is its exhaustive
+singleton-list classification. The ambient field is an extension field,
+the rate tends to zero, and the absolute first-order margin tends to zero.
+Singleton classification holds throughout $p^2<T\le A$, including
+the below-Johnson advertised threshold $A_0$. This is a statement about
+the displayed received line, not a bound on lists of arbitrary received words.
+The ratio $A_0/(Na_1(K/N))$ tends to $\sqrt2$, but this does not establish
+fixed-rate or fixed-margin tightness.

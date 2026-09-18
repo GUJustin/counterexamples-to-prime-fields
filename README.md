@@ -4,8 +4,18 @@ Working draft by Justin Thaler, September 18, 2026.
 
 [Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
-**Latest verified results (September 18, early morning):** the ePrint-style article
-is 228 pages with one-inch margins. New Theorem U.1 gives an exact
+**Latest verified results (September 18, morning):** the ePrint-style article
+is 231 pages with one-inch margins. New Proposition N.8 gives an exact
+large-characteristic line with more than N^(6/5) exceptional challenges,
+each with a singleton list at a threshold below Johnson and above the
+first-order curve. Its parameters are N=p^5, dimension p, and ambient
+field F_(p^15). An explicit uniform first-order upper comparison is
+300000N². This strengthens the existing binary-paper locator construction
+by classifying every qualifying challenge and every nearby polynomial.
+The rate and absolute margin tend to zero: this is not fixed-rate tightness,
+a prime-ambient construction, or a better.codes improvement.
+
+Earlier results include Theorem U.1, which gives an exact
 seven-member nearest-codeword list at quarter rate: length28, dimension7,
 and fourteen agreements per candidate, over arbitrarily large prime fields.
 Two short cyclotomic identities give the construction; its complete-list proof

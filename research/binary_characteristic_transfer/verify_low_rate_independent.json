@@ -1,0 +1,62 @@
+[
+  {
+    "p": 53,
+    "source_count": 9846477638,
+    "local_layers": [
+      3,
+      6,
+      8,
+      6
+    ],
+    "row_surplus": 86093222983874,
+    "bad_count": 22598641010,
+    "exact_E_numerator": 3818262602358510811912710053348011,
+    "exact_E_denominator": 374182873974,
+    "upper_budget": 52466241109653914700000
+  },
+  {
+    "p": 59,
+    "source_count": 16866196952,
+    "local_layers": [
+      3,
+      6,
+      8,
+      6
+    ],
+    "row_surplus": 204415312921418,
+    "bad_count": 42920110442,
+    "exact_E_numerator": 531421848879797850582247110228833471,
+    "exact_E_denominator": 17721806823000,
+    "upper_budget": 153335025990192420300000
+  },
+  {
+    "p": 101,
+    "source_count": 249738964310,
+    "local_layers": [
+      3,
+      6,
+      8,
+      6
+    ],
+    "row_surplus": 12285359063056706,
+    "bad_count": 1072240453010,
+    "exact_E_numerator": 2192379321626693333969393908512297591689,
+    "exact_E_denominator": 331628146998750,
+    "upper_budget": 33138663762336135300300000
+  },
+  {
+    "p": 211,
+    "source_count": 9989826420640,
+    "local_layers": [
+      3,
+      6,
+      8,
+      6
+    ],
+    "row_surplus": 2574912863343937226,
+    "bad_count": 88668149950810,
+    "exact_E_numerator": 737886101853366667674407126157563190146920453,
+    "exact_E_denominator": 69489009638634600,
+    "upper_budget": 52474197760622393581980300000
+  }
+]

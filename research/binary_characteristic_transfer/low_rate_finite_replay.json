@@ -1,0 +1,59 @@
+{
+  "scope": "Finite arithmetic replay, not independent theorem proof",
+  "rows": [
+    {
+      "p": 53,
+      "G": 9846477638,
+      "R": 23,
+      "layers": [
+        3,
+        6,
+        8,
+        6
+      ],
+      "B": 11236,
+      "H": 539328,
+      "coarse_margin": 12321903267803,
+      "upper_E_numerator": 3818262602358510811912710053348011,
+      "upper_E_denominator": 374182873974,
+      "E_over_N2": 58347.62613042944,
+      "status": "PASS"
+    },
+    {
+      "p": 59,
+      "G": 16866196952,
+      "R": 23,
+      "layers": [
+        3,
+        6,
+        8,
+        6
+      ],
+      "B": 13924,
+      "H": 668352,
+      "coarse_margin": 47827004880827,
+      "upper_E_numerator": 531421848879797850582247110228833471,
+      "upper_E_denominator": 17721806823000,
+      "E_over_N2": 58669.35198832035,
+      "status": "PASS"
+    },
+    {
+      "p": 101,
+      "G": 249738964310,
+      "R": 23,
+      "layers": [
+        3,
+        6,
+        8,
+        6
+      ],
+      "B": 40804,
+      "H": 1958592,
+      "coarse_margin": 5491425402343451,
+      "upper_E_numerator": 2192379321626693333969393908512297591689,
+      "upper_E_denominator": 331628146998750,
+      "E_over_N2": 59848.12862144596,
+      "status": "PASS"
+    }
+  ]
+}

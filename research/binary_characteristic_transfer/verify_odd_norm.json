@@ -1,0 +1,22 @@
+{
+  "field_characteristic": 3,
+  "field_modulus": [
+    2,
+    1,
+    0,
+    0,
+    1
+  ],
+  "native_size": 9,
+  "challenge_size": 81,
+  "ordered_pairs": 72,
+  "dimension": 3,
+  "agreement": 5,
+  "pole": 3,
+  "distinct_values": 18,
+  "maximum_multiplicity": 4,
+  "proved_multiplicity_bound": 16,
+  "identities_and_strict_degree_pass": true,
+  "seconds": 0.8695206249999999,
+  "peak_rss_bytes": 10633216
+}

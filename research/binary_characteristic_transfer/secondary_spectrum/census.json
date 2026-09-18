@@ -1,0 +1,9 @@
+{
+  "p": 3,
+  "field": "Context for fq_default in GF(3^5)[t]/(t^5 + 2*t + 1)",
+  "secondary": 1210,
+  "primary": 1210,
+  "overlap": 0,
+  "union": 2420,
+  "example": null
+}
