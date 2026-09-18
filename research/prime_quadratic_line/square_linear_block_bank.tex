@@ -185,6 +185,23 @@ $\mathbb F_q$ under the same conditions with $p$ replaced by $q$.
 It uses the cyclic multiplicative group and polynomial root bounds,
 so it does not give a separation specific to prime characteristic.
 
+The conjunction of equal endpoint and common agreements, a constant
+relative loss, and linearly many singleton labels at a tested threshold
+below Johnson is not by itself a distinction from the quotient
+construction of Krachun, Kazanin, and Hab\"ock~\cite{kkh}.
+An odd-fiber enlargement of their $r=2$ construction to quadratic RS
+codes supplies such a comparison: at length $33513480$ over
+$\mathbb F_{2147483647}$, both endpoint and common agreements are
+$7161$, and at least $10893038$ labels have singleton lists at tested
+threshold $8184$.  The sources exceed the first-order bound and this
+threshold is below Johnson.  The full proof and exact integer
+existence certificate are recorded in
+\path{research/prime_quadratic_line/KKH_R2_QUADRATIC_ENLARGEMENT.md}.
+That comparison has actual nearby agreement $14322$, and permits
+additional nonsingleton labels.  The exact all-label profile proved
+above remains a separate assertion; it should not be confused with
+a stronger exceptional-count lower bound.
+
 \begin{proposition}[A resource bound for disjoint scalar blocks]
 \label{prop:scalar-block-resource-bound}
 Partition a nonzero evaluation domain into a set $Z$ and disjoint

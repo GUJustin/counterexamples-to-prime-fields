@@ -32,7 +32,7 @@ However, merely lowering the tested threshold invalidates that simple obstructio
 
 One can test between m+2 and sqrt(2n), while the canonical constants still have 2m matches. Thus placement above first order and below Johnson, plus a linear support count, is not by itself a separation from this adaptation.
 
-The inspected proof does **not** give the remaining conjunction after enlargement:
+The original inspected proof did **not** give the following conjunction after enlargement. The new local proof in `KKH_R2_QUADRATIC_ENLARGEMENT.md` resolves the first two gaps and gives a finite comparable-prime-size example; the list below records the original missing steps, not the current state:
 
 * It does not exclude additional nonconstant quadratic witnesses or prove singleton lists. Its immediate per-fiber bound is 2s for each nonconstant quadratic. For c>1/2, 2s≥sqrt(2sm), so this bound cannot exclude outsiders at a below-Johnson threshold.
 * It does not make both enlarged-code endpoints have the same exact agreement m, nor identify all near parameters or their exact agreement at the lowered threshold.
@@ -56,6 +56,8 @@ Crites–Stewart ([2025/2046](https://eprint.iacr.org/2025/2046), Theorem 1/Coro
 
 and even p times this tends to zero. This explains the failure of a generic ambient-mass line guarantee here, rather than merely noting missing endpoint or singleton wording. Their other parameter regimes remain incomparable. BCHKS ([2025/2055](https://eprint.iacr.org/2025/2055), Theorems 1.15–1.16) gives stronger counts near rate one; duality does not preserve received-line nearest-list profiles and is not an immediate dimension-three transfer.
 
-## Verdict
+## Updated verdict after the odd-fiber enlargement proof
 
-No inspected primary theorem or checked elementary transformation presently establishes the full exact split-bank profile. The r=2 KKH enlargement is a genuine nearby linear-count alternative and should be acknowledged, not dismissed using the old superlinear-count comparison. Its lowered-threshold version leaves a concrete singleton/endpoint/fiber-arithmetic classification problem. Until that problem or a broader prior-construction review is resolved, the justified description is an elementary explicit construction with the stated matched profile, not a claim of first discovery.
+The proof in `KKH_R2_QUADRATIC_ENLARGEMENT.md` now establishes a finite KKH-derived example with dimension three, exact equal endpoint/common agreement, sources above first order, a tested threshold below Johnson, constant relative loss, and linearly many singleton labels. Its exact integer verifier passed independently. At n=33513480 and p=2147483647, A=7161, tested T=8184, and at least10893038 labels are singleton. Thus that conjunction alone is no longer a justified distinction for the split bank.
+
+The comparison does not establish complete subsumption: its actual nearby agreement is2m=14322, not T; additional nearby labels may be nonsingleton; and no infinite balanced-divisor family with p=Theta(n) is established. The split bank retains its exact all-label profile and elementary prime-size guarantee. These distinctions do not improve the exceptional-count exponent. No priority or overall-strength claim follows.
