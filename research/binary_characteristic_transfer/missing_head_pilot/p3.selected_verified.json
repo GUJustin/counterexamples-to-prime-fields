@@ -1,0 +1,59 @@
+{
+  "arithmetic": "independent polynomial convolution modulo X7+X2+2",
+  "verified": [
+    {
+      "line": 2209,
+      "labels": [
+        [
+          851,
+          21
+        ],
+        [
+          1843,
+          1987
+        ]
+      ],
+      "root_counts": [
+        81,
+        81
+      ],
+      "intersection_size": 3
+    },
+    {
+      "line": 2228,
+      "labels": [
+        [
+          1725,
+          1002
+        ],
+        [
+          1896,
+          222
+        ]
+      ],
+      "root_counts": [
+        81,
+        81
+      ],
+      "intersection_size": 3
+    },
+    {
+      "line": 2283,
+      "labels": [
+        [
+          806,
+          98
+        ],
+        [
+          1129,
+          245
+        ]
+      ],
+      "root_counts": [
+        81,
+        81
+      ],
+      "intersection_size": 3
+    }
+  ]
+}

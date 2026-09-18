@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "p": 20011,
+  "L": 25,
+  "fresh_nodes": 601,
+  "core_nodes": 600,
+  "incidences": 15025,
+  "finite_singleton_labels": 7188,
+  "finite_distinct_bad_labels": 10625,
+  "total_bad_labels_including_infinity": 10626,
+  "guaranteed_singleton_labels_including_infinity": 7189,
+  "exact_singleton_threshold_lists_including_infinity": 7299,
+  "maximum_threshold_list_size": 6,
+  "max_incidence_multiplicity": 6,
+  "collision_pairs": 5575,
+  "note": "Singleton count counts incidence multiplicity one; additional singleton lists may exist."
+}

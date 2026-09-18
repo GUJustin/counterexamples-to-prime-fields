@@ -1,0 +1,114 @@
+% Input fragment; no changes to the main manuscript.
+% Projectivization of the additive locator family, with exhaustive classification.
+\begin{theorem}[A large-characteristic quadratic line with $\Omega(N^{3/2})$ exceptional labels]
+\label{thm:projective-quadratic-line}
+Let $p\ge5$ be prime, put $\mathbb B=\mathbb F_{p^5}$ and
+$\mathbb F=\mathbb F_{p^{15}}$, and choose
+$\theta\in\mathbb F\setminus\mathbb B$. Set
+\[
+ n=p^4+p^3+p^2+p+1,\qquad N=2n,\qquad
+ \mathcal D=\mu_N\subset\mathbb B^*,\qquad K=3,
+\]
+and, on $\mathcal D$, define
+\[
+ E_j(T)=T^{2(p^j-1)/(p-1)},\qquad
+ f=E_4+\theta E_3+\theta^2E_2,\qquad g=E_2.
+\]
+For degree-$<3$ witnesses, both individual source agreements and common
+agreement are exactly
+\[
+ C=2(p+1).
+\]
+Exactly
+\[
+ M=\genfrac{[}{]}{0pt}{}{5}{2}_p
+   =p^6+p^5+2p^4+2p^3+2p^2+p+1
+   >\tfrac14 N^{3/2}
+\]
+nonzero labels $z\in\mathbb F$ have nearest agreement
+$A=2(p^2+p+1)$. Each has a unique nearest quadratic; every other label
+has nearest agreement exactly $C$. In particular, at every integer
+threshold $C<T_0\le A$, precisely these $M$ labels qualify and their
+lists are singletons.
+
+The advertised threshold $A_0=2p^2+p$ satisfies
+\[
+ N a_1(K/N)<A_0<\sqrt{N(K-1)},
+\]
+where $a_1$ is the first-order curve. The characteristic guard
+$p>K-1$ holds.
+\end{theorem}
+\begin{proof}
+Since $N\mid p^5-1$, the stated evaluation domain exists. Put
+$\ell=(p-1)/2$. The map
+\[
+ X\longmapsto T=X^\ell
+\]
+is an $\ell$-to-one surjection $\mathbb B^*\to\mathcal D$, and
+$E_j(X^\ell)=X^{p^j-1}$. A quadratic in $T$ pulls back to a polynomial
+of degree at most $p-1$.
+
+For a three-dimensional $\mathbb F_p$-subspace $W\le\mathbb B$, write
+its monic locator as
+\[
+ L_W=X^{p^3}+aX^{p^2}+bX^p+cX,\qquad c\ne0.
+\]
+The additive-locator identity gives the label and witness
+\[
+ z_W=b^p-a^{p+1}+\theta a-\theta^2,\qquad
+ h_W=(a^pb-c^p-\theta b)T^2+a^pc-\theta c.
+\]
+Before the map $X\mapsto X^\ell$, the exact support is
+$W\setminus\{0\}$. Therefore its size after the map is
+$(p^3-1)/\ell=A$.
+The labels are nonzero by independence of $1,\theta,\theta^2$.
+Equality of two labels first fixes $a,b$; the corresponding locators
+then differ by a multiple of $X$ and share a nonzero root, so coincide.
+This gives exactly the stated $M$ distinct constructed labels.
+
+For completeness, use the all-witness locator classification in the
+proof of Proposition~\ref{prop:low-rate-large-characteristic-singletons}:
+for every odd $p$, any degree-at-most-$p-1$ witness with more than $p^2$
+agreements for the original sources is the unique canonical witness
+of a three-space $W$.
+If an arbitrary quadratic $h(T)$ has more than $C$ matches here, its
+pullback has at least
+\[
+ \ell(C+1)=\frac{p-1}{2}(2p+3)>p^2
+\]
+matches in $\mathbb B^*$. Thus the classification applies, forcing
+$h(X^\ell)=uX^{p-1}+v$ and hence $h(T)=uT^2+v$.
+It recovers precisely $z_W,h_W$. This proves both exhaustiveness and
+uniqueness above $C$, including witnesses with a priori nonzero odd term.
+
+The original simultaneous explanations on every two-dimensional
+subspace are of the form $uX^{p-1}+v$: reduce the additive heads modulo
+its locator and divide by $X$. They therefore descend to quadratics
+and give simultaneous agreement $(p^2-1)/\ell=C$ here. The degree of
+$g$ is $C$, so its agreement cannot exceed $C$. For $f$, project any proposed quadratic witness onto the
+$\theta^2$ component over $\mathbb B$.
+More than $C$ matches would make $g$ equal to a quadratic, impossible.
+Consequently both individual agreements and common agreement equal
+$C$, and every nonexceptional label has agreement exactly $C$.
+
+For the quantitative claims, $n<p^4p/(p-1)\le(5/4)p^4$, so
+$N<(5/2)p^4$ and $N^{3/2}<4p^6<4M$.
+The exact Johnson deficit is
+\[
+ 2N-A_0^2=3p^2+4p+4>0.
+\]
+The rate $\rho=3/(2n)$ lies in the low-rate branch. Its standard bound
+$a_1(\rho)\le\sqrt{\rho/2}+(\rho/2)^{3/4}/\sqrt3$ gives
+\[
+ Na_1(\rho)\le\sqrt{3n}+\frac{(3n)^{1/4}}{\sqrt2}
+ <2p^2+p=A_0,
+\]
+since $3n<(15/4)p^4<4p^4$. Finally $C<A_0<A$, so the exact
+classification applies at this below-Johnson threshold.
+\end{proof}
+
+This family improves the population exponent of the unprojectivized
+large-characteristic example to $3/2$, while retaining singleton nearest
+lists. Its rate tends to zero and its absolute proximity gap vanishes.
+The evaluation and challenge fields are extension fields; this is not
+a fixed-rate or prime-field construction.

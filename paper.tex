@@ -70,6 +70,17 @@ correlated agreement. This result has exact rate $1/8$ and gap $1/16$
 over $\F_{p^2}$ with growing prime $p$. Superlinear
 growth at a fixed positive gap over prime fields themselves remains open.
 
+At vanishing rate, we give a prime-field line with more than
+$n^{3/2}/4$ exceptional challenges for the code of quadratic polynomials.
+Both inputs are outside the tested radius, and every qualifying list is
+a singleton, at a threshold below Johnson and above the first-order
+curve. The common agreement misses that threshold by one coordinate.
+A collision-averaging variant makes a constant fraction of all prime-field
+challenges exceptional with singleton lists.
+A separate extension-field construction has an exact two-level spectrum;
+its affine-witness companion asymptotically attains a universal
+triple-count bound with constant one.
+
 We apply these results and finite circle-code constructions to the
 quantitative premises in the S-two whitepaper. The shrinking-gap
 and fixed-gap quantifiers, numerical prescriptions and actual-list-size
@@ -712,22 +723,35 @@ ambient fields, even a superlinear exceptional-count lower bound at
 one fixed positive gap remains open here. The large gap-dependent
 coefficient in our linear lower bound must not be confused with a
 growing exponent of $n$.
-A separate low-rate bridge does enter the large-characteristic first-order
-regime. Proposition~\ref{prop:low-rate-large-characteristic-singletons}
-gives $N=p^5$, $K=p$, and more than $N^{6/5}$ exceptional challenges
-over $\F_{p^{15}}$, with source common agreement $p^2-1$ and
-actual agreement $p^3-1$. These are exactly all qualifying challenges
-at that actual threshold, and each has a unique nearest codeword.
-At the lower advertised threshold $p^3-p^2$, the same challenges lie
-below Johnson and above the first-order curve, with an explicit uniform
-$300000N^2$ upper comparison from the first-order counting formulas.
-The rate and absolute margin both tend to zero; this gives a quantitative
-large-characteristic comparison, not fixed-rate tightness or a prime-field
-construction. The exceptional set and singleton lists are also exact at this
-below-Johnson threshold. The full line has an exact three-level spectrum:
-$M$ challenges attain $p^3-1$, another $M$ attain $p^2$, and every
-remaining challenge attains $p^2-1$, with singleton nearest lists
-at both higher levels.
+There is now a prime-field lower bound in the first-order regime at
+vanishing rate. Theorem~\ref{thm:prime-quadratic-intersection-line}
+constructs a code of dimension three and length $n=2L(L-1)+1$,
+with more than $n^{3/2}/4$ exceptional challenges. Both source agreements
+and common agreement are $2L-2$, but every exceptional word has a
+singleton list at threshold $T=2L-1$. This threshold is above the
+first-order curve and below exact Johnson: $T^2=2n-1$.
+The construction works over every sufficiently large prime field, with
+a stated polynomial field-size bound, and an explicit finite certificate
+gives the uniform upper comparison $31000n^2$ for full-agreement-set
+MCA exceptions. Thus \emph{even over prime fields, many exceptional
+challenges can coexist with singleton lists above first order}.
+Corollary~\ref{cor:prime-positive-density} strengthens the field-size
+accounting: for an infinite sequence of primes, $n=\Theta(p^{2/3})$
+and more than $p/36$ challenges have singleton threshold lists. Thus the
+exceptional probability can stay bounded away from zero despite these
+lists being singletons.
+The rate is $3/n$, and the source common agreement misses the tested
+threshold by only one coordinate. This is a superlinear lower bound in
+the applicable regime, not fixed-rate or fixed-gap tightness.
+
+An independent projective construction in
+Theorem~\ref{thm:projective-quadratic-line} gives the same $3/2$
+exponent over extension fields with an exact two-level agreement spectrum:
+all exceptional words have agreement $2(p^2+p+1)$ and every other word
+has agreement $2(p+1)$. Its affine-witness companion in
+Corollary~\ref{cor:projective-linear-sharp-packing} asymptotically
+attains the universal triple-count bound with constant one. That separate
+sharpness statement is not above the rate-only first-order curve.
 
 Likewise, optimality of a specified interpolation dimension count is a
 statement about that proof method, not an intrinsic list or MCA lower

@@ -1,0 +1,124 @@
+% Input fragment. Explicit rational construction and reduction modulo primes.
+\begin{theorem}[A prime-field quadratic line with $\Omega(n^{3/2})$ singleton exceptions]
+\label{thm:prime-quadratic-intersection-line}
+For every integer $L\ge25$, put
+\[
+ n_0=L(L-1),\quad t=n_0+1,\quad n=2n_0+1,\quad
+ K=3,\quad A=2L-2,\quad T=2L-1.
+\]
+For every sufficiently large prime $p$, there is an $n$-point domain
+$\mathcal D\subset\mathbb F_p$ and a received line $F+zG$, entirely over
+$\mathbb F_p$, such that
+\[
+ \operatorname{agr}_3(F)=\operatorname{agr}_3(G)
+   =\operatorname{CA}_3(F,G)=A<T.
+\]
+Exactly
+\[
+ M=L\bigl(L(L-1)+1\bigr)+1>\tfrac14 n^{3/2}
+\]
+nonzero labels have agreement at least $T$, and each qualifying list
+consists of exactly one quadratic. Moreover,
+\[
+ n a_1(3/n)<T<\sqrt{2n},\qquad T^2=2n-1,
+\]
+so the threshold is above first order and strictly below Johnson, with
+characteristic exceeding the degree cap.
+
+An explicit sufficient field bound is as follows. Let $a_1,\ldots,a_L$
+be the first $L$ primes, set $Q=a_L^2$, and take any prime
+\[
+ p>\max\{2Q,5L^4\}.
+\]
+\end{theorem}
+\begin{proof}
+Work over $\mathbb F_p$, using the indicated integer representatives. Define
+\[
+ P_i(U)=\frac{U^2}{a_i^2}+a_i^2\qquad(1\le i\le L).
+\]
+Their pairwise differences factor as
+\[
+ P_i-P_j=\frac{a_j^2-a_i^2}{a_i^2a_j^2}
+          (U^2-a_i^2a_j^2).
+\]
+The $n_0$ numbers $\pm a_i a_j$, for $i<j$, are distinct over the
+integers by unique factorization, and remain distinct modulo $p>2Q$. At these core coordinates set
+\[
+ f(\pm a_i a_j)=a_i^2+a_j^2,\qquad
+ g(\pm a_i a_j)=0.
+\]
+Each $P_i$ has exactly $A$ core matches. Any other quadratic has at most
+$L$ core matches: each match is shared by two of the $P_i$, whereas its
+difference with each $P_i$ has at most two roots.
+
+Choose $t$ fresh nonzero coordinates $x_j$ greedily, setting
+\[
+ f(x_j)=x_j^4,\qquad g(x_j)=x_j^3.
+\]
+Require all labels
+\[
+ \lambda_{ij}=\frac{P_i(x_j)-x_j^4}{x_j^3}
+\]
+to be distinct and outside $\{0,1\}$. This is possible under the stated
+field bound. After $j$ fresh coordinates have been chosen, avoid the
+$n_0$ core coordinates, zero, and the $j$ previous coordinates. Avoiding
+labels zero and one excludes at most $8L$ additional points. Avoiding
+the $jL$ previous labels excludes at most $4jL^2$ points, since each
+condition $P_i(U)-U^4-\lambda U^3=0$ has degree four. At one fresh
+coordinate, two labels could coincide only if $P_i=P_k$ there, already
+excluded by core avoidance. For $j\le t-1=n_0$, the total number of
+forbidden points is at most
+\[
+ n_0+1+j+8L+4jL^2
+ \le 2n_0+1+8L+4n_0L^2<5L^4<p.
+\]
+Thus the greedy construction supplies all $t$ coordinates and $Lt$
+distinct labels.
+
+For a fixed label $\lambda$, a quadratic outside the bank has at most
+$L$ core matches and four fresh matches, since
+$H(U)-U^4-\lambda U^3$ has degree four. Thus it has at most
+$L+4\le A$ matches. Each bank member has exactly $A$ core matches and
+can gain one fresh match only at its designated label. Consequently
+$f+\lambda g$ has agreement $T$, with a singleton list at threshold
+$T$, exactly at the $Lt$ labels $\lambda_{ij}$. Every other label has
+nearest agreement $A$.
+
+The direction $g$ has the zero polynomial as its unique nearest
+witness, with $n_0$ matches. Every nonzero quadratic has at most two
+core matches and three fresh matches with $g$, hence at most five.
+Its list at threshold $T$ is therefore also a singleton. Common
+agreement of $f,g$ is exactly $A$: the pair $(P_i,0)$ attains it on
+the core, while any nonzero quadratic explanation of $g$ has at most
+five matches in total. For the zero explanation of $g$, common matches
+are confined to the core and number at most $A$.
+
+Finally set
+\[
+ F=f,\qquad G=f+g.
+\]
+Both individual agreements equal $A$, because zero and one are not
+among the $\lambda_{ij}$, and this invertible source change preserves
+common agreement. For $z\ne-1$,
+\[
+ F+zG=(1+z)\left(f+\frac{z}{1+z}g\right).
+\]
+The $Lt$ original exceptional labels become the distinct nonzero labels
+$z=\lambda_{ij}/(1-\lambda_{ij})$. The additional label $z=-1$ gives
+$-g$, whose only threshold witness is zero. These are precisely the
+$M=Lt+1$ exceptions, all with singleton lists at threshold $T$.
+
+The population bound follows from $n<2L^2$ and
+$M>L^3-L^2> L^3/\sqrt2$ for $L\ge25$.
+Also $T^2=2n-1$. For the first-order comparison, the low-rate bound gives
+\[
+ na_1(3/n)\le\sqrt{3n/2}+(3n/8)^{1/4}
+ <\frac74L+\sqrt L<2L-1=T
+\]
+when $L\ge25$. This proves all claims.
+\end{proof}
+
+Here the rate $3/n$ tends to zero, and the common-agreement threshold
+is one coordinate below $T$. Thus the theorem gives prime-field
+$\Omega(n^{3/2})$ exceptional labels above first order, with singleton
+qualifying lists, but does not give a fixed-rate or fixed-gap family.

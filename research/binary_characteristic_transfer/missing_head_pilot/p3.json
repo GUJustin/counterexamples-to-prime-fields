@@ -1,0 +1,2 @@
+{
+"p":3,"field_modulus":[2,0,1,0,0,0,0,1],"subspaces":925771,"head_lines":856912,"universal":0,"impossible":0,"maximum_distinct_labels":2,"label_histogram":{"1":788053,"2":68859},"best_group_count":68859,"best":[{"line_id":2209,"locators":[[1459,1778,1664,567,1],[2051,1372,1096,56,1]]},{"line_id":2228,"locators":[[1906,455,1305,1775,1],[201,1206,1813,520,1]]},{"line_id":2283,"locators":[[417,1274,960,960,1],[136,1013,1799,559,1]]}],"seconds":0.671873}

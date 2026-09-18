@@ -1,0 +1,13 @@
+{
+  "pass_all": true,
+  "input_sha256": "9d690f09ffcbd89dddeeaf78cd3f88691ff90a77dc0fcb3c17d66491ad512fd3",
+  "p": 20011,
+  "L": 25,
+  "n": 1201,
+  "incidences": 15025,
+  "singletons": 10731,
+  "bad_labels": 12630,
+  "density": 0.5362550597171556,
+  "seconds": 0.040513999999999994,
+  "scope": "Exact incidence arithmetic plus stated degree proof; no exhaustive polynomial scan"
+}

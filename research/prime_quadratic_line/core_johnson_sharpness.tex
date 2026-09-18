@@ -1,0 +1,22 @@
+\paragraph{The core attains the classical finite Johnson list bound.}
+On the core domain of size $N_0=L(L-1)$, the maximum list size at
+agreement $A=2(L-1)$ for degree-at-most-two polynomials is exactly $L$,
+even when the received word is allowed to vary. Indeed, for any list
+of size $\ell$, choose exactly $A$ matching coordinates per candidate
+and let $r_x$ count their selected incidences at coordinate $x$.
+Distinct quadratics coincide at at most two coordinates, so
+\[
+ \frac{\ell^2 A^2}{N_0}-\ell A
+ \le \sum_x r_x(r_x-1)
+ \le 2\ell(\ell-1).
+\]
+For $L>2$, this is the usual finite Johnson bound
+\[
+ \ell\le\frac{N_0(A-2)}{A^2-2N_0}=L.
+\]
+The displayed quadratic bank attains equality: every core coordinate
+has exactly two matches and every pair of bank polynomials coincides
+at exactly two core coordinates. This is an equality example for the
+classical counting bound, not a stronger decoding upper bound; the
+received-line construction uses additional coordinates to turn these
+core candidates into distinct singleton exceptional challenges.

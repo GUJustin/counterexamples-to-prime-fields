@@ -1,0 +1,126 @@
+% Input fragment; independently audited construction.
+\begin{proposition}[An elliptic triple core]
+\label{prop:elliptic-triple-core}
+Let $\ell\ge53$ be prime and put
+\[
+ B=\ell-1,\quad N_0=\frac{B(B-4)}3,\quad A=B-4,\quad T=B-3,
+\]
+\[
+ n=\frac{T^2+1}{2},\qquad
+ t=n-N_0=\frac{B^2-10B+30}{6}.
+\]
+For infinitely many primes $p$, there is an $n$-point domain in
+$\mathbb F_p$ and an affine received line $F+zG$, over $\mathbb F_p$,
+with
+\[
+ \operatorname{agr}_3(F)=\operatorname{agr}_3(G)
+ =\operatorname{CA}_3(F,G)=A.
+\]
+Exactly $M=Bt+1$ nonzero labels have agreement at least $T$, and each
+qualifying list consists of one quadratic. The threshold satisfies
+\[
+ na_1(3/n)<T<\sqrt{2n},\qquad T^2=2n-1.
+\]
+As $\ell$ tends to infinity,
+\[
+ \frac{M}{n^{3/2}}\longrightarrow\frac{\sqrt2}{3},
+\]
+a factor $4/3$ above the leading constant of
+Theorem~\ref{thm:prime-quadratic-intersection-line}.
+\end{proposition}
+\begin{proof}
+Fix a nonsingular elliptic curve over $\mathbb Q$, embedded as a plane
+cubic with identity $O$, and choose a point of order $\ell$ over the
+algebraic closure. Let $H$ be its cyclic subgroup. Use the $B$ points
+$H\setminus\{O\}$ as parameter points, retaining only lines through
+three distinct such points whose sum is $O$.
+
+For a fixed nonzero $R\in H$, a second point $S$ ranges over
+$H\setminus\{O,R\}$. Exclude $S=-R$, $S=-2R$, and $S=-R/2$, which
+would make the third point zero or repeat one of the first two. These
+three exclusions are distinct because $\ell>3$. The remaining
+$\ell-5=B-4$ choices are paired by $S\leftrightarrow-R-S$.
+Thus each parameter point lies on $(B-4)/2$ retained lines, and there
+are $B(B-4)/6$ such lines. Each contains exactly three parameter points,
+by intersection with the nonsingular cubic.
+
+Choose a projective line at infinity avoiding all parameter points and
+all intersections of two retained lines. Choose horizontal and vertical
+directions avoiding the retained lines as well. A rational projective
+coordinate change satisfying these finitely many nonvanishing
+conditions exists by Zariski density. In the resulting affine chart,
+write the parameter points as $(a_i,b_i)$ and set
+\[
+ P_i(U)=a_iU^2+b_i\qquad(1\le i\le B).
+\]
+The retained lines now have distinct finite nonzero slopes. A retained
+line $b=ma+c$ supplies two evaluation coordinates
+$U=\pm\sqrt{-m}$ with received value $c$. Adjoin all these square roots
+to the number field of the construction. The coordinates are distinct,
+and each has exactly three matching bank polynomials.
+
+This core therefore has $N_0$ coordinates and exactly $A$ matches for
+each $P_i$. Any other quadratic has at most $\lfloor2B/3\rfloor$ core
+matches: each match contributes three roots to its differences with
+the bank, while these $B$ nonzero differences contribute at most $2B$
+roots in total.
+
+Pass to a finite Galois number field containing the construction.
+Discard the finitely many primes at which a needed denominator,
+distinctness condition, or nonzero coefficient degenerates, including
+characteristic two. At every remaining completely split prime all
+coordinates and incidences reduce to the prime field. There are
+infinitely many such primes; choose one also exceeding $5B^4$.
+
+Set $g=0$ on the core, and denote its received word by $f$. Append $t$
+fresh nonzero coordinates $x$, setting $f(x)=x^4$ and $g(x)=x^3$.
+Choose them greedily so all labels
+\[
+ \lambda_{i,x}=\frac{P_i(x)-x^4}{x^3}
+\]
+are distinct and outside $\{0,1\}$. In addition to zero and previous
+coordinates, avoid every pairwise bank intersection, including those
+not retained in the core; there are at most $B(B-1)$ such coordinates.
+After $j<t<B^2$ choices, the number of forbidden points is at most
+\[
+ B(B-1)+1+j+8B+4jB^2<5B^4<p.
+\]
+The last two terms exclude labels zero and one and all earlier labels,
+using degree-four root bounds. Within a fresh coordinate, label
+collisions are already excluded by avoiding bank intersections.
+
+For every $\lambda$, a nonbank quadratic matches $f+\lambda g$ at most
+\[
+ \lfloor2B/3\rfloor+4\le B-4=A
+\]
+times. Each bank member gains exactly one fresh match at each of its
+$t$ designated labels and none at any other label. Thus precisely $Bt$
+labels have agreement $T$, with singleton threshold lists, and every
+other label has nearest agreement $A$.
+The zero polynomial has $N_0$ matches with $g$; any nonzero quadratic
+has at most two core and three fresh matches with $g$. Since $N_0>T>5$,
+the list for $g$ at threshold $T$ consists only of zero. Also
+$\operatorname{CA}_3(f,g)=A$: the pair $(P_i,0)$ attains it, and a
+nonzero explanation of $g$ has at most five matches.
+
+As in Theorem~\ref{thm:prime-quadratic-intersection-line}, set
+$F=f$ and $G=f+g$. Their individual agreements are $A$, and common
+agreement is preserved. The $Bt$ finite exceptions transform by
+$z=\lambda/(1-\lambda)$; the additional exception $z=-1$ gives $-g$,
+whose only threshold witness is zero. This proves the exact count and
+all singleton assertions.
+
+Finally, $T^2=2n-1$. Since $T\ge49$, the low-rate estimate gives
+\[
+ na_1(3/n)\le\sqrt{3n/2}+(3n/8)^{1/4}
+ <\frac78T+\frac34\sqrt T<T.
+\]
+The asymptotic constant follows from $n\sim B^2/2$ and $M\sim B^3/6$.
+\end{proof}
+
+The elliptic core improves a leading constant, not the exponent or the
+source separation: the rate still tends to zero and $T-A=1$.
+Its number-field specialization guarantees infinitely many suitable
+primes for each $\ell$, rather than every sufficiently large prime,
+and gives no comparable effective field-size bound. The use of
+algebraic torsion points avoids any claim of unbounded rational torsion.

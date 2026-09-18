@@ -1,0 +1,35 @@
+\paragraph{An explicit finite first-order certificate.}
+For Theorem~\ref{thm:prime-quadratic-intersection-line}, write
+$n=2L(L-1)+1$ and $T=2L-1$, with $L\ge25$.
+The derivative-weighted support of~\cite[Eq.~(60)]{dkt2026} with
+\[
+ m=4,\qquad B_\partial=2,\qquad B=B_{\rm jet}=2T,
+ \qquad H=B_Z=48B
+\]
+has exact coefficient count $G=3B^2=24n-12$ and local-rank bound
+$R=3+6+8+6=23$. Since $n>24$, one has $G>(47/2)n$ and hence
+\[
+ (H-B+1)G>(47B+1)\tfrac{47}{2}n>(H+1)23n.
+\]
+This certifies the graded challenge test of
+\cite[Proposition~5.10]{dkt2026}. The reconstruction guard is only
+$p>\max\{K-1,B_\partial\}=2$.
+
+For a uniform quantitative comparison, set both incidence thresholds
+to $\lfloor T/2\rfloor=(B-2)/4$.
+The three ratios in~\cite[Lemma~5.6]{dkt2026} are at most
+$3n/B$, $4n/B$, and $5n/B$. Since the message degree is two,
+the remaining parameters satisfy
+\[
+ F_{\rm reg}\le5B,\qquad S\le3B,\qquad
+ H_s=144B,\qquad J_1\le778B^2.
+\]
+Using $B<n$, $B^2=8n-4<8n$, and $\Psi_2(S)\le24B$, the fixed-word
+list budget is at most $18n$, and the full-agreement-set MCA budget is
+at most
+\[
+ 9336n^2+25n^2+6924n+13827nB<31000n^2.
+\]
+Thus the prime-field lower bound of order $n^{3/2}$ belongs to an
+explicit finite first-order regime; no rate-dependent hidden constant
+or extra characteristic assumption is needed.

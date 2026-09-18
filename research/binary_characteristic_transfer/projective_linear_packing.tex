@@ -1,0 +1,94 @@
+\begin{proposition}[Sharp triple packing for affine witnesses]
+\label{prop:affine-witness-triple-packing}
+Let $x_1,\ldots,x_N$ be distinct field elements and let $f,g$ be
+received words. Suppose their common agreement with degree-$<2$
+witnesses is at most $C$, where $2\le C<A\le N$.
+Then the number of pairs $(z,h)$ with $\deg h<2$ and at least $A$
+agreements with $f+zg$ is at most
+\[
+ \frac{N(N-1)(N-2)}{A(A-1)(A-C)}.
+\]
+In particular this bounds the number of qualifying challenges.
+\end{proposition}
+\begin{proof}
+Write $h(X)=\alpha X+\beta$. Coordinate $i$ gives the affine plane
+\[
+ \alpha x_i+\beta-zg_i=f_i
+\]
+in parameter space $(\alpha,\beta,z)$. Any two distinct coordinates
+give independent constraints and determine a line on which
+$\alpha,\beta$ are affine functions of $z$. The coordinate planes
+containing this entire line are exactly the common agreements of
+the two corresponding affine witnesses for $f,g$, so there are at
+most $C$ of them.
+
+For any qualifying $(z,h)$, choose an ordered pair among $A$ of its
+agreement coordinates. At least $A-C$ further agreement coordinates
+have planes not containing the resulting line. These give at least
+$A(A-1)(A-C)$ ordered triples of independent constraints. An independent
+triple determines at most one $(z,h)$, and there are at most
+$N(N-1)(N-2)$ ordered coordinate triples. Double counting proves the claim.
+\end{proof}
+
+\begin{corollary}[Asymptotic equality in the triple bound]
+\label{cor:projective-linear-sharp-packing}
+Let $p\ge5$ be prime, put
+\[
+ n=1+p+p^2+p^3+p^4,\qquad A=1+p+p^2,\qquad C=p+1,
+\]
+and use the domain $\mu_n\subseteq\mathbb F_{p^5}$.
+Over $\mathbb F_{p^{15}}$, choose $\theta$ of degree three over
+$\mathbb F_{p^5}$ and take
+\[
+ f(Y)=Y^{1+p+p^2+p^3}+\theta Y^{1+p+p^2}
+          +\theta^2Y^{1+p},\qquad g(Y)=Y^{p+1}.
+\]
+Their common and individual agreements for affine witnesses equal $C$.
+Exactly
+\[
+ M=\genfrac{[}{]}{0pt}{}{5}{2}_p=n(p^2+1)
+\]
+nonzero challenges have agreement greater than $C$; at every such
+challenge the qualifying list is a singleton, with exact agreement $A$.
+Moreover
+\[
+ M=\frac{n(n-1)(n-C)}{A(A-1)(A-C)}.
+\]
+Thus the universal upper bound of
+Proposition~\ref{prop:affine-witness-triple-packing} is asymptotically
+attained with constant one, and $M\sim n^{3/2}$.
+\end{corollary}
+\begin{proof}
+Projectivize Proposition~\ref{prop:low-rate-large-characteristic-singletons}
+by $Y=X^{p-1}$. Nonzero vectors of $\mathbb F_{p^5}$ have fibers of
+size $p-1$, and its three-space agreement sets become projective planes
+of size $A$. The witnesses become affine polynomials in $Y$.
+Conversely an affine witness pulls back to a degree-$<p$ witness,
+so the exact classification applies. The secondary agreements in that
+proposition include zero; removing it and projectivizing gives exactly
+$C$, not an additional high-agreement class.
+The second source has degree $C$, and its projection in the first source
+bounds both individual agreements by $C$. Projectivizing the simultaneous
+witnesses on any two-space minus zero attains this bound.
+
+There is also exact equality in the line-specific triple count.
+Any two projective domain points span a projective line with $C$ points.
+Their common interpolation pencil therefore lies in exactly $C$
+coordinate planes. Hence there are exactly $n(n-1)(n-C)$ independent
+ordered triples. Each such triple spans one projective plane, associated
+with its unique three-space locator and challenge. Equivalently, the
+displayed identity follows directly from
+\[
+ n-1=p(p+1)(p^2+1),\quad n-C=p^2A,\quad
+ A-1=p(p+1),\quad A-C=p^2.
+\]
+The ratio to the universal upper bound is $(n-C)/(n-2)$, which tends
+to one.
+\end{proof}
+
+The affine example is a sharp finite packing statement, rather than
+an above-first-order asymptotic example: its agreement lies below the
+rate-only curve $na_1(2/n)$ for all sufficiently large $p$.
+The quadratic pullback in Theorem~\ref{thm:projective-quadratic-line}
+retains the exponent $3/2$ while moving above that curve and below
+exact Johnson at its advertised threshold.

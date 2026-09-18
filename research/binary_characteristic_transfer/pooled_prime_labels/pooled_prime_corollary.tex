@@ -1,0 +1,41 @@
+\begin{corollary}[Positive-density singleton bad challenges]
+\label{cor:prime-positive-density}
+For arbitrarily large primes $p$, there are prime-field lines of length
+$n=\Theta(p^{2/3})$ with message dimension $3$, both endpoints and common
+agreement equal to $A$, and a threshold $T=A+1$ above the first-order curve
+and below the Johnson threshold, for which more than $p/36$ challenges
+have singleton lists at threshold $T$.
+\end{corollary}
+\begin{proof}
+Use the quadratic bank and core of Theorem~\ref{thm:prime-quadratic-intersection-line},
+with $L$ bank polynomials, $N_0=L(L-1)$ core coordinates, and
+$t=N_0+1$ fresh coordinates. Thus $n=2N_0+1$, $A=2L-2$, and $T=2L-1$.
+Let $a_L$ be the largest bank parameter and put
+\[
+ R=\max\{2a_L^2,\ N_0+8L+2+8Lt\}.
+\]
+Choose a prime $R<p<2R$. On fresh coordinates the canonical labels are
+$\phi_i(x)=(P_i(x)-x^4)/x^3$. Excluding zero, the core, and all roots
+$\phi_i(x)\in\{0,1\}$ leaves $m\ge p-N_0-1-8L$ allowed coordinates.
+Each allowed coordinate has $L$ distinct labels. For fixed $i,j,x$,
+the equation $\phi_j(y)=\phi_i(x)$ has at most four solutions.
+Consequently the allowed domain contains at most $2mL^2$ unordered
+colliding pairs of incidences at different coordinates.
+
+For a uniformly random $t$-subset, the expected number $C$ of such pairs
+is at most $2L^2t(t-1)/(m-1)<Lt/4$. Since a label with multiplicity
+$r\ge2$ consumes at most $2\binom r2$ incidences, some subset has more
+than $Lt/2$ labels occurring exactly once. Each gives a singleton
+threshold list: its bank polynomial has $A+1$ matches, whereas any
+nonbank quadratic has at most $L+4<T$ matches for $L\ge6$.
+The exclusion of labels $0,1$ permits the same two-far-endpoint
+reparametrization as in the theorem, preserving these singleton labels
+and common agreement $A$.
+
+The bank parameters may be the first $L$ primes, so
+$a_L=O(L\log L)$ and eventually $R=N_0+8L+2+8Lt\le9Lt$.
+Thus $p<18Lt$, and $Lt/2>p/36$. Also $p=\Theta(L^3)$ and
+$n=\Theta(L^2)$. The threshold comparison follows from the theorem;
+in particular $T^2=2n-1$. The rate vanishes and the source gap is one
+coordinate; no fixed-rate or fixed-gap assertion is made.
+\end{proof}

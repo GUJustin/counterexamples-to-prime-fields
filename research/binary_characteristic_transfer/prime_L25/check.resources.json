@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "research/binary_characteristic_transfer/prime_L25/check.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5551583330000001,
+  "peak_rss_kib": 6016,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

@@ -1,0 +1,10 @@
+{
+  "instance_id": 51440441,
+  "destroy_command_exit_code": 0,
+  "post_destroy_lookup": {
+    "instances": null
+  },
+  "elapsed_seconds": 279.19637393951416,
+  "estimated_compute_cost": 0.041569237897660996,
+  "scope": "Estimate excludes minor disk and transfer fees; not a final invoice"
+}

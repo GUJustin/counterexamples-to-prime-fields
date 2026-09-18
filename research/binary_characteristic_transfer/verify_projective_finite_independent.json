@@ -1,0 +1,112 @@
+[
+  {
+    "p": 5,
+    "N": 1562,
+    "A0": 55,
+    "Bjet": 110,
+    "H": 12760,
+    "G": 36300,
+    "Rq": [
+      4,
+      6,
+      6,
+      4,
+      2,
+      1
+    ],
+    "row_surplus": 3490795,
+    "list_numerator": 865918,
+    "list_denominator": 53,
+    "E_numerator": 61381630859410,
+    "E_denominator": 1537,
+    "published_E_bound": 182988300000
+  },
+  {
+    "p": 7,
+    "N": 5602,
+    "A0": 105,
+    "Bjet": 210,
+    "H": 24360,
+    "G": 132300,
+    "Rq": [
+      4,
+      6,
+      6,
+      4,
+      2,
+      1
+    ],
+    "row_surplus": 75056945,
+    "list_numerator": 5910878,
+    "list_denominator": 103,
+    "E_numerator": 1370697866794789,
+    "E_denominator": 2781,
+    "published_E_bound": 2353680300000
+  },
+  {
+    "p": 11,
+    "N": 32210,
+    "A0": 253,
+    "Bjet": 506,
+    "H": 58696,
+    "G": 768108,
+    "Rq": [
+      4,
+      6,
+      6,
+      4,
+      2,
+      1
+    ],
+    "row_surplus": 1472584285,
+    "list_numerator": 81673006,
+    "list_denominator": 251,
+    "E_numerator": 7868675101046488781,
+    "E_denominator": 497984,
+    "published_E_bound": 77811307500000
+  },
+  {
+    "p": 53,
+    "N": 16084442,
+    "A0": 5671,
+    "Bjet": 11342,
+    "H": 1315672,
+    "G": 385922892,
+    "Rq": [
+      4,
+      6,
+      6,
+      4,
+      2,
+      1
+    ],
+    "row_surplus": 19566862591483,
+    "list_numerator": 912244956478,
+    "list_denominator": 5669,
+    "E_numerator": 175453407985383010526001417154,
+    "E_denominator": 45563005849,
+    "published_E_bound": 19403195583852300000
+  },
+  {
+    "p": 101,
+    "N": 210202010,
+    "A0": 20503,
+    "Bjet": 41006,
+    "H": 4756696,
+    "G": 5044476108,
+    "Rq": [
+      4,
+      6,
+      6,
+      4,
+      2,
+      1
+    ],
+    "row_surplus": 929152405274635,
+    "list_numerator": 43098978398206,
+    "list_denominator": 20501,
+    "E_numerator": 1415689702724201362083450432485698,
+    "E_denominator": 2154306521497,
+    "published_E_bound": 3313866375603007500000
+  }
+]

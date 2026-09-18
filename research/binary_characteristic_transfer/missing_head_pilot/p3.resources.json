@@ -1,0 +1,9 @@
+{
+  "exit_code": 0,
+  "wall_seconds": 0.9062869548797607,
+  "peak_sampled_rss_bytes": 33390592,
+  "rusage_max_rss_bytes": 35094528,
+  "reason": null,
+  "stdout": "subspaces 925771 lines 856912 maximum 2 best_groups 68859 universal 0 impossible 0\n",
+  "stderr": ""
+}

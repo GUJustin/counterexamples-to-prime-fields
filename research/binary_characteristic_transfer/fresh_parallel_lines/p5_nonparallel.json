@@ -1,0 +1,24 @@
+{
+  "p": 5,
+  "modulus": "x^5 + 4*x + 3",
+  "nodes": [
+    "a^2",
+    "a^2 + 1",
+    "a^2 + 2",
+    "a^2 + 3",
+    "a^2 + 4",
+    "a^3",
+    "a^3 + a",
+    "a^3 + 2*a",
+    "a^3 + 3*a",
+    "a^3 + 4*a"
+  ],
+  "tested_six_subsets": 210,
+  "inconsistent": 0,
+  "singular": [],
+  "candidate_histogram": {
+    "6": 210
+  },
+  "seven_match_candidates": [],
+  "seconds": 0.04854989051818848
+}

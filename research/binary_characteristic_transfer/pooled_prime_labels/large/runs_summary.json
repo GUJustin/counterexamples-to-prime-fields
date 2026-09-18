@@ -1,0 +1,82 @@
+[
+  {
+    "L": 363,
+    "p": 47700761,
+    "steps": 5000000,
+    "seed": 106,
+    "initial": 17551339,
+    "singletons": 19594728,
+    "accepted": 200149,
+    "seconds": 95.7207
+  },
+  {
+    "L": 363,
+    "p": 47700761,
+    "steps": 5000000,
+    "seed": 103,
+    "initial": 17547502,
+    "singletons": 19598671,
+    "accepted": 200562,
+    "seconds": 95.7417
+  },
+  {
+    "L": 363,
+    "p": 47700761,
+    "steps": 5000000,
+    "seed": 108,
+    "initial": 17548569,
+    "singletons": 19596800,
+    "accepted": 200028,
+    "seconds": 95.7429
+  },
+  {
+    "L": 363,
+    "p": 47700761,
+    "steps": 5000000,
+    "seed": 107,
+    "initial": 17551373,
+    "singletons": 19600524,
+    "accepted": 199801,
+    "seconds": 95.7647
+  },
+  {
+    "L": 363,
+    "p": 47700761,
+    "steps": 5000000,
+    "seed": 104,
+    "initial": 17550294,
+    "singletons": 19597695,
+    "accepted": 201170,
+    "seconds": 96.0003
+  },
+  {
+    "L": 363,
+    "p": 47700761,
+    "steps": 5000000,
+    "seed": 102,
+    "initial": 17544244,
+    "singletons": 19598035,
+    "accepted": 200006,
+    "seconds": 96.0318
+  },
+  {
+    "L": 363,
+    "p": 47700761,
+    "steps": 5000000,
+    "seed": 105,
+    "initial": 17543408,
+    "singletons": 19599201,
+    "accepted": 200297,
+    "seconds": 96.16
+  },
+  {
+    "L": 363,
+    "p": 47700761,
+    "steps": 5000000,
+    "seed": 101,
+    "initial": 17547896,
+    "singletons": 19600551,
+    "accepted": 200721,
+    "seconds": 96.2505
+  }
+]

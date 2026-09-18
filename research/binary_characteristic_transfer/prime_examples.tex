@@ -1,0 +1,20 @@
+\paragraph{Reproducible finite examples.}
+For $L=25$, the parameters are $n=1201$, $K=3$, $A=48$, and $T=49$.
+Over $\mathbb F_{2000003}$, an exact certificate realizes all $15026$
+singleton exceptions in Theorem~\ref{thm:prime-quadratic-intersection-line}.
+A separate checker verifies the domain, labels, witnesses, and structural
+exclusion of every other quadratic; the certificate and replay are in
+\path{research/binary_characteristic_transfer/prime_L25/}.
+A collision-permitting domain over $\mathbb F_{20011}$ has $12630$ finite
+bad labels. Including the additional projective label, there are exactly
+$12631$ bad challenges and exactly $10798$ singleton threshold lists
+($53.96\%$ of the entire field). These counts use exact modular arithmetic
+and the same degree-based completeness argument, rather than an exhaustive
+scan of all $p^3$ quadratics. The domain and independent replay are in
+\path{research/binary_characteristic_transfer/pooled_prime_labels/}.
+
+A larger verified domain has $L=363$, $n=262813$, $p=47700761$,
+and threshold $T=725$. It has exactly $31301643$ bad challenges,
+including exactly $19622801$ singleton threshold lists ($41.14\%$
+of the field). The winning domain, direct polynomial replay, and bounded
+CPU-search receipt are archived in the same directory.

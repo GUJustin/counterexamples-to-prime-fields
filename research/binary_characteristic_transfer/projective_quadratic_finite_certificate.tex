@@ -1,0 +1,36 @@
+\paragraph{Uniform finite first-order comparison.}
+The characteristic hypothesis can be checked without rate-dependent
+hidden constants. For the parameters of
+Theorem~\ref{thm:projective-quadratic-line}, take the derivative-weighted
+support of~\cite[Eq.~(60)]{dkt2026} with
+\[
+ m=4,\qquad B_\partial=2,\qquad B=B_{\rm jet}=2A_0,
+ \qquad H=B_Z=116B.
+\]
+Its coefficient count is $G=3B^2$ and its local-rank bound is
+$R=3+6+8+6=23$. Direct expansion gives
+\[
+ 5G-116N=8(p-5)^4+168(p-5)^3+1148(p-5)^2+2648(p-5)+308>0.
+\]
+Thus $(H-B+1)G>(H+1)23N$, which suffices for the graded challenge
+test of~\cite[Proposition~5.10]{dkt2026}. Reconstruction requires only
+$p>\max\{2,B_\partial\}$.
+
+For clarity, the resulting bounds are uniform over every received word
+and every affine received line on this evaluation set. In the notation
+of~\cite[Lemma~5.6]{dkt2026}, one has
+\[
+ \lambda\le3N/B,\quad F_{\rm reg}\le5B,\quad
+ S\le3B,\quad H_s=348B,\quad J_1\le1866B^2.
+\]
+Choose both incidence thresholds $L=L_0=\lfloor A_0/2\rfloor$.
+The remaining incidence ratios are at most $4N/B$ and $5N/B$.
+Using $B<N$, $B^2<8N$, and $\Psi_2(S)\le24B$, the list budget is
+at most $18N$, and the full-agreement-set MCA exceptional budget is
+at most
+\[
+ 22392N^2+25N^2+16716N+33411NB<75000N^2.
+\]
+The lower bound $M>\tfrac14N^{3/2}$ therefore lies in the same
+explicit large-characteristic first-order setting, though it does not
+match this quadratic upper bound.
