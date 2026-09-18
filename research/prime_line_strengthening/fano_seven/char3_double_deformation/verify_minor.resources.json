@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/bin/sh",
+    "-c",
+    "/tmp/verify_double_minor < research/prime_line_strengthening/fano_seven/char3_double_deformation/rank_minor.in > research/prime_line_strengthening/fano_seven/char3_double_deformation/verify_minor.json"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.543052708,
+  "peak_rss_kib": 32,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/tmp/quadratic_one_pole_pilot",
+    "research/prime_line_strengthening/quadratic_one_pole_route/pilot.in",
+    "research/prime_line_strengthening/quadratic_one_pole_route/pilot.hits.jsonl"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.556581124998047,
+  "peak_rss_kib": 32,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

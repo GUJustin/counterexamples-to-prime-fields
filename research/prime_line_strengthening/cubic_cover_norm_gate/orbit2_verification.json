@@ -1,0 +1,15 @@
+{
+  "pass_all": true,
+  "minors": [
+    {
+      "full": null,
+      "minor_mod83": 38,
+      "size": 26
+    },
+    {
+      "full": 2,
+      "minor_mod83": 1,
+      "size": 20
+    }
+  ]
+}

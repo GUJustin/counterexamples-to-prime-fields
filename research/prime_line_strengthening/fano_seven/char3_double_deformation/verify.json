@@ -1,0 +1,10 @@
+{
+  "pass_all": true,
+  "independent_field": true,
+  "incidences": 192,
+  "kernel_dimension_at_least": 28,
+  "rank_at_most": 164,
+  "mod9_inconsistent": true,
+  "six_independent_mark_velocities": true,
+  "scope": "rank lower bound requires separate maximal-minor replay"
+}

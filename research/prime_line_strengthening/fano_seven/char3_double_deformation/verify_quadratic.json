@@ -1,0 +1,9 @@
+{
+  "pass_all": true,
+  "full_tangent_dimension": 28,
+  "quadratic_coefficients_checked": 406,
+  "separating_functional_annihilates_J": true,
+  "separating_functional_annihilates_all_quadratic_terms": true,
+  "separating_functional_pairs_nontrivially_with_rhs": true,
+  "scope": "excludes ramification index two provided saved tangent basis complete; maximal minor certified separately"
+}

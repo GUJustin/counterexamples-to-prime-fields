@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/better_codes_discriminant_resource/quartic_remainder_resource_lp.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 2.806293041,
+  "peak_rss_kib": 72128,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

@@ -1,0 +1,45 @@
+{
+  "pass_all": true,
+  "minors": [
+    {
+      "full": null,
+      "minor_mod29": 28,
+      "size": 26
+    },
+    {
+      "full": 0,
+      "minor_mod29": 8,
+      "size": 20
+    },
+    {
+      "full": 1,
+      "minor_mod29": 26,
+      "size": 20
+    },
+    {
+      "full": 2,
+      "minor_mod29": 4,
+      "size": 20
+    },
+    {
+      "full": 3,
+      "minor_mod29": 2,
+      "size": 20
+    },
+    {
+      "full": 4,
+      "minor_mod29": 1,
+      "size": 20
+    },
+    {
+      "full": 5,
+      "minor_mod29": 2,
+      "size": 20
+    },
+    {
+      "full": 6,
+      "minor_mod29": 27,
+      "size": 20
+    }
+  ]
+}

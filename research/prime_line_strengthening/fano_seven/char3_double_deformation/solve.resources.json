@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/bin/sh",
+    "-c",
+    "/tmp/char3_double_solve > research/prime_line_strengthening/fano_seven/char3_double_deformation/solve.json 2> research/prime_line_strengthening/fano_seven/char3_double_deformation/solve.log"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.557360833,
+  "peak_rss_kib": 32,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

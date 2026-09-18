@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/bin/sh",
+    "-c",
+    "/tmp/reduce_double_cone < research/prime_line_strengthening/fano_seven/char3_double_deformation/cone.in > research/prime_line_strengthening/fano_seven/char3_double_deformation/cone.json"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.558813667,
+  "peak_rss_kib": 3488,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

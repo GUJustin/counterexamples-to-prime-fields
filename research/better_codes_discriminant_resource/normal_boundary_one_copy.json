@@ -1,0 +1,10 @@
+{
+  "normal": 352613725068219795,
+  "one_all_unit_optimistic": 45338775053,
+  "one_Rcap_unit_preserving_other_caps": 35955701882,
+  "crude_boundary_total_degree_bound": 1387450026153,
+  "required_reduction": 21042194961366305,
+  "one_all_unit_optimistic_fraction_of_needed": 2.154659964715776e-06,
+  "one_Rcap_unit_preserving_other_caps_fraction_of_needed": 1.7087429304792135e-06,
+  "crude_boundary_total_degree_bound_fraction_of_needed": 6.593656359046065e-05
+}

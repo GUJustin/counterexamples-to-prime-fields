@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/prime_line_strengthening/sextic_two_pole_norm_gate/gate.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5403040420060279,
+  "peak_rss_kib": 6608,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

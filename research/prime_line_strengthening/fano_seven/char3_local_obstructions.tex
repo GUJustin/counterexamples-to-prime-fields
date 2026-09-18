@@ -1,0 +1,157 @@
+% Standalone manuscript input; not included in the main paper.
+\section{Two local obstructions to lifting the characteristic-three bank}
+\label{sec:charthree-local}
+The results here concern specified collision points of incidence schemes.
+They do not bound lists at arbitrary points or exclude other constructions
+with eight candidates.
+
+Let $k=\mathbb F_{3^{18}}$, choose a primitive seventh root $\zeta$, and put
+\[
+ \eta=\zeta+\zeta^2+\zeta^4,\quad
+ \bar\eta=-1-\eta,\quad \alpha=\bar\eta/\eta,\qquad
+ P(X)=\eta X^3+X^2+X+\bar\eta.
+\]
+Define $P_i(X)=\zeta^{5i}P(\zeta^{-i}X)$ for $0\le i<7$,
+and $P_7=0$. On the fourteen points
+$\zeta^t,\alpha\zeta^t$ ($0\le t<7$), take received values
+$\zeta^{5t},0$, respectively. Each point has four agreeing candidates;
+each candidate agrees at seven points and each pair at three.
+Set $\phi(U)=U^3-U$. Its three preimages of every base point lie in $k$
+and are distinct, giving forty-two core coordinates.
+
+For $d=1,2$, the core candidates and received word are
+$F_i(U)=U^dP_i(\phi(U))$ and $U^dw(\phi(U))$.
+For $d=1$, append two coordinates at zero, assigning complementary
+four-subsets of candidates. We consider the five partitions whose first
+part is $\{7\}\cup T$, where the bit masks of $T\subseteq\{0,\ldots,6\}$
+are $7,11,13,19,21$. For $d=2$, append six coordinates at zero and label
+candidates by the binary expansions of $0,\ldots,7$. The six prescribed
+four-subsets are the coordinate faces
+$\{i:\operatorname{bit}_j(i)=b\}$, $0\le j<3$, $b\in\{0,1\}$.
+All appended received values are zero.
+
+\paragraph{Local conclusions.}
+For each specified simple-factor point, the completed incidence ring over
+$W(k)$ is $k[[t_1,\ldots,t_{20}]]$. In particular, there is no
+mixed-characteristic formal branch, of any ramification degree, and the two
+appended coordinates remain equal in every equal-characteristic formal
+deformation. For the specified double-factor point, no DVR-valued branch
+specializing to it has all six appended coordinates distinct. This second
+statement holds in mixed characteristic and in characteristic three.
+The parameters are respectively $(n,D,A)=(44,10,22)$ and $(48,11,24)$;
+their apparent quarter-rate, half-agreement configurations therefore do
+not lift to distinct-node examples through these points.
+
+\paragraph{Finite certificates.}
+The simple-factor Jacobians have rank $156$ in $176$ variables. A
+$20$-dimensional kernel, nonzero maximal minors, and nonzero pairings of a
+left-null vector with the characteristic defect divided by three were
+verified independently. The double-factor Jacobian has rank $164$ in
+$192$ variables, with a $28$-dimensional kernel. Its projected quadratic
+correction has rank $11$; a verified functional annihilates its entire
+span but not the characteristic defect. The correction for an incidence
+at $T$ is
+\[
+ F_i^{[2]}(T)\xi^2+R_i'(T)\xi,
+\]
+where $R_i$ is the tangent polynomial and brackets denote a Hasse
+derivative. Arithmetic was replayed in
+$\mathbb F_3[t]/\Phi_7(t^3-t)$, independently of the original tower-field
+implementation. The certificates and replay scripts are in the
+\texttt{char3\_deformation} and \texttt{char3\_double\_deformation}
+research directories. These are exact finite-field identities, not
+numerical rank estimates.
+
+\paragraph{The simple-factor formal argument.}
+Writing $P_i^{\rm hom}$ for cubic homogenization, consider
+\[
+ C(U)+L(U)P_i^{\rm hom}(A(U),B(U)),\qquad
+ \deg C\le10,\quad \deg L\le1,\quad \deg A,\deg B\le3,
+ \quad B(0)=1.
+\]
+There are twenty parameters. The core coordinates are the formal roots
+of $A-aB$, and both appended coordinates are the root of $L$.
+This characteristic-three family has injective differential: vanishing
+core motions force $\delta A-A\delta B$ to vanish at forty-two points,
+hence identically; normalization gives zero rational-map variation.
+The zero candidate then forces $\delta C=0$, and the remaining candidates
+force $\delta L=0$.
+Solve the $156$ pivot equations over $W(k)$ by the formal implicit-function
+theorem. The twenty remaining parameters are formally parametrized by this
+family modulo three, so every residual equation is divisible by three.
+The verified obstruction modulo nine makes one residual equation divided
+by three a unit. Their ideal is therefore exactly $(3)$, proving the
+claimed completed-ring description.
+
+\paragraph{Constant rank for the double-factor family.}
+The corresponding characteristic-three family is
+\[
+ C(U)+l(U-b)^2P_i^{\rm hom}(A(U),B(U)),\qquad
+ \deg C\le11,\quad \deg A,\deg B\le3,\quad B(0)=1.
+\]
+It has twenty-one parameters and injective differential. Its Jacobian
+rank is constantly $164$ on the open set where the degree-three map
+$\pi=A/B$ is unramified over the base nodes and $b$ avoids their preimages.
+Here is a cover-independent justification. Tangent polynomials satisfy
+$R_i(b)=c$ for a common scalar, hence
+$R_i=c+(U-b)S_i$, $\deg S_i\le10$. At each core point the conditions on
+$(S_i)$ are precisely the fixed base conditions of lying in the span of
+the received-value direction and the base derivative direction. Let
+$\mathcal E\subseteq\mathcal O^8$ be the elementary modification imposing
+these two linear constraints at each of the fourteen base nodes, and put
+$h_j=h^0(\mathcal E(j))$. The six appended node velocities are free, and
+all core node and word velocities are uniquely determined. Thus nullity is
+\[
+ 7+h^0\bigl(\mathcal O(10)\otimes\pi^*\mathcal E\bigr)
+ =7+2h_3+h_2.
+\]
+Indeed $\pi_*\mathcal O(1)=\mathcal O^2\oplus\mathcal O(-1)$:
+its rank, degree, global sections, and vanishing after twisting by
+$\mathcal O(-1)$ force this splitting. Projection formula gives
+$\pi_*\mathcal O(10)=\mathcal O(3)^2\oplus\mathcal O(2)$.
+The nullity is consequently independent of the cover and equals the
+certified value $28$.
+
+\paragraph{The normal cone and collision argument.}
+After eliminating the $164$ pivot variables and straightening the
+$21$-parameter family, use normal coordinates $z_1,\ldots,z_7$.
+Constant rank gives residual equations of the form
+\[
+ g(u,z)=3h(u)+3L(u)z+Q_u(z)+O(z^3).
+\]
+The normal tangent coordinates can be taken as
+$(\omega_0,\ldots,\omega_5,\tau)$, where
+$\omega_f=\xi_f+\alpha_1/2$ and the polynomial slopes are
+$\beta+\alpha_1c_i+\tau d_i$. Here $c_i=[U^2]F_i$ are pairwise distinct.
+Eleven explicit row combinations of the original projected tensor,
+independently replayed coefficient by coefficient, give
+\[
+ \omega_i^2-\omega_5^2=0,\qquad
+ \tau(\omega_i-\omega_5)=0\quad(0\le i<5),\qquad \tau^2=0.
+\]
+These seven coordinates vanish on the family tangent space and form its
+full normal quotient.
+
+For a mixed-characteristic branch with uniformizer $\varpi$, write $e=v(3)$ and
+$s=\min_jv(z_j)$. The case $z=0$ is excluded by $h(0)\ne0$.
+If $e<2s$ the characteristic forcing cannot cancel; if $e=2s$ the verified
+separating functional prevents cancellation. Thus $e>2s$ and the leading
+normal vector lies on the displayed cone. It is nonzero, so
+$\tau=0$ and $\omega_f\in\{a,-a\}$ with $a\ne0$.
+Centering at $b-\varpi^s\alpha_1/2$ eliminates the order-$s$ linear term in
+pair differences. Incidence at a shared mark forces their constant term
+to have order at least $2s$. Consequently, for adjacent cube vertices,
+\[
+ \overline{\varpi^{-2s}(F_i-F_j)(\mathrm{center}+\varpi^sZ)}
+       =(c_i-c_j)(Z^2-a^2).
+\]
+The unknown second-order constants are determined here by evaluation at
+the shared marked velocity; they are not assumed to vanish.
+
+Two faces from different axes share an adjacent candidate pair. If they
+have the same sign velocity, simple-root uniqueness for this reduced
+quadratic forces their actual coordinates to coincide. Hence distinct
+marks in either sign cluster can belong to only one axis, at most two
+faces. Two clusters cannot contain six distinct marks. In equal
+characteristic, $z=0$ gives coincident marks on the family; otherwise the
+same homogeneous-cone and simple-root argument applies directly.

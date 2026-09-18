@@ -17,3 +17,16 @@ Both challenge tests now cover all downward-value full-prefix monomial supports.
 New binding-case helper results: a linear leading factor repeated at least 27 times forces an affine codeword pencil. A quadratic factor repeated 16 through 21 times is impossible when its discriminant is nonzero; the zero-discriminant case reduces to the linear-pencil result. These are conditional branches under the audited full-kernel/contact hypotheses, not a complete benchmark improvement. Exact rank certificates and proofs are archived alongside the kernel notes.
 
 Gaussian-grid moment lattices at sizes 8, 12 and 16 did not pass the finite entropy gate, with exact integer certificates independently verified. These finite failures do not prove an asymptotic obstruction.
+
+
+## Checkpoint 06:41 UTC: rigidity, all-degree cover obstruction, local deformation closure
+
+The main manuscript is now212 pages in the same full-page, one-inch-margin format. Appendix W completes characteristic-zero orbit2 rigidity and proves that every rational cover of degree at least2 fails to add an eighth word through a proper one-extra-pole witness. The degree2/3 cases have independent exact norm-matrix certificates; all higher degrees follow from excess-one birationality and adjunction on a Hirzebruch surface. No scan over cover parameters is needed.
+
+The sextic/two-pole target also fails: genus and incidence force a unique4/2 multiplicity pattern, and both91-by84 norm matrices have full column rank. Independent integer determinants are nonzero modulo29 and83. This result is archived in research, not yet included in the main appendix.
+
+The characteristic-three n48 double-factor point now has a full local all-ramification distinct-node obstruction, with independent geometric/formal audit. Constant Jacobian rank along the21-parameter cover family permits formal normal coordinates; the certified quadratic cone then forces simple shared roots and colliding marked nodes. This is local to the specified incidence point, not a global eight-word theorem.
+
+Active positive targets are degree-eight covers with three poles and degree-ten covers with four poles. The latter uniform217-by220 norm systems have rank217 and a three-dimensional kernel with nonzero leading-degree projection for both banks; rationality and proper cover realization are still entirely unresolved. Linear consistency alone is not a new bank.
+
+No better.codes improvement, growing fixed-gap prime-ambient nearest list, or intrinsic DKT tightness has been obtained. No task rental is running; current exact calculations take less than a second locally. Work continues toward the user's10am Eastern deadline.

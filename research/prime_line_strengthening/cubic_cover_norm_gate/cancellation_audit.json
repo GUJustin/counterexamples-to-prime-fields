@@ -1,0 +1,547 @@
+{
+  "pass_all": true,
+  "groups": [
+    {
+      "k": 1,
+      "pole": "off_S",
+      "maximum": 3,
+      "cases": [
+        {
+          "v1": 0,
+          "v2": 0,
+          "m1": 2,
+          "m2": 1,
+          "arithmetic_genus_bound": 6,
+          "cusp_lower": 1,
+          "intersection_lower": 2,
+          "finite_budget": 3
+        },
+        {
+          "v1": 0,
+          "v2": 1,
+          "m1": 2,
+          "m2": 0,
+          "arithmetic_genus_bound": 4,
+          "cusp_lower": 1,
+          "intersection_lower": 0,
+          "finite_budget": 3
+        },
+        {
+          "v1": 1,
+          "v2": 0,
+          "m1": 1,
+          "m2": 1,
+          "arithmetic_genus_bound": 4,
+          "cusp_lower": 0,
+          "intersection_lower": 1,
+          "finite_budget": 3
+        },
+        {
+          "v1": 1,
+          "v2": 1,
+          "m1": 1,
+          "m2": 0,
+          "arithmetic_genus_bound": 2,
+          "cusp_lower": 0,
+          "intersection_lower": 0,
+          "finite_budget": 2
+        },
+        {
+          "v1": 2,
+          "v2": 0,
+          "m1": 0,
+          "m2": 1,
+          "arithmetic_genus_bound": 2,
+          "cusp_lower": 0,
+          "intersection_lower": 0,
+          "finite_budget": 2
+        },
+        {
+          "v1": 2,
+          "v2": 1,
+          "m1": 0,
+          "m2": 0,
+          "arithmetic_genus_bound": 0,
+          "cusp_lower": 0,
+          "intersection_lower": 0,
+          "finite_budget": 0
+        }
+      ]
+    },
+    {
+      "k": 1,
+      "pole": "double_S",
+      "maximum": 3,
+      "cases": [
+        {
+          "v1": 0,
+          "v2": 0,
+          "m1": 3,
+          "m2": 1,
+          "arithmetic_genus_bound": 6,
+          "cusp_lower": 1,
+          "intersection_lower": 2,
+          "finite_budget": 3
+        },
+        {
+          "v1": 0,
+          "v2": 1,
+          "m1": 3,
+          "m2": 0,
+          "arithmetic_genus_bound": 4,
+          "cusp_lower": 1,
+          "intersection_lower": 0,
+          "finite_budget": 3
+        }
+      ]
+    },
+    {
+      "k": 1,
+      "pole": "simple_S",
+      "maximum": 3,
+      "cases": [
+        {
+          "v1": 0,
+          "v2": 0,
+          "m1": 2,
+          "m2": 2,
+          "arithmetic_genus_bound": 6,
+          "cusp_lower": 1,
+          "intersection_lower": 2,
+          "finite_budget": 3
+        },
+        {
+          "v1": 1,
+          "v2": 0,
+          "m1": 1,
+          "m2": 2,
+          "arithmetic_genus_bound": 4,
+          "cusp_lower": 0,
+          "intersection_lower": 1,
+          "finite_budget": 3
+        },
+        {
+          "v1": 2,
+          "v2": 0,
+          "m1": 0,
+          "m2": 2,
+          "arithmetic_genus_bound": 2,
+          "cusp_lower": 0,
+          "intersection_lower": 0,
+          "finite_budget": 2
+        }
+      ]
+    },
+    {
+      "k": 3,
+      "pole": "off_S",
+      "maximum": 9,
+      "cases": [
+        {
+          "v1": 0,
+          "v2": 0,
+          "m1": 6,
+          "m2": 3,
+          "arithmetic_genus_bound": 18,
+          "cusp_lower": 3,
+          "intersection_lower": 6,
+          "finite_budget": 9
+        },
+        {
+          "v1": 0,
+          "v2": 1,
+          "m1": 6,
+          "m2": 2,
+          "arithmetic_genus_bound": 16,
+          "cusp_lower": 3,
+          "intersection_lower": 4,
+          "finite_budget": 9
+        },
+        {
+          "v1": 0,
+          "v2": 2,
+          "m1": 6,
+          "m2": 1,
+          "arithmetic_genus_bound": 14,
+          "cusp_lower": 3,
+          "intersection_lower": 2,
+          "finite_budget": 9
+        },
+        {
+          "v1": 0,
+          "v2": 3,
+          "m1": 6,
+          "m2": 0,
+          "arithmetic_genus_bound": 12,
+          "cusp_lower": 3,
+          "intersection_lower": 0,
+          "finite_budget": 9
+        },
+        {
+          "v1": 1,
+          "v2": 0,
+          "m1": 5,
+          "m2": 3,
+          "arithmetic_genus_bound": 16,
+          "cusp_lower": 2,
+          "intersection_lower": 5,
+          "finite_budget": 9
+        },
+        {
+          "v1": 1,
+          "v2": 1,
+          "m1": 5,
+          "m2": 2,
+          "arithmetic_genus_bound": 14,
+          "cusp_lower": 2,
+          "intersection_lower": 4,
+          "finite_budget": 8
+        },
+        {
+          "v1": 1,
+          "v2": 2,
+          "m1": 5,
+          "m2": 1,
+          "arithmetic_genus_bound": 12,
+          "cusp_lower": 2,
+          "intersection_lower": 2,
+          "finite_budget": 8
+        },
+        {
+          "v1": 1,
+          "v2": 3,
+          "m1": 5,
+          "m2": 0,
+          "arithmetic_genus_bound": 10,
+          "cusp_lower": 2,
+          "intersection_lower": 0,
+          "finite_budget": 8
+        },
+        {
+          "v1": 2,
+          "v2": 0,
+          "m1": 4,
+          "m2": 3,
+          "arithmetic_genus_bound": 14,
+          "cusp_lower": 2,
+          "intersection_lower": 4,
+          "finite_budget": 8
+        },
+        {
+          "v1": 2,
+          "v2": 1,
+          "m1": 4,
+          "m2": 2,
+          "arithmetic_genus_bound": 12,
+          "cusp_lower": 2,
+          "intersection_lower": 4,
+          "finite_budget": 6
+        },
+        {
+          "v1": 2,
+          "v2": 2,
+          "m1": 4,
+          "m2": 1,
+          "arithmetic_genus_bound": 10,
+          "cusp_lower": 2,
+          "intersection_lower": 2,
+          "finite_budget": 6
+        },
+        {
+          "v1": 2,
+          "v2": 3,
+          "m1": 4,
+          "m2": 0,
+          "arithmetic_genus_bound": 8,
+          "cusp_lower": 2,
+          "intersection_lower": 0,
+          "finite_budget": 6
+        },
+        {
+          "v1": 3,
+          "v2": 0,
+          "m1": 3,
+          "m2": 3,
+          "arithmetic_genus_bound": 12,
+          "cusp_lower": 1,
+          "intersection_lower": 3,
+          "finite_budget": 8
+        },
+        {
+          "v1": 3,
+          "v2": 1,
+          "m1": 3,
+          "m2": 2,
+          "arithmetic_genus_bound": 10,
+          "cusp_lower": 1,
+          "intersection_lower": 3,
+          "finite_budget": 6
+        },
+        {
+          "v1": 3,
+          "v2": 2,
+          "m1": 3,
+          "m2": 1,
+          "arithmetic_genus_bound": 8,
+          "cusp_lower": 1,
+          "intersection_lower": 2,
+          "finite_budget": 5
+        },
+        {
+          "v1": 3,
+          "v2": 3,
+          "m1": 3,
+          "m2": 0,
+          "arithmetic_genus_bound": 6,
+          "cusp_lower": 1,
+          "intersection_lower": 0,
+          "finite_budget": 5
+        },
+        {
+          "v1": 4,
+          "v2": 0,
+          "m1": 2,
+          "m2": 3,
+          "arithmetic_genus_bound": 10,
+          "cusp_lower": 1,
+          "intersection_lower": 2,
+          "finite_budget": 7
+        },
+        {
+          "v1": 4,
+          "v2": 1,
+          "m1": 2,
+          "m2": 2,
+          "arithmetic_genus_bound": 8,
+          "cusp_lower": 1,
+          "intersection_lower": 2,
+          "finite_budget": 5
+        },
+        {
+          "v1": 4,
+          "v2": 2,
+          "m1": 2,
+          "m2": 1,
+          "arithmetic_genus_bound": 6,
+          "cusp_lower": 1,
+          "intersection_lower": 2,
+          "finite_budget": 3
+        },
+        {
+          "v1": 4,
+          "v2": 3,
+          "m1": 2,
+          "m2": 0,
+          "arithmetic_genus_bound": 4,
+          "cusp_lower": 1,
+          "intersection_lower": 0,
+          "finite_budget": 3
+        },
+        {
+          "v1": 5,
+          "v2": 0,
+          "m1": 1,
+          "m2": 3,
+          "arithmetic_genus_bound": 8,
+          "cusp_lower": 0,
+          "intersection_lower": 1,
+          "finite_budget": 7
+        },
+        {
+          "v1": 5,
+          "v2": 1,
+          "m1": 1,
+          "m2": 2,
+          "arithmetic_genus_bound": 6,
+          "cusp_lower": 0,
+          "intersection_lower": 1,
+          "finite_budget": 5
+        },
+        {
+          "v1": 5,
+          "v2": 2,
+          "m1": 1,
+          "m2": 1,
+          "arithmetic_genus_bound": 4,
+          "cusp_lower": 0,
+          "intersection_lower": 1,
+          "finite_budget": 3
+        },
+        {
+          "v1": 5,
+          "v2": 3,
+          "m1": 1,
+          "m2": 0,
+          "arithmetic_genus_bound": 2,
+          "cusp_lower": 0,
+          "intersection_lower": 0,
+          "finite_budget": 2
+        },
+        {
+          "v1": 6,
+          "v2": 0,
+          "m1": 0,
+          "m2": 3,
+          "arithmetic_genus_bound": 6,
+          "cusp_lower": 0,
+          "intersection_lower": 0,
+          "finite_budget": 6
+        },
+        {
+          "v1": 6,
+          "v2": 1,
+          "m1": 0,
+          "m2": 2,
+          "arithmetic_genus_bound": 4,
+          "cusp_lower": 0,
+          "intersection_lower": 0,
+          "finite_budget": 4
+        },
+        {
+          "v1": 6,
+          "v2": 2,
+          "m1": 0,
+          "m2": 1,
+          "arithmetic_genus_bound": 2,
+          "cusp_lower": 0,
+          "intersection_lower": 0,
+          "finite_budget": 2
+        },
+        {
+          "v1": 6,
+          "v2": 3,
+          "m1": 0,
+          "m2": 0,
+          "arithmetic_genus_bound": 0,
+          "cusp_lower": 0,
+          "intersection_lower": 0,
+          "finite_budget": 0
+        }
+      ]
+    },
+    {
+      "k": 3,
+      "pole": "double_S",
+      "maximum": 9,
+      "cases": [
+        {
+          "v1": 0,
+          "v2": 0,
+          "m1": 7,
+          "m2": 3,
+          "arithmetic_genus_bound": 18,
+          "cusp_lower": 3,
+          "intersection_lower": 6,
+          "finite_budget": 9
+        },
+        {
+          "v1": 0,
+          "v2": 1,
+          "m1": 7,
+          "m2": 2,
+          "arithmetic_genus_bound": 16,
+          "cusp_lower": 3,
+          "intersection_lower": 4,
+          "finite_budget": 9
+        },
+        {
+          "v1": 0,
+          "v2": 2,
+          "m1": 7,
+          "m2": 1,
+          "arithmetic_genus_bound": 14,
+          "cusp_lower": 3,
+          "intersection_lower": 2,
+          "finite_budget": 9
+        },
+        {
+          "v1": 0,
+          "v2": 3,
+          "m1": 7,
+          "m2": 0,
+          "arithmetic_genus_bound": 12,
+          "cusp_lower": 3,
+          "intersection_lower": 0,
+          "finite_budget": 9
+        }
+      ]
+    },
+    {
+      "k": 3,
+      "pole": "simple_S",
+      "maximum": 9,
+      "cases": [
+        {
+          "v1": 0,
+          "v2": 0,
+          "m1": 6,
+          "m2": 4,
+          "arithmetic_genus_bound": 18,
+          "cusp_lower": 3,
+          "intersection_lower": 6,
+          "finite_budget": 9
+        },
+        {
+          "v1": 1,
+          "v2": 0,
+          "m1": 5,
+          "m2": 4,
+          "arithmetic_genus_bound": 16,
+          "cusp_lower": 2,
+          "intersection_lower": 5,
+          "finite_budget": 9
+        },
+        {
+          "v1": 2,
+          "v2": 0,
+          "m1": 4,
+          "m2": 4,
+          "arithmetic_genus_bound": 14,
+          "cusp_lower": 2,
+          "intersection_lower": 4,
+          "finite_budget": 8
+        },
+        {
+          "v1": 3,
+          "v2": 0,
+          "m1": 3,
+          "m2": 4,
+          "arithmetic_genus_bound": 12,
+          "cusp_lower": 1,
+          "intersection_lower": 3,
+          "finite_budget": 8
+        },
+        {
+          "v1": 4,
+          "v2": 0,
+          "m1": 2,
+          "m2": 4,
+          "arithmetic_genus_bound": 10,
+          "cusp_lower": 1,
+          "intersection_lower": 2,
+          "finite_budget": 7
+        },
+        {
+          "v1": 5,
+          "v2": 0,
+          "m1": 1,
+          "m2": 4,
+          "arithmetic_genus_bound": 8,
+          "cusp_lower": 0,
+          "intersection_lower": 1,
+          "finite_budget": 7
+        },
+        {
+          "v1": 6,
+          "v2": 0,
+          "m1": 0,
+          "m2": 4,
+          "arithmetic_genus_bound": 6,
+          "cusp_lower": 0,
+          "intersection_lower": 0,
+          "finite_budget": 6
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4534 @@
+{
+  "status": "PASS",
+  "patterns": 332,
+  "certificates": [
+    {
+      "full": [],
+      "empty": [],
+      "minor_size": 14,
+      "minor_mod83": 12
+    },
+    {
+      "full": [
+        9
+      ],
+      "empty": [
+        4
+      ],
+      "minor_size": 12,
+      "minor_mod83": 64
+    },
+    {
+      "full": [
+        0,
+        7
+      ],
+      "empty": [
+        2,
+        6
+      ],
+      "minor_size": 9,
+      "minor_mod83": 25
+    },
+    {
+      "full": [
+        1,
+        8
+      ],
+      "empty": [
+        2,
+        6
+      ],
+      "minor_size": 9,
+      "minor_mod83": 31
+    },
+    {
+      "full": [
+        1,
+        9
+      ],
+      "empty": [
+        4,
+        6
+      ],
+      "minor_size": 9,
+      "minor_mod83": 71
+    },
+    {
+      "full": [
+        2,
+        9
+      ],
+      "empty": [
+        0,
+        4
+      ],
+      "minor_size": 9,
+      "minor_mod83": 57
+    },
+    {
+      "full": [
+        2,
+        13
+      ],
+      "empty": [
+        0,
+        5
+      ],
+      "minor_size": 9,
+      "minor_mod83": 69
+    },
+    {
+      "full": [
+        3,
+        11
+      ],
+      "empty": [
+        0,
+        5
+      ],
+      "minor_size": 9,
+      "minor_mod83": 49
+    },
+    {
+      "full": [
+        5,
+        9
+      ],
+      "empty": [
+        3,
+        4
+      ],
+      "minor_size": 9,
+      "minor_mod83": 26
+    },
+    {
+      "full": [
+        5,
+        10
+      ],
+      "empty": [
+        1,
+        3
+      ],
+      "minor_size": 9,
+      "minor_mod83": 46
+    },
+    {
+      "full": [
+        6,
+        12
+      ],
+      "empty": [
+        1,
+        3
+      ],
+      "minor_size": 9,
+      "minor_mod83": 44
+    },
+    {
+      "full": [
+        7,
+        9
+      ],
+      "empty": [
+        4,
+        6
+      ],
+      "minor_size": 9,
+      "minor_mod83": 66
+    },
+    {
+      "full": [
+        7,
+        9
+      ],
+      "empty": [
+        4,
+        8
+      ],
+      "minor_size": 9,
+      "minor_mod83": 43
+    },
+    {
+      "full": [
+        7,
+        10
+      ],
+      "empty": [
+        2,
+        6
+      ],
+      "minor_size": 9,
+      "minor_mod83": 4
+    },
+    {
+      "full": [
+        7,
+        11
+      ],
+      "empty": [
+        1,
+        5
+      ],
+      "minor_size": 9,
+      "minor_mod83": 71
+    },
+    {
+      "full": [
+        7,
+        11
+      ],
+      "empty": [
+        2,
+        4
+      ],
+      "minor_size": 9,
+      "minor_mod83": 10
+    },
+    {
+      "full": [
+        7,
+        12
+      ],
+      "empty": [
+        1,
+        4
+      ],
+      "minor_size": 9,
+      "minor_mod83": 76
+    },
+    {
+      "full": [
+        7,
+        12
+      ],
+      "empty": [
+        2,
+        5
+      ],
+      "minor_size": 9,
+      "minor_mod83": 47
+    },
+    {
+      "full": [
+        7,
+        13
+      ],
+      "empty": [
+        0,
+        5
+      ],
+      "minor_size": 9,
+      "minor_mod83": 38
+    },
+    {
+      "full": [
+        7,
+        13
+      ],
+      "empty": [
+        1,
+        3
+      ],
+      "minor_size": 9,
+      "minor_mod83": 39
+    },
+    {
+      "full": [
+        7,
+        13
+      ],
+      "empty": [
+        1,
+        5
+      ],
+      "minor_size": 9,
+      "minor_mod83": 53
+    },
+    {
+      "full": [
+        7,
+        13
+      ],
+      "empty": [
+        1,
+        8
+      ],
+      "minor_size": 9,
+      "minor_mod83": 27
+    },
+    {
+      "full": [
+        7,
+        13
+      ],
+      "empty": [
+        2,
+        6
+      ],
+      "minor_size": 9,
+      "minor_mod83": 53
+    },
+    {
+      "full": [
+        7,
+        13
+      ],
+      "empty": [
+        5,
+        6
+      ],
+      "minor_size": 9,
+      "minor_mod83": 5
+    },
+    {
+      "full": [
+        7,
+        13
+      ],
+      "empty": [
+        6,
+        11
+      ],
+      "minor_size": 9,
+      "minor_mod83": 48
+    },
+    {
+      "full": [
+        8,
+        9
+      ],
+      "empty": [
+        3,
+        6
+      ],
+      "minor_size": 9,
+      "minor_mod83": 54
+    },
+    {
+      "full": [
+        8,
+        10
+      ],
+      "empty": [
+        0,
+        6
+      ],
+      "minor_size": 9,
+      "minor_mod83": 3
+    },
+    {
+      "full": [
+        8,
+        10
+      ],
+      "empty": [
+        2,
+        6
+      ],
+      "minor_size": 9,
+      "minor_mod83": 79
+    },
+    {
+      "full": [
+        8,
+        11
+      ],
+      "empty": [
+        0,
+        5
+      ],
+      "minor_size": 9,
+      "minor_mod83": 49
+    },
+    {
+      "full": [
+        8,
+        12
+      ],
+      "empty": [
+        0,
+        5
+      ],
+      "minor_size": 9,
+      "minor_mod83": 6
+    },
+    {
+      "full": [
+        8,
+        12
+      ],
+      "empty": [
+        1,
+        3
+      ],
+      "minor_size": 9,
+      "minor_mod83": 57
+    },
+    {
+      "full": [
+        8,
+        12
+      ],
+      "empty": [
+        2,
+        3
+      ],
+      "minor_size": 9,
+      "minor_mod83": 11
+    },
+    {
+      "full": [
+        8,
+        12
+      ],
+      "empty": [
+        2,
+        5
+      ],
+      "minor_size": 9,
+      "minor_mod83": 11
+    },
+    {
+      "full": [
+        8,
+        12
+      ],
+      "empty": [
+        2,
+        6
+      ],
+      "minor_size": 9,
+      "minor_mod83": 43
+    },
+    {
+      "full": [
+        8,
+        12
+      ],
+      "empty": [
+        3,
+        7
+      ],
+      "minor_size": 9,
+      "minor_mod83": 72
+    },
+    {
+      "full": [
+        8,
+        12
+      ],
+      "empty": [
+        5,
+        10
+      ],
+      "minor_size": 9,
+      "minor_mod83": 23
+    },
+    {
+      "full": [
+        8,
+        13
+      ],
+      "empty": [
+        0,
+        3
+      ],
+      "minor_size": 9,
+      "minor_mod83": 51
+    },
+    {
+      "full": [
+        8,
+        13
+      ],
+      "empty": [
+        0,
+        5
+      ],
+      "minor_size": 9,
+      "minor_mod83": 38
+    },
+    {
+      "full": [
+        9,
+        10
+      ],
+      "empty": [
+        0,
+        3
+      ],
+      "minor_size": 9,
+      "minor_mod83": 22
+    },
+    {
+      "full": [
+        9,
+        11
+      ],
+      "empty": [
+        0,
+        4
+      ],
+      "minor_size": 9,
+      "minor_mod83": 11
+    },
+    {
+      "full": [
+        9,
+        11
+      ],
+      "empty": [
+        4,
+        13
+      ],
+      "minor_size": 9,
+      "minor_mod83": 46
+    },
+    {
+      "full": [
+        9,
+        12
+      ],
+      "empty": [
+        3,
+        4
+      ],
+      "minor_size": 9,
+      "minor_mod83": 59
+    },
+    {
+      "full": [
+        9,
+        12
+      ],
+      "empty": [
+        4,
+        10
+      ],
+      "minor_size": 9,
+      "minor_mod83": 51
+    },
+    {
+      "full": [
+        9,
+        13
+      ],
+      "empty": [
+        0,
+        6
+      ],
+      "minor_size": 9,
+      "minor_mod83": 21
+    },
+    {
+      "full": [
+        10,
+        11
+      ],
+      "empty": [
+        0,
+        1
+      ],
+      "minor_size": 9,
+      "minor_mod83": 50
+    },
+    {
+      "full": [
+        10,
+        11
+      ],
+      "empty": [
+        0,
+        5
+      ],
+      "minor_size": 9,
+      "minor_mod83": 6
+    },
+    {
+      "full": [
+        10,
+        11
+      ],
+      "empty": [
+        0,
+        12
+      ],
+      "minor_size": 9,
+      "minor_mod83": 23
+    },
+    {
+      "full": [
+        10,
+        11
+      ],
+      "empty": [
+        1,
+        2
+      ],
+      "minor_size": 9,
+      "minor_mod83": 33
+    },
+    {
+      "full": [
+        10,
+        11
+      ],
+      "empty": [
+        1,
+        3
+      ],
+      "minor_size": 9,
+      "minor_mod83": 5
+    },
+    {
+      "full": [
+        10,
+        11
+      ],
+      "empty": [
+        2,
+        6
+      ],
+      "minor_size": 9,
+      "minor_mod83": 1
+    },
+    {
+      "full": [
+        10,
+        11
+      ],
+      "empty": [
+        2,
+        13
+      ],
+      "minor_size": 9,
+      "minor_mod83": 33
+    },
+    {
+      "full": [
+        10,
+        13
+      ],
+      "empty": [
+        1,
+        3
+      ],
+      "minor_size": 9,
+      "minor_mod83": 28
+    },
+    {
+      "full": [
+        10,
+        13
+      ],
+      "empty": [
+        3,
+        6
+      ],
+      "minor_size": 9,
+      "minor_mod83": 34
+    },
+    {
+      "full": [
+        11,
+        12
+      ],
+      "empty": [
+        1,
+        2
+      ],
+      "minor_size": 9,
+      "minor_mod83": 63
+    },
+    {
+      "full": [
+        11,
+        12
+      ],
+      "empty": [
+        4,
+        5
+      ],
+      "minor_size": 9,
+      "minor_mod83": 14
+    },
+    {
+      "full": [
+        12,
+        13
+      ],
+      "empty": [
+        1,
+        3
+      ],
+      "minor_size": 9,
+      "minor_mod83": 18
+    },
+    {
+      "full": [
+        0,
+        5,
+        10
+      ],
+      "empty": [
+        1,
+        2,
+        3
+      ],
+      "minor_size": 6,
+      "minor_mod83": 52
+    },
+    {
+      "full": [
+        0,
+        5,
+        10
+      ],
+      "empty": [
+        2,
+        3,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 18
+    },
+    {
+      "full": [
+        0,
+        5,
+        12
+      ],
+      "empty": [
+        1,
+        2,
+        3
+      ],
+      "minor_size": 6,
+      "minor_mod83": 63
+    },
+    {
+      "full": [
+        0,
+        7,
+        9
+      ],
+      "empty": [
+        2,
+        4,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 37
+    },
+    {
+      "full": [
+        0,
+        7,
+        12
+      ],
+      "empty": [
+        1,
+        2,
+        3
+      ],
+      "minor_size": 6,
+      "minor_mod83": 70
+    },
+    {
+      "full": [
+        0,
+        7,
+        12
+      ],
+      "empty": [
+        1,
+        2,
+        4
+      ],
+      "minor_size": 6,
+      "minor_mod83": 76
+    },
+    {
+      "full": [
+        0,
+        7,
+        12
+      ],
+      "empty": [
+        1,
+        2,
+        9
+      ],
+      "minor_size": 6,
+      "minor_mod83": 81
+    },
+    {
+      "full": [
+        0,
+        7,
+        12
+      ],
+      "empty": [
+        2,
+        4,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 75
+    },
+    {
+      "full": [
+        0,
+        7,
+        12
+      ],
+      "empty": [
+        2,
+        4,
+        10
+      ],
+      "minor_size": 6,
+      "minor_mod83": 70
+    },
+    {
+      "full": [
+        0,
+        7,
+        13
+      ],
+      "empty": [
+        2,
+        6,
+        11
+      ],
+      "minor_size": 6,
+      "minor_mod83": 81
+    },
+    {
+      "full": [
+        0,
+        8,
+        12
+      ],
+      "empty": [
+        1,
+        2,
+        3
+      ],
+      "minor_size": 6,
+      "minor_mod83": 38
+    },
+    {
+      "full": [
+        0,
+        8,
+        12
+      ],
+      "empty": [
+        2,
+        3,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 60
+    },
+    {
+      "full": [
+        0,
+        11,
+        12
+      ],
+      "empty": [
+        2,
+        4,
+        13
+      ],
+      "minor_size": 6,
+      "minor_mod83": 48
+    },
+    {
+      "full": [
+        1,
+        3,
+        7
+      ],
+      "empty": [
+        2,
+        5,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 35
+    },
+    {
+      "full": [
+        1,
+        3,
+        8
+      ],
+      "empty": [
+        0,
+        5,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 21
+    },
+    {
+      "full": [
+        1,
+        3,
+        8
+      ],
+      "empty": [
+        2,
+        5,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 20
+    },
+    {
+      "full": [
+        1,
+        7,
+        9
+      ],
+      "empty": [
+        2,
+        4,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 5
+    },
+    {
+      "full": [
+        1,
+        8,
+        9
+      ],
+      "empty": [
+        0,
+        4,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 68
+    },
+    {
+      "full": [
+        1,
+        8,
+        9
+      ],
+      "empty": [
+        0,
+        5,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 14
+    },
+    {
+      "full": [
+        1,
+        8,
+        9
+      ],
+      "empty": [
+        0,
+        6,
+        7
+      ],
+      "minor_size": 6,
+      "minor_mod83": 67
+    },
+    {
+      "full": [
+        1,
+        8,
+        9
+      ],
+      "empty": [
+        2,
+        4,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 1
+    },
+    {
+      "full": [
+        1,
+        8,
+        12
+      ],
+      "empty": [
+        2,
+        5,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 79
+    },
+    {
+      "full": [
+        1,
+        8,
+        13
+      ],
+      "empty": [
+        0,
+        5,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 69
+    },
+    {
+      "full": [
+        1,
+        9,
+        10
+      ],
+      "empty": [
+        0,
+        6,
+        12
+      ],
+      "minor_size": 6,
+      "minor_mod83": 27
+    },
+    {
+      "full": [
+        2,
+        6,
+        11
+      ],
+      "empty": [
+        0,
+        1,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 11
+    },
+    {
+      "full": [
+        2,
+        6,
+        13
+      ],
+      "empty": [
+        0,
+        1,
+        3
+      ],
+      "minor_size": 6,
+      "minor_mod83": 54
+    },
+    {
+      "full": [
+        2,
+        6,
+        13
+      ],
+      "empty": [
+        0,
+        1,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 76
+    },
+    {
+      "full": [
+        2,
+        7,
+        13
+      ],
+      "empty": [
+        0,
+        1,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 18
+    },
+    {
+      "full": [
+        2,
+        8,
+        9
+      ],
+      "empty": [
+        0,
+        3,
+        7
+      ],
+      "minor_size": 6,
+      "minor_mod83": 31
+    },
+    {
+      "full": [
+        2,
+        9,
+        11
+      ],
+      "empty": [
+        0,
+        4,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 22
+    },
+    {
+      "full": [
+        2,
+        9,
+        13
+      ],
+      "empty": [
+        0,
+        1,
+        3
+      ],
+      "minor_size": 6,
+      "minor_mod83": 2
+    },
+    {
+      "full": [
+        2,
+        9,
+        13
+      ],
+      "empty": [
+        0,
+        3,
+        4
+      ],
+      "minor_size": 6,
+      "minor_mod83": 78
+    },
+    {
+      "full": [
+        2,
+        9,
+        13
+      ],
+      "empty": [
+        0,
+        3,
+        11
+      ],
+      "minor_size": 6,
+      "minor_mod83": 70
+    },
+    {
+      "full": [
+        2,
+        9,
+        13
+      ],
+      "empty": [
+        0,
+        4,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 49
+    },
+    {
+      "full": [
+        2,
+        10,
+        13
+      ],
+      "empty": [
+        0,
+        1,
+        3
+      ],
+      "minor_size": 6,
+      "minor_mod83": 38
+    },
+    {
+      "full": [
+        3,
+        7,
+        11
+      ],
+      "empty": [
+        0,
+        4,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 69
+    },
+    {
+      "full": [
+        3,
+        7,
+        11
+      ],
+      "empty": [
+        2,
+        4,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 34
+    },
+    {
+      "full": [
+        3,
+        7,
+        11
+      ],
+      "empty": [
+        2,
+        5,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 13
+    },
+    {
+      "full": [
+        3,
+        7,
+        11
+      ],
+      "empty": [
+        2,
+        5,
+        9
+      ],
+      "minor_size": 6,
+      "minor_mod83": 66
+    },
+    {
+      "full": [
+        3,
+        7,
+        11
+      ],
+      "empty": [
+        4,
+        5,
+        8
+      ],
+      "minor_size": 6,
+      "minor_mod83": 46
+    },
+    {
+      "full": [
+        3,
+        7,
+        12
+      ],
+      "empty": [
+        4,
+        5,
+        10
+      ],
+      "minor_size": 6,
+      "minor_mod83": 82
+    },
+    {
+      "full": [
+        3,
+        7,
+        13
+      ],
+      "empty": [
+        0,
+        5,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 26
+    },
+    {
+      "full": [
+        3,
+        7,
+        13
+      ],
+      "empty": [
+        2,
+        5,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 35
+    },
+    {
+      "full": [
+        3,
+        9,
+        11
+      ],
+      "empty": [
+        0,
+        4,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 36
+    },
+    {
+      "full": [
+        3,
+        10,
+        11
+      ],
+      "empty": [
+        0,
+        5,
+        12
+      ],
+      "minor_size": 6,
+      "minor_mod83": 55
+    },
+    {
+      "full": [
+        4,
+        7,
+        13
+      ],
+      "empty": [
+        1,
+        5,
+        9
+      ],
+      "minor_size": 6,
+      "minor_mod83": 42
+    },
+    {
+      "full": [
+        4,
+        8,
+        10
+      ],
+      "empty": [
+        0,
+        3,
+        7
+      ],
+      "minor_size": 6,
+      "minor_mod83": 63
+    },
+    {
+      "full": [
+        4,
+        8,
+        10
+      ],
+      "empty": [
+        2,
+        3,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 47
+    },
+    {
+      "full": [
+        4,
+        8,
+        10
+      ],
+      "empty": [
+        2,
+        6,
+        9
+      ],
+      "minor_size": 6,
+      "minor_mod83": 51
+    },
+    {
+      "full": [
+        4,
+        8,
+        12
+      ],
+      "empty": [
+        2,
+        5,
+        9
+      ],
+      "minor_size": 6,
+      "minor_mod83": 76
+    },
+    {
+      "full": [
+        4,
+        8,
+        13
+      ],
+      "empty": [
+        0,
+        5,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 65
+    },
+    {
+      "full": [
+        4,
+        8,
+        13
+      ],
+      "empty": [
+        0,
+        5,
+        9
+      ],
+      "minor_size": 6,
+      "minor_mod83": 50
+    },
+    {
+      "full": [
+        4,
+        8,
+        13
+      ],
+      "empty": [
+        3,
+        6,
+        11
+      ],
+      "minor_size": 6,
+      "minor_mod83": 21
+    },
+    {
+      "full": [
+        4,
+        10,
+        11
+      ],
+      "empty": [
+        1,
+        2,
+        9
+      ],
+      "minor_size": 6,
+      "minor_mod83": 76
+    },
+    {
+      "full": [
+        4,
+        10,
+        13
+      ],
+      "empty": [
+        0,
+        1,
+        3
+      ],
+      "minor_size": 6,
+      "minor_mod83": 47
+    },
+    {
+      "full": [
+        4,
+        10,
+        13
+      ],
+      "empty": [
+        0,
+        6,
+        12
+      ],
+      "minor_size": 6,
+      "minor_mod83": 11
+    },
+    {
+      "full": [
+        4,
+        10,
+        13
+      ],
+      "empty": [
+        1,
+        3,
+        9
+      ],
+      "minor_size": 6,
+      "minor_mod83": 74
+    },
+    {
+      "full": [
+        5,
+        8,
+        10
+      ],
+      "empty": [
+        2,
+        3,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 70
+    },
+    {
+      "full": [
+        5,
+        9,
+        10
+      ],
+      "empty": [
+        1,
+        3,
+        4
+      ],
+      "minor_size": 6,
+      "minor_mod83": 51
+    },
+    {
+      "full": [
+        5,
+        9,
+        10
+      ],
+      "empty": [
+        2,
+        3,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 50
+    },
+    {
+      "full": [
+        5,
+        9,
+        10
+      ],
+      "empty": [
+        3,
+        4,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 31
+    },
+    {
+      "full": [
+        5,
+        9,
+        10
+      ],
+      "empty": [
+        3,
+        6,
+        12
+      ],
+      "minor_size": 6,
+      "minor_mod83": 75
+    },
+    {
+      "full": [
+        5,
+        9,
+        12
+      ],
+      "empty": [
+        1,
+        3,
+        4
+      ],
+      "minor_size": 6,
+      "minor_mod83": 33
+    },
+    {
+      "full": [
+        5,
+        9,
+        13
+      ],
+      "empty": [
+        3,
+        6,
+        11
+      ],
+      "minor_size": 6,
+      "minor_mod83": 12
+    },
+    {
+      "full": [
+        5,
+        10,
+        11
+      ],
+      "empty": [
+        1,
+        2,
+        3
+      ],
+      "minor_size": 6,
+      "minor_mod83": 44
+    },
+    {
+      "full": [
+        6,
+        7,
+        11
+      ],
+      "empty": [
+        1,
+        4,
+        8
+      ],
+      "minor_size": 6,
+      "minor_mod83": 29
+    },
+    {
+      "full": [
+        6,
+        8,
+        12
+      ],
+      "empty": [
+        1,
+        3,
+        7
+      ],
+      "minor_size": 6,
+      "minor_mod83": 44
+    },
+    {
+      "full": [
+        6,
+        9,
+        12
+      ],
+      "empty": [
+        1,
+        3,
+        4
+      ],
+      "minor_size": 6,
+      "minor_mod83": 40
+    },
+    {
+      "full": [
+        6,
+        10,
+        11
+      ],
+      "empty": [
+        0,
+        1,
+        3
+      ],
+      "minor_size": 6,
+      "minor_mod83": 78
+    },
+    {
+      "full": [
+        6,
+        10,
+        11
+      ],
+      "empty": [
+        0,
+        1,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 43
+    },
+    {
+      "full": [
+        6,
+        11,
+        12
+      ],
+      "empty": [
+        0,
+        1,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 78
+    },
+    {
+      "full": [
+        6,
+        11,
+        12
+      ],
+      "empty": [
+        1,
+        3,
+        4
+      ],
+      "minor_size": 6,
+      "minor_mod83": 15
+    },
+    {
+      "full": [
+        6,
+        11,
+        12
+      ],
+      "empty": [
+        1,
+        4,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 51
+    },
+    {
+      "full": [
+        6,
+        11,
+        12
+      ],
+      "empty": [
+        1,
+        4,
+        13
+      ],
+      "minor_size": 6,
+      "minor_mod83": 11
+    },
+    {
+      "full": [
+        6,
+        11,
+        12
+      ],
+      "empty": [
+        1,
+        5,
+        9
+      ],
+      "minor_size": 6,
+      "minor_mod83": 64
+    },
+    {
+      "full": [
+        7,
+        8,
+        11
+      ],
+      "empty": [
+        2,
+        5,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 78
+    },
+    {
+      "full": [
+        7,
+        8,
+        12
+      ],
+      "empty": [
+        2,
+        4,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 37
+    },
+    {
+      "full": [
+        7,
+        8,
+        12
+      ],
+      "empty": [
+        2,
+        5,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 35
+    },
+    {
+      "full": [
+        7,
+        8,
+        13
+      ],
+      "empty": [
+        0,
+        5,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 41
+    },
+    {
+      "full": [
+        7,
+        8,
+        13
+      ],
+      "empty": [
+        2,
+        3,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 26
+    },
+    {
+      "full": [
+        7,
+        8,
+        13
+      ],
+      "empty": [
+        2,
+        5,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 76
+    },
+    {
+      "full": [
+        7,
+        9,
+        10
+      ],
+      "empty": [
+        0,
+        4,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 73
+    },
+    {
+      "full": [
+        7,
+        9,
+        10
+      ],
+      "empty": [
+        2,
+        3,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 63
+    },
+    {
+      "full": [
+        7,
+        9,
+        10
+      ],
+      "empty": [
+        2,
+        4,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 47
+    },
+    {
+      "full": [
+        7,
+        9,
+        11
+      ],
+      "empty": [
+        0,
+        4,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 52
+    },
+    {
+      "full": [
+        7,
+        9,
+        11
+      ],
+      "empty": [
+        1,
+        3,
+        4
+      ],
+      "minor_size": 6,
+      "minor_mod83": 17
+    },
+    {
+      "full": [
+        7,
+        9,
+        11
+      ],
+      "empty": [
+        1,
+        4,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 26
+    },
+    {
+      "full": [
+        7,
+        9,
+        11
+      ],
+      "empty": [
+        1,
+        4,
+        8
+      ],
+      "minor_size": 6,
+      "minor_mod83": 63
+    },
+    {
+      "full": [
+        7,
+        9,
+        11
+      ],
+      "empty": [
+        2,
+        4,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 17
+    },
+    {
+      "full": [
+        7,
+        9,
+        11
+      ],
+      "empty": [
+        4,
+        5,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 68
+    },
+    {
+      "full": [
+        7,
+        9,
+        12
+      ],
+      "empty": [
+        0,
+        4,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 57
+    },
+    {
+      "full": [
+        7,
+        9,
+        12
+      ],
+      "empty": [
+        1,
+        3,
+        4
+      ],
+      "minor_size": 6,
+      "minor_mod83": 15
+    },
+    {
+      "full": [
+        7,
+        9,
+        12
+      ],
+      "empty": [
+        2,
+        3,
+        4
+      ],
+      "minor_size": 6,
+      "minor_mod83": 15
+    },
+    {
+      "full": [
+        7,
+        9,
+        12
+      ],
+      "empty": [
+        2,
+        4,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 17
+    },
+    {
+      "full": [
+        7,
+        9,
+        12
+      ],
+      "empty": [
+        2,
+        4,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 74
+    },
+    {
+      "full": [
+        7,
+        9,
+        12
+      ],
+      "empty": [
+        4,
+        5,
+        10
+      ],
+      "minor_size": 6,
+      "minor_mod83": 21
+    },
+    {
+      "full": [
+        7,
+        9,
+        13
+      ],
+      "empty": [
+        0,
+        3,
+        4
+      ],
+      "minor_size": 6,
+      "minor_mod83": 24
+    },
+    {
+      "full": [
+        7,
+        9,
+        13
+      ],
+      "empty": [
+        0,
+        4,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 45
+    },
+    {
+      "full": [
+        7,
+        9,
+        13
+      ],
+      "empty": [
+        0,
+        4,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 80
+    },
+    {
+      "full": [
+        7,
+        9,
+        13
+      ],
+      "empty": [
+        0,
+        5,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 40
+    },
+    {
+      "full": [
+        7,
+        9,
+        13
+      ],
+      "empty": [
+        1,
+        3,
+        4
+      ],
+      "minor_size": 6,
+      "minor_mod83": 13
+    },
+    {
+      "full": [
+        7,
+        9,
+        13
+      ],
+      "empty": [
+        1,
+        3,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 74
+    },
+    {
+      "full": [
+        7,
+        9,
+        13
+      ],
+      "empty": [
+        1,
+        4,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 17
+    },
+    {
+      "full": [
+        7,
+        9,
+        13
+      ],
+      "empty": [
+        1,
+        4,
+        8
+      ],
+      "minor_size": 6,
+      "minor_mod83": 43
+    },
+    {
+      "full": [
+        7,
+        9,
+        13
+      ],
+      "empty": [
+        2,
+        4,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 67
+    },
+    {
+      "full": [
+        7,
+        9,
+        13
+      ],
+      "empty": [
+        3,
+        4,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 49
+    },
+    {
+      "full": [
+        7,
+        9,
+        13
+      ],
+      "empty": [
+        3,
+        6,
+        11
+      ],
+      "minor_size": 6,
+      "minor_mod83": 23
+    },
+    {
+      "full": [
+        7,
+        9,
+        13
+      ],
+      "empty": [
+        4,
+        5,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 26
+    },
+    {
+      "full": [
+        7,
+        9,
+        13
+      ],
+      "empty": [
+        4,
+        6,
+        8
+      ],
+      "minor_size": 6,
+      "minor_mod83": 50
+    },
+    {
+      "full": [
+        7,
+        9,
+        13
+      ],
+      "empty": [
+        4,
+        6,
+        11
+      ],
+      "minor_size": 6,
+      "minor_mod83": 32
+    },
+    {
+      "full": [
+        7,
+        10,
+        11
+      ],
+      "empty": [
+        0,
+        1,
+        4
+      ],
+      "minor_size": 6,
+      "minor_mod83": 3
+    },
+    {
+      "full": [
+        7,
+        10,
+        11
+      ],
+      "empty": [
+        0,
+        1,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 44
+    },
+    {
+      "full": [
+        7,
+        10,
+        11
+      ],
+      "empty": [
+        0,
+        2,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 51
+    },
+    {
+      "full": [
+        7,
+        10,
+        11
+      ],
+      "empty": [
+        1,
+        2,
+        3
+      ],
+      "minor_size": 6,
+      "minor_mod83": 27
+    },
+    {
+      "full": [
+        7,
+        10,
+        11
+      ],
+      "empty": [
+        1,
+        2,
+        4
+      ],
+      "minor_size": 6,
+      "minor_mod83": 41
+    },
+    {
+      "full": [
+        7,
+        10,
+        11
+      ],
+      "empty": [
+        1,
+        2,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 64
+    },
+    {
+      "full": [
+        7,
+        10,
+        11
+      ],
+      "empty": [
+        1,
+        2,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 40
+    },
+    {
+      "full": [
+        7,
+        10,
+        11
+      ],
+      "empty": [
+        1,
+        2,
+        8
+      ],
+      "minor_size": 6,
+      "minor_mod83": 68
+    },
+    {
+      "full": [
+        7,
+        10,
+        11
+      ],
+      "empty": [
+        1,
+        2,
+        9
+      ],
+      "minor_size": 6,
+      "minor_mod83": 37
+    },
+    {
+      "full": [
+        7,
+        10,
+        11
+      ],
+      "empty": [
+        1,
+        4,
+        8
+      ],
+      "minor_size": 6,
+      "minor_mod83": 52
+    },
+    {
+      "full": [
+        7,
+        10,
+        11
+      ],
+      "empty": [
+        1,
+        8,
+        12
+      ],
+      "minor_size": 6,
+      "minor_mod83": 71
+    },
+    {
+      "full": [
+        7,
+        10,
+        11
+      ],
+      "empty": [
+        2,
+        4,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 59
+    },
+    {
+      "full": [
+        7,
+        10,
+        11
+      ],
+      "empty": [
+        2,
+        5,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 37
+    },
+    {
+      "full": [
+        7,
+        10,
+        11
+      ],
+      "empty": [
+        2,
+        6,
+        12
+      ],
+      "minor_size": 6,
+      "minor_mod83": 64
+    },
+    {
+      "full": [
+        7,
+        10,
+        12
+      ],
+      "empty": [
+        1,
+        2,
+        3
+      ],
+      "minor_size": 6,
+      "minor_mod83": 21
+    },
+    {
+      "full": [
+        7,
+        10,
+        13
+      ],
+      "empty": [
+        0,
+        1,
+        3
+      ],
+      "minor_size": 6,
+      "minor_mod83": 34
+    },
+    {
+      "full": [
+        7,
+        10,
+        13
+      ],
+      "empty": [
+        0,
+        1,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 13
+    },
+    {
+      "full": [
+        7,
+        10,
+        13
+      ],
+      "empty": [
+        0,
+        1,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 11
+    },
+    {
+      "full": [
+        7,
+        10,
+        13
+      ],
+      "empty": [
+        0,
+        5,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 27
+    },
+    {
+      "full": [
+        7,
+        10,
+        13
+      ],
+      "empty": [
+        0,
+        6,
+        12
+      ],
+      "minor_size": 6,
+      "minor_mod83": 57
+    },
+    {
+      "full": [
+        7,
+        10,
+        13
+      ],
+      "empty": [
+        1,
+        2,
+        3
+      ],
+      "minor_size": 6,
+      "minor_mod83": 68
+    },
+    {
+      "full": [
+        7,
+        10,
+        13
+      ],
+      "empty": [
+        1,
+        2,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 77
+    },
+    {
+      "full": [
+        7,
+        10,
+        13
+      ],
+      "empty": [
+        1,
+        2,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 69
+    },
+    {
+      "full": [
+        7,
+        10,
+        13
+      ],
+      "empty": [
+        1,
+        3,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 68
+    },
+    {
+      "full": [
+        7,
+        10,
+        13
+      ],
+      "empty": [
+        1,
+        3,
+        8
+      ],
+      "minor_size": 6,
+      "minor_mod83": 57
+    },
+    {
+      "full": [
+        7,
+        10,
+        13
+      ],
+      "empty": [
+        1,
+        8,
+        12
+      ],
+      "minor_size": 6,
+      "minor_mod83": 64
+    },
+    {
+      "full": [
+        7,
+        10,
+        13
+      ],
+      "empty": [
+        2,
+        3,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 48
+    },
+    {
+      "full": [
+        7,
+        10,
+        13
+      ],
+      "empty": [
+        2,
+        5,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 36
+    },
+    {
+      "full": [
+        7,
+        10,
+        13
+      ],
+      "empty": [
+        2,
+        6,
+        12
+      ],
+      "minor_size": 6,
+      "minor_mod83": 80
+    },
+    {
+      "full": [
+        7,
+        10,
+        13
+      ],
+      "empty": [
+        6,
+        8,
+        12
+      ],
+      "minor_size": 6,
+      "minor_mod83": 7
+    },
+    {
+      "full": [
+        7,
+        11,
+        12
+      ],
+      "empty": [
+        1,
+        2,
+        4
+      ],
+      "minor_size": 6,
+      "minor_mod83": 14
+    },
+    {
+      "full": [
+        7,
+        11,
+        12
+      ],
+      "empty": [
+        1,
+        2,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 72
+    },
+    {
+      "full": [
+        7,
+        11,
+        12
+      ],
+      "empty": [
+        1,
+        4,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 59
+    },
+    {
+      "full": [
+        7,
+        11,
+        12
+      ],
+      "empty": [
+        2,
+        4,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 76
+    },
+    {
+      "full": [
+        7,
+        11,
+        13
+      ],
+      "empty": [
+        0,
+        1,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 62
+    },
+    {
+      "full": [
+        7,
+        11,
+        13
+      ],
+      "empty": [
+        0,
+        4,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 60
+    },
+    {
+      "full": [
+        7,
+        12,
+        13
+      ],
+      "empty": [
+        0,
+        1,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 81
+    },
+    {
+      "full": [
+        7,
+        12,
+        13
+      ],
+      "empty": [
+        1,
+        2,
+        3
+      ],
+      "minor_size": 6,
+      "minor_mod83": 73
+    },
+    {
+      "full": [
+        7,
+        12,
+        13
+      ],
+      "empty": [
+        1,
+        2,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 12
+    },
+    {
+      "full": [
+        7,
+        12,
+        13
+      ],
+      "empty": [
+        1,
+        2,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 3
+    },
+    {
+      "full": [
+        7,
+        12,
+        13
+      ],
+      "empty": [
+        1,
+        3,
+        4
+      ],
+      "minor_size": 6,
+      "minor_mod83": 61
+    },
+    {
+      "full": [
+        7,
+        12,
+        13
+      ],
+      "empty": [
+        1,
+        3,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 5
+    },
+    {
+      "full": [
+        7,
+        12,
+        13
+      ],
+      "empty": [
+        1,
+        3,
+        11
+      ],
+      "minor_size": 6,
+      "minor_mod83": 45
+    },
+    {
+      "full": [
+        7,
+        12,
+        13
+      ],
+      "empty": [
+        1,
+        4,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 31
+    },
+    {
+      "full": [
+        7,
+        12,
+        13
+      ],
+      "empty": [
+        1,
+        5,
+        9
+      ],
+      "minor_size": 6,
+      "minor_mod83": 32
+    },
+    {
+      "full": [
+        7,
+        12,
+        13
+      ],
+      "empty": [
+        1,
+        5,
+        10
+      ],
+      "minor_size": 6,
+      "minor_mod83": 32
+    },
+    {
+      "full": [
+        7,
+        12,
+        13
+      ],
+      "empty": [
+        2,
+        5,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 82
+    },
+    {
+      "full": [
+        7,
+        12,
+        13
+      ],
+      "empty": [
+        4,
+        5,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 71
+    },
+    {
+      "full": [
+        7,
+        12,
+        13
+      ],
+      "empty": [
+        4,
+        5,
+        10
+      ],
+      "minor_size": 6,
+      "minor_mod83": 28
+    },
+    {
+      "full": [
+        7,
+        12,
+        13
+      ],
+      "empty": [
+        5,
+        10,
+        11
+      ],
+      "minor_size": 6,
+      "minor_mod83": 7
+    },
+    {
+      "full": [
+        8,
+        9,
+        10
+      ],
+      "empty": [
+        0,
+        3,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 49
+    },
+    {
+      "full": [
+        8,
+        9,
+        10
+      ],
+      "empty": [
+        0,
+        3,
+        7
+      ],
+      "minor_size": 6,
+      "minor_mod83": 68
+    },
+    {
+      "full": [
+        8,
+        9,
+        10
+      ],
+      "empty": [
+        0,
+        4,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 2
+    },
+    {
+      "full": [
+        8,
+        9,
+        10
+      ],
+      "empty": [
+        2,
+        3,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 51
+    },
+    {
+      "full": [
+        8,
+        9,
+        10
+      ],
+      "empty": [
+        2,
+        4,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 65
+    },
+    {
+      "full": [
+        8,
+        9,
+        11
+      ],
+      "empty": [
+        0,
+        3,
+        4
+      ],
+      "minor_size": 6,
+      "minor_mod83": 5
+    },
+    {
+      "full": [
+        8,
+        9,
+        11
+      ],
+      "empty": [
+        0,
+        4,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 54
+    },
+    {
+      "full": [
+        8,
+        9,
+        11
+      ],
+      "empty": [
+        0,
+        5,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 13
+    },
+    {
+      "full": [
+        8,
+        9,
+        12
+      ],
+      "empty": [
+        0,
+        3,
+        4
+      ],
+      "minor_size": 6,
+      "minor_mod83": 20
+    },
+    {
+      "full": [
+        8,
+        9,
+        12
+      ],
+      "empty": [
+        0,
+        3,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 7
+    },
+    {
+      "full": [
+        8,
+        9,
+        12
+      ],
+      "empty": [
+        0,
+        3,
+        7
+      ],
+      "minor_size": 6,
+      "minor_mod83": 57
+    },
+    {
+      "full": [
+        8,
+        9,
+        12
+      ],
+      "empty": [
+        0,
+        4,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 53
+    },
+    {
+      "full": [
+        8,
+        9,
+        12
+      ],
+      "empty": [
+        0,
+        4,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 18
+    },
+    {
+      "full": [
+        8,
+        9,
+        12
+      ],
+      "empty": [
+        1,
+        3,
+        4
+      ],
+      "minor_size": 6,
+      "minor_mod83": 1
+    },
+    {
+      "full": [
+        8,
+        9,
+        12
+      ],
+      "empty": [
+        2,
+        3,
+        4
+      ],
+      "minor_size": 6,
+      "minor_mod83": 60
+    },
+    {
+      "full": [
+        8,
+        9,
+        12
+      ],
+      "empty": [
+        2,
+        3,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 2
+    },
+    {
+      "full": [
+        8,
+        9,
+        12
+      ],
+      "empty": [
+        2,
+        4,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 36
+    },
+    {
+      "full": [
+        8,
+        9,
+        12
+      ],
+      "empty": [
+        2,
+        4,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 25
+    },
+    {
+      "full": [
+        8,
+        9,
+        12
+      ],
+      "empty": [
+        3,
+        4,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 67
+    },
+    {
+      "full": [
+        8,
+        9,
+        12
+      ],
+      "empty": [
+        3,
+        4,
+        7
+      ],
+      "minor_size": 6,
+      "minor_mod83": 38
+    },
+    {
+      "full": [
+        8,
+        9,
+        12
+      ],
+      "empty": [
+        3,
+        4,
+        10
+      ],
+      "minor_size": 6,
+      "minor_mod83": 76
+    },
+    {
+      "full": [
+        8,
+        9,
+        12
+      ],
+      "empty": [
+        4,
+        5,
+        10
+      ],
+      "minor_size": 6,
+      "minor_mod83": 22
+    },
+    {
+      "full": [
+        8,
+        9,
+        13
+      ],
+      "empty": [
+        0,
+        3,
+        4
+      ],
+      "minor_size": 6,
+      "minor_mod83": 12
+    },
+    {
+      "full": [
+        8,
+        9,
+        13
+      ],
+      "empty": [
+        0,
+        3,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 20
+    },
+    {
+      "full": [
+        8,
+        9,
+        13
+      ],
+      "empty": [
+        0,
+        4,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 34
+    },
+    {
+      "full": [
+        8,
+        9,
+        13
+      ],
+      "empty": [
+        0,
+        5,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 38
+    },
+    {
+      "full": [
+        8,
+        9,
+        13
+      ],
+      "empty": [
+        3,
+        6,
+        11
+      ],
+      "minor_size": 6,
+      "minor_mod83": 52
+    },
+    {
+      "full": [
+        8,
+        10,
+        11
+      ],
+      "empty": [
+        0,
+        1,
+        3
+      ],
+      "minor_size": 6,
+      "minor_mod83": 81
+    },
+    {
+      "full": [
+        8,
+        10,
+        11
+      ],
+      "empty": [
+        0,
+        1,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 17
+    },
+    {
+      "full": [
+        8,
+        10,
+        11
+      ],
+      "empty": [
+        0,
+        2,
+        3
+      ],
+      "minor_size": 6,
+      "minor_mod83": 35
+    },
+    {
+      "full": [
+        8,
+        10,
+        11
+      ],
+      "empty": [
+        0,
+        2,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 61
+    },
+    {
+      "full": [
+        8,
+        10,
+        11
+      ],
+      "empty": [
+        0,
+        2,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 61
+    },
+    {
+      "full": [
+        8,
+        10,
+        11
+      ],
+      "empty": [
+        0,
+        3,
+        7
+      ],
+      "minor_size": 6,
+      "minor_mod83": 55
+    },
+    {
+      "full": [
+        8,
+        10,
+        11
+      ],
+      "empty": [
+        0,
+        5,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 25
+    },
+    {
+      "full": [
+        8,
+        10,
+        11
+      ],
+      "empty": [
+        0,
+        5,
+        7
+      ],
+      "minor_size": 6,
+      "minor_mod83": 51
+    },
+    {
+      "full": [
+        8,
+        10,
+        11
+      ],
+      "empty": [
+        0,
+        7,
+        13
+      ],
+      "minor_size": 6,
+      "minor_mod83": 10
+    },
+    {
+      "full": [
+        8,
+        10,
+        11
+      ],
+      "empty": [
+        1,
+        2,
+        3
+      ],
+      "minor_size": 6,
+      "minor_mod83": 47
+    },
+    {
+      "full": [
+        8,
+        10,
+        11
+      ],
+      "empty": [
+        1,
+        2,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 33
+    },
+    {
+      "full": [
+        8,
+        10,
+        11
+      ],
+      "empty": [
+        2,
+        3,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 16
+    },
+    {
+      "full": [
+        8,
+        10,
+        11
+      ],
+      "empty": [
+        2,
+        5,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 53
+    },
+    {
+      "full": [
+        8,
+        10,
+        11
+      ],
+      "empty": [
+        2,
+        6,
+        13
+      ],
+      "minor_size": 6,
+      "minor_mod83": 20
+    },
+    {
+      "full": [
+        8,
+        10,
+        11
+      ],
+      "empty": [
+        2,
+        7,
+        13
+      ],
+      "minor_size": 6,
+      "minor_mod83": 11
+    },
+    {
+      "full": [
+        8,
+        10,
+        12
+      ],
+      "empty": [
+        0,
+        1,
+        3
+      ],
+      "minor_size": 6,
+      "minor_mod83": 60
+    },
+    {
+      "full": [
+        8,
+        10,
+        12
+      ],
+      "empty": [
+        1,
+        2,
+        3
+      ],
+      "minor_size": 6,
+      "minor_mod83": 14
+    },
+    {
+      "full": [
+        8,
+        10,
+        12
+      ],
+      "empty": [
+        2,
+        3,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 1
+    },
+    {
+      "full": [
+        8,
+        10,
+        13
+      ],
+      "empty": [
+        0,
+        1,
+        3
+      ],
+      "minor_size": 6,
+      "minor_mod83": 41
+    },
+    {
+      "full": [
+        8,
+        10,
+        13
+      ],
+      "empty": [
+        0,
+        1,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 30
+    },
+    {
+      "full": [
+        8,
+        10,
+        13
+      ],
+      "empty": [
+        0,
+        3,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 8
+    },
+    {
+      "full": [
+        8,
+        10,
+        13
+      ],
+      "empty": [
+        0,
+        5,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 75
+    },
+    {
+      "full": [
+        8,
+        10,
+        13
+      ],
+      "empty": [
+        1,
+        2,
+        3
+      ],
+      "minor_size": 6,
+      "minor_mod83": 71
+    },
+    {
+      "full": [
+        8,
+        10,
+        13
+      ],
+      "empty": [
+        1,
+        2,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 26
+    },
+    {
+      "full": [
+        8,
+        10,
+        13
+      ],
+      "empty": [
+        2,
+        3,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 45
+    },
+    {
+      "full": [
+        8,
+        10,
+        13
+      ],
+      "empty": [
+        2,
+        5,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 35
+    },
+    {
+      "full": [
+        8,
+        11,
+        12
+      ],
+      "empty": [
+        0,
+        1,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 76
+    },
+    {
+      "full": [
+        8,
+        11,
+        12
+      ],
+      "empty": [
+        0,
+        2,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 1
+    },
+    {
+      "full": [
+        8,
+        11,
+        12
+      ],
+      "empty": [
+        0,
+        4,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 82
+    },
+    {
+      "full": [
+        8,
+        11,
+        12
+      ],
+      "empty": [
+        0,
+        5,
+        7
+      ],
+      "minor_size": 6,
+      "minor_mod83": 53
+    },
+    {
+      "full": [
+        8,
+        11,
+        12
+      ],
+      "empty": [
+        1,
+        2,
+        3
+      ],
+      "minor_size": 6,
+      "minor_mod83": 24
+    },
+    {
+      "full": [
+        8,
+        11,
+        12
+      ],
+      "empty": [
+        1,
+        2,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 56
+    },
+    {
+      "full": [
+        8,
+        11,
+        12
+      ],
+      "empty": [
+        1,
+        3,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 29
+    },
+    {
+      "full": [
+        8,
+        11,
+        12
+      ],
+      "empty": [
+        2,
+        3,
+        4
+      ],
+      "minor_size": 6,
+      "minor_mod83": 46
+    },
+    {
+      "full": [
+        8,
+        11,
+        12
+      ],
+      "empty": [
+        2,
+        4,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 67
+    },
+    {
+      "full": [
+        8,
+        11,
+        12
+      ],
+      "empty": [
+        2,
+        4,
+        13
+      ],
+      "minor_size": 6,
+      "minor_mod83": 9
+    },
+    {
+      "full": [
+        8,
+        11,
+        12
+      ],
+      "empty": [
+        2,
+        5,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 28
+    },
+    {
+      "full": [
+        8,
+        11,
+        12
+      ],
+      "empty": [
+        2,
+        5,
+        9
+      ],
+      "minor_size": 6,
+      "minor_mod83": 48
+    },
+    {
+      "full": [
+        8,
+        11,
+        12
+      ],
+      "empty": [
+        2,
+        5,
+        13
+      ],
+      "minor_size": 6,
+      "minor_mod83": 48
+    },
+    {
+      "full": [
+        8,
+        11,
+        12
+      ],
+      "empty": [
+        2,
+        7,
+        13
+      ],
+      "minor_size": 6,
+      "minor_mod83": 68
+    },
+    {
+      "full": [
+        8,
+        12,
+        13
+      ],
+      "empty": [
+        0,
+        1,
+        3
+      ],
+      "minor_size": 6,
+      "minor_mod83": 66
+    },
+    {
+      "full": [
+        8,
+        12,
+        13
+      ],
+      "empty": [
+        0,
+        1,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 58
+    },
+    {
+      "full": [
+        8,
+        12,
+        13
+      ],
+      "empty": [
+        0,
+        3,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 34
+    },
+    {
+      "full": [
+        8,
+        12,
+        13
+      ],
+      "empty": [
+        0,
+        5,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 3
+    },
+    {
+      "full": [
+        8,
+        12,
+        13
+      ],
+      "empty": [
+        0,
+        5,
+        10
+      ],
+      "minor_size": 6,
+      "minor_mod83": 26
+    },
+    {
+      "full": [
+        8,
+        12,
+        13
+      ],
+      "empty": [
+        1,
+        2,
+        3
+      ],
+      "minor_size": 6,
+      "minor_mod83": 1
+    },
+    {
+      "full": [
+        8,
+        12,
+        13
+      ],
+      "empty": [
+        1,
+        2,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 78
+    },
+    {
+      "full": [
+        8,
+        12,
+        13
+      ],
+      "empty": [
+        1,
+        3,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 58
+    },
+    {
+      "full": [
+        8,
+        12,
+        13
+      ],
+      "empty": [
+        1,
+        3,
+        11
+      ],
+      "minor_size": 6,
+      "minor_mod83": 61
+    },
+    {
+      "full": [
+        8,
+        12,
+        13
+      ],
+      "empty": [
+        2,
+        3,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 36
+    },
+    {
+      "full": [
+        8,
+        12,
+        13
+      ],
+      "empty": [
+        2,
+        5,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 36
+    },
+    {
+      "full": [
+        8,
+        12,
+        13
+      ],
+      "empty": [
+        3,
+        5,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 79
+    },
+    {
+      "full": [
+        8,
+        12,
+        13
+      ],
+      "empty": [
+        3,
+        6,
+        11
+      ],
+      "minor_size": 6,
+      "minor_mod83": 58
+    },
+    {
+      "full": [
+        8,
+        12,
+        13
+      ],
+      "empty": [
+        3,
+        10,
+        11
+      ],
+      "minor_size": 6,
+      "minor_mod83": 17
+    },
+    {
+      "full": [
+        8,
+        12,
+        13
+      ],
+      "empty": [
+        5,
+        10,
+        11
+      ],
+      "minor_size": 6,
+      "minor_mod83": 35
+    },
+    {
+      "full": [
+        9,
+        10,
+        11
+      ],
+      "empty": [
+        0,
+        1,
+        3
+      ],
+      "minor_size": 6,
+      "minor_mod83": 73
+    },
+    {
+      "full": [
+        9,
+        10,
+        11
+      ],
+      "empty": [
+        0,
+        1,
+        4
+      ],
+      "minor_size": 6,
+      "minor_mod83": 67
+    },
+    {
+      "full": [
+        9,
+        10,
+        11
+      ],
+      "empty": [
+        0,
+        2,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 80
+    },
+    {
+      "full": [
+        9,
+        10,
+        11
+      ],
+      "empty": [
+        0,
+        3,
+        4
+      ],
+      "minor_size": 6,
+      "minor_mod83": 36
+    },
+    {
+      "full": [
+        9,
+        10,
+        11
+      ],
+      "empty": [
+        0,
+        4,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 78
+    },
+    {
+      "full": [
+        9,
+        10,
+        11
+      ],
+      "empty": [
+        0,
+        4,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 54
+    },
+    {
+      "full": [
+        9,
+        10,
+        11
+      ],
+      "empty": [
+        0,
+        4,
+        12
+      ],
+      "minor_size": 6,
+      "minor_mod83": 79
+    },
+    {
+      "full": [
+        9,
+        10,
+        11
+      ],
+      "empty": [
+        0,
+        4,
+        13
+      ],
+      "minor_size": 6,
+      "minor_mod83": 79
+    },
+    {
+      "full": [
+        9,
+        10,
+        11
+      ],
+      "empty": [
+        0,
+        6,
+        12
+      ],
+      "minor_size": 6,
+      "minor_mod83": 12
+    },
+    {
+      "full": [
+        9,
+        10,
+        11
+      ],
+      "empty": [
+        1,
+        2,
+        4
+      ],
+      "minor_size": 6,
+      "minor_mod83": 25
+    },
+    {
+      "full": [
+        9,
+        10,
+        11
+      ],
+      "empty": [
+        1,
+        3,
+        4
+      ],
+      "minor_size": 6,
+      "minor_mod83": 73
+    },
+    {
+      "full": [
+        9,
+        10,
+        11
+      ],
+      "empty": [
+        2,
+        4,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 74
+    },
+    {
+      "full": [
+        9,
+        10,
+        11
+      ],
+      "empty": [
+        2,
+        4,
+        13
+      ],
+      "minor_size": 6,
+      "minor_mod83": 8
+    },
+    {
+      "full": [
+        9,
+        10,
+        11
+      ],
+      "empty": [
+        3,
+        4,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 70
+    },
+    {
+      "full": [
+        9,
+        10,
+        13
+      ],
+      "empty": [
+        0,
+        1,
+        3
+      ],
+      "minor_size": 6,
+      "minor_mod83": 4
+    },
+    {
+      "full": [
+        9,
+        10,
+        13
+      ],
+      "empty": [
+        0,
+        3,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 3
+    },
+    {
+      "full": [
+        9,
+        10,
+        13
+      ],
+      "empty": [
+        0,
+        6,
+        12
+      ],
+      "minor_size": 6,
+      "minor_mod83": 60
+    },
+    {
+      "full": [
+        9,
+        10,
+        13
+      ],
+      "empty": [
+        1,
+        3,
+        4
+      ],
+      "minor_size": 6,
+      "minor_mod83": 1
+    },
+    {
+      "full": [
+        9,
+        10,
+        13
+      ],
+      "empty": [
+        3,
+        4,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 7
+    },
+    {
+      "full": [
+        9,
+        11,
+        12
+      ],
+      "empty": [
+        0,
+        1,
+        4
+      ],
+      "minor_size": 6,
+      "minor_mod83": 25
+    },
+    {
+      "full": [
+        9,
+        11,
+        12
+      ],
+      "empty": [
+        0,
+        4,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 63
+    },
+    {
+      "full": [
+        9,
+        11,
+        12
+      ],
+      "empty": [
+        1,
+        2,
+        4
+      ],
+      "minor_size": 6,
+      "minor_mod83": 8
+    },
+    {
+      "full": [
+        9,
+        11,
+        12
+      ],
+      "empty": [
+        1,
+        3,
+        4
+      ],
+      "minor_size": 6,
+      "minor_mod83": 16
+    },
+    {
+      "full": [
+        9,
+        11,
+        12
+      ],
+      "empty": [
+        2,
+        4,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 76
+    },
+    {
+      "full": [
+        9,
+        11,
+        12
+      ],
+      "empty": [
+        2,
+        4,
+        13
+      ],
+      "minor_size": 6,
+      "minor_mod83": 60
+    },
+    {
+      "full": [
+        9,
+        12,
+        13
+      ],
+      "empty": [
+        0,
+        1,
+        3
+      ],
+      "minor_size": 6,
+      "minor_mod83": 5
+    },
+    {
+      "full": [
+        9,
+        12,
+        13
+      ],
+      "empty": [
+        1,
+        3,
+        4
+      ],
+      "minor_size": 6,
+      "minor_mod83": 59
+    },
+    {
+      "full": [
+        9,
+        12,
+        13
+      ],
+      "empty": [
+        3,
+        4,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 76
+    },
+    {
+      "full": [
+        10,
+        11,
+        12
+      ],
+      "empty": [
+        1,
+        2,
+        3
+      ],
+      "minor_size": 6,
+      "minor_mod83": 81
+    },
+    {
+      "full": [
+        10,
+        11,
+        12
+      ],
+      "empty": [
+        1,
+        3,
+        4
+      ],
+      "minor_size": 6,
+      "minor_mod83": 55
+    },
+    {
+      "full": [
+        10,
+        11,
+        13
+      ],
+      "empty": [
+        0,
+        1,
+        3
+      ],
+      "minor_size": 6,
+      "minor_mod83": 50
+    },
+    {
+      "full": [
+        10,
+        11,
+        13
+      ],
+      "empty": [
+        0,
+        1,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 3
+    },
+    {
+      "full": [
+        10,
+        11,
+        13
+      ],
+      "empty": [
+        0,
+        5,
+        6
+      ],
+      "minor_size": 6,
+      "minor_mod83": 29
+    },
+    {
+      "full": [
+        11,
+        12,
+        13
+      ],
+      "empty": [
+        0,
+        1,
+        5
+      ],
+      "minor_size": 6,
+      "minor_mod83": 69
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "phi39": "192",
+  "phi40": "205",
+  "counts": {
+    "39": 114187,
+    "40": 147957
+  },
+  "rank_sum": 6802317277834,
+  "required_rank": 6802316684344,
+  "discriminant_lower_for_profile": "52255089",
+  "upper_with_all_leading_budget": 55050060,
+  "slack": "2794971",
+  "scope": "abstract feasible contact profile, not a universal-factor construction",
+  "exact_local_discriminants": {
+    "39": 192,
+    "40": 218
+  },
+  "exact_discriminant_total": 54178530,
+  "degree_bound_weight_21w": 55049820,
+  "exact_slack": 871290,
+  "resultant_total": 1484431,
+  "resultant_upper": 2752491,
+  "radical_discriminant_total": 57147392,
+  "radical_discriminant_upper": 60554802
+}

@@ -1,0 +1,36 @@
+{
+  "encoding": "univariate F3[t]/Phi7(t^3-t)",
+  "detB": 16795267,
+  "detC": 16795267,
+  "nodes": [
+    0,
+    1,
+    32262867,
+    1,
+    32243187,
+    1
+  ],
+  "words": [
+    0,
+    0,
+    16126064,
+    0,
+    16814923,
+    0
+  ],
+  "collisions": [
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      5
+    ],
+    [
+      3,
+      5
+    ]
+  ],
+  "all_eight_leading_coefficients_verified": false
+}

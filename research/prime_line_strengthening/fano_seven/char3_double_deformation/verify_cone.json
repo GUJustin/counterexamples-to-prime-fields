@@ -1,0 +1,9 @@
+{
+  "pass_all": true,
+  "independent_field": true,
+  "exact_polynomial_identities": 11,
+  "original_variables": 12,
+  "coefficients_per_identity": 78,
+  "velocity_differences_preserved": true,
+  "consequence": "Every geometric point of the homogeneous quadratic cone has at most two distinct marked velocities; later cluster splitting remains open."
+}

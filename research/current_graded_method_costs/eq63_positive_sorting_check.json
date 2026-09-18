@@ -1,0 +1,20 @@
+{
+  "model": "saturated leading coefficient rho=1/4",
+  "multiplicities": [
+    4,
+    6,
+    8
+  ],
+  "columns": 4,
+  "heights": "0..7",
+  "H": "maxdegree..maxdegree+16",
+  "agreement": "47/100..1",
+  "conditions": [
+    "all retained degrees active",
+    "min derivative exponent0",
+    "total surplus maximal among prefixes"
+  ],
+  "comparisons": 161721,
+  "counterexamples": 0,
+  "scope": "finite exact check only"
+}

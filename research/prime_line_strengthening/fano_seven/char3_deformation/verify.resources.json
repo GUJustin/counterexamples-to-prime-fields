@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "research/prime_line_strengthening/fano_seven/char3_deformation/verify.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 40.380243082999996,
+  "peak_rss_kib": 93952,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

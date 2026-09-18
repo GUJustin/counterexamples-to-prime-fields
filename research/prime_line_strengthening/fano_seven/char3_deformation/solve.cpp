@@ -1,0 +1,74 @@
+#include <algorithm>
+#include <array>
+#include <cassert>
+#include <cstdint>
+#include <iostream>
+#include <map>
+#include <set>
+#include <vector>
+using namespace std; using E=uint32_t;
+const int B=729; const E BS=531441,Q=387420489;
+vector<uint16_t> ad(B*B),mu(B*B);int ng[B],pw3[7]={1,3,9,27,81,243,729};
+int ba(int a,int b){return ad[a*B+b];} int bm(int a,int b){return mu[a*B+b];}
+E add(E a,E b){return ba(a%B,b%B)+B*ba(a/B%B,b/B%B)+BS*ba(a/BS,b/BS);}
+E neg(E a){return ng[a%B]+B*ng[a/B%B]+BS*ng[a/BS];}
+E sub(E a,E b){return add(a,neg(b));}
+E mul(E a,E b){if(!a||!b)return 0;int x[3]={(int)(a%B),(int)(a/B%B),(int)(a/BS)},y[3]={(int)(b%B),(int)(b/B%B),(int)(b/BS)},c[5]={};for(int i=0;i<3;i++)for(int j=0;j<3;j++)c[i+j]=ba(c[i+j],bm(x[i],y[j])); // theta^3=theta+zeta
+c[1]=ba(c[1],bm(3,c[4]));c[2]=ba(c[2],c[4]);c[0]=ba(c[0],bm(3,c[3]));c[1]=ba(c[1],c[3]);return c[0]+B*c[1]+BS*c[2];}
+E power(E a,uint32_t n){E z=1;for(;n;n>>=1,a=mul(a,a))if(n&1)z=mul(z,a);return z;}
+E inv(E a){assert(a);E v=power(a,Q-2);assert(mul(a,v)==1);return v;}
+void init(){int ds[B][6];for(int a=0;a<B;a++)for(int i=0;i<6;i++)ds[a][i]=a/pw3[i]%3;for(int a=0;a<B;a++){ng[a]=0;for(int i=0;i<6;i++)ng[a]+=(3-ds[a][i])%3*pw3[i];for(int b=0;b<B;b++){int s=0,c[11]={};for(int i=0;i<6;i++){s+=(ds[a][i]+ds[b][i])%3*pw3[i];for(int j=0;j<6;j++)c[i+j]+=ds[a][i]*ds[b][j];}ad[a*B+b]=s;for(int k=10;k>=6;k--){int t=c[k]%3;for(int j=0;j<6;j++)c[k-6+j]+=2*t;}int z=0;for(int i=0;i<6;i++)z+=c[i]%3*pw3[i];mu[a*B+b]=z;}}assert(power(3,7)==1&&3!=1);assert(sub(power(B,3),B)==3);assert(power(B,Q)==B);}
+E eval(const array<E,11>& p,E x){E v=0;for(int i=10;i>=0;i--)v=add(mul(v,x),p[i]);return v;}
+E deriv(const array<E,11>&p,E x){E v=0;for(int i=10;i>=1;i--)v=add(mul(v,x),mul(i%3,p[i]));return v;}
+void arr(const vector<E>&v){cout<<"[";for(int i=0;i<(int)v.size();i++){if(i)cout<<",";cout<<v[i];}cout<<"]";}
+int main(){init();E z=3,eta=add(add(z,power(z,2)),power(z,4)),eb=sub(2,eta),alpha=mul(eb,inv(eta));assert(add(add(mul(eta,eta),eta),2)==0);assert(power(alpha,7)!=1);
+array<array<E,11>,8>p{};for(int i=0;i<7;i++){E a=mul(eta,power(z,2*i)),b=power(z,3*i),c=power(z,4*i),d=mul(eb,power(z,5*i));p[i][1]=d;p[i][2]=neg(c);p[i][3]=b;p[i][4]=sub(c,a);p[i][5]=b;p[i][7]=b;p[i][10]=a;}
+map<E,E>as;for(E u=0;u<B;u++)as.emplace(sub(power(u,3),u),u);assert(as.size()==243);
+vector<E>nodes,words,rhs8;vector<vector<int>>masks;set<E>seen;int cnt[8]={};
+for(int orbit=0;orbit<2;orbit++)for(int t=0;t<7;t++){E base=mul(orbit?alpha:1,power(z,t)),root=0;bool found=false;for(int c=0;c<3;c++){E target=sub(base,mul(c,z));auto it=as.find(target);if(it!=as.end()){root=add(it->second,mul(c,B));found=true;break;}}assert(found);for(int e=0;e<3;e++){E T=add(root,e);assert(sub(power(T,3),T)==base);assert(T&&seen.insert(T).second);E w=orbit?0:mul(T,power(z,5*t));vector<int>M;for(int i=0;i<8;i++){E direct=0;if(i<7){E v=mul(power(z,(7-i)%7),base);direct=mul(T,mul(power(z,5*i),add(add(mul(eta,power(v,3)),mul(v,v)),add(v,eb))));}assert(direct==eval(p[i],T));if(direct==w){M.push_back(i);cnt[i]++;}}assert(M.size()==4);nodes.push_back(T);words.push_back(w);rhs8.push_back(orbit?mul(eta,mul(T,power(z,5*t))):0);masks.push_back(M);}}
+for(int i=0;i<8;i++)assert(cnt[i]==21);for(int i=0;i<8;i++)for(int j=0;j<i;j++){int c=0;for(auto&M:masks)c+=find(M.begin(),M.end(),i)!=M.end()&&find(M.begin(),M.end(),j)!=M.end();assert(c==9);}
+vector<int>reps;for(int mask=0;mask<128;mask++)if(__builtin_popcount((unsigned)mask)==3){int best=mask;for(int d=1;d<7;d++){int rot=((mask<<d)|(mask>>(7-d)))&127;best=min(best,rot);}if(mask==best)reps.push_back(mask);}assert(reps.size()==5);
+cout<<"{\"field\":{\"base\":729,\"modulus\":\"Phi7\",\"tower\":\"theta^3-theta-zeta\",\"encoding\":\"c0+729*c1+531441*c2\"},\"zeta\":3,\"eta\":"<<eta<<",\"alpha\":"<<alpha<<",\"nodes\":";arr(nodes);cout<<",\"words\":";arr(words);cout<<",\"core_masks\":[";for(int j=0;j<42;j++){if(j)cout<<",";cout<<"[";for(int k=0;k<4;k++){if(k)cout<<",";cout<<masks[j][k];}cout<<"]";}cout<<"],\"cases\":[";
+for(int ci=0;ci<5;ci++){int mask=reps[ci]|128;const int N=176,W=353;vector<vector<E>>M(N,vector<E>(W)),orig;int row=0;vector<E>rhs(N);for(int j=0;j<44;j++){E T=j<42?nodes[j]:0;vector<int>ids;if(j<42)ids=masks[j];else for(int i=0;i<8;i++)if(((mask>>i)&1)==(j==42))ids.push_back(i);for(int i:ids){E pow=1;for(int k=0;k<=10;k++){M[row][11*i+k]=pow;pow=mul(pow,T);}M[row][88+j]=deriv(p[i],T);M[row][132+j]=2;rhs[row]=(j<42&&i==7)?rhs8[j]:0;M[row][176]=rhs[row];M[row][177+row]=1;row++;}}assert(row==N);orig=M;vector<int>piv,rowids(N),pivotrows;for(int k=0;k<N;k++)rowids[k]=k;int rank=0;for(int col=0;col<N;col++){int at=rank;while(at<N&&!M[at][col])at++;if(at==N)continue;swap(M[at],M[rank]);swap(rowids[at],rowids[rank]);pivotrows.push_back(rowids[rank]);E iv=inv(M[rank][col]);for(int k=col;k<W;k++)M[rank][k]=mul(M[rank][k],iv);for(int j=0;j<N;j++)if(j!=rank&&M[j][col]){E c=M[j][col];for(int k=col;k<W;k++)M[j][k]=sub(M[j][k],mul(c,M[rank][k]));}piv.push_back(col);rank++;}
+int bad=-1;for(int j=rank;j<N;j++)if(M[j][176]){bad=j;break;}vector<E>part(N),kernel(N),left(N);bool split=false;E partdiff=0;if(bad>=0){for(int j=0;j<N;j++)left[j]=M[bad][177+j];for(int k=0;k<N;k++){E s=0;for(int j=0;j<N;j++)s=add(s,mul(left[j],orig[j][k]));assert(!s);}E v=0;for(int j=0;j<N;j++)v=add(v,mul(left[j],rhs[j]));assert(v);}else{for(int j=0;j<rank;j++)part[piv[j]]=M[j][176];for(int j=0;j<N;j++){E v=0;for(int k=0;k<N;k++)v=add(v,mul(orig[j][k],part[k]));assert(v==rhs[j]);}partdiff=sub(part[130],part[131]);}
+// Always inspect the homogeneous splitting functional, even if mixed lift is inconsistent.
+set<int>ps(piv.begin(),piv.end());for(int f=0;f<N;f++)if(!ps.count(f)){vector<E>v(N);v[f]=1;for(int j=0;j<rank;j++)v[piv[j]]=neg(M[j][f]);if(sub(v[130],v[131])){kernel=v;split=true;break;}}
+vector<E> splitrow(N);if(!split){for(int k=0;k<rank;k++){E cf=piv[k]==130?1:(piv[k]==131?2:0);if(cf)for(int j=0;j<N;j++)splitrow[j]=add(splitrow[j],mul(cf,M[k][177+j]));}for(int k=0;k<N;k++){E sum=0;for(int j=0;j<N;j++)sum=add(sum,mul(splitrow[j],orig[j][k]));assert(sum==(k==130?1:(k==131?2:0)));}}
+if(split)for(int j=0;j<N;j++){E v=0;for(int k=0;k<N;k++)v=add(v,mul(orig[j][k],kernel[k]));assert(!v);}
+
+vector<vector<E>> echelon(N);int basisrank=0;
+auto independent=[&](vector<E> v){for(int k=0;k<N;k++)if(v[k]){if(!echelon[k].empty()){E c=v[k];for(int l=k;l<N;l++)v[l]=sub(v[l],mul(c,echelon[k][l]));}else{E iv=inv(v[k]);for(int l=k;l<N;l++)v[l]=mul(v[l],iv);echelon[k]=v;basisrank++;return true;}}return false;};
+auto checkkernel=[&](const vector<E>&v){for(int j=0;j<N;j++){E a=0;for(int k=0;k<N;k++)a=add(a,mul(orig[j][k],v[k]));assert(!a);}};
+vector<vector<E>> gauges;
+for(int k=0;k<11;k++){vector<E>v(N);for(int i=0;i<8;i++)v[11*i+k]=1;for(int j=0;j<44;j++)v[132+j]=power(j<42?nodes[j]:0,k);gauges.push_back(v);}
+{vector<E>v(N);for(int i=0;i<8;i++)for(int k=0;k<11;k++)v[11*i+k]=p[i][k];for(int j=0;j<42;j++)v[132+j]=words[j];gauges.push_back(v);}
+for(int typ=0;typ<3;typ++){vector<E>v(N);for(int i=0;i<8;i++)for(int k=0;k<11;k++){if(typ==0&&k)v[11*i+k-1]=neg(mul(k%3,p[i][k]));if(typ==1)v[11*i+k]=neg(mul(k%3,p[i][k]));if(typ==2&&k<10)v[11*i+k+1]=mul((10-k)%3,p[i][k]);}for(int j=0;j<44;j++){E x=j<42?nodes[j]:0;v[88+j]=power(x,typ);if(typ==2&&j<42)v[132+j]=mul(x,words[j]);}gauges.push_back(v);}
+for(auto&v:gauges){checkkernel(v);assert(independent(v));}assert(basisrank==15);
+vector<vector<E>> kernels,comp;
+for(int f=0;f<N;f++)if(!ps.count(f)){vector<E>v(N);v[f]=1;for(int j=0;j<rank;j++)v[piv[j]]=neg(M[j][f]);kernels.push_back(v);if(independent(v))comp.push_back(v);}
+assert(comp.size()==5&&basisrank==20);
+vector<pair<int,int>>mons;for(int a=0;a<5;a++)for(int b=a;b<5;b++)mons.emplace_back(a,b);
+vector<vector<E>> quadratic(N,vector<E>(15));int rr=0;
+for(int j=0;j<44;j++){E x=j<42?nodes[j]:0;vector<int>ids;if(j<42)ids=masks[j];else for(int i=0;i<8;i++)if(((mask>>i)&1)==(j==42))ids.push_back(i);for(int i:ids){E h2=0;for(int k=10;k>=2;k--)h2=add(mul(h2,x),mul((k*(k-1)/2)%3,p[i][k]));E der[5],xi[5];for(int a=0;a<5;a++){der[a]=0;for(int k=10;k>=1;k--)der[a]=add(mul(der[a],x),mul(k%3,comp[a][11*i+k]));xi[a]=comp[a][88+j];}for(int k=0;k<15;k++){auto[a,b]=mons[k];E val=mul(h2,mul(xi[a],xi[b]));if(a==b)val=add(val,mul(der[a],xi[a]));else val=add(mul(2,val),add(mul(der[a],xi[b]),mul(der[b],xi[a])));quadratic[rr][k]=val;}rr++;}}
+vector<vector<E>> projected(20,vector<E>(16)),qr;
+for(int a=0;a<20;a++)for(int row=0;row<N;row++){E l=M[rank+a][177+row];if(l){for(int k=0;k<15;k++)projected[a][k]=add(projected[a][k],mul(l,quadratic[row][k]));projected[a][15]=add(projected[a][15],mul(l,rhs[row]));}}
+qr=projected;for(int a=0;a<20;a++){qr[a].resize(36);qr[a][16+a]=1;}int qrank=0;for(int k=0;k<15;k++){int at=qrank;while(at<20&&!qr[at][k])at++;if(at==20)continue;swap(qr[at],qr[qrank]);E iv=inv(qr[qrank][k]);for(int l=k;l<36;l++)qr[qrank][l]=mul(qr[qrank][l],iv);for(int a=0;a<20;a++)if(a!=qrank&&qr[a][k]){E cf=qr[a][k];for(int l=k;l<36;l++)qr[a][l]=sub(qr[a][l],mul(cf,qr[qrank][l]));}qrank++;}
+int qbad=-1;for(int a=qrank;a<20;a++)if(qr[a][15]){qbad=a;break;}
+cerr<<"second order projected rank "<<qrank<<" linearized monomial consistency "<<(qbad<0)<<"\n";
+
+vector<vector<E>> correction(15,vector<E>(N));
+for(int zc=0;zc<15;zc++)for(int k=0;k<rank;k++){E value=0;for(int row=0;row<N;row++)value=add(value,mul(M[k][177+row],quadratic[row][zc]));correction[zc][piv[k]]=neg(value);}
+for(int zc=0;zc<15;zc++)for(int row=0;row<N;row++){E value=quadratic[row][zc];for(int k=0;k<N;k++)value=add(value,mul(orig[row][k],correction[zc][k]));assert(!value);}
+vector<array<int,3>> triples;int ti[5][5][5];for(int a=0;a<5;a++)for(int b=a;b<5;b++)for(int c=b;c<5;c++){int idx=triples.size();triples.push_back({a,b,c});int vals[3]={a,b,c};do{ti[vals[0]][vals[1]][vals[2]]=idx;}while(next_permutation(vals,vals+3));}
+vector<vector<E>> cubic(N,vector<E>(35));rr=0;
+for(int j=0;j<44;j++){E x=j<42?nodes[j]:0;vector<int>ids;if(j<42)ids=masks[j];else for(int i=0;i<8;i++)if(((mask>>i)&1)==(j==42))ids.push_back(i);for(int i:ids){E h2=0,h3=0;for(int k=10;k>=2;k--)h2=add(mul(h2,x),mul((k*(k-1)/2)%3,p[i][k]));for(int k=10;k>=3;k--)h3=add(mul(h3,x),mul((k*(k-1)*(k-2)/6)%3,p[i][k]));E xi[5],der[5],r2[5],eta2[15],sd[15];for(int a=0;a<5;a++){xi[a]=comp[a][88+j];der[a]=r2[a]=0;for(int k=10;k>=1;k--)der[a]=add(mul(der[a],x),mul(k%3,comp[a][11*i+k]));for(int k=10;k>=2;k--)r2[a]=add(mul(r2[a],x),mul((k*(k-1)/2)%3,comp[a][11*i+k]));cubic[rr][ti[a][a][a]]=add(cubic[rr][ti[a][a][a]],mul(h3,power(xi[a],3)));}for(int zc=0;zc<15;zc++){eta2[zc]=correction[zc][88+j];sd[zc]=0;for(int k=10;k>=1;k--)sd[zc]=add(mul(sd[zc],x),mul(k%3,correction[zc][11*i+k]));}
+for(int a=0;a<5;a++)for(int zc=0;zc<15;zc++){auto[b,c]=mons[zc];E xisq=mul(xi[b],xi[c]);if(b!=c)xisq=mul(2,xisq);E value=add(mul(add(mul(2,mul(h2,xi[a])),der[a]),eta2[zc]),add(mul(r2[a],xisq),mul(sd[zc],xi[a])));int idx=ti[a][b][c];cubic[rr][idx]=add(cubic[rr][idx],value);}rr++;}}
+vector<vector<E>> cp(20,vector<E>(36));bool mixed=false;
+for(int a=0;a<20;a++)for(int row=0;row<N;row++){E l=M[rank+a][177+row];if(l){for(int k=0;k<35;k++)cp[a][k]=add(cp[a][k],mul(l,cubic[row][k]));cp[a][35]=add(cp[a][35],mul(l,rhs[row]));}}
+for(int a=0;a<20;a++)for(int k=0;k<35;k++)if(cp[a][k]&&!(triples[k][0]==triples[k][2]))mixed=true;
+int crank=-1,cbad=-1;vector<E> cubeleft(20),params(5),second(N),third(N),first(N);E split1=0,split2=0,split3=0;bool consistent=false;
+if(!mixed){vector<vector<E>> cm(20,vector<E>(26));for(int a=0;a<20;a++){for(int b=0;b<5;b++)cm[a][b]=cp[a][ti[b][b][b]];cm[a][5]=cp[a][35];cm[a][6+a]=1;}crank=0;vector<int>ccols;for(int k=0;k<5;k++){int at=crank;while(at<20&&!cm[at][k])at++;if(at==20)continue;swap(cm[at],cm[crank]);E iv=inv(cm[crank][k]);for(int l=k;l<26;l++)cm[crank][l]=mul(cm[crank][l],iv);for(int a=0;a<20;a++)if(a!=crank&&cm[a][k]){E cf=cm[a][k];for(int l=k;l<26;l++)cm[a][l]=sub(cm[a][l],mul(cf,cm[crank][l]));}ccols.push_back(k);crank++;}for(int a=crank;a<20;a++)if(cm[a][5]){cbad=a;break;}consistent=cbad<0;if(cbad>=0)for(int a=0;a<20;a++)cubeleft[a]=cm[cbad][6+a];else{for(int a=0;a<crank;a++)params[ccols[a]]=power(cm[a][5],129140163);for(int a=0;a<5;a++)for(int k=0;k<N;k++)first[k]=add(first[k],mul(params[a],comp[a][k]));for(int zc=0;zc<15;zc++){auto[a,b]=mons[zc];E val=mul(params[a],params[b]);for(int k=0;k<N;k++)second[k]=add(second[k],mul(val,correction[zc][k]));}vector<E> remain(rhs);for(int zc=0;zc<35;zc++){auto abc=triples[zc];E val=mul(params[abc[0]],mul(params[abc[1]],params[abc[2]]));for(int row=0;row<N;row++)remain[row]=sub(remain[row],mul(val,cubic[row][zc]));}for(int k=0;k<rank;k++)for(int row=0;row<N;row++)third[piv[k]]=add(third[piv[k]],mul(M[k][177+row],remain[row]));for(int row=0;row<N;row++){E val=0;for(int k=0;k<N;k++)val=add(val,mul(orig[row][k],third[k]));assert(val==remain[row]);}split1=sub(first[130],first[131]);split2=sub(second[130],second[131]);split3=sub(third[130],third[131]);}}
+cerr<<"cubic mixed "<<mixed<<" rank "<<crank<<" consistent "<<consistent<<" splits "<<split1<<","<<split2<<","<<split3<<"\n";
+if(ci)cout<<",";cout<<"{\"pivot_rows\":[";for(int a=0;a<rank;a++){if(a)cout<<",";cout<<pivotrows[a];}cout<<"],\"pivot_columns\":[";for(int a=0;a<rank;a++){if(a)cout<<",";cout<<piv[a];}cout<<"],\"triple_mask\":"<<reps[ci]<<",\"rank\":"<<rank<<",\"nullity\":"<<N-rank<<",\"mod9_consistent\":"<<(bad<0?"true":"false")<<",\"homogeneous_split\":"<<(split?"true":"false")<<",\"particular_split_value\":"<<partdiff<<",\"particular\":";arr(part);cout<<",\"split_kernel\":";arr(kernel);cout<<",\"left_obstruction\":";arr(left);cout<<",\"split_row_certificate\":";arr(splitrow);cout<<",\"kernel_complement\":[";for(int a=0;a<5;a++){if(a)cout<<",";arr(comp[a]);}cout<<"],\"kernel_basis\":[";for(int a=0;a<20;a++){if(a)cout<<",";arr(kernels[a]);}cout<<"],\"left_kernel_basis\":[";for(int a=0;a<20;a++){if(a)cout<<",";vector<E>v(N);for(int j=0;j<N;j++)v[j]=M[rank+a][177+j];arr(v);}cout<<"],\"quadratic_projection\":[";for(int a=0;a<20;a++){if(a)cout<<",";arr(projected[a]);}cout<<"],\"quadratic_rank\":"<<qrank<<",\"quadratic_monomial_consistent\":"<<(qbad<0?"true":"false")<<",\"quadratic_left_obstruction\":";vector<E>ql(20);if(qbad>=0)for(int a=0;a<20;a++)ql[a]=qr[qbad][16+a];arr(ql);cout<<",\"second_order_correction\":[";for(int a=0;a<15;a++){if(a)cout<<",";arr(correction[a]);}cout<<"],\"cubic_projection\":[";for(int a=0;a<20;a++){if(a)cout<<",";arr(cp[a]);}cout<<"],\"cubic_has_mixed_terms\":"<<(mixed?"true":"false")<<",\"cube_rank\":"<<crank<<",\"cube_consistent\":"<<(consistent?"true":"false")<<",\"cube_left_obstruction\":";arr(cubeleft);cout<<",\"tangent_parameters\":";arr(params);cout<<",\"second_order_vector\":";arr(second);cout<<",\"third_order_vector\":";arr(third);cout<<",\"node_split_orders123\":["<<split1<<","<<split2<<","<<split3<<"]}";cerr<<"case "<<ci<<" rank "<<rank<<" consistent "<<(bad<0)<<" split "<<split<<"\n";
+}cout<<"]}\n";
+}
