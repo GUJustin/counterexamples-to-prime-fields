@@ -117,3 +117,13 @@ $(H-B+1)G>(H+1)62n$, with reconstruction guard $p>3$.
 This is an extension-field result in the first-order regime, not
 fixed-rate or prime-alphabet tightness of a general upper bound.
 \end{proof}
+
+The same exact list profile also holds at the interior threshold
+$T_0=\lceil19p/10\rceil$ for every $p\ge4099$.
+Indeed, $p+2\sqrt p<T_0\le T$, so lowering the threshold admits no
+additional witness. The nearby probability remains $1-p^{-2}$,
+and the source separation is at least $9p/10-2\sqrt p$.
+Since $n=2p^2-O(p)$, both the distance above the first-order curve
+and the distance below the Johnson agreement threshold are
+$\Theta(\sqrt n)$. The finite certificate at $T_0$ follows from
+the larger-length calculation in Theorem~\ref{thm:norm-one-direct-list}.

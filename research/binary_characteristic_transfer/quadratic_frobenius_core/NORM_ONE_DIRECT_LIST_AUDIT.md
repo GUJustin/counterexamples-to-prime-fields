@@ -1,5 +1,7 @@
 # Norm-one reciprocal bank: direct list audit
 
+**Stronger current statement:** `NORM_ONE_INTERIOR_THRESHOLD_INDEPENDENT_AUDIT.md` verifies the same complete list and uniform22N bound at T=ceil(19p/10) for every prime p≥53. The manuscript and arithmetic receipt now use this interior threshold. The original near-Johnson comparison below remains valid but is superseded.
+
 September 18, 2026. **PASS.** The reciprocal identity is already in `FP3_NORM_WORD_RICH_WITNESSES.md`. The norm-one restriction, doubled domain, and exact matched Johnson-list statement below were not found in the targeted local-note search. No literature-priority claim is made: the incidence design is the classical projective-plane/Singer type.
 
 ## Exact construction and splitting proof

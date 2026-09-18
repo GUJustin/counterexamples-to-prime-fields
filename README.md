@@ -33,7 +33,9 @@ attains a universal triple-count bound.
 
 A separate list-size comparison now gives **N/2 ≤ maximum list size ≤ 22N**
 at the same below-Johnson threshold over F_(p³), for N=2(p²+p+1),
-dimension three, and p≥4099. The explicit word has exactly N/2 witnesses;
+dimension three, p≥53, and threshold ceil(19p/10). This threshold stays
+a constant times sqrt(N) from both the first-order and Johnson boundaries.
+The explicit word has exactly N/2 witnesses;
 every other quadratic has at most p+1 matches. The upper bound applies
 to every received word, using a checked finite DKT certificate. This is
 constant-factor tightness for this varying-rate extension-field list bound,
@@ -79,7 +81,10 @@ over the same F_(p³)** by deleting at most p coordinates. At threshold
 p³−2p singleton lists, and p lists of size p. Both input agreements
 are at most p+2sqrt(p), so the separation remains of order sqrt(N).
 The nearby-mixture probability is exactly **1−1/p²**, and the singleton
-probability is **1−2/p²**. The length is 2p²−O(p), and the finite
+probability is **1−2/p²**. The same exact profile holds at threshold
+ceil(19p/10), with a margin of order sqrt(N) from both first order and
+Johnson and a source gap at least 0.9p−2sqrt(p).
+The length is 2p²−O(p), and the finite
 first-order certificate survives for p≥4099. The far inputs form an
 affine F_p-line: F_p-valued combinations stay far, whereas the stated
 probabilities use F_(p³)-valued coefficients. This strengthens the

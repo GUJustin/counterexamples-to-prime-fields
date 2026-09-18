@@ -1,5 +1,7 @@
 # Independent review: norm-one direct list and its significance
 
+**Follow-up:** the current manuscript uses the stronger interior threshold T=ceil(19p/10), p≥53, independently verified in `NORM_ONE_INTERIOR_THRESHOLD_INDEPENDENT_AUDIT.md`. The exact bank classification below is unchanged.
+
 Verdict: PASS for the splitting construction and matched finite DKT upper bound, with a stronger elementary exact classification for this particular word. No literature novelty claim is certified here. Primary formulas were read directly in `tmp/eprint-2056/paper.txt`, Lemma 5.6 (54),(56) and Proposition 5.10 (60)–(63).
 
 ## Construction and finite certificate

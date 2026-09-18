@@ -7,7 +7,7 @@ are those of the classical projective-plane design, with each coordinate
 doubled. We make no novelty claim for that geometry.
 
 \begin{theorem}\label{thm:norm-one-direct-list}
-Let $p\ge4099$ be prime, let $E=\mathbb F_{p^3}$, and put
+Let $p\ge53$ be prime, let $E=\mathbb F_{p^3}$, and put
 \[
  L=p^2+p+1,\qquad N=2L,\qquad
  G=\ker\operatorname{Norm}_{E/\mathbb F_p},\qquad
@@ -23,7 +23,7 @@ list at that threshold consists of the $L=N/2$ polynomials
 This list attains the Johnson counting bound exactly. At the lower
 threshold
 \[
- T=2p-\lceil4\sqrt p\rceil-4
+ T=\lceil19p/10\rceil
 \]
 the complete list of $f$ is still exactly the displayed $N/2$ witnesses,
 and the same code satisfies
@@ -36,7 +36,10 @@ and the same code satisfies
  \le22N.
 \]
 Thus the lower bound is within a factor $44$ of an explicit uniform
-finite first-order list bound at the same parameters. Here the rate tends
+finite first-order list bound at the same parameters. Moreover
+$T/\sqrt N\to19/(10\sqrt2)$, strictly between the limiting
+first-order value $\sqrt{3/2}$ and the Johnson value $\sqrt2$.
+Both margins therefore have order $\sqrt N$. Here the rate tends
 to zero, $p=\Theta(\sqrt N)$, and $|E|=\Theta(N^{3/2})$; this is not a
 fixed-rate or prime-alphabet assertion.
 \end{theorem}
@@ -120,10 +123,10 @@ of~\cite[Proposition~5.10]{dkt2026} with
 \]
 Its coefficient count is $G_{\rm coef}=4B^2-2B$ and its six local-rank
 contributions are $4,8,12,15,14,9$, totaling $R=62$.
-For $p\ge4099$, $29p/5\le B\le6p$, and
+For $p\ge53$, $57p/10\le B\le6p$, and
 \[
  39G_{\rm coef}-40NR
- \ge\frac{7196}{25}p^2-5428p-4960>0.
+ \ge\frac{2711}{25}p^2-5428p-4960>0.
 \]
 Thus $G_{\rm coef}>NR$ and the graded support surplus is at least
 $B(39G_{\rm coef}-40NR)+(G_{\rm coef}-NR)>0$.
@@ -145,7 +148,7 @@ Finally, $T<2p<\sqrt{2N}$, while the first-order curve estimate gives
  N a_1(3/N)\le\sqrt{3N/2}+(3N/8)^{1/4}
  <\frac74p+\sqrt p<T
 \]
-using $T\ge2p-5\sqrt p$ and $\sqrt p>24$.
+using $T\ge19p/10$, $\sqrt p>20/3$, and $p\ge53$.
 \end{proof}
 
 The matched comparison is codewide, not just a bound along one received
