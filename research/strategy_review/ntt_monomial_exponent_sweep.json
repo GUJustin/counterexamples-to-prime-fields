@@ -1,0 +1,148 @@
+{
+  "scope": "character dimensions only; no matrices or ranks",
+  "status": "complete",
+  "first_exponent": 181275,
+  "last_exponent": 211940,
+  "processed": 30666,
+  "local_rank_ceiling": 182580,
+  "Z_free_source_columns": 47859086760,
+  "minimum_max_columns_record": {
+    "a": 193328,
+    "min_columns": 182477,
+    "max_columns": 182598,
+    "first_max_character": 137376,
+    "forced_kernel_characters": 67031,
+    "Z_free_nullity_lower_bound": 637598
+  },
+  "minimizer_count_in_processed_range": 28,
+  "record_improvements": [
+    {
+      "a": 181275,
+      "min_columns": 182472,
+      "max_columns": 182687,
+      "first_max_character": 154065,
+      "forced_kernel_characters": 98642,
+      "Z_free_nullity_lower_bound": 2568270
+    },
+    {
+      "a": 181276,
+      "min_columns": 182472,
+      "max_columns": 182676,
+      "first_max_character": 98284,
+      "forced_kernel_characters": 97896,
+      "Z_free_nullity_lower_bound": 2483018
+    },
+    {
+      "a": 181280,
+      "min_columns": 182472,
+      "max_columns": 182651,
+      "first_max_character": 153760,
+      "forced_kernel_characters": 93139,
+      "Z_free_nullity_lower_bound": 2201506
+    },
+    {
+      "a": 181304,
+      "min_columns": 182482,
+      "max_columns": 182649,
+      "first_max_character": 157854,
+      "forced_kernel_characters": 73126,
+      "Z_free_nullity_lower_bound": 1382592
+    },
+    {
+      "a": 181305,
+      "min_columns": 182482,
+      "max_columns": 182640,
+      "first_max_character": 99114,
+      "forced_kernel_characters": 72719,
+      "Z_free_nullity_lower_bound": 1354788
+    },
+    {
+      "a": 181313,
+      "min_columns": 182482,
+      "max_columns": 182635,
+      "first_max_character": 159435,
+      "forced_kernel_characters": 71227,
+      "Z_free_nullity_lower_bound": 1198536
+    },
+    {
+      "a": 181354,
+      "min_columns": 182506,
+      "max_columns": 182627,
+      "first_max_character": 108480,
+      "forced_kernel_characters": 68827,
+      "Z_free_nullity_lower_bound": 1305409
+    },
+    {
+      "a": 181860,
+      "min_columns": 182506,
+      "max_columns": 182616,
+      "first_max_character": 180104,
+      "forced_kernel_characters": 65681,
+      "Z_free_nullity_lower_bound": 915173
+    },
+    {
+      "a": 183854,
+      "min_columns": 182493,
+      "max_columns": 182614,
+      "first_max_character": 54548,
+      "forced_kernel_characters": 84000,
+      "Z_free_nullity_lower_bound": 1215187
+    },
+    {
+      "a": 185137,
+      "min_columns": 182493,
+      "max_columns": 182609,
+      "first_max_character": 245430,
+      "forced_kernel_characters": 76706,
+      "Z_free_nullity_lower_bound": 819795
+    },
+    {
+      "a": 189699,
+      "min_columns": 182479,
+      "max_columns": 182608,
+      "first_max_character": 175483,
+      "forced_kernel_characters": 84664,
+      "Z_free_nullity_lower_bound": 1041393
+    },
+    {
+      "a": 190030,
+      "min_columns": 182497,
+      "max_columns": 182607,
+      "first_max_character": 212428,
+      "forced_kernel_characters": 71790,
+      "Z_free_nullity_lower_bound": 582170
+    },
+    {
+      "a": 190031,
+      "min_columns": 182497,
+      "max_columns": 182600,
+      "first_max_character": 140482,
+      "forced_kernel_characters": 71885,
+      "Z_free_nullity_lower_bound": 580439
+    },
+    {
+      "a": 190046,
+      "min_columns": 182494,
+      "max_columns": 182599,
+      "first_max_character": 150506,
+      "forced_kernel_characters": 75654,
+      "Z_free_nullity_lower_bound": 586735
+    },
+    {
+      "a": 193328,
+      "min_columns": 182477,
+      "max_columns": 182598,
+      "first_max_character": 137376,
+      "forced_kernel_characters": 67031,
+      "Z_free_nullity_lower_bound": 637598
+    }
+  ],
+  "necessary_gate_survivor": null,
+  "all_processed_records_sha256": "09a329ae0c88e0cba943b900e22ef0e6e0575d64f04e1a9bcb400b85c038d3fe",
+  "seconds": 6.536915834003594,
+  "peak_rss_bytes": 35438592,
+  "numpy_version": "2.5.3",
+  "source_sha256": "64f344e4df90d184795f0a956ed23719b5d3bc35eb486c630ffcc7c12fc79fad",
+  "witness_csv": "ntt_monomial_exponent_witnesses.csv",
+  "witness_csv_sha256": "1556b93a54f74f8c9ff0f75140761d67a8d9f8635f2f3f116290889b02dc2d29"
+}

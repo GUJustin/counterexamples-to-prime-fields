@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "checked_exponents": 30666,
+  "scope": "one exact oversized character in original source coordinates for every remaining exponent",
+  "minimum_recorded_witness": {
+    "a": 193328,
+    "character": 137376,
+    "columns": 182598
+  },
+  "seconds": 0.7658030829916243,
+  "witness_csv_sha256": "1556b93a54f74f8c9ff0f75140761d67a8d9f8635f2f3f116290889b02dc2d29",
+  "source_sha256": "9b1e403e52896cca5b2089aed5c25a3da0d1a6f017f93be92b9179048584c19f"
+}
