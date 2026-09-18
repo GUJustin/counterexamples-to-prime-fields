@@ -1,0 +1,18 @@
+[
+  {
+    "e": 13,
+    "exact_J_zero_lower": "17745829912636/44695781",
+    "integer_J_zero_lower": 397036,
+    "J_degree_upper": 393213,
+    "integer_excess": 3823,
+    "status": "irreducible cubic excluded"
+  },
+  {
+    "e": 14,
+    "exact_J_zero_lower": "9271563283460/20835217",
+    "integer_J_zero_lower": 444996,
+    "J_degree_upper": 393213,
+    "integer_excess": 51783,
+    "status": "irreducible cubic excluded"
+  }
+]

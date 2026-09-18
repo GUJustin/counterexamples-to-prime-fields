@@ -1,0 +1,32 @@
+[
+  {
+    "degree": 3,
+    "multiplicity": 13,
+    "lower": "8872914956318/44695781",
+    "status": "PASS"
+  },
+  {
+    "degree": 3,
+    "multiplicity": 14,
+    "lower": "4635781641730/20835217",
+    "status": "PASS"
+  },
+  {
+    "degree": 2,
+    "multiplicity": 13,
+    "lower": "2685497020426/13860457",
+    "status": "PASS"
+  },
+  {
+    "degree": 2,
+    "multiplicity": 14,
+    "lower": "1276777031510/5920889",
+    "status": "PASS"
+  },
+  {
+    "degree": 2,
+    "multiplicity": 15,
+    "lower": "201797510617/822068",
+    "status": "PASS"
+  }
+]

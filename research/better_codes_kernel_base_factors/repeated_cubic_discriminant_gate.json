@@ -1,0 +1,102 @@
+[
+  {
+    "e": 13,
+    "h": 4,
+    "cost_levels": [
+      [
+        0,
+        17
+      ],
+      [
+        1,
+        29
+      ],
+      [
+        2,
+        30
+      ],
+      [
+        3,
+        42
+      ],
+      [
+        6,
+        43
+      ]
+    ],
+    "good_node_LP_max": "7749236943045",
+    "LP_support": [
+      [
+        29,
+        "3"
+      ],
+      [
+        42,
+        "262141"
+      ]
+    ],
+    "local_monomials": 282,
+    "local_contact": 40,
+    "feasible_profile": {
+      "contact40_nodes": 262142,
+      "contact0_nodes": 2,
+      "discriminant_total": 786426,
+      "discriminant_budget": 786426,
+      "rank_total": 6965732643688,
+      "rank_required": 6802316684344,
+      "rank_margin": 163415959344,
+      "candidate_G_order_total": 362550,
+      "candidate_H_order_total": 362550
+    }
+  },
+  {
+    "e": 14,
+    "h": 1,
+    "cost_levels": [
+      [
+        0,
+        15
+      ],
+      [
+        1,
+        27
+      ],
+      [
+        2,
+        29
+      ],
+      [
+        3,
+        41
+      ],
+      [
+        6,
+        43
+      ]
+    ],
+    "good_node_LP_max": "7351998045040",
+    "LP_support": [
+      [
+        15,
+        "2"
+      ],
+      [
+        41,
+        "262142"
+      ]
+    ],
+    "local_monomials": 240,
+    "local_contact": 40,
+    "feasible_profile": {
+      "contact40_nodes": 262142,
+      "contact0_nodes": 2,
+      "discriminant_total": 786426,
+      "discriminant_budget": 786426,
+      "rank_total": 6965732643688,
+      "rank_required": 6802316684344,
+      "rank_margin": 163415959344,
+      "candidate_G_order_total": 362550,
+      "candidate_H_order_total": 0
+    }
+  }
+]
