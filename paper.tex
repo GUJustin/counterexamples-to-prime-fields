@@ -90,6 +90,12 @@ Over extension fields, a further construction retains $\Theta(n^{3/2})$
 exceptions and a $\Theta(\sqrt n)$ agreement gap while raising the
 characteristic to $\Theta(\sqrt n)$. A separate affine-witness
 construction asymptotically attains a universal triple-count bound.
+For ordinary common agreement alone, a cubic-extension construction
+strengthens the exceptional probability to one: every affine mixture is
+nearby, although no pair of quadratic codewords explains the inputs on
+the required common set. Almost every mixture has a singleton list.
+Here the inputs themselves are nearby; the common-agreement deficit,
+of order $\sqrt n$, is the obstruction.
 
 We apply these results and finite circle-code constructions to the
 quantitative premises in the S-two whitepaper. The shrinking-gap
@@ -827,6 +833,22 @@ characteristic condition is only $p>3$. Its ambient field has size
 $n^2/81$. This improves the characteristic and field-size parameters;
 it does not increase the known exceptional-count exponent or yield
 prime-alphabet, fixed-rate, or general-bound tightness.
+
+For ordinary common agreement, Theorem~\ref{thm:fp3-common-agreement}
+gives a stronger probability statement over $\F_{p^3}$. With
+$n=2p^2-p-1$ and dimension three, every affine mixture has agreement
+at least $2p-\lceil4\sqrt p\rceil-2$, while the two inputs have
+ordinary common agreement at most $p+2\sqrt p$.
+Exactly $p^3-p$ of the $p^3$ affine parameters have singleton lists;
+the remaining $p$ have lists of size $p$ at the stated threshold.
+The threshold satisfies an explicit finite first-order certificate
+and is below the exact Johnson agreement threshold for primes $p\ge4099$.
+Thus the common-agreement deficit has order $\sqrt n$ even when
+every mixture is nearby and all but a $1/p^2$ fraction have unique
+witnesses. The inputs themselves are nearby, so this result addresses
+common agreement rather than separation of individually far sources.
+The ambient field is an extension field of size $\Theta(n^{3/2})$;
+the construction does not instantiate the fixed better.codes benchmark.
 
 Likewise, optimality of a specified interpolation dimension count is a
 statement about that proof method, not an intrinsic list or MCA lower

@@ -1,0 +1,142 @@
+{
+  "method": "all Q(1)=1, multiplicative scaling covers every nonzero matching coordinate; zero included iff b=0",
+  "results": [
+    {
+      "p": 3,
+      "modulus": [
+        1,
+        2,
+        0,
+        1
+      ],
+      "normalized_polynomials": 729,
+      "maxima": {
+        "square": 4,
+        "non_even_nonsquare": 5,
+        "even_nonsquare": 6
+      },
+      "examples": {
+        "square": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            2,
+            1
+          ]
+        ],
+        "non_even_nonsquare": [
+          [
+            0,
+            1,
+            2
+          ],
+          [
+            1,
+            2,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "even_nonsquare": [
+          [
+            1,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            2,
+            1
+          ]
+        ]
+      }
+    },
+    {
+      "p": 5,
+      "modulus": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "normalized_polynomials": 15625,
+      "maxima": {
+        "square": 6,
+        "non_even_nonsquare": 6,
+        "even_nonsquare": 8
+      },
+      "examples": {
+        "square": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            3,
+            3
+          ],
+          [
+            1,
+            2,
+            1
+          ]
+        ],
+        "non_even_nonsquare": [
+          [
+            1,
+            3,
+            0
+          ],
+          [
+            1,
+            2,
+            3
+          ],
+          [
+            4,
+            0,
+            2
+          ]
+        ],
+        "even_nonsquare": [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            4
+          ]
+        ]
+      }
+    }
+  ],
+  "seconds": 0.3451859951019287
+}

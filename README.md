@@ -4,8 +4,8 @@ Working draft by Justin Thaler, September 18, 2026.
 
 [Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
-**Latest verified results (September 18, morning):** the full-page,
-one-inch-margin ePrint draft (250 pages) now proves a prime-field line construction
+**Latest verified results (September 18):** the full-page,
+one-inch-margin ePrint draft (252 pages) now proves a prime-field line construction
 with more than n^(3/2)/4 exceptional challenges, each having a singleton
 list, at an error radius covered by the Dao–Kominers–Thaler bounds
 and beyond the Johnson radius. Both source words
@@ -49,6 +49,20 @@ derivative degree three and requires only p>3. This retains a gap of order sqrt(
 count of order N^(3/2), while improving characteristic from the previous
 N^(1/4) scale to sqrt(N). It remains an extension-field, vanishing-rate
 result, not a prime-alphabet theorem or a better.codes improvement.
+
+A cubic-extension construction strengthens the ordinary-common-agreement
+statement: over F_(p³), N=2p²−p−1 and dimension three, **every affine mixture
+is nearby**, although no two quadratic codewords explain the inputs on
+the required common coordinate set. The agreement threshold is
+2p−ceil(4sqrt(p))−2; common agreement is at most p+2sqrt(p).
+Exactly p³−p mixtures have singleton lists, and the remaining p have
+lists of size p. For primes p≥4099, an explicit finite first-order
+certificate applies and the threshold is below the exact Johnson agreement
+threshold. This preserves a common-agreement deficit of order sqrt(N)
+while reducing the field size to order N^(3/2) and making the exceptional
+probability one. **The inputs themselves are nearby.** This strengthens
+the common-agreement counterexample, not the result about individually
+far inputs, and does not improve the fixed better.codes benchmark.
 
 These results do not supersede the fixed-rate near-capacity counterexamples
 of Krachun–Kazanin–Haböck or the capacity-conjecture refutation of

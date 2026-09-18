@@ -1,0 +1,190 @@
+\subsection{Native cubic-extension coverage with small common agreement}
+\label{sec:fp3-common-agreement}
+
+\begin{theorem}\label{thm:fp3-common-agreement}
+For every prime $p\ge4099$, there is a dimension-three Reed--Solomon
+code on $N=2p^2-p-1$ distinct points of $E=\mathbb F_{p^3}$ and a
+received line $f+\lambda g$ with ordinary common agreement at most
+$p+2\sqrt p$, such that every $\lambda\in E$ has a nearby codeword at
+agreement threshold
+\[
+ A=2p-\lceil4\sqrt p\rceil-2.
+\]
+Exactly $p^3-p$ parameters have singleton lists, and the remaining
+$p$ parameters each have a list of exactly $p$ codewords.
+The threshold satisfies
+\[
+ N a_1(3/N)<A<\sqrt{2N}.
+\]
+Thus every parameter is exceptional for ordinary common agreement,
+and the singleton fraction is $1-p^{-2}$. The common-agreement gap
+is $\Theta(p)=\Theta(\sqrt N)$ and the characteristic exceeds the
+message degree. This is an extension-field result at vanishing rate;
+the two affine endpoints are themselves nearby.
+Equivalently, the endpoints are $f$ and $f+g$, with affine mixtures
+$(1-\lambda)f+\lambda(f+g)$; this invertible source change preserves
+ordinary common agreement.
+\end{theorem}
+
+\begin{proof}
+Choose a two-dimensional $\mathbb F_p$-subspace $W\subset E$ and a
+square $\eta=s^2\in E\setminus\mathbb F_p$. Put
+\[
+ D_0=\{x\ne0:x^2\in W\},\qquad
+ D_1=\{x\ne0:x^2\in\eta W\}\setminus D_0.
+\]
+The multiplicative stabilizer of $W$ is $\mathbb F_p^*$: together
+with zero it is a subfield of $E$, and it cannot be $E$.
+Consequently $W\cap\eta^{-1}W$ is a line; write it as
+$\mathbb F_pu_0$. Since $\eta\notin\mathbb F_p$,
+\[
+ W=u_0\operatorname{span}_{\mathbb F_p}(1,\eta).
+\]
+The quadratic character of $E$ restricts to the quadratic character
+of $\mathbb F_p$. Each nonzero $\mathbb F_p$-line therefore has
+exactly half its elements square in $E$. It follows that
+$|D_0|=p^2-1$, the overlap of the two untrimmed blocks has size
+$p-1$, and $|D_0\cup D_1|=N$.
+Define
+\[
+ (f,g)=(x^{2p},0)\quad\hbox{on }D_0,\qquad
+ (f,g)=\bigl(\eta(x^2/\eta)^p,1\bigr)\quad\hbox{on }D_1.
+\]
+
+\emph{Canonical fibers and their sizes.}
+For a projective direction $[u]$ in $W$, let
+\[
+ a_u=u^{p-1},\qquad L_u(y)=y^p-a_uy,\qquad I_u=L_u(W).
+\]
+The kernel is $\mathbb F_pu$, so $I_u$ is a line. For a basis
+$w_1,w_2$ of $W$, put $\delta=w_1w_2^p-w_1^pw_2\ne0$.
+The alternating identity $uL_u(y)=uy^p-u^py$ gives
+$I_u=(\delta/u)\mathbb F_p$.
+The even quadratic $Q=a_uX^2+b$ has canonical fibers on both blocks
+precisely when
+\[
+ b,v\in I_u,\qquad \lambda=b-\eta v.
+\]
+A zero fiber has exactly $p-1$ physical square-root points.
+A nonzero affine fiber $y_0+u\mathbb F_p$ has between
+$p-2\sqrt p$ and $p+2\sqrt p$ such points. Indeed,
+$y_0/u\notin\mathbb F_p$ has degree three, so
+$\operatorname{Norm}_{E/\mathbb F_p}(t+y_0/u)$ is a separable cubic.
+The identity between quadratic characters and the norm reduces the
+count to $p$ plus a signed quadratic character sum of this cubic.
+Hasse's bound for its smooth genus-one double cover bounds that sum
+by $2\sqrt p$. Multiplication by the square $\eta$ preserves the counts.
+
+In the normalized fresh variable $y=x^2/\eta$, the deleted overlap
+is $\mathbb F_pu_0\setminus\{0\}$. A canonical fresh fiber is
+entirely deleted only for $[u]=[u_0]$ and $v=0$; every other fiber
+loses at most two physical points. Hence every doubly canonical
+candidate except this deleted-fiber case has at least $A$ matches.
+The deleted-fiber case has at most $p+2\sqrt p<A$.
+
+\emph{Parameter geometry.}
+For nonzero $\lambda$, its representing directions are the projective
+points of
+\[
+ W\cap(\lambda/\delta)^{-1}
+          \operatorname{span}_{\mathbb F_p}(1,\eta).
+\]
+This intersection has dimension one or two. It has dimension two
+exactly when $\lambda\in(\delta/u_0)\mathbb F_p^*$: the stabilizer
+calculation above shows there are precisely these $p-1$ scalars.
+Thus outside the line $\Lambda_0=(\delta/u_0)\mathbb F_p$, every
+parameter has exactly one doubly canonical quadratic. Its fresh
+fiber cannot be the deleted one. Each nonzero parameter in
+$\Lambda_0$ has all $p+1$ directions; exactly its $u_0$ direction
+has $v=0$ and is excluded, leaving $p$ qualifying quadratics.
+At zero, all directions have $b=v=0$; again exactly $u_0$ is excluded.
+The other $p$ directions give $2p-2\ge A$ matches.
+
+\emph{Excluding all other quadratics.}
+First consider one full block $\{x\ne0:x^2\in W\}$ with word $x^{2p}$.
+An even quadratic $aX^2+c$ gives $y^p-ay=c$ on $W$. Unless its
+kernel direction lies in $W$, this has at most one solution in $W$,
+hence at most two physical matches. If its kernel direction lies in
+$W$, its nonempty fibers are exactly the canonical ones above.
+In particular every even quadratic has at most $p+2\sqrt p$ matches.
+
+We claim every non-even quadratic has at most eight matches on this
+block. Write $Q=aX^2+bX+c$, $b\ne0$. If $Q=(uX+w)^2$ over $E$,
+then $u,w\ne0$ and the two Frobenius equations are
+$x^p=\pm(ux+w)$. Since
+$\operatorname{Norm}(-u)=-\operatorname{Norm}(u)$, at most one has
+an affine $\mathbb F_p$-line of solutions; the other has at most one.
+The affine line cannot contain zero. Write it as $z+t v$ with
+$z/v\notin\mathbb F_p$. If more than two of its points had squares
+in $W$, projecting $(z+tv)^2$ to the one-dimensional quotient $E/W$
+would give an identically zero quadratic in $t$. This would put
+$z^2,zv,v^2$ in $W$, impossible because
+$1,z/v,(z/v)^2$ are independent over $\mathbb F_p$.
+Thus the square case has at most three matches.
+
+If $Q$ is not a square in $E[X]$, put
+$a_i=a^{p^i},b_i=b^{p^i},c_i=c^{p^i}$ and
+\[
+ R=X^2-a_2a_1Q-a_2c_1-c_2,\qquad d=a_2b_1,
+\]
+\[
+ F=R^2+(d^2-b_2^2a_1)Q-b_2^2c_1,\qquad
+ G=-2dR-b_2^2b_1.
+\]
+At a match, writing $y=x^p,z=x^{p^2}$ and using
+$y^2=Q(x)$, $z^2=Q^{(p)}(y)$, $x^2=Q^{(p^2)}(z)$ gives
+$b_2z=R(x)-dy$ and then $F(x)+G(x)y=0$.
+Therefore the match is a root of $F^2-G^2Q$, of degree at most eight.
+This polynomial is nonzero. Otherwise nonsquareness of $Q$ forces
+$F=G=0$. If $a=0$, however, $G=-b_2^2b_1\ne0$; and if $a\ne0$,
+$G=0$ forces $R$ constant, contrary to its nonzero linear coefficient
+$-a_2a_1b$. This proves the claim.
+
+The same classification applies on the second block after $x=st$
+and division by $\eta$, with the constant shifted by $\lambda$.
+Non-even quadratics therefore have at most sixteen active matches.
+An even quadratic canonical on only one block has zero matches on
+the other and at most $p+2\sqrt p$ in all; an even quadratic canonical
+on neither has at most four. Since $A>\max(16,p+2\sqrt p)$, the
+parameter geometry lists every qualifying codeword, proving the exact
+list counts.
+
+\emph{Ordinary common agreement.}
+A direction quadratic other than the constants zero and one matches
+$g$ on at most four points. Direction zero restricts simultaneous
+agreements to $D_0$, and direction one to $D_1$. The one-block
+classification bounds either by $\max(p+2\sqrt p,8)=p+2\sqrt p$.
+This proves the common-agreement bound. The endpoints $f$ and $f+g$
+are themselves nearby, as follows already from the all-parameter claim.
+
+\emph{Thresholds and finite applicability.}
+The stated onset implies $A\ge2p-5\sqrt p$ and
+\[
+ N a_1(3/N)\le\sqrt{3N/2}+(3N/8)^{1/4}
+ <\tfrac74p+\sqrt p<A.
+\]
+Also $A<2p-1<\sqrt{2N}$ and $A>\max(16,p+2\sqrt p)$.
+One can certify first-order interpolation directly using the
+derivative-weighted support of \cite[Proposition~5.10]{dkt2026}:
+choose multiplicity six, derivative cap three, total jet cap $B=3A$,
+and challenge height $H=40B$. Its coefficient count is $G=4B^2-2B$
+and its local-rank bound is $62$. For $p\ge4099$,
+$29p/5\le B\le6p$, and
+\[
+ 39G-40\cdot62N\ge\frac{7196}{25}p^2-468p>0.
+\]
+Since $G>62N$, this makes
+$(H-B+1)G-(H+1)62N>0$, a sufficient strict graded row test.
+The reconstruction guard is only $p>3$.
+This certifies applicability, not a matching numerical exceptional-count
+upper bound. The rate and normalized common-agreement gap vanish.
+\end{proof}
+
+An exact physical-fiber census independently checks the list spectrum
+at $p=47$ and $p=53$: respectively, there are $103776$ singleton
+parameters and $47$ lists of size $47$, and $148824$ singleton
+parameters and $53$ lists of size $53$.
+These checks validate the construction and counts at the stated
+thresholds; the uniform finite-certificate onset above remains $p\ge4099$.
+The replay scripts, separate quadratic-root proof, and independent
+certificate audit accompany the source.

@@ -1,0 +1,112 @@
+[
+  {
+    "p": 3,
+    "cubic": [
+      1,
+      2,
+      0,
+      1
+    ],
+    "eta": [
+      0,
+      2,
+      1
+    ],
+    "core_length": 8,
+    "fresh_length": 6,
+    "bank_size": 12,
+    "minimum_over_labels": 6,
+    "maximum_over_labels": 10,
+    "maximum_bank_agreement_histogram": {
+      "6": 23,
+      "8": 3,
+      "10": 1
+    },
+    "scope": "canonical bank only; overlap assigned to core"
+  },
+  {
+    "p": 5,
+    "cubic": [
+      1,
+      1,
+      0,
+      1
+    ],
+    "eta": [
+      0,
+      4,
+      4
+    ],
+    "core_length": 24,
+    "fresh_length": 20,
+    "bank_size": 30,
+    "minimum_over_labels": 8,
+    "maximum_over_labels": 16,
+    "maximum_bank_agreement_histogram": {
+      "8": 59,
+      "10": 42,
+      "12": 12,
+      "14": 8,
+      "16": 4
+    },
+    "scope": "canonical bank only; overlap assigned to core"
+  },
+  {
+    "p": 7,
+    "cubic": [
+      2,
+      0,
+      0,
+      1
+    ],
+    "eta": [
+      0,
+      5,
+      0
+    ],
+    "core_length": 48,
+    "fresh_length": 42,
+    "bank_size": 56,
+    "minimum_over_labels": 12,
+    "maximum_over_labels": 24,
+    "maximum_bank_agreement_histogram": {
+      "12": 169,
+      "14": 120,
+      "16": 18,
+      "18": 27,
+      "24": 9
+    },
+    "scope": "canonical bank only; overlap assigned to core"
+  },
+  {
+    "p": 11,
+    "cubic": [
+      4,
+      1,
+      0,
+      1
+    ],
+    "eta": [
+      0,
+      7,
+      10
+    ],
+    "core_length": 120,
+    "fresh_length": 110,
+    "bank_size": 132,
+    "minimum_over_labels": 16,
+    "maximum_over_labels": 32,
+    "maximum_bank_agreement_histogram": {
+      "16": 245,
+      "18": 75,
+      "20": 321,
+      "22": 360,
+      "24": 95,
+      "26": 110,
+      "28": 50,
+      "30": 50,
+      "32": 25
+    },
+    "scope": "canonical bank only; overlap assigned to core"
+  }
+]

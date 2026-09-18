@@ -1,0 +1,50 @@
+[
+  {
+    "p": 47,
+    "defining_cubic": [
+      4,
+      1,
+      0,
+      1
+    ],
+    "eta": [
+      0,
+      0,
+      1
+    ],
+    "N": 4370,
+    "A": 64,
+    "label_count": 103823,
+    "list_size_histogram": {
+      "47": 47,
+      "1": 103776
+    },
+    "minimum_best_canonical_agreement": 66,
+    "maximum_best_canonical_agreement": 120,
+    "passed": true
+  },
+  {
+    "p": 53,
+    "defining_cubic": [
+      5,
+      1,
+      0,
+      1
+    ],
+    "eta": [
+      0,
+      0,
+      1
+    ],
+    "N": 5564,
+    "A": 74,
+    "label_count": 148877,
+    "list_size_histogram": {
+      "53": 53,
+      "1": 148824
+    },
+    "minimum_best_canonical_agreement": 80,
+    "maximum_best_canonical_agreement": 130,
+    "passed": true
+  }
+]
