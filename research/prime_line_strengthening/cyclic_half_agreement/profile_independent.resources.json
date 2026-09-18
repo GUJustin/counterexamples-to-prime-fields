@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "research/prime_line_strengthening/cyclic_half_agreement/profile_independent.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.547614,
+  "peak_rss_kib": 32,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

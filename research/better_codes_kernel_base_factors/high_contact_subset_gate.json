@@ -1,0 +1,12 @@
+{
+  "maximum_rank_excess_over_contact43_for_total_B_order12": 49897120,
+  "one_node_attains_dp": true,
+  "forced_nodes_contact_at_least40": 35426,
+  "candidate_complement_size": 80869,
+  "contact40_rank_sum": 6965785788416,
+  "own_rigidity_required_rank_sum": 6802316684344,
+  "contact40_factor_charge": 1966065,
+  "three_such_charges": 5898195,
+  "primary_charge_budget_strict": 5924072,
+  "linear_graph_nodes_required": 211953
+}

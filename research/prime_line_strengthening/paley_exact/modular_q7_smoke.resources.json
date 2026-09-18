@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/prime_line_strengthening/paley_exact/verify_modular",
+    "research/prime_line_strengthening/paley_exact/modular_q7_smoke.in",
+    "research/prime_line_strengthening/paley_exact/modular_q7_smoke.out"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5414642919931794,
+  "peak_rss_kib": 32,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

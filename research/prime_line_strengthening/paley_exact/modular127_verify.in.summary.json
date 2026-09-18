@@ -1,0 +1,11 @@
+{
+  "q": 127,
+  "domains": 194,
+  "pairs": 556,
+  "rows": 35028,
+  "expected_cases": 35028,
+  "seen_cases": 35028,
+  "accepted_cases": 35028,
+  "missing_cases": 0,
+  "uncertified_cases": 0
+}

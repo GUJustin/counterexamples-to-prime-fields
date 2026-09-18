@@ -1,0 +1,141 @@
+{
+  "q": 15,
+  "m": 4,
+  "unit_multipliers": [
+    1,
+    2,
+    4,
+    7,
+    8,
+    11,
+    13,
+    14
+  ],
+  "natural_h": 11,
+  "natural_h_coprime": true,
+  "binary_polynomial_integer": 19,
+  "binary_polynomial_exponents": [
+    0,
+    1,
+    4
+  ],
+  "primitive_element": 2,
+  "primitive_powers": [
+    1,
+    2,
+    4,
+    8,
+    3,
+    6,
+    12,
+    11,
+    5,
+    10,
+    7,
+    14,
+    15,
+    13,
+    9
+  ],
+  "trace_zero_D": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    8,
+    10
+  ],
+  "support_S": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    8,
+    9,
+    12
+  ],
+  "support_csv": "1,2,3,4,6,8,9,12",
+  "difference_multiplicity": 3,
+  "multiplier_classes": [
+    {
+      "representative_multiplier": 1,
+      "multipliers": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "trace_zero_D": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        8,
+        10
+      ],
+      "support_S": [
+        1,
+        2,
+        3,
+        4,
+        6,
+        8,
+        9,
+        12
+      ],
+      "rotation_canonical_support": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7,
+        8,
+        11
+      ],
+      "rotation_canonical_mask_decimal": "2479"
+    },
+    {
+      "representative_multiplier": 7,
+      "multipliers": [
+        7,
+        11,
+        13,
+        14
+      ],
+      "trace_zero_D": [
+        0,
+        5,
+        7,
+        10,
+        11,
+        13,
+        14
+      ],
+      "support_S": [
+        3,
+        6,
+        7,
+        9,
+        11,
+        12,
+        13,
+        14
+      ],
+      "rotation_canonical_support": [
+        0,
+        3,
+        4,
+        6,
+        8,
+        9,
+        10,
+        11
+      ],
+      "rotation_canonical_mask_decimal": "3929"
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "q": 7,
+  "m": 3,
+  "unit_multipliers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "natural_h": 5,
+  "natural_h_coprime": true,
+  "binary_polynomial_integer": 11,
+  "binary_polynomial_exponents": [
+    0,
+    1,
+    3
+  ],
+  "primitive_element": 2,
+  "primitive_powers": [
+    1,
+    2,
+    4,
+    3,
+    6,
+    7,
+    5
+  ],
+  "trace_zero_D": [
+    1,
+    2,
+    4
+  ],
+  "support_S": [
+    0,
+    1,
+    2,
+    4
+  ],
+  "support_csv": "0,1,2,4",
+  "difference_multiplicity": 1,
+  "multiplier_classes": [
+    {
+      "representative_multiplier": 1,
+      "multipliers": [
+        1,
+        2,
+        4
+      ],
+      "trace_zero_D": [
+        1,
+        2,
+        4
+      ],
+      "support_S": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "rotation_canonical_support": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "rotation_canonical_mask_decimal": "23"
+    },
+    {
+      "representative_multiplier": 3,
+      "multipliers": [
+        3,
+        5,
+        6
+      ],
+      "trace_zero_D": [
+        3,
+        5,
+        6
+      ],
+      "support_S": [
+        0,
+        3,
+        5,
+        6
+      ],
+      "rotation_canonical_support": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "rotation_canonical_mask_decimal": "29"
+    }
+  ]
+}

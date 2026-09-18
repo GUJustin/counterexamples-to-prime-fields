@@ -1,0 +1,12 @@
+{"source_class":0,"relative_target":0,"pair_id":0,"h":4,"p":29,"zeta":7,"accepted":true}
+{"source_class":0,"relative_target":0,"pair_id":0,"h":5,"p":29,"zeta":7,"accepted":true}
+{"source_class":0,"relative_target":0,"pair_id":0,"h":6,"p":29,"zeta":7,"accepted":true}
+{"source_class":0,"relative_target":1,"pair_id":1,"h":4,"p":29,"zeta":7,"accepted":true}
+{"source_class":0,"relative_target":1,"pair_id":1,"h":6,"p":29,"zeta":7,"accepted":true}
+{"source_class":1,"relative_target":0,"pair_id":2,"h":4,"p":29,"zeta":7,"accepted":true}
+{"source_class":1,"relative_target":0,"pair_id":2,"h":6,"p":29,"zeta":7,"accepted":true}
+{"source_class":1,"relative_target":1,"pair_id":3,"h":4,"p":29,"zeta":7,"accepted":true}
+{"source_class":1,"relative_target":1,"pair_id":3,"h":5,"p":29,"zeta":7,"accepted":true}
+{"source_class":1,"relative_target":1,"pair_id":3,"h":6,"p":29,"zeta":7,"accepted":true}
+{"source_class":0,"relative_target":1,"pair_id":1,"h":5,"p":113,"zeta":16,"accepted":false}
+{"source_class":1,"relative_target":0,"pair_id":2,"h":5,"p":113,"zeta":16,"accepted":false}

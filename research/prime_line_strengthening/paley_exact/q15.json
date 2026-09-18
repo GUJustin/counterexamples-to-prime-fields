@@ -1,0 +1,139 @@
+{
+  "q": 15,
+  "D": [
+    0,
+    1,
+    2,
+    4,
+    5,
+    8,
+    10
+  ],
+  "S": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    8,
+    9,
+    12
+  ],
+  "eta_relation": "eta^2-eta+4=0",
+  "unit_period_polynomial": "X**4 + X**3*(-1/2 - sqrt(15)*I/2) - 2*X**2 + X*(-1/2 + sqrt(15)*I/2) + 1",
+  "rows": [
+    {
+      "h": 8,
+      "target": "D",
+      "P": "X**7*(-1/2 + sqrt(15)*I/2) + X**6*(3/2 + sqrt(15)*I/2) + 2*X**5 + X**4 + 2*X**3 + X**2*(3/2 - sqrt(15)*I/2) + X*(-1/2 - sqrt(15)*I/2) - 1",
+      "raw_gcd": "1",
+      "valid_gcd": "1",
+      "valid_degree": 0
+    },
+    {
+      "h": 8,
+      "target": "-D",
+      "P": "X**7*(-1/2 + sqrt(15)*I/2) + X**6*(3/2 + sqrt(15)*I/2) + 2*X**5 + X**4 + 2*X**3 + X**2*(3/2 - sqrt(15)*I/2) + X*(-1/2 - sqrt(15)*I/2) - 1",
+      "raw_gcd": "1",
+      "valid_gcd": "1",
+      "valid_degree": 0
+    },
+    {
+      "h": 9,
+      "target": "D",
+      "P": "-2*X**7 + X**6*(-5/2 + sqrt(15)*I/2) + sqrt(15)*I*X**5 + X**4*(3/2 + sqrt(15)*I/2) + X**3*(1/2 + sqrt(15)*I/2) + X**2*(5/2 + sqrt(15)*I/2) + 3*X + 1/2 - sqrt(15)*I/2",
+      "raw_gcd": "1",
+      "valid_gcd": "1",
+      "valid_degree": 0
+    },
+    {
+      "h": 9,
+      "target": "-D",
+      "P": "-2*X**7 + X**6*(-5/2 + sqrt(15)*I/2) + sqrt(15)*I*X**5 + X**4*(3/2 + sqrt(15)*I/2) + X**3*(1/2 + sqrt(15)*I/2) + X**2*(5/2 + sqrt(15)*I/2) + 3*X + 1/2 - sqrt(15)*I/2",
+      "raw_gcd": "1",
+      "valid_gcd": "1",
+      "valid_degree": 0
+    },
+    {
+      "h": 10,
+      "target": "D",
+      "P": "X**7*(-3/2 - sqrt(15)*I/2) - 3*X**6 + X**5*(-5/2 + sqrt(15)*I/2) + X**4*(-3/2 + sqrt(15)*I/2) + X**3*(-3/2 + sqrt(15)*I/2) + sqrt(15)*I*X**2 + X*(3/2 + sqrt(15)*I/2) + 2",
+      "raw_gcd": "1",
+      "valid_gcd": "1",
+      "valid_degree": 0
+    },
+    {
+      "h": 10,
+      "target": "-D",
+      "P": "X**7*(-3/2 - sqrt(15)*I/2) - 3*X**6 + X**5*(-5/2 + sqrt(15)*I/2) + X**4*(-3/2 + sqrt(15)*I/2) + X**3*(-3/2 + sqrt(15)*I/2) + sqrt(15)*I*X**2 + X*(3/2 + sqrt(15)*I/2) + 2",
+      "raw_gcd": "1",
+      "valid_gcd": "1",
+      "valid_degree": 0
+    },
+    {
+      "h": 11,
+      "target": "D",
+      "P": "X**7*(3/2 - sqrt(15)*I/2) + X**6*(-1 - sqrt(15)*I) + X**5*(-9/2 - sqrt(15)*I/2) - 3*X**4 - 3*X**3 + X**2*(-9/2 + sqrt(15)*I/2) + X*(-1 + sqrt(15)*I) + 3/2 + sqrt(15)*I/2",
+      "raw_gcd": "1",
+      "valid_gcd": "1",
+      "valid_degree": 0
+    },
+    {
+      "h": 11,
+      "target": "-D",
+      "P": "X**7*(3/2 - sqrt(15)*I/2) + X**6*(-1 - sqrt(15)*I) + X**5*(-9/2 - sqrt(15)*I/2) - 3*X**4 - 3*X**3 + X**2*(-9/2 + sqrt(15)*I/2) + X*(-1 + sqrt(15)*I) + 3/2 + sqrt(15)*I/2",
+      "raw_gcd": "1",
+      "valid_gcd": "1",
+      "valid_degree": 0
+    },
+    {
+      "h": 12,
+      "target": "D",
+      "P": "2*X**7 + X**6*(3/2 - sqrt(15)*I/2) - sqrt(15)*I*X**5 + X**4*(-3/2 - sqrt(15)*I/2) + X**3*(-3/2 - sqrt(15)*I/2) + X**2*(-5/2 - sqrt(15)*I/2) - 3*X - 3/2 + sqrt(15)*I/2",
+      "raw_gcd": "1",
+      "valid_gcd": "1",
+      "valid_degree": 0
+    },
+    {
+      "h": 12,
+      "target": "-D",
+      "P": "2*X**7 + X**6*(3/2 - sqrt(15)*I/2) - sqrt(15)*I*X**5 + X**4*(-3/2 - sqrt(15)*I/2) + X**3*(-3/2 - sqrt(15)*I/2) + X**2*(-5/2 - sqrt(15)*I/2) - 3*X - 3/2 + sqrt(15)*I/2",
+      "raw_gcd": "1",
+      "valid_gcd": "1",
+      "valid_degree": 0
+    },
+    {
+      "h": 13,
+      "target": "D",
+      "P": "X**7*(1/2 + sqrt(15)*I/2) + 3*X**6 + X**5*(5/2 - sqrt(15)*I/2) + X**4*(1/2 - sqrt(15)*I/2) + X**3*(3/2 - sqrt(15)*I/2) - sqrt(15)*I*X**2 + X*(-5/2 - sqrt(15)*I/2) - 2",
+      "raw_gcd": "1",
+      "valid_gcd": "1",
+      "valid_degree": 0
+    },
+    {
+      "h": 13,
+      "target": "-D",
+      "P": "X**7*(1/2 + sqrt(15)*I/2) + 3*X**6 + X**5*(5/2 - sqrt(15)*I/2) + X**4*(1/2 - sqrt(15)*I/2) + X**3*(3/2 - sqrt(15)*I/2) - sqrt(15)*I*X**2 + X*(-5/2 - sqrt(15)*I/2) - 2",
+      "raw_gcd": "1",
+      "valid_gcd": "1",
+      "valid_degree": 0
+    },
+    {
+      "h": 14,
+      "target": "D",
+      "P": "-X**7 + X**6*(-1/2 + sqrt(15)*I/2) + X**5*(3/2 + sqrt(15)*I/2) + 2*X**4 + X**3 + 2*X**2 + X*(3/2 - sqrt(15)*I/2) - 1/2 - sqrt(15)*I/2",
+      "raw_gcd": "1",
+      "valid_gcd": "1",
+      "valid_degree": 0
+    },
+    {
+      "h": 14,
+      "target": "-D",
+      "P": "-X**7 + X**6*(-1/2 + sqrt(15)*I/2) + X**5*(3/2 + sqrt(15)*I/2) + 2*X**4 + X**3 + 2*X**2 + X*(3/2 - sqrt(15)*I/2) - 1/2 - sqrt(15)*I/2",
+      "raw_gcd": "1",
+      "valid_gcd": "1",
+      "valid_degree": 0
+    }
+  ],
+  "elapsed": 2.509667158126831
+}

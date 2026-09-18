@@ -1,0 +1,112 @@
+{
+  "q": 11,
+  "period_pairs": [
+    [
+      -1,
+      0
+    ],
+    [
+      -1,
+      -1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      -1,
+      0
+    ],
+    [
+      0,
+      -1
+    ],
+    [
+      1,
+      0
+    ]
+  ],
+  "rows": [
+    {
+      "h": 6,
+      "target": "QR",
+      "P": "X**5*(1/2 + sqrt(11)*I/2) + X**4*(3/2 - sqrt(11)*I/2) - 2*X**3 + X**2*(3/2 + sqrt(11)*I/2) + X*(1/2 - sqrt(11)*I/2) - 1",
+      "raw_gcd": "T - 1",
+      "valid_gcd": "1",
+      "valid_degree": 0
+    },
+    {
+      "h": 6,
+      "target": "NQR",
+      "P": "X**5*(1/2 + sqrt(11)*I/2) + X**4*(3/2 - sqrt(11)*I/2) - 2*X**3 + X**2*(3/2 + sqrt(11)*I/2) + X*(1/2 - sqrt(11)*I/2) - 1",
+      "raw_gcd": "1",
+      "valid_gcd": "1",
+      "valid_degree": 0
+    },
+    {
+      "h": 7,
+      "target": "QR",
+      "P": "-X**5 + X**4*(3/2 + sqrt(11)*I/2) + X**3*(1/2 - sqrt(11)*I/2) + X**2*(-3/2 + sqrt(11)*I/2) + 2*X - 1/2 - sqrt(11)*I/2",
+      "raw_gcd": "T - 1",
+      "valid_gcd": "1",
+      "valid_degree": 0
+    },
+    {
+      "h": 7,
+      "target": "NQR",
+      "P": "-X**5 + X**4*(3/2 + sqrt(11)*I/2) + X**3*(1/2 - sqrt(11)*I/2) + X**2*(-3/2 + sqrt(11)*I/2) + 2*X - 1/2 - sqrt(11)*I/2",
+      "raw_gcd": "1",
+      "valid_gcd": "1",
+      "valid_degree": 0
+    },
+    {
+      "h": 8,
+      "target": "QR",
+      "P": "X**5 - X**4 + X**3*(1/2 + sqrt(11)*I/2) + X**2*(1/2 - sqrt(11)*I/2) - X + 1",
+      "raw_gcd": "T - 1",
+      "valid_gcd": "1",
+      "valid_degree": 0
+    },
+    {
+      "h": 8,
+      "target": "NQR",
+      "P": "X**5 - X**4 + X**3*(1/2 + sqrt(11)*I/2) + X**2*(1/2 - sqrt(11)*I/2) - X + 1",
+      "raw_gcd": "1",
+      "valid_gcd": "1",
+      "valid_degree": 0
+    },
+    {
+      "h": 9,
+      "target": "QR",
+      "P": "X**5*(-1/2 + sqrt(11)*I/2) + 2*X**4 + X**3*(-3/2 - sqrt(11)*I/2) + X**2*(1/2 + sqrt(11)*I/2) + X*(3/2 - sqrt(11)*I/2) - 1",
+      "raw_gcd": "T - 1",
+      "valid_gcd": "1",
+      "valid_degree": 0
+    },
+    {
+      "h": 9,
+      "target": "NQR",
+      "P": "X**5*(-1/2 + sqrt(11)*I/2) + 2*X**4 + X**3*(-3/2 - sqrt(11)*I/2) + X**2*(1/2 + sqrt(11)*I/2) + X*(3/2 - sqrt(11)*I/2) - 1",
+      "raw_gcd": "1",
+      "valid_gcd": "1",
+      "valid_degree": 0
+    },
+    {
+      "h": 10,
+      "target": "QR",
+      "P": "-X**5 + X**4*(1/2 + sqrt(11)*I/2) + X**3*(3/2 - sqrt(11)*I/2) - 2*X**2 + X*(3/2 + sqrt(11)*I/2) + 1/2 - sqrt(11)*I/2",
+      "raw_gcd": "T - 1",
+      "valid_gcd": "1",
+      "valid_degree": 0
+    },
+    {
+      "h": 10,
+      "target": "NQR",
+      "P": "-X**5 + X**4*(1/2 + sqrt(11)*I/2) + X**3*(3/2 - sqrt(11)*I/2) - 2*X**2 + X*(3/2 + sqrt(11)*I/2) + 1/2 - sqrt(11)*I/2",
+      "raw_gcd": "1",
+      "valid_gcd": "1",
+      "valid_degree": 0
+    }
+  ],
+  "elapsed": 1.0942559242248535
+}

@@ -1,0 +1,1 @@
+{"q":9,"r":4,"base":5,"profiles":[{"key":162,"target_key":306,"C_masks":[23,29]},{"key":182,"target_key":286,"C_masks":[27]},{"key":186,"target_key":282,"C_masks":[45]},{"key":282,"target_key":186,"C_masks":[39,57]},{"key":286,"target_key":182,"C_masks":[43,53]},{"key":306,"target_key":162,"C_masks":[83]}],"allowed_first_support_masks":[47,55,59,61,79,87,93,107,117]}

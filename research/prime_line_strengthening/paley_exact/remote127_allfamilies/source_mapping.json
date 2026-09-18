@@ -1,0 +1,38 @@
+[
+  {
+    "source_class": 0,
+    "target_index_of_representative": 0,
+    "rotation_classes": 18,
+    "name": "other difference-set family"
+  },
+  {
+    "source_class": 1,
+    "target_index_of_representative": 1,
+    "rotation_classes": 18,
+    "name": "other difference-set family"
+  },
+  {
+    "source_class": 2,
+    "target_index_of_representative": 2,
+    "rotation_classes": 6,
+    "name": "other difference-set family"
+  },
+  {
+    "source_class": 3,
+    "target_index_of_representative": 3,
+    "rotation_classes": 18,
+    "name": "other difference-set family"
+  },
+  {
+    "source_class": 4,
+    "target_index_of_representative": 4,
+    "rotation_classes": 18,
+    "name": "native Singer"
+  },
+  {
+    "source_class": 5,
+    "target_index_of_representative": 36,
+    "rotation_classes": 2,
+    "name": "Paley QR"
+  }
+]

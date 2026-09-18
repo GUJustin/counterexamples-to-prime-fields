@@ -1,0 +1,45 @@
+{
+  "n": 262144,
+  "w": 131071,
+  "m": 118,
+  "s": 36,
+  "old_L": 176421,
+  "rows": [
+    {
+      "reserve": 0,
+      "cutoff": 21390450,
+      "slope_in_L": 3696226,
+      "gap_at_old_L": 782513,
+      "minimum_L_in_affine_regime": 176421,
+      "L_increase": 0,
+      "gap_at_minimum_L": 782513
+    },
+    {
+      "reserve": 1,
+      "cutoff": 21390449,
+      "slope_in_L": 3690824,
+      "gap_at_old_L": -951762359,
+      "minimum_L_in_affine_regime": 176679,
+      "L_increase": 258,
+      "gap_at_minimum_L": 470233
+    },
+    {
+      "reserve": 2,
+      "cutoff": 21390448,
+      "slope_in_L": 3685422,
+      "gap_at_old_L": -1904307231,
+      "minimum_L_in_affine_regime": 176938,
+      "L_increase": 517,
+      "gap_at_minimum_L": 1055943
+    },
+    {
+      "reserve": 262144,
+      "cutoff": 21128306,
+      "slope_in_L": -1399772863,
+      "gap_at_old_L": -247477273732528,
+      "minimum_L_in_affine_regime": null,
+      "L_increase": null,
+      "gap_at_minimum_L": null
+    }
+  ]
+}

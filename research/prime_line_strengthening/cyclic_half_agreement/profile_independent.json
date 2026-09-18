@@ -1,0 +1,44 @@
+[
+  {
+    "q": 7,
+    "all_retained_masks_validated": true,
+    "compatible_first_supports": 2,
+    "ordered_profile_pairs": 4,
+    "independent_exhaustive_census": true
+  },
+  {
+    "q": 11,
+    "all_retained_masks_validated": true,
+    "compatible_first_supports": 17,
+    "ordered_profile_pairs": 24,
+    "independent_exhaustive_census": true
+  },
+  {
+    "q": 13,
+    "all_retained_masks_validated": true,
+    "compatible_first_supports": 18,
+    "ordered_profile_pairs": 42,
+    "independent_exhaustive_census": true
+  },
+  {
+    "q": 17,
+    "all_retained_masks_validated": true,
+    "compatible_first_supports": 146,
+    "ordered_profile_pairs": 322,
+    "independent_exhaustive_census": false
+  },
+  {
+    "q": 19,
+    "all_retained_masks_validated": true,
+    "compatible_first_supports": 209,
+    "ordered_profile_pairs": 448,
+    "independent_exhaustive_census": false
+  },
+  {
+    "q": 23,
+    "all_retained_masks_validated": true,
+    "compatible_first_supports": 1113,
+    "ordered_profile_pairs": 2336,
+    "independent_exhaustive_census": false
+  }
+]

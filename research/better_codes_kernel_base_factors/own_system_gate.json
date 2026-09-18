@@ -1,0 +1,33 @@
+{
+  "n": 262144,
+  "w": 131071,
+  "y": 55,
+  "r": 12,
+  "t": 3261,
+  "weight": 7208905,
+  "source_dimension": 6802316684345,
+  "largest_uniform_contact_excluded": 39,
+  "first_uniform_contact_not_excluded": 40,
+  "rows": [
+    {
+      "uniform_contact": 10,
+      "local_rank_bound": 1447845,
+      "own_kernel_dimension_lower": 6422772804665
+    },
+    {
+      "uniform_contact": 39,
+      "local_rank_bound": 25140778,
+      "own_kernel_dimension_lower": 211812576313
+    },
+    {
+      "uniform_contact": 40,
+      "local_rank_bound": 26572364,
+      "own_kernel_dimension_lower": -163469104071
+    },
+    {
+      "uniform_contact": 43,
+      "local_rank_bound": 31118386,
+      "own_kernel_dimension_lower": -1355181495239
+    }
+  ]
+}

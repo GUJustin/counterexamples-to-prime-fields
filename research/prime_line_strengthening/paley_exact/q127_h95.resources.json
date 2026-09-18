@@ -1,0 +1,16 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/prime_line_strengthening/paley_exact/singer127.py",
+    "--h",
+    "95",
+    "--output",
+    "research/prime_line_strengthening/paley_exact/q127_h95.json"
+  ],
+  "reason": "time_limit",
+  "returncode": -15,
+  "seconds": 60.19012099999236,
+  "peak_rss_kib": 121152,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

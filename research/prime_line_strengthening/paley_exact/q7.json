@@ -1,0 +1,72 @@
+{
+  "q": 7,
+  "period_pairs": [
+    [
+      -1,
+      0
+    ],
+    [
+      -1,
+      -1
+    ],
+    [
+      0,
+      -1
+    ],
+    [
+      1,
+      0
+    ]
+  ],
+  "rows": [
+    {
+      "h": 4,
+      "target": "QR",
+      "P": "X**3*(1/2 + sqrt(7)*I/2) + X**2 + X*(1/2 - sqrt(7)*I/2) - 1",
+      "raw_gcd": "T - 1",
+      "valid_gcd": "1",
+      "valid_degree": 0
+    },
+    {
+      "h": 4,
+      "target": "NQR",
+      "P": "X**3*(1/2 + sqrt(7)*I/2) + X**2 + X*(1/2 - sqrt(7)*I/2) - 1",
+      "raw_gcd": "1",
+      "valid_gcd": "1",
+      "valid_degree": 0
+    },
+    {
+      "h": 5,
+      "target": "QR",
+      "P": "X**3*(-1/2 + sqrt(7)*I/2) + X**2 + X - 1/2 - sqrt(7)*I/2",
+      "raw_gcd": "T**2 + T*(-1/4 - sqrt(7)*I/4) - 3/4 + sqrt(7)*I/4",
+      "valid_gcd": "T + 3/4 - sqrt(7)*I/4",
+      "valid_degree": 1
+    },
+    {
+      "h": 5,
+      "target": "NQR",
+      "P": "X**3*(-1/2 + sqrt(7)*I/2) + X**2 + X - 1/2 - sqrt(7)*I/2",
+      "raw_gcd": "1",
+      "valid_gcd": "1",
+      "valid_degree": 0
+    },
+    {
+      "h": 6,
+      "target": "QR",
+      "P": "-X**3 + X**2*(1/2 + sqrt(7)*I/2) + X + 1/2 - sqrt(7)*I/2",
+      "raw_gcd": "T - 1",
+      "valid_gcd": "1",
+      "valid_degree": 0
+    },
+    {
+      "h": 6,
+      "target": "NQR",
+      "P": "-X**3 + X**2*(1/2 + sqrt(7)*I/2) + X + 1/2 - sqrt(7)*I/2",
+      "raw_gcd": "1",
+      "valid_gcd": "1",
+      "valid_degree": 0
+    }
+  ],
+  "elapsed": 0.36194896697998047
+}

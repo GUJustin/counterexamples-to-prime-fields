@@ -1,0 +1,7 @@
+{"q":7,"canonical_subsets":5,"distinct_profiles":4,"compatible_profiles":1,"compatible_first_supports":2,"ordered_canonical_profile_pairs":4,"seconds":0.000169042}
+{"q":11,"canonical_subsets":42,"distinct_profiles":26,"compatible_profiles":11,"compatible_first_supports":17,"ordered_canonical_profile_pairs":24,"seconds":5.5167e-05}
+{"q":13,"canonical_subsets":132,"distinct_profiles":74,"compatible_profiles":8,"compatible_first_supports":18,"ordered_canonical_profile_pairs":42,"seconds":5.6125e-05}
+{"q":17,"canonical_subsets":1430,"distinct_profiles":698,"compatible_profiles":70,"compatible_first_supports":146,"ordered_canonical_profile_pairs":322,"seconds":0.000336}
+{"q":19,"canonical_subsets":4862,"distinct_profiles":2338,"compatible_profiles":97,"compatible_first_supports":209,"ordered_canonical_profile_pairs":448,"seconds":0.001134}
+{"q":23,"canonical_subsets":58786,"distinct_profiles":28216,"compatible_profiles":529,"compatible_first_supports":1113,"ordered_canonical_profile_pairs":2336,"seconds":0.0194375}
+{"command": ["/tmp/profile_pruning", "research/prime_line_strengthening/cyclic_half_agreement"], "reason": "completed", "returncode": 0, "seconds": 0.540843042, "peak_rss_kib": 32, "rss_limit_mib": 384, "time_limit_seconds": 60}

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/prime_line_strengthening/cyclic_half_agreement/doubling_profiles127.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.539859292,
+  "peak_rss_kib": 6432,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

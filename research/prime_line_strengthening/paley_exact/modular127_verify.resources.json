@@ -1,0 +1,13 @@
+{
+  "command": [
+    "research/prime_line_strengthening/paley_exact/verify_modular",
+    "research/prime_line_strengthening/paley_exact/modular127_verify.in",
+    "research/prime_line_strengthening/paley_exact/modular127_verify.out"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.097041041997727,
+  "peak_rss_kib": 7856,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

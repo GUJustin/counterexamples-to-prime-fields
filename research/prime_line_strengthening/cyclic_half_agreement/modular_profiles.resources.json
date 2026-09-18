@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/tmp/modular_profiles",
+    "research/prime_line_strengthening/cyclic_half_agreement/modular_profiles.in",
+    "research/prime_line_strengthening/cyclic_half_agreement/modular_profiles.jsonl"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5356427500000001,
+  "peak_rss_kib": 32,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

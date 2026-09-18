@@ -81,3 +81,23 @@ batchcompleted: q7smoke positive; no new hits; sixq23jobs timedout and must
 NOT be called exhaustive. Exact q11,19,23Paley andq15Singer algebraicgcd
 checks independently exclude those specified ansatzes. More general cyclic
 supports and other mechanisms remain open.
+
+
+September18 04:40UTC update (supersedes rental/open-cyclic statements above):
+The current PDF has207pages and is published at commit7620d7cb74deb4edd6df9ab4bdf2d86e60af5440.
+Rental51382288 is now bounded to TWO hours, destruction deadline1789709927.151361
+(05:38UTC), labelproximity-cyclic-20260918-bounded2h, samewatchdog.
+Batches002/003/004 downloaded and source/manifest/completeness-checked:
+152/1208/1728jobs, no new hits beyond q5/q7 regression families.
+Exact independently verified modular certificates exclude all35028 q127
+doubling-invariant compatible support/twist cases over characteristiczero.
+New complete arbitrary-support certificates cover every oddq9through23;
+independent audit of that new small-q batch is pending.
+The positive search has pivoted to cubic-cover fiber-breaking one-pole
+augmentation of the seven-bank (target8words,n44,k11,A22), running Sage
+on the rental, and a different four-orbit cyclic q8 mechanism (n32,k8,A16).
+No eight-word positive hit yet. The own-system rigidity lemma proves that
+an irreducible universal full-kernel factor has a one-dimensional own
+interpolation system. Its binding-shape Hilbert gate forces somecontact>=40,
+but does not close the better.codes ledger. No benchmark improvement.
+Continue work until at least14:00UTC /10a.m. Eastern.

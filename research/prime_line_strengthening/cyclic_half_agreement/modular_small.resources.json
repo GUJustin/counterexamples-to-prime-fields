@@ -1,0 +1,21 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/prime_line_strengthening/cyclic_half_agreement/run_modular_general.py",
+    "5",
+    "7",
+    "9",
+    "15",
+    "21",
+    "13",
+    "17",
+    "19",
+    "23"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.542471791,
+  "peak_rss_kib": 2400,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

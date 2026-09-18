@@ -1,0 +1,17 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/prime_line_strengthening/paley_exact/singer31.py",
+    "--h",
+    "16,17,18,19,20,21,22,23,24,25,26,27,28,29,30",
+    "--mixed",
+    "--output",
+    "research/prime_line_strengthening/paley_exact/q31_mixed_singer.json"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.6534191670070868,
+  "peak_rss_kib": 63840,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

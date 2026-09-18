@@ -64,6 +64,8 @@ The approved bounded exact test evaluated only D,D-1,D-2, with all other paramet
 
 Hence the current minimal-L count does not certify even a one-unit reserve. Negative values are failures of this lower bound, NOT proofs that the interior kernel is zero. The test ran under the384MiB/60s watchdog in0.56seconds; exact data and code are `interior_gate.json` and `interior_gate.py`. No parameter grid was run.
 
+Subsequent exact affine-in-L analysis repairs the two-unit reserve at L176938, only517 above the minimal cap. See `LOW_COST_OPERATOR_REFINEMENT.md` and `interior_L_reserve.json`. For directions of degree at most w+1, this forces every sufficiently heavy universal factor to have t=y, removing the binding positive-z carrier in that restricted line class. The unrestricted direction case remains open; the general Hermite--Padé operator still requires too much reserve for this shape.
+
 ## Scope and next missing facts
 
 This is a genuine operator restriction beyond scalar contact budget. In particular the old word-Z binding model is not invariant under delta_1 and so cannot be universal; indeed it is already excluded more directly by the valid source (Y-Z)^118. The shifted degree-w+1 model is likewise visibly not universal because its corresponding graph power is a source. Removing these illustrative models is not benchmark progress.

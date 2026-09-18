@@ -1,0 +1,18 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/prime_line_strengthening/paley_exact/prepare_modular_verification.py",
+    "--profiles",
+    "research/prime_line_strengthening/cyclic_half_agreement/doubling_profiles127.json",
+    "--certificates",
+    "research/prime_line_strengthening/cyclic_half_agreement/modular_profiles.jsonl",
+    "--output",
+    "research/prime_line_strengthening/paley_exact/modular127_verify.in"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5614091250026831,
+  "peak_rss_kib": 9824,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}
