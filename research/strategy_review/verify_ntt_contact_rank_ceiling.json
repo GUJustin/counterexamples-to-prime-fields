@@ -1,0 +1,13 @@
+{
+  "local_rank": 182580,
+  "full_local_rows": 13125118926520320,
+  "full_columns": 13123663101701085,
+  "columns_minus_rows": -1455824819235,
+  "z_free_columns": 47859086760,
+  "min_character_columns": 182472,
+  "max_character_columns": 182687,
+  "characters_above_rank_ceiling": 98642,
+  "forced_z_free_nullity": 2568270,
+  "forced_full_nullity": 704011604130,
+  "scope": "special monomial word only; no uniform saving"
+}
