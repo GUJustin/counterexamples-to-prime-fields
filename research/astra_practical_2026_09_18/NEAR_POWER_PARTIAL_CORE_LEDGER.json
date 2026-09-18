@@ -1,0 +1,80 @@
+{
+  "scope": "Optimistic full degree-size fibers; product tags in mu512; no existence claim. tuple=count,h,c,agreement; core0 uses all packets, core>0 reserves one.",
+  "rows": [
+    {
+      "degree": 512,
+      "full_fiber_pool_upper": 512,
+      "best_optimistic_mu512_guarantee": null
+    },
+    {
+      "degree": 513,
+      "full_fiber_pool_upper": 511,
+      "best_optimistic_mu512_guarantee": [
+        1875165481005117658,
+        272,
+        256,
+        139792
+      ]
+    },
+    {
+      "degree": 514,
+      "full_fiber_pool_upper": 510,
+      "best_optimistic_mu512_guarantee": [
+        1875165481005117658,
+        272,
+        0,
+        139808
+      ]
+    },
+    {
+      "degree": 515,
+      "full_fiber_pool_upper": 509,
+      "best_optimistic_mu512_guarantee": [
+        467624764352815196,
+        271,
+        261,
+        139826
+      ]
+    },
+    {
+      "degree": 516,
+      "full_fiber_pool_upper": 508,
+      "best_optimistic_mu512_guarantee": [
+        467624764352815196,
+        271,
+        0,
+        139836
+      ]
+    },
+    {
+      "degree": 517,
+      "full_fiber_pool_upper": 507,
+      "best_optimistic_mu512_guarantee": [
+        116612060057184697,
+        270,
+        270,
+        139860
+      ]
+    },
+    {
+      "degree": 518,
+      "full_fiber_pool_upper": 506,
+      "best_optimistic_mu512_guarantee": [
+        116612060057184697,
+        270,
+        0,
+        139860
+      ]
+    },
+    {
+      "degree": 519,
+      "full_fiber_pool_upper": 505,
+      "best_optimistic_mu512_guarantee": [
+        29078857538620941,
+        269,
+        283,
+        139894
+      ]
+    }
+  ]
+}

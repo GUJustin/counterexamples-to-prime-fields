@@ -1,0 +1,96 @@
+{
+  "scope": "Conditional arithmetic only. No map with the required fibers has been constructed.",
+  "target_labels": 274980728111395088,
+  "target_agreement": 139782,
+  "rows": [
+    {
+      "map_degree": 512,
+      "core_degree": 511,
+      "heads": 14,
+      "selected_fibers": 272,
+      "total_full_fibers": 512,
+      "agreement": 139775,
+      "witness_degree": 131071,
+      "guarantee_if_product_range_512": 4009245024241067461,
+      "unrestricted_product_guarantee": 963405103875
+    },
+    {
+      "map_degree": 513,
+      "core_degree": 512,
+      "heads": 14,
+      "selected_fibers": 271,
+      "total_full_fibers": 511,
+      "agreement": 139535,
+      "witness_degree": 130814,
+      "guarantee_if_product_range_512": 2134079543235949803,
+      "unrestricted_product_guarantee": 512810544529
+    },
+    {
+      "map_degree": 514,
+      "core_degree": 513,
+      "heads": 14,
+      "selected_fibers": 271,
+      "total_full_fibers": 510,
+      "agreement": 139807,
+      "witness_degree": 131069,
+      "guarantee_if_product_range_512": 1000088256536062751,
+      "unrestricted_product_guarantee": 240317098319
+    },
+    {
+      "map_degree": 515,
+      "core_degree": 514,
+      "heads": 14,
+      "selected_fibers": 270,
+      "total_full_fibers": 509,
+      "agreement": 139564,
+      "witness_degree": 130809,
+      "guarantee_if_product_range_512": 532463492183247555,
+      "unrestricted_product_guarantee": 127948789085
+    },
+    {
+      "map_degree": 516,
+      "core_degree": 515,
+      "heads": 14,
+      "selected_fibers": 270,
+      "total_full_fibers": 508,
+      "agreement": 139835,
+      "witness_degree": 131063,
+      "guarantee_if_product_range_512": 249461242400812831,
+      "unrestricted_product_guarantee": 59944511422
+    },
+    {
+      "map_degree": 517,
+      "core_degree": 516,
+      "heads": 14,
+      "selected_fibers": 269,
+      "total_full_fibers": 507,
+      "agreement": 139589,
+      "witness_degree": 130800,
+      "guarantee_if_product_range_512": 132849182343628135,
+      "unrestricted_product_guarantee": 31923112592
+    },
+    {
+      "map_degree": 518,
+      "core_degree": 517,
+      "heads": 14,
+      "selected_fibers": 269,
+      "total_full_fibers": 506,
+      "agreement": 139859,
+      "witness_degree": 131053,
+      "guarantee_if_product_range_512": 62223826512727012,
+      "unrestricted_product_guarantee": 14952129811
+    },
+    {
+      "map_degree": 519,
+      "core_degree": 518,
+      "heads": 14,
+      "selected_fibers": 268,
+      "total_full_fibers": 505,
+      "agreement": 139610,
+      "witness_degree": 130787,
+      "guarantee_if_product_range_512": 33144968974106072,
+      "unrestricted_product_guarantee": 7964599840
+    }
+  ],
+  "degree514_pole_injection_check": true
+}
