@@ -1,0 +1,283 @@
+\paragraph{Weighted monic-cubic first integrals.}
+The next result treats polynomial sections of a cubic first integral
+whose denominator depends only on the evaluation coordinate.  It bounds
+lists for arbitrary received words, including words supported on its
+critical fibers.
+
+\begin{theorem}\label{thm:weighted-cubic-first-integral-list}
+Let $\mathbb K$ have characteristic zero or characteristic
+$p>\max\{3,2D\}$, where $0\le D<n$.  Let $0\ne H\in\mathbb K[X]$ and
+\[
+ F(X,u)=u^3+a_2(X)u^2+a_1(X)u+a_0(X),
+ \qquad \deg a_i\le(3-i)D\quad(0\le i\le2).
+\]
+Consider the section family
+\[
+ \mathcal B=\{P\in\mathbb K[X]:\deg P\le D,\quad
+                   F(X,P)=cH\text{ for some }c\in\mathbb K\}.
+\]
+On any $n$ distinct evaluation coordinates, every received word has at most
+\[
+ \left\lfloor9+\frac{3+108D/n}{\eta}\right\rfloor
+\]
+members of $\mathcal B$ agreeing on at least $D+\eta n$ coordinates,
+for every $\eta>0$.  Coordinates and received symbols may lie in an
+extension field.
+\end{theorem}
+
+This concerns the displayed first-integral family, not arbitrary cubic
+differential equations or all Reed--Solomon codewords.  In particular,
+the characteristic and weighted coefficient hypotheses must both be
+checked; this theorem does not cover the Dickson differential-equation
+bank merely because its equation has cubic jet degree.
+
+\begin{proof}
+Extend constants to an algebraically closed field $k$ containing all
+coordinates and received symbols, and put $K=k(X)$.  Each section
+has a unique label $c$, and each label has at most three sections.
+The case $D=0$ follows because distinct constants have disjoint agreement
+sets.  Assume $D\ge1$.  If no nonzero label occurs, there are at most
+three sections.  Otherwise, writing $N=\deg H$, the weighted degree
+caps imply $N\le3D$.
+
+\emph{The critical scheme.}
+Set
+\[
+ B=HF_X-H'F,\qquad I=(F_u,B)\subset k[X,u].
+\]
+First suppose $I$ is zero-dimensional, allowing the unit ideal, and
+write $\ell=\dim_k k[X,u]/I$.  The bidegrees in $(X,u)$ are at most
+$(2D,2)$ and $(N+3D-1,3)$, respectively.  Homogenize each nonzero
+generator in $\mathbb P^1\times\mathbb P^1$ using its own actual
+bidegrees.  Neither closure contains either boundary divisor: such a
+component would mean that the corresponding leading coefficient
+polynomial was identically zero.  A common curve would therefore meet
+the affine chart, contradicting zero dimensionality.  The intersection
+product consequently bounds the affine scheme length by
+\begin{equation}\label{eq:cubic-critical-length}
+ \ell\le (2D)3+2(N+3D-1)=2N+12D-2.
+\end{equation}
+The unit-ideal case is immediate.  All arguments use the original ideal
+$I$, without removing common factors from its generators.
+
+For a section $P$ put $A_P=F_u(X,P)$ and $b_P=3P+a_2$.  Differentiating
+$F(X,P)=cH$ gives
+\[
+ B(X,P)=-H A_P P',\qquad
+ k[X,u]/(I,u-P)\simeq k[X]/(A_P).
+\]
+In particular $A_P\ne0$, since otherwise the entire section graph
+would lie in the critical scheme.  At every $x$, the order of $A_P$
+is at most the local length of this scheme at $(x,P(x))$.
+
+\emph{Two valuation estimates.}
+Taylor expansion, with no division by factorials, reads
+\[
+ F(X,P+Z)=cH+A_PZ+b_PZ^2+Z^3.
+\]
+Choose roots $\delta$ of $A_P+2b_P\delta+3\delta^2=0$.  They give
+the two fixed critical roots $P+\delta$ of $F_u$, and
+\begin{equation}\label{eq:cubic-critical-correction}
+ F(X,P+\delta)-cH=-b_P\delta^2-2\delta^3.
+\end{equation}
+All valuations below are taken in one fixed valued algebraic closure
+at the specified place.  Only quadratic valuation comparisons are
+used; no positive-characteristic Puiseux expansion is needed.
+
+At infinity, use degree equal to minus the valuation and put
+$d=\deg A_P$, $e=\deg b_P$, with $e=-\infty$ when $b_P=0$.
+If $2e>d$, one can choose $\deg\delta=d-e$, and the right side of
+\eqref{eq:cubic-critical-correction} has degree at most
+$2d-e<3d/2$.  If $2e\le d$, both roots have degree at most $d/2$,
+so the correction has degree at most $3d/2$.  Thus, when $d<2N/3$,
+one of the two fixed critical values $F(X,r)/H$ is regular at infinity
+with residue $c$.  There are at most two such residues.  Apart from
+at most two labels, therefore,
+\begin{equation}\label{eq:cubic-infinity-cost}
+ \deg A_P\ge\lceil2N/3\rceil.
+\end{equation}
+
+At a root $x$ of $H$ of multiplicity $m$, put
+$d=\operatorname{ord}_x A_P$ and $e=\operatorname{ord}_x b_P$.
+If $2e<d$, the root of larger order has order $d-e$, and the correction
+in \eqref{eq:cubic-critical-correction} has order at least
+$2d-e>3d/2$.  If $2e\ge d$, choose a root of order at least $d/2$;
+the correction has order at least $3d/2$.  Hence
+$d>\lfloor2m/3\rfloor$ forces a critical value $F(X,r)/H$ to have
+residue $c$ at $x$.  For each fixed $x$, this can occur for at most
+two labels.  Fractional valuations and repeated critical roots cause
+no change to either estimate.
+
+\emph{Charging multiplicities at repeated roots of $H$.}
+Let $n_0$ be the number of distinct roots of $H$, and suppose $n_0>D$.
+Choose one section for each nonzero label not excluded by
+\eqref{eq:cubic-infinity-cost}.  Charge it
+\[
+ C(P)=\sum_{H(x)\ne0}\operatorname{ord}_x A_P+
+ \sum_{H(x)=0}\max\{0,\operatorname{ord}_x A_P
+                     -\lfloor2\operatorname{ord}_x H/3\rfloor\}.
+\]
+Off $H=0$, a critical point fixes its label by $c=F/H$, so different
+labels have disjoint charged support.  Above each root of $H$, only
+two labels have positive excess.  The local quotient computation
+therefore gives $\sum_P C(P)\le2\ell$, even when both sections pass
+through the same critical point.  Moreover,
+\begin{align*}
+ C(P)&\ge\lceil2N/3\rceil
+             -\sum_{H(x)=0}\lfloor2\operatorname{ord}_x H/3\rfloor\\
+     &\ge n_0-\lfloor N/3\rfloor\ge n_0-D>0,
+\end{align*}
+using $\lfloor2m/3\rfloor\le m-1$ for $m\ge1$.
+After adding the two exceptional labels and the zero label, and then
+multiplying the number of labels by three, we obtain the total-bank bound
+\begin{equation}\label{eq:cubic-root-bank-bound}
+ |\mathcal B|\le
+ 9+3\left\lfloor\frac{4N+24D-4}{n_0-\lfloor N/3\rfloor}\right\rfloor
+ \le9+\frac{108D}{n_0-D}.
+\end{equation}
+
+\emph{Positive-dimensional critical loci.}
+We next treat the case excluded above.  Since $F_u$ has constant leading
+$u$-coefficient $3$, a positive-dimensional common component cannot be
+vertical.  A root $r$ of such a component satisfies
+\[
+ F_u(X,r)=0,\qquad (F(X,r)/H)'=0.
+\]
+We use the elementary height fact that a rational function of height
+less than $p$ with zero derivative is constant: it belongs to $K^p$,
+and a nonconstant $p$-th power has height at least $p$.
+We also need a distinct-root budget.  If $A/H$ is a nonconstant
+$p$-th power with $\deg A,\deg H\le3D$, write
+\[
+ A=G a^p,\qquad H=G b^p,\qquad \gcd(a,b)=1,
+ \qquad M=\max\{\deg a,\deg b\}\ge1.
+\]
+Then $\deg G+pM\le3D$, and the number $n_0$ of distinct roots of $H$
+satisfies
+\[
+ n_0\le\deg G+\deg b\le3D-(p-1)M\le3D-p+1\le D.
+\]
+In this case a received symbol off $H=0$ fixes a label and matches
+at most three candidates.  A list of $L$ candidates with at least
+$a\ge D+\eta n$ agreements thus satisfies $La\le LD+3n$, and hence
+$L\le3n/(a-D)\le3/\eta$.  We may finish immediately whenever
+such a nonconstant Frobenius ratio occurs.
+
+If $r\in K$, monic integrality makes $r$ polynomial, and the weighted
+caps give $\deg r\le D$, so $\deg F(X,r)\le3D$.  In positive
+characteristic a nonconstant ratio $F(X,r)/H$ is covered by the
+distinct-root budget just proved.  Otherwise the ratio is constant,
+say $c_0$, as it always is in characteristic zero.
+The repeated root of the cubic $F-c_0H$ then gives
+\begin{equation}\label{eq:cubic-repeated-fiber}
+ F-c_0H=(u-R)^2(u-S),\qquad R,S\in k[X],\quad
+ \deg R,\deg S\le D.
+\end{equation}
+
+For completeness, an irreducible quadratic critical component cannot
+produce an additional large family under our sharper characteristic
+bound.  Depress the cubic, writing
+\[
+ F=z^3-3gz+b,\qquad z=u+a_2/3,\qquad
+ \deg g\le2D,\quad\deg b\le3D.
+\]
+Here $g$ is a nonsquare in $K$.  Both conjugate critical values have
+zero derivative.  Their trace gives $(b/H)'=0$.  A nonconstant ratio
+in positive characteristic is again covered by the distinct-root
+budget, since $\deg b\le3D$.  In all remaining cases $b=\beta H$
+for a constant $\beta$.
+Their difference gives $3g'H-2gH'=0$.
+A section with $\lambda=c-\beta\ne0$ would satisfy
+$z(z^2-3g)=\lambda H$.  Differentiating and eliminating $H'$ yields
+\[
+ (z^2-g)(2gz'-g'z)=0.
+\]
+The first factor is nonzero because $g$ is a nonsquare, and $z\ne0$.
+Thus $(g/z^2)'=0$.  Its height is at most $2D<p$, so $g/z^2$ is
+constant, contradicting nonsquareness over the algebraically closed
+constant field.  All sections therefore have label $\beta$, giving
+at most three.  The same argument in characteristic zero uses the
+usual constant field of $K$ instead of a height bound.
+
+It remains to analyze \eqref{eq:cubic-repeated-fiber}.  If $R=S$, any
+section outside this fiber makes $H$ a constant times a polynomial cube,
+and all sections lie in an affine family $R+t h$ with $\deg h\le D$.
+If $R\ne S$, put $h=R-S$, $Y=(P-R)/h$, and $q=H/h^3$.  Then
+\begin{equation}\label{eq:cubic-three-cover-equation}
+ Y^2(Y+1)=(c-c_0)q.
+\end{equation}
+If $q$ is constant, $Y$ is constant and again all sections lie in
+$R+t h$.  In an affine family of degree-at-most-$D$ polynomials,
+different members can match the same received symbol only at zeros
+of $h$, of which there are at most $D$.  A list of $L$ members with
+at least $a>D$ agreements therefore satisfies $L(a-D)\le n$.
+
+If $q$ is nonconstant, there are at most two distinct nonzero labels
+$\lambda=c-c_0$ for which \eqref{eq:cubic-three-cover-equation} has a
+rational solution.  Here is a self-contained cover argument.  Three
+such labels would give three degree-three covers of the $t$-line
+\[
+ Y_i^2(Y_i+1)=\lambda_i t.
+\]
+Each has branch points $0,4/(27\lambda_i),\infty$, with inertia
+types a transposition, a transposition, and a three-cycle.  Its Galois
+closure has group $S_3$.  The compositum group projects onto all three
+$S_3$ factors.  At $4/(27\lambda_i)$ inertia is a transposition
+supported only in factor $i$, since the other covers are unramified
+there.  Conjugation supplies that entire $S_3$ factor, proving that
+the compositum group is $S_3^3$.  The original fiber product is thus
+connected of degree $27$.
+
+All ramification is tame in characteristic greater than three.  On the
+$27$ sheets the inertia at zero has one fixed point and thirteen
+two-cycles, so index $13$; at infinity it has nine three-cycles, so
+index $18$; and each separate finite nonzero branch point has index
+$9$.  The smooth normalization $C$ consequently has
+\[
+ 2g(C)-2=-54+13+18+3\cdot9=4,
+ \qquad g(C)=3.
+\]
+The proposed rational solutions would embed $k(C)$ in $k(X)$ via
+$t=q(X)$, contradicting L\"uroth's theorem.  This also rules out
+inseparable parametrizations.  There are therefore at most six
+sections outside the repeated fiber and at most two within it, for a
+total of eight.  This completes the positive-dimensional case.
+
+\emph{From the total-bank bound to arbitrary received words.}
+Only the zero-dimensional case remains.  Let $L$ selected candidates
+have at least $a\ge D+\eta n$ agreements.  Let $r$ be the number of
+evaluation coordinates where $H$ vanishes, so $r\le n_0$.  At any
+other coordinate $x$, the received value $w(x)$ determines the label
+$F(x,w(x))/H(x)$, and hence matches at most three candidates.  Thus
+\[
+ La\le Lr+3(n-r)\le Ln_0+3n,
+ \qquad n_0-D\ge\eta n-3n/L.
+\]
+If $L\le\max\{9,3/\eta\}$ the asserted bound is immediate.
+Otherwise the last quantity is positive, and
+\eqref{eq:cubic-root-bank-bound} implies
+\[
+ L\le9+\frac{108D}{\eta n-3n/L}.
+\]
+Multiplication by the positive denominator gives
+\[
+ \eta L\le9\eta+3+108D/n-27/L
+            <9\eta+3+108D/n.
+\]
+Taking the stated floor proves the result.  All preceding small-bank
+and affine-family cases satisfy the same bound.
+\end{proof}
+
+\paragraph{A distinction for the Dickson family.}
+For the complete nonzero Dickson bank, $n=p-1$, $D=n/4-1$, and
+$n/2$ candidates agree with the displayed received word on $3n/8$
+coordinates.  If this bank lay in a common first-integral family as
+above, taking $\eta=1/8+1/n$ would give
+\[
+ \frac n2\le\left\lfloor249-\frac{2784}{n+8}\right\rfloor.
+\]
+This fails for $n\ge488$, hence for every admissible prime
+$p\equiv1\pmod8$ with $p\ge521$.  Thus its primitive cubic differential
+equation does not arise from a weighted monic-cubic first integral of
+this form.  This does not exclude higher-degree first integrals or
+rational denominators depending on the candidate value.

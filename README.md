@@ -5,7 +5,7 @@ Working draft by Justin Thaler, September 17, 2026.
 [Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
 **Latest verified results (September 17, evening):** the ePrint-style article
-is 189 pages with one-inch margins. Its new Theorem R.5 proves an exact
+is 192 pages with one-inch margins. Its new Theorem R.5 proves an exact
 transition for the complete Dickson cubic-ODE solution family: a linear
 list at agreement `3/8`, but at most `ceil(epsilon^-2)` family members for
 any word at agreement `3/8 + epsilon`. A matching majority construction
@@ -22,6 +22,16 @@ first-integral family, including quadratic moving denominators. If
 coefficient-height bound from five sections and applies the classical
 Pasten--Wang square-value theorem. It does not apply to arbitrary
 first-order equations.
+
+Theorem R.7 now bounds every weighted monic-cubic first-integral family
+with denominator depending only on the evaluation coordinate. For
+`p>max(3,2D)`, its list at agreement `D+eta*n` has size at most
+`floor(9+(3+108D/n)/eta)`. This includes all prime-field rates below
+one half, within the stated family. Repeated denominator roots and
+nonconstant Frobenius critical values are covered. In particular, the
+complete Dickson bank cannot have such a first integral for admissible
+primes at least 521. [Proof](research/short_domain_cubic_source/general_cubic_list.tex)
+and [independent audit](research/short_domain_cubic_source/TWO_D_RADICAL_INDEPENDENT_AUDIT.md).
 
 There is still **no better.codes improvement**. The fully repaired target
 certificate exceeds its allowance by 7.65%; earlier conditional estimates

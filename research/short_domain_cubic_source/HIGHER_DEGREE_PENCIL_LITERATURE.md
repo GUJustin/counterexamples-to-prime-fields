@@ -1,0 +1,23 @@
+# Bounded primary-source check: rational pencils of degree at least three
+
+Question: for coprime N,T in k(X)[u] of fixed u-degree b>=3, do many constant fibers N−cT having a polynomial root force a bounded-complexity constant family, uniformly in the coefficient X-degrees? Can such a result use section degree D and characteristic much larger than D?
+
+No exact general theorem or counterexample meeting all these conditions was located in this bounded search. This is a search limitation, not a claim that the question is open in the literature.
+
+## Closest verified primary results
+
+**Busé–Chèze, On the total order of reducibility of a pencil of algebraic plane curves**, [primary manuscript, arXiv:0812.4706](https://arxiv.org/pdf/0812.4706). For non-composite rational functions, their reducibility bounds use the **total plane degree** d; the characteristic-zero multiplicity bound is d²−1. They also give a Newton-polygon refinement, under characteristic zero or p>d(d−1). These bounds do not state a constant depending only on degree in u. A polynomial section gives a factor u−P(X), hence a reducible fiber unless it is the whole fiber, but this observation retains the coefficient-degree dependence. Non-compositeness also needs checking; it is not the same hypothesis as non-isotriviality of a function-field cover. No characteristic-uniform improvement was inferred from these results.
+
+**Yuzvinsky, A new bound on the number of special fibers in a pencil of curves**, [primary manuscript, arXiv:0801.1521](https://arxiv.org/pdf/0801.1521), Theorem 3.1. A complex plane pencil of degree greater than one with irreducible generic fiber has at most four completely reducible fibers; the stated theorem controls a further special fiber once three completely reducible ones exist. Here completely reducible means a union of projective **lines**. A factor u−P(X) of large X-degree is not a line, and the presence of one such factor is not complete reducibility. Therefore this uniform constant cannot be imported into the requested section problem. Even splitting completely in k(X)[u] would not make the plane components lines when their polynomial roots have degree greater than one.
+
+**Pasten–Wang, Extensions of Büchi's Higher Powers Problem to Positive Characteristic**, [primary manuscript](https://people.math.harvard.edu/~hpasten/preprints/PWposIMRN.pdf), Theorem 3. This supplies a uniform conclusion for sufficiently many constant arguments at which a monic polynomial has values with prescribed divisible zero multiplicities, subject in positive characteristic to separability and exclusion of nonconstant K^p factors. The degree-two rational-pencil reduction creates precisely such square-valued specializations through the discriminant. A single rational root of a cubic or higher-degree polynomial does not generally make its discriminant a square or its value a prescribed power. Thus the same primary theorem does not automatically cover general b>=3 pencils.
+
+## What survives from our degree-two method
+
+The rational-interpolation height step generalizes formally. If a coprime map of degree b has 2b+1 distinct low-degree sections at distinct labels, the corresponding (2b+1)-by-(2b+2) interpolation matrix has rank 2b+1: cross-differences have degree at most 2b and vanish at too many distinct section functions. Maximal minors then give coefficient X-degree O(b²D). This is elementary and does not solve the missing algebraic step: for b>=3, no constant-genus square/power-value encoding of one chosen root per fiber has been supplied here.
+
+The known failure modes must remain separate. Composite constant-parameter families can have arbitrarily many sections and are not counterexamples to a classification allowing such families. Positive-characteristic examples whose degree is a fixed fraction of p do not automatically refute a theorem restricted to D=o(p). A section need not be a completely split fiber, and genus can grow when adjoining the other roots. None of these distinctions can be removed by terminology alone.
+
+## Practical conclusion
+
+The verified literature supports keeping the manuscript theorem at degree two. A higher-degree extension needs a genuinely new reduction or an exact theorem about one-root specializations with controlled height; the reducible-fiber and higher-power theorems inspected here do not provide it. The search used combinations of function-field Büchi, rational pencils, constant fibers, polynomial sections, non-isotrivial maps, and reducibility spectra, and checked primary manuscripts rather than relying on survey paraphrases. No broad classification claim should be based on this search.
