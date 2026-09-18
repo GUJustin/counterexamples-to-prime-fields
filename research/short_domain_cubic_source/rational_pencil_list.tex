@@ -1,0 +1,150 @@
+\paragraph{Quadratic rational first-integral pencils.}
+A bounded list theorem also applies when the denominator of a first
+integral depends on the candidate value.  The square-value input below
+is the classical function-field theorem of Pasten and Wang
+\cite[Theorem~3]{pasten-wang-buchi}; the argument keeps track of the
+height needed to exclude its positive-characteristic exceptions.
+
+\begin{theorem}\label{thm:quadratic-rational-pencil-list}
+Let $\mathbb K$ be a field of characteristic $p>\max\{2,10D\}$,
+where $0\le D<n$, and let $N,T\in\mathbb K(X)[u]$ be coprime with
+$\max\{\deg_u N,\deg_u T\}=2$.
+Consider the polynomial sections
+\[
+ \mathcal B=\{P\in\mathbb K[X]:\deg P\le D,
+       \ N(X,P)=cT(X,P)\text{ for some }c\in\mathbb K\}.
+\]
+On any $n$ distinct evaluation coordinates in $\mathbb K$, every received word has
+at most
+\[
+ \max\{40,\ \lfloor 1/\eta\rfloor\}
+\]
+members of $\mathcal B$ agreeing on at least $D+\eta n$ coordinates,
+for every $\eta>0$.  The received symbols may lie in an extension
+field.  This is a bound for the indicated section family, not for
+all Reed--Solomon codewords.
+\end{theorem}
+\begin{proof}
+Extend constants to an algebraic closure $k$ and put $K=k(X)$.
+A section has a unique label: otherwise $N(P)=T(P)=0$, contrary
+to coprimality.  Each label has at most two sections.  Thus a
+selected list with fewer than twenty-one labels has size at most
+forty.  Suppose henceforth that twenty-one labels occur.
+
+\emph{Reconstructing a low-height pencil.}
+Choose five sections $P_i$ with distinct labels $c_i$.  They are
+distinct elements of $K$.  The matrix with rows
+\[
+ (P_i^2,P_i,1,-c_iP_i^2,-c_iP_i,-c_i)
+\]
+has rank five over $K$.  Indeed, another kernel vector defines
+$(\widetilde N,\widetilde T)$ of degrees at most two whose
+cross-difference $\widetilde NT-N\widetilde T$ has degree at most
+four and vanishes at all five $P_i$.  It is zero; coprimality and
+the exact degree-two maximum make the pairs proportional.
+The signed maximal minors therefore give a polynomial coefficient
+representative $(n_2,n_1,n_0,t_2,t_1,t_0)$ for $(N,T)$ with degrees
+bounded respectively by
+\[
+ (4D,5D,6D,4D,5D,6D).
+\]
+Replace $(N,T)$ by this common polynomial representative.
+Consequently the coefficients of the discriminant
+\[
+ F(C)=(n_1-Ct_1)^2-4(n_2-Ct_2)(n_0-Ct_0)
+\]
+have $X$-degree at most $10D$.  The polynomial $F$ has degree at
+most two in $C$ and is not a square in $K(C)$: the coprime
+rational map $N/T$ has degree two, so $N-CT$ is irreducible over
+$K(C)$ as a polynomial in $u$.
+
+Every section gives
+\[
+ F(c_i)=\bigl(2(n_2-c_it_2)P_i+n_1-c_it_1\bigr)^2.
+\]
+This remains valid for a linear specialized fiber.  Choose $c_0$
+with $F(c_0)=s^2\ne0$, possible since $F$ has at most two zeros,
+and form
+\[
+ H(Z)=\frac{Z^2F(c_0+1/Z)}{F(c_0)}.
+\]
+It is monic quadratic.  Its projective coefficient vector is
+$[F(c_0):F'(c_0):[C^2]F]$, so its function-field height is at most
+$10D<p$.  At the twenty distinct constants
+$Z_i=(c_i-c_0)^{-1}$ it takes square values.
+
+\emph{Applying the square-value theorem.}
+For a monic quadratic over the genus-zero field $K$, the
+Pasten--Wang theorem has threshold $M>11\cdot2-3=19$.
+After removing constant polynomial factors, it requires every
+remaining irreducible factor to be separable and outside $K^p[Z]$;
+with twenty square values it makes every such factor have
+multiplicity two.  These hypotheses hold here.  Degree at most
+two and $p>2$ give separability.  Monic factor heights add, by
+multiplicativity of the local Gauss valuation, so every factor
+has height below $p$.  A monic factor in $K^p[Z]$ with nonconstant coefficients
+would have a nonconstant coefficient which is a $p$th power,
+with height at least $p$, a contradiction.
+If $H$ has nonconstant coefficients, the multiplicity conclusion
+and its total degree two force it to be a square; a positive-degree
+constant factor cannot remain in that case.  But the reciprocal
+substitution and its square multiplier would then make $F$ a
+square in $K(C)$.  Therefore $H\in k[Z]$, and undoing the
+substitution yields
+\[
+ F(C)=s^2q(C),\qquad q\in k[C],\quad \deg q\le2.
+\]
+The polynomial $q$ is nonsquare, hence squarefree of degree one or
+two over the algebraically closed field $k$.
+
+\emph{A constant conic and its sections.}
+Write $N-CT=a(C)u^2+b(C)u+d(C)$.  In $K(u)$ put
+$c=N(u)/T(u)$ and $v=(2a(c)u+b(c))/s$.  Then
+\[
+ v^2=q(c),\qquad K(u)=K(c,v).
+\]
+The smooth projective constant conic $v^2=q(c)$ is rational:
+parametrizing by lines through a constant point gives its function
+field $k(t)$.  Hence $K(u)=K(t)$, so $u$ is a degree-one rational
+function of $t$,
+\[
+ u=\frac{A(X)t+B(X)}{C(X)t+E(X)},\qquad AE-BC\ne0.
+\]
+Every polynomial section corresponds to a constant parameter in
+$\mathbb P^1(k)$.  Indeed its $c$ is constant and its $v$ has square
+$q(c)\in k$, hence is constant too.  The isomorphism of smooth
+projective curves handles degree-drop fibers and parameters at
+infinity.  Distinct sections give distinct parameters.  Polynomial
+members of this M\"obius family need not form an affine line.
+
+\emph{Local collisions and agreement.}
+At each evaluation coordinate $x$, scale the $2\times2$ coefficient
+matrix over the discrete valuation ring at $X=x$ to make its
+entries integral with at least one unit.  Its reduction has rank
+one or two.  Rank two gives distinct values at all selected
+parameters.  In rank one, all parameters except the unique kernel
+point have the same projective image.  That image is finite since
+at least one nonkernel selected section is a polynomial.  Thus
+all but at most one selected value coincide.
+
+Let $L$ be the selected list size, let $m_x$ be the number of
+selected candidates matching the received symbol at $x$, and let
+$b_x$ count all agreeing candidate pairs there.  The local description
+gives $m_x\in\{0,1,L-1,L\}$, and in every case
+\[
+ (m_x-1)(L-1)\le 2b_x.
+\]
+For $m_x=L-1$ this follows from $b_x\ge\binom{L-1}{2}$;
+for $m_x=L$ use $b_x=\binom L2$; the other cases are immediate.
+Every distinct polynomial pair agrees at at most $D$ coordinates.
+Summing, and writing $a$ for the minimum agreement count, gives
+\[
+ (La-n)(L-1)\le 2\sum_x b_x
+       \le D L(L-1),\qquad L(a-D)\le n.
+\]
+Thus $a-D\ge\eta n$ implies $L\le1/\eta$.
+Together with the forty-section
+case, this proves the stated bound.  Extending the constants did
+not change any agreement count or polynomial degree, so the
+conclusion holds over the original field.
+\end{proof}

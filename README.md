@@ -5,7 +5,7 @@ Working draft by Justin Thaler, September 17, 2026.
 [Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
 **Latest verified results (September 17, evening):** the ePrint-style article
-is 186 pages with one-inch margins. Its new Theorem R.5 proves an exact
+is 189 pages with one-inch margins. Its new Theorem R.5 proves an exact
 transition for the complete Dickson cubic-ODE solution family: a linear
 list at agreement `3/8`, but at most `ceil(epsilon^-2)` family members for
 any word at agreement `3/8 + epsilon`. A matching majority construction
@@ -14,6 +14,14 @@ works with `p >= 2^36 L^2` and gives `L` candidates at agreement
 exponential requirement. [Proof and independent review](research/quartic_singular_route/ROOT_SHARP_TRANSITION_AUDIT.md).
 These are bounds within the classified family, not upper bounds for the
 whole Reed--Solomon code or general proximity-gap tightness.
+
+Theorem R.6 also proves a uniform list bound for every degree-two rational
+first-integral family, including quadratic moving denominators. If
+`p>max(2,10D)`, agreement `D+eta*n` permits at most
+`max(40,floor(1/eta))` degree-at-most-D members. The proof derives a
+coefficient-height bound from five sections and applies the classical
+Pasten--Wang square-value theorem. It does not apply to arbitrary
+first-order equations.
 
 There is still **no better.codes improvement**. The fully repaired target
 certificate exceeds its allowance by 7.65%; earlier conditional estimates

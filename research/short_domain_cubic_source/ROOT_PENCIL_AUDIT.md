@@ -43,12 +43,17 @@ gives distinct values, and rank one gives one shared value with at most
 one exceptional parameter. Pairwise polynomial root counting and total
 agreement counting yield
 
-    a <= D + D/(L-2) + n/L,  L>2.
+    L(a-D) <= n.
+
+For clarity, if m_x is the received-match multiplicity and b_x the
+number of agreeing candidate pairs, then m_x belongs to
+`{0,1,L-1,L}` and `(m_x-1)(L-1)<=2b_x`. Summing proves the displayed
+bound directly. This sharpens the initial separate shared-coordinate count.
 
 Thus, for `p>max(2,10D)`, `D<n`, and surplus `a-D>=eta*n`, the combined
 bound is
 
-    L <= max(40, ceil(2+2/eta)-1).
+    L <= max(40, floor(1/eta)).
 
 The fallback forty counts at most twenty labels with two sections each.
 Base-field sections may be considered over the algebraic closure without

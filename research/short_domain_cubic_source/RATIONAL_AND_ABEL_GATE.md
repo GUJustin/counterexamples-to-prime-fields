@@ -35,7 +35,9 @@ and hence
 
     A−D ≤ 2D/(L−2)+n/L.                          (2)
 
-At A−D≥eta n and D≤rho n, (2) forces L=O_rho(1/eta). This gate permits an arbitrary high-degree B and therefore accounts for cancellation of common leading coefficients. A sharper claim L(A−D)≤n would not be justified for this general offset family.
+At A−D≥eta n and D≤rho n, (2) forces L=O_rho(1/eta). This gate permits an arbitrary high-degree B and therefore accounts for cancellation of common leading coefficients.
+
+The subsequent direct incidence argument sharpens this to `L(A−D)≤n`, even with the arbitrary offset. Let h_x count candidates matching the received value, and b_x count all agreeing candidate pairs at x. The bucket description gives h_x in {0,1,L−1,L}, so `(h_x−1)(L−1)≤2b_x`. Summing and using `sum_x b_x≤D binom(L,2)` gives the sharper bound. The previous note's warning that this stronger statement was unjustified is superseded by this proof; a bound on the degree of B is not needed.
 
 The same calculation is independent of characteristic and of the size of the ambient field. Rational reparametrization or taking much larger splitting primes does not alter this collision pattern.
 

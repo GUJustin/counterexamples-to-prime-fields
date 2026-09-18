@@ -53,25 +53,20 @@ Let P_1,...,P_L be distinct polynomial members of a fixed Möbius family, all of
 
 If its rank is two, the reduced projective transformation is injective on P¹(k); all selected finite polynomial values are distinct. If its rank is one, every constant parameter except the unique kernel point maps to the same projective image. That image is finite because L≥2 and all selected functions are regular at x: at least one selected parameter is not the kernel point. Thus all but at most one selected polynomial have a common value at x. The possible kernel parameter can have another finite limit. This argument allows arbitrary poles in the originally written matrix coefficients and makes no bound on their degrees.
 
-## 4. Degree-controlled agreement bound
+## 4. Degree-controlled agreement bound (sharpened by frontier audit)
 
-Take n distinct coordinates and any received word. Let a be a lower bound on every selected candidate's agreement count, and suppose L>2. Let h count the coordinates with rank-one reduction. Each such coordinate contributes at least binom(L−1,2) agreeing candidate pairs. Each distinct candidate pair agrees at at most D coordinates, so
+Take n distinct coordinates and any received word. Let a be a lower bound on every selected candidate's agreement count, with L>1. At each coordinate let m_x count received matches and b_x count all agreeing candidate pairs. The local lemma gives m_x in {0,1,L−1,L}. Thus
 
-    h ≤ D L/(L−2).
+    (m_x−1)(L−1) ≤ 2 b_x.
 
-At a rank-two coordinate the received word matches at most one candidate; at a rank-one coordinate it matches at most L. Consequently
+For m_x=L−1 use b_x≥binom(L−1,2); for m_x=L use b_x=binom(L,2); the other cases are immediate. The polynomial degree bound gives sum_x b_x≤D*binom(L,2), so
 
-    L a ≤ n+(L−1)h,
-    a ≤ D + D/(L−2) + n/L.
+    (L a−n)(L−1) ≤ D L(L−1),
+    L(a−D) ≤ n.
 
-This proves a uniform list bound at any positive surplus over degree. In particular, if a−D≥eta*n and D<n, then
+At surplus a−D≥eta*n, therefore L≤1/eta. This stronger direct-incidence argument supersedes the earlier h-coordinate estimate, which lost an unnecessary factor. It is valid for actual Möbius polynomial families in every characteristic.
 
-    eta ≤ (D/n)/(L−2)+1/L < 2/(L−2),
-    L < 2+2/eta.
-
-This is a family-specific list bound for arbitrary words and arbitrary distinct-coordinate domains. It is not a claim that all rational pencils or all Reed–Solomon lists obey this bound.
-
-In characteristic zero, fewer than nine labels supply at most sixteen sections; otherwise the Möbius bound applies. Thus the entire quadratic/quadratic rational-pencil class has at most max(16,ceil(2+2/eta)−1) selected sections with surplus eta*n. In positive characteristic, once the separately proved twenty-one-label/short-height gate is available, replace sixteen by forty.
+In characteristic zero, fewer than nine labels supply at most sixteen sections; otherwise the Möbius bound applies. Thus the entire quadratic/quadratic rational-pencil class has at most max(16,floor(1/eta)) selected sections with surplus eta*n. In positive characteristic p>max(2,10D), the twenty-one-label height gate gives max(40,floor(1/eta)).
 
 ## Primary input
 

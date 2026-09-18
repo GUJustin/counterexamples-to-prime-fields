@@ -45,7 +45,7 @@ a direct line construction not requiring such a bank.
    Pasten--Wang theorem to apply without a splitting cover. At least
    twenty-one labels force a Möbius family when `p>max(2,10D)`.
    The local collision pattern then bounds a surplus-`eta*n` list by
-   `max(40,ceil(2+2/eta)-1)`. See the
+   `max(40,floor(1/eta))`. See the
    [height proof](../short_domain_cubic_source/QUADRATIC_QUADRATIC_HEIGHT_GATE.md)
    and [agreement proof](../short_domain_cubic_source/RATIONAL_PENCIL_MOBIUS_BRIDGE.md).
    The linear-denominator subclass has a sharper affine-family conclusion.
