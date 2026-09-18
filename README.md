@@ -5,7 +5,7 @@ Working draft by Justin Thaler, September 18, 2026.
 [Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
 **Latest verified results (September 18):** the full-page,
-one-inch-margin ePrint draft (252 pages) now proves a prime-field line construction
+one-inch-margin ePrint draft (254 pages) now proves a prime-field line construction
 with more than n^(3/2)/4 exceptional challenges, each having a singleton
 list, at an error radius covered by the Dao–Kominers–Thaler bounds
 and beyond the Johnson radius. Both source words
@@ -63,6 +63,16 @@ while reducing the field size to order N^(3/2) and making the exceptional
 probability one. **The inputs themselves are nearby.** This strengthens
 the common-agreement counterexample, not the result about individually
 far inputs, and does not improve the fixed better.codes benchmark.
+
+The subsequent puncturing theorem **does make two inputs individually
+far over the same F_(p³)**. Deleting at most 3p−2 coordinates erases
+their unique nearby witness, while at least p³−p² mixtures retain
+singleton lists at threshold 2p−ceil(4sqrt(p))−8. Both input agreements
+are at most p+2sqrt(p), so the separation remains of order sqrt(N).
+The exceptional probability is at least 1−1/p and the length is
+2p²−O(p). The finite first-order certificate survives for p≥4099.
+This strengthens the far-input extension-field result as well; it
+does not yet yield prime-alphabet, fixed-rate, or benchmark tightness.
 
 These results do not supersede the fixed-rate near-capacity counterexamples
 of Krachun–Kazanin–Haböck or the capacity-conjecture refutation of

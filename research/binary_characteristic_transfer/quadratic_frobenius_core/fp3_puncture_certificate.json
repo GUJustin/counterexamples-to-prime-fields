@@ -1,0 +1,35 @@
+[
+  {
+    "p": 4099,
+    "n_min": 33587207,
+    "n_max": 33599502,
+    "T": 7933,
+    "guaranteed_singleton_labels": 68853780498,
+    "deleted_coordinate_bound": 12295,
+    "graded_margin_at_largest_length": 119675673680808,
+    "characteristic_guard": true,
+    "passed": true
+  },
+  {
+    "p": 8191,
+    "n_min": 134152199,
+    "n_max": 134176770,
+    "T": 16011,
+    "guaranteed_singleton_labels": 549487419390,
+    "deleted_coordinate_bound": 24571,
+    "graded_margin_at_largest_length": 1304396667676980,
+    "characteristic_guard": true,
+    "passed": true
+  },
+  {
+    "p": 65537,
+    "n_min": 8589934591,
+    "n_max": 8590131200,
+    "T": 130041,
+    "guaranteed_singleton_labels": 281483566710784,
+    "deleted_coordinate_bound": 196609,
+    "graded_margin_at_largest_length": 951515220684533060,
+    "characteristic_guard": true,
+    "passed": true
+  }
+]

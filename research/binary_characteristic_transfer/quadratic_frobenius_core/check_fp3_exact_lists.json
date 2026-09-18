@@ -21,6 +21,31 @@
     },
     "minimum_best_canonical_agreement": 66,
     "maximum_best_canonical_agreement": 120,
+    "puncturing": {
+      "deleted_coordinates": 132,
+      "remaining_length": 4238,
+      "threshold": 58,
+      "endpoints": [
+        [
+          10,
+          14,
+          36
+        ],
+        [
+          15,
+          15,
+          28
+        ]
+      ],
+      "guaranteed_canonical_bank_singletons": 101614,
+      "all_quadratic_exclusion_applies": false,
+      "retained_bank_list_histogram": {
+        "47": 45,
+        "1": 103639,
+        "46": 2
+      },
+      "scope": "canonical bank census; full exclusion requires the recorded threshold guard"
+    },
     "passed": true
   },
   {
@@ -45,6 +70,31 @@
     },
     "minimum_best_canonical_agreement": 80,
     "maximum_best_canonical_agreement": 130,
+    "puncturing": {
+      "deleted_coordinates": 128,
+      "remaining_length": 5436,
+      "threshold": 68,
+      "endpoints": [
+        [
+          52,
+          22,
+          20
+        ],
+        [
+          24,
+          28,
+          51
+        ]
+      ],
+      "guaranteed_canonical_bank_singletons": 146068,
+      "all_quadratic_exclusion_applies": true,
+      "retained_bank_list_histogram": {
+        "53": 51,
+        "1": 148669,
+        "52": 2
+      },
+      "scope": "canonical bank census; full exclusion requires the recorded threshold guard"
+    },
     "passed": true
   }
 ]

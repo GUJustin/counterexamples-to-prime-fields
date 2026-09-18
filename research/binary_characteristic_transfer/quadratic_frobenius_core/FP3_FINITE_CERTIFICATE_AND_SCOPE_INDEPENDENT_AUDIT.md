@@ -1,5 +1,7 @@
 # Independent F_(p³) finite-certificate and scope audit
 
+Follow-up: `fp3_far_endpoints.tex` now obtains two individually far endpoints by puncturing at most 3p−2 coordinates, retaining at least p³−p² singleton parameters over the same field. The source-separation limitations below concern the unpunctured construction and invertible source changes; the later puncturing argument changes the evaluation domain and avoids them.
+
 September 18, 2026. **PASS for the full fragment `fp3_common_agreement.tex`, including the interpolation certificate, all-quadratic classification, exact list sizes, and ordinary-common-agreement scope.** No manuscript edit or downstream exceptional-count constant is supplied here.
 
 ## Exact finite certificate

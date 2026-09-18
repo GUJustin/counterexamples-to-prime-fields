@@ -40,6 +40,24 @@ def check(p):
     ceilroot = isqrt(16*p)+int(isqrt(16*p)**2 < 16*p)
     A = 2*p-ceilroot-2
     assert (A-p)**2 > 4*p and A > p and A > 16
+    # Endpoint surgery: all choices in b + Lambda0 share the same witness.
+    u0 = next(y for y in deleted if y != zero)
+    astar = power(mul(eta, u0), p-1)
+    special = {y: sub(yp[y], mul(astar, y)) for y in W}
+    cstar, fstar = Counter(), Counter()
+    for y in W:
+        cstar[special[y]] += weight[y]
+        if y not in deleted:
+            fstar[special[y]] += weight[y]
+    bstar = min((b for b in cstar if b != zero), key=lambda b: (cstar[b], b))
+    vs = sorted(cstar, key=lambda v: (fstar[v], v))[:2]
+    removed_core = [y for y in W if special[y] == bstar]
+    removed_fresh = [y for y in W if y not in deleted and special[y] in vs]
+    removed_size = sum(weight[y] for y in removed_core+removed_fresh)
+    assert removed_size <= 3*p-2
+    excluded_plane = {sub(b, mul(eta, v)) for b in cstar for v in cstar}
+    endpoints = [sub(bstar, mul(eta, v)) for v in vs]
+    post_lists = Counter()
     lists, best = Counter(), {}
     for u in [one]+[(a, 1, 0) for a in range(p)]:
         a = power(u, p-1)
@@ -51,6 +69,11 @@ def check(p):
             removed[sub(yp[y], mul(a, y))] += weight[y]
         assert len(core) == p
         fresh = {v: count-removed[v] for v, count in core.items()}
+        punctured_core, punctured_fresh = Counter(), Counter()
+        for y in removed_core:
+            punctured_core[sub(yp[y], mul(a, y))] += weight[y]
+        for y in removed_fresh:
+            punctured_fresh[sub(yp[y], mul(a, y))] += weight[y]
         for b, c0 in core.items():
             for v, c1 in fresh.items():
                 lam = sub(b, mul(eta, v))
@@ -58,14 +81,30 @@ def check(p):
                 best[lam] = max(best.get(lam, 0), agreement)
                 if agreement >= A:
                     lists[lam] += 1
+                loss = punctured_core[b]+punctured_fresh[v]
+                if lam not in excluded_plane:
+                    assert loss <= 6
+                if agreement-loss >= A-6:
+                    post_lists[lam] += 1
     assert len(lists) == p**3
     histogram = Counter(lists.values())
     assert histogram == {1: p**3-p, p: p}
+    assert sum(lam not in excluded_plane and size == 1
+               for lam, size in post_lists.items()) == p**3-p*p
+    assert all(post_lists[lam] == 0 for lam in endpoints)
     return dict(p=p, defining_cubic=[bb, aa, 0, 1], eta=eta,
                 N=2*p*p-p-1, A=A, label_count=len(lists),
                 list_size_histogram=dict(histogram),
                 minimum_best_canonical_agreement=min(best.values()),
-                maximum_best_canonical_agreement=max(best.values()), passed=True)
+                maximum_best_canonical_agreement=max(best.values()),
+                puncturing=dict(deleted_coordinates=removed_size,
+                                remaining_length=2*p*p-p-1-removed_size,
+                                threshold=A-6, endpoints=endpoints,
+                                guaranteed_canonical_bank_singletons=p**3-p*p,
+                                all_quadratic_exclusion_applies=(A-6>p and (A-6-p)**2>4*p and A-6>16),
+                                retained_bank_list_histogram=dict(Counter(post_lists.values())),
+                                scope='canonical bank census; full exclusion requires the recorded threshold guard'),
+                passed=True)
 
 
 if __name__ == '__main__':
