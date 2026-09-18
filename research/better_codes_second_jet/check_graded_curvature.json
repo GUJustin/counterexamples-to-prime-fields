@@ -1,0 +1,6 @@
+{
+  "independent_exact_homogeneous_matrix_checks": 94,
+  "result": "PASS",
+  "range": "m2..7, all1<=S<=m/2, all nonzero jet degrees; pinned prime",
+  "scope": "Checks the per-degree rank upper profile, not a routing certificate."
+}

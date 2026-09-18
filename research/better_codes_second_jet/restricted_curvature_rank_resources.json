@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/better_codes_second_jet/restricted_curvature_rank.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 36.254788624995854,
+  "peak_rss_kib": 50640,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

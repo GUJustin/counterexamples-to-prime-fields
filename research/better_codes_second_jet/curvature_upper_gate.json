@@ -1,0 +1,146 @@
+{
+  "n": 262144,
+  "w": 131071,
+  "A": 181275,
+  "exact_matrix_regressions": 12,
+  "shape": "S=max(1,round(.31m)), automaticJ; m2..512, one fixed shape family",
+  "first_positive": {
+    "0": {
+      "m": 117,
+      "S": 36,
+      "J": 161,
+      "K": 0,
+      "numerator_degree_bound": 21209175,
+      "coefficient_count": 50777012049,
+      "local_rank_upper": 193695,
+      "kernel_lower": 1029969,
+      "extra_kernel_saving": 0,
+      "conservative_line_L": 3182681,
+      "conservative_line_kernel_lower": 659229
+    },
+    "1": {
+      "m": 72,
+      "S": 22,
+      "J": 99,
+      "K": 1,
+      "numerator_degree_bound": 13051800,
+      "coefficient_count": 23786472350,
+      "local_rank_upper": 90737,
+      "kernel_lower": 312222,
+      "extra_kernel_saving": 1309,
+      "conservative_line_L": 3037135,
+      "conservative_line_kernel_lower": 21202
+    }
+  },
+  "samples": {
+    "0": [
+      {
+        "m": 64,
+        "S": 20,
+        "J": 88,
+        "K": 0,
+        "numerator_degree_bound": 11601600,
+        "coefficient_count": 8642639894,
+        "local_rank_upper": 33110,
+        "kernel_lower": -36947946,
+        "extra_kernel_saving": 0,
+        "conservative_line_L": null,
+        "conservative_line_kernel_lower": null
+      },
+      {
+        "m": 96,
+        "S": 30,
+        "J": 132,
+        "K": 0,
+        "numerator_degree_bound": 17402400,
+        "coefficient_count": 28580417357,
+        "local_rank_upper": 109151,
+        "kernel_lower": -32862387,
+        "extra_kernel_saving": 0,
+        "conservative_line_L": null,
+        "conservative_line_kernel_lower": null
+      },
+      {
+        "m": 128,
+        "S": 40,
+        "J": 177,
+        "K": 0,
+        "numerator_degree_bound": 23203200,
+        "coefficient_count": 67052450297,
+        "local_rank_upper": 255676,
+        "kernel_lower": 28520953,
+        "extra_kernel_saving": 0,
+        "conservative_line_L": 166523,
+        "conservative_line_kernel_lower": 26330897
+      },
+      {
+        "m": 256,
+        "S": 79,
+        "J": 354,
+        "K": 0,
+        "numerator_degree_bound": 46406400,
+        "coefficient_count": 523199580880,
+        "local_rank_upper": 1990200,
+        "kernel_lower": 1480592080,
+        "extra_kernel_saving": 0,
+        "conservative_line_L": 50098,
+        "conservative_line_kernel_lower": 80361060
+      }
+    ],
+    "1": [
+      {
+        "m": 64,
+        "S": 20,
+        "J": 88,
+        "K": 1,
+        "numerator_degree_bound": 11601600,
+        "coefficient_count": 17069174164,
+        "local_rank_upper": 65170,
+        "kernel_lower": -14750316,
+        "extra_kernel_saving": 1050,
+        "conservative_line_L": null,
+        "conservative_line_kernel_lower": null
+      },
+      {
+        "m": 96,
+        "S": 30,
+        "J": 132,
+        "K": 1,
+        "numerator_degree_bound": 17402400,
+        "coefficient_count": 56682315118,
+        "local_rank_upper": 215917,
+        "kernel_lower": 80969070,
+        "extra_kernel_saving": 2385,
+        "conservative_line_L": 37350,
+        "conservative_line_kernel_lower": 11023664
+      },
+      {
+        "m": 128,
+        "S": 40,
+        "J": 177,
+        "K": 1,
+        "numerator_degree_bound": 23203200,
+        "coefficient_count": 133261059668,
+        "local_rank_upper": 507092,
+        "kernel_lower": 329934420,
+        "extra_kernel_saving": 4260,
+        "conservative_line_L": 28741,
+        "conservative_line_kernel_lower": 304872104
+      },
+      {
+        "m": 256,
+        "S": 79,
+        "J": 354,
+        "K": 1,
+        "numerator_degree_bound": 46406400,
+        "coefficient_count": 1043100881280,
+        "local_rank_upper": 3963415,
+        "kernel_lower": 4115419520,
+        "extra_kernel_saving": 16985,
+        "conservative_line_L": 36017,
+        "conservative_line_kernel_lower": 1658499080
+      }
+    ]
+  },
+  "scope": "Proved sufficient source gate only. L uses conservative (L+1)*localrank; second-jet routing and characteristic gates not certified."
+}

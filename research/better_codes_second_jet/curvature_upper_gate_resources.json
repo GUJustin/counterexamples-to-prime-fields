@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/better_codes_second_jet/curvature_upper_gate.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5762573329993756,
+  "peak_rss_kib": 6688,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

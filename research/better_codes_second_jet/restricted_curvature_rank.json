@@ -1,0 +1,130 @@
+{
+  "p": 2130706433,
+  "n": 262144,
+  "w": 131071,
+  "A": 181275,
+  "independent_unblocked_checks": 8,
+  "rows": [
+    {
+      "m": 4,
+      "S": 1,
+      "curvature_cap": 0,
+      "J": 5,
+      "local_rank": 17,
+      "coefficient_slope": 4043975,
+      "dimension_slope": -412473,
+      "rank_ratio": 4.2037846425855745e-06
+    },
+    {
+      "m": 4,
+      "S": 1,
+      "curvature_cap": 1,
+      "J": 5,
+      "local_rank": 32,
+      "coefficient_slope": 6768838,
+      "dimension_slope": -1619770,
+      "rank_ratio": 4.7275470324448596e-06
+    },
+    {
+      "m": 8,
+      "S": 2,
+      "curvature_cap": 0,
+      "J": 11,
+      "local_rank": 89,
+      "coefficient_slope": 22035644,
+      "dimension_slope": -1295172,
+      "rank_ratio": 4.0389107756505774e-06
+    },
+    {
+      "m": 8,
+      "S": 2,
+      "curvature_cap": 1,
+      "J": 11,
+      "local_rank": 167,
+      "coefficient_slope": 40113958,
+      "dimension_slope": -3664090,
+      "rank_ratio": 4.1631394239381715e-06
+    },
+    {
+      "m": 12,
+      "S": 4,
+      "curvature_cap": 0,
+      "J": 16,
+      "local_rank": 300,
+      "coefficient_slope": 75330070,
+      "dimension_slope": -3313130,
+      "rank_ratio": 3.982473400064543e-06
+    },
+    {
+      "m": 12,
+      "S": 4,
+      "curvature_cap": 1,
+      "J": 16,
+      "local_rank": 566,
+      "coefficient_slope": 141094480,
+      "dimension_slope": -7279024,
+      "rank_ratio": 4.011496410065085e-06
+    },
+    {
+      "m": 16,
+      "S": 5,
+      "curvature_cap": 0,
+      "J": 22,
+      "local_rank": 631,
+      "coefficient_slope": 160405132,
+      "dimension_slope": -5007732,
+      "rank_ratio": 3.933789350330761e-06
+    },
+    {
+      "m": 16,
+      "S": 5,
+      "curvature_cap": 1,
+      "J": 22,
+      "local_rank": 1202,
+      "coefficient_slope": 305374148,
+      "dimension_slope": -9722940,
+      "rank_ratio": 3.936155067062193e-06
+    },
+    {
+      "m": 32,
+      "S": 10,
+      "curvature_cap": 0,
+      "J": 44,
+      "local_rank": 4433,
+      "coefficient_slope": 1146617615,
+      "dimension_slope": -15466737,
+      "rank_ratio": 3.866153756934913e-06
+    },
+    {
+      "m": 32,
+      "S": 10,
+      "curvature_cap": 1,
+      "J": 44,
+      "local_rank": 8611,
+      "coefficient_slope": 2236636138,
+      "dimension_slope": -20685846,
+      "rank_ratio": 3.84997803339615e-06
+    },
+    {
+      "m": 64,
+      "S": 20,
+      "curvature_cap": 0,
+      "J": 88,
+      "local_rank": 33110,
+      "coefficient_slope": 8642639894,
+      "dimension_slope": -36947946,
+      "rank_ratio": 3.831005387947036e-06
+    },
+    {
+      "m": 64,
+      "S": 20,
+      "curvature_cap": 1,
+      "J": 88,
+      "local_rank": 65170,
+      "coefficient_slope": 17069174164,
+      "dimension_slope": -14750316,
+      "rank_ratio": 3.817993733841428e-06
+    }
+  ],
+  "scope": "Exact scalar local rank in the ambient translated jet box; C\u2212nR is sufficient global scalar kernel bound and large-challenge slope test. No routing/factor certificate."
+}
