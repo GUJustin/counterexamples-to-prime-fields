@@ -1,6 +1,6 @@
 # Three independent positive routes: checked current status
 
-**Subsequent update:** the full shared-pole Paley bank at quarter rate is now CLOSED by the audited double-zero degree budget in `../elliptic_source_gate/SHARED_POLE_DOUBLE_ZERO_BUDGET_2026_09_18.md` and its independent audit. The surviving-target discussion below records the intermediate state before that proof. It is not authorization to restart that full-bank target. Altered arrays, subbanks, and other rates require separate analysis.
+**Subsequent update:** the full shared-pole Paley bank at quarter rate is now CLOSED by the audited double-zero degree budget in `../elliptic_source_gate/SHARED_POLE_DOUBLE_ZERO_BUDGET_2026_09_18.md` and its independent audit. The surviving-target discussion below records the intermediate state before that proof. It is not authorization to restart that full-bank target. The subsequent `SHARED_POLE_SUBBANK_BUDGET_2026_09_18.md` and independent audit also exclude every growing subbank at this degree/length scale, even at vanishing density. Altered arrays and other rates require separate analysis.
 
 **Subsequent same-day update:** the full shared-pole Paley bank at quarter rate is now excluded by the symbolic double-zero budget in `../elliptic_source_gate/SHARED_POLE_DOUBLE_ZERO_BUDGET_2026_09_18.md` (independent audit requested). The common-remainder target below records the state before that proof and must not be presented as still open for the full bank at those parameters. Altered arrays, subbanks, or rates are outside that proof.
 
