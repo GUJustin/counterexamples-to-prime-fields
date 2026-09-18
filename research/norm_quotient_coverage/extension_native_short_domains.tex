@@ -129,8 +129,8 @@ $p_G-1=(2^{32}-1)2^{32}$, $p_B-1=15\cdot2^{27}$, and
 $p_K-1=127\cdot2^{24}$.
 
 The script and exact receipts are supplied in
-\texttt{research/norm\_quotient\_coverage/verify\_extension\_native\_short\_domains.py}
-and \texttt{extension\_native\_short\_domains\_verified.json}.
+\nolinkurl{research/norm_quotient_coverage/verify_extension_native_short_domains.py}
+and \nolinkurl{extension_native_short_domains_verified.json}.
 They certify existence of the selected tag sets through the finite
 lemma, without enumerating a domain or an extension field.  The
 characteristic exceeds $J$ in every case.  These statements do not
@@ -139,3 +139,31 @@ contribution is a finite existence guarantee at the displayed fields and
 length, not a larger asymptotic distance from capacity than prior
 inverse-logarithmic counterexamples.  They establish neither a
 better.codes improvement nor tightness of the prime-field upper bounds.
+
+
+\paragraph{Counting ceiling for this construction.}
+This compiler assigns one challenge label to each $r$-element subset
+of its $s$ tags.  Covering $E^*$ therefore requires
+\[
+ |E|-1\le\binom{s}{r}\le2^s.
+\]
+Consequently its capacity margin satisfies
+\[
+ \frac{2m-1}{n}<\frac{2}{s+1}
+ \le\frac{2}{1+\log_2(|E|-1)}.
+\]
+At the fixed length $n=2^{18}$, the condition $n=(s+1)m$ makes $m$
+a power of two.  If $m\ge2048$, then $s\le127$, whereas the exact
+integer comparison
+\[
+ \binom{127}{63}<2013265921^4-1
+\]
+holds.  The right side is the smallest native multiplicative-group
+size in the table.  Thus none of the four fields can have full native
+coverage with $m\ge2048$ through these subset witnesses, regardless
+of how the tags are chosen or coverage is proved.  The first three
+rows already attain the largest permitted $m=1024$ and capacity
+margin $2047/262144$ in this model.  The last row has counting room
+for at most that same margin.  This is a limitation of the displayed
+witness family, not an upper bound on all nearby codewords or on
+other counterexample constructions.
