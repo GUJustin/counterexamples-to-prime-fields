@@ -1,0 +1,168 @@
+\paragraph{First integrals with isolated critical points.}
+The multiplicity argument extends to every fixed value degree.  The
+hypothesis below concerns the original critical ideal, including fibers
+above repeated roots of the denominator.
+
+\begin{theorem}\label{thm:general-first-integral-zero-dimensional}
+Let $b\ge2$, $1\le D<n$, and let $\mathbb K$ have characteristic zero
+or characteristic $p>b$.  Suppose $0\ne H\in\mathbb K[X]$ and
+\[
+ F(X,u)=u^b+\sum_{j=0}^{b-1}a_j(X)u^j,
+ \qquad \deg a_j\le(b-j)D.
+\]
+Assume that the original ideal
+\[
+ I=(F_u,HF_X-H'F)
+\]
+is zero-dimensional after extending constants to an algebraic closure;
+the unit ideal is allowed.  On any $n$ distinct evaluation coordinates,
+every received word has at most
+\[
+ \left\lfloor b^2+
+ \frac{b+3b^2(b-1)^2D/n}{\eta}\right\rfloor
+\]
+polynomials $P$ of degree at most $D$ satisfying $F(X,P)=cH$ for some
+constant $c$ and agreeing with the word on at least $D+\eta n$
+coordinates, for every $\eta>0$.  Coordinates and received symbols may
+lie in an extension field.
+\end{theorem}
+
+\begin{proof}
+Extend constants to an algebraically closed field $k$ containing the
+coordinates and symbols.  Each section has a unique label $c$, and each
+label has at most $b$ sections.  If no nonzero label occurs the claim is
+immediate.  Otherwise $N=\deg H\le bD$ by the weighted coefficient caps.
+Put $B=HF_X-H'F$ and $\ell=\dim_k k[X,u]/I$.
+The bidegrees of $F_u,B$ are at most $((b-1)D,b-1)$ and
+$(N+bD-1,b)$.  Homogenize each nonzero generator in
+$\mathbb P^1\times\mathbb P^1$ to its own actual bidegree.  Neither
+contains a boundary divisor; a common projective curve would therefore
+meet the affine chart and contradict zero-dimensionality.  The proper
+intersection product gives
+\begin{equation}\label{eq:general-critical-length}
+ \ell\le(b-1)(N+2bD-1).
+\end{equation}
+A nonzero constant generator gives length zero directly.
+
+For a section $P$ write $A_P=F_u(X,P)$.  Differentiation gives
+$B(X,P)=-HA_PP'$.  Consequently $A_P\ne0$, since otherwise the graph
+of $P$ would be contained in the critical scheme, and
+\[
+ k[X,u]/(I,u-P)\simeq k[X]/(A_P).
+\]
+After localization, $\operatorname{ord}_x A_P$ is therefore at most the
+critical scheme's local length at $(x,P(x))$.
+
+We use one valuation estimate at finite points and infinity.  In a fixed
+valued algebraic closure factor
+\[
+ F_u(X,P+Z)=b\prod_{i=1}^{b-1}(Z-\delta_i),
+ \qquad A_P=b\prod_i(-\delta_i),
+\]
+and choose $\delta$ of maximal valuation.  All $\delta_i$ are nonzero.
+If $d=v(A_P)$ then $v(\delta)\ge d/(b-1)$.  Writing the derivative
+as $\sum_j c_jZ^j$, each summand of $c_j\delta^j$ is, up to sign,
+$A_P$ times a product of ratios $\delta/\delta_i$.  Its valuation is
+at least $d$.  Integrating this polynomial in $Z$ thus gives
+\begin{equation}\label{eq:general-critical-correction}
+ v\bigl(F(X,P+\delta)-F(X,P)\bigr)
+ \ge d+v(\delta)\ge\frac{bd}{b-1}.
+\end{equation}
+Only $1,\ldots,b$ are inverted, so the characteristic assumption suffices.
+The argument permits repeated critical roots and ramified valuations.
+
+At infinity this chooses a root of minimal degree.  If
+$\deg A_P<(b-1)N/b$, the correction has degree less than $N$ and the
+fixed critical value $F(X,P+\delta)/H$ has residue $c$ at infinity.
+There are at most $b-1$ fixed critical roots of $F_u$, hence at most
+$b-1$ such exceptional labels.  For every other label,
+\[
+ \deg A_P\ge\lceil(b-1)N/b\rceil.
+\]
+At a root $x$ of $H$ of multiplicity $m_x$, the inequality
+$\operatorname{ord}_x A_P>\lfloor(b-1)m_x/b\rfloor$ similarly forces
+one of those critical values to have residue $c$ at $x$.  For each fixed
+$x$, at most $b-1$ labels can have this excess.  Fixing one valuation
+extension at each place makes this count independent of how the sections
+choose critical roots.
+
+Let $r_H$ be the number of distinct roots of $H$, and suppose $r_H>D$.
+Select one section for each nonzero label not exceptional at infinity,
+and charge it
+\[
+ C(P)=\sum_{H(x)\ne0}\operatorname{ord}_x A_P+
+ \sum_{H(x)=0}\max\left\{0,\operatorname{ord}_x A_P
+                    -\left\lfloor\frac{(b-1)m_x}{b}\right\rfloor\right\}.
+\]
+Off $H=0$ a critical point determines the label $F/H$, so different
+selected labels have disjoint charged support.  At a root of $H$ at
+most $b-1$ labels have positive excess.  The local length bound gives
+$\sum_P C(P)\le(b-1)\ell$.  Also
+\begin{align*}
+ C(P)&\ge\left\lceil\frac{(b-1)N}{b}\right\rceil
+       -\sum_{H(x)=0}\left\lfloor\frac{(b-1)m_x}{b}\right\rfloor\\
+ &\ge r_H-\lfloor N/b\rfloor\ge r_H-D>0,
+\end{align*}
+since each summand in the last sum is at most $m_x-1$.
+Adding the exceptional labels and the zero label, and allowing at most
+$b$ sections per label, bounds the entire section bank by
+\begin{equation}\label{eq:general-root-bank-bound}
+ |\mathcal B|\le b^2+
+ \frac{b(b-1)\ell}{r_H-\lfloor N/b\rfloor}
+ \le b^2+\frac{3b^2(b-1)^2D}{r_H-D}.
+\end{equation}
+Here \eqref{eq:general-critical-length} and $N\le bD$ give the last step.
+
+Now select any finite list of $L$ sections with at least
+$a\ge D+\eta n$ agreements each.  At a coordinate outside $H=0$,
+the received symbol fixes one label and matches at most $b$ sections.
+Thus
+\[
+ La\le Lr_H+bn,\qquad r_H-D\ge\eta n-bn/L.
+\]
+For $L\le\max\{b^2,b/\eta\}$ the stated bound is immediate.
+Otherwise $r_H>D$, and \eqref{eq:general-root-bank-bound} implies
+\[
+ (L-b^2)(\eta-b/L)\le3b^2(b-1)^2D/n.
+\]
+Expanding and dropping the positive term $b^3/L$ gives the claimed
+bound after taking its floor.  Applying this to every finite subset
+also excludes an infinite list.
+\end{proof}
+
+\begin{corollary}\label{cor:general-first-integral-repeated-fiber}
+Keep the weighted coefficient and section hypotheses of
+Theorem~\ref{thm:general-first-integral-zero-dimensional}, but do not
+assume its critical ideal is zero-dimensional.  Assume characteristic
+zero or $p>b(b-1)D$.  If a list exceeds the bound in that theorem, then,
+after extending constants to an algebraic closure $k$, there is a
+$c\in k$ such that $F(X,u)-cH(X)$ has a repeated nonconstant factor
+in $k(X)[u]$.
+\end{corollary}
+
+\begin{proof}
+The theorem forces a positive-dimensional critical component.  It cannot
+be vertical because $F_u$ has nonzero constant leading coefficient $b$.
+Its generic root $r$ generates an extension $L/k(X)$ of degree
+$d\le b-1$, separable in positive characteristic since $d<p$.
+The derivation extends to $L$, and the critical relations give
+\[
+ \left(\frac{F(X,r)}{H}\right)'=0.
+\]
+The excessive list includes a nonzero-label section, so $N\le bD$.
+The monic weighted equation $F_u/b=0$ makes $r$ integral at finite
+places and bounds its pole at each place above infinity by $D$ times
+the ramification index.  Therefore $v=F(X,r)/H$ has pole-divisor height
+\[
+ h_L(v)\le dN+d\max\{bD-N,0\}=dbD\le b(b-1)D.
+\]
+In characteristic zero a function with zero derivative is constant.
+In characteristic $p$, the kernel of this nonzero derivation is $L^p$;
+a nonconstant $p$th power has height at least $p$, contradicting the
+strict bound.  Hence $v=c\in k$.  The minimal polynomial of $r$ divides
+both $F_u$ and $F-cH$, proving the repeated-factor assertion.
+\end{proof}
+
+The corollary is a structural condition, not a classification of the
+exceptional pencils.  It does not assert that the repeated factor is
+linear or that its label descends to the original constant field.

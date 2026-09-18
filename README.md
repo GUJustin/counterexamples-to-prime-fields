@@ -5,7 +5,7 @@ Working draft by Justin Thaler, September 17, 2026.
 [Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
 **Latest verified results (September 17, evening):** the ePrint-style article
-is 192 pages with one-inch margins. Its new Theorem R.5 proves an exact
+is 193 pages with one-inch margins. Its new Theorem R.5 proves an exact
 transition for the complete Dickson cubic-ODE solution family: a linear
 list at agreement `3/8`, but at most `ceil(epsilon^-2)` family members for
 any word at agreement `3/8 + epsilon`. A matching majority construction
@@ -23,7 +23,13 @@ coefficient-height bound from five sections and applies the classical
 Pasten--Wang square-value theorem. It does not apply to arbitrary
 first-order equations.
 
-Theorem R.7 now bounds every weighted monic-cubic first-integral family
+Theorem R.7 extends the finite-critical-locus list bound to every fixed
+monic value degree. Corollary R.8 shows that, under its explicit
+characteristic bound, exceeding this bound forces a constant fiber with
+a repeated factor. This is a necessary structural condition, not a
+classification of those remaining families.
+
+Theorem R.9 bounds every weighted monic-cubic first-integral family
 with denominator depending only on the evaluation coordinate. For
 `p>max(3,2D)`, its list at agreement `D+eta*n` has size at most
 `floor(9+(3+108D/n)/eta)`. This includes all prime-field rates below
