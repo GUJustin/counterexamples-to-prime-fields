@@ -1,5 +1,7 @@
 # Exact padding target and counting budget
 
+**Update:** the structured-padding question posed below is now resolved by `scaled_fiber_padding.tex`, with independent audit in `TWO_BLOCK_INDEPENDENT_AUDIT.md`. The original seed/target analysis is retained below as provenance.
+
 September 18, 2026. This is a necessary-conditions ledger, not a new line counterexample.
 
 Use the core proved in PROOF.md, with n0=2(p²−1), maximal core agreement A=2p, and L=p²−1 maximal witnesses. Append t distinct fresh coordinates, with direction g nonzero at every fresh coordinate and zero on the core. Seek threshold T=A+d, d>0. Each qualifying maximal-bank witness must gain at least d fresh matches at one label.

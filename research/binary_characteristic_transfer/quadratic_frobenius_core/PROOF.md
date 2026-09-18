@@ -1,5 +1,7 @@
 # Quadratic Frobenius core: complete quadratic classification
 
+**Update:** the structured-padding question posed below is now resolved by `scaled_fiber_padding.tex`, with independent audit in `TWO_BLOCK_INDEPENDENT_AUDIT.md`. The original seed/target analysis is retained below as provenance.
+
 Let p be odd, B=F_(p²), and E any finite field containing F_(p⁴). Choose v with v² a nonsquare of B. Then v is outside B and
 
     D0={x in E*: x² in B*}=B* disjoint-union vB*,

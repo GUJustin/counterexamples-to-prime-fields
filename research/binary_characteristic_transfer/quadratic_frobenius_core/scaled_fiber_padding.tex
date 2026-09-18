@@ -1,0 +1,139 @@
+\subsection{A Frobenius quadratic bank in characteristic comparable to the square root of length}
+\label{sec:scaled-frobenius-padding}
+
+\begin{proposition}\label{prop:scaled-frobenius-padding}
+For every prime $p\ge41$, there is a length-$N=9p^2$, dimension-three
+Reed--Solomon code over $E=\mathbb F_{p^4}$ and two received words whose
+individual and common agreement are at most $2p+3$, with the following
+property. At threshold $T=4p$, their affine linear combination has exactly
+\[
+ M=(p+1)(p-1)^2
+\]
+exceptional parameters with singleton lists, and one further exceptional
+parameter with a list of size two. All other parameters have empty lists.
+The threshold is above the DKT first-order curve and below the exact
+Johnson threshold. In particular $M=\Theta(N^{3/2})$, the source and common
+agreement gaps are at least $2p-3=\Theta(\sqrt N)$, and
+$p=\sqrt N/3$ exceeds the message degree.
+\end{proposition}
+
+\begin{proof}
+Put $B=\mathbb F_{p^2}$ and choose $s\in E^*$ such that
+$\eta=s^2\notin B$. Let
+\[
+ D_0=\{x\ne0:x^2\in B^*\},\qquad D_1=sD_0.
+\]
+These are disjoint sets of size $2(p^2-1)$. For each $a\in B$ with
+$a^{p+1}=1$, let
+\[
+ I_a=\{y^p-ay:y\in B\}.
+\]
+The $I_a$ are precisely the $p+1$ one-dimensional $\mathbb F_p$ subspaces
+of $B$. On $D_0$ set $f(x)=x^{2p}$ and $g(x)=0$; on $D_1$ set
+$f(x)=\eta(x^2/\eta)^p$ and $g(x)=1$.
+
+We use the elementary quadratic classification of the Frobenius word.
+On $D_0$, its canonical quadratics are
+$Q_{a,b}=aX^2+b$, with $a^{p+1}=1$ and $b\in I_a$.
+They have $2p$ matches if $b\ne0$, and $2p-2$ if $b=0$.
+Every noncanonical quadratic, including quadratics with coefficients in
+$E$, has at most $p$ matches for $p\ge5$.
+For completeness, write an arbitrary quadratic as $aX^2+cX+b$.
+The core is the union of two $B$-lines $uB^*$, where $u=1$ or
+$u=v$ with $v^2$ a nonsquare in $B$. On either line, put $x=ut$ and
+\[
+ (A,C,B_0)=(a u^{2-2p},c u^{1-2p},b u^{-2p}).
+\]
+The matching equation is $t^{2p}=At^2+Ct+B_0$.
+If these three coefficients are not all in $B$, a $B$-linear functional
+on $E$ vanishing on $B$ gives a nonzero polynomial of degree at most two
+vanishing at every match on this component. If neither component has
+all three coefficients in $B$, there are therefore at most four matches.
+If one component does, then $a,b\in B$ and $cu\in B$.
+When $c\ne0$, the other component has no matches, because its nonzero
+linear term lies outside $B$, whereas all its other terms lie in $B$.
+On the coefficientwise $B$-valued component, Frobenius and substitution give
+\[
+ C^p t^p=H(t),\qquad
+ H(t)=(1-A^{p+1})t^2-A^pCt-A^pB_0-B_0^p.
+\]
+Every match is consequently a zero of
+\[
+ H(t)^2-C^{2p}(At^2+Ct+B_0).
+\]
+If this polynomial is nonzero, it has at most four roots. If it is zero,
+$H$ has degree at most one, and the nonzero polynomial
+$C^pt^p-H(t)$ has at most $p$ roots. Finally, if $c=0$ and a component
+is coefficientwise $B$-valued, then $a,b\in B$ on both components.
+The substitution $y=x^2$ reduces the entire core to $y^p-ay=b$ on $B^*$,
+with two preimages per nonzero $y$. A norm-one $a$ has kernel size $p$
+and image $I_a$; a non-norm-one $a$ gives an invertible map. This proves
+both the canonical counts and the asserted bound $\max(p,4)=p$ for
+all other quadratics.
+
+For the word $f+\lambda g$, the same classification on $D_1$, after
+$x=sz$ and division by $\eta$, makes $Q_{a,b}$ canonical precisely when
+\[
+ b-\lambda=\eta v,\qquad v\in I_a.
+\]
+Thus a quadratic canonical on both blocks has parameter
+$\lambda=b-\eta v$ with $b,v\in I_a$. Since $1,\eta$ are linearly
+independent over $B$, the planes $I_a+\eta I_a$ intersect pairwise only
+at zero. Every nonzero parameter in their union determines a unique
+$a,b,v$. If both $b$ and $v$ are nonzero, the corresponding quadratic
+has exactly $4p$ matches; there are $M$ such distinct parameters.
+If exactly one is zero it has $4p-2$ matches, and at parameter zero
+all doubly canonical quadratics have $4p-4$ matches.
+A quadratic canonical on just one block has zero matches on the other:
+its norm-one coefficient is already fixed, and the other constant term
+fails the relevant image condition. A quadratic canonical on neither
+block has at most $2p$ matches in total.
+
+Append $5p^2+4$ distinct points outside $D_0\cup D_1$, avoiding all roots
+of $X^3-Q_{a,b}$ for the $p(p+1)$ core canonical quadratics. Put
+$f(x)=x^3$, $g(x)=0$ at these new points. This is possible since
+\[
+ p^4\ge12p^2+3p
+\]
+for $p\ge5$. Every canonical core quadratic gains zero matches, and
+any other quadratic gains at most three. Hence the only parameters
+with agreement at least $4p$ are precisely the $M$ parameters above,
+each with its unique canonical witness.
+
+Outside the union of the planes, the individual agreement is at most
+$2p+3$. The common agreement of $(f,g)$ is also at most $2p+3$.
+Indeed, if the proposed direction quadratic is zero, the simultaneous
+matches lie in the core and padding and number at most $2p+3$; if it
+is one, they lie in $D_1$ and number at most $2p$. Any other direction
+quadratic agrees with this zero--one direction at at most four points.
+Choose two distinct parameters $\alpha,\beta$ outside the union of
+planes, and use the two far words $r=f+\alpha g$ and $s_0=f+\beta g$
+as sources. Their common agreement is unchanged by this invertible
+change of source coordinates. For $z\ne-1$,
+\[
+ r+zs_0=(1+z)\left(f+\frac{\alpha+\beta z}{1+z}g\right).
+\]
+This transports all $M$ singleton exceptions bijectively. The omitted
+parameter $\beta$ is not exceptional. At $z=-1$ the word is
+$(\alpha-\beta)g$: its list at threshold $4p$ consists exactly of the
+two constant polynomials $0$ and $\alpha-\beta$, since every other
+quadratic agrees on at most four points.
+
+Finally the exact Johnson threshold is $\sqrt{2N}=\sqrt{18}\,p>4p$.
+The finite first-order estimate gives
+\[
+ N a_1(3/N)\le \sqrt{3N/2}+(3N/8)^{1/4}
+ <\frac{15}{4}p+\frac32\sqrt p<4p
+\]
+for $p\ge41$. All stated conclusions follow.
+\end{proof}
+
+Compared with Theorem~\ref{thm:projective-quadratic-line}, this retains
+an exceptional population of order $N^{3/2}$ and an agreement gap of
+order $\sqrt N$, while increasing the characteristic from order
+$N^{1/4}$ to order $\sqrt N$. The ambient field here has size
+$p^4=N^2/81$, and the exceptional probability is of order $N^{-1/2}$.
+The rate and fractional agreement gap still tend to zero. This is an
+extension-field result, not a prime-alphabet construction or a tightness
+result for the general DKT bound. The threshold comparison above does
+not reuse the preceding construction's finite interpolation certificate.

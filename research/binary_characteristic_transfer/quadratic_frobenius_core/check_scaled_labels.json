@@ -1,0 +1,26 @@
+[
+  {
+    "p": 3,
+    "target_distinct_labels": 16,
+    "union_planes": 33,
+    "target_agreement": 12,
+    "zero_label_witnesses": 4,
+    "passed": true
+  },
+  {
+    "p": 5,
+    "target_distinct_labels": 96,
+    "union_planes": 145,
+    "target_agreement": 20,
+    "zero_label_witnesses": 6,
+    "passed": true
+  },
+  {
+    "p": 7,
+    "target_distinct_labels": 288,
+    "union_planes": 385,
+    "target_agreement": 28,
+    "zero_label_witnesses": 8,
+    "passed": true
+  }
+]

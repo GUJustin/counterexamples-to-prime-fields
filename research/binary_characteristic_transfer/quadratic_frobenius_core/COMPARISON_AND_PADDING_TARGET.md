@@ -1,5 +1,7 @@
 # Matched comparison and the exact missing padding identity
 
+**Update:** the structured-padding question posed below is now resolved by `scaled_fiber_padding.tex`, with independent audit in `TWO_BLOCK_INDEPENDENT_AUDIT.md`. The original seed/target analysis is retained below as provenance.
+
 Compared against `../projective_quadratic_line.tex`, not against a hypothetical absence of growing agreement gaps. No new scan, manuscript edit, or rental.
 
 | Parameter | Existing projective quadratic line | New Frobenius core only |
