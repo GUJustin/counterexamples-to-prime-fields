@@ -1,0 +1,71 @@
+{
+  "status": "PASS: exact arithmetic; algebraic proof is in companion note",
+  "field_prime": 2130706433,
+  "packet_size": 512,
+  "code_dimension": 131072,
+  "target_agreement": 139782,
+  "required_distinct_labels": 274980728111395088,
+  "denominator_degree_for_partial_rigidity": 1031,
+  "common_top_band_including_leading": 7680,
+  "common_nonleading_coefficients": 7679,
+  "arbitrary_core_max_partial_degree": 3590,
+  "fixed_511_core_max_added_partial_degree": 3591,
+  "profiles": [
+    {
+      "h": 266,
+      "c": 3590,
+      "kernel_bound": 249,
+      "affine_codimension": 16
+    },
+    {
+      "h": 267,
+      "c": 3078,
+      "kernel_bound": 250,
+      "affine_codimension": 16
+    },
+    {
+      "h": 268,
+      "c": 2566,
+      "kernel_bound": 251,
+      "affine_codimension": 16
+    },
+    {
+      "h": 269,
+      "c": 2054,
+      "kernel_bound": 252,
+      "affine_codimension": 16
+    },
+    {
+      "h": 270,
+      "c": 1542,
+      "kernel_bound": 253,
+      "affine_codimension": 16
+    },
+    {
+      "h": 271,
+      "c": 1030,
+      "kernel_bound": 254,
+      "affine_codimension": 16
+    },
+    {
+      "h": 272,
+      "c": 518,
+      "kernel_bound": 255,
+      "affine_codimension": 16
+    },
+    {
+      "h": 273,
+      "c": 6,
+      "kernel_bound": 256,
+      "affine_codimension": 16
+    }
+  ],
+  "incumbent_affine_codimension": 15,
+  "new_affine_codimension": 16,
+  "generic_pigeonhole_guarantees": {
+    "incumbent": 4009245024241067461,
+    "fixed_518_core_extra_denominator": 880067499,
+    "273_packets_6_core": 1647305831
+  },
+  "scope": "No upper bound on exceptional combinatorial fiber sizes; no improved certificate."
+}

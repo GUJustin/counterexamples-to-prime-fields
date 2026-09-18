@@ -1,0 +1,643 @@
+{
+  "status": "PASS_EXACT_RATIONAL",
+  "scope": "Selected base-field fiber domains; native field K, auxiliary field E. No explicit tag set, prescribed NTT domain, or benchmark claim.",
+  "prime": 2130706433,
+  "prime_certificate": {
+    "type": "Proth",
+    "k": 127,
+    "power": 24,
+    "base": 3
+  },
+  "n": 262144,
+  "dimension": 131072,
+  "sqrt_strict_upper_bound": 46160,
+  "norm_degree_six_auxiliary_rows": [
+    {
+      "auxiliary_degree": 6,
+      "native_degree": 6,
+      "relative_norm_degree": 1,
+      "m": 1024,
+      "s": 255,
+      "r": 129,
+      "w": 1023,
+      "population_size": 2080767,
+      "epsilon": {
+        "numerator": 276961,
+        "denominator": 2080767
+      },
+      "distinctness_lower_bound": {
+        "numerator": 682794,
+        "denominator": 693589
+      },
+      "subset_count": 2839611126271508546268984656777172227686073202135060380392524976909278609885,
+      "auxiliary_group_order": 93571093019388561295270373781649880353786165192103559168,
+      "native_nonzero_labels": 93571093019388561295270373781649880353786165192103559168,
+      "missing_fraction_upper_bound": {
+        "numerator": 60961332305006270365512826866084,
+        "denominator_power_of_two": 128
+      },
+      "first_moment_contribution_upper_bound": {
+        "numerator": 60961332305006270365512826866084,
+        "denominator_power_of_two": 128
+      },
+      "offdiagonal_contribution_upper_bound": {
+        "numerator": 1,
+        "denominator_power_of_two": 128
+      },
+      "guaranteed_missing_labels_at_most": 16763191543871335239382939178253023224208840135546,
+      "guaranteed_nearby_labels_at_least": 93571076256197017423935134398710702100762940983263423622,
+      "all_native_labels_certified": false,
+      "positive_label_fraction_certified": true,
+      "exact_polynomial_source_and_common_agreement": 132095,
+      "rational_direction_agreement_upper_bound": 132095,
+      "exact_nearby_agreement": 133119,
+      "capacity_margin_numerator": 2047,
+      "common_agreement_loss_numerator": 1024,
+      "minimum_endpoint_loss_numerator": 1024,
+      "meets_139782_agreement": false,
+      "uniform_strict_missing_fraction_cap": "2^-22"
+    },
+    {
+      "auxiliary_degree": 6,
+      "native_degree": 3,
+      "relative_norm_degree": 2,
+      "m": 1024,
+      "s": 255,
+      "r": 130,
+      "w": 1023,
+      "population_size": 2080767,
+      "epsilon": {
+        "numerator": 276961,
+        "denominator": 2080767
+      },
+      "distinctness_lower_bound": {
+        "numerator": 682794,
+        "denominator": 693589
+      },
+      "subset_count": 2752238476232385206383785128876336159141886334377058522534293439158223883427,
+      "auxiliary_group_order": 93571093019388561295270373781649880353786165192103559168,
+      "native_nonzero_labels": 9673215236899702176256884736,
+      "missing_fraction_upper_bound": {
+        "numerator": 62639289652599271873155801426086,
+        "denominator_power_of_two": 128
+      },
+      "first_moment_contribution_upper_bound": {
+        "numerator": 62639289652599271873155801426086,
+        "denominator_power_of_two": 128
+      },
+      "offdiagonal_contribution_upper_bound": {
+        "numerator": 1,
+        "denominator_power_of_two": 128
+      },
+      "guaranteed_missing_labels_at_most": 1780648631837211670067,
+      "guaranteed_nearby_labels_at_least": 9673213456251070339045214669,
+      "all_native_labels_certified": false,
+      "positive_label_fraction_certified": true,
+      "exact_polynomial_source_and_common_agreement": 132095,
+      "rational_direction_agreement_upper_bound": 133119,
+      "exact_nearby_agreement": 134143,
+      "capacity_margin_numerator": 3071,
+      "common_agreement_loss_numerator": 2048,
+      "minimum_endpoint_loss_numerator": 1024,
+      "meets_139782_agreement": false,
+      "uniform_strict_missing_fraction_cap": "2^-22"
+    },
+    {
+      "auxiliary_degree": 6,
+      "native_degree": 2,
+      "relative_norm_degree": 3,
+      "m": 1024,
+      "s": 255,
+      "r": 131,
+      "w": 1023,
+      "population_size": 2080767,
+      "epsilon": {
+        "numerator": 276961,
+        "denominator": 2080767
+      },
+      "distinctness_lower_bound": {
+        "numerator": 682794,
+        "denominator": 693589
+      },
+      "subset_count": 2626181752130138555709718634423984884677372456466658895547989922860900652125,
+      "auxiliary_group_order": 93571093019388561295270373781649880353786165192103559168,
+      "native_nonzero_labels": 4539909903627583488,
+      "missing_fraction_upper_bound": {
+        "numerator": 65243470996098031360366174320069,
+        "denominator_power_of_two": 128
+      },
+      "first_moment_contribution_upper_bound": {
+        "numerator": 65243470996098031360366174320069,
+        "denominator_power_of_two": 128
+      },
+      "offdiagonal_contribution_upper_bound": {
+        "numerator": 1,
+        "denominator_power_of_two": 128
+      },
+      "guaranteed_missing_labels_at_most": 870452039000,
+      "guaranteed_nearby_labels_at_least": 4539909033175544488,
+      "all_native_labels_certified": false,
+      "positive_label_fraction_certified": true,
+      "exact_polynomial_source_and_common_agreement": 132095,
+      "rational_direction_agreement_upper_bound": 134143,
+      "exact_nearby_agreement": 135167,
+      "capacity_margin_numerator": 4095,
+      "common_agreement_loss_numerator": 3072,
+      "minimum_endpoint_loss_numerator": 1024,
+      "meets_139782_agreement": false,
+      "uniform_strict_missing_fraction_cap": "2^-22"
+    },
+    {
+      "auxiliary_degree": 6,
+      "native_degree": 1,
+      "relative_norm_degree": 6,
+      "m": 1024,
+      "s": 255,
+      "r": 134,
+      "w": 1023,
+      "population_size": 2080767,
+      "epsilon": {
+        "numerator": 276961,
+        "denominator": 2080767
+      },
+      "distinctness_lower_bound": {
+        "numerator": 682794,
+        "denominator": 693589
+      },
+      "subset_count": 2077213019907996983939463945945521593270027483113991194037310440715035435875,
+      "auxiliary_group_order": 93571093019388561295270373781649880353786165192103559168,
+      "native_nonzero_labels": 2130706432,
+      "missing_fraction_upper_bound": {
+        "numerator": 79986806591593004503167060932173,
+        "denominator_power_of_two": 128
+      },
+      "first_moment_contribution_upper_bound": {
+        "numerator": 79986806591593004503167060932173,
+        "denominator_power_of_two": 128
+      },
+      "offdiagonal_contribution_upper_bound": {
+        "numerator": 1,
+        "denominator_power_of_two": 128
+      },
+      "guaranteed_missing_labels_at_most": 500,
+      "guaranteed_nearby_labels_at_least": 2130705932,
+      "all_native_labels_certified": false,
+      "positive_label_fraction_certified": true,
+      "exact_polynomial_source_and_common_agreement": 132095,
+      "rational_direction_agreement_upper_bound": 137215,
+      "exact_nearby_agreement": 138239,
+      "capacity_margin_numerator": 7167,
+      "common_agreement_loss_numerator": 6144,
+      "minimum_endpoint_loss_numerator": 1024,
+      "meets_139782_agreement": false,
+      "uniform_strict_missing_fraction_cap": "2^-22"
+    }
+  ],
+  "smaller_fiber_all_native_rows": [
+    {
+      "auxiliary_degree": 6,
+      "native_degree": 6,
+      "relative_norm_degree": 1,
+      "m": 512,
+      "s": 511,
+      "r": 257,
+      "w": 511,
+      "population_size": 4161535,
+      "epsilon": {
+        "numerator": 276961,
+        "denominator": 4161535
+      },
+      "distinctness_lower_bound": {
+        "numerator": 115178,
+        "denominator": 118901
+      },
+      "subset_count": 234437922771432015315556642729674181550474187721464747193032799774629081587206917734213670051914068467536274297180279406387499124901157519793400731280605,
+      "auxiliary_group_order": 93571093019388561295270373781649880353786165192103559168,
+      "native_nonzero_labels": 93571093019388561295270373781649880353786165192103559168,
+      "missing_fraction_upper_bound": {
+        "numerator": 1,
+        "denominator_power_of_two": 128
+      },
+      "first_moment_contribution_upper_bound": {
+        "numerator": 1,
+        "denominator_power_of_two": 128
+      },
+      "offdiagonal_contribution_upper_bound": {
+        "numerator": 1,
+        "denominator_power_of_two": 128
+      },
+      "guaranteed_missing_labels_at_most": 0,
+      "guaranteed_nearby_labels_at_least": 93571093019388561295270373781649880353786165192103559168,
+      "all_native_labels_certified": true,
+      "positive_label_fraction_certified": true,
+      "exact_polynomial_source_and_common_agreement": 131583,
+      "rational_direction_agreement_upper_bound": 131583,
+      "exact_nearby_agreement": 132095,
+      "capacity_margin_numerator": 1023,
+      "common_agreement_loss_numerator": 512,
+      "minimum_endpoint_loss_numerator": 512,
+      "meets_139782_agreement": false
+    },
+    {
+      "auxiliary_degree": 6,
+      "native_degree": 3,
+      "relative_norm_degree": 2,
+      "m": 512,
+      "s": 511,
+      "r": 258,
+      "w": 511,
+      "population_size": 4161535,
+      "epsilon": {
+        "numerator": 276961,
+        "denominator": 4161535
+      },
+      "distinctness_lower_bound": {
+        "numerator": 115178,
+        "denominator": 118901
+      },
+      "subset_count": 230803226294355549961827082377276132224110246826558317003993531561068940787405260094923535632504548026179122757689112283807847975677883759796603820718115,
+      "auxiliary_group_order": 93571093019388561295270373781649880353786165192103559168,
+      "native_nonzero_labels": 9673215236899702176256884736,
+      "missing_fraction_upper_bound": {
+        "numerator": 1,
+        "denominator_power_of_two": 128
+      },
+      "first_moment_contribution_upper_bound": {
+        "numerator": 1,
+        "denominator_power_of_two": 128
+      },
+      "offdiagonal_contribution_upper_bound": {
+        "numerator": 1,
+        "denominator_power_of_two": 128
+      },
+      "guaranteed_missing_labels_at_most": 0,
+      "guaranteed_nearby_labels_at_least": 9673215236899702176256884736,
+      "all_native_labels_certified": true,
+      "positive_label_fraction_certified": true,
+      "exact_polynomial_source_and_common_agreement": 131583,
+      "rational_direction_agreement_upper_bound": 132095,
+      "exact_nearby_agreement": 132607,
+      "capacity_margin_numerator": 1535,
+      "common_agreement_loss_numerator": 1024,
+      "minimum_endpoint_loss_numerator": 512,
+      "meets_139782_agreement": false
+    },
+    {
+      "auxiliary_degree": 6,
+      "native_degree": 2,
+      "relative_norm_degree": 3,
+      "m": 512,
+      "s": 511,
+      "r": 259,
+      "w": 511,
+      "population_size": 4161535,
+      "epsilon": {
+        "numerator": 276961,
+        "denominator": 4161535
+      },
+      "distinctness_lower_bound": {
+        "numerator": 115178,
+        "denominator": 118901
+      },
+      "subset_count": 225456433407227622163483597843439619508493793232120672594634608050001706637890080324384766467272782434839065859827588447117318678944033170766566666570205,
+      "auxiliary_group_order": 93571093019388561295270373781649880353786165192103559168,
+      "native_nonzero_labels": 4539909903627583488,
+      "missing_fraction_upper_bound": {
+        "numerator": 1,
+        "denominator_power_of_two": 128
+      },
+      "first_moment_contribution_upper_bound": {
+        "numerator": 1,
+        "denominator_power_of_two": 128
+      },
+      "offdiagonal_contribution_upper_bound": {
+        "numerator": 1,
+        "denominator_power_of_two": 128
+      },
+      "guaranteed_missing_labels_at_most": 0,
+      "guaranteed_nearby_labels_at_least": 4539909903627583488,
+      "all_native_labels_certified": true,
+      "positive_label_fraction_certified": true,
+      "exact_polynomial_source_and_common_agreement": 131583,
+      "rational_direction_agreement_upper_bound": 132607,
+      "exact_nearby_agreement": 133119,
+      "capacity_margin_numerator": 2047,
+      "common_agreement_loss_numerator": 1536,
+      "minimum_endpoint_loss_numerator": 512,
+      "meets_139782_agreement": false
+    },
+    {
+      "auxiliary_degree": 6,
+      "native_degree": 1,
+      "relative_norm_degree": 6,
+      "m": 512,
+      "s": 511,
+      "r": 262,
+      "w": 511,
+      "population_size": 4161535,
+      "epsilon": {
+        "numerator": 276961,
+        "denominator": 4161535
+      },
+      "distinctness_lower_bound": {
+        "numerator": 115178,
+        "denominator": 118901
+      },
+      "subset_count": 200521874934951977312471238084376157428282541310889516344773425366924999778672966129722414138841334125383318846921797690477822564088052666206115796243875,
+      "auxiliary_group_order": 93571093019388561295270373781649880353786165192103559168,
+      "native_nonzero_labels": 2130706432,
+      "missing_fraction_upper_bound": {
+        "numerator": 1,
+        "denominator_power_of_two": 128
+      },
+      "first_moment_contribution_upper_bound": {
+        "numerator": 1,
+        "denominator_power_of_two": 128
+      },
+      "offdiagonal_contribution_upper_bound": {
+        "numerator": 1,
+        "denominator_power_of_two": 128
+      },
+      "guaranteed_missing_labels_at_most": 0,
+      "guaranteed_nearby_labels_at_least": 2130706432,
+      "all_native_labels_certified": true,
+      "positive_label_fraction_certified": true,
+      "exact_polynomial_source_and_common_agreement": 131583,
+      "rational_direction_agreement_upper_bound": 134143,
+      "exact_nearby_agreement": 134655,
+      "capacity_margin_numerator": 3583,
+      "common_agreement_loss_numerator": 3072,
+      "minimum_endpoint_loss_numerator": 512,
+      "meets_139782_agreement": false
+    }
+  ],
+  "matched_one_pole_rows": [
+    {
+      "auxiliary_degree": 1,
+      "native_degree": 1,
+      "relative_norm_degree": 1,
+      "m": 4096,
+      "s": 63,
+      "r": 33,
+      "w": 4095,
+      "population_size": 520191,
+      "epsilon": {
+        "numerator": 223,
+        "denominator": 2513
+      },
+      "distinctness_lower_bound": {
+        "numerator": 8226,
+        "denominator": 8257
+      },
+      "subset_count": 860778005594247069,
+      "auxiliary_group_order": 2130706432,
+      "native_nonzero_labels": 2130706432,
+      "missing_fraction_upper_bound": {
+        "numerator": 33281927612386891671334766786061,
+        "denominator_power_of_two": 128
+      },
+      "first_moment_contribution_upper_bound": {
+        "numerator": 33281927612386891671279093716830,
+        "denominator_power_of_two": 128
+      },
+      "offdiagonal_contribution_upper_bound": {
+        "numerator": 55673069232,
+        "denominator_power_of_two": 128
+      },
+      "guaranteed_missing_labels_at_most": 208,
+      "guaranteed_nearby_labels_at_least": 2130706224,
+      "all_native_labels_certified": false,
+      "positive_label_fraction_certified": true,
+      "exact_polynomial_source_and_common_agreement": 135167,
+      "rational_direction_agreement_upper_bound": 135167,
+      "exact_nearby_agreement": 139263,
+      "capacity_margin_numerator": 8191,
+      "common_agreement_loss_numerator": 4096,
+      "minimum_endpoint_loss_numerator": 4096,
+      "meets_139782_agreement": false
+    },
+    {
+      "auxiliary_degree": 2,
+      "native_degree": 2,
+      "relative_norm_degree": 1,
+      "m": 2048,
+      "s": 127,
+      "r": 65,
+      "w": 2047,
+      "population_size": 1040383,
+      "epsilon": {
+        "numerator": 4859,
+        "denominator": 54757
+      },
+      "distinctness_lower_bound": {
+        "numerator": 1032382,
+        "denominator": 1040383
+      },
+      "subset_count": 11607093851088224773588784845476728925,
+      "auxiliary_group_order": 4539909903627583488,
+      "native_nonzero_labels": 4539909903627583488,
+      "missing_fraction_upper_bound": {
+        "numerator": 852486580360594266586688,
+        "denominator_power_of_two": 128
+      },
+      "first_moment_contribution_upper_bound": {
+        "numerator": 852486580360594266586688,
+        "denominator_power_of_two": 128
+      },
+      "offdiagonal_contribution_upper_bound": {
+        "numerator": 1,
+        "denominator_power_of_two": 128
+      },
+      "guaranteed_missing_labels_at_most": 11373,
+      "guaranteed_nearby_labels_at_least": 4539909903627572115,
+      "all_native_labels_certified": false,
+      "positive_label_fraction_certified": true,
+      "exact_polynomial_source_and_common_agreement": 133119,
+      "rational_direction_agreement_upper_bound": 133119,
+      "exact_nearby_agreement": 135167,
+      "capacity_margin_numerator": 4095,
+      "common_agreement_loss_numerator": 2048,
+      "minimum_endpoint_loss_numerator": 2048,
+      "meets_139782_agreement": false
+    },
+    {
+      "auxiliary_degree": 3,
+      "native_degree": 3,
+      "relative_norm_degree": 1,
+      "m": 2048,
+      "s": 127,
+      "r": 65,
+      "w": 2047,
+      "population_size": 1040383,
+      "epsilon": {
+        "numerator": 138481,
+        "denominator": 1040383
+      },
+      "distinctness_lower_bound": {
+        "numerator": 1032382,
+        "denominator": 1040383
+      },
+      "subset_count": 11607093851088224773588784845476728925,
+      "auxiliary_group_order": 9673215236899702176256884736,
+      "native_nonzero_labels": 9673215236899702176256884736,
+      "missing_fraction_upper_bound": {
+        "numerator": 245036682519271339499716910638644958,
+        "denominator_power_of_two": 128
+      },
+      "first_moment_contribution_upper_bound": {
+        "numerator": 245036682519271339462835918669159980,
+        "denominator_power_of_two": 128
+      },
+      "offdiagonal_contribution_upper_bound": {
+        "numerator": 36880991969484978,
+        "denominator_power_of_two": 128
+      },
+      "guaranteed_missing_labels_at_most": 6965663817354034409281429,
+      "guaranteed_nearby_labels_at_least": 9666249573082348141847603307,
+      "all_native_labels_certified": false,
+      "positive_label_fraction_certified": true,
+      "exact_polynomial_source_and_common_agreement": 133119,
+      "rational_direction_agreement_upper_bound": 133119,
+      "exact_nearby_agreement": 135167,
+      "capacity_margin_numerator": 4095,
+      "common_agreement_loss_numerator": 2048,
+      "minimum_endpoint_loss_numerator": 2048,
+      "meets_139782_agreement": false
+    },
+    {
+      "auxiliary_degree": 6,
+      "native_degree": 6,
+      "relative_norm_degree": 1,
+      "m": 1024,
+      "s": 255,
+      "r": 129,
+      "w": 1023,
+      "population_size": 2080767,
+      "epsilon": {
+        "numerator": 276961,
+        "denominator": 2080767
+      },
+      "distinctness_lower_bound": {
+        "numerator": 682794,
+        "denominator": 693589
+      },
+      "subset_count": 2839611126271508546268984656777172227686073202135060380392524976909278609885,
+      "auxiliary_group_order": 93571093019388561295270373781649880353786165192103559168,
+      "native_nonzero_labels": 93571093019388561295270373781649880353786165192103559168,
+      "missing_fraction_upper_bound": {
+        "numerator": 60961332305006270365512826866084,
+        "denominator_power_of_two": 128
+      },
+      "first_moment_contribution_upper_bound": {
+        "numerator": 60961332305006270365512826866084,
+        "denominator_power_of_two": 128
+      },
+      "offdiagonal_contribution_upper_bound": {
+        "numerator": 1,
+        "denominator_power_of_two": 128
+      },
+      "guaranteed_missing_labels_at_most": 16763191543871335239382939178253023224208840135546,
+      "guaranteed_nearby_labels_at_least": 93571076256197017423935134398710702100762940983263423622,
+      "all_native_labels_certified": false,
+      "positive_label_fraction_certified": true,
+      "exact_polynomial_source_and_common_agreement": 132095,
+      "rational_direction_agreement_upper_bound": 132095,
+      "exact_nearby_agreement": 133119,
+      "capacity_margin_numerator": 2047,
+      "common_agreement_loss_numerator": 1024,
+      "minimum_endpoint_loss_numerator": 1024,
+      "meets_139782_agreement": false
+    }
+  ],
+  "norm_next_fiber_moment_obstruction": {
+    "auxiliary_degree": 6,
+    "largest_certified_fiber": 1024,
+    "next_fiber": 2048,
+    "remaining_nonreserved_tags": 127,
+    "largest_subset_count": 11975573020964041433067793888190275875,
+    "auxiliary_group_order_minus_one": 93571093019388561295270373781649880353786165192103559167,
+    "reason": "V/a >= (M-1)/binom(s,r) > 1 for every r; larger fibers only reduce s",
+    "scope": "failure of this pointwise second-moment sufficient criterion only"
+  },
+  "matched_one_pole_next_fiber_obstructions": [
+    {
+      "auxiliary_degree": 1,
+      "largest_certified_fiber": 4096,
+      "next_fiber": 8192,
+      "remaining_nonreserved_tags": 31,
+      "largest_subset_count": 300540195,
+      "auxiliary_group_order_minus_one": 2130706431,
+      "reason": "V/a >= (M-1)/binom(s,r) > 1 for every r; larger fibers only reduce s",
+      "scope": "failure of this pointwise second-moment sufficient criterion only"
+    },
+    {
+      "auxiliary_degree": 2,
+      "largest_certified_fiber": 2048,
+      "next_fiber": 4096,
+      "remaining_nonreserved_tags": 63,
+      "largest_subset_count": 916312070471295267,
+      "auxiliary_group_order_minus_one": 4539909903627583487,
+      "reason": "V/a >= (M-1)/binom(s,r) > 1 for every r; larger fibers only reduce s",
+      "scope": "failure of this pointwise second-moment sufficient criterion only"
+    },
+    {
+      "auxiliary_degree": 3,
+      "largest_certified_fiber": 2048,
+      "next_fiber": 4096,
+      "remaining_nonreserved_tags": 63,
+      "largest_subset_count": 916312070471295267,
+      "auxiliary_group_order_minus_one": 9673215236899702176256884735,
+      "reason": "V/a >= (M-1)/binom(s,r) > 1 for every r; larger fibers only reduce s",
+      "scope": "failure of this pointwise second-moment sufficient criterion only"
+    },
+    {
+      "auxiliary_degree": 6,
+      "largest_certified_fiber": 1024,
+      "next_fiber": 2048,
+      "remaining_nonreserved_tags": 127,
+      "largest_subset_count": 11975573020964041433067793888190275875,
+      "auxiliary_group_order_minus_one": 93571093019388561295270373781649880353786165192103559167,
+      "reason": "V/a >= (M-1)/binom(s,r) > 1 for every r; larger fibers only reduce s",
+      "scope": "failure of this pointwise second-moment sufficient criterion only"
+    }
+  ],
+  "matched_comparisons": [
+    {
+      "native_degree": 6,
+      "norm_capacity_numerator": 2047,
+      "one_pole_capacity_numerator": 2047,
+      "norm_common_loss_numerator": 1024,
+      "one_pole_common_loss_numerator": 1024,
+      "norm_minimum_endpoint_loss_numerator": 1024,
+      "one_pole_minimum_endpoint_loss_numerator": 1024
+    },
+    {
+      "native_degree": 3,
+      "norm_capacity_numerator": 3071,
+      "one_pole_capacity_numerator": 4095,
+      "norm_common_loss_numerator": 2048,
+      "one_pole_common_loss_numerator": 2048,
+      "norm_minimum_endpoint_loss_numerator": 1024,
+      "one_pole_minimum_endpoint_loss_numerator": 2048
+    },
+    {
+      "native_degree": 2,
+      "norm_capacity_numerator": 4095,
+      "one_pole_capacity_numerator": 4095,
+      "norm_common_loss_numerator": 3072,
+      "one_pole_common_loss_numerator": 2048,
+      "norm_minimum_endpoint_loss_numerator": 1024,
+      "one_pole_minimum_endpoint_loss_numerator": 2048
+    },
+    {
+      "native_degree": 1,
+      "norm_capacity_numerator": 7167,
+      "one_pole_capacity_numerator": 8191,
+      "norm_common_loss_numerator": 6144,
+      "one_pole_common_loss_numerator": 4096,
+      "norm_minimum_endpoint_loss_numerator": 1024,
+      "one_pole_minimum_endpoint_loss_numerator": 4096
+    }
+  ],
+  "asymptotic_comparison": "A dimension-shifted one-pole compiler with m'=e*m and shift t=(e-1)*m has the identical source/common/near profile whenever its divisibility and coverage conditions hold."
+}

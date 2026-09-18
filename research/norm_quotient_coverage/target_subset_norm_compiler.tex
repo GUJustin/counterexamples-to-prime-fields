@@ -1,0 +1,188 @@
+% Pointwise second moments and a norm-denominator compiler.
+% The natural code alphabet is K; E is an auxiliary field.
+\subsection{Targeted products and norm denominators}
+\label{subsec:target-subset-norm-compiler}
+
+The product argument can target a specified subfield rather than merely
+a large, unspecified part of the auxiliary field.  This permits a
+higher-degree denominator while keeping a single scalar challenge.
+
+\begin{lemma}[Products in a specified target set]
+\label{lem:target-subset-product-moment}
+Let $\mathcal A$ be a $P$-element subset of a finite abelian group
+$\Gamma$ of order $M$, and suppose every nontrivial character mean
+has absolute value at most $\varepsilon\le1$.  Let
+$1\le r\le s\le P$, $L=\binom sr$, and
+$a=1-\binom s2/P>0$.  Set
+\[
+ b_u=\binom ru\binom{s-r}u,\qquad
+ V=\frac{M-1}{L}\sum_u b_u\varepsilon^{2u}
+   +\frac{(M-1)(M-2)}{L}\sum_u b_u\varepsilon^{r+u}.
+\]
+Here $0\le u\le\min\{r,s-r\}$ and $\varepsilon^0=1$.
+For every specified $B\subset\Gamma$, some $s$ distinct elements
+of $\mathcal A$ have at least
+\[
+ |B|-\left\lfloor |B|V/a\right\rfloor
+\]
+distinct elements of $B$ among their exact $r$-element subset products.
+In particular they cover $B$ if $|B|V/a<1$.
+\end{lemma}
+\begin{proof}
+Draw $s$ independent uniform elements $X_i$ of $\mathcal A$.
+For $z\in\Gamma$, let $Z_z$ count the $r$-subsets of positions whose
+product is $z$, and put $W_z=MZ_z/L$ and
+$a_\chi=\mathbb E\chi(X_i)$.  Orthogonality gives
+\[
+ W_z-1=\frac1L\sum_{|S|=r}\sum_{\chi\ne1}
+          \chi(z)^{-1}\prod_{i\in S}\chi(X_i).
+\]
+For two supports with $|S\setminus T|=|T\setminus S|=u$, a term
+in the ordinary square of this real quantity has expectation
+\[
+ (\chi\psi)(z)^{-1}
+ a_{\chi\psi}^{\,r-u}a_\chi^{\,u}a_\psi^{\,u}.
+\]
+There are $Lb_u$ ordered support pairs.  Among ordered pairs
+$\chi,\psi\ne1$, the $M-1$ with $\chi\psi=1$ contribute absolute
+value at most $\varepsilon^{2u}$ each; the remaining
+$(M-1)(M-2)$ contribute at most $\varepsilon^{r+u}$ each.
+Consequently $\mathbb E(W_z-1)^2\le V$, uniformly in $z$.
+On the event $Z_z=0$ the square equals one.  The expected number of
+missing elements of $B$ is therefore at most $|B|V$.
+The probability that all draws are distinct is at least $a$; conditioning
+this nonnegative missing count on distinctness costs at most $1/a$.
+Some distinct sample has missing count at most $|B|V/a$, and rounding
+that integer proves the claim.  No independence between subset products
+is assumed.
+\end{proof}
+
+\begin{proposition}[Norm denominators over the native subfield]
+\label{prop:target-subfield-norm-compiler}
+Let $p$ be prime, $d\ge2$, $e\mid d$, and
+\[
+ E=\mathbb F_{p^d},\qquad K=\mathbb F_{p^{d/e}}.
+\]
+Let $m\ge2$ divide $p-1$, choose $b\in E$ of degree $d$ over
+$\mathbb F_p$, and set
+\[
+ P=(p-1)/m-1,\quad M=p^d-1,\quad
+ \varepsilon=(d\sqrt p+1)/P.
+\]
+Choose $e+1\le r\le s\le P$, $0\le w<m$, and define
+\[
+ n=(s+1)m,\qquad J=w+(r-e-1)m+1.
+\]
+Suppose $\varepsilon\le1$, $a>0$, and $V/a<1$ in
+Lemma~\ref{lem:target-subset-product-moment}.
+There are an $n$-point domain $D\subset\mathbb F_p^*$ and
+$K$-valued words $f,g$ on $D$ such that
+\[
+ \operatorname{agr}_J(f)=\operatorname{CA}_J(f,g)=J+m-1,
+ \qquad J+m-1\le\operatorname{agr}_J(g)\le J+em-1,
+\]
+while at least
+\[
+ |K|-1-\left\lfloor (|K|-1)V/a\right\rfloor
+\]
+distinct $\lambda\in K^*$ satisfy
+\[
+ \operatorname{agr}_J(f+\lambda g)=J+(e+1)m-1.
+\]
+All agreements are with the dimension-$J$ Reed--Solomon code over
+the native alphabet $K$.  The capacity margin is
+$((e+1)m-1)/n$; the common-agreement separation is $em/n$, and
+the guaranteed separation of both sources is $m/n$.
+\end{proposition}
+\begin{proof}
+Let $H=(\mathbb F_p^*)^m$ and reserve $a_0\in H$.
+The mixed character-sum bound used in
+Proposition~\ref{prop:extension-native-selected-fibers} gives
+nontrivial character bias at most $\varepsilon$ for
+\[
+ \mathcal A=\{b-a:a\in H\setminus\{a_0\}\}\subset E^*.
+\]
+Apply Lemma~\ref{lem:target-subset-product-moment} with the
+specified target set $B=K^*$ to obtain $s$ distinct tags $G$.
+Put $Y=X^m$ and $D=Y^{-1}(G\cup\{a_0\})$, and let $R$ be the
+monic locator of $w$ points in the reserved fiber.  The polynomial
+\[
+ T(Z)=\operatorname{Norm}_{E/K}(Z-b)
+     =\prod_{j=0}^{e-1}(Z-b^{p^{(d/e)j}})\in K[Z]
+\]
+is monic of degree $e$ and has no root in $\mathbb F_p$.
+Define the native-$K$ words
+\[
+ f=R Y^{r-e},\qquad g=\frac R{T(Y)}.
+\]
+The polynomial $f$ is monic of degree $J+m-1$.
+For any degree-below-$J$ polynomial $h$, the nonzero polynomial
+$R-T(Y)h$ has degree at most $J+em-1$.  This bounds the agreement
+of $g$.  Interpolate each of $Z^{r-e}$ and $1/T(Z)$ on any
+$r-e$ tags of $G$, then substitute $Y$ and multiply by $R$.
+The two resulting polynomials have degree at most $J-1$ and agree
+with their respective sources on the same $w+(r-e)m=J+m-1$
+points.  Root counting for $f-h$ proves both the exact source and
+common-agreement claims.
+
+For each represented $\lambda\in K^*$, take $S\subset G$ with
+$|S|=r$ and $V_S(b)=\lambda$, where
+$V_S(Z)=\prod_{a\in S}(Z-a)\in\mathbb F_p[Z]$.
+Since $\lambda$ is fixed by $\operatorname{Gal}(E/K)$,
+$T$ divides $V_S-\lambda$ in $K[Z]$.  Thus
+\[
+ h_S=R\frac{T(Y)Y^{r-e}+\lambda-V_S(Y)}{T(Y)}\in K[X]
+\]
+has degree at most $w+(r-e-1)m=J-1$: its two monic degree-$r$
+terms cancel before division by the degree-$e$ denominator.
+Its residual is $RV_S(Y)/T(Y)$, which vanishes on exactly the
+core and the $r$ selected fibers.  This supplies
+$w+rm=J+(e+1)m-1$ agreements.  For every other degree-below-$J$
+polynomial $h$, the cleared numerator
+\[
+ R\bigl(T(Y)Y^{r-e}+\lambda\bigr)-T(Y)h
+\]
+is monic of this degree, whereas the second term has degree at
+most $J+em-1$.  Root counting proves the matching upper bound.
+\end{proof}
+
+\paragraph{A finite tradeoff at KoalaBear.}
+Take $p=2130706433$, auxiliary degree $d=6$, $n=262144$,
+$J=131072$, $m=1024$, $s=255$, $w=1023$, and $r=128+e$.
+Using $\sqrt p<46160$, exact rational evaluation gives
+$V/a<2^{-22}$ for each $e\in\{1,2,3,6\}$.
+Each row therefore has at least
+$(|K|-1)-\lfloor(|K|-1)/2^{22}\rfloor$ good native labels.
+\[
+\begin{array}{c|r|r|r|r|r}
+ K&e&\operatorname{CA}_J(f,g)&\operatorname{agr}_J(g)\text{ upper bound}
+ &\text{exact near agreement}&\text{capacity numerator}\\\hline
+ \mathbb F_{p^6}&1&132095&132095&133119&2047\\
+ \mathbb F_{p^3}&2&132095&133119&134143&3071\\
+ \mathbb F_{p^2}&3&132095&134143&135167&4095\\
+ \mathbb F_p&6&132095&137215&138239&7167
+\end{array}
+\]
+The capacity numerators are divided by $n$.  These are selected-domain
+existence results, not explicit tag lists or assertions about a prescribed
+NTT subgroup.  The auxiliary extension is not the code alphabet.
+For a matched comparison, the one-pole construction over
+$\mathbb F_p,\mathbb F_{p^2},\mathbb F_{p^3}$ admits respectively
+$m=4096,2048,2048$ in the same pointwise-moment test, with capacity
+numerators $8191,4095,4095$.  The norm construction changes the
+tradeoff between label coverage, common agreement, and the weaker of
+the two source separations; it does not uniformly improve these rows.
+The exact arithmetic and comparison are recorded in
+\nolinkurl{research/norm_quotient_coverage/verify_target_subset_norm_compiler.py}.
+
+
+The loss ratios alone are also obtainable from the one-pole construction
+by increasing its decoding dimension.  If its fiber size is $m'=em$,
+increasing the dimension by $t=(e-1)m$ gives the same bounds
+$J+m-1$, $J+em-1$, and $J+(e+1)m-1$ for common agreement,
+rational-source agreement, and nearby agreement, respectively.
+For fixed $e$ and growing fibers this recovers the norm construction's
+asymptotic loss tradeoff, including its below-Elias parameter window.
+The norm construction is therefore not asserted to improve that
+asymptotic tradeoff; its remaining distinctions here are the targeted
+product estimate and the finite divisibility and coverage certificates.
