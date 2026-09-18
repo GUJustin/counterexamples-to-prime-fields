@@ -1,0 +1,9 @@
+# Independent exact cyclotomic lifting audit
+
+Both modular representatives have exactly thirteen matching indices. Independent exact interpolation on the reversed last ten matching indices, in Q[z]/(z^16-z^12+z^8-z^4+1), fails at the first three: [0,1,6] and [0,5,16], respectively. In both cases the interpolant has exactly the chosen ten matches on all forty roots. All exact coefficients reduce to the saved modular coefficients at z=15 mod1201. Thus neither representative nor any member of its rotation orbit lifts to thirteen agreements. Together with the exhaustive modular search, this proves that the characteristic-zero maximum is at most twelve; this receipt does not assert attainability of twelve.
+
+The shared independent implementation is `../exact_unrestricted_replay.py`; it imports no generator code and saves every coefficient and support in `exact_replay.json`. Field coefficients are serialized in ascending powers of the indicated primitive root.
+
+For completeness transfer, any characteristic-zero candidate with at least the searched threshold of matches is interpolated by k matching nodes. At the recorded split prime all nodes remain distinct, so interpolation makes its coefficients integral there, and its reduction belongs to the modular survivor list. Every survivor has exactly the threshold number of matches, so the characteristic-zero support must be that entire support. It is therefore enough to interpolate any k of those indices and check the remainder. The rotation symmetry covers every member of each canonical orbit. This exact-threshold fact is essential: a modular survivor with more matches would require checking multiple subsets.
+
+This receipt audits the exact lifting and its completeness-transfer logic. The exhaustive finite search and its coverage are separate artifacts, not independently rerun here.

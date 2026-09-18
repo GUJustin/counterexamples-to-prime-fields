@@ -1,0 +1,2 @@
+{"values":[0,536,1,327,0,540,750,216,3,945,261,469,0,536,1,327,0,540,750,216,3,945,261,469,0,536,1,327,0,540,750,216,3,945,261,469],"matches":12}
+{"command": ["/tmp/w9search"], "reason": "completed", "returncode": 0, "seconds": 0.53641025, "peak_rss_kib": 32, "rss_limit_mib": 384, "time_limit_seconds": 60}

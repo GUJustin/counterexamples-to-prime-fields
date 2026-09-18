@@ -1,0 +1,29 @@
+{
+  "pass": true,
+  "distinct_polynomials": 13,
+  "degrees": [
+    24,
+    25,
+    25,
+    25,
+    25,
+    25,
+    25,
+    25,
+    25,
+    25,
+    25,
+    25,
+    25
+  ],
+  "all_field_bucket_histogram": {
+    "1": 134,
+    "2": 63,
+    "3": 2,
+    "6": 12
+  },
+  "all_field_top100_incidence_sum": 227,
+  "minimum_agreement_upper_bound": 17,
+  "rational_identity_test_points": 199,
+  "scope": "This fixed bank over F211, arbitrary 100 distinct affine coordinates and arbitrary word."
+}

@@ -160,3 +160,9 @@ The prime-order r+2 bound was already present, more generally, in the September1
 The exact all-prime r5/M8 support gate independently passes:3326safe orbits cover125970supports, candidate norm primes41,61,101,181,401 allfail simultaneousprimitive-root equations. Hence no splitprime admits8agreements in that fixedcyclicmodel. Rootreplay usesNewtonpower sums andexplicitprimitive-root evaluation instead of originalhomogeneousrecurrence/polynomialgcd.
 
 The elliptic shared-polePaleypilot overF211 yields13distinct degree≤25candidates but evenbest100pointdomain has totalbucket227, minimumagreement≤17: belowcapacity, not a viablepositivefixture. Model-specific translationbarriers are audited. No universalellipticexclusion and no better.codes improvement.
+
+## 2026-09-18 11:51 UTC: unrestricted cyclic classifications
+
+The complete W12 pencil census covers20,717,845 cases. Independent exact Q(zeta48) replay proves maximum16 and exactly9 nearest polynomials, all previously archived compositions. This closes the unrestricted-search gap; it is not a new nine-word construction. W9 similarly has exactly3 nearest polynomials at12matches. W10 has20 modular nearest polynomials at13matches overF1201, but BOTH ten-element orbits fail characteristic-zero interpolation at three support nodes. Thus its characteristic-zero maximum is at most12; the modular candidates do not give a new large-prime family. These are fixed-source classifications, not general bounds.
+
+The all-m weighted first-jet contact ideal now has explicit global generators and universal syzygies; its unfiltered Hilbert length is independent of the received word. Any list-conditioned gain must be in the original-weight filtered dimension, not a new abstract syzygy. Independent audit is underway. The finite tests still produce no better.codes gain. Deadline14:00UTC remains active.

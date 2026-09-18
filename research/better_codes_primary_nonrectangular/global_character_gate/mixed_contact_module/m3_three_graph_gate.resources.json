@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/better_codes_primary_nonrectangular/global_character_gate/mixed_contact_module/m3_three_graph_gate.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.53644829201221,
+  "peak_rss_kib": 7376,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

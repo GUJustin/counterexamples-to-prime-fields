@@ -1,0 +1,71 @@
+{
+  "cases": [
+    {
+      "m": 3,
+      "q": 2,
+      "s": 1,
+      "columns": 50,
+      "local_rank": 9,
+      "sum_local_ranks": 54,
+      "control": 0,
+      "rank": 50,
+      "nullity": 0
+    },
+    {
+      "m": 3,
+      "q": 2,
+      "s": 1,
+      "columns": 50,
+      "local_rank": 9,
+      "sum_local_ranks": 54,
+      "control": 1,
+      "rank": 50,
+      "nullity": 0
+    },
+    {
+      "m": 3,
+      "q": 2,
+      "s": 1,
+      "columns": 50,
+      "local_rank": 9,
+      "sum_local_ranks": 54,
+      "control": 2,
+      "rank": 50,
+      "nullity": 0
+    },
+    {
+      "m": 3,
+      "q": 2,
+      "s": 2,
+      "columns": 60,
+      "local_rank": 11,
+      "sum_local_ranks": 66,
+      "control": 0,
+      "rank": 60,
+      "nullity": 0
+    },
+    {
+      "m": 3,
+      "q": 2,
+      "s": 2,
+      "columns": 60,
+      "local_rank": 11,
+      "sum_local_ranks": 66,
+      "control": 1,
+      "rank": 60,
+      "nullity": 0
+    },
+    {
+      "m": 3,
+      "q": 2,
+      "s": 2,
+      "columns": 60,
+      "local_rank": 11,
+      "sum_local_ranks": 66,
+      "control": 2,
+      "rank": 60,
+      "nullity": 0
+    }
+  ],
+  "seconds": 0.004314624995458871
+}

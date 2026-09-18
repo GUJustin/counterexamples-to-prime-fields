@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/tmp/w10search"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.542482042,
+  "peak_rss_kib": 32,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}
