@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/prime_line_strengthening/octic_three_pole_route/verify.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 2.156574625,
+  "peak_rss_kib": 35440,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

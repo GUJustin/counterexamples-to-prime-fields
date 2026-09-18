@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "members": 871,
+  "surface_points": 900,
+  "summary": {
+    "excluded_lower_bound": 828,
+    "excluded_exact_count": 14,
+    "point_count_candidate": 21,
+    "unresolved_nonordinary": 8
+  },
+  "orbits_verified": true,
+  "exceptional_cone": [
+    14,
+    3,
+    8,
+    26,
+    11
+  ],
+  "quadratic_discriminant": 14,
+  "two_simple_F841_directions": true
+}

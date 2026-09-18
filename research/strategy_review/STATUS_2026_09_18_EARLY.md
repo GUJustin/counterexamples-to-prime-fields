@@ -30,3 +30,14 @@ The characteristic-three n48 double-factor point now has a full local all-ramifi
 Active positive targets are degree-eight covers with three poles and degree-ten covers with four poles. The latter uniform217-by220 norm systems have rank217 and a three-dimensional kernel with nonzero leading-degree projection for both banks; rationality and proper cover realization are still entirely unresolved. Linear consistency alone is not a new bank.
 
 No better.codes improvement, growing fixed-gap prime-ambient nearest list, or intrinsic DKT tightness has been obtained. No task rental is running; current exact calculations take less than a second locally. Work continues toward the user's10am Eastern deadline.
+
+
+## Checkpoint 06:57 UTC: first unrestricted norm net and finite-field audit
+
+The paper is213 pages. Corollary W.3 now rules out all proper rational-cover augmentations compatible with at-most-quarter rate through cover degree9. Its new degree8/three-pole case exhausts386 Paley and410 orbit2 incidence patterns; all796 norm matrices have independently verified full-rank minors.
+
+The first larger uniform target, degree10/four poles, genuinely has a3-dimensional linear system for both banks. For the Paley bank, generic members have normalization genus at least9, and each of the3 symmetric eigenmembers has genus at least6. The geometry remains open for special nonsymmetric parameters. An exact census of all871 parameter points overF29 excludes genus-zero integral members defined over that field; four surviving orbits were tested overF841, and the last was excluded by two simple tangent branches inside a nonordinary singularity. This finite census does not rule out extension-field parameters or characteristic-zero special members.
+
+New cubic and quartic invariant derivative inequalities are valid global compatibility conditions for the surviving better.codes repeated-factor resource profile, but neither excludes it. The cubic W budget has slack131078 and the quartic budget slack174777. No benchmark improvement follows.
+
+The strategy review identified a separate potentially unexhausted target: nonrectangular monomial supports for the benchmark's PRIMARY interpolation source. Existing support-ledger tightness theorems address a different derived regular-family method. Two agents are checking the precise primary support/rank/cost formulas before any search. A third explores an independent octahedral-symmetry construction of an eight-word bank.

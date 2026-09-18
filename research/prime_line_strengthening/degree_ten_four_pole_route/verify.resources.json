@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/prime_line_strengthening/degree_ten_four_pole_route/verify.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.544015290986863,
+  "peak_rss_kib": 5232,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

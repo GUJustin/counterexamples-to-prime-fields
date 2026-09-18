@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "research/prime_line_strengthening/octic_three_pole_route/census.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.545628125,
+  "peak_rss_kib": 5312,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

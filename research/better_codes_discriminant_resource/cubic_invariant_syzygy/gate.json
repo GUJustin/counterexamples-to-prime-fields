@@ -1,0 +1,107 @@
+{
+  "rows": [
+    {
+      "count": 4,
+      "contact": 0,
+      "p_order": 0,
+      "q_order": 0,
+      "disc_order": 0,
+      "W_order_lower": 0,
+      "case": "balanced_minimal"
+    },
+    {
+      "count": 11,
+      "contact": 33,
+      "p_order": 1,
+      "q_order": 2,
+      "disc_order": 3,
+      "W_order_lower": 2,
+      "case": "unbalanced_exact"
+    },
+    {
+      "count": 21847,
+      "contact": 32,
+      "p_order": 0,
+      "q_order": 0,
+      "disc_order": 1,
+      "W_order_lower": 0,
+      "case": "balanced_discriminant_excess_exact"
+    },
+    {
+      "count": 43682,
+      "contact": 33,
+      "p_order": 1,
+      "q_order": 2,
+      "disc_order": 3,
+      "W_order_lower": 2,
+      "case": "unbalanced_exact"
+    },
+    {
+      "count": 21841,
+      "contact": 33,
+      "p_order": 1,
+      "q_order": 2,
+      "disc_order": 3,
+      "W_order_lower": 2,
+      "case": "unbalanced_exact"
+    },
+    {
+      "count": 10923,
+      "contact": 42,
+      "p_order": 0,
+      "q_order": 0,
+      "disc_order": 1,
+      "W_order_lower": 0,
+      "case": "balanced_discriminant_excess_exact"
+    },
+    {
+      "count": 65535,
+      "contact": 43,
+      "p_order": 2,
+      "q_order": 2,
+      "disc_order": 4,
+      "W_order_lower": 3,
+      "case": "unbalanced_exact"
+    },
+    {
+      "count": 32766,
+      "contact": 42,
+      "p_order": 0,
+      "q_order": 0,
+      "disc_order": 3,
+      "W_order_lower": 2,
+      "case": "balanced_discriminant_excess_exact"
+    },
+    {
+      "count": 21845,
+      "contact": 43,
+      "p_order": 1,
+      "q_order": 2,
+      "disc_order": 3,
+      "W_order_lower": 2,
+      "case": "unbalanced_exact"
+    },
+    {
+      "count": 43690,
+      "contact": 43,
+      "p_order": 1,
+      "q_order": 2,
+      "disc_order": 3,
+      "W_order_lower": 2,
+      "case": "unbalanced_exact"
+    }
+  ],
+  "total_W_order_lower": 524275,
+  "degree_W_bound": 655353,
+  "slack": 131078,
+  "scope": "archived locally generic resource profile; no global existence inference",
+  "common_gcd_degree_lower": 655347,
+  "residual_zero_degree_totals": [
+    131070,
+    131069,
+    131068
+  ],
+  "residual_polynomial_degree_upper": 131079,
+  "selected_radical_count": 262140,
+  "coalescence_support": 196604
+}

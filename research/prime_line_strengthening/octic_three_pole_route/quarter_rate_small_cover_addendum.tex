@@ -1,0 +1,135 @@
+\subsection{Proper denominators through cover degree nine}
+\label{sec:small-cover-quarter-obstruction}
+
+The same norm argument gives a finite extension of
+Theorem~\ref{thm:seven-bank-one-pole-obstruction}.
+Here the denominator degree is limited by the intended quarter-rate
+construction; no assertion for arbitrary denominator degree is made.
+
+\begin{corollary}\label{cor:small-cover-quarter-obstruction}
+Let a characteristic-zero seven-cubic bank and a degree-$e$ rational cover
+$\psi=[R:S]$ satisfy the hypotheses of
+Theorem~\ref{thm:seven-bank-one-pole-obstruction}.  Suppose
+\[
+ 2\le e\le9,\qquad 0\le h\le\lfloor e/2-1\rfloor.
+\]
+There is no proper witness $N/D$, with binary forms of degrees
+$3e+h$ and $h$, respectively, having at least $7e$ agreements with
+the pulled-back word $S^3w$, where $D$ has no zero on the selected
+core and $\gcd(N,D)=1$.
+For $h=0$, exclude the seven original pulled-back polynomials from
+what is called a witness.
+Zeros of $D$ may coincide with zeros of $S$ and may have multiplicity.
+\end{corollary}
+
+\begin{proof}
+Extend constants algebraically.  By
+Proposition~\ref{prop:seven-bank-rigidity}, it suffices to treat the two
+archived banks; its transformations preserve these assertions.
+Put $v=N/(DS^3)$ and let $t$ be the degree of the map to the
+normalization of the image of $(\psi,v)$.  The positive part of the
+signed function
+\[
+ P\longmapsto\operatorname{pole}_P(v)
+              -3\operatorname{pole}_P(\psi)
+\]
+is exactly the degree-$h$ zero divisor of $D$.  Pole orders, and hence
+this positive part, pull back through the intermediate map.  Thus
+$t\mid e$ and, for $h>0$, $t\mid h$.  By L\"uroth's theorem the
+intermediate curve is rational.  Separability of the selected fibers
+means a descended match accounts for exactly $t$ original matches.
+The descended problem therefore has parameters $(e/t,h/t)$ and at
+least $7e/t$ matches.
+
+First take $h=0$.  Pairwise root counting against the seven old
+polynomials shows that all $7e$ matched points must be the full
+preimages of the seven triple buckets: if $T,Q$ count matched points
+in triple and quadruple buckets, then
+$T+Q=7e$ and $3T+4Q\le21e$.
+Let $W$ interpolate the seven triple-bucket word values.  Each old cubic matches only three of those seven triple buckets.
+Thus a cubic through all seven values would be an eighth distinct
+cubic, contradicting the universal maximum-seven theorem.
+Consequently $4\le d=\deg W\le6$.
+The binary form
+\[
+ N S^{d-3}-W^{\mathrm{hom}}(R,S)
+\]
+has degree $de<7e$ and vanishes at those $7e$ distinct points, so it is
+zero.  This would give $v=W(\psi)$, whose pole divisor has degree
+$de>3e$, contrary to $(v)_\infty\le3\psi^*(\infty)$.
+
+For $h=1$ use Theorem~\ref{thm:seven-bank-one-pole-obstruction}.
+The only nontrivial intermediate-field cases still needed below are
+$(e,h)=(6,2),(8,2),(9,3)$, descending respectively to $(3,1)$,
+$(4,1)$, and $(3,1)$, all excluded by that theorem.
+We may consequently assume the remaining maps $(\psi,v)$ are
+birational.
+
+Their primitive norm equation has the form
+\[
+ F(X,V)=\sum_{j=0}^{e} A_j(X)V^{e-j},
+ \qquad \deg A_j\le3j+h.
+\]
+The pole argument above proves these bounds even with repeated poles
+or poles over infinity.  Its irreducible closure on the third
+Hirzebruch surface has arithmetic genus at most
+\[
+ g_{e,h}=(e-1)(3e/2+h-1).
+\]
+A fiber containing $m$ distinct matching points contributes at least
+$\binom m2$ to its singularity delta.  Select $7e$ matches.  Pairwise
+root bounds against the old degree-$(3e+h)$ polynomials give
+\[
+ T+Q=7e,\qquad3T+4Q\le7(3e+h),\qquad T\ge7(e-h).
+\]
+Convexity, using $e\ge2h+2$, therefore gives
+\[
+ \delta\ge7\left\{\binom{e-h}{2}+\binom h2\right\}.
+\]
+For $h=2$, this exceeds $g_{e,2}$ for every $e\ge7$;
+at $e=7$ the comparison is $77>69$.
+For $(e,h)=(9,3)$ it is $126>124$.
+Only $(6,2)$ and $(8,3)$ remain.
+
+For $(6,2)$, the delta budget $50$ forces the unique pattern with
+four matches in each triple bucket and two in each quadruple bucket.
+The norm flags give $84$ coefficients.  Vanishing of all Hasse
+partials of total order below the fiber multiplicity gives a
+$91\times84$ homogeneous matrix.  For both banks it has full column
+rank: independently replayed maximal minors are nonzero modulo
+$29$ and $83$, respectively.
+
+For $(8,3)$ write triple multiplicities as $5+u_j$, quadruple
+multiplicities as $3+v_j$, and $s=T-35$.  The genus budget $98$ gives
+\[
+ s\in\{0,1,2\},\quad
+ \sum u_j=s,\quad\sum v_j=-s,\quad
+ \sum(u_j^2+v_j^2)\le14-4s.
+\]
+The seven old-candidate deficits are nonnegative integers summing to
+$s$.  For each such deficit vector and each bounded integer vector
+$u$, invert the fixed seven-by-seven quadruple-incidence matrix to
+recover $v$; retain precisely the integral vectors satisfying the
+bounds.  This exhaustive rational-arithmetic enumeration gives
+$386$ Paley patterns and $410$ orbit-$2$ patterns.  The norm flags
+have $144$ coefficients.  Every corresponding Hasse-jet matrix has
+rank $144$ over the same good residue field.  All $796$ selected
+maximal minors were independently reconstructed and replayed.
+
+For clarity, these are linear specialization certificates: the base
+coordinates and word values are integral at the chosen good prime,
+and each saved nonzero minor is the reduction of the same
+characteristic-zero minor.  No modular nonlinear inconsistency
+inference is involved.  The reproducible census, matrix construction,
+and independent minor checks are recorded in the companion
+\texttt{sextic\_two\_pole\_norm\_gate} and
+\texttt{octic\_three\_pole\_route} directories.
+The resulting trivial kernels exclude a nonzero primitive norm
+relation in both remaining cases.
+\end{proof}
+
+Clearing $D$ gives degree at most $3e+h$ on $14e$ coordinates, so
+$h\le\lfloor e/2-1\rfloor$ is exactly the condition
+$3e+h+1\le14e/4$.  The corollary excludes this specific augmentation
+mechanism through degree nine, not arbitrary eight-word constructions
+at quarter rate.

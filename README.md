@@ -5,7 +5,7 @@ Working draft by Justin Thaler, September 18, 2026.
 [Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
 **Latest verified results (September 18, early morning):** the ePrint-style article
-is 212 pages with one-inch margins. New Theorem U.1 gives an exact
+is 213 pages with one-inch margins. New Theorem U.1 gives an exact
 seven-member nearest-codeword list at quarter rate: length28, dimension7,
 and fourteen agreements per candidate, over arbitrarily large prime fields.
 Two short cyclotomic identities give the construction; its complete-list proof
@@ -19,7 +19,9 @@ construction, but does not yet give growing lists or a better.codes improvement.
 New Appendix W completes the rigidity classification of the seven-cubic banks
 and proves that no rational cover of any degree at least two can add an eighth
 nearby word by the proper one-extra-pole construction. This excludes a specific
-augmentation mechanism, not arbitrary eight-word constructions.
+augmentation mechanism, not arbitrary eight-word constructions. Corollary W.3
+extends the obstruction to every proper denominator compatible with quarter
+rate for cover degrees through nine.
 
 
 Corollary 2.4 sharpens the shrinking-gap and prime-size lower bounds by

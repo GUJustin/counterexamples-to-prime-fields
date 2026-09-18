@@ -1,0 +1,30 @@
+[
+  {
+    "bank": "paley",
+    "p": 29,
+    "rank_minor": 19,
+    "leading_minor": {
+      "columns": [
+        0,
+        2,
+        4
+      ],
+      "determinant": 15
+    },
+    "status": "PASS"
+  },
+  {
+    "bank": "orbit2",
+    "p": 83,
+    "rank_minor": 3,
+    "leading_minor": {
+      "columns": [
+        0,
+        1,
+        2
+      ],
+      "determinant": 50
+    },
+    "status": "PASS"
+  }
+]

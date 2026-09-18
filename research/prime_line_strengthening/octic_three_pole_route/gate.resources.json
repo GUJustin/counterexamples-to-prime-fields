@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/bin/sh",
+    "-c",
+    "/tmp/octic_gate < research/prime_line_strengthening/octic_three_pole_route/gate.in > research/prime_line_strengthening/octic_three_pole_route/gate.json"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.076519542,
+  "peak_rss_kib": 4160,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

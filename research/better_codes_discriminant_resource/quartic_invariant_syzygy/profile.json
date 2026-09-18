@@ -1,0 +1,198 @@
+{
+  "rows": [
+    {
+      "count": 4,
+      "G_orders": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "ord_I": 0,
+      "ord_J": 0,
+      "ord_Discriminant": 0,
+      "W_bounds": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "W_lower": 0
+    },
+    {
+      "count": 11,
+      "G_orders": [
+        2,
+        1,
+        1,
+        0
+      ],
+      "ord_I": 1,
+      "ord_J": 2,
+      "ord_Discriminant": 3,
+      "W_bounds": [
+        0,
+        2,
+        2,
+        2
+      ],
+      "W_lower": 2
+    },
+    {
+      "count": 21847,
+      "G_orders": [
+        2,
+        2,
+        1,
+        0
+      ],
+      "ord_I": 2,
+      "ord_J": 2,
+      "ord_Discriminant": 4,
+      "W_bounds": [
+        0,
+        3,
+        3,
+        2
+      ],
+      "W_lower": 3
+    },
+    {
+      "count": 43682,
+      "G_orders": [
+        2,
+        2,
+        1,
+        0
+      ],
+      "ord_I": 2,
+      "ord_J": 2,
+      "ord_Discriminant": 4,
+      "W_bounds": [
+        0,
+        3,
+        3,
+        2
+      ],
+      "W_lower": 3
+    },
+    {
+      "count": 21841,
+      "G_orders": [
+        3,
+        1,
+        1,
+        0
+      ],
+      "ord_I": 1,
+      "ord_J": 2,
+      "ord_Discriminant": 3,
+      "W_bounds": [
+        0,
+        2,
+        2,
+        2
+      ],
+      "W_lower": 2
+    },
+    {
+      "count": 10923,
+      "G_orders": [
+        3,
+        2,
+        1,
+        1
+      ],
+      "ord_I": 2,
+      "ord_J": 3,
+      "ord_Discriminant": 7,
+      "W_bounds": [
+        0,
+        5,
+        5,
+        5
+      ],
+      "W_lower": 5
+    },
+    {
+      "count": 65535,
+      "G_orders": [
+        3,
+        2,
+        1,
+        1
+      ],
+      "ord_I": 2,
+      "ord_J": 3,
+      "ord_Discriminant": 7,
+      "W_bounds": [
+        0,
+        5,
+        5,
+        5
+      ],
+      "W_lower": 5
+    },
+    {
+      "count": 32766,
+      "G_orders": [
+        3,
+        2,
+        1,
+        1
+      ],
+      "ord_I": 2,
+      "ord_J": 3,
+      "ord_Discriminant": 7,
+      "W_bounds": [
+        0,
+        5,
+        5,
+        5
+      ],
+      "W_lower": 5
+    },
+    {
+      "count": 21845,
+      "G_orders": [
+        3,
+        2,
+        3,
+        2
+      ],
+      "ord_I": 3,
+      "ord_J": 4,
+      "ord_Discriminant": 8,
+      "W_bounds": [
+        0,
+        6,
+        6,
+        6
+      ],
+      "W_lower": 6
+    },
+    {
+      "count": 43690,
+      "G_orders": [
+        3,
+        3,
+        1,
+        2
+      ],
+      "ord_I": 2,
+      "ord_J": 3,
+      "ord_Discriminant": 7,
+      "W_bounds": [
+        0,
+        5,
+        5,
+        5
+      ],
+      "W_lower": 5
+    }
+  ],
+  "W_total_lower": 1135931,
+  "W_degree_bound": 1310708,
+  "slack": 174777,
+  "scope": "generic invariant orders of the archived local profile, not arbitrary cancellations"
+}
