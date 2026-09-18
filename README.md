@@ -41,6 +41,10 @@ to every received word, using a checked finite DKT certificate. This is
 constant-factor tightness for this varying-rate extension-field list bound,
 not for prime alphabets or received-line exception counts. The construction
 uses classical projective-plane incidence geometry.
+The comparison now extends to every fixed threshold ceil(c p), sqrt(3)<c<2:
+for p≥401 the uniform upper bound is 137N, while the same word still has
+exactly N/2 witnesses. Hence linear list growth is necessary throughout
+the asymptotic interval between the first-order and Johnson boundaries.
 
 Over sufficiently large primes, a deterministic cover gives exactly
 L(L²−L+1)+1 exceptions with source gap s and length s(2L²−2L+1).

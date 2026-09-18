@@ -44,3 +44,7 @@ For a coding/theory submission, the immediate useful work is a short, self-conta
 - KKH: `/Users/jthaler/Dropbox/Documents-full-2026-09-16/Documents/stwo_audit_2026-09-15/sources/actual_list_literature/kkh2026_782.txt`, Theorem 1; public source https://eprint.iacr.org/2026/782.
 - DKT: `tmp/eprint-2056/paper.txt`, Theorem 1.1, finite Sections 5.6–5.10, Section 10.4; public source https://eprint.iacr.org/2026/2056. Archived version/hash qualifications are in `../prime_field_tightness/EPRINT_2056_COMPARISON.md`.
 - Existing detailed comparisons: `../prime_quadratic_line/PRIOR_WORK_COMPARISON.md`, `DKT_GROWING_GAP_COMPARISON.md`, and this directory's `CORE_RESULTS_NOVELTY_STRENGTH_AUDIT.md` with its explicit interval-priority correction.
+
+## Verified full-interior list comparison
+
+Corollary N.26 now gives exact list N/2 and uniform maximum-list bound137N for p>=401 and every integer ceil(sqrt(3)*p)<=T<=2p+2. Consequently every fixedc in(sqrt(3),2) has matched linear list growth atT=ceil(cp), eventually strictly between the first-order and Johnson boundaries with both marginsTheta(sqrt(N)). This strengthens the positive extension-field comparison beyond a single chosen threshold; it does not establish prime-alphabet/fixed-rate/line-exception tightness or improve better.codes. The original sharper22N bound atceil(1.9p),p>=53 remains in place. Finite support arithmetic and rendered PDF have been checked.

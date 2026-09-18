@@ -156,3 +156,53 @@ line. Its normalized threshold and normalized separation from the
 first-order curve both vanish with the rate; it makes no claim of
 constant-factor tightness for exceptional-label or common-agreement
 bounds.
+
+
+\begin{corollary}\label{cor:norm-one-full-interior-band}
+With the code and word of Theorem~\ref{thm:norm-one-direct-list}, let
+$p\ge401$. At every integer threshold
+\[
+ \lceil\sqrt3\,p\rceil\le T\le2p+2,
+\]
+the displayed word has exactly $N/2$ nearby quadratics, and the maximum
+list size over all received words is at most $137N$.
+Consequently, for every fixed $c\in(\sqrt3,2)$, at threshold
+$T=\lceil cp\rceil$ the maximum list size is $\Theta(N)$.
+For sufficiently large $p$ these thresholds lie strictly between the
+first-order curve and the Johnson threshold, with both margins of
+order $\sqrt N$.
+\end{corollary}
+
+\begin{proof}
+The classification in the theorem already gives the exact $N/2$ list
+throughout this band. For the uniform upper bound, take
+\[
+ m=16,\qquad B_\partial=8,\qquad B=B_{\rm jet}=8T,
+ \qquad H=B_Z=100B.
+\]
+The derivative-weighted coefficient count and local rank are
+\[
+ G=9B^2-27B,\qquad R=852.
+\]
+Since $8\sqrt3\,p\le B\le16p+16$, we have
+\[
+ 99G-100NR
+ \ge672p^2-213168p-213168>0
+ \qquad(p\ge401).
+\]
+The graded surplus $(H-B+1)G-(H+1)NR$ is therefore positive.
+The characteristic guard is $p>8$.
+Equation~(54) and Lemma~5.11 of~\cite{dkt2026} give
+$F_{\rm reg}=17B-72$ and $S=15B-64$. With
+$\lambda=(N-2)/(T-2)\le2p$, the list bound is
+\[
+ \lambda F_{\rm reg}+S
+ =136N+200\lambda+120T-336
+ \le136N+640p-96\le137N.
+\]
+Finally, $Na_1(3/N)=\sqrt3\,p+O(\sqrt p)$ and
+$\sqrt{2N}=2p+O(1)$. Thus every fixed $c\in(\sqrt3,2)$
+has the asserted two strict margins for all sufficiently large $p$.
+The finite band in the first statement need not itself lie wholly
+between those two boundaries.
+\end{proof}
