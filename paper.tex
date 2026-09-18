@@ -56,10 +56,13 @@ fixed gap $1/8$, full-length prime-field codes have lists of size $n/2$.
 Integer-interval domains give
 $\log L=\Omega_\rho(\eta^{-2}/\log(1/\eta))$ strictly below Elias,
 ruling out every uniform $\exp(O_\rho(1/\eta))$ bound.
-At message dimension three, a translated grid gives
-$\Omega(n^{4/3}\log n)$ singleton exceptional challenges with source
-separation $\Theta(n^{1/6}/\log n)$ coordinates, in the regime of the
-Dao--Kominers--Thaler bounds. This is a vanishing-rate result, not
+At message dimension three, a regular quadratic intersection bank and a
+translated grid give a positive constant fraction of singleton exceptional
+challenges over primes $p=\Theta(n^{5/4}\log n)$, with source separation
+$\Theta(n^{1/4}/\log n)$ coordinates, in the regime of the
+Dao--Kominers--Thaler bounds. The distance below capacity is
+$\Theta(n^{-1/2})$ and the proximity loss is
+$\Theta(n^{-3/4}/\log n)$. This is a vanishing-rate result, not
 fixed-rate or quadratic-count tightness.
 
 We distinguish fixed-gap from shrinking-gap claims, prime from
@@ -769,6 +772,23 @@ The exceptional fraction is of order $(\log p)^{-3}$, rather than a
 positive constant. These bounds strengthen the count--separation
 tradeoff at vanishing rate; they do not establish quadratic-count
 tightness or a practical fixed-domain improvement.
+
+Allowing exactly controlled collisions in the bank improves the gap
+and the exceptional fraction, with a different absolute-count tradeoff
+(Theorem~\ref{thm:collision-bank-constant-fraction}). Two bank pairs may
+share a squared intersection coordinate; its two roots are assigned
+separately to the pairs. Two disjoint complete bipartite graphs make the
+resulting core agreement exactly equal for every bank polynomial.
+The construction gives $d=\Theta(n^{1/4}/\log n)$ and at least
+$2^{-19}p$ singleton exceptional challenges, where
+$p=\Theta(n^{5/4}\log n)$, still at dimension three with exact endpoint
+and ordinary common agreement $A$. Its capacity margin is
+$(T-3)/n=\Theta(n^{-1/2})$, while its proximity loss is
+$d/n=\Theta(n^{-3/4}/\log n)$. Thus even this larger loss remains a
+vanishing fraction of the capacity margin. The absolute exceptional-count
+exponent is smaller than in the preceding construction; this is a new
+tradeoff between these proved constructions, not superiority in every
+parameter or an improvement over the known fixed-rate results.
 
 A complementary construction allows the message dimension to grow
 and gives a polynomial source separation. Theorem~\ref{thm:correlated-cover-line} constructs, for every

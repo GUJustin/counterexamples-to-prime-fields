@@ -1,0 +1,83 @@
+{
+  "status": "PASS: exact two-K4,4 collision-bank mechanism check",
+  "scope": "Toy d=1 override; p is not in the theorem's asymptotic field window. No constant-fraction, onset, or target-benchmark claim.",
+  "p": 10125000000029,
+  "H": 1500,
+  "primality": {
+    "method": "trial division by every prime through isqrt(p)",
+    "trial_prime_count": 228976,
+    "isqrt_p": 3181980
+  },
+  "quartic_class_sizes": {
+    "1": 25,
+    "1167152939837": 28,
+    "8957847060192": 27,
+    "10125000000028": 27
+  },
+  "chosen_quartic_class": 1167152939837,
+  "L": 32,
+  "component_size": 4,
+  "two_biclique_edges": 32,
+  "distinct_unordered_products_including_repetitions": 456,
+  "distinct_pair_product_multiplicities": {
+    "1": 352,
+    "2": 72
+  },
+  "lost_core_coordinates_per_bank": {
+    "9": 32
+  },
+  "core_nodes": 848,
+  "core_matches_per_bank": 53,
+  "M": 4,
+  "grid_retained": 8,
+  "grid_deletions": {
+    "nonsquare": 8
+  },
+  "grid_affine_identities_checked": 256,
+  "full_raw_interval_pairs": 192992,
+  "raw_label_union_size": 192992,
+  "raw_cross_bank_collision_pairs": 0,
+  "c0": 1,
+  "endpoint_labels": [
+    0,
+    1
+  ],
+  "exceptional_label": 10125000000028,
+  "toy_d": 1,
+  "asymptotic_formula_d": 0,
+  "threshold": 54,
+  "domain_size": 1459,
+  "code_dimension": 3,
+  "neutral_nodes": 603,
+  "neutral_bank_roots_skipped": 0,
+  "singleton_threshold_label_count": 256,
+  "bank_agreement_histogram_at_counted_labels": {
+    "54": 256
+  },
+  "nonbank_bound_away_from_exception": 43,
+  "exceptional_zero_polynomial_agreement": 8,
+  "complete_line_profile": {
+    "labels_at_exact_agreement_54": 256,
+    "all_other_labels_exact_agreement": 53,
+    "relaxed_threshold_53_list_size_everywhere": 32
+  },
+  "nonzero_direction_bound": 10,
+  "zero_direction_nonbank_bound": 35,
+  "exact_endpoint_agreements": [
+    53,
+    53
+  ],
+  "exact_common_agreement": 53,
+  "johnson_integer_check": {
+    "T_squared": 2916,
+    "two_n": 2918
+  },
+  "first_order_integer_upper_bound": {
+    "sqrt_term_less_than": 47,
+    "fourth_root_term_less_than": 5,
+    "curve_agreement_less_than": 52,
+    "source_agreement": 53
+  },
+  "fixture_sha256": "4e1f91aad403a2c39450c6947a9134953c411460c2cbf1f3b92bbf8e4a529aa9",
+  "elapsed_seconds": 0.19192579202353954
+}

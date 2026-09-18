@@ -1,0 +1,179 @@
+% Standalone proof fragment; prime-field dimension-three construction.
+\subsection{A regular collision bank with a constant fraction of nearby labels}
+\label{subsec:collision-bank-constant-fraction}
+
+Allowing two bank pairs to share a squared intersection coordinate yields
+an exactly regular core.  The two square roots can be assigned to the two
+pairs separately.  Combined with the translated grid, this gives the
+following different gap--alphabet tradeoff.
+
+\begin{theorem}[Regular collision bank]
+\label{thm:collision-bank-constant-fraction}
+There is a sequence of primes $p$ and length-$n$, dimension-three
+Reed--Solomon codes over $\mathbb F_p$, with received words $F,G$ and
+integers $A<T=A+d$, such that
+\[
+ \operatorname{agr}_3(F)=\operatorname{agr}_3(G)
+   =\operatorname{CA}_3(F,G)=A,
+ \qquad n a_1(3/n)<A<T<\sqrt{2n}.
+\]
+At least $2^{-19}p$ distinct parameters
+$\lambda\in\mathbb F_p\setminus\{0,1\}$ have a singleton list at
+agreement threshold $T$ for $(1-\lambda)F+\lambda G$.  Moreover,
+\[
+ d=\Theta\!\left(\frac{n^{1/4}}{\log n}\right),\qquad
+ p=\Theta\bigl(n^{5/4}\log n\bigr),\qquad
+ \frac{T-A}{n}=\Theta\!\left(\frac{n^{-3/4}}{\log n}\right).
+\]
+The successful witness need not have exactly $T$ agreements.  At the
+relaxed threshold $A$, every word on this affine line has a list of size
+at most $L+1$, where $L=\Theta(\sqrt n)$.
+\end{theorem}
+\begin{proof}
+Let an integer $H$ tend to infinity, and let $v_H$ be the number of
+primes in $[H/2,H]$.  Put
+\[
+ t=\lfloor v_H/16\rfloor,\quad L=2t^2,\quad
+ M=\lfloor L/8\rfloor,\quad Q_0=LHM.
+\]
+Thus $t=\Theta(H/\log H)$.  The prime number theorem in the fixed
+progression $1\pmod4$ supplies a prime
+\[
+ 4096Q_0<p<8192Q_0,\qquad p\equiv1\pmod4
+\]
+for all sufficiently large $H$.  In particular $p>H^4$ eventually.
+Among the four quartic-character classes of the $v_H$ small primes,
+one contains at least $4t$ primes.  Choose four disjoint sets of $t$
+primes from this class, and form two disjoint complete bipartite graphs
+$K_{t,t}$, each joining one numerator set to one denominator set.
+
+Choose a reference prime $z$ in that class.  For every numerator prime
+$a$ and denominator prime $b$, choose squares $\alpha_a,\beta_b$ with
+\[
+ \alpha_a^2=a/z,\qquad \beta_b^2=b/z.
+\]
+For each of the $L$ edges put $\theta_{ab}=\alpha_a/\beta_b$.
+These are distinct squares and satisfy $\theta_{ab}^2=a/b$.
+Unique factorization, after clearing denominators and using $p>H^4$,
+shows that a product of two distinct edge parameters has at most two
+unordered representations.  Two representations occur exactly for
+the two diagonals of a rectangle in one component: their products agree
+exactly by the coherent choice $\theta_{ab}=\alpha_a/\beta_b$.
+Shared-vertex pairs have just one representation.  Indeed, equality
+of squared products fixes the numerator and denominator prime
+multisets; the only alternative pairing is that rectangle.
+
+Use the quadratic bank $P_\theta(X)=\theta+X^2/\theta$.
+A pair $\theta,\phi$ meets at $X^2=\theta\phi$.
+For a product with one pair representation, assign both square roots
+to that pair.  For a product with two representations, assign one
+root to each pair.  At an assigned root set the received value to the
+sum of its assigned parameters.  The two pair sums are different:
+equal sum and product would give the same unordered parameters.
+Further, a bank parameter $\eta$ matches the assigned value only if
+$(\eta-\theta)(\eta-\phi)=0$.  Thus every core coordinate has exactly
+two bank owners.
+
+Each bank edge has $(t-1)^2$ opposite partners in rectangles, losing
+one of its two intersection coordinates for precisely those partners.
+Every bank word therefore has exactly
+\[
+ A=2(L-1)-(t-1)^2=3t^2+2t-3
+\]
+core matches.  The core has $N_0=LA/2=t^2A$ distinct coordinates.
+Set $g=0$ there and let $f$ be the assigned word.
+Any quadratic outside the bank has at most $L$ core matches, by
+counting at most two roots against each bank word and two owners at
+every matched coordinate.
+
+Choose $u_0,v_0$ independently uniformly in $\mathbb F_p$.
+For $1\le u,v\le M$, put $U=u_0+u$, $V=v_0+v$.
+Retain pairs with $U,V\ne0$ and $V/U$ a square, choose one square
+root by a fixed rule, retain one representative per ratio, and remove
+all core ratios.  Let $X$ be the retained count.  Ratio collisions
+and hits on a specified core ratio each have probability at most $1/p$:
+they are nontrivial affine equations in the translation.  Consequently
+\[
+ \mathbb E X\ge M^2\frac{(p-1)^2}{2p^2}
+ -\frac{\binom{M^2}{2}}p-\frac{M^2\binom L2}p
+ =\left(\frac12-o(1)\right)M^2.
+\]
+Since $X\le M^2$, the event $X\ge M^2/4$ has probability at least
+$1/3-o(1)$.
+
+On the grid set $g(x)=1/U$ and $f(x)=c_0/U$, with $c_0$ chosen below.
+The labels of a bank word satisfy
+\[
+ \lambda+c_0=\theta u_0+v_0/\theta
+                 +\frac{au+bv}{b\theta}.
+\]
+Each bank's raw labels lie in an affine image of an integer interval
+of size at most $K=3HM<p$.  Since $a,b$ are distinct primes at least
+$H/2$, any integer value $au+bv$ has at most $1+2M/H\le3M/H$
+representations.  Put $d=\lfloor M/(64H)\rfloor$.  On $X\ge M^2/4$,
+each bank therefore has at least
+\[
+ \frac{M^2/4-K(d-1)}{3M/H}\ge\frac{HM}{16}
+\]
+labels with at least $d$ retained matches.
+
+Let $C$ count cross-bank collisions among all raw interval labels.
+Every such pair has collision probability $1/p$, because its
+translation coefficients include the nonzero difference of its bank
+parameters.  Hence
+\[
+ \mathbb E C\le\frac{\binom L2(3HM)^2}{p},\qquad
+ \Pr(C>LHM/64)<\frac{288}{4096}<\frac13.
+\]
+For sufficiently large $H$ this event can be avoided simultaneously
+with $X\ge M^2/4$.  Fix such a translation.  Removing all bank-label
+pairs involved in cross-bank collisions removes at most $2C$ pairs.
+There remain at least $LHM/32$ distinct rich labels, each with only
+one possible bank owner even among the non-rich raw labels.
+
+The union of raw bank labels has size at most $3LHM<p-2$.
+Choose $c_0\ne0$ outside it.  A nonconstant quadratic has at most
+$2M$ grid matches at any label, by fixing $U$; a nonzero constant has
+at most $M$.  The only exception is the zero polynomial at
+$\lambda=-c_0$, which matches the whole grid.  Discard that label.
+
+Set $T=A+d$ and $n=\lfloor T^2/2\rfloor+1$.
+Since $A=(3/2+o(1))L$ and $M\le L/8$, one has
+$n>N_0+X$ for all sufficiently large members.  Add neutral coordinates
+with $g=0$ and $f=x^3$, avoiding the old coordinates, zero, and all
+roots of $x^3-P_\theta(x)$ for the bank.  There are at most $3L$
+additional forbidden points, and $p\gg n$, so this is possible.
+Banks gain no matches.  Every outsider gains at most three, and away
+from the discarded label its total is at most $L+2M+3<A$.
+Thus each retained rich label has a singleton threshold list.
+
+Any label outside all shifted raw bank labels and $\{-c_0\}$ has
+exact maximum agreement $A$.  There are at least two such labels;
+choose them as the two endpoints.  Ordinary common agreement is
+exactly $A$: a zero explaining direction restricts the intercept to
+the core and neutral block, whose maximum is $A$, while a nonzero
+quadratic direction has at most two matches there and at most $2M$
+on the grid.  These bounds persist under the invertible change to
+the chosen endpoints.  Their normalized affine mixtures enumerate
+the same line bijectively.  The number of singleton parameters is at
+least
+\[
+ LHM/32-1>p/2^{18}-1\ge p/2^{19}
+\]
+eventually.  The same outsider bound gives the relaxed list bound
+$L+1$, allowing zero at its exceptional label.
+
+Finally $n=\Theta(t^4)$, $d=\Theta(t^2/H)$, and
+$p=\Theta(Ht^4)$.  Since $t=\Theta(H/\log H)$, these give all the
+claimed scales.  Both $A/\sqrt n$ and $T/\sqrt n$ tend to $\sqrt2$, whereas
+\[
+ n a_1(3/n)\le\sqrt{3n/2}+(3n/8)^{1/4}.
+\]
+Thus $A>n a_1(3/n)$ eventually. The definition of $n$ also gives
+$T^2<2n$ exactly.
+\end{proof}
+
+This construction has rate $3/n$ and a vanishing normalized source gap.
+Its constant exceptional fraction and larger absolute gap do not imply
+fixed-rate progress, a prescribed evaluation domain, or quadratic-order
+exceptional-count tightness.
