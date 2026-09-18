@@ -1,0 +1,119 @@
+\subsection{Polynomial source separation by correlated covers}
+\label{subsec:correlated-cover-line}
+
+\begin{theorem}\label{thm:correlated-cover-line}
+Fix $0<\alpha\le1/3$. For infinitely many lengths $n$, there are a prime
+$p=\Theta(n^{3(1-\alpha)/2})$, an evaluation domain in $\mathbb F_p$,
+an RS code of dimension $k=\Theta(n^\alpha)$, and words $F,G$ whose
+individual and common agreements are exactly $A$, such that at least
+$(1/e-o(1))p$ nonzero parameters $z$ have a singleton list at agreement
+threshold $T$. Here
+\[
+ T-A=\Theta(n^\alpha),\qquad T^2<(k-1)n,\qquad T>n a_1(k/n).
+\]
+For $0<\alpha<1/3$ the exceptional count is superlinear in $n$.
+The code rate and the relative source separation both tend to zero.
+\end{theorem}
+
+\begin{proof}
+Put $b=2\alpha/(1-\alpha)\in(0,1]$.
+We first choose infinitely many primes $p$ and integers $s$ such that
+\[
+ 2s\mid p-1,\qquad L=\lfloor p^{1/3}\rfloor,\qquad
+ s=\Theta(L^b),\qquad s\le L/100.
+\]
+For completeness, the required consequence of the Bombieri--Vinogradov
+ theorem follows by summing prime counts in the progressions $1\bmod 2s$
+for $s\in[\eta X^{b/3},2\eta X^{b/3}]$, where $\eta>0$ is a sufficiently
+small fixed constant, and restricting primes to $[X,2X]$.
+The sum of the main terms is $\gg X/\log X$, since
+$\sum_s1/\varphi(2s)\ge\sum_s1/(2s)\gg1$.
+The sum of the absolute errors is $O(X/\log^2X)$: all these moduli
+are below $X^{1/2}/\log^B X$ for every fixed $B$ and sufficiently large $X$.
+Thus some such prime/divisor pair exists for every sufficiently large $X$.
+We use the prime-counting formulation in~\cite[Theorem~7.1]{harper-bv}.
+
+Let $H=(\mathbb F_p^*)^s$. It has even order $(p-1)/s>32L^2$, so
+$-1\in H$, and each $y\in H$ has exactly $s$ preimages under $x\mapsto x^s$.
+The Sidon-exponent construction in the proof of
+Theorem~\ref{thm:growing-gap-random-line}, now inside the cyclic group $H$,
+gives $a_1,\ldots,a_L$ with distinct squares and distinct core nodes
+$\pm a_i a_j$. Put
+\[
+ P_i(Y)=Y^2/a_i^2+a_i^2,\qquad Q_i(X)=P_i(X^s),\qquad k=2s+1.
+\]
+Include the full fibers of the $L(L-1)$ core nodes, setting $g=0$ and
+$f=a_i^2+a_j^2$ on the fiber of $\pm a_i a_j$.
+Each bank polynomial $Q_i$ has exactly $A=2s(L-1)$ core matches.
+Every nonbank polynomial of degree at most $2s$ has at most $sL$ core
+matches: each match is counted twice among its root sets against the
+$L$ bank polynomials, each of which has size at most $2s$.
+
+Choose $t=L^2-L+1$ other nodes $y\in H$, and include their full fibers.
+Independently for each fresh node, choose $z_y$ uniformly outside
+$\{P_i(y),P_i(y)-y^3:1\le i\le L\}$, and set
+$f(x)=z_y$, $g(x)=y^3=x^{3s}$ on its fiber. Then
+\[
+ n=s(2L^2-2L+1),\quad T=s(2L-1)=A+s,\quad (k-1)n-T^2=s^2.
+\]
+Fix a nonbank polynomial $Q$ and a parameter $\lambda$.
+Agreement of $Q$ with $f+\lambda g$ exceeding $A$ requires at least
+$s(L-2)+1$ fresh coordinate matches, hence matches on at least $L-1$
+fresh fibers. On each fiber the probability of any match is at most
+$s/(p-2L)$, since there are at most $s$ possible values of
+$Q(x)-\lambda y^3$. Independence across fibers and a union bound give
+\[
+ \Pr(\exists Q\text{ nonbank},\lambda:
+       \operatorname{agr}(f+\lambda g,Q)>A)
+ \le p^{2s+2}\binom{t}{L-1}
+       \left(\frac{s}{p-2L}\right)^{L-1}=o(1).
+\]
+Indeed, the logarithm of the displayed bound is at most
+$[6s+(b-2+o(1))L]\log L$; this tends to minus infinity both for $b<1$
+and for $b=1$ with $s\le L/100$.
+
+Fix $\lambda\notin\{0,1\}$. The desired bank values
+$P_i(y)-\lambda y^3$ are distinct at each fresh node.
+For each bank at most $6L$ fresh nodes forbid the desired value,
+by the root bound for the nonzero cubics
+$P_i-P_j-\lambda Y^3$ and $P_i-P_j-(\lambda-1)Y^3$.
+The total number $S_\lambda$ of bank--fiber hits is therefore a sum of
+independent Bernoulli variables, with mean
+\[
+ \mathbb E S_\lambda=\frac{Lt-O(L^2)}p(1+o(1))=1+o(1)
+\]
+and maximum success probability at most $L/(p-2L)=o(1)$, uniformly
+in $\lambda$. Consequently $\Pr(S_\lambda=1)=1/e+o(1)$.
+On the nonbank-good event, $S_\lambda=1$ means exactly one codeword
+has agreement at least $T$, and its agreement is exactly $T$.
+Taking expectations over labels and subtracting the global failure
+probability shows that one realization has at least $(1/e-o(1))p$
+such labels and no nonbank improvement anywhere on the line.
+The excluded fresh values give both sources $f,f+g$ agreement exactly $A$.
+
+A nonzero polynomial $V$ of degree at most $2s$ agrees with $g$ at
+at most $2s$ core coordinates and $3s$ fresh coordinates.
+For large $L$ this is less than $A$. The choice $V=0$ restricts common
+agreements to the core, where a bank polynomial attains exactly $A$.
+Thus common agreement is exactly $A$ as well.
+Set $F=f,G=f+g$ and use $\lambda=z/(1+z)$ for $z\ne-1$;
+scaling by $1+z$ preserves lists. The counted labels yield nonzero $z$.
+The additional parameter $z=-1$ gives $-g$, with unique threshold
+witness zero, although it is not needed for the asserted count.
+
+Finally $n=\Theta(L^{b+2})$ and $p\sim L^3$, giving the exponents
+in the statement. Since $s\to\infty$,
+$T/\sqrt{kn/2}\to\sqrt2$, whereas
+$a_1(k/n)=\sqrt{k/(2n)}(1+o(1))$.
+This proves the threshold comparison.
+\end{proof}
+
+\begin{remark}
+For example, $\alpha=1/5$ gives a source separation $\Theta(n^{1/5})$
+and $\Theta(n^{6/5})$ singleton exceptional challenges.
+The cover multiplies lengths, source separation, and polynomial degrees
+together: its relative separation is exactly $1/(2L^2-2L+1)$,
+and its rate is asymptotic to $1/L^2$. This is a polynomial absolute-gap
+extension of the construction, not fixed-rate or fixed-relative-gap
+sharpness of the general upper bounds.
+\end{remark}

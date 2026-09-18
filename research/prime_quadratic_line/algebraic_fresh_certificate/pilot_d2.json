@@ -1,0 +1,8 @@
+{
+"schema":1,"L":293,"p":1000003,"d":2,"D":13,"A":584,"T":586,"n":171699,"n0":85556,"t":86143,"candidate_limit":93761,
+"q":293,"primitive_root":2,"seed":20260918,"h_coefficients_ascending":[23238,728290,194252,474588,262607,64749,543759,967184,988795,989279,453060,514443,353562,1],
+"domain_rule":"Increasing integers x in [1,p-1], excluding core ±gamma^(b_i+b_j), then blacklist h(x)=P_i(x) or P_i(x)-x^3, retaining first t survivors; b_i=2qi+(i^2 mod q), i=0..L-1",
+"candidates_examined":86209,"deleted":66,"last_fresh_node":94449,"domain_fnv64":"5235519690995373058",
+"canonical_bad_labels":643471,"canonical_singleton_labels":369518,"transformed_bad_labels":643472,"transformed_singleton_labels":369519,"owner_histogram":{"0":356532,"1":369518,"2":188944,"3":64356,"4":16517,"5":3489,"6":543,"7":93,"8":11},
+"bank_fresh_hit_histogram":[268819084,23153811,998544,28767,666,7,0,0,0,0,0,0,0,0],"max_bank_fresh_hits":5,"nonbank_agreement_upper":306,"setup_seconds":0.0635591,"total_seconds":0.957275
+}

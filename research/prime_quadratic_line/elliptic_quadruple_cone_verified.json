@@ -1,0 +1,694 @@
+{
+  "status": "PASS",
+  "field_results": [
+    {
+      "p": 1009,
+      "full_rank_minors": [
+        {
+          "pair": [
+            -3,
+            -3
+          ],
+          "determinant_mod_p": 304
+        },
+        {
+          "pair": [
+            -3,
+            -2
+          ],
+          "determinant_mod_p": 794
+        },
+        {
+          "pair": [
+            -3,
+            -1
+          ],
+          "determinant_mod_p": 339
+        },
+        {
+          "pair": [
+            -3,
+            0
+          ],
+          "determinant_mod_p": 54
+        },
+        {
+          "pair": [
+            -3,
+            1
+          ],
+          "determinant_mod_p": 345
+        },
+        {
+          "pair": [
+            -3,
+            2
+          ],
+          "determinant_mod_p": 331
+        },
+        {
+          "pair": [
+            -3,
+            3
+          ],
+          "determinant_mod_p": 465
+        },
+        {
+          "pair": [
+            -2,
+            -3
+          ],
+          "determinant_mod_p": 51
+        },
+        {
+          "pair": [
+            -2,
+            -2
+          ],
+          "determinant_mod_p": 832
+        },
+        {
+          "pair": [
+            -2,
+            0
+          ],
+          "determinant_mod_p": 750
+        },
+        {
+          "pair": [
+            -2,
+            1
+          ],
+          "determinant_mod_p": 701
+        },
+        {
+          "pair": [
+            -2,
+            2
+          ],
+          "determinant_mod_p": 474
+        },
+        {
+          "pair": [
+            -2,
+            3
+          ],
+          "determinant_mod_p": 968
+        },
+        {
+          "pair": [
+            -1,
+            -3
+          ],
+          "determinant_mod_p": 831
+        },
+        {
+          "pair": [
+            -1,
+            1
+          ],
+          "determinant_mod_p": 603
+        },
+        {
+          "pair": [
+            -1,
+            2
+          ],
+          "determinant_mod_p": 693
+        },
+        {
+          "pair": [
+            -1,
+            3
+          ],
+          "determinant_mod_p": 124
+        },
+        {
+          "pair": [
+            0,
+            -3
+          ],
+          "determinant_mod_p": 228
+        },
+        {
+          "pair": [
+            0,
+            -2
+          ],
+          "determinant_mod_p": 471
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "determinant_mod_p": 326
+        },
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "determinant_mod_p": 228
+        },
+        {
+          "pair": [
+            1,
+            -3
+          ],
+          "determinant_mod_p": 421
+        },
+        {
+          "pair": [
+            1,
+            -2
+          ],
+          "determinant_mod_p": 892
+        },
+        {
+          "pair": [
+            1,
+            -1
+          ],
+          "determinant_mod_p": 981
+        },
+        {
+          "pair": [
+            1,
+            1
+          ],
+          "determinant_mod_p": 363
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "determinant_mod_p": 17
+        },
+        {
+          "pair": [
+            1,
+            3
+          ],
+          "determinant_mod_p": 186
+        },
+        {
+          "pair": [
+            2,
+            -3
+          ],
+          "determinant_mod_p": 153
+        },
+        {
+          "pair": [
+            2,
+            -2
+          ],
+          "determinant_mod_p": 694
+        },
+        {
+          "pair": [
+            2,
+            -1
+          ],
+          "determinant_mod_p": 852
+        },
+        {
+          "pair": [
+            2,
+            0
+          ],
+          "determinant_mod_p": 850
+        },
+        {
+          "pair": [
+            2,
+            1
+          ],
+          "determinant_mod_p": 175
+        },
+        {
+          "pair": [
+            2,
+            2
+          ],
+          "determinant_mod_p": 922
+        },
+        {
+          "pair": [
+            2,
+            3
+          ],
+          "determinant_mod_p": 971
+        },
+        {
+          "pair": [
+            3,
+            -3
+          ],
+          "determinant_mod_p": 887
+        },
+        {
+          "pair": [
+            3,
+            -2
+          ],
+          "determinant_mod_p": 409
+        },
+        {
+          "pair": [
+            3,
+            -1
+          ],
+          "determinant_mod_p": 702
+        },
+        {
+          "pair": [
+            3,
+            0
+          ],
+          "determinant_mod_p": 889
+        },
+        {
+          "pair": [
+            3,
+            1
+          ],
+          "determinant_mod_p": 438
+        },
+        {
+          "pair": [
+            3,
+            2
+          ],
+          "determinant_mod_p": 563
+        },
+        {
+          "pair": [
+            3,
+            3
+          ],
+          "determinant_mod_p": 1001
+        }
+      ],
+      "linear_cases": [
+        {
+          "pair": [
+            -1,
+            -1
+          ],
+          "forced_plane_coefficient_zero": 3,
+          "all_quadratic_relations_divisible_by_that_coordinate": true
+        },
+        {
+          "pair": [
+            -1,
+            0
+          ],
+          "forced_plane_coefficient_zero": 2,
+          "all_quadratic_relations_divisible_by_that_coordinate": true
+        },
+        {
+          "pair": [
+            0,
+            -1
+          ],
+          "forced_plane_coefficient_zero": 2,
+          "all_quadratic_relations_divisible_by_that_coordinate": true
+        },
+        {
+          "pair": [
+            0,
+            0
+          ],
+          "forced_plane_coefficient_zero": 3,
+          "all_quadratic_relations_divisible_by_that_coordinate": true
+        }
+      ],
+      "duplicate_point_cases": [
+        [
+          -2,
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ]
+    },
+    {
+      "p": 1013,
+      "full_rank_minors": [
+        {
+          "pair": [
+            -3,
+            -3
+          ],
+          "determinant_mod_p": 78
+        },
+        {
+          "pair": [
+            -3,
+            -2
+          ],
+          "determinant_mod_p": 853
+        },
+        {
+          "pair": [
+            -3,
+            -1
+          ],
+          "determinant_mod_p": 519
+        },
+        {
+          "pair": [
+            -3,
+            0
+          ],
+          "determinant_mod_p": 658
+        },
+        {
+          "pair": [
+            -3,
+            1
+          ],
+          "determinant_mod_p": 709
+        },
+        {
+          "pair": [
+            -3,
+            2
+          ],
+          "determinant_mod_p": 319
+        },
+        {
+          "pair": [
+            -3,
+            3
+          ],
+          "determinant_mod_p": 540
+        },
+        {
+          "pair": [
+            -2,
+            -3
+          ],
+          "determinant_mod_p": 38
+        },
+        {
+          "pair": [
+            -2,
+            -2
+          ],
+          "determinant_mod_p": 112
+        },
+        {
+          "pair": [
+            -2,
+            0
+          ],
+          "determinant_mod_p": 499
+        },
+        {
+          "pair": [
+            -2,
+            1
+          ],
+          "determinant_mod_p": 303
+        },
+        {
+          "pair": [
+            -2,
+            2
+          ],
+          "determinant_mod_p": 113
+        },
+        {
+          "pair": [
+            -2,
+            3
+          ],
+          "determinant_mod_p": 47
+        },
+        {
+          "pair": [
+            -1,
+            -3
+          ],
+          "determinant_mod_p": 95
+        },
+        {
+          "pair": [
+            -1,
+            1
+          ],
+          "determinant_mod_p": 309
+        },
+        {
+          "pair": [
+            -1,
+            2
+          ],
+          "determinant_mod_p": 77
+        },
+        {
+          "pair": [
+            -1,
+            3
+          ],
+          "determinant_mod_p": 461
+        },
+        {
+          "pair": [
+            0,
+            -3
+          ],
+          "determinant_mod_p": 704
+        },
+        {
+          "pair": [
+            0,
+            -2
+          ],
+          "determinant_mod_p": 563
+        },
+        {
+          "pair": [
+            0,
+            2
+          ],
+          "determinant_mod_p": 70
+        },
+        {
+          "pair": [
+            0,
+            3
+          ],
+          "determinant_mod_p": 549
+        },
+        {
+          "pair": [
+            1,
+            -3
+          ],
+          "determinant_mod_p": 731
+        },
+        {
+          "pair": [
+            1,
+            -2
+          ],
+          "determinant_mod_p": 330
+        },
+        {
+          "pair": [
+            1,
+            -1
+          ],
+          "determinant_mod_p": 824
+        },
+        {
+          "pair": [
+            1,
+            1
+          ],
+          "determinant_mod_p": 929
+        },
+        {
+          "pair": [
+            1,
+            2
+          ],
+          "determinant_mod_p": 197
+        },
+        {
+          "pair": [
+            1,
+            3
+          ],
+          "determinant_mod_p": 468
+        },
+        {
+          "pair": [
+            2,
+            -3
+          ],
+          "determinant_mod_p": 435
+        },
+        {
+          "pair": [
+            2,
+            -2
+          ],
+          "determinant_mod_p": 842
+        },
+        {
+          "pair": [
+            2,
+            -1
+          ],
+          "determinant_mod_p": 27
+        },
+        {
+          "pair": [
+            2,
+            0
+          ],
+          "determinant_mod_p": 284
+        },
+        {
+          "pair": [
+            2,
+            1
+          ],
+          "determinant_mod_p": 890
+        },
+        {
+          "pair": [
+            2,
+            2
+          ],
+          "determinant_mod_p": 535
+        },
+        {
+          "pair": [
+            2,
+            3
+          ],
+          "determinant_mod_p": 501
+        },
+        {
+          "pair": [
+            3,
+            -3
+          ],
+          "determinant_mod_p": 177
+        },
+        {
+          "pair": [
+            3,
+            -2
+          ],
+          "determinant_mod_p": 891
+        },
+        {
+          "pair": [
+            3,
+            -1
+          ],
+          "determinant_mod_p": 43
+        },
+        {
+          "pair": [
+            3,
+            0
+          ],
+          "determinant_mod_p": 417
+        },
+        {
+          "pair": [
+            3,
+            1
+          ],
+          "determinant_mod_p": 776
+        },
+        {
+          "pair": [
+            3,
+            2
+          ],
+          "determinant_mod_p": 668
+        },
+        {
+          "pair": [
+            3,
+            3
+          ],
+          "determinant_mod_p": 638
+        }
+      ],
+      "linear_cases": [
+        {
+          "pair": [
+            -1,
+            -1
+          ],
+          "forced_plane_coefficient_zero": 3,
+          "all_quadratic_relations_divisible_by_that_coordinate": true
+        },
+        {
+          "pair": [
+            -1,
+            0
+          ],
+          "forced_plane_coefficient_zero": 2,
+          "all_quadratic_relations_divisible_by_that_coordinate": true
+        },
+        {
+          "pair": [
+            0,
+            -1
+          ],
+          "forced_plane_coefficient_zero": 2,
+          "all_quadratic_relations_divisible_by_that_coordinate": true
+        },
+        {
+          "pair": [
+            0,
+            0
+          ],
+          "forced_plane_coefficient_zero": 3,
+          "all_quadratic_relations_divisible_by_that_coordinate": true
+        }
+      ],
+      "duplicate_point_cases": [
+        [
+          -2,
+          -1
+        ],
+        [
+          -1,
+          -2
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ]
+    }
+  ],
+  "scope": "Two-prime necessary identity gate for this curve, tau=O and m,n in [-3,3]; no positive rank-three cone found."
+}

@@ -5,9 +5,10 @@ Working draft by Justin Thaler, September 18, 2026.
 [Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
 **Latest verified results (September 18, morning):** the full-page,
-one-inch-margin ePrint draft (242 pages) now proves a prime-field line construction
+one-inch-margin ePrint draft (244 pages) now proves a prime-field line construction
 with more than n^(3/2)/4 exceptional challenges, each having a singleton
-list, above the first-order curve and below Johnson. Both source words
+list, at an error radius covered by the Dao–Kominers–Thaler bounds
+and beyond the Johnson radius. Both source words
 are outside the tested radius. A collision-averaging variant gives
 more than p/36 singleton bad challenges over an infinite sequence of
 prime fields with n = Θ(p^(2/3)). Thus singleton lists can coexist with
@@ -17,8 +18,11 @@ A further audited random-padding theorem removes the one-coordinate
 restriction: the source gap can grow as c log n / log log n, for any fixed
 0<c≤1/2, while at least (1/e−o(1))p challenges have singleton lists.
 At c=1/2 this gives Ω(n log log n) singleton bad challenges.
-The limitation is explicit: dimension is three, and both rate and the
-fractional source gap tend to zero. This is not fixed-rate tightness
+In that theorem the dimension is three. A newly audited correlated-cover
+construction permits gap and dimension Θ(n^α), for any fixed 0<α≤1/3,
+with Θ(n^(3(1−α)/2)) singleton exceptional challenges. For example,
+a gap of order n^(1/5) coexists with n^(6/5) exceptions.
+Both rate and fractional source gap still tend to zero. This is not fixed-rate tightness
 or a better.codes improvement. On the growing-gap examples, the O(n²)
 upper comparison exceeds p and is vacuous as a probability bound; constant
 bad probability does not establish tightness of that upper bound.
@@ -30,8 +34,14 @@ attains a universal triple-count bound.
 These results do not supersede the fixed-rate near-capacity counterexamples
 of Krachun–Kazanin–Haböck or the capacity-conjecture refutation of
 Diamond–Gruen. Our source separation and their gap from capacity are
-different quantities. The distinction pursued here is the first-order
-agreement regime together with singleton threshold lists.
+different quantities. The distinction pursued here is that these exceptional challenges occur
+at error rates where the Dao–Kominers–Thaler upper bounds already apply,
+even though each exceptional word has only one nearby codeword. This
+does not yet show that those upper bounds are close to tight.
+
+An explicit gap-three example has length 4,503,001, dimension three,
+and **5,127,684 singleton exceptional challenges**, verified by a separate
+implementation. See the [certificate and replay](research/prime_quadratic_line/algebraic_fresh_certificate/README.md).
 
 Reproducible prime-field examples include n=1201 over F_2000003 with
 exactly 15,026 singleton exceptions, and an optimized domain over F_20011

@@ -218,3 +218,30 @@ An independently audited elliptic triple core improves the asymptotic n^(3/2) co
 A new independently audited random-padding theorem removes the one-coordinate source-gap restriction at fixed quadratic degree. For every sufficiently large prime p and any fixed0<c≤1/2, choose d~c logn/loglogn and obtain at least(1/3−o(1))p singleton bad labels, both endpointagreements and ordinaryCA exactlyA=T−d. The threshold stays abovefirstorder and belowJohnson. Atc=1/2,p/n~e loglogn; atc=1/4,p/n~2e logn loglogn. An elementary integerSidon construction embedded inFp* permits the required smallfields. Blacklisted independentfreshvalues, factorialmoments throughorder4, and a uniform nonbank unionbound prove the result. No fixedpositive rate/fractionalgap, and no better.codes improvement.
 
 User explicitly authorized up to20 concurrent AstraAPIqueries. Located configuredkey privately in syncedDropbox; verifiedgpt-6-astra access. Submitted20 distinct researchquestions with reasoning effortmax and32768 outputtoken cap each. APIjobs remainlive; outputisuntrusteduntilmathematicallyaudited. No activeVastrental remains.
+
+
+## Polynomial source separation and explicit gap-three example
+
+Two independent audits passed the correlated-cover theorem, now Theorem N.13.
+For any fixed 0<alpha<=1/3, infinitely many prime-field examples have
+source gap and dimension Theta(n^alpha), and Theta(n^(3(1-alpha)/2))
+singleton exceptional challenges, including gap n^(1/5) with count n^(6/5).
+The proof uses BV prime selection, complete multiplicative fibers, independent
+fresh values per fiber, and a uniform nonbank union bound. Both source and
+common agreement are exact. Rate and fractional gap still vanish; no
+better.codes improvement or general DKT sharpness claim follows.
+The fixed-dimension random theorem's singleton constant was strengthened
+from the earlier 1/3 lower bound to 1/e by all fixed factorial moments.
+
+An explicit monic-degree13 fresh-word example at p=18120497,n=4503001,
+k=3,A=2998,T=3001 has exactly 5127684 singleton exceptions after source
+change, and 6437753 nonempty lists. A separate C++ replay agrees on every
+histogram and domain hash. Generation41.32s and replay31.80s used below
+175MiB locally; no rental was necessary. Nonbank agreements are bounded
+by1513 deterministically. Certificates and code are in algebraic_fresh_certificate.
+
+The full-page one-inch-margin paper builds cleanly at244pages. New theorem
+page176 was rendered and visually checked. Intro/README replace unexplained
+"first-order agreement regime" with the actual comparison to the error rates
+covered by Dao–Kominers–Thaler. API usage and remaining job status are tracked
+separately; no API key or raw credential is included in published files.

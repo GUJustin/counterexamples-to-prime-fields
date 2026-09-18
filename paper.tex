@@ -727,8 +727,8 @@ ambient fields, even a superlinear exceptional-count lower bound at
 one fixed positive gap remains open here. The large gap-dependent
 coefficient in our linear lower bound must not be confused with a
 growing exponent of $n$.
-There is now a prime-field lower bound in the first-order regime at
-vanishing rate. Theorem~\ref{thm:prime-quadratic-intersection-line}
+There is now a prime-field lower bound at error rates covered by the
+Dao--Kominers--Thaler upper bounds, albeit at vanishing code rate. Theorem~\ref{thm:prime-quadratic-intersection-line}
 constructs a code of dimension three and length $n=2L(L-1)+1$,
 with more than $n^{3/2}/4$ exceptional challenges. Both source agreements
 and common agreement are $2L-2$, but every exceptional word has a
@@ -738,7 +738,8 @@ The construction works over every sufficiently large prime field, with
 a stated polynomial field-size bound, and an explicit finite certificate
 gives the uniform upper comparison $31000n^2$ for full-agreement-set
 MCA exceptions. Thus \emph{even over prime fields, many exceptional
-challenges can coexist with singleton lists above first order}.
+challenges can coexist with singleton lists at error rates covered by
+the first-derivative upper bounds}.
 Corollary~\ref{cor:prime-positive-density} strengthens the field-size
 accounting: for an infinite sequence of primes, $n=\Theta(p^{2/3})$
 and more than $p/36$ challenges have singleton threshold lists. Thus the
@@ -765,10 +766,21 @@ so the uniform $O(n^2)$ exceptional-count upper bound exceeds the entire
 field and gives no nontrivial probability bound. The construction therefore
 does not establish sharpness of that quadratic upper bound.
 
+Allowing the message dimension to grow gives a polynomial source
+separation. Theorem~\ref{thm:correlated-cover-line} constructs, for every
+fixed $0<\alpha\le1/3$, examples with dimension and source separation
+$\Theta(n^\alpha)$ and $\Theta(n^{3(1-\alpha)/2})$ singleton exceptional
+challenges. For example, separation $\Theta(n^{1/5})$ coexists with
+$\Theta(n^{6/5})$ exceptions. The construction groups coordinates into
+complete fibers of $x\mapsto x^s$ and makes their fresh values agree.
+A separate argument excludes all new polynomial witnesses introduced by
+the larger code dimension. The fractional source gap and code rate still
+tend to zero; this does not prove fixed-rate tightness.
+
 These statements should not be read as the first superlinear prime-field
 proximity-gap counterexamples. Diamond and Gruen~\cite{diamond-gruen-random}
 refute the capacity conjecture using random-word distance distributions.
-Krachun, Kazanin, and Hab\"ock~\cite{krachun-kazanin-habock}
+Krachun, Kazanin, and Hab\"ock~\cite{kkh}
 give prime-field counterexamples at distance
 $1-\rho-\Theta_\rho(1/\log n)$ from the code, including fixed positive
 rates. Their distance from capacity is a different parameter from our
@@ -6256,15 +6268,15 @@ Cryptographic Proofs}. Cryptology ePrint Archive, Report 2026/2056,
 September 2026. The 145-page version retrieved September 17, 2026.
 \url{https://eprint.iacr.org/2026/2056}.
 
+\bibitem{harper-bv} A. J. Harper.
+Lecture notes 2 for Cambridge Part III course on Elementary Methods in
+Analytic Number Theory, 2015. Theorem~7.1.
+\url{https://warwick.ac.uk/fac/sci/maths/people/staff/harper/elementarymethodsnotes2.pdf}.
+
 \bibitem{diamond-gruen-random} B. E. Diamond and A. Gruen.
 \emph{On the Distribution of the Distances of Random Words}.
 Cryptology ePrint Archive, Report 2025/2010; full version of CRYPTO 2026.
 \url{https://eprint.iacr.org/2025/2010}.
-
-\bibitem{krachun-kazanin-habock} D. Krachun, S. Kazanin, and U. Hab\"ock.
-\emph{Failure of proximity gaps close to capacity}.
-Cryptology ePrint Archive, Report 2026/782.
-\url{https://eprint.iacr.org/2026/782}.
 
 \end{thebibliography}
 \end{document}

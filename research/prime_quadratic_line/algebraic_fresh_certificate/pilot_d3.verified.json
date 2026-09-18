@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "method": "separately structured C++ replay; no generator import",
+  "checks": {
+    "canonical_singleton_labels": true,
+    "canonical_bad_labels": true,
+    "candidates_examined": true,
+    "deleted": true,
+    "domain_fnv64": true,
+    "owner_histogram": true,
+    "bank_fresh_hit_histogram": true,
+    "prime": true,
+    "hit_mass": true,
+    "hit_incidence_mass": true,
+    "owner_mass": true,
+    "qualifying_witness_mass": true,
+    "below_johnson": true,
+    "nonbank_cap": true,
+    "count_exceeds_domain_size": true
+  },
+  "canonical_singleton_labels": 5127683,
+  "transformed_singleton_labels": 5127684,
+  "canonical_bad_labels": 6437752,
+  "transformed_bad_labels": 6437753,
+  "replay_seconds": 31.5439,
+  "generator_sha256": "89644b8e2c997ec7217c4ec4185d3d435b493de39f04e35c2d88b57c672d3217",
+  "verifier_sha256": "9965effd2e9e61fcb967a6f757343805f986599a6883e764e8b3265d3b2f48d0",
+  "input_sha256": "03883700f2f00fbbe653df10a17b8a40077855a166becb0617ac52bc39808a3a"
+}

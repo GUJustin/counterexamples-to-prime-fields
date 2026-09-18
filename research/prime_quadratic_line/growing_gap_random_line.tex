@@ -122,3 +122,15 @@ $A$. Exact rational factorial-moment bounds and a nonbank union bound
 certify existence; this certificate does not specify a sampled received
 word. The independent replay is in
 \path{research/prime_quadratic_line/finite_gap3/}.
+
+\paragraph{An explicit example with independent computational replay.}
+At the same parameters, a concrete monic polynomial $h$ of degree $13$
+for the fresh received values gives exactly $5127684$ singleton exceptional
+challenges after the endpoint change, and $6437753$ nonempty threshold
+lists in total. Both source agreements and common agreement remain $2998$.
+Here every nonbank quadratic has at most $1500+13=1513$ agreements,
+uniformly on the line, by its core incidence bound and the degree of
+$h+\lambda X^3-Q$. Thus the list count reduces to the explicit bank.
+The saved coefficients, deterministic domain rule, and separately
+implemented exact replay are in
+\path{research/prime_quadratic_line/algebraic_fresh_certificate/}.

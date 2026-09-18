@@ -1,0 +1,11 @@
+{
+  "command": [
+    "./verify"
+  ],
+  "exit": 0,
+  "wall_seconds": 31.801136334000002,
+  "sampled_peak_process_group_kib": 167104,
+  "limit_seconds": 60,
+  "limit_mib": 384,
+  "termination_reason": null
+}
