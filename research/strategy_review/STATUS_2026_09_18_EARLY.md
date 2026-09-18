@@ -41,3 +41,14 @@ The first larger uniform target, degree10/four poles, genuinely has a3-dimension
 New cubic and quartic invariant derivative inequalities are valid global compatibility conditions for the surviving better.codes repeated-factor resource profile, but neither excludes it. The cubic W budget has slack131078 and the quartic budget slack174777. No benchmark improvement follows.
 
 The strategy review identified a separate potentially unexhausted target: nonrectangular monomial supports for the benchmark's PRIMARY interpolation source. Existing support-ledger tightness theorems address a different derived regular-family method. Two agents are checking the precise primary support/rank/cost formulas before any search. A third explores an independent octahedral-symmetry construction of an eight-word bank.
+
+
+## Checkpoint08:18 UTC: exact source optimization and separate symmetry gate
+
+Published paper commit688b8b15fdc5aceb7474638a68822998bb12f4a6 is verified onremote main; manuscript213pages.
+
+The previously unoptimized frozen primary-A support class is now fully closed by a maximum-flow/minimum-cut certificate:15827vertices,261039edges, maximum sufficient interpolation surplus exactly0 for ANY Y-downward full-prefix subset at m115,L274277,q159,j35. Independent capacity/conservation/cut replay passes. This is a finite primary-source theorem, distinct from the earlier DKT regular-family cost theorem. Other multiplicities, caps, and TCap/B sources remain open and are the next optimization targets.
+
+A separate octahedral construction was tested in exactQ(i,sqrt2) arithmetic. For36points anddegree8, neither18nor15agreements can occur for an actual orbit of8sections under the stated equivariant/sign-equivariant word construction. The finite polynomial-gcd gates retain only4-section degeneracies. This does not exclude nonequivariant words or other octahedral domains.
+
+No better.codes improvement or new positive8-word characteristic-zero bank is claimed. No rental is active.

@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "nodes": 15827,
+  "edges": 261039,
+  "flow": 13123663101701085,
+  "cut": 13123663101701085,
+  "maximum_surplus": 0,
+  "selected_support_size": 0,
+  "saturation_margin": 6380,
+  "scope": "All Y-downward full-prefix subsets of the fixed m115,D20846625,L274277,j<=35,i+j<=159 primaryA shape"
+}

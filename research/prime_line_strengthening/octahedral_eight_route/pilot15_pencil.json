@@ -1,0 +1,122 @@
+{
+  "field": "Q(i,sqrt(2))",
+  "tests": 72,
+  "target_agreement": 15,
+  "seconds": 0.7171146250038873,
+  "candidates": [
+    {
+      "special_orbit": 0,
+      "hits": [
+        {
+          "cosets": [
+            3,
+            2,
+            6
+          ],
+          "gcd": "x**4 - 8*I*x**2 - 1",
+          "degree": 4,
+          "constant_candidate": true,
+          "stabilizer": 6,
+          "candidate": "x**8 + x**7*(-1 - I) + x**5*(-7 + 7*I) + x**3*(-7 - 7*I) + x*(-1 + I) - 1",
+          "basis": [
+            "x**8 + x**7*(-1 - I) + x**5*(-7 + 7*I) + x**3*(-7 - 7*I) + x*(-1 + I) - 1",
+            "x**8 + x**7*(-2*sqrt(2) + 1 - sqrt(2)*I + I) + x**6*(-3*sqrt(2) + 3 - 3*sqrt(2)*I + 3*I) + x**5*(-7*sqrt(2) + 7 - 4*sqrt(2)*I + 11*I) + x**4*(7 - 14*sqrt(2)*I + 21*I) + x**3*(-17 + 10*sqrt(2) - 7*sqrt(2)*I + 7*I) + x**2*(-3 + 3*sqrt(2) - 3*I + 3*sqrt(2)*I) + x*(-sqrt(2) + 1 - 4*sqrt(2)*I + 5*I) - 2*sqrt(2)*I + 3*I"
+          ]
+        },
+        {
+          "cosets": [
+            4,
+            1,
+            2
+          ],
+          "gcd": "x**4 + x**3 + 2*x**2 - x + 1",
+          "degree": 4,
+          "constant_candidate": true,
+          "stabilizer": 6,
+          "candidate": "x**8 + x**7*(-1 - I) + x**5*(-7 + 7*I) + x**3*(-7 - 7*I) + x*(-1 + I) - 1",
+          "basis": [
+            "x**8 + x**7*(-1 - I) + x**5*(-7 + 7*I) + x**3*(-7 - 7*I) + x*(-1 + I) - 1",
+            "x**8 + x**7*(-2*sqrt(2) + 1 - sqrt(2)*I + I) + x**6*(-3*sqrt(2) + 3 - 3*sqrt(2)*I + 3*I) + x**5*(-7*sqrt(2) + 7 - 4*sqrt(2)*I + 11*I) + x**4*(7 - 14*sqrt(2)*I + 21*I) + x**3*(-17 + 10*sqrt(2) - 7*sqrt(2)*I + 7*I) + x**2*(-3 + 3*sqrt(2) - 3*I + 3*sqrt(2)*I) + x*(-sqrt(2) + 1 - 4*sqrt(2)*I + 5*I) - 2*sqrt(2)*I + 3*I"
+          ]
+        },
+        {
+          "cosets": [
+            7,
+            2,
+            5
+          ],
+          "gcd": "x**4 + I*x**3 - 2*x**2 + I*x + 1",
+          "degree": 4,
+          "constant_candidate": true,
+          "stabilizer": 6,
+          "candidate": "x**8 + x**7*(-1 - I) + x**5*(-7 + 7*I) + x**3*(-7 - 7*I) + x*(-1 + I) - 1",
+          "basis": [
+            "x**8 + x**7*(-1 - I) + x**5*(-7 + 7*I) + x**3*(-7 - 7*I) + x*(-1 + I) - 1",
+            "x**8 + x**7*(-2*sqrt(2) + 1 - sqrt(2)*I + I) + x**6*(-3*sqrt(2) + 3 - 3*sqrt(2)*I + 3*I) + x**5*(-7*sqrt(2) + 7 - 4*sqrt(2)*I + 11*I) + x**4*(7 - 14*sqrt(2)*I + 21*I) + x**3*(-17 + 10*sqrt(2) - 7*sqrt(2)*I + 7*I) + x**2*(-3 + 3*sqrt(2) - 3*I + 3*sqrt(2)*I) + x*(-sqrt(2) + 1 - 4*sqrt(2)*I + 5*I) - 2*sqrt(2)*I + 3*I"
+          ]
+        }
+      ]
+    },
+    {
+      "special_orbit": 1,
+      "hits": [
+        {
+          "cosets": [
+            3,
+            2,
+            6
+          ],
+          "gcd": "x**4 - 8*I*x**2 - 1",
+          "degree": 4,
+          "constant_candidate": true,
+          "stabilizer": 6,
+          "candidate": "x**8 + x**7*(-1 - I) + x**5*(-7 + 7*I) + x**3*(-7 - 7*I) + x*(-1 + I) - 1",
+          "basis": [
+            "x**8 + x**7*(-1 - I) + x**5*(-7 + 7*I) + x**3*(-7 - 7*I) + x*(-1 + I) - 1",
+            "x**8 + x**7*(-sqrt(2) + 1 - 2*sqrt(2)*I + I) + x**6*(-3 + 3*sqrt(2) - 3*sqrt(2)*I + 3*I) + x**5*(-11 + 4*sqrt(2) - 7*I + 7*sqrt(2)*I) + x**4*(7 - 21*I + 14*sqrt(2)*I) + x**3*(-7*sqrt(2) + 7 - 17*I + 10*sqrt(2)*I) + x**2*(-3*sqrt(2) + 3 - 3*I + 3*sqrt(2)*I) + x*(-5 + 4*sqrt(2) - I + sqrt(2)*I) - 3*I + 2*sqrt(2)*I"
+          ]
+        },
+        {
+          "cosets": [
+            4,
+            1,
+            2
+          ],
+          "gcd": "x**4 + x**3 + 2*x**2 - x + 1",
+          "degree": 4,
+          "constant_candidate": true,
+          "stabilizer": 6,
+          "candidate": "x**8 + x**7*(-1 - I) + x**5*(-7 + 7*I) + x**3*(-7 - 7*I) + x*(-1 + I) - 1",
+          "basis": [
+            "x**8 + x**7*(-1 - I) + x**5*(-7 + 7*I) + x**3*(-7 - 7*I) + x*(-1 + I) - 1",
+            "x**8 + x**7*(-sqrt(2) + 1 - 2*sqrt(2)*I + I) + x**6*(-3 + 3*sqrt(2) - 3*sqrt(2)*I + 3*I) + x**5*(-11 + 4*sqrt(2) - 7*I + 7*sqrt(2)*I) + x**4*(7 - 21*I + 14*sqrt(2)*I) + x**3*(-7*sqrt(2) + 7 - 17*I + 10*sqrt(2)*I) + x**2*(-3*sqrt(2) + 3 - 3*I + 3*sqrt(2)*I) + x*(-5 + 4*sqrt(2) - I + sqrt(2)*I) - 3*I + 2*sqrt(2)*I"
+          ]
+        },
+        {
+          "cosets": [
+            7,
+            2,
+            5
+          ],
+          "gcd": "x**4 + I*x**3 - 2*x**2 + I*x + 1",
+          "degree": 4,
+          "constant_candidate": true,
+          "stabilizer": 6,
+          "candidate": "x**8 + x**7*(-1 - I) + x**5*(-7 + 7*I) + x**3*(-7 - 7*I) + x*(-1 + I) - 1",
+          "basis": [
+            "x**8 + x**7*(-1 - I) + x**5*(-7 + 7*I) + x**3*(-7 - 7*I) + x*(-1 + I) - 1",
+            "x**8 + x**7*(-sqrt(2) + 1 - 2*sqrt(2)*I + I) + x**6*(-3 + 3*sqrt(2) - 3*sqrt(2)*I + 3*I) + x**5*(-11 + 4*sqrt(2) - 7*I + 7*sqrt(2)*I) + x**4*(7 - 21*I + 14*sqrt(2)*I) + x**3*(-7*sqrt(2) + 7 - 17*I + 10*sqrt(2)*I) + x**2*(-3*sqrt(2) + 3 - 3*I + 3*sqrt(2)*I) + x*(-5 + 4*sqrt(2) - I + sqrt(2)*I) - 3*I + 2*sqrt(2)*I"
+          ]
+        }
+      ]
+    },
+    {
+      "special_orbit": 2,
+      "hits": []
+    },
+    {
+      "special_orbit": 3,
+      "hits": []
+    }
+  ]
+}

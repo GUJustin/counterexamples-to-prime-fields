@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/share/research-toolchain/venv/bin/python",
+    "research/prime_line_strengthening/octahedral_eight_route/pilot15_pencil.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 1.081570541,
+  "peak_rss_kib": 72160,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}
