@@ -134,3 +134,8 @@ This is a finite prime-alphabet example on the displayed union of fibers.
 It does not use the field or prescribed NTT domain of the better.codes
 benchmark. The original length-2842 and length-386 certificates remain
 unchanged in their separate directories.
+
+Embedding these same words and domain into an extension field creates
+no additional nearby labels: every label outside F65537 has exact
+agreement 25. The general scalar-extension proof and exact label counts
+are in `../SCALAR_EXTENSION_AGREEMENT_IDENTITY.md`.

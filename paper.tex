@@ -24,104 +24,47 @@
 \maketitle
 \begin{abstract}
 We give counterexamples to proposed list-decoding and proximity-gap
-bounds for Reed--Solomon codes over prime fields. The main line-level
-phenomenon is simple: even strictly below the characteristic-based
-Elias radius, two far words can have every other affine combination
-close to the code.
+bounds for Reed--Solomon codes over prime fields. The central line-level
+phenomenon is that, even strictly below the characteristic-based Elias
+radius, two far words can have every other affine combination close to
+the code. The nearby polynomial can change with the mixing coefficient;
+a nearby mixture need not reflect common agreement of the inputs.
 
-At every fixed rational rate $\rho\in(0,1)$, write
-$\theta=1-\rho-\eta$ for the tested radius. We construct two words at
-distance $\theta+(1/2-o(1))\eta$ whose other $p-2$ affine combinations
-all have distance exactly $\theta$. The underlying construction also
-gives a line nearby at all $p-1$ nonzero parameters, while zero has
-distance $1-\rho-1/n$, only one coordinate short of the maximum
-possible distance. Here $n=\Theta_\rho(\log p\log\log p)$ and
-$\eta\sim H_2(\rho)/\log_2p$. The actual nearby fraction tends to one
-while the proposed numerical fraction tends to zero. The nearby
-polynomials change with the parameter: their decoding lists are
-pairwise disjoint. The same geometry gives failures for batches
-consisting entirely of far inputs, including multilinear mixtures.
+Write $\theta=1-\rho-\eta$ for the tested radius at rate $\rho$.
+At every fixed limiting rate, we construct polynomial-size prime
+alphabets $p=\Theta((n/\log n)^\beta)$, for any fixed $\beta>12/5$,
+with $\eta=\Theta(1/\log n)$. Both endpoints have distance
+$\theta+(1/2+o(1))\eta$, while all $p-2$ interior affine mixtures
+have distance exactly $\theta$. The domains are selected unions of
+multiplicative cosets. A second family works over every sufficiently
+large odd prime, with $n=\Theta(\log p)$ and endpoint separation
+exactly $2\eta/3$. An explicit length-48, dimension-24 example over
+$\mathbb F_{65537}$ has $\eta=1/16$ and endpoint separation $1/24$;
+complete coverage is independently verified with integer arithmetic.
+These statements sharpen the line profile at the already known
+$1/\log p$ capacity-margin scale, rather than establishing a new gap order.
 
-A second construction retains the two-far, all-interior-close profile
-strictly below Elias with a polynomial-size prime alphabet:
-$p=\Theta((n/\log n)^\beta)$ for any fixed $\beta>12/5$.
-Its distance below capacity is $\eta=\Theta(1/\log n)$, and both
-endpoints are farther by $(1/2+o(1))\eta$.
-The domain is a selected union of multiplicative cosets.
+A separate paired-domain construction has an almost maximally far
+point, all other affine parameters nearby, and pairwise disjoint
+nearby lists. It extends to batches consisting entirely of far inputs.
+Other constructions violate numerical line bounds with singleton
+lists and efficient witness recovery, so decoding ambiguity is not
+required for these failures.
 
-Decoding ambiguity is unnecessary. Separate constructions have
-exponentially more nearby parameters than prescribed, each with a
-unique witness. Almost full-gap separation persists after doubling
-the proposed exponent constant. We give efficient witness recovery
-over sufficiently large splitting primes, and logarithmic-length
-existence without that recovery guarantee. A different construction
-gives complete nonzero coverage against arbitrary fixed numerical
-constants.
+We also disprove uniform list-size prescriptions. At rate $1/4$ and
+fixed gap $1/8$, full-length prime-field codes have lists of size $n/2$.
+Integer-interval domains give
+$\log L=\Omega_\rho(\eta^{-2}/\log(1/\eta))$ strictly below Elias,
+ruling out every uniform $\exp(O_\rho(1/\eta))$ bound.
+At vanishing rate, separate examples have superlinear numbers of
+exceptional challenges with singleton lists in the regime of the
+Dao--Kominers--Thaler bounds; these do not establish general tightness.
 
-Fixing the rate and gap does not bound list size independently of
-length: full-length prime-field codes have $n/2$ list elements at
-rate $1/4$ and gap $1/8$, still strictly below Elias for large $p$.
-Integer-interval domains separately give
-$\log L=\Omega_\rho(\eta^{-2}/\log(1/\eta))$, ruling out every uniform
-$\exp(O_\rho(1/\eta))$ prescription. Over every sufficiently large
-prime, with $b=\log_2p$, we obtain
-$\log_2L\ge(1/2-o(1))b^2/\log_2b$ below Elias. We also give fixed-gap
-counterexamples to proposed numerical line coefficients. Separately,
-at gap $1/n$, codes with global maximum list size exactly $n-k-1$
-have $\binom n{k+1}$ uniquely nearby points on one line, attaining
-a general puncturing bound.
-
-At a fixed positive gap, we also prove that quadratic growth in the
-number of nearby line parameters can be unavoidable without ordinary
-correlated agreement. This result has exact rate $1/8$ and gap $1/16$
-over $\F_{p^2}$ with growing prime $p$. Superlinear
-growth at a fixed positive gap over prime fields themselves remains open.
-
-At vanishing rate, we give a prime-field line with more than
-$n^{3/2}/4$ exceptional challenges for the code of quadratic polynomials.
-Both inputs are outside the tested radius, and every qualifying list is
-a singleton, at an error radius beyond Johnson and covered by the
-Dao--Kominers--Thaler upper bounds. The common agreement misses that
-threshold by one coordinate.
-A collision-averaging variant makes a constant fraction of all prime-field
-challenges exceptional with singleton lists.
-Randomized padding further gives a source separation of order
-$\log n/\log\log n$, while a constant fraction of prime-field challenges
-have singleton lists. The message dimension remains three; the rate and
-fractional source separation vanish. Allowing dimension $\Theta(n^\alpha)$
-gives separation $\Theta(n^\alpha)$ and $\Theta(n^{3(1-\alpha)/2})$
-singleton exceptions for every fixed $0<\alpha\le1/3$. These examples
-attain a separate upper bound for their conic family of witnesses up to
-a constant factor, but do not establish tightness of the general bounds.
-Over extension fields, a further construction retains $\Theta(n^{3/2})$
-exceptions and a $\Theta(\sqrt n)$ agreement gap while raising the
-characteristic to $\Theta(\sqrt n)$. A separate affine-witness
-construction asymptotically attains a universal triple-count bound.
-For ordinary common agreement alone, a cubic-extension construction
-strengthens the exceptional probability to one: every affine mixture is
-nearby, although no pair of quadratic codewords explains the inputs on
-the required common set. Almost every mixture has a singleton list.
-Here the inputs themselves are nearby; the common-agreement deficit,
-of order $\sqrt n$, is the obstruction.
-Puncturing at most $p$ coordinates then makes $p$ inputs individually
-far. Over $\F_{p^3}$, exactly a $1-p^{-2}$ fraction of the affine
-mixtures of any two of these inputs are nearby, and a $1-2p^{-2}$
-fraction have singleton lists. The source separation remains of order
-$\sqrt n$, at a radius covered by an explicit finite first-order
-certificate. The far inputs form an affine $\F_p$-line; the random
-mixing coefficients here range over $\F_{p^3}$.
-
-For one-word lists over $\F_{p^3}$, a classical norm-one construction
-and finite DKT certificates give matching linear growth in length:
-with $N=2(p^2+p+1)$ and dimension three, the maximum list size is
-$\Theta_c(N)$ at agreement $\lceil cp\rceil$ for every fixed
-$\sqrt2<c<2$. This is a vanishing-rate extension-field comparison.
-
-We apply these results and finite circle-code constructions to the
-quantitative premises in the S-two whitepaper. The shrinking-gap
-and fixed-gap quantifiers, numerical prescriptions and actual-list-size
-statements, and coding premises and complete-protocol conclusions
-are distinguished throughout.
+We distinguish fixed-gap from shrinking-gap claims, prime from
+extension-field challenges, and chosen from prescribed domains when
+applying the results to the conjectures in the S-two whitepaper.
+The results do not by themselves give a concrete-security bound for
+an entire deployed protocol.
 \end{abstract}
 
 \section{Introduction}

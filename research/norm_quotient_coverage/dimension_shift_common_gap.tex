@@ -1,0 +1,86 @@
+% Separate candidate: input after prime_random_fiber_log_gap.tex.
+\begin{corollary}[A larger common-agreement gap with fixed fibers]
+\label{cor:fixed-fiber-common-gap}
+Fix an integer $m\ge2$, $0<\rho<1$, and
+\[
+ \frac1{h(\rho)}<C<\frac{1+1/m}{h(\rho)},\qquad
+ h(\rho)=-\rho\log\rho-(1-\rho)\log(1-\rho).
+\]
+For every sufficiently large prime $p\equiv1\pmod m$, set
+$s=\lceil C\log p\rceil$, $n=m(s+1)$, and $J=\lfloor\rho n\rfloor$.
+There are an $n$-point domain $D\subset\mathbb F_p^*$ and words
+$f,g:D\to\mathbb F_p$ such that
+\[
+ \operatorname{agr}_J(f)=\operatorname{CA}_J(f,g)=J+1,
+ \qquad J+1\le\operatorname{agr}_J(g)\le J+m-1,
+\]
+and
+\[
+ \operatorname{agr}_J(f+\lambda g)=J+m+1
+ \qquad(\lambda\in\mathbb F_p^*).
+\]
+At the strictly below-Elias radius
+$\theta=1-J/n-\eta$, where $\eta=(m+1)/n$, the common-agreement
+deficit is exactly
+\[
+ \frac mn=\frac{m}{m+1}\eta.
+\]
+The distances of $f$ and $g$ are, respectively, $\theta+m/n$ and
+an element of $[\theta+2/n,\theta+m/n]$.  All $p-2$ non-endpoint
+affine mixtures are at distance exactly $\theta$.
+The alphabet satisfies $\log p=n/(mC)+O(1)$.
+\end{corollary}
+\begin{proof}
+Let $H=(\mathbb F_p^*)^m$, choose $b\notin H$ in $\mathbb F_p^*$,
+and reserve $a_0\in H$.  The Jacobi bound from
+Theorem~\ref{thm:prime-random-fiber-log-gap} gives the population
+$\{b-a:a\in H\setminus\{a_0\}\}$ size
+$P=(p-1)/m-1=p^{1+o(1)}$ and nontrivial character means at most
+$(\sqrt p+1)/P=p^{-1/2+o(1)}$.
+Write
+\[
+ J-m+1=(r-2)m+w,\qquad 0\le w<m.
+\]
+Since $r/s\to\rho$, Corollary~\ref{cor:fixed-weight-entropy-threshold}
+gives an $s$-set $G\subset H\setminus\{a_0\}$ whose exact
+$r$-element products of factors $b-a$ cover $\mathbb F_p^*$.
+
+Put $Y=X^m$, $D=Y^{-1}(G\cup\{a_0\})$, and let $R$ be the
+monic locator of $w$ points in $Y^{-1}(a_0)$.  Define
+\[
+ f=R\frac{Y^r-b^r}{Y-b},\qquad g=-\frac R{Y-b}.
+\]
+The word $f$ is a monic polynomial of degree
+$w+(r-1)m=J+1$, so its agreement is at most $J+1$.
+Interpolation on $r-1$ tags gives simultaneous witnesses for $f,g$
+of degree at most $w+(r-2)m=J-m+1<J$, attaining $J+1$ common
+agreements.  This proves the equalities for $f$ and common agreement,
+and the lower bound for $g$.  For any $\deg h<J$, the nonzero polynomial
+$-R-(Y-b)h$ has degree at most $J+m-1$.  It is nonzero because
+$\deg R<m$.  This proves the upper bound for $g$.
+
+For each $\lambda\ne0$, the quotient witness associated with
+$V_S(b)=-\lambda$ has degree at most $J-m+1$ and residual
+$RV_S(Y)/(Y-b)$, attaining $w+rm=J+m+1$ agreements.
+Conversely,
+\[
+ (Y-b)(f+\lambda g-h)
+ =R(Y^r-b^r-\lambda)-(Y-b)h
+\]
+is monic of degree $J+m+1$, while its second term has degree at
+most $J+m-1$.  The denominator is root-free, so agreement cannot
+exceed $J+m+1$.  Non-endpoint affine mixtures follow by scaling.
+
+Finally $\eta\log p\to(1+1/m)/C>h(\rho)$.  Hence
+\[
+ H_p(1-J/n-\eta)
+ =1-J/n+
+ \frac{h(\rho)-(1+1/m)/C+o(1)}{\log p}<1-J/n,
+\]
+which is the strict below-Elias assertion.
+\end{proof}
+
+The fraction $m/(m+1)$ concerns common agreement.  The certified
+separation of \emph{both} endpoints is only $2\eta/(m+1)$; this
+corollary does not improve the two-thirds uniform endpoint separation
+of the two-point-fiber construction.

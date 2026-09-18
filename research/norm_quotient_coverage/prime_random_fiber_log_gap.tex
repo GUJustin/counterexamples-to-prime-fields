@@ -191,6 +191,24 @@ between 3 and 36 times among the $\binom{23}{13}=1144066$ subsets.
 The replay files are in
 \path{research/norm_quotient_coverage/below_elias_prime_fixture}.
 
+\paragraph{The challenge field matters.}
+Scalar extension of this particular certificate to
+$E=\mathbb F_{65537^d}$ gives exact agreement 25 at every
+$\lambda\in E\setminus\mathbb F_{65537}$, not 27.
+More generally, for any $F$-linear code $C$, its scalar extension
+$C_E$, and $f,g\in F^D$, one has
+\[
+ \operatorname{agr}_{C_E}(f+\lambda g)
+ =\operatorname{CA}_{C}(f,g)\qquad(\lambda\in E\setminus F).
+\]
+Indeed, extend $1,\lambda$ to an $F$-basis of $E$ and project an
+extension-code witness onto these two coordinates. The projections
+belong to $C$ and agree simultaneously with $f,g$ wherever that
+witness agrees with $f+\lambda g$. Conversely, combining maximizing
+common witnesses attains equality. Thus the finite example has exactly
+$65536$ nearby pencil labels even over $E$, a fraction $65536/65537^d$.
+This conclusion accounts for all extension-field witnesses.
+
 \paragraph{A separate character-sum certificate.}
 The accompanying certificate gives $p=65537$, $m=2$, $b=3$,
 $a_0=1$, and $s=1420$ explicitly listed square tags.

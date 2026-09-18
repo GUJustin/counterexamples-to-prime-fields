@@ -1,0 +1,31 @@
+{
+  "status": "NO_HITS_IN_BOUNDED_RANGE",
+  "prime_limit": 5000,
+  "admissible_shapes": 315,
+  "full_H_cosets_tested": 8602,
+  "full_H_covers": 0,
+  "reserve_deleted_covers": 0,
+  "closest_full_H": {
+    "p": 31,
+    "L": 10,
+    "m": 3,
+    "b": 3,
+    "H": [
+      1,
+      2,
+      4,
+      8,
+      15,
+      16,
+      23,
+      27,
+      29,
+      30
+    ],
+    "missing_products": [
+      16,
+      17,
+      25
+    ]
+  }
+}
