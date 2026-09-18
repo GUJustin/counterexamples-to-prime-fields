@@ -1,5 +1,7 @@
 # Curvature-linear source: exact restricted local rank
 
+**Priority and routing correction.** The restored primary files already contain the rectangular second-jet rank framework (`SecondJetCounts`) as well as relaxed-support interpolation and routing, including a retained divisibility alternative. The explicit curvature-one block calculations here verify and specialize that framework; they do not establish a new rank theorem or show that second-jet routing was absent. See `RESTORED_FRAMEWORK_PRIORITY.md` and `RESTORED_ROUTE_MAPPING.md`.
+
 This tests a genuinely different constraint relation: retain a first-derivative cap and introduce the second Hasse derivative with exponent at most one. The earlier dense second-jet experiment removed that cap and consequently paid a much larger ambient rank. This note derives an exact finite-field local rank computation rather than assuming independence of the constraints.
 
 ## Benchmark requirement
@@ -58,4 +60,4 @@ The full data and watchdog report also include the parent-authorized m64 compari
 
 ## Remaining proof requirement
 
-The existing helper/factor receipt is built for variables Y,R,Z. A V-dependent source has a new degree profile and its derivative geometry introduces the next derivative. Before propagating any candidate into the benchmark, one needs a valid counting/routing theorem for curvature-linear factors, including characteristic and all source/avoidance gates. The present result is the exact restricted rank lemma and its bounded finite verification. It neither supplies that missing theorem nor justifies substituting the rank gain into the old first-order ledger.
+The existing helper/factor receipt is built for variables Y,R,Z. A V-dependent source has a new degree profile and its derivative geometry introduces the next derivative. Before propagating any candidate into the benchmark, one must map it to the existing second-jet counting/routing theorem and verify the target agreement, support reserves, activation, characteristic, and retained-branch gates. The present result is the exact restricted rank lemma and its bounded finite verification. It does not justify substituting the rank gain into the old first-order ledger. The routing theorem is present in the restored files; feasibility at the new target remains a separate numerical and proof-interface obligation.

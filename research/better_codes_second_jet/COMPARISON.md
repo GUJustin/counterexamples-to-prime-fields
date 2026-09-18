@@ -1,5 +1,7 @@
 # Second hidden derivative: source gate and downstream scope
 
+**Restored-source correction.** General second-jet interpolation and routing already exist in the restored primary framework, including the retained divisibility branch. Earlier statements below about a needed downstream argument refer to the new target/source interface, not absence of such a theorem. The correct next step is the explicit mapping in `RESTORED_ROUTE_MAPPING.md`.
+
 The plain dense second-jet source does **not** pass the target dimension gate in the bounded experiment below. This does not exclude a source with carefully restricted first- and second-derivative exponents. Even a positive source would require a new downstream counting argument; it cannot be inserted into the present first-order receipt unchanged.
 
 ## Relation to the primary paper

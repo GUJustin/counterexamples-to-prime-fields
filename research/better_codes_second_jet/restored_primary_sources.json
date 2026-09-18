@@ -1,0 +1,29 @@
+{
+  "commit": "cdb451f13fdc6c84f5fe363e77ee13a89bd30974",
+  "files": [
+    {
+      "name": "LowerGeometry.lean",
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/LowerGeometry.lean",
+      "sha256": "c13d81118f7a2dcdafee34e46ee77fa6356a7b431ce251a5c7c3c317a931e85a",
+      "local_path": "tmp/current-lower-primary-cache/LowerGeometry.lean",
+      "existing_local_matched": true,
+      "bytes": 2188628
+    },
+    {
+      "name": "SecondJetRefinements.lean",
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/SecondJetRefinements.lean",
+      "sha256": "babb222b94a5a792307e9bd6cc1a2cc66d9bb6fd89efcdb22bdfcdb12551bcd7",
+      "local_path": "research/better_codes_current_lower_2026_09_17/SecondJetRefinements.lean",
+      "existing_local_matched": true,
+      "bytes": 26975
+    },
+    {
+      "name": "HigherInitialArithmetic6810.lean",
+      "url": "https://raw.githubusercontent.com/proximity-prize/proximity-prize/cdb451f13fdc6c84f5fe363e77ee13a89bd30974/ProximityPrize/SubmissionLower/HigherInitialArithmetic6810.lean",
+      "sha256": "8a71ee0026608d5b88946e3cdefa2202baa71b8048de112017d2d7da770696e5",
+      "local_path": "tmp/current-lower-primary-cache/HigherInitialArithmetic6810.lean",
+      "existing_local_matched": null,
+      "bytes": 3160
+    }
+  ]
+}

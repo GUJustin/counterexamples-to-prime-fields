@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/better_codes_second_jet/restored_general_gate.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.6190830419945996,
+  "peak_rss_kib": 14640,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

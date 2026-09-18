@@ -1,0 +1,28 @@
+{
+  "scope": "Conditional coprime helper costs over cached factor degree contexts, not full receipt propagation.",
+  "contexts": 5238,
+  "endpoint_checks": 10476,
+  "all_char_gates_pass": true,
+  "max_context": {
+    "r": 36,
+    "v": 127,
+    "total": 9678,
+    "cost": 427895671772928,
+    "mixed": [
+      1171284,
+      5214061,
+      25748
+    ]
+  },
+  "aggregate_regular_factor_cap": 427895671772928,
+  "aggregate_left_caps": [
+    163,
+    36,
+    9678
+  ],
+  "aggregate_mixed": [
+    1171284,
+    5214061,
+    25748
+  ]
+}

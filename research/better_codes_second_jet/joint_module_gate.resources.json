@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/better_codes_second_jet/joint_module_gate.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5602443750103703,
+  "peak_rss_kib": 13856,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

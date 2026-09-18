@@ -40,12 +40,15 @@ theorem also does not apply directly to the benchmark's raw interpolation
 source, whose ordinary core is the full domain.
 [Benchmark limitation](research/hermite_johnson_route/BENCHMARK_RELEVANCE.md).
 
-A new [second-derivative interpolation result](research/better_codes_second_jet/CLOSED_CURVATURE_RANK.md)
-proves a restricted local-rank saving. In a matched finite comparison at
+A [reanalysis of the restored second-derivative framework](research/better_codes_second_jet/CLOSED_CURVATURE_RANK.md)
+verifies a restricted local-rank saving. In a matched finite comparison at
 multiplicity 128, it lowers the sufficient challenge-degree cap from
-31,890 to 5,515. The proof and 94 homogeneous matrix checks are archived.
-This is a source-existence gain; second-derivative routing is still
-unproved, so the certified benchmark and score remain unchanged.
+31,890 to 5,515. The formula is a specialization of the restored exact
+rank theorem, independently rederived and checked here; it is not a new
+rank theorem. Four broader restored source profiles also meet the critical routing
+gate, but their retained-branch bound exceeds the incumbent cost.
+[Complete scope and cost audit](research/better_codes_second_jet/RESTORED_ROUTE_COMPATIBILITY.md).
+The certified benchmark and score remain unchanged.
 
 The follow-up [source search](research/prime_fixed_gap_new_route/NEXT_SOURCE_STATUS.md)
 now records exact obstructions to common-factor Dickson shortening,

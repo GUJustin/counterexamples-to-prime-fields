@@ -1,0 +1,1070 @@
+{
+  "scope": "All primes p<=500, n divisible by4, subgroup index3mod4; nonzero square parameters. No nearestness or general nonexistence claim.",
+  "cases": 53,
+  "parameter_cases": 7280,
+  "quarter_rate_candidates": 0,
+  "rows": [
+    {
+      "p": 13,
+      "n": 4,
+      "index": 3,
+      "k": 3,
+      "target_dimension": 1,
+      "parameter_count": 6,
+      "minimum_degree": 2,
+      "minimum_parameter_examples": [
+        1,
+        3,
+        4,
+        9
+      ],
+      "degree_histogram": {
+        "2": 6
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 1
+    },
+    {
+      "p": 29,
+      "n": 4,
+      "index": 7,
+      "k": 7,
+      "target_dimension": 1,
+      "parameter_count": 14,
+      "minimum_degree": 3,
+      "minimum_parameter_examples": [
+        1,
+        4,
+        5,
+        6
+      ],
+      "degree_histogram": {
+        "3": 14
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 1
+    },
+    {
+      "p": 37,
+      "n": 12,
+      "index": 3,
+      "k": 9,
+      "target_dimension": 3,
+      "parameter_count": 18,
+      "minimum_degree": 8,
+      "minimum_parameter_examples": [
+        1,
+        3,
+        4,
+        7
+      ],
+      "degree_histogram": {
+        "8": 18
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 3
+    },
+    {
+      "p": 61,
+      "n": 4,
+      "index": 15,
+      "k": 15,
+      "target_dimension": 1,
+      "parameter_count": 30,
+      "minimum_degree": 3,
+      "minimum_parameter_examples": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "degree_histogram": {
+        "3": 30
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 1
+    },
+    {
+      "p": 61,
+      "n": 20,
+      "index": 3,
+      "k": 15,
+      "target_dimension": 5,
+      "parameter_count": 30,
+      "minimum_degree": 14,
+      "minimum_parameter_examples": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "degree_histogram": {
+        "14": 30
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 5
+    },
+    {
+      "p": 73,
+      "n": 24,
+      "index": 3,
+      "k": 18,
+      "target_dimension": 6,
+      "parameter_count": 36,
+      "minimum_degree": 17,
+      "minimum_parameter_examples": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "degree_histogram": {
+        "17": 36
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 6
+    },
+    {
+      "p": 89,
+      "n": 8,
+      "index": 11,
+      "k": 22,
+      "target_dimension": 2,
+      "parameter_count": 44,
+      "minimum_degree": 7,
+      "minimum_parameter_examples": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "degree_histogram": {
+        "7": 44
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 2
+    },
+    {
+      "p": 97,
+      "n": 32,
+      "index": 3,
+      "k": 24,
+      "target_dimension": 8,
+      "parameter_count": 48,
+      "minimum_degree": 23,
+      "minimum_parameter_examples": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "degree_histogram": {
+        "23": 48
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 8
+    },
+    {
+      "p": 109,
+      "n": 4,
+      "index": 27,
+      "k": 27,
+      "target_dimension": 1,
+      "parameter_count": 54,
+      "minimum_degree": 3,
+      "minimum_parameter_examples": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "degree_histogram": {
+        "3": 54
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 1
+    },
+    {
+      "p": 109,
+      "n": 36,
+      "index": 3,
+      "k": 27,
+      "target_dimension": 9,
+      "parameter_count": 54,
+      "minimum_degree": 26,
+      "minimum_parameter_examples": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "degree_histogram": {
+        "26": 54
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 9
+    },
+    {
+      "p": 113,
+      "n": 16,
+      "index": 7,
+      "k": 28,
+      "target_dimension": 4,
+      "parameter_count": 56,
+      "minimum_degree": 15,
+      "minimum_parameter_examples": [
+        1,
+        2,
+        4,
+        7
+      ],
+      "degree_histogram": {
+        "15": 56
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 4
+    },
+    {
+      "p": 157,
+      "n": 4,
+      "index": 39,
+      "k": 39,
+      "target_dimension": 1,
+      "parameter_count": 78,
+      "minimum_degree": 2,
+      "minimum_parameter_examples": [
+        46,
+        111
+      ],
+      "degree_histogram": {
+        "2": 2,
+        "3": 76
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 1
+    },
+    {
+      "p": 157,
+      "n": 52,
+      "index": 3,
+      "k": 39,
+      "target_dimension": 13,
+      "parameter_count": 78,
+      "minimum_degree": 38,
+      "minimum_parameter_examples": [
+        1,
+        3,
+        4,
+        9
+      ],
+      "degree_histogram": {
+        "38": 78
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 13
+    },
+    {
+      "p": 173,
+      "n": 4,
+      "index": 43,
+      "k": 43,
+      "target_dimension": 1,
+      "parameter_count": 86,
+      "minimum_degree": 3,
+      "minimum_parameter_examples": [
+        1,
+        4,
+        6,
+        9
+      ],
+      "degree_histogram": {
+        "3": 86
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 1
+    },
+    {
+      "p": 181,
+      "n": 12,
+      "index": 15,
+      "k": 45,
+      "target_dimension": 3,
+      "parameter_count": 90,
+      "minimum_degree": 11,
+      "minimum_parameter_examples": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "degree_histogram": {
+        "11": 90
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 3
+    },
+    {
+      "p": 181,
+      "n": 60,
+      "index": 3,
+      "k": 45,
+      "target_dimension": 15,
+      "parameter_count": 90,
+      "minimum_degree": 44,
+      "minimum_parameter_examples": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "degree_histogram": {
+        "44": 90
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 15
+    },
+    {
+      "p": 193,
+      "n": 64,
+      "index": 3,
+      "k": 48,
+      "target_dimension": 16,
+      "parameter_count": 96,
+      "minimum_degree": 47,
+      "minimum_parameter_examples": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "degree_histogram": {
+        "47": 96
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 16
+    },
+    {
+      "p": 197,
+      "n": 28,
+      "index": 7,
+      "k": 49,
+      "target_dimension": 7,
+      "parameter_count": 98,
+      "minimum_degree": 27,
+      "minimum_parameter_examples": [
+        1,
+        4,
+        6,
+        7
+      ],
+      "degree_histogram": {
+        "27": 98
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 7
+    },
+    {
+      "p": 229,
+      "n": 12,
+      "index": 19,
+      "k": 57,
+      "target_dimension": 3,
+      "parameter_count": 114,
+      "minimum_degree": 11,
+      "minimum_parameter_examples": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "degree_histogram": {
+        "11": 114
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 3
+    },
+    {
+      "p": 229,
+      "n": 76,
+      "index": 3,
+      "k": 57,
+      "target_dimension": 19,
+      "parameter_count": 114,
+      "minimum_degree": 56,
+      "minimum_parameter_examples": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "degree_histogram": {
+        "56": 114
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 19
+    },
+    {
+      "p": 241,
+      "n": 16,
+      "index": 15,
+      "k": 60,
+      "target_dimension": 4,
+      "parameter_count": 120,
+      "minimum_degree": 15,
+      "minimum_parameter_examples": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "degree_histogram": {
+        "15": 120
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 4
+    },
+    {
+      "p": 241,
+      "n": 80,
+      "index": 3,
+      "k": 60,
+      "target_dimension": 20,
+      "parameter_count": 120,
+      "minimum_degree": 59,
+      "minimum_parameter_examples": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "degree_histogram": {
+        "59": 120
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 20
+    },
+    {
+      "p": 269,
+      "n": 4,
+      "index": 67,
+      "k": 67,
+      "target_dimension": 1,
+      "parameter_count": 134,
+      "minimum_degree": 3,
+      "minimum_parameter_examples": [
+        1,
+        4,
+        5,
+        6
+      ],
+      "degree_histogram": {
+        "3": 134
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 1
+    },
+    {
+      "p": 277,
+      "n": 12,
+      "index": 23,
+      "k": 69,
+      "target_dimension": 3,
+      "parameter_count": 138,
+      "minimum_degree": 11,
+      "minimum_parameter_examples": [
+        1,
+        3,
+        4,
+        7
+      ],
+      "degree_histogram": {
+        "11": 138
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 3
+    },
+    {
+      "p": 277,
+      "n": 92,
+      "index": 3,
+      "k": 69,
+      "target_dimension": 23,
+      "parameter_count": 138,
+      "minimum_degree": 68,
+      "minimum_parameter_examples": [
+        1,
+        3,
+        4,
+        7
+      ],
+      "degree_histogram": {
+        "68": 138
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 23
+    },
+    {
+      "p": 281,
+      "n": 8,
+      "index": 35,
+      "k": 70,
+      "target_dimension": 2,
+      "parameter_count": 140,
+      "minimum_degree": 7,
+      "minimum_parameter_examples": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "degree_histogram": {
+        "7": 140
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 2
+    },
+    {
+      "p": 281,
+      "n": 40,
+      "index": 7,
+      "k": 70,
+      "target_dimension": 10,
+      "parameter_count": 140,
+      "minimum_degree": 39,
+      "minimum_parameter_examples": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "degree_histogram": {
+        "39": 140
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 10
+    },
+    {
+      "p": 313,
+      "n": 8,
+      "index": 39,
+      "k": 78,
+      "target_dimension": 2,
+      "parameter_count": 156,
+      "minimum_degree": 7,
+      "minimum_parameter_examples": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "degree_histogram": {
+        "7": 156
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 2
+    },
+    {
+      "p": 313,
+      "n": 104,
+      "index": 3,
+      "k": 78,
+      "target_dimension": 26,
+      "parameter_count": 156,
+      "minimum_degree": 77,
+      "minimum_parameter_examples": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "degree_histogram": {
+        "77": 156
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 26
+    },
+    {
+      "p": 317,
+      "n": 4,
+      "index": 79,
+      "k": 79,
+      "target_dimension": 1,
+      "parameter_count": 158,
+      "minimum_degree": 2,
+      "minimum_parameter_examples": [
+        9,
+        25,
+        292,
+        308
+      ],
+      "degree_histogram": {
+        "2": 4,
+        "3": 154
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 1
+    },
+    {
+      "p": 337,
+      "n": 48,
+      "index": 7,
+      "k": 84,
+      "target_dimension": 12,
+      "parameter_count": 168,
+      "minimum_degree": 47,
+      "minimum_parameter_examples": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "degree_histogram": {
+        "47": 168
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 12
+    },
+    {
+      "p": 337,
+      "n": 112,
+      "index": 3,
+      "k": 84,
+      "target_dimension": 28,
+      "parameter_count": 168,
+      "minimum_degree": 83,
+      "minimum_parameter_examples": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "degree_histogram": {
+        "83": 168
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 28
+    },
+    {
+      "p": 349,
+      "n": 4,
+      "index": 87,
+      "k": 87,
+      "target_dimension": 1,
+      "parameter_count": 174,
+      "minimum_degree": 3,
+      "minimum_parameter_examples": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "degree_histogram": {
+        "3": 174
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 1
+    },
+    {
+      "p": 349,
+      "n": 116,
+      "index": 3,
+      "k": 87,
+      "target_dimension": 29,
+      "parameter_count": 174,
+      "minimum_degree": 86,
+      "minimum_parameter_examples": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "degree_histogram": {
+        "86": 174
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 29
+    },
+    {
+      "p": 353,
+      "n": 32,
+      "index": 11,
+      "k": 88,
+      "target_dimension": 8,
+      "parameter_count": 176,
+      "minimum_degree": 31,
+      "minimum_parameter_examples": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "degree_histogram": {
+        "31": 176
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 8
+    },
+    {
+      "p": 373,
+      "n": 12,
+      "index": 31,
+      "k": 93,
+      "target_dimension": 3,
+      "parameter_count": 186,
+      "minimum_degree": 11,
+      "minimum_parameter_examples": [
+        1,
+        3,
+        4,
+        7
+      ],
+      "degree_histogram": {
+        "11": 186
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 3
+    },
+    {
+      "p": 373,
+      "n": 124,
+      "index": 3,
+      "k": 93,
+      "target_dimension": 31,
+      "parameter_count": 186,
+      "minimum_degree": 92,
+      "minimum_parameter_examples": [
+        1,
+        3,
+        4,
+        7
+      ],
+      "degree_histogram": {
+        "92": 186
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 31
+    },
+    {
+      "p": 397,
+      "n": 4,
+      "index": 99,
+      "k": 99,
+      "target_dimension": 1,
+      "parameter_count": 198,
+      "minimum_degree": 3,
+      "minimum_parameter_examples": [
+        1,
+        3,
+        4,
+        9
+      ],
+      "degree_histogram": {
+        "3": 198
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 1
+    },
+    {
+      "p": 397,
+      "n": 36,
+      "index": 11,
+      "k": 99,
+      "target_dimension": 9,
+      "parameter_count": 198,
+      "minimum_degree": 35,
+      "minimum_parameter_examples": [
+        1,
+        3,
+        4,
+        9
+      ],
+      "degree_histogram": {
+        "35": 198
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 9
+    },
+    {
+      "p": 397,
+      "n": 132,
+      "index": 3,
+      "k": 99,
+      "target_dimension": 33,
+      "parameter_count": 198,
+      "minimum_degree": 98,
+      "minimum_parameter_examples": [
+        1,
+        3,
+        4,
+        9
+      ],
+      "degree_histogram": {
+        "98": 198
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 33
+    },
+    {
+      "p": 409,
+      "n": 8,
+      "index": 51,
+      "k": 102,
+      "target_dimension": 2,
+      "parameter_count": 204,
+      "minimum_degree": 6,
+      "minimum_parameter_examples": [
+        8,
+        83,
+        326,
+        401
+      ],
+      "degree_histogram": {
+        "6": 4,
+        "7": 200
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 2
+    },
+    {
+      "p": 409,
+      "n": 136,
+      "index": 3,
+      "k": 102,
+      "target_dimension": 34,
+      "parameter_count": 204,
+      "minimum_degree": 101,
+      "minimum_parameter_examples": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "degree_histogram": {
+        "101": 204
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 34
+    },
+    {
+      "p": 421,
+      "n": 12,
+      "index": 35,
+      "k": 105,
+      "target_dimension": 3,
+      "parameter_count": 210,
+      "minimum_degree": 11,
+      "minimum_parameter_examples": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "degree_histogram": {
+        "11": 210
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 3
+    },
+    {
+      "p": 421,
+      "n": 28,
+      "index": 15,
+      "k": 105,
+      "target_dimension": 7,
+      "parameter_count": 210,
+      "minimum_degree": 27,
+      "minimum_parameter_examples": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "degree_histogram": {
+        "27": 210
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 7
+    },
+    {
+      "p": 421,
+      "n": 60,
+      "index": 7,
+      "k": 105,
+      "target_dimension": 15,
+      "parameter_count": 210,
+      "minimum_degree": 59,
+      "minimum_parameter_examples": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "degree_histogram": {
+        "59": 210
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 15
+    },
+    {
+      "p": 421,
+      "n": 140,
+      "index": 3,
+      "k": 105,
+      "target_dimension": 35,
+      "parameter_count": 210,
+      "minimum_degree": 104,
+      "minimum_parameter_examples": [
+        1,
+        3,
+        4,
+        5
+      ],
+      "degree_histogram": {
+        "104": 210
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 35
+    },
+    {
+      "p": 433,
+      "n": 16,
+      "index": 27,
+      "k": 108,
+      "target_dimension": 4,
+      "parameter_count": 216,
+      "minimum_degree": 14,
+      "minimum_parameter_examples": [
+        6,
+        22,
+        41,
+        208
+      ],
+      "degree_histogram": {
+        "14": 8,
+        "15": 208
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 4
+    },
+    {
+      "p": 433,
+      "n": 144,
+      "index": 3,
+      "k": 108,
+      "target_dimension": 36,
+      "parameter_count": 216,
+      "minimum_degree": 107,
+      "minimum_parameter_examples": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "degree_histogram": {
+        "107": 216
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 36
+    },
+    {
+      "p": 449,
+      "n": 64,
+      "index": 7,
+      "k": 112,
+      "target_dimension": 16,
+      "parameter_count": 224,
+      "minimum_degree": 63,
+      "minimum_parameter_examples": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "degree_histogram": {
+        "63": 224
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 16
+    },
+    {
+      "p": 457,
+      "n": 24,
+      "index": 19,
+      "k": 114,
+      "target_dimension": 6,
+      "parameter_count": 228,
+      "minimum_degree": 23,
+      "minimum_parameter_examples": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "degree_histogram": {
+        "23": 228
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 6
+    },
+    {
+      "p": 457,
+      "n": 152,
+      "index": 3,
+      "k": 114,
+      "target_dimension": 38,
+      "parameter_count": 228,
+      "minimum_degree": 113,
+      "minimum_parameter_examples": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "degree_histogram": {
+        "113": 228
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 38
+    },
+    {
+      "p": 461,
+      "n": 4,
+      "index": 115,
+      "k": 115,
+      "target_dimension": 1,
+      "parameter_count": 230,
+      "minimum_degree": 3,
+      "minimum_parameter_examples": [
+        1,
+        4,
+        5,
+        6
+      ],
+      "degree_histogram": {
+        "3": 230
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 1
+    },
+    {
+      "p": 461,
+      "n": 20,
+      "index": 23,
+      "k": 115,
+      "target_dimension": 5,
+      "parameter_count": 230,
+      "minimum_degree": 19,
+      "minimum_parameter_examples": [
+        1,
+        4,
+        5,
+        6
+      ],
+      "degree_histogram": {
+        "19": 230
+      },
+      "quarter_rate_candidates": [],
+      "zero_candidate_agreement": 5
+    }
+  ]
+}

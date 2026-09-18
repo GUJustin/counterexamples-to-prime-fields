@@ -1,4 +1,6 @@
-# A proved curvature-linear rank saving
+# Curvature-linear rank saving: recovered specialization
+
+**Priority correction.** This rank bound and its challenge grading are already contained in the restored `SecondJetCounts.rankBound` / `local_rank_le_count` framework in `tmp/current-lower-primary-cache/LowerGeometry.lean`. The derivation below is a simpler specialization to curvature cap one, not a new rank theorem. See `RESTORED_FRAMEWORK_PRIORITY.md` for the exact algebraic identification. The restored files also contain general second-jet routing with a retained divisibility alternative; applying it at the new target still requires the correct support, reserve, activation, and numerical gates.
 
 Fix integers m>=2S and a field of arbitrary characteristic. Write t for the local coordinate and use source variables Y,R,V. Enlarge the source to all monomials t^a Y^i R^j V^k with 0<=a,i<m, 0<=j<=S and k<=1. Terms with i>=m would map to zero anyway. Restricting this source by a jet-degree or weighted-degree cap can only lower rank.
 
@@ -7,7 +9,7 @@ Consider the map Y -> tR−t²V+t³E modulo t^m. Its rank satisfies
     R <= 2R0 − S(2m−S−3)/2,
     R0 = (S+1)[3m²+3(1−S)m+S(2S+1)]/6.
 
-This is a sufficient upper bound, not a conjecture based on the numerical ranks.
+This is a sufficient upper bound, not a conjecture based on the numerical ranks. PRIORITY CORRECTION: subsequent inspection of the restored primary LowerGeometry.lean located the same rectangular rank and graded count in SecondJetCounts. This proof is a recovered specialization and independent verification, not a new mathematical rank theorem.
 
 ## Baseline and additional kernel vectors
 
@@ -59,7 +61,7 @@ At m96 the first-jet slope is −32862387, while the curvature-linear slope is80
 
 ## Scope
 
-The repaired full benchmark ledger still costs296022915414629475 against allowance274980720453263170: the needed reduction is21042194961366305, approximately7.65 percent of the allowance. A rank percentage cannot be subtracted from that ledger. This result establishes a useful finite source-existence improvement. It supplies neither curvature-linear factor routing, the corresponding helper/counting theorem, nor a complete characteristic-valid benchmark receipt. It does not establish a new capacity threshold or a better.codes score.
+The repaired full benchmark ledger still costs296022915414629475 against allowance274980720453263170: the needed reduction is21042194961366305, approximately7.65 percent of the allowance. A rank percentage cannot be subtracted from that ledger. This result establishes a useful finite source-existence improvement. It does not by itself supply a complete characteristic-valid benchmark receipt. A general second-jet helper/counting theorem already exists in the restored framework; its target-A port and activation conditions must be checked. It does not establish a new capacity threshold or a better.codes score.
 
 ## Graded challenge bound
 
@@ -86,4 +88,4 @@ The resulting global source-dimension lower bound is
 
 For the first-jet comparison use R0,T0. The exact arithmetic implementation graded_curvature_gate.py gives: m96 curvature L7109; m117 first-jet L613675 and curvature L5625; m128 first-jet L31890 and curvature L5515. The last curvature gate has kernel dimension at least53746080. At the first positive curvature multiplicity m72, the improved sufficient L is578963. These are source-existence certificates only; the routing and full benchmark limitations above remain in force.
 
-The first-jet graded refinement is already present in the pinned benchmark local-rank formula; it is not a new first-jet optimization. For example its m117,S36,L613675 value matches the independently repaired primary-A source. The curvature-linear graded kernel saving is the new part. Here T denotes the moment of an upper-rank profile; it is not asserted to be an independent lower bound on the actual rank moment.
+The first-jet graded refinement is already present in the pinned benchmark local-rank formula; it is not a new first-jet optimization. For example its m117,S36,L613675 value matches the independently repaired primary-A source. The curvature-linear graded kernel saving was initially thought new, but is also a specialization of the restored SecondJetCounts formula; that novelty claim is withdrawn. Here T denotes the moment of an upper-rank profile; it is not asserted to be an independent lower bound on the actual rank moment.

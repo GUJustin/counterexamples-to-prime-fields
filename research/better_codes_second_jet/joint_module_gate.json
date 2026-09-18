@@ -1,0 +1,13 @@
+{
+  "shape": {
+    "m": 128,
+    "S": 40,
+    "J": 177,
+    "L": 5515,
+    "Vcap": 1
+  },
+  "fixed_factor_V_ambient_multiple_dimension": 360473415909375,
+  "certified_source_kernel_lower": 53746080,
+  "integer_ratio_floor": 6706971,
+  "scope": "Ambient common-factor dimension bound is far too large to force two rationally independent V-linear equations. This is not an example showing the actual kernel has a common factor."
+}

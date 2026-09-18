@@ -1,0 +1,76 @@
+{
+  "scope": "Conditional coprime known-identity helper costs only; no source rank-two or factor-avoidance proof.",
+  "m": 128,
+  "S": 40,
+  "J": 177,
+  "L": 5515,
+  "resultant_contact": 255,
+  "resultant_weight_cap_inclusive": 46275329,
+  "resultant_firstjet_contact_budget": 46225125,
+  "root_budget_excess": 50204,
+  "rows": [
+    {
+      "z": 2950,
+      "left": [
+        55,
+        12,
+        3005
+      ],
+      "right": [
+        353,
+        80,
+        11029
+      ],
+      "mixed": [
+        372748,
+        1667360,
+        8636
+      ],
+      "char_ok": true,
+      "left_regular_count": 44915948679056,
+      "symmetric_regular_count": 245962336398688
+    },
+    {
+      "z": 3193,
+      "left": [
+        55,
+        12,
+        3248
+      ],
+      "right": [
+        353,
+        80,
+        11029
+      ],
+      "mixed": [
+        392188,
+        1753139,
+        8636
+      ],
+      "char_ok": true,
+      "left_regular_count": 47759097651376,
+      "symmetric_regular_count": 255326159403169
+    },
+    {
+      "z": 3206,
+      "left": [
+        55,
+        12,
+        3261
+      ],
+      "right": [
+        353,
+        80,
+        11029
+      ],
+      "mixed": [
+        393228,
+        1757728,
+        8636
+      ],
+      "char_ok": true,
+      "left_regular_count": 47911200271295,
+      "symmetric_regular_count": 255827104666783
+    }
+  ]
+}

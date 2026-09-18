@@ -1,0 +1,195 @@
+{
+  "scope": "Exact target-A arithmetic for restored proper AND retained branches; no full propagated receipt yet.",
+  "old_primary_fixture": {
+    "r": 10,
+    "v": 37,
+    "z": 2276,
+    "total": 2323,
+    "active": true,
+    "proper": 101867496127227,
+    "normal": 175266398883373341,
+    "moving": 4286553911005,
+    "coefficient": 13223622915186,
+    "retained": 268923679246212987,
+    "bound": 268923679246212987,
+    "winner": "retained",
+    "budget_flag": [
+      2100,
+      115,
+      45
+    ],
+    "mixed_proper": [
+      1058398,
+      5001882,
+      22302
+    ],
+    "mixed_coefficient": [
+      131731,
+      466050,
+      3759
+    ],
+    "char_gates": true
+  },
+  "rows": [
+    {
+      "r": 12,
+      "v": 43,
+      "z": 3206,
+      "total": 3261,
+      "active": true,
+      "proper": 179900392369286,
+      "normal": 352613725068219795,
+      "moving": 6324650659221,
+      "coefficient": 19985233011150,
+      "retained": 518435692262946165,
+      "bound": 518435692262946165,
+      "winner": "retained",
+      "budget_flag": [
+        2411,
+        112,
+        37
+      ],
+      "mixed_proper": [
+        1589214,
+        7369227,
+        27814
+      ],
+      "mixed_coefficient": [
+        164385,
+        616741,
+        4007
+      ],
+      "char_gates": true,
+      "profile": {
+        "name": "108",
+        "m": 108,
+        "B": 41,
+        "s": 19,
+        "U": 146,
+        "k": 4,
+        "n0": 7,
+        "L": 2557
+      }
+    },
+    {
+      "r": 12,
+      "v": 43,
+      "z": 3206,
+      "total": 3261,
+      "active": true,
+      "proper": 198873257629702,
+      "normal": 352613725068219795,
+      "moving": 7184614079877,
+      "coefficient": 22124923602288,
+      "retained": 509590929180880563,
+      "bound": 509590929180880563,
+      "winner": "retained",
+      "budget_flag": [
+        2622,
+        115,
+        45
+      ],
+      "mixed_proper": [
+        1761402,
+        8121464,
+        30758
+      ],
+      "mixed_coefficient": [
+        186591,
+        658190,
+        4445
+      ],
+      "char_gates": true,
+      "profile": {
+        "name": "114",
+        "m": 114,
+        "B": 47,
+        "s": 21,
+        "U": 155,
+        "k": 5,
+        "n0": 7,
+        "L": 2777
+      }
+    },
+    {
+      "r": 12,
+      "v": 43,
+      "z": 3206,
+      "total": 3261,
+      "active": true,
+      "proper": 198928618826265,
+      "normal": 352613725068219795,
+      "moving": 7206817676005,
+      "coefficient": 22180284798851,
+      "retained": 510076044303133106,
+      "bound": 510076044303133106,
+      "winner": "retained",
+      "budget_flag": [
+        2564,
+        117,
+        45
+      ],
+      "mixed_proper": [
+        1760730,
+        8124906,
+        30782
+      ],
+      "mixed_coefficient": [
+        185919,
+        661632,
+        4469
+      ],
+      "char_gates": true,
+      "profile": {
+        "name": "116",
+        "m": 116,
+        "B": 47,
+        "s": 21,
+        "U": 157,
+        "k": 5,
+        "n0": 7,
+        "L": 2721
+      }
+    },
+    {
+      "r": 12,
+      "v": 43,
+      "z": 3206,
+      "total": 3261,
+      "active": true,
+      "proper": 161616239624234,
+      "normal": 352613725068219795,
+      "moving": 6168815493370,
+      "coefficient": 18534254935375,
+      "retained": 514348991244948394,
+      "bound": 514348991244948394,
+      "winner": "retained",
+      "budget_flag": [
+        2568,
+        97,
+        38
+      ],
+      "mixed_proper": [
+        1431141,
+        6614018,
+        24951
+      ],
+      "mixed_coefficient": [
+        156294,
+        572320,
+        3650
+      ],
+      "char_gates": true,
+      "profile": {
+        "name": "96",
+        "m": 96,
+        "B": 38,
+        "s": 17,
+        "U": 130,
+        "k": 4,
+        "n0": 5,
+        "L": 2698
+      }
+    }
+  ]
+}

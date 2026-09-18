@@ -1,0 +1,14 @@
+# Current audited position after restoring the full second-jet framework
+
+The main paper remains the 192-page ePrint-style draft with Theorem R.7. No second-jet leaderboard improvement is claimed.
+
+1. The local curvature rank saving and its graded challenge count are mathematically valid, independently checked, and already contained in the restored exact SecondJetCounts framework. They are rediscovered specializations, not new rank theorems. The matched comparison 31890 versus5515 is valid source arithmetic.
+2. The existing relaxed second-jet source and routing framework accepts broader profiles after target-parameter changes. Four checked profiles produce positive source dimensions and challenge caps below3261. The source-existence obstruction is therefore resolved for these profiles.
+3. Both routing alternatives must be charged. At the binding factor context (r,v,z)=(12,43,3206), the source-independent normal term is352613725068219795, above the incumbent singleton cost288191873412750740. The best of the four evaluated complete arithmetic bounds is509590929180880563. Source tuning alone cannot beat the incumbent at this contact through this retained-branch formula.
+4. This is not a fully checked target Lean port. The independent audit tracks the identity-to-normal inequality and retained characteristic gates separately from helper-pair gates. In particular a naive extension to the expanded r36,y163 box fails a retained mixed-characteristic bound. The binding context is within the original geometric range; no global admissibility claim is made.
+5. A different two-source elimination has a useful proved contact order2m-1 and favorable conditional helper cost. It requires factorwise rank-two avoidance, not merely scalar independence or global rational rank two. The source kernel may lie in a first-order prolongation ideal; that alternative remains unresolved for this route.
+6. Exact integrable sources admit a heavy-coordinate routing lemma, but their straightforward source dimension gate is dominated by ordinary first-jet interpolation at the pinned target. This does not prove integrability for general sources.
+
+The next substantive targets are a sharper retained geometric bound, a proof forcing the proper-helper alternative, or a factorwise escape theorem. Repeating source scans without addressing one of these would not repair the binding contact.
+
+Separately, subgroup restriction of the Dickson bank was examined as a lower-construction route. A new norm/discriminant argument excludes every proper index1mod4 quarter-rate reduction. Indices3and7 are also excluded directly; the bounded index3mod4 survey throughp500 found no candidates. Larger index3mod4 cases remain open. These are construction obstructions, not improved proximity-gap lower bounds.
