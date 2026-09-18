@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "method": "sparse integer polynomial arithmetic in eight independent variables",
+  "F_terms": 27,
+  "checks": [
+    "four A conjugate vectors give U,P,V",
+    "P^2-4UV=(1-Z)^2 F",
+    "degree8,7,6,5,3 homogeneous pieces",
+    "scalar theta,z slice"
+  ]
+}
