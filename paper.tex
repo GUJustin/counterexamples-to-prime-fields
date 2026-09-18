@@ -42,6 +42,13 @@ polynomials change with the parameter: their decoding lists are
 pairwise disjoint. The same geometry gives failures for batches
 consisting entirely of far inputs, including multilinear mixtures.
 
+A second construction retains the two-far, all-interior-close profile
+strictly below Elias with a polynomial-size prime alphabet:
+$p=\Theta((n/\log n)^\beta)$ for any fixed $\beta>12/5$.
+Its distance below capacity is $\eta=\Theta(1/\log n)$, and both
+endpoints are farther by $(1/2+o(1))\eta$.
+The domain is a selected union of multiplicative cosets.
+
 Decoding ambiguity is unnecessary. Separate constructions have
 exponentially more nearby parameters than prescribed, each with a
 unique witness. Almost full-gap separation persists after doubling
@@ -697,9 +704,16 @@ a different line phenomenon: two quantitatively far inputs have all
 $p-2$ non-endpoint mixtures nearby, and the underlying distance profile
 can have one almost maximally far point and $p-1$ nearby points. These
 statements use specially constructed domains and a shrinking gap.
-The multiplicative-subgroup domains and polynomial-size alphabets in
-their theorem remain separate advantages. Thus the advance claimed here
-is the quantitative coverage, separation, and reciprocal-gap dependence;
+The paired-domain theorem uses a superpolynomial alphabet in the block
+length. Theorem~\ref{thm:prime-random-fiber-log-gap} gives the two-far
+profile instead over a polynomial-size prime alphabet, with every
+non-endpoint mixture nearby at a radius strictly below Elias. Its
+domain is a selected union of multiplicative cosets, not necessarily a
+subgroup. Krachun--Kazanin--Hab\"ock already obtain polynomial prime
+alphabets and below-Elias inverse-logarithmic gaps; those features alone
+are not new. The distinction here is the simultaneous exact source and
+common agreement and the coverage of all $p-2$ interior mixtures.
+Thus the comparisons concern quantitative coverage, separation, and reciprocal-gap dependence;
 prime-field counterexamples themselves are already established prior work.
 Our finite circle examples concern the evaluation spaces of
 Circle STARKs~\cite{circle}.
@@ -947,11 +961,28 @@ Theorem~\ref{thm:prime-random-fiber-log-gap} also removes the
 extension-alphabet requirement: for every fixed $\beta>12/5$, it gives
 prime alphabets $p=\Theta((n/\log n)^\beta)$ on selected unions of
 multiplicative cosets, with the same two-far profile and inverse-logarithmic
-gap. This remains in the already known near-capacity regime, and does
-not settle a prescribed-domain benchmark. An exact certificate over
-$\mathbb F_{65537}$ has length $2842$, dimension $1421$, source/common
-agreement $1422$, and agreement at least $1424$ at every nonzero pencil
-label. Novelty of the two-far refinement remains unestablished.
+gap. More precisely, for every $C>1/h(\rho)$, where
+$h(\rho)=-\rho\log\rho-(1-\rho)\log(1-\rho)$, its distance below
+capacity is $(2/C+o(1))/\log p$ and its source/common-agreement loss is
+$(1/C+o(1))/\log p$. Choosing $C<2/h(\rho)$ places the tested radius
+strictly below Elias. The proof first covers almost all multiplicative
+labels with fixed-size products, then fills the remaining holes by
+adding a constant number of pairs of alternatives. Each representation
+uses exactly one factor from each pair, preserving its required degree.
+This retains the earlier paired theorem's below-Elias two-far behavior
+while allowing a polynomial prime alphabet. It does not establish
+fixed-rate first-order tightness or settle a prescribed-domain benchmark.
+An exact below-Elias certificate over $\mathbb F_{65537}$ has length
+$48$, dimension $24$, source/common agreement $25$, and agreement
+exactly $27$ at every nonzero pencil label. Its distance below capacity
+is $1/16$, and its source-to-near distance loss is $1/24$.
+Corollary~\ref{cor:two-point-fiber-all-primes} gives the same ratio
+$2/3$ between loss and capacity margin over every sufficiently large
+odd prime, with $n=\Theta(\log p)$ and radius strictly below Elias.
+This last family has exponential alphabet size in $n$; it is distinct
+from the polynomial-alphabet family above.
+Novelty of the two-far refinement relative to the wider literature
+remains unestablished.
 
 Likewise, optimality of a specified interpolation dimension count is a
 statement about that proof method, not an intrinsic list or MCA lower

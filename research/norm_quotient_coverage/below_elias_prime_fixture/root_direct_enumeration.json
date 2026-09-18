@@ -1,0 +1,8 @@
+{
+  "method": "direct field multiplication of every 13-subset; no discrete logarithms",
+  "subsets": 1144066,
+  "min_multiplicity": 3,
+  "max_multiplicity": 36,
+  "missing_nonzero_products": 0,
+  "elapsed_seconds": 1.666903875011485
+}

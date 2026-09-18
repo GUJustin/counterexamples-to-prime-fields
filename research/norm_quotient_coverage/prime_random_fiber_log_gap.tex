@@ -5,9 +5,12 @@ The same quotient construction applies over a prime alphabet when the
 image of the power map is a sufficiently large subgroup.  This gives
 the following exact two-source profile on a chosen union of cosets.
 
+\input{research/norm_quotient_coverage/fixed_weight_completion.tex}
+
 \begin{theorem}\label{thm:prime-random-fiber-log-gap}
 Fix $0<\rho<1$, $\beta>12/5$, and
-$C>\max\{64,4/[\rho(1-\rho)]\}$.
+$C>1/h(\rho)$, where
+$h(\rho)=-\rho\log\rho-(1-\rho)\log(1-\rho)$.
 There are infinitely many powers of two $m$ and primes
 $p\equiv1\pmod m$, with $p=\Theta(m^\beta)$, for which the following
 holds.  Put
@@ -23,7 +26,7 @@ $f,g:D\to\mathbb F_p$ such that
 \]
 and every $\lambda\in\mathbb F_p^*$ satisfies
 \[
- \operatorname{agr}_J(f+\lambda g)\ge J+2m-1.
+ \operatorname{agr}_J(f+\lambda g)=J+2m-1.
 \]
 Thus the capacity margin is $2/(s+1)-1/n$, the source-agreement gap
 is $1/(s+1)$, and both are $\Theta(1/\log n)$.
@@ -32,6 +35,7 @@ The alphabet is prime, with
  p=\Theta\!\left((n/\log n)^\beta\right),\qquad p/J\longrightarrow\infty.
 \]
 The domain is a union of $s+1$ cosets of the subgroup of order $m$.
+If $C<2/h(\rho)$, the nearby radius is strictly below the Elias radius.
 \end{theorem}
 
 \begin{proof}
@@ -63,24 +67,23 @@ Consequently
 \]
 because $L/\sqrt p=\Theta(m^{\beta/2-1})\to\infty$.
 
-Apply the finite-population concentration \emph{argument} in the proof
-of Lemma~\ref{lem:random-tag-character-bias} to a uniform $s$-subset
-$G\subset H\setminus\{a_0\}$.  Once the displayed mean is at most
-$1/4$, the probability that some nontrivial $\chi$ has
-$|\sum_{a\in G}\chi(b-a)|>s/2$ is at most
-$4(p-2)e^{-s/64}<1$.
-Fix a choice with all these character sums at most $s/2$.
-
-Set $Y=X^m$, $D=Y^{-1}(G\cup\{a_0\})$, and write
-$J-1=(r-2)m+w$, $0\le w<m$.  Then $|D|=(s+1)m$,
-$2\le r<s$ eventually, and $\theta=r/s\to\rho$.
-Lemma~\ref{lem:fixed-cardinality-character-products} shows that every
-element of $\mathbb F_p^*$ is the product of exactly $r$ distinct
-elements of $\{b-a:a\in G\}$ once
+Apply Corollary~\ref{cor:fixed-weight-entropy-threshold} to
+$\Gamma=\mathbb F_p^*$ and the population
+$\mathcal A=\{b-a:a\in H\setminus\{a_0\}\}$.
+Here $M=p-1$, while
 \[
- (p-2)(s+1)e^{-\theta(1-\theta)s/2}<1.
+ P=L-1=p^{1-1/\beta+o(1)},\qquad
+ \varepsilon\le p^{-(1/2-1/\beta)+o(1)}.
 \]
-The choice of $C$ ensures this inequality eventually.
+Both exponents are positive.  Write
+$J-1=(r-2)m+w$, $0\le w<m$.  Then $2\le r<s$ eventually,
+$r/s\to\rho$, and $s=C\log(p-1)+O(1)$.
+The corollary supplies $s$ distinct tags
+$G\subset H\setminus\{a_0\}$ for which every element of
+$\mathbb F_p^*$ is a product of exactly $r$ distinct factors $b-a$.
+Its constant number of completion pairs lies within these same $s$
+tags.  Set $Y=X^m$ and $D=Y^{-1}(G\cup\{a_0\})$, so that
+$|D|=(s+1)m$.
 
 Choose $w$ points $B_0$ in the reserved fiber $Y^{-1}(a_0)$ and put
 $R=L_{B_0}$.  Define
@@ -104,12 +107,35 @@ has degree at most $J-1$ and residual
 $f+\lambda g-h_S=R V_S(Y)/(Y-b)$.
 Its zeros are the core and the $r$ selected fibers, exactly
 $w+rm=J+2m-1$ points of $D$.
+Conversely, for every polynomial $h$ of degree less than $J$,
+\[
+ (Y-b)(f+\lambda g-h)
+ =R(Y^r-b^r-\lambda)-(Y-b)h
+\]
+is monic of degree $J+2m-1$, since the second term has degree at
+most $J+m-1$.  Root counting therefore gives the matching upper
+bound on agreement for every $\lambda$, and equality when
+$\lambda\ne0$.
 Finally, $n=\Theta(m\log m)$ and $p=\Theta(m^\beta)$ give the
 stated field-size and characteristic asymptotics.
+Writing $\eta=(2m-1)/n$, we have $\eta\log p\to2/C$ and
+\[
+ H_p(1-J/n-\eta)
+ =1-J/n+\frac{h(\rho)-2/C+o(1)}{\log p}.
+\]
+This is less than $1-J/n$ when $C<2/h(\rho)$, proving the
+strict comparison with Elias.
 \end{proof}
 
-The finite argument works for any prime $p$ and divisor $m\ge2$ of
-$p-1$.  With $L=(p-1)/m$, it suffices that $s<L-1$, $2\le r<s$, and
+Lemma~\ref{lem:fixed-weight-product-completion} gives an explicit
+finite energy-and-completion criterion.  A separate sufficient finite
+route is the character-bias and Cauchy argument of
+Lemmas~\ref{lem:random-tag-character-bias}
+and~\ref{lem:fixed-cardinality-character-products}, applying the
+former lemma's concentration proof to this population.
+For any prime $p$ and divisor $m\ge2$ of $p-1$, put
+$L=(p-1)/m$ and $\theta=r/s$.  This route succeeds when
+$s<L-1$, $2\le r<s$, and
 \[
  \frac{\sqrt p+1}{L-1}\le\frac14,\qquad
  4(p-2)e^{-s/64}<1,\qquad
@@ -118,15 +144,54 @@ $p-1$.  With $L=(p-1)/m$, it suffices that $s<L-1$, $2\le r<s$, and
 At threshold $J+2m-1$, exactly $p-2$ of the mixtures
 $(1-t)f+tg$, $t\in\mathbb F_p$, are nearby, and both endpoints
 are farther by $m/n$.
-This is a prime-alphabet specialization of the same quotient and
-character-sum argument.  It provides a structured exact profile;
-no priority claim is made for almost-complete coverage, already
-available with a far direction from Crites--Stewart~\cite[Corollary~1]{crites-stewart2025}.
+The two-far-input pattern already appears in
+Corollary~\ref{pd:two-far-inputs}; no priority claim is made for that
+pattern.  The parameter combination here is a polynomial prime alphabet,
+inverse-logarithmic capacity and source gaps, and almost-complete
+coverage strictly below Elias when $1/h(\rho)<C<2/h(\rho)$.
 The domain is chosen as a union of multiplicative cosets and need not
 be a subgroup.  The theorem makes no claim for a prescribed evaluation
 domain or for a fixed positive capacity margin.
 
-\paragraph{An exact finite prime-field certificate.}
+\input{research/norm_quotient_coverage/fixed_m_corollary.tex}
+
+\paragraph{A 48-coordinate certificate strictly below Elias.}
+There is also an explicit instance over $\mathbb F_{65537}$ with
+$m=2$, $s=23$, $n=48$, and $J=24$. Take $b=3$, reserve $a_0=1$,
+and choose the following square tags:
+\[
+\begin{split}
+G=\{&25703,16562,45729,40011,19330,14018,39598,39860,\allowbreak\\
+    &36881,40752,56378,11224,11940,40844,22047,23180,\allowbreak\\
+    &33705,65375,48969,314,27487,55681,29802\}.
+\end{split}
+\]
+Every element of $\mathbb F_{65537}^*$ is a product of exactly
+13 distinct factors from $\{3-a:a\in G\}$, as certified by exact
+finite enumeration. On $D=\{x:x^2\in G\cup\{1\}\}$, put
+\[
+ f=(X-1)\frac{X^{26}-3^{13}}{X^2-3},\qquad
+ g=-\frac{X-1}{X^2-3}.
+\]
+The preceding algebra gives exact source and common agreement 25,
+and exact agreement 27 for every nonzero pencil label. Thus both
+endpoints have distance $23/48$, while all $65535$ interior affine
+mixtures have distance $7/16$. The distance below capacity is exactly
+$1/16$, and the proximity-gap loss is exactly $1/24$.
+This radius is strictly below Elias: the entropy inequality
+$H_{65537}(7/16)<1/2$ is equivalent to the integer inequality
+\[
+ 65536^7\,16^{16}<65537^8\,7^7\,9^9,
+\]
+which holds exactly. The certificate supplies the domain and a
+13-subset witness for each of the 65536 nonzero products.
+Independent dynamic programming, meet-in-the-middle enumeration,
+and direct field multiplication agree on coverage; each product occurs
+between 3 and 36 times among the $\binom{23}{13}=1144066$ subsets.
+The replay files are in
+\path{research/norm_quotient_coverage/below_elias_prime_fixture}.
+
+\paragraph{A separate character-sum certificate.}
 The accompanying certificate gives $p=65537$, $m=2$, $b=3$,
 $a_0=1$, and $s=1420$ explicitly listed square tags.
 It has $n=2842$ and $J=1421$, with
@@ -134,7 +199,7 @@ It has $n=2842$ and $J=1421$, with
  \operatorname{agr}_J(f)=\operatorname{agr}_J(g)
  =\operatorname{CA}_J(f,g)=1422,
  \qquad
- \operatorname{agr}_J(f+\lambda g)\ge1424\quad(\lambda\ne0).
+ \operatorname{agr}_J(f+\lambda g)=1424\quad(\lambda\ne0).
 \]
 Here $r=712$, $w=0$, and the words are
 $f=(X^{1424}-3^{712})/(X^2-3)$ and $g=-1/(X^2-3)$ on the

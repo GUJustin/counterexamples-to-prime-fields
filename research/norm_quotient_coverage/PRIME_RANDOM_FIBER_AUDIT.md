@@ -1,5 +1,17 @@
 # Prime-alphabet transfer of the random-fiber compiler
 
+**Update: the Cauchy-only parameter restriction below is superseded.**
+The independently audited seed-and-pair completion in
+`fixed_weight_completion.tex` permits every C>1/h(rho). For
+1/h(rho)<C<2/h(rho), the strengthened theorem is strictly below Elias.
+The Jacobi population estimate and exact compiler audited here are
+unchanged. The cleared residual has degree T=J+2m-1 for every witness,
+so every nonzero pencil label has exactly T agreements. See
+`ENTROPY_COMPILER_ELIAS_PRIOR_ADDENDUM.md` for the exact comparison,
+including KKH's existing below-Elias result. The finite Cauchy criteria
+and the published F65537 fixture remain valid independent sufficient
+certificates; they are not finite below-Elias certificates.
+
 September 18, 2026. **PASS.** Integration candidate:
 `prime_random_fiber_log_gap.tex`. This uses the prime-progression input
 already used in Krachun--Kazanin--Haboeck and otherwise reuses the
@@ -115,3 +127,15 @@ projective direction for arbitrary eligible domains in this regime.
 The recorded feature here is a structured two-far construction with
 the exact individual/common agreement profile. Its priority is not
 established by this audit.
+
+## Comparison correction after checking the active paired theorem
+
+The existing manuscript already proves the two-far pattern in
+`pd:two-far-inputs`; this is not a new feature within the paper.
+`PAIRED_DOMAIN_COMPARISON.md` gives the exact ledger and a replacement
+related-work paragraph. The random-fiber result changes the alphabet/
+length relation to polynomial size and gives inverse-logarithmic gaps
+in block length. However, its current constant `C` forces the tested
+radius above Elias, whereas the existing paired construction is strictly
+below Elias and has a stronger exact affine-space profile. These are
+distinct tradeoffs, not a componentwise improvement.

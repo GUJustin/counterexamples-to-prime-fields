@@ -1,0 +1,74 @@
+% Input after prime_random_fiber_log_gap.tex; uses its completion corollary.
+\begin{corollary}[Two-point fibers over every large prime]
+\label{cor:two-point-fiber-all-primes}
+Fix $0<\rho<1$ and $C>1/h(\rho)$, where
+$h(\rho)=-\rho\log\rho-(1-\rho)\log(1-\rho)$.
+For every sufficiently large odd prime $p$, put
+\[
+ s=\lceil C\log p\rceil,\qquad n=2(s+1),\qquad
+ J=\lfloor\rho n\rfloor.
+\]
+There are an $n$-point domain $D\subset\mathbb F_p^*$, which is a
+union of pairs $\{x,-x\}$, and words $f,g:D\to\mathbb F_p$ with
+\[
+ \operatorname{agr}_J(f)=\operatorname{agr}_J(g)
+ =\operatorname{CA}_J(f,g)=J+1,
+ \qquad
+ \operatorname{agr}_J(f+\lambda g)=J+3
+ \quad(\lambda\in\mathbb F_p^*).
+\]
+At radius $\theta=1-J/n-\eta$, where $\eta=3/n$, both endpoints
+are at distance $\theta+2/n=\theta+(2/3)\eta$, and all $p-2$
+non-endpoint affine mixtures $(1-z)f+zg$ are at distance exactly
+$\theta$.  If $C<3/[2h(\rho)]$, this radius is strictly below Elias.
+Here
+\[
+ n=2C\log p+O(1),\qquad p=\exp\!\left(n/(2C)+O(1)\right),
+ \qquad p/J\longrightarrow\infty.
+\]
+\end{corollary}
+\begin{proof}
+Let $H=(\mathbb F_p^*)^2$, choose a nonsquare $b$, and reserve
+$a_0\in H$.  The Jacobi-sum argument in the proof of
+Theorem~\ref{thm:prime-random-fiber-log-gap} gives every nontrivial
+character mean of $\mathcal A=\{b-a:a\in H\setminus\{a_0\}\}$
+absolute value at most
+\[
+ \varepsilon=\frac{\sqrt p+1}{P},\qquad P=\frac{p-3}{2}.
+\]
+Thus $P=p^{1+o(1)}$ and $\varepsilon\le p^{-1/2+o(1)}$ over
+all odd primes; no prime-progression selection is needed.
+Write $J-1=2(r-2)+w$, with $w\in\{0,1\}$.  Then $r/s\to\rho$.
+Corollary~\ref{cor:fixed-weight-entropy-threshold}, with $M=p-1$,
+supplies an $s$-set $G\subset H\setminus\{a_0\}$ such that the
+products of exactly $r$ factors $b-a$ cover $\mathbb F_p^*$.
+
+Apply the quotient construction with $Y=X^2$ and
+$D=Y^{-1}(G\cup\{a_0\})$.  Let $R$ be the monic locator of $w$
+points of $Y^{-1}(a_0)$, and set
+\[
+ f=R\frac{Y^r-b^r}{Y-b},\qquad g=-\frac R{Y-b}.
+\]
+The denominator is root-free.  Root counting gives each source
+agreement at most $J+1$, while interpolation on any $r-1$ tags,
+together with the core roots, attains $J+1$ simultaneously.
+For $\lambda\ne0$, choose $S\subset G$, $|S|=r$, with
+$V_S(b)=-\lambda$.  The same quotient witness as in that theorem
+has residual $RV_S(Y)/(Y-b)$ and hence $J+3$ agreements.
+For every polynomial $h$ of degree less than $J$,
+\[
+ (Y-b)(f+\lambda g-h)
+ =R(Y^r-b^r-\lambda)-(Y-b)h
+\]
+is monic of degree $J+3$, because the second term has degree at most
+$J+1$.  This proves the matching upper bound.  Scaling by $1-z$
+transfers the nonzero-pencil statement to every $z\notin\{0,1\}$.
+
+Finally $\eta\log p\to3/(2C)$, so
+\[
+ H_p(1-J/n-\eta)
+ =1-J/n+\frac{h(\rho)-3/(2C)+o(1)}{\log p}
+ <1-J/n
+\]
+when $C<3/[2h(\rho)]$.  This is the claimed strict Elias comparison.
+\end{proof}

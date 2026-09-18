@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "method": "direct field multiplication of every 13-subset; no logarithms",
+  "subsets": 1144066,
+  "min_multiplicity": 3,
+  "max_multiplicity": 36,
+  "missing_nonzero_products": 0,
+  "all_producer_counts_match": true,
+  "elapsed_seconds": 0.9323590000276454
+}

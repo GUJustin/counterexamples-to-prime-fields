@@ -1,0 +1,119 @@
+% Finite nonuniform transfer of the classical random-translate completion.
+% Proof uses only second moments and paired alternatives of fixed weight.
+\begin{lemma}[Fixed-cardinality products and completion]
+\label{lem:fixed-weight-product-completion}
+Let $\mathcal A$ be a $P$-element subset of a finite abelian group
+$\Gamma$ of order $M$, and suppose
+\[
+ \left|\frac1P\sum_{a\in\mathcal A}\chi(a)\right|\le\varepsilon
+ \qquad(\chi\ne1).
+\]
+Choose integers $0<r_0<s_0$ and $t\ge0$ with $s_0+2t\le P$ and
+$a=1-\binom{s_0}{2}/P>0$.  Set
+\[
+ L_0=\binom{s_0}{r_0},\qquad
+ h_0=\frac{M-1}{aL_0}
+ \sum_{u\ge0}\binom{r_0}{u}\binom{s_0-r_0}{u}\varepsilon^{2u}
+ \le\frac{(M-1)(1+\varepsilon)^{s_0}}{aL_0}.
+\]
+For $0\le j<t$, define
+\[
+ P_j=P-s_0-2j,\qquad
+ \gamma_j=\frac{P\varepsilon+s_0+2j}{P_j},\qquad
+ h_{j+1}=\frac{h_j^2+\gamma_j^2h_j}{1-1/P_j}.
+\]
+If $Mh_t<1$, there is an $(s_0+2t)$-element subset of $\mathcal A$
+whose $(r_0+t)$-element subset products cover $\Gamma$.
+\end{lemma}
+\begin{proof}
+Draw $s_0$ independent uniform elements of $\mathcal A$, initially
+allowing repetitions.  Consider the $L_0$ products indexed by the
+$r_0$-subsets of the positions, and let $E_0$ be their ordered collision
+energy.  For two index sets with $u$ positions on each side of their
+symmetric difference, character orthogonality gives collision probability
+\[
+ \frac1M\sum_\chi|\widehat\mu(\chi)|^{2u}
+ \le\frac1M+\frac{M-1}{M}\varepsilon^{2u},
+\]
+where $\mu$ is uniform on $\mathcal A$; for $u=0$ the right side is
+exactly one.  For each index set there are
+$\binom{r_0}{u}\binom{s_0-r_0}{u}$ partners of this type.  Hence the
+nonnegative quantity $\Delta=ME_0/L_0^2-1$ satisfies
+\[
+ \mathbb E\Delta\le\frac{M-1}{L_0}
+ \sum_{u\ge0}\binom{r_0}{u}\binom{s_0-r_0}{u}\varepsilon^{2u}.
+\]
+The sum is at most $(1+\varepsilon)^{s_0}$, by retaining just the
+terms with equal exponents in
+$(1+\varepsilon)^{r_0}(1+\varepsilon)^{s_0-r_0}$.
+
+The draws are distinct with probability at least $a$.  Since $\Delta$
+is nonnegative pointwise, its conditional expectation given distinctness
+is at most $(\mathbb E\Delta)/a$.  Some distinct seed therefore has
+$\Delta\le h_0$.  Cauchy--Schwarz bounds its product-image size below
+by $M/(1+\Delta)$, so its missing fraction is at most
+$\Delta/(1+\Delta)\le h_0$.
+
+Now use the classical random-translate completion
+strategy~\cite[Theorem~2]{erdos-renyi-group}, keeping cardinality fixed
+by adding pairs of alternatives.  After $j$ steps, $s_0+2j$ population
+elements have been used.  Every nontrivial character mean of the
+remaining population is at most $\gamma_j$ by the triangle inequality.
+Let $B$ be the complement of the current product image, of density $h$.
+For two independent uniform fresh elements $u,v$, normalized Fourier
+expansion and Parseval give
+\[
+ \mathbb E\frac{|Bu\cap Bv|}{M}
+ =\sum_\chi|\widehat{1_B}(\chi)|^2
+                 |\widehat\mu_j(\chi)|^2
+ \le h^2+\gamma_j^2(h-h^2)
+ \le h^2+\gamma_j^2h.
+\]
+Conditioning $u\ne v$ costs at most $1/(1-1/P_j)$.
+Choose a distinct pair attaining no more than that conditional mean.
+Replace the product family by its translates by $u$ and by $v$.
+Every represented product now selects exactly one of these two fresh
+elements, so its cardinality increases by one.  The missing fraction
+obeys the stated recurrence, uniformly over all previous choices.
+After $t$ steps it is less than $1/M$, hence zero by integrality.
+All final products use $r_0+t$ distinct elements among $s_0+2t$ tags.
+\end{proof}
+
+\begin{corollary}[The leading entropy threshold]
+\label{cor:fixed-weight-entropy-threshold}
+Fix $0<\rho<1$, $\alpha,\kappa>0$, and
+$C>1/h(\rho)$, where
+$h(\rho)=-\rho\log\rho-(1-\rho)\log(1-\rho)$.
+Suppose $M\to\infty$, $P\ge M^\alpha$, and
+$\varepsilon\le M^{-\kappa}$ in the preceding lemma.
+Let $s=C\log M+O(1)$ be an integer, and let $r/s\to\rho$.
+For all sufficiently large $M$, some $s$-element subset of
+$\mathcal A$ has every element of $\Gamma$ as an exact $r$-element
+subset product.
+\end{corollary}
+\begin{proof}
+Put $a_*=Ch(\rho)-1>0$, $\nu=\min\{\alpha,\kappa\}$, and choose
+\[
+ \lambda=\min\{a_*/4,\nu/2\}>0,
+ \qquad t\ge\lceil1/\lambda\rceil
+\]
+as fixed constants.  Apply the lemma with
+$s_0=s-2t$ and $r_0=r-t$.  Then $0<r_0<s_0$ eventually and
+\[
+ L_0=M^{Ch(\rho)+o(1)},\qquad a=1-o(1),\qquad
+ h_0\le M^{-a_*+o(1)}\le M^{-2\lambda}.
+\]
+For the fixed number of steps, deleting $O(\log M)$ elements gives
+$\gamma_j\le M^{-\nu+o(1)}$, in particular
+$\gamma_j^2\le M^{-2\lambda}$ eventually, and $1-1/P_j\ge1/2$.
+If $h_j\le M^{-2\lambda}$, the recurrence implies
+\[
+ h_{j+1}\le4M^{-2\lambda}h_j\le M^{-\lambda}h_j
+\]
+for sufficiently large $M$.  Thus
+$Mh_t\le M^{1-(t+2)\lambda}<1$, as required.
+\end{proof}
+
+The counting requirement $\binom{s}{r}\ge M$ makes the leading
+constant $1/h(\rho)$ necessary, so this threshold is asymptotically
+optimal at leading order for the stated populations.

@@ -1,0 +1,46 @@
+{
+  "status": "PASS",
+  "p": 65537,
+  "m": 2,
+  "pole": 3,
+  "sample_size": 23,
+  "subset_size": 13,
+  "canonical_discovery_seed": 2026091823,
+  "canonical_discovery_trial": 0,
+  "independent_bitset_dp_product_coverage": 65536,
+  "meet_in_the_middle_enumerated_subsets": 1144066,
+  "meet_in_the_middle_product_coverage": 65536,
+  "minimum_product_multiplicity": 3,
+  "maximum_product_multiplicity": 36,
+  "direct_field_multiplication_verified_supports": 65536,
+  "code": {
+    "length": 48,
+    "strict_degree_bound": 24,
+    "maximum_witness_degree": 23,
+    "rate": "1/2",
+    "core_size": 1,
+    "exact_each_source_agreement": 25,
+    "exact_common_agreement": 25,
+    "exact_nonzero_pencil_agreement": 27,
+    "near_pencil_labels": 65536,
+    "near_affine_interpolation_labels": 65535,
+    "radius": "7/16",
+    "source_gap": "1/24",
+    "capacity_margin": "1/16"
+  },
+  "entropy_certificate": {
+    "statement": "H_65537(7/16)<1/2",
+    "integer_left": "95780971304118053647396689196894323976171195136475136",
+    "integer_right": "108582871902291753903353686974292588554886020758912367",
+    "positive_integer_slack": "12801900598173700255956997777398264578714825622437231",
+    "equivalent_inequality": "(p-1)^7 * 16^16 < p^8 * 7^7 * 9^9"
+  },
+  "sha256": {
+    "tags_domain_words.json": "fabbf9034f7e958733b449c4725a30312d86b0423e673cf1fdc97d5a2bcb520a",
+    "product_counts_u32le.bin": "ab37ffe6aef09eb73a300c3e5f1f5d3549372ae189cfc4ca8c8442fe903b94d6",
+    "witness_supports_u32le.bin": "244d9cedea34c3c13e60c67fc7116dd9926e93953c3f9beae6c914c2bb1fb951"
+  },
+  "elapsed_seconds": 0.25419358399813063,
+  "peak_rss_bytes": 31735808,
+  "scope": "all products and one valid support per nonzero pencil label explicitly verified; prescribed practical NTT-domain benchmark is different"
+}
