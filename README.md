@@ -5,7 +5,7 @@ Working draft by Justin Thaler, September 17, 2026.
 [Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
 **Latest verified results (September 17, evening):** the ePrint-style article
-is 193 pages with one-inch margins. Its new Theorem R.5 proves an exact
+is 196 pages with one-inch margins. Its new Theorem R.5 proves an exact
 transition for the complete Dickson cubic-ODE solution family: a linear
 list at agreement `3/8`, but at most `ceil(epsilon^-2)` family members for
 any word at agreement `3/8 + epsilon`. A matching majority construction
@@ -38,6 +38,8 @@ nonconstant Frobenius critical values are covered. In particular, the
 complete Dickson bank cannot have such a first integral for admissible
 primes at least 521. [Proof](research/short_domain_cubic_source/general_cubic_list.tex)
 and [independent audit](research/short_domain_cubic_source/TWO_D_RADICAL_INDEPENDENT_AUDIT.md).
+
+Appendix S proves a nonnegative contact-excess budget for primary interpolation factors. At the benchmark parameters, zero excess forces a received-line graph factor; a characteristic-free theorem also gives a positive gap for regular factors with uniform contact. These are constraints on factors, not yet a bound on first-tail component costs. [Proofs and scope](research/better_codes_second_jet/contact_resource_appendix.tex).
 
 There is still **no better.codes improvement**. The fully repaired target
 certificate exceeds its allowance by 7.65%; earlier conditional estimates

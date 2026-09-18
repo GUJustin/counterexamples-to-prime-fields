@@ -1,6 +1,6 @@
 # Current audited position after restoring the full second-jet framework
 
-The main paper remains the 193-page ePrint-style draft with Theorems R.7–R.9. No second-jet leaderboard improvement is claimed.
+The main paper remains the 196-page ePrint-style draft with Theorems R.7–R.9. No second-jet leaderboard improvement is claimed.
 
 1. The local curvature rank saving and its graded challenge count are mathematically valid, independently checked, and already contained in the restored exact SecondJetCounts framework. They are rediscovered specializations, not new rank theorems. The matched comparison 31890 versus5515 is valid source arithmetic.
 2. The existing relaxed second-jet source and routing framework accepts broader profiles after target-parameter changes. Four checked profiles produce positive source dimensions and challenge caps below3261. The source-existence obstruction is therefore resolved for these profiles.
@@ -14,3 +14,5 @@ The next substantive targets are a sharper retained geometric bound, a proof for
 Separately, subgroup restriction of the Dickson bank was examined as a lower-construction route. A new norm/discriminant argument excludes every proper index1mod4 quarter-rate reduction. Indices3and7 are also excluded directly; the bounded index3mod4 survey throughp500 found no candidates. The contiguous-binomial determinant argument in SUBGROUP_CASORATI_OBSTRUCTION.md now excludes index4h+3 whenever n/4>=h²; thus every fixed odd index is excluded asymptotically, and index11 is excluded completely. Growing-index cases remain open. These are construction obstructions, not improved proximity-gap lower bounds.
 
 An independently audited explicit retained-source example has first-tail component multiplicity one (RETAINED_SIMPLE_COMPONENT_MODEL.md and SIMPLE_TAIL_INDEPENDENT_CHECK.md). It uses full agreement A=n and a line of codewords. It refutes a blanket retained-multiplicity shortcut, but does not settle the pinned agreement ratio or prove that the numerical normal term is sharp. A quantitative primary-factor contact budget is being developed separately and is not yet part of the benchmark receipt.
+
+Appendix S now contains the audited subset/average contact bound, nonnegative additive primary-factor resource, uniform equality rigidity, coprime zero-charge classification, and characteristic-free uniform regular-factor gap. All zero-charge factors at the benchmark are challenge-only or received-line graphs. The positive gap does not improve the existing factor count from derivative degree, and the aggregate normal-component cost bridge remains unproved.

@@ -1,0 +1,239 @@
+\section{Contact resources and their equality cases}
+\label{app:primary-contact-resource}
+
+These bounds constrain factors of a first-jet interpolant using their
+actual contacts. They do not yet bound the normal-divisor cost of
+first-tail intersection components.
+Let $x_1,\ldots,x_n$ be distinct, let $w\ge2$, and work over a
+coefficient field $K$, which may be $k(Z)$. Received symbols $r_i$ lie
+in $K$. Give $(X,Y,R)$ weights $(1,w,w-1)$ and write $\operatorname{wt}$
+for weighted degree. For $0\ne F\in K[X,Y,R]$, define its actual contact
+\[
+ a_i(F)=\operatorname{ord}_t
+ F(x_i+t,r_i+tR+t^2E,R)\in\mathbb Z_{\ge0}.
+\]
+The substitution is injective after inverting $t$, so these orders are
+finite and additive on products. Weighted degrees are also additive.
+Moreover $a_i(F)\le\operatorname{wt}(F)$, because the substituted
+polynomial has $t$-degree at most its original weight.
+
+\begin{lemma}[Subset and average contact bounds]
+\label{lem:contact-subset-average}
+Suppose $2\le w\le n$, $W=\operatorname{wt}(F)$, and
+$u_i\in\mathbb Z_{\ge0}$ with $u_i\le a_i(F)$. Put $C=\binom nw$ and
+$d=\lfloor W/(w-1)\rfloor$. Then
+\begin{equation}
+ \#\left\{T\subseteq[n]:|T|=w,\ \sum_{i\in T}u_i>W\right\}\le d.
+ \label{eq:contact-subset-bound}
+\end{equation}
+If also $u_i\le U$ and $C>ndwU$, then
+\begin{equation}
+ W\ge\frac wn\sum_i u_i.
+ \label{eq:contact-average-bound}
+\end{equation}
+\end{lemma}
+\begin{proof}
+For each qualifying $T$, interpolate its received symbols by $P_T$
+of degree less than $w$, and put $H_T=\prod_{i\in T}(X-x_i)$.
+Contact makes
+$F(X,P_T+cH_T,P_T'+cH_T')$ divisible by
+$\prod_{i\in T}(X-x_i)^{u_i}$. Its degree is at most $W$, so it
+vanishes identically, with $c$ an indeterminate. Hence, over $K(X)$,
+\[
+ R-P_T'-\frac{H_T'}{H_T}(Y-P_T)
+\]
+is a factor of $F$. Distinct $T$ give distinct factors: their slopes
+have simple poles of residue one at exactly their respective nodes,
+in every characteristic. Their number is at most the total jet degree,
+hence at most $d$.
+
+The average of $\sum_{i\in T}u_i$ over all $w$-subsets is
+$(w/n)\sum_i u_i$. If it exceeds the integer $W$, the excess is at
+least $1/n$. But at most $d$ summands are positive, each at most $wU$,
+so the excess is at most $dwU/C<1/n$, a contradiction.
+\end{proof}
+
+\begin{corollary}[A nonnegative factor resource]
+\label{cor:contact-factor-resource}
+Let $Q_0\ne0$ have contact at least $m$ at every node and weight
+$W_0<mA$. Factor it over $K[X,Y,R]$ as
+$Q_0=c\prod_j F_j^{e_j}$. Write $V_j=\operatorname{wt}(F_j)$ and
+assume
+\[
+ \binom nw>n\left\lfloor\frac{V_j}{w-1}\right\rfloor wV_j
+ \quad\text{for every }j.
+\]
+Then the charges
+\[
+ \epsilon_j=V_j-\frac wn\sum_i a_i(F_j)
+\]
+satisfy
+\begin{equation}
+ \epsilon_j\ge0,\qquad
+ 0\le\sum_j e_j\epsilon_j<m(A-w).
+ \label{eq:contact-additive-resource}
+\end{equation}
+\end{corollary}
+\begin{proof}
+Apply Lemma~\ref{lem:contact-subset-average} with $U=V_j$ to each
+factor. Additivity gives
+\[
+ \sum_j e_j\epsilon_j=W_0-\frac wn\sum_i a_i(Q_0)
+ \le W_0-mw<m(A-w).\qedhere
+\]
+\end{proof}
+
+\begin{theorem}[Uniform equality rigidity]
+\label{thm:contact-uniform-rigidity}
+Suppose $1\le a<w-1$, $n>w+a$, and $K$ has characteristic zero or
+characteristic $p>a$. If $F\ne0$ has weight at most $aw$ and contact
+at least $a$ at every node, then
+\[
+ F=c(Y-P(X))^a,\qquad c\in K^\times,\quad\deg P\le w,
+ \quad P(x_i)=r_i\ \text{for every }i.
+\]
+\end{theorem}
+\begin{proof}
+The total jet degree $b$ is at most
+$\lfloor aw/(w-1)\rfloor=a$. Let $F_b$ be its top homogeneous part.
+For every $w$-subset $T$, the preceding interpolation pencil gives
+\[
+ F(X,P_T+cH_T,P_T'+cH_T')=C(c)H_T^a.
+\]
+Here $C(c)$ is independent of $T$: it is the coefficient of $X^{aw}$,
+computed from the weighted leading terms with
+$Y=cX^w$, $R=wcX^{w-1}$. This remains true if $w=0$ in $K$.
+Taking the coefficient of $c^b$ yields
+$F_b(X,H_T,H_T')=C_bH_T^a$.
+Fix $w-1$ nodes with locator $H_B$ and vary the remaining node $z$.
+There are $n-w+1>a$ choices; both sides have degree at most $a$ in
+$z$, so the identity holds for an indeterminate $z$ with
+$H_T=H_B(X-z)$. If $b<a$, its $z^a$ coefficient gives $C_b=0$.
+But
+\[
+ \frac{H_T'}{H_T}=\frac{H_B'}{H_B}+\frac1{X-z}
+\]
+is transcendental over $K(X)$, contradicting
+$F_b(X,1,H_T'/H_T)=0$. Thus $b=a$, and the same identity gives
+$F_a=cY^a$ with $c\ne0$.
+
+Write the next homogeneous piece as
+$\sum_{j=0}^{a-1}B_j(X)Y^{a-1-j}R^j$; its coefficients have degree
+at most $w+j<n$. In the contact substitution, the coefficient of
+$E^0R^{a-1}$ is
+\[
+ ac r_i t^{a-1}+\sum_{j=0}^{a-1}B_j(x_i+t)t^{a-1-j}.
+\]
+Descending through $j\ge1$ forces $B_j(x_i)=0$ at every node,
+hence $B_j=0$. The remaining coefficient gives
+$ac r_i+B_0(x_i)=0$. Set $P=-B_0/(ac)$; it has degree at most $w$
+and matches every symbol. Now $F-c(Y-P)^a$ still has weight at most
+$aw$ and contact at least $a$, but total jet degree less than $a$.
+The exclusion just proved forces this residual to vanish.
+\end{proof}
+
+\begin{corollary}[Coprime zero-charge classification]
+\label{cor:contact-zero-charge}
+Suppose $2\le w<n$, $\gcd(n,w)=1$, and
+\[
+ V=\operatorname{wt}(F)=\frac wn\sum_i a_i(F),\qquad
+ \binom nw>n\left\lfloor\frac V{w-1}\right\rfloor.
+\]
+Then all contacts equal an integer $a$, and $V=aw$.
+If $a=0$, $F$ is a scalar over $K$. If $1\le a<w-1$, $n>w+a$,
+and the characteristic is zero or greater than $a$, the conclusion
+of Theorem~\ref{thm:contact-uniform-rigidity} holds.
+\end{corollary}
+\begin{proof}
+For a nonconstant contact vector, every cyclic ordering has a
+length-$w$ consecutive window whose sum exceeds $V$. Otherwise all
+window sums equal their average $V$; subtracting adjacent sums gives
+$a_i=a_{i+w}$, and coprimality forces the vector to be constant.
+Averaging over uniformly random permutations therefore shows that at
+least $\binom nw/n$ subsets have sum greater than $V$, contradicting
+\eqref{eq:contact-subset-bound}. Uniformity gives $V=aw$; the remaining
+claims follow from weight zero or Theorem~\ref{thm:contact-uniform-rigidity}.
+\end{proof}
+
+For nodes in $k$ and affine symbols $r_i=f_i+Zg_i$, interpolation at any $w+1$ nodes
+shows that the polynomial in these equality cases is
+$P=P_0+ZP_1$, with $P_0,P_1\in k[X]$ of degree at most $w$.
+If the original source is polynomial in $Z$, its coefficient $c(Z)$
+is polynomial too. Thus every positive-weight irreducible zero-charge factor
+is a received-line graph factor; no exceptional challenge labels or
+rational challenge poles are introduced.
+
+
+\begin{theorem}[A uniform positive gap for regular factors]
+\label{thm:contact-regular-gap}
+Let $a\ge1$ and $e\ge0$ be integers with
+\[
+ e<w-a-1,\qquad e<n-w-a+1.
+\]
+In \emph{any characteristic}, a polynomial of weight at most $aw+e$
+and contact at least $a$ at every node satisfies $F_R=0$.
+\end{theorem}
+\begin{proof}
+We first record a lower-jet-degree exclusion. A nonzero polynomial
+$J$ of contact $q\ge1$, weight at most $qw+E$, and total jet degree
+$b<q$ cannot exist when $0\le E<n-w-q+1$.
+Its top homogeneous piece $J_b$ inherits zero-word contact $q$.
+Put $\Lambda=\prod_i(X-x_i)$ and substitute
+\[
+ Y=\Lambda U,\qquad R=\Lambda'U+\Lambda V.
+\]
+Locally $\Lambda=t\ell(t)$, and this corresponds in the contact
+substitution to
+$R=(\ell+t\ell')U+t\ell V$ and
+$E_{\rm loc}=-\ell'U-\ell V$.
+The determinant is $-\ell^2$, a unit. Thus the transformed $J_b$
+is coefficientwise divisible by $\Lambda^q$.
+Write $J_b=\sum_j C_jY^{b-j}R^j$ and choose the largest $j$ with
+$C_j\ne0$. Its $U^{b-j}V^j$ coefficient is $\Lambda^bC_j$.
+Consequently $\Lambda^{q-b}\mid C_j$, whereas
+\[
+ \deg C_j\le(q-b)w+E+j<(q-b)n,
+\]
+a contradiction. This argument is characteristic-free.
+
+The hypotheses of the theorem bound the total jet degree of $F$ by
+$a$; the exclusion forces it to equal $a$ when $F\ne0$.
+Write its top piece as $\sum_j A_j(X)Y^{a-j}R^j$, where
+$\deg A_j\le e+j<n$. The $E^0R^a$ coefficient of its contact
+substitution is $\sum_j A_j(x_i+t)t^{a-j}$.
+Descending through $j\ge1$ forces $A_j(x_i)=0$ at every node,
+hence $A_j=0$. The top piece is therefore $A_0(X)Y^a$.
+For $a=1$ this already gives $F_R=0$.
+For $a\ge2$, formal differentiation of the contact identity with
+respect to $E$ and $R$ gives, respectively,
+\[
+ \operatorname{ord}_t(F_Y\text{ after substitution})\ge a-2,
+ \qquad tF_Y+F_R\equiv0\pmod{t^a}.
+\]
+Thus $F_R$ has contact at least $a-1$, jet degree at most $a-2$,
+and weight at most $(a-1)w+e+1$. The exclusion with
+$q=a-1$, $E=e+1$ gives $F_R=0$.
+
+\end{proof}
+
+In small characteristic this conclusion is only $F_R=0$;
+it does not exclude dependence through $R^p$.
+
+\paragraph{Finite scope and the remaining geometric step.}
+At $n=2^{18}$, $w=2^{17}-1$, $m=118$, and $A=181275$, every primary
+factor has weight below $mA=21390450<2^{25}$. Hence
+$ndwU<2^{69}$ for $U=V$, whereas
+$\binom nw\ge\binom n5>(n/5)^5>2^{75}$.
+All average conditions hold, and $\gcd(n,w)=1$.
+A zero charge has $a\le163$, so the equality hypotheses hold at
+$p=2130706433$. The endpoint is degree \emph{at most} $w$.
+For a regular factor of uniform actual contact $a\ge1$, the preceding
+theorem instead forces
+$e\ge\min\{w-a-1,n-w-a+1\}$.
+In this finite range $a\le163$, so $e\ge130907$.
+This does not improve the existing factor-count bound from derivative degree.
+These are factor-level resources. A first-tail component is a
+codimension-two intersection component, not another primary factor:
+charging it separately would require a new inequality controlling
+aggregate normal-divisor cost from the single factor's charge.
+No such inequality, or benchmark improvement, follows here.
