@@ -56,7 +56,7 @@ Do not spend effort re-proving odd-characteristic trace endpoints or the already
 
 ## Additional decisive guard: p>K and full-line packing
 
-The relevant large-characteristic comparison requires `p>K` (or the precise theorem's degree/jet guard), not merely `p` tending to infinity. At fixed rate `K~rho n`, this requires `n=O_rho(p)`. In particular the existing quarter-rate packet row with `n~8p ln p` has `K~2p ln p>p` and does NOT enter that large-characteristic regime. The increasing-characteristic and large-characteristic relative-to-message-degree questions must be separated.
+The relevant message-degree guard is `p>K−1`, equivalently `p>=K` for integer code dimension K; a separate derivative-degree guard must also be checked. In particular K=p is admissible, unlike K>p. Merely p tending to infinity is insufficient. At fixed rate `K~rho n`, this requires `n=O_rho(p)`. In particular the existing quarter-rate packet row with `n~8p ln p` has `K~2p ln p>p` and does NOT enter that large-characteristic regime. The increasing-characteristic and large-characteristic relative-to-message-degree questions must be separated.
 
 There is an elementary obstruction to fixing this by adding complete fibers in several directions. Let a domain D of size n in ANY F_(p^m) contain R distinct affine F_p-lines. Every line has p points and two distinct lines meet in at most one. If d_x counts the chosen lines through x, then
 
@@ -70,3 +70,12 @@ Cauchy–Schwarz gives `(Rp)^2/n <= Rp+R(R-1)`, and, for R>0 and n<p^2,
 Therefore n<=C p implies R=O_C(1) as p grows; with fixed positive rate and p>K this is O_rho(1). This holds for arbitrary ambient extension degree, without parallelism or a common quotient. It excludes a growing bank of DISTINCT COMPLETE affine p-lines in the relevant regime, not arbitrary polynomial supports or unions of partial lines.
 
 Accordingly the concrete transversal proposal should first be tested with a FIXED small m satisfying `rho m<1`, rather than only with m~log p. At quarter rate, m=3 gives n=3p and K=floor(3p/4)<p; each truncated transversal has three points, so the full-line obstruction does not apply. A bank formed from many such small pieces would still need the common high-coefficient cancellation lemma already identified above. No such lemma is currently proved. This fixed-m version is the appropriate target if the aim is to enter the DKT characteristic range; the logarithmic-m version only improves the older increasing-characteristic extension-field contract.
+
+
+## Follow-up comparison after the scaled-Frobenius theorem
+
+The completed `quadratic_frobenius_core/scaled_fiber_padding.tex` now gives N=9p², K=3, threshold 4p, both-source/common agreement at most 2p+3, and (p+1)(p−1)² singleton exceptions plus one two-word exception over F_(p⁴). Its multiplicity-six finite DKT certificate has derivative cap three, so p>3 suffices for reconstruction. This supplies an actual large-characteristic extension-field line, not just the partial-support proposal above.
+
+A fresh read of the binary repository's endpoint and source-conversion updates does not dominate it. The proper-domain boundary b=p,d=3 has K=p, N=p³ and p³+p²+p exceptional labels: its characteristic guard passes, but its count is only linear in length. The punctured trace boundary b=p,N=p²,K=1 can gain both-source/common agreement exactly one after source conversion into F_(p⁴), while retaining p² labels and threshold p−1. This has a large source gap but only linear count. The new source conversion does not increase the exceptional population or lower the code dimension of the other endpoint families.
+
+The substantive open upgrade remains a prime-alphabet analogue, a fixed-rate example in the applicable error range, or an exceptional-count improvement that preserves the existing gap. The current completed construction does not settle those targets.
