@@ -5,7 +5,7 @@ Working draft by Justin Thaler, September 17, 2026.
 [Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
 **Latest verified results (September 17, evening):** the ePrint-style article
-is 198 pages with one-inch margins. Its new Theorem R.5 proves an exact
+is 197 pages with one-inch margins. Its new Theorem R.5 proves an exact
 transition for the complete Dickson cubic-ODE solution family: a linear
 list at agreement `3/8`, but at most `ceil(epsilon^-2)` family members for
 any word at agreement `3/8 + epsilon`. A matching majority construction
@@ -41,7 +41,7 @@ and [independent audit](research/short_domain_cubic_source/TWO_D_RADICAL_INDEPEN
 
 Theorem R.11 extends the cubic cover argument to every constant fiber supported on two roots, with arbitrary multiplicities `r,s`. The section bank is an affine pencil or has at most `2(r+s)/gcd(r,s)+2` members. This does not classify fibers with three or more distinct roots. [Proof](research/short_domain_cubic_source/two_root_fiber.tex).
 
-Appendix S proves a nonnegative contact-excess budget for primary interpolation factors. At the benchmark parameters, zero excess forces a received-line graph factor; a characteristic-free theorem also gives a positive gap for regular factors with uniform contact. These are constraints on factors, not yet a bound on first-tail component costs. [Proofs and scope](research/better_codes_second_jet/contact_resource_appendix.tex).
+Appendix S proves, in every characteristic and for arbitrary received words when n≥2w, that contact excess is at least (w−1) times R-degree. Zero excess is exactly a power of a graph matching the received word. This replaces the earlier guarded and uniform-contact statements with stronger results and a shorter proof. These are constraints on factors, not yet a bound on first-tail component costs. [Proofs and scope](research/better_codes_second_jet/contact_resource_appendix.tex).
 
 There is still **no better.codes improvement**. The fully repaired target
 certificate exceeds its allowance by 7.65%; earlier conditional estimates

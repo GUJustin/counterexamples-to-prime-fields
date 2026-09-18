@@ -1,0 +1,795 @@
+{
+  "tests": 80,
+  "kernel_dimension_histogram": {
+    "1": 4,
+    "0": 76
+  },
+  "square_denominator_or_higher_kernel_cases": [],
+  "rows": [
+    {
+      "old_index": 0,
+      "root_indices": [
+        2,
+        4,
+        5
+      ],
+      "kernel_dimension": 1,
+      "denominator_discriminant_zero": false,
+      "kernel": [
+        "-3/2 - sqrt(3)/3 - I/3 - sqrt(3)*I/6",
+        "-2*I",
+        "-3*sqrt(3)/13 + 15/26 + 5*I/13 + 9*sqrt(3)*I/26",
+        "5/6 + 2*sqrt(3)/3 + sqrt(3)*I/2",
+        "1 + sqrt(3)*I",
+        "1"
+      ],
+      "denominator_discriminant": "-16/3 - 8*sqrt(3)/3",
+      "undefined_node_indices": [
+        0,
+        1,
+        3
+      ],
+      "max_repeated_z": 3
+    },
+    {
+      "old_index": 0,
+      "root_indices": [
+        2,
+        4,
+        8
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 0,
+      "root_indices": [
+        2,
+        4,
+        10
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 0,
+      "root_indices": [
+        2,
+        4,
+        11
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 0,
+      "root_indices": [
+        2,
+        5,
+        8
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 0,
+      "root_indices": [
+        2,
+        5,
+        10
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 0,
+      "root_indices": [
+        2,
+        5,
+        11
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 0,
+      "root_indices": [
+        2,
+        8,
+        10
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 0,
+      "root_indices": [
+        2,
+        8,
+        11
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 0,
+      "root_indices": [
+        2,
+        10,
+        11
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 0,
+      "root_indices": [
+        4,
+        5,
+        8
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 0,
+      "root_indices": [
+        4,
+        5,
+        10
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 0,
+      "root_indices": [
+        4,
+        5,
+        11
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 0,
+      "root_indices": [
+        4,
+        8,
+        10
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 0,
+      "root_indices": [
+        4,
+        8,
+        11
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 0,
+      "root_indices": [
+        4,
+        10,
+        11
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 0,
+      "root_indices": [
+        5,
+        8,
+        10
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 0,
+      "root_indices": [
+        5,
+        8,
+        11
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 0,
+      "root_indices": [
+        5,
+        10,
+        11
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 0,
+      "root_indices": [
+        8,
+        10,
+        11
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 1,
+      "root_indices": [
+        1,
+        3,
+        5
+      ],
+      "kernel_dimension": 1,
+      "denominator_discriminant_zero": false,
+      "kernel": [
+        "3/2 - I",
+        "3*sqrt(3)/2 + 5*I/2",
+        "-3*sqrt(3)/13 + 15/26 + 5*I/13 + 9*sqrt(3)*I/26",
+        "-5/4 + 3*sqrt(3)*I/4",
+        "-5/2 - 3*sqrt(3)*I/2",
+        "1"
+      ],
+      "denominator_discriminant": "9/2 + 9*sqrt(3)*I/2",
+      "undefined_node_indices": [
+        0,
+        2,
+        4
+      ],
+      "max_repeated_z": 3
+    },
+    {
+      "old_index": 1,
+      "root_indices": [
+        1,
+        3,
+        7
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 1,
+      "root_indices": [
+        1,
+        3,
+        9
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 1,
+      "root_indices": [
+        1,
+        3,
+        11
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 1,
+      "root_indices": [
+        1,
+        5,
+        7
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 1,
+      "root_indices": [
+        1,
+        5,
+        9
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 1,
+      "root_indices": [
+        1,
+        5,
+        11
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 1,
+      "root_indices": [
+        1,
+        7,
+        9
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 1,
+      "root_indices": [
+        1,
+        7,
+        11
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 1,
+      "root_indices": [
+        1,
+        9,
+        11
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 1,
+      "root_indices": [
+        3,
+        5,
+        7
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 1,
+      "root_indices": [
+        3,
+        5,
+        9
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 1,
+      "root_indices": [
+        3,
+        5,
+        11
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 1,
+      "root_indices": [
+        3,
+        7,
+        9
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 1,
+      "root_indices": [
+        3,
+        7,
+        11
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 1,
+      "root_indices": [
+        3,
+        9,
+        11
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 1,
+      "root_indices": [
+        5,
+        7,
+        9
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 1,
+      "root_indices": [
+        5,
+        7,
+        11
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 1,
+      "root_indices": [
+        5,
+        9,
+        11
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 1,
+      "root_indices": [
+        7,
+        9,
+        11
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 2,
+      "root_indices": [
+        0,
+        3,
+        4
+      ],
+      "kernel_dimension": 1,
+      "denominator_discriminant_zero": false,
+      "kernel": [
+        "-sqrt(3)/3 - 1/6 + sqrt(3)*I/6 + I/3",
+        "-2/3 + sqrt(3)/3 - 2*sqrt(3)*I/3 - I",
+        "-3*sqrt(3)/13 + 15/26 + 5*I/13 + 9*sqrt(3)*I/26",
+        "-sqrt(3)/3 - 1/3 - I/3",
+        "2*sqrt(3)/3 - 2*sqrt(3)*I/3 - 2*I/3",
+        "1"
+      ],
+      "denominator_discriminant": "4*sqrt(3)/9 + 8/9 - 8*sqrt(3)*I/9 - 4*I/3",
+      "undefined_node_indices": [
+        1,
+        2,
+        5
+      ],
+      "max_repeated_z": 3
+    },
+    {
+      "old_index": 2,
+      "root_indices": [
+        0,
+        3,
+        6
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 2,
+      "root_indices": [
+        0,
+        3,
+        9
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 2,
+      "root_indices": [
+        0,
+        3,
+        10
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 2,
+      "root_indices": [
+        0,
+        4,
+        6
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 2,
+      "root_indices": [
+        0,
+        4,
+        9
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 2,
+      "root_indices": [
+        0,
+        4,
+        10
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 2,
+      "root_indices": [
+        0,
+        6,
+        9
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 2,
+      "root_indices": [
+        0,
+        6,
+        10
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 2,
+      "root_indices": [
+        0,
+        9,
+        10
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 2,
+      "root_indices": [
+        3,
+        4,
+        6
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 2,
+      "root_indices": [
+        3,
+        4,
+        9
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 2,
+      "root_indices": [
+        3,
+        4,
+        10
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 2,
+      "root_indices": [
+        3,
+        6,
+        9
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 2,
+      "root_indices": [
+        3,
+        6,
+        10
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 2,
+      "root_indices": [
+        3,
+        9,
+        10
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 2,
+      "root_indices": [
+        4,
+        6,
+        9
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 2,
+      "root_indices": [
+        4,
+        6,
+        10
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 2,
+      "root_indices": [
+        4,
+        9,
+        10
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 2,
+      "root_indices": [
+        6,
+        9,
+        10
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 3,
+      "root_indices": [
+        0,
+        1,
+        2
+      ],
+      "kernel_dimension": 1,
+      "denominator_discriminant_zero": false,
+      "kernel": [
+        "-sqrt(3)/3 - 1/2 - sqrt(3)*I/3 - I/3",
+        "sqrt(3)/2 - I/2",
+        "-3*sqrt(3)/13 + 15/26 + 5*I/13 + 9*sqrt(3)*I/26",
+        "-5/12 - sqrt(3)/6 - 5*sqrt(3)*I/12 - I/2",
+        "-1/2 + sqrt(3)*I/2",
+        "1"
+      ],
+      "denominator_discriminant": "2*sqrt(3)/3 + 7/6 + 2*I + 7*sqrt(3)*I/6",
+      "undefined_node_indices": [
+        3,
+        4,
+        5
+      ],
+      "max_repeated_z": 3
+    },
+    {
+      "old_index": 3,
+      "root_indices": [
+        0,
+        1,
+        6
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 3,
+      "root_indices": [
+        0,
+        1,
+        7
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 3,
+      "root_indices": [
+        0,
+        1,
+        8
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 3,
+      "root_indices": [
+        0,
+        2,
+        6
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 3,
+      "root_indices": [
+        0,
+        2,
+        7
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 3,
+      "root_indices": [
+        0,
+        2,
+        8
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 3,
+      "root_indices": [
+        0,
+        6,
+        7
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 3,
+      "root_indices": [
+        0,
+        6,
+        8
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 3,
+      "root_indices": [
+        0,
+        7,
+        8
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 3,
+      "root_indices": [
+        1,
+        2,
+        6
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 3,
+      "root_indices": [
+        1,
+        2,
+        7
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 3,
+      "root_indices": [
+        1,
+        2,
+        8
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 3,
+      "root_indices": [
+        1,
+        6,
+        7
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 3,
+      "root_indices": [
+        1,
+        6,
+        8
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 3,
+      "root_indices": [
+        1,
+        7,
+        8
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 3,
+      "root_indices": [
+        2,
+        6,
+        7
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 3,
+      "root_indices": [
+        2,
+        6,
+        8
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 3,
+      "root_indices": [
+        2,
+        7,
+        8
+      ],
+      "kernel_dimension": 0
+    },
+    {
+      "old_index": 3,
+      "root_indices": [
+        6,
+        7,
+        8
+      ],
+      "kernel_dimension": 0
+    }
+  ],
+  "elapsed_seconds": 0.24102401733398438
+}
