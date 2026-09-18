@@ -1,4 +1,4 @@
-**Scope update:** `ORDER_IDEAL_FOURTH_POWER.md` now extends this result to all coordinatewise monomial order ideals, and covers both Eq63 and Eq64. The restrictions below describe this original proof only. Eq64 also covers supports downward only in Y0; Eq63 on that larger class remains open.
+**Scope update:** `ORDER_IDEAL_FOURTH_POWER.md` now extends this result to all coordinatewise monomial order ideals, and covers both Eq63 and Eq64. The restrictions below describe this original proof only. Both tests now cover supports downward only in Y0; see EQ63_GROUPED_POSITIVE_SORTING.md for the required deletion-and-sorting reduction.
 
 # Fourth-power necessity for the current graded standard support ledger
 

@@ -1,13 +1,18 @@
 # What the quarter-rate converse proves for the current graded ledger
 
-**Current result:** `ORDER_IDEAL_FOURTH_POWER.md` proves the fourth power for
-all coordinatewise monomial order ideals with full derivative-weighted
-coefficient prefixes, under either Eq63 or Eq64. Diagonal compression forces
-a mandatory triangle in the original support; no preservation of graded
-moments under rearrangement is assumed. Eq64 additionally covers supports downward only in Y0 by exact weighted
-height sorting. The remaining open support class below refers to Eq63 on
-supports downward only in Y0, rather than in both coordinates.
-The body records the earlier partial argument and its motivation.
+**Current result:** Both Eq63 and Eq64 have necessary fourth-power regular-MCA
+ledger cost for all Y0-downward monomial supports with full derivative-weighted
+coefficient prefixes. `ORDER_IDEAL_FOURTH_POWER.md` proves the mandatory-triangle
+case. `EQ63_GROUPED_POSITIVE_SORTING.md` reduces positive row-test certificates
+to that case by excess deletion, prefix trimming, and grouped shifts; the
+column test uses weighted height sorting. Arbitrary rearrangement need not
+improve a graded margin. Independent proof audits are saved alongside both
+arguments. The body below records the earlier missing step and its motivation;
+that monomial-support gap is now closed. HOMOGENEOUS_NONMONOMIAL_TRANSFER.md
+also proves the Eq63 result for total-degree-graded translation-stable jet
+spaces, preserving exact finite prefixes. Arbitrary filtered nonmonomial
+spaces, nonmonomial Eq64, equal-weight cutoffs, global kernel dependencies
+and actual list lower bounds remain outside the integrated result.
 
 September17,2026. A method-level consequence and a precise remaining lemma.
 This concerns the numerical upper bounds produced by a specified proof
@@ -91,7 +96,7 @@ but Eq63 is different and that conclusion has NOT been transferred.
 For epsilon>=1/n, epsilon* is of order epsilon; the corrected scale is
 necessary near integer rounding.
 
-## The exact missing step
+## The former missing step (now resolved by grouped positive sorting)
 
 In the leading normalized model, let d_q=B_q-R_q and P_j=sum_(q<=j)d_q.
 For every positive-benefit prefix the audited ratio estimate gives
@@ -133,11 +138,9 @@ unweighted benefit minus rank. No proof has been supplied that they
 preserve or improve this graded signed first moment. Applying them as
 though they did would be a gap. The possible new route is a weighted
 compression or near-extremizer stability theorem, followed by an exact
-finite-length reduction. Until then, the current-method list exponent is
-proved necessary, while fourth-power graded MCA method-tightness remains
-open for arbitrary downward supports. All coordinatewise order ideals are now handled in
-`ORDER_IDEAL_FOURTH_POWER.md`, including the column test; the open case is
-Eq63 on merely Y0-downward support.
+finite-length reduction. The new grouped positive-sorting theorem now supplies the reduction to
+`ORDER_IDEAL_FOURTH_POWER.md`, closing this gap for all Y0-downward
+full-prefix monomial supports.
 
 ## Scope and source
 

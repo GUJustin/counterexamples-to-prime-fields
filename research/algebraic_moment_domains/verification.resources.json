@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/Users/jthaler/.local/bin/python3.12",
+    "research/algebraic_moment_domains/verify_grid_certificates.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5723960420000367,
+  "peak_rss_kib": 7824,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

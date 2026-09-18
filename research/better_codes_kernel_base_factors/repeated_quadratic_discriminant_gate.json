@@ -1,0 +1,110 @@
+[
+  {
+    "e": 13,
+    "h": 17,
+    "first_threshold": 31,
+    "second_threshold": 43,
+    "rank_intercept": 14143519,
+    "rank_slope": "15417662",
+    "rank_upper": "7750227582812",
+    "required": 6802316684344,
+    "excluded": false,
+    "margin": "-947910898468"
+  },
+  {
+    "e": 14,
+    "h": 15,
+    "first_threshold": 30,
+    "second_threshold": 42,
+    "rank_intercept": 13131508,
+    "rank_slope": "14914328",
+    "rank_upper": "7352989989800",
+    "required": 6802316684344,
+    "excluded": false,
+    "margin": "-550673305456"
+  },
+  {
+    "e": 15,
+    "h": 13,
+    "first_threshold": 29,
+    "second_threshold": 41,
+    "rank_intercept": 12161526,
+    "rank_slope": "14410838",
+    "rank_upper": "6966729152812",
+    "required": 6802316684344,
+    "excluded": false,
+    "margin": "-164412468468"
+  },
+  {
+    "e": 16,
+    "h": 11,
+    "first_threshold": 28,
+    "second_threshold": 40,
+    "rank_intercept": 11233586,
+    "rank_slope": "13907192",
+    "rank_upper": "6591448479720",
+    "required": 6802316684344,
+    "excluded": true,
+    "margin": "210868204624"
+  },
+  {
+    "e": 17,
+    "h": 9,
+    "first_threshold": 27,
+    "second_threshold": 39,
+    "rank_intercept": 10347701,
+    "rank_slope": "13403390",
+    "rank_upper": "6227151378396",
+    "required": 6802316684344,
+    "excluded": true,
+    "margin": "575165305948"
+  },
+  {
+    "e": 18,
+    "h": 7,
+    "first_threshold": 26,
+    "second_threshold": 38,
+    "rank_intercept": 9503884,
+    "rank_slope": "12899432",
+    "rank_upper": "5873841256712",
+    "required": 6802316684344,
+    "excluded": true,
+    "margin": "928475427632"
+  },
+  {
+    "e": 19,
+    "h": 5,
+    "first_threshold": 25,
+    "second_threshold": 37,
+    "rank_intercept": 8702148,
+    "rank_slope": "12395318",
+    "rank_upper": "5531521522540",
+    "required": 6802316684344,
+    "excluded": true,
+    "margin": "1270795161804"
+  },
+  {
+    "e": 20,
+    "h": 3,
+    "first_threshold": 24,
+    "second_threshold": 36,
+    "rank_intercept": 7942506,
+    "rank_slope": "11891048",
+    "rank_upper": "5200195583752",
+    "required": 6802316684344,
+    "excluded": true,
+    "margin": "1602121100592"
+  },
+  {
+    "e": 21,
+    "h": 1,
+    "first_threshold": 23,
+    "second_threshold": 35,
+    "rank_intercept": 7221720,
+    "rank_slope": "11948333",
+    "rank_upper": "5026262663038",
+    "required": 6802316684344,
+    "excluded": true,
+    "margin": "1776054021306"
+  }
+]

@@ -1,0 +1,404 @@
+{
+  "rank_excess_slope": "12474280/3",
+  "rank_excess_total": "49897120",
+  "rows": [
+    {
+      "e": 13,
+      "h": 30,
+      "rank_high_node_lower": 182307,
+      "clean_agreement_lower": 101426,
+      "graph_forced": false,
+      "extremal_abstract_profile": {
+        "30": 79837,
+        "43": 182306,
+        "67": 1
+      }
+    },
+    {
+      "e": 14,
+      "h": 29,
+      "rank_high_node_lower": 186799,
+      "clean_agreement_lower": 105918,
+      "graph_forced": false,
+      "extremal_abstract_profile": {
+        "29": 75345,
+        "43": 186798,
+        "67": 1
+      }
+    },
+    {
+      "e": 15,
+      "h": 28,
+      "rank_high_node_lower": 190654,
+      "clean_agreement_lower": 109773,
+      "graph_forced": false,
+      "extremal_abstract_profile": {
+        "28": 71490,
+        "43": 190653,
+        "67": 1
+      }
+    },
+    {
+      "e": 16,
+      "h": 27,
+      "rank_high_node_lower": 193990,
+      "clean_agreement_lower": 113109,
+      "graph_forced": false,
+      "extremal_abstract_profile": {
+        "27": 68154,
+        "43": 193989,
+        "67": 1
+      }
+    },
+    {
+      "e": 17,
+      "h": 26,
+      "rank_high_node_lower": 196897,
+      "clean_agreement_lower": 116016,
+      "graph_forced": false,
+      "extremal_abstract_profile": {
+        "26": 65247,
+        "43": 196896,
+        "67": 1
+      }
+    },
+    {
+      "e": 18,
+      "h": 25,
+      "rank_high_node_lower": 199444,
+      "clean_agreement_lower": 118563,
+      "graph_forced": false,
+      "extremal_abstract_profile": {
+        "25": 62700,
+        "43": 199443,
+        "67": 1
+      }
+    },
+    {
+      "e": 19,
+      "h": 24,
+      "rank_high_node_lower": 201687,
+      "clean_agreement_lower": 120806,
+      "graph_forced": false,
+      "extremal_abstract_profile": {
+        "24": 60457,
+        "43": 201686,
+        "67": 1
+      }
+    },
+    {
+      "e": 20,
+      "h": 23,
+      "rank_high_node_lower": 203669,
+      "clean_agreement_lower": 122788,
+      "graph_forced": false,
+      "extremal_abstract_profile": {
+        "23": 58475,
+        "43": 203668,
+        "67": 1
+      }
+    },
+    {
+      "e": 21,
+      "h": 22,
+      "rank_high_node_lower": 205432,
+      "clean_agreement_lower": 124551,
+      "graph_forced": false,
+      "extremal_abstract_profile": {
+        "22": 56712,
+        "43": 205431,
+        "67": 1
+      }
+    },
+    {
+      "e": 22,
+      "h": 21,
+      "rank_high_node_lower": 206998,
+      "clean_agreement_lower": 126117,
+      "graph_forced": false,
+      "extremal_abstract_profile": {
+        "21": 55146,
+        "43": 206997,
+        "67": 1
+      }
+    },
+    {
+      "e": 23,
+      "h": 20,
+      "rank_high_node_lower": 208405,
+      "clean_agreement_lower": 127524,
+      "graph_forced": false,
+      "extremal_abstract_profile": {
+        "20": 53739,
+        "43": 208404,
+        "67": 1
+      }
+    },
+    {
+      "e": 24,
+      "h": 19,
+      "rank_high_node_lower": 209655,
+      "clean_agreement_lower": 128774,
+      "graph_forced": false,
+      "extremal_abstract_profile": {
+        "19": 52489,
+        "43": 209654,
+        "67": 1
+      }
+    },
+    {
+      "e": 25,
+      "h": 18,
+      "rank_high_node_lower": 210786,
+      "clean_agreement_lower": 129905,
+      "graph_forced": false,
+      "extremal_abstract_profile": {
+        "18": 51358,
+        "43": 210785,
+        "67": 1
+      }
+    },
+    {
+      "e": 26,
+      "h": 17,
+      "rank_high_node_lower": 211791,
+      "clean_agreement_lower": 130910,
+      "graph_forced": false,
+      "extremal_abstract_profile": {
+        "17": 50353,
+        "43": 211790,
+        "67": 1
+      }
+    },
+    {
+      "e": 27,
+      "h": 16,
+      "rank_high_node_lower": 212704,
+      "clean_agreement_lower": 131823,
+      "graph_forced": true,
+      "extremal_abstract_profile": {
+        "16": 49440,
+        "43": 212703,
+        "67": 1
+      }
+    },
+    {
+      "e": 28,
+      "h": 15,
+      "rank_high_node_lower": 213511,
+      "clean_agreement_lower": 132630,
+      "graph_forced": true,
+      "extremal_abstract_profile": {
+        "15": 48633,
+        "43": 213510,
+        "67": 1
+      }
+    },
+    {
+      "e": 29,
+      "h": 14,
+      "rank_high_node_lower": 214248,
+      "clean_agreement_lower": 133367,
+      "graph_forced": true,
+      "extremal_abstract_profile": {
+        "14": 47896,
+        "43": 214247,
+        "67": 1
+      }
+    },
+    {
+      "e": 30,
+      "h": 13,
+      "rank_high_node_lower": 214894,
+      "clean_agreement_lower": 134013,
+      "graph_forced": true,
+      "extremal_abstract_profile": {
+        "13": 47250,
+        "43": 214893,
+        "67": 1
+      }
+    },
+    {
+      "e": 31,
+      "h": 12,
+      "rank_high_node_lower": 215487,
+      "clean_agreement_lower": 134606,
+      "graph_forced": true,
+      "extremal_abstract_profile": {
+        "12": 46657,
+        "43": 215486,
+        "67": 1
+      }
+    },
+    {
+      "e": 32,
+      "h": 11,
+      "rank_high_node_lower": 215998,
+      "clean_agreement_lower": 135117,
+      "graph_forced": true,
+      "extremal_abstract_profile": {
+        "11": 46146,
+        "43": 215997,
+        "67": 1
+      }
+    },
+    {
+      "e": 33,
+      "h": 10,
+      "rank_high_node_lower": 216469,
+      "clean_agreement_lower": 135588,
+      "graph_forced": true,
+      "extremal_abstract_profile": {
+        "10": 45675,
+        "43": 216468,
+        "67": 1
+      }
+    },
+    {
+      "e": 34,
+      "h": 9,
+      "rank_high_node_lower": 216866,
+      "clean_agreement_lower": 135985,
+      "graph_forced": true,
+      "extremal_abstract_profile": {
+        "9": 45278,
+        "43": 216865,
+        "67": 1
+      }
+    },
+    {
+      "e": 35,
+      "h": 8,
+      "rank_high_node_lower": 217232,
+      "clean_agreement_lower": 136351,
+      "graph_forced": true,
+      "extremal_abstract_profile": {
+        "8": 44912,
+        "43": 217231,
+        "67": 1
+      }
+    },
+    {
+      "e": 36,
+      "h": 7,
+      "rank_high_node_lower": 217530,
+      "clean_agreement_lower": 136649,
+      "graph_forced": true,
+      "extremal_abstract_profile": {
+        "7": 44614,
+        "43": 217529,
+        "67": 1
+      }
+    },
+    {
+      "e": 37,
+      "h": 6,
+      "rank_high_node_lower": 217805,
+      "clean_agreement_lower": 136924,
+      "graph_forced": true,
+      "extremal_abstract_profile": {
+        "6": 44339,
+        "43": 217804,
+        "67": 1
+      }
+    },
+    {
+      "e": 38,
+      "h": 5,
+      "rank_high_node_lower": 218017,
+      "clean_agreement_lower": 137136,
+      "graph_forced": true,
+      "extremal_abstract_profile": {
+        "5": 44127,
+        "43": 218016,
+        "67": 1
+      }
+    },
+    {
+      "e": 39,
+      "h": 4,
+      "rank_high_node_lower": 218212,
+      "clean_agreement_lower": 137331,
+      "graph_forced": true,
+      "extremal_abstract_profile": {
+        "4": 43932,
+        "43": 218211,
+        "67": 1
+      }
+    },
+    {
+      "e": 40,
+      "h": 3,
+      "rank_high_node_lower": 218346,
+      "clean_agreement_lower": 137465,
+      "graph_forced": true,
+      "extremal_abstract_profile": {
+        "3": 43798,
+        "43": 218345,
+        "67": 1
+      }
+    },
+    {
+      "e": 41,
+      "h": 2,
+      "rank_high_node_lower": 218470,
+      "clean_agreement_lower": 137589,
+      "graph_forced": true,
+      "extremal_abstract_profile": {
+        "2": 43674,
+        "43": 218469,
+        "67": 1
+      }
+    },
+    {
+      "e": 42,
+      "h": 1,
+      "rank_high_node_lower": 218534,
+      "clean_agreement_lower": 137653,
+      "graph_forced": true,
+      "extremal_abstract_profile": {
+        "1": 43610,
+        "43": 218533,
+        "67": 1
+      }
+    },
+    {
+      "e": 43,
+      "h": 0,
+      "rank_high_node_lower": 218594,
+      "clean_agreement_lower": 137713,
+      "graph_forced": true,
+      "extremal_abstract_profile": {
+        "0": 43550,
+        "43": 218593,
+        "67": 1
+      }
+    }
+  ],
+  "quadratic_counterprofile": {
+    "inside": [
+      [
+        33,
+        1,
+        0,
+        87300
+      ],
+      [
+        43,
+        1,
+        10,
+        13108
+      ],
+      [
+        43,
+        2,
+        0,
+        80867
+      ]
+    ],
+    "outside_contact": 43,
+    "outside_count": 80869,
+    "total_rank": 6962641412584,
+    "required": 6802316684344
+  }
+}

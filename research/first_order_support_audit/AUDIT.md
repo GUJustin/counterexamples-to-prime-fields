@@ -11,16 +11,20 @@ version(7) has the same first-order curve at the rates used here.
 ## Subsequent current-version result
 
 The technical note now separately proves necessary quadratic list-budget
-and fourth-power regular-MCA-budget costs for every coordinatewise monomial
-order ideal with full derivative-weighted coefficient prefixes, using
+and fourth-power regular-MCA-budget costs for every Y0-downward monomial
+support with full derivative-weighted coefficient prefixes, using
 either the current ePrint's graded row test (Eq63) or column test (Eq64).
-The Eq64 conclusion extends to supports downward only in Y0 by exact
-weighted height sorting.
+Eq63 uses excess deletion and grouped positive sorting; Eq64 uses exact
+weighted height sorting. Both reduce to coordinatewise order ideals.
 The proof uses the exact corrected finite-length margin and this audit's
 stronger local-rank characteristic hypothesis. It does not cover merely
-Eq63 on merely Y0-downward supports, equal-weight coefficient cutoffs, or intrinsic
+equal-weight coefficient cutoffs, arbitrary filtered nonmonomial spaces, or intrinsic
 list/MCA lower bounds. See `note/current_graded_costs.tex` and
 `../current_graded_method_costs/ORDER_IDEAL_FOURTH_POWER.md`.
+A finite degreewise degeneration additionally transfers Eq63 to total-degree-graded,
+Y0-translation-stable nonmonomial jet spaces with exact full coefficient prefixes;
+no nonmonomial Eq64 conclusion is claimed. See HOMOGENEOUS_NONMONOMIAL_TRANSFER.md
+in the current graded method directory.
 The older cubic/fifth-power analysis remains historical and has its
 separately stated broader source scope.
 

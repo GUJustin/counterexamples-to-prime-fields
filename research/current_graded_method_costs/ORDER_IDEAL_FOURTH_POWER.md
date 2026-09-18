@@ -1,3 +1,5 @@
+**Further extension:** `EQ63_GROUPED_POSITIVE_SORTING.md` now reduces every positive Eq63 certificate on a Y0-downward full-prefix support to the order-ideal case proved here. Thus both Eq63 and Eq64 cover all Y0-downward supports under the stated coefficient/rank hypotheses.
+
 # Fourth-power ledger necessity for all coordinatewise order ideals
 
 This extends STANDARD_SUPPORT_FOURTH_POWER.md beyond the standard derivative/total-degree caps. It remains a lower bound on the specified declared-degree numerical ledger, not on actual lists, exceptional challenges, or every first-order proof.
@@ -88,6 +90,6 @@ for the independent proof and a counterexample to naive moment transfer.
 
 ## Scope
 
-This closes the general coordinatewise monomial-downset case for both current tests. The row-test result still requires coordinatewise downward closure. The column-test result also covers supports downward only in Y0 via the preceding sorting argument. Equal-weight coefficient cutoffs, arbitrary nonmonomial spaces, global kernel dependencies, several equations, and actual-degree reconstruction require separate arguments. The characteristic restriction remains the exact local-rank audit's guard, not merely the reconstruction guard.
+This closes the general coordinatewise monomial-downset case for both current tests. The direct triangle argument uses coordinatewise downward closure. The separate grouped positive-sorting theorem now extends Eq63 to all Y0-downward supports, while the column sorting argument above does the same for Eq64. Equal-weight coefficient cutoffs, arbitrary nonmonomial spaces, global kernel dependencies, several equations, and actual-degree reconstruction require separate arguments. The characteristic restriction remains the exact local-rank audit's guard, not merely the reconstruction guard.
 
 Primary Eq64 was checked in cached current ePrint2026/2056, Proposition5.10, page51 (`tmp/eprint-2056/paper.txt`). Diagonal compression is the proved lemma in `research/first_order_support_audit/note/main.tex`, and the inverse-margin/degree converse is `GAP_COST_CONVERSE.md` with `FINITE_LENGTH_GAP_COSTS.md`.

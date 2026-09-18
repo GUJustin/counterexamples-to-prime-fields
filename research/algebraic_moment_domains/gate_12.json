@@ -1,0 +1,30 @@
+[
+  {
+    "kind": "gaussian",
+    "m": 12,
+    "n": 144,
+    "s": 12,
+    "rank": 25,
+    "entropy_bits": 140.08678477578258,
+    "width_cost_bits": 363.65345750411785,
+    "certified_log_list_bits": -223.56667272833528,
+    "unreduced_width_bits": 511.69491275159834,
+    "normalized_gram_log2_volume": 296.5352695757176,
+    "lattice_log2_covolume": 183.92187772691443,
+    "seconds": 0.010217875009402633
+  },
+  {
+    "kind": "interval",
+    "m": 12,
+    "n": 144,
+    "s": 12,
+    "rank": 13,
+    "entropy_bits": 140.08678477578258,
+    "width_cost_bits": 343.5664606574784,
+    "certified_log_list_bits": -203.4796758816958,
+    "unreduced_width_bits": 463.76509701711336,
+    "normalized_gram_log2_volume": 306.7187874583444,
+    "lattice_log2_covolume": 146.51322683213127,
+    "seconds": 0.0036177500005578622
+  }
+]

@@ -20,9 +20,8 @@ construction, but does not yet give growing lists or a better.codes improvement.
 
 Corollary 2.4 sharpens the shrinking-gap and prime-size lower bounds by
 an explicit second-order term. The companion method audit now proves
-fourth-power inverse-margin cost for coordinatewise monomial order ideals
-under either current challenge-counting test; the column test also permits
-all supports downward in the value variable. This is a limitation of the
+fourth-power inverse-margin cost for every full-prefix monomial support
+downward in the value variable, under either current challenge-counting test. This is a limitation of the
 specified interpolation ledger, not intrinsic proximity-gap tightness.
 
 Theorem R.5 proves an exact

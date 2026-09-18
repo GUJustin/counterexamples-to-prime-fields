@@ -1,4 +1,4 @@
-\section{Necessary costs of the current order-ideal bounds}
+\section{Necessary costs of the current monomial-support bounds}
 \label{sec:current-graded}
 
 We now use the current ePrint's graded challenge count and squarefree
@@ -7,12 +7,12 @@ For monomial supports with full derivative-weighted coefficient prefixes,
 their
 quadratic list-budget and fourth-power regular-MCA-budget dependence
 cannot be improved by choosing a different such support or a smaller
-height certified by the graded row test on coordinatewise order ideals,
-or by the column-only test on supports downward in $Y_0$. This is a statement about
+height certified by either the graded row or column-only test on supports
+downward in $Y_0$. This is a statement about
 these numerical bounds, not actual component degrees, lists or exceptions.
 The support restriction below is essential.
 
-\begin{theorem}[Current order-ideal costs]\label{thm:current-graded}
+\begin{theorem}[Current downward-support costs]\label{thm:current-graded}
 Let $N\ge12$ be divisible by four, $D=N/4-1$, and let $D+1<A\le N$
 be an integer. Let $S$ be a nonempty finite monomial support downward in $Y_0$,
 let $m\ge1$, $B=\max_S(u+v)$ and $b=\max_S v$, and use all monomials
@@ -28,8 +28,8 @@ degree $q$, and put
  a_* =\frac{AN-8}{N(N-8)},\qquad
  \varepsilon_*=a_*-a_0,\qquad c_0=\frac{1-2a_0}{8}.
 \]
-Suppose $0<\varepsilon_*\le1/2000$. If $S$ is also downward in $Y_1$
-and an integer $H\ge0$ passes the following graded row test for an affine received line:
+Suppose $0<\varepsilon_*\le1/2000$. If an integer $H\ge0$ passes the
+following graded row test for an affine received line:
 \begin{equation}\label{eq:current-graded-test}
  \sum_q(H-q+1)_+(G_q-NR_q)>0.
 \end{equation}
@@ -40,7 +40,7 @@ Then
  H+1>\frac{m}{36864\varepsilon_*},\qquad
  H>\frac{m}{73728\varepsilon_*}.
 \end{equation}
-Without requiring downward closure in $Y_1$, if $G_u^{(0)}$ counts source coefficients of $Y_0$ exponent $u$
+Alternatively, if $G_u^{(0)}$ counts source coefficients of $Y_0$ exponent $u$
 and $G=\sum_uG_u^{(0)}$, $R=\sum_qR_q$, the column test
 \[
  \sum_u(H-u+1)_+G_u^{(0)}>NR(H+1)
@@ -56,7 +56,51 @@ $\Omega(D^2\varepsilon_*^{-4})$, even after optimizing the latter's
 integer incidence threshold.
 \end{theorem}
 \begin{proof}
-Normalize the prefix surpluses by $N$:
+We first reduce positive row-test feasibility to a coordinatewise order
+ideal, allowing deletions as well as sorting. Delete degrees $q>H$ and
+final diagonals $L_q<m$; their contributions are respectively zero and
+nonpositive. The remaining support is saturated and all its degrees are
+active. Maintain a decreasing suffix of column heights, all no larger
+than the remaining prefix. Choose a minimum height $c$ at column $i$ of
+that prefix, whose last column is $j$. If $i=j$, fix it. Otherwise let
+$E$ be the excess above $c$ in columns $i+1,\ldots,j$, and let $T=S\setminus E$
+be the unchanged baseline.
+
+For the excess, let $g_q$ be its normalized coefficient count, and let
+$d_q$ be its marginal local rank relative to $T$, both in total degree $q$.
+Its contribution is $\sum_q(H-q+1)(g_q-d_q)$. If this is nonpositive,
+delete $E$ and fix column $j$ at height $c$. Otherwise truncate only $E$
+at a degree maximizing its prefix surplus
+$\sum_{q\le k}(g_q-d_q)$. This weakly increases its weighted contribution
+and makes its total marginal surplus positive. Each trimmed column remains
+an initial interval above $c$, so the baseline and the minimum height persist.
+
+Move the trimmed excess one column left. For a local grade $\ell$, write
+$C(q,\ell)$ for the baseline active count and $X(q,\ell)$ for the excess
+active count. The baseline is a height-$c$ order ideal together with excess
+intervals in columns $v<i$. Its active diagonal count is nonincreasing at
+$q\ge i+c$: the order-ideal part has passed its first incomplete diagonal,
+and every earlier excess interval starts by $i+c-1$. Shifted excess occurs
+only in this range. Concavity of $f_\ell(z)=\min(z,m-\ell)$ therefore gives
+\[
+ f_\ell(C(q,\ell)+X(q+1,\ell))-f_\ell(C(q,\ell))
+ \le f_\ell(C(q+1,\ell)+X(q+1,\ell))-f_\ell(C(q+1,\ell)),
+\]
+so the shifted marginal ranks satisfy $d'_q\le d_{q+1}$. Every shifted
+coefficient prefix grows by $D-1$ and its challenge weight grows by one.
+The complete normalized margin consequently increases by at least
+\[
+ \sum_q(g_q-d_q)+\frac{D-1}{N}
+       \sum_{(u,v)\in E}(H-u-v+2)>0.
+\]
+The new last prefix column has height $c$, and all other prefix heights
+remain at least $c$. Thus each step fixes another column of the decreasing
+suffix. The process terminates at an order ideal, with the same $H$ and
+no larger degree caps. Saturation persists because degrees only decrease.
+This is positive-feasibility preservation after deletion, not monotonicity
+of the full decreasing rearrangement of an arbitrary support.
+
+For the resulting order ideal, normalize the prefix surpluses by $N$:
 \[
  P_j=\sum_{q\le j}(G_q/N-R_q).
 \]
@@ -183,12 +227,40 @@ in the current regular MCA bound is
 The other terms are nonnegative, completing the proof.
 \end{proof}
 
+\begin{corollary}[Graded nonmonomial row sources]\label{cor:graded-nonmonomial-cost}
+The Eq63 conclusion also holds for a finite-dimensional total-jet-degree-graded
+space $W=\bigoplus_q W_q\subseteq\mathbb F[Y_0,Y_1]$, stable under
+$Y_0$-translation, with the full global source
+\[
+ \mathbb F[X]W\cap\{\operatorname{wt}_{(1,D,D-1)}<mA\}.
+\]
+Assume the same characteristic guard, and use its exact finite local rank
+in each jet degree in the row test. No nonmonomial Eq64 assertion is made.
+\end{corollary}
+\begin{proof}
+In each $W_q$, echelonize by increasing $Y_1$ exponent. A pivot vector is
+$f_v=Y_0^{q-v}Y_1^v+\sum_{j>v}c_jY_0^{q-j}Y_1^j$, of derivative weight
+$Dq-v$. Its pivot determines its full coefficient-prefix length
+$mA-Dq+v$; the distinct pivots show that these prefixes form a basis of
+the weighted-cutoff source. Under $Y_1\mapsto tY_1$, rescale by $t^{-v}$.
+The pivot and its prefix length persist at $t=0$, so the limiting global
+source is exactly the full-prefix monomial source of those pivots.
+Extend the generic local action by $X\mapsto t^{-1}X$: it fixes
+$E=Y_0-XY_1$ and preserves the contact ideal. Thus the finite local rank
+is generically unchanged and cannot increase at the limit, separately
+in each total degree. Source dimensions are preserved degreewise.
+Translation stability survives the limit and gives a downward-$Y_0$
+monomial support under the characteristic guard. Caps cannot increase.
+Theorem~\ref{thm:current-graded} applies to the resulting positive row test.
+\end{proof}
+
 \begin{remark}[Scope of current-method tightness]
 The mandatory triangle follows for every coordinatewise order ideal,
-without assuming that rearrangement preserves a graded moment. For the row test, supports
-downward only in $Y_0$ remain outside the argument; for the column test,
-height sorting handles this larger class. Neither argument covers
-nonmonomial spaces or the alternative equal-weight coefficient cutoff. The characteristic hypothesis remains the stronger
+without assuming that rearrangement preserves a graded moment. Both tests cover supports downward only in $Y_0$: the row test uses
+excess deletion and grouped positive sorting, while the column test uses
+weighted height sorting. The preceding corollary covers a graded translation-stable nonmonomial
+class for Eq63 only. Arbitrary filtered nonmonomial spaces and the
+alternative equal-weight coefficient cutoff remain outside these statements. The characteristic hypothesis remains the stronger
 local-rank hypothesis of this note, not merely the reconstruction
 condition $p>\max\{D,b\}$. Optimizing actual component degrees, exploiting
 global kernel dependencies, or using additional equations is outside the
