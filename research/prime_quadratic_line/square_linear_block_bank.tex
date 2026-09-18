@@ -1,0 +1,231 @@
+% A finite-field two-ray square-linear bank and disjoint fresh blocks.
+\subsection{A square-linear bank with a constant relative gap}
+\label{subsec:square-linear-block-bank}
+
+Allowing scalar multiples of bank words changes the fresh-coordinate
+mechanism.  Two families, consisting of multiples of $X^2$ and constant
+polynomials, have a regular core constructed inside the multiplicative
+group of the prime field.  Disjoint coordinate blocks then give a
+constant relative gap with a linear number of exceptional labels.
+
+\begin{lemma}[Finite square-linear block profile]
+\label{lem:finite-square-linear-block-profile}
+Let $t\ge2$, let $D>4t+3$ be an integer, and let $p$ be an odd prime.
+Suppose
+\[
+ t^2<(p-1)/2,\qquad
+ 2t^2+tD\le n,\qquad p>n+6t+1.
+\]
+There is a length-$n$, dimension-three Reed--Solomon code over
+$\mathbb F_p$ and an affine pencil $w_\lambda=f+\lambda g$ with
+the following properties.  Put $T=D+2t$.  Its ordinary common
+agreement is $D$, and two nonzero parameters can be chosen as
+endpoints having exact agreement $D$ with the code.  There is a
+set $\mathcal B\subseteq\mathbb F_p^*$ of size $t^2$ such that
+the threshold-$T$ list is a singleton exactly for
+$\lambda\in\{0\}\cup\mathcal B$ and is empty otherwise.
+For $\lambda\in\mathcal B$ the maximum agreement is exactly $T$;
+at $\lambda=0$ it is exactly $tD$.
+At the relaxed threshold $D$, the list has exactly $t$ members for
+every nonzero $\lambda$, and exactly one member for $\lambda=0$.
+Neither chosen endpoint lies in $\{0\}\cup\mathcal B$.
+\end{lemma}
+\begin{proof}
+Let $\gamma$ generate $\mathbb F_p^*$, put $z=\gamma^2$, and set
+\[
+ a_i=z^i,\qquad b_j=z^{tj},\qquad 0\le i,j<t.
+\]
+Use the $2t$ bank polynomials
+\[
+ Q_i(X)=a_iX^2=(\gamma^iX)^2,
+ \qquad P_j(X)=b_j=(\gamma^{tj})^2.
+\]
+For every pair $(i,j)$ put both coordinates
+$x=\pm\gamma^{tj-i}$ in the core, with $f(x)=b_j$ and $g(x)=0$.
+The $t^2$ exponents $tj-i$ form an integer interval of length $t^2$;
+the hypothesis on $(p-1)/2$ therefore makes all $2t^2$ coordinates
+distinct.  At each such coordinate exactly $Q_i$ and $P_j$ match.
+Each bank word has exactly $2t$ core matches.  Every polynomial
+outside the bank has at most $2t$ core matches: count each matching
+coordinate against its two owners, using at most two roots for its
+difference with each of the $2t$ bank words.  In addition, a pure
+quadratic $aX^2$ with $a\notin\{a_i\}$ has no core matches.
+
+Choose disjoint sets $E_0,\ldots,E_{t-1}$ of $D$ nonzero fresh
+coordinates each, outside the core.  On $E_j$ put
+\[
+ f(x)=0,\qquad g(x)=x^2/b_j.
+\]
+Choose two distinct nonsquare labels $\lambda_-,\lambda_+$.
+Complete the domain to $n$ coordinates with neutral values
+$f(x)=x^3$, $g(x)=0$.  In doing so exclude zero, all $a_i$, all
+roots of $X^3-b_j$, and all $2t$ values
+$\lambda_-/b_j,\lambda_+/b_j$.
+There are at most $6t+1$ excluded field elements, in addition to
+the coordinates already used, so the assumptions guarantee room.
+No bank polynomial matches at a neutral coordinate.  No endpoint
+polynomial $(\lambda_\pm/b_j)X^2$ matches there either.
+
+For a nonzero label $\lambda$, a pure quadratic $aX^2$ matches
+the fresh block $E_j$ exactly when $a=\lambda/b_j$.
+Thus exactly $t$ pure quadratics have fresh matches, and each
+matches exactly one whole block.  If $a=a_i$, it also has its
+$2t$ core matches and no neutral matches.  Otherwise it has no
+core matches and at most one neutral match, since $x^3=ax^2$
+on nonzero coordinates forces $x=a$.
+A polynomial that is not a pure quadratic has at most two matches
+on each fresh block.  If it is a bank constant, it has at most
+$4t$ total matches; otherwise it has at most
+$2t+2t+3=4t+3<D$ total matches.
+
+The products
+\[
+ \mathcal B=\{a_i b_j:0\le i,j<t\}
+            =\{z^k:0\le k<t^2\}
+\]
+are distinct.  At a label in $\mathcal B$, exactly one of the
+$t$ qualifying pure quadratics is a bank word and has exactly
+$D+2t=T$ matches.  The others have at most $D+1<T$.
+Outside $\mathcal B\cup\{0\}$, all qualifying pure quadratics
+have between $D$ and $D+1$ matches.  These observations prove
+the asserted profiles at every nonzero label.  At zero, the zero
+polynomial matches exactly the $tD$ fresh coordinates.  Any other
+polynomial has at most two fresh zeros, at most $2t$ core matches,
+and at most three neutral matches, hence fewer than $D$ matches.
+Since $t\ge2$ and $D>4t+3$, one has $tD\ge T$.
+
+Both chosen endpoint labels are nonsquares, whereas every element
+of $\mathcal B$ is a square.  Their $t$ qualifying pure quadratics
+have no neutral matches by construction, so each endpoint has
+exact maximum agreement $D$.
+
+It remains to check ordinary common agreement.  A nonzero pure
+quadratic explaining the direction agrees with $g$ on at most
+one fresh block and nowhere on the zero-direction block, giving
+at most $D$ matches.  The pair of explaining polynomials
+$(0,X^2/b_j)$ attains $D$ on $E_j$.  A nonzero direction polynomial
+that is not pure has at most $2t$ matches on the fresh blocks and
+at most two zeros elsewhere, hence at most $2t+2<D$ matches.
+A zero explaining direction restricts common matches to the core
+and neutral coordinates; every intercept polynomial has at most
+$2t+3<D$ matches there.  Therefore common agreement is exactly $D$.
+\end{proof}
+
+\begin{theorem}[Constant relative gap from a square-linear bank]
+\label{thm:square-linear-block-bank}
+For every integer $t\ge400$, there is a prime
+\[
+ 256t^2<p<512t^2
+\]
+and a length-$n$, dimension-three Reed--Solomon code over $\mathbb F_p$,
+where $n=128t^2+1$, with two received words $F,G$ satisfying
+\[
+ \operatorname{agr}_3(F)=\operatorname{agr}_3(G)
+ =\operatorname{CA}_3(F,G)=A=14t,
+ \qquad n a_1(3/n)<A<T=16t<\sqrt{2n}.
+\]
+Exactly $t^2+1>p/512$ nonendpoint parameters have singleton
+threshold-$T$ lists on $(1-\lambda)F+\lambda G$; the other lists
+at that threshold are empty.  The source loss and capacity margin obey
+\[
+ \frac{T-A}{n}=\frac{2t}{128t^2+1}=\Theta(n^{-1/2}),
+ \qquad
+ \frac{(T-A)/n}{(T-3)/n}=\frac{2t}{16t-3}\longrightarrow\frac18.
+\]
+At threshold $A$, the line-local list size is $t$ except at one
+parameter, where it is one.  The alphabet size is $p=\Theta(n)$.
+\end{theorem}
+\begin{proof}
+Bertrand's postulate supplies a prime in the displayed interval.
+Apply Lemma~\ref{lem:finite-square-linear-block-profile} with $D=14t$.
+All its size conditions hold: the core and fresh blocks together
+have $16t^2$ coordinates, and $p>n+6t+1$.
+Choose $F=w_{\lambda_-}$ and $G=w_{\lambda_+}$ from that lemma.
+The invertible change of intercept and direction preserves common
+agreement, and the affine parameter change bijects the original
+pencil.  Its $t^2+1$ successful labels avoid the two endpoints.
+
+The definition of $n$ gives $T^2<2n$ exactly.  For the first-order
+comparison use the established bound
+\[
+ n a_1(3/n)\le\sqrt{3n/2}+(3n/8)^{1/4}.
+\]
+For $t\ge400$, its two terms are bounded respectively by
+$(13857/1000)t$ and $(8/3)\sqrt t\le(2/15)t$.
+Their sum is strictly smaller than $14t$.
+The remaining assertions follow from the exact profiles in the lemma.
+\end{proof}
+
+More generally, a fixed $c>4$, block size $D=\lfloor ct\rfloor$,
+and $n=\lfloor(D+2t)^2/2\rfloor+1$ give the same exact profiles
+for all sufficiently large $t$, with a prime alphabet of size
+$\Theta(n)$.  The established first-order comparison places the
+source above first order whenever
+\[
+ \frac{c}{c+2}>\frac{\sqrt3}{2},
+ \qquad\text{equivalently }c>6+4\sqrt3.
+\]
+The relative loss tends to $2/(c+2)$, and can thus approach
+$1-\sqrt3/2$ from below while keeping that strict comparison.
+The exceptional-label count is $\Theta(n)$ throughout.  This is
+a constant-relative-gap construction at rate $3/n$; it does not
+give a superlinear exceptional count or a fixed-rate example.
+The finite construction also works over any odd finite field
+$\mathbb F_q$ under the same conditions with $p$ replaced by $q$.
+It uses the cyclic multiplicative group and polynomial root bounds,
+so it does not give a separation specific to prime characteristic.
+
+\begin{corollary}[A certified length-$65536$ instance]
+\label{cor:square-linear-block-bank-65536}
+Over $\mathbb F_{131071}$ there is a dimension-three Reed--Solomon
+code on a selected domain of size $n=65536$ and two received words
+$F,G$ with
+\[
+ \operatorname{agr}_3(F)=\operatorname{agr}_3(G)
+ =\operatorname{CA}_3(F,G)=330.
+\]
+Exactly $257$ nonendpoint affine parameters have singleton lists
+at agreement threshold $362$; all other lists at that threshold
+are empty.  Over the entire affine line, the exact maximum-agreement
+profile is
+\[
+\begin{array}{c|rrrr}
+ \text{maximum agreement}&330&331&362&5280\\ \hline
+ \text{number of parameters}&31&130783&256&1.
+\end{array}
+\]
+At threshold $330$, the list has $16$ members except at the single
+parameter with agreement $5280$, where it has one.  Moreover,
+\[
+ n a_1(3/n)<327<330<362<\sqrt{2n},\qquad
+ \epsilon=\frac1{2048},\qquad
+ \eta=\frac{359}{65536},\qquad
+ \frac\epsilon\eta=\frac{32}{359}.
+\]
+\end{corollary}
+\begin{proof}
+Apply Lemma~\ref{lem:finite-square-linear-block-profile} with
+$p=131071$, $t=16$, $D=330$, and $n=65536$.
+The certified primitive generator is $3$, so $z=9$; choose original
+endpoint labels $3$ and $27$.  The standard affine parameter $u$
+corresponds to the original label $3+24u$.  Its successful set is
+therefore the inverse image of
+$\{0\}\cup\{9^k:0\le k<256\}$, which has $257$ elements and
+avoids both endpoints.
+
+The recorded domain consists of $512$ core, $5280$ fresh, and
+$59744$ neutral coordinates.  The exact recipe and full profile
+are reproduced by
+\path{research/prime_quadratic_line/two_ray_bank_65536_certificate/verify.py},
+with parameters and coordinate-selection rules in the adjacent
+\path{recipe.json}.  The verifier checks the field, every bank
+profile, both endpoints, and all native label maxima, using the
+root bounds from the lemma for non-pure quadratics.  It gives the
+displayed histogram and exact common agreement.  This is a
+selected evaluation domain, not a prescribed NTT subgroup.
+
+Finally, $\sqrt{98304}<314$ and $24576^{1/4}<13$, so the established
+first-order bound is strictly below $327$.  Also
+$362^2=131044<131072=2n$.  The two normalized gaps are
+$(362-330)/65536$ and $(362-3)/65536$, giving the stated values.
+\end{proof}

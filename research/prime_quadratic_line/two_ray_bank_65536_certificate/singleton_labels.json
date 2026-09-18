@@ -1,0 +1,2056 @@
+[
+  {
+    "label": 0,
+    "witness_coefficient": 0,
+    "exact_agreement": 5280,
+    "standard_affine_parameter": 114687
+  },
+  {
+    "label": 1,
+    "witness_coefficient": 1,
+    "bank_i": 0,
+    "fresh_block_j": 0,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 76458
+  },
+  {
+    "label": 9,
+    "witness_coefficient": 9,
+    "bank_i": 1,
+    "fresh_block_j": 0,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 32768
+  },
+  {
+    "label": 81,
+    "witness_coefficient": 81,
+    "bank_i": 2,
+    "fresh_block_j": 0,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 32771
+  },
+  {
+    "label": 578,
+    "witness_coefficient": 64413,
+    "bank_i": 7,
+    "fresh_block_j": 1,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 38253
+  },
+  {
+    "label": 627,
+    "witness_coefficient": 33659,
+    "bank_i": 10,
+    "fresh_block_j": 5,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 26
+  },
+  {
+    "label": 729,
+    "witness_coefficient": 729,
+    "bank_i": 3,
+    "fresh_block_j": 0,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 32798
+  },
+  {
+    "label": 1157,
+    "witness_coefficient": 64413,
+    "bank_i": 7,
+    "fresh_block_j": 14,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 54661
+  },
+  {
+    "label": 1762,
+    "witness_coefficient": 6561,
+    "bank_i": 4,
+    "fresh_block_j": 6,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 125683
+  },
+  {
+    "label": 3095,
+    "witness_coefficient": 113135,
+    "bank_i": 14,
+    "fresh_block_j": 10,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 21974
+  },
+  {
+    "label": 5028,
+    "witness_coefficient": 55433,
+    "bank_i": 8,
+    "fresh_block_j": 2,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 49361
+  },
+  {
+    "label": 5202,
+    "witness_coefficient": 55433,
+    "bank_i": 8,
+    "fresh_block_j": 1,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 82136
+  },
+  {
+    "label": 5643,
+    "witness_coefficient": 40789,
+    "bank_i": 11,
+    "fresh_block_j": 5,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 235
+  },
+  {
+    "label": 6266,
+    "witness_coefficient": 1,
+    "bank_i": 0,
+    "fresh_block_j": 2,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 38490
+  },
+  {
+    "label": 6313,
+    "witness_coefficient": 729,
+    "bank_i": 3,
+    "fresh_block_j": 14,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 76721
+  },
+  {
+    "label": 6550,
+    "witness_coefficient": 113135,
+    "bank_i": 14,
+    "fresh_block_j": 1,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 60347
+  },
+  {
+    "label": 6561,
+    "witness_coefficient": 6561,
+    "bank_i": 4,
+    "fresh_block_j": 0,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 33041
+  },
+  {
+    "label": 6852,
+    "witness_coefficient": 81,
+    "bank_i": 2,
+    "fresh_block_j": 8,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 49437
+  },
+  {
+    "label": 7157,
+    "witness_coefficient": 7157,
+    "bank_i": 6,
+    "fresh_block_j": 0,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 54911
+  },
+  {
+    "label": 7313,
+    "witness_coefficient": 81,
+    "bank_i": 2,
+    "fresh_block_j": 15,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 120453
+  },
+  {
+    "label": 8607,
+    "witness_coefficient": 7157,
+    "bank_i": 6,
+    "fresh_block_j": 15,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 65894
+  },
+  {
+    "label": 9443,
+    "witness_coefficient": 6561,
+    "bank_i": 4,
+    "fresh_block_j": 12,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 87774
+  },
+  {
+    "label": 10413,
+    "witness_coefficient": 55433,
+    "bank_i": 8,
+    "fresh_block_j": 14,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 98737
+  },
+  {
+    "label": 11651,
+    "witness_coefficient": 7157,
+    "bank_i": 6,
+    "fresh_block_j": 6,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 87866
+  },
+  {
+    "label": 11866,
+    "witness_coefficient": 7157,
+    "bank_i": 6,
+    "fresh_block_j": 7,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 126104
+  },
+  {
+    "label": 13391,
+    "witness_coefficient": 113135,
+    "bank_i": 14,
+    "fresh_block_j": 15,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 22403
+  },
+  {
+    "label": 14055,
+    "witness_coefficient": 33659,
+    "bank_i": 10,
+    "fresh_block_j": 2,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 66121
+  },
+  {
+    "label": 14252,
+    "witness_coefficient": 729,
+    "bank_i": 3,
+    "fresh_block_j": 9,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 6055
+  },
+  {
+    "label": 14380,
+    "witness_coefficient": 729,
+    "bank_i": 3,
+    "fresh_block_j": 10,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 93441
+  },
+  {
+    "label": 14410,
+    "witness_coefficient": 59049,
+    "bank_i": 5,
+    "fresh_block_j": 8,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 126210
+  },
+  {
+    "label": 14692,
+    "witness_coefficient": 7157,
+    "bank_i": 6,
+    "fresh_block_j": 14,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 93454
+  },
+  {
+    "label": 15376,
+    "witness_coefficient": 9,
+    "bank_i": 1,
+    "fresh_block_j": 15,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 27947
+  },
+  {
+    "label": 15858,
+    "witness_coefficient": 59049,
+    "bank_i": 5,
+    "fresh_block_j": 6,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 82580
+  },
+  {
+    "label": 16147,
+    "witness_coefficient": 81,
+    "bank_i": 2,
+    "fresh_block_j": 9,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 44363
+  },
+  {
+    "label": 17077,
+    "witness_coefficient": 113135,
+    "bank_i": 14,
+    "fresh_block_j": 3,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 11634
+  },
+  {
+    "label": 17083,
+    "witness_coefficient": 9,
+    "bank_i": 1,
+    "fresh_block_j": 6,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 44402
+  },
+  {
+    "label": 17318,
+    "witness_coefficient": 9,
+    "bank_i": 1,
+    "fresh_block_j": 3,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 104486
+  },
+  {
+    "label": 19028,
+    "witness_coefficient": 6561,
+    "bank_i": 4,
+    "fresh_block_j": 5,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 6254
+  },
+  {
+    "label": 19210,
+    "witness_coefficient": 55433,
+    "bank_i": 8,
+    "fresh_block_j": 8,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 126410
+  },
+  {
+    "label": 19480,
+    "witness_coefficient": 7157,
+    "bank_i": 6,
+    "fresh_block_j": 2,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 28118
+  },
+  {
+    "label": 19855,
+    "witness_coefficient": 104959,
+    "bank_i": 12,
+    "fresh_block_j": 4,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 110053
+  },
+  {
+    "label": 20582,
+    "witness_coefficient": 105684,
+    "bank_i": 9,
+    "fresh_block_j": 11,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 104622
+  },
+  {
+    "label": 21271,
+    "witness_coefficient": 81,
+    "bank_i": 2,
+    "fresh_block_j": 5,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 110112
+  },
+  {
+    "label": 22557,
+    "witness_coefficient": 27134,
+    "bank_i": 13,
+    "fresh_block_j": 2,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 99243
+  },
+  {
+    "label": 22622,
+    "witness_coefficient": 100718,
+    "bank_i": 15,
+    "fresh_block_j": 3,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 104707
+  },
+  {
+    "label": 22676,
+    "witness_coefficient": 81,
+    "bank_i": 2,
+    "fresh_block_j": 6,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 6406
+  },
+  {
+    "label": 23176,
+    "witness_coefficient": 27134,
+    "bank_i": 13,
+    "fresh_block_j": 14,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 28272
+  },
+  {
+    "label": 23662,
+    "witness_coefficient": 81,
+    "bank_i": 2,
+    "fresh_block_j": 1,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 61060
+  },
+  {
+    "label": 23673,
+    "witness_coefficient": 105684,
+    "bank_i": 9,
+    "fresh_block_j": 12,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 33754
+  },
+  {
+    "label": 24357,
+    "witness_coefficient": 1,
+    "bank_i": 0,
+    "fresh_block_j": 8,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 99318
+  },
+  {
+    "label": 24690,
+    "witness_coefficient": 105684,
+    "bank_i": 9,
+    "fresh_block_j": 3,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 82948
+  },
+  {
+    "label": 24791,
+    "witness_coefficient": 81,
+    "bank_i": 2,
+    "fresh_block_j": 3,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 22878
+  },
+  {
+    "label": 24943,
+    "witness_coefficient": 113135,
+    "bank_i": 14,
+    "fresh_block_j": 9,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 110265
+  },
+  {
+    "label": 25051,
+    "witness_coefficient": 104959,
+    "bank_i": 12,
+    "fresh_block_j": 6,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 44734
+  },
+  {
+    "label": 26234,
+    "witness_coefficient": 55433,
+    "bank_i": 8,
+    "fresh_block_j": 6,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 39322
+  },
+  {
+    "label": 26925,
+    "witness_coefficient": 105684,
+    "bank_i": 9,
+    "fresh_block_j": 10,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 99425
+  },
+  {
+    "label": 27134,
+    "witness_coefficient": 27134,
+    "bank_i": 13,
+    "fresh_block_j": 0,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 104895
+  },
+  {
+    "label": 27818,
+    "witness_coefficient": 33659,
+    "bank_i": 10,
+    "fresh_block_j": 6,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 39388
+  },
+  {
+    "label": 27855,
+    "witness_coefficient": 100718,
+    "bank_i": 15,
+    "fresh_block_j": 10,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 66696
+  },
+  {
+    "label": 28048,
+    "witness_coefficient": 9,
+    "bank_i": 1,
+    "fresh_block_j": 11,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 28475
+  },
+  {
+    "label": 28149,
+    "witness_coefficient": 33659,
+    "bank_i": 10,
+    "fresh_block_j": 1,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 99476
+  },
+  {
+    "label": 28326,
+    "witness_coefficient": 105684,
+    "bank_i": 9,
+    "fresh_block_j": 9,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 17564
+  },
+  {
+    "label": 28898,
+    "witness_coefficient": 729,
+    "bank_i": 3,
+    "fresh_block_j": 13,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 39433
+  },
+  {
+    "label": 30728,
+    "witness_coefficient": 6561,
+    "bank_i": 4,
+    "fresh_block_j": 8,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 72277
+  },
+  {
+    "label": 30921,
+    "witness_coefficient": 9,
+    "bank_i": 1,
+    "fresh_block_j": 9,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 34056
+  },
+  {
+    "label": 31025,
+    "witness_coefficient": 1,
+    "bank_i": 0,
+    "fresh_block_j": 6,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 121441
+  },
+  {
+    "label": 31333,
+    "witness_coefficient": 40789,
+    "bank_i": 11,
+    "fresh_block_j": 4,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 12228
+  },
+  {
+    "label": 31702,
+    "witness_coefficient": 104959,
+    "bank_i": 12,
+    "fresh_block_j": 14,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 61395
+  },
+  {
+    "label": 31756,
+    "witness_coefficient": 9,
+    "bank_i": 1,
+    "fresh_block_j": 1,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 94165
+  },
+  {
+    "label": 32969,
+    "witness_coefficient": 59049,
+    "bank_i": 5,
+    "fresh_block_j": 4,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 121522
+  },
+  {
+    "label": 33659,
+    "witness_coefficient": 33659,
+    "bank_i": 10,
+    "fresh_block_j": 0,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 88783
+  },
+  {
+    "label": 33825,
+    "witness_coefficient": 40789,
+    "bank_i": 11,
+    "fresh_block_j": 3,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 34177
+  },
+  {
+    "label": 34579,
+    "witness_coefficient": 7157,
+    "bank_i": 6,
+    "fresh_block_j": 4,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 45131
+  },
+  {
+    "label": 35099,
+    "witness_coefficient": 7157,
+    "bank_i": 6,
+    "fresh_block_j": 9,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 88843
+  },
+  {
+    "label": 35372,
+    "witness_coefficient": 27134,
+    "bank_i": 13,
+    "fresh_block_j": 11,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 6935
+  },
+  {
+    "label": 35403,
+    "witness_coefficient": 113135,
+    "bank_i": 14,
+    "fresh_block_j": 4,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 1475
+  },
+  {
+    "label": 40181,
+    "witness_coefficient": 59049,
+    "bank_i": 5,
+    "fresh_block_j": 5,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 56287
+  },
+  {
+    "label": 40789,
+    "witness_coefficient": 40789,
+    "bank_i": 11,
+    "fresh_block_j": 0,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 12622
+  },
+  {
+    "label": 41812,
+    "witness_coefficient": 55433,
+    "bank_i": 8,
+    "fresh_block_j": 15,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 94584
+  },
+  {
+    "label": 41819,
+    "witness_coefficient": 105684,
+    "bank_i": 9,
+    "fresh_block_j": 8,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 89123
+  },
+  {
+    "label": 42006,
+    "witness_coefficient": 6561,
+    "bank_i": 4,
+    "fresh_block_j": 3,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 18134
+  },
+  {
+    "label": 42262,
+    "witness_coefficient": 100718,
+    "bank_i": 15,
+    "fresh_block_j": 14,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 61835
+  },
+  {
+    "label": 42283,
+    "witness_coefficient": 104959,
+    "bank_i": 12,
+    "fresh_block_j": 3,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 45452
+  },
+  {
+    "label": 42459,
+    "witness_coefficient": 105684,
+    "bank_i": 9,
+    "fresh_block_j": 4,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 1769
+  },
+  {
+    "label": 42856,
+    "witness_coefficient": 27134,
+    "bank_i": 13,
+    "fresh_block_j": 8,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 29092
+  },
+  {
+    "label": 43310,
+    "witness_coefficient": 100718,
+    "bank_i": 15,
+    "fresh_block_j": 6,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 105569
+  },
+  {
+    "label": 43649,
+    "witness_coefficient": 55433,
+    "bank_i": 8,
+    "fresh_block_j": 7,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 121967
+  },
+  {
+    "label": 43681,
+    "witness_coefficient": 729,
+    "bank_i": 3,
+    "fresh_block_j": 11,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 78278
+  },
+  {
+    "label": 43760,
+    "witness_coefficient": 105684,
+    "bank_i": 9,
+    "fresh_block_j": 5,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 72820
+  },
+  {
+    "label": 44249,
+    "witness_coefficient": 64413,
+    "bank_i": 7,
+    "fresh_block_j": 2,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 121992
+  },
+  {
+    "label": 45252,
+    "witness_coefficient": 105684,
+    "bank_i": 9,
+    "fresh_block_j": 2,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 51037
+  },
+  {
+    "label": 46682,
+    "witness_coefficient": 55433,
+    "bank_i": 8,
+    "fresh_block_j": 10,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 40174
+  },
+  {
+    "label": 46818,
+    "witness_coefficient": 105684,
+    "bank_i": 9,
+    "fresh_block_j": 1,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 83870
+  },
+  {
+    "label": 47126,
+    "witness_coefficient": 1,
+    "bank_i": 0,
+    "fresh_block_j": 9,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 105728
+  },
+  {
+    "label": 47624,
+    "witness_coefficient": 27134,
+    "bank_i": 13,
+    "fresh_block_j": 4,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 72981
+  },
+  {
+    "label": 48408,
+    "witness_coefficient": 55433,
+    "bank_i": 8,
+    "fresh_block_j": 4,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 116704
+  },
+  {
+    "label": 49069,
+    "witness_coefficient": 64413,
+    "bank_i": 7,
+    "fresh_block_j": 4,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 12967
+  },
+  {
+    "label": 49657,
+    "witness_coefficient": 27134,
+    "bank_i": 13,
+    "fresh_block_j": 7,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 78527
+  },
+  {
+    "label": 50546,
+    "witness_coefficient": 113135,
+    "bank_i": 14,
+    "fresh_block_j": 5,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 40335
+  },
+  {
+    "label": 50570,
+    "witness_coefficient": 729,
+    "bank_i": 3,
+    "fresh_block_j": 4,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 40336
+  },
+  {
+    "label": 50787,
+    "witness_coefficient": 104959,
+    "bank_i": 12,
+    "fresh_block_j": 5,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 2116
+  },
+  {
+    "label": 51610,
+    "witness_coefficient": 1,
+    "bank_i": 0,
+    "fresh_block_j": 14,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 127760
+  },
+  {
+    "label": 51862,
+    "witness_coefficient": 104959,
+    "bank_i": 12,
+    "fresh_block_j": 1,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 62235
+  },
+  {
+    "label": 53700,
+    "witness_coefficient": 113135,
+    "bank_i": 14,
+    "fresh_block_j": 7,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 51389
+  },
+  {
+    "label": 53749,
+    "witness_coefficient": 64413,
+    "bank_i": 7,
+    "fresh_block_j": 9,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 13162
+  },
+  {
+    "label": 54167,
+    "witness_coefficient": 33659,
+    "bank_i": 10,
+    "fresh_block_j": 11,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 24102
+  },
+  {
+    "label": 54318,
+    "witness_coefficient": 1,
+    "bank_i": 0,
+    "fresh_block_j": 10,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 18647
+  },
+  {
+    "label": 55433,
+    "witness_coefficient": 55433,
+    "bank_i": 8,
+    "fresh_block_j": 0,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 122458
+  },
+  {
+    "label": 56206,
+    "witness_coefficient": 113135,
+    "bank_i": 14,
+    "fresh_block_j": 11,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 62416
+  },
+  {
+    "label": 56394,
+    "witness_coefficient": 9,
+    "bank_i": 1,
+    "fresh_block_j": 2,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 84269
+  },
+  {
+    "label": 56485,
+    "witness_coefficient": 100718,
+    "bank_i": 15,
+    "fresh_block_j": 4,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 13276
+  },
+  {
+    "label": 56817,
+    "witness_coefficient": 6561,
+    "bank_i": 4,
+    "fresh_block_j": 14,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 35135
+  },
+  {
+    "label": 57027,
+    "witness_coefficient": 33659,
+    "bank_i": 10,
+    "fresh_block_j": 14,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 2376
+  },
+  {
+    "label": 58318,
+    "witness_coefficient": 7157,
+    "bank_i": 6,
+    "fresh_block_j": 1,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 62504
+  },
+  {
+    "label": 58950,
+    "witness_coefficient": 100718,
+    "bank_i": 15,
+    "fresh_block_j": 1,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 18840
+  },
+  {
+    "label": 59049,
+    "witness_coefficient": 59049,
+    "bank_i": 5,
+    "fresh_block_j": 0,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 35228
+  },
+  {
+    "label": 59303,
+    "witness_coefficient": 729,
+    "bank_i": 3,
+    "fresh_block_j": 12,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 24316
+  },
+  {
+    "label": 60178,
+    "witness_coefficient": 1,
+    "bank_i": 0,
+    "fresh_block_j": 3,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 128117
+  },
+  {
+    "label": 60368,
+    "witness_coefficient": 729,
+    "bank_i": 3,
+    "fresh_block_j": 5,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 73512
+  },
+  {
+    "label": 61668,
+    "witness_coefficient": 729,
+    "bank_i": 3,
+    "fresh_block_j": 8,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 51721
+  },
+  {
+    "label": 61701,
+    "witness_coefficient": 100718,
+    "bank_i": 15,
+    "fresh_block_j": 5,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 100874
+  },
+  {
+    "label": 61917,
+    "witness_coefficient": 6561,
+    "bank_i": 4,
+    "fresh_block_j": 4,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 100883
+  },
+  {
+    "label": 62184,
+    "witness_coefficient": 104959,
+    "bank_i": 12,
+    "fresh_block_j": 11,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 117278
+  },
+  {
+    "label": 63066,
+    "witness_coefficient": 113135,
+    "bank_i": 14,
+    "fresh_block_j": 6,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 84547
+  },
+  {
+    "label": 63116,
+    "witness_coefficient": 55433,
+    "bank_i": 8,
+    "fresh_block_j": 5,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 8091
+  },
+  {
+    "label": 63490,
+    "witness_coefficient": 100718,
+    "bank_i": 15,
+    "fresh_block_j": 8,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 128255
+  },
+  {
+    "label": 63870,
+    "witness_coefficient": 27134,
+    "bank_i": 13,
+    "fresh_block_j": 5,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 19045
+  },
+  {
+    "label": 64413,
+    "witness_coefficient": 64413,
+    "bank_i": 7,
+    "fresh_block_j": 0,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 100987
+  },
+  {
+    "label": 64843,
+    "witness_coefficient": 81,
+    "bank_i": 2,
+    "fresh_block_j": 12,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 46392
+  },
+  {
+    "label": 65817,
+    "witness_coefficient": 729,
+    "bank_i": 3,
+    "fresh_block_j": 15,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 35510
+  },
+  {
+    "label": 66199,
+    "witness_coefficient": 40789,
+    "bank_i": 11,
+    "fresh_block_j": 9,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 111984
+  },
+  {
+    "label": 67603,
+    "witness_coefficient": 33659,
+    "bank_i": 10,
+    "fresh_block_j": 13,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 46507
+  },
+  {
+    "label": 68069,
+    "witness_coefficient": 6561,
+    "bank_i": 4,
+    "fresh_block_j": 15,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 57449
+  },
+  {
+    "label": 68255,
+    "witness_coefficient": 64413,
+    "bank_i": 7,
+    "fresh_block_j": 12,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 24689
+  },
+  {
+    "label": 69835,
+    "witness_coefficient": 64413,
+    "bank_i": 7,
+    "fresh_block_j": 11,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 46600
+  },
+  {
+    "label": 71112,
+    "witness_coefficient": 64413,
+    "bank_i": 7,
+    "fresh_block_j": 13,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 117650
+  },
+  {
+    "label": 71277,
+    "witness_coefficient": 9,
+    "bank_i": 1,
+    "fresh_block_j": 14,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 101273
+  },
+  {
+    "label": 71507,
+    "witness_coefficient": 104959,
+    "bank_i": 12,
+    "fresh_block_j": 9,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 90360
+  },
+  {
+    "label": 71942,
+    "witness_coefficient": 113135,
+    "bank_i": 14,
+    "fresh_block_j": 2,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 106762
+  },
+  {
+    "label": 72476,
+    "witness_coefficient": 40789,
+    "bank_i": 11,
+    "fresh_block_j": 15,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 8481
+  },
+  {
+    "label": 72527,
+    "witness_coefficient": 1,
+    "bank_i": 0,
+    "fresh_block_j": 4,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 24867
+  },
+  {
+    "label": 73013,
+    "witness_coefficient": 729,
+    "bank_i": 3,
+    "fresh_block_j": 6,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 57655
+  },
+  {
+    "label": 73545,
+    "witness_coefficient": 27134,
+    "bank_i": 13,
+    "fresh_block_j": 1,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 35832
+  },
+  {
+    "label": 74415,
+    "witness_coefficient": 81,
+    "bank_i": 2,
+    "fresh_block_j": 10,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 68636
+  },
+  {
+    "label": 77463,
+    "witness_coefficient": 64413,
+    "bank_i": 7,
+    "fresh_block_j": 15,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 68763
+  },
+  {
+    "label": 77513,
+    "witness_coefficient": 113135,
+    "bank_i": 14,
+    "fresh_block_j": 14,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 123378
+  },
+  {
+    "label": 77579,
+    "witness_coefficient": 104959,
+    "bank_i": 12,
+    "fresh_block_j": 8,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 90613
+  },
+  {
+    "label": 79297,
+    "witness_coefficient": 59049,
+    "bank_i": 5,
+    "fresh_block_j": 1,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 79762
+  },
+  {
+    "label": 80022,
+    "witness_coefficient": 9,
+    "bank_i": 1,
+    "fresh_block_j": 12,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 19718
+  },
+  {
+    "label": 81628,
+    "witness_coefficient": 6561,
+    "bank_i": 4,
+    "fresh_block_j": 1,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 96243
+  },
+  {
+    "label": 81887,
+    "witness_coefficient": 729,
+    "bank_i": 3,
+    "fresh_block_j": 1,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 25257
+  },
+  {
+    "label": 81986,
+    "witness_coefficient": 33659,
+    "bank_i": 10,
+    "fresh_block_j": 12,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 41645
+  },
+  {
+    "label": 82519,
+    "witness_coefficient": 40789,
+    "bank_i": 11,
+    "fresh_block_j": 12,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 112664
+  },
+  {
+    "label": 82831,
+    "witness_coefficient": 64413,
+    "bank_i": 7,
+    "fresh_block_j": 3,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 112677
+  },
+  {
+    "label": 83789,
+    "witness_coefficient": 40789,
+    "bank_i": 11,
+    "fresh_block_j": 10,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 58104
+  },
+  {
+    "label": 83929,
+    "witness_coefficient": 100718,
+    "bank_i": 15,
+    "fresh_block_j": 12,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 79955
+  },
+  {
+    "label": 84143,
+    "witness_coefficient": 40789,
+    "bank_i": 11,
+    "fresh_block_j": 13,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 25351
+  },
+  {
+    "label": 84987,
+    "witness_coefficient": 59049,
+    "bank_i": 5,
+    "fresh_block_j": 12,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 3541
+  },
+  {
+    "label": 85909,
+    "witness_coefficient": 6561,
+    "bank_i": 4,
+    "fresh_block_j": 7,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 14502
+  },
+  {
+    "label": 86003,
+    "witness_coefficient": 6561,
+    "bank_i": 4,
+    "fresh_block_j": 2,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 90964
+  },
+  {
+    "label": 87316,
+    "witness_coefficient": 104959,
+    "bank_i": 12,
+    "fresh_block_j": 12,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 96480
+  },
+  {
+    "label": 88142,
+    "witness_coefficient": 9,
+    "bank_i": 1,
+    "fresh_block_j": 8,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 107437
+  },
+  {
+    "label": 88337,
+    "witness_coefficient": 59049,
+    "bank_i": 5,
+    "fresh_block_j": 15,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 123829
+  },
+  {
+    "label": 89887,
+    "witness_coefficient": 104959,
+    "bank_i": 12,
+    "fresh_block_j": 2,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 112971
+  },
+  {
+    "label": 90011,
+    "witness_coefficient": 55433,
+    "bank_i": 8,
+    "fresh_block_j": 12,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 91131
+  },
+  {
+    "label": 90087,
+    "witness_coefficient": 100718,
+    "bank_i": 15,
+    "fresh_block_j": 7,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 69289
+  },
+  {
+    "label": 90124,
+    "witness_coefficient": 55433,
+    "bank_i": 8,
+    "fresh_block_j": 3,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 96597
+  },
+  {
+    "label": 90528,
+    "witness_coefficient": 55433,
+    "bank_i": 8,
+    "fresh_block_j": 9,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 118459
+  },
+  {
+    "label": 91139,
+    "witness_coefficient": 33659,
+    "bank_i": 10,
+    "fresh_block_j": 3,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 91178
+  },
+  {
+    "label": 92048,
+    "witness_coefficient": 729,
+    "bank_i": 3,
+    "fresh_block_j": 3,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 74832
+  },
+  {
+    "label": 93416,
+    "witness_coefficient": 100718,
+    "bank_i": 15,
+    "fresh_block_j": 9,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 74889
+  },
+  {
+    "label": 93717,
+    "witness_coefficient": 105684,
+    "bank_i": 9,
+    "fresh_block_j": 14,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 102208
+  },
+  {
+    "label": 94290,
+    "witness_coefficient": 40789,
+    "bank_i": 11,
+    "fresh_block_j": 11,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 85848
+  },
+  {
+    "label": 94388,
+    "witness_coefficient": 27134,
+    "bank_i": 13,
+    "fresh_block_j": 6,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 9394
+  },
+  {
+    "label": 95282,
+    "witness_coefficient": 7157,
+    "bank_i": 6,
+    "fresh_block_j": 13,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 42199
+  },
+  {
+    "label": 95649,
+    "witness_coefficient": 9,
+    "bank_i": 1,
+    "fresh_block_j": 10,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 36753
+  },
+  {
+    "label": 96272,
+    "witness_coefficient": 1,
+    "bank_i": 0,
+    "fresh_block_j": 12,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 75008
+  },
+  {
+    "label": 98746,
+    "witness_coefficient": 104959,
+    "bank_i": 12,
+    "fresh_block_j": 10,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 129724
+  },
+  {
+    "label": 99487,
+    "witness_coefficient": 7157,
+    "bank_i": 6,
+    "fresh_block_j": 5,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 113371
+  },
+  {
+    "label": 100006,
+    "witness_coefficient": 1,
+    "bank_i": 0,
+    "fresh_block_j": 13,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 64241
+  },
+  {
+    "label": 100264,
+    "witness_coefficient": 9,
+    "bank_i": 1,
+    "fresh_block_j": 7,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 31484
+  },
+  {
+    "label": 100718,
+    "witness_coefficient": 100718,
+    "bank_i": 15,
+    "fresh_block_j": 0,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 107961
+  },
+  {
+    "label": 100939,
+    "witness_coefficient": 40789,
+    "bank_i": 11,
+    "fresh_block_j": 7,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 47896
+  },
+  {
+    "label": 101932,
+    "witness_coefficient": 104959,
+    "bank_i": 12,
+    "fresh_block_j": 13,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 97089
+  },
+  {
+    "label": 102288,
+    "witness_coefficient": 27134,
+    "bank_i": 13,
+    "fresh_block_j": 10,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 118949
+  },
+  {
+    "label": 103432,
+    "witness_coefficient": 27134,
+    "bank_i": 13,
+    "fresh_block_j": 15,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 31616
+  },
+  {
+    "label": 104231,
+    "witness_coefficient": 55433,
+    "bank_i": 8,
+    "fresh_block_j": 11,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 26188
+  },
+  {
+    "label": 104859,
+    "witness_coefficient": 64413,
+    "bank_i": 7,
+    "fresh_block_j": 6,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 4369
+  },
+  {
+    "label": 104959,
+    "witness_coefficient": 104959,
+    "bank_i": 12,
+    "fresh_block_j": 0,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 113599
+  },
+  {
+    "label": 105035,
+    "witness_coefficient": 105684,
+    "bank_i": 9,
+    "fresh_block_j": 6,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 91757
+  },
+  {
+    "label": 105155,
+    "witness_coefficient": 81,
+    "bank_i": 2,
+    "fresh_block_j": 13,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 91762
+  },
+  {
+    "label": 105684,
+    "witness_coefficient": 105684,
+    "bank_i": 9,
+    "fresh_block_j": 0,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 53555
+  },
+  {
+    "label": 105844,
+    "witness_coefficient": 59049,
+    "bank_i": 5,
+    "fresh_block_j": 9,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 97252
+  },
+  {
+    "label": 106794,
+    "witness_coefficient": 64413,
+    "bank_i": 7,
+    "fresh_block_j": 7,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 86369
+  },
+  {
+    "label": 107131,
+    "witness_coefficient": 64413,
+    "bank_i": 7,
+    "fresh_block_j": 10,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 48154
+  },
+  {
+    "label": 107563,
+    "witness_coefficient": 81,
+    "bank_i": 2,
+    "fresh_block_j": 4,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 48172
+  },
+  {
+    "label": 108957,
+    "witness_coefficient": 64413,
+    "bank_i": 7,
+    "fresh_block_j": 5,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 102843
+  },
+  {
+    "label": 109528,
+    "witness_coefficient": 7157,
+    "bank_i": 6,
+    "fresh_block_j": 12,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 31870
+  },
+  {
+    "label": 109997,
+    "witness_coefficient": 33659,
+    "bank_i": 10,
+    "fresh_block_j": 15,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 59196
+  },
+  {
+    "label": 110564,
+    "witness_coefficient": 40789,
+    "bank_i": 11,
+    "fresh_block_j": 8,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 10068
+  },
+  {
+    "label": 111254,
+    "witness_coefficient": 33659,
+    "bank_i": 10,
+    "fresh_block_j": 10,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 108400
+  },
+  {
+    "label": 111500,
+    "witness_coefficient": 729,
+    "bank_i": 3,
+    "fresh_block_j": 2,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 10107
+  },
+  {
+    "label": 112531,
+    "witness_coefficient": 59049,
+    "bank_i": 5,
+    "fresh_block_j": 13,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 48379
+  },
+  {
+    "label": 112641,
+    "witness_coefficient": 100718,
+    "bank_i": 15,
+    "fresh_block_j": 11,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 37461
+  },
+  {
+    "label": 113135,
+    "witness_coefficient": 113135,
+    "bank_i": 14,
+    "fresh_block_j": 0,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 26559
+  },
+  {
+    "label": 113628,
+    "witness_coefficient": 9,
+    "bank_i": 1,
+    "fresh_block_j": 13,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 53886
+  },
+  {
+    "label": 114166,
+    "witness_coefficient": 105684,
+    "bank_i": 9,
+    "fresh_block_j": 15,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 64831
+  },
+  {
+    "label": 114229,
+    "witness_coefficient": 33659,
+    "bank_i": 10,
+    "fresh_block_j": 8,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 15682
+  },
+  {
+    "label": 114333,
+    "witness_coefficient": 81,
+    "bank_i": 2,
+    "fresh_block_j": 2,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 103067
+  },
+  {
+    "label": 115152,
+    "witness_coefficient": 1,
+    "bank_i": 0,
+    "fresh_block_j": 5,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 119485
+  },
+  {
+    "label": 115724,
+    "witness_coefficient": 55433,
+    "bank_i": 8,
+    "fresh_block_j": 13,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 10283
+  },
+  {
+    "label": 115912,
+    "witness_coefficient": 59049,
+    "bank_i": 5,
+    "fresh_block_j": 3,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 32136
+  },
+  {
+    "label": 115950,
+    "witness_coefficient": 81,
+    "bank_i": 2,
+    "fresh_block_j": 7,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 21215
+  },
+  {
+    "label": 116212,
+    "witness_coefficient": 59049,
+    "bank_i": 5,
+    "fresh_block_j": 10,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 97684
+  },
+  {
+    "label": 117209,
+    "witness_coefficient": 81,
+    "bank_i": 2,
+    "fresh_block_j": 14,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 125032
+  },
+  {
+    "label": 117826,
+    "witness_coefficient": 59049,
+    "bank_i": 5,
+    "fresh_block_j": 7,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 130519
+  },
+  {
+    "label": 118140,
+    "witness_coefficient": 59049,
+    "bank_i": 5,
+    "fresh_block_j": 14,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 54074
+  },
+  {
+    "label": 118216,
+    "witness_coefficient": 1,
+    "bank_i": 0,
+    "fresh_block_j": 15,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 32232
+  },
+  {
+    "label": 118405,
+    "witness_coefficient": 27134,
+    "bank_i": 13,
+    "fresh_block_j": 3,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 15856
+  },
+  {
+    "label": 118642,
+    "witness_coefficient": 64413,
+    "bank_i": 7,
+    "fresh_block_j": 8,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 130553
+  },
+  {
+    "label": 118672,
+    "witness_coefficient": 59049,
+    "bank_i": 5,
+    "fresh_block_j": 2,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 32251
+  },
+  {
+    "label": 118871,
+    "witness_coefficient": 9,
+    "bank_i": 1,
+    "fresh_block_j": 5,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 26798
+  },
+  {
+    "label": 119279,
+    "witness_coefficient": 27134,
+    "bank_i": 13,
+    "fresh_block_j": 9,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 26815
+  },
+  {
+    "label": 119291,
+    "witness_coefficient": 40789,
+    "bank_i": 11,
+    "fresh_block_j": 6,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 92351
+  },
+  {
+    "label": 119624,
+    "witness_coefficient": 1,
+    "bank_i": 0,
+    "fresh_block_j": 11,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 75981
+  },
+  {
+    "label": 119989,
+    "witness_coefficient": 33659,
+    "bank_i": 10,
+    "fresh_block_j": 4,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 15922
+  },
+  {
+    "label": 120030,
+    "witness_coefficient": 40789,
+    "bank_i": 11,
+    "fresh_block_j": 14,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 21385
+  },
+  {
+    "label": 120036,
+    "witness_coefficient": 1,
+    "bank_i": 0,
+    "fresh_block_j": 1,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 54153
+  },
+  {
+    "label": 120519,
+    "witness_coefficient": 100718,
+    "bank_i": 15,
+    "fresh_block_j": 15,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 70557
+  },
+  {
+    "label": 121361,
+    "witness_coefficient": 81,
+    "bank_i": 2,
+    "fresh_block_j": 11,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 125205
+  },
+  {
+    "label": 122025,
+    "witness_coefficient": 104959,
+    "bank_i": 12,
+    "fresh_block_j": 7,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 37852
+  },
+  {
+    "label": 122242,
+    "witness_coefficient": 100718,
+    "bank_i": 15,
+    "fresh_block_j": 13,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 130703
+  },
+  {
+    "label": 122270,
+    "witness_coefficient": 40789,
+    "bank_i": 11,
+    "fresh_block_j": 1,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 108859
+  },
+  {
+    "label": 123194,
+    "witness_coefficient": 100718,
+    "bank_i": 15,
+    "fresh_block_j": 2,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 43362
+  },
+  {
+    "label": 123562,
+    "witness_coefficient": 113135,
+    "bank_i": 14,
+    "fresh_block_j": 8,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 130758
+  },
+  {
+    "label": 123863,
+    "witness_coefficient": 33659,
+    "bank_i": 10,
+    "fresh_block_j": 9,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 27006
+  },
+  {
+    "label": 124019,
+    "witness_coefficient": 105684,
+    "bank_i": 9,
+    "fresh_block_j": 13,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 92548
+  },
+  {
+    "label": 124267,
+    "witness_coefficient": 7157,
+    "bank_i": 6,
+    "fresh_block_j": 11,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 48868
+  },
+  {
+    "label": 125711,
+    "witness_coefficient": 7157,
+    "bank_i": 6,
+    "fresh_block_j": 3,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 27083
+  },
+  {
+    "label": 125833,
+    "witness_coefficient": 113135,
+    "bank_i": 14,
+    "fresh_block_j": 12,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 81701
+  },
+  {
+    "label": 126053,
+    "witness_coefficient": 729,
+    "bank_i": 3,
+    "fresh_block_j": 7,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 59865
+  },
+  {
+    "label": 126495,
+    "witness_coefficient": 40789,
+    "bank_i": 11,
+    "fresh_block_j": 2,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 70806
+  },
+  {
+    "label": 127648,
+    "witness_coefficient": 1,
+    "bank_i": 0,
+    "fresh_block_j": 7,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 32625
+  },
+  {
+    "label": 127723,
+    "witness_coefficient": 33659,
+    "bank_i": 10,
+    "fresh_block_j": 7,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 49012
+  },
+  {
+    "label": 128000,
+    "witness_coefficient": 104959,
+    "bank_i": 12,
+    "fresh_block_j": 15,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 76330
+  },
+  {
+    "label": 128268,
+    "witness_coefficient": 6561,
+    "bank_i": 4,
+    "fresh_block_j": 9,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 54496
+  },
+  {
+    "label": 128411,
+    "witness_coefficient": 7157,
+    "bank_i": 6,
+    "fresh_block_j": 10,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 92731
+  },
+  {
+    "label": 128459,
+    "witness_coefficient": 9,
+    "bank_i": 1,
+    "fresh_block_j": 4,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 92733
+  },
+  {
+    "label": 129011,
+    "witness_coefficient": 6561,
+    "bank_i": 4,
+    "fresh_block_j": 13,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 92756
+  },
+  {
+    "label": 129420,
+    "witness_coefficient": 6561,
+    "bank_i": 4,
+    "fresh_block_j": 10,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 54544
+  },
+  {
+    "label": 129690,
+    "witness_coefficient": 7157,
+    "bank_i": 6,
+    "fresh_block_j": 8,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 87323
+  },
+  {
+    "label": 130090,
+    "witness_coefficient": 113135,
+    "bank_i": 14,
+    "fresh_block_j": 13,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 131030
+  },
+  {
+    "label": 130315,
+    "witness_coefficient": 59049,
+    "bank_i": 5,
+    "fresh_block_j": 11,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 49120
+  },
+  {
+    "label": 130489,
+    "witness_coefficient": 27134,
+    "bank_i": 13,
+    "fresh_block_j": 12,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 81895
+  },
+  {
+    "label": 130699,
+    "witness_coefficient": 105684,
+    "bank_i": 9,
+    "fresh_block_j": 7,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 49136
+  },
+  {
+    "label": 130962,
+    "witness_coefficient": 27134,
+    "bank_i": 13,
+    "fresh_block_j": 13,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 87376
+  },
+  {
+    "label": 130987,
+    "witness_coefficient": 6561,
+    "bank_i": 4,
+    "fresh_block_j": 11,
+    "exact_agreement": 362,
+    "standard_affine_parameter": 49148
+  }
+]

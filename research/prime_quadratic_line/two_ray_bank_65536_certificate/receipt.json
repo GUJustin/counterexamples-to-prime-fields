@@ -1,0 +1,146 @@
+{
+  "status": "PASS: actual finite two-ray RS(3) certificate, no gap override",
+  "p": 131071,
+  "primitive_generator": 3,
+  "primality": {
+    "method": "trial division by every prime through isqrt(p)",
+    "isqrt_p": 362,
+    "trial_prime_count": 72
+  },
+  "factorization_p_minus_1": {
+    "2": 1,
+    "3": 1,
+    "5": 1,
+    "17": 1,
+    "257": 1
+  },
+  "primitive_generator_power_tests": {
+    "2": 131070,
+    "3": 109165,
+    "5": 119782,
+    "17": 32768,
+    "257": 120519
+  },
+  "t": 16,
+  "D": 330,
+  "T": 362,
+  "n": 65536,
+  "dimension": 3,
+  "finite_lemma_hypotheses": {
+    "D_gt_4t_plus_3": true,
+    "t_squared_lt_half_field_group": true,
+    "n_ge_core_plus_fresh": true,
+    "p_gt_n_plus_6t_plus_1": true
+  },
+  "domain_counts": {
+    "core": 512,
+    "fresh": 5280,
+    "neutral": 59744
+  },
+  "core_owners": "exactly one quadratic bank member and one constant bank member at each core point",
+  "bank_core_agreement": 32,
+  "good_nonzero_label_count": 256,
+  "cube_root_exclusion_count": 18,
+  "endpoint_coefficient_exclusion_count": 32,
+  "neutral_exclusion_count_including_zero": 66,
+  "largest_domain_coordinate": 131070,
+  "fixed_pure_agreement_histogram": {
+    "0": 71311,
+    "32": 16,
+    "1": 59744
+  },
+  "all_pure_coefficients_enumerated": 131071,
+  "native_nonzero_coefficient_block_pairs_enumerated": 2097120,
+  "exact_all_label_maximum_agreement_histogram": {
+    "330": 31,
+    "331": 130783,
+    "362": 256,
+    "5280": 1
+  },
+  "singleton_threshold_labels": 257,
+  "relaxed_threshold_D_list_size_nonzero_labels": 16,
+  "relaxed_threshold_D_list_size_at_zero": 1,
+  "zero_label_exact_agreement": 5280,
+  "non_pure_quadratic_upper_bound": 67,
+  "endpoint_labels": [
+    3,
+    27
+  ],
+  "endpoint_witness_counts_by_block": [
+    [
+      330,
+      330,
+      330,
+      330,
+      330,
+      330,
+      330,
+      330,
+      330,
+      330,
+      330,
+      330,
+      330,
+      330,
+      330,
+      330
+    ],
+    [
+      330,
+      330,
+      330,
+      330,
+      330,
+      330,
+      330,
+      330,
+      330,
+      330,
+      330,
+      330,
+      330,
+      330,
+      330,
+      330
+    ]
+  ],
+  "endpoint_witness_full_domain_evaluations": 2097152,
+  "exact_endpoint_agreements": [
+    330,
+    330
+  ],
+  "exact_common_agreement": 330,
+  "johnson_check": {
+    "T_squared": 131044,
+    "two_n": 131072,
+    "slack": 28
+  },
+  "first_order_bound": {
+    "sqrt_term_strictly_below": 314,
+    "fourth_root_term_strictly_below": 13,
+    "curve_agreement_strictly_below": 327,
+    "source_agreement": 330
+  },
+  "normalized_source_gap": {
+    "numerator": 1,
+    "denominator": 2048
+  },
+  "normalized_capacity_margin_at_T": {
+    "numerator": 359,
+    "denominator": 65536
+  },
+  "loss_to_capacity_margin_ratio": {
+    "numerator": 32,
+    "denominator": 359
+  },
+  "hashes": {
+    "core_sha256": "839094fa358596573bdec3d417c0e2d493a585d48f90072c2ba8e3aa792fbb64",
+    "fresh_sha256": "8576faa8d4478693ad83499deaf9392d2ffa4d10fec9bb873c002a218de2f718",
+    "neutral_sha256": "9b4d787ef13d55aaf4ad014b61d6983144ced83b4e8eb4990bf2e132056904c7",
+    "domain_sha256": "10b6a2fc334de9fb741b2395bd0f65331fc94fdfda3a6c52eca8acc2e21a0e82",
+    "agreement_profile_sha256": "480f7ffafbeb70c88ef36e82f0aa0372cdf2bc3b9729c0e1aeb0f9261ef24866",
+    "singleton_labels_sha256": "4f69acabcffa3e6a10edbc9e6bd0791ed53c5c120d981a40cff747d6972f10f4",
+    "recipe_sha256": "ee4521e628be75af6cf3260e3145b34a213f5fe90a468f97bc07564b73e05001"
+  },
+  "elapsed_seconds": 0.49071166600333527
+}

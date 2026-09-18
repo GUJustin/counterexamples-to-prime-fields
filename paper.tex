@@ -56,14 +56,16 @@ fixed gap $1/8$, full-length prime-field codes have lists of size $n/2$.
 Integer-interval domains give
 $\log L=\Omega_\rho(\eta^{-2}/\log(1/\eta))$ strictly below Elias,
 ruling out every uniform $\exp(O_\rho(1/\eta))$ bound.
-At message dimension three, an asymmetric quadratic intersection bank
-and a translated grid give a positive constant fraction of singleton
-exceptional challenges over primes $p=\Theta(n(\log n)^4)$, with source
-separation $\Theta(n^{1/3}/(\log n)^2)$ coordinates, in the regime of the
-Dao--Kominers--Thaler bounds. The distance below capacity is
-$\Theta(n^{-1/2})$ and the proximity loss is
-$\Theta(n^{-2/3}/(\log n)^2)$. This is a vanishing-rate result, not
-fixed-rate or quadratic-count tightness.
+At message dimension three, two constructions give a positive constant
+fraction of singleton exceptional challenges in the regime of the
+Dao--Kominers--Thaler bounds. A block construction has $p=\Theta(n)$
+and proximity loss $\Theta(n^{-1/2})$, a constant fraction of its
+$\Theta(n^{-1/2})$ capacity margin, but only $\Theta(n)$ exceptional
+challenges. An asymmetric intersection bank and translated grid give
+$p=\Theta(n(\log n)^4)$ and loss
+$\Theta(n^{-2/3}/(\log n)^2)$, with a superlinear exceptional count.
+These are vanishing-rate results, not fixed-rate or quadratic-count
+tightness.
 
 We distinguish fixed-gap from shrinking-gap claims, prime from
 extension-field challenges, and chosen from prescribed domains when
@@ -809,6 +811,22 @@ must satisfy $d=O(n^{1/3})$
 (Proposition~\ref{prop:translated-grid-gap-ceiling}); the asymmetric
 construction attains this exponent up to logarithms. This ceiling applies
 to that grid mechanism, not to arbitrary Reed--Solomon counterexamples.
+
+A different block construction permits a loss comparable to the
+capacity margin, at the cost of a linear exceptional count
+(Theorem~\ref{thm:square-linear-block-bank}). Multiples of $X^2$ and
+constant polynomials form the bank; on each fresh block the direction is
+a scalar multiple of $X^2$. Scalar copies let distinct challenge labels
+use the same geometric line, so the preceding fixed-bank incidence
+obstruction does not apply. Explicitly, $n=128t^2+1$, both endpoint
+agreements and ordinary common agreement are $A=14t$, and exactly
+$t^2+1$ affine challenges have singleton lists at threshold $T=16t$.
+Both $A$ and $T$ are above first order, and $T$ is below Johnson.
+The loss-to-capacity-margin ratio tends to $1/8$. Choosing $p=\Theta(n)$
+makes the exceptional fraction positive; over larger odd fields the
+same construction gives probability of order $n/q$. Its linear count
+does not establish tightness of an $O(n^2/q)$ bound, and this is not
+a separation between prime and extension fields.
 
 A complementary construction allows the message dimension to grow
 and gives a polynomial source separation. Theorem~\ref{thm:correlated-cover-line} constructs, for every
