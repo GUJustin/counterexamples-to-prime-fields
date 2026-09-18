@@ -1,0 +1,113 @@
+{
+  "weighted_separator": [
+    2,
+    2,
+    2,
+    4,
+    4,
+    4,
+    3,
+    3
+  ],
+  "old_min_weight": 6,
+  "fresh_max_weight": 5,
+  "pass": true,
+  "incumbent_column_sizes": [
+    3,
+    2,
+    4,
+    4,
+    4,
+    2,
+    3,
+    2,
+    4,
+    2,
+    5,
+    5,
+    4,
+    4,
+    4,
+    4
+  ],
+  "deletable_columns_under_equal_size_exchange": [
+    {
+      "node": 1,
+      "pair": [
+        6,
+        7
+      ]
+    },
+    {
+      "node": 5,
+      "pair": [
+        0,
+        4
+      ]
+    },
+    {
+      "node": 7,
+      "pair": [
+        1,
+        5
+      ]
+    },
+    {
+      "node": 9,
+      "pair": [
+        0,
+        3
+      ]
+    }
+  ],
+  "fresh_pair_edges": [
+    {
+      "pair": [
+        0,
+        1
+      ],
+      "residual_degree": 1,
+      "residual_polynomial": [
+        "-87048/847",
+        "-3508704/21175"
+      ]
+    },
+    {
+      "pair": [
+        0,
+        6
+      ],
+      "residual_degree": 2,
+      "residual_polynomial": [
+        "-5605/121",
+        "-107793/605",
+        "-484272/3025"
+      ]
+    },
+    {
+      "pair": [
+        0,
+        7
+      ],
+      "residual_degree": 1,
+      "residual_polynomial": [
+        "-43848/605",
+        "-424872/3025"
+      ]
+    },
+    {
+      "pair": [
+        1,
+        7
+      ],
+      "residual_degree": 1,
+      "residual_polynomial": [
+        "1440/77",
+        "1944/77"
+      ]
+    }
+  ],
+  "fresh_triple_collisions": 0,
+  "infinity_max_bucket": 1,
+  "scope": "Fixed eight polynomials; retained old coordinates and values fixed; equal numbers of deleted and genuinely fresh added coordinates."
+}
