@@ -67,3 +67,16 @@ condition or another independent resource. Existing rank, discriminant,
 local Newton support, and the two value-degree budgets alone cannot
 exclude this profile. It would be incorrect to treat the profile as
 evidence of a large actual list or a soundness counterexample.
+
+The subsequent [centered-coefficient routing theorem](QUADRATIC13_CENTERED_COEFFICIENT_ROUTING.md)
+supplies a new global condition and excludes this displayed profile.
+Its155462 contact42/discriminant1 centroid coordinates force every lower
+coefficient of the globally centered H to vanish by its X-degree bound;
+the remaining contact30/discriminant0 states then become impossible.
+More generally, the new exact certificate forces H_0 through H_11 to
+vanish for every profile in the separable quadratic13 branch, then forces
+221414 centroid coordinates and routes every target-agreement candidate
+to one affine codeword pencil. This leaves the local calculation above
+valid for its stated resources, while resolving the additional global
+compatibility question in this subcase. It does not cover the
+zero-discriminant quadratic13/linear26 case or establish a benchmark gain.

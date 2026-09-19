@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "research/better_codes_kernel_base_factors/quadratic13_global_coefficient_certificate.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.562396667,
+  "peak_rss_kib": 5696,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

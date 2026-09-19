@@ -1,0 +1,166 @@
+{
+  "status": "PASS: separable quadratic13 binding-shape branch routes to one affine codeword pencil",
+  "n": 262144,
+  "w": 131071,
+  "agreement": 181275,
+  "own_system_dimension": 6802316684345,
+  "bad_node_rank_allowance": 972186072,
+  "good_rank_required": 6801344498272,
+  "coefficient_certificates": [
+    {
+      "j": 0,
+      "dual": [
+        "14143519",
+        "149813781/25",
+        "13860457/25"
+      ],
+      "rank_upper": "32569516786677/5",
+      "required": 6801344498272,
+      "margin": "1437205704683/5",
+      "finite_checks": 162
+    },
+    {
+      "j": 1,
+      "dual": [
+        "14143519",
+        "18532072/3",
+        "13860457/24"
+      ],
+      "rank_upper": "39228758124023/6",
+      "required": 6801344498272,
+      "margin": "1579308865609/6",
+      "finite_checks": 162
+    },
+    {
+      "j": 2,
+      "dual": [
+        "14143519",
+        "131281709/22",
+        "13860457/22"
+      ],
+      "rank_upper": "143233225662059/22",
+      "required": 6801344498272,
+      "margin": "6396353299925/22",
+      "finite_checks": 162
+    },
+    {
+      "j": 3,
+      "dual": [
+        "14143519",
+        "18532072/3",
+        "13860457/21"
+      ],
+      "rank_upper": "137300674224766/21",
+      "required": 6801344498272,
+      "margin": "5527560238946/21",
+      "finite_checks": 162
+    },
+    {
+      "j": 4,
+      "dual": [
+        "14143519",
+        "112749637/19",
+        "13860457/19"
+      ],
+      "rank_upper": "123618867390733/19",
+      "required": 6801344498272,
+      "margin": "5606678076435/19",
+      "finite_checks": 162
+    },
+    {
+      "j": 5,
+      "dual": [
+        "14143519",
+        "18532072/3",
+        "13860457/18"
+      ],
+      "rank_upper": "6538128664080",
+      "required": 6801344498272,
+      "margin": "263215834192",
+      "finite_checks": 162
+    },
+    {
+      "j": 6,
+      "dual": [
+        "14143519",
+        "94217565/16",
+        "13860457/16"
+      ],
+      "rank_upper": "104004509119407/16",
+      "required": 6801344498272,
+      "margin": "4817002852945/16",
+      "finite_checks": 162
+    },
+    {
+      "j": 7,
+      "dual": [
+        "14143519",
+        "18532072/3",
+        "13860457/15"
+      ],
+      "rank_upper": "98071957682114/15",
+      "required": 6801344498272,
+      "margin": "3948209791966/15",
+      "finite_checks": 162
+    },
+    {
+      "j": 8,
+      "dual": [
+        "14143519",
+        "5821961",
+        "1066189"
+      ],
+      "rank_upper": "6491550065237",
+      "required": 6801344498272,
+      "margin": "309794433035",
+      "finite_checks": 162
+    },
+    {
+      "j": 9,
+      "dual": [
+        "14143519",
+        "18532072/3",
+        "13860457/12"
+      ],
+      "rank_upper": "19614399852697/3",
+      "required": 6801344498272,
+      "margin": "789633642119/3",
+      "finite_checks": 162
+    },
+    {
+      "j": 10,
+      "dual": [
+        "14143519",
+        "57153421/10",
+        "13860457/10"
+      ],
+      "rank_upper": "12955158515351/2",
+      "required": 6801344498272,
+      "margin": "647530481193/2",
+      "finite_checks": 162
+    },
+    {
+      "j": 11,
+      "dual": [
+        "14143519",
+        "6953947",
+        "8463715/6"
+      ],
+      "rank_upper": "6639924735405",
+      "required": 6801344498272,
+      "margin": "161419762867",
+      "finite_checks": 162
+    }
+  ],
+  "centroid_dual": [
+    "1/23273351",
+    "1557205/23273351",
+    "-4730625/23273351"
+  ],
+  "centroid_lower": "5153030705162/23273351",
+  "centroid_integer_lower": 221414,
+  "required_centroid_count": 211941,
+  "overlap_with_every_agreement_set": 140545,
+  "overlap_surplus": 9474,
+  "scope": "Exact caps v=55w,y=55,r=12,t=3261; q=43; a quadratic factor of multiplicity13 with NONZERO discriminant. The zero-discriminant case is a linear factor of multiplicity26 and is not covered. Not an all-context ledger or benchmark certificate."
+}
