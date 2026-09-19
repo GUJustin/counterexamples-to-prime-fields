@@ -1,0 +1,189 @@
+{
+  "status": "PASS",
+  "scope": "Formal division-polynomial heads and six existing order-five subgroups; no line search.",
+  "characteristic_zero_phi5_heads": [
+    "1",
+    "0",
+    "62*A/5",
+    "76*B",
+    "-21*A^2"
+  ],
+  "fixture": {
+    "p": 211,
+    "A": 0,
+    "B": 16,
+    "ell": 5,
+    "domain_size": 12,
+    "subgroups": [
+      {
+        "generator": [
+          1,
+          0
+        ],
+        "kernel_x": [
+          2,
+          103
+        ],
+        "K": [
+          206,
+          106,
+          1
+        ],
+        "quotient_fiber_values": [
+          152,
+          167
+        ],
+        "omitted_first_heads": [
+          105,
+          58,
+          24
+        ],
+        "retained_first_heads": [
+          106,
+          206
+        ]
+      },
+      {
+        "generator": [
+          1,
+          1
+        ],
+        "kernel_x": [
+          143,
+          181
+        ],
+        "K": [
+          141,
+          98,
+          1
+        ],
+        "quotient_fiber_values": [
+          27,
+          41
+        ],
+        "omitted_first_heads": [
+          113,
+          179,
+          24
+        ],
+        "retained_first_heads": [
+          98,
+          141
+        ]
+      },
+      {
+        "generator": [
+          1,
+          2
+        ],
+        "kernel_x": [
+          162,
+          205
+        ],
+        "K": [
+          83,
+          55,
+          1
+        ],
+        "quotient_fiber_values": [
+          15,
+          49
+        ],
+        "omitted_first_heads": [
+          156,
+          199,
+          111
+        ],
+        "retained_first_heads": [
+          55,
+          83
+        ]
+      },
+      {
+        "generator": [
+          1,
+          3
+        ],
+        "kernel_x": [
+          127,
+          158
+        ],
+        "K": [
+          21,
+          137,
+          1
+        ],
+        "quotient_fiber_values": [
+          53,
+          210
+        ],
+        "omitted_first_heads": [
+          74,
+          180,
+          111
+        ],
+        "retained_first_heads": [
+          137,
+          21
+        ]
+      },
+      {
+        "generator": [
+          1,
+          4
+        ],
+        "kernel_x": [
+          90,
+          102
+        ],
+        "K": [
+          107,
+          19,
+          1
+        ],
+        "quotient_fiber_values": [
+          109,
+          197
+        ],
+        "omitted_first_heads": [
+          192,
+          43,
+          111
+        ],
+        "retained_first_heads": [
+          19,
+          107
+        ]
+      },
+      {
+        "generator": [
+          0,
+          1
+        ],
+        "kernel_x": [
+          28,
+          176
+        ],
+        "K": [
+          75,
+          7,
+          1
+        ],
+        "quotient_fiber_values": [
+          17,
+          18
+        ],
+        "omitted_first_heads": [
+          204,
+          185,
+          24
+        ],
+        "retained_first_heads": [
+          7,
+          75
+        ]
+      }
+    ]
+  },
+  "small_order_caveat": "ell=3 has no pair of distinct full fibers; ell=5 retained complement is the quadratic kernel locator."
+}
