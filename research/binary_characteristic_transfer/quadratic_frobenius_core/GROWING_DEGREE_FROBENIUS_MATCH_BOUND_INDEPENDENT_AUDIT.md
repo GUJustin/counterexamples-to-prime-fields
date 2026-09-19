@@ -21,3 +21,11 @@ n=(5p²-1)/2,  T=ceil(sqrt(5p²-1))-1.
 The new dimension is D+1, and T<sqrt(2n). In this tiny-rate regime the first-order curve satisfies n*a1((D+1)/n)>sqrt((D+1)n/2). For D>=3 the latter is at leastsqrt(2n)>T. Thus first-order placement is LOST immediately upon admitting cubic witnesses. The construction remains below the enlarged Johnson threshold but is no longer an above-first-order example. With D=Theta(sqrt p), its dimension is Theta(sqrt p), rate Theta(p^(-3/2)), and label count Theta(p³)=Theta(n^(3/2)); this is a tradeoff, not the sought stronger lower-bound regime.
 
 Important scope correction added to the candidate note: if the5p²+4 neutral points of `scaled_fiber_padding.tex` are retained, X³ itself is a newly admitted codeword and agrees with every finite pencil member on all those points. Then the claimed source agreement and list preservation fail. The no-neutral hypothesis is therefore essential, not cosmetic.
+
+## Independent audit of the primitive-scale strengthening
+
+**PASS with primitive s and no neutral padding.** The normalized leading-coefficient quotient is exactly s^(d-2)*v^((delta-epsilon)*d) modulo B*. Since E*/B* has orderp²+1, primitivity makes its exponent test valid. Its parity cases exclude simultaneous good components in different blocks for every3<=d<=p. Root counting on the single possible good block and coefficient projection on the other prove2p+2d. No quadratic elimination estimate is needed for this strengthening.
+
+For D=floor(p/20), p>=257, the exact positive quadratic (59/100)p²-(21/5)p-3 proves2p+2D<T. Therefore every threshold list, including the exceptional multiplicities, is unchanged. The correct source/common assertion is the interval[2p,2p+2D]; claiming exact2p here would be unsupported. The capacity-relative gap lower limit is (sqrt5-2.1)/(sqrt5-0.05), while dimension isTheta(p) and rateTheta(1/p). First-order placement is lost, as explicitly stated in the consolidated candidate.
+
+The earlier exact-source variant is retained rather than overwritten. This audit does not supply a concrete selected domain at a large practical prime; its domain selection remains the existence argument of the quarter-density theorem.
