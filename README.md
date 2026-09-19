@@ -1,11 +1,11 @@
 # Counterexamples to List and Line Decodability Bounds over Prime Fields
 
-Working draft by Justin Thaler, September 18, 2026.
+Working draft by Justin Thaler. Research status updated September 19, 2026.
 
 [Read the paper](paper.pdf) · [LaTeX source](paper.tex) · [ZK disclosure summary](reports/stwo-zk-disclosure-summary.pdf)
 
-**Latest verified results (September 18):** the full-page,
-one-inch-margin ePrint draft (261 pages) now proves a prime-field line construction
+**Latest verified results (September 19):** the full-page,
+one-inch-margin ePrint draft (310 pages) now proves a prime-field line construction
 with more than n^(3/2)/4 exceptional challenges, each having a singleton
 list, at an error radius covered by the Dao–Kominers–Thaler bounds
 and beyond the Johnson radius. Both source words
@@ -31,25 +31,31 @@ The uniform finite upper comparison is
 and an exact two-level spectrum; its affine-witness companion asymptotically
 attains a universal triple-count bound.
 
-A separate list-size comparison now gives **N/2 ≤ maximum list size ≤ 22N**
+A separate list-size comparison now gives **N/2 ≤ maximum list size ≤ 4N/3**
 at the same below-Johnson threshold over F_(p³), for N=2(p²+p+1),
 dimension three, p≥53, and threshold ceil(19p/10). This threshold stays
 a constant times sqrt(N) from both the first-order and Johnson boundaries.
 The explicit word has exactly N/2 witnesses at that threshold. Its complete
 profile above four matches is now classified: N/2 quadratics have 2p+2
 matches, N further quadratics have p+1 matches, and all others have at most four. The upper bound applies
-to every received word, using a checked finite DKT certificate. This is
+to every received word, by an elementary Johnson count after fixing one
+agreement coordinate. The lower and upper bounds differ by a factor 8/3. This is
 constant-factor tightness for this varying-rate extension-field list bound,
 not for prime alphabets or received-line exception counts. The construction
 uses classical projective-plane incidence geometry.
 The comparison now extends to every fixed threshold ceil(c p), sqrt(3)<c<2:
-for p≥401 the uniform upper bound is 137N, while the same word still has
+for p≥53 the uniform upper bound is 9N/4, while the same word still has
 exactly N/2 witnesses. Hence linear list growth is necessary throughout
 the asymptotic interval between the first-order and Johnson boundaries.
 A further exact support calculation extends Theta(N) maximum lists to
 every fixed sqrt(2)<c<2, with upper constant O((c²−2)^−3) and a
 c-dependent finite onset. The portion c≤sqrt(3) uses the actual message
 degree two; it does not change the stated rate-only first-order curve.
+
+The [fixed-rate comparison audit](research/strategy_review/FIXED_RATE_CONSTRUCTIONS_VS_EPRINT_A1_2026_09_19.md)
+shows why optimizing the existing fixed-rate padding families does not
+reach the agreement threshold in ePrint 2026/2056. No prime-field
+first-order tightness or new concrete Stwo security ceiling follows.
 
 A new fixed-rate extension-field theorem gives at least **N−3 bad native
 challenges at N=p^5**, and every native challenge on an infinite prime

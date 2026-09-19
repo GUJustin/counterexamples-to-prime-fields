@@ -9,15 +9,17 @@ endpoint agreement `A=14t`, tested agreement `T=16t`, and `t^2+1`
 successful labels. Its disjoint-block resource proof gives only a linear
 count. The result below allows arbitrary shared fresh supports and counts
 every square-linear witness, including ones outside the named bank.
-It gives `O(n^(11/8))` labels when `T-A=Omega(sqrt(n))`.
+It gives `O(n^(11/8))` labels when `T-A=Omega(sqrt(n))`, over any field
+of characteristic zero or characteristic at least the domain length.
 Thus this entire proportional-fresh-word square-linear architecture cannot
 retain the strongest existing `n^(3/2)` exceptional exponent at a constant
 loss-to-capacity-margin ratio. It does NOT exclude every superlinear count.
 
 ## 1. Statement
 
-Let `D subset F_p` have `n` distinct coordinates, where `p` is odd, and let
-the message polynomials have degree at most two. Write
+Let `D subset F` have `n` distinct coordinates, where `F` has
+characteristic zero, or odd prime characteristic `p` with `n<=p`.
+Let the message polynomials have degree at most two. Write
 
     A = CA_3(f,g), T>A, d=T-A.
 
@@ -31,7 +33,7 @@ way; no partition into blocks, uniform block sizes, or fixed bank is assumed.
 
 Count labels having a degree-at-most-two witness of the form
 
-    Q=H+R,  R=u(aX+b)^2, u in F_p^*, a,b in F_p,        (2)
+    Q=H+R,  R=u(aX+b)^2, u in F^*, a,b in F,            (2)
 
 and also permit `R=0`. The representation is not counted: witnesses are
 distinct polynomials. These are all scalar multiples of squared linear
@@ -44,7 +46,7 @@ labels is
     B = O_delta(n^(11/8)) + 1.                        (3)
 
 The possible extra label is `lambda=-c`. All constants are independent
-of `p`, the words, the support geometry, and the number of different
+of the field, the words, the support geometry, and the number of different
 representations of a scalar-square polynomial.
 
 This bounds ALL qualifying witnesses in (2); singleton lists are not
@@ -52,59 +54,58 @@ required. It bounds the entire exceptional population only if every
 qualifying witness belongs to this translated cone. Arbitrary quadratics
 outside (2) are not covered.
 
-## 2. A prime-field square-linear list bound
+## 2. A large-characteristic square-linear list bound
 
-Fix a word `v` on at most `n` prime-field coordinates, and let `L` distinct
+Fix a word `v` on at most `n` coordinates of `F`, and let `L` distinct
 nonzero scalar-square polynomials have at least `delta sqrt(n)` matches
 to that word. Then
 
     L=O_delta(n^(7/8)).                                (4)
 
-Choose a nonsquare `nu`. Every nonzero polynomial under consideration
-has a representation
+Work in an algebraic closure `K` of `F`. Choose one of the two signed
+linear square roots `L_R` of each nonzero polynomial `R`; these exist
+because the scalar `u` has a square root in `K`. Distinct polynomials
+give distinct affine lines
 
-    R=epsilon(aX+b)^2, epsilon in {1,nu}.
-
-The two square classes are disjoint for nonzero polynomials. Work with
-one `epsilon`, choosing one of the two signed linear square roots for
-each polynomial. Distinct polynomials give distinct affine lines
-
-    Y=aX+b.
+    Y=L_R(X).
 
 Use the planar point set
 
-    P_epsilon={(x,y): x is a word coordinate, epsilon*y^2=v(x)}.
+    P={(x,y) in K^2: x is a word coordinate, y^2=v(x)}.
 
 There are at most `2n` points. Every polynomial agreement gives precisely
 one incidence of its selected line with this point set. Choosing both
 square roots in the POINT set avoids a loss from independently chosen
 signs. Zero word values give one point, which causes no difficulty.
 
-Pad the point set to exactly `N=2n` distinct points of `F_p^2`; this is
-possible for every odd `p` because `n<=p`. Padding cannot reduce richness.
-Let `K` be the number of selected lines in this square class.
+Pad the point set to exactly `N=2n` distinct points of `K^2`; this is
+always possible. Padding cannot reduce richness. For the remainder of
+this incidence calculation write `J` for the number of selected lines.
 
 Stevens--de Zeeuw, Theorem 3, states
 
-    I(P,L) << N^(11/15) K^(11/15)
+    I(P,L) << N^(11/15) J^(11/15)
 
-when `N^(7/8)<K<N^(8/7)` and `N^(-2)K^13 << p^15`.
-If `K>=N`, take exactly `N` lines. They would give
+when `N^(7/8)<J<N^(8/7)` and, in positive characteristic,
+`N^(-2)J^13 << p^15`. The theorem permits the extension field `K`;
+its restriction involves characteristic, not field cardinality.
+If `J>=N`, take exactly `N` lines. They would give
 
     delta sqrt(n) N <= I << N^(22/15),
 
 which is impossible for all sufficiently large `n`, depending only on
-`delta`. The characteristic condition has ample slack:
+`delta`. In positive characteristic the condition has ample slack:
 `N^11<=2^11 p^11=o(p^15)`.
-Consequently `K<N` for sufficiently large `n`.
+In characteristic zero there is no characteristic condition.
+Consequently `J<N` for sufficiently large `n`.
 
-If `K<=N^(7/8)`, (4) follows immediately. Otherwise Theorem 3 applies
-with the actual `K`, again with `N^(-2)K^13<N^11`, and gives
+If `J<=N^(7/8)`, (4) follows immediately. Otherwise Theorem 3 applies
+with the actual `J`, again with `N^(-2)J^13<N^11` when needed, and gives
 
-    delta sqrt(n) K << N^(11/15) K^(11/15),
-    K <<_delta N^(11/4) n^(-15/8)=O_delta(n^(7/8)).
+    delta sqrt(n) J << N^(11/15) J^(11/15),
+    J <<_delta N^(11/4) n^(-15/8)=O_delta(n^(7/8)).
 
-Sum over the two square classes. This proves (4) for sufficiently large
+There is one selected line per polynomial, so this proves (4) for sufficiently large
 `n`, depending only on `delta`, which is the range used below. For bounded
 `n`, a requirement of only one or two agreements would not bound the
 square-linear list independently of `p`; no such small-agreement list
@@ -115,8 +116,11 @@ Sophie Stevens and Frank de Zeeuw, *An Improved Point-Line Incidence
 Bound Over Arbitrary Fields*, Theorem 3, page 2, arXiv v4 (2017),
 [primary PDF](https://arxiv.org/pdf/1609.06284).
 Only that incidence theorem is external; (4) is its elementary
-square-root application. The `n<=p` hypothesis is essential to the
-characteristic-size check used here.
+square-root application. In positive characteristic the `n<=p`
+hypothesis supplies the characteristic-size check used here. Passing
+to the algebraic closure changes neither characteristic nor the number
+of points and lines; no prime-alphabet or finite-field square-class
+assumption is used in this strengthened proof.
 
 ## 3. Richness is forced on both sides
 
@@ -125,7 +129,7 @@ This preserves common agreement and maps the witness `Q` to `R`.
 The resulting pencil is
 
     w_mu=h+mu g,
-    E={x:g(x)!=0}, Z=D\\E,
+    E={x:g(x)!=0}, Z=D minus E,
     h=0 on E, g=0 on Z.
 
 Fix `mu!=0` and a qualifying nonzero `R` from (2). Define its actual
@@ -184,6 +188,12 @@ the bound is `O(t^(11/4))` labels. It permits growth above the existing
 `t^2+1` labels, but excludes a `Theta(t^3)` upgrade by arbitrary shared
 fresh-coordinate reuse while retaining proportional fresh words and
 translated scalar-square witnesses.
+
+In particular the prime-field corollary is unchanged. The same bound
+now also holds on domains of length `n<=p` over extensions of the prime
+field. Increasing the alphabet extension degree alone does not avoid
+this obstruction. The implicit constants and onset do not give a
+numerical security estimate for any particular finite parameter choice.
 
 This is stronger in scope than the disjoint-block resource inequality:
 `g` may vary arbitrarily, witnesses can match several overlapping support

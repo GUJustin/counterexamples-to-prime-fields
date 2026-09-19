@@ -190,6 +190,11 @@ common-anchor subbank. Only one or two anchors are currently used.
 For the explicit Dickson bank the preceding Fourier argument actually
 rules out such a common-anchor subbank. For the unspecified nearest orbit,
 its existence remains an additional mathematical problem.
+A subsequent exact orbit lemma rules out retaining a complete subgroup
+coset of linear size along the actual prime-selection sequence: such a
+subbank has at most r/2 common anchors. Arbitrary dense non-subgroup
+retention remains open. See
+`../ordinary_ca_superlinear/SUBGROUP_COSET_COMMON_ANCHOR_OBSTRUCTION_2026_09_19.md`.
 
 Preserving only a bounded candidate set would not establish length-exponent
 tightness. For the ordinary-CA compiler to retain its quadratic label count
