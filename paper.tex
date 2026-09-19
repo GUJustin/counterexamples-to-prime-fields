@@ -932,8 +932,18 @@ agreement loss is $p-2$, while the smaller guaranteed individual
 loss has order $\sqrt p$. The threshold is below Johnson and below
 the first-order curve, and the dimension exceeds the characteristic.
 Over $\mathbb F_{p^8}$ both individual losses equal the whole capacity
-margin. This improves the population count for the norm family, but
-retains a full-subfield domain of length $p^2$.
+margin. Padding the domain also gives any fixed rate in $(0,1)$,
+with $\Theta(n^{3/2})$ exceptional parameters and both source agreements
+exactly at capacity (Corollary~\ref{cor:hermitian-fixed-rate-padding}).
+The fractional margin is only $\Theta(n^{-1/2})$, the alphabet is
+$\mathbb F_{p^8}$, and the domain still has order $p^2$; the padded
+statement does not assert singleton lists.
+The two specific quartic-field inputs cannot uniformly match this
+individual separation: along an unconditional sequence of primes,
+both individual losses are a vanishing fraction of the capacity margin
+(Proposition~\ref{prop:hermitian-explicit-endpoint-limitation}).
+This limitation concerns those chosen inputs, not every possible pair
+on the line.
 
 For ordinary common agreement, Theorem~\ref{thm:fp3-common-agreement}
 gives a stronger probability statement over $\F_{p^3}$. With
@@ -6325,6 +6335,7 @@ odd-characteristic bounds $20$ and $62$.
 \input{research/ordinary_ca_superlinear/appendix.tex}
 \input{research/binary_characteristic_transfer/quadratic_frobenius_core/higher_power_frobenius.tex}
 \input{research/binary_characteristic_transfer/odd_hermitian_high_rate.tex}
+\input{research/binary_characteristic_transfer/hermitian_followups.tex}
 \input{research/binary_characteristic_transfer/quadratic_frobenius_core/norm_one_direct_list.tex}
 \input{research/binary_characteristic_transfer/growing_characteristic_native.tex}
 \input{research/norm_quotient_coverage/norm_quotient.tex}

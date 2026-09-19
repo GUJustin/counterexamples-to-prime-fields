@@ -1,0 +1,22 @@
+{
+  "utc": "2026-09-19T11:52:34.498257+00:00",
+  "pdf_pages": 305,
+  "pdf_sha256": "772ff24477af114e6d1fea5a07eaf020dbfe42fc5a7fe839ce90b71b5076a208",
+  "fragment_sha256": "fedb63cb6f69fe61466aec1b7ab6434984e7e1a24b0616ffe1b1710b3859bab8",
+  "build": "latexmk -pdf -interaction=nonstopmode -halt-on-error paper.tex",
+  "build_exit_code": 0,
+  "layout_warnings": [],
+  "visual_review_pages": [
+    218,
+    219,
+    220,
+    221
+  ],
+  "independent_audit": "HERMITIAN_FOLLOWUPS_INTEGRATED_AUDIT.md",
+  "results": [
+    "Corollary N.40: fixed-rate padding",
+    "Lemma N.41: zero-endpoint competitor",
+    "Lemma N.42: second-endpoint competitor",
+    "Proposition N.43: simultaneous endpoint limitation"
+  ]
+}

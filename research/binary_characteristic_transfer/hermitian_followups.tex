@@ -1,0 +1,244 @@
+\subsubsection{Padding and competitors at the explicit endpoints}
+\label{sec:hermitian-followups}
+We retain the notation of Theorem~\ref{thm:odd-hermitian-high-rate}:
+\[
+ B=\mathbb F_{p^2}\subset E=\mathbb F_{p^4},\quad
+ \beta\in E\setminus B,\quad
+ \Lambda=X^{p^2}-X,\quad D=p^2-p,\quad k=p^2-2p,
+\]
+and $f=(X^D-\beta^D)/(X-\beta)$, $g=1/(X-\beta)$.
+Padding transfers the degree-eight version to fixed rate. A separate
+construction shows that the two particular quartic endpoints in that
+theorem cannot have a uniform positive fraction of the capacity margin
+as their individual loss.
+
+\begin{corollary}[Fixed-rate padding]
+\label{cor:hermitian-fixed-rate-padding}
+Let $p\ge5$ and choose any evaluation set
+\[
+ B\subset S\subseteq E\setminus\{\beta\},\qquad
+ p^2+1\le n=|S|\le p^4-1.
+\]
+Over $\mathbb F_{p^8}$, the code $\operatorname{RS}_k(S)$ has two
+affine endpoints $\widetilde r_0,\widetilde r_1$ with
+\[
+ A(\widetilde r_0)=A(\widetilde r_1)
+ =A_{\rm common}(\widetilde r_0,\widetilde r_1)=k
+\]
+and at least $p^2(p-1)$ distinct interior parameters admitting a
+codeword with exactly
+\[
+ T_{\rm pad}=D-1=p^2-p-1
+\]
+agreements. This threshold is strictly below $\sqrt{n(k-1)}$.
+For every fixed $0<\rho<1$, taking $n=\lceil k/\rho\rceil$ for
+sufficiently large $p$ gives rate tending to $\rho$, an exceptional
+bank of size $\Theta(n^{3/2})$, and
+\[
+ \frac{T_{\rm pad}-k}{n}=\Theta(n^{-1/2}),\qquad
+ \frac{T_{\rm pad}-A(\widetilde r_i)}{T_{\rm pad}-k}=1.
+\]
+\end{corollary}
+\begin{proof}
+Choose $\omega\in\mathbb F_{p^8}\setminus E$, and on $S$ set
+$\widetilde r_0=f+\omega g$ and
+$\widetilde r_1=f+(\omega+1)g$.
+Write a codeword as $q_0+\omega q_1$, with $q_i\in E[X]$ of
+degree less than $k$. At every match with either endpoint,
+$q_1(x)=g(x)$. The nonzero polynomial $(X-\beta)q_1-1$ has degree
+at most $k$, proving each upper bound. Interpolation attains $k$.
+Simultaneous interpolation and the same reciprocal bound give the
+common agreement.
+
+For each Hermitian polynomial $G$ in the theorem, the polynomial
+$P_G=(X+s)\Lambda/G$ has exactly $D-1$ distinct roots, all in $B$.
+Its label $\lambda_G=P_G(\beta)$ and degree-$<k$ witness satisfy
+\[
+ q_G=\frac{X^D-P_G+P_G(\beta)-\beta^D}{X-\beta},
+ \qquad f+\lambda_G g-q_G=\frac{P_G}{X-\beta}.
+\]
+The $p^2(p-1)$ labels remain distinct on the enlarged domain.
+They correspond to affine parameters $\lambda_G-\omega$, different
+from both zero and one. No additional agreement with this displayed
+witness occurs outside $B$. Finally,
+\[
+ (p^2+1)(k-1)-(D-1)^2=p^2-4p-2>0,
+\]
+and the Johnson slack increases with $n$.
+\end{proof}
+
+The padded threshold has $T_{\rm pad}/n\to\rho<a_1(\rho)$.
+Thus the fixed-rate transfer remains below first order and has
+vanishing fractional margin. Its domain is still of order $p^2$,
+and its message dimension still exceeds the characteristic.
+The corollary asserts neither singleton lists nor a complete
+exceptional-set classification after padding.
+
+\begin{lemma}[A competing witness at the zero endpoint]
+\label{lem:hermitian-zero-endpoint-competitor}
+Suppose an even integer $e$ satisfies
+\[
+ 2\le e<p,\qquad m=p+e\mid p^2-1,\qquad
+ L=\frac{p^2-1}{m}>e.
+\]
+For every $\beta\in E\setminus B$, a degree-$<k$ polynomial agrees
+with $f$ on exactly $D-e$ coordinates of $B$.
+Consequently, at the original threshold $T=D-2$,
+\[
+ A(f)\ge D-e,\qquad T-A(f)\le e-2.
+\]
+\end{lemma}
+\begin{proof}
+Take $w\ne0$ with $w^{p^2}=-w$, and a generator $\zeta$ of $B^*$.
+For either $t=w$ or $t=w\zeta$, put $a=t^{-ep}\in B$.
+Then $a^pt^e=1$, since $e$ is even. At least one choice has
+$a^m\ne1$: otherwise $\zeta^{epm}=1$, so $L\mid ep$ and hence
+$L\mid e$, a contradiction. Fix this choice, put $u=(t-a)^{-1}$,
+and use the conjugation $\bar z=z^{p^2}$ to define
+\[
+ \gamma=\frac{\beta-\bar\beta}{u-\bar u}\in B^*,
+ \qquad b=\beta-\gamma u\in B.
+\]
+The native M\"obius map $M(X)=b+\gamma/(X-a)$ sends $t$ to $\beta$.
+Its pole is outside $\mu_m$, so $M(\mu_m)$ consists of $m$ distinct
+finite native points.
+
+In the variable $Y$, set $v=Y-b$, $U=av+\gamma$, and
+$\Delta=a^m-1$. Its monic locator and associated cofactors are
+\[
+ \begin{aligned}
+ G&=\frac{U^{p+e}-v^{p+e}}{\Delta}=Y^pF+A_0,\\
+ F&=\frac{a^pU^e-v^e}{\Delta},\\
+ A_0&=\frac{(\gamma^p-a^pb^p)U^e+b^pv^e}{\Delta}.
+ \end{aligned}
+\]
+Here $F$ is monic of degree $e$, $\deg A_0\le e$, and
+$F(\beta)=0$ because $U(\beta)=t\,v(\beta)$.
+The two coefficient rows defining $F,A_0$ from $U^e,v^e$ have
+nonzero determinant $\gamma^p$ before common scaling.
+Since $\gcd(U,v)=1$, this proves $\gcd(F,A_0)=\gcd(F,G)=1$.
+Also $G$ is squarefree and divides $\Lambda$.
+
+Set $P=F\Lambda/G$. It is monic of degree $D$ and has exactly
+$D-e$ distinct native roots: any native root of $F$ already lies
+outside the root set of $G$. Moreover $P(\beta)=0$, and
+\[
+ (P-Y^D)G=-YF-Y^D A_0
+\]
+implies $\deg(P-Y^D)\le D-p=k$. Therefore
+\[
+ h=\frac{Y^D-\beta^D-P}{Y-\beta}
+\]
+is a polynomial of degree less than $k$, and
+$f-h=P/(Y-\beta)$ has exactly the stated agreements.
+\end{proof}
+
+The source bound in Theorem~\ref{thm:odd-hermitian-high-rate} is
+attained at some finite parameters. If $e\ge4$ is even and
+$p=e^2-e-1$ is prime, then $m=e^2-1$, $L=e(e-2)>e$, and $r_p=e$.
+The lemma and the theorem give $A(f)=D-r_p$ for every exterior pole.
+For $(p,e)=(11,4)$ this is
+\[
+ n=121,\quad k=99,\quad T=108,\quad A(f)=106,\qquad
+ \frac{T-A(f)}{T-k}=\frac29.
+\]
+An exact finite verification uses
+$B=\mathbb F_{11}[v]/(v^2-2)$,
+$E=B[w]/(w^2-(1+v))$, and $\beta=t=w$.
+It takes $a=3+2v$, $b=8+9v$, and $\gamma=6$ in the proof.
+The verifier checks the polynomial identities and all $121$ native
+coordinates, obtaining witness degree $98$ and exactly $106$ matches;
+the theorem supplies the matching upper bound.\footnote{The deterministic
+certificate is reproduced by
+\path{research/binary_characteristic_transfer/verify_hermitian_source_competitor.py}.
+It constructs one witness and does not enumerate codewords.}
+No assertion of infinitely many prime values of $e^2-e-1$ is used.
+
+\begin{lemma}[A competing witness at the second endpoint]
+\label{lem:hermitian-cstar-endpoint-competitor}
+Suppose $2\le e<p$, $p+e\mid p^2-1$,
+$p\bmod5\in\{2,3\}$, and $e\equiv p\pmod5$.
+For every exterior pole $\beta$, the explicit second endpoint
+$f+c_*g$ from Theorem~\ref{thm:odd-hermitian-high-rate} has a
+degree-$<k$ witness with exactly $D-e$ native agreements.
+\end{lemma}
+\begin{proof}
+A primitive fifth root $t\in E$ lies outside $B$, since $p$ has
+order four modulo five. Write $\beta=b+\gamma/t$, with
+$b\in B$ and $\gamma\in B^*$. For $m=p+e$ put
+\[
+ G=(X-b)^m-\gamma^m,\qquad F=(X-b)^e,\qquad
+ A_0=-b^pF-\gamma^m.
+\]
+Then $G=X^pF+A_0$ is squarefree and splits over $B$, while
+$\gcd(F,G)=1$. The associated rational function is
+\[
+ \mathcal R=-A_0/F=b^p+\frac{\gamma^m}{(X-b)^e}.
+\]
+Since $t^{p^3+e}=1$,
+$\mathcal R(\beta)=b^p+\gamma^pt^e=\beta^{p^3}$.
+Write $\ell_\beta=\Lambda(\beta)\ne0$. Then
+$\ell_\beta^{p^2}=-\ell_\beta$, so
+\[
+ c_*=-\frac{\ell_\beta}{\ell_\beta^p},
+ \qquad c_*^p=\ell_\beta^{p-1}.
+\]
+For $P=\Lambda F/G$ we obtain
+\[
+ P(\beta)=
+ \frac{\ell_\beta}{\beta^p-\mathcal R(\beta)}
+ =-\frac{\ell_\beta}{\ell_\beta^p}=c_*.
+\]
+As in the preceding lemma, $P$ has degree $D$, exactly $D-e$
+native roots, and $\deg(P-X^D)\le k$. Thus
+$(X^D-\beta^D+c_*-P)/(X-\beta)$ is the required codeword.
+\end{proof}
+
+\begin{proposition}[Limitation for the explicit quartic endpoints]
+\label{prop:hermitian-explicit-endpoint-limitation}
+For every $\varepsilon>0$, there are infinitely many primes $p$
+such that, for every $\beta\in E\setminus B$, both explicit endpoints
+$r_0=f$ and $r_1=f+c_*g$ satisfy
+\[
+ 0<T-A(r_i)\le\varepsilon(T-k),\qquad i=0,1,
+ \quad T=D-2.
+\]
+Thus neither of these chosen endpoints has a uniform positive
+fractional capacity loss over all primes, even after optimizing
+the exterior pole.
+\end{proposition}
+\begin{proof}
+Fix an odd integer $r\ge3$ with $r\equiv3\pmod5$, and set
+\[
+ j=10u+7,\qquad e=1+rj,\qquad
+ p=(r-1)e+r
+   =10r(r-1)u+(7r^2-5r-1).
+\]
+The residue in this progression is odd, is $2$ modulo five,
+$-1$ modulo $r$, and $1$ modulo $r-1$.
+It is therefore coprime to the modulus, so Dirichlet's theorem
+gives infinitely many prime values.
+For these parameters, $e$ is even, $e<p$,
+$p\equiv e\equiv2\pmod5$, and
+\[
+ p-1=(r-1)(e+1),\qquad r\mid p+1,\qquad
+ p+e=r(e+1)\mid p^2-1,\qquad
+ \frac{p^2-1}{p+e}=\frac{(r-1)(p+1)}r>e.
+\]
+Both competitor lemmas apply to the same primes and every pole.
+The original theorem gives strict farness, and the competitors give
+\[
+ 0<T-A(r_i)\le e-2,\qquad
+ \frac{e-2}{T-k}=\frac{e-2}{p-2}\longrightarrow\frac1{r-1}.
+\]
+Choose $r$ with $1/(r-1)<\varepsilon$, then take sufficiently
+large primes in its progression.
+\end{proof}
+
+This limitation concerns the two specified quartic endpoints, not
+the best possible choice of two points on the line. It does not
+assert square-root saturation for every prime or exclude better
+bounds on selected subsequences. It is also compatible with
+Corollary~\ref{cor:hermitian-fixed-rate-padding}: the degree-eight
+coefficient projection uses different endpoints and gives exact
+agreement $k$.
