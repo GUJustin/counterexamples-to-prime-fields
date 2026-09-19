@@ -3,6 +3,8 @@
 September 19, 2026. A consequence of the existing Stevens--de Zeeuw
 point-line bound, not a new incidence theorem or a positive construction.
 
+Provenance: the September 18 [prime direct-list assessment](../binary_characteristic_transfer/quadratic_frobenius_core/PRIME_DIRECT_LIST_NEXT_GATE.md) already proves that a fixed affine quadratic coefficient plane over a prime field cannot contain a linear-sized bank with square-root agreement. This note gives the quantitative rich-list bound O_delta(n^(7/8)) and states its extension to any field of characteristic zero or characteristic p>=n. The central prime-field fixed-plane obstruction is the earlier result.
+
 ## Statement
 
 For each fixed delta>0 there are constants C_delta and n_delta such

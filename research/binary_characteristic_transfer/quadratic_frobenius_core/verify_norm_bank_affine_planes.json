@@ -1,0 +1,65 @@
+{
+  "passed": true,
+  "fixtures": [
+    {
+      "prime_base": 3,
+      "ambient_size": 27,
+      "modulus_ascending": [
+        1,
+        2,
+        0,
+        1
+      ],
+      "bank_size": 13,
+      "triple_spans_checked": {
+        "1": 0,
+        "2": 286
+      },
+      "maximum_bank_intersection": {
+        "1": 0,
+        "2": 3
+      },
+      "scope": "All affine base-field planes containing three noncollinear bank points are covered; planes with fewer than three need no check."
+    },
+    {
+      "prime_base": 5,
+      "ambient_size": 125,
+      "modulus_ascending": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "bank_size": 31,
+      "triple_spans_checked": {
+        "1": 0,
+        "2": 4495
+      },
+      "maximum_bank_intersection": {
+        "1": 0,
+        "2": 3
+      },
+      "scope": "All affine base-field planes containing three noncollinear bank points are covered; planes with fewer than three need no check."
+    },
+    {
+      "prime_base": 7,
+      "ambient_size": 343,
+      "modulus_ascending": [
+        2,
+        0,
+        0,
+        1
+      ],
+      "bank_size": 57,
+      "triple_spans_checked": {
+        "1": 0,
+        "2": 29260
+      },
+      "maximum_bank_intersection": {
+        "1": 0,
+        "2": 3
+      },
+      "scope": "All affine base-field planes containing three noncollinear bank points are covered; planes with fewer than three need no check."
+    }
+  ]
+}
