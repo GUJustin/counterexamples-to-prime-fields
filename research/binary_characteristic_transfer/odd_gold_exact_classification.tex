@@ -1,0 +1,299 @@
+\subsection{Exact odd-dimensional Gold lists at cubic poles}
+\label{sec:odd-gold-exact-classification}
+The odd-dimensional Gold construction in~\cite{binary-counterexamples}
+already supplies a quadratic translated population at fixed odd
+characteristic. The following refinement uses its exact correction
+degree, proves injection at every cubic exterior pole, and determines
+the complete threshold lists.
+
+\begin{theorem}\label{thm:odd-gold-exact-classification}
+Let $p\ge3$ be prime, $s\ge2$, $r=p^s$, $n=p^{2s+1}=pr^2$,
+$B=\mathbb F_n$, and $E=\mathbb F_{n^3}$. Put
+\[
+ d=n/p+r,\qquad T=n-d,\qquad k=(p-1)T/p,\qquad
+ U=\left\lfloor\frac{(p+1)k-1}{p}\right\rfloor,\qquad
+ M=n(n-1)/2.
+\]
+For every $\beta\in E\setminus B$, the code
+$\operatorname{RS}_k(B)$ over $E$ has an explicit pair satisfying
+\[
+ A(r_0)\le U<T,\qquad A(r_1)=A_{\rm common}(r_0,r_1)=k.
+\]
+Its affine line has exactly $M$ parameters with agreement at least
+$T$, all interior. Each has maximum agreement exactly $T$ and a
+singleton threshold list; every other parameter has agreement at
+most $T-1$. Moreover
+\[
+ na_1(k/n)<T<\sqrt{n(k-1)},\qquad
+ T-U=\left\lceil T/p^2+1/p\right\rceil,\qquad T-k=T/p.
+\]
+\end{theorem}
+\begin{proof}
+Write $\Lambda=X^n-X$ and $D=n-n/p$. Let $\Psi_a$ be the unique
+polynomial of degree less than $n$ representing
+$\operatorname{Tr}_{B/p}(a x^{r+1})$. For $a\ne0$ its degree is $d$, its leading
+coefficient is $a^r$, and
+\[
+ \Psi_a'=aX^r+a^{pr}X^{pr},\qquad
+ (\Psi_a')^{1/r}=a^{pr}X+a^pX^p=:L_a(X).
+\]
+For $a\ne0$, every nonzero root $\eta$ of $L_a$ satisfies
+\[
+ \eta^{p-1}=-a^{pr-p},\qquad \eta^{n-1}=-1,\qquad \eta^n=-\eta.
+\]
+Indeed, raising the first equation to $(n-1)/(p-1)$ gives the
+second, since $2s+1$ is odd and $p-1$ divides $pr-p$.
+Thus $L_a$ permutes $B$, and the polar form of $\Psi_a$ on $B$
+is nondegenerate.
+
+The standard odd-dimensional quadratic-form count gives
+\[
+ \#\{x\in B:\Psi_a(x)=t\}
+ =n/p+\chi_B(a)\chi_p((-1)^s t)\,r\qquad(t\ne0).
+\]
+Here the sign can also be read from
+$\gcd(r+1,n-1)=2$: the Gold and square powers have the same
+value multiset, and the trace pairing has square discriminant in
+odd degree. Consequently the set
+$\mathcal A=\{a\in B^*:\chi_B(a)=\chi_p((-1)^{s+1})\}$
+has size $(n-1)/2$. For $a\in\mathcal A$, $b\in B$, set
+\[
+ G_{a,b}=\Psi_a(X+b)+1,\qquad F_{a,b}=(G_{a,b}')^{1/p},
+ \qquad P_{a,b}=F_{a,b}\Lambda/G_{a,b}.
+\]
+The polynomial $G_{a,b}$ has exactly $d$ distinct roots in $B$.
+Its only native critical point is $-b$, where its value is one.
+The leading coefficients of $G_{a,b}$ and $F_{a,b}$ are both
+$a^r$, so $P_{a,b}$ is monic of degree $D$, with exactly $T$
+distinct native roots.
+
+Every $G\in B[X]$ of degree at most $d$ taking $B$ into
+$\mathbb F_p$ satisfies $G^p-G=\Lambda G'$: the quotient by
+$\Lambda$ has degree at most $pd-n=pr<n$, and differentiation
+identifies it with $G'$ at all $n$ native points. Therefore
+\[
+ P_{a,b}^p=\Lambda^{p-1}-(\Lambda/G_{a,b})^{p-1},\qquad
+ P_{a,b}=X^D+C_{a,b},\quad \deg C_{a,b}=k,
+\]
+where the exact correction degree follows from
+$pk-[(p-2)n+1]=r^2-(p-1)r-1>0$.
+
+We prove injection using the full difference space
+\[
+ \mathcal H=\{\Psi_a+\operatorname{Tr}_{B/p}(\ell X)+c:
+              a,\ell\in B,\ c\in\mathbb F_p\}.
+\]
+Every nonzero member splits over $B_2=\mathbb F_{n^2}$.
+For $a\ne0$, its derivative is the $r$th power of an affine
+translate of $L_a$. This affine polynomial has a unique native
+root $x_0$, and all its roots are $x_0+\eta\mathbb F_p\subset B_2$.
+At a nonnative root of a member $G$ of $\mathcal H$, the identity
+$G^p-G=\Lambda G'$ forces $G'=0$. For $a=0$, a nonconstant
+linear trace has constant nonzero derivative, hence only native
+roots; a nonzero constant has none.
+Since $E\cap B_2=B$, no nonzero member of $\mathcal H$ vanishes
+at $\beta$. Equality $P_1(\beta)=P_2(\beta)$ now implies
+$G_1(\beta)=uG_2(\beta)$ for some $u\in\mathbb F_p^*$, hence
+$G_1=uG_2$. Quadratic coefficients give $a_1=ua_2$; the invertible
+polar operator gives the same center; the normalized center value
+one gives $u=1$. Thus the $M$ labels $\lambda_{a,b}=P_{a,b}(\beta)$
+are distinct. They are nonzero because all roots of $F_{a,b}$
+lie in $B_2$, while $\Lambda/G_{a,b}$ splits over $B$.
+
+For completeness, apply the residual factorization in the proof of
+Theorem~\ref{thm:odd-trace-norm-refinement} to
+$W=X^D+C\in E[X]$, $\deg C\le k$. Its hypotheses are precisely
+$pk=(p-1)T$ and the degree check above. It gives at most $T$
+native roots. At equality, with $V$ the native root locator,
+$L=\Lambda/V$, and $H=W/V$, it gives
+\[
+ G=L/\alpha,\qquad G^p-G=\Lambda(H/\alpha)^p
+ \quad\text{for some }\alpha\in B^*.
+\]
+Thus $H\in B[X]$ by uniqueness of coefficientwise $p$th roots,
+and $G$ is a squarefree degree-$d$ polynomial taking $B$ into
+$\mathbb F_p$.
+
+Such a $G$ belongs to $\mathcal H$. Its nonconstant exponents
+are unions of multiplication-by-$p$ orbits modulo $n-1$, which
+rotate $2s+1$ base-$p$ digits. The cap $d=p^{2s}+p^s$ permits
+only digits zero and one, with every circular gap between
+successive ones at least $s$. Since $s\ge2$, there are at most
+two ones; with two the gaps are $s$ and $s+1$. The only
+nonconstant orbits are consequently the linear-trace and Gold
+orbits, both of length $2s+1$. Their coefficient relations give
+exactly $\mathcal H$. Exact degree forces the quadratic
+coefficient to be nonzero. Completing the nondegenerate quadratic
+form gives $G=\Psi_a(X+b)+c_1$, and squarefreeness excludes
+$c_1=0$. Normalizing by $c_1\in\mathbb F_p^*$ selects
+$a/c_1\in\mathcal A$. Differentiating the displayed identity
+then recovers $W=F_{a/c_1,b}\Lambda/G_{a/c_1,b}$.
+This proves the exhaustive residual classification, including
+initially extension-valued coefficients.
+
+Set $f=(X^D-\beta^D)/(X-\beta)$ and $g=1/(X-\beta)$.
+As in Theorem~\ref{thm:odd-trace-norm-refinement}, the witnesses
+\[
+ h_{a,b}=\frac{X^D-P_{a,b}+\lambda_{a,b}-\beta^D}{X-\beta}
+\]
+have degree less than $k$. Conversely, any threshold witness
+produces the classified residual
+$W=X^D-\beta^D+\lambda-(X-\beta)h$, with $W(\beta)=\lambda$.
+The classification and pole injection therefore give exactly the
+stated singleton lists on $f+\lambda g$.
+
+Choose $c_*^p=\Lambda(\beta)^{p-1}$. The same complementary-source
+argument applies because
+\[
+ (p+1)k-1-[D+(p-2)n]
+ =\frac{r(r-p^2+1)}p-1>0\qquad(r\ge p^2).
+\]
+It gives $A(f+c_*g)\le U$. Take $r_0=f+c_*g$ and $r_1=c_*g$.
+The reciprocal root bound and interpolation give individual
+agreement $k$ for $r_1$ and common agreement $k$.
+The affine change $t=1-c_*/\lambda_{a,b}$ loses no labels:
+$t=0$ is excluded by $U<T$, and $t=1$ has agreement $k$.
+All other assertions about the affine chart follow as in that
+theorem. Finally,
+\[
+ n(k-1)-T^2=rT-n>0.
+\]
+The normalized pair $(k/n,T/n)$ is exactly the pair in
+Theorem~\ref{thm:odd-trace-norm-refinement} with $Q=r\ge p^2$,
+so its strict first-order placement applies unchanged.
+\end{proof}
+
+For $p=3,s=2$, the parameters are
+\[
+ n=243,\qquad k=102,\qquad T=153,\qquad U=135,\qquad M=29403,
+\]
+with evaluation field $\mathbb F_{3^5}$ and alphabet
+$\mathbb F_{3^{15}}$. The Johnson slack is $1134$ and the
+first-order sign is $1496/59049>0$. A bounded finite certificate
+checks all $242$ native coefficient level counts, all $29403$
+distinct nonzero labels and interior parameters, and $36$ full
+polynomial witnesses.\footnote{See
+\path{research/binary_characteristic_transfer/odd_gold_p3_s2_fixture/verify.py}
+and its receipt. The source bounds and exhaustive classification
+are proved above, not inferred from codeword enumeration.}
+
+The prior odd-dimensional construction already has population
+$n(n-1)/2$ and, for fixed $p$, limiting rate $(1-1/p)^2$ and
+agreement $1-1/p$. Its dimension
+$k_{\rm old}=(p-1)^2n/p^2$ exceeds the exact dimension here by
+$(p-1)p^{s-1}$. The new conclusions above concern that exact
+finite degree and the complete, collision-free threshold lists.
+The guaranteed smaller individual loss is asymptotically $1/p$
+of the capacity margin. The alphabet remains an extension field
+and $k$ exceeds the characteristic; this is not a prime-alphabet
+or prescribed short-domain result.
+
+\begin{corollary}\label{cor:odd-gold-quadratic-kernel}
+Keep $p,s,n,k,T,U,M$ from
+Theorem~\ref{thm:odd-gold-exact-classification}, but take alphabet
+$E_2=\mathbb F_{n^2}$. At every $\beta\in E_2\setminus B$, the
+same endpoint formulas give $A(r_0)\le U$ and
+$A(r_1)=A_{\rm common}(r_0,r_1)=k$. The number $L_\beta$ of
+interior affine parameters with agreement at least $T$ satisfies
+\[
+ \left\lceil\frac{M-(p-1)/2}{p}\right\rceil
+ \le L_\beta\le\frac{n^2-1}{p-1}-1.
+\]
+Each such parameter has maximum agreement exactly $T$ and between
+one and $p$ threshold witnesses; every other parameter has agreement
+at most $T-1$. In particular $L_\beta=\Theta(n^2/p)$ with absolute
+constants throughout the stated range, including growing $p$.
+\end{corollary}
+\begin{proof}
+Write $\beta=x+\eta$, where $x=(\beta+\beta^n)/2\in B$ and
+$\eta^n=-\eta$, and put
+$a_\beta=\eta^{-(r+1)}\in B^*$. We claim
+\[
+ \ker(\operatorname{ev}_\beta:\mathcal H\longrightarrow E_2)
+   =\mathbb F_p K_\beta,\qquad
+ K_\beta(X)=\Psi_{a_\beta}(X-x)-1.
+\]
+A nonzero member of the kernel cannot have quadratic coefficient
+zero, since affine traces have only native roots.
+Its derivative vanishes at $\beta$. The derivative-root description
+in the preceding proof shows that its unique native center is $x$,
+so it has the form $\Psi_a(X-x)+c$.
+Set $\nu=a\eta^{r+1}\in B^*$.
+The derivative condition is $\nu^{p^{s+1}}=\nu$; because
+$\gcd(s+1,2s+1)=1$, this means $\nu\in\mathbb F_p^*$.
+In the reduced Gold polynomial evaluated at $\eta$, the $s+1$
+unwrapped Frobenius terms contribute $+\nu$ and the $s$ wrapped
+terms contribute $-\nu$. Hence $\Psi_a(\eta)=\nu$, and vanishing
+forces $c=-\nu$. This proves the claimed kernel.
+
+All bank locators split over $B$, so their values at $\beta$ are
+nonzero. Their residual labels coincide precisely when their
+locator values differ by a factor in $\mathbb F_p^*$, by
+\[
+ P(\beta)^p
+ =\Lambda(\beta)^{p-1}
+   -\bigl(\Lambda(\beta)/G(\beta)\bigr)^{p-1}.
+\]
+Thus each label fiber consists of bank projective points on one
+$\mathbb F_p$-projective line through $[K_\beta]$. That line has
+$p+1$ points; the kernel point is not a bank locator, leaving at
+most $p$. Normalized bank locators represent distinct projective
+points because their completed constant level is one.
+
+The zero residual label occurs exactly when $F(\beta)=0$.
+The same derivative calculation gives precisely
+$a=t a_\beta$, $b=-x$, with $t\in\mathbb F_p^*$ and
+$a\in\mathcal A$. Since the quadratic character of $B$ restricts
+to that of $\mathbb F_p$ in odd extension degree, exactly
+$(p-1)/2$ choices qualify. Dividing the remaining $M-(p-1)/2$
+bank members into fibers of size at most $p$ proves the lower bound.
+For the upper bound, the displayed power expression has at most
+$(n^2-1)/(p-1)$ values as $G(\beta)$ ranges over $E_2^*$.
+Zero is among the bank labels, so there are at most one fewer
+nonzero labels.
+
+The residual classification in
+Theorem~\ref{thm:odd-gold-exact-classification} is independent
+of the containing field. It proves that these fibers are the full
+threshold lists and that their maximum agreement is $T$.
+The source bound is likewise unchanged. The chart
+$t=1-c_*/\lambda$ retains exactly the nonzero labels, all interior;
+$t=1$ has agreement $k<T$. This proves all assertions.
+\end{proof}
+
+For this population, the generic harmonic collision conversion has
+cap $p(p-1)$: a collision gives $G_1-uG_2=0$ for some
+$u\in\mathbb F_p^*$, and each nonzero difference has at most $p$
+nonnative derivative roots. At quadratic alphabet size $n^2$,
+that conversion gives a bound of order $n^2/p^2$.
+The exact kernel therefore improves the growing-characteristic
+count by a factor of order $p$, while the fixed-characteristic
+quadratic population is inherited. For example, $s=2$ gives
+$n=p^5$, alphabet $\mathbb F_{p^{10}}$, and
+$\Theta(p^9)$ exceptional parameters. The domain is still the
+full native extension field, and the smaller guaranteed
+individual-loss fraction still decreases with $p$.
+The exact kernel and fiber calculation is also recorded in
+\path{research/binary_characteristic_transfer/ODD_GOLD_QUADRATIC_POLE_KERNEL_AUDIT.md}.
+
+At $p=3,s=2$, the quadratic alphabet is $\mathbb F_{3^{10}}$.
+An exact enumeration of the classified bank gives $21{,}356$
+exceptional affine parameters: $14{,}210$ have singleton threshold
+lists, $6{,}246$ have lists of size two, and $900$ have lists of
+size three.\footnote{The reproducible certificate is
+\path{research/binary_characteristic_transfer/odd_gold_p3_s2_quadratic_fixture/verify.py}.
+It enumerates all $29{,}403$ bank members, not all codewords;
+exhaustiveness follows from the classification theorem.}
+Every exception has agreement $153$; the source agreements are at
+most $135$ and exactly $102$. This histogram holds for every
+quadratic exterior pole. Indeed, if $\beta_0=u\beta+c$ with
+$u\in B^*$ and $c\in B$, then
+\[
+ P(X)\longmapsto u^{-D}P(uX+c)
+\]
+is a bijection of the normalized bank: its locator parameters become
+$a u^{r+1}$ and $(b+c)/u$, preserving the good square class.
+The corresponding $F$ is $u^{1/p}F(uX+c)$, and
+$\Lambda(uX+c)=u\Lambda(X)$, so the residual scale is
+$u^{1/p-1}=u^{-D}$. Thus labels scale bijectively and their
+multiplicities, including that of zero, are preserved.

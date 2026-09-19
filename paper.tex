@@ -956,6 +956,24 @@ uses the exact correction degree, removes label collisions, and classifies
 all threshold witnesses, including witnesses over the extension alphabet;
 the fixed-characteristic asymptotic regime is already present
 in~\cite{binary-counterexamples}.
+The analogous odd-dimensional Gold family has exactly $n(n-1)/2$
+singleton exceptions at every exterior pole in a cubic extension of
+its evaluation field (Theorem~\ref{thm:odd-gold-exact-classification}).
+For example, over $\mathbb F_{3^{15}}$, length $243$ and dimension $102$
+give exactly $29{,}403$ exceptions of agreement $153$, with source
+agreements at most $135$ and exactly $102$; all other parameters have
+agreement at most $152$. The quadratic population is inherited;
+the exact count at every cubic pole and exhaustive lists are the
+refinements. Over a quadratic extension of the same evaluation field,
+an exact one-dimensional evaluation kernel instead gives
+$\Theta(n^2/p)$ exceptional parameters, each with at most $p$ threshold
+witnesses, with the same individually far sources
+(Corollary~\ref{cor:odd-gold-quadratic-kernel}).
+This bound is uniform as the characteristic grows; at $n=p^5$ it gives
+$\Theta(p^9)$ exceptions over $\mathbb F_{p^{10}}$.
+At $p=3$ in this quadratic alphabet, the exact count is $21{,}356$
+exceptions out of $59{,}049$ affine parameters, with lists of size
+at most three. These families use full extension-field domains.
 
 For ordinary common agreement, Theorem~\ref{thm:fp3-common-agreement}
 gives a stronger probability statement over $\F_{p^3}$. With
@@ -6349,6 +6367,7 @@ odd-characteristic bounds $20$ and $62$.
 \input{research/binary_characteristic_transfer/odd_hermitian_high_rate.tex}
 \input{research/binary_characteristic_transfer/hermitian_followups.tex}
 \input{research/binary_characteristic_transfer/odd_trace_norm_refinement.tex}
+\input{research/binary_characteristic_transfer/odd_gold_exact_classification.tex}
 \input{research/binary_characteristic_transfer/quadratic_frobenius_core/norm_one_direct_list.tex}
 \input{research/binary_characteristic_transfer/growing_characteristic_native.tex}
 \input{research/norm_quotient_coverage/norm_quotient.tex}

@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "pdf_pages": 311,
+  "build_log": "/tmp/odd-gold-final-build.log",
+  "visually_reviewed_pages": [
+    13,
+    224,
+    225,
+    226,
+    227,
+    228
+  ],
+  "visual_result": "Readable statements, equations and notes; no clipping or overflow observed",
+  "root_replays": {
+    "cubic": "PASS; 29403 distinct nonzero labels; 36 complete witnesses",
+    "quadratic": "PASS; 21356 nonzero labels, histogram 14210 singleton / 6246 double / 900 triple; one zero member"
+  },
+  "scope": "Exact Gold classification and cubic injection; quadratic kernel and uniform Theta(n^2/p) count. Fixed-characteristic mechanism inherited. No prime-alphabet, practical-domain, or better.codes claim. Source bounds and exhaustive lists proved algebraically.",
+  "sha256": {
+    "paper.tex": "58ea90680adfe576015513adf254a7c8c20542faa2b3181c05802e6d6f2c4d08",
+    "paper.pdf": "8042c38305a4eeab0580b5e9d8bec3174fe13a02da63632c31372e28725622c5",
+    "research/binary_characteristic_transfer/odd_gold_exact_classification.tex": "229e45c1dd30212444767683ffb230e7ca80368cf6179d8af97959f76e445915",
+    "research/binary_characteristic_transfer/ODD_GOLD_CUBIC_POLE_EXACT_CLASSIFICATION.md": "564733e7e01e2d83b799d9cd1eb8da244bd4822b64fa71bc47e094b321a73318",
+    "research/binary_characteristic_transfer/ODD_GOLD_QUADRATIC_POLE_KERNEL_AUDIT.md": "c5e19993c21e1e5023f1ffdcafcf1c5efc485864117ce727f5387eead37ef46b",
+    "research/binary_characteristic_transfer/odd_gold_p3_s2_fixture/verify.py": "6655e860aa0919dbb43783c36074899c3dc0d5fc6efdcc21f11bd0bd6ab1ac7c",
+    "research/binary_characteristic_transfer/odd_gold_p3_s2_quadratic_fixture/verify.py": "9a73b17e6f79b61842544dd474a8cded1913d246ed3c6145b28ac0dfdbbd62dc"
+  }
+}
