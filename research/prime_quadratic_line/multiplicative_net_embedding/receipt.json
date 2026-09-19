@@ -1,0 +1,60 @@
+{
+  "affine_basis": [
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      2
+    ],
+    [
+      32768,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      131070
+    ]
+  ],
+  "affine_coefficient_dimension": 3,
+  "affine_difference_determinant_mod_p": 32768,
+  "bank_size": 43,
+  "external_size_condition_16t4_le_p3": true,
+  "external_theorem_c0_onset_verified": false,
+  "family_agreement_histograms": {
+    "product": {
+      "9": 17
+    },
+    "ratio": {
+      "17": 9
+    },
+    "row": {
+      "17": 17
+    }
+  },
+  "fixture_sha256": "cca447d8739ac172aa9b696e485acb17d7efc42d57cb6a1aee4be57190a14941",
+  "generic_algebraic_identities_verified": [
+    "double inversion",
+    "product monomial change",
+    "row factorization",
+    "ratio component",
+    "ratio coefficient deduplication"
+  ],
+  "length_n": 153,
+  "owner_histogram": {
+    "3": 17,
+    "4": 136
+  },
+  "p": 131071,
+  "prime_trial_division_limit": 362,
+  "scope": "One fixed canonical-bank embedding; not an all-quadratic list census",
+  "status": "PASS",
+  "subgroup_generator": 2,
+  "subgroup_order": 17,
+  "total_incidences": 595
+}
