@@ -1,0 +1,11 @@
+{
+  "PASS": true,
+  "scope": "Symbolic identities only; no elliptic curve, label, or locator search",
+  "fractional_linear_schwarzian": "0",
+  "normalized_isogeny_connection_identity": true,
+  "double_pole_coefficient": "-3/2",
+  "simple_pole_coefficient": "3*A1/(2*A0)",
+  "connection_numerator": "3*A**2 - 6*A*x**2 - 24*B*x + 3*x**4",
+  "connection_numerator_degree": 4,
+  "script_sha256": "03c196f66c176885762523984005348ee3855781a16e147e2e7e986343132539"
+}

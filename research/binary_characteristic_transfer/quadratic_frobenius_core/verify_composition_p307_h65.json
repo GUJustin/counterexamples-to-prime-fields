@@ -1,0 +1,65 @@
+{
+  "PASS": true,
+  "scope": "Exact finite parameters for the deterministic algebraic branch-prefix domain; no domain enumeration or codeword scan",
+  "p": 307,
+  "primality_certificate": "Trial division through floor(sqrt(307))=17",
+  "extension_degree": 4,
+  "alphabet_size": 8882874001,
+  "h": 65,
+  "dimension": 66,
+  "linear_characteristic_threshold": 194,
+  "old_quadratic_characteristic_threshold": 4225,
+  "old_quadratic_hypothesis_fails": true,
+  "proper_composition_divisor_bounds": [
+    {
+      "delta": 1,
+      "H": 65,
+      "case": "p < H^2",
+      "noncanonical_agreement_bound": 12610
+    },
+    {
+      "delta": 5,
+      "H": 13,
+      "case": "p >= H^2",
+      "noncanonical_agreement_bound": 3160
+    },
+    {
+      "delta": 13,
+      "H": 5,
+      "case": "p >= H^2",
+      "noncanonical_agreement_bound": 4576
+    }
+  ],
+  "noncanonical_agreement_bound": 12610,
+  "source_agreement": 19955,
+  "common_agreement": 19955,
+  "full_first_block": 6126120,
+  "retained_second_block": 5207202,
+  "retention_fraction": [
+    17,
+    20
+  ],
+  "whole_fresh_branches": 55,
+  "next_branch_prefix_length": 23562,
+  "length": 11333322,
+  "threshold": 27141,
+  "minimum_canonical_agreement": 36720,
+  "first_order_leading_ceiling": 19340,
+  "first_order_correction_ceiling": 462,
+  "first_order_agreement_upper": 19802,
+  "first_order_certified_slack": 153,
+  "johnson_squared_slack": 32049,
+  "singleton_labels": 29028384,
+  "additional_label_list_size": 308,
+  "outside_canonical_labels": 8853845616,
+  "rate": [
+    66,
+    11333322
+  ],
+  "exact_loss_over_capacity_margin": [
+    7186,
+    27075
+  ],
+  "exact_loss_over_capacity_margin_decimal": 0.26541089566020315,
+  "script_sha256": "94414eb447ae57301a649c8412db1c0c9f6fd538a82577ec708ffff6903c6187"
+}

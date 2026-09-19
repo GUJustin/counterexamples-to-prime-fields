@@ -45,6 +45,8 @@ The substantive findings are:
   acceptance test. It is a restricted candidate, not a split locator family
   or a proximity-gap result.
 
+Two further audited reductions concern the moving-extra route. `MOVING_EXTRA_PATH_RATIONALITY.md` proves that, for ell>50 and more than ten nonzero errors on each endpoint fiber, a three-edge path with up to five extras per edge forces a unique rational leaf-weight model of numerator/denominator degree at most fifteen. Its poles and discrepancies must survive every path extension. This is not a global edge bound; a common extra-coordinate hub prevents a graph-only reduction to constant weights. `LATTES_SCHWARZIAN_COMMON_PENCIL_TEST.md` tests a concrete differential identity: the two-tag ratio loses both tags, and its regularized Schwarzian gives fixed kernel markers, not moving quintic locators. The symbolic identities have an exact replay script.
+
 The separate `../elliptic_source_gate/TORSION_COSET_LOCATOR_PREFIX_AUDIT.md`
 checks the locator identities and small-order formulas. Its verifier replays
 the existing order-five fixture, rather than searching for curves or lines.
