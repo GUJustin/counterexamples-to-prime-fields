@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "positive_outsider_found": false,
+  "scope": "exact equivalence and canonical-padding rejection; no search",
+  "primitive_target": {
+    "m": "2s",
+    "n": "2s^2",
+    "deficit": 5,
+    "C_degree": 5,
+    "B_degree_at_most": 5,
+    "gcd_C_B": 1,
+    "error_locator_degree": "4s+5",
+    "field_parameter_count": 12
+  },
+  "rotation_numerator_degree": 9,
+  "rotation_numerator_constant_term": 0,
+  "nontrivial_rotation_intersection_bound": 8,
+  "opposite_pair_bound": 4,
+  "curve_numerator_after_s_plus_16": "48*s**4 + 3056*s**3 + 73702*s**2 + 798048*s + 3272679",
+  "johnson_slack_after_s_plus_16": "4*s**2 + 88*s + 359",
+  "finite_parameters": {
+    "p": 65537,
+    "s": 16,
+    "m": 32,
+    "n": 512,
+    "dimension": 385,
+    "source_and_common_agreement": 416,
+    "tested_agreement": 443,
+    "curve_polynomial": "3272679/134217728",
+    "squared_johnson_slack": 359
+  },
+  "padding_fixture": {
+    "generator": 3,
+    "domain_generator": 15028,
+    "pole": 3,
+    "omitted_full_fiber_tags": [
+      1,
+      4
+    ],
+    "padding_roots": [
+      15028,
+      282,
+      43528,
+      13987,
+      19477
+    ],
+    "kappa": 65535,
+    "label": 38313,
+    "gcd_degree": 5,
+    "witness_degree": 384,
+    "verified_agreements": 448,
+    "is_genuine_outsider": false
+  },
+  "single_progression": {
+    "length": 69,
+    "all_coefficients_nonzero": true
+  }
+}
