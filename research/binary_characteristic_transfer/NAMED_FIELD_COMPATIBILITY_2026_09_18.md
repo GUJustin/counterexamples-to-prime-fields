@@ -65,3 +65,46 @@ a limiting loss ratio1−sqrt(3)/2 at dimension3. Another standard padding
 transformation attains rate1/2 but requires alphabetp^(4*2^Θ(p)), retains
 only Θ(1/p) fractional loss, and loses first-order placement. Neither
 resolves the short-domain, fixed-alphabet, constant-rate target.
+
+
+## Higher-power variant: a larger relative loss at a longer domain
+
+The new higher-power construction keeps extension degree four and uses
+k=h+1 for a proper divisor h of p²+1 satisfying the explicit finite guards
+in [the proof](quadratic_frobenius_core/HIGHER_POWER_FULL_FIBER_LIFT.md).
+Along a proved prime sequence with h growing slowly, the source agreements
+approach the first-order boundary and the tested agreement approaches
+Johnson. The loss divided by the capacity margin tends to
+1−1/sqrt(2), about29.3%, with n^(3/2−o(1)) singleton challenges.
+The rate remains n^(−1+o(1)); this improves the relative-loss conclusion,
+not the practical domain or rate.
+
+BabyBear admits h=12241 because 12241 divides p²+1. Keeping a fraction
+54/55 of the second full block gives the following exactly checked
+parameters over F_(p⁴):
+
+| Quantity | Value |
+|---|---:|
+| Message length | 12,242 |
+| Codeword length | 98,329,309,808,423,281,932,846 |
+| Common agreement | 24,644,388,138,961 |
+| Each endpoint agreement, at most | 24,644,537,981,042 |
+| Tested agreement | 34,693,646,123,820 |
+| Singleton challenges | 8,160,249,298,611,705,595,853,537,280 |
+| Guaranteed loss / capacity margin | greater than28.965% |
+
+The first-order agreement is below24,533,338,196,068, strictly below
+common and endpoint agreements. The tested agreement is the largest
+integer strictly below Johnson. The complete finite hypotheses, including
+existence of one retained subset meeting every canonical support, are
+verified by [the exact certificate](quadratic_frobenius_core/verify_higher_power_babybear.json).
+The domain is supplied by a probabilistic existence proof, not enumerated.
+Its rate is approximately1.25e−19. The native challenge count is unchanged
+from the dimension-three family, so there is no improved failure-probability
+exponent at this fixed alphabet.
+
+This instance does not apply to Goldilocks squared or to a degree-five
+extension through field substitution. It gives no better.codes improvement
+and no practical SNARK-security ceiling. Direct restriction of the original quadratic sources
+to standard multiplicative domains has a separate obstruction, proved in
+[PRACTICAL_DOMAIN_DIRECT_RESTRICTION.md](quadratic_frobenius_core/PRACTICAL_DOMAIN_DIRECT_RESTRICTION.md).

@@ -1,0 +1,26 @@
+{
+  "PASS": true,
+  "scope": "Exact finite hypotheses for the higher-power theorem; domain existence uses its probabilistic proof, not explicit enumeration",
+  "p": 2013265921,
+  "extension_degree": 4,
+  "h": 12241,
+  "dimension": 12242,
+  "full_first_block": 49615706784066793635840,
+  "retained_second_block": 48713603024356488297006,
+  "length": 98329309808423281932846,
+  "threshold": 34693646123820,
+  "common_agreement": 24644388138961,
+  "source_agreement_upper": 24644537981042,
+  "first_order_agreement_upper": 24533338196068,
+  "singleton_labels": 8160249298611705595853537280,
+  "additional_label_list_size": 2013265922,
+  "guaranteed_loss_over_capacity_margin": [
+    5024554071389,
+    17346823055789
+  ],
+  "guaranteed_loss_over_capacity_margin_decimal": 0.2896526963599943,
+  "concentration_exponent_lower_bound": 63,
+  "practical_domain": false,
+  "better_codes_improvement": false,
+  "script_sha256": "060c16c2bbd49694a2a1612c2cd4a07e32a10ffc4fb696fd954f898b5b42ee9b"
+}

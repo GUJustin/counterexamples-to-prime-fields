@@ -909,6 +909,21 @@ Its rate still vanishes, and its threshold falls below the enlarged
 code's first-order curve; this tradeoff does not remove the main
 limitation of the dimension-three theorem.
 
+A higher-power construction gives two far inputs with maximum agreement
+$(1+o(1))hp$, yet $n^{3/2-o(1)}$ of their affine mixtures each have
+at least $(\sqrt2+o(1))hp$ matches and a unique qualifying codeword
+(Theorem~\ref{thm:higher-power-frobenius-window}). The message dimension
+is $h+1\to\infty$. The source agreements approach the first-order
+boundary and the tested agreement approaches Johnson, so the loss spans
+asymptotically the whole interval between these agreement thresholds.
+As a fraction of the margin above capacity, the loss tends to
+$1-1/\sqrt2\approx29.3\%$.
+This is an extension-field result over $\F_{p^4}$ with rate
+$n^{-1+o(1)}$ and a selected domain. Even its degree-four BabyBear
+specialization, with guaranteed relative loss above $28.965\%$, uses
+about $9.8\times10^{22}$ coordinates. It gives neither a better.codes
+improvement nor a security ceiling for a practical proof system.
+
 For ordinary common agreement, Theorem~\ref{thm:fp3-common-agreement}
 gives a stronger probability statement over $\F_{p^3}$. With
 $n=2p^2-p-1$ and dimension three, every affine mixture has agreement
@@ -6297,6 +6312,7 @@ odd-characteristic bounds $20$ and $62$.
 \input{research/riccati_cross_ratio/appendix.tex}
 
 \input{research/ordinary_ca_superlinear/appendix.tex}
+\input{research/binary_characteristic_transfer/quadratic_frobenius_core/higher_power_frobenius.tex}
 \input{research/binary_characteristic_transfer/quadratic_frobenius_core/norm_one_direct_list.tex}
 \input{research/binary_characteristic_transfer/growing_characteristic_native.tex}
 \input{research/norm_quotient_coverage/norm_quotient.tex}

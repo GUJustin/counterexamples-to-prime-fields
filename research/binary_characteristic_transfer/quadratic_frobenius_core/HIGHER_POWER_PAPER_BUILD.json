@@ -1,0 +1,26 @@
+{
+  "PASS": true,
+  "pages": 297,
+  "format": "11pt letterpaper article, 1-inch margins",
+  "latexmk_exit_code": 0,
+  "overfull_boxes": false,
+  "undefined_references": false,
+  "root_visually_reviewed_pages": [
+    13,
+    14,
+    210,
+    211,
+    212,
+    213
+  ],
+  "new_theorem": "N.37",
+  "new_finite_proposition": "N.36",
+  "scope": "New theorem, introduction insertion, affected page layout, and successful full build; not a fresh proof audit of every older appendix",
+  "sha256": {
+    "paper.tex": "d0da5f3f1345e7d462c1d47695a917b135bf47a12900417759c28da50938ccb5",
+    "paper.pdf": "041323b11263ff171e7ebbf9bf28034f4e80ec733c693672bf723df9504d2929",
+    "research/binary_characteristic_transfer/quadratic_frobenius_core/higher_power_frobenius.tex": "05259c7fedc04597d940315b0aca857b1018b470618fcab4cd459ccb777ac97e",
+    "research/binary_characteristic_transfer/quadratic_frobenius_core/verify_higher_power_babybear.py": "060c16c2bbd49694a2a1612c2cd4a07e32a10ffc4fb696fd954f898b5b42ee9b",
+    "research/binary_characteristic_transfer/quadratic_frobenius_core/verify_higher_power_babybear.json": "da2f22022f7ce49c530d5bb2c23b1aa1a7924d059a08d68cb59e7691b000870e"
+  }
+}

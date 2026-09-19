@@ -1,0 +1,211 @@
+{
+  "PASS": true,
+  "p": 1657,
+  "ell": 23,
+  "subgroups_checked": 24,
+  "differential_identities_checked": 24,
+  "domain_gcd_identities_checked": 72,
+  "pair_wronskian_sign_checks": 24,
+  "ramification_domain_roots": 0,
+  "wronskian_domain_roots": "Exactly the subgroup kernel; independent of the tag pair",
+  "scope": "Identity replay on the saved fixture; no shifted-derivative or locator search",
+  "results": [
+    {
+      "subgroup_index": 0,
+      "ramification_degree": 33,
+      "ramification_domain_gcd_degree": 0,
+      "wronskian_domain_gcd_degree": 11,
+      "quotient_curve_a": 1249,
+      "quotient_curve_b": 1143
+    },
+    {
+      "subgroup_index": 1,
+      "ramification_degree": 33,
+      "ramification_domain_gcd_degree": 0,
+      "wronskian_domain_gcd_degree": 11,
+      "quotient_curve_a": 1198,
+      "quotient_curve_b": 1379
+    },
+    {
+      "subgroup_index": 2,
+      "ramification_degree": 33,
+      "ramification_domain_gcd_degree": 0,
+      "wronskian_domain_gcd_degree": 11,
+      "quotient_curve_a": 657,
+      "quotient_curve_b": 1565
+    },
+    {
+      "subgroup_index": 3,
+      "ramification_degree": 33,
+      "ramification_domain_gcd_degree": 0,
+      "wronskian_domain_gcd_degree": 11,
+      "quotient_curve_a": 214,
+      "quotient_curve_b": 9
+    },
+    {
+      "subgroup_index": 4,
+      "ramification_degree": 33,
+      "ramification_domain_gcd_degree": 0,
+      "wronskian_domain_gcd_degree": 11,
+      "quotient_curve_a": 744,
+      "quotient_curve_b": 1075
+    },
+    {
+      "subgroup_index": 5,
+      "ramification_degree": 33,
+      "ramification_domain_gcd_degree": 0,
+      "wronskian_domain_gcd_degree": 11,
+      "quotient_curve_a": 909,
+      "quotient_curve_b": 1652
+    },
+    {
+      "subgroup_index": 6,
+      "ramification_degree": 33,
+      "ramification_domain_gcd_degree": 0,
+      "wronskian_domain_gcd_degree": 11,
+      "quotient_curve_a": 664,
+      "quotient_curve_b": 1652
+    },
+    {
+      "subgroup_index": 7,
+      "ramification_degree": 33,
+      "ramification_domain_gcd_degree": 0,
+      "wronskian_domain_gcd_degree": 11,
+      "quotient_curve_a": 780,
+      "quotient_curve_b": 973
+    },
+    {
+      "subgroup_index": 8,
+      "ramification_degree": 33,
+      "ramification_domain_gcd_degree": 0,
+      "wronskian_domain_gcd_degree": 11,
+      "quotient_curve_a": 27,
+      "quotient_curve_b": 1497
+    },
+    {
+      "subgroup_index": 9,
+      "ramification_degree": 33,
+      "ramification_domain_gcd_degree": 0,
+      "wronskian_domain_gcd_degree": 11,
+      "quotient_curve_a": 1010,
+      "quotient_curve_b": 1379
+    },
+    {
+      "subgroup_index": 10,
+      "ramification_degree": 33,
+      "ramification_domain_gcd_degree": 0,
+      "wronskian_domain_gcd_degree": 11,
+      "quotient_curve_a": 84,
+      "quotient_curve_b": 1652
+    },
+    {
+      "subgroup_index": 11,
+      "ramification_degree": 33,
+      "ramification_domain_gcd_degree": 0,
+      "wronskian_domain_gcd_degree": 11,
+      "quotient_curve_a": 1376,
+      "quotient_curve_b": 9
+    },
+    {
+      "subgroup_index": 12,
+      "ramification_degree": 33,
+      "ramification_domain_gcd_degree": 0,
+      "wronskian_domain_gcd_degree": 11,
+      "quotient_curve_a": 233,
+      "quotient_curve_b": 1497
+    },
+    {
+      "subgroup_index": 13,
+      "ramification_degree": 33,
+      "ramification_domain_gcd_degree": 0,
+      "wronskian_domain_gcd_degree": 11,
+      "quotient_curve_a": 1397,
+      "quotient_curve_b": 1497
+    },
+    {
+      "subgroup_index": 14,
+      "ramification_degree": 33,
+      "ramification_domain_gcd_degree": 0,
+      "wronskian_domain_gcd_degree": 11,
+      "quotient_curve_a": 200,
+      "quotient_curve_b": 1075
+    },
+    {
+      "subgroup_index": 15,
+      "ramification_degree": 33,
+      "ramification_domain_gcd_degree": 0,
+      "wronskian_domain_gcd_degree": 11,
+      "quotient_curve_a": 958,
+      "quotient_curve_b": 973
+    },
+    {
+      "subgroup_index": 16,
+      "ramification_degree": 33,
+      "ramification_domain_gcd_degree": 0,
+      "wronskian_domain_gcd_degree": 11,
+      "quotient_curve_a": 1266,
+      "quotient_curve_b": 1143
+    },
+    {
+      "subgroup_index": 17,
+      "ramification_degree": 33,
+      "ramification_domain_gcd_degree": 0,
+      "wronskian_domain_gcd_degree": 11,
+      "quotient_curve_a": 1106,
+      "quotient_curve_b": 1379
+    },
+    {
+      "subgroup_index": 18,
+      "ramification_degree": 33,
+      "ramification_domain_gcd_degree": 0,
+      "wronskian_domain_gcd_degree": 11,
+      "quotient_curve_a": 1251,
+      "quotient_curve_b": 1565
+    },
+    {
+      "subgroup_index": 19,
+      "ramification_degree": 33,
+      "ramification_domain_gcd_degree": 0,
+      "wronskian_domain_gcd_degree": 11,
+      "quotient_curve_a": 1576,
+      "quotient_curve_b": 973
+    },
+    {
+      "subgroup_index": 20,
+      "ramification_degree": 33,
+      "ramification_domain_gcd_degree": 0,
+      "wronskian_domain_gcd_degree": 11,
+      "quotient_curve_a": 1406,
+      "quotient_curve_b": 1565
+    },
+    {
+      "subgroup_index": 21,
+      "ramification_degree": 33,
+      "ramification_domain_gcd_degree": 0,
+      "wronskian_domain_gcd_degree": 11,
+      "quotient_curve_a": 799,
+      "quotient_curve_b": 1143
+    },
+    {
+      "subgroup_index": 22,
+      "ramification_degree": 33,
+      "ramification_domain_gcd_degree": 0,
+      "wronskian_domain_gcd_degree": 11,
+      "quotient_curve_a": 67,
+      "quotient_curve_b": 9
+    },
+    {
+      "subgroup_index": 23,
+      "ramification_degree": 33,
+      "ramification_domain_gcd_degree": 0,
+      "wronskian_domain_gcd_degree": 11,
+      "quotient_curve_a": 713,
+      "quotient_curve_b": 1075
+    }
+  ],
+  "sha256": {
+    "fixture.json": "208af6edb304ae81f8a35784bd238c2e49095c8381008eeff755c4f31b679de2",
+    "verify_isogeny_wronskian.py": "ad90fd9af0230196b59eff38fe35d794593c1ae037f302ce1f28fbf2d27ce2e4"
+  },
+  "seconds": 0.1827433329890482
+}
