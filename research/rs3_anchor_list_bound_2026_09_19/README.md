@@ -126,3 +126,18 @@ the derivative identity, each cross-multiplied polynomial, every
 shifted coefficient sign, and the rounded-threshold leading coefficients.
 It writes `receipt.json` with the script hash. No parameter sweep,
 codeword enumeration, manuscript edit, or field computation is used.
+
+## Superseded comparisons and practical scope
+
+The dated norm-one audits and September 18 strategy notes retain the
+older valid 22N/137N upper bounds and factor-44/274 comparisons as
+historical records. The constants above supersede those comparisons;
+the archived certificates have not been rewritten.
+[The active-text audit](LOCAL_PRIOR_AND_ACTIVE_TEXT_AUDIT.md) records
+the manuscript checks and identifies the older records.
+
+[The general-shortening audit](GENERAL_SHORTENING_PRACTICAL_AUDIT.md)
+extends the argument to arbitrary message degree and checks two frozen
+practical benchmark cells. Every resulting numerical upper-bound
+expression exceeds 2^24400 there. This is a limitation of this proof,
+not a lower bound on the actual list size or a live better.codes claim.

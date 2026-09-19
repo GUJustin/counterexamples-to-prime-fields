@@ -1,0 +1,44 @@
+{
+  "status": "PASS",
+  "scope": "Two frozen cells; no claim about current website parameters.",
+  "script_sha256": "cc0052ccd1c098fa772481d3f339eaf8576ff0d0ff5ae33f8e08ceb189b8a171",
+  "sympy_version": "1.14.0",
+  "formula": "binom(n,j)/binom(T,j)*(n-j)*(T-D)/((T-j)^2-(D-j)*(n-j))",
+  "hypotheses": "0<=j<=D<T<=n; denominator>0; integer parameters; distinct coordinates",
+  "symbolic_checks": {
+    "denominator_affine_identity": true,
+    "Johnson_factor_at_least_one_identity": true,
+    "RS3_one_anchor_specialization": true
+  },
+  "cells": [
+    {
+      "n": 262144,
+      "degree_bound_D": 131071,
+      "dimension": 131072,
+      "agreement_T": 181275,
+      "Dn_minus_T_squared": 1498850599,
+      "denominator_slope": 30665,
+      "minimum_admissible_j": 48879,
+      "denominator_at_previous_j": -6729,
+      "denominator_at_minimum_j": 23936,
+      "n_squared_minus_2T_squared": 2998225486,
+      "Johnson_factor_at_minimum_j": "14313845/32",
+      "all_admissible_j_bound_log2_strictly_greater_than": "48879/2"
+    },
+    {
+      "n": 262144,
+      "degree_bound_D": 131071,
+      "dimension": 131072,
+      "agreement_T": 181284,
+      "Dn_minus_T_squared": 1495587568,
+      "denominator_slope": 30647,
+      "minimum_admissible_j": 48801,
+      "denominator_at_previous_j": -13968,
+      "denominator_at_minimum_j": 16679,
+      "n_squared_minus_2T_squared": 2991699424,
+      "Johnson_factor_at_minimum_j": "824045543/1283",
+      "all_admissible_j_bound_log2_strictly_greater_than": "48801/2"
+    }
+  ],
+  "conclusion": "Every admissible displayed bound exceeds 2^24400; this formula does not improve the practical benchmark."
+}
