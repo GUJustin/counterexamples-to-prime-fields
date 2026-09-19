@@ -1,0 +1,182 @@
+\subsection{A high-rate Hermitian bank with two far inputs}
+\label{sec:odd-hermitian-high-rate}
+The preceding low-rate examples are not the only way to obtain
+superlinearly many exceptional challenges in odd characteristic.
+The norm compiler of~\cite{binary-counterexamples}, specialized to odd
+characteristic, also gives a high-rate family. Here the full Hermitian
+family yields an injective label map and an individual source-distance
+bound, with a different threshold regime.
+
+\begin{theorem}\label{thm:odd-hermitian-high-rate}
+Let $p\ge5$ be prime, $B=\mathbb F_{p^2}$, and
+$E=\mathbb F_{p^4}$. On the full domain $B$, put
+\[
+ n=p^2,\qquad k=p^2-2p,\qquad D=p^2-p,\qquad T=D-2,
+ \qquad r_p=\min\{e\ge2:e^2-e+1\ge p\}.
+\]
+There are words $r_0,r_1$ over $E$ with
+\[
+ A_{\rm common}(r_0,r_1)=k,\qquad A(r_i)\le D-r_p<T,
+\]
+such that exactly $p^2(p-1)$ parameters on their affine line have
+nonempty threshold-$T$ lists. Every such list is a singleton, and
+its word has nearest agreement exactly $D-1$. Every other word
+on the line has agreement at most $D-r_p$.
+
+The threshold is strictly below $\sqrt{n(k-1)}$, but also below the
+full first-order agreement curve. The rate tends to one, the common
+agreement loss is $T-k=p-2$, and the smaller guaranteed individual
+loss is $r_p-2\sim\sqrt p$. Over $\mathbb F_{p^8}$, the same bank
+admits two affine endpoints with individual and common agreement
+exactly $k$, with the same exact singleton-list count.
+\end{theorem}
+\begin{proof}
+Fix $\beta\in E\setminus B$, set $\Lambda=X^{p^2}-X$ and $R=X^D$,
+and define
+\[
+ f(x)=\frac{R(x)-R(\beta)}{x-\beta},\qquad
+ g(x)=\frac1{x-\beta}.
+\]
+Consider all $p^2(p-1)$ monic Hermitian polynomials
+\[
+ G=X^{p+1}+sX^p+s^pX+c=(X+s)^{p+1}+d,
+ \quad s\in B,\quad c\in\mathbb F_p,\quad
+ d=c-s^{p+1}\ne0.
+\]
+Each has $p+1$ distinct roots in $B$. Put $F=X+s$, $J=\Lambda/G$,
+and $P=FJ$. Since $G(-s)=d\ne0$, the root $-s$ of $F$ is already
+a root of $J$. Thus $P$ has exactly $D-1$ distinct roots, all in $B$.
+The identities
+\[
+ G^p-G=\Lambda F^p,\qquad
+ P^p=\Lambda^{p-1}-J^{p-1}
+\]
+show that $P=R+C$, with $\deg C\le k$. Indeed the terms of degree
+$(p-2)p^2+1$ on the right cancel, leaving, apart from the leading
+term $X^{pD}$, degree at most $(p-2)p^2=pk$.
+For $z=P(\beta)$ the polynomial
+\[
+ q_G=\frac{R-P+P(\beta)-R(\beta)}{X-\beta}
+\]
+has degree less than $k$, and $f+zg-q_G=P/(X-\beta)$ on the domain.
+
+These labels are nonzero and distinct. All roots of $P$ lie in $B$,
+so $P(\beta)\ne0$. Equality of two labels implies, by the identity
+for $P^p$, that $G_1(\beta)=aG_2(\beta)$ for some
+$a\in\mathbb F_p^*$. A nonzero polynomial $G_1-aG_2$ has no root
+outside $B$: if its leading coefficient is nonzero, completing the
+norm gives a norm circle or a repeated native root; otherwise it is
+a trace-linearized polynomial or a nonzero constant. Thus it cannot
+vanish at $\beta$. The zero polynomial case forces $a=1$ and
+$G_1=G_2$.
+
+We next classify every high-agreement witness, not only the displayed
+bank. For any $z\in E$ and $\deg q<k$, its monic residual is
+\[
+ Q=(X-\beta)(f+zg-q)=X^D+C_0,\qquad \deg C_0\le D-p.
+\]
+Let $V\in B[X]$ be the locator of \emph{all} distinct native roots
+of $Q$, put $e=D-\deg V$, and write $H=Q/V$. If $e<p$, the first
+$e$ coefficients below the leading coefficient of $Q$ vanish.
+Division by the monic $V$ therefore gives $H\in B[X]$ recursively.
+The complementary locator $L=\Lambda/V$ has degree $p+e$.
+The identity $QL=\Lambda H$ gives
+\[
+ L=X^pH+A_0,\qquad \deg A_0\le e,
+\]
+by comparing degrees in $X^D(L-X^pH)=-C_0L-XH$.
+Also $\gcd(H,L)=1$, because the roots of $L$ are precisely the
+native points where $Q$ is nonzero.
+
+The case $e=0$ would make $L=X^p+a$, contradicting its
+squarefreeness. If $2\le e<p$, then $\mathcal R=-A_0/H$ has rational
+degree exactly $e$. All $p+e$ roots of $L$ satisfy
+$x^p=\mathcal R(x)$ and hence
+\[
+ x=\mathcal R^\sigma(\mathcal R(x)),\qquad \sigma(a)=a^p
+ \quad(a\in B).
+\]
+The composition has degree $e^2>1$, so has at most $e^2+1$ fixed
+points. Thus $p+e\le e^2+1$, or $e\ge r_p$.
+
+It remains to classify $e=1$. Write $H=X+s$, so
+$L=X^{p+1}+sX^p+aX+c$ with coefficients in $B$.
+Reducing $L^p-L$ modulo $\Lambda$ gives
+\[
+ (a^p-s)X^p+(s^p-a)X+(c^p-c).
+\]
+This degree-at-most-$p$ polynomial vanishes on all $p+1$ roots of
+$L$, so $a=s^p$ and $c\in\mathbb F_p$. Squarefreeness forces
+$c-s^{p+1}\ne0$. Thus $L$ is exactly one of the Hermitian polynomials
+$G$ above, and $Q=P$. Evaluating at $\beta$ gives $z=P(\beta)$.
+Since these labels are injective, this also proves uniqueness of
+$q$. For $p\ge5$, $r_p\ge3$: the complete threshold-$T$ profile is
+therefore precisely the singleton bank, and every nonbank word has
+agreement at most $D-r_p$. The case $e\ge p$ already satisfies
+that upper bound.
+
+The reciprocal word $g$ has agreement at most $k$, since
+$(X-\beta)q-1$ is nonzero of degree at most $k$ for $\deg q<k$.
+Interpolation on any $k$ domain points proves
+$A(g)=A_{\rm common}(f,g)=k$. For explicit far affine endpoints,
+let $c_*\in E$ be the unique element with
+\[
+ c_*^p=\Lambda(\beta)^{p-1},\qquad r_0=f,\quad r_1=f+c_*g.
+\]
+Neither $0$ nor $c_*$ is a bank label: nonzero labels were proved
+above, and the identity for $P(\beta)^p$ excludes $c_*$.
+The invertible source change preserves common agreement, and the
+affine line is $f+t c_*g$. This proves the exact count and both
+individual bounds.
+
+The finite Johnson slack and high-rate first-order sign are
+\[
+ n(k-1)-T^2=2p^2-4p-4>0,
+\]
+\[
+ (8-\rho)\alpha^2-6\rho\alpha+\rho(4\rho-5)
+ =-\frac{(p-2)(p+2)(9p+2)}{p^5}<0,
+ \quad \rho=k/n,\quad\alpha=T/n.
+\]
+Here $\rho>1/2$, and the latter is the negative side of the
+first-order boundary. Finally choose
+$\omega\in\mathbb F_{p^8}\setminus E$ and endpoints
+$f+\omega g$, $f+(\omega+1)g$. Coefficient projection onto the
+$E$-basis $1,\omega$ makes each individual agreement equal to the
+common agreement $k$. Their affine line is $f+(\omega+t)g$, so
+all the original parameters are retained. The same cofactor descent
+works for witnesses over the larger alphabet and forces every high-agreement
+residual to be one of the same native $P$, so there are no additional
+threshold lists.
+\end{proof}
+
+\paragraph{Compact list-membership recovery.}
+The bank can be recognized without enumerating its $p^2(p-1)$ members.
+For a pencil label $z$, put
+$u=1-z^p/\Lambda(\beta)^{p-1}$ and solve
+$v-u v^p=0$ in the four-dimensional $\mathbb F_p$-space $E$.
+Its kernel is zero or a single $\mathbb F_p$-line: the ratio of two
+nonzero solutions is fixed by $p$th powering.
+Evaluation at $\beta$ identifies $E$ with the four-dimensional space
+\[
+ bX^{p+1}+sX^p+s^pX+d,
+ \qquad b,d\in\mathbb F_p,\quad s\in B.
+\]
+Indeed every nonzero polynomial in this space has all its roots in
+$B$, so evaluation is injective. Invert this fixed linear map on a
+nonzero kernel vector, reject if $b=0$, and otherwise normalize to
+$b=1$. Reject a zero norm radius; the remaining polynomial is the
+unique $G$ and gives $q_G$ by the displayed formula. The scalar
+choice of kernel vector does not affect the normalized $G$.
+Thus membership and compact witness parameters require only
+constant-dimensional linear algebra over $\mathbb F_p$; writing the
+full degree-$<k$ witness still requires output-sized work.
+
+The quartic-alphabet statement has exactly
+$n^{3/2}-n$ exceptional affine parameters, common loss of order $n^{-1/2}$ as a fraction of the
+block length, and guaranteed individual loss of order $n^{-3/4}$.
+The degree-eight variant makes the individual loss equal to the
+whole capacity margin. These are full-subfield domains of size $p^2$;
+the message dimension exceeds the characteristic for $p\ge5$.
+They neither establish a prime-alphabet counterexample nor supply
+prescribed short-domain or concrete-security parameters.

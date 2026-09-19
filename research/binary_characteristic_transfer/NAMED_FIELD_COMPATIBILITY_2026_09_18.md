@@ -115,3 +115,13 @@ For the BabyBear instance the noncanonical agreement cap is2,312,937,842,
 well below hp=24,644,388,138,961. The exact loss ratio is now
 10049257984859/34693646111578. This improves the source statement without
 changing the domain, alphabet, code dimension, or native challenge count.
+
+## High-rate Hermitian family (September 19 follow-up)
+
+The new complete norm-family theorem uses the quartic alphabet F_(p^4), the full quadratic subfield domain of length n=p², and dimension k=p²−2p. Its threshold is T=p²−p−2. Exactly p²(p−1) affine labels have singleton lists with nearest agreement T+1; all remaining words have agreement at most p²−p−r_p, where r_p is the least integer r>=2 with r²−r+1>=p. Both explicit endpoints are in this far complement. Common agreement is exactly k. Compact list membership is recovered by two four-dimensional linear algebra operations over F_p.
+
+For BabyBear, this gives n=4053239668659978241, k=4053239664633446399, T=4053239666646712318, and 8160249290505226260546846720 singleton labels. The guaranteed individual source loss is 44868 coordinates; the common-agreement loss is 2013265919 coordinates. These are DIFFERENT losses. The individual guarantee is about 1/sqrt(p) of the capacity margin; the common-agreement loss equals that whole margin.
+
+For M31, n=4611686014132420609, k=4611686009837453315, T=4611686011984936960, and the corresponding guaranteed individual/common losses are 46340 and 2147483645 coordinates.
+
+Thus the alphabet matches degree-four BabyBear or M31, but the domains still have about four quintillion points and the rates are extremely close to one. The threshold is below the full first-order curve, and the code dimension exceeds the characteristic. No actual SNARK domain, better.codes improvement, or prime-alphabet tightness follows. The degree-eight variant makes both individual agreements equal to k; that variant does not preserve a degree-four alphabet. This family does not directly apply to a degree-two Goldilocks alphabet.

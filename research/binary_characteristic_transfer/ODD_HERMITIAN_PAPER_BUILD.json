@@ -1,0 +1,14 @@
+{
+  "pages": 300,
+  "pdf_sha256": "99373664fd43bd5a9c80f238af7d90568231e7e2244c8eab33b7b8865f630094",
+  "theorem": "N.39",
+  "visual_review_pages": [
+    214,
+    215,
+    216
+  ],
+  "latex_warnings": [],
+  "mathematical_audit": "ODD_HERMITIAN_INTEGRATED_AUDIT.md",
+  "finite_replay": "verify_hermitian_norm_injective.json",
+  "finite_scope": "Every explicit witness for p=5,7 and all625/2401 decoder labels; not codeword enumeration"
+}

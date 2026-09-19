@@ -1,0 +1,259 @@
+{
+  "elapsed_seconds": 1.81833566701971,
+  "fixtures": [
+    {
+      "actual_witness_agreement": 19,
+      "actual_witness_excess_above_exact_Johnson": 11,
+      "characteristic": 5,
+      "compact_decoder": {
+        "all_membership_and_recovered_parameters_match_bank": true,
+        "categories": {
+          "accepted": 100,
+          "u_zero": 1,
+          "zero_kernel": 468,
+          "zero_leading_coefficient": 31,
+          "zero_radius": 25
+        },
+        "elapsed_seconds": 0.012617000000318512,
+        "evaluation_inverse": [
+          [
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            1,
+            0,
+            0,
+            0
+          ]
+        ],
+        "evaluation_matrix": [
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            3,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ]
+        ],
+        "kernel_dimensions": {
+          "0": 468,
+          "1": 156
+        },
+        "label_count": 625,
+        "membership_digest_sha256": "4aef5092bd16d4cb5f2e469070fb191a21d4a2809c96476cc67facdebe59cba0",
+        "parameter_order": [
+          "b",
+          "s0",
+          "s1",
+          "d"
+        ],
+        "scope": "all labels versus exact bank; no all-codeword enumeration"
+      },
+      "dimension": 15,
+      "distinct_nonzero_labels": 100,
+      "encoding": "a+b*p for B; a+b*p^2 for E, with a,b in B in the latter",
+      "evaluated_residual_checks": 2500,
+      "exact_Johnson_slack": 26,
+      "explicit_endpoint": {
+        "affine_exceptional_parameters": 100,
+        "affine_parameters_avoid_zero_and_one": true,
+        "both_endpoint_agreement_upper": 17,
+        "common_agreement": 15,
+        "cstar_encoded": 2,
+        "cstar_pth_power_verified": true,
+        "frobenius_scale_encoded": 2,
+        "outside_bank_verified": true
+      },
+      "extension_quadratic_modulus_w2_minus_encoded": 5,
+      "first_order_sign_numerator_at_actual_agreement": -340,
+      "first_order_sign_numerator_at_tested_threshold": -4935,
+      "fixed_A": 2,
+      "n": 25,
+      "native_quadratic_modulus_v2_minus": 2,
+      "ordered_pair_count": 600,
+      "pair_multiplicity": 6,
+      "pass_all_checks": true,
+      "pole_encoded": 25,
+      "polynomial_frobenius_identity_checks": 200,
+      "proven_source_f_agreement_upper": 17,
+      "proven_source_g_and_common_agreement": 15,
+      "q": 625,
+      "rp": 3,
+      "scaled_Hermitian_pole_values": 400,
+      "source_bound_method": "all-witness rational-map proof; no codeword enumeration",
+      "tested_threshold": 18,
+      "witness_agreement_distribution": {
+        "19": 100
+      },
+      "witness_bank_sha256": "f68bed59be58f84cf45685e2291a6d36ee7c72bbb4bb719406abd450ff6496e2",
+      "witness_degree_distribution": {
+        "13": 4,
+        "14": 96
+      }
+    },
+    {
+      "actual_witness_agreement": 41,
+      "actual_witness_excess_above_exact_Johnson": 15,
+      "characteristic": 7,
+      "compact_decoder": {
+        "all_membership_and_recovered_parameters_match_bank": true,
+        "categories": {
+          "accepted": 294,
+          "u_zero": 1,
+          "zero_kernel": 2000,
+          "zero_leading_coefficient": 57,
+          "zero_radius": 49
+        },
+        "elapsed_seconds": 0.0921248749946244,
+        "evaluation_inverse": [
+          [
+            0,
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            6,
+            2
+          ],
+          [
+            0,
+            0,
+            3,
+            5
+          ],
+          [
+            1,
+            0,
+            0,
+            0
+          ]
+        ],
+        "evaluation_matrix": [
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            4,
+            4,
+            0
+          ],
+          [
+            0,
+            6,
+            2,
+            0
+          ]
+        ],
+        "kernel_dimensions": {
+          "0": 2000,
+          "1": 400
+        },
+        "label_count": 2401,
+        "membership_digest_sha256": "1a49ad2b849dcf318e489ec38230a59130d968920404562f80ddac46556f0aa5",
+        "parameter_order": [
+          "b",
+          "s0",
+          "s1",
+          "d"
+        ],
+        "scope": "all labels versus exact bank; no all-codeword enumeration"
+      },
+      "dimension": 35,
+      "distinct_nonzero_labels": 294,
+      "encoding": "a+b*p for B; a+b*p^2 for E, with a,b in B in the latter",
+      "evaluated_residual_checks": 14406,
+      "exact_Johnson_slack": 66,
+      "explicit_endpoint": {
+        "affine_exceptional_parameters": 294,
+        "affine_parameters_avoid_zero_and_one": true,
+        "both_endpoint_agreement_upper": 39,
+        "common_agreement": 35,
+        "cstar_encoded": 10,
+        "cstar_pth_power_verified": true,
+        "frobenius_scale_encoded": 45,
+        "outside_bank_verified": true
+      },
+      "extension_quadratic_modulus_w2_minus_encoded": 8,
+      "first_order_sign_numerator_at_actual_agreement": -1848,
+      "first_order_sign_numerator_at_tested_threshold": -20475,
+      "fixed_A": 2,
+      "n": 49,
+      "native_quadratic_modulus_v2_minus": 3,
+      "ordered_pair_count": 2352,
+      "pair_multiplicity": 8,
+      "pass_all_checks": true,
+      "pole_encoded": 49,
+      "polynomial_frobenius_identity_checks": 588,
+      "proven_source_f_agreement_upper": 39,
+      "proven_source_g_and_common_agreement": 35,
+      "q": 2401,
+      "rp": 3,
+      "scaled_Hermitian_pole_values": 1764,
+      "source_bound_method": "all-witness rational-map proof; no codeword enumeration",
+      "tested_threshold": 40,
+      "witness_agreement_distribution": {
+        "41": 294
+      },
+      "witness_bank_sha256": "40acec0415701cd5a855b28f4d17fe7fce266fd83618501fb977c3d926c71221",
+      "witness_degree_distribution": {
+        "33": 6,
+        "34": 288
+      }
+    }
+  ],
+  "pass": true,
+  "peak_rss_bytes": 77971456,
+  "symbolic_identities": {
+    "actual_minus_Johnson_squared": "2*p + 1",
+    "first_order_at_actual": "-(p**3 - 11*p - 2)/p**5",
+    "first_order_at_tested": "-(p - 2)*(p + 2)*(9*p + 2)/p**5",
+    "tested_minus_Johnson_squared": "-2*(p**2 - 2*p - 2)"
+  },
+  "task": "Hermitian norm injectivity and strict witness regression",
+  "verifier_sha256": "1d5cacf852111d419b934f6b37459732b941ad1108fd100dd8778db081f8bd06"
+}
