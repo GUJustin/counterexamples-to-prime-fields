@@ -27,8 +27,10 @@
   "common_agreement_exact": 485,
   "endpoint_agreement_interval": [
     485,
-    510
+    485
   ],
+  "endpoint_agreement_exact": 485,
+  "noncanonical_agreement_upper": 142,
   "first_order_agreement_upper": 483,
   "minimum_canonical_guarantee": 672,
   "minimum_nonzero_label_actual_canonical_agreement": 712,
@@ -52,7 +54,7 @@
     19
   ],
   "endpoint_gap_over_capacity_margin_lower": [
-    83,
+    108,
     587
   ],
   "row_encoding": "uint32 little-endian; field element=sum(c_i*97^i); columns x,f,g,endpoint0_word,endpoint1_word",
@@ -1290,6 +1292,6 @@
       "fresh_max": 252
     }
   ],
-  "elapsed_seconds": 22.446605833014473,
-  "script_sha256": "f8142aa420443473ec85a94d451521bb16cb45b9005766d638c1507b5434ee8d"
+  "elapsed_seconds": 15.989905709022423,
+  "script_sha256": "3fceb39c667512947122753c96da761c141777ed394e51df050a33f38eed083b"
 }

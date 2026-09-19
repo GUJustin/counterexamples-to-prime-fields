@@ -21,7 +21,13 @@ def check(p,h,num,den):
     N=h*ell;m=num*N//den;n=N+m;k=h+1
     R,tau=divmod(m,ell)
     assert 0<m<N and 0<=R<h and 0<=tau<ell
-    T=isqrt(h*n-1);C=h*p;U=C+h*h
+    T=isqrt(h*n-1);C=h*p
+    assert p>=h*h
+    ell=int(fmpz(h).factor()[0][0])
+    good=h//ell
+    noncanonical=good*p+(2*h-good)*h
+    assert noncanonical<C
+    U=C
     bank_min=(h+R)*(p-1)
     first=ceil_root_ratio(k*n,2,2)+ceil_root_ratio(k**3*n,72,4)
     assert Fraction(k,n)<Fraction(1,100)
@@ -33,6 +39,7 @@ def check(p,h,num,den):
       'first_block_length':N,'second_block_length':m,
       'whole_second_branches':R,'partial_branch_length':tau,
       'threshold':T,'common_agreement':C,'source_agreement_upper':U,
+      'source_agreement_exact':C,'noncanonical_agreement_upper':noncanonical,
       'canonical_agreement_lower':bank_min,'first_order_agreement_upper':first,
       'singleton_labels':B,'additional_label_list_size':p+1,
       'guaranteed_loss_over_capacity_margin':[ratio.numerator,ratio.denominator],
@@ -40,7 +47,7 @@ def check(p,h,num,den):
 
 cases=[check(2013265921,12241,54,55),check(97,5,1,2)]
 assert Fraction(*cases[0]['guaranteed_loss_over_capacity_margin'])>Fraction(28965,100000)
-assert Fraction(*cases[1]['guaranteed_loss_over_capacity_margin'])>Fraction(14,100)
+assert Fraction(*cases[1]['guaranteed_loss_over_capacity_margin'])>Fraction(18,100)
 result={'PASS':True,'scope':'Exact finite parameters for explicitly specified branch-prefix domains; no coordinates enumerated by this checker',
  'domain_recipe':'For primitive xi in F_(p^4), M=p^2+1, alpha_j=xi^((M/h)*j), z0=xi^M: keep all D0, all xi*alpha_j*B* for j<R, and xi*alpha_R*z0^v for 0<=v<tau.',
  'endpoint_recipe':'lambda0=1+xi^h*z0 and lambda1=2+xi^h*z0; z0 not in F_p makes both labels outside every canonical plane.',

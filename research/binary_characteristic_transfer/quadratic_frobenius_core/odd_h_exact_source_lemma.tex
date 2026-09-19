@@ -1,0 +1,59 @@
+\begin{lemma}[Noncanonical witnesses on odd-power blocks]
+\label{lem:odd-power-exact-source}
+Let $p\ge5$ be prime and let $h>1$ be an odd divisor of $M=p^2+1$
+with $h<M$ and $h-1<M/h$. Put $B=\mathbb F_{p^2}\subset E=\mathbb F_{p^4}$,
+choose primitive $\xi\in E^*$, and set
+$D_0=\{x\in E^*:x^h\in B^*\}$ and $D_1=\xi D_0$.
+On these blocks respectively put $(f,g)=(X^{hp},0)$ and
+$(f,g)=(\xi^{h-hp}X^{hp},1)$. The following bound also holds after
+arbitrary puncturing. If $\ell$ is the smallest prime divisor of $h$,
+every polynomial $q$
+of degree at most $h$ other than $aX^h+b$ satisfies
+\[
+ \operatorname{agr}(f+\lambda g,q)
+ \le \frac h\ell\max\{p,h^2\}+(2h-h/\ell)h.
+\]
+In particular, if $p\ge h^2$, this bound is strictly less than $hp$.
+\end{lemma}
+\begin{proof}
+We first bound a coefficientwise-$\mathbb F_{p^2}$ branch. Write
+$B=\mathbb F_{p^2}$ and consider $z^{hp}=P(z)$, where $P\in B[Z]$
+has degree at most $h$ and is not $aZ^h+b$.
+Let $d$ be the greatest common divisor of $h$ and all root
+multiplicities of $P$ over $\overline B$, and put $H=h/d$.
+Then $P=R^d$ for a polynomial $R$ of degree at most $H$.
+Since $\gcd(h,p^2-1)=1$, choose the unique $d$th root in $B$ of the
+leading coefficient of $P$. With that leading coefficient, $R$ is fixed
+by coefficientwise $p^2$-Frobenius, hence lies in $B[Z]$.
+The original matching equation is equivalent on $B$ to $z^{Hp}=R(z)$.
+
+The polynomial $U^H-R(Z)$ is irreducible over $\overline B(Z)$.
+Indeed, $\overline B(Z)$ contains $\mu_H$; adjoining a root $u$ gives
+a cyclic Galois extension, say of degree $e\mid H$.
+If $e<H$, then $u^e$ belongs to the base field, so $R$ is a proper
+power of order dividing $H$, contrary to the definition of $d$.
+This also proves irreducibility in $\overline B[Z,U]$.
+Writing $\sigma(c)=c^p$, all matches lie on
+\[
+ U^H=R(Z),\qquad Z^H=R^\sigma(U).
+\]
+If these degree-$H$ curves have no common component, B\'ezout gives
+at most $H^2$ matches. Otherwise irreducibility and their equal degree
+force their defining polynomials to be proportional, so
+$R=aZ^H+b$. Since $H$th powering permutes $B$, the substitution
+$y=z^H$ reduces the matching equation to $y^p=ay+b$, with at most
+$p$ solutions. Thus each such branch contributes at most
+$\max\{p,h^2\}$.
+
+A noncanonical $q$ has a nonzero coefficient of some $X^j$ with
+$0<j<h$. Within one block, this coefficient can be
+coefficientwise in $B$ on at most $\gcd(j,h)\le h/\ell$ branches.
+Write $\alpha_t=\xi^{(M/h)t}$. Good branches in both blocks would give
+$q_j\alpha_t^j\in B$ and $q_j\xi^{j-h}\alpha_u^j\in B$, implying
+$j-h+(M/h)j(u-t)\equiv0\pmod M$. This is impossible because
+$0<|j-h|<M/h$.
+All remaining branches contribute at most $h$ matches by projection
+onto $E/B$. This proves the displayed bound. If $p\ge h^2$, dividing
+it by $hp$ gives at most
+$1/\ell+(2-1/\ell)/h<1$, since $h\ge\ell\ge3$.
+\end{proof}

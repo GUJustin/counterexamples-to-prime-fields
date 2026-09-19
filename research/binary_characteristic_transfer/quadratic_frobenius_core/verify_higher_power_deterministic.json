@@ -16,16 +16,18 @@
       "partial_branch_length": 1768686400869808686,
       "threshold": 34693646123820,
       "common_agreement": 24644388138961,
-      "source_agreement_upper": 24644537981042,
+      "source_agreement_upper": 24644388138961,
+      "source_agreement_exact": 24644388138961,
+      "noncanonical_agreement_upper": 2312937842,
       "canonical_agreement_lower": 48839817953280,
       "first_order_agreement_upper": 24533338196068,
       "singleton_labels": 8160249298611705595853537280,
       "additional_label_list_size": 2013265922,
       "guaranteed_loss_over_capacity_margin": [
-        5024554071389,
-        17346823055789
+        10049257984859,
+        34693646111578
       ],
-      "guaranteed_loss_over_capacity_margin_decimal": 0.2896526963599943
+      "guaranteed_loss_over_capacity_margin_decimal": 0.2896570153664348
     },
     {
       "p": 97,
@@ -39,17 +41,19 @@
       "partial_branch_length": 4704,
       "threshold": 593,
       "common_agreement": 485,
-      "source_agreement_upper": 510,
+      "source_agreement_upper": 485,
+      "source_agreement_exact": 485,
+      "noncanonical_agreement_upper": 142,
       "canonical_agreement_lower": 672,
       "first_order_agreement_upper": 483,
       "singleton_labels": 921984,
       "additional_label_list_size": 98,
       "guaranteed_loss_over_capacity_margin": [
-        83,
+        108,
         587
       ],
-      "guaranteed_loss_over_capacity_margin_decimal": 0.141396933560477
+      "guaranteed_loss_over_capacity_margin_decimal": 0.1839863713798978
     }
   ],
-  "script_sha256": "745af5b8fbace5b6636807570b281efc2498621aaf80b174b6c2cb062c050cf7"
+  "script_sha256": "4757b582b2471cd305f844fc2b8c4c7a73a6b8f9018b5f4eb9810743a87c9b60"
 }

@@ -12,6 +12,8 @@ $T$ matches. Ordinary common agreement is the largest number of
 coordinates on which two words simultaneously agree with two such
 polynomials.
 
+\input{research/binary_characteristic_transfer/quadratic_frobenius_core/odd_h_exact_source_lemma.tex}
+
 \begin{proposition}[Finite full-fiber criterion]
 \label{prop:higher-power-frobenius-finite}
 Let $p\ge5$ be prime, let $B=\mathbb F_{p^2}\subset E=\mathbb F_{p^4}$,
@@ -24,20 +26,21 @@ $h-1<M/h$. Put $N=h(p^2-1)$. For an integer $0<m<N$, define
  \tau=m-R(p^2-1).
  \end{gathered}
 \]
-Suppose that
+Set $U=hp$ if $p\ge h^2$, and $U=hp+h^2$ otherwise. Suppose that
 \begin{equation}\label{eq:higher-power-finite-guards}
- hp+h^2<T\le(h+R)(p-1).
+ U<T\le(h+R)(p-1).
 \end{equation}
 There are an explicitly specified $n$-point domain $D\subset E$ and words $r_0,r_1\in E^D$
 for which the dimension-$k$ Reed--Solomon code has
 \[
- hp\le A(r_i)\le hp+h^2\quad(i=0,1),\qquad
+ hp\le A(r_i)\le U\quad(i=0,1),\qquad
  A_{\mathrm{common}}(r_0,r_1)=hp.
 \]
 On the affine line $(1-z)r_0+zr_1$, exactly $(p+1)(p^2-1)$ parameters
 $z\in E$ have singleton threshold-$T$ lists, one further parameter has
 a list of size $p+1$, and all other parameters have empty lists.
-Both endpoints have empty threshold-$T$ lists. Moreover, $T$ is the
+Both endpoints have empty threshold-$T$ lists. If $p\ge h^2$, every
+word with an empty threshold list has exact agreement $hp$. Moreover, $T$ is the
 largest integer strictly below $\sqrt{(k-1)n}$. If $k/n$ is in the
 low-rate branch of $a_1$ and
 \begin{equation}\label{eq:higher-power-first-order-guard}
@@ -123,7 +126,9 @@ with kernel $B$ kills the received monomial and leaves a nonzero
 polynomial of degree at most $h$. This gives at most $h^2$ matches
 on that block. The other block contributes at most $hp$ by the
 ordinary degree bound. Puncturing preserves these bounds, proving
-that every such $q$ has at most $hp+h^2<T$ matches.
+that every such $q$ has at most $hp+h^2$ matches. When $p\ge h^2$,
+Lemma~\ref{lem:odd-power-exact-source} sharpens this to fewer than $hp$
+matches. In either case the bound is at most $U<T$.
 
 Since $E=B\oplus\eta B$, the planes $I_a+\eta I_a$ intersect pairwise
 only at zero. Each nonzero label in their union therefore determines
@@ -134,8 +139,10 @@ For explicit endpoints, take $\lambda_0=1+\eta z_0$ and
 $\lambda_1=2+\eta z_0$, and put $r_i=f+\lambda_i g$.
 Since $z_0\notin\mathbb F_p$, neither label lies in a plane
 $I_a+\eta I_a$: its two $B$-components are linearly independent
-over $\mathbb F_p$. The preceding bounds give $A(r_i)\le hp+h^2$,
+over $\mathbb F_p$. The preceding bounds give $A(r_i)\le U$,
 and a core fiber with $b\ne0$ gives $A(r_i)\ge hp$.
+The same argument gives exact agreement $hp$ at every nonexceptional
+parameter whenever $p\ge h^2$.
 
 To bound ordinary common agreement for $(f,g)$, a nonconstant
 degree-$\le h$ polynomial explaining $g$ has at most $h$ zero-values
@@ -160,11 +167,12 @@ and rate $k/n=n^{-1+o(1)}$, together with received words $r_0,r_1$ and
 integer thresholds $T$, such that
 \[
  n a_1(k/n)<A_{\mathrm{common}}(r_0,r_1)
- \le A(r_i)<T<\sqrt{(k-1)n}\qquad(i=0,1).
+ =A(r_0)=A(r_1)<T<\sqrt{(k-1)n}.
 \]
 The affine line between these words has $n^{3/2-o(1)}$ singleton
 threshold-$T$ lists, one further list of size $p+1$, and empty lists
-elsewhere. Moreover, for $i=0,1$,
+elsewhere; every word in the latter class has exact agreement $hp$.
+Here $h=k-1$. Moreover, for $i=0,1$,
 \[
  \frac{A(r_i)}{n a_1(k/n)}\longrightarrow1,\qquad
  \frac{A_{\mathrm{common}}(r_0,r_1)}{n a_1(k/n)}\longrightarrow1,
@@ -192,7 +200,7 @@ Proposition~\ref{prop:higher-power-frobenius-finite}. Its parameters obey
  T=(\sqrt2+o(1))hp,\qquad R/h\longrightarrow1.
 \]
 Both inequalities in~\eqref{eq:higher-power-finite-guards} hold eventually:
-$h^2=o(hp)$ and $(h+R)(p-1)\sim2hp$. The branch condition also holds.
+$p\ge h^2$, so $U=hp$, and $(h+R)(p-1)\sim2hp$. The branch condition also holds.
 
 For first-order placement, $n\le(2-2/\sqrt h)hp^2$, and for $h\ge25$
 \[
@@ -204,7 +212,7 @@ The correction $(k^3n/72)^{1/4}=O(h\sqrt p)$ is smaller than this
 deficit. Thus~\eqref{eq:higher-power-first-order-guard} holds.
 The lower bound $a_1(\rho)>\sqrt{\rho/2}$ and the same upper bound
 show $n a_1(k/n)\sim hp$. The finite proposition gives
-$A_{\mathrm{common}}=hp$ and $A(r_i)=hp+O(h^2)$, proving the claimed
+$A_{\mathrm{common}}=A(r_i)=hp$, proving the claimed
 agreement ratios. Also $k=o(hp)$, so both loss ratios tend to
 $1-1/\sqrt2$. Finally $n=p^{2+o(1)}$ and the singleton count is
 $(p+1)(p^2-1)$, yielding all stated exponents.
@@ -212,8 +220,8 @@ $(p+1)(p^2-1)$, yielding all stated exponents.
 
 \paragraph{Exact finite parameter certificates.}
 A smaller instance has $p=97$, $h=5$, $m=23520$, $n=70560$,
-$k=6$, and $T=593$. Its common agreement is $485$, each endpoint
-has agreement at most $510$, and there are $921984$ singleton
+$k=6$, and $T=593$. Its common and both individual endpoint agreements are exactly $485$,
+and there are $921984$ singleton
 parameters. The integer first-order upper bound is $483$, while the
 minimum canonical agreement is $672$. Thus the finite inequalities
 already hold at these parameters.
@@ -226,7 +234,7 @@ criterion give
  \begin{aligned}
  n&=98329309808423281932846,& k&=12242,\\
  A_{\mathrm{common}}&=24644388138961,&
- A(r_i)&\le24644537981042,\\
+ A(r_i)&=24644388138961,\\
  T&=34693646123820,&
  \#\{\text{singleton labels}\}&=8160249298611705595853537280.
  \end{aligned}
@@ -237,8 +245,8 @@ $\tau=1768686400869808686$ further points, and minimum canonical
 agreement $48839817953280>T$. The guaranteed endpoint loss divided
 by the capacity margin is
 \[
- \frac{T-hp-h^2}{T-k}
- =\frac{5024554071389}{17346823055789}>0.28965.
+ \frac{T-hp}{T-k}
+ =\frac{10049257984859}{34693646111578}>0.289657.
 \]
 The branch-prefix formula specifies the retained domain directly; this
 parameter certificate does not enumerate its coordinates. Its rate is

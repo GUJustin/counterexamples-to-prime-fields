@@ -88,10 +88,10 @@ parameters over F_(p⁴):
 | Message length | 12,242 |
 | Codeword length | 98,329,309,808,423,281,932,846 |
 | Common agreement | 24,644,388,138,961 |
-| Each endpoint agreement, at most | 24,644,537,981,042 |
+| Each endpoint agreement, exactly | 24,644,388,138,961 |
 | Tested agreement | 34,693,646,123,820 |
 | Singleton challenges | 8,160,249,298,611,705,595,853,537,280 |
-| Guaranteed loss / capacity margin | greater than28.965% |
+| Exact loss / capacity margin | greater than28.9657% |
 
 The first-order agreement is below24,533,338,196,068, strictly below
 common and endpoint agreements. The tested agreement is the largest
@@ -108,3 +108,10 @@ extension through field substitution. It gives no better.codes improvement
 and no practical SNARK-security ceiling. Direct restriction of the original quadratic sources
 to standard multiplicative domains has a separate obstruction, proved in
 [PRACTICAL_DOMAIN_DIRECT_RESTRICTION.md](quadratic_frobenius_core/PRACTICAL_DOMAIN_DIRECT_RESTRICTION.md).
+
+The odd-power Kummer refinement proves exact agreement hp at every
+nonexceptional parameter when p>=h², including both displayed endpoints.
+For the BabyBear instance the noncanonical agreement cap is2,312,937,842,
+well below hp=24,644,388,138,961. The exact loss ratio is now
+10049257984859/34693646111578. This improves the source statement without
+changing the domain, alphabet, code dimension, or native challenge count.

@@ -299,3 +299,13 @@ capacity margin. These are explicit parameters for a probabilistically
 selected domain, not an enumerated domain. The rate is approximately
 \(1.25\cdot10^{-19}\). This is neither a practical-length instance nor
 a prescribed NTT-domain or prime-alphabet construction.
+
+## Exact-source refinement
+
+The later [odd-power Kummer bound](ODD_POWER_KUMMER_NONCANONICAL_BOUND.md)
+proves that when p>=h², every parameter outside the rich canonical planes
+has exact nearest agreement hp. Both endpoint agreements therefore equal
+the already exact common agreement hp. The earlier interval statements
+above remain valid, but are sharpened in this regime; the manuscript and
+current deterministic certificates use exact agreement. This does not
+change the domain or label count.

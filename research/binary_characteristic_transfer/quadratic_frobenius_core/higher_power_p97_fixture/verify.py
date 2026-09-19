@@ -24,7 +24,10 @@ m = N//2
 r, remainder = divmod(m, L)
 n, k = N+m, h+1
 T = isqrt(h*n-1)
-common, source_upper = h*p, h*p+h*h
+common = h*p
+noncanonical_upper = max(p,h*h)+(2*h-1)*h
+assert p>=h*h and noncanonical_upper<common
+source_upper = common
 modulus = [5, 80, 6, 0, 1]
 ctx = fq_default_ctx(
     modulus=fmpz_mod_poly_ctx(p)(modulus), var="a", fq_type="FQ_NMOD")
@@ -183,6 +186,8 @@ receipt = {
     "n": n, "k": k, "threshold": T,
     "common_agreement_exact": common,
     "endpoint_agreement_interval": [common, source_upper],
+    "endpoint_agreement_exact": common,
+    "noncanonical_agreement_upper": noncanonical_upper,
     "first_order_agreement_upper": first_upper,
     "minimum_canonical_guarantee": (h+r)*(p-1),
     "minimum_nonzero_label_actual_canonical_agreement": min(nonzero_label_supports),

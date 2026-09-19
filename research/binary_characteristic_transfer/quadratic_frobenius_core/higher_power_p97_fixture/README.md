@@ -1,7 +1,9 @@
 # Explicit higher-power fixture over F_(97^4)
 
 The initial fixture run passed in 19.59 seconds; a root replay passed
-in 22.45 seconds with the identical raw-array hash, within the
+in 22.45 seconds with the identical raw-array hash. The sharpened-bound
+receipt was then regenerated in15.99 seconds, again with that raw-array
+hash. All runs were within the
 60-second computation cap. No other parameters, received pencils, or
 codewords were scanned.
 
@@ -36,7 +38,7 @@ and satisfy the same agreement bounds.
 | Rate | \(1/11760\) |
 | Threshold | 593 |
 | Ordinary common agreement | exactly 485 |
-| Each endpoint's nearest agreement | in \([485,510]\) |
+| Each endpoint's nearest agreement | exactly 485 |
 | First-order agreement upper bound | 483 |
 | Singleton threshold-list parameters | 921984 |
 | Additional parameter | one, with 98 witnesses |
@@ -46,16 +48,19 @@ and satisfy the same agreement bounds.
 
 The threshold is strictly below Johnson:
 \(593^2<5\cdot70560\), and 593 is the largest such integer.
-The endpoint agreement loss is at least \(83\), or \(83/587\) of the
-capacity margin. The common-agreement loss is \(108\).
+The endpoint and common-agreement losses are exactly \(108\), or
+\(108/587\approx18.3986\%\) of the capacity margin.
 
 The verifier explicitly counts every canonical support, verifies the
 distinct image lines and the two endpoint exclusions, and instantiates
-all coordinates and source values. Exclusion of every other
-degree-\(\le5\) witness uses the proved universal agreement bound
-\(hp+h^2=510\), not enumeration of codewords. Exact common agreement
-uses the indicator-polynomial proof. Endpoint agreements are bounded,
-not claimed to have been exactly enumerated.
+all coordinates and source values. Exclusion of noncanonical
+degree-\(\le5\) witnesses uses the proved agreement bound
+\(\max(p,h^2)+(2h-1)h=142\), not enumeration of codewords. Canonical
+witnesses outside the rich label planes have at most485 matches; a core
+fiber attains485 for each endpoint. Thus both individual agreements are
+exactly485 by proof, not exhaustive enumeration. Exact common agreement
+uses the indicator-polynomial proof. The sharper argument is audited in
+[ODD_H_EXACT_SOURCE_AGREEMENT_AUDIT.md](../ODD_H_EXACT_SOURCE_AGREEMENT_AUDIT.md).
 
 Artifacts:
 

@@ -196,3 +196,13 @@ all-witness issue: below Johnson on \(n=o(hp^2)\), one has
 there. A successful short-domain construction must supply both a rich
 partial canonical bank and a new agreement bound for all other
 degree-\(\le h\) witnesses.
+
+## Exact-source refinement
+
+The later [odd-power Kummer bound](ODD_POWER_KUMMER_NONCANONICAL_BOUND.md)
+proves that when p>=h², every parameter outside the rich canonical planes
+has exact nearest agreement hp. Both endpoint agreements therefore equal
+the already exact common agreement hp. The earlier interval statements
+above remain valid, but are sharpened in this regime; the manuscript and
+current deterministic certificates use exact agreement. This does not
+change the domain or label count.

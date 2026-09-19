@@ -1,0 +1,14 @@
+{
+  "pages": 298,
+  "pdf_sha256": "8642831f478d9226204453b487fd7d80a490647d5a1d248868d09cbabfd20563",
+  "latex_warnings_checked": [
+    "Overfull",
+    "Underfull",
+    "undefined"
+  ],
+  "visual_review_pages": [
+    211,
+    214
+  ],
+  "independent_mathematical_audit": "ODD_H_EXACT_SOURCE_INTEGRATED_AUDIT.md"
+}
