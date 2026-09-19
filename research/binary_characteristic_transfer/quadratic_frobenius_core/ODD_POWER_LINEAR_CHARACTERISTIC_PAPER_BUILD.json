@@ -1,0 +1,10 @@
+{
+  "pages": 298,
+  "pdf_sha256": "eb07a06624b00fc20adfdd42a827dc89edb21592092a1ffcad50b9e2de020a90",
+  "visual_review_pages": [
+    211,
+    214
+  ],
+  "latex_warnings": [],
+  "mathematical_audit": "ODD_POWER_LINEAR_CHARACTERISTIC_INTEGRATED_AUDIT.md"
+}

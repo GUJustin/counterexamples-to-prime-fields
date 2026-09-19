@@ -22,10 +22,11 @@ def check(p,h,num,den):
     R,tau=divmod(m,ell)
     assert 0<m<N and 0<=R<h and 0<=tau<ell
     T=isqrt(h*n-1);C=h*p
-    assert p>=h*h
-    ell=int(fmpz(h).factor()[0][0])
-    good=h//ell
-    noncanonical=good*p+(2*h-good)*h
+    assert p>=3*h-1
+    divisors=[1]
+    for prime,exponent in fmpz(h).factor():
+        divisors=[d*int(prime)**j for d in divisors for j in range(exponent+1)]
+    noncanonical=max((h//H)*max(p,H*H)+(2*h-h//H)*H for H in divisors if H>1)
     assert noncanonical<C
     U=C
     bank_min=(h+R)*(p-1)
@@ -45,7 +46,7 @@ def check(p,h,num,den):
       'guaranteed_loss_over_capacity_margin':[ratio.numerator,ratio.denominator],
       'guaranteed_loss_over_capacity_margin_decimal':float(ratio)}
 
-cases=[check(2013265921,12241,54,55),check(97,5,1,2)]
+cases=[check(2013265921,12241,54,55),check(97,5,1,2),check(307,65,17,20)]
 assert Fraction(*cases[0]['guaranteed_loss_over_capacity_margin'])>Fraction(28965,100000)
 assert Fraction(*cases[1]['guaranteed_loss_over_capacity_margin'])>Fraction(18,100)
 result={'PASS':True,'scope':'Exact finite parameters for explicitly specified branch-prefix domains; no coordinates enumerated by this checker',

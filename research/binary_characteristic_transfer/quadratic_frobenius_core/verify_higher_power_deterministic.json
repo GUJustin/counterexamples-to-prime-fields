@@ -53,7 +53,32 @@
         587
       ],
       "guaranteed_loss_over_capacity_margin_decimal": 0.1839863713798978
+    },
+    {
+      "p": 307,
+      "extension_degree": 4,
+      "h": 65,
+      "dimension": 66,
+      "length": 11333322,
+      "first_block_length": 6126120,
+      "second_block_length": 5207202,
+      "whole_second_branches": 55,
+      "partial_branch_length": 23562,
+      "threshold": 27141,
+      "common_agreement": 19955,
+      "source_agreement_upper": 19955,
+      "source_agreement_exact": 19955,
+      "noncanonical_agreement_upper": 12610,
+      "canonical_agreement_lower": 36720,
+      "first_order_agreement_upper": 19802,
+      "singleton_labels": 29028384,
+      "additional_label_list_size": 308,
+      "guaranteed_loss_over_capacity_margin": [
+        7186,
+        27075
+      ],
+      "guaranteed_loss_over_capacity_margin_decimal": 0.26541089566020315
     }
   ],
-  "script_sha256": "4757b582b2471cd305f844fc2b8c4c7a73a6b8f9018b5f4eb9810743a87c9b60"
+  "script_sha256": "0a26a025f0e6ba87ea67a774c9e756fbc14ed6f6e86271fa3b0740c4a0a06708"
 }

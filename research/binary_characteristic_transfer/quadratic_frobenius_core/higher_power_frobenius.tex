@@ -26,7 +26,7 @@ $h-1<M/h$. Put $N=h(p^2-1)$. For an integer $0<m<N$, define
  \tau=m-R(p^2-1).
  \end{gathered}
 \]
-Set $U=hp$ if $p\ge h^2$, and $U=hp+h^2$ otherwise. Suppose that
+Set $U=hp$ if $p\ge3h-1$, and $U=hp+h^2$ otherwise. Suppose that
 \begin{equation}\label{eq:higher-power-finite-guards}
  U<T\le(h+R)(p-1).
 \end{equation}
@@ -39,7 +39,7 @@ for which the dimension-$k$ Reed--Solomon code has
 On the affine line $(1-z)r_0+zr_1$, exactly $(p+1)(p^2-1)$ parameters
 $z\in E$ have singleton threshold-$T$ lists, one further parameter has
 a list of size $p+1$, and all other parameters have empty lists.
-Both endpoints have empty threshold-$T$ lists. If $p\ge h^2$, every
+Both endpoints have empty threshold-$T$ lists. If $p\ge3h-1$, every
 word with an empty threshold list has exact agreement $hp$. Moreover, $T$ is the
 largest integer strictly below $\sqrt{(k-1)n}$. If $k/n$ is in the
 low-rate branch of $a_1$ and
@@ -126,7 +126,7 @@ with kernel $B$ kills the received monomial and leaves a nonzero
 polynomial of degree at most $h$. This gives at most $h^2$ matches
 on that block. The other block contributes at most $hp$ by the
 ordinary degree bound. Puncturing preserves these bounds, proving
-that every such $q$ has at most $hp+h^2$ matches. When $p\ge h^2$,
+that every such $q$ has at most $hp+h^2$ matches. When $p\ge3h-1$,
 Lemma~\ref{lem:odd-power-exact-source} sharpens this to fewer than $hp$
 matches. In either case the bound is at most $U<T$.
 
@@ -142,7 +142,7 @@ $I_a+\eta I_a$: its two $B$-components are linearly independent
 over $\mathbb F_p$. The preceding bounds give $A(r_i)\le U$,
 and a core fiber with $b\ne0$ gives $A(r_i)\ge hp$.
 The same argument gives exact agreement $hp$ at every nonexceptional
-parameter whenever $p\ge h^2$.
+parameter whenever $p\ge3h-1$.
 
 To bound ordinary common agreement for $(f,g)$, a nonconstant
 degree-$\le h$ polynomial explaining $g$ has at most $h$ zero-values
@@ -200,7 +200,7 @@ Proposition~\ref{prop:higher-power-frobenius-finite}. Its parameters obey
  T=(\sqrt2+o(1))hp,\qquad R/h\longrightarrow1.
 \]
 Both inequalities in~\eqref{eq:higher-power-finite-guards} hold eventually:
-$p\ge h^2$, so $U=hp$, and $(h+R)(p-1)\sim2hp$. The branch condition also holds.
+$p\ge3h-1$, so $U=hp$, and $(h+R)(p-1)\sim2hp$. The branch condition also holds.
 
 For first-order placement, $n\le(2-2/\sqrt h)hp^2$, and for $h\ge25$
 \[
@@ -226,6 +226,15 @@ parameters. The integer first-order upper bound is $483$, while the
 minimum canonical agreement is $672$. Thus the finite inequalities
 already hold at these parameters.
 
+
+The sharper characteristic condition also permits $p=307$, $h=65$,
+and $m=17h(p^2-1)/20$, where $p<h^2$. Here
+$n=11333322$, $k=66$, $T=27141$, and both source and common
+agreements are exactly $19955$. The noncanonical upper bound is
+$12610$, the integer first-order upper bound is $19802$, and minimum
+canonical agreement is $36720$. There are $29028384$ singleton
+parameters, with loss ratio $7186/27075>0.2654$. This is an exact
+parameter certificate, not an enumeration of the domain.
 
 For the BabyBear prime $p=2013265921$, take $h=12241$ and
 $m=\lfloor54h(p^2-1)/55\rfloor$. Exact integer checks of the finite

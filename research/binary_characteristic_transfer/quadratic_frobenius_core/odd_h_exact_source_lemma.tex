@@ -13,7 +13,12 @@ of degree at most $h$ other than $aX^h+b$ satisfies
  \operatorname{agr}(f+\lambda g,q)
  \le \frac h\ell\max\{p,h^2\}+(2h-h/\ell)h.
 \]
-In particular, if $p\ge h^2$, this bound is strictly less than $hp$.
+More sharply, put $\delta=\gcd(h,\{j:0<j<h,\ q_j\ne0\})$ and $H_0=h/\delta$. Then
+\[
+ \operatorname{agr}(f+\lambda g,q)
+ \le\delta\max\{p,H_0^2\}+(2h-\delta)H_0.
+\]
+In particular, the agreement is strictly less than $hp$ if $p\ge3h-1$.
 \end{lemma}
 \begin{proof}
 We first bound a coefficientwise-$\mathbb F_{p^2}$ branch. Write
@@ -56,4 +61,18 @@ All remaining branches contribute at most $h$ matches by projection
 onto $E/B$. This proves the displayed bound. If $p\ge h^2$, dividing
 it by $hp$ gives at most
 $1/\ell+(2-1/\ell)/h<1$, since $h\ge\ell\ge3$.
+
+For the sharper bound, simultaneous coefficient membership restricts
+branch-index differences to the common kernel of all multiplication-by-$j$
+maps on $\mathbb Z/h\mathbb Z$, of size $\delta$. Hence at most
+$\delta$ branches are good globally. Every normalized polynomial is a
+polynomial in $z^\delta$. Since $\delta$th powering permutes $B$,
+the preceding local argument at exponent $H_0$ bounds each good branch
+by $\max\{p,H_0^2\}$. On a bad branch, projection gives a nonzero
+polynomial of degree at most $H_0$ in $z^\delta$, hence at most $H_0$
+matches. This proves the sharper bound. Here $H_0\ge3$ is odd.
+If $p<H_0^2$, the bound is $h(3H_0-1)<hp$ when $p\ge3h-1$;
+equality cannot occur because $p$ is odd and $3H_0-1$ is even.
+If $p\ge H_0^2$, the difference from $hp$ is at least
+$\delta H_0(H_0^2-3H_0+1)>0$.
 \end{proof}
