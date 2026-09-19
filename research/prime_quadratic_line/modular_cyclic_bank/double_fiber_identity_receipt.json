@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "p": 17,
+      "n": 16,
+      "h": 2,
+      "coefficients_checked": 125
+    },
+    {
+      "p": 17,
+      "n": 16,
+      "h": 4,
+      "coefficients_checked": 125
+    },
+    {
+      "p": 17,
+      "n": 16,
+      "h": 8,
+      "coefficients_checked": 125
+    },
+    {
+      "p": 29,
+      "n": 28,
+      "h": 4,
+      "coefficients_checked": 125
+    },
+    {
+      "p": 29,
+      "n": 28,
+      "h": 7,
+      "coefficients_checked": 125
+    }
+  ],
+  "total": 625
+}

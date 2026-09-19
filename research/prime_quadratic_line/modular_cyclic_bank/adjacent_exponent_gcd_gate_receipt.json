@@ -1,0 +1,166 @@
+{
+  "status": "PASS",
+  "cases": [
+    {
+      "p": 19,
+      "n": 18,
+      "h": 6,
+      "r": 3,
+      "results": {
+        "h": {
+          "checks": 150,
+          "max_gcd": 4,
+          "max_agreement": 4,
+          "bound": 5
+        },
+        "h_plus_2": {
+          "checks": 150,
+          "max_gcd": 4,
+          "max_agreement": 4,
+          "bound": 5
+        }
+      }
+    },
+    {
+      "p": 37,
+      "n": 18,
+      "h": 6,
+      "r": 3,
+      "results": {
+        "h": {
+          "checks": 150,
+          "max_gcd": 4,
+          "max_agreement": 4,
+          "bound": 5
+        },
+        "h_plus_2": {
+          "checks": 150,
+          "max_gcd": 4,
+          "max_agreement": 4,
+          "bound": 5
+        }
+      }
+    },
+    {
+      "p": 73,
+      "n": 72,
+      "h": 12,
+      "r": 6,
+      "results": {
+        "h": {
+          "checks": 150,
+          "max_gcd": 6,
+          "max_agreement": 6,
+          "bound": 8
+        },
+        "h_plus_2": {
+          "checks": 150,
+          "max_gcd": 4,
+          "max_agreement": 4,
+          "bound": 8
+        }
+      }
+    },
+    {
+      "p": 97,
+      "n": 32,
+      "h": 8,
+      "r": 4,
+      "results": {
+        "h": {
+          "checks": 150,
+          "max_gcd": 4,
+          "max_agreement": 4,
+          "bound": 6
+        },
+        "h_plus_2": {
+          "checks": 150,
+          "max_gcd": 4,
+          "max_agreement": 4,
+          "bound": 6
+        }
+      }
+    },
+    {
+      "p": 97,
+      "n": 32,
+      "h": 4,
+      "r": 8,
+      "results": {
+        "h": {
+          "checks": 150,
+          "max_gcd": 3,
+          "max_agreement": 3,
+          "bound": 10
+        },
+        "h_plus_2": {
+          "checks": 150,
+          "max_gcd": 3,
+          "max_agreement": 3,
+          "bound": 9
+        }
+      }
+    },
+    {
+      "p": 193,
+      "n": 96,
+      "h": 16,
+      "r": 6,
+      "results": {
+        "h": {
+          "checks": 150,
+          "max_gcd": 4,
+          "max_agreement": 4,
+          "bound": 9
+        },
+        "h_plus_2": {
+          "checks": 150,
+          "max_gcd": 4,
+          "max_agreement": 4,
+          "bound": 10
+        }
+      }
+    },
+    {
+      "p": 193,
+      "n": 96,
+      "h": 6,
+      "r": 16,
+      "results": {
+        "h": {
+          "checks": 150,
+          "max_gcd": 3,
+          "max_agreement": 3,
+          "bound": 18
+        },
+        "h_plus_2": {
+          "checks": 150,
+          "max_gcd": 4,
+          "max_agreement": 4,
+          "bound": 17
+        }
+      }
+    },
+    {
+      "p": 163,
+      "n": 162,
+      "h": 18,
+      "r": 9,
+      "results": {
+        "h": {
+          "checks": 150,
+          "max_gcd": 4,
+          "max_agreement": 4,
+          "bound": 11
+        },
+        "h_plus_2": {
+          "checks": 150,
+          "max_gcd": 5,
+          "max_agreement": 5,
+          "bound": 11
+        }
+      }
+    }
+  ],
+  "total": 2400
+}
