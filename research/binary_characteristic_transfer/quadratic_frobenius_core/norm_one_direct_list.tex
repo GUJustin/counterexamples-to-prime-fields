@@ -5,6 +5,37 @@ The next example concerns the size of one list, rather than the number
 of exceptional parameters on a received line. Its incidence parameters
 are those of the classical projective-plane design, with each coordinate
 doubled. We make no novelty claim for that geometry.
+The uniform comparison below uses an elementary shortening argument,
+rather than a high-order interpolation certificate.
+
+\begin{lemma}\label{lem:quadratic-shortening-list}
+On any $N$ distinct evaluation coordinates over any field, the number
+of polynomials of degree at most two agreeing with a word on at least
+$T$ coordinates is at most
+\[
+ U(N,T):=\frac{N(N-1)(T-2)}
+ {T\bigl((T-1)^2-(N-1)\bigr)},
+ \qquad T\ge3,\quad (T-1)^2>N-1.
+\]
+\end{lemma}
+
+\begin{proof}
+Choose exactly $T$ agreement coordinates for each of $M$ witnesses,
+and let $r_x$ count the chosen sets containing $x$.
+For $r_x>0$, after removing $x$, any two of these sets intersect in at most
+one coordinate. Counting their incidences on the remaining $N-1$
+coordinates and applying Cauchy's inequality gives
+\[
+ \frac{r_x(T-1)^2}{N-1}-(T-1)\le r_x-1,
+ \qquad
+ r_x\le\frac{(N-1)(T-2)}{(T-1)^2-(N-1)}.
+\]
+Summing $MT=\sum_xr_x$ proves the claim. This is the usual Johnson
+count applied after fixing one agreement coordinate. The expression
+$U(N,T)$ decreases with real $T\ge3$ wherever its denominator is positive:
+the derivative has the sign of
+$-\bigl(T(T-2)^2+N-2\bigr)$.
+\end{proof}
 
 \begin{theorem}\label{thm:norm-one-direct-list}
 Let $p\ge53$ be prime, let $E=\mathbb F_{p^3}$, and put
@@ -41,10 +72,10 @@ and the same code satisfies
 \[
  \frac N2\le\max_{w\in E^D}
  \#\{Q\in E[X]:\deg Q\le2,\ |\{x\in D:w(x)=Q(x)\}|\ge T\}
- \le22N.
+ \le\frac{4N}{3}.
 \]
-Thus the lower bound is within a factor $44$ of an explicit uniform
-finite first-order list bound at the same parameters. Moreover
+Thus the lower bound is within a factor $8/3$ of an explicit uniform
+finite list bound at the same parameters. Moreover
 $T/\sqrt N\to19/(10\sqrt2)$, strictly between the limiting
 first-order value $\sqrt{3/2}$ and the Johnson value $\sqrt2$.
 Both margins therefore have order $\sqrt N$. Here the rate tends
@@ -141,33 +172,15 @@ even bank. Every remaining quadratic has at most four matches.
 This proves the stated complete profile, and in particular the
 original bank remains the complete list at $T$.
 
-For the uniform upper bound at $T$, use the derivative-weighted support
-of~\cite[Proposition~5.10]{dkt2026} with
+For the uniform upper bound, apply Lemma~\ref{lem:quadratic-shortening-list}.
+Its denominator is positive for $T\ge19p/10$ and $p\ge53$.
+By monotonicity it suffices to evaluate $U(N,19p/10)$.
+The inequality $U(N,19p/10)\le4N/3$ is equivalent to
 \[
- m=6,\quad B_\partial=3,\quad B=B_{\rm jet}=3T,
- \quad H=B_Z=40B.
+ 209p^3-10870p^2+1575p+1500\ge0.
 \]
-Its coefficient count is $G_{\rm coef}=4B^2-2B$ and its six local-rank
-contributions are $4,8,12,15,14,9$, totaling $R=62$.
-For $p\ge53$, $57p/10\le B\le6p$, and
-\[
- 39G_{\rm coef}-40NR
- \ge\frac{2711}{25}p^2-5428p-4960>0.
-\]
-Thus $G_{\rm coef}>NR$ and the graded support surplus is at least
-$B(39G_{\rm coef}-40NR)+(G_{\rm coef}-NR)>0$.
-This certificate applies uniformly to evaluation domains and received
-words. Reconstruction requires only $p>\max(2,3)$.
-
-In~\cite[Eq.~(54), Lemma~5.11]{dkt2026}, message degree $2$ and
-$(B,M)=(3T,3)$ give $F_{\rm reg}=7B-12$ and $S=5B-9$.
-Writing $\lambda=(N-2)/(T-2)$, the fixed-word bound is therefore
-\[
- \lambda F_{\rm reg}+S
- =21N+30\lambda+15T-51\le21N+90p-51\le22N.
-\]
-Here $T-2\ge p+1$ gives $\lambda\le2p$, and
-$N-90p+51=2p^2-88p+53>0$.
+After substituting $p=53+u$, the left side is
+$209u^3+22361u^2+610598u+666438$, which is positive for $u\ge0$.
 The exhibited complete list supplies the lower bound at $T$.
 Finally, $T<2p<\sqrt{2N}$, while the first-order curve estimate gives
 \[
@@ -186,12 +199,12 @@ bounds.
 
 \begin{corollary}\label{cor:norm-one-full-interior-band}
 With the code and word of Theorem~\ref{thm:norm-one-direct-list}, let
-$p\ge401$. At every integer threshold
+$p\ge53$. At every integer threshold
 \[
  \lceil\sqrt3\,p\rceil\le T\le2p+2,
 \]
 the displayed word has exactly $N/2$ nearby quadratics, and the maximum
-list size over all received words is at most $137N$.
+list size over all received words is at most $9N/4$.
 Consequently, for every fixed $c\in(\sqrt3,2)$, at threshold
 $T=\lceil cp\rceil$ the maximum list size is $\Theta(N)$.
 For sufficiently large $p$ these thresholds lie strictly between the
@@ -201,31 +214,15 @@ order $\sqrt N$.
 
 \begin{proof}
 The classification in the theorem already gives the exact $N/2$ list
-throughout this band. For the uniform upper bound, take
+throughout this band. Apply Lemma~\ref{lem:quadratic-shortening-list}
+and its monotonicity at the real threshold $\sqrt3\,p$.
+Its denominator is positive, and $U(N,\sqrt3\,p)\le9N/4$ follows from
 \[
- m=16,\qquad B_\partial=8,\qquad B=B_{\rm jet}=8T,
- \qquad H=B_Z=100B.
+ \sqrt3\,p^3-(26\sqrt3+38)p^2+(16-4\sqrt3)p+8>0.
 \]
-The derivative-weighted coefficient count and local rank are
-\[
- G=9B^2-27B,\qquad R=852.
-\]
-Since $8\sqrt3\,p\le B\le16p+16$, we have
-\[
- 99G-100NR
- \ge672p^2-213168p-213168>0
- \qquad(p\ge401).
-\]
-The graded surplus $(H-B+1)G-(H+1)NR$ is therefore positive.
-The characteristic guard is $p>8$.
-Equation~(54) and Lemma~5.11 of~\cite{dkt2026} give
-$F_{\rm reg}=17B-72$ and $S=15B-64$. With
-$\lambda=(N-2)/(T-2)\le2p$, the list bound is
-\[
- \lambda F_{\rm reg}+S
- =136N+200\lambda+120T-336
- \le136N+640p-96\le137N.
-\]
+Indeed the coefficient of $p^2$ after extracting it from the first
+two terms is $\sqrt3(p-26)-38\ge27\sqrt3-38>0$;
+the remaining terms are positive.
 Finally, $Na_1(3/N)=\sqrt3\,p+O(\sqrt p)$ and
 $\sqrt{2N}=2p+O(1)$. Thus every fixed $c\in(\sqrt3,2)$
 has the asserted two strict margins for all sufficiently large $p$.
@@ -239,77 +236,31 @@ Fix $\sqrt2<c<2$. For all sufficiently large primes $p$ depending on
 $c$, the maximum list size for the norm-one code at
 $T=\lceil cp\rceil$ satisfies
 \[
- \frac N2\le L_{\max}(T)\le C_cN,
- \qquad C_c=O\bigl((c^2-2)^{-3}\bigr).
+ \frac N2\le L_{\max}(T)
+ \le\left(\frac{2}{c^2-2}+o_c(1)\right)N.
 \]
 The upper bound holds on every length-$N$, dimension-three
-Reed--Solomon domain in characteristic $p$.
-The lower bound uses the same word and exactly the same $N/2$ witnesses
-as Theorem~\ref{thm:norm-one-direct-list}.
+Reed--Solomon domain over every field. The lower bound uses the same
+word and exactly the same $N/2$ witnesses as
+Theorem~\ref{thm:norm-one-direct-list}.
 \end{corollary}
 
 \begin{proof}
-Put $\delta=c^2-2$ and choose the fixed integers
+With $N=2(p^2+p+1)$ and $T=cp+O(1)$,
+Lemma~\ref{lem:quadratic-shortening-list} gives
 \[
- h=\lceil8/\delta\rceil,\qquad
- s=\lceil8h/\delta\rceil,\qquad
- \kappa=\lceil4c^2/\delta\rceil.
+ \frac{U(N,T)}N=\frac{2}{c^2-2}+O_c(p^{-1}).
 \]
-Use multiplicity $m=2h$, derivative cap $s$, joint cap $B=hT$,
-and challenge cap $H=\kappa B$. For sufficiently large $p$,
-$B\ge2h+s$ and $p>s$. The exact derivative-weighted counts are
-\[
- G=(s+1)B(B+1-s/2),\qquad
- R=\frac{h(h+1)(6s+2h+7)}6.
-\]
-For the first identity, the coefficient allowance at a fixed derivative
-exponent $b$ sums to $B(B-b+1)$. For the second, the local block at
-index $a\in\{0,\ldots,2h-1\}$ has rank
-$q(a+s+2-q)$, where $q=\min(a+1,2h-a)$; summing gives $R$.
-The assumed joint cap makes all nonzero blocks active.
-
-The leading coefficient condition is controlled by
-\[
- \gamma:=\frac{2R}{(s+1)h^2}
- =2+\frac2h+\frac{(h+1)(2h+1)}{3h(s+1)}
- \le2+\frac\delta2<c^2.
-\]
-Indeed, $2/h\le\delta/4$ and the final term is at most
-$2h/(s+1)\le\delta/4$. The exact expression
-$(\kappa-1)G-\kappa NR$ has leading coefficient in $p$
-\[
- (s+1)h^2\bigl(\kappa(c^2-\gamma)-c^2\bigr)>0;
-\]
-the rounding of $T$ contributes only $O_c(p)$.
-Hence it is positive for all sufficiently large $p$. It follows that
-$G>NR$ and the full graded surplus
-\[
- (H-B+1)G-(H+1)NR
- =B\bigl((\kappa-1)G-\kappa NR\bigr)+(G-NR)
-\]
-is strictly positive. This checks the finite support certificate,
-with reconstruction guard $p>\max(2,s)$.
-
-The fixed-word transfer gives
-\[
- F_{\rm reg}=(2s+1)B-s(s+1),\qquad
- S=(2s-1)B-s^2.
-\]
-Since $\lambda=(N-2)/(T-2)=O_c(p)$, its list bound is
-\[
- \lambda F_{\rm reg}+S
- =h(2s+1)N+O_c(p)
- \le\bigl(h(2s+1)+1\bigr)N
-\]
-for sufficiently large $p$.
-Thus one can take $C_c=h(2s+1)+1=O(\delta^{-3})$.
-Finally $p+1<T\le2p+2$ eventually, so the complete list of the
-exhibited word is still exactly $N/2$.
+Its denominator is positive for all sufficiently large $p$ because
+$c^2>2$. Also $p+1<T\le2p+2$ eventually, so the classification
+in Theorem~\ref{thm:norm-one-direct-list} gives the exact $N/2$ lower list.
 \end{proof}
 
-This wider range is a finite-degree consequence of the same DKT support
-machinery, using message degree two. For $\sqrt2<c\le\sqrt3$ it is
-not the strict interior above the rate-only curve $Na_1(3/N)$.
-The result concerns growing lists at vanishing rate over extension
-fields; it does not change the stated first-order curve or supply
-prime-alphabet tightness.
+The ratio of this universal upper bound to the exhibited list tends
+to $4/(c^2-2)$. In particular it lies between two and four in the
+strict limiting first-order/Johnson interior $\sqrt3<c<2$.
+This comparison does not assert that its dependence on $c^2-2$ is
+optimal. For $\sqrt2<c\le\sqrt3$ the thresholds are not in that strict
+interior. The result concerns growing lists at vanishing rate over
+extension fields; it does not supply prime-alphabet tightness or a
+bound on exceptional challenges along a received line.

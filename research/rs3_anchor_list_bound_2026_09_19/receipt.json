@@ -1,0 +1,135 @@
+{
+  "status": "PASS",
+  "scope": "Exact arithmetic and monotonicity; no finite-field or codeword scan.",
+  "script_sha256": "7a88d9f832386d554f18701e2fc377c200443f3c12313c40e429a61d8f8d6bad",
+  "sympy_version": "1.14.0",
+  "anchor_bound": "N*(N-1)*(T-2)/(T*((T-1)^2-(N-1)))",
+  "anchor_hypotheses": "N>=3, integer 3<=T<=N, (T-1)^2>N-1",
+  "monotonicity": {
+    "substitution": "z=T-1; M=N-1",
+    "derivative_of_U_over_N": "-2*M*(M + (z - 1)**2*(z + 1) - 1)/((-M + z**2)**2*(z + 1)**2)",
+    "sign": "strictly negative for M>=2 and z>sqrt(M)",
+    "symbolic_identity_verified": true
+  },
+  "finite_certificates": [
+    {
+      "case": "nineteen_tenths_p",
+      "N": "2*(p^2+p+1)",
+      "p_at_least": 53,
+      "threshold_lower_bound": "19*p/10",
+      "bound_U_over_N": "4/3",
+      "denominator_gap": "161*p**2/100 - 29*p/5",
+      "denominator_certificate": {
+        "shift": "p=53+v, v>=0",
+        "coefficients_ascending": [
+          "421509/100",
+          "8243/50",
+          "161/100"
+        ],
+        "coefficient_signs_exact": [
+          1,
+          1,
+          1
+        ]
+      },
+      "cross_multiplied_slack": "209*p**3/250 - 1087*p**2/25 + 63*p/10 + 6",
+      "slack_certificate": {
+        "shift": "p=53+v, v>=0",
+        "coefficients_ascending": [
+          "333219/125",
+          "305299/125",
+          "22361/250",
+          "209/250"
+        ],
+        "coefficient_signs_exact": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "case": "sqrt_three_p_original_onset",
+      "N": "2*(p^2+p+1)",
+      "p_at_least": 401,
+      "threshold_lower_bound": "sqrt(3)*p",
+      "bound_U_over_N": "21/10",
+      "denominator_gap": "p**2 - 2*sqrt(3)*p - 2*p",
+      "denominator_certificate": {
+        "shift": "p=401+v, v>=0",
+        "coefficients_ascending": [
+          "159999 - 802*sqrt(3)",
+          "800 - 2*sqrt(3)",
+          "1"
+        ],
+        "coefficient_signs_exact": [
+          1,
+          1,
+          1
+        ]
+      },
+      "cross_multiplied_slack": "sqrt(3)*p**3 - 62*sqrt(3)*p**2 - 86*p**2 - 10*sqrt(3)*p + 40*p + 20",
+      "slack_certificate": {
+        "shift": "p=401+v, v>=0",
+        "coefficients_ascending": [
+          "-13812826 + 54507529*sqrt(3)",
+          "-68932 + 432669*sqrt(3)",
+          "-86 + 1141*sqrt(3)",
+          "sqrt(3)"
+        ],
+        "coefficient_signs_exact": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    },
+    {
+      "case": "sqrt_three_p_improved_onset",
+      "N": "2*(p^2+p+1)",
+      "p_at_least": 53,
+      "threshold_lower_bound": "sqrt(3)*p",
+      "bound_U_over_N": "9/4",
+      "denominator_gap": "p**2 - 2*sqrt(3)*p - 2*p",
+      "denominator_certificate": {
+        "shift": "p=53+v, v>=0",
+        "coefficients_ascending": [
+          "2703 - 106*sqrt(3)",
+          "104 - 2*sqrt(3)",
+          "1"
+        ],
+        "coefficient_signs_exact": [
+          1,
+          1,
+          1
+        ]
+      },
+      "cross_multiplied_slack": "sqrt(3)*p**3 - 26*sqrt(3)*p**2 - 38*p**2 - 4*sqrt(3)*p + 16*p + 8",
+      "slack_certificate": {
+        "shift": "p=53+v, v>=0",
+        "coefficients_ascending": [
+          "-105886 + 75631*sqrt(3)",
+          "-4012 + 5667*sqrt(3)",
+          "-38 + 133*sqrt(3)",
+          "sqrt(3)"
+        ],
+        "coefficient_signs_exact": [
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    }
+  ],
+  "rounded_threshold_asymptotic": {
+    "range": "sqrt(2)<c<2 fixed, 0<=epsilon<1",
+    "numerator_leading_coefficient": "2*c",
+    "denominator_leading_coefficient": "c**3 - 2*c",
+    "limit_U_over_N": "2/(c**2 - 2)",
+    "limit_U_over_exhibited_N_over_2_list": "4/(c**2 - 2)",
+    "sufficient_denominator_onset": "p>=1 and p>(2*c+3)/(c^2-2)"
+  }
+}

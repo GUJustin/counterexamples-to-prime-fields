@@ -1,5 +1,17 @@
 # Current significance: bounded independent prioritization
 
+**September 19 matched-list update.** The older constants below are historical.
+The norm-one example's exact N/2 list is now compared with the elementary
+universal upper bound 4N/3 at T=ceil(19p/10), p>=53, giving a factor 8/3
+rather than 44. Throughout ceil(sqrt(3)p)<=T<=2p+2, the upper bound is
+9N/4 already for p>=53, replacing 137N and the onset p>=401. At fixed
+sqrt(2)<c<2, the upper bound is (2/(c^2-2)+o(1))N; its ratio to the
+exhibited list tends to 4/(c^2-2). This is a stronger and simpler comparison
+using standard shortening/counting, not a new large-list construction,
+prime-alphabet tightness, or a better.codes improvement. See
+`../rs3_anchor_list_bound_2026_09_19/README.md` and the revised
+`norm_one_direct_list.tex`.
+
 Updated after the September 18 afternoon cubic-extension and direct-list audits. This assessment compares the current manuscript with the locally archived primary DG, KKH, and DKT texts and the existing priority audits. It is not an exhaustive novelty certification or a prediction of conference acceptance.
 
 ## Strongest subsequent positive results

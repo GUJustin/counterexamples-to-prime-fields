@@ -1,0 +1,21 @@
+{
+  "status": "PASS",
+  "date": "2026-09-19",
+  "pdf_pages": 310,
+  "sha256": {
+    "paper.tex": "a61806c33064a73cd03e1df6f825788501a15fa41b7d0f099a540b8fb44912cd",
+    "paper.pdf": "627b76f91b77b91b02d7d87e5eb2550b4f0b2e8b94b9fe72a476bea77f2bc40b",
+    "research/binary_characteristic_transfer/quadratic_frobenius_core/norm_one_direct_list.tex": "5ae6570f715de3f18019d2cac265af6bb2d4a59a81bce9487e7215b00821f269",
+    "research/rs3_anchor_list_bound_2026_09_19/verify.py": "7a88d9f832386d554f18701e2fc377c200443f3c12313c40e429a61d8f8d6bad"
+  },
+  "build_log": "/tmp/quadratic-shortening-paper-build.log",
+  "rendered_and_viewed_pages": [
+    14,
+    227,
+    228,
+    230
+  ],
+  "layout_warnings": [],
+  "exact_arithmetic_replayed": true,
+  "scope": "Sharper universal list comparison for the existing norm-one construction; no new counterexample or practical benchmark improvement."
+}
