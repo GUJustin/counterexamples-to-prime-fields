@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "arithmetic": "exact integer polynomial coefficients and rational comparisons",
+  "interior_factorization": true,
+  "endpoint_factorization": true,
+  "integer_census": {
+    "s_range": [
+      16,
+      128
+    ],
+    "m_range": [
+      1,
+      32
+    ],
+    "cases": 253120,
+    "above_first_order": 8539
+  },
+  "power_of_two_census": {
+    "s_exponents": [
+      4,
+      10
+    ],
+    "m_exponents": [
+      0,
+      10
+    ],
+    "cases": 22198,
+    "above_first_order": 161
+  },
+  "scope": "Necessary condition for the canonical subset bank; not all line labels. The note supplies the unbounded proof."
+}

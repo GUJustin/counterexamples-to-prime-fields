@@ -1,0 +1,131 @@
+{
+  "status": "PASS",
+  "scope": "canonical KKH full-fiber subsets; not all nearby line labels",
+  "ledger": {
+    "n": "s*m",
+    "dimension": "(r-2)*m+1",
+    "near_agreement": "r*m",
+    "direction_and_common_agreement": "(r-1)*m",
+    "canonical_bank": "binomial(s,r)"
+  },
+  "conclusion_arbitrary_integer_s_ge_16": "T/n>a1(k/n) implies bank<4*n",
+  "conclusion_power_of_two_s_and_m": "T/n>a1(k/n) implies bank<2*n",
+  "source_path": "/Users/jthaler/Dropbox/Documents-full-2026-09-16/Documents/stwo_audit_2026-09-15/sources/actual_list_literature/kkh2026_782.txt",
+  "source_sha256": "de6e244b8e7d86c88b133a0f85bfacb76c460b4de5e38cd58c6b8f6293599d78",
+  "interior_factor": "-(4*s**2*t - 8*s**2 - 3*s*t**2 - 16*s - t**3 - 2*t**2)/s**3",
+  "endpoint_factor": "-4*(-7*m**2*s - 4*m**2 + m*s**2 + 4*m*s + m - s)/(m**2*s**3)",
+  "high_endpoint_polynomials_after_s_plus_16": [
+    "4*s**2 + 85*s + 291",
+    "5*s**2 + 102*s + 361"
+  ],
+  "low_rank_polynomial_after_r_plus_6": "5*r**2 + 28*r + 20",
+  "low_branch_exceptions": [
+    {
+      "s": 16,
+      "r": 3,
+      "integer_squared_slack": 5648
+    },
+    {
+      "s": 17,
+      "r": 3,
+      "integer_squared_slack": 6921
+    }
+  ],
+  "small_power_of_two_cases": [
+    {
+      "s": 8,
+      "m": 1,
+      "r": 2,
+      "n": 8,
+      "bank": 28,
+      "rate": "1/8",
+      "reason": "agreement=sqrt(rate/2)<a1(rate)",
+      "F": null
+    },
+    {
+      "s": 8,
+      "m": 1,
+      "r": 3,
+      "n": 8,
+      "bank": 56,
+      "rate": "1/4",
+      "reason": "high-branch F<0",
+      "F": "-121/256"
+    },
+    {
+      "s": 8,
+      "m": 1,
+      "r": 4,
+      "n": 8,
+      "bank": 70,
+      "rate": "3/8",
+      "reason": "high-branch F<0",
+      "F": "-17/32"
+    },
+    {
+      "s": 8,
+      "m": 1,
+      "r": 5,
+      "n": 8,
+      "bank": 56,
+      "rate": "1/2",
+      "reason": "high-branch F<0",
+      "F": "-57/128"
+    },
+    {
+      "s": 8,
+      "m": 1,
+      "r": 6,
+      "n": 8,
+      "bank": 28,
+      "rate": "5/8",
+      "reason": "high-branch F<0",
+      "F": "-29/128"
+    },
+    {
+      "s": 8,
+      "m": 2,
+      "r": 3,
+      "n": 16,
+      "bank": 56,
+      "rate": "3/16",
+      "reason": "high-branch F<0",
+      "F": "-123/1024"
+    },
+    {
+      "s": 8,
+      "m": 2,
+      "r": 4,
+      "n": 16,
+      "bank": 70,
+      "rate": "5/16",
+      "reason": "high-branch F<0",
+      "F": "-3/16"
+    },
+    {
+      "s": 8,
+      "m": 2,
+      "r": 5,
+      "n": 16,
+      "bank": 56,
+      "rate": "7/16",
+      "reason": "high-branch F<0",
+      "F": "-111/1024"
+    },
+    {
+      "s": 8,
+      "m": 4,
+      "r": 4,
+      "n": 32,
+      "bank": 70,
+      "rate": "9/32",
+      "reason": "high-branch F<0",
+      "F": "-1/256"
+    }
+  ],
+  "near_rate_one_series_through_order_two": "-7*delta**2/32 - delta/2 + 1",
+  "quotient_head_equation_beta_leading_coefficient": "-alpha + pole",
+  "direct_head_equation_beta_leading_coefficient": "1",
+  "cancellation_conclusion": "At most s unordered omitted pairs survive an affine top-head cancellation",
+  "growing_parameter_scan": false
+}
