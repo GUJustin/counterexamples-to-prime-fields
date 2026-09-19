@@ -1,0 +1,86 @@
+{
+  "status": "PASS: joint local resources remain feasible; no global source or benchmark gain",
+  "prime": 2130706433,
+  "local_germs": [
+    {
+      "a": 30,
+      "delta": 0,
+      "u": 1,
+      "v": 9,
+      "terms": 362
+    },
+    {
+      "a": 42,
+      "delta": 1,
+      "u": 1,
+      "v": 17,
+      "terms": 252
+    },
+    {
+      "a": 43,
+      "delta": 2,
+      "u": 2,
+      "v": 9,
+      "terms": 54
+    },
+    {
+      "a": 43,
+      "delta": 2,
+      "u": 3,
+      "v": 9,
+      "terms": 392
+    }
+  ],
+  "profile": [
+    [
+      1,
+      30,
+      0,
+      1,
+      9,
+      53342
+    ],
+    [
+      0,
+      42,
+      1,
+      0,
+      0,
+      80869
+    ],
+    [
+      1,
+      42,
+      1,
+      1,
+      17,
+      74593
+    ],
+    [
+      1,
+      43,
+      2,
+      2,
+      9,
+      25813
+    ],
+    [
+      1,
+      43,
+      2,
+      3,
+      9,
+      27527
+    ]
+  ],
+  "tallies": {
+    "nodes": 262144,
+    "matches": 181275,
+    "discriminant": 262142,
+    "G_value": 262142,
+    "H_value": 2228219,
+    "rank": 7009938620360
+  },
+  "rank_required": 6802316684344,
+  "rank_surplus": 207621936016
+}
