@@ -1,0 +1,13 @@
+{
+  "PASS": true,
+  "basis_vectors_checked_in_full_original_kernel": 37,
+  "quadratic_coefficients_recomputed": 703,
+  "nonzero_diagonal": 16,
+  "nonzero_cross": 0,
+  "gauge_checks": [
+    "node translation",
+    "reciprocal label/direction scaling"
+  ],
+  "kernel_completeness": "requires independent rank receipt, not inferred from null vectors",
+  "seconds": 4.568996959
+}

@@ -1,0 +1,30 @@
+{
+  "PASS": true,
+  "local_rank_min": 9,
+  "local_rank_max": 9,
+  "verified_local_banks": 129,
+  "original_relation_rows_reconstructed": 2580,
+  "reduced_coefficient_rank": 347,
+  "original_jacobian_rank_lower_bound": 1508,
+  "original_columns": 1545,
+  "kernel_dimension_upper_bound": 37,
+  "saved_tangent_basis_rank": 37,
+  "all_saved_vectors_in_original_kernel": true,
+  "original_kernel_complete": true,
+  "pivot_order": "reverse columns, bottom-first row selection",
+  "seconds": 0.1828060420230031,
+  "original_jacobian_rank": 1508,
+  "kernel_dimension": 37,
+  "claim": "The saved37 independent vectors form the complete kernel of the original3741x1545 Jacobian.",
+  "field_arithmetic": "Rebuilt polynomial-residue primitive tables; all2097151 nonzero residues visited exactly once; 256 products checked by carryless arithmetic.",
+  "coefficient_relation_replay": "Each reduced coefficient row checked as an original-incidence linear combination; local coefficients verified zero.",
+  "compiler_command": "clang++ -O3 -std=c++17 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.4.sdk -mmacosx-version-min=15.0 independent_rank_completeness.cpp -o independent_rank_completeness",
+  "sha256": {
+    "fixture.txt": "9a2c4ac67602ceb548ea78a58b75bf98592c27adc4d436299101c34d209f531b",
+    "tangent_basis.bin": "a82a9998433ff29d43dc389c899eda7d221a96028b0c7a5421908a3d87f07bb8",
+    "reduced_matrix.bin": "9f821894bd40d03fb891fa1dcf0b9ee4e9267d74c042ee1d20cee25da3c326e3",
+    "local_relations.bin": "80704a497c861b5dc6aaaf6817b975f93401cc62682319f8fd4293c054d1e168",
+    "ramified_contradiction.bin": "4fa0a82534bf93da6178a2cbcb037ccb227e7158896dbc8ec2a7f82307bcec0a",
+    "independent_rank_completeness.cpp": "42ce12a7e38f3dcea355e9c92f5810fbcbcfebe17c904649610c4bbb2cb286f2"
+  }
+}

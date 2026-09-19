@@ -1,0 +1,15 @@
+{
+  "PASS": true,
+  "basis_vectors_checked_in_full_original_kernel": 37,
+  "basis_independence_identity_minor": 37,
+  "quadratic_coefficients_recomputed": 703,
+  "nonzero_diagonal": 0,
+  "nonzero_cross": 0,
+  "gauge_checks": [
+    "node translation",
+    "reciprocal label/direction scaling"
+  ],
+  "claim": "Ramification-two obstruction once full-kernel completeness is verified independently",
+  "kernel_completeness": "separate independent rank receipt required",
+  "seconds": 5.464747458
+}

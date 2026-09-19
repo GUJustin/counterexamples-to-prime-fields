@@ -32,3 +32,36 @@ the quadratic extension of Goldilocks. It does apply to its quartic
 extension. No impossibility for different quadratic-extension constructions
 is asserted. The exact threshold proof and finite onset are audited in
 quadratic_frobenius_core/QUARTER_DENSITY_EXACT_JOHNSON_THRESHOLD_AUDIT.md.
+
+
+## Current quartic tradeoffs: message length is not codeword length
+
+For the three rows below the field is F_(p⁴), the codeword length is
+n=(5p²−1)/2, and T=isqrt(5p²−2). The exact threshold profile has
+B=(p+1)(p²−1) singleton parameters and one additional parameter with p+1
+witnesses. Both source words and their ordinary common agreement satisfy
+the stated agreement bound. These rows use no neutral padding.
+
+| Message length k | Source/common agreement | Rate | Guaranteed limiting loss divided by T−k | Above first order? |
+|---|---|---|---|---|
+| 3 | exactly 2p | Θ(p^−2) | 1−2/sqrt(5), about10.56% | Yes, even the sources |
+| floor(sqrt(p/2))+1 | exactly 2p | Θ(p^−3/2) | 1−2/sqrt(5) | No |
+| floor(p/20)+1, primitive block scale | between2p and2p+2floor(p/20) | Θ(p^−1) | at least(sqrt(5)−2.1)/(sqrt(5)−0.05), about6.22% | No |
+
+Every row still has fractional agreement loss Θ(1/p). In particular, a
+constant entry in the loss-ratio column does not mean a constant loss in
+relative distance. The last two rows are checked research tradeoffs, not
+claims of a practical code rate or tighter first-order bounds.
+
+For BabyBear, the respective message lengths are3,31728,100663297,
+all against10133099171649945602 codeword symbols. The final row guarantees
+at least273941022 extra agreements beyond either source's maximum, but
+still has a rate of about9.93e−12. All these field substitutions are
+existence theorems for selected extension-field domains, not explicit
+lists of practical evaluation coordinates.
+
+A separate research refinement adjusts the retained block density to attain
+a limiting loss ratio1−sqrt(3)/2 at dimension3. Another standard padding
+transformation attains rate1/2 but requires alphabetp^(4*2^Θ(p)), retains
+only Θ(1/p) fractional loss, and loses first-order placement. Neither
+resolves the short-domain, fixed-alphabet, constant-rate target.
