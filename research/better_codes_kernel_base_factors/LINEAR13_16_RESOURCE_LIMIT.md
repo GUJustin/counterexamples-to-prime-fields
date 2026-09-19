@@ -62,3 +62,10 @@ verify them. They show precisely why extending the same inequalities
 and graph-power family cannot finish these cases. A further global
 compatibility condition, another helper, or a different geometric
 inequality would be needed; no such claim is supplied by this profile.
+
+The later [squarefree residual discriminant check](LINEAR13_16_SQUAREFREE_RESIDUAL_LIMIT.md)
+adds a resource absent from the calculations above. It rejects these
+specific e=13,14 profiles when Disc(H) is nonzero, but explicit shifts
+of graph contact43 nodes to contact42 restore all tested budgets.
+The e=15,16 profiles already pass that additional budget. Non-squarefree
+H remains outside the discriminant argument.

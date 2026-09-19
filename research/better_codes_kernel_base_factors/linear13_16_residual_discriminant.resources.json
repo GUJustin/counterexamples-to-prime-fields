@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "research/better_codes_kernel_base_factors/linear13_16_residual_discriminant.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.5444688329999999,
+  "peak_rss_kib": 6480,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

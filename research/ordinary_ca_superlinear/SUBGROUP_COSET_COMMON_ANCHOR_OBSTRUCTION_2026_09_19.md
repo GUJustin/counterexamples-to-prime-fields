@@ -114,3 +114,121 @@ for such an arbitrary retained set.
 This note therefore does not close the unknown-nearest-orbit shortening
 target. It imports no Fourier estimate for the explicit Dickson bank,
 and does not identify the unknown nearest polynomial with that bank.
+
+## 5. Exact coset caps for arbitrary retained rotation sets
+
+The following necessary conditions do not assume that the retained
+rotations form a subgroup or coset. Write the four `mu_r`-cosets as
+`D_j={x:x^r=alpha_j}` and let `w_j` be the value of `W_r` there. For
+the fixed nonconstant polynomial `V`, put
+
+    b_j=|{x in D_j:V(x)=w_j}|, m=sum_j b_j.
+
+For every two distinct cosets,
+
+    b_j+b_k<=r.                                           (3)
+
+Indeed, interpolate their two word values by a polynomial
+`L_jk(Y)` of degree at most one, with
+`L_jk(alpha_j)=w_j`, `L_jk(alpha_k)=w_k`. The polynomial
+`V(X)-L_jk(X^r)` is nonzero and has degree at most `r`. If `L_jk`
+is nonconstant, the degree mismatch proves nonvanishing; if it is
+constant, nonconstancy of `V` does. Its roots include every agreement
+in these two cosets, proving (3). Thus this proof also works if two
+word values coincide, provided `V` is nonconstant.
+
+Summing (3) over the three other cosets gives
+
+    m+2b_j<=3r,  hence b_j<=(3r-m)/2.                     (4)
+
+For the true-nearest source `m>=3r/2`, every `b_j<=3r/4`.
+Consequently `4r/5` common anchors cannot all lie in one quartic coset.
+The pair inequality is stronger information than this last consequence.
+It is characteristic-independent once the specified domain has distinct
+roots and the word is defined. It uses neither the explicit Dickson bank
+nor a bound on its Fourier coefficients.
+
+## 6. Exact shortened-subbank inequality
+
+Let `S subset mu_r` be ANY set of `L>=2` retained rotations. Let `A_j`
+be their common anchors in `D_j`, put `a_j=|A_j|`, and set
+
+    t=sum_j a_j.
+
+Common anchors of two distinct degree-`<r` polynomials give `t<=r-1`.
+Shorten all retained polynomials on these anchors: subtract their common
+interpolant and divide by the anchor locator. The resulting `L` distinct
+polynomials have degree at most
+
+    D'=r-1-t.
+
+Rotation preserves every `D_j` and its word value, so every retained
+polynomial has exactly `b_j` agreements in that coset before shortening,
+and exactly `b_j-a_j` afterwards. For any nonempty subset `J` of the
+four cosets, define
+
+    N_J=|J|r-sum_(j in J) a_j,
+    M_J=sum_(j in J)(b_j-a_j).
+
+Then
+
+    L [M_J^2-N_J D'] <= N_J [M_J-D'].                     (5)
+
+Proof. On these `N_J` retained coordinates let `c_x` be the number of
+shortened candidates matching the shortened word. Then
+`sum_x c_x=L M_J`. Distinct candidate differences have at most `D'`
+roots, so `sum_x binom(c_x,2)<=binom(L,2)D'`. Combining this with
+`sum_x c_x^2 >= L^2 M_J^2/N_J` gives (5). No sign assumption on either
+bracket in (5) is needed.
+
+This is the ordinary pair-count/Johnson inequality applied to each
+coset union AFTER shortening, not a new list-decoding theorem. It is
+valid in arbitrary characteristic and for arbitrary `S`; full orbit
+size supplies distinctness, while nearestness is needed only for the
+known lower bound on `m`.
+
+For growing `L`, write `t/r -> tau` and `m/r -> mu` along any convergent
+subsequence. The full four-coset choice in (5) gives
+
+    (mu-tau)^2 <= (4-tau)(1-tau).                         (6)
+
+At the proposed `tau=4/5`, this requires `mu<=8/5`. Thus a growing
+subbank surviving this shortening can only come from the narrower
+nearest-agreement window
+
+    3/2 <= m/r <= 8/5+o(1),
+
+not the whole currently allowed interval through `5/3`. More generally,
+`m/r>=3/2` forces `tau<=7/8+o(1)` for a growing shortened subbank.
+
+## 7. These conditions still leave the required small positive density open
+
+There is no contradiction in the following normalized resource ledger:
+
+    a_j/r=1/5, b_j/r=3/8 for each of the four cosets,
+    t/r=4/5, m/r=3/2, L/r=1/9.
+
+This is a numerical feasibility check, NOT an incidence realization.
+For a union of `q` cosets, `1<=q<=4`, the limiting left comparison in
+(5) is
+
+    (M_J/r)^2=(7q/40)^2,
+    (N_J/r)(D'/r)=(4q/5)(1/5).
+
+The required inequality is strict because `49q<256` for all these `q`.
+Every pair also satisfies (3) strictly, since its normalized agreement
+sum is `3/4<1`. Integer rounding does not remove these fixed slacks.
+
+The elementary span bound is likewise compatible with this ledger:
+the span of the `L-1` rotation differences has dimension at most
+`r-t`, since all are divisible by the anchor locator; here
+`L-1~r/9<r/5~r-t`. No assertion that arbitrary rotations are linearly
+independent is used or justified.
+
+Product-set expansion can impose further conditions, but its even-`r`
+case has a possible index-two stabilizer and must not be replaced by
+a uniform prime-cyclic Fourier or sumset estimate. No Kneser-based
+quantitative exclusion is claimed here. In particular, (3)--(6) do
+not rule out the linear-size `r/9` subbank at the target shortening,
+and do not construct one. Arbitrary dense non-subgroup retention remains
+the substantive unresolved step.

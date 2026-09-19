@@ -1,0 +1,172 @@
+{
+  "status": "PASS: all four squarefree-residual resource relaxations remain feasible",
+  "n": 262144,
+  "w": 131071,
+  "own_rank_required": 6802316684344,
+  "rows": [
+    {
+      "e": 13,
+      "h": 30,
+      "local_disc_contact_h": 450,
+      "local_disc_contact_h_minus_1": 416,
+      "discriminant_budget": 114032466,
+      "original_profile_discriminant": 115548318,
+      "original_excess": 1515852,
+      "graph43_to_graph42_shift": 44584,
+      "profile": [
+        {
+          "type": "nongraph",
+          "contact": 30,
+          "count": 60000
+        },
+        {
+          "type": "graph",
+          "contact": 42,
+          "count": 115657
+        },
+        {
+          "type": "graph",
+          "contact": 43,
+          "count": 86487
+        }
+      ],
+      "discriminant_total": 114032462,
+      "discriminant_slack": 4,
+      "rank_total": 6958904500899,
+      "rank_surplus": 156587816555,
+      "minimum_graph_coefficient_slack": 44596,
+      "graph_count": 202144,
+      "routing_required": 211941,
+      "best_helper_weight": 7391469,
+      "own_weight": 7208905,
+      "helper_excess": 182564,
+      "minimizing_graph_powers": [
+        42
+      ]
+    },
+    {
+      "e": 14,
+      "h": 29,
+      "local_disc_contact_h": 416,
+      "local_disc_contact_h_minus_1": 384,
+      "discriminant_budget": 106430324,
+      "original_profile_discriminant": 106777568,
+      "original_excess": 347244,
+      "graph43_to_graph42_shift": 10852,
+      "profile": [
+        {
+          "type": "nongraph",
+          "contact": 29,
+          "count": 60000
+        },
+        {
+          "type": "graph",
+          "contact": 42,
+          "count": 81925
+        },
+        {
+          "type": "graph",
+          "contact": 43,
+          "count": 120219
+        }
+      ],
+      "discriminant_total": 106430304,
+      "discriminant_slack": 20,
+      "rank_total": 6950711479959,
+      "rank_surplus": 148394795615,
+      "minimum_graph_coefficient_slack": 10864,
+      "graph_count": 202144,
+      "routing_required": 211941,
+      "best_helper_weight": 7365201,
+      "own_weight": 7208905,
+      "helper_excess": 156296,
+      "minimizing_graph_powers": [
+        42
+      ]
+    },
+    {
+      "e": 15,
+      "h": 28,
+      "local_disc_contact_h": 384,
+      "local_disc_contact_h_minus_1": 354,
+      "discriminant_budget": 99090324,
+      "original_profile_discriminant": 98531106,
+      "original_excess": -559218,
+      "graph43_to_graph42_shift": 0,
+      "profile": [
+        {
+          "type": "nongraph",
+          "contact": 28,
+          "count": 60000
+        },
+        {
+          "type": "graph",
+          "contact": 42,
+          "count": 71073
+        },
+        {
+          "type": "graph",
+          "contact": 43,
+          "count": 131071
+        }
+      ],
+      "discriminant_total": 98531106,
+      "discriminant_slack": 559218,
+      "rank_total": 6909411348619,
+      "rank_surplus": 107094664275,
+      "minimum_graph_coefficient_slack": 12,
+      "graph_count": 202144,
+      "routing_required": 211941,
+      "best_helper_weight": 7316053,
+      "own_weight": 7208905,
+      "helper_excess": 107148,
+      "minimizing_graph_powers": [
+        42,
+        43
+      ]
+    },
+    {
+      "e": 16,
+      "h": 27,
+      "local_disc_contact_h": 354,
+      "local_disc_contact_h_minus_1": 326,
+      "discriminant_budget": 92012466,
+      "original_profile_discriminant": 90808932,
+      "original_excess": -1203534,
+      "graph43_to_graph42_shift": 0,
+      "profile": [
+        {
+          "type": "nongraph",
+          "contact": 27,
+          "count": 60000
+        },
+        {
+          "type": "graph",
+          "contact": 42,
+          "count": 71073
+        },
+        {
+          "type": "graph",
+          "contact": 43,
+          "count": 131071
+        }
+      ],
+      "discriminant_total": 90808932,
+      "discriminant_slack": 1203534,
+      "rank_total": 6853734948619,
+      "rank_surplus": 51418264275,
+      "minimum_graph_coefficient_slack": 12,
+      "graph_count": 202144,
+      "routing_required": 211941,
+      "best_helper_weight": 7256053,
+      "own_weight": 7208905,
+      "helper_excess": 47148,
+      "minimizing_graph_powers": [
+        42,
+        43
+      ]
+    }
+  ],
+  "local_squarefree_models": "12 distinct factors (Y^2-c*t), with distinct (Y-d*t); one unit root for contact h-1",
+  "scope": "Necessary-resource profiles with squarefree local models; no global H or universal F is constructed. Non-squarefree H is outside the discriminant argument. No benchmark gain."
+}
