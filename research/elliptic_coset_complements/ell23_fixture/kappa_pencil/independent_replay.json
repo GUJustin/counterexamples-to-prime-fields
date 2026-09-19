@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "rank": 182,
+  "supports_rebuilt": 25,
+  "matrix_sha256": "6b7618ea3e29a81f9f4f46724ba77b119367a154c520efc104304ebbc7e4f2fb",
+  "method": "Actual elliptic group law, Velu sum for tags, direct locator multiplication, pure-Python reverse-column elimination; no producer imports or FLINT",
+  "elapsed_seconds": 0.175241208,
+  "files": {
+    "verify.py": "9d55beefc60b5248e1591c943390e8cf144efdbb02cf3d94f0301995cbb4d315",
+    "selected_supports.json": "c87ca694f92d843a11ba62894f397d1872450032b7a04a3663e2a3a5376c0f1b",
+    "receipt.json": "084bdaf0e8ce272d0880d57cb46dfea10baef17065dd10ff637cb3749b26b787",
+    "independent_replay.py": "45c285b7de7d92449e560c000a6aa435b4f1d2033418cf16d9bcf7229757b4a0"
+  }
+}

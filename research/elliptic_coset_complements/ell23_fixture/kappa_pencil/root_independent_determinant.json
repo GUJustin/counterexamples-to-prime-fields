@@ -1,0 +1,16 @@
+{
+  "method": "pure Python modular Gaussian elimination; no FLINT rank or determinant call",
+  "matrix_sha256": "6b7618ea3e29a81f9f4f46724ba77b119367a154c520efc104304ebbc7e4f2fb",
+  "modulus": 1657,
+  "dimension": 182,
+  "determinant_mod_p": 193,
+  "nonzero": true,
+  "support_indices": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    24
+  ]
+}
