@@ -69,16 +69,16 @@ Even granting no reserved core,507 candidate tags cannot certify the required ba
 
 The same root argument works for tags in a multiplicative coset βμ512: replace the constant1 by β^512, leaving all used interior coefficients unchanged. It does not automatically cover additive translates of the tag subgroup.
 
-## General near-partition identity, not a classification
+## General near-partition identity and subsequent multiplicity exclusion
 
 If M distinct tags have full e-point fibers in D and their union leaves exactly u domain points, let U be the monic locator of those remaining points and take H monic (rescale tags otherwise). Then necessarily
 
     X^n−1=U(X) W(H(X)),
     W(Y)=∏_{selected tags}(Y−tag), degU=u=n−Me.
 
-For e=512+s,1≤s≤7, the maximal pool M=512−s leaves u=s². Thus a nearly uniform maximal-fiber map would supply a highly constrained composition identity with a degree1,4,9,16,25,36,or49 cofactor. This is a concrete algebraic target for a future noncandidate-specific argument, not a proved classification. Rational H requires a separately cleared-denominator degree ledger and is not silently covered by the polynomial formulas above.
+For e=512+s,1≤s≤7, the maximal pool M=512−s leaves u=s². The subsequent [Euler multiplicity proof](NEAR_PARTITION_EULER_MULTIPLICITY_AUDIT.md) excludes every such maximal pool: in characteristic p>n, the displayed composition identity is impossible whenever 0<u<e and deg W>=2. Thus each degree has at most511−s complete fibers, regardless of the tag set. This is not a classification of smaller pools. Rational H requires a separately cleared-denominator degree ledger and is not silently covered by the polynomial formulas above.
 
-Next useful work would need either a genuinely different map realizing these near-partition identities together with a cheap tag-product range, or a quantitative coefficient-fiber concentration proof. A large random scan of polynomial maps is not supported by the present evidence.
+Next useful work would need a map realizing a smaller surviving pool together with a cheap tag-product range, or a quantitative coefficient-fiber concentration proof. A large random scan of polynomial maps is not supported by the present evidence.
 
 ## Independent audit: maximal degree513 pool is impossible
 

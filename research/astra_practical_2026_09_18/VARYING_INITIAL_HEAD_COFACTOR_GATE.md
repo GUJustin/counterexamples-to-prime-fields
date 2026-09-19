@@ -7,8 +7,8 @@ manuscript edit is obtained.
 There is a new obstruction for a coarse linear cofactor, even when the
 first packet head is allowed to vary. A coarse quadratic cofactor has
 a separate, explicit necessary determinant test. Passing that test is
-not a construction, and the exceptional determinant-identity case is
-not classified here.
+not a construction. The subsequent prefix classification is linked at
+the end of this note; it does not resolve the finite counting problem.
 
 ## 1. Practical identity and available coefficients
 
@@ -217,3 +217,24 @@ two, a candidate must satisfy the explicit all-minors identity test;
 the surviving exceptional pencils still need classification and a
 root-subset counting theorem. These are precise model statements,
 not a general impossibility result for the prescribed NTT benchmark.
+
+## Subsequent classification of the surviving prefix pencils
+
+The later [common-factor reduction](QUADRATIC_COFACTOR_IDENTITY_COMMON_FACTOR_REDUCTION.md)
+and [unit-kernel upgrade](QUADRATIC_COFACTOR_UNIT_KERNEL_PRECISION_UPGRADE.md)
+resolve the prefix-classification step left open above. More than 3p+2
+actual valid labels force a generic unit kernel modulo Z^15. No two
+coefficients need be lost from the available prefix.
+
+For a nonconstant prefix pencil, the factor-allocation proof reduces a
+large bank, up to explicitly O(p) exceptions, to a fixed packet prefix
+or a fixed prefix after multiplication by a base-field linear cofactor.
+A constant product-prefix pencil instead permits a base-field cofactor
+of degree at most two after removing one fixed non-base factor.
+
+All prefixes here are modulo Z^15: the normalization coefficient and
+FOURTEEN nonconstant heads. The upgrade does not supply the fifteenth
+nonconstant head. At deg(T)=e+1031 the separate denominator-remainder
+conditions still have to be enforced. The finite root-subset count and
+the required label population remain unproved; this classification is
+not a better.codes improvement or a numerical factor-p saving.
