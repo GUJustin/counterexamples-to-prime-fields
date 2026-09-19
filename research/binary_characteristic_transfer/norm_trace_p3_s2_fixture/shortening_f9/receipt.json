@@ -1,0 +1,362 @@
+{
+  "canonical_label_count": 648,
+  "coefficient_field_size": 6561,
+  "domain_encoded": [
+    0,
+    1,
+    2,
+    3165,
+    3166,
+    3167,
+    6321,
+    6322,
+    6323
+  ],
+  "elapsed_seconds": 1.575771874981001,
+  "fixed_a_groups": {
+    "1": {
+      "count": 81,
+      "raw_difference_span_rank": 8,
+      "raw_linear_span_rank": 9,
+      "retained_agreement_histogram": {
+        "4": 36,
+        "7": 45
+      },
+      "scaled_difference_span_rank": 9,
+      "scaled_linear_span_rank": 9
+    },
+    "2": {
+      "count": 81,
+      "raw_difference_span_rank": 8,
+      "raw_linear_span_rank": 9,
+      "retained_agreement_histogram": {
+        "4": 36,
+        "7": 45
+      },
+      "scaled_difference_span_rank": 9,
+      "scaled_linear_span_rank": 9
+    },
+    "3165": {
+      "count": 81,
+      "raw_difference_span_rank": 8,
+      "raw_linear_span_rank": 9,
+      "retained_agreement_histogram": {
+        "4": 36,
+        "7": 45
+      },
+      "scaled_difference_span_rank": 9,
+      "scaled_linear_span_rank": 9
+    },
+    "3166": {
+      "count": 81,
+      "raw_difference_span_rank": 8,
+      "raw_linear_span_rank": 9,
+      "retained_agreement_histogram": {
+        "5": 63,
+        "8": 18
+      },
+      "scaled_difference_span_rank": 9,
+      "scaled_linear_span_rank": 9
+    },
+    "3167": {
+      "count": 81,
+      "raw_difference_span_rank": 8,
+      "raw_linear_span_rank": 9,
+      "retained_agreement_histogram": {
+        "5": 63,
+        "8": 18
+      },
+      "scaled_difference_span_rank": 9,
+      "scaled_linear_span_rank": 9
+    },
+    "6321": {
+      "count": 81,
+      "raw_difference_span_rank": 8,
+      "raw_linear_span_rank": 9,
+      "retained_agreement_histogram": {
+        "4": 36,
+        "7": 45
+      },
+      "scaled_difference_span_rank": 9,
+      "scaled_linear_span_rank": 9
+    },
+    "6322": {
+      "count": 81,
+      "raw_difference_span_rank": 8,
+      "raw_linear_span_rank": 9,
+      "retained_agreement_histogram": {
+        "5": 63,
+        "8": 18
+      },
+      "scaled_difference_span_rank": 9,
+      "scaled_linear_span_rank": 9
+    },
+    "6323": {
+      "count": 81,
+      "raw_difference_span_rank": 8,
+      "raw_linear_span_rank": 9,
+      "retained_agreement_histogram": {
+        "5": 63,
+        "8": 18
+      },
+      "scaled_difference_span_rank": 9,
+      "scaled_linear_span_rank": 9
+    }
+  },
+  "global_high_coefficient_rank_mod_affine_functions_of_label": {
+    "1": 8,
+    "2": 7,
+    "3": 6,
+    "4": 5,
+    "5": 4,
+    "6": 3,
+    "7": 2,
+    "8": 1
+  },
+  "global_span": {
+    "count": 648,
+    "raw_difference_span_rank": 9,
+    "raw_linear_span_rank": 9,
+    "retained_agreement_histogram": {
+      "4": 144,
+      "5": 252,
+      "7": 180,
+      "8": 72
+    },
+    "scaled_difference_span_rank": 9,
+    "scaled_linear_span_rank": 9
+  },
+  "n_short": 9,
+  "pass_all_checks": true,
+  "raw_reduced_degree_histogram": {
+    "8": 648
+  },
+  "retained_agreement_histogram": {
+    "4": 144,
+    "5": 252,
+    "7": 180,
+    "8": 72
+  },
+  "scaled_reduced_degree_histogram": {
+    "8": 648
+  },
+  "scope": "all 648 canonical witnesses restricted to the fixed F9 subfield; linear ranks over F6561 and support histograms; no subset optimization or all-codeword search, no preserved larger-domain source bound assumed",
+  "shortened_sources": {
+    "endpoint_and_common_agreement_for_dimensions_6_to_8": "exactly the chosen dimension",
+    "exact_identity": "f|F9=(X6-beta6)/(X-beta)+(beta6-beta54)*g|F9",
+    "f_reduced_coefficients": [
+      6249,
+      1154,
+      4807,
+      3662,
+      5730,
+      1910,
+      2687,
+      5165,
+      6231
+    ],
+    "g_reduced_coefficients": [
+      4513,
+      4581,
+      1527,
+      509,
+      4430,
+      5989,
+      4368,
+      1456,
+      2533
+    ],
+    "high_agreement_label_count_for_dimensions_6_to_8": 1,
+    "label_shift_encoded": 2893,
+    "low_polynomial_degree": 5,
+    "proof_scope": "last source statements use the exact reciprocal root bound",
+    "r0_reduced_coefficients": [
+      6071,
+      3640,
+      3261,
+      1087,
+      2500,
+      2962,
+      987,
+      329,
+      4541
+    ],
+    "r1_reduced_coefficients": [
+      551,
+      2489,
+      5342,
+      6203,
+      6490,
+      4214,
+      5593,
+      4002,
+      1334
+    ],
+    "source_r0_reciprocal_coefficient_nonzero": true,
+    "unique_codeword_affine_parameter_for_dimensions_6_to_8": 4673,
+    "unique_codeword_pencil_label_for_dimensions_6_to_8": 4733
+  },
+  "source_bank_sha256": "d69ce3fc1159feaee6e9cc81e634bfcd3b89b619b6297dfb5a35584fdde04f68",
+  "source_verifier_sha256": "eb06422d9a3d4fa89eeca7a4377383a874826ab3e9cb8c5ad6a1bb793f4c2e5d",
+  "task": "restriction of the saved norm-trace bank to F9",
+  "threshold_groups": {
+    "4": {
+      "count": 648,
+      "exhibited_labels_with_unmodified_scaled_witness_degree_lt_k": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0
+      },
+      "high_coefficient_rank_mod_affine_functions_of_label": {
+        "1": 8,
+        "2": 7,
+        "3": 6,
+        "4": 5,
+        "5": 4,
+        "6": 3,
+        "7": 2,
+        "8": 1
+      },
+      "raw_difference_span_rank": 9,
+      "raw_linear_span_rank": 9,
+      "retained_agreement_histogram": {
+        "4": 144,
+        "5": 252,
+        "7": 180,
+        "8": 72
+      },
+      "scaled_difference_span_rank": 9,
+      "scaled_linear_span_rank": 9
+    },
+    "5": {
+      "count": 504,
+      "exhibited_labels_with_unmodified_scaled_witness_degree_lt_k": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0
+      },
+      "high_coefficient_rank_mod_affine_functions_of_label": {
+        "1": 8,
+        "2": 7,
+        "3": 6,
+        "4": 5,
+        "5": 4,
+        "6": 3,
+        "7": 2,
+        "8": 1
+      },
+      "raw_difference_span_rank": 9,
+      "raw_linear_span_rank": 9,
+      "retained_agreement_histogram": {
+        "5": 252,
+        "7": 180,
+        "8": 72
+      },
+      "scaled_difference_span_rank": 9,
+      "scaled_linear_span_rank": 9
+    },
+    "6": {
+      "count": 252,
+      "exhibited_labels_with_unmodified_scaled_witness_degree_lt_k": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0
+      },
+      "high_coefficient_rank_mod_affine_functions_of_label": {
+        "1": 8,
+        "2": 7,
+        "3": 6,
+        "4": 5,
+        "5": 4,
+        "6": 3,
+        "7": 2,
+        "8": 1
+      },
+      "raw_difference_span_rank": 9,
+      "raw_linear_span_rank": 9,
+      "retained_agreement_histogram": {
+        "7": 180,
+        "8": 72
+      },
+      "scaled_difference_span_rank": 9,
+      "scaled_linear_span_rank": 9
+    },
+    "7": {
+      "count": 252,
+      "exhibited_labels_with_unmodified_scaled_witness_degree_lt_k": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0
+      },
+      "high_coefficient_rank_mod_affine_functions_of_label": {
+        "1": 8,
+        "2": 7,
+        "3": 6,
+        "4": 5,
+        "5": 4,
+        "6": 3,
+        "7": 2,
+        "8": 1
+      },
+      "raw_difference_span_rank": 9,
+      "raw_linear_span_rank": 9,
+      "retained_agreement_histogram": {
+        "7": 180,
+        "8": 72
+      },
+      "scaled_difference_span_rank": 9,
+      "scaled_linear_span_rank": 9
+    },
+    "8": {
+      "count": 72,
+      "exhibited_labels_with_unmodified_scaled_witness_degree_lt_k": {
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 0,
+        "6": 0,
+        "7": 0,
+        "8": 0
+      },
+      "high_coefficient_rank_mod_affine_functions_of_label": {
+        "1": 8,
+        "2": 7,
+        "3": 6,
+        "4": 5,
+        "5": 4,
+        "6": 3,
+        "7": 2,
+        "8": 1
+      },
+      "raw_difference_span_rank": 9,
+      "raw_linear_span_rank": 9,
+      "retained_agreement_histogram": {
+        "8": 72
+      },
+      "scaled_difference_span_rank": 9,
+      "scaled_linear_span_rank": 9
+    }
+  },
+  "verifier_sha256": "09975e9fdabdcaed50a25ea8e5a8fbdcc9a63bf2e834821f71288db71ac7428c"
+}

@@ -1,0 +1,43 @@
+{
+  "n": 9,
+  "rows": [
+    {
+      "dimension": 2,
+      "largest_integer_threshold_strictly_below_Johnson": 2,
+      "first_order_sign": "-602/729"
+    },
+    {
+      "dimension": 3,
+      "largest_integer_threshold_strictly_below_Johnson": 4,
+      "first_order_sign": "-145/243"
+    },
+    {
+      "dimension": 4,
+      "largest_integer_threshold_strictly_below_Johnson": 5,
+      "first_order_sign": "-424/729"
+    },
+    {
+      "dimension": 5,
+      "largest_integer_threshold_strictly_below_Johnson": 5,
+      "first_order_sign": "-800/729"
+    },
+    {
+      "dimension": 6,
+      "largest_integer_threshold_strictly_below_Johnson": 6,
+      "first_order_sign": "-26/27"
+    },
+    {
+      "dimension": 7,
+      "largest_integer_threshold_strictly_below_Johnson": 7,
+      "first_order_sign": "-532/729"
+    },
+    {
+      "dimension": 8,
+      "largest_integer_threshold_strictly_below_Johnson": 7,
+      "first_order_sign": "-824/729"
+    }
+  ],
+  "dimension_one": "Johnson threshold zero, no positive threshold",
+  "conclusion": "No integer agreement threshold is simultaneously above the full first-order curve and strictly below finite Johnson for any dimension 1..8.",
+  "scope": "Parameter obstruction independent of the received words, alphabet, or canonical-witness restriction."
+}

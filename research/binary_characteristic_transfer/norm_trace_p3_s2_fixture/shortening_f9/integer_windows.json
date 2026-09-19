@@ -1,0 +1,299 @@
+{
+  "arithmetic": "exact integers and rational numbers only",
+  "branch_boundary": "11-3sqrt(13)",
+  "finite_johnson_threshold": "sqrt(n*(k-1))",
+  "full_dimension_note": "k=n is the full ambient code and cannot have far sources",
+  "pass_all_checks": true,
+  "reports": [
+    {
+      "dimensions_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "integer_windows_above_first_order_and_strictly_below_johnson": 0,
+      "length": 9,
+      "rows": [
+        {
+          "k": 1,
+          "no_nonnegative_threshold_strictly_below_johnson": true
+        },
+        {
+          "branch": "high",
+          "first_order_polynomial": "-602/729",
+          "k": 2,
+          "largest_integer_strictly_below_johnson": 2,
+          "maximal_threshold_strictly_below_first_order": true
+        },
+        {
+          "branch": "high",
+          "first_order_polynomial": "-145/243",
+          "k": 3,
+          "largest_integer_strictly_below_johnson": 4,
+          "maximal_threshold_strictly_below_first_order": true
+        },
+        {
+          "branch": "high",
+          "first_order_polynomial": "-424/729",
+          "k": 4,
+          "largest_integer_strictly_below_johnson": 5,
+          "maximal_threshold_strictly_below_first_order": true
+        },
+        {
+          "branch": "high",
+          "first_order_polynomial": "-800/729",
+          "k": 5,
+          "largest_integer_strictly_below_johnson": 5,
+          "maximal_threshold_strictly_below_first_order": true
+        },
+        {
+          "branch": "high",
+          "first_order_polynomial": "-26/27",
+          "k": 6,
+          "largest_integer_strictly_below_johnson": 6,
+          "maximal_threshold_strictly_below_first_order": true
+        },
+        {
+          "branch": "high",
+          "first_order_polynomial": "-532/729",
+          "k": 7,
+          "largest_integer_strictly_below_johnson": 7,
+          "maximal_threshold_strictly_below_first_order": true
+        },
+        {
+          "branch": "high",
+          "first_order_polynomial": "-824/729",
+          "k": 8,
+          "largest_integer_strictly_below_johnson": 7,
+          "maximal_threshold_strictly_below_first_order": true
+        }
+      ]
+    },
+    {
+      "dimensions_checked": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "integer_windows_above_first_order_and_strictly_below_johnson": 0,
+      "length": 27,
+      "rows": [
+        {
+          "k": 1,
+          "no_nonnegative_threshold_strictly_below_johnson": true
+        },
+        {
+          "branch": "low",
+          "comparison": "alpha <= sqrt(rho/2) < a1(rho)",
+          "k": 2,
+          "largest_integer_strictly_below_johnson": 5,
+          "leading_squared_slack": "2/729",
+          "maximal_threshold_strictly_below_first_order": true
+        },
+        {
+          "branch": "low",
+          "comparison": "u0^2(u0+3) < sqrt(rho/2)",
+          "k": 3,
+          "largest_integer_strictly_below_johnson": 7,
+          "maximal_threshold_strictly_below_first_order": true,
+          "positive_rational_side": "2273/78732",
+          "positive_squared_slack": "915001/6198727824"
+        },
+        {
+          "branch": "low",
+          "comparison": "u0^2(u0+3) < sqrt(rho/2)",
+          "k": 4,
+          "largest_integer_strictly_below_johnson": 8,
+          "maximal_threshold_strictly_below_first_order": true,
+          "positive_rational_side": "892/19683",
+          "positive_squared_slack": "165808/387420489"
+        },
+        {
+          "branch": "high",
+          "first_order_polynomial": "-2525/19683",
+          "k": 5,
+          "largest_integer_strictly_below_johnson": 10,
+          "maximal_threshold_strictly_below_first_order": true
+        },
+        {
+          "branch": "high",
+          "first_order_polynomial": "-1088/6561",
+          "k": 6,
+          "largest_integer_strictly_below_johnson": 11,
+          "maximal_threshold_strictly_below_first_order": true
+        },
+        {
+          "branch": "high",
+          "first_order_polynomial": "-415/2187",
+          "k": 7,
+          "largest_integer_strictly_below_johnson": 12,
+          "maximal_threshold_strictly_below_first_order": true
+        },
+        {
+          "branch": "high",
+          "first_order_polynomial": "-3944/19683",
+          "k": 8,
+          "largest_integer_strictly_below_johnson": 13,
+          "maximal_threshold_strictly_below_first_order": true
+        },
+        {
+          "branch": "high",
+          "first_order_polynomial": "-433/2187",
+          "k": 9,
+          "largest_integer_strictly_below_johnson": 14,
+          "maximal_threshold_strictly_below_first_order": true
+        },
+        {
+          "branch": "high",
+          "first_order_polynomial": "-400/2187",
+          "k": 10,
+          "largest_integer_strictly_below_johnson": 15,
+          "maximal_threshold_strictly_below_first_order": true
+        },
+        {
+          "branch": "high",
+          "first_order_polynomial": "-3059/19683",
+          "k": 11,
+          "largest_integer_strictly_below_johnson": 16,
+          "maximal_threshold_strictly_below_first_order": true
+        },
+        {
+          "branch": "high",
+          "first_order_polynomial": "-760/6561",
+          "k": 12,
+          "largest_integer_strictly_below_johnson": 17,
+          "maximal_threshold_strictly_below_first_order": true
+        },
+        {
+          "branch": "high",
+          "first_order_polynomial": "-6268/19683",
+          "k": 13,
+          "largest_integer_strictly_below_johnson": 17,
+          "maximal_threshold_strictly_below_first_order": true
+        },
+        {
+          "branch": "high",
+          "first_order_polynomial": "-194/729",
+          "k": 14,
+          "largest_integer_strictly_below_johnson": 18,
+          "maximal_threshold_strictly_below_first_order": true
+        },
+        {
+          "branch": "high",
+          "first_order_polynomial": "-1328/6561",
+          "k": 15,
+          "largest_integer_strictly_below_johnson": 19,
+          "maximal_threshold_strictly_below_first_order": true
+        },
+        {
+          "branch": "high",
+          "first_order_polynomial": "-2512/19683",
+          "k": 16,
+          "largest_integer_strictly_below_johnson": 20,
+          "maximal_threshold_strictly_below_first_order": true
+        },
+        {
+          "branch": "high",
+          "first_order_polynomial": "-6233/19683",
+          "k": 17,
+          "largest_integer_strictly_below_johnson": 20,
+          "maximal_threshold_strictly_below_first_order": true
+        },
+        {
+          "branch": "high",
+          "first_order_polynomial": "-56/243",
+          "k": 18,
+          "largest_integer_strictly_below_johnson": 21,
+          "maximal_threshold_strictly_below_first_order": true
+        },
+        {
+          "branch": "high",
+          "first_order_polynomial": "-2635/19683",
+          "k": 19,
+          "largest_integer_strictly_below_johnson": 22,
+          "maximal_threshold_strictly_below_first_order": true
+        },
+        {
+          "branch": "high",
+          "first_order_polynomial": "-6116/19683",
+          "k": 20,
+          "largest_integer_strictly_below_johnson": 22,
+          "maximal_threshold_strictly_below_first_order": true
+        },
+        {
+          "branch": "high",
+          "first_order_polynomial": "-1336/6561",
+          "k": 21,
+          "largest_integer_strictly_below_johnson": 23,
+          "maximal_threshold_strictly_below_first_order": true
+        },
+        {
+          "branch": "high",
+          "first_order_polynomial": "-7264/19683",
+          "k": 22,
+          "largest_integer_strictly_below_johnson": 23,
+          "maximal_threshold_strictly_below_first_order": true
+        },
+        {
+          "branch": "high",
+          "first_order_polynomial": "-551/2187",
+          "k": 23,
+          "largest_integer_strictly_below_johnson": 24,
+          "maximal_threshold_strictly_below_first_order": true
+        },
+        {
+          "branch": "high",
+          "first_order_polynomial": "-296/729",
+          "k": 24,
+          "largest_integer_strictly_below_johnson": 24,
+          "maximal_threshold_strictly_below_first_order": true
+        },
+        {
+          "branch": "high",
+          "first_order_polynomial": "-5500/19683",
+          "k": 25,
+          "largest_integer_strictly_below_johnson": 25,
+          "maximal_threshold_strictly_below_first_order": true
+        },
+        {
+          "branch": "high",
+          "first_order_polynomial": "-8312/19683",
+          "k": 26,
+          "largest_integer_strictly_below_johnson": 25,
+          "maximal_threshold_strictly_below_first_order": true
+        }
+      ]
+    }
+  ],
+  "scope": "a parameter obstruction for any construction at lengths 9 and 27; not a statement about other lengths or thresholds outside this window",
+  "strict_dimension_convention": "degree < k",
+  "verifier_sha256": "4a8faaea89c43c452ed0f39632329053dc5bd0efeacfb06572e31ba37fdb3136"
+}

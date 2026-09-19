@@ -53,3 +53,45 @@ Therefore
 If S consists of a finite evaluation domain of size n together with at most the point at infinity, this gives `n >= (p-1)d+1`. In particular n<p is impossible for any positive separable degree. If infinity is not included, the stronger `n >= (p-1)d+2` holds.
 
 This is a support requirement for preserving every complete rational target fiber of this pencil. It is not a restriction on preserving merely some roots of each member, some target parameters, or a different received-word construction. For an inseparable map the same bound applies to its separable degree, not automatically to its total degree.
+
+## Partial splitting: exact fiber-defect ledger
+
+Let R be one fixed separable degree-d map, S any set of N geometric source points, and Y a set of distinct target points. Write L=|Y|. For each y, define
+
+- a_y = the number of distinct points of R^{-1}(y) in S;
+- b_y = the number of distinct points of R^{-1}(y) outside S;
+- delta_y = the sum of local multiplicities at the points outside S;
+- rho_y = sum_{x in R^{-1}(y)}(e_x-1), the full fiber ramification defect;
+- rho_{S,y} = the same sum restricted to S.
+
+There are two exact identities:
+
+`d=a_y+b_y+rho_y`,
+
+`d=a_y+delta_y+rho_{S,y}`.
+
+Distinct target fibers are disjoint, so sum a_y<=N. Separability gives sum rho_y<=2d-2, hence also sum rho_{S,y}<=2d-2. It follows that
+
+`sum_{y in Y}(d-b_y) <= N+2d-2`,
+
+and
+
+`sum_{y in Y}(d-delta_y) <= N+2d-2`.
+
+The first inequality is stronger when only distinct exceptional roots are controlled. In particular, if each fiber has at most b distinct geometric roots outside S and d>b, then
+
+`L <= floor((N+2d-2)/(d-b))`.
+
+Repeated exceptional roots do not invalidate this bound: their extra multiplicities consume the same global ramification budget. If the selected fibers are unramified, the +2d-2 term can be omitted. More precisely it can always be replaced by the actual total ramification defect of the selected fibers. A bound on the number of irreducible factors outside S is not sufficient unless it also bounds their total number of geometric roots.
+
+For S=P^1(F_p), N=p+1, totally split fibers satisfy
+`L <= floor((p+2d-1)/d)`.
+With at most five nonnative geometric roots per fiber and d>5,
+`L <= floor((p+2d-1)/(d-5))`.
+For an n-coordinate domain with an allowed extra infinity point, replace p+1 by n+1. Thus one fixed map with large d and uniformly bounded fiber defects supports only O(n/d+1) different such target values. This statement needs an injective association between the challenge labels being counted and the target fibers; without that association it is not a label bound.
+
+## Relation to the moving-extra elliptic target
+
+The existing `FIVE_EXTRA_ERRORS_QUINTIC_TARGET.md` and `MOVING_EXTRA_PATH_RATIONALITY.md` do not currently provide that association. Their five extra positions are native error coordinates appended to a union of TWO isogeny fibers. They are not five nonnative roots missing from a single fixed rational-map fiber. The isogeny also varies with H, and the path-derived rational leaf model can vary with the edge. Therefore the partial-splitting inequality does not close their open moving-extra problem.
+
+Even for a fixed degree-ell isogeny map on n=Theta(ell^2) coordinates, this ledger permits O(ell) single fiber tags and O(ell^2) pairs of tags. Across Theta(ell) subgroup maps this elementary bound still permits O(ell^3)=O(n^(3/2)) descriptions before any syndrome compatibility or duplicate-label test. Thus it does not itself forbid a superlinear two-fiber bank. Its useful role is a precise gate for a proposed construction that really reduces all its distinct labels to almost-supported fibers of ONE map, or of a bounded collection of maps with a controlled label multiplicity.
