@@ -8,7 +8,7 @@ over $E=\mathbb F_{p^4}$ of length
  n=\frac{5p^2-1}{2}
 \]
 and two received words $r,s$ with individual and common agreements all
-exactly $A=2p$ such that, at threshold $T=\lfloor11p/5\rfloor$, the
+exactly $A=2p$ such that, at threshold $T=\lceil\sqrt{5p^2-1}\rceil-1$, the
 normalized affine line $(1-z)r+zs$ has exactly
 \[
  B=(p+1)(p^2-1)
@@ -19,8 +19,9 @@ $p+1$, and empty lists at all other parameters. Moreover,
  n a_1(3/n)<A<T<\sqrt{2n}.
 \]
 Thus $B=\Theta(n^{3/2})$, the relative source and common-agreement loss
-$(T-A)/(T-3)$ tends to $1/11$, and the characteristic is
-$p=\Theta(\sqrt n)>2$. The evaluation domain is a selected subset of
+$(T-A)/(T-3)$ tends to $1-2/\sqrt5$, and the characteristic is
+$p=\Theta(\sqrt n)>2$. The threshold is the largest integer strictly below the exact Johnson
+agreement bound. The evaluation domain is a selected subset of
 $\mathbb F_{p^4}$; this is not a prime-alphabet construction.
 \end{proposition}
 
@@ -62,9 +63,13 @@ quadratic canonical on neither block has at most $p+4\le2p$ matches.
 Thus every witness above $A$ must be canonical on both blocks. Every
 such witness still has at least
 \[
- 2p-2+\lceil p/4\rceil\ge\lfloor11p/5\rfloor=T
+ 2p-2+\lceil p/4\rceil>\sqrt{5p^2-1}>T
 \]
-matches. The planes $I_a+\eta I_a$ intersect pairwise only at zero.
+matches: indeed $2p-2+\lceil p/4\rceil\ge9p/4-2>0$, and
+\[
+ (9p/4-2)^2-(5p^2-1)=\frac{p^2-144p+80}{16}>0
+\]
+for $p\ge257$. The planes $I_a+\eta I_a$ intersect pairwise only at zero.
 Each of their $B$ nonzero elements therefore has exactly one witness
 at threshold $T$, while zero has exactly the $p+1$ witnesses $aX^2$.
 No other parameter has a qualifying witness.
@@ -83,6 +88,7 @@ Finally, using the same first-order upper bound as above,
  n a_1(3/n)\le\sqrt{3n/2}+(3n/8)^{1/4}
  <\frac{31}{16}p+\sqrt p<2p
 \]
-for $p>256$. Also $T>A$ and
-$T^2\le121p^2/25<5p^2-1=2n$. This proves the stated comparisons.
+for $p>256$. Also $(2p+1)^2\le5p^2-2$ for $p\ge257$, so
+$T=\lfloor\sqrt{5p^2-2}\rfloor\ge2p+1>A$, while
+$T^2<5p^2-1=2n$ by its definition. This proves the stated comparisons.
 \end{proof}

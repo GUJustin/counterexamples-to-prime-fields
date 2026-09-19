@@ -49,10 +49,10 @@ def main():
     assert derivative_upper < 0
 
     A = 2 * p
-    T = 11 * p // 5
+    T = isqrt(5 * p * p - 2)
     worst_retained = 2 * p - 2 + retained_target
     assert worst_retained >= T > A
-    assert Fraction(p, 20) - 2 > 0
+    assert p * p - 144 * p + 80 > 0
     assert p + 4 <= A and 8 <= p + 4
 
     B = (p + 1) * (p * p - 1)
@@ -63,9 +63,9 @@ def main():
     assert Fraction(15, 16) < 1
     assert p > 256
     assert Fraction(p * p, 256) > p  # sqrt(p) < p/16.
-    assert Fraction(121 * p * p, 25) < 5 * p * p - 1
+    assert T * T < 5 * p * p - 1 <= (T + 1) ** 2
     assert 2 * n - T * T > 0
-    assert T - A == p // 5
+    assert (2 * p + 1) ** 2 <= 5 * p * p - 2
 
     base = Path(__file__).parent
     source_hashes = {
@@ -103,7 +103,7 @@ def main():
             "doubly_noncanonical_agreement_max": p + 4,
             "doubly_canonical_retained_agreement_min": worst_retained,
             "retained_agreement_minus_T": worst_retained - T,
-            "general_rounding_slack_lower": rational(Fraction(p, 20) - 2),
+            "support_squared_johnson_slack_lower": rational(Fraction(p*p - 144*p + 80, 16)),
         },
         "placement": {
             "first_order_sqrt_coefficient_square_slack": rational(Fraction(31, 16) ** 2 - Fraction(15, 4)),
@@ -111,7 +111,8 @@ def main():
             "first_order_final_square_slack_p2_over_256_minus_p": rational(Fraction(p * p, 256) - p),
             "johnson_slack_2n_minus_T_squared": 2 * n - T * T,
             "gap_over_capacity_margin": rational(Fraction(T - A, T - 3)),
-            "limiting_gap_ratio": rational(Fraction(1, 11)),
+            "limiting_gap_ratio": "1 - 2/sqrt(5)",
+            "johnson_distance_strictly_positive_and_at_most_one": T*T < 2*n <= (T+1)**2,
         },
         "audited_source_sha256": source_hashes,
         "limitations": [

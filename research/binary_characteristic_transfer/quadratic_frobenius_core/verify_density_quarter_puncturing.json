@@ -1,18 +1,18 @@
 {
   "arithmetic_status": "PASS",
   "audited_source_sha256": {
-    "density_quarter_puncturing.tex": "7955143dd88b5f2ac94e32aaa6191112959ca942325f990ff245e5c72659c917",
+    "density_quarter_puncturing.tex": "d09c4aade95c1391873f94f9ef2df821943a8483113b8d63c81d50a773ac2a0e",
     "scaled_fiber_padding.tex": "f19c932ce32135ed0c07fbbc3b4f1bc3703293e72b0af5c4f4b0f52b5fbb65a4"
   },
   "classification_bounds": {
     "doubly_canonical_retained_agreement_min": 577,
     "doubly_noncanonical_agreement_max": 261,
-    "general_rounding_slack_lower": {
-      "denominator": 20,
-      "numerator": 217
-    },
-    "retained_agreement_minus_T": 12,
-    "singly_canonical_agreement_max": 514
+    "retained_agreement_minus_T": 3,
+    "singly_canonical_agreement_max": 514,
+    "support_squared_johnson_slack_lower": {
+      "denominator": 16,
+      "numerator": 29121
+    }
   },
   "hypergeometric": {
     "exponential_exponent_at_onset": 16,
@@ -87,7 +87,7 @@
     "second_block_population": 132096,
     "singleton_parameter_count_B": 17040384,
     "source_and_common_agreement_A": 514,
-    "tested_threshold_T": 565
+    "tested_threshold_T": 574
   },
   "placement": {
     "first_order_final_square_slack_p2_over_256_minus_p": {
@@ -103,14 +103,12 @@
       "numerator": 15
     },
     "gap_over_capacity_margin": {
-      "denominator": 562,
-      "numerator": 51
+      "denominator": 571,
+      "numerator": 60
     },
-    "johnson_slack_2n_minus_T_squared": 11019,
-    "limiting_gap_ratio": {
-      "denominator": 11,
-      "numerator": 1
-    }
+    "johnson_distance_strictly_positive_and_at_most_one": true,
+    "johnson_slack_2n_minus_T_squared": 768,
+    "limiting_gap_ratio": "1 - 2/sqrt(5)"
   },
   "prime_trial_division_limit": 16,
   "scope": "Exact finite-onset arithmetic; no puncturing/domain enumeration"
