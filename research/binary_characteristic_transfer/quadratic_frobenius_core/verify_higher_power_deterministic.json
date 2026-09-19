@@ -1,0 +1,55 @@
+{
+  "PASS": true,
+  "scope": "Exact finite parameters for explicitly specified branch-prefix domains; no coordinates enumerated by this checker",
+  "domain_recipe": "For primitive xi in F_(p^4), M=p^2+1, alpha_j=xi^((M/h)*j), z0=xi^M: keep all D0, all xi*alpha_j*B* for j<R, and xi*alpha_R*z0^v for 0<=v<tau.",
+  "endpoint_recipe": "lambda0=1+xi^h*z0 and lambda1=2+xi^h*z0; z0 not in F_p makes both labels outside every canonical plane.",
+  "cases": [
+    {
+      "p": 2013265921,
+      "extension_degree": 4,
+      "h": 12241,
+      "dimension": 12242,
+      "length": 98329309808423281932846,
+      "first_block_length": 49615706784066793635840,
+      "second_block_length": 48713603024356488297006,
+      "whole_second_branches": 12018,
+      "partial_branch_length": 1768686400869808686,
+      "threshold": 34693646123820,
+      "common_agreement": 24644388138961,
+      "source_agreement_upper": 24644537981042,
+      "canonical_agreement_lower": 48839817953280,
+      "first_order_agreement_upper": 24533338196068,
+      "singleton_labels": 8160249298611705595853537280,
+      "additional_label_list_size": 2013265922,
+      "guaranteed_loss_over_capacity_margin": [
+        5024554071389,
+        17346823055789
+      ],
+      "guaranteed_loss_over_capacity_margin_decimal": 0.2896526963599943
+    },
+    {
+      "p": 97,
+      "extension_degree": 4,
+      "h": 5,
+      "dimension": 6,
+      "length": 70560,
+      "first_block_length": 47040,
+      "second_block_length": 23520,
+      "whole_second_branches": 2,
+      "partial_branch_length": 4704,
+      "threshold": 593,
+      "common_agreement": 485,
+      "source_agreement_upper": 510,
+      "canonical_agreement_lower": 672,
+      "first_order_agreement_upper": 483,
+      "singleton_labels": 921984,
+      "additional_label_list_size": 98,
+      "guaranteed_loss_over_capacity_margin": [
+        83,
+        587
+      ],
+      "guaranteed_loss_over_capacity_margin_decimal": 0.141396933560477
+    }
+  ],
+  "script_sha256": "745af5b8fbace5b6636807570b281efc2498621aaf80b174b6c2cb062c050cf7"
+}

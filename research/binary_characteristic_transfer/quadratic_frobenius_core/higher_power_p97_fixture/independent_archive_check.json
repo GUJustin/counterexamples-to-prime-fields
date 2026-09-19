@@ -1,0 +1,13 @@
+{
+  "PASS": true,
+  "scope": "All saved coordinate/source values checked with independent polynomial arithmetic; one common-agreement witness explicitly counted; universal upper bounds remain proof-based",
+  "coordinates_checked": 70560,
+  "source_word_values_checked": 141120,
+  "raw_source_values_checked": 70560,
+  "domain_coordinates_distinct": true,
+  "primitive_order_checked": 88529280,
+  "common_witness_matches": 485,
+  "rows_sha256": "7257c227fe55be89a8e320d123452c8ae708095165068ed93c81c15c3c2cefd0",
+  "script_sha256": "438a01534dab581b451b8ea3b3b3ea89c880669f6085031432d4f3efcf2c2a66",
+  "elapsed_seconds": 0.47837200001231395
+}

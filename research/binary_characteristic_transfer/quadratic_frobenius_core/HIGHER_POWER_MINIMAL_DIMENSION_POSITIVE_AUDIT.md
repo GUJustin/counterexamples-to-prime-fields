@@ -122,3 +122,36 @@ Along this sequence,
     B_count=(1+o(1))*p³=n^(3/2-o(1)).
 
 The selected domain lies in F_(p⁴); the characteristic exceeds k, but the alphabet is not prime and the domain is not a prescribed NTT/circle domain. The retained subset is supplied probabilistically with a uniform finite criterion, not by an enumerated practical fixture. This positive minimal-dimension regime does not contradict the earlier negative rate ledger for D=Theta(p): the two choices of message dimension are different.
+
+## Deterministic odd-h refinement: independent PASS
+
+For odd h dividing p²+1, gcd(h,p²-1)=1. On each branch alpha_t*B*, the map x -> x^h equals alpha_t^h*z^h; its coefficient belongs to B*, and z -> z^h permutes B*. Hence EACH branch contains exactly one lift of every nonzero y in B.
+
+Retain r entire branches xi*alpha_t*B* of the fresh block, for any selected r indices, rather than a random subset. Then
+
+    n=(h+r)(p²-1), k=h+1, T=isqrt(h*n-1),
+
+and every fresh canonical support has exactly rp points if its affine constant is nonzero, or r(p-1) if zero. Every double-canonical witness therefore has at least(h+r)(p-1) matches. The complete list profile and source/common bounds already proved apply deterministically whenever
+
+    1<=r<h, h-1<(p²+1)/h,
+    hp+h²<T <= (h+r)(p-1).
+
+There is no concentration hypothesis. The first-order guard remains unchanged. Taking h=5^a and r=h-ceil(2sqrt(h)) on the same prime sequence gives n=(2-2/sqrt(h)+O(1/h))*h*p² and all previous positive asymptotic conclusions. The O(1/h) perturbation does not affect the order-p*sqrt(h) first-order deficit or the limiting loss ratio.
+
+This is an algebraically specified domain: choose the primitive element xi and the first r branch indices, or any prescribed r indices. It need not be enumerated numerically to define it. No probabilistic existence step remains for this odd-h variant. Even h does not satisfy the branch-bijection argument, so this refinement is explicitly restricted to odd h.
+
+The earlier random-subset finite criterion remains mathematically valid for its original hypotheses; this deterministic refinement supersedes its necessity for the stated h=5^a sequence. Any changed BabyBear branch count changes n and T and requires a refreshed finite certificate and TeX hash.
+
+### Arbitrary retained size m, with no parameter changes
+
+The odd-h deterministic construction works for ANY integer0<m<N as follows. Write
+
+    m=r(p²-1)+e, 0<=e<p²-1.
+
+Keep r complete fresh branches, then the first e points of the next branch in a fixed multiplicative order. For example, xi^M generates B*, so use points xi*alpha_r*(xi^M)^j, 0<=j<e, for that partial branch. All selected coordinates are distinct and outside the core. Its size is EXACTLY m.
+
+The full branches alone give at least r(p-1) retained points in every fresh canonical fiber; the partial branch can only add matches. Thus the original n=N+m, k, T and source/list bounds remain unchanged whenever
+
+    hp+h²<T <= (h+r)(p-1), r=floor(m/(p²-1)).
+
+The old BabyBear value m=floor(54N/55) has r=12018, so its existing n and T need not change. A supplementary exact inequality check suffices to certify this deterministic replacement; no random domain or concentration premise is needed. This refinement is still an algebraic domain recipe rather than an enumeration of roughly9.8e22 coordinates.

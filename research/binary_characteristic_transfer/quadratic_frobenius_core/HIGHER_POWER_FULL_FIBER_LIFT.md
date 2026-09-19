@@ -13,6 +13,13 @@ the positive regime is independently audited in
 [HIGHER_POWER_MINIMAL_DIMENSION_POSITIVE_AUDIT.md](HIGHER_POWER_MINIMAL_DIMENSION_POSITIVE_AUDIT.md).
 No neutral padding or restriction to composition-only witnesses is used.
 
+**Deterministic refinement:** for odd h, the retained subset can now be
+specified by complete multiplicative branches and one branch prefix; see
+[the exact recipe](HIGHER_POWER_DETERMINISTIC_BRANCH_RETENTION.md). The
+manuscript uses this shorter deterministic criterion, including the same
+BabyBear numerical parameters. The general-h probabilistic criterion below
+is retained as a separate valid formulation.
+
 ## Finite statement
 
 Let \(p\ge5\) be prime, \(B=\mathbb F_{p^2}\), \(E=\mathbb F_{p^4}\), and

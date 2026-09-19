@@ -95,10 +95,10 @@ parameters over F_(p⁴):
 
 The first-order agreement is below24,533,338,196,068, strictly below
 common and endpoint agreements. The tested agreement is the largest
-integer strictly below Johnson. The complete finite hypotheses, including
-existence of one retained subset meeting every canonical support, are
-verified by [the exact certificate](quadratic_frobenius_core/verify_higher_power_babybear.json).
-The domain is supplied by a probabilistic existence proof, not enumerated.
+integer strictly below Johnson. The complete deterministic finite hypotheses are verified by
+[the exact certificate](quadratic_frobenius_core/verify_higher_power_deterministic.json).
+The domain consists of explicit multiplicative branches and a fixed prefix
+of one more branch; its coordinates are not enumerated by this certificate.
 Its rate is approximately1.25e−19. The native challenge count is unchanged
 from the dimension-three family, so there is no improved failure-probability
 exponent at this fixed alphabet.

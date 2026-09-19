@@ -1,0 +1,31 @@
+{
+  "PASS": true,
+  "pages": 297,
+  "format": "11pt letterpaper article, 1-inch margins",
+  "latexmk_exit_code": 0,
+  "overfull_boxes": false,
+  "undefined_references": false,
+  "root_visually_reviewed_pages": [
+    210,
+    211,
+    212,
+    213
+  ],
+  "new_theorem": "N.37, deterministic revision",
+  "finite_proposition": "N.36",
+  "root_fixture_replay_seconds": 22.446605833014473,
+  "independent_all_rows_check": "PASS, 70560 coordinates and141120 endpoint values; different polynomial arithmetic",
+  "scope": "Current deterministic theorem and affected page layout; proof bounds for other codewords, not exhaustive enumeration",
+  "sha256": {
+    "paper.tex": "35ed8cc2db103f650fe97b4af9a165e17601e9c8a5615e7bb478af4251224e9b",
+    "paper.pdf": "897baf4cc42f9f3ab0bb9b703ce58e6bb017debaee4e3789d030c2aab4886e82",
+    "research/binary_characteristic_transfer/quadratic_frobenius_core/higher_power_frobenius.tex": "f198efecbc5c929cd655e3219bb7d2c4e47e688f954dd9166ff5b95a6820cb00",
+    "research/binary_characteristic_transfer/quadratic_frobenius_core/verify_higher_power_deterministic.py": "745af5b8fbace5b6636807570b281efc2498621aaf80b174b6c2cb062c050cf7",
+    "research/binary_characteristic_transfer/quadratic_frobenius_core/verify_higher_power_deterministic.json": "b8ee54b2106b070e560765d61385e9e92c241118c42c4b55cf7bb09d5580cd6c",
+    "research/binary_characteristic_transfer/quadratic_frobenius_core/higher_power_p97_fixture/verify.py": "f8142aa420443473ec85a94d451521bb16cb45b9005766d638c1507b5434ee8d",
+    "research/binary_characteristic_transfer/quadratic_frobenius_core/higher_power_p97_fixture/receipt.json": "b358397ca7240c9f27463783975cc1beeb684d879b6a367774ad93e48b774fde",
+    "research/binary_characteristic_transfer/quadratic_frobenius_core/higher_power_p97_fixture/domain_and_sources.npz": "d0be8e8ef7292e2f34bcf8b0904016729de9b99585f285f5b2bd4c1777976410",
+    "research/binary_characteristic_transfer/quadratic_frobenius_core/higher_power_p97_fixture/independent_archive_check.py": "438a01534dab581b451b8ea3b3b3ea89c880669f6085031432d4f3efcf2c2a66",
+    "research/binary_characteristic_transfer/quadratic_frobenius_core/higher_power_p97_fixture/independent_archive_check.json": "a7a8c04e7b05c1bba0da3779c73e2a9369a86bb896e697e4317d7e9fcf60e09e"
+  }
+}

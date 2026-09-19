@@ -4,7 +4,7 @@
 Full power-map fibers allow the message dimension to grow while the
 source agreement approaches the first-order curve and the tested
 agreement approaches Johnson. The alphabet below is quartic over its
-prime field, and the evaluation domain is selected inside that alphabet.
+prime field, and the evaluation domain is specified by multiplicative branches inside it.
 The rate still vanishes. For a word $w$, write $A(w)$ for its maximum
 agreement with the stated Reed--Solomon code, and write
 $\mathcal L_T(w)$ for its list of degree-$<k$ polynomials with at least
@@ -15,21 +15,20 @@ polynomials.
 \begin{proposition}[Finite full-fiber criterion]
 \label{prop:higher-power-frobenius-finite}
 Let $p\ge5$ be prime, let $B=\mathbb F_{p^2}\subset E=\mathbb F_{p^4}$,
-and let $h>1$ be a proper divisor of $M=p^2+1$ satisfying
+and let $h>1$ be an odd proper divisor of $M=p^2+1$ satisfying
 $h-1<M/h$. Put $N=h(p^2-1)$. For an integer $0<m<N$, define
 \[
  \begin{gathered}
  n=N+m,\qquad k=h+1,\qquad T=\lfloor\sqrt{hn-1}\rfloor,\\
- K=h(p-1),\qquad L=T-K,\qquad
- \gamma=\frac mN-\frac{L-1}{K}.
+ R=\left\lfloor\frac{m}{p^2-1}\right\rfloor,\qquad
+ \tau=m-R(p^2-1).
  \end{gathered}
 \]
 Suppose that
 \begin{equation}\label{eq:higher-power-finite-guards}
- hp+h^2<T,\qquad 1\le L\le K,\qquad \gamma>0,
- \qquad p(p+1)e^{-2K\gamma^2}<1.
+ hp+h^2<T\le(h+R)(p-1).
 \end{equation}
-There are an $n$-point domain $D\subset E$ and words $r_0,r_1\in E^D$
+There are an explicitly specified $n$-point domain $D\subset E$ and words $r_0,r_1\in E^D$
 for which the dimension-$k$ Reed--Solomon code has
 \[
  hp\le A(r_i)\le hp+h^2\quad(i=0,1),\qquad
@@ -57,8 +56,14 @@ $y\in B^*$ has exactly $h$ preimages under $x\mapsto x^h$ in $E$.
 Thus $|D_0|=|D_1|=N$. The two blocks are disjoint, and $\eta\notin B$,
 because $h<M$. They decompose into the $B$-lines with representatives
 $\alpha_t=\xi^{(M/h)t}$ and $\xi\alpha_t$, respectively, for
-$0\le t<h$. Retain all of $D_0$ and an $m$-subset $D'_1\subset D_1$
-to be chosen below. On $D=D_0\cup D'_1$ define
+$0\le t<h$. Put $z_0=\xi^M$, a generator of $B^*$, and retain
+\[
+ D'_1=\bigcup_{0\le j<R}\xi\alpha_jB^*
+ \;\cup\;\{\xi\alpha_Rz_0^v:0\le v<\tau\}.
+\]
+These disjoint sets have total size $m$. Thus the domain is determined
+by $\xi$ and the given integers, without a probabilistic choice.
+On $D=D_0\cup D'_1$ define
 \[
  f(x)=
  \begin{cases}x^{hp},&x\in D_0,\\
@@ -77,25 +82,19 @@ $p$-element kernel, and
 Consequently the $I_a$ are precisely the $p+1$ distinct
 $\mathbb F_p$-lines in $B$. The polynomial $q_{a,b}=aX^h+b$ has
 $hp$ matches with $f+\lambda g$ on $D_0$ when $b\in I_a\setminus\{0\}$,
-and $K=h(p-1)$ when $b=0$. Writing $x^h=\eta y$ on $D_1$, its second
+and $h(p-1)$ when $b=0$. Writing $x^h=\eta y$ on $D_1$, its second
 equation is $y^p-ay=(b-\lambda)/\eta$. Thus it has a full affine
 fiber on each block exactly for
 \begin{equation}\label{eq:higher-power-canonical-labels}
  a^{p+1}=1,\qquad b,v\in I_a,\qquad \lambda=b-\eta v.
 \end{equation}
-There are $p(p+1)$ second-block supports, each of size $K$ or $hp$.
-For a uniformly random $m$-subset of $D_1$, a fixed support of size
-$u\ge K$ retains fewer than $L$ points with probability at most
-\[
- \exp\!\left[-2u\left(\frac mN-\frac{L-1}{u}\right)^2\right]
- \le e^{-2K\gamma^2}.
-\]
-This is the sampling-without-replacement Hoeffding bound, applied to
-the $u$ membership indicators. The integer failure event is retention
-at most $L-1$. A union bound using~\eqref{eq:higher-power-finite-guards}
-therefore gives one $D'_1$ retaining at least $L$ points from every
-support. Every polynomial in~\eqref{eq:higher-power-canonical-labels}
-then has at least $K+L=T$ matches.
+Since $h$ is odd and divides $p^2+1$, we have
+$\gcd(h,p^2-1)=1$. On each complete branch $\xi\alpha_jB^*$,
+the value $x^h/\eta$ therefore runs bijectively over $B^*$.
+Each of the $R$ complete retained branches contributes $p$ matches
+if $v\ne0$, and $p-1$ if $v=0$. The partial branch can only add matches.
+Every polynomial in~\eqref{eq:higher-power-canonical-labels}
+thus has at least $(h+R)(p-1)\ge T$ matches.
 
 We next bound all other degree-$\le h$ polynomials. A polynomial
 $aX^h+b$ not satisfying~\eqref{eq:higher-power-canonical-labels} has
@@ -131,9 +130,11 @@ only at zero. Each nonzero label in their union therefore determines
 exactly one pair $(a,b)$ in~\eqref{eq:higher-power-canonical-labels}.
 There are $(p+1)(p^2-1)$ such labels. At zero the witnesses are the
 $p+1$ polynomials $aX^h$, and outside this union the list is empty.
-Choose distinct $\lambda_0,\lambda_1$ outside the union and put
-$r_i=f+\lambda_i g$. They exist since
-$1+(p+1)(p^2-1)<p^4-1$. The preceding bounds give $A(r_i)\le hp+h^2$,
+For explicit endpoints, take $\lambda_0=1+\eta z_0$ and
+$\lambda_1=2+\eta z_0$, and put $r_i=f+\lambda_i g$.
+Since $z_0\notin\mathbb F_p$, neither label lies in a plane
+$I_a+\eta I_a$: its two $B$-components are linearly independent
+over $\mathbb F_p$. The preceding bounds give $A(r_i)\le hp+h^2$,
 and a core fiber with $b\ne0$ gives $A(r_i)\ge hp$.
 
 To bound ordinary common agreement for $(f,g)$, a nonconstant
@@ -154,7 +155,7 @@ $t=\sqrt{\rho/2}$ and $u^2(u+3)=t$, gives $u\le\sqrt{t/3}$ and hence
 
 \begin{theorem}\label{thm:higher-power-frobenius-window}
 There is a sequence of Reed--Solomon codes over $E=\mathbb F_{p^4}$,
-on selected domains of size $n$, with growing dimensions $k=n^{o(1)}$
+on explicitly specified domains of size $n$, with growing dimensions $k=n^{o(1)}$
 and rate $k/n=n^{-1+o(1)}$, together with received words $r_0,r_1$ and
 integer thresholds $T$, such that
 \[
@@ -188,11 +189,10 @@ Set $c=1-2/\sqrt h$ and $m=\lfloor cN\rfloor$ in
 Proposition~\ref{prop:higher-power-frobenius-finite}. Its parameters obey
 \[
  n=(2-2/\sqrt h+o(1))hp^2,\qquad
- T=(\sqrt2+o(1))hp,\qquad \gamma\longrightarrow2-\sqrt2.
+ T=(\sqrt2+o(1))hp,\qquad R/h\longrightarrow1.
 \]
-All conditions in~\eqref{eq:higher-power-finite-guards} hold eventually:
-in particular $L/K\to\sqrt2-1$, the union-bound exponent has order
-$hp$, and $h^2=o(hp)$. The branch condition also holds.
+Both inequalities in~\eqref{eq:higher-power-finite-guards} hold eventually:
+$h^2=o(hp)$ and $(h+R)(p-1)\sim2hp$. The branch condition also holds.
 
 For first-order placement, $n\le(2-2/\sqrt h)hp^2$, and for $h\ge25$
 \[
@@ -210,7 +210,15 @@ $1-1/\sqrt2$. Finally $n=p^{2+o(1)}$ and the singleton count is
 $(p+1)(p^2-1)$, yielding all stated exponents.
 \end{proof}
 
-\paragraph{An exact finite parameter certificate.}
+\paragraph{Exact finite parameter certificates.}
+A smaller instance has $p=97$, $h=5$, $m=23520$, $n=70560$,
+$k=6$, and $T=593$. Its common agreement is $485$, each endpoint
+has agreement at most $510$, and there are $921984$ singleton
+parameters. The integer first-order upper bound is $483$, while the
+minimum canonical agreement is $672$. Thus the finite inequalities
+already hold at these parameters.
+
+
 For the BabyBear prime $p=2013265921$, take $h=12241$ and
 $m=\lfloor54h(p^2-1)/55\rfloor$. Exact integer checks of the finite
 criterion give
@@ -224,14 +232,16 @@ criterion give
  \end{aligned}
 \]
 The first-order upper bound is $24533338196068<A_{\mathrm{common}}$,
-and $2K\gamma^2>63>\log(p(p+1))$. The guaranteed endpoint loss divided
+and the deterministic retention rule has $R=12018$ complete branches,
+$\tau=1768686400869808686$ further points, and minimum canonical
+agreement $48839817953280>T$. The guaranteed endpoint loss divided
 by the capacity margin is
 \[
  \frac{T-hp-h^2}{T-k}
  =\frac{5024554071389}{17346823055789}>0.28965.
 \]
-These explicit parameters certify existence of the retained domain
-by the probabilistic proof; the domain is not enumerated. Its rate is
+The branch-prefix formula specifies the retained domain directly; this
+parameter certificate does not enumerate its coordinates. Its rate is
 approximately $1.25\cdot10^{-19}$. More generally, the asymptotic
 construction has capacity margin $(T-k)/n=\Theta(p^{-1})$ and
 fractional proximity loss $\Theta(p^{-1})$, despite a limiting relative
