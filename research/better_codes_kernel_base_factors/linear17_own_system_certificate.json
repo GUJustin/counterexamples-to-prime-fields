@@ -1,0 +1,109 @@
+{
+  "status": "PASS: linear multiplicities17 through43 excluded by own-system helper at exact binding shape",
+  "n": 262144,
+  "w": 131071,
+  "own_system_dimension": 6802316684345,
+  "good_rank_required": 6801344498272,
+  "bad_node_rank_allowance": 972186072,
+  "bad_locator_allowance": 540,
+  "affine_descent_centroid_lower": "1031235284512/5658289",
+  "affine_descent_centroid_count": 182253,
+  "locator_budget": 1572852,
+  "h25": {
+    "slope": "25/21614502",
+    "locator_bound": "5652585643980/3602417",
+    "locator_floor": 1569109,
+    "slack": 3743
+  },
+  "h26_nonzero_trace_coefficient": {
+    "slope": "1/738980",
+    "rank43_minus_rank42": 1557205,
+    "contact43_count_cap": 131083,
+    "locator_bound": "1152463886007/738980",
+    "locator_floor": 1559533,
+    "slack": 13319
+  },
+  "helper_caps": {
+    "R_degree": 0,
+    "joint_YR_degree": 43,
+    "joint_YRZ_degree": 43,
+    "weight_upper_h25": 7205162,
+    "weight_upper_h26": 7195586,
+    "own_weight": 7208905
+  },
+  "remaining_profiles": [
+    {
+      "e": 13,
+      "h": 30,
+      "noncentroid_count": 60000,
+      "centroid_contact42_count": 71073,
+      "centroid_contact43_count": 131071,
+      "centroid_total": 202144,
+      "rank": 7028330928619,
+      "rank_surplus": 226014244275,
+      "minimum_coefficient_budget_slack": 12,
+      "best_graph_power_weight": 7436053,
+      "minimizing_graph_powers": [
+        42,
+        43
+      ],
+      "excess_over_own_weight": 227148,
+      "scope": "A necessary-resource profile with compatible local Newton orders; no global polynomial realization is asserted."
+    },
+    {
+      "e": 14,
+      "h": 29,
+      "noncentroid_count": 60000,
+      "centroid_contact42_count": 71073,
+      "centroid_contact43_count": 131071,
+      "centroid_total": 202144,
+      "rank": 6967610268619,
+      "rank_surplus": 165293584275,
+      "minimum_coefficient_budget_slack": 12,
+      "best_graph_power_weight": 7376053,
+      "minimizing_graph_powers": [
+        42,
+        43
+      ],
+      "excess_over_own_weight": 167148,
+      "scope": "A necessary-resource profile with compatible local Newton orders; no global polynomial realization is asserted."
+    },
+    {
+      "e": 15,
+      "h": 28,
+      "noncentroid_count": 60000,
+      "centroid_contact42_count": 71073,
+      "centroid_contact43_count": 131071,
+      "centroid_total": 202144,
+      "rank": 6909411348619,
+      "rank_surplus": 107094664275,
+      "minimum_coefficient_budget_slack": 12,
+      "best_graph_power_weight": 7316053,
+      "minimizing_graph_powers": [
+        42,
+        43
+      ],
+      "excess_over_own_weight": 107148,
+      "scope": "A necessary-resource profile with compatible local Newton orders; no global polynomial realization is asserted."
+    },
+    {
+      "e": 16,
+      "h": 27,
+      "noncentroid_count": 60000,
+      "centroid_contact42_count": 71073,
+      "centroid_contact43_count": 131071,
+      "centroid_total": 202144,
+      "rank": 6853734948619,
+      "rank_surplus": 51418264275,
+      "minimum_coefficient_budget_slack": 12,
+      "best_graph_power_weight": 7256053,
+      "minimizing_graph_powers": [
+        42,
+        43
+      ],
+      "excess_over_own_weight": 47148,
+      "scope": "A necessary-resource profile with compatible local Newton orders; no global polynomial realization is asserted."
+    }
+  ],
+  "scope": "v=55w,y=55,r=12,t=3261 and q=43. Excludes a linear factor of leading R coefficient repeated at least17. Does not cover multiplicities13..16, other shapes, smaller-multiplicity/squarefree branches, or the complete benchmark ledger."
+}

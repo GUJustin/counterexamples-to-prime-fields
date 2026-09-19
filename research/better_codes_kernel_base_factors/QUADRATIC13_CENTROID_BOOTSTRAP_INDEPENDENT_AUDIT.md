@@ -94,6 +94,11 @@ surrounding no-large-selected-pencil hypothesis and all other branches.
 
 SHA256 values after independent replay:
 
-- `QUADRATIC13_CENTERED_COEFFICIENT_ROUTING.md`: `4d3ed77cd300350edbce5bf6b0867e96303a140276b059cf3f42b9010728efb9`
+- `QUADRATIC13_CENTERED_COEFFICIENT_ROUTING.md`: `d0f77f3d474ab5bfc0602c0e3a541e4a0e60c5e7fdf0167d28bead290750c09f`
 - `quadratic13_global_coefficient_certificate.py`: `f26ac1037460fc4acf147af808b0442d10589b33d57b58716d7dc8a9be27c512`
 - `quadratic13_global_coefficient_certificate.json`: `a9f7553198d142112466a3d8c5e596f1a220d0f2ac7e560617ffc982f02f6334`
+
+The subsequently appended own-system-helper corollary was independently
+audited in LINEAR17_OWN_SYSTEM_INDEPENDENT_AUDIT.md. It strengthens the
+combined conclusion to exclusion; the original coefficient certificate
+still uses its stated nonzero-discriminant hypothesis.

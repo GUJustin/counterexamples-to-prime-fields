@@ -148,3 +148,16 @@ of multiplicity at least13 route or are excluded there. It does not cover
 the linear multiplicities13--26, other exact factor weights or caps, or
 the squarefree and smaller-multiplicity branches. It supplies no replacement
 for the full normal-cost inequality and no regenerated passing ledger.
+
+The subsequent [linear own-system helper](LINEAR17_OWN_SYSTEM_EXCLUSION.md)
+separately excludes every linear leading factor of multiplicity at least17
+at these exact caps. In particular it closes the zero-discriminant
+quadratic13 case, which is linear multiplicity26. The quadratic proof
+above retains its nonzero-discriminant hypothesis. The combined remaining
+high-linear case is at most one distinct graph of multiplicity13--16;
+the other shape and ledger limitations remain unchanged.
+The same helper also upgrades the separable quadratic13 branch from
+pencil routing to an outright contradiction: its proved nongraph contact
+bound18 is below the helper's certified threshold25. This corollary is
+proved in the linked note and does not alter the scope of the original
+quadratic coefficient certificate.

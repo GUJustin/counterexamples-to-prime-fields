@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "research/better_codes_kernel_base_factors/linear17_own_system_certificate.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.563396875,
+  "peak_rss_kib": 6368,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}
