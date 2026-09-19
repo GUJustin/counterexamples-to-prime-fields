@@ -1,0 +1,84 @@
+% Research candidate. No main-manuscript input is added by this file.
+\begin{corollary}\label{cor:near-third-frobenius-block}
+For every prime $p\ge4099$, put
+\[
+ u=\lceil\sqrt p\rceil,\qquad
+ n=\left\lfloor\frac{8p(p-u)}3\right\rfloor,\qquad
+ A=2p,\qquad T=\lfloor\sqrt{2n-1}\rfloor.
+\]
+There is a dimension-three Reed--Solomon code over $\mathbb F_{p^4}$
+of length $n$, with two received words whose individual and common
+agreements are exactly $A$, such that their normalized affine line has
+exactly $(p+1)(p^2-1)$ singleton-list parameters at threshold $T$, one
+further parameter with list size $p+1$, and empty lists elsewhere.
+Moreover
+\[
+ n a_1(3/n)<A<T<\sqrt{2n},\qquad
+ \frac{T-A}{T-3}\longrightarrow1-\frac{\sqrt3}{2}.
+\]
+The message dimension remains three: $3/n=\Theta(p^{-2})$ and
+$(T-A)/n=\Theta(p^{-1})$. The domain is a selected subset of
+$\mathbb F_{p^4}$, with no prime-alphabet or practical-length claim.
+\end{corollary}
+
+\begin{proof}
+Reuse the blocks and classification of
+Proposition~\ref{prop:quarter-frobenius-block}.
+Write $N=2(p^2-1)$, $m=n-N$, $\delta=m/N$, and
+$\ell=T-2p+2$. We retain a uniformly chosen $m$-subset of the second
+block. For $p\ge4099$,
+\[
+ \frac up\le\frac1{\sqrt p}+\frac1p
+ <\frac1{64}+\frac1{4096}<\frac1{60}.
+\]
+In particular $0<m<N$ and $n>5p^2/2$, so $T>A$.
+Accounting for the floor in $n$ gives
+\[
+ \delta-\left(\frac13-\frac{4u}{3p}\right)
+ \ge\frac{5p-8u}{6p(p^2-1)}>0;
+ \qquad \delta>\frac{14}{45}.
+\]
+Since $T<\sqrt{2n}<7p/3$ and $p\ge81$,
+\[
+ \frac{\ell-1}{2p-2}
+ <\frac{p+3}{6p-6}\le\frac7{40},
+ \qquad
+ \gamma:=\delta-\frac{\ell-1}{2p-2}
+ >\frac{49}{360}>\frac18.
+\]
+For either canonical support size $k\in\{2p-2,2p\}$, the
+hypergeometric lower-tail estimate used in that proposition therefore
+bounds the probability of retaining fewer than $\ell$ points by
+$\exp[-4(p-1)\gamma^2]<\exp[-(p-1)/16]$.
+Its union bound over all $p(p+1)$ supports is less than one by the
+already proved onset $p\ge257$. Thus all doubly canonical witnesses
+qualify at $T$, and the same classification gives the asserted exact
+list profile and source/common agreements.
+
+The first-order comparison follows directly from the choice of $n$:
+\[
+ \sqrt{3n/2}\le2\sqrt{p(p-u)}<2p-u,\qquad
+ (3n/8)^{1/4}\le[p(p-u)]^{1/4}<\sqrt p\le u.
+\]
+Their sum is strictly below $A$. The definition of $T$ gives the
+strict Johnson inequality, including square radicands.
+Finally $n/p^2\to8/3$ and $T/p\to4/\sqrt3$, proving the limit.
+\end{proof}
+
+\begin{remark}
+The displayed limiting ratio is optimal under the two numerical
+placement requirements $A>n a_1(3/n)$ and $T<\sqrt{2n}$, for sequences
+of dimension-three examples with $n\to\infty$ and $3<A<T$.
+Indeed $a_1(\rho)>\sqrt{\rho/2}$ gives $A>\sqrt{3n/2}$.
+The ratio $(T-A)/(T-3)$ decreases with $A$ and increases with $T$ when
+$A>3$, so
+\[
+ \frac{T-A}{T-3}
+ <
+ \frac{\sqrt{2n}-\sqrt{3n/2}}{\sqrt{2n}-3}
+ \longrightarrow1-\frac{\sqrt3}{2}.
+\]
+This is optimality only of that constrained loss ratio; it is not a
+claim of optimal exceptional-parameter counts or tightness of a DKT
+upper bound.
+\end{remark}
