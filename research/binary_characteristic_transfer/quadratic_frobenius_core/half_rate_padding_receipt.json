@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "scope": "exact half-rate padding ledger; all-witness justification is the conjugate-descent lemma",
+  "target_constant_absolute_fractional_gap_achieved": false,
+  "p": 257,
+  "seed": {
+    "length": 165122,
+    "dimension": 3,
+    "source_and_common_agreement": 514,
+    "near_threshold": 574,
+    "certified_singleton_labels": 17040384
+  },
+  "padding": {
+    "total_roots": 165116,
+    "maximum_roots_per_step": 512,
+    "quadratic_extension_steps": 323,
+    "last_step_roots": 252
+  },
+  "result": {
+    "length": 330238,
+    "dimension": 165119,
+    "rate": "1/2",
+    "source_and_common_agreement": 165630,
+    "near_threshold": 165690,
+    "certified_singleton_labels": 17040384,
+    "absolute_fractional_gap": "30/165119",
+    "loss_to_capacity_margin": "60/571",
+    "alphabet_size": "257^(4*2^323)",
+    "extension_degree_over_prime": 68351585149469122636640694597425667667286544715412888638305331450311031224980497600734786781970432,
+    "threshold_below_two_thirds": true,
+    "first_order_curve_at_half_rate_above_two_thirds": true
+  },
+  "large_extension_instantiated": false
+}

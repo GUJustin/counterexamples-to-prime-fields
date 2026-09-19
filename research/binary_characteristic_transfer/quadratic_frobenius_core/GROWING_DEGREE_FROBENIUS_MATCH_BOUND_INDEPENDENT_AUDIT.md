@@ -29,3 +29,34 @@ Important scope correction added to the candidate note: if the5p²+4 neutral poi
 For D=floor(p/20), p>=257, the exact positive quadratic (59/100)p²-(21/5)p-3 proves2p+2D<T. Therefore every threshold list, including the exceptional multiplicities, is unchanged. The correct source/common assertion is the interval[2p,2p+2D]; claiming exact2p here would be unsupported. The capacity-relative gap lower limit is (sqrt5-2.1)/(sqrt5-0.05), while dimension isTheta(p) and rateTheta(1/p). First-order placement is lost, as explicitly stated in the consolidated candidate.
 
 The earlier exact-source variant is retained rather than overwritten. This audit does not supply a concrete selected domain at a large practical prime; its domain selection remains the existence argument of the quarter-density theorem.
+
+## Bounded prior-work comparison: basic KKH canonical bank
+
+The primitive-scale variant has, over the SAME ambient alphabet E=F_(p^4),
+
+n~(5/2)p², k~p/20, A<=2.1p, T~sqrt5*p,
+B=(p+1)(p²-1)~p³, and characteristic p>k.
+
+It has a positive source/common-loss-to-capacity-margin ratio but lies below first order. No first-order requirement is imposed in the following comparison.
+
+Primary source reread: Krachun--Kazanin--Haböck, *Failure of proximity gaps close to capacity*, ePrint2026/782, Section2.1 and AppendixA equations(5)--(6), Propositions3--4. The archived primary text is
+
+`/Users/jthaler/Dropbox/Documents-full-2026-09-16/Documents/stwo_audit_2026-09-15/sources/actual_list_literature/kkh2026_782.txt`.
+
+Section2.1 and AppendixA both explicitly use polynomial degree at most(r-2)m. Hence their strict message dimension is k0=(r-2)m+1, domain length n=sm, canonical agreement rm, and at most binom(s,r) distinct canonical labels (there is one label assigned to each subset). Grant arbitrary positive integer fiber sizes and any field supporting them; this is more permissive than the literal prime-field, power-of-two subgroup hypotheses of the primary theorem. It also grants whatever pole choice separates the canonical labels. The following ceiling therefore does not rely on an unfavorable alphabet or subgroup-existence assumption.
+
+Allow code enlargement to k>=k0 and tested-threshold weakening to T<=rm. If r>=3, then
+
+T/k <= rm/((r-2)m+1) < r/(r-2) <=3.
+
+But the new variant has T/k tending to20sqrt5>44. Thus no r>=3 basic canonical bank matches these dimensions and agreements. Only r=2 remains. Then m>=T/2, s=n/m<=2n/T, so
+
+B_canonical<=binom(s,2)<2n²/T²=O(n)=O(p²).
+
+This is strictly below the new Theta(p³)=Theta(n^(3/2)) canonical population. Enlarging the alphabet to E, even allowing every canonical support to have a distinct native E-label, does not increase the number of subsets. Conversely the literal primary prime alphabet has characteristic at least its domain length and cannot directly have the new characteristic p~sqrt n; the field-independent ceiling above already rules out matching even after generously relaxing that issue.
+
+The same basic count conclusion survives standard common-zero padding: with padding degree w, k0=w+(r-2)m+1 and canonical agreement w+rm. For r>=3 this is at most3(k0-1). For r=2, w<=k-1 implies m>=(T-k+1)/2 and the canonical count is at most2n²/(T-k+1)²=O(n) in the matched regime. This paragraph concerns that explicit padding ledger only.
+
+**Scoped conclusion.** The new growing-dimension tradeoff is not already supplied by the basic KKH canonical subset bank with code enlargement and threshold weakening, even without asking for first-order placement, exact lists or the same source bounds. The decisive difference is the simultaneous ratio T/k and superlinear canonical count, not merely the lack of an endpoint or singleton assertion in the prior theorem. The earlier local r=2 quadratic-enlargement result also has only a linear canonical count and does not remove this mismatch.
+
+This is NOT a novelty certificate against all constructions in KKH or the literature. It gives no upper bound on additional noncanonical witnesses/labels that might appear upon code enlargement, and does not cover arbitrary transformations, new denominator compilers, or a strategically punctured larger construction. It therefore supports only the concrete non-subsumption claim above; no priority or general optimality claim follows.
