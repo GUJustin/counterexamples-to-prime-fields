@@ -26,7 +26,7 @@ If L=P_H for some H, pairwise zero intersection excludes every other subgroup pl
 
 distinct projective challenge classes on any genuine syndrome pencil. An affine chart cannot increase this count. This remains an upper bound when canonical labels within one subgroup collide.
 
-This is NOT an upper bound for all words near the pencil, or for all errors supported on the two-coset omissions. Different error cofactors may occupy other points of the much larger support syndrome spaces S_U. The general decomposable-Pluecker transversal problem in SYNDROME_TRANSVERSAL_TARGET.md remains open. A received pencil whose syndrome span has dimension less than two is outside the stated count argument and cannot be substituted silently.
+This is NOT an upper bound for all words near the pencil, or for all errors supported on the two-coset omissions. Different error cofactors may occupy other points of the much larger support syndrome spaces S_U. This paragraph records the scope of the fixed-compiler proof only. The later TWO_FIBER_LINEAR_RESOURCE_BOUND.md proves an O(n) bound for arbitrary at-most-two-nonkernel-fiber errors with a far endpoint; only enlarged or different support models remain outside that closure. A received pencil whose syndrome span has dimension less than two is outside the stated count argument and cannot be substituted silently.
 
 No finite Pluecker computation is needed to close this fixed-subgroup compiler. The unslacked agreement is above Johnson; testing it at the separately checked slack-five threshold does not itself prove source/common-agreement separation.
 
@@ -34,7 +34,7 @@ No finite Pluecker computation is needed to close this fixed-subgroup compiler. 
 
 SHA-256 of FIXED_SUBGROUP_QUOTIENT_PLANES.md:
 
-    dcf6b2f10a2568205ce487d1a36e4a6be990c85974567e778641d42a8749d051
+    dc6753efe2f21cdd5c88965cdd4647d399cf61d55f4262984c07f6375cb3db35
 
 
 ## Independent extension: the entire weighted-tag three-space
@@ -71,4 +71,6 @@ Let L be a genuine two-dimensional received syndrome space with at least one end
 
     max{binom(t,2)+ell, ell+1} = O(n).
 
-This extension covers all displayed weighted-tag errors, not arbitrary coordinate-dependent error cofactors within a fiber, five additional omissions, or a different shared-line compiler. The unrestricted support-space transversal remains open. No source farness is inferred from these algebraic identities; it is an explicit premise of the secant count.
+This extension covers all displayed weighted-tag errors, not arbitrary coordinate-dependent error cofactors within a fiber, five additional omissions, or a different shared-line compiler. The later TWO_FIBER_LINEAR_RESOURCE_BOUND.md extends the O(n) conclusion to arbitrary errors confined to at most two nonkernel fibers, with a far endpoint; extra-error and different-support transversals remain outside it. No source farness is inferred from these algebraic identities; it is an explicit premise of the secant count.
+
+Current-status crosslinks and the reviewed source SHA-256 were refreshed after the three-edge-path linear bound. The underlying fixed-compiler algebra is unchanged.

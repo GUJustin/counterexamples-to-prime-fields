@@ -1,6 +1,6 @@
 # Elliptic two-coset complements: exact shared-line target
 
-This note gives necessary and sufficient linear-algebra conditions for a SPECIFIED collection of omission supports to lie on one received line. It does not prove existence of that line, source farness, or superlinear distinct labels. No scan or elliptic implementation is included.
+This note gives necessary and sufficient linear-algebra conditions for a SPECIFIED collection of omission supports to lie on one received line. It does not prove existence of that line or source farness. **Current status:** [TWO_FIBER_LINEAR_RESOURCE_BOUND.md](TWO_FIBER_LINEAR_RESOURCE_BOUND.md) now proves an O(n) distinct-label bound for ALL errors supported on at most two nonkernel fibers, with arbitrary within-fiber values and partial coordinate support, on a genuine syndrome pencil with a far endpoint. Thus a superlinear bank in that model is excluded. The equations below remain valid for specified collections and for studying enlarged supports, including the five-extra-error escape. No scan or elliptic implementation is included.
 
 ## Parameters and actual support population
 
@@ -72,7 +72,7 @@ For the unslacked2ell-point sets, this equals |U intersection V| whenever the in
 
 Consequently, if the canonical errors have FULL support U, two different-H supports cannot specify the same projective challenge: their shared syndrome would have an error representation on the8-point intersection, contradicting uniqueness of representation on U. The same reasoning excludes same-H pairs sharing a coset. Collisions can occur only for disjoint pairs within the same H. This observation requires full error support and applies to unslacked supports, not automatically to the five-extra-errors variant.
 
-Even in that favorable case the automatic collision multiplicity can be as large as floor((ell-1)/4), since a fixed-H collection of pairwise disjoint coset pairs has that size. Therefore the support count by itself only guarantees an order-n label count; a superlinear conclusion needs stronger control of the actual challenge map.
+Even in that favorable case the automatic collision multiplicity can be as large as floor((ell-1)/4), since a fixed-H collection of pairwise disjoint coset pairs has that size. Therefore the support count by itself only guarantees an order-n label count. This is a historical support-count observation: the newer three-edge-path/2-degeneracy theorem separately supplies an O(n) upper bound under a far-endpoint hypothesis, even without full coordinate support.
 
 ## The five extra omissions must remain explicit
 
@@ -80,4 +80,4 @@ To certify the advertised thresholdT, it suffices to realize the unslacked suppo
 
 The special intersection simplification no longer persists. For two size-(2ell+5) supports with intersectionc, the MDS intersection dimension is max(c,11), rather than merelyc. Thus the original full-support label-injectivity argument cannot silently be reused after adding five arbitrary omissions.
 
-A finite rank test for the entire unslacked bank would decide only that full-bank candidate. It would not exclude a large subbank, altered omission patterns, or another elliptic compiler. Those scope restrictions are essential for any subsequent bounded computation.
+A finite rank test for the entire unslacked bank would decide only that full-bank candidate. The newer linear resource theorem already excludes superlinear subbanks for the entire at-most-two-nonkernel-fiber model with a far endpoint, so such a finite test is not needed to close that target. Altered omission patterns, including the extra five coordinates, are not covered by the resource theorem and must retain their own support equations and source-distance hypotheses.

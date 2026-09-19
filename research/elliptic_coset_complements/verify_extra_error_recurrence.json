@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "construction_established": false,
+  "scope": "general RS moment equivalence, zero root, partial block errors, and padding rejection",
+  "elliptic_domain": false,
+  "p": 1009,
+  "n": 264,
+  "k": 173,
+  "redundancy": 91,
+  "base_support": 46,
+  "transformed_sequence_length": 45,
+  "cases": [
+    {
+      "extra_errors": 0,
+      "recurrence_equations": 45,
+      "zero_coordinate_tested": false,
+      "padding_coefficient": 0
+    },
+    {
+      "extra_errors": 1,
+      "recurrence_equations": 44,
+      "zero_coordinate_tested": true,
+      "padding_coefficient": 0
+    },
+    {
+      "extra_errors": 2,
+      "recurrence_equations": 43,
+      "zero_coordinate_tested": true,
+      "padding_coefficient": 0
+    },
+    {
+      "extra_errors": 3,
+      "recurrence_equations": 42,
+      "zero_coordinate_tested": true,
+      "padding_coefficient": 0
+    },
+    {
+      "extra_errors": 4,
+      "recurrence_equations": 41,
+      "zero_coordinate_tested": true,
+      "padding_coefficient": 0
+    },
+    {
+      "extra_errors": 5,
+      "recurrence_equations": 40,
+      "zero_coordinate_tested": true,
+      "padding_coefficient": 0
+    }
+  ]
+}

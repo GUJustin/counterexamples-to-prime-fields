@@ -6,6 +6,8 @@ two-dimensional syndrome plane meeting **every** two-fiber error space for one
 fixed subgroup. It does not classify an arbitrary large subbank, witnesses with
 additional omissions, or received planes with one-dimensional syndrome image.
 
+**Current-status update:** [TWO_FIBER_LINEAR_RESOURCE_BOUND.md](TWO_FIBER_LINEAR_RESOURCE_BOUND.md) now gives an O(n) label bound even for arbitrary partial selections of pairs and partial coordinate support, assuming a far endpoint. The full-pair classification below remains valid with its original hypotheses; it is no longer the broadest route restriction. Extra omissions remain outside the linear bound.
+
 ## Statement and notation
 
 Use the setup of [FIXED_SUBGROUP_QUOTIENT_PLANES.md](FIXED_SUBGROUP_QUOTIENT_PLANES.md).

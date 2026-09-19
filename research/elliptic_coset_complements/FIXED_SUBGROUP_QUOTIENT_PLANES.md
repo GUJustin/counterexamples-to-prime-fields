@@ -142,6 +142,8 @@ Pull the resulting common zero divisor back to \(E\) by x. It has degree \(2\ell
 
 The same argument with one side zero proves that each fixed-subgroup received space has dimension two in the quotient by the code. Consequently these quotient planes cannot be identified by source reparametrization or addition of codewords.
 
-## What remains open
+## Scope and current status
 
-The \(\Theta(\ell^3)\) distinct two-coset supports are real. This proof prevents their union from being compiled by the fixed-subgroup pullback above. It does **not** rule out a different common syndrome line meeting the error spaces of those supports, parameter-dependent error cofactors, or partial-fiber witnesses. Those alternatives require a new identity; neither the global division polynomial nor the common multiplication map supplies one automatically. No elliptic fixture or computational rental is needed to settle the displayed compiler.
+The \(\Theta(\ell^3)\) distinct two-coset supports are real. The proof above concerns only the displayed fixed-subgroup compiler; by itself it does not constrain arbitrary within-fiber error values or partial support. The subsequent [TWO_FIBER_LINEAR_RESOURCE_BOUND.md](TWO_FIBER_LINEAR_RESOURCE_BOUND.md) closes that broader at-most-two-nonkernel-fiber model: on a genuine received syndrome pencil with a far endpoint, all such witnesses yield only O(n) distinct labels. Its proof uses three-edge paths and 2-degeneracy, together with the weighted-space intersection audit. Thus sparse pair selections or arbitrary error cofactors confined to those two fibers do not leave a superlinear route open.
+
+The five additional errors allowed by the corrected threshold, kernel-fiber additions, and other support shapes remain outside that theorem; see [FIVE_EXTRA_ERRORS_QUINTIC_TARGET.md](FIVE_EXTRA_ERRORS_QUINTIC_TARGET.md) for exact constraints on the former. Neither this compiler nor the broader bound supplies a positive counterexample or source-farness construction. No elliptic fixture or computational rental is needed to settle the displayed compiler.

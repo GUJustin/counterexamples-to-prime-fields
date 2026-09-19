@@ -1,7 +1,6 @@
 # Elliptic coset-complement route
 
-Current status: **no counterexample**. The torsion support count is real, but
-the natural received-line compiler does not combine across subgroups.
+Current status: **no counterexample; the at-most-two-nonkernel-fiber model has an O(n) label bound with a far endpoint**. The torsion support count is real, but arbitrary within-fiber error values and sparse selections of pairs do not evade this bound. The five-extra-error variant remains outside it.
 
 For torsion prime ell, n=(ell^2-1)/2 and k=n-4ell+1. The corrected tested
 agreement T=n-2ell-5 lies above the full first-order curve and below Johnson
@@ -20,12 +19,16 @@ The substantive findings are:
   distinct labels.
 * `FULL_PAIR_TRANSVERSAL_CLASSIFICATION_INDEPENDENT_AUDIT.md` shows why
   realizing every pair with full-support errors forces this weighted space.
-* `FOUR_CYCLE_FULL_SUPPORT_REDUCTION.md` strengthens the restriction to
-  arbitrary partial selections and arbitrary values inside two fibers.
-  Despite its historical filename, the final statement does not assume
-  coordinatewise full support. A four-cycle forces the weighted space;
-  extremal graph counting bounds all such labels by O(n^(5/4)). This still
-  leaves superlinear partial banks possible.
+* `TWO_FIBER_LINEAR_RESOURCE_BOUND.md` is the current strongest restriction.
+  A three-edge path forces canonical error shapes at its leaves. Thus a
+  nonempty graph 3-core forces the received syndrome line into the weighted
+  space. At most one subgroup can have such a core; all others are
+  2-degenerate. Including one-fiber errors gives at most
+  binom(t,2)+ell(2t-3)+(ell+1)=O(n) labels. Arbitrary partial coordinate
+  support is allowed, and a far endpoint is an explicit hypothesis.
+* `FOUR_CYCLE_FULL_SUPPORT_REDUCTION.md` retains the valid earlier cycle
+  proofs and superseded O(n^(5/4)) and O(n^(7/6)) count bounds; they are
+  not the current status of the two-fiber route.
 * `SYNDROME_TRANSVERSAL_TARGET.md` gives the exact linear Pluecker equations
   plus decomposability condition for a specified support collection. Dimension
   counts or nonzero linear kernels alone do not construct a line.
@@ -34,8 +37,17 @@ The separate `../elliptic_source_gate/TORSION_COSET_LOCATOR_PREFIX_AUDIT.md`
 checks the locator identities and small-order formulas. Its verifier replays
 the existing order-five fixture, rather than searching for curves or lines.
 
-Still open are a constructive sparse pair bank on one common line, the five
-additional error positions allowed by the corrected threshold, and other
-support shapes. All require actual source-distance and distinct-label bounds.
+The five additional error positions allowed by the corrected threshold and
+other support shapes remain outside the linear bound. The exact residual
+constraints for the former are recorded in `FIVE_EXTRA_ERRORS_QUINTIC_TARGET.md`.
+`FIVE_EXTRA_ERRORS_INDEPENDENT_AUDIT.md` and the finite ordinary-RS replay
+verify that reduction, including detection of artificial padding. They do not
+construct an elliptic line. For one fixed extra set,
+`FIXED_EXTRA_SET_PATH_AUDIT.md` isolates spaces of dimension at most 23.
+Those spaces always share a residue subspace whose nonzero words are all far;
+its common two-planes cannot be counted as counterexamples.
+These routes still require actual source-distance and distinct-label bounds;
+a superlinear sparse bank using only two nonkernel fibers is now excluded
+under the stated far-endpoint hypothesis.
 The current notes do not improve better.codes, establish practical-domain
 behavior, or show prime-field proximity-gap tightness. No rentals were used.
