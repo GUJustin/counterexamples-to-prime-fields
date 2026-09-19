@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "construction_established": false,
+  "scope": "symbolic threshold window only",
+  "minimum_odd_prime_in_proved_window": 23,
+  "example": {
+    "ell": 23,
+    "n": 264,
+    "k": 173,
+    "T": 213,
+    "indexed_choices": 1320,
+    "squared_johnson_slack": 39,
+    "first_order_polynomial": "306553/6133248"
+  }
+}

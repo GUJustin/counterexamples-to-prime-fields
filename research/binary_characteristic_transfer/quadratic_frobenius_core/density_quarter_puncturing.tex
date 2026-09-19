@@ -98,3 +98,72 @@ for $p>256$. Also $(2p+1)^2\le5p^2-2$ for $p\ge257$, so
 $T=\lfloor\sqrt{5p^2-2}\rfloor\ge2p+1>A$, while
 $T^2<5p^2-1=2n$ by its definition. This proves the stated comparisons.
 \end{proof}
+
+\begin{corollary}[Growing dimension, with weaker placement]
+\label{cor:quarter-frobenius-growing-dimension}
+The construction in Proposition~\ref{prop:quarter-frobenius-block} can
+instead have message dimension $k=\lfloor p/20\rfloor+1$, at the same
+length $n$ and threshold $T$, with exactly the same complete threshold-list
+profile. Both source agreements and their common agreement then lie in
+$[2p,2p+2\lfloor p/20\rfloor]$. The guaranteed loss, divided by $T-k$,
+has lower limit at least
+\[
+ \frac{\sqrt5-21/10}{\sqrt5-1/20}>0.0622.
+\]
+The rate is now $\Theta(p^{-1})$, but the threshold is below the enlarged
+code's first-order curve. This is not an improvement in the
+above-first-order regime of the proposition.
+\end{corollary}
+
+\begin{proof}
+Choose the scale $s_1$ in the proposition to be primitive in $E^*$.
+Write $B_0=\mathbb F_{p^2}$ and choose $v\notin B_0$ with $v^2\in B_0$.
+The two physical $B_0$-lines in each block are
+$B_0,vB_0$ and $s_1B_0,s_1vB_0$, respectively, with zero removed.
+Before puncturing, the received words are
+\[
+ f(X)=X^{2p},\quad g(X)=0\quad\text{on }D_0,
+ \qquad
+ f(X)=s_1^{2-2p}X^{2p},\quad g(X)=1\quad\text{on }D_1.
+\]
+We show that every polynomial $H$ of actual degree $3\le d\le p$
+matches any $f+\lambda g$ on at most $2p+2d$ coordinates.
+
+On a component $uB_0$, set $X=ut$ and divide the matching equation by
+its nonzero coefficient of $t^{2p}$. It becomes $t^{2p}=P(t)$, where
+$\deg P=d$. If the coefficients of $P$ are not all in $B_0$, a
+$B_0$-linear projection $E\to B_0$ annihilating $B_0$ gives a nonzero
+polynomial of degree at most $d$ that vanishes at every match. Such a
+component contributes at most $d$ matches.
+
+There cannot be coefficientwise $B_0$-valued components in both blocks.
+Indeed, if $h_d$ is the leading coefficient of $H$, the normalized leading
+coefficients on $v^\epsilon B_0$ and $s_1v^\delta B_0$ have ratio
+\[
+ s_1^{d-2}v^{(\delta-\epsilon)(d-2p)},
+ \qquad \epsilon,\delta\in\{0,1\}.
+\]
+Modulo $B_0^*$ this equals $s_1^{d-2}v^{(\delta-\epsilon)d}$.
+The quotient $E^*/B_0^*$ has order $Q=p^2+1$, the class of $s_1$
+generates it, and the class of $v$ has order two. For even $d$ the
+exponent is therefore $d-2$ modulo $Q$; for odd $d$ it is $d-2$ or
+$d-2+Q/2$. None vanishes, since $1\le d-2\le p-2<Q/2$.
+
+On the at most one block with such a component, the original matching
+equation has degree exactly $2p$ in $X$, so that entire block contributes
+at most $2p$ matches. The other block contributes at most $2d$ by the two
+projection bounds. If neither block has such a component, the bound is
+$4d\le2p+2d$. Puncturing cannot increase these counts.
+
+Put $D=\lfloor p/20\rfloor$. Then $2p+2D\le21p/10<T$, since
+\[
+ 5p^2-2-(21p/10+1)^2
+   =\frac{59}{100}p^2-\frac{21}{5}p-3>0
+\]
+for $p\ge257$. All new witnesses thus lie below threshold, preserving
+the complete list profile. The old simultaneous quadratic witness gives
+the lower source and common-agreement bound $2p$, and the estimate just
+proved gives the upper bound. The ratio follows by dividing by $T-k$.
+Finally $k\ge4$ and
+$na_1(k/n)>\sqrt{kn/2}\ge\sqrt{2n}>T$, proving the placement claim.
+\end{proof}
