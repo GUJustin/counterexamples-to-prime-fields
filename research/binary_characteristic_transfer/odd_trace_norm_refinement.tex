@@ -4,7 +4,9 @@ The full-rank elliptic construction of~\cite{binary-counterexamples}
 already gives fixed-rate, constant-margin families in every fixed odd
 characteristic. Here its correction degree can be used exactly, and
 the complete splitting of trace--norm differences makes the pole
-evaluation injective. These are finite refinements of that construction.
+evaluation injective. A converse degree argument determines the entire
+exceptional set and its threshold lists. These are finite refinements
+of that construction.
 
 \begin{theorem}\label{thm:odd-trace-norm-refinement}
 Let $p\ge3$ be prime, $s\ge2$, $Q=p^s$, $B=\mathbb F_{Q^2}$,
@@ -19,15 +21,16 @@ pair, for every prescribed $\beta\in E\setminus B$, satisfying
 \[
  A(r_0)\le U<T,\qquad A(r_1)=A_{\rm common}(r_0,r_1)=k.
 \]
-Its affine line has $n(Q-1)=n^{3/2}-n$ distinct certified interior
-parameters, each with a displayed codeword agreeing on exactly $T$
-coordinates. Moreover
+Its affine line has exactly $n(Q-1)=n^{3/2}-n$ parameters of agreement
+at least $T$, all interior. At each of these parameters the maximum
+agreement is exactly $T$, and there is exactly one codeword with at
+least $T$ agreements. Every other parameter has agreement at most
+$T-1$. Moreover
 \[
  na_1(k/n)<T<\sqrt{n(k-1)},\qquad
  T-U=\left\lceil\frac{T}{p^2}+\frac1p\right\rceil,\qquad
  T-k=\frac Tp.
 \]
-No complete exceptional-set or singleton-list classification is asserted.
 \end{theorem}
 \begin{proof}
 Put $\Lambda=X^n-X$ and $D=n-n/p$. For
@@ -70,12 +73,77 @@ $a_1=ua_2$; evaluating there gives $u=1$.
 Thus the $n(Q-1)$ labels $\lambda_{a,b}=P(\beta)$ are distinct
 and nonzero for every exterior pole.
 
+We next prove that the displayed polynomials are exhaustive.
+Let $W=X^D+C\in E[X]$, with $\deg C\le k$, and let $A_W$ be
+its number of distinct roots in $B$. The polynomial
+$\Delta=W^p-\Lambda^{p-1}$ has degree at most $pk=(p-1)T$ and
+is nonzero, since $\Delta'=-\Lambda^{p-2}\ne0$.
+Let $V$ be the monic locator of all native roots of $W$, and
+put $L=\Lambda/V$, $H=W/V$. Then
+\[
+ \Delta=V^{p-1}\bigl(H^pV-L^{p-1}\bigr).
+\]
+It follows that $A_W\le T$. If $A_W=T$, the bracket is a
+nonzero constant $c$. Choose a root $v$ of $V$ and set
+$\alpha=L(v)\in B^*$. Then $c=-\alpha^{p-1}$, and multiplication
+of the bracket identity by $L$ gives
+\[
+ L^p+cL=\Lambda H^p,\qquad
+ G^p-G=\Lambda(H/\alpha)^p,\qquad G=L/\alpha.
+\]
+In particular $H\in B[X]$: its $p$th power is in $B[X]$, and
+the finite field $B$ supplies the unique coefficientwise $p$th
+roots. The polynomial $G$ has degree $d$, is squarefree, and
+maps $B$ into $\mathbb F_p$.
+
+Every polynomial of degree at most
+$d=p^{2s-1}+p^{s-1}$ with this last property has the form
+\[
+ \operatorname{Tr}_{Q/p}(aX^{Q+1})
+ +\operatorname{Tr}_{B/p}(\ell X)+c_0.
+\]
+Indeed, $G^p=G$ modulo $X^n-X$ makes its nonzero exponent
+support a union of multiplication-by-$p$ orbits modulo $n-1$.
+These orbits cyclically rotate the $2s$ base-$p$ digits.
+Every digit must be at most one, since a larger digit could
+be rotated to exceed $d$. For two occupied positions, rotating
+either to the leading position forces their circular distance
+in each direction to be at least $s$. Thus two ones must be
+antipodal, and three ones are impossible. The only nonconstant
+orbits are consequently the single-one orbit of length $2s$
+and the antipodal orbit of length $s$. Their coefficient
+Frobenius relations give precisely the two displayed traces,
+with $\ell\in B$, $a\in\mathbb F_Q$, and $c_0\in\mathbb F_p$.
+The exponent $n-1$ is absent since $d<n-1$.
+
+The exact degree of $G$ forces $a\ne0$. Completing the norm
+gives
+$G=\operatorname{Tr}_{Q/p}(a(X+b)^{Q+1})+c_1$.
+Squarefreeness forces $c_1\ne0$: at zero level the center is a
+multiple root. Therefore $G_0=G/c_1$ is one of the normalized
+bank locators. Differentiating $G^p-G=\Lambda(H/\alpha)^p$ gives
+$G'=(H/\alpha)^p$, so its associated polynomial is
+$F_0=H/(\alpha c_1)$, using $c_1\in\mathbb F_p^*$. Consequently
+\[
+ W=HV=F_0\Lambda/G_0.
+\]
+Equality $A_W=T$ therefore recovers exactly a displayed bank
+member, even when the initial coefficients of $W$ were in $E$.
+
 Set $f=(X^D-\beta^D)/(X-\beta)$ and $g=1/(X-\beta)$.
 The strict-degree witnesses are
 \[
  h_{a,b}=\frac{X^D-P+\lambda_{a,b}-\beta^D}{X-\beta},
  \qquad f+\lambda_{a,b}g-h_{a,b}=\frac{P}{X-\beta}.
 \]
+For any other strict-degree witness $h$ to $f+\lambda g$,
+the numerator
+$W=X^D-\beta^D+\lambda-(X-\beta)h$
+has the just-classified form and satisfies $W(\beta)=\lambda$.
+Thus a threshold witness exists exactly at the displayed labels.
+Pole injectivity determines $P$ uniquely, and then determines
+$h$ uniquely. The global root bound gives maximum agreement
+exactly $T$ there and at most $T-1$ elsewhere.
 The reciprocal root bound and interpolation give
 $A(g)=A_{\rm common}(f,g)=k$.
 For the other source use the inherited complementary normalization:
@@ -108,6 +176,10 @@ $t=1-c_*/\lambda_{a,b}$, since
  =\frac{c_*}{\lambda_{a,b}}\,(f+\lambda_{a,b}g).
 \]
 None equals $1$, and $U<T$ excludes $t=0$; hence no label is lost.
+For $t\ne1$, this parameter change is a bijection with the
+nonzero $\lambda$ values. At $t=1$ the agreement is $k<T$.
+The complete exceptional-set and singleton-list assertions
+therefore hold in the stated affine chart.
 The identity for $T-U$ follows by substituting $k=(p-1)T/p$.
 
 Finally, the Johnson slack is $n(k-1)-T^2=(Q/p)T-n>0$.
@@ -131,16 +203,21 @@ with evaluation field $\mathbb F_{3^4}$ and alphabet $\mathbb F_{3^8}$.
 The Johnson slack is $72$ and the first-order sign is
 $1496/59049>0$. Thus the two individual agreements are bounded by
 $45$ and $34$, while their common agreement is exactly $34$.
+Precisely $648$ affine parameters have a threshold list, each
+containing one codeword of maximum agreement $51$; all other
+parameters have agreement at most $50$.
 The finite certificate checks the trace--norm identities, roots, and
 all $648$ canonical labels and witnesses.\footnote{See
 \path{research/binary_characteristic_transfer/norm_trace_p3_s2_fixture/verify.py}
-and its receipt. The certificate does not enumerate codewords.}
+and its receipt. Exhaustiveness and uniqueness follow from the
+algebraic classification above, not from codeword enumeration.}
 
 At the same domain and agreement, the prior full-rank elliptic theorem
 uses dimension $k_{\rm old}=(p-1)^2n/p^2$ and collision averaging.
 Its proof already displays the correction degree used here:
 $k_{\rm old}-k=(p-1)Q/p^2$. Complete splitting makes all
-$n(Q-1)$ evaluations distinct at every exterior pole.
+$n(Q-1)$ evaluations distinct at every exterior pole, and the
+converse Frobenius-orbit argument makes this bank exhaustive.
 For fixed $p$, the limiting rate $(1-1/p)^2$, agreement $1-1/p$,
 constant fractional margin, and superlinear population are inherited;
 the smaller guaranteed source loss is asymptotically $1/p$ of the

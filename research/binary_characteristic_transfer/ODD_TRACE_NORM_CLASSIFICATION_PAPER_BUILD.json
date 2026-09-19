@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "pdf_pages": 307,
+  "build_log": "/tmp/norm-trace-classification-build.log",
+  "rendered_pages": [
+    13,
+    14,
+    221,
+    222,
+    223
+  ],
+  "visually_reviewed_pages": [
+    13,
+    221,
+    222,
+    223
+  ],
+  "visual_result": "Readable equations and theorem statement; no clipping or overflow observed",
+  "latex_warnings_checked": [
+    "Overfull",
+    "Underfull",
+    "undefined"
+  ],
+  "root_finite_replay": "PASS: all 2187 trace-Hermitian polynomials; 648 monic split locators and original bank residuals",
+  "scope": "Exact exceptional-set and singleton-list upgrade to Theorem N.44. Existing source bounds, first-order and Johnson placement, and inherited asymptotic regime unchanged. Exhaustiveness is algebraic, not codeword enumeration.",
+  "sha256": {
+    "paper.tex": "4af2646342638daecada646293e94837574e00a8d2e19dccdb20b54f049a696d",
+    "paper.pdf": "33d52cd00c1409732a3305278b9b11c6eac6a137ee3db0c20fc37237225410c1",
+    "research/binary_characteristic_transfer/odd_trace_norm_refinement.tex": "1de24dfcd521710a729457db5a3eb09d6fc8afa4939916276d2aa98a01fca532",
+    "research/binary_characteristic_transfer/ODD_TRACE_NORM_EXACT_THRESHOLD_CLASSIFICATION.md": "0fa4c213c0a232a535da5383bd479821862ae5020975f6624c8755bf1a903444",
+    "research/binary_characteristic_transfer/norm_trace_p3_s2_fixture/threshold_classification/verify.py": "e479d9e5dc4369ba408773600c21bd01b3d1c844f79fe7b6789ac4d764fe5e74",
+    "research/binary_characteristic_transfer/norm_trace_p3_s2_fixture/threshold_classification/receipt.json": "866f7bd7ef7e4e76b76c2d570b69b99c43e7907cb5df693fa0f0ed6c00e77621"
+  }
+}
