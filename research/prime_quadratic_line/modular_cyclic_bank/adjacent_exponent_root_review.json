@@ -2,10 +2,10 @@
   "status": "PASS",
   "checks": 2400,
   "independent_root_replay_matches_receipt": true,
-  "root_review": "Reviewed both reversed-cofactor proofs, derivative characteristic guard, exact degree contradictions, and small h cases. Added explicit n divides p-1 hypothesis. No positive counterexample claimed.",
+  "root_review": "Reviewed both reversed-cofactor proofs, derivative characteristic guard, exact degree contradictions, and small h cases. Added explicit n divides p-1 hypothesis. No positive counterexample claimed. Reciprocal-coordinate wording was made explicit after initial publication; the displayed transformation and proof are unchanged.",
   "sha256": {
     "CHARACTER_ADJACENT_EXPONENT_GCD_GATE.md": "4c2c64ebca24f3d4c351d9d3d0645b17fb018cc0a29f736399e12ca9023dc578",
-    "CHARACTER_EXPONENT_INDEPENDENT_AUDIT.md": "09ac803e90ead53c6be344623fd86c02b5abfdb403502a4081ed3b533c48b233",
+    "CHARACTER_EXPONENT_INDEPENDENT_AUDIT.md": "223be43e858e112c043f94fe145c7b97a4cdc8a1d850756e14ba627e1f6531f3",
     "check_adjacent_exponent_gcd_gate.py": "b81d87630e2f5f1432fc03246a43a6ce00d086259b7e029942785500669b4bab",
     "adjacent_exponent_gcd_gate_receipt.json": "0dca59dd58bd91de9e8ca73652d6a297689b73f7d6ef26542937d99707129458"
   }

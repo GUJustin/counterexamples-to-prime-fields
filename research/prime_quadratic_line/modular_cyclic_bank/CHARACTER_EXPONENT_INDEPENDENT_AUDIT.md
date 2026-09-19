@@ -71,7 +71,7 @@ omega=x/y in mu_h excluding 1 and −1, and
 This assigns at most one zeta to each unordered reciprocal pair of
 ratios, hence at most floor((h−1)/2) double fibers. This restriction is
 compatible with, and does not establish, the desired balanced regime.
-Inverting the evaluation coordinate and dividing values by X² maps
+Applying w_tilde(x)=x² w(1/x) and P_tilde(x)=x² P(1/x) maps
 exponent h+2 to exponent −h and swaps a and c; it does not reduce this
 case to the h+1 obstruction.
 
@@ -176,7 +176,8 @@ The following separate reciprocal-cofactor proof closes h+2 as well.
 Its logarithmic-derivative argument supplies the restriction missing
 from the elementary double-fiber count.
 
-Invert x and divide values by x². The h+2 agreement problem becomes
+Apply w_tilde(x)=x² w(1/x) and P_tilde(x)=x² P(1/x).
+The h+2 agreement problem becomes
 x^(-h)=P(x), where the new quadratic swaps the original a,c, so ac!=0
 is preserved. Put F=X^hP−1, G=P^r−1, H=monic gcd(F,G), S=deg H,
 A=G/H and B=F/H. Then deg A=2r−S, deg B=h+2−S. With the same

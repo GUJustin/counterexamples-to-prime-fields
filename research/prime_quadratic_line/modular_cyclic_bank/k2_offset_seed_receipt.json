@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "scope": "Exactly two prescribed profiles; normalized census with exact orbit division and interpolation moments.",
+  "profiles": [
+    {
+      "p": 71,
+      "n": 35,
+      "h": 5,
+      "r": 7,
+      "m": 11,
+      "target": 8,
+      "all_histogram": {
+        "0": 217939,
+        "1": 108605,
+        "2": 26880,
+        "3": 3955,
+        "4": 455,
+        "5": 77
+      },
+      "full_coefficient_histogram": {
+        "0": 208985,
+        "1": 103775,
+        "2": 25970,
+        "3": 3780,
+        "4": 420,
+        "5": 70
+      },
+      "full_max": 5,
+      "bank_size": 70,
+      "outside_bank_max": 5,
+      "gap": 0,
+      "seed_abc": [
+        3,
+        50,
+        19
+      ],
+      "above_sqrt_1_5_n": false,
+      "target_reached": false,
+      "moment_checks": "PASS",
+      "independent_positive_verification": null
+    },
+    {
+      "p": 131,
+      "n": 65,
+      "h": 5,
+      "r": 13,
+      "m": 11,
+      "target": 10,
+      "all_histogram": {
+        "0": 1365638,
+        "1": 684905,
+        "2": 165880,
+        "3": 28080,
+        "4": 3380,
+        "5": 208
+      },
+      "full_coefficient_histogram": {
+        "0": 1334450,
+        "1": 669825,
+        "2": 161655,
+        "3": 27495,
+        "4": 3380,
+        "5": 195
+      },
+      "full_max": 5,
+      "bank_size": 195,
+      "outside_bank_max": 5,
+      "gap": 0,
+      "seed_abc": [
+        1,
+        42,
+        89
+      ],
+      "above_sqrt_1_5_n": false,
+      "target_reached": false,
+      "moment_checks": "PASS",
+      "independent_positive_verification": null
+    }
+  ]
+}
