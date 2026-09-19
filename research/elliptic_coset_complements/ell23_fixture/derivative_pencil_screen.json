@@ -1,0 +1,121 @@
+{
+  "status": "PASS_COMPLETE_SCREEN",
+  "scope": "Only the stored ell23/F1657 fixture, the Phi',Phi'' pencil, all 1320 two-fiber base pairs and d=0..5; errors gamma*Phi' on U with gamma=n/deg(U).",
+  "construction_established": false,
+  "far_endpoints_established": false,
+  "arbitrary_error_values_screened": false,
+  "p": 1657,
+  "ell": 23,
+  "n": 264,
+  "k": 173,
+  "threshold": 213,
+  "fixture_sha256": "208af6edb304ae81f8a35784bd238c2e49095c8381008eeff755c4f31b679de2",
+  "script_sha256": "372e390525b05e8832035e1d52456cea28347c87fef72f5f9a3ab875bb70b775",
+  "python_flint_version": "0.9.0",
+  "computation_limit_seconds": 30.0,
+  "setup_seconds": 0.04179424999165349,
+  "first_pair_seconds": 0.002422000019578263,
+  "first_pair_full_screen_forecast_seconds": 3.238834275834961,
+  "elapsed_seconds": 0.29623037501005456,
+  "peak_rss_mib": 34.15625,
+  "completed_base_pairs": 1320,
+  "total_base_pairs": 1320,
+  "by_extra_degree": [
+    {
+      "extra_degree": 0,
+      "gates_factored": 1320,
+      "gate_roots": 1320,
+      "predicted_J_divides_Phi": 1320,
+      "coprime_to_base_pair": 1320,
+      "full_moment_passes": 0,
+      "direct_degree_passes": 0,
+      "direct_residual_degree_histogram": {
+        "261": 1317,
+        "260": 3
+      },
+      "first_failed_moment_histogram": {
+        "2": 1317,
+        "3": 3
+      },
+      "distinct_qualifying_labels": []
+    },
+    {
+      "extra_degree": 1,
+      "gates_factored": 1320,
+      "gate_roots": 1317,
+      "predicted_J_divides_Phi": 204,
+      "coprime_to_base_pair": 162,
+      "full_moment_passes": 0,
+      "direct_degree_passes": 0,
+      "direct_residual_degree_histogram": {
+        "260": 162
+      },
+      "first_failed_moment_histogram": {
+        "3": 162
+      },
+      "distinct_qualifying_labels": []
+    },
+    {
+      "extra_degree": 2,
+      "gates_factored": 1320,
+      "gate_roots": 1335,
+      "predicted_J_divides_Phi": 30,
+      "coprime_to_base_pair": 24,
+      "full_moment_passes": 0,
+      "direct_degree_passes": 0,
+      "direct_residual_degree_histogram": {
+        "259": 24
+      },
+      "first_failed_moment_histogram": {
+        "4": 24
+      },
+      "distinct_qualifying_labels": []
+    },
+    {
+      "extra_degree": 3,
+      "gates_factored": 1320,
+      "gate_roots": 1332,
+      "predicted_J_divides_Phi": 0,
+      "coprime_to_base_pair": 0,
+      "full_moment_passes": 0,
+      "direct_degree_passes": 0,
+      "direct_residual_degree_histogram": {},
+      "first_failed_moment_histogram": {},
+      "distinct_qualifying_labels": []
+    },
+    {
+      "extra_degree": 4,
+      "gates_factored": 1320,
+      "gate_roots": 1392,
+      "predicted_J_divides_Phi": 0,
+      "coprime_to_base_pair": 0,
+      "full_moment_passes": 0,
+      "direct_degree_passes": 0,
+      "direct_residual_degree_histogram": {},
+      "first_failed_moment_histogram": {},
+      "distinct_qualifying_labels": []
+    },
+    {
+      "extra_degree": 5,
+      "gates_factored": 1320,
+      "gate_roots": 1257,
+      "predicted_J_divides_Phi": 0,
+      "coprime_to_base_pair": 0,
+      "full_moment_passes": 0,
+      "direct_degree_passes": 0,
+      "direct_residual_degree_histogram": {},
+      "first_failed_moment_histogram": {},
+      "distinct_qualifying_labels": []
+    }
+  ],
+  "qualifying_witnesses": 0,
+  "distinct_qualifying_labels": [],
+  "candidate_stream_sha256": "80022977458243f0262ece7234421affef6a6e5c221879e36d9dd707e2b42dc2",
+  "all_derivative_moments_independently_checked": true,
+  "root_method": "FLINT roots of each nonzero degree-(d+1) Newton gate",
+  "all_field_labels_enumerated": false,
+  "extra_sets_enumerated": false,
+  "failure_or_cap_reason": null,
+  "hits": [],
+  "limitation": "A negative result excludes only these prescribed scalar-Phi' error values on this single pencil and fixture. It does not exclude arbitrary errors, other received lines, other curves, or growing ell."
+}
