@@ -1,0 +1,1639 @@
+{
+  "status": "PASS",
+  "scope": "all clean subgroup pairs for ONE specified fixed extra set",
+  "construction_established": false,
+  "fixture_sha256": "208af6edb304ae81f8a35784bd238c2e49095c8381008eeff755c4f31b679de2",
+  "p": 1657,
+  "ell": 23,
+  "Z": [
+    7,
+    231,
+    340,
+    411,
+    470
+  ],
+  "punctured_length": 259,
+  "quotient_code_dimension": 178,
+  "syndrome_rows": 81,
+  "common_far_residue_space_removed": true,
+  "residue_dimension": 5,
+  "clean_subgroup_dimensions": [
+    {
+      "subgroup": 1,
+      "rank": 18
+    },
+    {
+      "subgroup": 2,
+      "rank": 18
+    },
+    {
+      "subgroup": 3,
+      "rank": 18
+    },
+    {
+      "subgroup": 4,
+      "rank": 18
+    },
+    {
+      "subgroup": 5,
+      "rank": 18
+    },
+    {
+      "subgroup": 6,
+      "rank": 18
+    },
+    {
+      "subgroup": 7,
+      "rank": 18
+    },
+    {
+      "subgroup": 8,
+      "rank": 18
+    },
+    {
+      "subgroup": 9,
+      "rank": 18
+    },
+    {
+      "subgroup": 10,
+      "rank": 18
+    },
+    {
+      "subgroup": 11,
+      "rank": 18
+    },
+    {
+      "subgroup": 12,
+      "rank": 18
+    },
+    {
+      "subgroup": 13,
+      "rank": 18
+    },
+    {
+      "subgroup": 14,
+      "rank": 18
+    },
+    {
+      "subgroup": 15,
+      "rank": 18
+    },
+    {
+      "subgroup": 16,
+      "rank": 18
+    },
+    {
+      "subgroup": 17,
+      "rank": 18
+    },
+    {
+      "subgroup": 18,
+      "rank": 18
+    },
+    {
+      "subgroup": 19,
+      "rank": 18
+    },
+    {
+      "subgroup": 20,
+      "rank": 18
+    },
+    {
+      "subgroup": 21,
+      "rank": 18
+    },
+    {
+      "subgroup": 22,
+      "rank": 18
+    },
+    {
+      "subgroup": 23,
+      "rank": 18
+    }
+  ],
+  "pairs_checked": 253,
+  "intersection_dimension_histogram": {
+    "0": 253
+  },
+  "pairs": [
+    {
+      "H": 1,
+      "H_prime": 2,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 1,
+      "H_prime": 3,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 1,
+      "H_prime": 4,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 1,
+      "H_prime": 5,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 1,
+      "H_prime": 6,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 1,
+      "H_prime": 7,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 1,
+      "H_prime": 8,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 1,
+      "H_prime": 9,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 1,
+      "H_prime": 10,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 1,
+      "H_prime": 11,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 1,
+      "H_prime": 12,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 1,
+      "H_prime": 13,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 1,
+      "H_prime": 14,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 1,
+      "H_prime": 15,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 1,
+      "H_prime": 16,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 1,
+      "H_prime": 17,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 1,
+      "H_prime": 18,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 1,
+      "H_prime": 19,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 1,
+      "H_prime": 20,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 1,
+      "H_prime": 21,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 1,
+      "H_prime": 22,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 1,
+      "H_prime": 23,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 2,
+      "H_prime": 3,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 2,
+      "H_prime": 4,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 2,
+      "H_prime": 5,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 2,
+      "H_prime": 6,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 2,
+      "H_prime": 7,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 2,
+      "H_prime": 8,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 2,
+      "H_prime": 9,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 2,
+      "H_prime": 10,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 2,
+      "H_prime": 11,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 2,
+      "H_prime": 12,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 2,
+      "H_prime": 13,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 2,
+      "H_prime": 14,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 2,
+      "H_prime": 15,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 2,
+      "H_prime": 16,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 2,
+      "H_prime": 17,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 2,
+      "H_prime": 18,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 2,
+      "H_prime": 19,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 2,
+      "H_prime": 20,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 2,
+      "H_prime": 21,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 2,
+      "H_prime": 22,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 2,
+      "H_prime": 23,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 3,
+      "H_prime": 4,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 3,
+      "H_prime": 5,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 3,
+      "H_prime": 6,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 3,
+      "H_prime": 7,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 3,
+      "H_prime": 8,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 3,
+      "H_prime": 9,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 3,
+      "H_prime": 10,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 3,
+      "H_prime": 11,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 3,
+      "H_prime": 12,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 3,
+      "H_prime": 13,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 3,
+      "H_prime": 14,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 3,
+      "H_prime": 15,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 3,
+      "H_prime": 16,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 3,
+      "H_prime": 17,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 3,
+      "H_prime": 18,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 3,
+      "H_prime": 19,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 3,
+      "H_prime": 20,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 3,
+      "H_prime": 21,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 3,
+      "H_prime": 22,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 3,
+      "H_prime": 23,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 4,
+      "H_prime": 5,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 4,
+      "H_prime": 6,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 4,
+      "H_prime": 7,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 4,
+      "H_prime": 8,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 4,
+      "H_prime": 9,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 4,
+      "H_prime": 10,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 4,
+      "H_prime": 11,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 4,
+      "H_prime": 12,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 4,
+      "H_prime": 13,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 4,
+      "H_prime": 14,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 4,
+      "H_prime": 15,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 4,
+      "H_prime": 16,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 4,
+      "H_prime": 17,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 4,
+      "H_prime": 18,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 4,
+      "H_prime": 19,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 4,
+      "H_prime": 20,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 4,
+      "H_prime": 21,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 4,
+      "H_prime": 22,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 4,
+      "H_prime": 23,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 5,
+      "H_prime": 6,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 5,
+      "H_prime": 7,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 5,
+      "H_prime": 8,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 5,
+      "H_prime": 9,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 5,
+      "H_prime": 10,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 5,
+      "H_prime": 11,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 5,
+      "H_prime": 12,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 5,
+      "H_prime": 13,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 5,
+      "H_prime": 14,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 5,
+      "H_prime": 15,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 5,
+      "H_prime": 16,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 5,
+      "H_prime": 17,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 5,
+      "H_prime": 18,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 5,
+      "H_prime": 19,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 5,
+      "H_prime": 20,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 5,
+      "H_prime": 21,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 5,
+      "H_prime": 22,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 5,
+      "H_prime": 23,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 6,
+      "H_prime": 7,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 6,
+      "H_prime": 8,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 6,
+      "H_prime": 9,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 6,
+      "H_prime": 10,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 6,
+      "H_prime": 11,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 6,
+      "H_prime": 12,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 6,
+      "H_prime": 13,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 6,
+      "H_prime": 14,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 6,
+      "H_prime": 15,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 6,
+      "H_prime": 16,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 6,
+      "H_prime": 17,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 6,
+      "H_prime": 18,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 6,
+      "H_prime": 19,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 6,
+      "H_prime": 20,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 6,
+      "H_prime": 21,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 6,
+      "H_prime": 22,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 6,
+      "H_prime": 23,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 7,
+      "H_prime": 8,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 7,
+      "H_prime": 9,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 7,
+      "H_prime": 10,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 7,
+      "H_prime": 11,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 7,
+      "H_prime": 12,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 7,
+      "H_prime": 13,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 7,
+      "H_prime": 14,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 7,
+      "H_prime": 15,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 7,
+      "H_prime": 16,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 7,
+      "H_prime": 17,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 7,
+      "H_prime": 18,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 7,
+      "H_prime": 19,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 7,
+      "H_prime": 20,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 7,
+      "H_prime": 21,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 7,
+      "H_prime": 22,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 7,
+      "H_prime": 23,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 8,
+      "H_prime": 9,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 8,
+      "H_prime": 10,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 8,
+      "H_prime": 11,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 8,
+      "H_prime": 12,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 8,
+      "H_prime": 13,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 8,
+      "H_prime": 14,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 8,
+      "H_prime": 15,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 8,
+      "H_prime": 16,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 8,
+      "H_prime": 17,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 8,
+      "H_prime": 18,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 8,
+      "H_prime": 19,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 8,
+      "H_prime": 20,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 8,
+      "H_prime": 21,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 8,
+      "H_prime": 22,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 8,
+      "H_prime": 23,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 9,
+      "H_prime": 10,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 9,
+      "H_prime": 11,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 9,
+      "H_prime": 12,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 9,
+      "H_prime": 13,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 9,
+      "H_prime": 14,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 9,
+      "H_prime": 15,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 9,
+      "H_prime": 16,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 9,
+      "H_prime": 17,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 9,
+      "H_prime": 18,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 9,
+      "H_prime": 19,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 9,
+      "H_prime": 20,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 9,
+      "H_prime": 21,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 9,
+      "H_prime": 22,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 9,
+      "H_prime": 23,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 10,
+      "H_prime": 11,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 10,
+      "H_prime": 12,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 10,
+      "H_prime": 13,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 10,
+      "H_prime": 14,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 10,
+      "H_prime": 15,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 10,
+      "H_prime": 16,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 10,
+      "H_prime": 17,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 10,
+      "H_prime": 18,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 10,
+      "H_prime": 19,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 10,
+      "H_prime": 20,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 10,
+      "H_prime": 21,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 10,
+      "H_prime": 22,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 10,
+      "H_prime": 23,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 11,
+      "H_prime": 12,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 11,
+      "H_prime": 13,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 11,
+      "H_prime": 14,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 11,
+      "H_prime": 15,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 11,
+      "H_prime": 16,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 11,
+      "H_prime": 17,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 11,
+      "H_prime": 18,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 11,
+      "H_prime": 19,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 11,
+      "H_prime": 20,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 11,
+      "H_prime": 21,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 11,
+      "H_prime": 22,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 11,
+      "H_prime": 23,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 12,
+      "H_prime": 13,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 12,
+      "H_prime": 14,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 12,
+      "H_prime": 15,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 12,
+      "H_prime": 16,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 12,
+      "H_prime": 17,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 12,
+      "H_prime": 18,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 12,
+      "H_prime": 19,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 12,
+      "H_prime": 20,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 12,
+      "H_prime": 21,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 12,
+      "H_prime": 22,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 12,
+      "H_prime": 23,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 13,
+      "H_prime": 14,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 13,
+      "H_prime": 15,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 13,
+      "H_prime": 16,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 13,
+      "H_prime": 17,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 13,
+      "H_prime": 18,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 13,
+      "H_prime": 19,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 13,
+      "H_prime": 20,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 13,
+      "H_prime": 21,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 13,
+      "H_prime": 22,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 13,
+      "H_prime": 23,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 14,
+      "H_prime": 15,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 14,
+      "H_prime": 16,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 14,
+      "H_prime": 17,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 14,
+      "H_prime": 18,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 14,
+      "H_prime": 19,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 14,
+      "H_prime": 20,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 14,
+      "H_prime": 21,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 14,
+      "H_prime": 22,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 14,
+      "H_prime": 23,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 15,
+      "H_prime": 16,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 15,
+      "H_prime": 17,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 15,
+      "H_prime": 18,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 15,
+      "H_prime": 19,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 15,
+      "H_prime": 20,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 15,
+      "H_prime": 21,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 15,
+      "H_prime": 22,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 15,
+      "H_prime": 23,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 16,
+      "H_prime": 17,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 16,
+      "H_prime": 18,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 16,
+      "H_prime": 19,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 16,
+      "H_prime": 20,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 16,
+      "H_prime": 21,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 16,
+      "H_prime": 22,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 16,
+      "H_prime": 23,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 17,
+      "H_prime": 18,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 17,
+      "H_prime": 19,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 17,
+      "H_prime": 20,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 17,
+      "H_prime": 21,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 17,
+      "H_prime": 22,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 17,
+      "H_prime": 23,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 18,
+      "H_prime": 19,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 18,
+      "H_prime": 20,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 18,
+      "H_prime": 21,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 18,
+      "H_prime": 22,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 18,
+      "H_prime": 23,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 19,
+      "H_prime": 20,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 19,
+      "H_prime": 21,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 19,
+      "H_prime": 22,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 19,
+      "H_prime": 23,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 20,
+      "H_prime": 21,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 20,
+      "H_prime": 22,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 20,
+      "H_prime": 23,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 21,
+      "H_prime": 22,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 21,
+      "H_prime": 23,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    },
+    {
+      "H": 22,
+      "H_prime": 23,
+      "joined_rank": 36,
+      "intersection_dimension": 0
+    }
+  ],
+  "limitation": "Does not cover other extra sets, variable extra sets, other curves or growing ell."
+}

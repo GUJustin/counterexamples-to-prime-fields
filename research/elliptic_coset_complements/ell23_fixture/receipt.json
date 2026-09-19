@@ -1,0 +1,58 @@
+{
+  "status": "PASS",
+  "prime_check": "trial division by every integer 2..40",
+  "p_minus_one_factorization": {
+    "2": 3,
+    "3": 2,
+    "23": 1
+  },
+  "primitive_element": 11,
+  "six_twists": [
+    {
+      "twist_exponent": 0,
+      "b": 1,
+      "curve_point_count": 1728,
+      "ell_torsion_count": 1
+    },
+    {
+      "twist_exponent": 1,
+      "b": 11,
+      "curve_point_count": 1657,
+      "ell_torsion_count": 1
+    },
+    {
+      "twist_exponent": 2,
+      "b": 121,
+      "curve_point_count": 1587,
+      "ell_torsion_count": 529
+    },
+    {
+      "twist_exponent": 3,
+      "b": 1331,
+      "curve_point_count": 1588,
+      "ell_torsion_count": 1
+    },
+    {
+      "twist_exponent": 4,
+      "b": 1385,
+      "curve_point_count": 1659,
+      "ell_torsion_count": 1
+    },
+    {
+      "twist_exponent": 5,
+      "b": 322,
+      "curve_point_count": 1729,
+      "ell_torsion_count": 1
+    }
+  ],
+  "chosen_b": 121,
+  "torsion_count": 529,
+  "subgroup_count": 24,
+  "direct_velu_evaluations": 6072,
+  "all_24_domain_factorizations_checked": true,
+  "all_torsion_points_scalar_multiplied_by_23": true,
+  "torsion_basis_grid_bijective": true,
+  "johnson_squared_difference": -39,
+  "fixture_sha256": "208af6edb304ae81f8a35784bd238c2e49095c8381008eeff755c4f31b679de2",
+  "seconds": 0.682024458
+}

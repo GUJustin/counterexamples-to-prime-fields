@@ -32,6 +32,18 @@ The substantive findings are:
 * `SYNDROME_TRANSVERSAL_TARGET.md` gives the exact linear Pluecker equations
   plus decomposability condition for a specified support collection. Dimension
   counts or nonzero linear kernels alone do not construct a line.
+* `FIXED_EXTRA_QUOTIENT_INTERSECTION_SYSTEM.md` proves that the fixed-extra
+  quotient has exactly 3d+3 dimensions and gives an exact pairwise CRT test,
+  including the zero-extended kernel values. At d=5 the quotient dimension is
+  18. The single curve and fixed extra set in `ell23_fixture/` have zero
+  intersection for all 253 clean subgroup pairs after removing the common
+  all-far residue space. This is a finite diagnostic, not a general theorem
+  about other extra sets or curves.
+* `DERIVATIVE_EXTRA_LOCATOR_DISCRIMINATOR.md` gives a degree-at-most-six
+  necessary label equation for the explicit Phi',Phi'' pencil with scaled
+  logarithmic-derivative error values, followed by an exact polynomial degree
+  acceptance test. It is a restricted candidate, not a split locator family
+  or a proximity-gap result.
 
 The separate `../elliptic_source_gate/TORSION_COSET_LOCATOR_PREFIX_AUDIT.md`
 checks the locator identities and small-order formulas. Its verifier replays

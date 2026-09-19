@@ -1,0 +1,29 @@
+{
+  "status": "PASS",
+  "scope": "one pair only, independent stdlib direct parity-check construction",
+  "p": 1657,
+  "Z": [
+    7,
+    231,
+    340,
+    411,
+    470
+  ],
+  "pair": [
+    1,
+    2
+  ],
+  "matrix_shape": [
+    81,
+    36
+  ],
+  "individual_ranks": [
+    18,
+    18
+  ],
+  "joined_rank": 36,
+  "intersection_dimension": 0,
+  "matches_saved_direct_census": true,
+  "fixture_sha256": "208af6edb304ae81f8a35784bd238c2e49095c8381008eeff755c4f31b679de2",
+  "seconds": 0.492087
+}
