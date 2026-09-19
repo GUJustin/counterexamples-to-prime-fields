@@ -1,0 +1,149 @@
+\subsection{Exact full-rank trace--norm parameters}
+\label{sec:odd-trace-norm-refinement}
+The full-rank elliptic construction of~\cite{binary-counterexamples}
+already gives fixed-rate, constant-margin families in every fixed odd
+characteristic. Here its correction degree can be used exactly, and
+the complete splitting of trace--norm differences makes the pole
+evaluation injective. These are finite refinements of that construction.
+
+\begin{theorem}\label{thm:odd-trace-norm-refinement}
+Let $p\ge3$ be prime, $s\ge2$, $Q=p^s$, $B=\mathbb F_{Q^2}$,
+and $E=\mathbb F_{Q^4}$. Set
+\[
+ n=Q^2,\qquad d=\frac{n+Q}{p},\qquad T=n-d,\qquad
+ k=\frac{(p-1)T}{p},\qquad
+ U=\left\lfloor\frac{(p+1)k-1}{p}\right\rfloor.
+\]
+On $B$, the code $\operatorname{RS}_k(B)$ over $E$ has an explicit
+pair, for every prescribed $\beta\in E\setminus B$, satisfying
+\[
+ A(r_0)\le U<T,\qquad A(r_1)=A_{\rm common}(r_0,r_1)=k.
+\]
+Its affine line has $n(Q-1)=n^{3/2}-n$ distinct certified interior
+parameters, each with a displayed codeword agreeing on exactly $T$
+coordinates. Moreover
+\[
+ na_1(k/n)<T<\sqrt{n(k-1)},\qquad
+ T-U=\left\lceil\frac{T}{p^2}+\frac1p\right\rceil,\qquad
+ T-k=\frac Tp.
+\]
+No complete exceptional-set or singleton-list classification is asserted.
+\end{theorem}
+\begin{proof}
+Put $\Lambda=X^n-X$ and $D=n-n/p$. For
+$a\in\mathbb F_Q^*$ and $b\in B$, take the polynomial traces
+\[
+ G=\operatorname{Tr}_{Q/p}\!\bigl(a(X+b)^{Q+1}\bigr)+1,\qquad
+ F=a^{Q/p}(X+b)^{Q/p},\qquad P=F\Lambda/G.
+\]
+There are $Q/p$ nonzero norm values with trace $-1$, each with
+$Q+1$ preimages. Thus $G$ has degree $d$ and exactly $d$ distinct
+roots in $B$. Its leading coefficient equals that of $F$, so $P$
+is monic of degree $D$. The root $-b$ of $F$ already belongs to
+the complement of $Z(G)$, giving exactly $T$ distinct roots of $P$.
+The trace identity gives
+\[
+ G^p-G=\Lambda F^p,\qquad
+ P^p=\Lambda^{p-1}-(\Lambda/G)^{p-1}.
+\]
+Since
+$pk-[n(p-2)+1]=(Q-p)(Q+1)/p>0$,
+the latter identity implies $P=X^D+C$ with $\deg C=k$.
+
+Every nonzero polynomial
+\[
+ \operatorname{Tr}_{Q/p}(aX^{Q+1})
+ +\operatorname{Tr}_{B/p}(\ell X)+c,\qquad
+ a\in\mathbb F_Q,\ \ell\in B,\ c\in\mathbb F_p,
+\]
+splits over $B$. For $a=0$ this is the affine trace equation or a
+nonzero constant. Otherwise completing the norm gives the preceding
+form with an arbitrary constant level. A nonzero level has $d$
+simple native roots. The zero level has $d-Q$ distinct native
+roots, with center multiplicity $Q+1$ and every other root simple,
+again accounting for the full degree.
+Consequently no nonzero such polynomial vanishes at $\beta$.
+If $P_1(\beta)=P_2(\beta)$, the displayed identity gives
+$G_1(\beta)=uG_2(\beta)$ for some $u\in\mathbb F_p^*$, hence
+$G_1=uG_2$. Comparing derivatives gives the same center and
+$a_1=ua_2$; evaluating there gives $u=1$.
+Thus the $n(Q-1)$ labels $\lambda_{a,b}=P(\beta)$ are distinct
+and nonzero for every exterior pole.
+
+Set $f=(X^D-\beta^D)/(X-\beta)$ and $g=1/(X-\beta)$.
+The strict-degree witnesses are
+\[
+ h_{a,b}=\frac{X^D-P+\lambda_{a,b}-\beta^D}{X-\beta},
+ \qquad f+\lambda_{a,b}g-h_{a,b}=\frac{P}{X-\beta}.
+\]
+The reciprocal root bound and interpolation give
+$A(g)=A_{\rm common}(f,g)=k$.
+For the other source use the inherited complementary normalization:
+choose $c_*^p=\Lambda(\beta)^{p-1}$.
+For any $\deg h<k$, write
+\[
+ W=X^D-\beta^D+c_*-(X-\beta)h,\quad
+ Z=W^p-\Lambda^{p-1},\quad
+ \Omega=W'Z-W\Lambda^{p-2}.
+\]
+Here $\deg Z\le pk$, $\deg W'\le k-1$, and
+\[
+ \deg\Omega\le(p+1)k-1,\qquad
+ (p+1)k-1-[D+(p-2)n]=\frac{(Q-p^2)(Q+1)}{p^2}\ge0.
+\]
+At $\beta$ we have
+$\Omega(\beta)=-c_*\Lambda(\beta)^{p-2}\ne0$.
+At every native agreement root of $W$, both
+$W'\Lambda+W$ and its derivative $W''\Lambda$ vanish.
+The identity
+$\Omega=W'W^p-\Lambda^{p-2}(W'\Lambda+W)$
+therefore gives multiplicity at least $p$ at each such root.
+It follows that $A(f+c_*g)\le U$.
+
+Take $r_0=f+c_*g$ and $r_1=c_*g$. Their common agreement is $k$.
+Every bank label gives the interior affine parameter
+$t=1-c_*/\lambda_{a,b}$, since
+\[
+ (1-t)r_0+tr_1
+ =\frac{c_*}{\lambda_{a,b}}\,(f+\lambda_{a,b}g).
+\]
+None equals $1$, and $U<T$ excludes $t=0$; hence no label is lost.
+The identity for $T-U$ follows by substituting $k=(p-1)T/p$.
+
+Finally, the Johnson slack is $n(k-1)-T^2=(Q/p)T-n>0$.
+With $\alpha=T/n$ and $\rho=k/n$, the high-branch first-order sign is
+\[
+ (8-\rho)\alpha^2-6\rho\alpha+\rho(4\rho-5)
+ =\frac{((p-1)Q-1)H_p(Q)}{p^4Q^3}>0,
+\]
+where $H_p(Q)=3(p-1)Q^2-(4p^2+2p+2)Q-(p-1)$.
+For $Q\ge p^2$, this polynomial is increasing, and
+$H_p(p^2)=p^4(3p-7)-2p^3-2p^2-p+1>0$.
+These rates lie on the high branch, completing the placement check.
+\end{proof}
+
+For $p=3,s=2$, the exact parameters are
+\[
+ n=81,\quad k=34,\quad T=51,\quad U=45,\quad
+ |\{\lambda_{a,b}\}|=648,
+\]
+with evaluation field $\mathbb F_{3^4}$ and alphabet $\mathbb F_{3^8}$.
+The Johnson slack is $72$ and the first-order sign is
+$1496/59049>0$. Thus the two individual agreements are bounded by
+$45$ and $34$, while their common agreement is exactly $34$.
+The finite certificate checks the trace--norm identities, roots, and
+all $648$ canonical labels and witnesses.\footnote{See
+\path{research/binary_characteristic_transfer/norm_trace_p3_s2_fixture/verify.py}
+and its receipt. The certificate does not enumerate codewords.}
+
+At the same domain and agreement, the prior full-rank elliptic theorem
+uses dimension $k_{\rm old}=(p-1)^2n/p^2$ and collision averaging.
+Its proof already displays the correction degree used here:
+$k_{\rm old}-k=(p-1)Q/p^2$. Complete splitting makes all
+$n(Q-1)$ evaluations distinct at every exterior pole.
+For fixed $p$, the limiting rate $(1-1/p)^2$, agreement $1-1/p$,
+constant fractional margin, and superlinear population are inherited;
+the smaller guaranteed source loss is asymptotically $1/p$ of the
+capacity margin. The alphabet degree over the prime field is $4s$,
+and the code dimension exceeds the characteristic. This does not give
+a prime-alphabet or prescribed short-domain result.

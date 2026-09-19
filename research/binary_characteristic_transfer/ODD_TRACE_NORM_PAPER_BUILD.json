@@ -1,0 +1,17 @@
+{
+  "utc": "2026-09-19T12:09:01.457385+00:00",
+  "pdf_pages": 306,
+  "pdf_sha256": "690923732ecb0e76de7625f32f2a0889598ef48628bf32d8216abf43a38080bf",
+  "tex_sha256": "14a7d3e01e32bc7f05fed410b3a4376df757f5f7c13d140b5de262bbe510b03f",
+  "build_exit_code": 0,
+  "layout_warnings": [],
+  "visual_review_pages": [
+    221,
+    222,
+    223
+  ],
+  "theorem": "N.44",
+  "root_verifier_replay_passed": true,
+  "verifier_sha256": "eb06422d9a3d4fa89eeca7a4377383a874826ab3e9cb8c5ad6a1bb793f4c2e5d",
+  "verification_scope": "All 648 exhibited canonical and affine witnesses; 104976 residual evaluations. Universal source bounds come from the audited multiplicity proof, not codeword enumeration."
+}

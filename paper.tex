@@ -945,6 +945,16 @@ both individual losses are a vanishing fraction of the capacity margin
 This limitation concerns those chosen inputs, not every possible pair
 on the line.
 
+The existing odd-characteristic elliptic construction also admits an
+exact finite refinement (Theorem~\ref{thm:odd-trace-norm-refinement}).
+Over $\mathbb F_{3^8}$, a length-$81$, dimension-$34$ example has
+$648$ distinct certified exceptional challenges with agreement $51$,
+while the two source agreements are at most $45$ and exactly $34$.
+Its threshold is above first order and below Johnson. The refinement
+uses the exact correction degree and removes collisions between the
+constructed labels; the fixed-characteristic asymptotic regime is
+already present in~\cite{binary-counterexamples}.
+
 For ordinary common agreement, Theorem~\ref{thm:fp3-common-agreement}
 gives a stronger probability statement over $\F_{p^3}$. With
 $n=2p^2-p-1$ and dimension three, every affine mixture has agreement
@@ -6336,6 +6346,7 @@ odd-characteristic bounds $20$ and $62$.
 \input{research/binary_characteristic_transfer/quadratic_frobenius_core/higher_power_frobenius.tex}
 \input{research/binary_characteristic_transfer/odd_hermitian_high_rate.tex}
 \input{research/binary_characteristic_transfer/hermitian_followups.tex}
+\input{research/binary_characteristic_transfer/odd_trace_norm_refinement.tex}
 \input{research/binary_characteristic_transfer/quadratic_frobenius_core/norm_one_direct_list.tex}
 \input{research/binary_characteristic_transfer/growing_characteristic_native.tex}
 \input{research/norm_quotient_coverage/norm_quotient.tex}
