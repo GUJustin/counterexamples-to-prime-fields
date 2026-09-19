@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "research/binary_characteristic_transfer/quadratic_frobenius_core/verify_norm_one_prime_power_subplane.py"
+  ],
+  "reason": "completed",
+  "returncode": 0,
+  "seconds": 0.544127958,
+  "peak_rss_kib": 6464,
+  "rss_limit_mib": 384,
+  "time_limit_seconds": 60
+}

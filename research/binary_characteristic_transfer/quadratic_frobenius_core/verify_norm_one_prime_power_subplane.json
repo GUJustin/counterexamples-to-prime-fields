@@ -1,0 +1,48 @@
+{
+  "passed": true,
+  "scope": "Exact small fixture and formula checks; no exhaustive quadratic census.",
+  "characteristic": 3,
+  "prime_power_base": 9,
+  "ambient_degree": 6,
+  "modulus_ascending": [
+    2,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1
+  ],
+  "irreducibility": "Rabin degree-6 test passed",
+  "native": {
+    "domain": 182,
+    "bank": 91,
+    "agreements": {
+      "20": 91
+    }
+  },
+  "trace_dual_subplane": {
+    "base": 3,
+    "basis": [
+      1,
+      3,
+      9
+    ],
+    "dual_basis": [
+      502,
+      172,
+      62
+    ],
+    "domain": 26,
+    "bank": 13,
+    "agreement": 8,
+    "trace_identity_checks": 169,
+    "coordinate_incidence": 4,
+    "pair_intersection": 2
+  },
+  "projective_orientation_checks": {
+    "quartic": 10,
+    "quadratic": 10
+  },
+  "integer_intersection_formula_checks": 576
+}
