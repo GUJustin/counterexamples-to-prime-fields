@@ -1,0 +1,117 @@
+{
+  "arithmetic_status": "PASS",
+  "audited_source_sha256": {
+    "density_quarter_puncturing.tex": "7955143dd88b5f2ac94e32aaa6191112959ca942325f990ff245e5c72659c917",
+    "scaled_fiber_padding.tex": "f19c932ce32135ed0c07fbbc3b4f1bc3703293e72b0af5c4f4b0f52b5fbb65a4"
+  },
+  "classification_bounds": {
+    "doubly_canonical_retained_agreement_min": 577,
+    "doubly_noncanonical_agreement_max": 261,
+    "general_rounding_slack_lower": {
+      "denominator": 20,
+      "numerator": 217
+    },
+    "retained_agreement_minus_T": 12,
+    "singly_canonical_agreement_max": 514
+  },
+  "hypergeometric": {
+    "exponential_exponent_at_onset": 16,
+    "exponential_strict_lower_bound": {
+      "denominator": 315,
+      "numerator": 24117248
+    },
+    "log_union_derivative_strict_upper_at_onset": {
+      "denominator": 4112,
+      "numerator": -225
+    },
+    "lower_bound_minus_support_count": {
+      "denominator": 315,
+      "numerator": 3230858
+    },
+    "monotonicity_extension": "For x>=257, derivative<2/x-1/16<=2/257-1/16<0",
+    "number_of_supports": 66306,
+    "retained_target": 65,
+    "strict_failure_integer_maximum": 64,
+    "support_checks": [
+      {
+        "hoeffding_exponent_lower": {
+          "denominator": 1,
+          "numerator": 16
+        },
+        "mean": {
+          "denominator": 129,
+          "numerator": 16513
+        },
+        "mean_minus_failure_maximum": {
+          "denominator": 129,
+          "numerator": 8257
+        },
+        "support_size": 512
+      },
+      {
+        "hoeffding_exponent_lower": {
+          "denominator": 16,
+          "numerator": 257
+        },
+        "mean": {
+          "denominator": 33024,
+          "numerator": 4243841
+        },
+        "mean_minus_failure_maximum": {
+          "denominator": 33024,
+          "numerator": 2130305
+        },
+        "support_size": 514
+      }
+    ],
+    "union_probability_strict_upper": {
+      "denominator": 12058624,
+      "numerator": 10443195
+    }
+  },
+  "limitations": [
+    "Alphabet is F_(p^4), not a prime field.",
+    "Length is asymptotic to (5/2)*p^2, not fixed at a practical short-domain benchmark.",
+    "Exact threshold lists are certified; nearby agreements need not equal T."
+  ],
+  "onset_prime": 257,
+  "parameters": {
+    "additional_parameter_list_size": 258,
+    "extension_degree": 4,
+    "field_order_q": 4362470401,
+    "first_block_size": 132096,
+    "length_n": 165122,
+    "message_dimension": 3,
+    "outside_plane_union_parameter_count": 4345430016,
+    "retained_second_block_size": 33026,
+    "second_block_population": 132096,
+    "singleton_parameter_count_B": 17040384,
+    "source_and_common_agreement_A": 514,
+    "tested_threshold_T": 565
+  },
+  "placement": {
+    "first_order_final_square_slack_p2_over_256_minus_p": {
+      "denominator": 256,
+      "numerator": 257
+    },
+    "first_order_sqrt_coefficient_square_slack": {
+      "denominator": 256,
+      "numerator": 1
+    },
+    "fourth_root_coefficient_fourth_power": {
+      "denominator": 16,
+      "numerator": 15
+    },
+    "gap_over_capacity_margin": {
+      "denominator": 562,
+      "numerator": 51
+    },
+    "johnson_slack_2n_minus_T_squared": 11019,
+    "limiting_gap_ratio": {
+      "denominator": 11,
+      "numerator": 1
+    }
+  },
+  "prime_trial_division_limit": 16,
+  "scope": "Exact finite-onset arithmetic; no puncturing/domain enumeration"
+}
