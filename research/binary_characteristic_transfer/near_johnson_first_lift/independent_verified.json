@@ -1,0 +1,20 @@
+{
+  "PASS": true,
+  "claim": "No unramified mod-4 lift through this specific binary incidence point",
+  "N": 128,
+  "K": 8,
+  "bank_size": 129,
+  "retained_matches": 29,
+  "original_equations": 3741,
+  "all_variable_columns": 1545,
+  "certificate_nonzero_weights": 234,
+  "weighted_coefficients_all_zero": true,
+  "weighted_obstruction": 1,
+  "seconds": 0.12281758400000001,
+  "sha256": {
+    "fixture.txt": "9a2c4ac67602ceb548ea78a58b75bf98592c27adc4d436299101c34d209f531b",
+    "contradiction.bin": "41e6258f341aceb19247a87e11e8f1e437ee91a762858a23256fb519a59ffec1",
+    "test.cpp": "34c1addf03394acf226972e176c0b0d64453269dc282a6cfdf4272f6ffa7fb51",
+    "witness.cpp": "479db8b4e2646cdaa0e00169dc5a0d5444982041ac8504dde2438d967112d36f"
+  }
+}

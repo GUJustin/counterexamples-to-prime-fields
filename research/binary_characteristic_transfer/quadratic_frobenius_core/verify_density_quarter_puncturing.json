@@ -1,7 +1,7 @@
 {
   "arithmetic_status": "PASS",
   "audited_source_sha256": {
-    "density_quarter_puncturing.tex": "d09c4aade95c1391873f94f9ef2df821943a8483113b8d63c81d50a773ac2a0e",
+    "density_quarter_puncturing.tex": "7b8e9b0899275dca9e13c286b388d50e835674d0444afa0e59d1c2d4ab10fe5a",
     "scaled_fiber_padding.tex": "f19c932ce32135ed0c07fbbc3b4f1bc3703293e72b0af5c4f4b0f52b5fbb65a4"
   },
   "classification_bounds": {

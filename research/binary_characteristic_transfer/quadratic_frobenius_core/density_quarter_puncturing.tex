@@ -25,6 +25,12 @@ agreement bound. The evaluation domain is a selected subset of
 $\mathbb F_{p^4}$; this is not a prime-alphabet construction.
 \end{proposition}
 
+The code encodes three field elements, the coefficients of a quadratic,
+into $n$ evaluations. Its rate is $3/n=\Theta(p^{-2})$, and the
+fractional agreement loss $(T-A)/n$ is $\Theta(p^{-1})$.
+The constant ratio above is relative to the vanishing capacity margin
+$(T-3)/n$, not a constant loss in relative distance.
+
 \begin{proof}
 Use $B_0=\mathbb F_{p^2}$, $\eta=s_1^2\notin B_0$, the two blocks
 $D_0,D_1=s_1D_0$, and the received words $f,g$ from the proof of
